@@ -1,0 +1,11 @@
+.spell-wrapper {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ::ng-deep table, ::ng-deep tr, ::ng-deep th, ::ng-deep td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+}

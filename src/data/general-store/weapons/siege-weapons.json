@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Ballista",
+    "cost": 0,
+    "description": "A ballista is a massive crossbow that fires heavy bolts. Before it can be fired, it must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it.",
+    "size": "Large",
+    "ac": 15,
+    "hp": 50,
+    "attackMod": 6,
+    "range": 120,
+    "longRange": 480,
+    "damage": "3d10",
+    "damageTypes": "Piercing"
+  },
+  {
+    "name": "Cannon",
+    "cost": 0,
+    "description": "A cannon is usually supported in a wooden frame with wheels. Before it can be fired, the cannon must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it.",
+    "size": "Large",
+    "ac": 19,
+    "hp": 75,
+    "attackMod": 6,
+    "range": 600,
+    "longRange": 2400,
+    "damage": "8d10",
+    "damageTypes": "Bludgeoning"
+  },
+  {
+    "name": "Catapult",
+    "cost": 0,
+    "description": "Before the catapult can be fired, it must be loaded and aimed. It takes two actions to load the weapon, two actions to aim it, and one action to fire it.  The catapult can't target anything within 60 feet of it.",
+    "size": "Large",
+    "ac": 15,
+    "hp": 100,
+    "attackMod": 5,
+    "range": 200,
+    "longRange": 800,
+    "damage": "5d10",
+    "damageTypes": "Bludgeoning"
+  },
+  {
+    "name": "Ram",
+    "cost": 0,
+    "description": "It takes a minimum of four Medium creatures to operate a ram. Because of the gallery roof, these operators have total cover against attacks from above.",
+    "size": "Large",
+    "ac": 15,
+    "hp": 100,
+    "attackMod": 8,
+    "range": 5,
+    "longRange": 5,
+    "damage": "3d10",
+    "damageTypes": "Bludgeoning"
+  },
+  {
+    "name": "Trebuchet",
+    "cost": 0,
+    "description": "Before the trebuchet can be fired, it must be loaded and aimed. It takes two actions to load the weapon, two actions to aim it, and one action to fire it.  The trebuchet can't target anything within 60 feet of it.",
+    "size": "Huge",
+    "ac": 15,
+    "hp": 150,
+    "attackMod": 5,
+    "range": 300,
+    "longRange": 1200,
+    "damage": "8d10",
+    "damageTypes": "Bludgeoning"
+  }
+]

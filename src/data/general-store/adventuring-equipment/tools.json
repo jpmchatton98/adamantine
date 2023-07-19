@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Alchemist's Supplies",
+    "cost": 50,
+    "weight": 8,
+    "ability": "Intelligence",
+    "description": "Two glass beakers, a metal frame for beakers, a stirring rod, a mortar and pestle, and a pouch of common alchemical ingredients (such as salt, powdered iron, and purified water)"
+  },
+  {
+    "name": "Angler's Tools",
+    "cost": 1,
+    "weight": 4,
+    "ability": "Wisdom",
+    "description": "A wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
+  },
+  {
+    "name": "Archeologist's Supplies",
+    "cost": 5,
+    "weight": 5,
+    "ability": "Intelligence",
+    "description": "A set of brushes, a trowel, a measuring tape, a level, and a precision pickaxe"
+  },
+  {
+    "name": "Blacksmith's Tools",
+    "cost": 20,
+    "weight": 8,
+    "ability": "Strength",
+    "description": "Hammers, tongs, charcoal, rags, and a whetstone"
+  },
+  {
+    "name": "Brewer's Supplies",
+    "cost": 20,
+    "weight": 9,
+    "ability": "Wisdom",
+    "description": "A glass jug, hops, a siphon, and some tubing"
+  },
+  {
+    "name": "Calligrapher's Supplies",
+    "cost": 10,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "Ink, 12 sheets of parchment, and three quills"
+  },
+  {
+    "name": "Carpenter's Tools",
+    "cost": 8,
+    "weight": 6,
+    "ability": "Dexterity",
+    "description": "A saw, a hammer, nails, a hatchet, a square, a ruler, an adze, a plane, a spokeshave, and a chisel"
+  },
+  {
+    "name": "Cartographer's Tools",
+    "cost": 15,
+    "weight": 6,
+    "ability": "Intelligence",
+    "description": "A quill, ink, parchment, a pair of compasses, calipers, and a ruler"
+  },
+  {
+    "name": "Chandler's Tools",
+    "cost": 20,
+    "weight": 6,
+    "ability": "Intelligence",
+    "description": "Storage containers, wicks, molds, essential oils, and a small cauldron"
+  },
+  {
+    "name": "Cobbler's Tools",
+    "cost": 5,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "A hammer, an awl, a knife, a shoe stand, a cutter, spare leather, and thread"
+  },
+  {
+    "name": "Cook's Utensils",
+    "cost": 1,
+    "weight": 8,
+    "ability": "Wisdom",
+    "description": "A metal pot, a skillet, a campfire pot rig, knives, forks, a stirring spoon, and a ladle"
+  },
+  {
+    "name": "Disguise Kit",
+    "cost": 25,
+    "weight": 3,
+    "ability": "Charisma",
+    "description": "Cosmetics, hair dye, small props, and a few pieces of clothing"
+  },
+  {
+    "name": "Forgery Kit",
+    "cost": 15,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "Several types of ink, several types of parchment and paper, quills, seals, sealing wax, gold leaf, silver leaf, and small tools for shaping wax"
+  },
+  {
+    "name": "Gardener's Tools",
+    "cost": 8,
+    "weight": 10,
+    "ability": "Wisdom",
+    "description": "A shovel, a rake, a hoe, a pair of shears, a watering can, and a hatchet."
+  },
+  {
+    "name": "Glassblower's Tools",
+    "cost": 3,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "A blowpipe, a marver, blocks, tweezers, shears, molds, and several dyes."
+  },
+  {
+    "name": "Healer's Kit",
+    "cost": 5,
+    "weight": 3,
+    "ability": "Wisdom",
+    "description": "Gauze, sterile bandages, ointment, suture thread, a needle, and a small bottle of whiskey"
+  },
+  {
+    "name": "Herbalism Kit",
+    "cost": 5,
+    "weight": 3,
+    "ability": "Wisdom",
+    "description": "Pouches, clippers, leather gloves, a mortar and pestle, and glass jars"
+  },
+  {
+    "name": "Horologist's Tools",
+    "cost": 40,
+    "weight": 3,
+    "ability": "Intelligence",
+    "description": "A small saw, a small hammer, files, a caliper, tweezers, a loupe, and a set of dies."
+  },
+  {
+    "name": "Jeweler's Tools",
+    "cost": 25,
+    "weight": 2,
+    "ability": "Dexterity",
+    "description": "A small saw, a small hammer, files, pliers, tweezers, a magnet, a small vise, and a loupe."
+  },
+  {
+    "name": "Leatherworker's Tools",
+    "cost": 5,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "A knife, a small mallet, an edger, a hole punch, thread, and leather scraps"
+  },
+  {
+    "name": "Mason's Tools",
+    "cost": 10,
+    "weight": 8,
+    "ability": "Strength",
+    "description": "A trowel, a hammer, a chisel, brushes, and a square"
+  },
+  {
+    "name": "Navigator's Tools",
+    "cost": 25,
+    "weight": 2,
+    "ability": "Wisdom",
+    "description": "A sextant, a compass, calipers, a ruler, parchment, ink, and a quill"
+  },
+  {
+    "name": "Painter's Supplies",
+    "cost": 10,
+    "weight": 5,
+    "ability": "Charisma",
+    "description": "An easel, canvas, paints, brushes, charcoal sticks, and a palette"
+  },
+  {
+    "name": "Poisoner's Kit",
+    "cost": 50,
+    "weight": 2,
+    "ability": "Intelligence",
+    "description": "Glass vials, a mortar and pestle, a stirring rod, and chemicals for making poisons"
+  },
+  {
+    "name": "Potter's Tools",
+    "cost": 10,
+    "weight": 3,
+    "ability": "Charisma",
+    "description": "Potter's needles, ribs, scrapers, a knife, calipers, and a pottery wheel."
+  },
+  {
+    "name": "Surgery Kit",
+    "cost": 50,
+    "weight": 4,
+    "ability": "Intelligence",
+    "description": "Several scalpels, a whetstone, a small mirror, tweezers, sponges, bandages, several needles, a small bar of soap, and a spool of suture thread."
+  },
+  {
+    "name": "Tailor's Tools",
+    "cost": 25,
+    "weight": 1,
+    "ability": "Dexterity",
+    "description": "Thread, needles, measuring tapes, shears, chalk, a hole punch, and a thimble."
+  },
+  {
+    "name": "Thieves' Tools",
+    "cost": 25,
+    "weight": 1,
+    "ability": "Dexterity",
+    "description": "A small file, a set of lockpicks, a small mirror on a metal handle, a set of narrow scissors, and a pair of pliers"
+  },
+  {
+    "name": "Tinker's Tools",
+    "cost": 50,
+    "weight": 10,
+    "ability": "Dexterity",
+    "description": "A variety of hand tools, nails, screws, thread, needles, a whestone, scraps of cloth, leather, and metal, and a small pot of glue"
+  },
+  {
+    "name": "Weaver's Tools",
+    "cost": 1,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "Thread and yarn of various colors, needles, a crochet hook, and scraps of cloth"
+  },
+  {
+    "name": "Whitesmith's Tools",
+    "cost": 13,
+    "weight": 8,
+    "ability": "Dexterity",
+    "description": "Files, a small hammer, a small saw, pliers, a chisel, and a graver"
+  },
+  {
+    "name": "Woodcarver's Tools",
+    "cost": 1,
+    "weight": 5,
+    "ability": "Dexterity",
+    "description": "A knife, a gouge, a chisel, a plane, a hammer, and a small saw"
+  }
+]

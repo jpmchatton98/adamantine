@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Abbey",
+    "purchaseCost": 40000,
+    "constructionCost": 50000,
+    "constructionTime": 400,
+    "dailyUpkeep": 20
+  },
+  {
+    "name": "Castle",
+    "purchaseCost": null,
+    "constructionCost": 500000,
+    "constructionTime": 1200,
+    "dailyUpkeep": 400
+  },
+  {
+    "name": "Estate",
+    "purchaseCost": null,
+    "constructionCost": 25000,
+    "constructionTime": 150,
+    "dailyUpkeep": 10
+  },
+  {
+    "name": "Farm",
+    "purchaseCost": 4000,
+    "constructionCost": 5000,
+    "constructionTime": 60,
+    "dailyUpkeep": 0.5
+  },
+  {
+    "name": "Guildhall",
+    "purchaseCost": 4000,
+    "constructionCost": 5000,
+    "constructionTime": 60,
+    "dailyUpkeep": 5
+  },
+  {
+    "name": "Inn, rural",
+    "purchaseCost": 16000,
+    "constructionCost": 20000,
+    "constructionTime": 150,
+    "dailyUpkeep": 10
+  },
+  {
+    "name": "Inn, urban",
+    "purchaseCost": 24000,
+    "constructionCost": 30000,
+    "constructionTime": 100,
+    "dailyUpkeep": 5
+  },
+  {
+    "name": "Keep",
+    "purchaseCost": null,
+    "constructionCost": 50000,
+    "constructionTime": 400,
+    "dailyUpkeep": 100
+  },
+  {
+    "name": "Lodge",
+    "purchaseCost": 16000,
+    "constructionCost": 20000,
+    "constructionTime": 150,
+    "dailyUpkeep": 0.5
+  },
+  {
+    "name": "Outpost",
+    "purchaseCost": 12000,
+    "constructionCost": 15000,
+    "constructionTime": 100,
+    "dailyUpkeep": 50
+  },
+  {
+    "name": "Shop",
+    "purchaseCost": 12000,
+    "constructionCost": 15000,
+    "constructionTime": 100,
+    "dailyUpkeep": 2
+  },
+  {
+    "name": "Temple, small",
+    "purchaseCost": 24000,
+    "constructionCost": 30000,
+    "constructionTime": 300,
+    "dailyUpkeep": 1
+  },
+  {
+    "name": "Temple, large",
+    "purchaseCost": 40000,
+    "constructionCost": 50000,
+    "constructionTime": 400,
+    "dailyUpkeep": 25
+  },
+  {
+    "name": "Tower",
+    "purchaseCost": 12000,
+    "constructionCost": 15000,
+    "constructionTime": 100,
+    "dailyUpkeep": 25
+  },
+  {
+    "name": "Trading Post",
+    "purchaseCost": 4000,
+    "constructionCost": 5000,
+    "constructionTime": 60,
+    "dailyUpkeep": 10
+  }
+]

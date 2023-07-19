@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Arrow",
+    "bundleSize": 20,
+    "cost": 0.05,
+    "weight": 0.05
+  },
+  {
+    "name": "Arrow, heavy",
+    "bundleSize": 20,
+    "cost": 0.1,
+    "weight": 0.1
+  },
+  {
+    "name": "Blowgun Needle",
+    "bundleSize": 10,
+    "cost": 0.01,
+    "weight": 0.025
+  },
+  {
+    "name": "Crossbow Bolt",
+    "bundleSize": 20,
+    "cost": 0.05,
+    "weight": 0.05
+  },
+  {
+    "name": "Crossbow Bolt, heavy",
+    "bundleSize": 20,
+    "cost": 0.1,
+    "weight": 0.1
+  },
+  {
+    "name": "Musketball",
+    "bundleSize": 20,
+    "cost": 0.1,
+    "weight": 0.03125
+  },
+  {
+    "name": "Blunderbuss Shot",
+    "bundleSize": 20,
+    "cost": 0.25,
+    "weight": 0.0625
+  },
+  {
+    "name": "Pistol Cartridge",
+    "bundleSize": 12,
+    "cost": 0.25,
+    "weight": 0.03125
+  },
+  {
+    "name": "Rifle Cartridge",
+    "bundleSize": 12,
+    "cost": 0.5,
+    "weight": 0.03125
+  },
+  {
+    "name": "Shotgun Shell",
+    "bundleSize": 12,
+    "cost": 0.5,
+    "weight": 0.0625
+  },
+  {
+    "name": "Hand-Cannonball",
+    "bundleSize": 1,
+    "cost": 0.5,
+    "weight": 4
+  }
+]

@@ -1,0 +1,673 @@
+{
+  "class": [
+    {
+      "name": "Pistol",
+      "dice": 1,
+      "die": 10,
+      "weightMod": 0.5,
+      "simpleAmmo": "Musketball",
+      "martialAmmo": "Pistol Cartridge",
+      "properties": []
+    },
+    {
+      "name": "Rifle",
+      "dice": 2,
+      "die": 6,
+      "weightMod": 1,
+      "simpleAmmo": "Musketball",
+      "martialAmmo": "Rifle Catridge",
+      "properties": [
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Blunderbuss / Shotgun",
+      "dice": 2,
+      "die": 8,
+      "weightMod": 1,
+      "simpleAmmo": "Blunderbuss Shot",
+      "martialAmmo": "Shotgun Shell",
+      "properties": [
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Hand-Cannon",
+      "dice": 2,
+      "die": 12,
+      "weightMod": 6,
+      "simpleAmmo": "Hand-Cannonball",
+      "properties": [
+        {
+          "name": "Heavy",
+          "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+        },
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Crank Gun",
+      "dice": 1,
+      "die": 10,
+      "weightMod": 10,
+      "martialAmmo": "Crank Gun Belt",
+      "properties": [
+        {
+          "name": "Heavy",
+          "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+        },
+        {
+          "name": "Special",
+          "description": "A crank gun must be cylinder-action.</p><p>For each attack made with a crank gun, the gun fires 6 times. Attack rolls are made for each shot.</p.<p>Furthermore, while a crank gun is mounted to a crank gun stand, for the purposes of circumventing the gun's heavy property and weight, the wielder is not considered to be carrying the crank gun, so long as the crank gun remains attached to its stand and the wielder is not carrying the stand."
+        },
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    }
+  ],
+  "mechanism": [
+    {
+      "name": "Matchlock",
+      "type": 0,
+      "costMod": 1,
+      "magSize": 1,
+      "reloadTime": "1 action",
+      "properties": [
+        {
+          "name": "Special",
+          "description": "The weapon fires at the end of the round. You may change target, but you gain disadvantage on the attack roll if you do. The weapon cannot fire underwater or in heavy rain."
+        }
+      ]
+    },
+    {
+      "name": "Flintlock",
+      "type": 0,
+      "costMod": 1.5,
+      "magSize": 1,
+      "reloadTime": "1 action",
+      "properties": [
+        {
+          "name": "Special",
+          "description": "The weapon cannot fire underwater."
+        }
+      ]
+    },
+    {
+      "name": "Break-action",
+      "type": 1,
+      "costMod": 2,
+      "magSize": "# of barrels",
+      "reloadTime": "1 action or 2 bonus actions",
+      "properties": [
+        {
+          "name": "Special",
+          "description": "The weapon can have multiple barrel parts."
+        }
+      ]
+    },
+    {
+      "name": "Bolt-action",
+      "type": 1,
+      "costMod": 3,
+      "magSize": 5,
+      "reloadTime": "1 action loads PB",
+      "properties": [
+        {
+          "name": "Loading",
+          "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+        },
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Lever-action, small",
+      "type": 1,
+      "costMod": 4,
+      "magSize": 6,
+      "reloadTime": "1 action loads PB + 1",
+      "properties": [
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Lever-action, medium",
+      "type": 1,
+      "costMod": 5,
+      "magSize": 9,
+      "reloadTime": "1 action loads PB + 1",
+      "properties": [
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Lever-action, large",
+      "type": 1,
+      "costMod": 6,
+      "magSize": 12,
+      "reloadTime": "1 action loads PB + 1",
+      "properties": [
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Cylinder-action",
+      "type": 1,
+      "costMod": 6,
+      "magSize": 6,
+      "reloadTime": "1 action loads PB - 1",
+      "properties": []
+    }
+  ],
+  "material": [
+    { "name": "Wood, cedar", "weightLimit": 10, "weight": 3, "cost": 50 },
+    { "name": "Wood, pine", "weightLimit": 20, "weight": 3, "cost": 70 },
+    { "name": "Wood, cherry", "weightLimit": 30, "weight": 4, "cost": 85 },
+    { "name": "Wood, maghogany", "weightLimit": 40, "weight": 5, "cost": 100 },
+    { "name": "Wood, walnut", "weightLimit": 50, "weight": 6, "cost": 125 },
+    { "name": "Wood, oak", "weightLimit": 60, "weight": 8, "cost": 140 },
+    { "name": "Wood, hickory", "weightLimit": 70, "weight": 6, "cost": 210 },
+    { "name": "Iron", "weightLimit": 100, "weight": 9, "cost": 180 },
+    { "name": "Steel", "weightLimit": 120, "weight": 8, "cost": 250 },
+    { "name": "Adamantine", "weightLimit": 130, "weight": 18, "cost": 2000 },
+    { "name": "Mithral", "weightLimit": 200, "weight": 5, "cost": 5000 },
+    {
+      "name": "Mechanus-Forged Copper",
+      "weightLimit": -1,
+      "weight": 8,
+      "cost": 10000
+    }
+  ],
+  "barrel": [
+    { "name": "Snub", "range": 15, "longRange": 40, "weight": 1, "cost": 15 },
+    { "name": "Short", "range": 30, "longRange": 60, "weight": 2, "cost": 20 },
+    {
+      "name": "Standard",
+      "range": 60,
+      "longRange": 120,
+      "weight": 4,
+      "cost": 40
+    },
+    { "name": "Long", "range": 70, "longRange": 200, "weight": 6, "cost": 80 },
+    {
+      "name": "Pole",
+      "range": 100,
+      "longRange": 400,
+      "weight": 8,
+      "cost": 150,
+      "properties": [
+        {
+          "name": "Reach",
+          "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+        },
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    }
+  ],
+  "stock": [
+    {
+      "name": "None",
+      "normalBonus": 0,
+      "longBonus": -3,
+      "weight": 0,
+      "cost": 0,
+      "properties": [
+        {
+          "name": "Special",
+          "description": "When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll."
+        }
+      ]
+    },
+    {
+      "name": "Short",
+      "normalBonus": 1,
+      "longBonus": -2,
+      "weight": 2,
+      "cost": 10
+    },
+    {
+      "name": "Standard",
+      "normalBonus": 0,
+      "longBonus": 0,
+      "weight": 3,
+      "cost": 15
+    },
+    {
+      "name": "Wide",
+      "normalBonus": -2,
+      "longBonus": 1,
+      "weight": 4,
+      "cost": 25
+    },
+    {
+      "name": "Hydraulic",
+      "normalBonus": 0,
+      "longBonus": 0,
+      "weight": 8,
+      "cost": 350,
+      "properties": [
+        {
+          "name": "Special",
+          "description": "You gain a +1 bonus to attack rolls for every consecutive attack made on the same turn with this weapon."
+        }
+      ]
+    }
+  ],
+  "barrelEnd": [
+    {
+      "name": "Barrel Extender",
+      "normalRangeBonus": 1.1,
+      "longRangeBonus": 1.1,
+      "weight": 2,
+      "cost": 120
+    },
+    {
+      "name": "Flash Hider",
+      "normalRangeBonus": -10,
+      "longRangeBonus": -10,
+      "weight": 2,
+      "cost": 300,
+      "properties": [
+        {
+          "name": "Special",
+          "description": "The weapon has no visible muzzle flash."
+        }
+      ]
+    },
+    {
+      "name": "Suppressor",
+      "normalRangeBonus": -20,
+      "longRangeBonus": -20,
+      "weight": 6,
+      "cost": 1500,
+      "properties": [
+        {
+          "name": "Special",
+          "description": "The weapon cannot be heard outside of its normal range."
+        }
+      ]
+    },
+    {
+      "name": "Elemental Enhancer, acid",
+      "damage": [{ "dice": 1, "die": 6, "types": ["acid"] }],
+      "weight": 3,
+      "cost": 2000
+    },
+    {
+      "name": "Elemental Enhancer, cold",
+      "damage": [{ "dice": 1, "die": 6, "types": ["cold"] }],
+      "weight": 3,
+      "cost": 2000
+    },
+    {
+      "name": "Elemental Enhancer, fire",
+      "damage": [{ "dice": 1, "die": 6, "types": ["fire"] }],
+      "weight": 3,
+      "cost": 2000
+    },
+    {
+      "name": "Elemental Enhancer, lightning",
+      "damage": [{ "dice": 1, "die": 6, "types": ["lightning"] }],
+      "weight": 3,
+      "cost": 2000
+    },
+    {
+      "name": "Elemental Enhancer, thunder",
+      "damage": [{ "dice": 1, "die": 6, "types": ["thunder"] }],
+      "weight": 3,
+      "cost": 2000
+    },
+    {
+      "name": "Elemental Enhancer, adjustable",
+      "damage": [
+        {
+          "dice": 1,
+          "die": 6,
+          "types": ["acid", "cold", "fire", "lightning", "thunder"]
+        }
+      ],
+      "weight": 3,
+      "cost": 6250
+    },
+    {
+      "name": "Ethereal Entangler",
+      "weight": 6,
+      "cost": 3250,
+      "properties": [
+        {
+          "name": "Special",
+          "description": "As a bonus action, you can activate or deactivate the entangler.  While activated, shots are sent into the ethereal plane.  In addition, creatures with the Etherealness or Incorporeal Movement traits are vulnerable to damage from this firearm."
+        }
+      ]
+    }
+  ],
+  "mechanismMod": [
+    {
+      "name": "Barrel of Slipperiness",
+      "description": "This firearm cannot become jammed",
+      "cost": 820
+    },
+    {
+      "name": "Straightbolt",
+      "prereq": "bolt-action",
+      "description": "You can ignore the loading property of this weapon once per turn.",
+      "cost": 225
+    },
+    {
+      "name": "Swing-out Cylinder",
+      "prereq": "cylinder-action",
+      "description": "You can use speedloaders with this weapon.",
+      "cost": 425
+    },
+    {
+      "name": "Elemental Receiver, acid",
+      "description": "The damage type of the weapon is changed to acid.",
+      "damageType": "acid",
+      "cost": 2250
+    },
+    {
+      "name": "Elemental Receiver, cold",
+      "description": "The damage type of the weapon is changed to cold.",
+      "damageType": "cold",
+      "cost": 2250
+    },
+    {
+      "name": "Elemental Receiver, fire",
+      "description": "The damage type of the weapon is changed to fire.",
+      "damageType": "fire",
+      "cost": 2250
+    },
+    {
+      "name": "Elemental Receiver, lightning",
+      "description": "The damage type of the weapon is changed to lightning.",
+      "damageType": "lightning",
+      "cost": 2250
+    },
+    {
+      "name": "Elemental Receiver, thunder",
+      "description": "The damage type of the weapon is changed to thunder.",
+      "damageType": "thunder",
+      "cost": 2250
+    }
+  ],
+  "optic": [
+    { "name": "Pip Sight", "normalRangeBonus": 10, "weight": 0, "cost": 10 },
+    {
+      "name": "Ring Sight",
+      "normalRangeBonus": 25,
+      "longRangeBonus": 10,
+      "weight": 0,
+      "cost": 25
+    },
+    {
+      "name": "Glass Sight",
+      "normalRangeBonus": 30,
+      "longRangeBonus": 30,
+      "weight": 0,
+      "cost": 120
+    },
+    {
+      "name": "Tube Sight",
+      "normalRangeBonus": 30,
+      "longRangeBonus": 30,
+      "longBonus": 1,
+      "weight": 1,
+      "cost": 450
+    },
+    {
+      "name": "Scope",
+      "normalRangeBonus": 100,
+      "longRangeBonus": 100,
+      "longBonus": 2,
+      "weight": 2,
+      "cost": 1000
+    },
+    {
+      "name": "Ethereal Sight",
+      "weight": 8,
+      "cost": 3200,
+      "properties": [
+        {
+          "name": "Special",
+          "description": "While looking through the sight, you can see onto the ethereal plane."
+        }
+      ]
+    }
+  ],
+  "underbarrel": [
+    {
+      "name": "Sling",
+      "description": "You may draw or stow this firearm as a free action",
+      "weight": 2,
+      "cost": 20
+    },
+    {
+      "name": "Gun Legs",
+      "description": "The weapon's long range is increased by 50 feet while in cover or prone",
+      "weight": 4,
+      "cost": 100
+    },
+    {
+      "name": "Bayonet, small",
+      "description": "The weapon may be used to make a melee attack.",
+      "damage": { "dice": 1, "die": 4, "type": "piercing" },
+      "weight": 1,
+      "cost": 15
+    },
+    {
+      "name": "Bayonet, large",
+      "description": "The weapon may be used to make a melee attack.",
+      "damage": { "dice": 2, "die": 4, "type": "piercing" },
+      "weight": 2,
+      "cost": 45,
+      "properties": [
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    }
+  ],
+  "default": [
+    {
+      "name": "Matchlock Pistol",
+      "data": {
+        "class": 0,
+        "mechanism": 0,
+        "material": 0,
+        "barrel": 1,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Matchlock Rifle",
+      "data": {
+        "class": 1,
+        "mechanism": 0,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Matchlock Blunderbuss",
+      "data": {
+        "class": 2,
+        "mechanism": 0,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Flintlock Pistol",
+      "data": {
+        "class": 0,
+        "mechanism": 1,
+        "material": 0,
+        "barrel": 1,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Flintlock Rifle",
+      "data": {
+        "class": 1,
+        "mechanism": 1,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Flintlock Blunderbuss",
+      "data": {
+        "class": 2,
+        "mechanism": 1,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Hand-Cannon",
+      "data": {
+        "class": 3,
+        "mechanism": 0,
+        "material": 9,
+        "barrel": 3,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Derringer",
+      "data": {
+        "class": 0,
+        "mechanism": 2,
+        "material": 0,
+        "barrel": 0,
+        "barrelNum": 2,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Revolver",
+      "data": {
+        "class": 0,
+        "mechanism": 7,
+        "material": 0,
+        "barrel": 1,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Double-Barreled Shotgun",
+      "data": {
+        "class": 2,
+        "mechanism": 2,
+        "material": 0,
+        "barrel": 2,
+        "barrelNum": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Double-Barreled Shotgun, sawn-off",
+      "data": {
+        "class": 2,
+        "mechanism": 2,
+        "material": 0,
+        "barrel": 1,
+        "barrelNum": 2,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Bolt-Action Rifle",
+      "data": {
+        "class": 1,
+        "mechanism": 3,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Sniper Rifle",
+      "data": {
+        "class": 1,
+        "mechanism": 3,
+        "material": 1,
+        "barrel": 3,
+        "stock": 3,
+        "optic": 4,
+        "rifled": true
+      }
+    },
+    {
+      "name": "Lever-Action Rifle",
+      "data": {
+        "class": 1,
+        "mechanism": 4,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Lever-Action Shotgun",
+      "data": {
+        "class": 2,
+        "mechanism": 4,
+        "material": 0,
+        "barrel": 2,
+        "stock": 2
+      }
+    },
+    {
+      "name": "Lever-Action Shotgun, sawn-off",
+      "data": {
+        "class": 2,
+        "mechanism": 4,
+        "material": 0,
+        "barrel": 1,
+        "stock": 0
+      }
+    },
+    {
+      "name": "Crank Gun",
+      "data": {
+        "class": 4,
+        "mechanism": 7,
+        "material": 6,
+        "barrel": 2,
+        "stock": 2
+      }
+    }
+  ]
+}

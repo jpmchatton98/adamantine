@@ -1,0 +1,7 @@
+<ul *ngIf="race" id="tabList" class="nav nav-tabs" role="tablist">
+    <li *ngFor="let subrace of race.subraces" class="nav-item" role="presentation">
+        <button class="nav-link" [ngClass]="{'active': nameUrlEncode(subrace.name) === tabName}" (click)="changeRoute(nameUrlEncode(subrace.name))">{{ subrace.name }}</button>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>

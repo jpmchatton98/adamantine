@@ -1,0 +1,13 @@
+<ng-container *ngIf="subrace">
+    <div *ngIf="subrace.description" [innerHTML]="subrace.description"></div>
+
+    <h4>Traits</h4>
+    <ng-container *ngIf="subrace.asis?.length">
+        <h5>Ability Score Increase</h5>
+        <p>{{ asiString }}</p>
+    </ng-container>
+
+    <ng-container *ngFor="let trait of subrace.traits">
+        <app-display-feature [feature]="trait"></app-display-feature>
+    </ng-container>
+</ng-container>

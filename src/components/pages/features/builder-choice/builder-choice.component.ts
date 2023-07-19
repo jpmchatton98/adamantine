@@ -1,0 +1,312 @@
+import {
+  ChangeDetectorRef,
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
+import { DataService } from 'src/services/data.service';
+import { Store } from '@ngrx/store';
+import { Update } from '../builder.actions';
+import { selectUpdate } from '../builder.selectors';
+import { CharacterBuilderService } from 'src/services/character-builder.service';
+import { CharacterSheetService } from 'src/services/character-sheet.service';
+
+interface IPrereq {
+  race?: string[];
+  spellcasting?: boolean;
+  light?: boolean;
+  medium?: boolean;
+  heavy?: boolean;
+  martial?: boolean;
+
+  str?: number;
+  dex?: number;
+  con?: number;
+  int?: number;
+  wis?: number;
+  cha?: number;
+}
+
+@Component({
+  selector: 'app-builder-choice',
+  templateUrl: './builder-choice.component.html',
+  styleUrls: ['./builder-choice.component.scss'],
+})
+export class BuilderChoiceComponent implements OnInit {
+  @Input() characterObj: any;
+
+  @Input() sourceId: string = '';
+  @Input() sourceValue: string = '';
+  @Input() choice: any;
+  @Input() subChoice = false;
+
+  @Input() level = 0;
+  @Input() characterLevel = 21;
+
+  public genericListKeys: string[] = [];
+  public choiceOptions: any[] = [];
+
+  public choiceValue: any = null;
+  public choiceOption: any;
+
+  public dataService: DataService;
+
+  constructor(
+    dataService: DataService,
+    private characterBuilderService: CharacterBuilderService,
+    private characterSheetService: CharacterSheetService,
+    private store: Store,
+    private changeRef: ChangeDetectorRef
+  ) {
+    this.dataService = dataService;
+  }
+
+  public ngOnInit(): void {
+    this.genericListKeys = this.dataService.getGenericListKeys();
+
+    const choiceEntry = this.characterObj?.choices.find(
+      (ch: any) => ch.id === this.choice.id
+    );
+    if (choiceEntry) {
+      this.choiceValue = choiceEntry.value;
+    }
+
+    this.setup();
+    this.store.select(selectUpdate).subscribe((update) => {
+      if (update) {
+        this.setup();
+        this.changeRef.detectChanges();
+      }
+    });
+  }
+
+  private setup() {
+    this.choiceOptions = this.getChoiceOptions(this.choice);
+
+    if (this.choiceOptions[0]?.options) {
+      if (
+        this.choiceOptions?.length &&
+        !this.choiceOptions.find((ol: any) => {
+          return ol?.options?.find(
+            (o: any) => o.name === this.choiceValue || o === this.choiceValue
+          );
+        }) &&
+        !(this.choiceValue === null)
+      ) {
+        this.choiceValue = null;
+        this.onChange();
+      }
+    } else {
+      if (
+        this.choiceOptions?.length &&
+        !this.choiceOptions.find(
+          (o: any) => o.name === this.choiceValue || o === this.choiceValue
+        ) &&
+        !(this.choiceValue === null)
+      ) {
+        this.choiceValue = null;
+        this.onChange();
+      }
+    }
+
+    if (this.choiceValue !== null) {
+      if (this.choice.type === 'trait') {
+        this.choiceOption = this.choice.options.find(
+          (o: any) => o.name === this.choiceValue
+        );
+      } else if (this.choice.type === 'spell') {
+        this.choiceOption = this.dataService.getSpell(this.choiceValue);
+      } else if (this.choice.type === 'exploit') {
+        this.choiceOption = this.dataService.getExploit(this.choiceValue);
+      } else if (this.choice.type === 'feat') {
+        this.choiceOption = this.dataService.getFeat(this.choiceValue);
+      } else if (this.genericListKeys.includes(this.choice.type)) {
+        this.choiceOption = this.dataService.getGenericListItem(
+          this.choice.type,
+          this.choiceValue
+        );
+      }
+    }
+  }
+
+  public choiceTypes(value: any): boolean {
+    return value[0]?.options !== undefined;
+  }
+
+  public onChange(): void {
+    const choiceEntry = this.characterObj.choices.find(
+      (ch: any) => ch.id === this.choice.id
+    );
+    if (choiceEntry) {
+      choiceEntry.value = this.choiceValue;
+    } else {
+      this.characterObj.choices.push({
+        id: this.choice.id,
+        sourceId: this.sourceId,
+        sourceValue: this.sourceValue,
+        value: this.choiceValue,
+        level: this.choice.level,
+      });
+    }
+
+    if (this.choiceValue !== null) {
+      if (this.choice.type === 'trait') {
+        this.choiceOption = this.choice.options.find(
+          (o: any) => o.name === this.choiceValue
+        );
+      } else if (this.choice.type === 'spell') {
+        this.choiceOption = this.dataService.getSpell(this.choiceValue);
+      } else if (this.choice.type === 'exploit') {
+        this.choiceOption = this.dataService.getExploit(this.choiceValue);
+      } else if (this.choice.type === 'feat') {
+        this.choiceOption = this.dataService.getFeat(this.choiceValue);
+      } else if (this.genericListKeys.includes(this.choice.type)) {
+        this.choiceOption = this.dataService.getGenericListItem(
+          this.choice.type,
+          this.choiceValue
+        );
+      }
+    }
+
+    this.store.dispatch(new Update());
+  }
+
+  private getChoiceOptions(choice) {
+    let choiceOptions = [];
+    if (Array.isArray(choice.type)) {
+      for (let type of choice.type) {
+        const temp = JSON.parse(JSON.stringify(choice));
+        temp.type = type;
+
+        choiceOptions.push({
+          name: type,
+          options: this.getChoiceOptions(temp),
+        });
+      }
+    } else {
+      if (choice?.type !== 'trait') {
+        if (this.dataService.getGenericKeys().includes(choice?.type)) {
+          choiceOptions = this.dataService.getGeneric(choice.type);
+          if (choice.limits) {
+            choiceOptions = choiceOptions.filter((o: any) =>
+              choice.limits.includes(o)
+            );
+          }
+
+          if (choice.type === 'skill') {
+            const characterSkillProfs =
+              this.characterSheetService.getCharacterSkillProficiencies();
+            choiceOptions = choiceOptions.filter((o: any) => {
+              return !characterSkillProfs.find((p: any) => {
+                return (
+                  p.value === o &&
+                  p.id !== this.choice.id &&
+                  p.level > this.choice.level
+                );
+              });
+            });
+          }
+        } else if (choice?.type === 'spell') {
+          if (choice.id.includes('sorcerer')) {
+            choiceOptions = this.dataService
+              .getSpellsByListUnsplit('all')
+              .filter(
+                (s: any) =>
+                  s.level === (choice.level ?? 10) &&
+                  (s.lists.includes('Arcane') ||
+                    (this.characterObj.subclass === 'Divine Soul' &&
+                      s.lists.includes('Divine')))
+              );
+
+            choiceOptions = choiceOptions.filter(
+              (value, index, self) =>
+                index === self.findIndex((t) => t.name === value.name)
+            );
+          } else {
+            choiceOptions = this.dataService
+              .getSpellsByListUnsplit('all')
+              .filter(
+                (s: any) =>
+                  (s.level === (choice.level ?? 10) &&
+                    (choice.list?.includes(s.school.toLowerCase()) ||
+                      choice.list === s.school.toLowerCase() ||
+                      s.lists.find((l: string) =>
+                        choice.list?.includes(
+                          l.toLowerCase() || choice.list === l.toLowerCase()
+                        )
+                      ))) ||
+                  choice.limits?.includes(s.name)
+              );
+          }
+        } else if (choice?.type === 'exploit') {
+          choiceOptions = this.dataService
+            .getExploitsByListUnsplit('all')
+            .filter(
+              (e: any) =>
+                (e.degree <= (choice.degree ?? 6) &&
+                  e.lists.find(
+                    (l: string) =>
+                      choice?.list.includes(l.toLowerCase()) ||
+                      choice?.list === l.toLowerCase()
+                  )) ||
+                choice.limits?.includes(e.name)
+            );
+        } else if (this.genericListKeys?.includes(choice?.type)) {
+          choiceOptions = this.dataService
+            .getExtraTabDataUnsplit(choice.type)
+            .filter((i: any) => !i.prereq && !i.prereqLevel);
+        } else if (choice?.type === 'asi') {
+          choiceOptions = choice.options.filter(
+            (o: any) =>
+              this.characterBuilderService.getScore(o) < 20 ||
+              o === this.choiceValue
+          );
+        } else if (choice?.type === 'text') {
+          choiceOptions = choice.options;
+        } else if (choice?.type === 'feat') {
+          choiceOptions = this.dataService
+            .getFeatsUnsplit()
+            .filter((f: any) => {
+              if (!f.prereq) {
+                return true;
+              }
+              for (let p of f.prereq) {
+                const prereq: IPrereq = p;
+
+                if (prereq.race) {
+                  for (let race of prereq.race) {
+                    if (this.characterBuilderService.characterIsRace(race)) {
+                      return true;
+                    }
+                  }
+                } else if (prereq.spellcasting) {
+                  return true;
+                } else if (prereq.light) {
+                  return true;
+                } else if (prereq.medium) {
+                  return true;
+                } else if (prereq.heavy) {
+                  return true;
+                } else if (prereq.martial) {
+                  return true;
+                } else {
+                  const score = this.characterBuilderService.getScore(
+                    Object.keys(prereq)[0]
+                  );
+                  if (score) {
+                    const prereqScore: number = Object.values(prereq)[0];
+                    return score >= prereqScore;
+                  }
+                }
+              }
+              return false;
+            });
+        }
+      }
+    }
+
+    return choiceOptions;
+  }
+}

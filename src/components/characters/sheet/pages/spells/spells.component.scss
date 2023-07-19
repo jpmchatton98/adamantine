@@ -1,0 +1,37 @@
+.spell {
+    cursor: pointer;
+
+    font-size: 12px;
+    .spell-name {
+        width: 150px;
+
+        font-size: 14px;
+        .subheader {
+            font-size: 10px;
+            color: var(--light-font-color);
+        }
+    }
+    .casting-time {
+        width: 115px;
+    }
+    .range {
+        width: 125px;
+    }
+    .hit-dc {
+        width: 90px;
+    }
+
+    ::ng-deep .mdi {
+        font-size: 16px;
+    }
+
+    sup {
+        background-color: black;
+        color: white;
+        border-radius: 100%;
+
+        font-size: 8px;
+        padding: 1.25px 4px;
+        cursor: help;
+    }
+}

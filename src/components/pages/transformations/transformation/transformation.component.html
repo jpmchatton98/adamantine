@@ -1,0 +1,52 @@
+<h3>{{ transformation.name }}</h3>
+<p [innerHTML]="transformation.description"></p>
+
+<ul id="tabList" class="nav nav-tabs" role="tablist">
+    <ng-container>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': 0 === tabIndex}" (click)="tabIndex = 0">
+                Basic Information
+            </button>
+        </li>
+        <li *ngFor="let level of transformation.levels; let i = index" class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': i + 1 === tabIndex}" (click)="tabIndex = i + 1">
+                {{ getLevelString(i + 1) }}
+            </button>
+        </li>
+        <li *ngFor="let tab of transformation.extraTabs; let i = index" class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': i + 5 === tabIndex}" (click)="tabIndex = i + 5">
+                {{ tab.name }}
+            </button>
+        </li>
+    </ng-container>
+</ul>
+<div id="content" class="tab-content">
+    <div class="tab-pane" [ngClass]="{'active show': 0 === tabIndex}">
+        <h4>Prerequisites</h4>
+        <div>
+            <strong>Ability Score:</strong> {{ transformation.abilityScore }} {{ transformation.scoreAmount }}
+        </div>
+        <div *ngIf="transformation.prereq.mechanical">
+            <strong>Mechanical:</strong> {{ transformation.prereq.mechanical }}
+        </div>
+        <div>
+            <strong>Roleplay:</strong> {{ transformation.prereq.roleplay }}
+        </div>
+
+        <h4>Milestones</h4>
+        <ul>
+            <li *ngFor="let milestone of transformation.milestones">{{ milestone }}</li>
+        </ul>
+    </div>
+    <div *ngFor="let level of transformation.levels; let i = index" class="tab-pane" [ngClass]="{'active show': i + 1 === tabIndex}">
+        <h4>Boons</h4>
+        <ng-container *ngFor="let boon of level.boons">
+            <app-display-feature [feature]="boon"></app-display-feature>
+        </ng-container>
+        <h4>Flaw</h4>
+        <app-display-feature [feature]="level.flaw"></app-display-feature>
+    </div>
+    <div *ngFor="let tab of transformation.extraTabs; let i = index" class="tab-pane" [ngClass]="{'active show': i + 5 === tabIndex}">
+        <app-class-extra-tab [tab]="tab.type" [className]="transformation.name.toLowerCase()"></app-class-extra-tab>
+    </div>
+</div>

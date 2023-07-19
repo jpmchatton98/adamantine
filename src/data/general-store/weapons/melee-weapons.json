@@ -1,0 +1,2147 @@
+[
+  {
+    "class": "Sword",
+    "name": "Bastard Sword",
+
+    "description": "A large sword that is a cross between a longsword and a greatsword.",
+    "damage": "2d5",
+    "damageTypes": "Slashing",
+    "cost": 20,
+    "weight": 7.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Special",
+        "description": "A bastard sword can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Baton",
+
+    "description": "A short, thin club that can easily be used in one hand.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 0.5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Axe",
+    "name": "Battleaxe",
+
+    "description": "A large axe used as a weapon. A woodcutter's axe can be used as a battleaxe.",
+    "damage": "1d8",
+    "damageTypes": "Slashing",
+    "cost": 10,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Versatile (1d10)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Axe",
+    "name": "Bearded Axe",
+
+    "description": "A large, heavy axe with a tall head",
+    "damage": "1d10",
+    "damageTypes": "Slashing",
+    "cost": 20,
+    "weight": 7,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Special",
+        "description": "A bearded axe can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Polearm",
+    "name": "Bec de Corbin",
+
+    "description": "A large and ornate elvish warhammer used as a polearm. Its name literally translates to &quot;crow's beak&quot;.",
+    "damage": "1d10",
+    "damageTypes": "Bludgeoning",
+    "cost": 10,
+    "weight": 10.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Flail",
+    "name": "Bladed Scarf",
+
+    "description": "A long cloth scarf interlaced with hundreds of tiny metal blades.",
+    "damage": "1d8",
+    "damageTypes": "Slashing",
+    "cost": 10,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Special",
+        "description": "Wielding a bladed scarf grants a +1 bonus to your Armor Class. You must be wearing light or no armor in order to gain this benefit."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Flail",
+    "name": "Bola",
+
+    "description": "A pair of wooden weights connected by a length of rope.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 10,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Special",
+        "description": "A Large or smaller creature hit by a bola is has its speed reduced to 0 until it is freed. A bola has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the bola (AC 10) also frees the creature without harming it, ending the effect and destroying the bola."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 3
+  },
+  {
+    "class": "Club",
+    "name": "Bo Staff",
+
+    "description": "A long and well-balanced quarterstaff favored by monks.",
+    "damage": "2d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 50,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Double (1d4)",
+        "description": "If you attack with this weapon as part of the Attack action on your turn, you can use a bonus action immediately after to make a melee attack with it. A damage value in parentheses appears with the property - the damage when the weapon is attacked with as a bonus action."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Boomerang",
+
+    "description": "A curved club that returns to one's hand when thrown.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Returning",
+        "description": "After making a ranged attack roll with this weapon, it returns to your hand."
+      },
+      {
+        "name": "Thrown (30/80)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Buster Sword",
+
+    "description": "A massive weapon that is almost more club that sword.",
+    "damage": "4d4",
+    "damageTypes": "Slashing",
+    "cost": 50,
+    "weight": 25.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Cane Sword",
+
+    "description": "A thin sword similar to a rapier, with a sheath and hilt that make it appear as a normal cane when sheathed.",
+    "damage": "1d8",
+    "damageTypes": "Piercing or Slashing",
+    "cost": 20,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Covert",
+        "description": "You have advantage on ability checks made to hide this weapon on your person, and other creatures have disadvantage on checks made to find it."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Cavalry Sabre",
+
+    "description": "A long, slender sword used from the back of a horse, but difficult to use while on foot.",
+    "damage": "1d12",
+    "damageTypes": "Slashing",
+    "cost": 40,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Cavalry",
+        "description": "This weapon requires two hands when you attack with it while not mounted. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Flail",
+    "name": "Chain Dagger",
+
+    "description": "A dagger on the end of a chain or a rope, which allows it to be quickly pulled back into one's hand when thrown.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 10,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Returning",
+        "description": "After making a ranged attack roll with this weapon, it returns to your hand."
+      },
+      {
+        "name": "Thrown (30/80)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Shortblade",
+    "name": "Chakram",
+
+    "description": "A circular, bladed weapon that returns to one's hand when thrown.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 15,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Returning",
+        "description": "After making a ranged attack roll with this weapon, it returns to your hand."
+      },
+      {
+        "name": "Thrown (30/80)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Brawling",
+    "name": "Claw",
+
+    "description": "A gauntlet-like weapon with two to four blades extending past the hand.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Disarm Immune",
+        "description": "You cannot be unwillingly disarmed of this weapon."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Unarmed",
+        "description": "You can use this weapon to make an unarmed strike."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Cleaver",
+
+    "description": "A cleaver is an oversized, front-heavy shortsword. It acts as a mixture between a sword and an axe.",
+    "damage": "2d4",
+    "damageTypes": "Slashing",
+    "cost": 0.5,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Club",
+    "name": "Club",
+
+    "description": "A simple club made of wood, stone, or iron. Not necessarily an effective weapon, but a cheap one.",
+    "damage": "1d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 0.1,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Shortblade",
+    "name": "Dagger",
+
+    "description": "A light, simple knife. It can be thrown or used as a tool, in addition to being used as a weapon.",
+    "damage": "1d4",
+    "damageTypes": "Piercing or Slashing",
+    "cost": 2,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Shortblade",
+    "name": "Dagger, boot-toe",
+
+    "description": "A short dagger hidden in the toe of one's shoe. These weapons are often poisoned.",
+    "damage": "1d4",
+    "damageTypes": "Piercing",
+    "cost": 10,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Covert",
+        "description": "You have advantage on ability checks made to hide this weapon on your person, and other creatures have disadvantage on checks made to find it."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Special",
+        "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Shortblade",
+    "name": "Dagger, wrist",
+
+    "description": "A short dagger hidden in the wrist cuff of one's shirt.",
+    "damage": "1d4",
+    "damageTypes": "Piercing",
+    "cost": 25,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Covert",
+        "description": "You have advantage on ability checks made to hide this weapon on your person, and other creatures have disadvantage on checks made to find it."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Shortblade",
+    "name": "Dart",
+
+    "description": "A weapon-grade dart is a large dart, about a foot long, that can be thrown.",
+    "damage": "1d4",
+    "damageTypes": "Piercing",
+    "cost": 0.05,
+    "weight": 0.25,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Flail",
+    "name": "Dire Flail",
+
+    "description": "A giant, three-headed flail based on the weapon of the demon lord Yeenoghu.",
+    "damage": "2d8",
+    "damageTypes": "Bludgeoning",
+    "cost": 50,
+    "weight": 35.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Double Scimitar",
+
+    "description": "A handle or long haft of wood with the blade of a scimitar at either end.",
+    "damage": "2d4",
+    "damageTypes": "Slashing",
+    "cost": 50,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Double (1d4)",
+        "description": "If you attack with this weapon as part of the Attack action on your turn, you can use a bonus action immediately after to make a melee attack with it. A damage value in parentheses appears with the property - the damage when the weapon is attacked with as a bonus action."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Double Spear",
+
+    "description": "A haft of wood with a spearhead at either end.",
+    "damage": "2d4",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Double (1d4)",
+        "description": "If you attack with this weapon as part of the Attack action on your turn, you can use a bonus action immediately after to make a melee attack with it. A damage value in parentheses appears with the property - the damage when the weapon is attacked with as a bonus action."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Axe",
+    "name": "Executioner's Axe",
+
+    "description": "A huge axe bristling with spikes.",
+    "damage": "2d8",
+    "damageTypes": "Slashing",
+    "cost": 50,
+    "weight": 30.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Flail",
+    "name": "Flail",
+
+    "description": "A difficult weapon to master, a flail consists of a flanged or spiked head attached to a handle by a length of chain or rope.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning",
+    "cost": 10,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Flail",
+    "name": "Flying Sword",
+
+    "description": "A rope or chain ending in the blade of a shortsword.",
+    "damage": "1d8",
+    "damageTypes": "Slashing",
+    "cost": 5,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Foil",
+
+    "description": "A small, thin sword that lacks a cutting edge.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 10,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Brawling",
+    "name": "Gauntlet",
+
+    "description": "A heavier gauntlet allows its wearer to pack more weight behind their punches.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 3,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Unarmed",
+        "description": "You can use this weapon to make an unarmed strike."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Brawling",
+    "name": "Gauntlet, spiked",
+
+    "description": "A customized heavy gauntlet, the knuckles of which are studded with spikes.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 4,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Unarmed",
+        "description": "You can use this weapon to make an unarmed strike."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Polearm",
+    "name": "Glaive",
+
+    "description": "A polearm ending in a short, curved blade.",
+    "damage": "1d10",
+    "damageTypes": "Slashing",
+    "cost": 20,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Axe",
+    "name": "Greataxe",
+
+    "description": "A large, two-handed axe.",
+    "damage": "1d12",
+    "damageTypes": "Slashing",
+    "cost": 30,
+    "weight": 7.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Club",
+    "name": "Greatclub",
+
+    "description": "A heavy club made of wood, metal, or stone. A strong but simple weapon.",
+    "damage": "2d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 0.2,
+    "weight": 10.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Pickaxe",
+    "name": "Greatpick",
+
+    "description": "An enormous pickaxe with a massive head.",
+    "damage": "4d4",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 30.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Greatspear",
+
+    "description": "A spear with a longer haft. Too large to throw, and requiring two hands, but with a lot more leverage and force behind it.",
+    "damage": "1d12",
+    "damageTypes": "Piercing",
+    "cost": 30,
+    "weight": 12.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Sword",
+    "name": "Greatsword",
+
+    "description": "A large, two-handed sword, also called a flamberge, claymore, or zweihänder.",
+    "damage": "2d6",
+    "damageTypes": "Slashing",
+    "cost": 50,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Polearm",
+    "name": "Guandao",
+
+    "description": "A polearm similar to a glaive, but more ornate and lighter, allowing for more finesse.",
+    "damage": "1d10",
+    "damageTypes": "Slashing",
+    "cost": 40,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Polearm",
+    "name": "Halberd",
+
+    "description": "A polearm ending in a head that is a fusion of an axe head and a spear head.",
+    "damage": "1d10",
+    "damageTypes": "Piercing or Slashing",
+    "cost": 25,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Axe",
+    "name": "Handaxe",
+
+    "description": "A small, light axe that can be thrown. A hatchet can be used as a handaxe.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Flail",
+    "name": "Heavy Flail",
+
+    "description": "A large, heavy flail with two heads.",
+    "damage": "1d12",
+    "damageTypes": "Bludgeoning",
+    "cost": 25,
+    "weight": 10.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Pickaxe",
+    "name": "Heavy Pick",
+
+    "description": "A large, two-handed pickaxe.",
+    "damage": "2d6",
+    "damageTypes": "Piercing",
+    "cost": 30,
+    "weight": 8.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Spear",
+    "name": "Javelin",
+
+    "description": "A small, slender spear optimized for throwing at long distance. They can also be thrown from a device known as an atltal.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 0.5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Thrown (40/120)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Sword",
+    "name": "Katana",
+
+    "description": "A well-balanced, slightly curved sword favored by monks.",
+    "damage": "2d4",
+    "damageTypes": "Slashing",
+    "cost": 20,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Versatile (2d5)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Brawling",
+    "name": "Katar",
+
+    "description": "A gauntlet-like weapon, also known as a punch-dagger, which consists of a pointed blade extending in front of one's fist.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 25,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Disarm Immune",
+        "description": "You cannot be unwillingly disarmed of this weapon."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Unarmed",
+        "description": "You can use this weapon to make an unarmed strike."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Khopesh",
+
+    "description": "A sword with a hook-shaped blade designed to pull away an enemy's shield.",
+    "damage": "2d4",
+    "damageTypes": "Slashing",
+    "cost": 15,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Special",
+        "description": "While wielding a khopesh, if you hit a target that is wielding a shield, you pull their shield aside and they lose the bonus it grants to their Armor Class until the end of their next turn."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Knobkerrie",
+
+    "description": "A smooth wooden club consisting of a sphere on the end of a handle, similar to the shape of a bass clef.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning",
+    "cost": 10,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Shortblade",
+    "name": "Kukri",
+
+    "description": "A heavy, recurved dagger.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Shortblade",
+    "name": "Kunai",
+
+    "description": "A triangular dagger more well-balanced for throwing.",
+    "damage": "1d4",
+    "damageTypes": "Piercing or Slashing",
+    "cost": 10,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Thrown (40/120)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Flail",
+    "name": "Kusarigama",
+
+    "description": "A weapon consisting of a chain or rope with a sickle at one end and a weight at the other.",
+    "damage": "1d8",
+    "damageTypes": "Piercing",
+    "cost": 15,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Lance",
+
+    "description": "A long spear used on horseback. A sport known as jousting is made of using lances recreationally.",
+    "damage": "1d12",
+    "damageTypes": "Piercing",
+    "cost": 10,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Cavalry",
+        "description": "This weapon requires two hands when you attack with it while not mounted. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Hammer",
+    "name": "Light Hammer",
+
+    "description": "A small, light hammer that can be thrown. A one-handed hammer or a blacksmith's hammer can be used as a light hammer.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Pickaxe",
+    "name": "Light Pick",
+
+    "description": "A small, light pickaxe that can be thrown.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Hammer",
+    "name": "Longhammer",
+
+    "description": "A long haft ending in a hammer head, used while on horseback.",
+    "damage": "1d12",
+    "damageTypes": "Bludgeoning",
+    "cost": 45,
+    "weight": 10.0,
+    "properties": [
+      {
+        "name": "Cavalry",
+        "description": "This weapon requires two hands when you attack with it while not mounted. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Pickaxe",
+    "name": "Longpick",
+
+    "description": "A topheavy pickaxe with an overly long head",
+    "damage": "2d5",
+    "damageTypes": "Piercing",
+    "cost": 20,
+    "weight": 7,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Special",
+        "description": "A longpick can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Longspear",
+
+    "description": "A spear with a longer haft, providing more power at the cost of not being balanced enough to throw.",
+    "damage": "2d4",
+    "damageTypes": "Piercing",
+    "cost": 0.5,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Sword",
+    "name": "Longsword",
+
+    "description": "A plain, straight, double-edged sword. Cheap and effective.",
+    "damage": "2d4",
+    "damageTypes": "Piercing or Slashing",
+    "cost": 15,
+    "weight": 3.0,
+    "properties": [],
+    "type": 1
+  },
+  {
+    "class": "Spear",
+    "name": "Longtrident",
+
+    "description": "An oversized, barbed trident, too heavy to be thrown.",
+    "damage": "2d8",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 35.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Mace",
+
+    "description": "A mace is a simple weapon consisting of a flanged head on the end of a shaft. It is favored by clerics.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 5,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Sword",
+    "name": "Machete",
+
+    "description": "A short sword that is commonly used for hacking through plant matter.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 1,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Hammer",
+    "name": "Maul",
+
+    "description": "A large, two-handed hammer.",
+    "damage": "2d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 10,
+    "weight": 10.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Axe",
+    "name": "Maulaxe",
+
+    "description": "A dwarven weapon with a head combining a hammer and an axe.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning or Slashing",
+    "cost": 15,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Versatile (1d10)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Hammer",
+    "name": "Megaton Hammer",
+
+    "description": "A gigantic hammer that weighs an enormous amount.",
+    "damage": "4d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 50,
+    "weight": 50.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Flail",
+    "name": "Meteor Hammer",
+
+    "description": "A weapon consisting of a chain or rope with an iron sphere at either end.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning",
+    "cost": 10,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Morningstar",
+
+    "description": "A weapon similar to a mace, consisting of a shaft ending in a spiked sphere.",
+    "damage": "2d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 15,
+    "weight": 4.0,
+    "properties": [],
+    "type": 1
+  },
+  {
+    "class": "Flail",
+    "name": "Net",
+
+    "description": "A weighted rope net favored by gladiators.",
+    "damage": "1d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 1,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Special",
+        "description": "A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net."
+      },
+      {
+        "name": "Thrown (5/15)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Club",
+    "name": "Nunchaku",
+
+    "description": "A pair of short clubs connected by a short length of rope or chain.",
+    "damage": "2d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Versatile (2d5)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Odachi",
+
+    "description": "A well-balanced, slightly curved greatsword favored by monks.",
+    "damage": "3d4",
+    "damageTypes": "Slashing",
+    "cost": 50,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Phalanx Pike",
+
+    "description": "A gigantic pike that has an enormous reach.",
+    "damage": "2d8",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 30.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Special",
+        "description": "The Phalanx Pike increases your reach by 10 feet. However, you have disadvantage attacking with one against a creature within 5 feet of you."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Pike",
+
+    "description": "A heavy polearm with a large, ornate spear head.",
+    "damage": "1d10",
+    "damageTypes": "Piercing",
+    "cost": 5,
+    "weight": 18.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Polearm",
+    "name": "Poleaxe",
+
+    "description": "A dwarven polearm similar to a maulaxe.",
+    "damage": "1d10",
+    "damageTypes": "Bludgeoning or Slashing",
+    "cost": 5,
+    "weight": 18.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Spear",
+    "name": "Quad Spear",
+
+    "description": "A heavy spear, with four heads set at an angle",
+    "damage": "1d10",
+    "damageTypes": "Piercing",
+    "cost": 20,
+    "weight": 7,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Special",
+        "description": "A quad spear can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Quarterstaff",
+
+    "description": "A simple staff made of wood or metal. A staff used by a wizard or a druid can be used as a quarterstaff.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 0.2,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Versatile (1d8)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Sword",
+    "name": "Rapier",
+
+    "description": "A light, thin sword used for stabbing.",
+    "damage": "1d8",
+    "damageTypes": "Piercing",
+    "cost": 25,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Sword",
+    "name": "Sabre",
+
+    "description": "A thin, curved sword similar to a rapier.",
+    "damage": "1d8",
+    "damageTypes": "Slashing",
+    "cost": 25,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Shortblade",
+    "name": "Sai",
+
+    "description": "A short dagger used for parrying.",
+    "damage": "1d4",
+    "damageTypes": "Piercing",
+    "cost": 3,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Scimitar",
+
+    "description": "A smaller version of a sabre favored by peoples in desert climates.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 10,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Polearm",
+    "name": "Scythe",
+
+    "description": "A large haft ending in a long, curving blade perpendicular to its handle, the origin of which as a weapon stems from tools used by grain farmers.",
+    "damage": "1d8",
+    "damageTypes": "Slashing",
+    "cost": 1,
+    "weight": 6.0,
+    "properties": [
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Club",
+    "name": "Sheath",
+
+    "description": "A sheath used to hold a one-handed sword, the cost of which is included in the cost of swords.",
+    "damage": "1d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 0.05,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Sword",
+    "name": "Shortsword",
+
+    "description": "A small sword with a straight or slightly curved blade.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 1,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Shortblade",
+    "name": "Shuriken",
+
+    "description": "A small, star-shaped throwing weapon.",
+    "damage": "1d4",
+    "damageTypes": "Slashing",
+    "cost": 1,
+    "weight": 0.25,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Special",
+        "description": "You can hold three shurikens in one hand, though each still requires a separate attack."
+      },
+      {
+        "name": "Thrown (20/60)",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Shortblade",
+    "name": "Sickle",
+
+    "description": "A shortsword with a blade shaped like a crescent moon.",
+    "damage": "1d6",
+    "damageTypes": "Piercing or Slashing",
+    "cost": 1,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Spear",
+    "name": "Spear",
+
+    "description": "A staff topped with a stabbing head, favored by guards and soldiers.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 0.2,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Thrown",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      },
+      {
+        "name": "Versatile (1d8)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Sword",
+    "name": "Spiral Rapier",
+
+    "description": "A rapier with a blade shaped like a unicorn's horn.",
+    "damage": "2d4",
+    "damageTypes": "Piercing",
+    "cost": 20,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Versatile (2d5)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Flail",
+    "name": "Springflail",
+
+    "description": "A heavy and spring-loaded flail",
+    "damage": "1d10",
+    "damageTypes": "Bludgeoning",
+    "cost": 20,
+    "weight": 7,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Special",
+        "description": "A springflail can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Shortblade",
+    "name": "Stake",
+
+    "description": "A wooden stake used by monster hunters.",
+    "damage": "1d4",
+    "damageTypes": "Piercing",
+    "cost": 0.05,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Club",
+    "name": "Switch",
+
+    "description": "A small, slender club, often made from a tree branch.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 1,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Polearm",
+    "name": "Swordstaff",
+
+    "description": "A weapon similar to a spear but with a longer head and a proper cutting edge.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 0.2,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Versatile (1d8)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Club",
+    "name": "Terbutje",
+
+    "description": "A broad, flat club, the edges of which are studded with pieces of broken glass or obsidian.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 1,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Club",
+    "name": "Tonfa",
+
+    "description": "A short, thin club that is wielded parallel to one's arm.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Special",
+        "description": "Wielding a tonfa of any type in either hand grants a +1 bonus to your Armor Class. You can only gain this benefit if you are wearing light or no armor."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Tonfa, bladed",
+
+    "description": "A short, thin blade that is wielded parallel to one's arm.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Special",
+        "description": "Wielding a tonfa of any type in either hand grants a +1 bonus to your Armor Class. You can only gain this benefit if you are wearing light or no armor."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Tonfa, spiked",
+
+    "description": "A short, thin spear that is wielded parallel to one's arm.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Special",
+        "description": "Wielding a tonfa of any type in either hand grants a +1 bonus to your Armor Class. You can only gain this benefit if you are wearing light or no armor."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Spear",
+    "name": "Trident",
+
+    "description": "A four pointed spear favored by gladiators and peoples with aquatic or devilish ancestry.",
+    "damage": "1d8",
+    "damageTypes": "Piercing",
+    "cost": 5,
+    "weight": 5,
+    "properties": [
+      {
+        "name": "Thrown",
+        "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
+      },
+      {
+        "name": "Versatile (1d10)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Pickaxe",
+    "name": "War Pick",
+
+    "description": "A pickaxe used as a weapon. A miner's pickaxe can be used as a war pick.",
+    "damage": "2d4",
+    "damageTypes": "Piercing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [],
+    "type": 1
+  },
+  {
+    "class": "Hammer",
+    "name": "Warhammer",
+
+    "description": "A large hammer used as a weapon. A sledgehammer can be used as a warhammer.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning",
+    "cost": 15,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Versatile (1d10)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Hammer",
+    "name": "War Mallet",
+
+    "description": "An oversized warhammer that is difficult to use",
+    "damage": "2d5",
+    "damageTypes": "Bludgeoning",
+    "cost": 20,
+    "weight": 7,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Special",
+        "description": "A war mallet can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Flail",
+    "name": "Whip",
+
+    "description": "A length of leather or chain, some tipped with a flaying head.",
+    "damage": "1d6",
+    "damageTypes": "Slashing",
+    "cost": 2,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Finesse",
+        "description": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Reach",
+        "description": "This weapon adds 5 feet to your reach when used to make a melee attack."
+      }
+    ],
+    "type": 0
+  }
+]

@@ -1,0 +1,28 @@
+.class-link, div > .class-link {
+    display: block;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.header-link {
+    text-align: center;
+}
+
+.class-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 15px;
+    padding: 15px;
+
+    .class-col {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+}

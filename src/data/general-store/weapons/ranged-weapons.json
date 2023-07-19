@@ -1,0 +1,373 @@
+[
+  {
+    "name": "Atltal",
+
+    "description": "A simple catapult used for throwing javelins further and with more force.",
+    "damage": "1d8",
+    "damageTypes": "Piercing",
+    "cost": 1,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 0,
+    "range": 60,
+    "longRange": 180,
+
+    "ammunition": "Javelins"
+  },
+  {
+    "name": "Blowgun",
+
+    "description": "A short pipe made of reed or bamboo that can quietly launch darts.",
+    "damage": "1d4",
+    "damageTypes": "Piercing",
+    "cost": 1,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Covert",
+        "description": "You have advantage on ability checks made to hide this weapon on your person, and other creatures have disadvantage on checks made to find it."
+      },
+      {
+        "name": "Loading",
+        "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+      },
+      {
+        "name": "Special",
+        "description": "Blowgun needles can be coated in poison. One vial of poison can coat ten needles. In addition, if you are hidden and miss an attack with a blowgun, you do not reveal yourself to the target."
+      }
+    ],
+    "type": 0,
+    "range": 25,
+    "longRange": 100,
+
+    "ammunition": "Blowgun Needles"
+  },
+  {
+    "name": "Crossbow, great",
+
+    "description": "A massive, four-armed crossbow that fires heavier bolts.",
+    "damage": "2d8",
+    "damageTypes": "Piercing",
+    "cost": 75,
+    "weight": 25.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Loading",
+        "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 300,
+    "longRange": 1200,
+
+    "ammunition": "Heavy Bolts"
+  },
+  {
+    "name": "Crossbow, hand",
+
+    "description": "A light and small crossbow used in one hand.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      },
+      {
+        "name": "Loading",
+        "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+      }
+    ],
+    "type": 2,
+    "range": 30,
+    "longRange": 120,
+
+    "ammunition": "Bolts"
+  },
+  {
+    "name": "Crossbow, hand (repeating)",
+
+    "description": "A hand crossbow that doesn't need to be reloaded through a miracle of artifice.",
+    "damage": "1d6",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Light",
+        "description": "You can engage in two-weapon fighting with this weapon."
+      }
+    ],
+    "type": 2,
+    "range": 30,
+    "longRange": 120,
+
+    "ammunition": "Bolts"
+  },
+  {
+    "name": "Crossbow, heavy",
+
+    "description": "A large and heavy crossbow.",
+    "damage": "1d10",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 18.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Loading",
+        "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1,
+    "range": 100,
+    "longRange": 400,
+
+    "ammunition": "Bolts"
+  },
+  {
+    "name": "Crossbow, heavy (repeating)",
+
+    "description": "A heavy crossbow equipped with a crank that automatically reloads it.",
+    "damage": "1d10",
+    "damageTypes": "Piercing",
+    "cost": 50,
+    "weight": 18.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 100,
+    "longRange": 400,
+
+    "ammunition": "Bolts"
+  },
+  {
+    "name": "Crossbow, light",
+
+    "description": "A smaller crossbow used by those to whom a heavier crossbow is too expensive or too heavy.",
+    "damage": "1d8",
+    "damageTypes": "Piercing",
+    "cost": 25,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Loading",
+        "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1,
+    "range": 80,
+    "longRange": 320,
+
+    "ammunition": "Bolts"
+  },
+  {
+    "name": "Crossbow, light (repeating)",
+
+    "description": "A light crossbow equipped with a crank that automatically reloads it.",
+    "damage": "1d8",
+    "damageTypes": "Piercing",
+    "cost": 25,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 80,
+    "longRange": 320,
+
+    "ammunition": "Bolts"
+  },
+  {
+    "name": "Longbow",
+
+    "description": "A large, long-ranged bow.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 50,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1,
+    "range": 150,
+    "longRange": 600,
+
+    "ammunition": "Arrows"
+  },
+  {
+    "name": "Longbow, composite",
+
+    "description": "A longbow that is modified to make use of its user's strength.",
+    "damage": "1d8",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 50,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Kensei",
+        "description": "This weapon is a valid choice as a Kensei weapon, even if it normally wouldn't be."
+      },
+      {
+        "name": "Special",
+        "description": "You may add your Strength modifier to the damage of a composite bow."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 150,
+    "longRange": 600,
+
+    "ammunition": "Arrows"
+  },
+  {
+    "name": "Shortbow",
+
+    "description": "A small bow used by those whom to longbows are too heavy or too difficult to use.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 25,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 0,
+    "range": 80,
+    "longRange": 320,
+
+    "ammunition": "Arrows"
+  },
+  {
+    "name": "Shortbow, composite",
+
+    "description": "A shortbow that is modified to make use of its user's strength.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 25,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Special",
+        "description": "You may add your Strength modifier to the damage of a composite bow."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 80,
+    "longRange": 320,
+
+    "ammunition": "Arrows"
+  },
+  {
+    "name": "Sling",
+
+    "description": "A simple leather strap that can launch stones. Ball bearings can also be used as sling ammunition.",
+    "damage": "1d4",
+    "damageTypes": "Bludgeoning",
+    "cost": 0.1,
+    "weight": 0.25,
+    "properties": [],
+    "type": 0,
+    "range": 30,
+    "longRange": 120,
+
+    "ammunition": "Stones"
+  },
+  {
+    "name": "Warbow",
+
+    "description": "A massive elven bow used by only those with the strength to master it.",
+    "damage": "2d6",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 75,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 400,
+    "longRange": 1600,
+
+    "ammunition": "Heavy Arrows"
+  }
+]

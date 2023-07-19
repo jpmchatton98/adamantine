@@ -1,0 +1,32 @@
+<nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+    <thead>
+        <tr>
+            <ng-container *ngFor="let column of getColumns()">
+                <th *ngIf="!excludedColumns?.includes(column)">{{ formatHeader(column) }}</th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemData">
+            <td *ngFor="let column of getColumns()">
+                <ng-container *ngIf="!excludedColumns?.includes(column)">
+                    <ng-container *ngIf="column.toLowerCase().includes('cost') || column.toLowerCase().includes('upkeep')">
+                        <div [innerHTML]="formatCost(item[column])"></div>
+                    </ng-container>
+                    <ng-container *ngIf="column.toLowerCase().includes('weight')">
+                        <div [innerHTML]="formatWeight(item[column])"></div>
+                    </ng-container>
+                    <ng-container *ngIf="column.toLowerCase().includes('time')">
+                        <div [innerHTML]="formatTime(item[column])"></div>
+                    </ng-container>
+                    <ng-container *ngIf="column.toLowerCase().includes('speed')">
+                        <div [innerHTML]="formatSpeed(item[column])"></div>
+                    </ng-container>
+                    <ng-container *ngIf="!column.toLowerCase().includes('cost') && !column.toLowerCase().includes('upkeep') && !column.toLowerCase().includes('weight') && !column.toLowerCase().includes('time') && !column.toLowerCase().includes('speed')">
+                        <div [innerHTML]="item[column]"></div>
+                    </ng-container>
+                </ng-container>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

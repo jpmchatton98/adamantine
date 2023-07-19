@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Bath, cold",
+    "cost": 0.1,
+    "description": "A cold bath will get you clean, but isn't particularly comfortable."
+  },
+  {
+    "name": "Bath, hot",
+    "cost": 1,
+    "description": "A hot bath will be comfortable and will get you more clean than a cold bath."
+  },
+  {
+    "name": "Coach, between towns",
+    "cost": 0.03,
+    "description": "A coach ride between two neighboring towns or cities.  Price listed is per mile."
+  },
+  {
+    "name": "Coach, within a city",
+    "cost": 0.1,
+    "description": "A coach ride between two locations in a large city."
+  },
+  {
+    "name": "Hireling, skilled",
+    "cost": 2,
+    "description": "A skilled craftsman or spellcaster.  Price listed is per day."
+  },
+  {
+    "name": "Hireling, untrained",
+    "cost": 0.2,
+    "description": "A general laborer.  Price listed is per day."
+  },
+  {
+    "name": "Messenger",
+    "cost": 0.02,
+    "description": "A hireling specifically hired to carry a message over long distances.  Price listed is per mile."
+  },
+  {
+    "name": "Laundry",
+    "cost": 0.02,
+    "description": "A service to have your clothing cleaned expertly well."
+  },
+  {
+    "name": "Portrait",
+    "cost": 20,
+    "description": "A painting of a specific person. Some artists may charge more for their work."
+  },
+  {
+    "name": "Travel, airship",
+    "cost": 1,
+    "description": "Travel via an airship.  Price listed is per mile."
+  },
+  {
+    "name": "Travel, ship",
+    "cost": 0.1,
+    "description": "Travel via a passenger ship.  Price listed is per mile."
+  },
+  {
+    "name": "Toll, road or gate",
+    "cost": 0.01,
+    "description": "The average price for a toll in civilized areas."
+  }
+]

@@ -1,0 +1,24 @@
+<nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Range</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemData">
+            <td>{{ item.name }}</td>
+            <td>{{ item.damage }} {{ item.damageTypes }}</td>
+            <td>({{ item.range }}/{{ item.longRange }})</td>
+            <td>{{ formatCost(item.cost) }}</td>
+            <td>{{ formatWeight(item.weight) }}</td>
+            <td>
+                <button *ngFor="let prop of item.properties" nzGhost nz-button nz-popover nzPopoverPlacement="top" nzType="primary" nzPopoverTitle="{{ prop.name }}" nzPopoverContent="{{ prop.description }}">{{ prop.name }}</button>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

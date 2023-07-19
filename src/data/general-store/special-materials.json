@@ -1,0 +1,78 @@
+[
+  {
+    "type": "material",
+    "name": "Adamantine",
+    "description": "This alloy of electrum and adamant, a crystalline metal found in meteorites, is extraordinarily hard and durable. Armor of adamantine can protect against nearly anything, and weapons of adamantine never lose their sharpness.",
+    "armor": {
+      "mediumCost": 3,
+      "heavyCost": 5,
+      "description": "The armor causes critical hits against its wearer to become normal hits."
+    },
+    "weapons": {
+      "cost": 500,
+      "massiveCost": 1000,
+      "description": "The weapon deals double damage against objects and structures and is considered magical when used to attack constructs."
+    }
+  },
+  {
+    "type": "material",
+    "name": "Alchemical Silver",
+    "description": "Mundane silver is good for jewelery making. An alchemist or cleric can treat silver in a special ritual to convert it to alchemical silver, a metal with benefits against undead, shapechangers, and other creatures of the night.",
+    "weapons": {
+      "cost": 100,
+      "massiveCost": 200,
+      "description": "The weapon is considered magical when used to attack fiends, shapechangers, or undead."
+    }
+  },
+  {
+    "type": "material",
+    "name": "Cold Iron",
+    "description": "This variety of iron is found deep within the Underdark. When worked properly, it can be forged at a very low temperature. Cold iron is prized for its benefits against various types of fey creatures.",
+    "weapons": {
+      "cost": 50,
+      "massiveCost": 100,
+      "description": "The weapon is considered magical when used to attack fey."
+    }
+  },
+  {
+    "type": "material",
+    "name": "Dragonsteel",
+    "description": "This form of steel is forged making use of a the breath weapon of a bound or willing dragon, imbuing it with elemental properties.",
+    "armor": {
+      "mediumCost": 2,
+      "heavyCost": 4,
+      "description": "The armor grants resistance to the breath weapon damage type of the dragon used to forge the dragonsteel."
+    },
+    "weapons": {
+      "cost": 100,
+      "massiveCost": 200,
+      "description": "The weapon deals an additional 1d6 damage of the breath weapon damage type of the dragon used to forge the dragonsteel."
+    }
+  },
+  {
+    "type": "material",
+    "name": "Mithral",
+    "description": "Mithral is a light, bluish metal found in the Underdark. It is favored for armor production due to its low density.",
+    "armor": {
+      "mediumCost": 6,
+      "heavyCost": 10,
+      "limits": "any armor that is not fortress plate",
+      "description": "The armor weighs half as much. If such armor has a Strength requirement, that requirement is removed. If such armor imposes disadvantage on Stealth checks, that disadvantage is also removed."
+    },
+    "weapons": {
+      "cost": 1000,
+      "massiveCost": 2000,
+      "description": "If the weapon has the Heavy property, it loses it. If the weapon does not have the Heavy or Two-Handed properties, it gains the Light property."
+    }
+  },
+  {
+    "type": "material",
+    "name": "Titanium",
+    "description": "This sturdy metal is among the rarest of natural metals, and it is favored for armor production.",
+    "armor": {
+      "mediumCost": 2,
+      "heavyCost": 4,
+      "description": "The armor makes you more resistant to critical hits. When an enemy rolls a critical hit with an attack roll against you, they must confirm the additional damage by rolling a d4. On a roll of 1 or 2, any additional damage from the critical hit is negated."
+    }
+  }
+]

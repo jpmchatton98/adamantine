@@ -1,0 +1,66 @@
+
+
+<div [ngClass]="{'border-left': level !== 0}" [style]="'padding-left: ' + level * 10 + 'px'">
+    <h5 *ngIf="!subFeature && !choiceFeature">{{ feature.name }}</h5>
+    <h6 *ngIf="subFeature && !choiceFeature">{{ feature.name }}</h6>
+    <div *ngIf="choiceFeature"><strong>{{ feature.name }}</strong></div>
+
+    <ng-container *ngIf="(feature.prereq && !(feature.prereq?.type === 'choice') && !(feature.prereq?.type === 'subclass')) || (feature.prereqLevel && showPrereqLevel)">
+        <div>
+            <em>Prerequisite: 
+                <ng-container *ngIf="isArray(feature.prereq)">
+                    <ng-container *ngIf="feature.prereq && feature.prereq[0].race">
+                        {{ feature.prereq[0].race.join(', ') }}
+                    </ng-container>
+                    <ng-container *ngIf="feature.prereq && feature.prereq[0].spellcasting">
+                        the ability to cast at least one spell
+                    </ng-container>
+                    <ng-container *ngIf="feature.prereq && feature.prereq[0].light">
+                        proficiency with light armor
+                    </ng-container>
+                    <ng-container *ngIf="feature.prereq && feature.prereq[0].medium">
+                        proficiency with medium armor
+                    </ng-container>
+                    <ng-container *ngIf="feature.prereq && feature.prereq[0].heavy">
+                        proficiency with heavy armor
+                    </ng-container>
+                    <ng-container *ngIf="feature.prereq && feature.prereq[0].martial">
+                        proficiency with at least one martial weapon
+                    </ng-container>
+                    <ng-container *ngIf="feature.prereq && (feature.prereq[0].str || feature.prereq[0].dex || feature.prereq[0].con || feature.prereq[0].int || feature.prereq[0].wis || feature.prereq[0].cha)">
+                        {{ getFeatAbilityPrereq(feature.prereq) }}
+                    </ng-container>
+                </ng-container>
+                <ng-container *ngIf="feature.prereq && !(feature.prereq?.type === 'choice') && !(feature.prereq?.type === 'subclass')">
+                    {{ feature.prereq.value }}
+                </ng-container>
+                <ng-container *ngIf="feature.prereqLevel && showPrereqLevel">
+                    <ng-container [ngSwitch]="feature.prereqLevel">
+                        <td *ngSwitchCase="1">1st-level</td>
+                        <td *ngSwitchCase="2">2nd-level</td>
+                        <td *ngSwitchCase="3">3rd-level</td>
+                        <td *ngSwitchDefault>{{ feature.prereqLevel }}th-level</td>
+                    </ng-container>
+                </ng-container>
+            </em>
+        </div>
+    </ng-container>
+
+    <p [innerHTML]="feature.description"></p>
+
+    <ng-container *ngIf="feature.subFeatures">
+        <ng-container *ngFor="let subFeature of feature.subFeatures">
+            <app-display-feature [feature]="subFeature" [subFeature]="true" [level]="level + 1"></app-display-feature>
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="feature.choices">
+        <ng-container *ngIf="isArray(feature.choices); else singleChoice">
+            <ng-container *ngFor="let choice of feature.choices">
+                <app-display-choice [choice]="choice" [subChoice]="choiceFeature" [level]="level + 1"></app-display-choice>
+            </ng-container>
+        </ng-container>
+        <ng-template #singleChoice>
+            <app-display-choice [choice]="feature.choices" [subChoice]="choiceFeature" [level]="level + 1"></app-display-choice>
+        </ng-template>
+    </ng-container>
+</div>

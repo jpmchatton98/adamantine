@@ -1,0 +1,20 @@
+<nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Bundle Size</th>
+            <th>Bundle Cost</th>
+            <th>Individual Cost</th>
+            <th>Weight</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemData">
+            <td>{{ item.name }}</td>
+            <td>{{ item.bundleSize }}</td>
+            <td>{{ formatCost(item.cost * item.bundleSize) }}</td>
+            <td>{{ formatCost(item.cost) }}</td>
+            <td>{{ formatWeight(item.weight) }}</td>
+        </tr>
+    </tbody>
+</nz-table>

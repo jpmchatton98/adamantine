@@ -1,0 +1,42 @@
+<div class="spell-wrapper">
+    <h3>{{ spell.name }}</h3>
+
+    <em>
+        <ng-container *ngIf="spell.level === 0">
+            {{ spell.school }} cantrip
+        </ng-container>
+        <ng-container *ngIf="spell.level === 1">
+            1st-level {{ spell.school.toLowerCase() }}
+        </ng-container>
+        <ng-container *ngIf="spell.level === 2">
+            2nd-level {{ spell.school.toLowerCase() }}
+        </ng-container>
+        <ng-container *ngIf="spell.level === 3">
+            3rd-level {{ spell.school.toLowerCase() }}
+        </ng-container>
+        <ng-container *ngIf="spell.level >= 4">
+            {{ spell.level }}th-level {{ spell.school.toLowerCase() }}
+        </ng-container>
+
+        <span *ngIf="spell.ritual">(ritual)</span>
+    </em>
+
+    <ul>
+        <li><strong>Casting Time:</strong> {{ spell.castingTime }}</li>
+        <li><strong>Range:</strong> {{ spell.range }}</li>
+        <li><strong>Components:</strong> {{ spell.components }}</li>
+        <li><strong>Duration:</strong> {{ spell.duration }}</li>
+    </ul>
+
+    <div>
+        <p [innerHTML]="spell.description"></p>
+    </div>
+
+    <div *ngIf="spell.higherLevels">
+        <h5>At Higher Levels</h5>
+        <p [innerHTML]="spell.higherLevels"></p>
+    </div>
+
+    <h5>Lists</h5>
+    {{ spell.lists.sort().join(', ') }}
+</div>

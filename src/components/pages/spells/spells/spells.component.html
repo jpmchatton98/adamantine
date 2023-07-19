@@ -1,0 +1,49 @@
+<ul id="tabList" class="nav nav-tabs" role="tablist">
+    <ng-container *ngFor="let level of spells; let i = index">
+        <li *ngIf="i <= (maxLevel ?? 10) && !(i === 0 && level.name === 'Cantrips' && !(cantrips ?? true))" class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': i === tabIndex}" (click)="tabIndex = i">
+                {{ level.name }}
+            </button>
+        </li>
+    </ng-container>
+</ul>
+<div id="content" class="tab-content">
+    <ng-container *ngFor="let level of spells; let i = index">
+        <div *ngIf="i <= (maxLevel ?? 10) && !(i === 0 && level.name === 'Cantrips' && !(cantrips ?? true))" class="tab-pane" [ngClass]="{'active show': i === tabIndex}">
+            <nz-table [nzData]="level.spells" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+                <thead>
+                    <tr>
+                        <th>Spell</th>
+                        <th>School</th>
+                        <th>Casting Time</th>
+                        <th>Range</th>
+                        <th>Duration</th>
+                        <th>Components</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let spell of level.spells">
+                        <td>
+                            <a href="/spell/{{ spell.index }}">
+                                {{ spell.name }}
+                            </a>
+                            <sup *ngIf="elemental">
+                                {{ spell.element }}
+                            </sup>
+                        </td>
+                        <td>{{ spell.school }}</td>
+                        <td>
+                            {{ spell.castingTime.split(',')[0] }}
+                            <sup *ngIf="spell.ritual">
+                                R
+                            </sup>
+                        </td>
+                        <td>{{ spell.range }}</td>
+                        <td>{{ spell.duration }}</td>
+                        <td>{{ spell.components.split(' (')[0] }}</td>
+                    </tr>
+                </tbody>
+            </nz-table>
+        </div>
+    </ng-container>
+</div>

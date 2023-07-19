@@ -1,0 +1,27 @@
+<div [ngClass]="{'border-left': level !== 0}" [style]="'padding-left: ' + level * 10 + 'px'">
+<div><strong>{{ feature?.name }}</strong></div>
+    <p [innerHTML]="feature?.description"></p>
+
+    <ng-container *ngIf="feature?.subFeatures">
+        <ng-container *ngFor="let subFeature of feature?.subFeatures">
+            <app-sheet-feature [characterObj]="characterObj" [feature]="subFeature" [level]="level + 1" [characterLevel]="characterLevel"></app-sheet-feature>
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="feature?.choices">
+        <ng-container *ngIf="isArray(feature?.choices); else singleChoice">
+            <ng-container *ngFor="let choice of feature?.choices">
+                <div *ngIf="!choice.prereq || choice.prereq <= characterLevel">
+                    <app-sheet-choice [characterObj]="characterObj" [choice]="choice" [level]="level + 1" [characterLevel]="characterLevel"></app-sheet-choice>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-template #singleChoice>
+            <div *ngIf="!feature?.choices.prereq || feature?.choices.prereq <= characterLevel">
+                <app-sheet-choice [characterObj]="characterObj" [choice]="feature?.choices" [level]="level + 1" [characterLevel]="characterLevel"></app-sheet-choice>
+            </div>
+        </ng-template>
+    </ng-container>
+    <div *ngIf="feature?.listed">
+        <app-sheet-listed [characterObj]="characterObj" [listed]="feature?.listed" [level]="level" [characterLevel]="characterLevel"></app-sheet-listed>
+    </div>
+</div>

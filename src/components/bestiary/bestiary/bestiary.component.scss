@@ -1,0 +1,14 @@
+.type {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.search {
+    padding-top: 30px;
+}
+
+nz-select, input {
+    width: 100%;
+}

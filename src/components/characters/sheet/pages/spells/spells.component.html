@@ -1,0 +1,62 @@
+<div *ngFor="let level of characterSpells">
+    <h6>{{ level.name }}</h6>
+    <nz-table [nzData]="level.spells" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Casting Time</th>
+                <th>Range</th>
+                <th>Hit / DC</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let spell of level.spells" class="spell" (click)="openModal(spell.spell.name)">
+                <td class="spell-name">
+                    <div>
+                        {{ spell.spell.name }}
+                        <sup *ngIf="spell.spell.duration.includes('Concentration')" title="Concentration">
+                            C
+                        </sup>
+                    </div>
+                    <div class="subheader">
+                        {{ spell.source?.join(' - ') }}
+                    </div>
+                    <div class="subheader">
+                        {{ spell.ability.toUpperCase() }}
+                    </div>
+                </td>
+                <td class="casting-time">
+                    {{ spell.spell.castingTime.split(',')[0] }}
+                    <sup *ngIf="spell.spell.ritual" title="Ritual">
+                        R
+                    </sup>
+                </td>
+                <td class="range" [innerHTML]="getRangeString(spell.spell)"></td>
+                <td class="hit-dc">
+                    <ng-container *ngIf="spell.spell.type === 'attack'">
+                        {{ formatModifier(getSpellAttackMod(spell.ability)) }}
+                    </ng-container>
+                    <ng-container *ngIf="spell.spell.type === 'save'">
+                        DC {{ getSpellDC(spell.ability) }} {{ spell.spell.save.toUpperCase() }}
+                    </ng-container>
+                    <ng-container *ngIf="spell.spell.type === ['attack', 'save']">
+                        {{ formatModifier(getSpellAttackMod(spell.ability)) }} / DC {{ getSpellDC(spell.ability) }} {{ spell.spell.save.toUpperCase() }}
+                    </ng-container>
+                    <ng-container *ngIf="spell.spell.type === undefined">
+                        -
+                    </ng-container>
+                </td>
+                <td class="effect">
+                    <div [innerHTML]="getEffectString(spell.spell, spell.ability)"></div>
+                </td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>
+
+<nz-modal [(nzVisible)]="modalVisible" [nzTitle]="modalOption" [nzCancelText]="null" [nzClosable]="false" [nzOkText]="null" (nzOnCancel)="modalVisible = false">
+    <ng-container *nzModalContent>
+        <app-spell [name]="modalOption"></app-spell>
+    </ng-container>
+</nz-modal>

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Alms Box",
+    "cost": 1,
+    "weight": 1,
+    "capacity": "0.25 ft<sup>3</sup>",
+    "description": "A small box for religious donations, typically found in a priest's pack."
+  },
+  {
+    "name": "Backpack",
+    "cost": 2,
+    "weight": 5,
+    "capacity": "1 ft<sup>3</sup>",
+    "description": "A backpack is a leather pack carried on the back, typically with straps to secure it."
+  },
+  {
+    "name": "Barrel",
+    "cost": 2,
+    "weight": 70,
+    "capacity": "40 gal or 4 ft<sup>3</sup>",
+    "description": "A heavy wooden barrel banded with iron."
+  },
+  {
+    "name": "Basket",
+    "cost": 0.4,
+    "weight": 2,
+    "capacity": "2 ft<sup>3</sup>",
+    "description": "A woven basket."
+  },
+  {
+    "name": "Bottle",
+    "cost": 2,
+    "weight": 2,
+    "capacity": "1.5 pt",
+    "description": "A glass bottle used for storing liquids."
+  },
+  {
+    "name": "Bucket",
+    "cost": 0.02,
+    "weight": 2,
+    "capacity": "3 gal",
+    "description": "A metal bucket."
+  },
+  {
+    "name": "Chest",
+    "cost": 5,
+    "weight": 25,
+    "capacity": "12 ft<sup>3</sup>",
+    "description": "A heavy wooden chest."
+  },
+  {
+    "name": "Flask",
+    "cost": 0.01,
+    "weight": 1,
+    "capacity": "1 pt",
+    "description": "A metal flask used for storing drinking liquid."
+  },
+  {
+    "name": "Jug",
+    "cost": 0.01,
+    "weight": 4,
+    "capacity": "1 gal",
+    "description": "A clay or glass jug."
+  },
+  {
+    "name": "Keg",
+    "cost": 30,
+    "weight": 35,
+    "capacity": "20 gal or 2 ft<sup>3</sup>",
+    "description": "A lighter wooden barrel, usually used for storing liquids or black powder."
+  },
+  {
+    "name": "Pot",
+    "cost": 2,
+    "weight": 10,
+    "capacity": "1 gal",
+    "description": "A heavy iron pot used for cooking."
+  },
+  {
+    "name": "Pouch",
+    "cost": 0.5,
+    "weight": 1,
+    "capacity": "0.2 ft<sup>3</sup>",
+    "description": "A leather drawstring pouch."
+  },
+  {
+    "name": "Sack",
+    "cost": 0.01,
+    "weight": 0.5,
+    "capacity": "1 ft<sup>3</sup>",
+    "description": "A canvas or burlap sack."
+  },
+  {
+    "name": "Vial",
+    "cost": 1,
+    "weight": 0.5,
+    "capacity": "4 fl oz",
+    "description": "A small glass vial, used for storing liquids."
+  },
+  {
+    "name": "Waterskin",
+    "cost": 0.2,
+    "weight": 1,
+    "capacity": "4 pt",
+    "description": "A leather pouch with a drinking spout. A waterskin full of water weighs 5 lbs."
+  }
+]

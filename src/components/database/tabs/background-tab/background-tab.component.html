@@ -1,0 +1,19 @@
+<div>
+    When you are creating a character, as part of your character's background, they gain the following things:
+    <ul>
+        <li>Proficiency in two skills of your choice</li>
+        <li>Proficiency in two tools or languages of your choice</li>
+        <li>A single feat</li>
+        <li>50 gp to spend on equipment as you see fit</li>
+        <li>A trinket</li>
+        <li>One of the following roleplay features:</li>
+    </ul>
+    <nz-select nzShowSearch [nzShowArrow]="false"
+        [(ngModel)]="background" [nzOptions]="backgroundFeatures">
+    </nz-select>
+
+    <div>
+        <h5>{{ getBackground().name }}</h5>
+        <p [innerHTML]="getBackground().description"></p>
+    </div>
+</div>

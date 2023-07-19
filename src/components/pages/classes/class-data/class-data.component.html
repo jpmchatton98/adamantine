@@ -1,0 +1,11 @@
+<ng-container *ngIf="classData">
+    <app-class-table [class]="classData"></app-class-table>
+
+    <ng-container *ngFor="let level of levelKeys(classData.features)">
+        <ng-container *ngIf="level <= (classData.maxLevel ?? 20)">
+            <ng-container *ngFor="let feature of classData.features[level]">
+                <app-display-feature [feature]="feature"></app-display-feature>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+</ng-container>

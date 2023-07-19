@@ -1,0 +1,838 @@
+[
+  {
+    "name": "Bounty Hunter's Pack",
+    "cost": 40,
+    "contents": "A chest, 2 map cases, a portable ram, a hammer, 10 ft of chain, 50 ft of hempen rope, a bullseye lantern, a lock, a set of manacles, 5 flasks of oil, 10 pitons, 10 iron spikes, 10 sheets of parchment, a bottle of ink, 5 ink pens, 5 days rations, and a waterskin",
+    "contentsSheet": [
+      {
+        "item": "Chest",
+        "quantity": 1
+      },
+      {
+        "item": "Map Case",
+        "quantity": 2
+      },
+      {
+        "item": "Ram",
+        "quantity": 1
+      },
+      {
+        "item": "Hammer",
+        "quantity": 1
+      },
+      {
+        "item": "Chain (10 ft)",
+        "quantity": 1
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      },
+      {
+        "item": "Lantern, Bullseye",
+        "quantity": 1
+      },
+      {
+        "item": "Manacles",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 5
+      },
+      {
+        "item": "Piton",
+        "quantity": 10
+      },
+      {
+        "item": "Nail",
+        "quantity": 10
+      },
+      {
+        "item": "Parchment",
+        "quantity": 10
+      },
+      {
+        "item": "Ink",
+        "quantity": 1
+      },
+      {
+        "item": "Ink Pen",
+        "quantity": 5
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 5
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Lock",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Burglar's Pack",
+    "cost": 16,
+    "contents": "A backpack, 1000 ball bearings, 10 ft of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, a waterskin, and 50 ft of hempen rope",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Ball Bearings (1000)",
+        "quantity": 1
+      },
+      {
+        "item": "String (10 ft)",
+        "quantity": 1
+      },
+      {
+        "item": "Bell",
+        "quantity": 1
+      },
+      {
+        "item": "Candle",
+        "quantity": 5
+      },
+      {
+        "item": "Crowbar",
+        "quantity": 1
+      },
+      {
+        "item": "Hammer",
+        "quantity": 1
+      },
+      {
+        "item": "Piton",
+        "quantity": 10
+      },
+      {
+        "item": "Lantern, Hooded",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 2
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 5
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Construction Pack",
+    "cost": 20,
+    "contents": "A backpack, a crowbar, a hammer, 5 candles, 5 days rations, a waterskin, a bedroll, a bottle of ink, an ink pen, 10 sheets of paper, and a tinderbox",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Crowbar",
+        "quantity": 1
+      },
+      {
+        "item": "Hammer",
+        "quantity": 1
+      },
+      {
+        "item": "Candle",
+        "quantity": 5
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 5
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "item": "Ink",
+        "quantity": 1
+      },
+      {
+        "item": "Ink Pen",
+        "quantity": 1
+      },
+      {
+        "item": "Paper",
+        "quantity": 10
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Detective's Pack",
+    "cost": 40,
+    "contents": "A chest, a set of fine clothes, an abacus, 5 candles, 2 map cases, a crowbar, 10 sheets of paper, 10 pieces of chalk, a bottle of ink, 5 ink pens, a steel mirror, a block of sealing wax, and a signal whistle",
+    "contentsSheet": [
+      {
+        "item": "Chest",
+        "quantity": 1
+      },
+      {
+        "item": "Clothes, fine",
+        "quantity": 1
+      },
+      {
+        "item": "Abacus",
+        "quantity": 1
+      },
+      {
+        "item": "Candle",
+        "quantity": 5
+      },
+      {
+        "item": "Map Case",
+        "quantity": 2
+      },
+      {
+        "item": "Crowbar",
+        "quantity": 1
+      },
+      {
+        "item": "Paper",
+        "quantity": 10
+      },
+      {
+        "item": "Chalk",
+        "quantity": 10
+      },
+      {
+        "item": "Ink",
+        "quantity": 1
+      },
+      {
+        "item": "Ink Pen",
+        "quantity": 5
+      },
+      {
+        "item": "Mirror",
+        "quantity": 1
+      },
+      {
+        "item": "Sealing Wax",
+        "quantity": 1
+      },
+      {
+        "item": "Signal Whistle",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Diplomat's Pack",
+    "cost": 39,
+    "contents": "A chest, 2 map cases, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, a block of sealing wax, and a bar of soap",
+    "contentsSheet": [
+      {
+        "item": "Chest",
+        "quantity": 1
+      },
+      {
+        "item": "Map Case",
+        "quantity": 2
+      },
+      {
+        "item": "Clothes, fine",
+        "quantity": 1
+      },
+      {
+        "item": "Ink",
+        "quantity": 1
+      },
+      {
+        "item": "Ink Pen",
+        "quantity": 1
+      },
+      {
+        "item": "Lamp",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 2
+      },
+      {
+        "item": "Paper",
+        "quantity": 5
+      },
+      {
+        "item": "Perfume",
+        "quantity": 1
+      },
+      {
+        "item": "Sealing Wax",
+        "quantity": 1
+      },
+      {
+        "item": "Soap",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Dungeoneer's Pack",
+    "cost": 12,
+    "contents": "A backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days rations, a waterskin, and 50 ft of hempen rope",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Crowbar",
+        "quantity": 1
+      },
+      {
+        "item": "Hammer",
+        "quantity": 1
+      },
+      {
+        "item": "Piton",
+        "quantity": 10
+      },
+      {
+        "item": "Torch",
+        "quantity": 10
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 10
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Entertainer's Pack",
+    "cost": 40,
+    "contents": "A backpack, a bedroll, 2 costumes, 5 candles, 5 days rations, a waterskin, and a disguise kit",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "item": "Clothes, costume",
+        "quantity": 2
+      },
+      {
+        "item": "Candle",
+        "quantity": 5
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 5
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Disguise Kit",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Explorer's Pack",
+    "cost": 10,
+    "contents": "A backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days rations, a waterskin, and 50 ft of hempen rope",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "item": "Mess Kit",
+        "quantity": 1
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Torch",
+        "quantity": 10
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 10
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Hunter's Pack",
+    "cost": 40,
+    "contents": "A backpack, a bedroll, a mess kit, a tinderbox, a skillet, a waterskin, a mastiff, 2 hunting traps, and 50 ft of hempen rope",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "item": "Mess Kit",
+        "quantity": 1
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Skillet, Iron",
+        "quantity": 1
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Mastiff",
+        "quantity": 1
+      },
+      {
+        "item": "Hunting Trap",
+        "quantity": 2
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Lumberjack's Pack",
+    "cost": 17,
+    "contents": "A battleaxe, saw, 3 splitter wedges, a pair of thick gloves, 10 pieces of chalk, a waterskin, and 3 flasks of oil",
+    "contentsSheet": [
+      {
+        "item": "Battleaxe",
+        "quantity": 1
+      },
+      {
+        "item": "Saw",
+        "quantity": 1
+      },
+      {
+        "item": "Splitter Wedge",
+        "quantity": 3
+      },
+      {
+        "item": "Gloves",
+        "quantity": 1
+      },
+      {
+        "item": "Chalk",
+        "quantity": 10
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "name": "Monster Hunter's Pack",
+    "cost": 33,
+    "contents": "A chest, a crowbar, a hammer, 3 wooden stakes, a holy symbol, a flask of holy water, a set of manacles, a steel mirror, a flask of oil, a tinderbox, and 3 torches",
+    "contentsSheet": [
+      {
+        "item": "Chest",
+        "quantity": 1
+      },
+      {
+        "item": "Crowbar",
+        "quantity": 1
+      },
+      {
+        "item": "Hammer",
+        "quantity": 1
+      },
+      {
+        "item": "Stake",
+        "quantity": 3
+      },
+      {
+        "item": "Emblem",
+        "quantity": 1
+      },
+      {
+        "item": "Holy Water",
+        "quantity": 1
+      },
+      {
+        "item": "Manacles",
+        "quantity": 1
+      },
+      {
+        "item": "Mirror",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 1
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Torch",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "name": "Ninja's Pack",
+    "cost": 40,
+    "contents": "A backpack, 1000 ball bearings, 20 caltrops, 10 ft of string, 2 costumes, a grappling hook, a map case, a bottle of ink, an ink pen, 10 sheets of paper, 5 candles, 10 pitons, 5 days rations, a tinderbox, and a waterskin",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Ball Bearings (1000)",
+        "quantity": 1
+      },
+      {
+        "item": "Caltrops (20)",
+        "quantity": 1
+      },
+      {
+        "item": "String (10 ft)",
+        "quantity": 1
+      },
+      {
+        "item": "Clothes, costume",
+        "quantity": 2
+      },
+      {
+        "item": "Grappling Hook",
+        "quantity": 1
+      },
+      {
+        "item": "Map Case",
+        "quantity": 1
+      },
+      {
+        "item": "Ink",
+        "quantity": 1
+      },
+      {
+        "item": "Ink Pen",
+        "quantity": 1
+      },
+      {
+        "item": "Paper",
+        "quantity": 10
+      },
+      {
+        "item": "Candle",
+        "quantity": 5
+      },
+      {
+        "item": "Piton",
+        "quantity": 10
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 5
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Outdoorsman's Pack",
+    "cost": 17,
+    "contents": "A backpack, a bedroll, 2 sets of common clothes, a block and tackle, a bucket, 50 ft of hempen rope, 5 candles, angler's tools, 2 hunting traps, a jug, a lamp, 5 flasks of oil, a mess kit, 10 pitons, an iron pot, a shovel, a tent, a tinderbox, a whetstone, a small knife, 5 days rations, and a waterskin",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "item": "Clothes, common",
+        "quantity": 2
+      },
+      {
+        "item": "Block & Tackle",
+        "quantity": 1
+      },
+      {
+        "item": "Bucket",
+        "quantity": 1
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      },
+      {
+        "item": "Candle",
+        "quantity": 5
+      },
+      {
+        "item": "Angler's Tools",
+        "quantity": 1
+      },
+      {
+        "item": "Hunting Trap",
+        "quantity": 2
+      },
+      {
+        "item": "Jug",
+        "quantity": 1
+      },
+      {
+        "item": "Lamp",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 5
+      },
+      {
+        "item": "Mess Kit",
+        "quantity": 1
+      },
+      {
+        "item": "Piton",
+        "quantity": 10
+      },
+      {
+        "item": "Pot",
+        "quantity": 1
+      },
+      {
+        "item": "Shovel",
+        "quantity": 1
+      },
+      {
+        "item": "Tent",
+        "quantity": 1
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Whetstone",
+        "quantity": 1
+      },
+      {
+        "item": "Dagger",
+        "quantity": 1
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 5
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Priest's Pack",
+    "cost": 19,
+    "contents": "A backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days rations, and a waterskin",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Blanket",
+        "quantity": 1
+      },
+      {
+        "item": "Candle",
+        "quantity": 10
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Alms Box",
+        "quantity": 1
+      },
+      {
+        "item": "Incense, ceremonial",
+        "quantity": 2
+      },
+      {
+        "item": "Censer",
+        "quantity": 1
+      },
+      {
+        "item": "Clothes, vestments",
+        "quantity": 1
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 2
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Scholar's Pack",
+    "cost": 40,
+    "contents": "A backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife",
+    "contentsSheet": [
+      {
+        "item": "Backpack",
+        "quantity": 1
+      },
+      {
+        "item": "Book",
+        "quantity": 1
+      },
+      {
+        "item": "Ink",
+        "quantity": 1
+      },
+      {
+        "item": "Ink Pen",
+        "quantity": 1
+      },
+      {
+        "item": "Parchment",
+        "quantity": 10
+      },
+      {
+        "item": "Dagger",
+        "quantity": 1
+      },
+      {
+        "item": "Bag of Sand",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Wrangler's Pack",
+    "cost": 19,
+    "contents": "Saddlebags, a bedroll, a tinderbox, a hooded lantern, 2 flasks of oil, an iron skillet, 10 days rations, a waterskin, 50 ft hempen rope, and a bandana",
+    "contentsSheet": [
+      {
+        "item": "Saddlebags",
+        "quantity": 1
+      },
+      {
+        "item": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "item": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "item": "Lantern, Hooded",
+        "quantity": 1
+      },
+      {
+        "item": "Oil",
+        "quantity": 2
+      },
+      {
+        "item": "Skillet, Iron",
+        "quantity": 1
+      },
+      {
+        "item": "Rations, day",
+        "quantity": 10
+      },
+      {
+        "item": "Waterskin",
+        "quantity": 1
+      },
+      {
+        "item": "Rope, Hempen (50 ft)",
+        "quantity": 1
+      },
+      {
+        "item": "Bandana",
+        "quantity": 1
+      }
+    ]
+  }
+]

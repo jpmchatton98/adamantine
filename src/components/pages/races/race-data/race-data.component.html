@@ -1,0 +1,72 @@
+<ng-container *ngIf="race">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Trait
+                </th>
+                <th>
+                    Value
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="asiString">
+                <td>Ability Score Increase</td>
+                <td>{{ asiString }}</td>
+            </tr>
+            <tr *ngIf="race.maturity !== undefined">
+                <td>Maturity</td>
+                <td> {{ race.maturity }} yrs </td>
+            </tr>
+            <tr>
+                <td>Lifespan</td>
+                <td *ngIf="race.lifespan !== -1"> {{ race.lifespan }} yrs </td>
+                <td *ngIf="race.lifespan === -1">&infin;</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td> {{ race.height[0] }} - {{ race.height[1] }} ft </td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td> {{ race.weight[0] }} - {{ race.weight[1] }} lbs </td>
+            </tr>
+            <tr>
+                <td>Creature Type</td>
+                <td> {{ race.type }} </td>
+            </tr>
+            <tr>
+                <td>Size</td>
+                <ng-container [ngSwitch]="race.size">
+                    <td *ngSwitchCase="-2">Tiny</td>
+                    <td *ngSwitchCase="-1">Small</td>
+                    <td *ngSwitchCase="0">Medium</td>
+                    <td *ngSwitchCase="1">Large</td>
+                    <td *ngSwitchDefault>
+                        <ng-container *ngIf="race.size.options">
+                            {{ race.size.options[0] }} or {{ race.size.options[1] }}
+                        </ng-container>
+                    </td>
+                </ng-container>
+            </tr>
+            <tr>
+                <td>Walking Speed</td>
+                <td> {{ race.speed }} feet </td>
+            </tr>
+            <tr *ngIf="race.darkvision">
+                <td>Darkvision</td>
+                <td> {{ race.darkvision }} feet </td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td> {{ languageString }} </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 *ngIf="race.traits?.length > 0">Traits</h4>
+    <ng-container *ngFor="let trait of race.traits">
+        <app-display-feature [feature]="trait"></app-display-feature>
+    </ng-container>
+</ng-container>

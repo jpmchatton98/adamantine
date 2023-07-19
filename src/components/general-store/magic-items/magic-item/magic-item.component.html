@@ -1,0 +1,16 @@
+<h3>{{ itemData.name }}</h3>
+<div>
+    <em>
+        {{ capitalize(itemData.type) }}, {{ rarities[itemData.rarity] }}
+        <ng-container *ngIf="itemData.attunement">
+            <ng-container *ngIf="itemData.attunementDesc">
+                (requires attunement {{ itemData.attunementDesc }})
+            </ng-container>
+            <ng-container *ngIf="!itemData.attunementDesc">
+                (requires attunement)
+            </ng-container>
+        </ng-container>
+    </em>
+</div>
+
+<div [innerHTML]="itemData.description"></div>

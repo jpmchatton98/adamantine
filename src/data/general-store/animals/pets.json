@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Capybara",
+    "cost": 45,
+    "size": -1,
+    "speed": 30,
+    "weight": 100,
+    "description": "A giant, peace-loving rodent similar in appearance to a beaver."
+  },
+  {
+    "name": "Cat",
+    "cost": 2,
+    "size": -2,
+    "speed": 40,
+    "weight": 10,
+    "description": "A small feline useful for pest control."
+  },
+  {
+    "name": "Dog",
+    "cost": 2,
+    "size": 0.25,
+    "speed": 30,
+    "description": "A canine used for companionship or sometimes hard labor such as farm work or hunting."
+  },
+  {
+    "name": "Falcon",
+    "cost": 25,
+    "size": -2,
+    "speed": 60,
+    "weight": 2,
+    "description": "A commonly used hunting bird."
+  },
+  {
+    "name": "Hawk",
+    "cost": 25,
+    "size": -2,
+    "speed": 60,
+    "weight": 1.5,
+    "description": "A smaller hunting bird."
+  },
+  {
+    "name": "Owl",
+    "cost": 35,
+    "size": -2,
+    "speed": 60,
+    "weight": 3.5,
+    "description": "A nocturnal bird of prey with excellent eyesight, usually used for hunting."
+  },
+  {
+    "name": "Pigeon",
+    "cost": 10,
+    "size": -2,
+    "speed": 60,
+    "weight": 1,
+    "description": "A common bird used to transport messages over long distances."
+  },
+  {
+    "name": "Rat",
+    "cost": 10,
+    "size": -2,
+    "speed": 20,
+    "weight": 1,
+    "description": "A large rodent."
+  },
+  {
+    "name": "Raven",
+    "cost": 15,
+    "size": -2,
+    "speed": 50,
+    "weight": 3,
+    "description": "A highly intelligent black bird favored by wealthy people."
+  }
+]

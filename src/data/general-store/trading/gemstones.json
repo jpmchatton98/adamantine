@@ -1,0 +1,257 @@
+[
+  {
+    "name": "Azurite",
+    "cost": 10,
+    "description": "A soft, semi-precious copper ore with a deep blue color."
+  },
+  {
+    "name": "Banded Agate",
+    "cost": 10,
+    "description": "An orange semi-precious stone with bands of grey and brown."
+  },
+  {
+    "name": "Blue Quartz",
+    "cost": 10,
+    "description": "A common blue crystal."
+  },
+  {
+    "name": "Eye Agate",
+    "cost": 10,
+    "description": "A gemstone with a raindrop pattern of whites or greys."
+  },
+  {
+    "name": "Hematite",
+    "cost": 10,
+    "description": "A shiny, black iron ore with magnetic properties."
+  },
+  {
+    "name": "Lapis Lazuli",
+    "cost": 10,
+    "description": "A deep blue semi-precious stone with an intense color."
+  },
+  {
+    "name": "Malachite",
+    "cost": 10,
+    "description": "A green copper ore regarded as a semi-precious stone."
+  },
+  {
+    "name": "Moss Agate",
+    "cost": 10,
+    "description": "A white gemstone with fractal green patterns resembling moss."
+  },
+  {
+    "name": "Obsidian",
+    "cost": 10,
+    "description": "A shiny, black, brittle volcanic rock.  When chipped, obsidian can become extremely sharp."
+  },
+  {
+    "name": "Rhodochrosite",
+    "cost": 10,
+    "description": "A rosy gemstone with streaks of white."
+  },
+  {
+    "name": "Tiger's Eye",
+    "cost": 10,
+    "description": "A reddish brown gemstone with a single white streak through the middle."
+  },
+  {
+    "name": "Turquoise",
+    "cost": 10,
+    "description": "A blue-green semi-precious stone with brown or tan marbling."
+  },
+  {
+    "name": "Bloodstone",
+    "cost": 50,
+    "description": "A black stone mottled with patches of reddish orange."
+  },
+  {
+    "name": "Carnelian",
+    "cost": 50,
+    "description": "A brownish-red semi-precious gemstone."
+  },
+  {
+    "name": "Chalcedony",
+    "cost": 50,
+    "description": "A waxy, brownish gemstone."
+  },
+  {
+    "name": "Chrysoprase",
+    "cost": 50,
+    "description": "An apple green gemstone."
+  },
+  {
+    "name": "Citrine",
+    "cost": 50,
+    "description": "A yellow form of quartz."
+  },
+  {
+    "name": "Jasper",
+    "cost": 50,
+    "description": "A reddish white gemstone."
+  },
+  {
+    "name": "Moonstone",
+    "cost": 50,
+    "description": "A milky white gemstone with connections to the Feywild."
+  },
+  {
+    "name": "Onyx",
+    "cost": 50,
+    "description": "A stone composed of bands of white and black."
+  },
+  {
+    "name": "Quartz",
+    "cost": 50,
+    "description": "A common mineral with a milky white color."
+  },
+  {
+    "name": "Sardonyx",
+    "cost": 50,
+    "description": "A form of onyx with a red tint."
+  },
+  {
+    "name": "Star Rose Quartz",
+    "cost": 50,
+    "description": "A rosy form of quartz with a star pattern."
+  },
+  {
+    "name": "Zircon",
+    "cost": 50,
+    "description": "A reddish brown gemstone."
+  },
+  {
+    "name": "Amber",
+    "cost": 100,
+    "description": "An orange gemstone composed of fossilized tree sap."
+  },
+  {
+    "name": "Amethyst",
+    "cost": 100,
+    "description": "A purple formed of quartz."
+  },
+  {
+    "name": "Chrysoberyl",
+    "cost": 100,
+    "description": "A yellowish-green gemstone related to beryl."
+  },
+  {
+    "name": "Coral",
+    "cost": 100,
+    "description": "Actually a living creature found in warm water, which covers its body with natural stone."
+  },
+  {
+    "name": "Garnet",
+    "cost": 100,
+    "description": "A deep red gemstone."
+  },
+  {
+    "name": "Jade",
+    "cost": 100,
+    "description": "A grayish green, opaque gemstone."
+  },
+  {
+    "name": "Jet",
+    "cost": 100,
+    "description": "A pure black, shiny gemstone."
+  },
+  {
+    "name": "Pearl",
+    "cost": 100,
+    "description": "A round, milky white gemstone produced by clams."
+  },
+  {
+    "name": "Spinel",
+    "cost": 100,
+    "description": "A red gemstone similar to a ruby."
+  },
+  {
+    "name": "Tourmaline",
+    "cost": 100,
+    "description": "A dark yellow or indigo gemstone."
+  },
+  {
+    "name": "Aquamarine",
+    "cost": 500,
+    "description": "A light blue form of beryl."
+  },
+  {
+    "name": "Black Pearl",
+    "cost": 500,
+    "description": "A rare black version of a pearl."
+  },
+  {
+    "name": "Blue Spinel",
+    "cost": 500,
+    "description": "A blue form of spinel."
+  },
+  {
+    "name": "Peridot",
+    "cost": 500,
+    "description": "A green gemstone mottled with brown."
+  },
+  {
+    "name": "Topaz",
+    "cost": 500,
+    "description": "A golden gemstone."
+  },
+  {
+    "name": "Black Opal",
+    "cost": 1000,
+    "description": "A predominantly black, but irridescent gemstone."
+  },
+  {
+    "name": "Blue Sapphire",
+    "cost": 1000,
+    "description": "A blue form of corundum."
+  },
+  {
+    "name": "Emerald",
+    "cost": 1000,
+    "description": "A green form of beryl."
+  },
+  {
+    "name": "Fire Opal",
+    "cost": 1000,
+    "description": "A predominantly red and orange, but irridescent gemstone."
+  },
+  {
+    "name": "Opal",
+    "cost": 1000,
+    "description": "An irridescent gemstone."
+  },
+  {
+    "name": "Star Ruby",
+    "cost": 1000,
+    "description": "A ruby with a predominant star pattern."
+  },
+  {
+    "name": "Star Sapphire",
+    "cost": 1000,
+    "description": "A sapphire with a predominant star pattern."
+  },
+  {
+    "name": "Yellow Sapphire",
+    "cost": 1000,
+    "description": "A yellow form of corundum."
+  },
+  {
+    "name": "Black Sapphire",
+    "cost": 5000,
+    "description": "A black form of corundum."
+  },
+  {
+    "name": "Diamond",
+    "cost": 5000,
+    "description": "An incredibly hard, clear gemstone."
+  },
+  {
+    "name": "Jacinth",
+    "cost": 5000,
+    "description": "A purified form of zircon, with a deeper color."
+  },
+  {
+    "name": "Ruby",
+    "cost": 5000,
+    "description": "A bright-red form of corundum."
+  }
+]

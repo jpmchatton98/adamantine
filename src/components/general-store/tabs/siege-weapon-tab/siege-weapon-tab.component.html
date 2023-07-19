@@ -1,0 +1,33 @@
+<nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Attack Modifier</th>
+            <th>Range</th>
+            <th>Size</th>
+            <th>AC</th>
+            <th>HP</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemData">
+            <td>{{ item.name }}</td>
+            <td>{{ item.damage }} {{ item.damageTypes }}</td>
+            <td>+{{ item.attackMod }}</td>
+            <td>
+                <ng-container *ngIf="item.range !== item.longRange">
+                    ({{ item.range }}/{{ item.longRange }})
+                </ng-container>
+                <ng-container *ngIf="item.range === item.longRange">
+                    {{ item.range }} ft
+                </ng-container>
+            </td>
+            <td>{{ item.size }}</td>
+            <td>{{ item.ac }}</td>
+            <td>{{ item.hp }}</td>
+            <td>{{ item.description }}</td>
+        </tr>
+    </tbody>
+</nz-table>

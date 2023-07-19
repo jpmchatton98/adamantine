@@ -1,0 +1,26 @@
+<div>
+    <nz-collapse nzAccordion>
+        <nz-collapse-panel *ngFor="let class of classes" [nzHeader]="class.name">
+            <a class="class-link header-link" routerLink="/class/{{ class.index }}" routerLinkActive="active" ariaCurrentWhenActive="page">
+                {{ class.name }}
+            </a>
+            <hr>
+            <div class="class-row">
+                <div class="class-col">
+                    <div *ngFor="let subclass of class.subclasses">
+                        <a class="class-link" routerLink="/class/{{ class.index }}/subclasses/{{ nameUrlEncode(subclass.name) }}/subclass" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            {{ subclass.name }}
+                        </a>
+                    </div>
+                </div>
+                <div class="class-col" *ngIf="class.extraTabs">
+                    <div *ngFor="let tab of class.extraTabs">
+                        <a class="class-link" routerLink="/class/{{ class.index }}/{{ tab.key }}" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            {{ tab.name }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nz-collapse-panel>
+    </nz-collapse>
+</div>

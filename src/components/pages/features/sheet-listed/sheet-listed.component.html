@@ -1,0 +1,10 @@
+<div *ngIf="isArray(choiceValue); else single">
+    <div *ngFor="let trait of choiceValue">
+        <app-sheet-feature [characterObj]="characterObj" [feature]="trait" [level]="level + 1" [characterLevel]="characterLevel"></app-sheet-feature>
+    </div>
+</div>
+<ng-template #single>
+    <div>
+        <app-sheet-feature [characterObj]="characterObj" [feature]="choiceValue" [level]="level + 1" [characterLevel]="characterLevel"></app-sheet-feature>
+    </div>
+</ng-template>

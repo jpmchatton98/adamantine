@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Carriage",
+    "cost": 100,
+    "weight": 600,
+    "minCrew": 0,
+    "maxCrew": 6,
+    "topSpeed": 0,
+    "description": "A well-crafted passenger cart favored by nobility.",
+    "type": "land"
+  },
+  {
+    "name": "Cart",
+    "cost": 15,
+    "weight": 200,
+    "minCrew": 0,
+    "maxCrew": 3,
+    "topSpeed": 0,
+    "description": "A simple, uncovered wooden cart used for hauling people or goods.",
+    "type": "land"
+  },
+  {
+    "name": "Chariot",
+    "cost": 250,
+    "weight": 100,
+    "minCrew": 0,
+    "maxCrew": 2,
+    "topSpeed": 0,
+    "description": "An open-backed cart used in combat.",
+    "type": "land"
+  },
+  {
+    "name": "Handcart",
+    "cost": 10,
+    "weight": 150,
+    "minCrew": 0,
+    "maxCrew": 2,
+    "topSpeed": 0,
+    "description": "A small wooden cart, designed to be pulled by people rather than animals, bought by those who cannot afford anything nicer.",
+    "type": "land"
+  },
+  {
+    "name": "Sled",
+    "cost": 20,
+    "weight": 100,
+    "minCrew": 0,
+    "maxCrew": 1,
+    "topSpeed": 0,
+    "description": "A flat vehicle often pulled by trained dogs in snowy areas.",
+    "type": "land"
+  },
+  {
+    "name": "Wagon",
+    "cost": 35,
+    "weight": 400,
+    "minCrew": 0,
+    "maxCrew": 6,
+    "topSpeed": 0,
+    "description": "A large, covered cart often pulled by oxen.",
+    "type": "land"
+  },
+  {
+    "name": "Canoe",
+    "cost": 50,
+    "weight": 100,
+    "minCrew": 1,
+    "maxCrew": 6,
+    "topSpeed": 1.5,
+    "description": "A long, thin rowboat that excels at river transport.",
+    "type": "water"
+  },
+  {
+    "name": "Galley",
+    "cost": 30000,
+    "weight": 500000,
+    "minCrew": 3,
+    "maxCrew": 120,
+    "topSpeed": 4,
+    "description": "A large ship propelled mainly by teams of rowers.",
+    "type": "water"
+  },
+  {
+    "name": "Galleon",
+    "cost": 50000,
+    "weight": 800000,
+    "minCrew": 32,
+    "maxCrew": 400,
+    "topSpeed": 3,
+    "description": "A massive, three-masted sailing vessel.",
+    "type": "water"
+  },
+  {
+    "name": "Keelboat",
+    "cost": 300,
+    "weight": 1500,
+    "minCrew": 1,
+    "maxCrew": 7,
+    "topSpeed": 1,
+    "description": "An oversized rowboat used for river transport.",
+    "type": "water"
+  },
+  {
+    "name": "Longboat",
+    "cost": 10000,
+    "weight": 40000,
+    "minCrew": 3,
+    "maxCrew": 140,
+    "topSpeed": 3,
+    "description": "A long, single-masted ship favored in amphibious assaults.",
+    "type": "water"
+  },
+  {
+    "name": "Rowboat",
+    "cost": 50,
+    "weight": 100,
+    "minCrew": 1,
+    "maxCrew": 4,
+    "topSpeed": 1.5,
+    "description": "A small, simple rowboat.",
+    "type": "water"
+  },
+  {
+    "name": "Schooner",
+    "cost": 10000,
+    "weight": 20000,
+    "minCrew": 3,
+    "maxCrew": 50,
+    "topSpeed": 4,
+    "description": "A large, two-masted sailing vessel built slim for speed.",
+    "type": "water"
+  },
+  {
+    "name": "Sloop",
+    "cost": 5000,
+    "weight": 10000,
+    "minCrew": 1,
+    "maxCrew": 15,
+    "topSpeed": 4,
+    "description": "A small, single-masted sailboat.",
+    "type": "water"
+  },
+  {
+    "name": "Warship",
+    "cost": 75000,
+    "weight": 1000000,
+    "minCrew": 32,
+    "maxCrew": 400,
+    "topSpeed": 3,
+    "description": "A galleon outfitted for battle, with thrity-two cannons.",
+    "type": "water"
+  },
+  {
+    "name": "Balloon",
+    "cost": 250,
+    "weight": 800,
+    "minCrew": 1,
+    "maxCrew": 4,
+    "topSpeed": 0.5,
+    "description": "A large balloon that uses hot air to stay airborne.",
+    "type": "air"
+  },
+  {
+    "name": "Dirigible",
+    "cost": 500,
+    "weight": 1200,
+    "minCrew": 2,
+    "maxCrew": 8,
+    "topSpeed": 2,
+    "description": "A balloon outfitted with propellors that allow more control and speed.",
+    "type": "air"
+  },
+  {
+    "name": "Ornithopter",
+    "cost": 10000,
+    "weight": 2000,
+    "minCrew": 1,
+    "maxCrew": 3,
+    "topSpeed": 3,
+    "description": "A winged contraption that flies like a bird.",
+    "type": "air"
+  },
+  {
+    "name": "Bombard",
+    "cost": 50000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 12,
+    "topSpeed": 4,
+    "description": "Bombards are built by giff. The major feature of each ship is an enormous cannon that fires massive cannon balls capable of blowing other ships to smithereens.",
+    "type": "astral"
+  },
+  {
+    "name": "Damselfly",
+    "cost": 20000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 9,
+    "topSpeed": 8,
+    "description": "This swift but cramped ship is made mostly of metal. It can't float on water, but its legs enable it to land safely on the ground. A sliding hatch just behind the wings allows access to the ship's mangonel turret. The ship's cargo hold can easily be turned into crew cabins or another weapon deck.",
+    "type": "astral"
+  },
+  {
+    "name": "Entship",
+    "cost": 25000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 5,
+    "topSpeed": 4.5,
+    "description": "Druids, rangers, and clerics devoted to gods of nature are often found aboard entships, as are Wildspace explorers who don't want to have to worry about their ship's air envelope becoming fouled during a long voyage. This ship's main distinctive feature is the fully grown treant on the aft deck. The treant has a speed of 0 because its roots are woven into the deck; it and the ship are inseparable. If the ship is reduced to 0 hit points, the treant dies of shock. The ship can function if its treant dies, but the treant can never be replaced with another.",
+    "type": "astral"
+  },
+  {
+    "name": "Flying Fish",
+    "cost": 20000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 10,
+    "topSpeed": 4.5,
+    "description": "Aside from space galleons, flying fish ships are the most common vessels in Wildspace, favorites among merchants and adventurers alike.",
+    "type": "astral"
+  },
+  {
+    "name": "Hammerhead",
+    "cost": 40000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 15,
+    "topSpeed": 4,
+    "description": "Hammerhead ships are popular craft, especially among pirates and merchants carrying heavy cargo. They can float on water and sail across it, but they aren't built to land on the ground (their keels would cause them to tip to one side). Standard weapons on a hammerhead ship include fore and aft mangonels, a ballista, and a reinforced bow for ramming.",
+    "type": "astral"
+  },
+  {
+    "name": "Lamprey",
+    "cost": 20000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 15,
+    "topSpeed": 4,
+    "description": "Lamprey ships are antiquated, being among the oldest spelljamming ships still in use. Psurlons are particularly fond of them. Using the metal grappling jaws built into its bow, a lamprey ship can attach itself to another ship, which is a critical feature during boarding actions. Other standard weapons include four ballistae on the main deck.",
+    "type": "astral"
+  },
+  {
+    "name": "Nautiloid",
+    "cost": 50000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 20,
+    "topSpeed": 4.5,
+    "description": "Built and used by mind flayers, nautiloids are designed exclusively for space travel. They can't float on water, nor can they land safely on the ground.",
+    "type": "astral"
+  },
+  {
+    "name": "Nightspider",
+    "cost": 50000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 25,
+    "topSpeed": 4.5,
+    "description": "Neogi terrorize Wildspace in ships of their own construction, which others call nightspiders. These vessels often wait in ambush for other ships. Once a target ship is identified, the neogi try to steal its spelljamming helm and capture its crew.",
+    "type": "astral"
+  },
+  {
+    "name": "Scorpion",
+    "cost": 25000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 12,
+    "topSpeed": 3.5,
+    "description": "Scorpion ships are archaic metal warships that have never lost their popularity, largely because of their versatility. Articulated legs enable a scorpion ship to land safely on the ground and move across a solid surface at a walking speed of 30 feet.",
+    "type": "astral"
+  },
+  {
+    "name": "Shrike",
+    "cost": 20000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 11,
+    "topSpeed": 8,
+    "description": "This swift vessel is a relatively recent design, quickly gaining popularity with merchants and pirates. A shrike ship's legs enable it to land safely on the ground. The ship can float but isn't built for traveling on water and sinks quickly in rough seas.",
+    "type": "astral"
+  },
+  {
+    "name": "Space Galleon",
+    "cost": 75000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 50,
+    "topSpeed": 4,
+    "description": "The space galleon is a mainstay among the host of vessels that ply Wildspace and the Astral Sea. Space galleons can easily pass for ordinary seafaring galleons. Because they can land on water and move across it like their namesakes, they can sail into ports on terrestrial worlds without attracting undue attention.",
+    "type": "astral"
+  },
+  {
+    "name": "Squid Ship",
+    "cost": 25000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 13,
+    "topSpeed": 3.5,
+    "description": "Among the oldest types of spelljamming vessels, squid ships are popular with privateers and are often used as patrol ships. Standard weapons on a squid ship include a forward-mounted mangonel, two aft-mounted ballistae, and a reinforced bow for ramming. The tentacles that extend from the bow account for nearly half the ship's keel length.",
+    "type": "astral"
+  },
+  {
+    "name": "Star Moth",
+    "cost": 50000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 13,
+    "topSpeed": 5.5,
+    "description": "Star moths are ships constructed and flown by astral elves, who don't like it when these ships end up in the hands of others. A star moth's hull is fashioned from a grown and sculpted organic substance, and its enormous, decorative wings are made of shimmering crystal.",
+    "type": "astral"
+  },
+  {
+    "name": "Turtle Ship",
+    "cost": 40000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 16,
+    "topSpeed": 3,
+    "description": "A turtle ship is encased in a protective metal shell, as befits its name, and bristles with weapons. In addition to its roomy quarters, it can carry a decent-sized payload, making it popular among traders and others who need a lot of cargo space. The ship can land on the ground, and it floats on water. Sliding panels can be closed to make the hull airtight, enabling the ship to travel underwater safely, even to great depths. If the ship takes damage while on or under the water, interior hatches can be sealed to prevent the ship from flooding completely.",
+    "type": "astral"
+  },
+  {
+    "name": "Wasp",
+    "cost": 20000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 5,
+    "topSpeed": 5.5,
+    "description": "Wasp ships are lightweight wooden vessels capable of landing safely on the ground, but not on water. They appeal to adventurers because they're affordable and don't require a large crew. Pirates like them because they're swift. Aristocrats are fond of using them as flying yachts because the ship's cargo hold can be easily converted into posh living quarters.",
+    "type": "astral"
+  }
+]

@@ -1,0 +1,18 @@
+<h3>{{ race.name }}</h3>
+<div [innerHTML]="race.description"></div>
+
+<ng-container *ngIf="race.subraces; else simple">
+    <ul id="tabList" class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': 'race' === tabName}" (click)="changeRoute('race')">Race</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': 'subraces' === tabName}" (click)="changeRoute('subraces')">Subraces</button>
+        </li>
+    </ul>
+
+    <router-outlet></router-outlet>
+</ng-container>
+<ng-template #simple>
+    <app-race-data [race]="race"></app-race-data>
+</ng-template>

@@ -1,0 +1,65 @@
+<nz-collapse>
+    <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
+        <div>
+            <h4>Type</h4>
+            <div class="type">
+                <label nz-checkbox [(ngModel)]="filters.type.aberration" (ngModelChange)="updateFilters()">Aberration</label>
+                <label nz-checkbox [(ngModel)]="filters.type.beast" (ngModelChange)="updateFilters()">Beast</label>
+                <label nz-checkbox [(ngModel)]="filters.type.celestial" (ngModelChange)="updateFilters()">Celestial</label>
+                <label nz-checkbox [(ngModel)]="filters.type.construct" (ngModelChange)="updateFilters()">Construct</label>
+                <label nz-checkbox [(ngModel)]="filters.type.dragon" (ngModelChange)="updateFilters()">Dragon</label>
+                <label nz-checkbox [(ngModel)]="filters.type.elemental" (ngModelChange)="updateFilters()">Elemental</label>
+                <label nz-checkbox [(ngModel)]="filters.type.fey" (ngModelChange)="updateFilters()">Fey</label>
+                <label nz-checkbox [(ngModel)]="filters.type.fiend" (ngModelChange)="updateFilters()">Fiend</label>
+                <label nz-checkbox [(ngModel)]="filters.type.giant" (ngModelChange)="updateFilters()">Giant</label>
+                <label nz-checkbox [(ngModel)]="filters.type.humanoid" (ngModelChange)="updateFilters()">Humanoid</label>
+                <label nz-checkbox [(ngModel)]="filters.type.ooze" (ngModelChange)="updateFilters()">Ooze</label>
+                <label nz-checkbox [(ngModel)]="filters.type.plant" (ngModelChange)="updateFilters()">Plant</label>
+                <label nz-checkbox [(ngModel)]="filters.type.undead" (ngModelChange)="updateFilters()">Undead</label>
+            </div>
+        </div>
+        <div>
+            <h4>Size</h4>
+            <nz-slider [(ngModel)]="filters.size" nzDots nzRange [nzMin]="-4" [nzMax]="6" [nzStep]="null" [nzMarks]="sizeMarks" [nzTipFormatter]="formatSizeSlider" (nzOnAfterChange)="updateFilters()"></nz-slider>
+        </div>
+        <div>
+            <h4>Tags</h4>
+            <nz-select nzMode="tags" [(ngModel)]="filters.tags" (ngModelChange)="updateFilters()">
+                <nz-option *ngFor="let option of monsterTags" [nzLabel]="option" [nzValue]="option"></nz-option>
+            </nz-select>
+        </div>
+        <div>
+            <h4>CR</h4>
+            <nz-slider [(ngModel)]="filters.cr" nzDots nzRange [nzMin]="0" [nzMax]="43" [nzStep]="null" [nzMarks]="crMarks" [nzTipFormatter]="formatCrSlider" (nzOnAfterChange)="updateFilters()"></nz-slider>
+        </div>
+        <div class="search">
+            <input nz-input [(ngModel)]="filters.search" (ngModelChange)="updateFilters()">
+        </div>
+    </nz-collapse-panel>
+</nz-collapse>
+
+<nz-table #bestiary [nzData]="monsters">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Size</th>
+            <th>CR</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of bestiary.data">
+            <td>
+                <a href="/bestiary/{{ data.index }}">{{ data.name }}</a>
+            </td>
+            <td>
+                {{ data.type }}
+                <ng-container *ngIf="data.tags">
+                    ({{ data.tags.sort().join(', ') }})
+                </ng-container>
+            </td>
+            <td>{{ data.size }}</td>
+            <td>{{ formatCr(data.cr) }}</td>
+        </tr>
+    </tbody>
+</nz-table>

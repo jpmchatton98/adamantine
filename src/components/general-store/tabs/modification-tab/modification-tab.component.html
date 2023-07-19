@@ -1,0 +1,48 @@
+<div class="mod-wrapper">
+    <div class="mod" *ngFor="let mod of itemData">
+        <ng-container *ngIf="mod.type !== 'material'; else material">
+            <h5>{{ mod.name }} ({{ mod.type }}s)</h5>
+            <div>
+                <strong>Cost:</strong> {{ formatCost(mod.cost) }}
+            </div>
+            <div *ngIf="mod.limits">
+                <strong>Limits:</strong> {{ mod.limits }}
+            </div>
+
+            <div [innerHTML]="mod.description"></div>
+        </ng-container>
+        <ng-template #material>
+            <h5>{{ mod.name }}</h5>
+            <div [innerHTML]="mod.description"></div>
+            <ng-container *ngIf="mod.armor">
+                <h6>Armor</h6>
+                <div>
+                    <strong>Medium Armor Cost:</strong> {{mod.armor.mediumCost}}x
+                </div>
+                <div>
+                    <strong>Heavy Armor Cost:</strong> {{mod.armor.heavyCost}}x
+                </div>
+                <div *ngIf="mod.limits">
+                    <strong>Limits:</strong> {{ mod.armor.limits }}
+                </div>
+    
+                <div [innerHTML]="mod.armor.description"></div>
+            </ng-container>
+            <ng-container *ngIf="mod.weapons">
+                <h6>Weapons</h6>
+                <div>
+                    <strong>Weapon Cost:</strong> +{{ formatCost(mod.weapons.cost) }}
+                </div>
+                <div>
+                    <strong>Massive Weapon Cost:</strong> +{{ formatCost(mod.weapons.massiveCost) }}
+                </div>
+                <div *ngIf="mod.limits">
+                    <strong>Limits:</strong> {{ mod.weapons.limits }}
+                </div>
+    
+                <div [innerHTML]="mod.weapons.description"></div>
+            </ng-container>
+            
+        </ng-template>
+    </div>
+</div>

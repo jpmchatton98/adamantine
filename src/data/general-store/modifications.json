@@ -1,0 +1,49 @@
+[
+  {
+    "type": "shield",
+    "name": "Aerodynamic Edge",
+    "limits": "shields other than tower shields",
+    "cost": 100,
+    "description": "The shield gains the Thrown (20/60) and Returning properties."
+  },
+  {
+    "type": "shield",
+    "name": "Shield Sconce",
+    "limits": "shields other than bucklers",
+    "cost": 10,
+    "description": "A torch or lantern can be attached to the shield."
+  },
+  {
+    "type": "shield",
+    "name": "Shield Sling",
+    "limits": "shields other than bucklers",
+    "cost": 5,
+    "description": "With a sling attached, the time it takes to don/doff a shield is reduced to an object interaction instead of an action."
+  },
+  {
+    "type": "shield",
+    "name": "Shield Spikes",
+    "cost": 15,
+    "description": "When attacking with the shield, you can choose to deal piercing damage instead of bludgeoning damage."
+  },
+  {
+    "type": "shield",
+    "name": "Razor Edge",
+    "cost": 15,
+    "description": "When attacking with the shield, you can choose to deal slashing damage instead of bludgeoning damage."
+  },
+  {
+    "type": "weapon",
+    "name": "Sawback",
+    "limits": "single-edged, bladed weapons",
+    "cost": 3,
+    "description": "The weapon has serrated teeth along the spine. It can be used as a saw."
+  },
+  {
+    "type": "weapon",
+    "name": "Serrated Edge",
+    "limits": "bladed weapons",
+    "cost": 1000,
+    "description": "The weapon's edge is jagged and serrated.  When attacking with it, you score a critical hit on a roll of 19 or 20 on the d20."
+  }
+]

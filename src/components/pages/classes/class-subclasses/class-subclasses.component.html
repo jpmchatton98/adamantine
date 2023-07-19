@@ -1,0 +1,12 @@
+<ng-container *ngIf="subclasses?.length">
+    <ul id="tabList" class="nav nav-tabs" role="tablist">
+        <li *ngFor="let subclass of subclasses" class="nav-item" role="presentation">
+            <button class="nav-link" [ngClass]="{'active': nameUrlEncode(subclass.name) === subclassName}"
+                (click)="changeRoute(nameUrlEncode(subclass.name))">
+                {{ subclass.name }}
+            </button>
+        </li>
+    </ul>
+
+    <router-outlet></router-outlet>
+</ng-container>

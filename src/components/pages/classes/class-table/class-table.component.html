@@ -1,0 +1,97 @@
+<nz-table [nzData]="levels" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+    <thead>
+        <tr>
+            <th>Level</th>
+            <ng-container *ngIf="!subclass">
+                <th>Proficiency Bonus</th>
+                <th>Features</th>
+            </ng-container>
+            <th *ngFor="let col of class.extraCols">{{ col.name }}</th>
+            <ng-container *ngIf="class.spellcaster">
+                <ng-container *ngIf="class.spellcastingType === 'standard'">
+                    <th>1st</th>
+                    <th>2nd</th>
+                    <th>3rd</th>
+                    <th>4th</th>
+                    <ng-container *ngIf="class.spellcastingLevel <= 2">
+                        <th>5th</th>
+                    </ng-container>
+                    <ng-container *ngIf="class.spellcastingLevel <= 1">
+                        <th>6th</th>
+                        <th>7th</th>
+                        <th>8th</th>
+                        <th>9th</th>
+                    </ng-container>
+                </ng-container>
+                <ng-container *ngIf="class.spellcastingType === 'sorcery'">
+                    <th>Sorcery Points</th>
+                    <th>Spell Limit</th>
+                </ng-container>
+                <ng-container *ngIf="class.spellcastingType === 'pact'">
+                    <th>Spell Slots</th>
+                    <th>Slot Level</th>
+                </ng-container>
+            </ng-container>
+            <ng-container *ngIf="class.exploits">
+                <th>Exploit Dice</th>
+                <th>Degree Limit</th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let level of levels">
+            <ng-container *ngIf="level >= startLevel && level <= (class.maxLevel ?? 20)">
+                <ng-container [ngSwitch]="level">
+                    <td *ngSwitchCase="1">1st</td>
+                    <td *ngSwitchCase="2">2nd</td>
+                    <td *ngSwitchCase="3">3rd</td>
+                    <td *ngSwitchDefault>{{ level }}th</td>
+                </ng-container>
+                <ng-container *ngIf="!subclass">
+                    <td>+{{ ceiling(level / 4) + 1 }}</td>
+                    <td>
+                        {{ getFeatureString(level) }}
+                    </td>
+                </ng-container>
+                <td *ngFor="let col of class.extraCols">
+                    <ng-container *ngIf="col.type === 'fixed'; else colValue">
+                        {{ col.values[level - 1] }}
+                    </ng-container>
+                    <ng-template #colValue>
+                        {{ getColValue(col, level) }}
+                    </ng-template>
+                </td>
+                
+                <ng-container *ngIf="class.spellcaster">
+                    <ng-container *ngIf="class.spellcastingType === 'standard'">
+                        <td>{{getSpellSlots(level, 1)}}</td>
+                        <td>{{getSpellSlots(level, 2)}}</td>
+                        <td>{{getSpellSlots(level, 3)}}</td>
+                        <td>{{getSpellSlots(level, 4)}}</td>
+                        <ng-container *ngIf="class.spellcastingLevel <= 2">
+                            <td>{{getSpellSlots(level, 5)}}</td>
+                        </ng-container>
+                        <ng-container *ngIf="class.spellcastingLevel <= 1">
+                            <td>{{getSpellSlots(level, 6)}}</td>
+                            <td>{{getSpellSlots(level, 7)}}</td>
+                            <td>{{getSpellSlots(level, 8)}}</td>
+                            <td>{{getSpellSlots(level, 9)}}</td>
+                        </ng-container>
+                    </ng-container>
+                    <ng-container *ngIf="class.spellcastingType === 'sorcery'">
+                        <td>{{getSorceryPoints(level)}}</td>
+                        <td>{{getSpellLimit(level)}}</td>
+                    </ng-container>
+                    <ng-container *ngIf="class.spellcastingType === 'pact'">
+                        <td>{{getPactSlots(level)}}</td>
+                        <td>{{getSpellLimit(level)}}</td>
+                    </ng-container>
+                </ng-container>
+                <ng-container *ngIf="class.exploits">
+                    <td>{{ getExploitDice(level) }}</td>
+                    <td>{{ getExploitLimit(level) }}</td>
+                </ng-container>
+            </ng-container>
+        </tr>
+    </tbody>
+</nz-table>

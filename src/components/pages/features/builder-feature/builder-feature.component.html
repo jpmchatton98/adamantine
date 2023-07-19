@@ -1,0 +1,56 @@
+<div [ngClass]="{'border-left': level !== 0}" [style]="'padding-left: ' + level * 10 + 'px'" *ngIf="!feature?.listed">
+<h5 *ngIf="!subFeature && !choiceFeature">{{ feature?.name }}</h5>
+<h6 *ngIf="subFeature && !choiceFeature">{{ feature?.name }}</h6>
+<div *ngIf="choiceFeature"><strong>{{ feature?.name }}</strong></div>
+    <p [innerHTML]="feature?.description"></p>
+
+    <ng-container *ngIf="feature?.subFeatures">
+        <ng-container *ngFor="let subFeature of feature?.subFeatures">
+            <app-builder-feature [characterObj]="characterObj" [feature]="subFeature" [subFeature]="true" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-feature>
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="feature?.choices">
+        <ng-container *ngIf="isArray(feature?.choices); else singleChoice">
+            <ng-container *ngFor="let choice of feature?.choices">
+                <div *ngIf="!choice.prereq || choice.prereq <= characterLevel">
+                    <app-builder-choice [characterObj]="characterObj" [choice]="choice" [subChoice]="choiceFeature" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-choice>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-template #singleChoice>
+            <div *ngIf="!feature?.choices.prereq || feature?.choices.prereq <= characterLevel">
+                <app-builder-choice [characterObj]="characterObj" [choice]="feature?.choices" [subChoice]="choiceFeature" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-choice>
+            </div>
+        </ng-template>
+    </ng-container>
+</div>
+<div *ngIf="feature?.listed">
+    <nz-tabset [nzAnimated]="false">
+        <nz-tab nzTitle="Feature">
+            <p [innerHTML]="feature?.description"></p>
+
+            <ng-container *ngIf="feature?.subFeatures">
+                <ng-container *ngFor="let subFeature of feature?.subFeatures">
+                    <app-builder-feature [characterObj]="characterObj" [feature]="subFeature" [subFeature]="true" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-feature>
+                </ng-container>
+            </ng-container>
+            <ng-container *ngIf="feature?.choices">
+                <ng-container *ngIf="isArray(feature?.choices); else singleChoice">
+                    <ng-container *ngFor="let choice of feature?.choices">
+                        <div *ngIf="!choice.prereq || choice.prereq <= characterLevel">
+                            <app-builder-choice [characterObj]="characterObj" [choice]="choice" [subChoice]="choiceFeature" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-choice>
+                        </div>
+                    </ng-container>
+                </ng-container>
+                <ng-template #singleChoice>
+                    <div *ngIf="!feature?.choices.prereq || feature?.choices.prereq <= characterLevel">
+                        <app-builder-choice [characterObj]="characterObj" [choice]="feature?.choices" [subChoice]="choiceFeature" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-choice>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </nz-tab>
+        <nz-tab nzTitle="List">
+            <app-builder-listed [characterObj]="characterObj" [listed]="feature?.listed" [level]="level" [characterLevel]="characterLevel" [sourceId]="sourceId" [sourceValue]="sourceValue"></app-builder-listed>
+        </nz-tab>
+    </nz-tabset>
+</div>

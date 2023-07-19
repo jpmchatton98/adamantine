@@ -1,0 +1,10 @@
+<div class="race-container">
+    <div *ngFor="let category of races">
+        <h5>{{ category.name }}</h5>
+        <div *ngFor="let race of category.list">
+            <a routerLink="/race/{{ race.index }}" routerLinkActive="active" ariaCurrentWhenActive="page">
+                {{ race.name }}
+            </a>
+        </div>
+    </div>
+</div>

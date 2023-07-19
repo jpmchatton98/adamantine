@@ -1,0 +1,31 @@
+<ul id="tabList" class="nav nav-tabs" role="tablist">
+    <li *ngFor="let r of rarities" class="nav-item" role="presentation">
+        <button class="nav-link" [ngClass]="{'active': nameUrlEncode(r) === tabName}" (click)="changeRoute(nameUrlEncode(r))">{{ r }}</button>
+    </li>
+</ul>
+
+<div id="content" class="tab-content">
+    <div *ngFor="let r of rarities" class="tab-pane" [ngClass]="{'active show': nameUrlEncode(r) === tabName}">
+        <nz-table [nzData]="items" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Attunement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of items">
+                    <td><a routerLink="/magic-item/{{ item.index }}" routerLinkActive="active" ariaCurrentWhenActive="page">{{ item.name }}</a></td>
+                    <td>{{ item.type }}</td>
+                    <td>
+                        {{ item.attunement ? 'yes' : 'no' }} 
+                        <ng-container *ngIf="item.attunementDesc">
+                            ({{ item.attunementDesc }})
+                        </ng-container>
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>

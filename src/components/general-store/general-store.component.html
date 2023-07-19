@@ -1,0 +1,7 @@
+<ul id="tabList" class="nav nav-tabs" role="tablist">
+    <li *ngFor="let tab of tabs" class="nav-item" role="presentation">
+        <button class="nav-link" [ngClass]="{'active': nameUrlEncode(tab.name) === tabName}" (click)="changeRoute(nameUrlEncode(tab.name))">{{ tab.name }}</button>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>

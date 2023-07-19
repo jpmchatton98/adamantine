@@ -1,0 +1,33 @@
+<h3>{{ classData.name }}</h3>
+<div>
+    <strong>Level:</strong> {{ characterClass.level }} 
+    <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="setLevel(1)">+</button> 
+    <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="setLevel(-1)">-</button>
+    <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="deleteClass()" nzDanger>&times;</button>
+</div>
+
+<app-builder-feature [feature]="classProfs" [characterObj]="characterClass" [characterLevel]="1"></app-builder-feature>
+
+<ng-container *ngFor="let level of levels">
+    <ng-container *ngIf="level <= characterClass.level">
+        <div *ngIf="level === classData.subclassLevel">
+            <strong>{{ classData.subclassName }}:</strong>
+            <select [(ngModel)]="subclassName" (ngModelChange)="updateSubclass($event)" name="sel2">
+                <option *ngFor="let subclass of classData.subclasses">
+                    {{ subclass.name }}
+                </option>
+            </select>
+        </div>
+
+        <ng-container *ngIf="classData.features[level]">
+            <div *ngFor="let feature of classData.features[level]">
+                <app-builder-feature [characterObj]="characterClass" [feature]="feature" [characterLevel]="characterClass.level"></app-builder-feature>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="subclassData?.features[level]">
+            <div *ngFor="let feature of subclassData.features[level]">
+                <app-builder-feature [characterObj]="characterClass" [feature]="feature" [characterLevel]="characterClass.level"></app-builder-feature>
+            </div>
+        </ng-container>
+    </ng-container>
+</ng-container>

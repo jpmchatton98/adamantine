@@ -1,0 +1,363 @@
+<div class="header">
+    <div class="name">
+        <h3 class="character-name">{{ character.name || 'Unnamed Character' }}</h3>
+        <div class="subheader">{{ getSubheader() }}</div>
+    </div>
+    <button class="settings-button" (click)="settingsModal = true"><span class="mdi mdi-cog"></span></button>
+</div>
+<div class="sheet">
+    <div class="sheet-row">
+        <div class="boxes">
+            <ng-container *ngFor="let score of scores">
+                <div class="score" *ngIf="!(score.abbreviation === 'hon' && !character.honor) && !(score.abbreviation === 'san' && !character.sanity)">
+                    <h6>{{ score.abbreviation.toUpperCase() }}</h6>
+                    <ng-container *ngIf="getSetting('modifier') === 0">
+                        <div class="total">{{ getScore(score.abbreviation) }}</div>
+                        <div class="mod">{{ modifier(getScore(score.abbreviation), true) }}</div>
+                    </ng-container>
+                    <ng-container *ngIf="getSetting('modifier') === 1">
+                        <div class="total">{{ modifier(getScore(score.abbreviation), true) }}</div>
+                        <div class="mod">{{ getScore(score.abbreviation) }}</div>
+                    </ng-container>
+                </div>
+            </ng-container>
+            <div class="proficiency">
+                <div>PROFICIENCY</div>
+                <h6>+{{ proficiencyBonus() }}</h6>
+            </div>
+            <div class="initiative">
+                <div>INITIATIVE</div>
+                <h6>{{ modifier(getScore('dex'), true) }}</h6>
+            </div>
+            <div class="ac">
+                <div>AC</div>
+                <h6>{{ 10 + modifierNumber('dex') }}</h6>
+            </div>
+            <div class="hp">
+                <div>HP</div>
+                <h6>10</h6>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-row">
+        <div class="sheet-col">
+            <div class="saves">
+                <h6>Saving Throws</h6>
+                <div class="save-list">
+                    <ng-container *ngFor="let score of scores">
+                        <div class="save" *ngIf="!(score.abbreviation === 'hon' && !character.honor) && !(score.abbreviation === 'san' && !character.sanity)">
+                            <div class="header">
+                                <div class="prof">
+                                    <div *ngIf="!saveIsProficient(score.abbreviation)" title="Not Proficient" class="mdi mdi-circle-outline"></div>
+                                    <div *ngIf="saveIsProficient(score.abbreviation)" title="Proficient" class="mdi mdi-circle"></div>
+                                </div>
+                                <div class="name">
+                                    {{ score.name }}
+                                </div>
+                            </div>
+                            <div class="value">
+                                <div class="mod">
+                                    {{ saveMod(score.abbreviation) }}
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                    <div class="save">
+                        <div class="header">
+                            <div class="prof">
+                                <div *ngIf="!saveIsProficient('death')" title="Not Proficient" class="mdi mdi-circle-outline"></div>
+                                <div *ngIf="saveIsProficient('death')" title="Proficient" class="mdi mdi-circle"></div>
+                            </div>
+                            <div class="name">
+                                Death Saves
+                            </div>
+                        </div>
+                        <div class="value">
+                            <div class="mod">
+                                {{ saveMod('death') }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="defenses">
+                <h6>Defenses</h6>
+                <div class="subheader">
+                    <strong>Damage</strong>
+                </div>
+                <div class="subheader">
+                    <strong>Conditions</strong>
+                </div>
+            </div>
+            <div class="senses" *ngIf="senseString">
+                <h6>Senses</h6>
+                <div class="sense-list" [innerHTML]="senseString"></div>
+            </div>
+            <div class="proficiencies">
+                <h6>Proficiencies</h6>
+                <div *ngIf="profs?.armor?.length">
+                    <div>
+                        <strong>Armor</strong>
+                    </div>
+                    <div>
+                        {{ profs.armor.join(', ') }}
+                    </div>
+                </div>
+                <div *ngIf="profs?.languages?.length">
+                    <div>
+                        <strong>Languages</strong>
+                    </div>
+                    <div>
+                        {{ profs.languages.join(', ') }}
+                    </div>
+                </div>
+                <div *ngIf="profs?.weapons?.length">
+                    <div>
+                        <strong>Weapons</strong>
+                    </div>
+                    <div>
+                        {{ profs.weapons.join(', ') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="skills">
+                <nz-tabset [nzAnimated]="false">
+                    <nz-tab nzTitle="Skills">
+                        <div class="skill-list">
+                            <div class="skill" *ngFor="let skill of skills">
+                                <div class="header">
+                                    <div class="prof">
+                                        <div *ngIf="getSkillProfLevel(skill) === 0" title="Not Proficient" class="mdi mdi-circle-outline"></div>
+                                        <div *ngIf="getSkillProfLevel(skill) === 0.5" title="Half Proficient" class="mdi mdi-circle-half-full"></div>
+                                        <div *ngIf="getSkillProfLevel(skill) === 1" title="Proficient" class="mdi mdi-circle"></div>
+                                        <div *ngIf="getSkillProfLevel(skill) === 2" title="Expertise" class="mdi mdi-circle-slice-8"></div>
+                                    </div>
+                                    <div class="name">
+                                        {{ skill.name }} <span class="score">({{ capitalize(getSkillScore(skill)) }})</span>
+                                    </div>
+                                </div>
+                                <div class="value" *ngIf="getSetting('passive') === 0">
+                                    <div class="mod">
+                                        {{ skillMod(skill) }}
+                                    </div>
+                                    <div class="passive">
+                                        ({{ getPassiveMod(skill) }})
+                                    </div>
+                                </div>
+                                <div class="value-bar" *ngIf="getSetting('passive') === 1">
+                                    <div class="mod">
+                                        {{ skillMod(skill) }}
+                                    </div>
+                                    <div class="passive">
+                                        {{ getPassiveMod(skill) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nz-tab>
+                    <nz-tab nzTitle="Tools">
+                        <div class="skill-list">
+                            <ng-container *ngFor="let tool of tools">
+                                <div class="skill" *ngIf="!(tool.instrument && !getToolProfLevel(tool))">
+                                    <div class="header">
+                                        <div class="prof">
+                                            <div *ngIf="getToolProfLevel(tool) === 0" title="Not Proficient" class="mdi mdi-circle-outline"></div>
+                                            <div *ngIf="getToolProfLevel(tool) === 0.5" title="Half Proficient" class="mdi mdi-circle-half-full"></div>
+                                            <div *ngIf="getToolProfLevel(tool) === 1" title="Proficient" class="mdi mdi-circle"></div>
+                                            <div *ngIf="getToolProfLevel(tool) === 2" title="Expertise" class="mdi mdi-circle-slice-8"></div>
+                                        </div>
+                                        <div class="name">
+                                            {{ tool.name }} <span class="score">({{ capitalize(getToolScore(tool)) }})</span>
+                                        </div>
+                                    </div>
+                                    <div class="value">
+                                        <div class="toolmod">
+                                            {{ toolMod(tool) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </nz-tab>
+                </nz-tabset>
+            </div>
+        </div>
+        <div class="sheet-col body-col">
+            <div class="body">
+                <nz-tabset [nzAnimated]="false">
+                    <nz-tab nzTitle="Actions">
+                        <nz-table [nzData]="weaponAttacks" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+                            <thead>
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>To Hit</th>
+                                    <th>Damage</th>
+                                    <th>Properties</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="weapon" *ngFor="let weapon of weaponAttacks">
+                                    <td class="weapon-name">{{ weapon.name }}</td>
+                                    <td class="to-hit">
+                                        <span *ngIf="weapon.proficient">
+                                            {{ formatModifier(modifierNumber(weapon.ability) + proficiencyBonus()) }}
+                                        </span>
+                                        <span *ngIf="!weapon.proficient">
+                                            {{ formatModifier(modifierNumber(weapon.ability)) }}
+                                        </span>
+                                    </td>
+                                    <td class="damage" [innerHTML]="getDamageString(weapon.damage, weapon.ability)"></td>
+                                    <td>
+                                        <ng-container *ngFor="let prop of weapon.properties">
+                                            <button nzGhost nz-button nz-popover nzPopoverPlacement="top" nzType="primary" nzPopoverTitle="{{ prop.name }}" [nzPopoverContent]="weaponProp">{{ prop.name }}</button>
+                                            <ng-template #weaponProp>
+                                                <div [innerHTML]="prop.description"></div>
+                                            </ng-template>
+                                        </ng-container>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                    </nz-tab>
+                    <nz-tab nzTitle="Spells" *ngIf="characterSpells.length">
+                        <div class="spell-abilities">
+                            <div class="ability" *ngFor="let ability of spellAbilities">
+                                <div class="header">
+                                    <span class="header-text">{{ ability?.toUpperCase() }}</span>
+                                </div>
+                                <div class="spell-ability">
+                                    <div class="mod">
+                                        {{ modifier(getScore(ability), true) }}
+                                        <div class="text">
+                                            MOD
+                                        </div>
+                                    </div>
+                                    <div class="atk">
+                                        {{ formatModifier(modifierNumber(ability) + proficiencyBonus()) }}
+                                        <div class="text">
+                                            ATK
+                                        </div>
+                                    </div>
+                                    <div class="save-dc">
+                                        {{ 8 + modifierNumber(ability) + proficiencyBonus() }}
+                                        <div class="text">
+                                            DC
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <cs-spells [characterSpells]="characterSpells" [character]="character"></cs-spells>
+                    </nz-tab>
+                    <nz-tab nzTitle="Exploits" *ngIf="characterExploits.length">
+                        <div class="spell-abilities">
+                            <div class="ability" *ngFor="let ability of exploitAbilities">
+                                <div class="header">
+                                    <span class="header-text">{{ ability?.toUpperCase() }}</span>
+                                </div>
+                                <div class="spell-ability">
+                                    <div class="mod">
+                                        {{ modifier(getScore(ability), true) }}
+                                        <div class="text">
+                                            MOD
+                                        </div>
+                                    </div>
+                                    <div class="save-dc">
+                                        {{ 8 + modifierNumber(ability) + proficiencyBonus() }}
+                                        <div class="text">
+                                            DC
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <cs-exploits [characterExploits]="characterExploits" [character]="character"></cs-exploits>
+                    </nz-tab>
+                    <nz-tab nzTitle="Inventory">
+                        <cs-inventory [equipment]="character.equipment"></cs-inventory>
+                    </nz-tab>
+                    <nz-tab nzTitle="Features & Traits">
+                        <ng-container *ngIf="character.race">
+                            <h5>Race Features</h5>
+                            <div *ngFor="let feature of getRaceFeatures()">
+                                <app-sheet-feature [characterObj]="character.race" [feature]="feature"></app-sheet-feature>
+                            </div>
+                            <ng-container *ngIf="character.race.subrace">
+                                <h5>Subrace Features</h5>
+                                <div *ngFor="let feature of getSubraceFeatures()">
+                                    <app-sheet-feature [characterObj]="character.race" [feature]="feature"></app-sheet-feature>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                        <ng-container *ngIf="character.classes">
+                            <h5>Class Features</h5>
+                            <div *ngFor="let c of character.classes">
+                                <h6>{{ getClassName(c.name) }} Features</h6>
+                                <div *ngFor="let feature of getClassFeatures(c)">
+                                    <app-sheet-feature [characterObj]="c" [feature]="feature"></app-sheet-feature>
+                                </div>
+
+                                <ng-container *ngIf="c.subclass">
+                                    <div class="subclass-header"><strong>{{ c.subclass }} Features</strong></div>
+                                    <div *ngFor="let feature of getSubclassFeatures(c)">
+                                        <app-sheet-feature [characterObj]="c" [feature]="feature"></app-sheet-feature>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="character.background">
+                            <h5>Background Features</h5>
+                            <div *ngIf="backgroundFeature">
+                                <app-sheet-feature [characterObj]="character.background" [feature]="backgroundFeature"></app-sheet-feature>
+                            </div>
+                            <div *ngIf="backgroundFeat">
+                                <app-sheet-feature [characterObj]="character.background" [feature]="backgroundFeat"></app-sheet-feature>
+                            </div>
+                        </ng-container>
+                    </nz-tab>
+                    <nz-tab nzTitle="Notes">
+                        <editor
+                            [(ngModel)]="notes"
+                            (ngModelChange)="updateNotes()"
+                            apiKey="gtepebyqn85c8hmlcm9pa9zwd0m8n4duglfaa0xrf3zk1o1u"
+                            [init]="{
+                                height: 500,
+                                menubar: true,
+                                plugins: [
+                                    'autoresize',
+                                    'charmap',
+                                    'lists',
+                                ],
+                                toolbar:
+                                    'undo redo | bold italic underline | \
+                                    alignleft aligncenter alignright | \
+                                    bullist numlist | charmap hr',
+                            }"
+                        ></editor>
+                    </nz-tab>
+                    <nz-tab nzTitle="Extras"></nz-tab>
+                </nz-tabset>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nz-modal [(nzVisible)]="settingsModal" nzTitle="Character Sheet Settings" [nzCancelText]="null" [nzClosable]="false" [nzOkText]="null" (nzOnCancel)="settingsModal = false">
+    <ng-container *nzModalContent>
+        <div class="settings">
+            <div><strong>Modifier Location</strong></div>
+            <div class="setting">
+                <img src="assets/setting-images/modifier/0.png" (click)="updateSetting('modifier', 0)" [ngClass]="{'selected': (getSetting('modifier') ?? 0) === 0}">
+                <img src="assets/setting-images/modifier/1.png" (click)="updateSetting('modifier', 1)" [ngClass]="{'selected': (getSetting('modifier') ?? 0) === 1}">
+            </div>
+
+            <div><strong>Passive Skill Style</strong></div>
+            <div class="setting">
+                <img src="assets/setting-images/passive/0.png" (click)="updateSetting('passive', 0)" [ngClass]="{'selected': (getSetting('passive') ?? 0) === 0}">
+                <img src="assets/setting-images/passive/1.png" (click)="updateSetting('passive', 1)" [ngClass]="{'selected': (getSetting('passive') ?? 0) === 1}">
+            </div>
+        </div>
+    </ng-container>
+</nz-modal>

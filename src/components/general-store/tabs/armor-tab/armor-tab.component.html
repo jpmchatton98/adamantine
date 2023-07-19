@@ -1,0 +1,121 @@
+<nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+    <thead>
+        <tr *ngIf="!data.includes('shields')">
+            <th>Name</th>
+            <th>Cost</th>
+            <th>AC</th>
+            <th *ngIf="data.includes('heavy')">STR Requirement</th>
+            <th *ngIf="!data.includes('clothing')">Stealth</th>
+            <th>Weight</th>
+            <th>Description</th>
+        </tr>
+
+        <tr *ngIf="data.includes('shields')">
+            <th>Name</th>
+            <th>Cost</th>
+            <th>AC</th>
+            <th>STR Requiement</th>
+            <th>Stealth</th>
+            <th>Damage</th>
+            <th>Weight</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngIf="!data.includes('shields')">
+            <tr *ngFor="let item of itemData">
+                <td>{{ item.name }}</td>
+                <td>{{ formatCost(item.cost) }}</td>
+                <td>{{ item.ac }} 
+                    <ng-container *ngIf="item.maxDex !== 0">
+                        + DEX 
+                    </ng-container>
+                    <ng-container *ngIf="item.maxDex">
+                        (max {{ item.maxDex }})
+                    </ng-container>
+                </td>
+                <td *ngIf="data.includes('heavy')">{{ item.strReq }}</td>
+                <td *ngIf="!data.includes('clothing')">{{ item.stealth }}</td>
+                <td>{{ formatWeight(item.weight) }}</td>
+                <td>{{ item.description }}</td>
+            </tr>
+        </ng-container>
+        <ng-container *ngIf="data.includes('shields')">
+            <tr *ngFor="let item of itemData">
+                <td>{{ item.name }}</td>
+                <td>{{ formatCost(item.cost) }}</td>
+                <td>+{{ item.ac }}</td>
+                <td>{{ item.strReq }}</td>
+                <td>{{ item.stealth }}</td>
+                <td>{{ item.damage }}</td>
+                <td>{{ formatWeight(item.weight) }}</td>
+                <td>{{ item.description }}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</nz-table>
+
+<div>
+    <div *ngIf="data.includes('clothing')">
+        <h5>Clothing as Armor</h5>
+        <div>
+            <p>Wearing these types of armor count as being unarmored for the purposes of features and traits, and do not require proficiency to use. You may use another source of Armor Class, such as an Unarmored Defense or Natural Armor feature, if it would provide you with a higher Armor Class.</p>
+            <p>In addition, all can be worn with other types of armor, which override their Armor Class calculations.</p>
+        </div>
+
+        <h5>Special Properties</h5>
+        <div>
+            <strong>Outlaw's Duster.</strong> The duster has three hidden pockets, each of which can hold up to 1 cubic foot of equipment. An Intelligence (Investigation) check against the wearer's passive Dexterity (Sleight of Hand) score must be made to find a hidden pocket.
+        </div>
+    </div>
+    <div *ngIf="data.includes('light')">
+        <h5>Special Properties</h5>
+        <div>
+            <strong>Leather, dark.</strong> The armor grants advantage on Dexterity (Stealth) checks made to hide while in dim light or darkness.
+        </div>
+        <div>
+            <strong>Studded Leather, dark.</strong> The armor grants advantage on Dexterity (Stealth) checks made to hide while in dim light or darkness.
+        </div>
+    </div>
+    <div *ngIf="data.includes('medium')">
+        <h5>Special Properties</h5>
+        <div>
+            <strong>Chain Shirt.</strong> You can wear the armor under a shirt or coat, requiring an Intelligence (Investigation) check against the wearer's passive Dexterity (Sleight of Hand) score to spot when worn in this way.
+        </div>
+        <div>
+            <strong>Breastplate.</strong> You can wear the armor under a shirt or coat, requiring an Intelligence (Investigation) check against the wearer's passive Dexterity (Sleight of Hand) score to spot when worn in this way.
+        </div>
+    </div>
+    <div *ngIf="data.includes('heavy')">
+        <h5>Special Properties</h5>
+        <div>
+            <strong>Fortress Plate.</strong> You automatically fail any Dexterity (Stealth) checks you make while wearing the armor.
+        </div>
+    </div>
+    <div *ngIf="data.includes('shields')">
+        <h5>Shields as Weapons</h5>
+        <div>
+            Shields can be used as weapons, dealing the damage listed with them. Bucklers and heater shields are considered simple melee weapons, kite shields are considered martial melee weapons, and tower shields, snarlshields, wall shields, warshields are considered exotic melee weapons.
+        </div>
+
+        <h5>Special Properties</h5>
+        <div>
+            <strong>Buckler.</strong> While wielding the shield, you can still use the hand it is in for the second hand of two-handed weapons with a weight less than or equal to your Strength score or to grasp a one-handed weapon with a weight less than or equal to your Strength modifier.
+        </div>
+        <div>
+            <strong>Kite Shield.</strong> While mounted and wielding the shield, your shield's Armor Class bonus also applies to your mount.
+        </div>
+        <div>
+            <strong>Tower Shield.</strong> While wielding the shield, you gain a bonus to Dexterity saving throws equal to the shield's Armor Class bonus against effects you can see while you are not blinded or deafened.
+        </div>
+        <div>
+            <strong>Snarlshield.</strong> Once per turn, if you hit a creature wielding a weapon with an attack with the shield, you can force them to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.  On a failed check, the target drops one weapon of your choice.
+        </div>
+        <div>
+            <strong>Wall Shield.</strong> While wielding a wall shield, you gain a +1 bonus to your AC for each friendly creature within 5 feet of you who is also wielding a wall shield (max +5).
+        </div>
+        <div>
+            <strong>Warshield.</strong> While wielding two warshields, you gain half of the off-hand shield's AC bonus (rounded down, minimum of +1).
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+
+
+.hidden {
+    display: none;
+}
+
+.wiki {
+    padding: 30px;
+}
+::ng-deep a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+        color: black;
+        text-decoration: underline;
+    }
+}

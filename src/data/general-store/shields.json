@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Buckler",
+    "cost": 20,
+    "ac": 1,
+    "strReq": null,
+    "stealth": "",
+    "damage": "1d4",
+    "weight": 5,
+    "description": "A light shield that can easily be used alongside a weapon."
+  },
+  {
+    "name": "Heater Shield",
+    "cost": 10,
+    "ac": 2,
+    "strReq": null,
+    "stealth": "",
+    "damage": "1d6",
+    "weight": 7,
+    "description": "A lighter and more maneuverable shield."
+  },
+  {
+    "name": "Kite Shield",
+    "cost": 30,
+    "ac": 2,
+    "strReq": 13,
+    "stealth": "Disadvantage",
+    "damage": "1d8",
+    "weight": 10,
+    "description": "A tall, rhomboid shield that is favored in mounted combat."
+  },
+  {
+    "name": "Tower Shield",
+    "cost": 50,
+    "ac": 3,
+    "strReq": 15,
+    "stealth": "Disadvantage",
+    "damage": "1d10",
+    "weight": 15,
+    "description": "An enormous shield that protects a great deal of space."
+  },
+  {
+    "name": "Snarlshield",
+    "cost": 75,
+    "ac": 2,
+    "strReq": 13,
+    "stealth": "Disadvantage",
+    "damage": "1d8",
+    "weight": 8,
+    "description": "A snarlshield has a collection of short, blunt spikes on its surface designed to catch weapons and rip them from the attacker's grasp."
+  },
+  {
+    "name": "Wall Shield",
+    "cost": 50,
+    "ac": 2,
+    "strReq": 13,
+    "stealth": "Disadvantage",
+    "damage": "1d8",
+    "weight": 8,
+    "description": "A square shield designed to be used in formation with others of its kind."
+  },
+  {
+    "name": "Warshield",
+    "cost": 125,
+    "ac": 2,
+    "strReq": 13,
+    "stealth": "Disadvantage",
+    "damage": "1d6",
+    "weight": 6,
+    "description": "A specialized shield designed to be dual wielded."
+  }
+]
