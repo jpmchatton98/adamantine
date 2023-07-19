@@ -11,8 +11,8 @@
                 <ng-container *ngIf="class.spellcastingType === 'standard'">
                     <th>1st</th>
                     <th>2nd</th>
-                    <th>3rd</th>
-                    <th>4th</th>
+                    <th *ngIf="class.maxLevel === undefined">3rd</th>
+                    <th *ngIf="class.maxLevel === undefined">4th</th>
                     <ng-container *ngIf="class.spellcastingLevel <= 2">
                         <th>5th</th>
                     </ng-container>
@@ -40,7 +40,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let level of levels">
-            <ng-container *ngIf="level >= startLevel && level <= (class.maxLevel ?? 20)">
+            <ng-container *ngIf="level >= startLevel && level <= (class.maxLevel ?? 20) && level >= (class.tableStartLevel ?? 0)">
                 <ng-container [ngSwitch]="level">
                     <td *ngSwitchCase="1">1st</td>
                     <td *ngSwitchCase="2">2nd</td>
@@ -66,8 +66,8 @@
                     <ng-container *ngIf="class.spellcastingType === 'standard'">
                         <td>{{getSpellSlots(level, 1)}}</td>
                         <td>{{getSpellSlots(level, 2)}}</td>
-                        <td>{{getSpellSlots(level, 3)}}</td>
-                        <td>{{getSpellSlots(level, 4)}}</td>
+                        <td *ngIf="class.maxLevel === undefined">{{getSpellSlots(level, 3)}}</td>
+                        <td *ngIf="class.maxLevel === undefined">{{getSpellSlots(level, 4)}}</td>
                         <ng-container *ngIf="class.spellcastingLevel <= 2">
                             <td>{{getSpellSlots(level, 5)}}</td>
                         </ng-container>

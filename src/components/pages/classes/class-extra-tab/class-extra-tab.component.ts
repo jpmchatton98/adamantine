@@ -73,6 +73,13 @@ export class ClassExtraTabComponent implements OnInit, OnChanges {
         this.list = tabData.list;
         this.maxLevel = Math.ceil(20 / (4 * data.exploitLevel));
       }
+
+      if (tabData.maxLevel !== undefined) {
+        this.maxLevel = tabData.maxLevel;
+      }
+      if (tabData.cantrips === false) {
+        this.cantrips = false;
+      }
     } else {
       this.extra = true;
 

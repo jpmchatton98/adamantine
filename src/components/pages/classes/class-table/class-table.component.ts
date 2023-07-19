@@ -110,7 +110,11 @@ export class ClassTableComponent {
     }
   }
   public getExploitDice(classLevel: number): string {
-    if (classLevel === 1 && this.class.name !== 'Warlord') {
+    if (
+      classLevel === 1 &&
+      this.class.exploitLevel === 1 &&
+      this.class.name !== 'Warlord'
+    ) {
       return '-';
     }
     return `
@@ -119,7 +123,11 @@ export class ClassTableComponent {
     )}`;
   }
   public getExploitLimit(classLevel: number): string {
-    if (classLevel === 1 && this.class.name !== 'Warlord') {
+    if (
+      classLevel === 1 &&
+      this.class.exploitLevel === 1 &&
+      this.class.name !== 'Warlord'
+    ) {
       return '-';
     }
     return this.levelFormatter(
