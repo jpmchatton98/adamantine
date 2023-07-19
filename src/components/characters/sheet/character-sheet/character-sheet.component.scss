@@ -283,6 +283,13 @@
                     }
                 }
             }
+
+            .defense-icon {
+                background-color: green;
+                padding: 5px;
+                border-radius: 2px;
+                color: white;
+            }
         }
         .body-col {
             flex-grow: 1;

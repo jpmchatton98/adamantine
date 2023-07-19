@@ -80,13 +80,33 @@
                     </div>
                 </div>
             </div>
-            <div class="defenses">
+            <div class="defenses" *ngIf="defenses.damage?.length || defenses.condition?.length">
                 <h6>Defenses</h6>
-                <div class="subheader">
+                <div class="subheader" *ngIf="defenses.damage?.length">
                     <strong>Damage</strong>
+                    <div>
+                        <div *ngFor="let d of defenses.damage">
+                            <div *ngIf="d.level === 1">
+                                <span class="defense-icon">R</span> {{ d.type }}
+                            </div>
+                            <div *ngIf="d.level === 2">
+                                <span class="defense-icon">I</span> {{ d.type }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="subheader">
+                <div class="subheader" *ngIf="defenses.condition?.length">
                     <strong>Conditions</strong>
+                    <div>
+                        <div *ngFor="let d of defenses.condition">
+                            <div *ngIf="d.level === 1">
+                                <span class="defense-icon">A</span> {{ d.type }}
+                            </div>
+                            <div *ngIf="d.level === 2">
+                                <span class="defense-icon">I</span> {{ d.type }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="senses" *ngIf="senseString">

@@ -823,11 +823,17 @@ export class CharacterSheetService {
 
         for (let i = 1; i <= c.level; i++) {
           for (let feature of classData.features[i] ?? []) {
-            profs = { ...profs, ...this.getSaveProfsFromFeature(feature) };
+            profs = {
+              ...profs,
+              ...this.getSaveProfsFromFeature(feature, c.choices),
+            };
           }
           if (subclassData) {
             for (let feature of subclassData.features[i] ?? []) {
-              profs = { ...profs, ...this.getSaveProfsFromFeature(feature) };
+              profs = {
+                ...profs,
+                ...this.getSaveProfsFromFeature(feature, c.choices),
+              };
             }
           }
         }
@@ -836,7 +842,7 @@ export class CharacterSheetService {
 
     return profs;
   }
-  public getSaveProfsFromFeature(feature: any): any {
+  public getSaveProfsFromFeature(feature: any, choices: any[]): any {
     let profs = {};
 
     if (feature.granted) {
@@ -850,7 +856,32 @@ export class CharacterSheetService {
     }
     if (feature.subFeatures) {
       for (let f of feature.subFeatures) {
-        profs = { ...profs, ...this.getSaveProfsFromFeature(f) };
+        profs = { ...profs, ...this.getSaveProfsFromFeature(f, choices) };
+      }
+    }
+
+    if (feature.choices) {
+      if (Array.isArray(feature.choices)) {
+        for (let c of feature.choices) {
+          if (c.type === 'text' && c.grants === 'save-proficiency') {
+            const choiceEntry = choices.find((ch: any) => ch.id === c.id);
+            if (choiceEntry) {
+              profs[choiceEntry.value] = true;
+            }
+          }
+        }
+      } else {
+        if (
+          feature.choices.type === 'text' &&
+          feature.choices.grants === 'save-proficiency'
+        ) {
+          const choiceEntry = choices.find(
+            (c: any) => c.id === feature.choices.id
+          );
+          if (choiceEntry) {
+            profs[choiceEntry.value] = true;
+          }
+        }
       }
     }
 
@@ -1926,9 +1957,6 @@ export class CharacterSheetService {
 
     const character = JSON.parse(localStorage.getItem('character'));
 
-    // character.race?.choices?.forEach((choice) => {
-
-    // });
     const raceData = this.dataService.getRace(character.race?.name);
     let subraceData;
     if (character.race?.subrace) {
@@ -1956,10 +1984,6 @@ export class CharacterSheetService {
     }
 
     character.classes?.forEach((c, index) => {
-      // c.choices.forEach((choice) => {
-
-      // });
-
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -1992,15 +2016,6 @@ export class CharacterSheetService {
         }
       }
     });
-    // character.background?.choices?.forEach((choice) => {
-
-    // });
-    // character.genius?.choices?.forEach((choice) => {
-
-    // });
-    // character.override?.choices?.forEach((choice) => {
-
-    // });
 
     profs = [...new Set(profs)];
     profs = profs.sort();
@@ -2347,5 +2362,401 @@ export class CharacterSheetService {
     }
 
     return profs;
+  }
+
+  public getCharacterDefenses(): any {
+    return {
+      damage: this.getCharacterDamageDefenses(),
+      condition: this.getCharacterConditionDefenses(),
+    };
+  }
+  public getCharacterDamageDefenses(): any[] {
+    let damageDefenses = [];
+
+    const character = JSON.parse(localStorage.getItem('character'));
+
+    const raceData = this.dataService.getRace(character.race?.name);
+    let subraceData;
+    if (character.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        character.race.name,
+        character.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        damageDefenses = [
+          ...damageDefenses,
+          ...this.getFeatureDamageDefenses(trait, character.race.choices),
+        ];
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        damageDefenses = [
+          ...damageDefenses,
+          ...this.getFeatureDamageDefenses(trait, character.race.choices),
+        ];
+      }
+    }
+
+    character.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            damageDefenses = [
+              ...damageDefenses,
+              ...this.getFeatureDamageDefenses(feature, c.choices),
+            ];
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            damageDefenses = [
+              ...damageDefenses,
+              ...this.getFeatureDamageDefenses(feature, c.choices),
+            ];
+          });
+        }
+      }
+    });
+
+    damageDefenses = damageDefenses.sort((a, b) => {
+      if (a.type.localeCompare(b.type) < 0) {
+        return -1;
+      } else if (a.type.localeCompare(b.type) === 0) {
+        return a.level - b.level;
+      } else {
+        return 1;
+      }
+    });
+
+    return damageDefenses.reduce((acc, curr) => {
+      const existingDefense = acc.find((attack) => attack.type === curr.type);
+
+      if (existingDefense) {
+        if (curr.level > existingDefense.level) {
+          existingDefense.level = curr.level;
+        }
+      } else {
+        acc.push(curr);
+      }
+
+      return acc;
+    }, []);
+  }
+  public getFeatureDamageDefenses(feature: any, choices: any[]): any[] {
+    let damageDefenses = [];
+
+    feature.granted?.forEach((g) => {
+      if (g.type === 'damage-resistance') {
+        for (let o of g.options) {
+          damageDefenses.push({
+            type: o.toLowerCase(),
+            level: 1,
+          });
+        }
+      } else if (g.type === 'damage-immunity') {
+        for (let o of g.options) {
+          damageDefenses.push({
+            type: o.toLowerCase(),
+            level: 2,
+          });
+        }
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      damageDefenses.push(...this.getFeatureDamageDefenses(s, choices));
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        damageDefenses = [
+          ...damageDefenses,
+          ...this.getChoiceDamageDefenses(choice, choices),
+        ];
+      }
+    } else {
+      damageDefenses = [
+        ...damageDefenses,
+        ...this.getChoiceDamageDefenses(feature.choices, choices),
+      ];
+    }
+
+    if (feature.listed) {
+      damageDefenses = [
+        ...damageDefenses,
+        ...this.getListedDamageDefenses(feature.listed, choices),
+      ];
+    }
+
+    return damageDefenses;
+  }
+  private getChoiceDamageDefenses(choice: any, choices: any[]) {
+    let damageDefenses = [];
+
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        damageDefenses = [
+          ...damageDefenses,
+          ...this.getFeatureDamageDefenses(trait, choices),
+        ];
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        damageDefenses = [
+          ...damageDefenses,
+          ...this.getFeatureDamageDefenses(feat, choices),
+        ];
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        damageDefenses = [
+          ...damageDefenses,
+          ...this.getFeatureDamageDefenses(data, choices),
+        ];
+      }
+    } else if (
+      choice?.type === 'text' &&
+      choice?.grants === 'damage-resistance'
+    ) {
+      damageDefenses.push({
+        type: choiceEntry.value.toLowerCase(),
+        level: 1,
+      });
+    } else if (
+      choice?.type === 'text' &&
+      choice?.grants === 'damage-immunity'
+    ) {
+      damageDefenses.push({
+        type: choiceEntry.value.toLowerCase(),
+        level: 2,
+      });
+    }
+
+    return damageDefenses;
+  }
+  private getListedDamageDefenses(listed: any, choices: any[]): any[] {
+    let damageDefenses = [];
+
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          damageDefenses = [
+            ...damageDefenses,
+            ...this.getFeatureDamageDefenses(data, choices),
+          ];
+        }
+      }
+    } else if (this.dataService.getGenericKeys().includes(listed?.type)) {
+      damageDefenses.push(...(choiceEntry?.list ?? []));
+    }
+
+    return damageDefenses;
+  }
+
+  public getCharacterConditionDefenses(): any[] {
+    let conditionDefenses = [];
+
+    const character = JSON.parse(localStorage.getItem('character'));
+
+    const raceData = this.dataService.getRace(character.race?.name);
+    let subraceData;
+    if (character.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        character.race.name,
+        character.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        conditionDefenses = [
+          ...conditionDefenses,
+          ...this.getFeatureConditionDefenses(trait, character.race.choices),
+        ];
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        conditionDefenses = [
+          ...conditionDefenses,
+          ...this.getFeatureConditionDefenses(trait, character.race.choices),
+        ];
+      }
+    }
+
+    character.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            conditionDefenses = [
+              ...conditionDefenses,
+              ...this.getFeatureConditionDefenses(feature, c.choices),
+            ];
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            conditionDefenses = [
+              ...conditionDefenses,
+              ...this.getFeatureConditionDefenses(feature, c.choices),
+            ];
+          });
+        }
+      }
+    });
+
+    return conditionDefenses.reduce((acc, curr) => {
+      const existingDefense = acc.find((attack) => attack.type === curr.type);
+
+      if (existingDefense) {
+        if (curr.level > existingDefense.level) {
+          existingDefense.level = curr.level;
+        }
+      } else {
+        acc.push(curr);
+      }
+
+      return acc;
+    }, []);
+  }
+  public getFeatureConditionDefenses(feature: any, choices: any[]): any[] {
+    let conditionDefenses = [];
+
+    feature.granted?.forEach((g) => {
+      if (g.type === 'condition-advantage') {
+        for (let o of g.options) {
+          conditionDefenses.push({
+            type: o.toLowerCase(),
+            level: 1,
+          });
+        }
+      } else if (g.type === 'condition-immunity') {
+        for (let o of g.options) {
+          conditionDefenses.push({
+            type: o.toLowerCase(),
+            level: 2,
+          });
+        }
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      conditionDefenses.push(...this.getFeatureConditionDefenses(s, choices));
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        conditionDefenses = [
+          ...conditionDefenses,
+          ...this.getChoiceConditionDefenses(choice, choices),
+        ];
+      }
+    } else {
+      conditionDefenses = [
+        ...conditionDefenses,
+        ...this.getChoiceConditionDefenses(feature.choices, choices),
+      ];
+    }
+
+    if (feature.listed) {
+      conditionDefenses = [
+        ...conditionDefenses,
+        ...this.getListedConditionDefenses(feature.listed, choices),
+      ];
+    }
+
+    return conditionDefenses;
+  }
+  private getChoiceConditionDefenses(choice: any, choices: any[]) {
+    let conditionDefenses = [];
+
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        conditionDefenses = [
+          ...conditionDefenses,
+          ...this.getFeatureConditionDefenses(trait, choices),
+        ];
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        conditionDefenses = [
+          ...conditionDefenses,
+          ...this.getFeatureConditionDefenses(feat, choices),
+        ];
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        conditionDefenses = [
+          ...conditionDefenses,
+          ...this.getFeatureConditionDefenses(data, choices),
+        ];
+      }
+    } else if (
+      choice?.type === 'text' &&
+      choice?.grants === 'condition-advantage'
+    ) {
+      conditionDefenses.push({
+        type: choiceEntry.value.toLowerCase(),
+        level: 1,
+      });
+    } else if (
+      choice?.type === 'text' &&
+      choice?.grants === 'condition-immunity'
+    ) {
+      conditionDefenses.push({
+        type: choiceEntry.value.toLowerCase(),
+        level: 2,
+      });
+    }
+
+    return conditionDefenses;
+  }
+  private getListedConditionDefenses(listed: any, choices: any[]): any[] {
+    let conditionDefenses = [];
+
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          conditionDefenses = [
+            ...conditionDefenses,
+            ...this.getFeatureDamageDefenses(data, choices),
+          ];
+        }
+      }
+    } else if (this.dataService.getGenericKeys().includes(listed?.type)) {
+      conditionDefenses.push(...(choiceEntry?.list ?? []));
+    }
+
+    return conditionDefenses;
   }
 }

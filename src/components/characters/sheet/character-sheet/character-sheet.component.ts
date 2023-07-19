@@ -74,6 +74,7 @@ export class CharacterSheetComponent implements OnInit {
   public exploitAbilities: string[] = [];
 
   public profs: any = {};
+  public defenses: any = {};
 
   public weaponAttacks: any[] = [];
 
@@ -173,6 +174,8 @@ export class CharacterSheetComponent implements OnInit {
     this.notes = this.character.notes ?? '';
 
     this.profs = this.characterSheetService.getCharacterProficiencies();
+
+    this.defenses = this.characterSheetService.getCharacterDefenses();
 
     for (let e of this.character.equipment?.items?.sort((a, b) =>
       a.item.localeCompare(b.item)
