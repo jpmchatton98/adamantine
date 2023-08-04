@@ -368,6 +368,10 @@ export class BuilderChoiceComponent implements OnInit {
               return true;
             }
           });
+        } else if (choice.id === 'metallic-breath') {
+          choiceOptions = choiceOptions.filter((o: any) =>
+            o.name.includes(this.characterObj.subrace)
+          );
         }
       }
     }
