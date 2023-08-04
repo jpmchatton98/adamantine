@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CharacterSheetService } from 'src/services/character-sheet.service';
+import { DataService } from 'src/services/data.service';
 
 @Component({
   selector: 'app-sheet-uses',
@@ -11,16 +12,24 @@ export class SheetUsesComponent implements OnInit {
   @Input() characterObj;
   @Input() characterLevel;
 
-  constructor(private characterSheetService: CharacterSheetService) {}
+  public maxUses = 0;
+
+  constructor(
+    private characterSheetService: CharacterSheetService,
+    private dataService: DataService
+  ) {}
 
   public ngOnInit(): void {
-    switch (this.feature.uses.type) {
-      case 'derived':
-        break;
-      case 'level':
-        break;
-      case 'fixed':
-        break;
+    let dataObj: any = this.dataService.getRace(this.characterObj.name);
+    if (!dataObj) {
+      dataObj = this.dataService.getClass(this.characterObj.name);
     }
+
+    this.maxUses = this.characterSheetService.getMaxUsesById(
+      dataObj,
+      this.characterObj,
+      this.feature.uses.id,
+      this.characterLevel
+    );
   }
 }

@@ -67,7 +67,7 @@ export class InventoryComponent implements OnInit {
     );
 
     let totalCoins = 0;
-    for (let amount of Object.values(this.equipment.currency)) {
+    for (let amount of Object.values(this.equipment.currency ?? {})) {
       totalCoins += parseInt(amount.toString());
     }
 

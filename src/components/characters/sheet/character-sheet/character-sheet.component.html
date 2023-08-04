@@ -363,13 +363,13 @@
                             <div *ngFor="let c of character.classes">
                                 <h6>{{ getClassName(c.name) }} Features</h6>
                                 <div *ngFor="let feature of getClassFeatures(c)">
-                                    <app-sheet-feature [characterObj]="c" [feature]="feature"></app-sheet-feature>
+                                    <app-sheet-feature [characterObj]="c" [feature]="feature" [characterLevel]="c.level"></app-sheet-feature>
                                 </div>
 
                                 <ng-container *ngIf="c.subclass">
                                     <div class="subclass-header"><strong>{{ c.subclass }} Features</strong></div>
                                     <div *ngFor="let feature of getSubclassFeatures(c)">
-                                        <app-sheet-feature [characterObj]="c" [feature]="feature"></app-sheet-feature>
+                                        <app-sheet-feature [characterObj]="c" [feature]="feature" [characterLevel]="c.level"></app-sheet-feature>
                                     </div>
                                 </ng-container>
                             </div>

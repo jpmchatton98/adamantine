@@ -417,6 +417,15 @@ export class CharacterSheetService {
     }
     return 1;
   }
+  private getProficiencyBonus() {
+    return Math.floor(2 + (this.getTotalLevel() - 1) / 4);
+  }
+  private getScore(score: string): number {
+    return (this.getCharacterFromCache().scores?.actual ?? {})[score] ?? 1;
+  }
+  private getModifier(score: string): number {
+    return Math.floor((this.getScore(score) - 10) / 2);
+  }
 
   private adjustLevels(skillProfs: SkillProf[]): SkillProf[] {
     skillProfs = skillProfs.sort((a, b) => {
@@ -2903,5 +2912,214 @@ export class CharacterSheetService {
     }
 
     return hpBonus;
+  }
+
+  public getMaxUsesById(
+    dataObj: any,
+    characterObj: any,
+    useId: string,
+    level: number
+  ): number {
+    let maxUses = 0;
+
+    if (dataObj.traits) {
+      for (let trait of dataObj.traits) {
+        maxUses = this.getFeatureUses(
+          trait,
+          characterObj.choices,
+          useId,
+          level,
+          maxUses
+        );
+      }
+    } else if (dataObj.features) {
+      for (let i = 1; i <= level; i++) {
+        if (dataObj.features[level]) {
+          for (let feature of dataObj.features[level]) {
+            maxUses = this.getFeatureUses(
+              feature,
+              characterObj.choices,
+              useId,
+              level,
+              maxUses
+            );
+          }
+        }
+      }
+    }
+
+    if (dataObj.subraces) {
+      let subrace = dataObj.subraces.find(
+        (s) => s.name === characterObj.subrace
+      );
+      if (subrace) {
+        for (let trait of subrace.traits) {
+          maxUses = this.getFeatureUses(
+            trait,
+            characterObj.choices,
+            useId,
+            level,
+            maxUses
+          );
+        }
+      }
+    }
+    if (dataObj.subclasses) {
+      let subclass = dataObj.subclasses.find(
+        (s) => s.name === characterObj.subclass
+      );
+      if (subclass) {
+        for (let i = 1; i <= level; i++) {
+          if (subclass.features[level]) {
+            for (let feature of subclass.features[level]) {
+              maxUses = this.getFeatureUses(
+                feature,
+                characterObj.choices,
+                useId,
+                level,
+                maxUses
+              );
+            }
+          }
+        }
+      }
+    }
+
+    return maxUses;
+  }
+  private getFeatureUses(
+    feature: any,
+    choices: any[],
+    useId: string,
+    level: number,
+    maxUses: number
+  ): number {
+    if (maxUses !== -1) {
+      if (feature.uses) {
+        let use;
+        if (Array.isArray(feature.uses)) {
+          use = feature.uses.find((u) => u.id === useId);
+        } else if (feature.uses.id === useId) {
+          use = feature.uses;
+        }
+
+        if (use) {
+          switch (use.type) {
+            case 'fixed':
+              maxUses += use.amount;
+              break;
+            case 'level':
+              maxUses += use.amount[level - 1];
+            case 'derived':
+              let amount = 0;
+              switch (use.source) {
+                case 'level':
+                  amount = level;
+                  break;
+                case 'proficiency':
+                  amount = this.getProficiencyBonus();
+                  break;
+                case 'score':
+                  let score;
+                  if (use.score.includes('-')) {
+                    score = choices.find((ch) => ch.id === use.score)?.value;
+                  } else {
+                    score = use.score;
+                  }
+
+                  if (score) {
+                    amount = this.getModifier(score);
+                  }
+                  break;
+              }
+
+              maxUses += amount;
+              break;
+          }
+        }
+      }
+
+      if (feature.subFeatures) {
+        for (let s of feature.subFeatures) {
+          maxUses = this.getFeatureUses(s, choices, useId, level, maxUses);
+        }
+      }
+
+      if (Array.isArray(feature.choices)) {
+        for (let choice of feature.choices) {
+          maxUses = this.getChoiceUses(choice, choices, useId, level, maxUses);
+        }
+      } else {
+        maxUses = this.getChoiceUses(
+          feature.choices,
+          choices,
+          useId,
+          level,
+          maxUses
+        );
+      }
+
+      if (feature.listed) {
+        maxUses = this.getListedUses(
+          feature.listed,
+          choices,
+          useId,
+          level,
+          maxUses
+        );
+      }
+    }
+    return maxUses;
+  }
+  private getChoiceUses(
+    choice: any,
+    choices: any[],
+    useId: string,
+    level: number,
+    maxUses: number
+  ): number {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        maxUses = this.getFeatureUses(trait, choices, useId, level, maxUses);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        maxUses = this.getFeatureUses(feat, choices, useId, level, maxUses);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        maxUses = this.getFeatureUses(data, choices, useId, level, maxUses);
+      }
+    }
+
+    return maxUses;
+  }
+  private getListedUses(
+    listed: any,
+    choices: any[],
+    useId: string,
+    level: number,
+    maxUses: number
+  ): number {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          maxUses = this.getFeatureUses(data, choices, useId, level, maxUses);
+        }
+      }
+    }
+
+    return maxUses;
   }
 }
