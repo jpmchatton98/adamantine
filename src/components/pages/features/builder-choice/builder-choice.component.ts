@@ -325,6 +325,50 @@ export class BuilderChoiceComponent implements OnInit {
               return false;
             });
         }
+      } else {
+        choiceOptions = choice.options;
+        if (choice.id === 'draconic-legacy') {
+          choiceOptions = choiceOptions.filter((o: any) => {
+            if (o.name.includes('Pureblood')) {
+              if (o.name.includes('Chromatic')) {
+                return [
+                  'Black',
+                  'Blue',
+                  'Green',
+                  'Purple',
+                  'Red',
+                  'White',
+                ].includes(this.characterObj.subrace);
+              }
+              if (o.name.includes('Gem')) {
+                return [
+                  'Amethyst',
+                  'Crystal',
+                  'Emerald',
+                  'Moonstone',
+                  'Obsidian',
+                  'Ruby',
+                  'Sapphire',
+                  'Topaz',
+                ].includes(this.characterObj.subrace);
+              }
+              if (o.name.includes('Metallic')) {
+                return [
+                  'Brass',
+                  'Bronze',
+                  'Copper',
+                  'Gold',
+                  'Platinum',
+                  'Silver',
+                  'Steel',
+                  'Tungsten',
+                ].includes(this.characterObj.subrace);
+              }
+            } else {
+              return true;
+            }
+          });
+        }
       }
     }
 

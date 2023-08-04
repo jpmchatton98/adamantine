@@ -1498,7 +1498,7 @@
         "name": "Draconic Legacy",
         "description": "You have an additional feature determined by your draconic legacy, selected from the options below:",
         "choices": {
-          "id": "9ACDD715-DDF4-48AE-B260-4709DCEC4350",
+          "id": "draconic-legacy",
           "type": "trait",
           "options": [
             {

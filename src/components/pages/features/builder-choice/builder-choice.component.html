@@ -1,14 +1,3 @@
-<ng-container *ngIf="choice?.type === 'trait'">
-    <nz-select [(ngModel)]="choiceValue" (ngModelChange)="onChange()">
-        <nz-option nzHide [nzValue]="null" nzLabel="-----" disabled></nz-option>
-        <nz-option *ngFor="let choiceTrait of choice?.options" [nzValue]="choiceTrait.name" [nzLabel]="choiceTrait.name"></nz-option>
-    </nz-select>
-    <ng-container *ngIf="choiceOption">
-        <ng-container *ngFor="let trait of choiceOption.traits">
-            <app-builder-feature [characterObj]="characterObj" [feature]="trait" [choiceFeature]="true" [level]="level + 1" [sourceId]="choice?.id" [sourceValue]="choiceValue"></app-builder-feature>
-        </ng-container>
-    </ng-container>
-</ng-container>
 <ng-container *ngIf="choiceOptions.length">
     <nz-select [(ngModel)]="choiceValue" (ngModelChange)="onChange()">
         <nz-option nzHide [nzValue]="null" nzLabel="-----" disabled></nz-option>
@@ -32,5 +21,8 @@
             </nz-collapse-panel>
         </nz-collapse>
         <app-builder-feature *ngIf="genericListKeys.includes(choice?.type) || choice?.type === 'feat'" [characterObj]="characterObj" [feature]="choiceOption" [choiceFeature]="true" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="choice?.id" [sourceValue]="choiceValue"></app-builder-feature>
+        <div *ngIf="choice?.type === 'trait'">
+            <app-builder-feature *ngFor="let trait of choiceOption.traits" [characterObj]="characterObj" [feature]="trait" [choiceFeature]="true" [level]="level + 1" [characterLevel]="characterLevel" [sourceId]="choice?.id" [sourceValue]="choiceValue"></app-builder-feature>
+        </div>
     </ng-container>
 </ng-container>
