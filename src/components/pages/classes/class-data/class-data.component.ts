@@ -27,4 +27,17 @@ export class ClassDataComponent implements OnInit {
       .sort((a, b) => a - b)
       .map((l) => l.toString());
   }
+
+  public numbers(i: number): string {
+    switch (i) {
+      case 1:
+        return 'one';
+      case 2:
+        return 'two';
+      case 3:
+        return 'three';
+      case 4:
+        return 'four';
+    }
+  }
 }
