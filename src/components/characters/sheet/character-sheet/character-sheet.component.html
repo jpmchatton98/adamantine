@@ -33,10 +33,24 @@
                 <div>AC</div>
                 <h6>{{ 10 + modifierNumber('dex') }}</h6>
             </div>
-            <div class="hp">
-                <div>HP</div>
-                <h6>10</h6>
+            <div class="score" style="cursor: pointer;" (click)="hpModal = true">
+                <h6>HP</h6>
+                <div class="total">{{ (hp - currHp) + tempHp }}</div>
+                <div class="mod">{{ hp }}</div>
             </div>
+            <nz-modal [(nzVisible)]="hpModal" nzTitle="Hit Points" [nzCancelText]="null" [nzOkText]="null" (nzOnCancel)="hpModal = false">
+                <ng-container *nzModalContent>
+                    {{ hp - currHp }} / {{ hp }}
+                    <div>
+                        <input nz-input-number [(ngModel)]="hpMod">
+                        <button nz-button (click)="heal()">Heal</button>
+                        <button nz-button (click)="damage()">Damage</button>
+                    </div>
+
+                    <h6>Temp HP</h6>
+                    <input nz-input-number [(ngModel)]="tempHp" (ngModelChange)="updateTempHp()">
+                </ng-container>
+            </nz-modal>
         </div>
     </div>
     <div class="sheet-row">

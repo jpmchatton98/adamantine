@@ -31,11 +31,12 @@ export class ClassTabComponent {
   }
 
   public setClass(className: string): void {
-    if (this.character.classes) {
+    if (this.character.classes?.length) {
       this.character.classes.push({
         name: className,
         choices: [],
         level: 1,
+        hp: [this.getHitDie(className) / 2 + 1],
       });
     } else {
       this.character.classes = [
@@ -43,6 +44,7 @@ export class ClassTabComponent {
           name: className,
           choices: [],
           level: 1,
+          hp: [this.getHitDie(className)],
         },
       ];
     }
@@ -72,5 +74,8 @@ export class ClassTabComponent {
     } else {
       return this.character.race?.name?.toLowerCase() !== 'demi-dragon';
     }
+  }
+  public getHitDie(className: string): number {
+    return this.dataService.getClass(className).hitDie;
   }
 }

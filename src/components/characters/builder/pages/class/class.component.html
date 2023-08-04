@@ -1,10 +1,18 @@
 <h3>{{ classData.name }}</h3>
 <div>
     <strong>Level:</strong> {{ characterClass.level }} 
-    <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="setLevel(1)">+</button> 
+    <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="hpModal = true">+</button> 
     <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="setLevel(-1)">-</button>
     <button nz-button [nzShape]="'circle'" [nzSize]="'small'" [nzType]="'primary'" (click)="deleteClass()" nzDanger>&times;</button>
 </div>
+<nz-modal [(nzVisible)]="hpModal" nzTitle="Level Up" [nzCancelText]="null" [nzClosable]="false" [nzOkText]="null" (nzOnCancel)="hpModal = false">
+    <ng-container *nzModalContent>
+        Would you like to roll for your level-up hit points or take the average ({{ classData.hitDie / 2 + 1 }})?
+
+        <button nz-button [nzType]="'primary'" (click)="setLevel(1, 'r')">Roll</button> 
+        <button nz-button [nzType]="'primary'" (click)="setLevel(1, 'a')">Average</button>
+    </ng-container>
+</nz-modal>
 
 <app-builder-feature [feature]="classProfs" [characterObj]="characterClass" [characterLevel]="1"></app-builder-feature>
 

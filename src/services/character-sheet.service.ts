@@ -595,7 +595,11 @@ export class CharacterSheetService {
       for (let choice of feature.choices) {
         skillList = [
           ...skillList,
-          ...this.getChoiceItems(choice, choices, this.getFeatureSkillProfs),
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureSkillProfs.bind(this)
+          ),
         ];
       }
     } else {
@@ -604,7 +608,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureSkillProfs
+          this.getFeatureSkillProfs.bind(this)
         ),
       ];
     }
@@ -615,7 +619,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureSkillProfs
+          this.getFeatureSkillProfs.bind(this)
         ),
       ];
     }
@@ -775,7 +779,11 @@ export class CharacterSheetService {
       for (let choice of feature.choices) {
         skillList = [
           ...skillList,
-          ...this.getChoiceItems(choice, choices, this.getFeatureToolProfs),
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureToolProfs.bind(this)
+          ),
         ];
       }
     } else {
@@ -784,7 +792,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureToolProfs
+          this.getFeatureToolProfs.bind(this)
         ),
       ];
     }
@@ -795,7 +803,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureToolProfs
+          this.getFeatureToolProfs.bind(this)
         ),
       ];
     }
@@ -1053,7 +1061,7 @@ export class CharacterSheetService {
           ...this.getChoiceItems(
             choice,
             choices,
-            this.getFeatureSkillOverrides
+            this.getFeatureSkillOverrides.bind(this)
           ),
         ];
       }
@@ -1063,7 +1071,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureSkillOverrides
+          this.getFeatureSkillOverrides.bind(this)
         ),
       ];
     }
@@ -1074,7 +1082,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureSkillOverrides
+          this.getFeatureSkillOverrides.bind(this)
         ),
       ];
     }
@@ -1171,7 +1179,11 @@ export class CharacterSheetService {
       for (let choice of feature.choices) {
         skillList = [
           ...skillList,
-          ...this.getChoiceItems(choice, choices, this.getFeatureToolOverrides),
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureToolOverrides.bind(this)
+          ),
         ];
       }
     } else {
@@ -1180,7 +1192,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureToolOverrides
+          this.getFeatureToolOverrides.bind(this)
         ),
       ];
     }
@@ -1191,7 +1203,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureToolOverrides
+          this.getFeatureToolOverrides.bind(this)
         ),
       ];
     }
@@ -2045,7 +2057,11 @@ export class CharacterSheetService {
       for (let choice of feature.choices) {
         profs = [
           ...profs,
-          ...this.getChoiceItems(choice, choices, this.getFeatureArmorProfs),
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureArmorProfs.bind(this)
+          ),
         ];
       }
     } else {
@@ -2054,7 +2070,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureArmorProfs
+          this.getFeatureArmorProfs.bind(this)
         ),
       ];
     }
@@ -2065,7 +2081,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureArmorProfs
+          this.getFeatureArmorProfs.bind(this)
         ),
       ];
     }
@@ -2182,7 +2198,11 @@ export class CharacterSheetService {
       for (let choice of feature.choices) {
         profs = [
           ...profs,
-          ...this.getChoiceItems(choice, choices, this.getFeatureLanguageProfs),
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureLanguageProfs.bind(this)
+          ),
         ];
       }
     } else {
@@ -2191,7 +2211,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureLanguageProfs
+          this.getFeatureLanguageProfs.bind(this)
         ),
       ];
     }
@@ -2202,7 +2222,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureLanguageProfs
+          this.getFeatureLanguageProfs.bind(this)
         ),
       ];
     }
@@ -2343,7 +2363,11 @@ export class CharacterSheetService {
       for (let choice of feature.choices) {
         profs = [
           ...profs,
-          ...this.getChoiceItems(choice, choices, this.getFeatureWeaponProfs),
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureWeaponProfs.bind(this)
+          ),
         ];
       }
     } else {
@@ -2352,7 +2376,7 @@ export class CharacterSheetService {
         ...this.getChoiceItems(
           feature.choices,
           choices,
-          this.getFeatureWeaponProfs
+          this.getFeatureWeaponProfs.bind(this)
         ),
       ];
     }
@@ -2363,7 +2387,7 @@ export class CharacterSheetService {
         ...this.getListedItems(
           feature.listed,
           choices,
-          this.getFeatureWeaponProfs
+          this.getFeatureWeaponProfs.bind(this)
         ),
       ];
     }
@@ -2765,5 +2789,119 @@ export class CharacterSheetService {
     }
 
     return conditionDefenses;
+  }
+
+  public getHpBonus(): number {
+    let hpBonus = 0;
+    const character = JSON.parse(localStorage.getItem('character'));
+
+    const raceData = this.dataService.getRace(character.race?.name);
+    let subraceData;
+    if (character.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        character.race.name,
+        character.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        hpBonus += this.getFeatureHpBonus(trait, character.race.choices);
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        hpBonus += this.getFeatureHpBonus(trait, character.race.choices);
+      }
+    }
+
+    character.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            hpBonus += this.getFeatureHpBonus(feature, c.choices);
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            hpBonus += this.getFeatureHpBonus(feature, c.choices);
+          });
+        }
+      }
+    });
+
+    return hpBonus;
+  }
+  public getFeatureHpBonus(feature: any, choices: any[]): number {
+    let hpBonus = 0;
+
+    feature.granted?.forEach((g) => {
+      if (g.type === 'hit-point-level') {
+        hpBonus += g.amount;
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      hpBonus += this.getFeatureHpBonus(s, choices);
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        hpBonus += this.getChoiceHpBonus(choice, choices);
+      }
+    } else {
+      hpBonus += this.getChoiceHpBonus(feature.choices, choices);
+    }
+
+    if (feature.listed) {
+      hpBonus += this.getListedHpBonus(feature.listed, choices);
+    }
+
+    return hpBonus;
+  }
+  private getChoiceHpBonus(choice: any, choices: any[]): number {
+    let hpBonus = 0;
+
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        hpBonus += this.getFeatureHpBonus(trait, choices);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        hpBonus += this.getFeatureHpBonus(feat, choices);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        hpBonus += this.getFeatureHpBonus(data, choices);
+      }
+    }
+
+    return hpBonus;
+  }
+  private getListedHpBonus(listed: any, choices: any[]): number {
+    let hpBonus = 0;
+
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          hpBonus += this.getFeatureHpBonus(data, choices);
+        }
+      }
+    }
+
+    return hpBonus;
   }
 }

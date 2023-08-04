@@ -52,6 +52,8 @@ export class CharacterSheetComponent implements OnInit {
 
   public character: any = {};
 
+  public hp: number;
+
   public skills: any[] = [];
   public skillProfs: any[] = [];
   public skillOverrides: any[] = [];
@@ -79,6 +81,11 @@ export class CharacterSheetComponent implements OnInit {
   public weaponAttacks: any[] = [];
 
   public notes: string = '';
+  public hpModal = false;
+
+  public currHp;
+  public tempHp = 0;
+  public hpMod = 0;
 
   constructor(
     private characterSheetService: CharacterSheetService,
@@ -191,9 +198,76 @@ export class CharacterSheetComponent implements OnInit {
           })
         );
 
+        this.calculateHp();
+        this.tempHp = this.character.tempHp ?? 0;
         this.generateWeaponAttacks();
       }
     });
+  }
+
+  private calculateHp() {
+    this.hp = 0;
+    if (this.character.classes) {
+      for (let c of this.character.classes) {
+        this.hp += c.hp.reduce((partialSum, a) => partialSum + a, 0);
+      }
+    }
+
+    this.hp += this.modifierNumber('con') * this.characterLevel();
+    this.hp += this.characterSheetService.getHpBonus() * this.characterLevel();
+
+    if (this.hp < 1) {
+      this.hp = 1;
+    }
+
+    if (this.character.hp !== this.hp) {
+      this.character.hp = this.hp;
+      this.store.dispatch(new Update());
+    }
+
+    if (this.character.currHp === undefined) {
+      this.currHp = 0;
+    } else {
+      this.currHp = this.character.currHp;
+    }
+  }
+  public heal() {
+    this.currHp -= this.hpMod;
+    if (this.currHp < 0) {
+      this.currHp = 0;
+    }
+
+    this.hpMod = 0;
+    this.character.currHp = this.currHp;
+    this.updateTempHp();
+  }
+  public damage() {
+    this.tempHp = this.parseInt(this.tempHp);
+    if (this.tempHp > 0) {
+      this.tempHp -= this.hpMod;
+      if (this.tempHp < 0) {
+        this.currHp -= this.tempHp;
+        this.tempHp = 0;
+      }
+    } else {
+      this.currHp += this.hpMod;
+    }
+    if (this.currHp > this.hp) {
+      this.currHp = this.hp;
+    }
+
+    this.hpMod = 0;
+    this.character.currHp = this.currHp;
+    this.updateTempHp();
+  }
+  public updateTempHp() {
+    this.tempHp = this.parseInt(this.tempHp);
+    this.character.tempHp = this.tempHp;
+
+    this.store.dispatch(new Update());
+  }
+  public parseInt(number) {
+    return parseInt(number);
   }
 
   private generateWeaponAttacks() {
@@ -323,6 +397,9 @@ export class CharacterSheetComponent implements OnInit {
   }
 
   public saveIsProficient(score: string): boolean {
+    if (!this.saveProfs) {
+      return false;
+    }
     return this.saveProfs[score];
   }
   public getSaveMod(score: string): number {

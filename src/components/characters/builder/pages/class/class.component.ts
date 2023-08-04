@@ -26,6 +26,7 @@ export class ClassComponent implements OnInit {
   public classData: IClass;
   public subclassData: ISubclass;
   public subclassName: string = '';
+  public hpModal = false;
 
   public classProfs = {
     name: 'Proficiences',
@@ -191,11 +192,34 @@ export class ClassComponent implements OnInit {
     }
   }
 
-  public setLevel(amount: number): void {
+  public setLevel(amount: number, hp: string = ''): void {
     this.characterClass.level += amount;
     if (this.characterClass.level <= 0) {
       this.removeClass.emit(this.characterClass.name);
     }
+
+    if (!this.characterClass.hp) {
+      this.characterClass.hp = [];
+    }
+    if (amount > 0) {
+      switch (hp) {
+        case 'r':
+          let roll = 0;
+          while (roll < 2) {
+            roll = Math.floor(Math.random() * this.classData.hitDie) + 1;
+          }
+          this.characterClass.hp[this.characterClass.level - 1] = roll;
+          break;
+        case 'a':
+          this.characterClass.hp[this.characterClass.level - 1] =
+            this.classData.hitDie / 2 + 1;
+          break;
+      }
+    } else {
+      this.characterClass.hp[this.characterClass.level] = 0;
+    }
+
+    this.hpModal = false;
 
     this.store.dispatch(new Update());
   }
