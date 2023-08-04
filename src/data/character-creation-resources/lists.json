@@ -641,6 +641,610 @@
       }
     }
   ],
+  "ancestry": [
+    {
+      "name": "Aarakocra",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pingui Aarakocra",
+      "traits": [
+        {
+          "name": "Arctic Swimmer",
+          "description": "You have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        },
+        {
+          "name": "Flight",
+          "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arachnen",
+      "traits": [
+        {
+          "name": "Arachnid Build",
+          "description": "You count as one size larger when determining your carrying capacity and the weight you can push or drag, and you have advantage on saving throws against being knocked prone.</p><p>In addition, you have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            },
+            {
+              "type": "condition-advantage",
+              "options": ["Prone"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Azapian",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have thin wings that produce a buzzing sound when flying. You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.  While flying, you have disadvantage on Dexterity (Stealth) checks made to move silently.",
+          "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
+        }
+      ]
+    },
+    {
+      "name": "Cecaelia",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bronze Dragonborn",
+      "traits": [
+        {
+          "name": "Seawyrm",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Winged Bronze Dragonborn",
+      "traits": [
+        {
+          "name": "Dragon Wings",
+          "description": "You have large wings resembling those of a dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        },
+        {
+          "name": "Seawyrm",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Winged Dragonborn",
+      "traits": [
+        {
+          "name": "Dragon Wings",
+          "description": "You have large wings resembling those of a dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Avariel Elf",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have a flying speed equal to your walking speed. To use this speed, you can't be wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rock Elf",
+      "traits": [
+        {
+          "name": "Rock Climber",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sea Elf",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You have a swimming speed equal to your walking speed, and you can breathe air and water.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fairy",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have a flying speed equal to your walking speed and can hover. You can't use this flying speed if you're wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "hover",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Water Genasi",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and you have a swimming speed equal to your walking speed. In addition, your range of vision is doubled underwater.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mountain Goblin",
+      "traits": [
+        {
+          "name": "Agile Climber",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grung",
+      "traits": [
+        {
+          "name": "Sticky Fingers",
+          "description": "You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hadozee",
+      "traits": [
+        {
+          "name": "Dexterous Feet",
+          "description": "As a bonus action, you can use your feet to manipulate an object, open or close a door or container, or pick up or set down a Tiny object. In addition, you have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rock Half-Elf",
+      "traits": [
+        {
+          "name": "Rock Climber",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Sea Half-Elf",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You have a swimming speed equal to your walking speed, and you can breathe air and water.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ivathi",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have large, cloak-like wings. You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blessed Kenku",
+      "traits": [
+        {
+          "name": "Beloved Wings",
+          "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Urd",
+      "traits": [
+        {
+          "name": "Urd Wings",
+          "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "fly",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kor",
+      "traits": [
+        {
+          "name": "Kor Climbing",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mossheart Koradi",
+      "traits": [
+        {
+          "name": "Born Swimmers",
+          "description": "You have a swimming speed equal to your walking speed and can hold your breath for up to 15 minutes.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wildheart Koradi",
+      "traits": [
+        {
+          "name": "Tree Climber",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seaweed Leshy",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geckkota Lizardfolk",
+      "traits": [
+        {
+          "name": "Gecko Climbing",
+          "description": "You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Locathah",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Merfolk",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Forest Panserbjorn",
+      "traits": [
+        {
+          "name": "Curved Claws",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Malbolgine Tiefling",
+      "traits": [
+        {
+          "name": "Cliff Climber",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stygian Tiefling",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You have a swimming speed equal to your walking speed, and you can breathe both air and water. In addition, your range of vision is doubled underwater.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Praedaren",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Tabaxi",
+      "traits": [
+        {
+          "name": "Cat's Claws",
+          "description": "Because of your claws, you have a climbing speed equal to your walking speed. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Testasian",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Triton",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Yuan-Ti Malison",
+      "traits": [
+        {
+          "name": "Writhing Arms",
+          "description": "In place of your arms, you have masses of writing snakes. You have advantage on ability checks and saving throws against being disarmed, and you have a climbing speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "climb",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "arcane-shot": [
     {
       "name": "Banishing Shot",
@@ -4156,7 +4760,7 @@
       "granted": [
         {
           "type": "skill",
-          "options": ["initiative"],
+          "options": ["Initiative"],
           "level": 1
         }
       ]
@@ -6256,7 +6860,7 @@
           "granted": [
             {
               "type": "skill-advantage",
-              "options": ["initiative"]
+              "options": ["Initiative"]
             }
           ]
         }
@@ -6667,7 +7271,7 @@
                 "granted": [
                   {
                     "type": "skill-advantage",
-                    "options": ["initiative"]
+                    "options": ["Initiative"]
                   }
                 ]
               }

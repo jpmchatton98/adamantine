@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Update } from 'src/components/pages/features/builder.actions';
 import { CharacterSheetService } from 'src/services/character-sheet.service';
@@ -33,10 +33,15 @@ export class InventoryComponent implements OnInit {
   public searchedItems = [];
   public search = '';
 
+  public itemModal = false;
+  public modalItem;
+  public modalQuantity = 0;
+
   constructor(
     private characterSheetService: CharacterSheetService,
     private generalStoreService: GeneralStoreService,
-    private store: Store
+    private store: Store,
+    private changeRef: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -104,85 +109,48 @@ export class InventoryComponent implements OnInit {
 
   public totalCurrencyInGp(): number {
     return (
-      this.equipment.currency.pp * 10 +
-      this.equipment.currency.gp +
-      this.equipment.currency.sp / 10 +
-      this.equipment.currency.cp / 100
+      (this.equipment.currency.pp ?? 0) * 10 +
+      (this.equipment.currency.gp ?? 0) +
+      (this.equipment.currency.sp ?? 0) / 10 +
+      (this.equipment.currency.cp ?? 0) / 100
     );
   }
   public totalCurrencyInGpLocal(): number {
     return (
-      this.currency.pp * 10 +
-      this.currency.gp +
-      this.currency.sp / 10 +
-      this.currency.cp / 100
+      (this.currency.pp ?? 0) * 10 +
+      (this.currency.gp ?? 0) +
+      (this.currency.sp ?? 0) / 10 +
+      (this.currency.cp ?? 0) / 100
     );
   }
   public addCurrency(amount: number): void {
     const amountString = amount.toString();
-
     const gp = Math.floor(amount);
-    this.equipment.currency.gp += gp;
+    this.currency.gp = gp;
     if (gp !== amount) {
       const sp = parseInt(amountString.split('.')[1].charAt(0));
       const cp = parseInt(amountString.split('.')[1].charAt(1));
 
-      this.equipment.currency.sp += sp;
-      this.equipment.currency.cp += cp;
+      this.currency.sp = sp;
+      this.currency.cp = cp;
     }
 
-    this.equipmentUpdated();
+    this.updateCurrencyAdd();
   }
   public removeCurrency(amount: number): void {
-    if (amount >= this.totalCurrencyInGp()) {
+    if (amount <= this.totalCurrencyInGp()) {
       const amountString = amount.toString();
       const gp = Math.floor(amount);
-      this.equipment.currency.gp -= gp;
+      this.currency.gp = gp;
       if (gp !== amount) {
         const sp = parseInt(amountString.split('.')[1].charAt(0));
         const cp = parseInt(amountString.split('.')[1].charAt(1));
 
-        this.equipment.currency.sp -= sp;
-        this.equipment.currency.cp -= cp;
+        this.currency.sp = sp;
+        this.currency.cp = cp;
       }
 
-      while (
-        Object.values(this.equipment.currency).findIndex(
-          (v: number) => v !== undefined && v < 0
-        ) !== -1
-      ) {
-        if (this.equipment.currency.gp < 0) {
-          if (this.equipment.currency.pp > 0) {
-            this.equipment.currency.pp -= 1;
-            this.equipment.currency.gp += 10;
-          } else if (this.equipment.currency.sp >= 10) {
-            this.equipment.currency.gp += 1;
-            this.equipment.currency.sp -= 10;
-          } else if (this.equipment.currency.cp >= 100) {
-            this.equipment.currency.gp += 1;
-            this.equipment.currency.cp -= 100;
-          }
-        }
-        if (this.equipment.currency.sp < 0) {
-          if (this.currency.gp > 0) {
-            this.equipment.currency.gp -= 1;
-            this.equipment.currency.sp += 10;
-          } else if (this.equipment.currency.cp >= 100) {
-            this.equipment.currency.gp += 1;
-            this.equipment.currency.cp -= 100;
-          }
-        }
-        if (this.equipment.currency.cp < 0) {
-          if (this.currency.sp > 0) {
-            this.equipment.currency.sp -= 1;
-            this.equipment.currency.cp += 10;
-          } else {
-            break;
-          }
-        }
-      }
-
-      this.equipmentUpdated();
+      this.updateCurrencyRemove();
     }
   }
   public updateCurrencyAdd() {
@@ -200,16 +168,16 @@ export class InventoryComponent implements OnInit {
     }
 
     this.equipment.currency.pp += parseInt(
-      this.currency.pp ? this.currency.pp : '0'
+      this.currency.pp ? this.currency.pp.toString() : '0'
     );
     this.equipment.currency.gp += parseInt(
-      this.currency.gp ? this.currency.gp : '0'
+      this.currency.gp ? this.currency.gp.toString() : '0'
     );
     this.equipment.currency.sp += parseInt(
-      this.currency.sp ? this.currency.sp : '0'
+      this.currency.sp ? this.currency.sp.toString() : '0'
     );
     this.equipment.currency.cp += parseInt(
-      this.currency.cp ? this.currency.cp : '0'
+      this.currency.cp ? this.currency.cp.toString() : '0'
     );
 
     this.currency.pp = undefined;
@@ -274,7 +242,11 @@ export class InventoryComponent implements OnInit {
         (v: number) => v !== undefined && v < 0
       ) !== -1
     ) {
-      if (this.equipment.currency.gp < 0) {
+      if (
+        this.equipment.currency.gp < 0 ||
+        this.equipment.currency.sp < 0 ||
+        this.equipment.currency.cp < 0
+      ) {
         if (this.equipment.currency.pp > 0) {
           this.equipment.currency.pp -= 1;
           this.equipment.currency.gp += 10;
@@ -286,8 +258,8 @@ export class InventoryComponent implements OnInit {
           this.equipment.currency.cp -= 100;
         }
       }
-      if (this.equipment.currency.sp < 0) {
-        if (this.currency.gp > 0) {
+      if (this.equipment.currency.sp < 0 || this.equipment.currency.cp < 0) {
+        if (this.equipment.currency.gp > 0) {
           this.equipment.currency.gp -= 1;
           this.equipment.currency.sp += 10;
         } else if (this.equipment.currency.cp >= 100) {
@@ -296,7 +268,7 @@ export class InventoryComponent implements OnInit {
         }
       }
       if (this.equipment.currency.cp < 0) {
-        if (this.currency.sp > 0) {
+        if (this.equipment.currency.sp > 0) {
           this.equipment.currency.sp -= 1;
           this.equipment.currency.cp += 10;
         } else {
@@ -311,31 +283,34 @@ export class InventoryComponent implements OnInit {
   public equipmentUpdated() {
     if (this.equipment.currency.pp !== undefined) {
       this.equipment.currency.pp = parseInt(
-        this.equipment.currency.pp.toString()
+        this.equipment.currency.pp?.toString() ?? '0'
       );
     }
     if (this.equipment.currency.gp !== undefined) {
       this.equipment.currency.gp = parseInt(
-        this.equipment.currency.gp.toString()
+        this.equipment.currency.gp?.toString() ?? '0'
       );
     }
     if (this.equipment.currency.sp !== undefined) {
       this.equipment.currency.sp = parseInt(
-        this.equipment.currency.sp.toString()
+        this.equipment.currency.sp?.toString() ?? '0'
       );
     }
     if (this.equipment.currency.cp !== undefined) {
       this.equipment.currency.cp = parseInt(
-        this.equipment.currency.cp.toString()
+        this.equipment.currency.cp?.toString() ?? '0'
       );
     }
 
     this.store.dispatch(new Update());
+
+    this.changeRef.detectChanges();
   }
 
   public addItem(itemName: string, itemCost: number = 0): void {
     if (itemCost) {
       this.removeCurrency(itemCost);
+      console.log(this.equipment.currency);
     }
 
     const itemData = this.generalStoreService.getItem(itemName);
@@ -378,5 +353,83 @@ export class InventoryComponent implements OnInit {
 
   public getItemType(name) {
     return this.generalStoreService.getItemType(name);
+  }
+
+  public openItemModal(item) {
+    this.itemModal = true;
+    this.modalItem = item;
+
+    const index = this.equipment.items.findIndex(
+      (i: any) => i.item === item.name.toLowerCase()
+    );
+    this.modalQuantity = this.equipment.items[index].quantity;
+  }
+  public changeQuantity(item, amount) {
+    const index = this.equipment.items.findIndex(
+      (i: any) => i.item === item.name.toLowerCase()
+    );
+    if (index !== -1) {
+      this.equipment.items[index].quantity += amount;
+      this.modalQuantity = this.equipment.items[index].quantity;
+
+      if (this.equipment.items[index].quantity <= 0) {
+        this.equipment.items = this.equipment.items.filter(
+          (i: any, id) => id !== index
+        );
+        this.itemModal = false;
+
+        this.generateItems();
+      }
+
+      this.equipmentUpdated();
+    }
+  }
+  public updateQuantity(item) {
+    const index = this.equipment.items.findIndex(
+      (i: any) => i.item === item.name.toLowerCase()
+    );
+    if (index !== -1) {
+      if (this.modalQuantity <= 0) {
+        this.modalQuantity = 1;
+      }
+      this.equipment.items[index].quantity = this.modalQuantity;
+
+      this.equipmentUpdated();
+    }
+  }
+  public deleteItem(item) {
+    const index = this.equipment.items.findIndex(
+      (i: any) => i.item === item.name.toLowerCase()
+    );
+    if (index !== -1) {
+      this.equipment.items = this.equipment.items.filter(
+        (i: any, id) => id !== index
+      );
+      this.itemModal = false;
+
+      this.generateItems();
+      this.equipmentUpdated();
+    }
+  }
+  public sellItem(item) {
+    const index = this.equipment.items.findIndex(
+      (i: any) => i.item === item.name.toLowerCase()
+    );
+    if (index !== -1) {
+      this.equipment.items = this.equipment.items.filter(
+        (i: any, id) => id !== index
+      );
+      this.itemModal = false;
+
+      const sellCurrency = Math.round((item.cost / 2) * 100) / 100;
+      this.addCurrency(sellCurrency);
+
+      this.generateItems();
+      this.equipmentUpdated();
+    }
+  }
+
+  public itemTrackBy(item) {
+    return item.item;
   }
 }

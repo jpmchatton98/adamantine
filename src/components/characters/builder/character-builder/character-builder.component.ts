@@ -14,6 +14,7 @@ export class CharacterBuilderComponent implements OnInit {
     background: {
       choices: [],
     },
+    equipment: {},
   };
 
   constructor(private dataService: DataService, private store: Store) {}

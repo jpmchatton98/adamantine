@@ -20,16 +20,16 @@
                 <td> {{ race.maturity }} yrs </td>
             </tr>
             <tr>
-                <td>Lifespan</td>
+                <td>Average Lifespan</td>
                 <td *ngIf="race.lifespan !== -1"> {{ race.lifespan }} yrs </td>
                 <td *ngIf="race.lifespan === -1">&infin;</td>
             </tr>
             <tr>
-                <td>Height</td>
+                <td>Average Height</td>
                 <td> {{ race.height[0] }} - {{ race.height[1] }} ft </td>
             </tr>
             <tr>
-                <td>Weight</td>
+                <td>Average Weight</td>
                 <td> {{ race.weight[0] }} - {{ race.weight[1] }} lbs </td>
             </tr>
             <tr>
@@ -45,7 +45,12 @@
                     <td *ngSwitchCase="1">Large</td>
                     <td *ngSwitchDefault>
                         <ng-container *ngIf="race.size.options">
-                            {{ race.size.options[0] }} or {{ race.size.options[1] }}
+                            <ng-container *ngIf="race.size.options.length == 2">
+                                {{ race.size.options[0] }} or {{ race.size.options[1] }}
+                            </ng-container>
+                            <ng-container *ngIf="race.size.options.length == 3">
+                                {{ race.size.options[0] }}, {{ race.size.options[1] }}, or {{ race.size.options[2] }}
+                            </ng-container>
                         </ng-container>
                     </td>
                 </ng-container>

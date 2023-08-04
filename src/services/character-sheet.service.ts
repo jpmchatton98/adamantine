@@ -53,6 +53,10 @@ export class CharacterSheetService {
       score: 'int',
     },
     {
+      name: 'Initiative',
+      score: 'dex',
+    },
+    {
       name: 'Insight',
       score: 'wis',
     },
@@ -1368,7 +1372,7 @@ export class CharacterSheetService {
     feature.granted?.forEach((g) => {
       if (g.type === 'spell') {
         let ability = g.ability;
-        if (ability.includes('-')) {
+        if (ability?.includes('-')) {
           const choiceEntry = choices.find((c: any) => c.id === ability);
           ability = choiceEntry?.value ?? '';
         }
@@ -1513,6 +1517,9 @@ export class CharacterSheetService {
       const spellData = this.dataService.getSpell(choiceEntry?.value);
       if (spellData) {
         if (spellData.level <= maxSpellLevel || choice.ignoreMaxLevel) {
+          if (choice.id === 'signature-cantrip') {
+            source = [...source, 'Signature Cantrip'];
+          }
           spellList.push({
             spell: choiceEntry.value,
             ability,

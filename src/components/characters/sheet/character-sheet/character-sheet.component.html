@@ -27,7 +27,7 @@
             </div>
             <div class="initiative">
                 <div>INITIATIVE</div>
-                <h6>{{ modifier(getScore('dex'), true) }}</h6>
+                <h6>{{ initiativeMod() }}</h6>
             </div>
             <div class="ac">
                 <div>AC</div>
@@ -87,10 +87,10 @@
                     <div>
                         <div *ngFor="let d of defenses.damage">
                             <div *ngIf="d.level === 1">
-                                <span class="defense-icon">R</span> {{ d.type }}
+                                <span class="defense-icon" title="Resist">R</span> {{ d.type }}
                             </div>
                             <div *ngIf="d.level === 2">
-                                <span class="defense-icon">I</span> {{ d.type }}
+                                <span class="defense-icon" title="Immune">I</span> {{ d.type }}
                             </div>
                         </div>
                     </div>
@@ -100,10 +100,10 @@
                     <div>
                         <div *ngFor="let d of defenses.condition">
                             <div *ngIf="d.level === 1">
-                                <span class="defense-icon">A</span> {{ d.type }}
+                                <span class="defense-icon" title="Advantage">A</span> {{ d.type }}
                             </div>
                             <div *ngIf="d.level === 2">
-                                <span class="defense-icon">I</span> {{ d.type }}
+                                <span class="defense-icon" title="Immune">I</span> {{ d.type }}
                             </div>
                         </div>
                     </div>
@@ -303,6 +303,9 @@
                             <h5>Race Features</h5>
                             <div *ngFor="let feature of getRaceFeatures()">
                                 <app-sheet-feature [characterObj]="character.race" [feature]="feature"></app-sheet-feature>
+                                <div *ngIf="feature.uses">
+                                    <cs-uses></cs-uses>
+                                </div>
                             </div>
                             <ng-container *ngIf="character.race.subrace">
                                 <h5>Subrace Features</h5>

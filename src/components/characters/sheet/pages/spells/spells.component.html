@@ -48,7 +48,7 @@
                     </ng-container>
                 </td>
                 <td class="effect">
-                    <div [innerHTML]="getEffectString(spell.spell, spell.ability)"></div>
+                    <div [innerHTML]="getEffectString(spell.spell, spell.ability, spell.source.includes('Signature Cantrip'))"></div>
                 </td>
             </tr>
         </tbody>

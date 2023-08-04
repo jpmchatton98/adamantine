@@ -177,6 +177,28 @@ export class CharacterSheetComponent implements OnInit {
 
     this.defenses = this.characterSheetService.getCharacterDefenses();
 
+    this.store.select(selectUpdate).subscribe((update) => {
+      if (update) {
+        const storageCharacter: any = JSON.parse(
+          localStorage.getItem('character')
+        );
+
+        localStorage.setItem(
+          'character',
+          JSON.stringify({
+            ...storageCharacter,
+            ...this.character,
+          })
+        );
+
+        this.generateWeaponAttacks();
+      }
+    });
+  }
+
+  private generateWeaponAttacks() {
+    this.weaponAttacks = [];
+
     for (let e of this.character.equipment?.items?.sort((a, b) =>
       a.item.localeCompare(b.item)
     ) ?? []) {
@@ -220,22 +242,6 @@ export class CharacterSheetComponent implements OnInit {
         });
       }
     }
-
-    this.store.select(selectUpdate).subscribe((update) => {
-      if (update) {
-        const storageCharacter: any = JSON.parse(
-          localStorage.getItem('character')
-        );
-
-        localStorage.setItem(
-          'character',
-          JSON.stringify({
-            ...storageCharacter,
-            ...this.character,
-          })
-        );
-      }
-    });
   }
 
   public getSubheader() {
@@ -363,6 +369,11 @@ export class CharacterSheetComponent implements OnInit {
   }
   public skillMod(skill): string {
     return this.formatModifier(this.getSkillMod(skill));
+  }
+  public initiativeMod(): string {
+    return this.skillMod({
+      name: 'Initiative',
+    });
   }
   public getPassiveMod(skill): number {
     return 10 + this.getSkillMod(skill);

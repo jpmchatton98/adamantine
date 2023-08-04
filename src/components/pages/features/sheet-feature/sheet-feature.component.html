@@ -24,4 +24,7 @@
     <div *ngIf="feature?.listed">
         <app-sheet-listed [characterObj]="characterObj" [listed]="feature?.listed" [level]="level" [characterLevel]="characterLevel"></app-sheet-listed>
     </div>
+    <div *ngIf="feature?.uses">
+        <app-sheet-uses [feature]="feature" [characterObj]="characterObj" [characterLevel]="characterLevel"></app-sheet-uses>
+    </div>
 </div>

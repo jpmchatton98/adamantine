@@ -224,6 +224,27 @@ export class BuilderChoiceComponent implements OnInit {
               (value, index, self) =>
                 index === self.findIndex((t) => t.name === value.name)
             );
+          } else if (choice.id === 'signature-cantrip') {
+            choiceOptions = this.dataService
+              .getSpellsByListUnsplit('all')
+              .filter(
+                (s: any) =>
+                  s.level === (choice.level ?? 10) && s.lists.includes('Occult')
+              );
+
+            choiceOptions = choiceOptions.filter((spell) => {
+              return (
+                spell.castingTime === '1 action' &&
+                spell.damage &&
+                !spell.duration.includes('Concentration') &&
+                !spell.multi
+              );
+            });
+
+            choiceOptions = choiceOptions.filter(
+              (value, index, self) =>
+                index === self.findIndex((t) => t.name === value.name)
+            );
           } else {
             choiceOptions = this.dataService
               .getSpellsByListUnsplit('all')

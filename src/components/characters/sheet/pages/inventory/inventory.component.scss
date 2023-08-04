@@ -87,3 +87,21 @@
         }
     }
 }
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        width: 100px;
+        text-align: center;
+    }
+}
+.delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

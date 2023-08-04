@@ -24,7 +24,7 @@
     </div>
 </div>
 <button nz-button (click)="equipmentAddModal = true">Add Equipment</button>
-<nz-table [nzData]="equipment?.items ?? []" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+<nz-table #items [nzData]="equipment?.items ?? []" [nzShowPagination]="false" [nzPageSize]="1 / 0">
     <thead>
         <tr>
             <th>Name</th>
@@ -34,7 +34,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of equipment.items ?? []; let i = index">
+        <tr *ngFor="let item of items.data; let i = index; trackBy: itemTrackBy" style="cursor: pointer" (click)="openItemModal(equipmentData[i])">
             <td>{{ equipmentData[i]?.name }}</td>
             <td>{{ item.quantity }}</td>
             <td>{{ formatCost(equipmentData[i]?.cost * item.quantity) }}</td>
@@ -42,6 +42,23 @@
         </tr>
     </tbody>
 </nz-table>
+
+<nz-modal [(nzVisible)]="itemModal" [nzTitle]="modalItem?.name" [nzCancelText]="null" [nzClosable]="false" [nzOkText]="null" (nzOnCancel)="itemModal = false">
+    <ng-container *nzModalContent>
+        <div *ngIf="modalItem?.description" [innerHTML]="modalItem?.description"></div>
+
+        <div class="quantity">
+            <button nz-button (click)="changeQuantity(modalItem, -1)">-</button>
+            <input nz-input-number [nzStep]="1" [nzMin]="1" [(ngModel)]="modalQuantity" (ngModelChange)="updateQuantity(modalItem)">
+            <button nz-button (click)="changeQuantity(modalItem, 1)">+</button>
+        </div>
+        <div class="delete">
+            <button nz-button nzDanger (click)="deleteItem(modalItem)">Delete</button>
+            |
+            <button nz-button nzDanger (click)="sellItem(modalItem)">Sell</button>
+        </div>
+    </ng-container>
+</nz-modal>
 
 <nz-modal [(nzVisible)]="currencyModal" nzTitle="Currency" [nzCancelText]="null" [nzClosable]="false" [nzOkText]="null" (nzOnCancel)="currencyModal = false">
     <ng-container *nzModalContent>

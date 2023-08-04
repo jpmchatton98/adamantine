@@ -46,6 +46,7 @@ import { SubracesComponent } from './races/subraces/subraces.component';
 import { SheetFeatureComponent } from './features/sheet-feature/sheet-feature.component';
 import { SheetChoiceComponent } from './features/sheet-choice/sheet-choice.component';
 import { SheetListedComponent } from './features/sheet-listed/sheet-listed.component';
+import { SheetUsesComponent } from './features/sheet-uses/sheet-uses.component';
 
 registerLocaleData(en);
 
@@ -80,6 +81,7 @@ registerLocaleData(en);
     SheetFeatureComponent,
     SheetChoiceComponent,
     SheetListedComponent,
+    SheetUsesComponent,
   ],
   imports: [
     BrowserModule,

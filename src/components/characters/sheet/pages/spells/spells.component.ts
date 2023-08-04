@@ -97,10 +97,14 @@ export class SpellsComponent {
     return range;
   }
 
-  public getEffectString(spell: any, ability: string): string {
+  public getEffectString(
+    spell: any,
+    ability: string,
+    signature: boolean = false
+  ): string {
     const effect = [];
     if (spell.damage) {
-      effect.push(this.getDamageString(spell, ability));
+      effect.push(this.getDamageString(spell, ability, signature));
     }
     if (spell.healing) {
       effect.push(this.getHealingString(spell, ability));
@@ -114,16 +118,33 @@ export class SpellsComponent {
     }
     return '-';
   }
-  private getDamageString(spell: any, ability: string): string {
+  private getDamageString(
+    spell: any,
+    ability: string,
+    signature: boolean
+  ): string {
     if (spell.damage) {
       let damage = spell.damage.map((d: any) => {
+        let dice = d.dice;
+        if (spell.level === 0 && spell.higherLevels && !signature) {
+          if (this.characterLevel() >= 5) {
+            dice += 1;
+          }
+          if (this.characterLevel() >= 11) {
+            dice += 1;
+          }
+          if (this.characterLevel() >= 17) {
+            dice += 1;
+          }
+        }
+
         if (Array.isArray(d.type)) {
           let mod = d.amount ?? 0;
           if (d.addAbility) {
             mod += this.getModifier(ability);
           }
 
-          return `${d.dice}d${d.die} ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
+          return `${dice}d${d.die} ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
             mod ? Math.abs(mod) : ''
           } ${d.type
             .map(
@@ -141,7 +162,7 @@ export class SpellsComponent {
             mod += this.getModifier(ability);
           }
 
-          return `${d.dice}d${d.die}  ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
+          return `${dice}d${d.die}  ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
             mod ? Math.abs(mod) : ''
           }<span  title="${d.type}" class="damage-icon mdi mdi-${
             this.characterSheetService.damageIcons[d.type]
@@ -149,7 +170,24 @@ export class SpellsComponent {
         }
       });
 
-      return damage.join(' + ');
+      damage = damage.join(' + ');
+
+      if (signature) {
+        let m = 1;
+        if (this.characterLevel() >= 5) {
+          m += 1;
+        }
+        if (this.characterLevel() >= 11) {
+          m += 1;
+        }
+        if (this.characterLevel() >= 17) {
+          m += 1;
+        }
+
+        damage += ` &times; ${m}`;
+      }
+
+      return damage;
     }
   }
   private getHealingString(spell: any, ability: string): string {
