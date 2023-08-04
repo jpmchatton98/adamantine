@@ -15,6 +15,7 @@ import { ExploitsComponent } from './pages/exploits/exploits.component';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
+import { NzNotificationService } from 'ng-zorro-antd/notification';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,6 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
     FormsModule,
     EditorModule,
   ],
-  providers: [CharacterSheetService],
+  providers: [CharacterSheetService, NzNotificationService],
 })
 export class CharacterSheetModule {}

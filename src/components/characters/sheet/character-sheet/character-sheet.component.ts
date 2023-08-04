@@ -6,6 +6,7 @@ import { selectUpdate } from 'src/components/pages/features/builder.selectors';
 import { CharacterSheetService } from 'src/services/character-sheet.service';
 import { DataService } from 'src/services/data.service';
 import { GeneralStoreService } from 'src/services/general-store.service';
+import { NzNotificationService } from 'ng-zorro-antd/notification';
 
 @Component({
   selector: 'app-character-sheet',
@@ -91,7 +92,8 @@ export class CharacterSheetComponent implements OnInit {
     private characterSheetService: CharacterSheetService,
     private dataService: DataService,
     private generalStoreService: GeneralStoreService,
-    private store: Store
+    private store: Store,
+    private notification: NzNotificationService
   ) {}
 
   ngOnInit(): void {
@@ -268,6 +270,18 @@ export class CharacterSheetComponent implements OnInit {
   }
   public parseInt(number) {
     return parseInt(number);
+  }
+
+  public shortRest(template) {
+    this.notification.template(template);
+  }
+  public longRest(template) {
+    this.character.currHp = 0;
+    this.character.tempHp = 0;
+
+    this.store.dispatch(new Update());
+
+    this.notification.template(template);
   }
 
   private generateWeaponAttacks() {

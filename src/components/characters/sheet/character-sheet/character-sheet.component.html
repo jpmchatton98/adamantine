@@ -3,7 +3,37 @@
         <h3 class="character-name">{{ character.name || 'Unnamed Character' }}</h3>
         <div class="subheader">{{ getSubheader() }}</div>
     </div>
-    <button class="settings-button" (click)="settingsModal = true"><span class="mdi mdi-cog"></span></button>
+    <div class="buttons">
+        <button class="header-button" (click)="shortRest(shortRestTemplate)"><span class="mdi mdi-campfire" title="Short Rest"></span></button>
+        <ng-template #shortRestTemplate>
+            <div class="ant-notification-notice-content">
+                <div class="ant-notification-notice-with-icon">
+                <span class="ant-notification-notice-icon">
+                    <span class="mdi mdi-campfire"></span>
+                </span>
+                <div class="ant-notification-notice-message">Short Rest</div>
+                <div class="ant-notification-notice-description">
+                    {{ character.name || 'Unnamed Character' }} took a short rest.
+                </div>
+                </div>
+            </div>
+        </ng-template>
+        <button class="header-button" (click)="longRest(longRestTemplate)"><span class="mdi mdi-tent" title="Long Rest"></span></button>
+        <ng-template #longRestTemplate>
+            <div class="ant-notification-notice-content">
+                <div class="ant-notification-notice-with-icon">
+                <span class="ant-notification-notice-icon">
+                    <span class="mdi mdi-tent"></span>
+                </span>
+                <div class="ant-notification-notice-message">Long Rest</div>
+                <div class="ant-notification-notice-description">
+                    {{ character.name || 'Unnamed Character' }} took a long rest.
+                </div>
+                </div>
+            </div>
+        </ng-template>
+        <button class="header-button" (click)="settingsModal = true" title="Sheet Settings"><span class="mdi mdi-cog"></span></button>
+    </div>
 </div>
 <div class="sheet">
     <div class="sheet-row">
