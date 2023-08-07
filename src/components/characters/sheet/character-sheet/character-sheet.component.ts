@@ -295,6 +295,12 @@ export class CharacterSheetComponent implements OnInit {
         }
       }
     }
+
+    for (let use of this.character.uses ?? []) {
+      if (use.reset === 1) {
+        use.currUses = use.maxUses;
+      }
+    }
     this.store.dispatch(new Update());
   }
   public longRest(template) {
@@ -315,7 +321,6 @@ export class CharacterSheetComponent implements OnInit {
         }
       } else if (Array.isArray(object)) {
         for (let o of object) {
-          console.log(o);
           if (o?.uses) {
             for (let use of o.uses) {
               if (use.reset) {
@@ -324,6 +329,12 @@ export class CharacterSheetComponent implements OnInit {
             }
           }
         }
+      }
+    }
+
+    for (let use of this.character.uses ?? []) {
+      if (use.reset) {
+        use.currUses = use.maxUses;
       }
     }
     this.store.dispatch(new Update());

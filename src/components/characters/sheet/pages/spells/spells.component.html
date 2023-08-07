@@ -1,5 +1,35 @@
-<div *ngFor="let level of characterSpells">
+<div *ngIf="sorcery">
+    Sorcery Points:
+    <button nz-button (click)="changeSorcery(1)">+</button>
+    <input nz-input-number [(ngModel)]="currSorcery" (ngModelChange)="updateSorcery()" [nzSize]="'small'">
+    <button nz-button (click)="changeSorcery(-1)">-</button>
+</div>
+<div *ngFor="let level of characterSpells; let i = index">
     <h6>{{ level.name }}</h6>
+    <div *ngIf="level.name !== 'Cantrips'">
+        <div class="checkboxes" *ngIf="standard">
+            <ng-container *ngFor="let cb of getUses(i); let i = index">
+                <div *ngIf="i === 0">
+                    Spell Slots:
+                </div>
+                <div class="box" *ngIf="cb" (click)="changeUses(i, -1, false)">
+                    <div class="filled"></div>
+                </div>
+                <div class="box" *ngIf="!cb" (click)="changeUses(i, 1, false)"></div>
+            </ng-container>
+        </div>
+        <div class="checkboxes" *ngIf="pact">
+            <ng-container *ngFor="let cb of getUses(i, true); let i = index">
+                <div *ngIf="i === 0">
+                    Pact Slots:
+                </div>
+                <div class="box" *ngIf="cb" (click)="changeUses(i, -1, true)">
+                    <div class="filled"></div>
+                </div>
+                <div class="box" *ngIf="!cb" (click)="changeUses(i, 1, true)"></div>
+            </ng-container>
+        </div>
+    </div>
     <nz-table [nzData]="level.spells" [nzShowPagination]="false" [nzPageSize]="1 / 0">
         <thead>
             <tr>

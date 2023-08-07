@@ -62,16 +62,17 @@ export class CharacterBuilderComponent implements OnInit {
         if (!obj.feature) {
           if (Array.isArray(obj)) {
             for (let listItem of obj) {
-              listItem.choices = listItem.choices.filter(
-                (objCh: any) =>
-                  listItem.choices.find((ch: any) => {
-                    return (
-                      objCh.sourceId === ch.id &&
-                      (objCh.sourceValue === ch.value ||
-                        ch.list.includes(objCh.sourceValue))
-                    );
-                  }) || objCh.sourceId === ''
-              );
+              listItem.choices =
+                listItem.choices?.filter(
+                  (objCh: any) =>
+                    listItem.choices.find((ch: any) => {
+                      return (
+                        objCh.sourceId === ch.id &&
+                        (objCh.sourceValue === ch.value ||
+                          ch.list.includes(objCh.sourceValue))
+                      );
+                    }) || objCh.sourceId === ''
+                ) ?? [];
             }
           } else {
             if (obj.choices) {
