@@ -274,6 +274,28 @@ export class CharacterSheetComponent implements OnInit {
 
   public shortRest(template) {
     this.notification.template(template);
+
+    let values: any[] = Object.values(this.character);
+    for (let object of values) {
+      if (object?.uses) {
+        for (let use of object.uses) {
+          if (use.reset === 1) {
+            use.currUses = use.maxUses;
+          }
+        }
+      } else if (Array.isArray(object)) {
+        for (let o of object) {
+          if (o?.uses) {
+            for (let use of o.uses) {
+              if (use.reset === 1) {
+                use.currUses = use.maxUses;
+              }
+            }
+          }
+        }
+      }
+    }
+    this.store.dispatch(new Update());
   }
   public longRest(template) {
     this.character.currHp = 0;
@@ -282,6 +304,29 @@ export class CharacterSheetComponent implements OnInit {
     this.store.dispatch(new Update());
 
     this.notification.template(template);
+
+    let values: any[] = Object.values(this.character);
+    for (let object of values) {
+      if (object?.uses) {
+        for (let use of object.uses) {
+          if (use.reset) {
+            use.currUses = use.maxUses;
+          }
+        }
+      } else if (Array.isArray(object)) {
+        for (let o of object) {
+          console.log(o);
+          if (o?.uses) {
+            for (let use of o.uses) {
+              if (use.reset) {
+                use.currUses = use.maxUses;
+              }
+            }
+          }
+        }
+      }
+    }
+    this.store.dispatch(new Update());
   }
 
   private generateWeaponAttacks() {

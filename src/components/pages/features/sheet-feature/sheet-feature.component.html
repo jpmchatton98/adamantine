@@ -25,6 +25,17 @@
         <app-sheet-listed [characterObj]="characterObj" [listed]="feature?.listed" [level]="level" [characterLevel]="characterLevel"></app-sheet-listed>
     </div>
     <div *ngIf="feature?.uses">
-        <app-sheet-uses [feature]="feature" [characterObj]="characterObj" [characterLevel]="characterLevel"></app-sheet-uses>
+        <ng-container *ngIf="isArray(feature?.uses); else singleUse">
+            <ng-container *ngFor="let use of feature?.uses">
+                <div *ngIf="!use.prereq || use.prereq <= characterLevel">
+                    <app-sheet-uses [uses]="use" [characterObj]="characterObj" [characterLevel]="characterLevel"></app-sheet-uses>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-template #singleUse>
+            <div *ngIf="!feature?.uses.prereq || feature?.uses.prereq <= characterLevel">
+                <app-sheet-uses [uses]="feature.uses" [characterObj]="characterObj" [characterLevel]="characterLevel"></app-sheet-uses>
+            </div>
+        </ng-template>
     </div>
 </div>

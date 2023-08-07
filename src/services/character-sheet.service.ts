@@ -1735,7 +1735,7 @@ export class CharacterSheetService {
             .map((e: any) => {
               const exploitData = this.dataService.getExploitData(e.exploit);
 
-              if (exploitData.save?.length > 3) {
+              if (exploitData?.save?.length > 3) {
                 exploitData.save =
                   this.scoreReverser[exploitData.save.toLowerCase()];
               }
@@ -2964,8 +2964,8 @@ export class CharacterSheetService {
       }
     } else if (dataObj.features) {
       for (let i = 1; i <= level; i++) {
-        if (dataObj.features[level]) {
-          for (let feature of dataObj.features[level]) {
+        if (dataObj.features[i]) {
+          for (let feature of dataObj.features[i]) {
             maxUses = this.getFeatureUses(
               feature,
               characterObj.choices,
@@ -3000,8 +3000,8 @@ export class CharacterSheetService {
       );
       if (subclass) {
         for (let i = 1; i <= level; i++) {
-          if (subclass.features[level]) {
-            for (let feature of subclass.features[level]) {
+          if (subclass.features[i]) {
+            for (let feature of subclass.features[i]) {
               maxUses = this.getFeatureUses(
                 feature,
                 characterObj.choices,
@@ -3060,6 +3060,24 @@ export class CharacterSheetService {
                   if (score) {
                     amount = this.getModifier(score);
                   }
+                  break;
+              }
+
+              switch (use.modifier) {
+                case '*2':
+                  amount *= 2;
+                  break;
+                case '+1':
+                  amount += 1;
+                  break;
+                case '*10':
+                  amount *= 10;
+                  break;
+                case '*5':
+                  amount *= 5;
+                  break;
+                case '/2':
+                  amount = Math.floor(amount / 2);
                   break;
               }
 
@@ -3151,5 +3169,183 @@ export class CharacterSheetService {
     }
 
     return maxUses;
+  }
+
+  public getUseResetById(
+    dataObj: any,
+    characterObj: any,
+    useId: string,
+    level: number
+  ): number {
+    let reset = 0;
+
+    if (dataObj.traits) {
+      for (let trait of dataObj.traits) {
+        reset = this.getFeatureUseReset(
+          trait,
+          characterObj.choices,
+          useId,
+          level,
+          reset
+        );
+      }
+    } else if (dataObj.features) {
+      for (let i = 1; i <= level; i++) {
+        if (dataObj.features[i]) {
+          for (let feature of dataObj.features[i]) {
+            reset = this.getFeatureUseReset(
+              feature,
+              characterObj.choices,
+              useId,
+              level,
+              reset
+            );
+          }
+        }
+      }
+    }
+
+    if (dataObj.subraces) {
+      let subrace = dataObj.subraces.find(
+        (s) => s.name === characterObj.subrace
+      );
+      if (subrace) {
+        for (let trait of subrace.traits) {
+          reset = this.getFeatureUseReset(
+            trait,
+            characterObj.choices,
+            useId,
+            level,
+            reset
+          );
+        }
+      }
+    }
+    if (dataObj.subclasses) {
+      let subclass = dataObj.subclasses.find(
+        (s) => s.name === characterObj.subclass
+      );
+      if (subclass) {
+        for (let i = 1; i <= level; i++) {
+          if (subclass.features[i]) {
+            for (let feature of subclass.features[i]) {
+              reset = this.getFeatureUseReset(
+                feature,
+                characterObj.choices,
+                useId,
+                level,
+                reset
+              );
+            }
+          }
+        }
+      }
+    }
+
+    return reset;
+  }
+  private getFeatureUseReset(
+    feature: any,
+    choices: any[],
+    useId: string,
+    level: number,
+    reset: number
+  ): number {
+    if (feature.uses) {
+      let use;
+      if (Array.isArray(feature.uses)) {
+        use = feature.uses.find((u) => u.id === useId);
+      } else if (feature.uses.id === useId) {
+        use = feature.uses;
+      }
+
+      if (use) {
+        if (use.reset < reset || !reset) {
+          reset = use.reset;
+        }
+      }
+    }
+
+    if (feature.subFeatures) {
+      for (let s of feature.subFeatures) {
+        reset = this.getFeatureUseReset(s, choices, useId, level, reset);
+      }
+    }
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        reset = this.getChoiceUseReset(choice, choices, useId, level, reset);
+      }
+    } else {
+      reset = this.getChoiceUseReset(
+        feature.choices,
+        choices,
+        useId,
+        level,
+        reset
+      );
+    }
+
+    if (feature.listed) {
+      reset = this.getListedUseReset(
+        feature.listed,
+        choices,
+        useId,
+        level,
+        reset
+      );
+    }
+    return reset;
+  }
+  private getChoiceUseReset(
+    choice: any,
+    choices: any[],
+    useId: string,
+    level: number,
+    reset: number
+  ): number {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        reset = this.getFeatureUseReset(trait, choices, useId, level, reset);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        reset = this.getFeatureUseReset(feat, choices, useId, level, reset);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        reset = this.getFeatureUseReset(data, choices, useId, level, reset);
+      }
+    }
+
+    return reset;
+  }
+  private getListedUseReset(
+    listed: any,
+    choices: any[],
+    useId: string,
+    level: number,
+    reset: number
+  ): number {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          reset = this.getFeatureUseReset(data, choices, useId, level, reset);
+        }
+      }
+    }
+
+    return reset;
   }
 }

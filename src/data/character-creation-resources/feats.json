@@ -128,7 +128,7 @@
       "id": "1B5C85A4-682D-4416-B360-4D428DA1EB9E",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -374,7 +374,7 @@
       "type": "derived",
       "source": "proficiency",
       "inverted": true,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -592,13 +592,13 @@
         "id": "C7651AA1-31EA-4591-B494-764E3E6C6F59",
         "type": "fixed",
         "amount": 1,
-        "reset": "long"
+        "reset": 2
       },
       {
         "id": "6FDE84AB-3EF1-49ED-910D-0FCDBA4AAB59",
         "type": "fixed",
         "amount": 1,
-        "reset": "long"
+        "reset": 2
       }
     ]
   },
@@ -881,13 +881,13 @@
         "id": "AF2B1E52-EA0E-464D-B125-D05C1D9B33DD",
         "type": "fixed",
         "amount": 1,
-        "reset": "long"
+        "reset": 2
       },
       {
         "id": "FB8F7E86-F595-4A8D-A192-812C014BC62D",
         "type": "derived",
         "source": "proficiency",
-        "reset": "long"
+        "reset": 2
       }
     ]
   },
@@ -925,13 +925,13 @@
         "id": "83F1FF24-BD51-4C2C-B249-6F17E114CEFD",
         "type": "fixed",
         "amount": 1,
-        "reset": "long"
+        "reset": 2
       },
       {
         "id": "71E6C6B9-01E3-4074-8E9D-CAD7D0BFE180",
         "type": "derived",
         "source": "proficiency",
-        "reset": "long"
+        "reset": 2
       }
     ]
   },
@@ -1123,7 +1123,7 @@
       "id": "4EBE7762-E44A-45D6-A71C-B68C96E5941E",
       "type": "fixed",
       "amount": 3,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1168,7 +1168,7 @@
       "id": "168B8E69-B033-49B8-8613-DF11A0124641",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1208,7 +1208,7 @@
       "id": "8917D5B7-652A-4EE9-B422-AFC2B8D6B3AE",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1248,7 +1248,7 @@
       "id": "B06E3CF9-63F4-4200-883A-9BA1A9B2D6D7",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1288,7 +1288,7 @@
       "id": "655CC2EC-7F94-4BDA-B307-418679B0A0C3",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1328,7 +1328,7 @@
       "id": "77F15EF5-EB05-4157-90BD-156E3D3D7233",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1368,7 +1368,7 @@
       "id": "BA608E7C-A14D-49D7-B70F-3872F1117008",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1570,7 +1570,7 @@
       "id": "6C230CB9-CAA3-44DD-86BA-50F249515DC2",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -1809,7 +1809,7 @@
       "id": "B1EDAD60-A042-439A-ADEF-79AADCF2AF04",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2001,7 +2001,7 @@
       "id": "F6FAA832-084B-4DA3-A254-BFF2AE0DCF5A",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2102,7 +2102,7 @@
       "id": "992E71D8-6B5E-43CE-A65F-320008412745",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2131,7 +2131,7 @@
       "id": "31F3CA22-5E7B-4181-A928-6D1C587A5518",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2155,7 +2155,7 @@
       "id": "B417F227-C83B-41B2-9D0B-D07A9756EDF7",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2258,7 +2258,7 @@
       "id": "12D62F0D-E00F-4943-8A5D-B6F2975332A2",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2282,7 +2282,7 @@
       "id": "993D89F1-320E-4990-A809-9DB00D4CDC6F",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -2355,7 +2355,7 @@
       "id": "A06B932E-4618-4AD5-94FA-77A7054F66D6",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2379,7 +2379,7 @@
       "id": "B26099FB-C7D2-4FAD-B4AF-35CFD5A94D91",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -2395,7 +2395,7 @@
       "id": "3D4F0668-9921-4209-A3FD-624CB3A33982",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -2425,13 +2425,13 @@
         "id": "105F85CC-BC33-4225-8230-DE48E4D304D5",
         "type": "fixed",
         "amount": 1,
-        "reset": "long"
+        "reset": 2
       },
       {
         "id": "59A1A92B-4CA2-47B0-B6EF-3A0DBB143DBD",
         "type": "fixed",
         "amount": 1,
-        "reset": "long"
+        "reset": 2
       }
     ]
   },
@@ -2464,7 +2464,7 @@
       "id": "A89C0A86-5E34-4396-A778-BAC8FE7896D9",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -2487,7 +2487,7 @@
       "id": "A89C0A86-5E34-4396-A778-BAC8FE7896D9",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -2551,7 +2551,7 @@
       "id": "35423557-43CC-44EB-8C60-C2FA394040FA",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -2691,14 +2691,14 @@
         "type": "fixed",
         "amount": 1,
         "prereq": 3,
-        "reset": "long"
+        "reset": 2
       },
       {
         "id": "F9646F0F-1DC0-4F92-8785-2EC116BEEC74",
         "type": "fixed",
         "amount": 1,
         "prereq": 5,
-        "reset": "long"
+        "reset": 2
       }
     ]
   },
@@ -2728,7 +2728,7 @@
       "id": "3CE04AE0-F9AF-40E8-9B17-C14DEC3B630C",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -2828,7 +2828,7 @@
       "id": "9C426133-0DAB-421A-AF9A-4ACBBCE4D26A",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -3171,7 +3171,7 @@
       "id": "3C46F37C-F24E-4691-8A7F-A8E793D61339",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -3234,7 +3234,7 @@
               "id": "B4DBFCB2-A51C-42A5-A98D-6D8EAC67A463",
               "type": "fixed",
               "amount": 1,
-              "reset": "short"
+              "reset": 1
             }
           },
           {
@@ -3283,7 +3283,7 @@
               "id": "74D10329-FF1B-45FC-A14E-7CE79A8F1DF8",
               "type": "fixed",
               "amount": 2,
-              "reset": "short"
+              "reset": 1
             },
             "granted": [{ "type": "speed", "speed": "burrow", "amount": -0.5 }]
           },
@@ -3346,7 +3346,7 @@
               "source": "score",
               "score": "con",
               "modifier": "+1",
-              "reset": "short"
+              "reset": 1
             }
           },
           {
@@ -3360,7 +3360,7 @@
               "id": "8718E1A5-D7DE-4AC6-B9CD-71FED0F41D95",
               "type": "fixed",
               "amount": 1,
-              "reset": "short"
+              "reset": 1
             }
           },
           {
@@ -3370,7 +3370,7 @@
               "id": "CD2BCB17-0BF7-4BD9-9E60-45FBC87BD569",
               "type": "fixed",
               "amount": 1,
-              "reset": "short"
+              "reset": 1
             }
           },
           {
@@ -3467,7 +3467,7 @@
       "id": "4BE47AE6-1D04-46E0-99BC-24C777362E58",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -3490,7 +3490,7 @@
       "id": "D7DE93C5-7318-498C-B8EA-74D317C0B120",
       "type": "fixed",
       "amount": 1,
-      "reset": "short"
+      "reset": 1
     }
   },
   {
@@ -3539,7 +3539,7 @@
       "id": "0FFF7D7B-C054-4F6D-9607-1066B658D225",
       "type": "fixed",
       "amount": 3,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -3661,7 +3661,7 @@
       "id": "B3BD14B2-139D-42CE-B312-8930D2EC3236",
       "type": "derived",
       "source": "proficiency",
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -3699,7 +3699,7 @@
       "id": "9A57BD34-6841-4FF1-8018-0AEAD55CDB23",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -3838,7 +3838,7 @@
       "id": "3A49CF8E-8B48-4E02-BD1A-698BBDB1C7C2",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
@@ -3878,7 +3878,7 @@
       "id": "BBF6EE23-86A5-4E7C-95D3-3FC342C694A7",
       "type": "fixed",
       "amount": 1,
-      "reset": "long"
+      "reset": 2
     }
   },
   {
