@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
 import { GeneralStoreService } from './general-store.service';
+import { features } from 'process';
 
 interface SkillProf {
   id: string;
@@ -617,6 +618,15 @@ export class CharacterSheetService {
           level: choice.level,
         });
       }
+
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          skillProfs.push(
+            ...this.getFeatureSkillProfs(featData, character.background.choices)
+          );
+        }
+      }
     });
     character.genius?.choices.forEach((choice) => {
       if (skillList.includes(choice.value)) {
@@ -793,6 +803,15 @@ export class CharacterSheetService {
           instrument: instruments.includes(choice.value),
         });
       }
+
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          skillProfs.push(
+            ...this.getFeatureToolProfs(featData, character.background.choices)
+          );
+        }
+      }
     });
     character.genius?.choices.forEach((choice) => {
       if (skillList.includes(choice.value)) {
@@ -935,6 +954,20 @@ export class CharacterSheetService {
         }
       }
     });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          profs = {
+            ...profs,
+            ...this.getSaveProfsFromFeature(
+              featData,
+              character.background.choices
+            ),
+          };
+        }
+      }
+    });
 
     return profs;
   }
@@ -1021,6 +1054,14 @@ export class CharacterSheetService {
               senses = this.getSensesFromFeature(feature, senses);
             }
           }
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          senses = this.getSensesFromFeature(featData, senses);
         }
       }
     });
@@ -1119,6 +1160,19 @@ export class CharacterSheetService {
               ...this.getFeatureSkillOverrides(feature, c.choices)
             );
           });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          skillProfs.push(
+            ...this.getFeatureSkillOverrides(
+              featData,
+              character.background.choices
+            )
+          );
         }
       }
     });
@@ -1240,6 +1294,19 @@ export class CharacterSheetService {
               ...this.getFeatureToolOverrides(feature, c.choices)
             );
           });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          skillProfs.push(
+            ...this.getFeatureToolOverrides(
+              featData,
+              character.background.choices
+            )
+          );
         }
       }
     });
@@ -1384,6 +1451,22 @@ export class CharacterSheetService {
               )
             );
           });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          spellList.push(
+            ...this.getFeatureSpells(
+              featData,
+              character.background.choices,
+              this.getTotalLevel(),
+              0,
+              ['Background']
+            )
+          );
         }
       }
     });
@@ -1758,6 +1841,22 @@ export class CharacterSheetService {
         }
       }
     });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          exploitList.push(
+            ...this.getFeatureExploits(
+              featData,
+              character.background.choices,
+              this.getTotalLevel(),
+              0,
+              ['Background']
+            )
+          );
+        }
+      }
+    });
 
     const splitExploits: any[] = [];
     for (let i = 0; i < 5; i++) {
@@ -2119,6 +2218,20 @@ export class CharacterSheetService {
         }
       }
     });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          profs = [
+            ...profs,
+            ...this.getFeatureArmorProfs(
+              featData,
+              character.background.choices
+            ),
+          ];
+        }
+      }
+    });
 
     profs = [...new Set(profs)];
     profs = profs.sort();
@@ -2249,6 +2362,18 @@ export class CharacterSheetService {
       if (languageList.includes(choice.value)) {
         profs.push(choice.value);
       }
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          profs = [
+            ...profs,
+            ...this.getFeatureLanguageProfs(
+              featData,
+              character.background.choices
+            ),
+          ];
+        }
+      }
     });
     character.genius?.choices?.forEach((choice) => {
       if (languageList.includes(choice.value)) {
@@ -2353,9 +2478,6 @@ export class CharacterSheetService {
 
     const character = JSON.parse(localStorage.getItem('character'));
 
-    // character.race?.choices?.forEach((choice) => {
-
-    // });
     const raceData = this.dataService.getRace(character.race?.name);
     let subraceData;
     if (character.race?.subrace) {
@@ -2383,10 +2505,6 @@ export class CharacterSheetService {
     }
 
     character.classes?.forEach((c, index) => {
-      // c.choices.forEach((choice) => {
-
-      // });
-
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -2419,15 +2537,20 @@ export class CharacterSheetService {
         }
       }
     });
-    // character.background?.choices?.forEach((choice) => {
-
-    // });
-    // character.genius?.choices?.forEach((choice) => {
-
-    // });
-    // character.override?.choices?.forEach((choice) => {
-
-    // });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          profs = [
+            ...profs,
+            ...this.getFeatureWeaponProfs(
+              featData,
+              character.background.choices
+            ),
+          ];
+        }
+      }
+    });
 
     return profs;
   }
@@ -2536,6 +2659,20 @@ export class CharacterSheetService {
               ...this.getFeatureDamageDefenses(feature, c.choices),
             ];
           });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          damageDefenses = [
+            ...damageDefenses,
+            ...this.getFeatureDamageDefenses(
+              featData,
+              character.background.choices
+            ),
+          ];
         }
       }
     });
@@ -2739,6 +2876,20 @@ export class CharacterSheetService {
         }
       }
     });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          conditionDefenses = [
+            ...conditionDefenses,
+            ...this.getFeatureConditionDefenses(
+              featData,
+              character.background.choices
+            ),
+          ];
+        }
+      }
+    });
 
     conditionDefenses = conditionDefenses.sort((a, b) => {
       if (a.type.localeCompare(b.type) < 0) {
@@ -2926,6 +3077,17 @@ export class CharacterSheetService {
         }
       }
     });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          hpBonus += this.getFeatureHpBonus(
+            featData,
+            character.background.choices
+          );
+        }
+      }
+    });
 
     return hpBonus;
   }
@@ -3006,6 +3168,20 @@ export class CharacterSheetService {
     level: number
   ): number {
     let maxUses = 0;
+    if (!dataObj) {
+      const choiceEntry = characterObj.choices.find(
+        (ch) => ch.id === 'bg-feat'
+      )?.value;
+      const featData = this.dataService.getFeat(choiceEntry);
+
+      return this.getFeatureUses(
+        featData,
+        characterObj.choices,
+        useId,
+        level,
+        maxUses
+      );
+    }
 
     if (dataObj.traits) {
       for (let trait of dataObj.traits) {
@@ -3233,6 +3409,20 @@ export class CharacterSheetService {
     level: number
   ): number {
     let reset = 0;
+    if (!dataObj) {
+      const choiceEntry = characterObj.choices.find(
+        (ch) => ch.id === 'bg-feat'
+      )?.value;
+      const featData = this.dataService.getFeat(choiceEntry);
+
+      return this.getFeatureUseReset(
+        featData,
+        characterObj.choices,
+        useId,
+        level,
+        reset
+      );
+    }
 
     if (dataObj.traits) {
       for (let trait of dataObj.traits) {

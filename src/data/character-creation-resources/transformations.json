@@ -335,21 +335,21 @@
                 "id": "F2BF9360-0318-4379-811F-2EED9CE1C9FF",
                 "type": "spell",
                 "level": 0,
-                "school": ["Divination", "Enchantment"],
+                "list": ["Divination", "Enchantment"],
                 "ability": "cha"
               },
               {
                 "id": "6FB8461E-CA73-458F-BBE3-FB83CD17A076",
                 "type": "spell",
                 "level": 1,
-                "school": ["Divination", "Enchantment"],
+                "list": ["Divination", "Enchantment"],
                 "ability": "cha"
               },
               {
                 "id": "C03833C6-1209-4B6A-A165-A2096BEE526A",
                 "type": "spell",
                 "level": 2,
-                "school": ["Divination", "Enchantment"],
+                "list": ["Divination", "Enchantment"],
                 "ability": "cha"
               }
             ],
@@ -453,21 +453,21 @@
                 "id": "CD0706D9-54CC-4F9F-902D-18B9FE0A2A4B",
                 "type": "spell",
                 "level": 3,
-                "school": ["Divination", "Enchantment"],
+                "list": ["Divination", "Enchantment"],
                 "ability": "cha"
               },
               {
                 "id": "E3D32D71-6DC9-4C7B-8B95-B1D2AF9A65EF",
                 "type": "spell",
                 "level": 4,
-                "school": ["Divination", "Enchantment"],
+                "list": ["Divination", "Enchantment"],
                 "ability": "cha"
               },
               {
                 "id": "581E3EF6-F989-4CCD-BE59-99D414445E37",
                 "type": "spell",
                 "level": 5,
-                "school": ["Divination", "Enchantment"],
+                "list": ["Divination", "Enchantment"],
                 "ability": "cha"
               }
             ],

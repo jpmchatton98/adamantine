@@ -251,8 +251,8 @@ export class BuilderChoiceComponent implements OnInit {
               .filter(
                 (s: any) =>
                   (s.level === (choice.level ?? 10) &&
-                    (choice.list?.includes(s.school.toLowerCase()) ||
-                      choice.list === s.school.toLowerCase() ||
+                    (choice.list?.includes(s.school) ||
+                      choice.list === s.school ||
                       s.lists.find((l: string) =>
                         choice.list?.includes(
                           l.toLowerCase() || choice.list === l.toLowerCase()

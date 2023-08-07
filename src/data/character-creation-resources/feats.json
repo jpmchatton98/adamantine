@@ -575,7 +575,7 @@
         "id": "575A8579-AF0D-4223-BCD1-0F182640D57A",
         "type": "spell",
         "level": 1,
-        "school": ["Divination", "Enchantment"],
+        "list": ["Divination", "Enchantment"],
         "ability": "5D1ADD4B-41F0-4639-8702-257A73FCC4AF"
       }
     ],
@@ -1793,7 +1793,7 @@
         "id": "0A617E0B-A697-4E14-A427-BDF4F62AC3C9",
         "type": "spell",
         "level": 1,
-        "school": ["Illusion", "Necromancy"],
+        "list": ["Illusion", "Necromancy"],
         "ability": "BD68A7F3-CEEE-410C-B7F5-7A2EA37A1EFF"
       }
     ],
