@@ -86,6 +86,16 @@ export class EquipmentTabComponent implements OnInit {
 
       gold += (roll1 + roll2) * 5;
     }
+
+    if (!this.character.equipment.currency) {
+      this.character.equipment.currency = {
+        pp: 0,
+        gp: 0,
+        sp: 0,
+        cp: 0,
+      };
+    }
+
     this.character.equipment.currency.gp = gold;
 
     this.character.equipment.other = this.generalStoreService.getTrinket();
@@ -94,6 +104,10 @@ export class EquipmentTabComponent implements OnInit {
   }
 
   private addItem(item: any): void {
+    if (!this.character.equipment.items) {
+      this.character.equipment.items = [];
+    }
+
     const itemName = item.item.toLowerCase();
 
     const existingIndex = this.character.equipment.items.findIndex(

@@ -624,4 +624,23 @@ export class CharacterSheetComponent implements OnInit {
       })
       .join(',');
   }
+
+  public getDamageIcon(damageType: string) {
+    return this.characterSheetService.damageIcons[damageType];
+  }
+  public getConditionIcon(condition: string) {
+    return this.characterSheetService.conditionIcons[condition];
+  }
+  public hasResistance() {
+    return !!this.defenses.damage.find((d) => d.level === 1);
+  }
+  public hasDamageImmunity() {
+    return !!this.defenses.damage.find((d) => d.level === 2);
+  }
+  public hasConditionAdvantage() {
+    return !!this.defenses.condition.find((d) => d.level === 1);
+  }
+  public hasConditionImmunity() {
+    return !!this.defenses.condition.find((d) => d.level === 2);
+  }
 }

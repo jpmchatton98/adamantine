@@ -1867,7 +1867,7 @@
     "duration": "Instantaneous",
     "description": "<p>You hurl, slash, or stab crackling radiant energy at a creature or object within range. This energy takes on the shape of a weapon of your choice. If the target is within 5 feet of you, make a melee spell attack against it, otherwise make a ranged spell attack against it. This attack roll is made with disadvantage if the target is further than 60 feet from you. On a hit, the target takes 1d4 radiant and 1d4 lightning damage.</p>",
     "higherLevels": "The radiant and lightning damage dealt by this spell each increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>",
-    "lists": ["Divine", "Primal"],
+    "lists": ["Divine", "Primal", "Occult"],
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -15961,7 +15961,7 @@
     "duration": "Instantaneous",
     "description": "<p>A small bolt of lightning lances from your finger to a creature within range. On a hit, the target takes 1d8 lightning damage and cannot take reactions until the start of its next turn.</p>",
     "higherLevels": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Occult"],
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -16792,6 +16792,60 @@
     "description": "<p>You make up to two creatures you touch - including clothing, armor, weapons, and other belongings on their person - look different until the spell ends or until you use your action to dismiss it.  You can dismiss the spell all at once or on specific creatures.</p><p>This spell can make its targets seem 1 foot shorter or taller and can appear thin, fat, or in between. It can't change the targets' body type, so it must create a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.</p><p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to a target's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel their head and hair. If you use this spell to cause a target to appear thinner than they are, the hand of someone who reaches out to touch them would bump into them while it was seemingly still in midair. To discern that a target is disguised, a creature can use its action to inspect the target's appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.",
     "higherLevels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
     "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Astral Fire",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "<p>You call forth the energies of the astral plane to target a creature within range.  Make a ranged spell attack, dealing 1d8 radiant damage on a hit.</p>",
+    "higherLevels": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 8,
+        "type": "radiant"
+      }
+    ]
+  },
+  {
+    "name": "Solar Flare",
+    "school": "Evocation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self (50 foot cone)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "<p>You lash out with a cone of solar energy, Creatures within range must make a Constitution saving throw or take 16d10 radiant damage and be blinded for 24 hours.</p><p>A blinded creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a success.</p>",
+    "lists": ["Arcane", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 16,
+        "die": 6,
+        "type": "cold"
+      }
+    ]
+  },
+  {
+    "name": "Mordenkainen's Disjunction",
+    "school": "Abjuration",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": "You attempt to dispel all magical effects and magical items within range, except for those you designate when you cast the spell.</p><p>If a target is an effect, the creator of the effect must make a Charisma saving throw against your spell save DC or be forced to end it.</p><p>If the target is a non-sentient magical item, the holder of the item must make a Charisma saving throw against your spell save DC or the item becomes nonmagical.</p><p>If the target is a sentient magic item, the magic item must make a Charisma saving throw against your spell save DC or it becomes nonmagical and no longer sentient.</p><p>If a magical item targeted by this spell is an artifact, the saving throw is made at advantage.  If you dispel one or more artifacts when you cast this spell, you must make a DC 25 Charisma saving throw or permanently lose the ability to cast spells.  Loss of spellcasting ability in this way cannot be restored by any means short of divine intervention.",
+    "lists": ["Arcane"],
     "ritual": 0
   }
 ]

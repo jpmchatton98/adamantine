@@ -128,13 +128,13 @@ export class SpellsComponent {
         let dice = d.dice;
         if (spell.level === 0 && spell.higherLevels && !signature) {
           if (this.characterLevel() >= 5) {
-            dice += 1;
+            dice += d.dice;
           }
           if (this.characterLevel() >= 11) {
-            dice += 1;
+            dice += d.dice;
           }
           if (this.characterLevel() >= 17) {
-            dice += 1;
+            dice += d.dice;
           }
         }
 

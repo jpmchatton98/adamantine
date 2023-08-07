@@ -1990,7 +1990,10 @@
             "name": "Draconic Resilience",
             "description": "You have resistance to lightning damage. Your breath weapon deals lightning damage and imposes a Dexterity saving throw.",
             "granted": [
-              { "type": "damage-resistance", "options": ["Lightning"] }
+              {
+                "type": "damage-resistance",
+                "options": ["Lightning"]
+              }
             ]
           },
           {

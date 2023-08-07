@@ -272,7 +272,7 @@ export class CharacterSheetService {
       score: 'wis',
     },
     {
-      name: 'Domnioes',
+      name: 'Dominoes',
       score: 'wis',
     },
     {
@@ -321,6 +321,26 @@ export class CharacterSheetService {
     radiant: 'brightness-7',
     slashing: 'sword',
     thunder: 'waveform',
+  };
+  public conditionIcons = {
+    blinded: 'eye-off',
+    broken: 'shield-remove',
+    charmed: 'heart',
+    deafened: 'ear-hearing-off',
+    disease: 'virus',
+    exhaustion: 'sleep',
+    frightened: 'emoticon-frown',
+    grappled: 'link-variant',
+    hobbled: 'tortoise',
+    incapacitated: 'account-off',
+    invisible: 'ghost',
+    paralyzed: 'shimmer',
+    petrified: 'diamond',
+    poisoned: 'bottle-tonic-skull',
+    prone: 'run',
+    restrained: 'handcuffs',
+    stunned: 'head-snowflake',
+    unconscious: 'bed',
   };
   public aoeIcons = {
     cone: 'cone',
@@ -2662,6 +2682,16 @@ export class CharacterSheetService {
             ];
           });
         }
+      }
+    });
+
+    conditionDefenses = conditionDefenses.sort((a, b) => {
+      if (a.type.localeCompare(b.type) < 0) {
+        return -1;
+      } else if (a.type.localeCompare(b.type) === 0) {
+        return a.level - b.level;
+      } else {
+        return 1;
       }
     });
 

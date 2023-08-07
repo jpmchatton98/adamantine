@@ -128,12 +128,38 @@
                 <h6>Defenses</h6>
                 <div class="subheader" *ngIf="defenses.damage?.length">
                     <strong>Damage</strong>
-                    <div>
+                    <div class="icons" *ngIf="getSetting('defense') === 0">
+                        <div class="block" *ngIf="hasResistance()">
+                            <div class="block-header" title="Resistances">
+                                R
+                            </div>
+                            <div class="icon-block">
+                                <ng-container *ngFor="let d of defenses.damage">
+                                    <div *ngIf="d.level === 1">
+                                        <span class="mdi mdi-{{ getDamageIcon(d.type) }}" style="color: green; cursor: help" title="Resists {{ d.type }} damage"></span>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                        <div class="block" *ngIf="hasDamageImmunity()">
+                            <div class="block-header" title="Immunities">
+                                I
+                            </div>
+                            <div class="icon-block">
+                                <ng-container *ngFor="let d of defenses.damage">
+                                    <div *ngIf="d.level === 2">
+                                        <span class="mdi mdi-{{ getDamageIcon(d.type) }}" style="color: green; cursor: help" title="Immune to {{ d.type }} damage"></span>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text" *ngIf="getSetting('defense') === 1">
                         <div *ngFor="let d of defenses.damage">
-                            <div *ngIf="d.level === 1">
+                            <div *ngIf="d.level === 1" class="defense">
                                 <span class="defense-icon" title="Resist">R</span> {{ d.type }}
                             </div>
-                            <div *ngIf="d.level === 2">
+                            <div *ngIf="d.level === 2" class="defense">
                                 <span class="defense-icon" title="Immune">I</span> {{ d.type }}
                             </div>
                         </div>
@@ -141,12 +167,38 @@
                 </div>
                 <div class="subheader" *ngIf="defenses.condition?.length">
                     <strong>Conditions</strong>
-                    <div>
+                    <div class="icons" *ngIf="getSetting('defense') === 0">
+                        <div class="block" *ngIf="hasConditionAdvantage()">
+                            <div class="block-header" title="Advantages">
+                                A
+                            </div>
+                            <div class="icon-block">
+                                <ng-container *ngFor="let d of defenses.condition">
+                                    <div *ngIf="d.level === 1">
+                                        <span class="mdi mdi-{{ getConditionIcon(d.type) }}" [ngClass]="{'prone': d.type === 'prone'}" style="color: green; cursor: help" title="Advantage against {{ d.type }}"></span>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                        <div class="block" *ngIf="hasConditionImmunity()">
+                            <div class="block-header" title="Immunities">
+                                I
+                            </div>
+                            <div class="icon-block">
+                                <ng-container *ngFor="let d of defenses.condition">
+                                    <div *ngIf="d.level === 2">
+                                        <span class="mdi mdi-{{ getConditionIcon(d.type) }}" [ngClass]="{'prone': d.type === 'prone'}" style="color: green; cursor: help" title="Immune to {{ d.type }}"></span>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text" *ngIf="getSetting('defense') === 1">
                         <div *ngFor="let d of defenses.condition">
-                            <div *ngIf="d.level === 1">
+                            <div *ngIf="d.level === 1" class="defense">
                                 <span class="defense-icon" title="Advantage">A</span> {{ d.type }}
                             </div>
-                            <div *ngIf="d.level === 2">
+                            <div *ngIf="d.level === 2" class="defense">
                                 <span class="defense-icon" title="Immune">I</span> {{ d.type }}
                             </div>
                         </div>
@@ -424,6 +476,12 @@
             <div class="setting">
                 <img src="assets/setting-images/passive/0.png" (click)="updateSetting('passive', 0)" [ngClass]="{'selected': (getSetting('passive') ?? 0) === 0}">
                 <img src="assets/setting-images/passive/1.png" (click)="updateSetting('passive', 1)" [ngClass]="{'selected': (getSetting('passive') ?? 0) === 1}">
+            </div>
+
+            <div><strong>Defenses Style</strong></div>
+            <div class="setting">
+                <img src="assets/setting-images/defenses/0.png" (click)="updateSetting('defense', 0)" [ngClass]="{'selected': (getSetting('defense') ?? 0) === 0}">
+                <img src="assets/setting-images/defenses/1.png" (click)="updateSetting('defense', 1)" [ngClass]="{'selected': (getSetting('defense') ?? 0) === 1}">
             </div>
         </div>
     </ng-container>

@@ -1,15 +1,25 @@
 import json
 
-file = open('./races.json', 'r+', encoding="cp866")
+file = open('./classes.json', 'r+', encoding="cp866")
 
 classes = json.loads(file.read())
 
-languages = []
 for c in classes:
-    for l in c['languages']:
-        if isinstance(l, str):
-            languages.append(l)
+    for s in c['subclasses']:
+        featureLevel = list(s['features'].keys())[0]
+        spells = None
+        for f in s['features'][featureLevel]:
+            if 'granted' in f:
+                for g in f['granted']:
+                    if g['type'] == 'spell' and len(g['options']) > 5:
+                        spells = g['options']
+                        s['features'][featureLevel].remove(f)                     
 
-languages = [*set(languages)]
-languages.sort()
-print(languages)
+        if spells is not None:
+            s['spells'] = spells
+
+file.truncate(0)
+file.seek(0)
+file.write(json.dumps(classes))
+
+file.close()

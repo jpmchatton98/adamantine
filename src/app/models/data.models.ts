@@ -130,6 +130,7 @@ export interface IClass extends IDataModel {
   extraCols?: IClassTableColumn[];
 
   subclassName: string;
+  subclassSpellName?: string;
   subclassLevel: number;
   subclasses: ISubclass[];
 
@@ -190,4 +191,5 @@ export interface ISubclass extends IDataModel {
   spellcaster?: boolean;
   spellcastingType?: string;
   spellcastingLevel?: number;
+  spells: string[];
 }
