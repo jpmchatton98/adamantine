@@ -1805,12 +1805,20 @@
         "ability": "BD68A7F3-CEEE-410C-B7F5-7A2EA37A1EFF"
       }
     ],
-    "uses": {
-      "id": "B1EDAD60-A042-439A-ADEF-79AADCF2AF04",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
+    "uses": [
+      {
+        "id": "B1EDAD60-A042-439A-ADEF-79AADCF2AF04",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "29D6D558-5422-45D9-B4EF-1D16DC29871B",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
   },
   {
     "name": "Sharpshooter",

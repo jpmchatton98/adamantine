@@ -70,6 +70,7 @@ export class CharacterSheetComponent implements OnInit {
 
   public backgroundFeature: any;
   public backgroundFeat: any;
+  public backgroundFeat4: any;
 
   public characterSpells: any[] = [];
   public spellAbilities: string[] = [];
@@ -87,6 +88,9 @@ export class CharacterSheetComponent implements OnInit {
   public currHp;
   public tempHp = 0;
   public hpMod = 0;
+
+  public initBonus = 0;
+  public saveBonus;
 
   constructor(
     private characterSheetService: CharacterSheetService,
@@ -178,6 +182,12 @@ export class CharacterSheetComponent implements OnInit {
       if (featChoice) {
         this.backgroundFeat = this.dataService.getFeat(featChoice.value);
       }
+      const featChoice4 = this.character.background.choices.find(
+        (c: any) => c.id === 'bg-feat-4'
+      );
+      if (featChoice4) {
+        this.backgroundFeat4 = this.dataService.getFeat(featChoice4.value);
+      }
     }
 
     this.notes = this.character.notes ?? '';
@@ -185,6 +195,9 @@ export class CharacterSheetComponent implements OnInit {
     this.profs = this.characterSheetService.getCharacterProficiencies();
 
     this.defenses = this.characterSheetService.getCharacterDefenses();
+
+    this.initBonus = this.characterSheetService.getInitBonus();
+    this.saveBonus = this.characterSheetService.getSaveBonus();
 
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
@@ -474,11 +487,15 @@ export class CharacterSheetComponent implements OnInit {
   }
   public getSaveMod(score: string): number {
     if (score === 'death') {
-      return this.proficiencyBonus() * (this.saveIsProficient(score) ? 1 : 0);
+      return (
+        this.proficiencyBonus() * (this.saveIsProficient(score) ? 1 : 0) +
+        (this.saveBonus[score] ?? 0)
+      );
     }
     return (
       this.modifierNumber(score) +
-      this.proficiencyBonus() * (this.saveIsProficient(score) ? 1 : 0)
+      this.proficiencyBonus() * (this.saveIsProficient(score) ? 1 : 0) +
+      (this.saveBonus[score] ?? 0)
     );
   }
   public saveMod(score): string {
@@ -518,9 +535,11 @@ export class CharacterSheetComponent implements OnInit {
     return this.formatModifier(this.getSkillMod(skill));
   }
   public initiativeMod(): string {
-    return this.skillMod({
-      name: 'Initiative',
-    });
+    return this.formatModifier(
+      this.getSkillMod({
+        name: 'Initiative',
+      }) + this.initBonus
+    );
   }
   public getPassiveMod(skill): number {
     return 10 + this.getSkillMod(skill);

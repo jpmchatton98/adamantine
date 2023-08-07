@@ -1,12 +1,21 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import {
+  selectUpdate,
+  update,
+} from 'src/components/pages/features/builder.selectors';
 
 @Component({
   selector: 'cb-background-tab',
   templateUrl: './background-tab.component.html',
   styleUrls: ['./background-tab.component.scss'],
 })
-export class BackgroundTabComponent {
+export class BackgroundTabComponent implements OnInit {
   @Input() character: any;
+
+  constructor(private store: Store) {}
+
+  public totalLevel = 0;
 
   public backgroundSkillFeature = {
     name: 'Skills',
@@ -43,10 +52,17 @@ export class BackgroundTabComponent {
   public backgroundFeat = {
     name: 'Feat',
     description: '',
-    choices: {
-      id: 'bg-feat',
-      type: 'feat',
-    },
+    choices: [
+      {
+        id: 'bg-feat',
+        type: 'feat',
+      },
+      {
+        id: 'bg-feat-4',
+        type: 'feat',
+        prereq: 4,
+      },
+    ],
   };
   public backgroundFeature = {
     name: 'Background Feature',
@@ -56,4 +72,18 @@ export class BackgroundTabComponent {
       type: 'bg-feature',
     },
   };
+
+  ngOnInit(): void {
+    this.store.select(selectUpdate).subscribe((update) => {
+      if (update) {
+        for (let c of this.character.classes ?? []) {
+          this.totalLevel += c.level;
+        }
+
+        if (!this.totalLevel) {
+          this.totalLevel = 1;
+        }
+      }
+    });
+  }
 }

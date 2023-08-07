@@ -310,7 +310,6 @@ export class InventoryComponent implements OnInit {
   public addItem(itemName: string, itemCost: number = 0): void {
     if (itemCost) {
       this.removeCurrency(itemCost);
-      console.log(this.equipment.currency);
     }
 
     const itemData = this.generalStoreService.getItem(itemName);

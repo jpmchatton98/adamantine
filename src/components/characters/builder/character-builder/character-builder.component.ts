@@ -206,6 +206,18 @@ export class CharacterBuilderComponent implements OnInit {
             )
           );
         }
+        const choiceEntry4 = this.character.background.choices.find(
+          (ch: any) => ch.id === 'bg-feat-4'
+        );
+        if (choiceEntry4) {
+          this.combineScoreMods(
+            scoreMods,
+            this.getModsFromFeature(
+              this.dataService.getFeat(choiceEntry4.value),
+              this.character.background.choices
+            )
+          );
+        }
       }
 
       for (let key of Object.keys(this.character.scores.base)) {
