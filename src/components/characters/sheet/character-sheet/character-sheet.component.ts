@@ -550,6 +550,7 @@ export class CharacterSheetComponent implements OnInit {
     return this.formatModifier(
       this.getSkillMod({
         name: 'Initiative',
+        score: 'dex',
       }) + this.initBonus
     );
   }

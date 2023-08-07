@@ -53,9 +53,12 @@ export class InventoryComponent implements OnInit {
   public generateItems() {
     this.equipmentData = [];
 
-    for (let e of this.equipment?.items?.sort((a, b) =>
-      a.item.localeCompare(b.item)
-    ) ?? []) {
+    this.equipment.items =
+      this.equipment.items?.sort((a, b) => {
+        a.item.localeCompare(b.item);
+      }) ?? [];
+
+    for (let e of this.equipment?.items ?? []) {
       const itemData = this.generalStoreService.getItem(e.item);
       this.equipmentData.push(itemData);
 
@@ -109,10 +112,10 @@ export class InventoryComponent implements OnInit {
 
   public totalCurrencyInGp(): number {
     return (
-      (this.equipment.currency.pp ?? 0) * 10 +
-      (this.equipment.currency.gp ?? 0) +
-      (this.equipment.currency.sp ?? 0) / 10 +
-      (this.equipment.currency.cp ?? 0) / 100
+      (this.equipment.currency?.pp ?? 0) * 10 +
+      (this.equipment.currency?.gp ?? 0) +
+      (this.equipment.currency?.sp ?? 0) / 10 +
+      (this.equipment.currency?.cp ?? 0) / 100
     );
   }
   public totalCurrencyInGpLocal(): number {
@@ -312,9 +315,24 @@ export class InventoryComponent implements OnInit {
       this.removeCurrency(itemCost);
     }
 
+    if (!this.equipment) {
+      this.equipment = {
+        items: [],
+        currency: {
+          pp: 0,
+          gp: 0,
+          sp: 0,
+          cp: 0,
+        },
+      };
+    }
+    if (!this.equipment.items) {
+      this.equipment.items = [];
+    }
+
     const itemData = this.generalStoreService.getItem(itemName);
     if (!itemData?.contentsSheet) {
-      const itemEntry = this.equipment.items.find(
+      const itemEntry = this.equipment.items?.find(
         (i: any) => i.item.toLowerCase() === itemName.toLowerCase()
       );
       if (itemEntry) {
@@ -376,10 +394,9 @@ export class InventoryComponent implements OnInit {
           (i: any, id) => id !== index
         );
         this.itemModal = false;
-
-        this.generateItems();
       }
 
+      this.generateItems();
       this.equipmentUpdated();
     }
   }
@@ -393,6 +410,7 @@ export class InventoryComponent implements OnInit {
       }
       this.equipment.items[index].quantity = this.modalQuantity;
 
+      this.generateItems();
       this.equipmentUpdated();
     }
   }

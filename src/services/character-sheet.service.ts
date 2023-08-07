@@ -129,6 +129,10 @@ export class CharacterSheetService {
       score: 'int',
     },
     {
+      name: "Angler's Tools",
+      score: 'wis',
+    },
+    {
       name: "Archeologist's Supplies",
       score: 'int',
     },
@@ -1464,7 +1468,7 @@ export class CharacterSheetService {
               character.background.choices,
               this.getTotalLevel(),
               0,
-              ['Background']
+              ['Background', featData.name]
             )
           );
         }
@@ -1851,7 +1855,7 @@ export class CharacterSheetService {
               character.background.choices,
               this.getTotalLevel(),
               0,
-              ['Background']
+              ['Background', featData.name]
             )
           );
         }
