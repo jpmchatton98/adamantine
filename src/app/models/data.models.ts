@@ -191,5 +191,7 @@ export interface ISubclass extends IDataModel {
   spellcaster?: boolean;
   spellcastingType?: string;
   spellcastingLevel?: number;
-  spells: string[];
+
+  exploits?: boolean;
+  exploitLevel?: number;
 }

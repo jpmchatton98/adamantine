@@ -410,6 +410,12 @@ export class CharacterSheetService {
     4, 6, 14, 17, 17, 27, 32, 38, 44, 57, 64, 66, 66, 68, 68, 70, 70, 72, 72,
     75,
   ];
+  public exploitDice = [
+    2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 6,
+  ];
+  public exploitDieSize = [
+    4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8, 8, 8, 10, 10, 10, 10,
+  ];
 
   constructor(
     private dataService: DataService,
@@ -3396,5 +3402,26 @@ export class CharacterSheetService {
     }
 
     return reset;
+  }
+
+  public dieSizeUp() {
+    const character = this.getCharacterFromCache();
+    if (character.classes) {
+      for (let c of character.classes) {
+        if (c.subclass === 'Master At Arms') {
+          return true;
+        } else {
+          for (let ch of c.choices) {
+            if (
+              ch.id === '06D21A61-5648-43A7-8ACA-F32A583386DD' &&
+              ch.value === 'Master At Arms'
+            ) {
+              return true;
+            }
+          }
+        }
+      }
+    }
+    return false;
   }
 }
