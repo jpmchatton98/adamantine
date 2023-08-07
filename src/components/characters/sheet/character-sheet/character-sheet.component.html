@@ -59,9 +59,9 @@
                 <div>INITIATIVE</div>
                 <h6>{{ initiativeMod() }}</h6>
             </div>
-            <div class="ac">
+            <div class="ac" style="cursor: pointer;" (click)="acModal = true">
                 <div>AC</div>
-                <h6>{{ 10 + modifierNumber('dex') }}</h6>
+                <h6>{{ character.ac }}</h6>
             </div>
             <div class="score" style="cursor: pointer;" (click)="hpModal = true">
                 <h6>HP</h6>
@@ -79,6 +79,11 @@
 
                     <h6>Temp HP</h6>
                     <input nz-input-number [(ngModel)]="tempHp" (ngModelChange)="updateTempHp()">
+                </ng-container>
+            </nz-modal>
+            <nz-modal [(nzVisible)]="acModal" nzTitle="Armor Class" [nzCancelText]="null" [nzOkText]="null" (nzOnCancel)="acModal = false">
+                <ng-container *nzModalContent>
+                    <input nz-input-number [(ngModel)]="ac" (ngModelChange)="updateAc()">
                 </ng-container>
             </nz-modal>
         </div>
@@ -459,7 +464,9 @@
                             }"
                         ></editor>
                     </nz-tab>
-                    <nz-tab nzTitle="Extras"></nz-tab>
+                    <nz-tab nzTitle="Extras">
+                        Coming Soon
+                    </nz-tab>
                 </nz-tabset>
             </div>
         </div>

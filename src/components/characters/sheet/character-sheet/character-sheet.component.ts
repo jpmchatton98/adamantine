@@ -84,6 +84,7 @@ export class CharacterSheetComponent implements OnInit {
 
   public notes: string = '';
   public hpModal = false;
+  public acModal = false;
 
   public currHp;
   public tempHp = 0;
@@ -91,6 +92,9 @@ export class CharacterSheetComponent implements OnInit {
 
   public initBonus = 0;
   public saveBonus;
+
+  // TODO: remove this and replace with automatic calculation
+  public ac = 0;
 
   constructor(
     private characterSheetService: CharacterSheetService,
@@ -199,6 +203,8 @@ export class CharacterSheetComponent implements OnInit {
     this.initBonus = this.characterSheetService.getInitBonus();
     this.saveBonus = this.characterSheetService.getSaveBonus();
 
+    this.ac = this.character.ac ?? 0;
+
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
         const storageCharacter: any = JSON.parse(
@@ -278,6 +284,12 @@ export class CharacterSheetComponent implements OnInit {
   public updateTempHp() {
     this.tempHp = this.parseInt(this.tempHp);
     this.character.tempHp = this.tempHp;
+
+    this.store.dispatch(new Update());
+  }
+  public updateAc() {
+    this.ac = this.parseInt(this.ac);
+    this.character.ac = this.ac;
 
     this.store.dispatch(new Update());
   }
