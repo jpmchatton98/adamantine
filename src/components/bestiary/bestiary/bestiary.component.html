@@ -1,3 +1,9 @@
+<div class="search">
+    <nz-input-group [nzPrefix]="prefixSearch">
+        <input nz-input [(ngModel)]="filters.search" (ngModelChange)="updateFilters()"> 
+    </nz-input-group>
+</div>
+<ng-template #prefixSearch><span class="mdi mdi-magnify"></span></ng-template>
 <nz-collapse>
     <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
         <div>
@@ -31,9 +37,6 @@
         <div>
             <h4>CR</h4>
             <nz-slider [(ngModel)]="filters.cr" nzDots nzRange [nzMin]="0" [nzMax]="43" [nzStep]="null" [nzMarks]="crMarks" [nzTipFormatter]="formatCrSlider" (nzOnAfterChange)="updateFilters()"></nz-slider>
-        </div>
-        <div class="search">
-            <input nz-input [(ngModel)]="filters.search" (ngModelChange)="updateFilters()">
         </div>
     </nz-collapse-panel>
 </nz-collapse>

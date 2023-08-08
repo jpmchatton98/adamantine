@@ -1,14 +1,12 @@
 <div class="wiki">
-    <nav>
-        <ul>
-            <li><a routerLink="/database/spells" routerLinkActive="active" ariaCurrentWhenActive="page">Database</a></li>
-            <li><a routerLink="/characters/builder" routerLinkActive="active" ariaCurrentWhenActive="page">Character Builder</a></li>
-            <li><a routerLink="/characters/sheet" routerLinkActive="active" ariaCurrentWhenActive="page">Character Sheet</a></li>
-            <li><a routerLink="/bestiary" routerLinkActive="active" ariaCurrentWhenActive="page">Bestiary</a></li>
-            <li><a routerLink="/general-store" routerLinkActive="active" ariaCurrentWhenActive="page">General Store</a></li>
-            <li><a routerLink="/magic-items" routerLinkActive="active" ariaCurrentWhenActive="page">Magic Items</a></li>
-        </ul>
-    </nav>
+    <div class="nav-links">
+        <div class="link"><a routerLink="/characters/builder" routerLinkActive="active" ariaCurrentWhenActive="page">Character Builder</a></div>
+        <div class="link"><a routerLink="/characters/sheet" routerLinkActive="active" ariaCurrentWhenActive="page">Character Sheet</a></div>
+        <div class="link"><a routerLink="/database/spells" routerLinkActive="active" ariaCurrentWhenActive="page">Database</a></div>
+        <div class="link"><a routerLink="/bestiary" routerLinkActive="active" ariaCurrentWhenActive="page">Bestiary</a></div>
+        <div class="link"><a routerLink="/general-store" routerLinkActive="active" ariaCurrentWhenActive="page">General Store</a></div>
+        <div class="link"><a routerLink="/magic-items" routerLinkActive="active" ariaCurrentWhenActive="page">Magic Items</a></div>
+    </div>
 
     <router-outlet (activate)="onActivate($event)"></router-outlet>
 </div>
