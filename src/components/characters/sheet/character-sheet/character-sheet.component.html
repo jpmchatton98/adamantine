@@ -70,8 +70,8 @@
             </div>
             <div class="score" style="cursor: pointer;" (click)="speedModal = true">
                 <h6>SPEED</h6>
-                <div class="total">{{ speeds[getBiggestSpeed()] }} ft.</div>
-                <div class="mod">{{ getBiggestSpeed().toUpperCase() }}</div>
+                <div class="total">{{ speeds.walk }} ft.</div>
+                <div class="mod"> WALK </div>
             </div>
             <nz-modal [(nzVisible)]="hpModal" nzTitle="Hit Points" [nzCancelText]="null" [nzOkText]="null" (nzOnCancel)="hpModal = false">
                 <ng-container *nzModalContent>
