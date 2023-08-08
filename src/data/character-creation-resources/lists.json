@@ -847,7 +847,7 @@
           "granted": [
             {
               "type": "speed",
-              "speed": "hover",
+              "speed": "fly",
               "amount": -1
             }
           ]

@@ -85,6 +85,7 @@ export class CharacterSheetComponent implements OnInit {
   public notes: string = '';
   public hpModal = false;
   public acModal = false;
+  public speedModal = false;
 
   public currHp;
   public tempHp = 0;
@@ -92,6 +93,9 @@ export class CharacterSheetComponent implements OnInit {
 
   public initBonus = 0;
   public saveBonus;
+
+  public speeds;
+  public jumping;
 
   // TODO: remove this and replace with automatic calculation
   public ac = 0;
@@ -205,6 +209,9 @@ export class CharacterSheetComponent implements OnInit {
 
     this.ac = this.character.ac ?? 0;
 
+    this.speeds = this.characterSheetService.getSpeeds();
+    this.jumping = this.characterSheetService.getJumping();
+
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
         const storageCharacter: any = JSON.parse(
@@ -295,6 +302,18 @@ export class CharacterSheetComponent implements OnInit {
   }
   public parseInt(number) {
     return parseInt(number);
+  }
+
+  public getSpeeds() {
+    const speedArray = [];
+    for (let k of Object.keys(this.speeds)) {
+      speedArray.push({
+        name: this.capitalize(k),
+        value: this.speeds[k],
+      });
+    }
+
+    return speedArray;
   }
 
   public shortRest(template) {
@@ -730,5 +749,66 @@ export class CharacterSheetComponent implements OnInit {
   }
   public hasConditionImmunity() {
     return !!this.defenses.condition.find((d) => d.level === 2);
+  }
+
+  public getLongJump() {
+    const thief =
+      this.character.classes?.find((c) => c.name === 'rogue')?.subclass ===
+      'Thief';
+    let jumpScore = 'str';
+    if (thief && this.getScore('str') < this.getScore('dex')) {
+      jumpScore = 'dex';
+    }
+
+    if (this.jumping.standing) {
+      return (
+        (this.getScore(jumpScore) + this.jumping.modifier) *
+        Math.max(this.jumping.multiplier, 1)
+      );
+    }
+
+    return [
+      (Math.floor(this.getScore(jumpScore) / 2) + this.jumping.modifier) *
+        Math.max(this.jumping.multiplier, 1),
+      (this.getScore(jumpScore) + this.jumping.modifier) *
+        Math.max(this.jumping.multiplier, 1),
+    ];
+  }
+  public getHighJump() {
+    const thief =
+      this.character.classes?.find((c) => c.name === 'rogue')?.subclass ===
+      'Thief';
+    let jumpScore = 'str';
+    if (thief && this.getScore('str') < this.getScore('dex')) {
+      jumpScore = 'dex';
+    }
+
+    if (this.jumping.standing) {
+      return (
+        (this.modifierNumber(jumpScore) + this.jumping.modifier) *
+        Math.max(this.jumping.multiplier, 1)
+      );
+    }
+
+    return [
+      (Math.floor(this.modifierNumber(jumpScore) / 2) + this.jumping.modifier) *
+        Math.max(this.jumping.multiplier, 1),
+      (this.modifierNumber(jumpScore) + this.jumping.modifier) *
+        Math.max(this.jumping.multiplier, 1),
+    ];
+  }
+
+  public getBiggestSpeed() {
+    let speedIndex = 'walk';
+    let speedAmount = this.speeds.walk;
+
+    for (let k of Object.keys(this.speeds)) {
+      if (this.speeds[k] > speedAmount) {
+        speedIndex = k;
+        speedAmount = this.speeds[k];
+      }
+    }
+
+    return speedIndex;
   }
 }

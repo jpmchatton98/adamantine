@@ -68,6 +68,11 @@
                 <div class="total">{{ (hp - currHp) + tempHp }}</div>
                 <div class="mod">{{ hp }}</div>
             </div>
+            <div class="score" style="cursor: pointer;" (click)="speedModal = true">
+                <h6>SPEED</h6>
+                <div class="total">{{ speeds[getBiggestSpeed()] }} ft.</div>
+                <div class="mod">{{ getBiggestSpeed().toUpperCase() }}</div>
+            </div>
             <nz-modal [(nzVisible)]="hpModal" nzTitle="Hit Points" [nzCancelText]="null" [nzOkText]="null" (nzOnCancel)="hpModal = false">
                 <ng-container *nzModalContent>
                     {{ hp - currHp }} / {{ hp }}
@@ -84,6 +89,35 @@
             <nz-modal [(nzVisible)]="acModal" nzTitle="Armor Class" [nzCancelText]="null" [nzOkText]="null" (nzOnCancel)="acModal = false">
                 <ng-container *nzModalContent>
                     <input nz-input-number [(ngModel)]="ac" (ngModelChange)="updateAc()">
+                </ng-container>
+            </nz-modal>
+            <nz-modal [(nzVisible)]="speedModal" nzTitle="Speed" [nzCancelText]="null" [nzOkText]="null" (nzOnCancel)="speedModal = false">
+                <ng-container *nzModalContent>
+                    <h6>Speeds</h6>
+                    <div>
+                        <div *ngFor="let speed of getSpeeds()">
+                            <strong>{{ speed.name }}ing Speed:</strong> {{ speed.value }} ft.
+                        </div>
+                    </div>
+                    <h6>Jumping</h6>
+                    <div *ngIf="!jumping.standing; else standingJump">
+                        <div>
+                            <strong>Long Jump:</strong> {{ getLongJump()[0] }} / {{ getLongJump()[1] }} ft.
+                        </div>
+                        <div>
+                            <strong>High Jump:</strong> {{ getHighJump()[0] }} / {{ getHighJump()[1] }} ft.
+                        </div>
+                    </div>
+                    <ng-template #standingJump>
+                        <div>
+                            <div>
+                                <strong>Long Jump:</strong> {{ getLongJump() }} ft.
+                            </div>
+                            <div>
+                                <strong>High Jump:</strong> {{ getHighJump() }} ft.
+                            </div>
+                        </div>
+                    </ng-template>
                 </ng-container>
             </nz-modal>
         </div>

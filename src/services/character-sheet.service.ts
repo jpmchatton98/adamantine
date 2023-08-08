@@ -3457,6 +3457,399 @@ export class CharacterSheetService {
     return saveBonus;
   }
 
+  public getSpeeds(): any {
+    let speeds: any = {};
+    let speedBonuses: any = {};
+    const character = JSON.parse(localStorage.getItem('character'));
+
+    const raceData = this.dataService.getRace(character.race?.name);
+    let subraceData;
+    if (character.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        character.race.name,
+        character.race.subrace
+      );
+    }
+
+    if (raceData) {
+      speeds.walk = raceData.speed;
+
+      for (let trait of raceData.traits) {
+        [speeds, speedBonuses] = this.getFeatureSpeeds(
+          trait,
+          character.race.choices,
+          this.getTotalLevel(),
+          speeds,
+          speedBonuses
+        );
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        [speeds, speedBonuses] = this.getFeatureSpeeds(
+          trait,
+          character.race.choices,
+          this.getTotalLevel(),
+          speeds,
+          speedBonuses
+        );
+      }
+    }
+
+    character.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            [speeds, speedBonuses] = this.getFeatureSpeeds(
+              feature,
+              c.choices,
+              c.level,
+              speeds,
+              speedBonuses
+            );
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            [speeds, speedBonuses] = this.getFeatureSpeeds(
+              feature,
+              c.choices,
+              c.level,
+              speeds,
+              speedBonuses
+            );
+          });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          [speeds, speedBonuses] = this.getFeatureSpeeds(
+            featData,
+            character.background.choices,
+            this.getTotalLevel(),
+            speeds,
+            speedBonuses
+          );
+        }
+      }
+    });
+
+    console.log(speeds);
+    for (let k of Object.keys(speeds)) {
+      const val = speeds[k];
+      if (val === -1) {
+        speeds[k] = speeds.walk;
+      }
+      if (val === -0.5) {
+        speeds[k] = Math.floor(speeds.walk / 2 / 5) * 5;
+      }
+
+      if (speedBonuses[k]) {
+        speeds[k] += speedBonuses[k];
+      }
+    }
+
+    return speeds;
+  }
+  public getFeatureSpeeds(
+    feature: any,
+    choices: any[],
+    level: number,
+    speeds: any,
+    speedBonuses: any
+  ): any {
+    feature.granted?.forEach((g) => {
+      let amount = 0;
+      if (Array.isArray(g.amount)) {
+        amount = g.amount[level - 1];
+      } else {
+        amount = g.amount;
+      }
+
+      if (g.type === 'speed') {
+        if (g.speed) {
+          if (
+            (amount > (speeds[g.speed] ?? 0) || amount === -1) &&
+            speeds[g.speed] !== -1 &&
+            speeds[g.speed] !== -0.5
+          ) {
+            speeds[g.speed] = amount;
+          }
+        } else {
+          if (amount > speeds.walk ?? 0) {
+            speeds.walk = amount;
+          }
+        }
+      } else if (g.type === 'speed-bonus') {
+        if (g.speed) {
+          if (speedBonuses[g.speed]) {
+            speedBonuses[g.speed] += amount;
+          } else {
+            speedBonuses[g.speed] = amount;
+          }
+        } else {
+          if (speedBonuses.walk) {
+            speedBonuses.walk += amount;
+          } else {
+            speedBonuses.walk = amount;
+          }
+        }
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      [speeds, speedBonuses] = this.getFeatureSpeeds(
+        s,
+        choices,
+        level,
+        speeds,
+        speedBonuses
+      );
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        [speeds, speedBonuses] = this.getChoiceSpeeds(
+          choice,
+          choices,
+          level,
+          speeds,
+          speedBonuses
+        );
+      }
+    } else {
+      [speeds, speedBonuses] = this.getChoiceSpeeds(
+        feature.choices,
+        choices,
+        level,
+        speeds,
+        speedBonuses
+      );
+    }
+
+    if (feature.listed) {
+      [speeds, speedBonuses] = this.getListedSpeeds(
+        feature.listed,
+        choices,
+        level,
+        speeds,
+        speedBonuses
+      );
+    }
+
+    return [speeds, speedBonuses];
+  }
+  private getChoiceSpeeds(
+    choice: any,
+    choices: any[],
+    level: number,
+    speeds: any,
+    speedBonuses: any
+  ): any {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        [speeds, speedBonuses] = this.getFeatureSpeeds(
+          trait,
+          choices,
+          level,
+          speeds,
+          speedBonuses
+        );
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        [speeds, speedBonuses] = this.getFeatureSpeeds(
+          feat,
+          choices,
+          level,
+          speeds,
+          speedBonuses
+        );
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        [speeds, speedBonuses] = this.getFeatureSpeeds(
+          data,
+          choices,
+          level,
+          speeds,
+          speedBonuses
+        );
+      }
+    }
+
+    return [speeds, speedBonuses];
+  }
+  private getListedSpeeds(
+    listed: any,
+    choices: any[],
+    level: number,
+    speeds: any,
+    speedBonuses: any
+  ): any {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          [speeds, speedBonuses] = this.getFeatureSpeeds(
+            data,
+            choices,
+            level,
+            speeds,
+            speedBonuses
+          );
+        }
+      }
+    }
+
+    return [speeds, speedBonuses];
+  }
+
+  public getJumping(): any {
+    let jump = {
+      modifier: 0,
+      multiplier: 0,
+      standing: false,
+    };
+    const character = JSON.parse(localStorage.getItem('character'));
+
+    const raceData = this.dataService.getRace(character.race?.name);
+    let subraceData;
+    if (character.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        character.race.name,
+        character.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        jump = this.getFeatureJumping(trait, character.race.choices, jump);
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        jump = this.getFeatureJumping(trait, character.race.choices, jump);
+      }
+    }
+
+    character.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            jump = this.getFeatureJumping(feature, c.choices, jump);
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            jump = this.getFeatureJumping(feature, c.choices, jump);
+          });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          jump = this.getFeatureJumping(
+            featData,
+            character.background.choices,
+            jump
+          );
+        }
+      }
+    });
+
+    return jump;
+  }
+  public getFeatureJumping(feature: any, choices: any[], jump: any): any {
+    feature.granted?.forEach((g) => {
+      if (g.type === 'jump') {
+        if (g.multiplier) {
+          jump.multiplier += g.multiplier;
+        } else if (g.bonus) {
+          jump.modifier += g.bonus;
+        }
+      } else if (g.type === 'standing-jump') {
+        jump.standing = true;
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      jump = this.getFeatureJumping(s, choices, jump);
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        jump = this.getChoiceJumping(choice, choices, jump);
+      }
+    } else {
+      jump = this.getChoiceJumping(feature.choices, choices, jump);
+    }
+
+    if (feature.listed) {
+      jump = this.getListedJumping(feature.listed, choices, jump);
+    }
+
+    return jump;
+  }
+  private getChoiceJumping(choice: any, choices: any[], jump: any): any {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        jump = this.getFeatureJumping(trait, choices, jump);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        jump = this.getFeatureJumping(feat, choices, jump);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        jump = this.getFeatureJumping(data, choices, jump);
+      }
+    }
+
+    return jump;
+  }
+  private getListedJumping(listed: any, choices: any[], jump: any): any {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          jump = this.getFeatureJumping(data, choices, jump);
+        }
+      }
+    }
+
+    return jump;
+  }
+
   public getMaxUsesById(
     dataObj: any,
     characterObj: any,

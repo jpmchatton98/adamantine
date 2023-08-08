@@ -109,7 +109,7 @@
                     margin-top: 2.5px;
                 }
             }
-            .proficiency, .initiative, .ac, .hp {
+            .proficiency, .initiative, .ac, .hp, .speed {
                 border: 1px solid black;
                 border-radius: 10px;
                 padding: 15px;
@@ -131,6 +131,9 @@
                 }
                 h6 {
                     font-size: 25px;
+                }
+                .speed-val {
+                    font-size: 20px;
                 }
             }
         }
