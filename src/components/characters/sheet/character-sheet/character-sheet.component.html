@@ -264,6 +264,9 @@
                     </div>
                     <div>
                         {{ profs.languages.join(', ') }}
+                        <div *ngIf="telepathy">
+                            Telepathy {{ telepathy !== -1 ? telepathy : '∞' }} ft.
+                        </div>
                     </div>
                 </div>
                 <div *ngIf="profs?.weapons?.length">

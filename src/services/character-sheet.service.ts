@@ -3457,6 +3457,138 @@ export class CharacterSheetService {
     return saveBonus;
   }
 
+  public getTelepathy(): number {
+    let telepathy = 0;
+    const character = JSON.parse(localStorage.getItem('character'));
+
+    const raceData = this.dataService.getRace(character.race?.name);
+    let subraceData;
+    if (character.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        character.race.name,
+        character.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        telepathy = this.getFeatureTelepathy(
+          trait,
+          character.race.choices,
+          telepathy
+        );
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        telepathy = this.getFeatureTelepathy(
+          trait,
+          character.race.choices,
+          telepathy
+        );
+      }
+    }
+
+    character.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            telepathy = this.getFeatureTelepathy(feature, c.choices, telepathy);
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            telepathy = this.getFeatureTelepathy(feature, c.choices, telepathy);
+          });
+        }
+      }
+    });
+    character.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          telepathy = this.getFeatureTelepathy(
+            featData,
+            character.background.choices,
+            telepathy
+          );
+        }
+      }
+    });
+
+    return telepathy;
+  }
+  public getFeatureTelepathy(feature: any, choices: any[], telepathy): number {
+    if (telepathy === -1) {
+      return telepathy;
+    }
+
+    feature.granted?.forEach((g) => {
+      if (g.type === 'telepathy' && g.range > telepathy) {
+        telepathy = g.range;
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      telepathy = this.getFeatureTelepathy(s, choices, telepathy);
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        telepathy = this.getChoiceTelepathy(choice, choices, telepathy);
+      }
+    } else {
+      telepathy = this.getChoiceTelepathy(feature.choices, choices, telepathy);
+    }
+
+    if (feature.listed) {
+      telepathy = this.getListedTelepathy(feature.listed, choices, telepathy);
+    }
+
+    return telepathy;
+  }
+  private getChoiceTelepathy(choice: any, choices: any[], telepathy): number {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        telepathy = this.getFeatureTelepathy(trait, choices, telepathy);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        telepathy = this.getFeatureTelepathy(feat, choices, telepathy);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        telepathy = this.getFeatureTelepathy(data, choices, telepathy);
+      }
+    }
+
+    return telepathy;
+  }
+  private getListedTelepathy(listed: any, choices: any[], telepathy): number {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          telepathy = this.getFeatureTelepathy(data, choices, telepathy);
+        }
+      }
+    }
+
+    return telepathy;
+  }
+
   public getSpeeds(): any {
     let speeds: any = {};
     let speedBonuses: any = {};
@@ -3540,7 +3672,6 @@ export class CharacterSheetService {
       }
     });
 
-    console.log(speeds);
     for (let k of Object.keys(speeds)) {
       const val = speeds[k];
       if (val === -1) {

@@ -6083,10 +6083,8 @@
       },
       {
         "name": "Mind Link",
-        "description": "You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to 10 times your level. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p><p>When you're using this trait to speak telepathically to a creature, you can use your action to give that creature the ability to speak telepathically with you for 1 hour or until you end this effect as an action. To use this ability, the creature must be able to see you and must be within this trait's range. You can give this ability to only one creature at a time; giving it to a creature takes it away from another creature who has it.",
-        "granted": [
-          { "type": "telepathy", "range": "level", "modifier": "*10" }
-        ]
+        "description": "You can speak telepathically to any creature you can see, provided the creature is within 120 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p><p>When you're using this trait to speak telepathically to a creature, you can use your action to give that creature the ability to speak telepathically with you for 1 hour or until you end this effect as an action. To use this ability, the creature must be able to see you and must be within this trait's range. You can give this ability to only one creature at a time; giving it to a creature takes it away from another creature who has it.",
+        "granted": [{ "type": "telepathy", "range": 120 }]
       },
       {
         "name": "Severed From Dreams",

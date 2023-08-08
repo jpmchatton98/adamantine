@@ -97,6 +97,8 @@ export class CharacterSheetComponent implements OnInit {
   public speeds;
   public jumping;
 
+  public telepathy = 0;
+
   // TODO: remove this and replace with automatic calculation
   public ac = 0;
 
@@ -211,6 +213,8 @@ export class CharacterSheetComponent implements OnInit {
 
     this.speeds = this.characterSheetService.getSpeeds();
     this.jumping = this.characterSheetService.getJumping();
+
+    this.telepathy = this.characterSheetService.getTelepathy();
 
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
