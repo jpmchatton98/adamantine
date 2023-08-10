@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 import {
   CdkDragDrop,
   moveItemInArray,
@@ -14,8 +14,9 @@ import { Update } from 'src/components/pages/features/builder.actions';
 })
 export class ScoreTabComponent implements OnInit {
   @Input() character: any;
+  @Input() characterId: string;
 
-  public rollMode: boolean = true;
+  public rollMode: boolean;
 
   public scores = [];
   public str = [];
@@ -36,7 +37,7 @@ export class ScoreTabComponent implements OnInit {
   public honMod = 0;
   public sanMod = 0;
 
-  constructor(private store: Store) {}
+  constructor(private store: Store, private changeRef: ChangeDetectorRef) {}
 
   public ngOnInit(): void {
     this.rollMode = this.character.scores?.rollMode ?? true;
@@ -78,6 +79,8 @@ export class ScoreTabComponent implements OnInit {
       this.sanMod = this.character.scores.mods.hon ?? 0;
       this.honMod = this.character.scores.mods.san ?? 0;
     }
+
+    this.changeRef.detectChanges();
   }
 
   public drop(event: CdkDragDrop<string[]>) {

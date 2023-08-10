@@ -9,6 +9,7 @@ import { Update } from 'src/components/pages/features/builder.actions';
 })
 export class BasicInfoTabComponent {
   @Input() character: any;
+  @Input() characterId: string;
 
   constructor(private store: Store) {}
 

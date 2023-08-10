@@ -20,15 +20,4 @@ export class AppComponent {
       left: 0,
     });
   }
-
-  public getCharacter() {
-    this.dbService
-      .getCharacter('4')
-      .subscribe((response) => console.log(response));
-  }
-  public setCharacter() {
-    this.dbService
-      .setCharacter('callie', '4', { name: 'Callie' })
-      .subscribe((response) => console.log(response));
-  }
 }

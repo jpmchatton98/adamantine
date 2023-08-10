@@ -20,6 +20,7 @@ export class SheetUsesComponent implements OnInit {
   @Input() uses;
   @Input() characterObj;
   @Input() characterLevel;
+  @Input() characterId;
 
   public maxUses = 0;
   public currUses = 0;
@@ -33,7 +34,9 @@ export class SheetUsesComponent implements OnInit {
     private store: Store
   ) {}
 
-  public ngOnInit(): void {
+  public async ngOnInit() {
+    await this.characterSheetService.getCharacterFromDb(this.characterId);
+
     let dataObj: any = this.dataService.getRace(this.characterObj.name);
     if (!dataObj) {
       dataObj = this.dataService.getClass(this.characterObj.name);

@@ -12,6 +12,7 @@ import { GeneralStoreService } from 'src/services/general-store.service';
 })
 export class EquipmentTabComponent implements OnInit {
   @Input() character: any;
+  @Input() characterId: string;
 
   public items = [];
   public equipment = [];

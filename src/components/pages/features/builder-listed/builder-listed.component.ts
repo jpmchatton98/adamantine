@@ -5,6 +5,7 @@ import { selectUpdate } from '../builder.selectors';
 import { Store } from '@ngrx/store';
 import { CharacterBuilderService } from 'src/services/character-builder.service';
 import { CharacterSheetService } from 'src/services/character-sheet.service';
+import { max } from 'rxjs';
 
 @Component({
   selector: 'app-builder-listed',
@@ -20,6 +21,8 @@ export class BuilderListedComponent implements OnInit {
 
   @Input() level = 0;
   @Input() characterLevel = 21;
+
+  @Input() characterId: string;
 
   public options: any[] = [];
   public displayOptions: any[] = [];
@@ -38,11 +41,11 @@ export class BuilderListedComponent implements OnInit {
     private store: Store
   ) {}
 
-  ngOnInit(): void {
-    this.store.select(selectUpdate).subscribe((update) => {
+  ngOnInit() {
+    this.store.select(selectUpdate).subscribe(async (update) => {
       if (update) {
         this.getListOptions();
-        this.getMaximum();
+        await this.getMaximum();
 
         this.searchOptions();
       }
@@ -53,7 +56,7 @@ export class BuilderListedComponent implements OnInit {
     return JSON.stringify(value);
   }
 
-  private getMaximum(): void {
+  private async getMaximum() {
     if (this.characterLevel === 21) {
       this.maximum = this.listed.maximums[this.listed.maximums.length - 1];
     } else {
@@ -66,14 +69,18 @@ export class BuilderListedComponent implements OnInit {
           (ch: any) => ch.id === this.listed.addToMaximum
         );
         if (choiceEntry) {
-          this.maximum += this.characterBuilderService.getModifier(
-            choiceEntry.value
-          );
+          let maximum;
+          await this.characterBuilderService
+            .getModifier(this.characterId, choiceEntry.value)
+            .then((val) => (maximum = val));
+          this.maximum += maximum;
         }
       } else {
-        this.maximum += this.characterBuilderService.getModifier(
-          this.listed.addToMaximum
-        );
+        let maximum;
+        await this.characterBuilderService
+          .getModifier(this.characterId, this.listed.addToMaximum)
+          .then((val) => (maximum = val));
+        this.maximum += maximum;
       }
     }
 

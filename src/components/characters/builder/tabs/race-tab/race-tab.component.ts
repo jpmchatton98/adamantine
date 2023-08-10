@@ -11,6 +11,7 @@ import { DataService } from 'src/services/data.service';
 })
 export class RaceTabComponent implements OnInit {
   @Input() character: any;
+  @Input() characterId: string;
   public dataService: DataService;
   public raceModalVisible: boolean = false;
   public characterRace: IRace;

@@ -21,6 +21,7 @@ export class ClassComponent implements OnInit {
   @Input() characterClass: any;
   @Input() firstClass: boolean = false;
   @Output() removeClass = new EventEmitter<string>();
+  @Input() characterId: string;
 
   public dataService: DataService;
   public classData: IClass;

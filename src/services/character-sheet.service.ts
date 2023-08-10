@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
 import { GeneralStoreService } from './general-store.service';
 import { features } from 'process';
+import { DBService } from './db.service';
 
 interface SkillProf {
   id: string;
@@ -424,6 +425,7 @@ export class CharacterSheetService {
 
   constructor(
     private dataService: DataService,
+    private dbService: DBService,
     private generalStoreService: GeneralStoreService
   ) {}
 
@@ -481,15 +483,17 @@ export class CharacterSheetService {
     return skillList;
   }
 
-  public getCharacterFromCache() {
-    return JSON.parse(localStorage.getItem('character'));
+  public character;
+  public async getCharacterFromDb(characterId: string) {
+    await this.dbService.getCharacter(characterId).then((val) => {
+      this.character = val;
+    });
   }
 
   private getTotalLevel() {
-    const character = this.getCharacterFromCache();
-    if (character?.classes) {
+    if (this.character?.classes) {
       let level = 0;
-      for (let c of character.classes) {
+      for (let c of this.character?.classes) {
         level += c.level;
       }
 
@@ -497,13 +501,10 @@ export class CharacterSheetService {
     }
     return 1;
   }
-  private getProficiencyBonus() {
-    return Math.floor(2 + (this.getTotalLevel() - 1) / 4);
+  private getScore(score: string) {
+    return (this.character?.scores?.actual ?? {})[score] ?? 1;
   }
-  private getScore(score: string): number {
-    return (this.getCharacterFromCache().scores?.actual ?? {})[score] ?? 1;
-  }
-  private getModifier(score: string): number {
+  private getModifier(score: string) {
     return Math.floor((this.getScore(score) - 10) / 2);
   }
 
@@ -548,13 +549,17 @@ export class CharacterSheetService {
     return skillProfs;
   }
 
-  public getCharacterSkillProficiencies(): SkillProf[] {
+  public async getCharacterSkillProficiencies(
+    characterId
+  ): Promise<SkillProf[]> {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let skillProfs: SkillProf[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
     const skillList = this.dataService.getGeneric('skill');
 
-    character.race?.choices?.forEach((choice) => {
+    this.character?.race?.choices?.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -563,31 +568,31 @@ export class CharacterSheetService {
         });
       }
     });
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
         skillProfs.push(
-          ...this.getFeatureSkillProfs(trait, character.race.choices)
+          ...this.getFeatureSkillProfs(trait, this.character?.race.choices)
         );
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
         skillProfs.push(
-          ...this.getFeatureSkillProfs(trait, character.race.choices)
+          ...this.getFeatureSkillProfs(trait, this.character?.race.choices)
         );
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       c.choices.forEach((choice) => {
         if (skillList.includes(choice.value)) {
           skillProfs.push({
@@ -614,7 +619,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -627,12 +632,15 @@ export class CharacterSheetService {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           skillProfs.push(
-            ...this.getFeatureSkillProfs(featData, character.background.choices)
+            ...this.getFeatureSkillProfs(
+              featData,
+              this.character?.background.choices
+            )
           );
         }
       }
     });
-    character.genius?.choices.forEach((choice) => {
+    this.character?.genius?.choices.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -641,7 +649,7 @@ export class CharacterSheetService {
         });
       }
     });
-    character.override?.choices.forEach((choice) => {
+    this.character?.override?.choices.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -725,10 +733,14 @@ export class CharacterSheetService {
     return skillList;
   }
 
-  public getCharacterToolProficiencies(): SkillProf[] {
+  public async getCharacterToolProficiencies(
+    characterId
+  ): Promise<SkillProf[]> {
     let skillProfs: SkillProf[] = [];
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
 
-    const character = JSON.parse(localStorage.getItem('character'));
     const instruments = [...this.dataService.getGeneric('instrument')];
     const skillList = [
       ...this.dataService.getGeneric('game'),
@@ -736,7 +748,7 @@ export class CharacterSheetService {
       ...this.dataService.getGeneric('tool'),
     ];
 
-    character.race?.choices?.forEach((choice) => {
+    this.character?.race?.choices?.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -746,31 +758,31 @@ export class CharacterSheetService {
         });
       }
     });
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
         skillProfs.push(
-          ...this.getFeatureToolProfs(trait, character.race.choices)
+          ...this.getFeatureToolProfs(trait, this.character?.race.choices)
         );
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
         skillProfs.push(
-          ...this.getFeatureToolProfs(trait, character.race.choices)
+          ...this.getFeatureToolProfs(trait, this.character?.race.choices)
         );
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       c.choices.forEach((choice) => {
         if (skillList.includes(choice.value)) {
           skillProfs.push({
@@ -798,7 +810,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -812,12 +824,15 @@ export class CharacterSheetService {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           skillProfs.push(
-            ...this.getFeatureToolProfs(featData, character.background.choices)
+            ...this.getFeatureToolProfs(
+              featData,
+              this.character?.background.choices
+            )
           );
         }
       }
     });
-    character.genius?.choices.forEach((choice) => {
+    this.character?.genius?.choices.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -827,7 +842,7 @@ export class CharacterSheetService {
         });
       }
     });
-    character.override?.choices.forEach((choice) => {
+    this.character?.override?.choices.forEach((choice) => {
       if (skillList.includes(choice.value)) {
         skillProfs.push({
           id: choice.id,
@@ -918,7 +933,10 @@ export class CharacterSheetService {
     return skillList;
   }
 
-  public getSaveProfs() {
+  public async getSaveProfs(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let profs = {
       str: false,
       dex: false,
@@ -928,9 +946,8 @@ export class CharacterSheetService {
       cha: false,
       death: false,
     };
-    const character = this.getCharacterFromCache();
 
-    character.classes.forEach((c: any, index: number) => {
+    this.character?.classes?.forEach((c: any, index: number) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = this.dataService.getSubclass(c.name, c.subclass);
       if (classData) {
@@ -958,7 +975,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
@@ -966,7 +983,7 @@ export class CharacterSheetService {
             ...profs,
             ...this.getSaveProfsFromFeature(
               featData,
-              character.background.choices
+              this.character?.background.choices
             ),
           };
         }
@@ -1021,15 +1038,17 @@ export class CharacterSheetService {
     return profs;
   }
 
-  public getSenses() {
+  public async getSenses(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let senses = {};
-    const character = this.getCharacterFromCache();
 
-    if (character.race) {
-      const raceData = this.dataService.getRace(character.race?.name);
+    if (this.character?.race) {
+      const raceData = this.dataService.getRace(this.character?.race?.name);
       const subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
       if (raceData) {
         if (raceData.darkvision) {
@@ -1045,7 +1064,7 @@ export class CharacterSheetService {
         }
       }
     }
-    character.classes.forEach((c: any, index: number) => {
+    this.character?.classes?.forEach((c: any, index: number) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = this.dataService.getSubclass(c.name, c.subclass);
       if (classData) {
@@ -1061,7 +1080,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
@@ -1116,37 +1135,39 @@ export class CharacterSheetService {
     return senses;
   }
 
-  public getCharacterSkillOverrides(): any[] {
+  public async getCharacterSkillOverrides(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let skillProfs: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
     const skillList = this.dataService.getGeneric('skill');
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
         skillProfs.push(
-          ...this.getFeatureSkillOverrides(trait, character.race.choices)
+          ...this.getFeatureSkillOverrides(trait, this.character?.race.choices)
         );
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
         skillProfs.push(
-          ...this.getFeatureSkillOverrides(trait, character.race.choices)
+          ...this.getFeatureSkillOverrides(trait, this.character?.race.choices)
         );
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -1167,14 +1188,14 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           skillProfs.push(
             ...this.getFeatureSkillOverrides(
               featData,
-              character.background.choices
+              this.character?.background.choices
             )
           );
         }
@@ -1250,37 +1271,39 @@ export class CharacterSheetService {
     return newSkills;
   }
 
-  public getCharacterToolOverrides(): any[] {
+  public async getCharacterToolOverrides(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let skillProfs: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
     const skillList = this.dataService.getGeneric('skill');
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
         skillProfs.push(
-          ...this.getFeatureToolOverrides(trait, character.race.choices)
+          ...this.getFeatureToolOverrides(trait, this.character?.race.choices)
         );
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
         skillProfs.push(
-          ...this.getFeatureToolOverrides(trait, character.race.choices)
+          ...this.getFeatureToolOverrides(trait, this.character?.race.choices)
         );
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -1301,14 +1324,14 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           skillProfs.push(
             ...this.getFeatureToolOverrides(
               featData,
-              character.background.choices
+              this.character?.background.choices
             )
           );
         }
@@ -1384,17 +1407,18 @@ export class CharacterSheetService {
     return newSkills;
   }
 
-  public getCharacterSpells(): any[] {
+  public async getCharacterSpells(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let spellList: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
-
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -1403,7 +1427,7 @@ export class CharacterSheetService {
         spellList.push(
           ...this.getFeatureSpells(
             trait,
-            character.race.choices,
+            this.character?.race.choices,
             this.getTotalLevel(),
             0,
             [raceData.name]
@@ -1416,7 +1440,7 @@ export class CharacterSheetService {
         spellList.push(
           ...this.getFeatureSpells(
             trait,
-            character.race.choices,
+            this.character?.race.choices,
             this.getTotalLevel(),
             0,
             [raceData.name, subraceData.name]
@@ -1425,7 +1449,7 @@ export class CharacterSheetService {
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -1458,14 +1482,14 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           spellList.push(
             ...this.getFeatureSpells(
               featData,
-              character.background.choices,
+              this.character?.background.choices,
               this.getTotalLevel(),
               0,
               ['Background', featData.name]
@@ -1771,17 +1795,18 @@ export class CharacterSheetService {
     return spellList;
   }
 
-  public getCharacterExploits(): any[] {
+  public async getCharacterExploits(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let exploitList: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
-
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -1790,7 +1815,7 @@ export class CharacterSheetService {
         exploitList.push(
           ...this.getFeatureExploits(
             trait,
-            character.race.choices,
+            this.character?.race.choices,
             this.getTotalLevel(),
             0,
             [raceData.name]
@@ -1803,7 +1828,7 @@ export class CharacterSheetService {
         exploitList.push(
           ...this.getFeatureExploits(
             trait,
-            character.race.choices,
+            this.character?.race.choices,
             this.getTotalLevel(),
             0,
             [raceData.name, subraceData.name]
@@ -1812,7 +1837,7 @@ export class CharacterSheetService {
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -1845,14 +1870,14 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           exploitList.push(
             ...this.getFeatureExploits(
               featData,
-              character.background.choices,
+              this.character?.background.choices,
               this.getTotalLevel(),
               0,
               ['Background', featData.name]
@@ -2151,24 +2176,25 @@ export class CharacterSheetService {
     return exploitList;
   }
 
-  public getCharacterProficiencies(): any {
+  public async getCharacterProficiencies(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     return {
-      armor: this.getCharacterArmorProfs(),
-      languages: this.getCharacterLanguageProfs(),
-      weapons: this.getCharacterWeaponProfs(),
+      armor: this.getCharacterArmorProfs(characterId),
+      languages: this.getCharacterLanguageProfs(characterId),
+      weapons: this.getCharacterWeaponProfs(characterId),
     };
   }
-  private getCharacterArmorProfs(): any[] {
+  private getCharacterArmorProfs(characterId) {
     let profs: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
-
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -2176,7 +2202,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         profs = [
           ...profs,
-          ...this.getFeatureArmorProfs(trait, character.race.choices),
+          ...this.getFeatureArmorProfs(trait, this.character?.race.choices),
         ];
       }
     }
@@ -2184,12 +2210,12 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         profs = [
           ...profs,
-          ...this.getFeatureArmorProfs(trait, character.race.choices),
+          ...this.getFeatureArmorProfs(trait, this.character?.race.choices),
         ];
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -2222,7 +2248,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
@@ -2230,7 +2256,7 @@ export class CharacterSheetService {
             ...profs,
             ...this.getFeatureArmorProfs(
               featData,
-              character.background.choices
+              this.character?.background.choices
             ),
           ];
         }
@@ -2290,23 +2316,22 @@ export class CharacterSheetService {
     return profs;
   }
 
-  private getCharacterLanguageProfs(): any[] {
+  private getCharacterLanguageProfs(characterId): any[] {
     let profs: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
     const languageList = this.dataService.getGeneric('language');
 
-    character.race?.choices?.forEach((choice) => {
+    this.character?.race?.choices?.forEach((choice) => {
       if (languageList.includes(choice.value)) {
         profs.push(choice.value);
       }
     });
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -2314,7 +2339,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         profs = [
           ...profs,
-          ...this.getFeatureLanguageProfs(trait, character.race.choices),
+          ...this.getFeatureLanguageProfs(trait, this.character?.race.choices),
         ];
       }
 
@@ -2328,12 +2353,12 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         profs = [
           ...profs,
-          ...this.getFeatureLanguageProfs(trait, character.race.choices),
+          ...this.getFeatureLanguageProfs(trait, this.character?.race.choices),
         ];
       }
     }
 
-    character.classes?.forEach((c) => {
+    this.character?.classes?.forEach((c) => {
       c.choices.forEach((choice) => {
         if (languageList.includes(choice.value)) {
           profs.push(choice.value);
@@ -2362,7 +2387,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (languageList.includes(choice.value)) {
         profs.push(choice.value);
       }
@@ -2373,18 +2398,18 @@ export class CharacterSheetService {
             ...profs,
             ...this.getFeatureLanguageProfs(
               featData,
-              character.background.choices
+              this.character?.background.choices
             ),
           ];
         }
       }
     });
-    character.genius?.choices?.forEach((choice) => {
+    this.character?.genius?.choices?.forEach((choice) => {
       if (languageList.includes(choice.value)) {
         profs.push(choice.value);
       }
     });
-    character.override?.choices?.forEach((choice) => {
+    this.character?.override?.choices?.forEach((choice) => {
       if (languageList.includes(choice.value)) {
         profs.push(choice.value);
       }
@@ -2477,17 +2502,15 @@ export class CharacterSheetService {
     return profs;
   }
 
-  private getCharacterWeaponProfs(): any[] {
+  private getCharacterWeaponProfs(characterId): any[] {
     let profs: any[] = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
-
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -2495,7 +2518,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         profs = [
           ...profs,
-          ...this.getFeatureWeaponProfs(trait, character.race.choices),
+          ...this.getFeatureWeaponProfs(trait, this.character?.race.choices),
         ];
       }
     }
@@ -2503,12 +2526,12 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         profs = [
           ...profs,
-          ...this.getFeatureWeaponProfs(trait, character.race.choices),
+          ...this.getFeatureWeaponProfs(trait, this.character?.race.choices),
         ];
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -2541,7 +2564,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
@@ -2549,7 +2572,7 @@ export class CharacterSheetService {
             ...profs,
             ...this.getFeatureWeaponProfs(
               featData,
-              character.background.choices
+              this.character?.background.choices
             ),
           ];
         }
@@ -2606,23 +2629,24 @@ export class CharacterSheetService {
     return profs;
   }
 
-  public getCharacterDefenses(): any {
+  public async getCharacterDefenses(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     return {
-      damage: this.getCharacterDamageDefenses(),
-      condition: this.getCharacterConditionDefenses(),
+      damage: this.getCharacterDamageDefenses(characterId),
+      condition: this.getCharacterConditionDefenses(characterId),
     };
   }
-  public getCharacterDamageDefenses(): any[] {
+  public getCharacterDamageDefenses(characterId): any[] {
     let damageDefenses = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
-
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -2630,7 +2654,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         damageDefenses = [
           ...damageDefenses,
-          ...this.getFeatureDamageDefenses(trait, character.race.choices),
+          ...this.getFeatureDamageDefenses(trait, this.character?.race.choices),
         ];
       }
     }
@@ -2638,12 +2662,12 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         damageDefenses = [
           ...damageDefenses,
-          ...this.getFeatureDamageDefenses(trait, character.race.choices),
+          ...this.getFeatureDamageDefenses(trait, this.character?.race.choices),
         ];
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -2666,7 +2690,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
@@ -2674,7 +2698,7 @@ export class CharacterSheetService {
             ...damageDefenses,
             ...this.getFeatureDamageDefenses(
               featData,
-              character.background.choices
+              this.character?.background.choices
             ),
           ];
         }
@@ -2826,17 +2850,15 @@ export class CharacterSheetService {
     return damageDefenses;
   }
 
-  public getCharacterConditionDefenses(): any[] {
+  public getCharacterConditionDefenses(characterId): any[] {
     let conditionDefenses = [];
 
-    const character = JSON.parse(localStorage.getItem('character'));
-
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -2844,7 +2866,10 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         conditionDefenses = [
           ...conditionDefenses,
-          ...this.getFeatureConditionDefenses(trait, character.race.choices),
+          ...this.getFeatureConditionDefenses(
+            trait,
+            this.character?.race.choices
+          ),
         ];
       }
     }
@@ -2852,12 +2877,15 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         conditionDefenses = [
           ...conditionDefenses,
-          ...this.getFeatureConditionDefenses(trait, character.race.choices),
+          ...this.getFeatureConditionDefenses(
+            trait,
+            this.character?.race.choices
+          ),
         ];
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -2880,7 +2908,7 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
@@ -2888,7 +2916,7 @@ export class CharacterSheetService {
             ...conditionDefenses,
             ...this.getFeatureConditionDefenses(
               featData,
-              character.background.choices
+              this.character?.background.choices
             ),
           ];
         }
@@ -3040,31 +3068,33 @@ export class CharacterSheetService {
     return conditionDefenses;
   }
 
-  public getHpBonus(): number {
+  public async getHpBonus(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let hpBonus = 0;
-    const character = JSON.parse(localStorage.getItem('character'));
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
-        hpBonus += this.getFeatureHpBonus(trait, character.race.choices);
+        hpBonus += this.getFeatureHpBonus(trait, this.character?.race.choices);
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
-        hpBonus += this.getFeatureHpBonus(trait, character.race.choices);
+        hpBonus += this.getFeatureHpBonus(trait, this.character?.race.choices);
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -3081,13 +3111,13 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           hpBonus += this.getFeatureHpBonus(
             featData,
-            character.background.choices
+            this.character?.background.choices
           );
         }
       }
@@ -3165,31 +3195,39 @@ export class CharacterSheetService {
     return hpBonus;
   }
 
-  public getInitBonus(): number {
+  public async getInitBonus(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let initBonus = 0;
-    const character = JSON.parse(localStorage.getItem('character'));
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
-        initBonus += this.getFeatureInitBonus(trait, character.race.choices);
+        initBonus += this.getFeatureInitBonus(
+          trait,
+          this.character?.race.choices
+        );
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
-        initBonus += this.getFeatureInitBonus(trait, character.race.choices);
+        initBonus += this.getFeatureInitBonus(
+          trait,
+          this.character?.race.choices
+        );
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -3206,13 +3244,13 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           initBonus += this.getFeatureInitBonus(
             featData,
-            character.background.choices
+            this.character?.background.choices
           );
         }
       }
@@ -3301,7 +3339,10 @@ export class CharacterSheetService {
     return initBonus;
   }
 
-  public getSaveBonus(): any {
+  public async getSaveBonus(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let saveBonus = {
       str: 0,
       dex: 0,
@@ -3311,14 +3352,13 @@ export class CharacterSheetService {
       cha: 0,
       death: 0,
     };
-    const character = JSON.parse(localStorage.getItem('character'));
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -3326,7 +3366,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         saveBonus = this.getFeatureSaveBonus(
           trait,
-          character.race.choices,
+          this.character?.race.choices,
           saveBonus
         );
       }
@@ -3335,13 +3375,13 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         saveBonus = this.getFeatureSaveBonus(
           trait,
-          character.race.choices,
+          this.character?.race.choices,
           saveBonus
         );
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -3358,13 +3398,13 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           saveBonus = this.getFeatureSaveBonus(
             featData,
-            character.background.choices,
+            this.character?.background.choices,
             saveBonus
           );
         }
@@ -3381,12 +3421,12 @@ export class CharacterSheetService {
     feature.granted?.forEach((g) => {
       if (g.type === 'save-bonus') {
         let amount = 0;
-        if (g.amount.includes('-')) {
-          const choiceEntry = choices.find((ch) => ch.id === g.amount)?.value;
-          amount = this.getModifier(choiceEntry);
-        } else {
-          amount = this.getModifier(g.amount);
-        }
+        // if (g.amount.includes('-')) {
+        //   const choiceEntry = choices.find((ch) => ch.id === g.amount)?.value;
+        //   amount = this.getModifier(choiceEntry);
+        // } else {
+        //   amount = this.getModifier(g.amount);
+        // }
 
         if (g.options === 'all') {
           for (let k of Object.keys(saveBonus)) {
@@ -3457,16 +3497,18 @@ export class CharacterSheetService {
     return saveBonus;
   }
 
-  public getTelepathy(): number {
+  public async getTelepathy(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let telepathy = 0;
-    const character = JSON.parse(localStorage.getItem('character'));
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -3474,7 +3516,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         telepathy = this.getFeatureTelepathy(
           trait,
-          character.race.choices,
+          this.character?.race.choices,
           telepathy
         );
       }
@@ -3483,13 +3525,13 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         telepathy = this.getFeatureTelepathy(
           trait,
-          character.race.choices,
+          this.character?.race.choices,
           telepathy
         );
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -3506,13 +3548,13 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           telepathy = this.getFeatureTelepathy(
             featData,
-            character.background.choices,
+            this.character?.background.choices,
             telepathy
           );
         }
@@ -3589,17 +3631,19 @@ export class CharacterSheetService {
     return telepathy;
   }
 
-  public getSpeeds(): any {
+  public async getSpeeds(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let speeds: any = {};
     let speedBonuses: any = {};
-    const character = JSON.parse(localStorage.getItem('character'));
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
@@ -3609,7 +3653,7 @@ export class CharacterSheetService {
       for (let trait of raceData.traits) {
         [speeds, speedBonuses] = this.getFeatureSpeeds(
           trait,
-          character.race.choices,
+          this.character?.race.choices,
           this.getTotalLevel(),
           speeds,
           speedBonuses
@@ -3620,7 +3664,7 @@ export class CharacterSheetService {
       for (let trait of subraceData.traits) {
         [speeds, speedBonuses] = this.getFeatureSpeeds(
           trait,
-          character.race.choices,
+          this.character?.race.choices,
           this.getTotalLevel(),
           speeds,
           speedBonuses
@@ -3628,7 +3672,7 @@ export class CharacterSheetService {
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -3657,13 +3701,13 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           [speeds, speedBonuses] = this.getFeatureSpeeds(
             featData,
-            character.background.choices,
+            this.character?.background.choices,
             this.getTotalLevel(),
             speeds,
             speedBonuses
@@ -3851,35 +3895,45 @@ export class CharacterSheetService {
     return [speeds, speedBonuses];
   }
 
-  public getJumping(): any {
+  public async getJumping(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
     let jump = {
       modifier: 0,
       multiplier: 0,
       standing: false,
     };
-    const character = JSON.parse(localStorage.getItem('character'));
 
-    const raceData = this.dataService.getRace(character.race?.name);
+    const raceData = this.dataService.getRace(this.character?.race?.name);
     let subraceData;
-    if (character.race?.subrace) {
+    if (this.character?.race?.subrace) {
       subraceData = this.dataService.getSubrace(
-        character.race.name,
-        character.race.subrace
+        this.character?.race.name,
+        this.character?.race.subrace
       );
     }
 
     if (raceData) {
       for (let trait of raceData.traits) {
-        jump = this.getFeatureJumping(trait, character.race.choices, jump);
+        jump = this.getFeatureJumping(
+          trait,
+          this.character?.race.choices,
+          jump
+        );
       }
     }
     if (subraceData) {
       for (let trait of subraceData.traits) {
-        jump = this.getFeatureJumping(trait, character.race.choices, jump);
+        jump = this.getFeatureJumping(
+          trait,
+          this.character?.race.choices,
+          jump
+        );
       }
     }
 
-    character.classes?.forEach((c, index) => {
+    this.character?.classes?.forEach((c, index) => {
       const classData = this.dataService.getClass(c.name);
       const subclassData = classData.subclasses.find(
         (s: any) => s.name === c.subclass
@@ -3896,13 +3950,13 @@ export class CharacterSheetService {
         }
       }
     });
-    character.background?.choices?.forEach((choice) => {
+    this.character?.background?.choices?.forEach((choice) => {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
           jump = this.getFeatureJumping(
             featData,
-            character.background.choices,
+            this.character?.background.choices,
             jump
           );
         }
@@ -4112,7 +4166,7 @@ export class CharacterSheetService {
                   amount = level;
                   break;
                 case 'proficiency':
-                  amount = this.getProficiencyBonus();
+                  amount = Math.floor(2 + (level - 1) / 4);
                   break;
                 case 'score':
                   let score;
@@ -4442,10 +4496,12 @@ export class CharacterSheetService {
     return reset;
   }
 
-  public dieSizeUp() {
-    const character = this.getCharacterFromCache();
-    if (character.classes) {
-      for (let c of character.classes) {
+  public async dieSizeUp(characterId) {
+    if (!this.character) {
+      await this.getCharacterFromDb(characterId);
+    }
+    if (this.character?.classes) {
+      for (let c of this.character?.classes) {
         if (c.subclass === 'Master At Arms') {
           return true;
         } else {

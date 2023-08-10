@@ -19,6 +19,8 @@ export class BuilderFeatureComponent {
 
   @Input() characterLevel = 21;
 
+  @Input() characterId: string;
+
   public isArray(array: any): boolean {
     return Array.isArray(array);
   }

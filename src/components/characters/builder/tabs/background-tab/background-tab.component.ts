@@ -12,6 +12,7 @@ import {
 })
 export class BackgroundTabComponent implements OnInit {
   @Input() character: any;
+  @Input() characterId: string;
 
   constructor(private store: Store) {}
 

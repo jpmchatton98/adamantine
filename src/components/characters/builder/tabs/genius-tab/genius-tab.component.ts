@@ -14,6 +14,7 @@ import { DataService } from 'src/services/data.service';
 export class GeniusTabComponent implements OnInit, OnChanges {
   @Input() character: any;
   @Input() override: boolean = false;
+  @Input() characterId: string;
 
   public geniusUsed = 0;
   public geniusLimit = 0;
@@ -163,13 +164,18 @@ export class GeniusTabComponent implements OnInit, OnChanges {
       });
     }
 
-    this.store.select(selectUpdate).subscribe((update) => {
-      this.geniusLimit =
-        this.characterBuilderService.getModifier('int') *
-        Math.max(
-          1,
-          Math.floor((this.characterBuilderService.getTotalLevel() + 4) / 4)
-        );
+    this.store.select(selectUpdate).subscribe(async (update) => {
+      let mod;
+      await this.characterBuilderService
+        .getModifier(this.characterId, 'int')
+        .then((val) => (mod = val));
+
+      let totalLevel;
+      await this.characterBuilderService
+        .getTotalLevel(this.characterId)
+        .then((val) => (totalLevel = val));
+
+      this.geniusLimit = mod * totalLevel;
 
       this.geniusUsed =
         this.character.genius?.feature?.subFeatures?.reduce(

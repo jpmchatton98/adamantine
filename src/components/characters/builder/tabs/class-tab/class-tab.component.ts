@@ -11,6 +11,7 @@ import { DataService } from 'src/services/data.service';
 })
 export class ClassTabComponent {
   @Input() character: any;
+  @Input() characterId: string;
   public dataService: DataService;
   public classModalVisible: boolean = false;
 

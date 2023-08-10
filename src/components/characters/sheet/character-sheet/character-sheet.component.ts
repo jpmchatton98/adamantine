@@ -18,12 +18,11 @@ export class CharacterSheetComponent implements OnInit {
   @Input()
   set guid(id: string) {
     this.characterId = id;
-    this.dbService.getCharacter(id).subscribe((c) => {
-      this.character = c;
-    });
   }
   public characterId;
   public character: any;
+  private dbCharacter: any;
+  public loaded = false;
 
   public gritFeature: any = {
     name: 'Grit',
@@ -126,21 +125,28 @@ export class CharacterSheetComponent implements OnInit {
     private dbService: DBService
   ) {}
 
-  ngOnInit(): void {
-    const cachedCharacter: any = JSON.parse(localStorage.getItem('character'));
+  async ngOnInit() {
+    await this.dbService.getCharacter(this.characterId).then((val) => {
+      this.character = val;
+      this.dbCharacter = JSON.parse(JSON.stringify(this.character));
+    });
 
-    if (cachedCharacter) {
-      this.character = cachedCharacter;
-    }
     this.skills = this.characterSheetService.skillData;
-    this.skillProfs =
-      this.characterSheetService.getCharacterSkillProficiencies();
+    await this.characterSheetService
+      .getCharacterSkillProficiencies(this.characterId)
+      .then((val) => (this.skillProfs = val));
 
     this.tools = this.characterSheetService.toolData;
-    this.toolProfs = this.characterSheetService.getCharacterToolProficiencies();
+    await this.characterSheetService
+      .getCharacterToolProficiencies(this.characterId)
+      .then((val) => (this.toolProfs = val));
 
-    this.saveProfs = this.characterSheetService.getSaveProfs();
-    this.senses = this.characterSheetService.getSenses();
+    await this.characterSheetService
+      .getSaveProfs(this.characterId)
+      .then((val) => (this.saveProfs = val));
+    await this.characterSheetService
+      .getSenses(this.characterId)
+      .then((val) => (this.senses = val));
     for (let [sense, range] of Object.entries(this.senses)) {
       this.senseString += `
         <div class="sense">
@@ -148,12 +154,16 @@ export class CharacterSheetComponent implements OnInit {
         </div>
       `;
     }
+    await this.characterSheetService
+      .getCharacterSkillOverrides(this.characterId)
+      .then((val) => (this.skillOverrides = val));
+    await this.characterSheetService
+      .getCharacterToolOverrides(this.characterId)
+      .then((val) => (this.toolOverrides = val));
 
-    this.skillOverrides =
-      this.characterSheetService.getCharacterSkillOverrides();
-    this.toolOverrides = this.characterSheetService.getCharacterToolOverrides();
-
-    this.characterSpells = this.characterSheetService.getCharacterSpells();
+    await this.characterSheetService
+      .getCharacterSpells(this.characterId)
+      .then((val) => (this.characterSpells = val));
     this.spellAbilities = [
       ...new Set(
         this.characterSpells
@@ -166,13 +176,14 @@ export class CharacterSheetComponent implements OnInit {
               this.scores.findIndex((s: any) => s.abbreviation === a) ?? 0;
             const bIndex =
               this.scores.findIndex((s: any) => s.abbreviation === b) ?? 0;
-
             return aIndex - bIndex;
           })
       ),
     ];
 
-    this.characterExploits = this.characterSheetService.getCharacterExploits();
+    await this.characterSheetService
+      .getCharacterExploits(this.characterId)
+      .then((val) => (this.characterExploits = val));
     this.exploitAbilities = [
       ...new Set(
         this.characterExploits
@@ -185,7 +196,6 @@ export class CharacterSheetComponent implements OnInit {
               this.scores.findIndex((s: any) => s.abbreviation === a) ?? 0;
             const bIndex =
               this.scores.findIndex((s: any) => s.abbreviation === b) ?? 0;
-
             return aIndex - bIndex;
           })
       ),
@@ -201,7 +211,6 @@ export class CharacterSheetComponent implements OnInit {
           featureChoice.value
         );
       }
-
       const featChoice = this.character.background.choices.find(
         (c: any) => c.id === 'bg-feat'
       );
@@ -215,47 +224,52 @@ export class CharacterSheetComponent implements OnInit {
         this.backgroundFeat4 = this.dataService.getFeat(featChoice4.value);
       }
     }
-
     this.notes = this.character.notes ?? '';
 
-    this.profs = this.characterSheetService.getCharacterProficiencies();
+    await this.characterSheetService
+      .getCharacterProficiencies(this.characterId)
+      .then((val) => (this.profs = val));
 
-    this.defenses = this.characterSheetService.getCharacterDefenses();
+    await this.characterSheetService
+      .getCharacterDefenses(this.characterId)
+      .then((val) => (this.defenses = val));
 
-    this.initBonus = this.characterSheetService.getInitBonus();
-    this.saveBonus = this.characterSheetService.getSaveBonus();
+    await this.characterSheetService
+      .getInitBonus(this.characterId)
+      .then((val) => (this.initBonus = val));
+    await this.characterSheetService
+      .getSaveBonus(this.characterId)
+      .then((val) => (this.saveBonus = val));
 
     this.ac = this.character.ac ?? 0;
 
-    this.speeds = this.characterSheetService.getSpeeds();
-    this.jumping = this.characterSheetService.getJumping();
+    await this.characterSheetService
+      .getSpeeds(this.characterId)
+      .then((val) => (this.speeds = val));
+    await this.characterSheetService
+      .getJumping(this.characterId)
+      .then((val) => (this.jumping = val));
+    await this.characterSheetService
+      .getTelepathy(this.characterId)
+      .then((val) => (this.telepathy = val));
 
-    this.telepathy = this.characterSheetService.getTelepathy();
+    this.loaded = true;
 
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
-        const storageCharacter: any = JSON.parse(
-          localStorage.getItem('character')
-        );
-
-        localStorage.setItem(
-          'character',
-          JSON.stringify({
-            ...storageCharacter,
+        if (this.character) {
+          const data = {
+            ...this.dbCharacter,
             ...this.character,
-          })
-        );
+          };
 
-        const data = {
-          ...storageCharacter,
-          ...this.character,
-        };
-        if (JSON.stringify(data) !== '{}') {
           this.dbService
             .setCharacterNoUser(this.characterId, data)
-            .subscribe((data) => {
-              console.log(data);
+            .subscribe((response) => {
+              console.info(response);
             });
+
+          this.dbCharacter = data;
         }
 
         this.calculateHp();
@@ -265,7 +279,7 @@ export class CharacterSheetComponent implements OnInit {
     });
   }
 
-  private calculateHp() {
+  private async calculateHp() {
     this.hp = 0;
     if (this.character.classes) {
       for (let c of this.character.classes) {
@@ -274,7 +288,9 @@ export class CharacterSheetComponent implements OnInit {
     }
 
     this.hp += this.modifierNumber('con') * this.characterLevel();
-    this.hp += this.characterSheetService.getHpBonus() * this.characterLevel();
+    await this.characterSheetService
+      .getHpBonus(this.characterId)
+      .then((val) => (this.hp += val * this.characterLevel()));
 
     if (this.hp < 1) {
       this.hp = 1;

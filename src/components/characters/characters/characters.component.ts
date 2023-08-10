@@ -19,7 +19,6 @@ export class CharactersComponent implements OnInit {
 
     for (let i = 0; i < this.users.length; i++) {
       this.dbService.getUserCharacters(this.users[i]).subscribe((c) => {
-        console.log(c);
         this.userCharacters[i] = c;
       });
     }
@@ -36,7 +35,7 @@ export class CharactersComponent implements OnInit {
         equipment: {},
       })
       .subscribe((response) => {
-        console.log(response);
+        console.info(response);
         this.router.navigateByUrl(`/characters/${uuid}/builder`);
       });
   }
@@ -66,6 +65,6 @@ export class CharactersComponent implements OnInit {
 
   public characterRow(character: any) {
     const data = JSON.parse(character.data);
-    return `${data.name} <a href="/characters/${character.guid}/builder">Builder</a> <a href="/characters/${character.guid}/sheet">Sheet</a>`;
+    return `${data.name} <a class="character-btn" href="/characters/${character.guid}/builder">Builder</a> <a class="character-btn" href="/characters/${character.guid}/sheet">Sheet</a>`;
   }
 }

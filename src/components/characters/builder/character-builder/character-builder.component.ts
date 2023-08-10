@@ -14,12 +14,10 @@ export class CharacterBuilderComponent implements OnInit {
   @Input()
   set guid(id: string) {
     this.characterId = id;
-    this.dbService.getCharacter(id).subscribe((c) => {
-      this.character = c;
-    });
   }
   public characterId;
   public character: any;
+  private dbCharacter: any;
 
   constructor(
     private dbService: DBService,
@@ -27,42 +25,35 @@ export class CharacterBuilderComponent implements OnInit {
     private store: Store
   ) {}
 
-  ngOnInit(): void {
-    const cachedCharacter: any = JSON.parse(localStorage.getItem('character'));
-
-    if (cachedCharacter) {
-      this.character = cachedCharacter;
-    }
+  async ngOnInit(): Promise<void> {
+    await this.dbService.getCharacter(this.characterId).then((val) => {
+      this.character = val;
+      this.dbCharacter = JSON.parse(JSON.stringify(this.character));
+    });
 
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
         try {
-          this.cleanUpChoices();
-          this.calculateActualScores();
+          if (this.character) {
+            this.cleanUpChoices();
+            this.calculateActualScores();
+          }
         } catch (ex) {
           console.error(ex);
         } finally {
-          const storageCharacter: any = JSON.parse(
-            localStorage.getItem('character')
-          );
-          localStorage.setItem(
-            'character',
-            JSON.stringify({
-              ...storageCharacter,
+          if (this.character) {
+            const data = {
+              ...this.dbCharacter,
               ...this.character,
-            })
-          );
+            };
 
-          const data = {
-            ...storageCharacter,
-            ...this.character,
-          };
-          if (JSON.stringify(data) !== '{}') {
             this.dbService
               .setCharacterNoUser(this.characterId, data)
-              .subscribe((data) => {
-                console.log(data);
+              .subscribe((response) => {
+                console.info(response);
               });
+
+            this.dbCharacter = data;
           }
         }
       }
@@ -70,7 +61,7 @@ export class CharacterBuilderComponent implements OnInit {
   }
 
   private cleanUpChoices() {
-    Object.values(this.character).forEach((obj: any) => {
+    Object.values(this.character ?? {}).forEach((obj: any) => {
       if (
         ![
           this.character.name,
@@ -122,7 +113,7 @@ export class CharacterBuilderComponent implements OnInit {
   }
 
   private calculateActualScores() {
-    if (this.character.scores) {
+    if (this.character?.scores) {
       let scoreMods = {
         str: 0,
         dex: 0,
@@ -134,7 +125,7 @@ export class CharacterBuilderComponent implements OnInit {
         san: 0,
       };
 
-      if (this.character.race) {
+      if (this.character?.race) {
         const raceData = this.dataService.getRace(this.character.race.name);
         const subraceData = raceData.subraces?.find(
           (s: any) => s.name === this.character.race.subrace
@@ -182,7 +173,7 @@ export class CharacterBuilderComponent implements OnInit {
         }
       }
 
-      if (this.character.classes) {
+      if (this.character?.classes) {
         for (let c of this.character.classes) {
           const classData = this.dataService.getClass(c.name);
           if (classData) {
@@ -213,7 +204,7 @@ export class CharacterBuilderComponent implements OnInit {
         }
       }
 
-      if (this.character.background.choices) {
+      if (this.character?.background?.choices) {
         const choiceEntry = this.character.background.choices.find(
           (ch: any) => ch.id === 'bg-feat'
         );
@@ -240,7 +231,7 @@ export class CharacterBuilderComponent implements OnInit {
         }
       }
 
-      for (let key of Object.keys(this.character.scores.base)) {
+      for (let key of Object.keys(this.character?.scores?.base ?? {})) {
         this.character.scores.actual[key] = Math.max(
           (parseInt(this.character.scores.base[key]?.toString() ?? '0') ?? 0) +
             (scoreMods[key] ?? 0) +

@@ -13,6 +13,7 @@ export class SheetFeatureComponent {
   @Input() level = 0;
 
   @Input() characterLevel = 21;
+  @Input() characterId;
 
   public isArray(array: any): boolean {
     return Array.isArray(array);
