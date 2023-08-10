@@ -11,8 +11,10 @@ import {
 } from '@angular/router';
 import { BestiaryComponent } from 'src/components/bestiary/bestiary/bestiary.component';
 import { CharacterBuilderComponent } from 'src/components/characters/builder/character-builder/character-builder.component';
+import { CharactersComponent } from 'src/components/characters/characters/characters.component';
 import { CharacterSheetComponent } from 'src/components/characters/sheet/character-sheet/character-sheet.component';
 import { DatabaseComponent } from 'src/components/database/database.component';
+import { DmToolsComponent } from 'src/components/dm-tools/dm-tools.component';
 import { GeneralStoreComponent } from 'src/components/general-store/general-store.component';
 import { MagicItemComponent } from 'src/components/general-store/magic-items/magic-item/magic-item.component';
 import { MagicItemsComponent } from 'src/components/general-store/magic-items/magic-items/magic-items.component';
@@ -171,11 +173,20 @@ const routes: Routes = [
   },
 
   {
-    path: 'characters/builder',
+    path: 'dm-tools',
+    component: DmToolsComponent,
+  },
+
+  {
+    path: 'characters',
+    component: CharactersComponent,
+  },
+  {
+    path: 'characters/:guid/builder',
     component: CharacterBuilderComponent,
   },
   {
-    path: 'characters/sheet',
+    path: 'characters/:guid/sheet',
     component: CharacterSheetComponent,
   },
 

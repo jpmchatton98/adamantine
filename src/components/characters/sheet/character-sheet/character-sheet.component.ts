@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { get } from 'http';
 import { Update } from 'src/components/pages/features/builder.actions';
@@ -7,6 +7,7 @@ import { CharacterSheetService } from 'src/services/character-sheet.service';
 import { DataService } from 'src/services/data.service';
 import { GeneralStoreService } from 'src/services/general-store.service';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { DBService } from 'src/services/db.service';
 
 @Component({
   selector: 'app-character-sheet',
@@ -14,6 +15,22 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   styleUrls: ['./character-sheet.component.scss'],
 })
 export class CharacterSheetComponent implements OnInit {
+  @Input()
+  set guid(id: string) {
+    this.characterId = id;
+    this.dbService.getCharacter(id).subscribe((c) => {
+      this.character = c;
+    });
+  }
+  public characterId;
+  public character: any;
+
+  public gritFeature: any = {
+    name: 'Grit',
+    description:
+      'If you drop to 0 hit points, but are not killed outright, you can choose to declare Grit at any point before your next turn. Grit represents your character using up the last of their strength for a final effort.</p><p>Grit lasts for 1 minute, during which no healing magic will work on you, and no effect can cause you to become unconscious, dead, or prevent you from using your turn, such as the stunned or paralyzed conditions. After the minute elapses, you die.',
+  };
+
   public scores: any[] = [
     {
       name: 'Strength',
@@ -50,8 +67,6 @@ export class CharacterSheetComponent implements OnInit {
   ];
 
   public settingsModal: boolean = false;
-
-  public character: any = {};
 
   public hp: number;
 
@@ -107,7 +122,8 @@ export class CharacterSheetComponent implements OnInit {
     private dataService: DataService,
     private generalStoreService: GeneralStoreService,
     private store: Store,
-    private notification: NzNotificationService
+    private notification: NzNotificationService,
+    private dbService: DBService
   ) {}
 
   ngOnInit(): void {
@@ -229,6 +245,18 @@ export class CharacterSheetComponent implements OnInit {
             ...this.character,
           })
         );
+
+        const data = {
+          ...storageCharacter,
+          ...this.character,
+        };
+        if (JSON.stringify(data) !== '{}') {
+          this.dbService
+            .setCharacterNoUser(this.characterId, data)
+            .subscribe((data) => {
+              console.log(data);
+            });
+        }
 
         this.calculateHp();
         this.tempHp = this.character.tempHp ?? 0;

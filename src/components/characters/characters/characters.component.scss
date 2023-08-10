@@ -1,0 +1,14 @@
+::ng-deep a {
+    display: inline-block;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    width: fit-content;
+
+    &:hover {
+        border: 1px solid blue;
+        text-decoration: none;
+    }
+}

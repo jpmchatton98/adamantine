@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Update } from 'src/components/pages/features/builder.actions';
 import { selectUpdate } from 'src/components/pages/features/builder.selectors';
 import { DataService } from 'src/services/data.service';
+import { DBService } from 'src/services/db.service';
 
 @Component({
   selector: 'app-character-builder',
@@ -10,14 +11,21 @@ import { DataService } from 'src/services/data.service';
   styleUrls: ['./character-builder.component.scss'],
 })
 export class CharacterBuilderComponent implements OnInit {
-  public character: any = {
-    background: {
-      choices: [],
-    },
-    equipment: {},
-  };
+  @Input()
+  set guid(id: string) {
+    this.characterId = id;
+    this.dbService.getCharacter(id).subscribe((c) => {
+      this.character = c;
+    });
+  }
+  public characterId;
+  public character: any;
 
-  constructor(private dataService: DataService, private store: Store) {}
+  constructor(
+    private dbService: DBService,
+    private dataService: DataService,
+    private store: Store
+  ) {}
 
   ngOnInit(): void {
     const cachedCharacter: any = JSON.parse(localStorage.getItem('character'));
@@ -44,6 +52,18 @@ export class CharacterBuilderComponent implements OnInit {
               ...this.character,
             })
           );
+
+          const data = {
+            ...storageCharacter,
+            ...this.character,
+          };
+          if (JSON.stringify(data) !== '{}') {
+            this.dbService
+              .setCharacterNoUser(this.characterId, data)
+              .subscribe((data) => {
+                console.log(data);
+              });
+          }
         }
       }
     });

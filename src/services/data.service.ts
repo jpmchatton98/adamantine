@@ -19,6 +19,8 @@ import magicalFoci from '../data/general-store/adventuring-equipment/magical-foc
 import instruments from '../data/general-store/adventuring-equipment/musical-instruments.json';
 import tools from '../data/general-store/adventuring-equipment/tools.json';
 
+import injuries from '../data/house-rules/injuries.json';
+
 interface GenericDictionary {
   [value: string]: string;
 }
@@ -639,5 +641,17 @@ export class DataService {
         c.item = c.item.toLowerCase();
         return c;
       });
+  }
+
+  public getInjuries() {
+    const newData = [];
+    for (let [k, v] of Object.entries(injuries)) {
+      newData.push({
+        type: k,
+        list: v,
+      });
+    }
+
+    return newData;
   }
 }

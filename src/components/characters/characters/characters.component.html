@@ -1,0 +1,9 @@
+<div>
+    <div *ngFor="let user of users; let i = index">
+        <h5>{{ user }}'s Characters</h5>
+        <button nz-button (click)="create(user)">+ Create New</button>
+        <div *ngFor="let c of userCharacters[i]">
+            <div [innerHTML]="characterRow(c)"></div>
+        </div>
+    </div>
+</div>

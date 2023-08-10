@@ -2,6 +2,7 @@
 <br>
 <button (click)="reset()">Reset</button> -->
 
+<a class="header-button" href="/characters/{{ characterId }}/sheet" title="Sheet"><span class="mdi mdi-text-box"></span></a>
 <nz-tabset [nzSize]="'large'" [nzAnimated]="false">
     <nz-tab nzTitle="Basic Information">
         <cb-basic-info-tab [character]="character"></cb-basic-info-tab>
@@ -25,7 +26,7 @@
         <cb-equipment-tab [character]="character"></cb-equipment-tab>
     </nz-tab>
     <nz-tab nzTitle="Next Steps">
-        <button nz-button>Go to Character Sheet</button>
+        
         <button nz-button (click)="exportToJson()">Export as JSON file</button>
 
         <a class="hidden" id="downloadAnchorElem"></a>

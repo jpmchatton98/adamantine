@@ -21,6 +21,8 @@ import { PagesModule } from 'src/components/pages/pages.module';
 import { BestiaryModule } from 'src/components/bestiary/bestiary.module';
 import { GeneralStoreModule } from 'src/components/general-store/general-store.module';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { DBService } from 'src/services/db.service';
+import { DmToolsModule } from 'src/components/dm-tools/dm-tools.module';
 
 registerLocaleData(en);
 
@@ -43,8 +45,9 @@ registerLocaleData(en);
     CharacterModule,
     BestiaryModule,
     GeneralStoreModule,
+    DmToolsModule,
   ],
-  providers: [DataService, { provide: NZ_I18N, useValue: en_US }],
+  providers: [DataService, DBService, { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
 })
 export class AppModule {

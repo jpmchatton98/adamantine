@@ -1,0 +1,71 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { take } from 'rxjs';
+import { DBService } from 'src/services/db.service';
+
+@Component({
+  selector: 'app-characters',
+  templateUrl: './characters.component.html',
+  styleUrls: ['./characters.component.scss'],
+})
+export class CharactersComponent implements OnInit {
+  public users = ['Brad', 'Joey', 'Jon', 'Maddie', 'Spencer'];
+  public userCharacters = [];
+
+  constructor(private dbService: DBService, private router: Router) {}
+
+  public ngOnInit(): void {
+    localStorage.clear();
+
+    for (let i = 0; i < this.users.length; i++) {
+      this.dbService.getUserCharacters(this.users[i]).subscribe((c) => {
+        console.log(c);
+        this.userCharacters[i] = c;
+      });
+    }
+  }
+
+  public create(username): void {
+    localStorage.clear();
+    let uuid = this.generateUUID();
+    this.dbService
+      .setCharacter(username, uuid, {
+        background: {
+          choices: [],
+        },
+        equipment: {},
+      })
+      .subscribe((response) => {
+        console.log(response);
+        this.router.navigateByUrl(`/characters/${uuid}/builder`);
+      });
+  }
+
+  public generateUUID() {
+    var d = new Date().getTime();
+    var d2 =
+      (typeof performance !== 'undefined' &&
+        performance.now &&
+        performance.now() * 1000) ||
+      0;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(
+      /[xy]/g,
+      function (c) {
+        var r = Math.random() * 16;
+        if (d > 0) {
+          r = (d + r) % 16 | 0;
+          d = Math.floor(d / 16);
+        } else {
+          r = (d2 + r) % 16 | 0;
+          d2 = Math.floor(d2 / 16);
+        }
+        return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
+      }
+    );
+  }
+
+  public characterRow(character: any) {
+    const data = JSON.parse(character.data);
+    return `${data.name} <a href="/characters/${character.guid}/builder">Builder</a> <a href="/characters/${character.guid}/sheet">Sheet</a>`;
+  }
+}
