@@ -1,12 +1,22 @@
 import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
 import { DBService } from './db.service';
+import { Store } from '@ngrx/store';
+import { selectUpdate } from 'src/components/pages/features/builder.selectors';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CharacterBuilderService {
-  constructor(private dataService: DataService, private dbService: DBService) {}
+  constructor(
+    private dataService: DataService,
+    private dbService: DBService,
+    private store: Store
+  ) {
+    this.store.select(selectUpdate).subscribe(() => {
+      this.character = undefined;
+    });
+  }
 
   public character;
   public async getCharacterFromDb(characterId: string) {
@@ -16,7 +26,7 @@ export class CharacterBuilderService {
   }
 
   public async getTotalLevel(characterId: string) {
-    if (!this.character) {
+    if (!this.character && !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     return (
@@ -28,15 +38,12 @@ export class CharacterBuilderService {
   }
 
   public async getScore(characterId: string, score: string) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     return (this.character?.scores?.actual ?? {})[score] || 1;
   }
   public async getModifier(characterId: string, score: string) {
-    if (!this.character) {
-      await this.getCharacterFromDb(characterId);
-    }
     let mod;
     await this.getScore(characterId, score).then((score) => {
       mod = Math.floor((score - 10) / 2);
@@ -46,7 +53,7 @@ export class CharacterBuilderService {
   }
 
   public async characterIsRace(characterId: string, race: string) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     return this.character?.race?.name?.toLowerCase() === race.toLowerCase();

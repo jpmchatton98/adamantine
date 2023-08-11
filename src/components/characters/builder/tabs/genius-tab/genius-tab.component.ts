@@ -1,4 +1,10 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+} from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Update } from 'src/components/pages/features/builder.actions';
 import { selectUpdate } from 'src/components/pages/features/builder.selectors';
@@ -145,7 +151,8 @@ export class GeniusTabComponent implements OnInit, OnChanges {
     private characterBuilderService: CharacterBuilderService,
     private characterSheetService: CharacterSheetService,
     private dataService: DataService,
-    private store: Store
+    private store: Store,
+    private changeRef: ChangeDetectorRef
   ) {}
 
   public ngOnInit(): void {
@@ -164,24 +171,26 @@ export class GeniusTabComponent implements OnInit, OnChanges {
       });
     }
 
-    this.store.select(selectUpdate).subscribe(async (update) => {
-      let mod;
-      await this.characterBuilderService
-        .getModifier(this.characterId, 'int')
-        .then((val) => (mod = val));
+    this.store.select(selectUpdate).subscribe((update) => {
+      setTimeout(async () => {
+        let mod;
+        await this.characterBuilderService
+          .getModifier(this.characterId, 'int')
+          .then((val) => (mod = val));
 
-      let totalLevel;
-      await this.characterBuilderService
-        .getTotalLevel(this.characterId)
-        .then((val) => (totalLevel = val));
+        let totalLevel;
+        await this.characterBuilderService
+          .getTotalLevel(this.characterId)
+          .then((val) => (totalLevel = val));
 
-      this.geniusLimit = mod * totalLevel;
+        this.geniusLimit = mod * Math.max(1, Math.floor((totalLevel + 4) / 4));
 
-      this.geniusUsed =
-        this.character.genius?.feature?.subFeatures?.reduce(
-          (partialSum, a) => partialSum + a.cost,
-          0
-        ) ?? 0;
+        this.geniusUsed =
+          this.character.genius?.feature?.subFeatures?.reduce(
+            (partialSum, a) => partialSum + a.cost,
+            0
+          ) ?? 0;
+      }, 250);
     });
   }
   public ngOnChanges(): void {

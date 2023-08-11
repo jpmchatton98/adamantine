@@ -1,6 +1,8 @@
 <nz-collapse>
   <nz-collapse-panel [nzHeader]="'List Options'">
-    <div>{{ selectedOptions?.length ?? 0 }} / {{ maximum }} selections</div>
+    <div *ngIf="!noMaximum">
+      {{ selectedOptions?.length ?? 0 }} / {{ maximum }} selections
+    </div>
     <input nz-input [(ngModel)]="search" (ngModelChange)="searchOptions()" />
     <div class="option" *ngFor="let option of displayOptions">
       <button

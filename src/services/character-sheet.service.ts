@@ -552,7 +552,7 @@ export class CharacterSheetService {
   public async getCharacterSkillProficiencies(
     characterId
   ): Promise<SkillProf[]> {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let skillProfs: SkillProf[] = [];
@@ -737,7 +737,7 @@ export class CharacterSheetService {
     characterId
   ): Promise<SkillProf[]> {
     let skillProfs: SkillProf[] = [];
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
 
@@ -934,7 +934,7 @@ export class CharacterSheetService {
   }
 
   public async getSaveProfs(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let profs = {
@@ -1039,7 +1039,7 @@ export class CharacterSheetService {
   }
 
   public async getSenses(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let senses = {};
@@ -1136,7 +1136,7 @@ export class CharacterSheetService {
   }
 
   public async getCharacterSkillOverrides(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let skillProfs: any[] = [];
@@ -1272,7 +1272,7 @@ export class CharacterSheetService {
   }
 
   public async getCharacterToolOverrides(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let skillProfs: any[] = [];
@@ -1408,7 +1408,7 @@ export class CharacterSheetService {
   }
 
   public async getCharacterSpells(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let spellList: any[] = [];
@@ -1796,7 +1796,7 @@ export class CharacterSheetService {
   }
 
   public async getCharacterExploits(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let exploitList: any[] = [];
@@ -2177,7 +2177,7 @@ export class CharacterSheetService {
   }
 
   public async getCharacterProficiencies(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     return {
@@ -2630,7 +2630,7 @@ export class CharacterSheetService {
   }
 
   public async getCharacterDefenses(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     return {
@@ -3069,7 +3069,7 @@ export class CharacterSheetService {
   }
 
   public async getHpBonus(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let hpBonus = 0;
@@ -3196,7 +3196,7 @@ export class CharacterSheetService {
   }
 
   public async getInitBonus(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let initBonus = 0;
@@ -3340,7 +3340,7 @@ export class CharacterSheetService {
   }
 
   public async getSaveBonus(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let saveBonus = {
@@ -3498,7 +3498,7 @@ export class CharacterSheetService {
   }
 
   public async getTelepathy(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let telepathy = 0;
@@ -3632,7 +3632,7 @@ export class CharacterSheetService {
   }
 
   public async getSpeeds(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let speeds: any = {};
@@ -3896,7 +3896,7 @@ export class CharacterSheetService {
   }
 
   public async getJumping(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     let jump = {
@@ -4497,7 +4497,7 @@ export class CharacterSheetService {
   }
 
   public async dieSizeUp(characterId) {
-    if (!this.character) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
     }
     if (this.character?.classes) {

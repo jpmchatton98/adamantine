@@ -31,7 +31,7 @@ export class CharacterBuilderComponent implements OnInit {
       this.dbCharacter = JSON.parse(JSON.stringify(this.character));
     });
 
-    this.store.select(selectUpdate).subscribe((update) => {
+    this.store.select(selectUpdate).subscribe(async (update) => {
       if (update) {
         try {
           if (this.character) {
@@ -47,11 +47,7 @@ export class CharacterBuilderComponent implements OnInit {
               ...this.character,
             };
 
-            this.dbService
-              .setCharacterNoUser(this.characterId, data)
-              .subscribe((response) => {
-                console.info(response);
-              });
+            this.dbService.setCharacterNoUser(this.characterId, data);
 
             this.dbCharacter = data;
           }
@@ -231,8 +227,9 @@ export class CharacterBuilderComponent implements OnInit {
         }
       }
 
+      let updated = false;
       for (let key of Object.keys(this.character?.scores?.base ?? {})) {
-        this.character.scores.actual[key] = Math.max(
+        let newScore = Math.max(
           (parseInt(this.character.scores.base[key]?.toString() ?? '0') ?? 0) +
             (scoreMods[key] ?? 0) +
             (parseInt(
@@ -240,6 +237,14 @@ export class CharacterBuilderComponent implements OnInit {
             ) ?? 0),
           1
         );
+        if (this.character.scores.actual[key] !== newScore) {
+          this.character.scores.actual[key] = newScore;
+          updated = true;
+        }
+      }
+
+      if (updated) {
+        this.store.dispatch(new Update());
       }
     }
   }

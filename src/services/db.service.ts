@@ -18,14 +18,13 @@ export class DBService {
       characterData,
     });
   }
-  public setCharacterNoUser(
-    characterId: string,
-    characterData: any
-  ): Observable<any> {
-    return this.http.post('http://localhost:8080/db/setCharacter', {
-      characterId,
-      characterData,
-    });
+  public setCharacterNoUser(characterId: string, characterData: any) {
+    this.http
+      .post('http://localhost:8080/db/setCharacter', {
+        characterId,
+        characterData,
+      })
+      .subscribe((response) => console.log(response));
   }
 
   public async getCharacter(characterId: string): Promise<any> {

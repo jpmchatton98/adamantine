@@ -28,6 +28,7 @@ export class BuilderListedComponent implements OnInit {
   public displayOptions: any[] = [];
   public selectedOptions: any[] = [];
   public maximum: number = 0;
+  public noMaximum = false;
 
   public modalOption: any;
   public modalVisible = false;
@@ -57,10 +58,14 @@ export class BuilderListedComponent implements OnInit {
   }
 
   private async getMaximum() {
-    if (this.characterLevel === 21) {
-      this.maximum = this.listed.maximums[this.listed.maximums.length - 1];
+    if (this.listed.maximums) {
+      if (this.characterLevel === 21) {
+        this.maximum = this.listed.maximums[this.listed.maximums.length - 1];
+      } else {
+        this.maximum = this.listed.maximums[this.characterLevel - 1];
+      }
     } else {
-      this.maximum = this.listed.maximums[this.characterLevel - 1];
+      this.noMaximum = true;
     }
 
     if (this.listed.addToMaximum) {

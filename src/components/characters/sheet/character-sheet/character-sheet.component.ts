@@ -255,7 +255,7 @@ export class CharacterSheetComponent implements OnInit {
 
     this.loaded = true;
 
-    this.store.select(selectUpdate).subscribe((update) => {
+    this.store.select(selectUpdate).subscribe(async (update) => {
       if (update) {
         if (this.character) {
           const data = {
@@ -263,11 +263,7 @@ export class CharacterSheetComponent implements OnInit {
             ...this.character,
           };
 
-          this.dbService
-            .setCharacterNoUser(this.characterId, data)
-            .subscribe((response) => {
-              console.info(response);
-            });
+          this.dbService.setCharacterNoUser(this.characterId, data);
 
           this.dbCharacter = data;
         }
