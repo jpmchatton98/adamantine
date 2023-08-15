@@ -41,7 +41,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'database/spells',
-    pathMatch: 'prefix',
+    pathMatch: 'full',
   },
 
   {
@@ -71,7 +71,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'race',
-        pathMatch: 'prefix',
+        pathMatch: 'full',
       },
       {
         path: 'race',
@@ -96,7 +96,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'class',
-        pathMatch: 'prefix',
+        pathMatch: 'full',
       },
       {
         path: 'class',
@@ -113,7 +113,7 @@ const routes: Routes = [
               {
                 path: '',
                 redirectTo: 'subclass',
-                pathMatch: 'prefix',
+                pathMatch: 'full',
               },
               {
                 path: 'subclass',
@@ -175,7 +175,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'basic-equipment',
-        pathMatch: 'prefix',
+        pathMatch: 'full',
       },
       {
         path: ':tab',
@@ -196,7 +196,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'common',
-        pathMatch: 'prefix',
+        pathMatch: 'full',
       },
       {
         path: ':rarity',

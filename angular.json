@@ -26,7 +26,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/data",
               {
                 "glob": "**/*",
                 "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
@@ -37,8 +36,7 @@
                 "input": "node_modules/@mdi/angular-material/",
                 "output": "./assets"
               },
-              "src/package.json",
-              "src/electron.prod.js"
+              "src/web.config"
             ],
             "styles": [
               "src/theme.less",
