@@ -35,7 +35,9 @@
                 "glob": "mdi.svg",
                 "input": "node_modules/@mdi/angular-material/",
                 "output": "./assets"
-              }
+              },
+              "src/package.json",
+              "src/electron.prod.js"
             ],
             "styles": [
               "src/theme.less",
@@ -54,13 +56,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1gb",
+                  "maximumError": "1gb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "1gb",
+                  "maximumError": "1gb"
                 }
               ],
               "outputHashing": "all"

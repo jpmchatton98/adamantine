@@ -12,7 +12,7 @@ export class DBService {
     characterId: string,
     characterData: any
   ): Observable<any> {
-    return this.http.post('http://localhost:8080/db/setCharacter', {
+    return this.http.post('http://localhost:2000/db/setCharacter', {
       username,
       characterId,
       characterData,
@@ -20,7 +20,7 @@ export class DBService {
   }
   public setCharacterNoUser(characterId: string, characterData: any) {
     this.http
-      .post('http://localhost:8080/db/setCharacter', {
+      .post('http://localhost:2000/db/setCharacter', {
         characterId,
         characterData,
       })
@@ -29,17 +29,17 @@ export class DBService {
 
   public async getCharacter(characterId: string): Promise<any> {
     return this.http
-      .post('http://localhost:8080/db/getCharacter', {
+      .post('http://localhost:2000/db/getCharacter', {
         characterId,
       })
       .toPromise();
   }
 
   public getCharacters(): Observable<any> {
-    return this.http.post('http://localhost:8080/db/getCharacters', {});
+    return this.http.post('http://localhost:2000/db/getCharacters', {});
   }
   public getUserCharacters(username: string): Observable<any> {
-    return this.http.post('http://localhost:8080/db/getUserCharacters', {
+    return this.http.post('http://localhost:2000/db/getUserCharacters', {
       username,
     });
   }

@@ -1,0 +1,8 @@
+{
+  "name": "adamantine",
+  "productName": "Adamantine Wiki",
+  "version": "1.0.0",
+  "description": "Adamantine Wiki",
+  "main": "electron.prod.js",
+  "license": "MIT"
+}
