@@ -4072,5 +4072,303 @@
         "size": 6
       }
     ]
+  },
+  {
+    "name": "Rune Carver",
+    "type": "multiclass",
+    "description": "You've studied the magic of Jotunn runes, granting you the following benefits:<ul><li>You know the Comprehend Languages spell and can cast it at will, but only as a ritual.  Intelligence is your spellcasting ability for it.</li><li>You learn three Runes of your choice.  When you cast a spell of 1st-level or higher, you can invoke one of these runes to modify the spell's effects.  You can invoke runes a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</li></ul>",
+    "choices": [
+      {
+        "id": "DD8A8E5D-A97C-4BF0-B5B1-47CD3F4D6A5B",
+        "type": "runecarver"
+      },
+      {
+        "id": "19A9194B-215E-484A-8127-54397012260A",
+        "type": "runecarver"
+      },
+      {
+        "id": "57A7F449-2388-4A33-9A65-FCD805459906",
+        "type": "runecarver"
+      }
+    ],
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Comprehend Languages"],
+        "ritualsOnly": true,
+        "ability": "int",
+        "ignoreMaxLevel": true
+      }
+    ],
+    "uses": [
+      {
+        "id": "42958C48-B706-45E9-8FD4-F95CE80D6A22",
+        "type": "derived",
+        "source": "proficiency",
+        "reset": "long"
+      }
+    ]
+  },
+  {
+    "name": "Jotunn Magic",
+    "type": "magic",
+    "description": "You have learned the runic magic of the giants, gaining the following benefits:<ul><li>Increase your Strength, Constitution, Wisdom, or Charisma score by 1.</li><li>Choose a type of giant.  You gain additional benefits based on your choice.</li></ul>You can take this feat multiple times, and must choose a different kind of giant each time.",
+    "choices": [
+      {
+        "id": "0A2672E3-59A1-4267-9825-F805BD54E820",
+        "type": "asi",
+        "options": ["str", "con", "wis", "cha"],
+        "amount": 1
+      },
+      {
+        "id": "76B055C9-E04D-478E-8F36-8DB4846250F9",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Soul of the Storm Giant",
+            "traits": [
+              {
+                "name": "Maelstrom Aura",
+                "description": "As a bonus action, you surround yourself with an aura of magical wind and lightning that extends 10 feet from you in every direction but not through total cover. The aura lasts until the start of your next turn or until you are incapacitated. While the aura is active, you have resistance to lightning and thunder damage. In addition, attack rolls against you have disadvantage, and whenever another creature starts its turn within the aura, you can force the creature to make a Strength saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, the creature's speed is halved until the start of its next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "42958C48-B706-45E9-8FD4-F95CE80D6A22",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Guile of the Cloud Giant",
+            "traits": [
+              {
+                "name": "Cloudy Escape",
+                "description": "When a creature you can see hits you with an attack roll, you can use your reaction to give yourself resistance to that attack's damage. You then teleport to an unoccupied space that you can see within 30 feet of yourself. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "D47184B2-64A1-42B6-BD19-88BA686C77FA",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ember of the Fire Giant",
+            "traits": [
+              {
+                "name": "Born of Flame",
+                "description": "You gain resistance to fire damage.",
+                "granted": [
+                  {
+                    "type": "damage-resistance",
+                    "options": ["Fire"]
+                  }
+                ]
+              },
+              {
+                "name": "Searing Ignition",
+                "description": "When you take the Attack action on your turn, you can replace a single attack with a magical burst of flame. Each creature of your choice in a 15-foot-radius sphere centered on you must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, a creature takes fire damage equal to 1d8 + your proficiency bonus, and it has the blinded condition until the start of your next turn. On a successful save, the creature takes half as much damage only. You can use your Searing Ignition a number of times equal to your proficiency bonus (but no more than once per turn), and you regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "88FCAEFE-B45B-4AD7-90CF-8F15A89ABF29",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fury of the Frost Giant",
+            "traits": [
+              {
+                "name": "Born of Ice",
+                "description": "You gain resistance to cold damage.",
+                "granted": [
+                  {
+                    "type": "damage-resistance",
+                    "options": ["Cold"]
+                  }
+                ]
+              },
+              {
+                "name": "Frigid Retaliation",
+                "description": "Immediately after a creature you can see within 30 feet of you hits you with an attack roll and deals damage, you can use your reaction to retaliate with a conjured blast of ice. The creature must make a Constitution saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, the creature takes cold damage equal to 1d8 + your proficiency bonus, and its speed is reduced to 0 until the end of its next turn. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "3E66B336-220C-4709-AA76-9E79F5335465",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Keenness of the Stone Giant",
+            "traits": [
+              {
+                "name": "Cavernous Sight",
+                "description": "You gain darkvision out to 60 feet.",
+                "granted": [
+                  {
+                    "type": "darkvision",
+                    "range": 60
+                  }
+                ]
+              },
+              {
+                "name": "Stone Throw",
+                "description": "As a bonus action, you can conjure a boulder and throw it. Make a ranged weapon attack against a creature or object within 60 feet of you. On a hit, the rock deals 1d10 force damage, and the target must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat) or be knocked prone. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "617A6E14-2789-47A6-946F-46B4EA522589",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Vigor of the Hill Giant",
+            "traits": [
+              {
+                "name": "Bulwark",
+                "description": "When you are subjected to an effect that would move you at least 5 feet or knock you prone, you can use your reaction to steady yourself and negate the effect."
+              },
+              {
+                "name": "Iron Stomach",
+                "description": "Whenever you eat food as part of a short rest and spend one or more Hit Dice to regain hit points, you regain additional hit points equal to your Constitution modifier + your proficiency bonus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jotunn Strike",
+    "type": "combat",
+    "description": "You have absorbed primeval magic that gives you an echo of the might of giants.  Choose a type of giant.  Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the type of giant you chose.  The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier. You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+    "choices": [
+      {
+        "id": "76B055C9-E04D-478E-8F36-8DB4846250F9",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Storm Giant",
+            "traits": [
+              {
+                "name": "",
+                "description": "The target takes an extra 1d6 lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has disadvantage on attack rolls until the start of your next turn.",
+                "uses": [
+                  {
+                    "id": "42958C48-B706-45E9-8FD4-F95CE80D6A22",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cloud Giant",
+            "traits": [
+              {
+                "name": "",
+                "description": "The target takes an extra 1d6 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become invisible to it until the start of your next turn or until immediately after you make an attack roll or cast a spell.",
+                "uses": [
+                  {
+                    "id": "D47184B2-64A1-42B6-BD19-88BA686C77FA",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fire Giant",
+            "traits": [
+              {
+                "name": "",
+                "description": "The target takes an extra 2d6 fire damage.",
+                "uses": [
+                  {
+                    "id": "88FCAEFE-B45B-4AD7-90CF-8F15A89ABF29",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Frost Giant",
+            "traits": [
+              {
+                "name": "",
+                "description": "The target takes an extra 1d6 cold damage. If the target is a creature, it must succeed on a Constitution saving throw, or its speed is reduced to 0 until the start of your next turn.",
+                "uses": [
+                  {
+                    "id": "3E66B336-220C-4709-AA76-9E79F5335465",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Stone Giant",
+            "traits": [
+              {
+                "name": "",
+                "description": "The target takes an extra 1d6 force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet from you in a straight line.",
+                "uses": [
+                  {
+                    "id": "617A6E14-2789-47A6-946F-46B4EA522589",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hill Giant",
+            "traits": [
+              {
+                "name": "",
+                "description": "The target takes an extra 1d6 damage of the weapon's type. If the target is a creature, it must succeed on a Strength saving throw or be knocked prone.",
+                "uses": [
+                  {
+                    "id": "822469CF-AF10-4AAA-A184-13B785C89397",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": "long"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
