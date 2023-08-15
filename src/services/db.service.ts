@@ -5,7 +5,7 @@ import { Observable, map } from 'rxjs';
 
 @Injectable()
 export class DBService {
-  private baseUrl = 'http://adamantine-dnd.us-3.evennode.com';
+  private baseUrl = 'https://adamantine-dnd.us-3.evennode.com';
 
   constructor(private http: HttpClient) {}
 

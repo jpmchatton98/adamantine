@@ -26,6 +26,7 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { SiegeWeaponTabComponent } from './tabs/siege-weapon-tab/siege-weapon-tab.component';
 import { MagicItemComponent } from './magic-items/magic-item/magic-item.component';
 import { MagicItemsComponent } from './magic-items/magic-items/magic-items.component';
+import { PetTabComponent } from './tabs/pet-tab/pet-tab.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MagicItemsComponent } from './magic-items/magic-items/magic-items.compo
     AmmoTabComponent,
     GeneralStoreComponent,
     AnimalTabComponent,
+    PetTabComponent,
     BaseTabComponent,
     SiegeWeaponTabComponent,
     MagicItemsComponent,

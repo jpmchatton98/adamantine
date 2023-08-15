@@ -1,19 +1,65 @@
 <ul id="tabList" class="nav nav-tabs" role="tablist">
-    <li *ngFor="let tab of tabs" class="nav-item" role="presentation">
-        <button class="nav-link" [ngClass]="{'active': nameUrlEncode(tab.name) === tabName}" (click)="changeRoute(nameUrlEncode(tab.name))">{{ tab.name }}</button>
-    </li>
+  <li *ngFor="let tab of tabs" class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      [ngClass]="{ active: nameUrlEncode(tab.name) === tabName }"
+      (click)="changeRoute(nameUrlEncode(tab.name))"
+    >
+      {{ tab.name }}
+    </button>
+  </li>
 </ul>
 
 <div id="content" class="tab-content">
-    <div *ngFor="let tab of tabs" class="tab-pane" [ngClass]="{'active show': nameUrlEncode(tab.name) === tabName}">
-        <gs-ammo-tab *ngIf="tab.type === 'ammo'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-ammo-tab>
-        <gs-animal-tab *ngIf="tab.type === 'animal'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-animal-tab>
-        <gs-armor-tab *ngIf="tab.type === 'armor'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-armor-tab>
-        <gs-firearm-tab *ngIf="tab.type === 'firearm'"></gs-firearm-tab>
-        <gs-generic-tab *ngIf="tab.type === 'generic'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-generic-tab>
-        <gs-melee-weapon-tab *ngIf="tab.type === 'melee-weapon'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-melee-weapon-tab>
-        <gs-modification-tab *ngIf="tab.type === 'modification'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-modification-tab>
-        <gs-ranged-weapon-tab *ngIf="tab.type === 'ranged-weapon'" [data]="tab.data" [excludedColumns]="tab.excluded"></gs-ranged-weapon-tab>
-        <gs-siege-weapon-tab *ngIf="tab.type === 'siege-weapon'" [data]="tab.data"></gs-siege-weapon-tab>
-    </div>
+  <div
+    *ngFor="let tab of tabs"
+    class="tab-pane"
+    [ngClass]="{ 'active show': nameUrlEncode(tab.name) === tabName }"
+  >
+    <gs-ammo-tab
+      *ngIf="tab.type === 'ammo'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-ammo-tab>
+    <gs-animal-tab
+      *ngIf="tab.type === 'animal'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-animal-tab>
+    <gs-pet-tab
+      *ngIf="tab.type === 'pet'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-pet-tab>
+    <gs-armor-tab
+      *ngIf="tab.type === 'armor'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-armor-tab>
+    <gs-firearm-tab *ngIf="tab.type === 'firearm'"></gs-firearm-tab>
+    <gs-generic-tab
+      *ngIf="tab.type === 'generic'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-generic-tab>
+    <gs-melee-weapon-tab
+      *ngIf="tab.type === 'melee-weapon'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-melee-weapon-tab>
+    <gs-modification-tab
+      *ngIf="tab.type === 'modification'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-modification-tab>
+    <gs-ranged-weapon-tab
+      *ngIf="tab.type === 'ranged-weapon'"
+      [data]="tab.data"
+      [excludedColumns]="tab.excluded"
+    ></gs-ranged-weapon-tab>
+    <gs-siege-weapon-tab
+      *ngIf="tab.type === 'siege-weapon'"
+      [data]="tab.data"
+    ></gs-siege-weapon-tab>
+  </div>
 </div>

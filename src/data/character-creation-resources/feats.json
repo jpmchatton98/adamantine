@@ -341,19 +341,19 @@
     "subFeatures": [
       {
         "name": "Fortifying Ration",
-        "description": "Upon consumption, the creature chooses either Strength, Dexterity, or Constitution. For the next minute, the creature can add your Constitution modifier (minimum of +1) to any ability check or saving throw for the chosen ability score.</p><p>At 10th level the duration of the effect increases to 1 hour."
+        "description": "Upon consumption, the creature chooses either Strength, Dexterity, or Constitution. For the next minute, the creature can add your Constitution modifier (minimum of +1) to any ability check or saving throw for the chosen ability score."
       },
       {
         "name": "Invigorating Ration",
-        "description": "Upon consumption, the creature regains hit points equal to 1d10 + your Constitution modifier (minimum of +1). </p><p>Starting at 10th level, this Ration restores an additional 1d10 hit points, and any hit points they regain that exceed their hit point maximum become temporary hit points. "
+        "description": "Upon consumption, the creature regains hit points equal to 1d10 + your Constitution modifier (minimum of +1)."
       },
       {
         "name": "Revitalizing Ration",
-        "description": "Upon consumption, the creature ends one of the following conditions currently affecting it: blindness, deafness, poison, or they reduce their exhaustion level by 1. </p><p>Starting at 10th level, this Ration can also cure the charmed, frightened, paralyzed, and stunned conditions. "
+        "description": "Upon consumption, the creature ends one of the following conditions currently affecting it: blindness, deafness, poison, or they reduce their exhaustion level by 1."
       },
       {
         "name": "Stimulating Ration",
-        "description": "This Ration must be consumed as part of a short rest. Upon consumption, the creature gains advantage on the roll for any Hit Dice they choose to expend during that short rest. </p><p>Starting at 10th level, consuming this Ration allows the creature to treat any Hit Dice they expend during the short rest as their maximum possible result instead of rolling. "
+        "description": "This Ration must be consumed as part of a short rest. Upon consumption, the creature gains advantage on the roll for any Hit Dice they choose to expend during that short rest."
       }
     ],
     "choices": {

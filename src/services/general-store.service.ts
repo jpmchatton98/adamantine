@@ -116,7 +116,7 @@ export class GeneralStoreService {
         },
         {
           name: 'Pets',
-          type: 'animal',
+          type: 'pet',
           data: 'pets',
         },
       ],
@@ -173,11 +173,6 @@ export class GeneralStoreService {
           name: 'Accomodations',
           type: 'generic',
           data: 'accomodations',
-        },
-        {
-          name: 'Construction',
-          type: 'generic',
-          data: 'construction',
         },
         {
           name: 'Lifestyle Expenses',

@@ -20,6 +20,7 @@
     "cost": 2,
     "size": 0.25,
     "speed": 30,
+    "weight": 0,
     "description": "A canine used for companionship or sometimes hard labor such as farm work or hunting."
   },
   {
