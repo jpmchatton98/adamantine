@@ -9,11 +9,13 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
   declarations: [BestiaryComponent],
   imports: [
     CommonModule,
+    AppRoutingModule,
     FormsModule,
     PagesModule,
     NzTableModule,
