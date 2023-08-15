@@ -3,6 +3,7 @@ var path = require("path");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
+const dbPort = process.env.DB_PORT ?? 8080;
 const config = JSON.parse(process.env.APP_CONFIG ?? "{}");
 const mongoPassword = "adamantine";
 const mongoUrl = `mongodb://${
@@ -138,6 +139,6 @@ app.post("/db/deleteCharacter", function (req, res) {
     });
 });
 
-app.listen(8080, function () {
+app.listen(dbPort, function () {
   console.log("ready");
 });

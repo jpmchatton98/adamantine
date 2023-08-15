@@ -37,30 +37,13 @@ import { SpellComponent } from 'src/components/pages/spells/spell/spell.componen
 import { SpellsComponent } from 'src/components/pages/spells/spells/spells.component';
 import { TransformationComponent } from 'src/components/pages/transformations/transformation/transformation.component';
 
-export function customMatcher(
-  segments: UrlSegment[],
-  group: UrlSegmentGroup,
-  route: Route
-): UrlMatchResult | null {
-  const parts = route.path?.split('/') ?? [];
-  const params = {};
-
-  if (parts.length !== segments.length) {
-    return null;
-  }
-
-  for (let i = 0; i < parts.length; i++) {
-    if (parts[i].startsWith(':')) {
-      params[parts[i].substring(1)] = segments[i];
-    } else if (parts[i] !== segments[i].path) {
-      return null;
-    }
-  }
-
-  return { consumed: segments };
-}
-
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'database/spells',
+    pathMatch: 'prefix',
+  },
+
   {
     path: 'database/:tab',
     component: DatabaseComponent,
@@ -88,7 +71,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'race',
-        pathMatch: 'full',
+        pathMatch: 'prefix',
       },
       {
         path: 'race',
@@ -113,7 +96,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'class',
-        pathMatch: 'full',
+        pathMatch: 'prefix',
       },
       {
         path: 'class',
@@ -130,7 +113,7 @@ const routes: Routes = [
               {
                 path: '',
                 redirectTo: 'subclass',
-                pathMatch: 'full',
+                pathMatch: 'prefix',
               },
               {
                 path: 'subclass',
@@ -166,11 +149,6 @@ const routes: Routes = [
     path: 'bestiary/:name',
     component: MonsterComponent,
   },
-  {
-    path: '',
-    redirectTo: 'database/spells',
-    pathMatch: 'full',
-  },
 
   {
     path: 'dm-tools',
@@ -197,7 +175,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'basic-equipment',
-        pathMatch: 'full',
+        pathMatch: 'prefix',
       },
       {
         path: ':tab',
@@ -218,7 +196,7 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'common',
-        pathMatch: 'full',
+        pathMatch: 'prefix',
       },
       {
         path: ':rarity',

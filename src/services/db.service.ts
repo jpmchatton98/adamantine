@@ -5,6 +5,8 @@ import { Observable, map } from 'rxjs';
 
 @Injectable()
 export class DBService {
+  private baseUrl = 'http://adamantine-dnd.us-3.evennode.com';
+
   constructor(private http: HttpClient) {}
 
   public setCharacter(
@@ -12,7 +14,7 @@ export class DBService {
     characterId: string,
     characterData: any
   ): Observable<any> {
-    return this.http.post('http://localhost:2000/db/setCharacter', {
+    return this.http.post(this.baseUrl + '/db/setCharacter', {
       username,
       characterId,
       characterData,
@@ -20,7 +22,7 @@ export class DBService {
   }
   public setCharacterNoUser(characterId: string, characterData: any) {
     this.http
-      .post('http://localhost:2000/db/setCharacter', {
+      .post(this.baseUrl + '/db/setCharacter', {
         characterId,
         characterData,
       })
@@ -29,17 +31,17 @@ export class DBService {
 
   public async getCharacter(characterId: string): Promise<any> {
     return this.http
-      .post('http://localhost:2000/db/getCharacter', {
+      .post(this.baseUrl + '/db/getCharacter', {
         characterId,
       })
       .toPromise();
   }
 
   public getCharacters(): Observable<any> {
-    return this.http.post('http://localhost:2000/db/getCharacters', {});
+    return this.http.post(this.baseUrl + '/db/getCharacters', {});
   }
   public getUserCharacters(username: string): Observable<any> {
-    return this.http.post('http://localhost:2000/db/getUserCharacters', {
+    return this.http.post(this.baseUrl + '/db/getUserCharacters', {
       username,
     });
   }

@@ -63,8 +63,8 @@ export class CharactersComponent implements OnInit {
     );
   }
 
-  public characterRow(character: any) {
+  public getCharName(character: any) {
     const data = JSON.parse(character.data);
-    return `${data.name} <a class="character-btn" href="/characters/${character.guid}/builder">Builder</a> <a class="character-btn" href="/characters/${character.guid}/sheet">Sheet</a>`;
+    return data.name;
   }
 }
