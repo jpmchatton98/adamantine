@@ -1856,6 +1856,31 @@
     "type": 0
   },
   {
+    "class": "Whip",
+    "name": "Spiked Chain",
+
+    "description": "A length of chain studded with cruel spikes and barbs.",
+    "damage": "2d4",
+    "damageTypes": "Slashing",
+    "cost": 100,
+    "weight": 10.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Double (1d4)",
+        "description": "If you attack with this weapon as part of the Attack action on your turn, you can use a bonus action immediately after to make a melee attack with it. A damage value in parentheses appears with the property - the damage when the weapon is attacked with as a bonus action."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it while not mounted. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2
+  },
+  {
     "class": "Sword",
     "name": "Spiral Rapier",
 

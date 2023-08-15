@@ -1001,7 +1001,7 @@
               "type": "boon",
               "value": "Hag Magic"
             },
-            "description": "When you combine your magic with others, you grow in power.  Over the course of a long rest, you may designate a willing spellcaster with whom you spent the long rest as a part of your coven.  You can have a maximum of five spellcasters in your coven, and if you attempt to add another spellcaster you must remove an existing spellcaster.</p><p>For each spellcaster in your coven, you know one cantrip and you can prepare two spells from the Occult spell list of 3rd-level or lower.  You have three coven spell slots that you can use to cast these spells, all of which are 3rd-level.  Charisma is your spellcasting ability for these spells.",
+            "description": "When you combine your magic with others, you grow in power.  Over the course of a long rest, you may designate a willing spellcaster with whom you spent the long rest as a part of your coven.  You can have a maximum of thirteen spellcasters in your coven, including yourself, and if you attempt to add another spellcaster you must remove an existing spellcaster.</p><p>For each spellcaster in your coven, you know one cantrip and you can prepare two spells from the Occult spell list of 5th-level or lower.  You have three coven spell slots that you can use to cast these spells, all of which are 5th-level.  Charisma is your spellcasting ability for these spells.",
             "subFeatures": [
               {
                 "name": "Cantrips",
@@ -1010,28 +1010,29 @@
                   "id": "1FDDAED4-2BBE-4373-ABCA-088E9ECC8A2C",
                   "type": "cantrip",
                   "maximums": [
-                    5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+                    13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13,
+                    13, 13, 13, 13, 13
                   ],
                   "list": "Occult",
                   "ability": "cha"
                 }
               },
               {
-                "name": "Spells of 3rd-Level or Lower",
-                "description": "You can prepare a number of spells from the Occult spell list equal to twice the number of spellcasters in your coven.  All of these spells must be of 3rd-level or lower.",
+                "name": "Spells of 5th-Level or Lower",
+                "description": "You can prepare a number of spells from the Occult spell list equal to twice the number of spellcasters in your coven.  All of these spells must be of 5th-level or lower.",
                 "listed": {
                   "id": "1FDDAED4-2BBE-4373-ABCA-088E9ECC8A2C",
                   "type": "spell",
                   "maximums": [
-                    10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
-                    10, 10, 10, 10, 10
+                    26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
+                    26, 26, 26, 26, 26
                   ],
                   "list": "Occult",
                   "spellcaster-type": 1,
-                  "maxLevel": 3,
+                  "maxLevel": 5,
                   "ability": "cha"
                 },
-                "granted": [{ "type": "spell-slots", "level": 3, "amount": 3 }]
+                "granted": [{ "type": "spell-slots", "level": 5, "amount": 3 }]
               }
             ]
           },
@@ -1062,7 +1063,7 @@
   },
   {
     "name": "Lich",
-    "description": "Across the Multiverse there are many ways to become a Lich, each determining the type of Lich the mortal becomes. However, within Etharis there is only one type of Lich, as there is only one known method of ascending to Lichdom: The Ritual of Dread. The process of this ritual is a well-guarded secret, entrusted to only a handful of mortals at any one time. The process of the ritual involves several despicable acts including murder, the brewing of a vile concoction, and even one's own death. However, it is the process of tearing one's soul from the body that is most despised, for this process involves the sacrifice of something truly dear to a mortal, and no substitute will be accepted. For some, it is the death of a cherished loved one. For others it is a family legacy. Regardless of the sacrifice, unless the Dreadscape spirits deem it worthy, Lichdom will not be granted.",
+    "description": "Across the Multiverse there are many ways to become a Lich, each determining the type of Lich the mortal becomes. However, the most common method of ascending to Lichdom is The Ritual of Dread. The process of this ritual is a well-guarded secret, entrusted to only a handful of mortals at any one time. The process of the ritual involves several despicable acts including murder, the brewing of a vile concoction, and even one's own death. However, it is the process of tearing one's soul from the body that is most despised, for this process involves the sacrifice of something truly dear to a mortal, and no substitute will be accepted. For some, it is the death of a cherished loved one. For others it is a family legacy. Regardless of the sacrifice, unless the Dreadscape spirits deem it worthy, Lichdom will not be granted.",
     "abilityScore": "Intelligence",
     "scoreAmount": 16,
     "prereq": {

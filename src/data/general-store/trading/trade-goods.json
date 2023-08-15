@@ -15,7 +15,7 @@
     "name": "Grain (pound)",
     "cost": 0.01,
     "weight": 1,
-    "description": "Plants primarily used for breadstuffs, such as barley, corn, rice, rye, or wheat"
+    "description": "Plants primarily used for breadstuffs, such as barley, corn, potatoes, rice, rye, or wheat"
   },
   {
     "name": "Shellfish (pound)",
@@ -111,7 +111,7 @@
     "name": "Fish, freshwater (pound)",
     "cost": 0.05,
     "weight": 1,
-    "description": "Freshwater aquatic animals, such as carp, eels, perch, pike salmon, tench, or trout"
+    "description": "Freshwater aquatic animals, such as carp, salmon, pike, or trout"
   },
   {
     "name": "Fruit (pound)",
@@ -165,7 +165,7 @@
     "name": "Fish, saltwater (pound)",
     "cost": 0.1,
     "weight": 1,
-    "description": "Saltwater aquatic animals, such as cod, eels, herring, plaice, or whiting"
+    "description": "Saltwater aquatic animals, such as cod, herring, or tuna"
   },
   {
     "name": "Glass (pound)",
@@ -207,7 +207,7 @@
     "name": "Pickles (pound)",
     "cost": 0.1,
     "weight": 1,
-    "description": "Brined and flavored vegetables"
+    "description": "Brined and flavored vegetables, usually cucumbers"
   },
   {
     "name": "Rabbit (pound)",

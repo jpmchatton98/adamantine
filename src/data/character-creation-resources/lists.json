@@ -3653,6 +3653,156 @@
       }
     },
     {
+      "name": "Ace Thrower",
+      "description": "When you throw your playing cards, you can throw them with a range of 120/240 ft.</p><p>In addition, when you make an attack with your playing cards, you can use your spellcasting ability modifier, rather than Strength or Dexterity, for the attack and damage rolls.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Gambit",
+      "description": "Choose a suit to be your signature from clubs, diamonds, hearts, or spades.  Your playing cards gain an additional effect based on your choice.  When you finish a long rest, you can change your signature suit.  You can use the effect of your signature suit a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      },
+      "uses": [
+        {
+          "id": "C11850B2-0E66-43A4-87CA-714CD5B2DA98",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": "long"
+        }
+      ],
+      "choices": [
+        {
+          "id": "687D6B16-6F95-4EDD-8BBA-566C232A2BB1",
+          "type": "trait",
+          "options": [
+            {
+              "name": "Clubs",
+              "traits": [
+                {
+                  "name": "Clubs",
+                  "description": "When you damage a creature with your playing cards, you can also knock them prone."
+                }
+              ]
+            },
+            {
+              "name": "Diamonds",
+              "traits": [
+                {
+                  "name": "Diamonds",
+                  "description": "As a reaction when a creature you can see within 60 feet of you makes an ability check, attack roll, or saving throw, you can throw a playing card at them to grant them a bonus to their roll equal to your spellcasting ability modifier."
+                }
+              ]
+            },
+            {
+              "name": "Hearts",
+              "traits": [
+                {
+                  "name": "Hearts",
+                  "description": "As an action, you can throw a playing card at a creature within 60 feet of you, granting them temporary hit points equal to 1d8 + your spellcasting ability modifier."
+                }
+              ]
+            },
+            {
+              "name": "Spades",
+              "traits": [
+                {
+                  "name": "Spades",
+                  "description": "As a bonus action, you can throw a playing card to a point within 30 feet of you, instantly teleporting to the spot the card lands."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Improved Pact Cards",
+      "description": "When you use an action to make an attack with your playing cards, you can make two attacks with your playing cards as a part of the same action.",
+      "prereqLevel": 5,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Jack of Diamonds",
+      "description": "Add House of Cards as one of the effects you can perform when you spray your playing cards in a cone.</p><p><strong>House of Cards.</strong> Along the far edge of the cone you create a wall of spectral cards 10 feet high, which lasts for 1 minute or until it is destroyed.  The wall has a number of hit points equal to twice your Warlock level and an Armor Class equal to 10 + your spellcasting ability modifier.</p><p>In addition, the cone's range increases by 5 feet.",
+      "prereqLevel": 5,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "King of Clubs",
+      "description": "Add Pushing Cards as one of the effects you can perform when you spray your playing cards in a cone.</p><p><strong>Pushing Cards.</strong> All creatures in the cone must make a Strength saving throw against your spell save DC.  On a failed saving throw, a creature takes force damage equal to half your Warlock level and is pushed 15 feet away from you, taking half as much damage and not being pushed on a successful saving throw.  In addition, the area within the cone becomes difficult terrain for 1 minute.</p><p>In addition, the cone's range increases by 5 feet.",
+      "prereqLevel": 5,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Queen of Hearts",
+      "description": "Add Burning Cards as one of the effects you can perform when you spray your playing cards in a cone.</p><p><strong>Burning Cards.</strong> All creatures in the cone must make a Dexterity saving throw, taking fire damage equal to half your Warlock level and being set alight for 1 minute on a failed saving throw, taking half as much damage and not being set alight on a successful saving throw.  A burning creature takes fire damage equal to half your Warlock level at the start of each of their turns.  A creature can use an action to put out themselves or a willing creature within 5 feet of them.</p><p>In addition, the cone's range increases by 5 feet.",
+      "prereqLevel": 5,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Joker's Luck",
+      "description": "Add Rigged Cards as one of the effects you can perform when you spray your playing cards in a cone.</p><p><strong>Rigged Cards.</strong> All creatures in the cone must make a Charisma saving throw against your spell save DC.  On a failed saving throw, their luck becomes rigged for 1 minute.  While their luck is rigged, they must roll all damage dice twice, and take the lower result.</p><p>In addition, the cone's range increases by 5 feet.",
+      "prereqLevel": 5,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Ace of Spades",
+      "description": "Add Trump Card as one of the effects you can perform when you spray your playing cards in a cone.</p><p><strong>Trump Card.</strong> One creature of your choice within the cone must make a Constitution saving throw against your spell save DC.  On a failed saving throw, the target takes force damage equal to twice your Warlock level and is paralyzed for 1 minute, taking half as much damage and not being paralyzed on a successful save.  A paralyzed creature can repeat their saving throw at the end of each of their turns, ending the effect on a successful saving throw.</p><p>In addition, the cone's range increases by 5 feet.",
+      "prereqLevel": 9,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Superior Pact Cards",
+      "description": "When you use an action to make an attack with your playing cards, you can make three attacks with your playing cards as a part of the same action.",
+      "prereqLevel": 9,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
+      "name": "Ultimate Pact Cards",
+      "description": "When you use an action to make an attack with your playing cards, you can make four attacks with your playing cards as a part of the same action.",
+      "prereqLevel": 15,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Cards"
+      }
+    },
+    {
       "name": "Mirror of Fates",
       "description": " You can peer into the uncertain future. Using your Pact Chalice as a spellcasting focus, you can cast Augury at-will, without expending a spell slot or material components.",
       "granted": [
