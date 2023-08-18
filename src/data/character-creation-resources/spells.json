@@ -14927,7 +14927,7 @@
   },
   {
     "name": "Vampiric Touch",
-    "school": "Necromancy",
+    "school": "Sangromancy",
     "level": 3,
     "castingTime": "1 action",
     "range": "Self",

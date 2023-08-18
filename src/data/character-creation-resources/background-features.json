@@ -60,6 +60,10 @@
     "description": "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
   },
   {
+    "name": "The Family Name",
+    "description": "Your family name is well known in the close-knit world of nobles. Nobility and aristocrats readily recognize your name and will provide food, drink, and shelter with pleasure or out of fear, depending upon your family's reputation. You can also gain access to friendly military encampments, fortresses, or powerful political figures through your contacts among the nobles. Utilizing such connections might require the donation of money, magic items, or a great deal of drink."
+  },
+  {
     "name": "A Friendly Face in Every Port",
     "description": "Your reputation precedes you. Whenever you visit a port city, you can always find someone who knows of (or has sailed on) your former ship and is familiar with its captain and crew. They are willing to provide you and your traveling companions with a roof over your head, a bed for the night, and a decent meal. If you have a reputation for cruelty and savagery, your host is probably afraid of you and will be keen for you to leave as soon as possible. Otherwise, you receive a warm welcome, and your host keeps your presence a secret, if needed. They may also provide you with useful information about recent goings-on in the city, including which ships have been in and out of port."
   },
@@ -114,6 +118,10 @@
   {
     "name": "Library Access",
     "description": "Though others must often endure extensive interviews and significant fees to gain access to even the most common archives in your library, you have free and easy access to the majority of the library, though it might also have repositories of lore that are too valuable, magical, or secret to permit anyone immediate access.</p><p>You have a working knowledge of your cloister's personnel and bureaucracy, and you know how to navigate those connections with some ease.</p><p>Additionally, you are likely to gain preferential treatment at other libraries across the Realms, as professional courtesy shown to a fellow scholar."
+  },
+  {
+    "name": "Make Do",
+    "description": "You have a knack for re-purposing broken things or improvising when supplies are limited. Where allowed by the DM, you can use two or more broken items in place of an unbroken item, or in the case of a missing item, you can use two related items."
   },
   {
     "name": "Medical Professional",
@@ -192,8 +200,8 @@
     "description": "From your time as a merchant, you retain connections with wholesalers, suppliers, and other merchants and entrepreneurs. You can call upon these connections when looking for items or information."
   },
   {
-    "name": "The Family Name",
-    "description": "Your family name is well known in the close-knit world of nobles. Nobility and aristocrats readily recognize your name and will provide food, drink, and shelter with pleasure or out of fear, depending upon your family's reputation. You can also gain access to friendly military encampments, fortresses, or powerful political figures through your contacts among the nobles. Utilizing such connections might require the donation of money, magic items, or a great deal of drink."
+    "name": "Taming the Beast",
+    "description": "You have experience dealing with animals in dangerous situations, often allowing you to calm frightened or hungry wild animals.  Not all animals can be calmed, but you can do it more easily than most."
   },
   {
     "name": "Tribal Heritage",

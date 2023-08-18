@@ -9829,99 +9829,173 @@
   "unsealed-aspect": [
     {
       "name": "Disarming Voice",
-      "description": "Your speech is enhanced with the magnetism of the being bound to your soul. You gain proficiency in your choice of Deception or Persuasion, and when you make a check with that skill you treat a roll of 7 or lower on the d20 as an 8."
-    },
-    {
-      "name": "Ethereal Tendril",
-      "description": "As a bonus action, you can sprout an ethereal tendril from any point on your body. This tendril has a reach of 10 feet, and it can lift a number of pounds equal to your Charisma score. This tendril can't use weapons or shields, but it can manipulate simple objects, tools, and other mechanisms. The tendril is incorporeal and cannot be damaged."
-    },
-    {
-      "name": "Iridescent Strike",
-      "description": "As part of an unarmed strike, you can cloak your empty hand or foot in shimmering otherworldly power. On hit, your target takes radiant damage equal to 1d6 + your Charisma modifier in place of the normal damage of your unarmed strike. The spiritual energy instantly fades after this attack.</p><p>The damage die of this Aspect increases at certain levels: at 5th level (1d8), 11th level (1d10), and 17th level (1d12)."
-    },
-    {
-      "name": "Minor Magicks",
-      "description": "You can draw out a small amount of your Spirit's power. You learn two cantrips of your choice from the Occult spell list, and Charisma is your spellcasting ability for these spells."
-    },
-    {
-      "name": "Uncanny Strength",
-      "description": "The spiritual power you harbor within your body grants you inordinate strength. You gain proficiency in Athletics, and whenever you make a Strength (Athletics) check you gain a bonus equal to your Charisma modifier (minimum of +1)."
-    },
-    {
-      "name": "Opalescent Armor",
-      "prereqLevel": 3,
-      "description": "You can draw forth the true fortitude of your Sealed Spirit. Your Archon Form is resistant to all bludgeoning, piercing, and slashing damage from nonmagical attacks."
-    },
-    {
-      "name": "Otherworldly Maw",
-      "prereqLevel": 3,
-      "description": "You wield the hunger of your Spirit against foes, wreathing your head in terrible power. When you are in Archon Form, you can use an action to force a creature within your reach to make a Charisma saving throw. On a failed save, it takes 2d4 necrotic damage and your Archon Form regains hit points equal to half the necrotic damage dealt.</p><p>At 10th level, you can use this as a bonus action."
-    },
-    {
-      "name": "Spirit Sense",
-      "prereqLevel": 3,
-      "description": "Your familiarity with the Spirit bound to your soul grants you the ability to sense other such beings. When you observe a Celestial, Elemental, Fey, or Fiend with a CR equal to your Charisma score or lower for 1 minute, you learn its creature type, its spellcasting ability (if it has one), and the level of the highest level spell it can cast."
-    },
-    {
-      "name": "Umbral Sight",
-      "prereqLevel": 3,
-      "description": "You draw upon the enhanced sight of the Spirit within you. Both you and your Archon Form gain darkvision out to a radius of 60 feet. If you or your Archon Form already have darkvision its radius increases by an additional 60 feet. Also, magical darkness doesn't impede your darkvision.",
+      "description": "Your speech is enhanced by your Spirit. You gain proficiency in Deception or Persuasion, and you learn the Friends spell.",
+      "choices": [
+        {
+          "id": "27951836-C2A0-420E-883B-417E9D3F290D",
+          "type": "skill",
+          "limits": ["Deception", "Persuasion"],
+          "level": 1
+        }
+      ],
       "granted": [
         {
-          "type": "darkvision",
-          "range": 60
+          "type": "spell",
+          "options": ["Friends"],
+          "ability": "cha"
         }
       ]
     },
     {
-      "name": "Dazzling Strike",
-      "prereqLevel": 6,
-      "description": "The power of your Archon Form enhances your Iridescent Strike. When you make an Iridescent Strike attack while in Archon Form, the reach of that attack increases by 10 feet.</p><p>Moreover, when you hit a creature with Iridescent Strike, the creature has disadvantage on any attack rolls against creatures other than you until the start of your next turn.",
-      "prereq": {
-        "type": "list",
-        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
-        "value": "Iridescent Strike"
-      }
+      "name": "Ethereal Tendril",
+      "description": "As a bonus action, you can manifest an ethereal tendril from any point on your body. It has a reach of 10 feet and it has a Strength score equal to your Charisma score. It cannot use weapons or shields, but it can manipulate simple objects and be used to make Iridescent Strikes, shove, and grapple. You can only have a single ethereal tendril manifested at a time, and the tendril can be attacked as if it were part of you."
+    },
+    {
+      "name": "Minor Magicks",
+      "description": "You can draw out small amounts of your Spirit's power. You learn two Occult cantrips of your choice, and Charisma is your spellcasting ability for these cantrips.",
+      "choices": [
+        {
+          "id": "C4830104-4745-4D6D-B4DA-E065CC3C1111",
+          "type": "spell",
+          "list": "occult",
+          "level": 0,
+          "ability": "cha"
+        },
+        {
+          "id": "CFC37D70-6EEF-4265-8C00-4A6C8B389780",
+          "type": "spell",
+          "list": "occult",
+          "level": 0,
+          "ability": "cha"
+        }
+      ]
+    },
+    {
+      "name": "Spirit Sense",
+      "description": "The Spirit bound to you allows you to sense similar beings. When you see a Celestial, Elemental, Fey, or Fiend with a CR equal to your Vessel level or lower, you learn its creature type, its spellcasting ability, and the level of its highest spell."
+    },
+    {
+      "name": "Uncanny Strength",
+      "description": "The spiritual power you harbor within your body grants you inordinate bodily strength. You gain proficiency in Athletics, and whenever you would make a Strength (Athletics) check you can make a Charisma (Athletics) check instead.",
+      "granted": [
+        {
+          "type": "skill-ability",
+          "skill": "Athletics",
+          "ability": "cha"
+        },
+        {
+          "type": "skill",
+          "options": ["Athletics"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Iridescent Shield",
+      "prereqLevel": 2,
+      "description": "You can draw out spiritual power to deflect attacks. When a creature you can see targets you, or a creature within 5 feet of you with an attack, you can use your reaction to project a shield of spirit from an empty hand and add your Charisma modifier to the target's Armor Class against that attack."
+    },
+    {
+      "name": "Opalescent Armor",
+      "prereqLevel": 2,
+      "description": "You draw on the fortitude of your Spirit to protect you. When you have temporary hit points, you gain resistance to all bludgeoning, piercing, and slashing damage from nonmagical attacks."
+    },
+    {
+      "name": "Otherworldly Maw",
+      "prereqLevel": 2,
+      "description": "You can channel the hunger of your Spirit to fuel your life force. Once per turn when you would make a melee attack, you can instead force a creature within range of your strike to make a Charisma saving throw. On a failure, it takes 2d6 necrotic damage, and your temporary hit points increase by an amount equal to half the damage dealt."
+    },
+    {
+      "name": "Shimmering Lance",
+      "prereqLevel": 2,
+      "description": "You learn to project your spiritual strikes at great distance. Whenever you use your Iridescent Strike feature, you can choose for it to become a ranged spell attack with a range of 30 feet."
+    },
+    {
+      "name": "Vexing Strike",
+      "prereqLevel": 2,
+      "description": "The overwhelming spiritual magnetism of your Spirit draws in your foes. When you hit a creature with a melee attack, it has disadvantage on attack rolls against targets other than you until the beginning of your next turn."
     },
     {
       "name": "Dire Stature",
       "prereqLevel": 6,
-      "description": "You draw on the otherworldly power of your Spirit to grow in size. When you transform into Archon Form, you can choose to grow by one size category if there is room for you to do so. For example, you would grow from Medium to Large.</p><p>For each size category you grow above Medium, the reach of your Archon increases by 5 feet, its Armor Class increases by 1, and its melee attacks deal an additional 1d4 damage."
-    },
-    {
-      "name": "Ethereal Grasp",
-      "prereqLevel": 6,
-      "description": "You can manifest the power of your Spirit to enhance your grip. Both you and your Archon Form gain a climbing speed equal to your walking speed, and can climb difficult surfaces including upside down, without making an ability check.</p><p>Moreover, when you are in your Archon Form, you have advantage on ability checks you make to grapple and shove."
+      "description": "You can tap into the primordial stature of your Spirit. When you transform into your Archon Form, you can choose for it to grow by one size category if there is room. For example, the Archon Form might grow from Medium to Large.</p><p>For each size category it is above Medium, the reach of its melee attacks grows by 5 feet, its melee attacks deal an additional 1d4 damage, and its Armor Class increases by 1."
     },
     {
       "name": "Evoke Spirit",
       "prereqLevel": 6,
-      "description": " You can release a minor form of the Spirit sealed within you. As an action, you can expend a Vessel Magic spell slot to cast find familiar. However, the familiar you summon resembles a miniature version of your Sealed Spirit. It uses the stat block for an Imp, but its creature type is that of your Archon Form."
+      "description": "You can release a minor form of the Spirit sealed within you. You learn the find familiar spell, it counts as a Vessel spell for you, but it does not count against your total Spells Known.</p><p>When you cast find familiar it resembles a tiny version of your Sealed Spirit, shares the creature type of your Archon, can attack on its turn, and uses the Spirit Familiar stat block:<table><tr><th colspan=\"6\">Spirit Familiar</th></tr><tr><td colspan=\"6\"><em>Tiny creature (same type as your archon form or beast if your Sealed Spirit is the Ascended or the Mythic Hero)</em></td></tr><tr><td colspan=\"6\"><strong>Armor Class:</strong> 8 + your Charisma modifier</td></tr><tr><td colspan=\"6\"><strong>Hit Points:</strong> 5 + your Vessel level (the familiar has a number of hit dice [d4s] equal to your vessel level)</td></tr><tr><td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 40 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>3 (-4)</td><td>14 (+2)</td><td>7 (-2)</td><td>8 (-1)</td><td>10 (0)</td><td>16 (+3)</td></tr><tr><td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=\"6\"><strong>Languages:</strong> any spoken by your Archon form</td></tr><tr><td colspan=\"6\"><strong>Vessel Bond.</strong> You add your PB to any ability checks or saving throws that your Spirit Familiar makes.</td></tr><tr><td colspan=\"6\"><strong>Magic Resistance.</strong> The Spirit Familiar has advantage on saving throws against spells and magical effects.</td></tr><tr><th colspan=\"6\">Actions</th></tr><tr><td colspan=\"6\"><strong>Spirit Strike.</strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 damage of the same type as your Iridescent Strike.</td></tr><tr><td colspan=\"6\"><strong>Invisibility.</strong> The Spirit Familiar magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the Spirit Familiar is wearing or carrying is invisible with it.</td></tr></table>",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Find Familiar"],
+          "ability": "cha"
+        }
+      ]
     },
     {
-      "name": "Incorporeal Step",
+      "name": "Ethereal Grasp",
       "prereqLevel": 6,
-      "description": "You can temporarily merge your physical form with that of your Spirit, if only temporarily. As a bonus action, you can become incorporeal until the end of your current turn. While you are incorporeal, you can move through solid creatures and objects as if they were difficult terrain.</p><p>If you end your movement inside an object or creature, you are shunted to the nearest unoccupied space and take 1d10 force damage for every 5 feet you were forced to travel."
+      "prereq": {
+        "type": "list",
+        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
+        "value": "Uncanny Strength"
+      },
+      "description": "You can seize the spirits of others with your own enhanced spiritual power. When you initiate a grapple with a Charisma (Athletics) check, the creature must succeed on a Charisma (Acrobatics) or a Charisma (Athletics) check against your Charisma (Athletics) check to escape from the grapple."
+    },
+    {
+      "name": "Piercing Gaze",
+      "prereqLevel": 6,
+      "prereq": {
+        "type": "list",
+        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
+        "value": "Spirit Sense"
+      },
+      "description": "Your enhanced eyes can see the absolute truth of the world around you. You gain a bonus to any Wisdom (Perception) checks you make equal to your Charisma modifier.</p><p>You can also see through magical darkness, and you can instantly detect the presence of illusions and shapechangers."
+    },
+    {
+      "name": "Vengeful Spirit",
+      "prereqLevel": 6,
+      "prereq": {
+        "type": "list",
+        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
+        "value": "Iridescent Shield"
+      },
+      "description": "The Spirit within you drives you to revenge. When you use Iridescent Shield and the triggering attack misses its target, you can make an Iridescent Strike feature against the attacker as part of the same reaction if the attacker is within range."
     },
     {
       "name": "Perilous Visage",
       "prereqLevel": 9,
-      "description": "You can reveal a fraction of your Sealed Spirit's true power, horrifying all who behold it. When you transform into Archon Form, you can force creatures of your choice that can see you within 60 feet to make a Wisdom saving throw. On a failed save, a creature is frightened of you for 1 minute.</p><p>A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. If the creature is still able to see you it has disadvantage on its saving throw."
+      "description": "You can reveal a fraction of your Sealed Spirit's true power, horrifying all who behold it. When you transform into Archon Form, you can force creatures of your choice that can see you within 60 feet to make a Wisdom saving throw. On a failure, creatures are frightened of you for 1 minute.</p><p>A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. If the creature is still able to see you it has disadvantage on its saving throw."
+    },
+    {
+      "name": "Sundering Strike",
+      "prereqLevel": 9,
+      "description": "Your strikes assault the body and soul of your foes. When you hit a creature with two Iridescent Strikes in one turn, you can force it to make a Charisma saving throw. On a failed save, it cannot cast spells or use any other magical features, as if it were in an antimagic field until the start of your next turn."
+    },
+    {
+      "name": "Dazzling Burst",
+      "prereqLevel": 9,
+      "prereq": {
+        "type": "list",
+        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
+        "value": "Shimmering Lance"
+      },
+      "description": "You can project immense power. When you turn an Iridescent Strike into a ranged spell attack the range becomes 120 feet.</p><p>Moreover, when you hit a target with a ranged Iridescent Strike, you can expend a Vessel Magic spell slot to create an explosion of spiritual power at the point of impact. Creatures within 30 feet of the point must make Dexterity saving throw. They take 6d6 damage of the type of your Iridescent Strike on a failed save, and half as much damage on a success.</p><p>As you gain Vessel levels the damage of the explosion on impact increases: at 13th level (7d6) and 17th level (8d6)"
     },
     {
       "name": "Primeval Thirst",
       "prereqLevel": 9,
-      "description": "The ancient being within you can absorb magic to restore its vitality. When you are in Archon Form and a creature that you can see within 60 feet casts a spell, you can expend a Vessel Magic spell slot as a reaction to attempt to absorb the spell.</p><p>The caster of the triggering spell must immediately make a saving throw using its spellcasting ability. On a failed save, its spell is dispelled as if by counterspell, and if it was cast using a spell slot of a level equal to your Vessel Magic spell slots or higher, you regain one expended Vessel Magic spell slot.",
       "prereq": {
         "type": "list",
         "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
         "value": "Otherworldly Maw"
-      }
+      },
+      "description": "The ancient being within you can absorb magic to restore its vitality. When you are in Archon Form and a creature that you can see within 60 feet casts a spell, you can expend a Vessel Magic spell slot as a reaction to attempt to absorb the spell.</p><p>The caster of the triggering spell must immediately make a saving throw using its spellcasting ability. On a failed save, its spell is dispelled as if by counterspell, and if it was cast using a spell slot of a level equal to your Vessel Magic spell slots or higher, you regain one expended Vessel Magic spell slot."
     },
     {
       "name": "Aether Wings",
       "prereqLevel": 15,
-      "description": "You can manifest spectral wings reminiscent of the great Spirit bound to your soul. Both you and your Archon Form gain a 60-foot flying speed and can hover.",
+      "description": "You can manifest spectral wings reminiscent of the Sealed Spirit bound to your soul. Both you and your Archon Form gain a 60-foot flying speed and can hover while flying.",
       "granted": [
         {
           "type": "speed",
@@ -9933,12 +10007,108 @@
     {
       "name": "Primordial Bulwark",
       "prereqLevel": 15,
-      "description": "You can draw forth the full defensive power of your Sealed Spirit. Your Archon Form gains resistance to all damage except for force, psychic, and radiant damage.",
       "prereq": {
         "type": "list",
         "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
         "value": "Opalescent Armor"
-      }
+      },
+      "description": "You draw forth the primordial defensive power of the ancient Spirit that dwells in you. Your Archon Form gains resistance to all damage except for force, psychic, and radiant damage."
+    },
+    {
+      "name": "Titanic Archon",
+      "prereqLevel": 15,
+      "prereq": {
+        "type": "list",
+        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
+        "value": "Dire Stature"
+      },
+      "description": "The appearance of your Archon Form inspires legends and myths. When you transform into your Archon Form, it can grow two sizes if there is room for it to do so. It gains all the benefits to its reach, melee damage, and Armor Class from Dire Stature when it transforms in this way."
+    }
+  ],
+  "sanguine-enhancement": [
+    {
+      "name": "Boiling Blood",
+      "description": "When you hit a creature with this weapon, it can't take reactions until the start of your next turn.</p><p>You can choose to amplify this benefit. When you do, the creature must succeed on a Constitution saving throw or its weapon attacks deal half damage until the start of your next turn."
+    },
+    {
+      "name": "Bolstered Essence",
+      "description": "You can add your Rite ability modifier (minimum of +1) whenever you make a Constitution saving throw."
+    },
+    {
+      "name": "Fluid Parry",
+      "description": "When a creature you can see makes an attack against you, you can use your reaction to roll a Rite die and add the number rolled to your AC, potentially causing the attack to miss."
+    },
+    {
+      "name": "Pheremonic Fluid",
+      "description": "While wielding this weapon, you can add your Rite ability modifier to your Charisma (Persuasion) checks (minimum of +1). If you have multiple weapons with this enhancement, you add this bonus only once per roll.</p><p>You can choose to amplify this benefit. When you do, the creature is also charmed by you for 1 hour. This effect ends early if the creature is attacked or sees one of its allies being attacked. It also ends early if the weapon is no longer on your person."
+    },
+    {
+      "name": "Porous Contamination",
+      "description": "When you hit a creature with this weapon, you can force it to succeed on a Constitution saving throw or have it become poisoned until the start of your next turn. While poisoned in this way, its movement speed is halved.</p><p>You can choose to amplify this effect. When you do so, the creature becomes poisoned for 1 minute, and it takes poison damage equal to your Rite die at the start of each of its turns. At the end of each of its turns, it can make a Constitution saving throw, ending the effect on a success."
+    },
+    {
+      "name": "Pureblood Potency",
+      "description": "The weapon gains a +1 bonus to attack and damage rolls, and the DC for class features that use your hemocraft save DC increases by 1. The respective bonuses increase to +2 at 10th level."
+    },
+    {
+      "name": "Revolting Stench",
+      "description": "When you hit a creature with this weapon, you can force it to make a Constitution saving throw. On a failed save, the creature can't willingly move towards you during its next turn. If the creature starts its turn within 5 feet of you, it must use its full movement to move away from you using the safest path available."
+    },
+    {
+      "name": "Sanguine Projectile",
+      "description": "The weapon ignores the loading property if the normal version of the weapon has it, and it creates its own ammunition. If the weapon has the thrown property, it returns to you immediately after it is used to make a ranged attack.</p><p>When you hit a creature with a ranged attack, the projectile splashes onto nearby targets. The creature and each target within 5 feet of it must succeed on a Dexterity saving throw or take damage equal to your Rite die; the damage type is the same as your chosen rite.</p><p>You can amplify this effect. When you do, the creature that you hit has disadvantage on its saving throw, and any target that succeeds on its saving throw against this effect takes half damage."
+    },
+    {
+      "name": "Viscous Splash",
+      "description": "When you hit a creature, you can force it to succeed on a Dexterity saving throw or have it become blinded until the end of its next turn. This effect ends early if the creature, or someone else within reach, uses an action to remove the especially thick blood.</p><p>You can choose to amplify this effect. If the blood remains on the creature at the end of its next turn, the blood hardens and the creature becomes blinded for 1 minute. The creature, or another within its reach, can use an action to break the crusted blood by succeeding on a Strength (Athletics) check against your Rite save DC."
+    },
+    {
+      "name": "Bloodseeker",
+      "prereqLevel": 7,
+      "description": "When you hit a creature that is below its hit point maximum, the weapon deals extra damage equal to your Rite ability modifier (minimum of +1 damage); the damage type is the same as your chosen rite. That creature can take this damage only once per turn.</p><p>You can choose to amplify the damage. When you do, the target instead takes additional damage equal to your Rite die + your Rite ability modifier."
+    },
+    {
+      "name": "Life Drain",
+      "prereqLevel": 7,
+      "description": "When you hit a creature with this weapon, you gain temporary hit points equal to your Rite die.</p><p>You can amplify this benefit. While you have these temporary hit points, you have resistance to the damage type that the weapon deals including the extra damage dealt by the rite."
+    },
+    {
+      "name": "Thirsting Weapon",
+      "prereqLevel": 7,
+      "description": "When you take the Attack action, you can make one additional attack as a bonus action. You can do so a number of times equal to your Rite ability modifier (minimum of once). When the weapon disappears, any unused uses of this benefit are wasted.</p><p>You can amplify this additional attack. When you do, you add a Rite die to the weapon's attack roll."
+    }
+  ],
+  "elegant-technique": [
+    {
+      "name": "Courteous Strikes",
+      "description": "You roll two exploit dice for your rage damage bonus when dealing non-lethal damage."
+    },
+    {
+      "name": "Dignified Evasion",
+      "description": "You are able to maintain your Rage by having an attack miss you, instead of taking damage."
+    },
+    {
+      "name": "Honorable Pacfication",
+      "description": "You have advantage on rolls made to disarm an opponent."
+    },
+    {
+      "name": "Polite Dodge",
+      "description": "If you haven't dealt any damage on your turn, you may roll an Exploit Die and add it to your Armor Class until the start of your next turn."
+    },
+    {
+      "name": "Anger of a Gentle Man",
+      "prereqLevel": 14,
+      "description": "Whenever you successfully disarm a creature, they become frightened of you until the end of their next turn."
+    },
+    {
+      "name": "Badge of Honor",
+      "prereqLevel": 14,
+      "description": "You gain a number of temporary hit points equal to your proficiency bonus at the start of each of your turns."
+    },
+    {
+      "name": "Sturdy Mind",
+      "prereqLevel": 14,
+      "description": "You have advantage on Wisdom saving throws and ability checks."
     }
   ]
 }
