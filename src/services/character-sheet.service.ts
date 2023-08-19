@@ -4145,63 +4145,116 @@ export class CharacterSheetService {
   ): number {
     if (maxUses !== -1) {
       if (feature.uses) {
-        let use;
         if (Array.isArray(feature.uses)) {
-          use = feature.uses.find((u) => u.id === useId);
-        } else if (feature.uses.id === useId) {
-          use = feature.uses;
-        }
-
-        if (use) {
-          switch (use.type) {
-            case 'fixed':
-              maxUses += use.amount;
-              break;
-            case 'level':
-              maxUses += use.amount[level - 1];
-            case 'derived':
-              let amount = 0;
-              switch (use.source) {
+          for (let use of feature.uses) {
+            if (use.id === useId) {
+              switch (use.type) {
+                case 'fixed':
+                  maxUses += use.amount;
+                  break;
                 case 'level':
-                  amount = level;
-                  break;
-                case 'proficiency':
-                  amount = Math.floor(2 + (level - 1) / 4);
-                  break;
-                case 'score':
-                  let score;
-                  if (use.score.includes('-')) {
-                    score = choices.find((ch) => ch.id === use.score)?.value;
-                  } else {
-                    score = use.score;
+                  maxUses += use.amount[level - 1];
+                case 'derived':
+                  let amount = 0;
+                  switch (use.source) {
+                    case 'level':
+                      amount = level;
+                      break;
+                    case 'proficiency':
+                      amount = Math.floor(2 + (level - 1) / 4);
+                      break;
+                    case 'score':
+                      let score;
+                      if (use.score.includes('-')) {
+                        score = choices.find(
+                          (ch) => ch.id === use.score
+                        )?.value;
+                      } else {
+                        score = use.score;
+                      }
+
+                      if (score) {
+                        amount = this.getModifier(score);
+                      }
+                      break;
                   }
 
-                  if (score) {
-                    amount = this.getModifier(score);
+                  switch (use.modifier) {
+                    case '*2':
+                      amount *= 2;
+                      break;
+                    case '+1':
+                      amount += 1;
+                      break;
+                    case '*10':
+                      amount *= 10;
+                      break;
+                    case '*5':
+                      amount *= 5;
+                      break;
+                    case '/2':
+                      amount = Math.floor(amount / 2);
+                      break;
                   }
+
+                  maxUses += amount;
                   break;
               }
+            }
+          }
+        } else if (feature.uses.id === useId) {
+          let use = feature.uses;
+          if (use) {
+            switch (use.type) {
+              case 'fixed':
+                maxUses += use.amount;
+                break;
+              case 'level':
+                maxUses += use.amount[level - 1];
+              case 'derived':
+                let amount = 0;
+                switch (use.source) {
+                  case 'level':
+                    amount = level;
+                    break;
+                  case 'proficiency':
+                    amount = Math.floor(2 + (level - 1) / 4);
+                    break;
+                  case 'score':
+                    let score;
+                    if (use.score.includes('-')) {
+                      score = choices.find((ch) => ch.id === use.score)?.value;
+                    } else {
+                      score = use.score;
+                    }
 
-              switch (use.modifier) {
-                case '*2':
-                  amount *= 2;
-                  break;
-                case '+1':
-                  amount += 1;
-                  break;
-                case '*10':
-                  amount *= 10;
-                  break;
-                case '*5':
-                  amount *= 5;
-                  break;
-                case '/2':
-                  amount = Math.floor(amount / 2);
-                  break;
-              }
+                    if (score) {
+                      amount = this.getModifier(score);
+                    }
+                    break;
+                }
 
-              maxUses += amount;
-              break;
+                switch (use.modifier) {
+                  case '*2':
+                    amount *= 2;
+                    break;
+                  case '+1':
+                    amount += 1;
+                    break;
+                  case '*10':
+                    amount *= 10;
+                    break;
+                  case '*5':
+                    amount *= 5;
+                    break;
+                  case '/2':
+                    amount = Math.floor(amount / 2);
+                    break;
+                }
+
+                maxUses += amount;
+                break;
+            }
           }
         }
       }

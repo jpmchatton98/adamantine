@@ -59,7 +59,7 @@
   </div>
   <div *ngIf="feature?.uses">
     <ng-container *ngIf="isArray(feature?.uses); else singleUse">
-      <ng-container *ngFor="let use of feature?.uses">
+      <ng-container *ngFor="let use of featureUses">
         <div *ngIf="!use.prereq || use.prereq <= characterLevel">
           <app-sheet-uses
             [characterId]="characterId"
