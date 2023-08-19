@@ -1,9 +1,12 @@
 <ng-container *ngIf="choice.type === 'trait'">
-    <ng-container *ngFor="let choiceTrait of choice.options">
-        <ng-container *ngFor="let trait of choiceTrait.traits">
-            <h6>{{ choiceTrait.name }}</h6>
-            <hr *ngIf="!subChoice">
-            <app-display-feature [feature]="trait" [choiceFeature]="true" [level]="level + 1"></app-display-feature>
-        </ng-container>
+  <ng-container *ngFor="let choiceTrait of choice.options">
+    <h6>{{ choiceTrait.name }}</h6>
+    <ng-container *ngFor="let trait of choiceTrait.traits">
+      <app-display-feature
+        [feature]="trait"
+        [choiceFeature]="true"
+        [level]="level + 1"
+      ></app-display-feature>
     </ng-container>
+  </ng-container>
 </ng-container>
