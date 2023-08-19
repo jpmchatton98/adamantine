@@ -41,3 +41,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+src/data/character-creation-resources/manipulator.py
+src/data/monster-converter.py
