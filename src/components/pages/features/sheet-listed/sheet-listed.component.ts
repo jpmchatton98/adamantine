@@ -32,9 +32,50 @@ export class SheetListedComponent {
     );
     if (choiceEntry) {
       if (this.genericKeys.includes(this.listed.type)) {
-        return choiceEntry.list.map((l: string) =>
-          this.dataService.getGenericListItem(this.listed.type, l)
-        );
+        if (
+          this.listed.type === 'ki-technique' ||
+          this.listed.type === 'infusion'
+        ) {
+          const subclassItems = [];
+          if (this.characterObj.subclass) {
+            const subclassData = this.dataService.getSubclass(
+              this.characterObj.name,
+              this.characterObj.subclass
+            );
+            if (subclassData) {
+              let feature;
+              if (this.listed.type === 'infusion') {
+                feature = subclassData.features['2'][0];
+              } else if (this.listed.type === 'ki-technique') {
+                feature = subclassData.features['3'][0];
+              }
+
+              for (let item of feature.granted[0].options) {
+                const itemData = this.dataService.getGenericListItem(
+                  this.listed.type,
+                  item
+                );
+                if (
+                  !itemData.prereqLevel ||
+                  itemData.prereqLevel <= this.characterLevel
+                ) {
+                  subclassItems.push(itemData);
+                }
+              }
+            }
+          }
+
+          return [
+            ...choiceEntry.list.map((l: string) =>
+              this.dataService.getGenericListItem(this.listed.type, l)
+            ),
+            ...subclassItems,
+          ];
+        } else {
+          return choiceEntry.list.map((l: string) =>
+            this.dataService.getGenericListItem(this.listed.type, l)
+          );
+        }
       } else if (
         ['spell', 'exploit', 'cantrip', 'language'].includes(this.listed.type)
       ) {
