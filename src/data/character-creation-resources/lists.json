@@ -7724,6 +7724,11 @@
       "description": "You can spew a corrosive substance forth from your mouth.  You learn the Acid Splash cantrip, using Constitution as your spellcasting ability.  You can cast this cantrip while you are Mutated, and when you do it deals additional damage equal to your Constitution modifier (minimum of +1)."
     },
     {
+      "name": "Alien Resilience",
+      "prereqLevel": 7,
+      "description": "You gain immunity to psychic damage, and you have advantage on saving throws to resist being charmed."
+    },
+    {
       "name": "Corrosive Secretions",
       "prereqLevel": 7,
       "description": "Your body can expel a corrosive acid at your foes.  When you are hit by an attack and the attacker is within 30 feet, you can use your reaction to deal acid damage to the attacker equal to one roll of your Rite Die + your Constitution modifier."
@@ -7732,6 +7737,11 @@
       "name": "Inoculated Vigor",
       "prereqLevel": 7,
       "description": "Your experiments have hardened your body against toxins.  You gain resistance to acid and poison damage, and you have advantage on saving throws against being poisoned."
+    },
+    {
+      "name": "Swift Steps",
+      "prereqLevel": 7,
+      "description": "Your strange alien legs allow you to move especially quick. You can take the Dash or Disengage action as a bonus action."
     },
     {
       "name": "Toxic Vitality",
@@ -7757,6 +7767,111 @@
       "name": "Perverted Flight",
       "prereqLevel": 13,
       "description": "You sprout a pair of unnatural leathery or insectoid wings.  You gain a flying speed equal to your walking speed."
+    },
+    {
+      "name": "Resilient Flesh",
+      "prereqLevel": 18,
+      "description": "Your mutated form resists the magics of this reality. You gain resistance to any damage you would take from a spell."
+    },
+    {
+      "name": "Void Step",
+      "prereqLevel": 18,
+      "description": "You can slip through cracks in reality to reappear in strange places. As a bonus action on your turn, you can instantly teleport to an unoccupied space you can see within 30 feet."
+    }
+  ],
+  "psionic-mutation": [
+    {
+      "name": "Aberrant Sight",
+      "description": "You sprout unnatural eye stalks or manifest additional eyes.  You gain darkvision out to 60 feet.  If you already have darkvision, its range increases by 60 feet.</p><p>In addition, you have advantage on Wisdom (Perception) checks you make that rely on your sense of sight."
+    },
+    {
+      "name": "Alchemical Resistance",
+      "description": "Your experiments grant you resistance to the elements.  When you manifest this Mutation choose acid, cold fire, lightning, or poison damage.  You gain resistance to your chosen damage type."
+    },
+    {
+      "name": "Aquatic Adaptation",
+      "description": "You sprout unnatural gills or your skin becomes permeable and amphibious.  You gain a swimming speed equal to your walking speed, and you can breathe both air and water."
+    },
+    {
+      "name": "Deviant Glide",
+      "description": "You grow bat or fish-like skin flaps that you use to glide.  When you fall and are not incapacitated, you can extend these flaps to glide. When you do so, you can perform the following aerial maneuvers:<ul><li>When you fall, you can move up to 5 feet horizontally for every 1 foot you descend.</li><li>When you would take damage from a fall, you can use your reaction to reduce the fall's damage to 0.</li></ul>"
+    },
+    {
+      "name": "Enhanced Movement",
+      "description": "Your legs grow unnaturally thick or powerful.  Your walking speed increases by a number of feet equal to 5 times your spellcasting ability modifier, and you gain a bonus to the distance of any long jump or high jump you make equal to one roll of a d8."
+    },
+    {
+      "name": "Oozing Form",
+      "description": "Your body becomes slimy and pliable.  As a bonus action, you can automatically escape a grapple or nonmagical restraints.  Also, you body, along with any equipment you are wearing or carrying, can squeeze through spaces as narrow as 1 inch."
+    },
+    {
+      "name": "Unnatural Physicality",
+      "description": "Your muscles and veins engorge with toxic chemicals that grant you unnatural power and maneuverability.  You gain advantage on Strength (Athletics) and Dexterity (Acrobatics) checks."
+    },
+    {
+      "name": "Acidic Bile",
+      "prereqLevel": 6,
+      "description": "You can spew a corrosive substance forth from your mouth.  You learn the Acid Splash cantrip.  When you cast the cantrip, it deals additional damage equal to your spellcasting ability modifier (minimum of +1)."
+    },
+    {
+      "name": "Alien Resilience",
+      "prereqLevel": 6,
+      "description": "You gain immunity to psychic damage, and you have advantage on saving throws to resist being charmed."
+    },
+    {
+      "name": "Ascended Mind",
+      "prereqLevel": 6,
+      "description": "Your mind can hold your mutated form and manifest spells. You can manifest Psion spells while you are Form Shifted."
+    },
+    {
+      "name": "Inoculated Vigor",
+      "prereqLevel": 6,
+      "description": "Your experiments have hardened your body against toxins.  You gain resistance to acid and poison damage, and you have advantage on saving throws against being poisoned."
+    },
+    {
+      "name": "Psionic Rebuke",
+      "prereqLevel": 6,
+      "description": "Your flesh emits harmful psionic power. When you are hit by an attack and your attacker is within 30 feet, you can use your reaction to deal psychic damage to the attacker equal to 1d6 + your spellcasting ability modifier."
+    },
+    {
+      "name": "Toxic Vitality",
+      "prereqLevel": 6,
+      "description": "Your body mends itself as you fight.  At the start of each of your turns while you are Form Shifted, you gain temporary hit points equal to your spellcasting ability modifier (minimum of 1)."
+    },
+    {
+      "name": "Swift Steps",
+      "prereqLevel": 6,
+      "description": "Your strange alien legs allow you to move especially quick. You can take the Dash or Disengage action as a bonus action."
+    },
+    {
+      "name": "Viscous Grip",
+      "prereqLevel": 6,
+      "description": "Your hands and feet secrete a sticky substance.  You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces without making an ability check."
+    },
+    {
+      "name": "Grappling Appendages",
+      "prereqLevel": 14,
+      "description": "You grow two appendages alongside your arms that resemble claws or tentacles.  They are natural weapons, which deal 1d6 bludgeoning damage on a hit.  If you hit a creature with a melee attack, you can attempt to grapple it with these appendages as a bonus action.  These appendages are not dexterous enough to use weapons or tools."
+    },
+    {
+      "name": "Synthetic Carapace",
+      "prereqLevel": 14,
+      "description": "Your skin hardens resembling that of a terrible insectoid or reptilian creature.  You gain a bonus to your Armor Class equal to half your spellcasting ability modifer (rounded down)."
+    },
+    {
+      "name": "Perverted Flight",
+      "prereqLevel": 14,
+      "description": "You sprout a pair of unnatural leathery or insectoid wings.  You gain a flying speed equal to your walking speed."
+    },
+    {
+      "name": "Resilient Flesh",
+      "prereqLevel": 18,
+      "description": "Your mutated form resists the magics of this reality. You gain resistance to any damage you would take from a spell."
+    },
+    {
+      "name": "Void Step",
+      "prereqLevel": 18,
+      "description": "You can slip through cracks in reality to reappear in strange places. As a bonus action on your turn, you can instantly teleport to an unoccupied space you can see within 30 feet."
     }
   ],
   "mystic-song": [
