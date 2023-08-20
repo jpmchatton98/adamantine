@@ -116,6 +116,9 @@ export class CharacterSheetComponent implements OnInit {
   // TODO: remove this and replace with automatic calculation
   public ac = 0;
 
+  public skillModalVisible = false;
+  public skillModalItem;
+
   constructor(
     private characterSheetService: CharacterSheetService,
     private dataService: DataService,

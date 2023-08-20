@@ -16,6 +16,7 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
     NzTabsModule,
     NzTableModule,
     NzModalModule,

@@ -368,7 +368,11 @@
         <nz-tabset [nzAnimated]="false">
           <nz-tab nzTitle="Skills">
             <div class="skill-list">
-              <div class="skill" *ngFor="let skill of skills">
+              <div
+                class="skill"
+                *ngFor="let skill of skills"
+                (click)="skillModalVisible = true; skillModalItem = skill"
+              >
                 <div class="header">
                   <div class="prof">
                     <div
@@ -414,6 +418,17 @@
                   </div>
                 </div>
               </div>
+              <nz-modal
+                [(nzVisible)]="skillModalVisible"
+                [nzTitle]="skillModalItem?.name"
+                [nzCancelText]="null"
+                [nzOkText]="null"
+                (nzOnCancel)="skillModalVisible = false"
+              >
+                <ng-container *nzModalContent>
+                  {{ skillModalItem?.description }}
+                </ng-container>
+              </nz-modal>
             </div>
           </nz-tab>
           <nz-tab nzTitle="Tools">
