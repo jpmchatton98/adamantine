@@ -4105,7 +4105,7 @@
         "id": "42958C48-B706-45E9-8FD4-F95CE80D6A22",
         "type": "derived",
         "source": "proficiency",
-        "reset": "long"
+        "reset": 2
       }
     ]
   },
@@ -4135,7 +4135,7 @@
                     "id": "42958C48-B706-45E9-8FD4-F95CE80D6A22",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4152,7 +4152,7 @@
                     "id": "D47184B2-64A1-42B6-BD19-88BA686C77FA",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4179,7 +4179,7 @@
                     "id": "88FCAEFE-B45B-4AD7-90CF-8F15A89ABF29",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4206,7 +4206,7 @@
                     "id": "3E66B336-220C-4709-AA76-9E79F5335465",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4233,7 +4233,7 @@
                     "id": "617A6E14-2789-47A6-946F-46B4EA522589",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4276,7 +4276,7 @@
                     "id": "42958C48-B706-45E9-8FD4-F95CE80D6A22",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4293,7 +4293,7 @@
                     "id": "D47184B2-64A1-42B6-BD19-88BA686C77FA",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4310,7 +4310,7 @@
                     "id": "88FCAEFE-B45B-4AD7-90CF-8F15A89ABF29",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4327,7 +4327,7 @@
                     "id": "3E66B336-220C-4709-AA76-9E79F5335465",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4344,7 +4344,7 @@
                     "id": "617A6E14-2789-47A6-946F-46B4EA522589",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }
@@ -4361,7 +4361,7 @@
                     "id": "822469CF-AF10-4AAA-A184-13B785C89397",
                     "type": "derived",
                     "source": "proficiency",
-                    "reset": "long"
+                    "reset": 2
                   }
                 ]
               }

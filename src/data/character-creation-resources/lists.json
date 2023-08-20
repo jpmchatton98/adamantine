@@ -3674,7 +3674,7 @@
           "id": "C11850B2-0E66-43A4-87CA-714CD5B2DA98",
           "type": "derived",
           "source": "proficiency",
-          "reset": "long"
+          "reset": 2
         }
       ],
       "choices": [
