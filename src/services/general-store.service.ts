@@ -308,6 +308,8 @@ export class GeneralStoreService {
     ...tools,
 
     ...animalEquipment,
+    ...mounts,
+    ...pets,
 
     ...armor,
     ...shields,

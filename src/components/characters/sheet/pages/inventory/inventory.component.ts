@@ -60,9 +60,11 @@ export class InventoryComponent implements OnInit {
 
     for (let e of this.equipment?.items ?? []) {
       const itemData = this.generalStoreService.getItem(e.item);
+      itemData.quantity = e.quantity;
+
       this.equipmentData.push(itemData);
 
-      this.totalWeight += (itemData.weight ?? 0) * e.quantity;
+      this.totalWeight += (itemData?.weight ?? 0) * e.quantity;
     }
 
     this.equipmentData = this.equipmentData.sort((a, b) =>
@@ -447,6 +449,6 @@ export class InventoryComponent implements OnInit {
   }
 
   public itemTrackBy(item) {
-    return item.item;
+    return item.name;
   }
 }
