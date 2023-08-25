@@ -687,7 +687,12 @@
             </ng-container>
           </nz-tab>
           <nz-tab nzTitle="Notes">
-            <editor
+            <textarea
+              [(ngModel)]="notes"
+              nz-input
+              [nzAutosize]="{ minRows: 2, maxRows: 100 }"
+            ></textarea>
+            <!-- <editor
               [(ngModel)]="notes"
               (ngModelChange)="updateNotes()"
               apiKey="gtepebyqn85c8hmlcm9pa9zwd0m8n4duglfaa0xrf3zk1o1u"
@@ -704,7 +709,7 @@
                                     alignleft aligncenter alignright | \
                                     bullist numlist | charmap hr',
                             }"
-            ></editor>
+            ></editor> -->
           </nz-tab>
           <nz-tab nzTitle="Extras"> Coming Soon </nz-tab>
         </nz-tabset>
