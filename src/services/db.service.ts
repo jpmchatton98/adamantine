@@ -5,9 +5,11 @@ import { Observable, map } from 'rxjs';
 
 @Injectable()
 export class DBService {
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = 'https://adamantine-dnd.us-3.evennode.com';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    // this.baseUrl = 'http://localhost:8080';
+  }
 
   public setCharacter(
     username: string,
