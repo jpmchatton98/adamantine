@@ -9790,6 +9790,27 @@
     "element": "Water"
   },
   {
+    "name": "Telefrag",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": "Choose a creature you can see within range.  You teleport directly into that creature's space and explosively displace its body.  The target must make a Constitution saving throw, with advantage if it is two or more sizes larger than you.  The target takes 12d10 force damage on a failed saving throw, or half as much on a success.</p><p>If this damage reduces the creature to 0 hit points, its body violently explodes and you appear in its space.  Otherwise, you take 4d10 force damage and are shunted to the nearest unoccupied space.",
+    "lists": ["Arcane", "Occult", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 12,
+        "die": 10,
+        "type": "force"
+      }
+    ]
+  },
+  {
     "name": "Modify Memory",
     "school": "Enchantment",
     "level": 5,
@@ -16847,5 +16868,19 @@
     "description": "You attempt to dispel all magical effects and magical items within range, except for those you designate when you cast the spell.</p><p>If a target is an effect, the creator of the effect must make a Charisma saving throw against your spell save DC or be forced to end it.</p><p>If the target is a non-sentient magical item, the holder of the item must make a Charisma saving throw against your spell save DC or the item becomes nonmagical.</p><p>If the target is a sentient magic item, the magic item must make a Charisma saving throw against your spell save DC or it becomes nonmagical and no longer sentient.</p><p>If a magical item targeted by this spell is an artifact, the saving throw is made at advantage.  If you dispel one or more artifacts when you cast this spell, you must make a DC 25 Charisma saving throw or permanently lose the ability to cast spells.  Loss of spellcasting ability in this way cannot be restored by any means short of divine intervention.",
     "lists": ["Arcane"],
     "ritual": 0
+  },
+  {
+    "name": "False Identity",
+    "school": "Enchantment",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (a blank sheet of paper, stone, or metal)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": "within range, forcing them to make an Intelligence saving throw. On a failed save, the target is stunned for the duration. The stunned target is unaware of its surroundings. If it takes any damage or is targeted by another spell, this spell ends.</p><p>If you concentrate on this spell for its full duration, you can weave the glamour into a new identity. The creature loses all memory of its former self. You decide which proficiencies and langauges the creature retains, if any, and if it can use any of its class features, if it has them. You can also reduce the target's Intelligence, Wisdom, and Charisma scores to a minimum of 8. You can't use this spell to change a creature's alignment.</p><p>You decide the new identity's past and personality, creating memories, beliefs, and desires as you choose. The creature's mind fills in any gaps in the identity's details. If the creature's alignment conflicts with its new identity, it justifies it as best as it can, dismissing it as a sense of unease or discomfort.</p><p>You can also weave the glamour into a new appearance. You decide what the target's new identity looks like, though your choice doesn't affect its statistics. You can't weave the glamour to change the target's size or its basic shape. The glamour is deep enough to be tangible: physical interaction with the glamour doesn't reveal it to be an illusion.</p><p>A greater restoration or heal spell cast at 9th-level, or a wish spell, cast on the target can restore the creature's true identity.",
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "int"
   }
 ]

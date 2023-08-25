@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Assassin's Blood",
+    "type": "Ingested",
+    "cost": 150,
+    "description": "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned."
+  },
+  {
+    "name": "Basic Poison",
+    "type": "Injury",
+    "cost": 50,
+    "description": "A creature subjected to this poison must make a DC 10 Constitution saving throw or take 1d4 poison damage."
+  },
+  {
+    "name": "Biza's Breath",
+    "type": "Inhaled",
+    "cost": 1000,
+    "description": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or become poisoned for 1 minute. The poisoned creature must use its action to make a melee attack against a randomly determined creature within its reach. If there is no other creature within its reach, the poisoned creature does nothing on its turn. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+  },
+  {
+    "name": "Blood of the Lycanthrope",
+    "type": "Injury",
+    "cost": 500,
+    "description": "A creature subjected to this poison must succeed on a DC 12 Constitution saving throw or be cursed with lycanthropy. The curse lasts until removed by the remove curse spell or similar magic. The type of lycanthropy depends on the lycanthrope used to create the poison."
+  },
+  {
+    "name": "Burnt Othur Fumes",
+    "type": "Inhaled",
+    "cost": 500,
+    "description": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns. On each successive failed save, the character takes 3 (1d6) poison damage. After three successful saves, the poison ends."
+  },
+  {
+    "name": "Crawler Mucus",
+    "type": "Contact",
+    "cost": 200,
+    "description": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+  },
+  {
+    "name": "Drow Poison",
+    "type": "Injury",
+    "cost": 200,
+    "description": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+  },
+  {
+    "name": "Dust of the Mummy",
+    "type": "Inhaled",
+    "cost": 200,
+    "description": "A creature subjected to this poison must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed creature can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the creature's hit point maximum to 0, the creature dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or similar magic."
+  },
+  {
+    "name": "Essence of Ether",
+    "type": "Inhaled",
+    "cost": 300,
+    "description": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+  },
+  {
+    "name": "Ivana's Whisper",
+    "type": "Inhaled",
+    "cost": 1500,
+    "description": "A creature subjected to this poison must succeed on a DC 18 Constitution saving throw or experience the effects of a dream spell created by you the next time they sleep. This poison is nonmagical, and you don't directly communicate with those affected during the dream. Rather, you create the illusion of speaking with your intended target by alchemically crafting your message, predicting your target's reactions, and chemically encoding in your responses. You can wear this poison as a perfume or hides it within gift bouquets, allowing it to convey its message later."
+  },
+  {
+    "name": "Malice",
+    "type": "Inhaled",
+    "cost": 250,
+    "description": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. The poisoned creature is blinded."
+  },
+  {
+    "name": "Midnight Tears",
+    "type": "Ingested",
+    "cost": 1500,
+    "description": "A creature that ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one."
+  },
+  {
+    "name": "Oil of Taggit",
+    "type": "Contact",
+    "cost": 400,
+    "description": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage."
+  },
+  {
+    "name": "Pale Tincture",
+    "type": "Ingested",
+    "cost": 250,
+    "description": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned. The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can't be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally."
+  },
+  {
+    "name": "Venom, purple worm",
+    "type": "Injury",
+    "cost": 2000,
+    "description": "A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one."
+  },
+  {
+    "name": "Venom, giant snake",
+    "type": "Injury",
+    "cost": 200,
+    "description": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
+  },
+  {
+    "name": "Venom, snake",
+    "type": "Injury",
+    "cost": 100,
+    "description": "A creature subjected to this poison must succeed on a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one."
+  },
+  {
+    "name": "Venom, wyvern",
+    "type": "Injury",
+    "cost": 1200,
+    "description": "A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+  },
+  {
+    "name": "Torpor",
+    "type": "Ingested",
+    "cost": 600,
+    "description": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours. The poisoned creature is incapacitated."
+  },
+  {
+    "name": "Truth Serum",
+    "type": "Ingested",
+    "cost": 150,
+    "description": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature can't knowingly speak a lie, as if under the effect of a zone of truth spell."
+  }
+]

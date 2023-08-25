@@ -8711,6 +8711,54 @@
     "name": "Skeleton"
   },
   {
+    "description": "Similar in nature to warforged, synthsteel are beings composed of a strange magical liquid metal.  Able to reformat their appearance at any time, they are master infiltrators and charlatans.",
+    "asis": [{ "con": 2 }, { "cha": 1 }],
+    "lifespan": -1,
+    "height": [5, 6],
+    "weight": [100, 300],
+    "category": "Artificial",
+    "type": "Construct",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 0,
+    "languages": [
+      "Common",
+      { "id": "9CF2B447-8D3E-4FD8-9855-0C2B0358DA2B", "type": "language" },
+      { "id": "ABE65610-4B22-4F9A-99DD-B24234CCA3F3", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Amorphous",
+        "description": "You can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You also have advantage on ability checks you make to initiate or escape a grapple."
+      },
+      {
+        "name": "Artificial Nature",
+        "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
+        "granted": [
+          { "type": "damage-resistance", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease"] },
+          {
+            "type": "condition-advantage",
+            "options": ["Paralyzed", "Poisoned"]
+          }
+        ]
+      },
+      {
+        "name": "Impersonator",
+        "description": "As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of a creature you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.</p><p>You stay in the new form until you use an action to revert to your true form or until you die."
+      },
+      {
+        "name": "Sentry's Rest",
+        "description": "When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you aren't unconscious."
+      },
+      {
+        "name": "True Life",
+        "description": "If the Mending spell is cast on you, you can expend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point). In addition, your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Constructs: Cure Wounds, Healing Word, and Spare the Dying."
+      }
+    ],
+    "name": "Synthsteel"
+  },
+  {
     "description": "Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.\n",
     "asis": [{ "dex": 2 }, { "cha": 1 }],
     "maturity": 18,
