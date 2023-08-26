@@ -719,3 +719,66 @@
   [(ngModel)]="equipment.other"
   (ngModelChange)="equipmentUpdated()"
 ></textarea>
+
+<ng-container *ngIf="infusions?.length && false">
+  <h5>Infusions</h5>
+  <div *ngFor="let infusion of infusions">
+    <h6>{{ infusion.name }}</h6>
+    <div *ngIf="infusion.name.toLowerCase().includes('spellstoring')">
+      <strong>Cost:</strong> {{ infusion.cost }}+ Arcane Charges
+    </div>
+
+    <button nz-button (click)="infuseModal = true; infuseItem = infusion">
+      Infuse
+    </button>
+    <nz-modal
+      [(nzVisible)]="infuseModal"
+      nzTitle="Infuse Item"
+      [nzCancelText]="null"
+      [nzClosable]="false"
+      [nzOkText]="null"
+      (nzOnCancel)="infuseModal = false"
+    >
+      <ng-container *nzModalContent>
+        <h6>{{ infuseItem.name }}</h6>
+        <div>
+          <strong># of Charges:</strong>
+        </div>
+        <div *ngIf="infusion.name.toLowerCase().includes('spellstoring')">
+          {{ infuseItem.cost }}
+        </div>
+        <div *ngIf="!infusion.name.toLowerCase().includes('spellstoring')">
+          {{ infuseItem.cost }}
+        </div>
+
+        <div>
+          <label nz-checkbox>
+            Persist
+            <button
+              nzSize="small"
+              nzGhost
+              nzShape="circle"
+              nz-button
+              nz-popover
+              nzType="primary"
+              nzPopoverTitle=""
+              nzPopoverContent="Make an infusion persistent to have it be automatically re-applied 
+                whenever you finish a long rest.  This behavior can be turned off at any time."
+            >
+              ?
+            </button>
+          </label>
+        </div>
+
+        <button nz-button>Infuse</button>
+      </ng-container>
+    </nz-modal>
+
+    <div *ngIf="!infusion.name.toLowerCase().includes('spellstoring')">
+      <strong>Cost:</strong> {{ infusion.cost }} Arcane Charge{{
+        infusion.cost > 1 ? "s" : ""
+      }}
+    </div>
+    <div [innerHTML]="infusion.description"></div>
+  </div>
+</ng-container>

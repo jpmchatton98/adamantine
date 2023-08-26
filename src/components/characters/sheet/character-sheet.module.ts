@@ -17,6 +17,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     NzButtonModule,
     NzInputModule,
     NzInputNumberModule,
+    NzCheckboxModule,
     PagesModule,
     FormsModule,
     EditorModule,

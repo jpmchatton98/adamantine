@@ -594,7 +594,10 @@
             ></cs-exploits>
           </nz-tab>
           <nz-tab nzTitle="Inventory">
-            <cs-inventory [equipment]="character.equipment"></cs-inventory>
+            <cs-inventory
+              [characterId]="characterId"
+              [equipment]="character.equipment"
+            ></cs-inventory>
           </nz-tab>
           <nz-tab nzTitle="Features & Traits">
             <ng-container *ngIf="character.race">

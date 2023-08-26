@@ -32,10 +32,7 @@ export class SheetListedComponent {
     );
     if (choiceEntry) {
       if (this.genericKeys.includes(this.listed.type)) {
-        if (
-          this.listed.type === 'ki-technique' ||
-          this.listed.type === 'infusion'
-        ) {
+        if (this.listed.type === 'ki-technique') {
           const subclassItems = [];
           if (this.characterObj.subclass) {
             const subclassData = this.dataService.getSubclass(
@@ -44,9 +41,7 @@ export class SheetListedComponent {
             );
             if (subclassData) {
               let feature;
-              if (this.listed.type === 'infusion') {
-                feature = subclassData.features['2'][0];
-              } else if (this.listed.type === 'ki-technique') {
+              if (this.listed.type === 'ki-technique') {
                 feature = subclassData.features['3'][0];
               }
 

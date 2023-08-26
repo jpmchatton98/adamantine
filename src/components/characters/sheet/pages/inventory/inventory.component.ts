@@ -11,8 +11,28 @@ import { GeneralStoreService } from 'src/services/general-store.service';
   styleUrls: ['./inventory.component.scss'],
 })
 export class InventoryComponent implements OnInit {
+  @Input() characterId: string;
   @Input() equipment: any;
   public equipmentData: any[] = [];
+
+  private infusionDegrees = [
+    {
+      level: 5,
+      degree: 2,
+    },
+    {
+      level: 9,
+      degree: 3,
+    },
+    {
+      level: 13,
+      degree: 4,
+    },
+    {
+      level: 17,
+      degree: 5,
+    },
+  ];
 
   public modalVisible;
   public modalOption;
@@ -37,16 +57,50 @@ export class InventoryComponent implements OnInit {
   public modalItem;
   public modalQuantity = 0;
 
+  public infusions = [];
+  public infuseModal = false;
+  public infuseItem;
+
   constructor(
     private characterSheetService: CharacterSheetService,
+    private dataService: DataService,
     private generalStoreService: GeneralStoreService,
     private store: Store,
     private changeRef: ChangeDetectorRef
   ) {}
 
-  ngOnInit(): void {
+  async ngOnInit() {
     this.allItems = this.generalStoreService.allItems;
     this.searchedItems = this.allItems;
+
+    await this.characterSheetService.getCharacterFromDb(this.characterId);
+    await this.characterSheetService
+      .getInfusions(this.characterId)
+      .then((infusions) => {
+        this.infusions = infusions;
+
+        if (this.infusions?.length) {
+          for (let i = 0; i < this.infusions.length; i++) {
+            const data = this.dataService.getGenericListItem(
+              'infusion',
+              this.infusions[i]
+            );
+
+            if (data.prereqLevel) {
+              const degree = this.infusionDegrees.find(
+                (d) => d.level === data.prereqLevel
+              );
+              data.cost = degree.degree;
+            } else {
+              data.cost = 1;
+            }
+
+            this.infusions[i] = data;
+          }
+        }
+        console.log(this.infusions);
+      });
+
     this.generateItems();
   }
 

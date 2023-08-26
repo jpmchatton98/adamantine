@@ -3679,6 +3679,151 @@ export class CharacterSheetService {
     return telepathy;
   }
 
+  public async getInfusions(characterId) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
+      await this.getCharacterFromDb(characterId);
+    }
+    let infusions = [];
+
+    const raceData = this.dataService.getRace(this.character?.race?.name);
+    let subraceData;
+    if (this.character?.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        this.character?.race.name,
+        this.character?.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        infusions = this.getFeatureInfusions(
+          trait,
+          this.character?.race.choices,
+          infusions
+        );
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        infusions = this.getFeatureInfusions(
+          trait,
+          this.character?.race.choices,
+          infusions
+        );
+      }
+    }
+
+    this.character?.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            infusions = this.getFeatureInfusions(feature, c.choices, infusions);
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            infusions = this.getFeatureInfusions(feature, c.choices, infusions);
+          });
+        }
+      }
+    });
+    this.character?.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          infusions = this.getFeatureInfusions(
+            featData,
+            this.character?.background.choices,
+            infusions
+          );
+        }
+      }
+    });
+
+    return infusions;
+  }
+  public getFeatureInfusions(feature: any, choices: any[], infusions): any[] {
+    feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let i of g.options) {
+          const infusionData = this.dataService.getGenericListItem(
+            'infusion',
+            i
+          );
+          if (
+            !infusionData.prereqLevel ||
+            this.getTotalLevel() >= infusionData.prereqLevel
+          ) {
+            infusions.push(i);
+          }
+        }
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      infusions = this.getFeatureInfusions(s, choices, infusions);
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        infusions = this.getChoiceInfusions(choice, choices, infusions);
+      }
+    } else {
+      infusions = this.getChoiceInfusions(feature.choices, choices, infusions);
+    }
+
+    if (feature.listed) {
+      infusions = this.getListedInfusions(feature.listed, choices, infusions);
+    }
+
+    return infusions;
+  }
+  private getChoiceInfusions(choice: any, choices: any[], infusions): any[] {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        infusions = this.getFeatureInfusions(trait, choices, infusions);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        infusions = this.getFeatureInfusions(feat, choices, infusions);
+      }
+    } else if (choice?.type === 'infusion') {
+      infusions.push(choiceEntry.value);
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        infusions = this.getFeatureInfusions(data, choices, infusions);
+      }
+    }
+
+    return infusions;
+  }
+  private getListedInfusions(listed: any, choices: any[], infusions): any[] {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (listed?.type === 'infusion') {
+      infusions.push(...choiceEntry.list);
+    } else if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          infusions = this.getFeatureInfusions(data, choices, infusions);
+        }
+      }
+    }
+
+    return infusions;
+  }
+
   public async getSpeeds(characterId) {
     if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);
