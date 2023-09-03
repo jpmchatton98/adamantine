@@ -98,7 +98,6 @@ export class InventoryComponent implements OnInit {
             this.infusions[i] = data;
           }
         }
-        console.log(this.infusions);
       });
 
     this.generateItems();

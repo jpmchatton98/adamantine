@@ -58,14 +58,22 @@ export class BuilderChoiceComponent implements OnInit {
   constructor(
     dataService: DataService,
     private characterBuilderService: CharacterBuilderService,
-    private characterSheetService: CharacterSheetService,
     private store: Store,
     private changeRef: ChangeDetectorRef
   ) {
     this.dataService = dataService;
   }
 
-  public ngOnInit(): void {
+  public async ngOnInit() {
+    if (!this.characterBuilderService.character) {
+      await this.characterBuilderService.getCharacterFromDb(this.characterId);
+    } else if (
+      Object.keys(this.characterBuilderService.character).length === 0
+    ) {
+      await this.characterBuilderService.getCharacterFromDb(this.characterId);
+    }
+    console.log('1', this.characterBuilderService.character);
+
     this.genericListKeys = this.dataService.getGenericListKeys();
 
     const choiceEntry = this.characterObj?.choices.find(
@@ -77,7 +85,21 @@ export class BuilderChoiceComponent implements OnInit {
 
     this.store.select(selectUpdate).subscribe((update) => {
       if (update) {
-        setTimeout(() => {
+        setTimeout(async () => {
+          if (!this.characterBuilderService.character) {
+            await this.characterBuilderService.getCharacterFromDb(
+              this.characterId
+            );
+          } else if (
+            Object.keys(this.characterBuilderService.character).length === 0
+          ) {
+            await this.characterBuilderService.getCharacterFromDb(
+              this.characterId
+            );
+          }
+
+          console.log('2', this.characterBuilderService.character);
+
           this.setup();
           this.changeRef.detectChanges();
         }, 100);
@@ -85,10 +107,8 @@ export class BuilderChoiceComponent implements OnInit {
     });
   }
 
-  private async setup() {
-    await this.getChoiceOptions(this.choice).then(
-      (options) => (this.choiceOptions = options)
-    );
+  private setup() {
+    this.choiceOptions = this.getChoiceOptions(this.choice);
 
     if (this.choiceOptions[0]?.options) {
       if (
@@ -178,18 +198,17 @@ export class BuilderChoiceComponent implements OnInit {
     this.store.dispatch(new Update());
   }
 
-  private async getChoiceOptions(choice) {
+  private getChoiceOptions(choice) {
     let choiceOptions = [];
     if (Array.isArray(choice.type)) {
       for (let type of choice.type) {
         const temp = JSON.parse(JSON.stringify(choice));
         temp.type = type;
 
-        await this.getChoiceOptions(temp).then((o) => {
-          choiceOptions.push({
-            name: type,
-            options: o,
-          });
+        let options = this.getChoiceOptions(temp);
+        choiceOptions.push({
+          name: type,
+          options: options,
         });
       }
     } else {
@@ -203,12 +222,22 @@ export class BuilderChoiceComponent implements OnInit {
           }
 
           if (choice.type === 'skill') {
-            let characterSkillProfs;
-            await this.characterSheetService
-              .getCharacterSkillProficiencies(this.characterId)
-              .then((val) => (characterSkillProfs = val));
+            let characterSkillProfs =
+              this.characterBuilderService.getCharacterSkillProficiencies();
             choiceOptions = choiceOptions.filter((o: any) => {
               return !characterSkillProfs.find((p: any) => {
+                return (
+                  p.value === o &&
+                  p.id !== this.choice.id &&
+                  p.level > this.choice.level
+                );
+              });
+            });
+          } else if (choice.type === 'tool') {
+            let characterToolProfs =
+              this.characterBuilderService.getCharacterToolProficiencies();
+            choiceOptions = choiceOptions.filter((o: any) => {
+              return !characterToolProfs.find((p: any) => {
                 return (
                   p.value === o &&
                   p.id !== this.choice.id &&
@@ -293,12 +322,7 @@ export class BuilderChoiceComponent implements OnInit {
               return true;
             }
 
-            let score;
-            await this.characterBuilderService
-              .getScore(this.characterId, o)
-              .then((val) => {
-                score = val;
-              });
+            let score = this.characterBuilderService.getScoreSync(o);
             return score < 20;
           });
         } else if (choice?.type === 'text') {
@@ -306,7 +330,7 @@ export class BuilderChoiceComponent implements OnInit {
         } else if (choice?.type === 'feat') {
           choiceOptions = this.dataService
             .getFeatsUnsplit()
-            .filter(async (f: any) => {
+            .filter((f: any) => {
               if (!f.prereq) {
                 return true;
               }
@@ -315,10 +339,8 @@ export class BuilderChoiceComponent implements OnInit {
 
                 if (prereq.race) {
                   for (let race of prereq.race) {
-                    let isRace;
-                    await this.characterBuilderService
-                      .characterIsRace(this.characterId, race)
-                      .then((val) => (isRace = val));
+                    let isRace =
+                      this.characterBuilderService.characterIsRace(race);
                     if (isRace) {
                       return true;
                     }
@@ -334,10 +356,9 @@ export class BuilderChoiceComponent implements OnInit {
                 } else if (prereq.martial) {
                   return true;
                 } else {
-                  let score;
-                  await this.characterBuilderService
-                    .getScore(this.characterId, Object.keys(prereq)[0])
-                    .then((val) => (score = val));
+                  let score = this.characterBuilderService.getScoreSync(
+                    Object.keys(prereq)[0]
+                  );
                   if (score) {
                     const prereqScore: number = Object.values(prereq)[0];
                     return score >= prereqScore;

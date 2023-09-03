@@ -665,7 +665,7 @@
     "lifespan": 80,
     "height": [4, 7],
     "weight": [400, 500],
-    "category": "Monstrous",
+    "category": "Insectoid",
     "type": "Fiend",
     "size": {
       "id": "0F97AA6C-12D2-478D-B1C2-8644B52447E7",
@@ -827,7 +827,7 @@
     "lifespan": 200,
     "height": [4, 5],
     "weight": [125, 175],
-    "category": "Fey",
+    "category": "Insectoid",
     "type": "Fey",
     "size": 0,
     "speed": 30,
@@ -1302,6 +1302,175 @@
       }
     ],
     "name": "Changeling"
+  },
+  {
+    "description": "The noble, armored knights of the Feywild, Daolagiath resemble all manner of beetles.  Strictly honorable and bound by codes as sturdy as their shells, one would be hard-pressed to find a more reliable ally among the denizens of the feywild.  They tower over the other insectile races, and are usually even more broad then they are tall.",
+    "asis": [{ "con": 2 }],
+    "maturity": 1,
+    "lifespan": 30,
+    "height": [6, 9],
+    "weight": [350, 500],
+    "category": "Insectoid",
+    "type": "Humanoid",
+    "size": {
+      "id": "970252B5-FCEC-4F4B-96C4-0AC45DBBD631",
+      "type": "text",
+      "options": ["Medium", "Large"],
+      "grants": "size"
+    },
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Entognatha", "Sylvan"],
+    "traits": [
+      {
+        "name": "Hard Shell",
+        "description": "Due to your chitinous exoskeleton and the shape of your body, you are ill-suited to wearing armor. Your exoskeleton provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.",
+        "granted": [{ "type": "unarmored", "base": 17 }]
+      },
+      {
+        "name": "Secondary Arms",
+        "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Bombardier",
+        "description": "The heavy artillery of the knights, bombardiers possess an innate weapon, a cannon-like shell on their backs that can spew forth deadly acid.",
+        "asis": [{ "dex": 1 }],
+        "traits": [
+          {
+            "name": "Acid Cannon",
+            "description": "When you take the Attack action on your turn, you can replace one of your attacks with a spray of acid from your cannon shell in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 acid damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>You can use your Acid Cannon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "7989DA2F-E7BD-4520-95E5-C832C851D62D",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            }
+          },
+          {
+            "name": "Alchemical Mastermind",
+            "description": "You have proficiency with alchemist's supplies and poisoner's kits.",
+            "granted": [
+              {
+                "type": "tool",
+                "options": ["Alchemist's Supplies", "Poisoner's Kit"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Corrosive Acid",
+            "description": "When you deal acid damage to a creature, you can choose to also reduce their Armor Class by an amount equal to your proficiency bonus until they finish a long rest.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+            "uses": [
+              {
+                "id": "051F47AC-B6FF-4BD9-BDD4-2C9F7A59B46D",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hercules",
+        "description": "The largest of the large, hercules are enormous beetle folk with long, curved horns they use to grab and throw their opponents.  As they grow old, their horn grows scarred and brittle, and they retire from adventuring when it eventually breaks off.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Giant Build",
+            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift and you have proficiency in the Athletics skill.",
+            "granted": [
+              { "type": "skill", "options": ["Athletics"], "level": 1 }
+            ]
+          },
+          {
+            "name": "Horn",
+            "description": "Your great horn is a natural weapon with which you are proficient.  It deals piercing damage equal to 1d8 + your Strength modifier on a hit.</p><p>In addition, you can grapple a creature up to two sizes larger than you using your horn.  You have advantage on checks made to manipulate the position of a creature grappled in such a way."
+          },
+          {
+            "name": "Throwing Expert",
+            "description": "You have proficiency with improvised weapons and in the Athletics skill.",
+            "granted": [
+              {
+                "type": "weapon",
+                "options": ["Improvised"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ladybug",
+        "description": "Just like the spotted bugs they resemble, these knights are a farmer's best friend.  They possess innate druidic magics that allow them to manipulate plantlife around them.",
+        "asis": [{ "cha": 1 }],
+        "traits": [
+          {
+            "name": "Ladybug's Guidance",
+            "description": "You know the Druidcraft cantrip. Starting at 3rd level, you can cast the Goodberry spell with this trait, without requiring a material component. Starting at 5th level, you can also cast the Pullulate spell with this trait, without requiring a material component. Once you cast goodberry or pullulate with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p><p>Charisma is your spellcasting ability for these spells when you cast them with this trait.",
+            "granted": [
+              {
+                "type": "spell",
+                "options": ["Druidcraft"],
+                "ability": "cha"
+              },
+              {
+                "type": "spell",
+                "options": ["Goodberry"],
+                "prereq": 3,
+                "ability": "cha"
+              },
+              {
+                "type": "spell",
+                "options": ["Pullulate"],
+                "prereq": 5,
+                "ability": "cha"
+              }
+            ],
+            "uses": [
+              {
+                "id": "1AA97D17-50B1-4CF2-9A00-F576E7357904",
+                "type": "fixed",
+                "amount": 1,
+                "prereq": 3,
+                "reset": 2
+              },
+              {
+                "id": "78339119-B4CF-40C1-A6F4-DC39265E54E4",
+                "type": "fixed",
+                "amount": 1,
+                "prereq": 5,
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Moon",
+        "description": "Tapping into the innate magic of their fey heritage, these beetle folk possess the ability to bioluminesce.  Also called lightning bugs, golden beetles, or glow worms, they use this ability both to light the way forward and to signal.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Bioluminescence",
+            "description": "You know the Light cantrip.  Wisdom is your spellcasting ability for it.</p><p>In addition, your control over the Light cantrip allows you to relay messages to any creature, so long as your light is visible to them.",
+            "granted": [
+              {
+                "type": "spell",
+                "options": ["Light"],
+                "ability": "wis"
+              }
+            ]
+          },
+          {
+            "name": "Lucky",
+            "description": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
+          }
+        ]
+      }
+    ],
+    "name": "Daolagiath"
   },
   {
     "description": "<p>Whether driven by fanatical beliefs, a hunger for personal power, or a genuine wish to help others by whatever means are available, some choose to undergo a ritual transformation that changes their body into an imitation of a true dragon. Other individuals concoct detailed magical experiments on unwilling subjects, exploring the limitations of the blood of dragons. Regardless of origin, the resulting creature is known as a demi-dragon\u0442\u0410\u0424a being that was created rather than born.</p>",
@@ -5956,7 +6125,7 @@
     "lifespan": 60,
     "height": [6, 7],
     "weight": [130, 160],
-    "category": "Monstrous",
+    "category": "Insectoid",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -7586,7 +7755,7 @@
     "lifespan": 60,
     "height": [10, 11],
     "weight": [900, 1000],
-    "category": "Uncommon",
+    "category": "Monstrous",
     "type": "Giant",
     "size": 1,
     "speed": 40,
@@ -7719,7 +7888,7 @@
     "lifespan": 75,
     "height": [6, 8],
     "weight": [230, 280],
-    "category": "Uncommon",
+    "category": "Monstrous",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -8962,7 +9131,7 @@
     "lifespan": 30,
     "height": [5, 7],
     "weight": [125, 375],
-    "category": "Monstrous",
+    "category": "Insectoid",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,

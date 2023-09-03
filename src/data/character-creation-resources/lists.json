@@ -372,7 +372,7 @@
             "traits": [
               {
                 "name": "",
-                "description": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a melee weapon or a shield to use this reaction."
+                "description": "When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
               }
             ]
           },
@@ -5076,7 +5076,7 @@
     },
     {
       "name": "Protection",
-      "description": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a melee weapon or a shield to use this reaction."
+      "description": "When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
     },
     {
       "name": "Shield Warrior",
@@ -10224,6 +10224,88 @@
       "name": "Sturdy Mind",
       "prereqLevel": 14,
       "description": "You have advantage on Wisdom saving throws and ability checks."
+    }
+  ],
+  "gravity-attunement": [
+    {
+      "name": "Gravity Leap",
+      "description": "By subtly bending the gravitational threads beneath your feet, the very land that once sought to slow you now yields to your every step.  You ignore the effects of difficult terrain.</p><p>While attuned, you feel almost weightless. Once per short or long rest, as an action, you can jump three times your normal distance and don't provoke opportunity attacks when you do so. If you would fall during this jump, you descend slowly as if under the effect of Feather Fall.  When you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+      "uses": [
+        {
+          "id": "5CB2E09F-9082-498A-BE05-F52B05B22A4D",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Gravity Pulse",
+      "description": "Your understanding of gravitational fluctuations enhances your ability to detect movement and changes in your surroundings. You gain blindsight with a range of 10 feet.</p><p>Once per short or long rest, when you hit a creature with a melee attack, you can choose to unleash a pulse of gravitational energy. The target and all creatures of your choice within 5 feet of it must succeed on a Strength saving throw or be pushed back 10 feet and be knocked prone.  When you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+      "uses": [
+        {
+          "id": "6BD6ADCA-B0EA-4A36-AF3C-E29897276E35",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ],
+      "granted": [
+        {
+          "type": "blindsight",
+          "range": 10
+        }
+      ]
+    },
+    {
+      "name": "Gravity Shield",
+      "description": "You focus gravity to slow your enemies attacks, making them easier to avoid.  You gain a +1 bonus to your Armor Class.  At 10th level, this bonus becomes +2.</p><p>Once per short or long rest, as a reaction when a hostile creature starts its turn within 5 feet of you, you can create a wave of gravity, creating a force to repel back attacks. Creatures of your choice within 5 feet of you gain half cover until the start of your next turn.  At 10th level, this now grants three-quarters cover.  When you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+      "uses": [
+        {
+          "id": "5E599531-D486-4B0F-A848-5979CA100350",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Gravity Well",
+      "description": "Once per turn, you can deal an additional 1d4 force damage when you hit a creature with a melee weapon attack. At 10th level, the damage becomes 2d4.</p><p>Once per short or long rest, you can pull a creature or object within 30 feet of you 10 feet closer. As an action, they must make a Strength saving throw or be pulled towards you. If a creature or object is pulled within 5 feet of your space, they take 2d6 force damage as they collide into the gravity well surrounding you. At 10th level, this damage increases to 3d6.  When you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+      "uses": [
+        {
+          "id": "6D115F74-43A7-4E7C-8435-2BA6C2374C17",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Gravity Anchor",
+      "prereqLevel": 7,
+      "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift using the gravity around you.</p><p>Once per short or long rest, as an action, you can increase the gravity in a 15-foot radius centered on you. All creatures of your choice in the area must make a Strength saving throw or be restrained for 1 minute. An affected creature can repeat the saving throw at the end of each of their turns, ending the effect on themselves on a success.  When you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+      "uses": [
+        {
+          "id": "6195DB0B-7CE2-4209-BDD3-A58665576DDA",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Gravity Uplift",
+      "prereqLevel": 7,
+      "description": "You and creatures of your choice within your Gravitational Dominion have advantage on saving throws against being grappled, restrained, or knocked prone.</p><p>Once per short or long rest, as an action, as an action, you can decrease the gravity in a 15-foot radius centered on you. Creatures of your choice in the area must make a Dexterity saving throw or start to float and become prone for 1 minute. An affected creature can repeat the saving throw at the end of each of their turns, ending the effect on themselves on a success.  When you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+      "uses": [
+        {
+          "id": "15DF23D3-1BB8-4DBC-BD1A-4ED88F53DE34",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
     }
   ]
 }

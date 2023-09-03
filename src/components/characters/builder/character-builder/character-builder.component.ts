@@ -66,7 +66,7 @@ export class CharacterBuilderComponent implements OnInit {
           this.character.equipment,
         ].includes(obj)
       ) {
-        if (!obj.feature) {
+        if (!obj?.feature) {
           if (Array.isArray(obj)) {
             for (let listItem of obj) {
               listItem.choices =
@@ -82,7 +82,7 @@ export class CharacterBuilderComponent implements OnInit {
                 ) ?? [];
             }
           } else {
-            if (obj.choices) {
+            if (obj?.choices) {
               obj.choices =
                 obj.choices?.filter(
                   (objCh: any) =>
@@ -97,7 +97,7 @@ export class CharacterBuilderComponent implements OnInit {
             }
           }
         } else {
-          if (obj.choices) {
+          if (obj?.choices) {
             obj.choices =
               obj.choices?.filter((c: any) =>
                 obj.feature.subFeatures.find((f: any) => f.id === c.sourceId)

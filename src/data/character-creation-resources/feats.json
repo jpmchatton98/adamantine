@@ -1132,10 +1132,10 @@
     "description": "You have practiced techniques in melee combat against spellcasters, gaining the following benefits.\n<ul>\n<li>When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature before they cast the spell. If that attack hits, the target creature must make a Constitution saving throw in order to successfully cast the spell. The DC equals 10 or half of the damage the creature takes from the attack, whichever is higher. If the creature fails its saving throw, the spell fails and has no effect. If the creature succeeds on its saving throw, the spell is cast as normal.</li>\n<li>When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.</li>\n<li>You have advantage on saving throws against spells cast by creatures within 5 feet of you.</li>\n</ul>"
   },
   {
-    "name": "Magic Initiate (Arcane)",
+    "name": "Magic Initiate",
     "type": "multiclass",
     "repeatable": true,
-    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n<br><br>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.<br><br> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
+    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n</p><p>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.</p><p> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
     "choices": [
       {
         "id": "509FA97E-AAE1-4DD1-B05F-A7545143D587",
@@ -1143,229 +1143,206 @@
         "options": ["int", "wis", "cha"]
       },
       {
-        "id": "A61E8608-CCB4-4A53-8BAC-E635638982EF",
-        "type": "spell",
-        "list": "Arcane",
-        "level": 0,
-        "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
-      },
-      {
-        "id": "F6BF1CBE-CB7C-408A-AB92-23C63D258C56",
-        "type": "spell",
-        "list": "Arcane",
-        "level": 0,
-        "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
-      },
-      {
-        "id": "AB58CFC7-F780-4C5D-9BBB-262A7C053F44",
-        "type": "spell",
-        "list": "Arcane",
-        "level": 1,
-        "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+        "id": "DC33858F-9439-45CB-8314-8826F81493BD",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Arcane",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn two cantrips and one 1st-level spell from the Arcane spell list.",
+                "choices": [
+                  {
+                    "id": "A61E8608-CCB4-4A53-8BAC-E635638982EF",
+                    "type": "spell",
+                    "list": "Arcane",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "F6BF1CBE-CB7C-408A-AB92-23C63D258C56",
+                    "type": "spell",
+                    "list": "Arcane",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "AB58CFC7-F780-4C5D-9BBB-262A7C053F44",
+                    "type": "spell",
+                    "list": "Arcane",
+                    "level": 1,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Divine",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn two cantrips and one 1st-level spell from the Divine spell list.",
+                "choices": [
+                  {
+                    "id": "2BEE1525-57FE-44FF-B44A-B2D769C199D1",
+                    "type": "spell",
+                    "list": "Divine",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "0CBA6571-3129-47B3-90C1-A0F8573A835F",
+                    "type": "spell",
+                    "list": "Divine",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "140CCAB1-ABCF-479C-BEBF-A1C6B050BFCD",
+                    "type": "spell",
+                    "list": "Divine",
+                    "level": 1,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melodic",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn two cantrips and one 1st-level spell from the Melodic spell list.",
+                "choices": [
+                  {
+                    "id": "E7B2409E-D384-45B9-9522-0BB2B5727C95",
+                    "type": "spell",
+                    "list": "Melodic",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "5C1C3111-9644-498F-9EC5-625CF06B0FBD",
+                    "type": "spell",
+                    "list": "Melodic",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "D9758B6A-B3DE-47A0-AC10-04358A48172C",
+                    "type": "spell",
+                    "list": "Melodic",
+                    "level": 1,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Occult",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn two cantrips and one 1st-level spell from the Occult spell list.",
+                "choices": [
+                  {
+                    "id": "F9FCF920-B4D8-4B72-AA93-6C1F47F35EDD",
+                    "type": "spell",
+                    "list": "Occult",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "2CC06600-0943-4B3E-9296-ECFA92B436EB",
+                    "type": "spell",
+                    "list": "Occult",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "CFEAD66D-23ED-483F-9E5E-49A74E459E34",
+                    "type": "spell",
+                    "list": "Occult",
+                    "level": 1,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Primal",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn two cantrips and one 1st-level spell from the Primal spell list.",
+                "choices": [
+                  {
+                    "id": "FEFAC4E0-3EC1-47D4-BFCA-EA69E83CD717",
+                    "type": "spell",
+                    "list": "Primal",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "E97AE99F-C95A-498F-8010-3638155C47DC",
+                    "type": "spell",
+                    "list": "Primal",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "719C19F1-A0C8-4738-8F67-DA2FB8EB92F8",
+                    "type": "spell",
+                    "list": "Primal",
+                    "level": 1,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Psionic",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn two cantrips and one 1st-level spell from the Psionic spell list.",
+                "choices": [
+                  {
+                    "id": "10AD3030-6253-42CD-A8AD-6A303348799F",
+                    "type": "spell",
+                    "list": "Psionic",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "D8719B0A-B7D4-484F-992D-AB6F8A323CC4",
+                    "type": "spell",
+                    "list": "Psionic",
+                    "level": 0,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  },
+                  {
+                    "id": "81762691-35E3-42A6-8A31-5A08E7466AD9",
+                    "type": "spell",
+                    "list": "Psionic",
+                    "level": 1,
+                    "ability": "509FA97E-AAE1-4DD1-B05F-A7545143D587"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "uses": {
       "id": "168B8E69-B033-49B8-8613-DF11A0124641",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
-  },
-  {
-    "name": "Magic Initiate (Divine)",
-    "type": "multiclass",
-    "repeatable": true,
-    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n<br><br>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.<br><br> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
-    "choices": [
-      {
-        "id": "7EE59445-3519-4419-A5A9-0D3785AAA2E1",
-        "type": "text",
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "272647DB-D08F-4554-B22D-F2CCD3CA1113",
-        "type": "spell",
-        "list": "Divine",
-        "level": 0,
-        "ability": "7EE59445-3519-4419-A5A9-0D3785AAA2E1"
-      },
-      {
-        "id": "B4C8B8EA-473C-4A97-BCFF-FF0BCB75F21E",
-        "type": "spell",
-        "list": "Divine",
-        "level": 0,
-        "ability": "7EE59445-3519-4419-A5A9-0D3785AAA2E1"
-      },
-      {
-        "id": "607FA1AE-A163-49B7-B7F5-51C77369502C",
-        "type": "spell",
-        "list": "Divine",
-        "level": 1,
-        "ability": "7EE59445-3519-4419-A5A9-0D3785AAA2E1"
-      }
-    ],
-    "uses": {
-      "id": "8917D5B7-652A-4EE9-B422-AFC2B8D6B3AE",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
-  },
-  {
-    "name": "Magic Initiate (Melodic)",
-    "type": "multiclass",
-    "repeatable": true,
-    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n<br><br>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.<br><br> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
-    "choices": [
-      {
-        "id": "88256441-A3DD-4928-B261-8B7A38B4F742",
-        "type": "text",
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "474076D5-DCF3-43CE-B094-86A76F43E164",
-        "type": "spell",
-        "list": "Melodic",
-        "level": 0,
-        "ability": "88256441-A3DD-4928-B261-8B7A38B4F742"
-      },
-      {
-        "id": "34E7832F-E28A-4FF8-99B4-B963AA52680E",
-        "type": "spell",
-        "list": "Melodic",
-        "level": 0,
-        "ability": "88256441-A3DD-4928-B261-8B7A38B4F742"
-      },
-      {
-        "id": "C1BF3A8E-4326-4403-A632-9D68A4EFA680",
-        "type": "spell",
-        "list": "Melodic",
-        "level": 1,
-        "ability": "88256441-A3DD-4928-B261-8B7A38B4F742"
-      }
-    ],
-    "uses": {
-      "id": "B06E3CF9-63F4-4200-883A-9BA1A9B2D6D7",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
-  },
-  {
-    "name": "Magic Initiate (Occult)",
-    "type": "multiclass",
-    "repeatable": true,
-    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n<br><br>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.<br><br> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
-    "choices": [
-      {
-        "id": "23734FA4-D25C-4A8D-9E69-CB1AC4D2E4A2",
-        "type": "text",
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "8AA941B7-8D8C-4286-917D-11843E69A0F5",
-        "type": "spell",
-        "list": "Occult",
-        "level": 0,
-        "ability": "23734FA4-D25C-4A8D-9E69-CB1AC4D2E4A2"
-      },
-      {
-        "id": "DF4E349C-FFFC-4295-9175-FD488697216D",
-        "type": "spell",
-        "list": "Occult",
-        "level": 0,
-        "ability": "23734FA4-D25C-4A8D-9E69-CB1AC4D2E4A2"
-      },
-      {
-        "id": "23DEB8EB-4864-4A2F-8C19-216E43A75088",
-        "type": "spell",
-        "list": "Occult",
-        "level": 1,
-        "ability": "23734FA4-D25C-4A8D-9E69-CB1AC4D2E4A2"
-      }
-    ],
-    "uses": {
-      "id": "655CC2EC-7F94-4BDA-B307-418679B0A0C3",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
-  },
-  {
-    "name": "Magic Initiate (Primal)",
-    "type": "multiclass",
-    "repeatable": true,
-    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n<br><br>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.<br><br> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
-    "choices": [
-      {
-        "id": "CE6B381B-8C1E-4D91-B267-8D0EDE4829B6",
-        "type": "text",
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "C1542424-4742-447D-957B-28B05A4986A4",
-        "type": "spell",
-        "list": "Primal",
-        "level": 0,
-        "ability": "CE6B381B-8C1E-4D91-B267-8D0EDE4829B6"
-      },
-      {
-        "id": "F4FD92EE-F1F0-4049-A2DB-3C5E92E35283",
-        "type": "spell",
-        "list": "Primal",
-        "level": 0,
-        "ability": "CE6B381B-8C1E-4D91-B267-8D0EDE4829B6"
-      },
-      {
-        "id": "54B3D901-ADCA-4B29-A903-DAA22E732455",
-        "type": "spell",
-        "list": "Primal",
-        "level": 1,
-        "ability": "CE6B381B-8C1E-4D91-B267-8D0EDE4829B6"
-      }
-    ],
-    "uses": {
-      "id": "77F15EF5-EB05-4157-90BD-156E3D3D7233",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
-  },
-  {
-    "name": "Magic Initiate (Psionic)",
-    "type": "multiclass",
-    "repeatable": true,
-    "description": "Choose a spell list: Arcane, Divine, Melodic, Occult, Primal, or Psionic. You learn two cantrips of your choice from that spell list.\n<br><br>\nIn addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.<br><br> Your spellcasting ability for all three spells is Intelligence, Wisdom, or Charisma (your choice).",
-    "choices": [
-      {
-        "id": "0936D587-263C-49AE-974E-347698F16537",
-        "type": "text",
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "C1362E96-DB21-4CFA-B614-EA719166226C",
-        "type": "spell",
-        "list": "Psionic",
-        "level": 0,
-        "ability": "0936D587-263C-49AE-974E-347698F16537"
-      },
-      {
-        "id": "51045ACF-5750-41ED-9A79-0F498598C9B7",
-        "type": "spell",
-        "list": "Psionic",
-        "level": 0,
-        "ability": "0936D587-263C-49AE-974E-347698F16537"
-      },
-      {
-        "id": "7A01B11B-CF07-470E-9556-908F76995DAD",
-        "type": "spell",
-        "list": "Psionic",
-        "level": 1,
-        "ability": "0936D587-263C-49AE-974E-347698F16537"
-      }
-    ],
-    "uses": {
-      "id": "BA608E7C-A14D-49D7-B70F-3872F1117008",
       "type": "fixed",
       "amount": 1,
       "reset": 2
@@ -3709,116 +3686,6 @@
       "amount": 1,
       "reset": 2
     }
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
-  },
-  {
-    "name": "placeholder",
-    "prereq": [
-      {
-        "race": [""]
-      }
-    ],
-    "type": "racial",
-    "description": "placeholder"
   },
   {
     "name": "Gearhead",

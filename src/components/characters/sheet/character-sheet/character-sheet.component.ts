@@ -254,8 +254,9 @@ export class CharacterSheetComponent implements OnInit {
       .then((val) => (this.jumping = val));
     await this.characterSheetService
       .getTelepathy(this.characterId)
-      .then((val) => (this.telepathy = val));
-
+      .then((val) => {
+        this.telepathy = val;
+      });
     this.loaded = true;
 
     this.store.select(selectUpdate).subscribe(async (update) => {
