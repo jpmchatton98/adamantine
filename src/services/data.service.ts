@@ -21,6 +21,8 @@ import tools from '../data/general-store/adventuring-equipment/tools.json';
 
 import injuries from '../data/house-rules/injuries.json';
 
+import wildMagic from '../data/character-creation-resources/wild-magic.json';
+
 interface GenericDictionary {
   [value: string]: string;
 }
@@ -87,6 +89,43 @@ export class DataService {
   }
   private capitalize(text: string): string {
     return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+
+  public wildMagicSurge(): string {
+    let surge = wildMagic[Math.floor(Math.random() * wildMagic.length)];
+
+    if (surge.includes('~')) {
+      if (surge.includes('spell~')) {
+        if (surge.includes('1stlevel')) {
+          let filtered = spells.filter((s) => s.level === 1);
+          let spell = filtered[Math.floor(Math.random() * filtered.length)];
+
+          surge = surge.replace('spell~1stlevel', spell.name);
+        } else if (surge.includes('2ndlevel')) {
+          let filtered = spells.filter((s) => s.level === 2);
+          let spell = filtered[Math.floor(Math.random() * filtered.length)];
+
+          surge = surge.replace('spell~2ndlevel', spell.name);
+        } else if (surge.includes('3rdlevel')) {
+          let filtered = spells.filter((s) => s.level === 3);
+          let spell = filtered[Math.floor(Math.random() * filtered.length)];
+
+          surge = surge.replace('spell~3rdlevel', spell.name);
+        } else if (surge.includes('4thlevel')) {
+          let filtered = spells.filter((s) => s.level === 4);
+          let spell = filtered[Math.floor(Math.random() * filtered.length)];
+
+          surge = surge.replace('spell~4thlevel', spell.name);
+        } else if (surge.includes('5thlevel')) {
+          let filtered = spells.filter((s) => s.level === 5);
+          let spell = filtered[Math.floor(Math.random() * filtered.length)];
+
+          surge = surge.replace('spell~5thlevel', spell.name);
+        }
+      }
+    }
+
+    return surge;
   }
 
   public getSpellsByList(list: string): any[] {

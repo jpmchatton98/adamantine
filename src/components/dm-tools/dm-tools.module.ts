@@ -7,6 +7,10 @@ import { RouterModule } from '@angular/router';
 import { DmToolsComponent } from './dm-tools.component';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 @NgModule({
   declarations: [DmToolsComponent],
@@ -17,6 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     NzTableModule,
     NzTabsModule,
+    NzButtonModule,
+    NzCheckboxModule,
+    NzInputNumberModule,
+    NzModalModule,
     RouterModule,
   ],
 })

@@ -1107,6 +1107,93 @@
       </nz-tab>
     </nz-tabset>
   </nz-tab>
+  <nz-tab nzTitle="Injuries">
+    <div class="calculator">
+      <button nz-button (click)="generateInjury()" [disabled]="!canGenerate()">
+        Generate Injury
+      </button>
+
+      <table>
+        <tr>
+          <th>Type</th>
+          <th style="text-align: center">V</th>
+          <th style="text-align: center">R</th>
+        </tr>
+        <tr *ngFor="let type of injuryCalcData">
+          <td>
+            <label nz-checkbox [(ngModel)]="type.injuries">{{
+              type.name
+            }}</label>
+          </td>
+          <td><label nz-checkbox [(ngModel)]="type.vulnerable"></label></td>
+          <td><label nz-checkbox [(ngModel)]="type.resist"></label></td>
+        </tr>
+      </table>
+
+      <div>
+        <label nz-checkbox [(ngModel)]="siegeInjury"
+          >Damage from Siege Weapon</label
+        >
+      </div>
+
+      <div>
+        <label nz-checkbox [(ngModel)]="resistInjuries">Resist Injuries</label>
+        <br />
+        <input type="number" placeholder="CON mod" [(ngModel)]="conMod" />
+      </div>
+
+      <nz-modal
+        [(nzVisible)]="injuryModal"
+        nzTitle="Generated Injuries"
+        [nzCancelText]="null"
+        [nzOkText]="null"
+        (nzOnCancel)="injuryModal = false"
+      >
+        <ng-container *nzModalContent>
+          <div *ngIf="generatedInjury">
+            <h5>Primary Injury</h5>
+            <div>
+              <h6>{{ generatedInjury?.title }}</h6>
+              <div [innerHTML]="generatedInjury?.description"></div>
+            </div>
+            <h5 *ngIf="extraInjuries.length">Extra Injuries</h5>
+            <div *ngFor="let extra of extraInjuries">
+              <h6>{{ extra?.title }}</h6>
+              <div [innerHTML]="extra?.description"></div>
+            </div>
+          </div>
+        </ng-container>
+      </nz-modal>
+    </div>
+    <nz-tabset nzSize="small" [nzAnimated]="false">
+      <nz-tab *ngFor="let type of injuries" [nzTitle]="capitalize(type.type)">
+        <nz-table
+          #injuryTable
+          [nzData]="type.list"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <th>d20</th>
+              <th>Injury</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let injury of injuryTable.data">
+              <tr *ngIf="injury.maxRoll !== 1000">
+                <td>{{ getRollRange(injury) }}</td>
+                <td>{{ injury.title }}</td>
+                <td>{{ injury.description }}</td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
   <nz-tab nzTitle="Madness">
     <nz-tabset nzSize="small" [nzAnimated]="false">
       <nz-tab nzTitle="Short-Term">
@@ -1385,34 +1472,69 @@
       </nz-tab>
     </nz-tabset>
   </nz-tab>
-  <nz-tab nzTitle="Injuries">
-    <nz-tabset nzSize="small" [nzAnimated]="false">
-      <nz-tab *ngFor="let type of injuries" [nzTitle]="capitalize(type.type)">
-        <nz-table
-          #injuryTable
-          [nzData]="type.list"
-          [nzShowPagination]="false"
-          [nzPageSize]="1 / 0"
-          nzSize="small"
+  <nz-tab nzTitle="Throwing">
+    <div class="calculator">
+      <button nz-button [disabled]="!canThrow()" (click)="calculateThrowing()">
+        Calculate
+      </button>
+      <div>
+        <label for="thrower_str"
+          ><strong>Thrower's Strength Score</strong></label
         >
-          <thead>
+        <input [(ngModel)]="throwerStr" type="number" id="thrower_str" />
+        <br />
+        <label for="effective_size"
+          ><strong>Thrower's Effective Size</strong></label
+        >
+        <select [(ngModel)]="sizeMod" id="effective_size">
+          <option value="0.0625">Fine</option>
+          <option value="0.125">Diminutive</option>
+          <option value="0.25">Tiny</option>
+          <option value="0.5">Small</option>
+          <option value="1" selected>Medium</option>
+          <option value="2">Large</option>
+          <option value="4">Huge</option>
+          <option value="8">Gargantuan</option>
+          <option value="16">Titanic</option>
+          <option value="32">Colossal</option>
+          <option value="64">Kaiju</option>
+        </select>
+        <br />
+        <label for="throwee_weight"
+          ><strong>Throwee's Weight (in pounds)</strong></label
+        >
+        <input [(ngModel)]="throweeWeight" type="number" id="throwee_weight" />
+      </div>
+
+      <nz-modal
+        [(nzVisible)]="throwModal"
+        nzTitle="Throwing Data"
+        [nzCancelText]="null"
+        [nzOkText]="null"
+        (nzOnCancel)="throwModal = false"
+      >
+        <ng-container *nzModalContent>
+          <table>
             <tr>
-              <th>d20</th>
-              <th>Injury</th>
-              <th>Description</th>
+              <th>Range</th>
+              <td>{{ throwingRange }} / {{ throwingRange * 3 }} ft.</td>
             </tr>
-          </thead>
-          <tbody>
-            <ng-container *ngFor="let injury of injuryTable.data">
-              <tr *ngIf="injury.maxRoll !== 1000">
-                <td>{{ getRollRange(injury) }}</td>
-                <td>{{ injury.title }}</td>
-                <td>{{ injury.description }}</td>
-              </tr>
-            </ng-container>
-          </tbody>
-        </nz-table>
-      </nz-tab>
-    </nz-tabset>
+            <tr>
+              <th>Damage</th>
+              <td>{{ throwingDamage }}d6</td>
+            </tr>
+          </table>
+        </ng-container>
+      </nz-modal>
+    </div>
+  </nz-tab>
+  <nz-tab nzTitle="Wild Magic">
+    <button style="width: 100%" nz-button (click)="wildMagicSurge()">
+      SURGE
+    </button>
+    <div
+      style="text-align: center; font-size: 20px"
+      [innerHTML]="surgeText"
+    ></div>
   </nz-tab>
 </nz-tabset>

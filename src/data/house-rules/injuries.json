@@ -863,57 +863,6 @@
       "extraInjuries": 0
     }
   ],
-  "siege": [
-    {
-      "minRoll": 1,
-      "maxRoll": 2,
-      "title": "Pulverized",
-      "description": "You are dead.  Your remains are reduced to a bloody pulp that is unrecognizable without a DC 15 Wisdom (Insight) check or magical means. If this injury was caused by explosive or burning ammunition, your remains are burned and unusable for the purpose of the Resurrection spell and you can only be returned to life with the True Resurrection or Wish spells.",
-      "extraInjuries": 0
-    },
-    {
-      "minRoll": 3,
-      "maxRoll": 5,
-      "title": "Crushed",
-      "description": "You are dead.  Your remains are reduced to a mix of body parts and crushed entrails that are unrecognizable without a DC 12 Wisdom (Insight) check by an ally. Parts of your body can be used for a Resurrection spell. If this injury was caused by explosive ammunition, a successful DC 12 Intelligence (Investigation) check is needed to find the part usable for the Resurrection spell.",
-      "extraInjuries": 0
-    },
-    {
-      "minRoll": 6,
-      "maxRoll": 8,
-      "title": "Mangled",
-      "description": "You are dead.  Your remains are torn into several parts, most of your organs spilled out. Parts of your body can be used for a Resurrection spell. Unless this injury was caused by explosive ammunition, most of your head is intact which allows the use of the Speak with Dead spell.",
-      "extraInjuries": 0
-    },
-    {
-      "minRoll": 9,
-      "maxRoll": 13,
-      "title": "Dead",
-      "description": "You are dead.  You can be raised back to life with the Revivify or Raise Dead spell, but you take 3 injuries that must be resolved immediately upon returning to life.",
-      "extraInjuries": 3
-    },
-    {
-      "minRoll": 14,
-      "maxRoll": 16,
-      "title": "Dying",
-      "description": "You are dying.  You automatically fail 2 of your Death Saves. You take 2 injuries that must be resolved upon stabilization.",
-      "extraInjuries": 2
-    },
-    {
-      "minRoll": 17,
-      "maxRoll": 20,
-      "title": "Mortally Wounded",
-      "description": "You are dying. You automatically fail 1 of your Death Saves. You take 1 injury that must be resolved upon stabilization.",
-      "extraInjuries": 1
-    },
-    {
-      "minRoll": 21,
-      "maxRoll": 1000,
-      "title": "No Injury",
-      "description": "",
-      "extraInjuries": 0
-    }
-  ],
   "thunder": [
     {
       "minRoll": 1,
@@ -977,6 +926,57 @@
       "title": "Severe Bruising",
       "description": "You suffer severe bruising over an extensive portion of your anatomy. Anytime you suffer bludgeoning or force damage, you suffer an additional point of bludgeoning or force damage. The bruising heals if you receive magical healing. Alternatively, it heals on its own in 2 weeks.",
       "extraInjuries": 0
+    },
+    {
+      "minRoll": 21,
+      "maxRoll": 1000,
+      "title": "No Injury",
+      "description": "",
+      "extraInjuries": 0
+    }
+  ],
+  "siege": [
+    {
+      "minRoll": 1,
+      "maxRoll": 2,
+      "title": "Pulverized",
+      "description": "You are dead.  Your remains are reduced to a bloody pulp that is unrecognizable without a DC 15 Wisdom (Insight) check or magical means. If this injury was caused by explosive or burning ammunition, your remains are burned and unusable for the purpose of the Resurrection spell and you can only be returned to life with the True Resurrection or Wish spells.",
+      "extraInjuries": 0
+    },
+    {
+      "minRoll": 3,
+      "maxRoll": 5,
+      "title": "Crushed",
+      "description": "You are dead.  Your remains are reduced to a mix of body parts and crushed entrails that are unrecognizable without a DC 12 Wisdom (Insight) check by an ally. Parts of your body can be used for a Resurrection spell. If this injury was caused by explosive ammunition, a successful DC 12 Intelligence (Investigation) check is needed to find the part usable for the Resurrection spell.",
+      "extraInjuries": 0
+    },
+    {
+      "minRoll": 6,
+      "maxRoll": 8,
+      "title": "Mangled",
+      "description": "You are dead.  Your remains are torn into several parts, most of your organs spilled out. Parts of your body can be used for a Resurrection spell. Unless this injury was caused by explosive ammunition, most of your head is intact which allows the use of the Speak with Dead spell.",
+      "extraInjuries": 0
+    },
+    {
+      "minRoll": 9,
+      "maxRoll": 13,
+      "title": "Dead",
+      "description": "You are dead.  You can be raised back to life with the Revivify or Raise Dead spell, but you take 3 injuries that must be resolved immediately upon returning to life.",
+      "extraInjuries": 3
+    },
+    {
+      "minRoll": 14,
+      "maxRoll": 16,
+      "title": "Dying",
+      "description": "You are dying.  You automatically fail 2 of your Death Saves. You take 2 injuries that must be resolved upon stabilization.",
+      "extraInjuries": 2
+    },
+    {
+      "minRoll": 17,
+      "maxRoll": 20,
+      "title": "Mortally Wounded",
+      "description": "You are dying. You automatically fail 1 of your Death Saves. You take 1 injury that must be resolved upon stabilization.",
+      "extraInjuries": 1
     },
     {
       "minRoll": 21,

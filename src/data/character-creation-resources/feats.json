@@ -2554,7 +2554,9 @@
     "prereq": [
       {
         "race": [
+          "azapian",
           "bugbear",
+          "daolagiath",
           "fairy",
           "firbolg",
           "harengon",
@@ -2845,318 +2847,6 @@
       "id": "96475C71-D543-48C0-93CF-AEF96A50DBA5",
       "type": "exotic-weapon",
       "limits": ["Flying Sword", "Kusarigama", "Meteor Hammer"]
-    }
-  },
-  {
-    "name": "Elemental Soul",
-    "prereq": [
-      {
-        "race": ["genasi"]
-      }
-    ],
-    "type": "racial",
-    "description": "Your connection to the elements increases. You gain a 3rd level spell determined by your subrace.  Constitution is your spellcasting ability for it, and you must finish a long rest before you can do so again.",
-    "choices": {
-      "id": "E18B7C3B-D7CF-4B80-AEE9-12D664D826D9",
-      "type": "trait",
-      "options": [
-        {
-          "name": "Air Genasi",
-          "traits": [
-            {
-              "name": "Fly",
-              "description": "You can cast the Fly spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Fly"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Ash Genasi",
-          "traits": [
-            {
-              "name": "Ashardalon's Stride",
-              "description": "You can cast the Ashardalon's Stride spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Ashardalon's Stride"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Dust Genasi",
-          "traits": [
-            {
-              "name": "Animate Dead",
-              "description": "You can cast the Animate Dead spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Animate Dead"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Earth Genasi",
-          "traits": [
-            {
-              "name": "Erupting Earth",
-              "description": "You can cast the Erupting Earth spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Erupting Earth"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fire Genasi",
-          "traits": [
-            {
-              "name": "Inferno",
-              "description": "You can cast the Inferno spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Inferno"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Ice Genasi",
-          "traits": [
-            {
-              "name": "Sleet Storm",
-              "description": "You can cast the Sleet Storm spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Sleet Storm"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Lightning Genasi",
-          "traits": [
-            {
-              "name": "Electrocute",
-              "description": "You can cast the Electrocute spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Electrocute"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Magma Genasi",
-          "traits": [
-            {
-              "name": "Melf's Minute Meteors",
-              "description": "You can cast the Melf's Minute Meteors spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Melf's Minute Meteors"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mineral Genasi",
-          "traits": [
-            {
-              "name": "Novaburst",
-              "description": "You can cast the Novaburst spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Novaburst"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Ooze Genasi",
-          "traits": [
-            {
-              "name": "Erode",
-              "description": "You can cast the Erode spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Erode"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Radiance Genasi",
-          "traits": [
-            {
-              "name": "Daylight",
-              "description": "You can cast the Daylight spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Daylight"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salt Genasi",
-          "traits": [
-            {
-              "name": "Mummify",
-              "description": "You can cast the Mummify spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Mummify"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Smoke Genasi",
-          "traits": [
-            {
-              "name": "Stinking Cloud",
-              "description": "You can cast the Stinking Cloud spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Stinking Cloud"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Steam Genasi",
-          "traits": [
-            {
-              "name": "Gaseous Form",
-              "description": "You can cast the Gaseous Form spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Gaseous Form"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Vacuum Genasi",
-          "traits": [
-            {
-              "name": "Wind Wall",
-              "description": "You can cast the Wind Wall spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Wind Wall"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Water Genasi",
-          "traits": [
-            {
-              "name": "Tidal Wave",
-              "description": "You can cast the Tidal Wave spell.",
-              "granted": [
-                {
-                  "type": "spell",
-                  "options": ["Tidal Wave"],
-                  "ignoreMaxLevel": true,
-                  "ability": "con"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "name": "Runic Growth",
-    "prereq": [
-      {
-        "race": ["goliath"]
-      }
-    ],
-    "type": "racial",
-    "description": "You've manifested increased giant magic, allowing you to call upon it to grow to the size of a true giant.  You learn the Redwood Expansion spell, for which Constitution is your spellcasting ability.  You can cast it once on yourself, and regain the ability to do so when you finish a long rest.",
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Redwood Expansion"],
-        "ignoreMaxLevel": true,
-        "ability": "con"
-      }
-    ],
-    "uses": {
-      "id": "3C46F37C-F24E-4691-8A7F-A8E793D61339",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
     }
   },
   {
@@ -3611,6 +3301,23 @@
     ]
   },
   {
+    "name": "Dragon Wings",
+    "prereq": [
+      {
+        "race": ["dragonborn"]
+      }
+    ],
+    "type": "racial",
+    "description": "You sprout large wings resembling those of a dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
+    "granted": [
+      {
+        "type": "speed",
+        "speed": "fly",
+        "amount": -1
+      }
+    ]
+  },
+  {
     "name": "Barbed Hide",
     "prereq": [
       {
@@ -3848,6 +3555,37 @@
         "amount": 5
       }
     ]
+  },
+  {
+    "name": "Fell Body",
+    "prereq": [
+      {
+        "race": ["nocturne"]
+      }
+    ],
+    "type": "racial",
+    "description": "You've learned to merge with the shadows around you. You gain the following benefits:<ul><li>Your Dexterity score increases by 1, to a maximum of 20.</li><li>You can see in magical darkness as if it was non-magical.</li><li>You are resistant to necrotic damage.</li><li>You do not require sleep.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "damage-resistance",
+        "options": ["Necrotic"]
+      }
+    ]
+  },
+  {
+    "name": "Shadow Walker",
+    "prereq": [
+      {
+        "race": ["nocturne"]
+      }
+    ],
+    "type": "racial",
+    "description": "Fell magic runs strong in you, unlocking a resilience possess by other Shadowfell denizens while enhancing your nocturnian qualities. You gain the following benefits:<ul><li>You can use your Shade Walk trait to move a maximum additional distance equal to your base walking speed instead of half.</li><li>As an action, while within 5 feet of another creature, you can step into that creature's shadow and remain there. While in a creature's shadow you occupy the same space as the creature, are considered invisible and cannot affect your surroundings. As an action or if you take any damage leave that creature's shadow, appearing in an unoccupied space within 5 feet.</li></ul>"
   },
   {
     "name": "Brutal Brawler",

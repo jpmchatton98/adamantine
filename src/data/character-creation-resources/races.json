@@ -192,6 +192,62 @@
     "name": "Aarakocra"
   },
   {
+    "description": "Long ago, an elf wandering a forest heard birdsong so pure and wholesome that she was moved to tears. Following the music, she came upon a clearing where stood a handsome elf youth who had also paused to hear the bird's song. This was Fenmarel Mestarine, a reclusive elf god. His divine presence stole her heart as he fled, vanishing into the woods as if he was never there.</p><p>Though the elf searched the woods and called for her stranger, she found no sign of his passage. Driven to despair by her longing, she begged the gods to help her. Aerdrie Faenya, elf goddess of the sky, heard the elf's cries and was moved to her aid. She appeared as the bird whose song had entranced the outcast god, then taught that song of beauty and seduction to the elf.</p><p>When her singing failed to draw Fenmarel Mestarine to her side, the elf cursed the gods, invoking a dreadful power and transforming her into the first harpy. The curse worked its magic on the elf's spirit as well as her body, turning her desire for love into a hunger for flesh, even as her beautiful song continued to draw creatures to her deadly embrace.",
+    "asis": [{ "dex": 2 }, { "cha": 1 }],
+    "maturity": 12,
+    "lifespan": 50,
+    "height": [3, 5],
+    "weight": [50, 100],
+    "category": "Monstrous",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 0,
+    "languages": ["Common", "Auran"],
+    "traits": [
+      {
+        "name": "Flight",
+        "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+        "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
+      },
+      {
+        "name": "Keen Senses",
+        "description": "You have proficiency in the Perception skill.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Perception"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Siren Song",
+        "description": "You can use your action to start singing a magical melody for the next minute, which can be heard out to 120 feet. When you do so, each creature of your choice that can hear your singing must make a Wisdom saving throw with a DC equal to 8 + your Charisma modifier + your proficiency bonus.</p><p>On a failed save, a creature is charmed by you and incapacitated for the duration of the song. If the charmed target is more than 5 feet away from you, the target must move on its turn towards you by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from any source, a target can repeat its saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.  A target that successfully saves is immune to your song for the next 24 hours.</p><p>You can use this feature once, and regain the ability to do so when you finish a short or long rest.  In addition, you have proficiency in the Performance skill.",
+        "uses": [
+          {
+            "id": "B71459DB-B2FA-4035-9502-8D0E4DD7BD5B",
+            "type": "fixed",
+            "amount": 1,
+            "reset": 1
+          }
+        ],
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Performance"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Talons",
+        "description": "Your razor talons are natural weapons with which you can make unarmed strikes.  They deal slashing damage equal to 1d6 + your Strength or Dexterity modifier on a hit, and you can use your Dexterity modifier for attack rolls with them."
+      }
+    ],
+    "name": "Harpy"
+  },
+  {
     "description": "Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage. An aasimar, except for one who has turned to evil, has a link to an angelic being. That being - usually a deva - provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.",
     "asis": [{ "cha": 2 }],
     "maturity": 18,
@@ -679,7 +735,7 @@
     "traits": [
       {
         "name": "Arachnid Build",
-        "description": "You count as one size larger when determining your carrying capacity and the weight you can push or drag, and you have advantage on saving throws against being knocked prone.</p><p>In addition, you have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
+        "description": "You count as one size larger when determining your carrying capacity and the weight you can push or drag, and you have advantage on saving throws against being knocked prone.</p><p>In addition, you have a climbing speed equal to your walking speed. At 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
         "granted": [
           { "type": "speed", "speed": "climb", "amount": -1 },
           { "type": "condition-advantage", "options": ["Prone"] }
@@ -1856,16 +1912,6 @@
                   }
                 }
               ]
-            },
-            {
-              "name": "Winged",
-              "traits": [
-                {
-                  "name": "Dragon Wings",
-                  "description": "You have large wings resembling those of a dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
-                  "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
-                }
-              ]
             }
           ]
         }
@@ -2496,6 +2542,39 @@
         ]
       },
       {
+        "name": "Azer",
+        "description": "Natives of the Elemental Plane of Fire, azers are master crafters, expert miners, and sworn foes of the efreet. In appearance and manner, an azer resembles a dwarf, which has led some scholars to speculate that azer may be descended from dwarves. Beneath its metallic looking skin, an azer is a being of fire, which outwardly manifests in its fiery hair and beard.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Being of Fire",
+            "description": "You have resistance to fire damage.",
+            "granted": [
+              {
+                "type": "damage-resistance",
+                "options": ["Fire"]
+              }
+            ]
+          },
+          {
+            "name": "Elemental Nature",
+            "description": "Your creature type is Elemental, rather than Humanoid."
+          },
+          {
+            "name": "Fiery Weapons",
+            "description": "As a bonus action, you can set a weapon you are holding ablaze.  For the next minute, attacks with that weapon deal an additional 1d4 fire damage on a hit, and the weapon shines bright light in a 10 foot radius and dim light 10 feet beyond that.  You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": [
+              {
+                "id": "D6318B0C-881B-403B-9FEB-52BEE1355A1C",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Duergar",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -3054,7 +3133,7 @@
     "traits": [
       {
         "name": "Tiny",
-        "description": "Fairies are the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
+        "description": "Fairies are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
       },
       {
         "name": "Fey Ancestry",
@@ -3103,6 +3182,50 @@
       }
     ],
     "name": "Fairy"
+  },
+  {
+    "description": "Imps are found throughout the Lower Planes, either running errands for their infernal masters, spying on rivals, or misleading and waylaying mortals. An imp will proudly serve an evil master of any kind, but it can't be relied on to carry out tasks with any speed or efficiency.",
+    "asis": [{ "cha": 2 }, { "dex": 1 }],
+    "maturity": 16,
+    "lifespan": 100,
+    "height": [1, 2],
+    "weight": [5, 10],
+    "category": "Extraplanar",
+    "type": "Fiend",
+    "size": -2,
+    "speed": 20,
+    "darkvision": 60,
+    "languages": ["Common", "Infernal"],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Imps are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
+      },
+      {
+        "name": "Animal Shape",
+        "description": "As an action, you can magically transform into a Tiny beast with a CR of 0, or back into your true form.  Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</p><p>When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form, For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.</p><p>You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as Call Lightning, that you've already cast.</p><p>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.</p><p>Any equipment you are wearing or carrying isn't transformed. You revert to your true form if you die."
+      },
+      {
+        "name": "Fiendsight",
+        "description": "You can see in magical darkness within 10 feet of you as though it were dim light."
+      },
+      {
+        "name": "Flight",
+        "description": "You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.",
+        "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
+      },
+      {
+        "name": "Invisibility",
+        "description": "As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+        "uses": {
+          "id": "D6DF48BC-7ED8-48CB-A2A1-790D10B7323E",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": 2
+        }
+      }
+    ],
+    "name": "Imp"
   },
   {
     "description": "Firbolgs are fey-oriented half-giants. Their tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.\n",
@@ -4722,6 +4845,61 @@
     "name": "Grung"
   },
   {
+    "description": "Bullywugs consider themselves the right and proper rulers of the swamps. They follow an etiquette of sorts when dealing with outsiders and each other, subject to the whims and fancies of their leader-a self-styled lord of the muck. Bullywugs introduce themselves with grand-sounding titles, make great shows of bowing and debasing themselves before their superiors, and endlessly vie to win their superiors' favor.",
+    "asis": [{ "con": 2 }, { "wis": 1 }],
+    "maturity": 10,
+    "lifespan": 50,
+    "height": [3, 5],
+    "weight": [60, 140],
+    "category": "Aquatic",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 25,
+    "darkvision": 0,
+    "languages": ["Common", "Aquan"],
+    "traits": [
+      {
+        "name": "Amphibious",
+        "description": "You can breathe air as well as water, and you have a swimming speed equal to your walking speed.",
+        "granted": [
+          {
+            "type": "speed",
+            "speed": "swim",
+            "amount": -1
+          }
+        ]
+      },
+      {
+        "name": "Court Culture",
+        "description": "You have proficiency in the Society skill.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Society"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Speak with Frogs",
+        "description": "Through sounds and gestures, you can communicate simple ideas with frogs, toads, and the like."
+      },
+      {
+        "name": "Standing Leap",
+        "description": "Your maximum jump distance for high and long jumps is doubled, and you do not need to take a running start. This extra distance costs movement as normal.",
+        "granted": [
+          { "type": "jump", "multiplier": 2 },
+          { "type": "standing-jump" }
+        ]
+      },
+      {
+        "name": "Swamp Camouflage",
+        "description": "Whenever you make a Dexterity (Stealth) check made to hide in swamp-like terrain, you are considered proficient in the Stealth skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+      }
+    ],
+    "name": "Bullywug"
+  },
+  {
     "description": "Hadozees are people with simian features that long ago adapted to live among the tall trees of their home world. They are natural climbers, with feet as dexterous as their hands, even to the extent of having opposable thumbs. Membranes of skin hang loosely from their arms and legs. When stretched taut, these membranes enable a hadozee to glide.\n<br><br>The first hadozees were hunted by large natural predators. To survive in this hostile environment, they developed an instinctual sense of community. Today, that same instinct compels many hadozees to cultivate friendships, knowing there is safety in numbers. They are particularly fond of sailing, and many crews on the seas are full of hadozee.\n",
     "asis": [{ "str": 1 }, { "dex": 1 }, { "wis": 1 }],
     "maturity": 18,
@@ -4928,6 +5106,24 @@
               "limits": ["Astral Vehicles", "Water Vehicles"],
               "level": 1
             }
+          }
+        ]
+      },
+      {
+        "name": "Half-Azer",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Fiery Weapons",
+            "description": "As a bonus action, you can set a weapon you are holding ablaze.  For the next minute, attacks with that weapon deal an additional 1d4 fire damage on a hit, and the weapon shines bright light in a 10 foot radius and dim light 10 feet beyond that.  You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": [
+              {
+                "id": "D6318B0C-881B-403B-9FEB-52BEE1355A1C",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 2
+              }
+            ]
           }
         ]
       },
@@ -7877,6 +8073,26 @@
             "description": "You can use a bonus action to spend one Hit Die to heal yourself. You regain a number of hit points equal to a roll of the hit die plus your Constitution modifier (minimum of 1). If you take acid or fire damage, you cannot use this feature until the end of your next turn."
           }
         ]
+      },
+      {
+        "name": "Yeti",
+        "description": "A yeti's windborne howl sounds out across remote mountains, striking fear into the hearts of the scattered miners and herders that dwell there. These hulking creatures stalk alpine peaks in a ceaseless hunt for food. Their snow-white fur lets them move like ghosts against the frozen landscape. A yeti's icy simian eyes can freeze its prey in place.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Claws",
+            "description": "Your fierce claws are natural wepaons with which you can make unarmed strikes.  They deal slashing damage equal to 1d8 + your Strength modifier on a hit.</p><p>In addition, while you are not wearing footwear, you ignore difficult terrain composed of ice or snow."
+          },
+          {
+            "name": "Keen Smell",
+            "description": "You have advantage on Wisdom (Perception) checks that rely on smell."
+          },
+          {
+            "name": "Iceborn Predator",
+            "description": "You are adapted to travel in sub-zero conditions. You are resistant to cold damage, are acclimated to extreme cold, and have advantage on Dexterity (stealth) checks in snowy or icy terrain.",
+            "granted": [{ "type": "damage-resistance", "options": ["Cold"] }]
+          }
+        ]
       }
     ],
     "name": "Lesser Giant"
@@ -7949,6 +8165,46 @@
       }
     ],
     "name": "Orc"
+  },
+  {
+    "description": "When creatures not native to the Shadowfell give birth within its gloomy domain, there is a chance that their souls are marked with the essence of Shadowfell otherwise known as, shadowstuff. While not initially showing it, as they grow they take on the characteristics of the creatures native to the plane. Elves born here are cursed to become new shadar-kai, while other humanoids become nocturnes. Such features include an overall darker complexion, enhanced vision in darkness, and a largely nocturnal lifestyle. These traits make them adapt to the perpetual darkness of the Shadowfell and natural hunters of the night, taking down prey with swift and efficient movements as they move through the shadow like a ripple across an otherwise still lake.",
+    "asis": [{ "dex": 2 }, { "cha": 1 }],
+    "maturity": 25,
+    "lifespan": 200,
+    "height": [5, 6],
+    "weight": [80, 130],
+    "category": "Extraplanar",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 120,
+    "languages": ["Common", "Elvish", "Shadowspeak"],
+    "traits": [
+      {
+        "name": "Fellvision",
+        "description": "You can't discern color, only shades of gray, and are effectively colorblind. However, you can see in dim light and darkness within 120 feet of you as if it were bright light."
+      },
+      {
+        "name": "Gloom",
+        "description": "You have proficiency in the Stealth skill.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Stealth"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Shade Walk",
+        "description": "When you move through an area of darkness, you can move an additional foot for every foot of darkness you travel through, to a maximum additional distance traveled equal to half your base walking speed. When you move this way, to any creature that sees you, you appear as a formless mass that moves through the shadow."
+      },
+      {
+        "name": "Shadowfell Metabolism",
+        "description": "You, like the Shadowfell are slow to change with your long drawn out metabolism. You can go without food and drink for twice as long as a normal Medium-sized creature and when affected by a potion or poison, the effects take twice as long to leave your system, doubling the duration."
+      }
+    ],
+    "name": "Nocturne"
   },
   {
     "description": "Historically solitary and primitive in nature, panserbjorn have, under recent leadership, begun forming increasingly larger communities. This burgeoning civilisation has begun adopting social norms and morals much closer to those found within 'civilised' cultures. Indeed, magical universities now include panserbjorn amongst their alumni, and remote mountain-top temples highly prize these bear-people as monks and clerics. Even the more solitary panserbjorn are sought after as guides for trading caravans or adventurers delving into the tundra.\n",
@@ -9160,6 +9416,58 @@
     "name": "Thri-kreen"
   },
   {
+    "description": "Ettercaps are humanoid spiders that tend, feed, and watch over spiders the way a shepherd oversees a flock of sheep. They lair deep in remote forests.</p><p>Fine strands of silk stream from glands in an ettercap's abdomen, letting it shoot sticky strands of webbing to bind, entrap, or strangle its victims. It can also use its webbing to fashion elaborate snares and nets, which often festoon its lair.",
+    "asis": [{ "dex": 1 }, { "con": 1 }, { "wis": 1 }],
+    "maturity": 1,
+    "lifespan": 30,
+    "height": [5, 7],
+    "weight": [175, 250],
+    "category": "Insectoid",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Entognatha"],
+    "traits": [
+      {
+        "name": "Arachnid Shepherd",
+        "description": "You have proficiency in the Animal Handling skill.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Animal Handling"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Speak with Spiders",
+        "description": "Through sounds and gestures, you can communicate simple ideas with spiders."
+      },
+      {
+        "name": "Spider Climb",
+        "description": "You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
+        "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+      },
+      {
+        "name": "Spider's Web",
+        "description": "You ignore movement restrictions caused by webbing, and you know the Web spell, for which Wisdom is your spellcasting ability.  You can cast Web using this trait once, and regain the ability to do so when you finish a long rest.",
+        "granted": [{ "type": "spell", "options": ["Web"], "ability": "wis" }],
+        "uses": {
+          "id": "29A42BD4-BE98-4979-B840-D4C9E03308B7",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      },
+      {
+        "name": "Web Sense",
+        "description": "While in contact with a web, you know the exact location of any other creature in contact with the same web."
+      }
+    ],
+    "name": "Ettercap"
+  },
+  {
     "description": "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of the lower planes into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children's children will always be held accountable.",
     "asis": [],
     "maturity": 18,
@@ -9981,6 +10289,40 @@
       }
     ],
     "name": "Triton"
+  },
+  {
+    "description": "Sahuagin are a predatory, piscine, four-armed race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.",
+    "asis": [{ "str": 1 }, { "con": 1 }, { "wis": 1 }],
+    "maturity": 18,
+    "lifespan": 200,
+    "height": [5, 7],
+    "weight": [175, 250],
+    "category": "Aquatic",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Aquan"],
+    "traits": [
+      {
+        "name": "Amphibious",
+        "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
+        "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+      },
+      {
+        "name": "Blood Frenzy",
+        "description": "You can sense the general direction of a creature below half of its maximum hit points that is within 100 feet of you. Furthermore, when a creature you damaged on your last turn ends its turn further away from you than it started, you can use your reaction to move up to 30 feet closer to it."
+      },
+      {
+        "name": "Bite",
+        "description": "You have a mouth rowed with jagged, razor like, teeth, and it is a natural weapon which you can make attacks with. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier."
+      },
+      {
+        "name": "Secondary Arms",
+        "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
+      }
+    ],
+    "name": "Sahuagin"
   },
   {
     "description": "Vedalken are tall and slender, standing almost a head taller than humans but weighing about the same. Their hairless skin comes in a range of shades of blue. Their eyes are darker shades of blue or violet. They lack external ears, their noses are broad and flat, and they are partially amphibious.\n",
