@@ -72,8 +72,6 @@ export class BuilderChoiceComponent implements OnInit {
     ) {
       await this.characterBuilderService.getCharacterFromDb(this.characterId);
     }
-    console.log('1', this.characterBuilderService.character);
-
     this.genericListKeys = this.dataService.getGenericListKeys();
 
     const choiceEntry = this.characterObj?.choices.find(
@@ -97,8 +95,6 @@ export class BuilderChoiceComponent implements OnInit {
               this.characterId
             );
           }
-
-          console.log('2', this.characterBuilderService.character);
 
           this.setup();
           this.changeRef.detectChanges();

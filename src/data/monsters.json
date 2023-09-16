@@ -19778,7 +19778,7 @@
   {
     "name": "Cyclops",
     "basicRules": true,
-    "size": "Huge",
+    "size": "Large",
     "type": "giant",
     "alignment": ["C", "N"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
@@ -19809,13 +19809,56 @@
       {
         "name": "Greatclub",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +9 to hit, reach 10 ft., one target. <em>Hit:</em> 19 (3d8 + 6) bludgeoning damage."
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 10 ft., one target. <em>Hit:</em> 15 (2d8 + 6) bludgeoning damage."
         ]
       },
       {
         "name": "Rock",
         "entries": [
-          "<em>Ranged Weapon Attack.</em> +9 to hit, range 30/120 ft., one target. <em>Hit:</em> 28 (4d10 + 6) bludgeoning damage."
+          "<em>Ranged Weapon Attack.</em> +9 to hit, range 30/120 ft., one target. <em>Hit:</em> 23 (3d10 + 6) bludgeoning damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mountain Cyclops",
+    "basicRules": true,
+    "size": "Large",
+    "type": "giant",
+    "alignment": ["C", "N"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 138, "formula": "12d12 + 60" },
+    "speed": { "walk": 30 },
+    "str": 22,
+    "dex": 11,
+    "con": 20,
+    "int": 14,
+    "wis": 16,
+    "cha": 10,
+    "passive": 13,
+    "skill": {
+      "arcana": "+5",
+      "insight": "+6",
+      "perception": "+6"
+    },
+    "senses": ["truesight 1 mile (blind beyond this radius)"],
+    "languages": ["Common", "Jiganti"],
+    "cr": 7,
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The cyclops makes two greatclub attacks."]
+      },
+      {
+        "name": "Greatclub",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 10 ft., one target. <em>Hit:</em> 15 (2d8 + 6) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Rock",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +9 to hit, range 30/120 ft., one target. <em>Hit:</em> 23 (3d10 + 6) bludgeoning damage."
         ]
       }
     ]
@@ -26719,6 +26762,7 @@
     "group": ["Modrons"],
     "size": "Medium",
     "type": "construct",
+    "tags": ["modron"],
     "alignment": ["L", "N"],
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 11, "formula": "2d8 + 2" },
@@ -49230,6 +49274,7 @@
     "group": ["Modrons"],
     "size": "Medium",
     "type": "construct",
+    "tags": ["modron"],
     "alignment": ["L", "N"],
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 5, "formula": "1d8 + 1" },
@@ -54744,6 +54789,7 @@
     "group": ["Modrons"],
     "size": "Large",
     "type": "construct",
+    "tags": ["modron"],
     "alignment": ["L", "N"],
     "ac": [{ "ac": 16, "from": ["natural armor"] }],
     "hp": { "average": 32, "formula": "5d10 + 5" },
@@ -56901,6 +56947,7 @@
     "group": ["Modrons"],
     "size": "Medium",
     "type": "construct",
+    "tags": ["modron"],
     "alignment": ["L", "N"],
     "ac": [{ "ac": 16, "from": ["natural armor"] }],
     "hp": { "average": 22, "formula": "4d8 + 4" },
@@ -68358,6 +68405,7 @@
     "group": ["Modrons"],
     "size": "Medium",
     "type": "construct",
+    "tags": ["modron"],
     "alignment": ["L", "N"],
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 16, "formula": "3d8 + 3" },

@@ -5943,6 +5943,44 @@
         ]
       },
       {
+        "name": "Enhanced Human",
+        "description": "These humans underwent significant physical enhancement through magic or technology.  They tend to be larger and stronger than other humans.",
+        "asis": [{ "str": 1 }, { "dex": 1 }, { "con": 1 }],
+        "traits": [
+          {
+            "name": "Enhanced Physiology",
+            "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p><p>In addition, you have advantage on saving throws against poison, and you have resistance against poison damage.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Poison"] },
+              { "type": "condition-advantage", "options": ["Poisoned"] },
+              { "type": "hit-point-level", "amount": 1 }
+            ]
+          },
+          {
+            "name": "Physical Training",
+            "description": "You have proficiency in one of the following skills of your choice: Acrobatics, Athletics, Endurance, Sleight of Hand, or Stealth.",
+            "choices": [
+              {
+                "id": "ED725363-445E-40F4-B10F-53FFB0DA5E12",
+                "type": "skill",
+                "limits": [
+                  "Acrobatics",
+                  "Athletics",
+                  "Endurance",
+                  "Sleight of Hand",
+                  "Stealth"
+                ],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Powerful Build",
+            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+          }
+        ]
+      },
+      {
         "name": "Forestborn Human",
         "description": "These humans, hailing from forests, jungles, or even swamps, are trackers and hunters, with an innate connection to the natural world.",
         "asis": [

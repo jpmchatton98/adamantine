@@ -458,8 +458,9 @@ export class SpellsComponent implements OnInit {
   public changeUses(index: number, direction: number, pact: boolean) {
     if (this.character.uses) {
       const cantrips = this.characterSpells[0];
+      console.log('start index', index);
       if (cantrips.name !== 'Cantrips') {
-        index++;
+        index += 1;
       }
 
       let useIndex = -1;
@@ -472,6 +473,8 @@ export class SpellsComponent implements OnInit {
           (u) => u.id === `spells-${index}`
         );
       }
+      console.log('end index', index);
+      console.log('use index', useIndex);
 
       if (useIndex !== -1) {
         this.character.uses[useIndex].currUses += direction;

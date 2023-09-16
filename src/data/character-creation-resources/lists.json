@@ -4102,6 +4102,62 @@
       }
     },
     {
+      "name": "Bestow Magic",
+      "description": "As an action while holding your pact scepter, you can expend a spell slot to grant a willing creature you touch the ability to cast a spell you know once, at the level of the spell slot expended, using your spellcasting ability.  You can use this feature once, and regain the ability to do so when you finish a short or long rest.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Scepter"
+      },
+      "uses": [
+        {
+          "id": "1CD2E626-54A9-4DC8-A5EB-AA71D698C4EA",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Improved Pact Scepter",
+      "description": "When you cast a spell using your pact scepter as your spellcasting focus, you gain a +1 bonus to your spell attack modifier and your spell save DC.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Scepter"
+      }
+    },
+    {
+      "name": "Superior Pact Scepter",
+      "prereqLevel": 9,
+      "description": "When you cast a spell using your pact scepter as your spellcasting focus, you gain a +2 bonus to your spell attack modifier and your spell save DC.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Scepter"
+      }
+    },
+    {
+      "name": "Overcharge",
+      "prereqLevel": 9,
+      "description": "When you cast a spell using your pact scepter as your spellcasting focus, you can expend all of the scepter's uses to cast it as though you had cast the spell using a 9th-level spell slot.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Scepter"
+      }
+    },
+    {
+      "name": "Ultimate Pact Scepter",
+      "prereqLevel": 15,
+      "description": "When you cast a spell using your pact scepter as your spellcasting focus, you gain a +3 bonus to your spell attack modifier and your spell save DC.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Scepter"
+      }
+    },
+    {
       "name": "Protective Cowl",
       "description": "When you take damage while wearing your Pact Shroud, you can use your reaction to gain resistance to the damage from that attack, but your Pact Shroud disappears, and you must finish a short or long rest before you can summon it again.",
       "prereq": {

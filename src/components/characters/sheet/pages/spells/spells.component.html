@@ -1,92 +1,127 @@
 <div *ngIf="sorcery">
-    Sorcery Points:
-    <button nz-button (click)="changeSorcery(1)">+</button>
-    <input nz-input-number [(ngModel)]="currSorcery" (ngModelChange)="updateSorcery()" [nzSize]="'small'">
-    <button nz-button (click)="changeSorcery(-1)">-</button>
+  Sorcery Points:
+  <button nz-button (click)="changeSorcery(1)">+</button>
+  <input
+    nz-input-number
+    [(ngModel)]="currSorcery"
+    (ngModelChange)="updateSorcery()"
+    [nzSize]="'small'"
+  />
+  <button nz-button (click)="changeSorcery(-1)">-</button>
 </div>
-<div *ngFor="let level of characterSpells; let i = index">
-    <h6>{{ level.name }}</h6>
-    <div *ngIf="level.name !== 'Cantrips'">
-        <div class="checkboxes" *ngIf="standard">
-            <ng-container *ngFor="let cb of getUses(i); let i = index">
-                <div *ngIf="i === 0">
-                    Spell Slots:
-                </div>
-                <div class="box" *ngIf="cb" (click)="changeUses(i, -1, false)">
-                    <div class="filled"></div>
-                </div>
-                <div class="box" *ngIf="!cb" (click)="changeUses(i, 1, false)"></div>
-            </ng-container>
+<div *ngFor="let level of characterSpells; let levelIndex = index">
+  <h6>{{ level.name }}</h6>
+  <div *ngIf="level.name !== 'Cantrips'">
+    <div class="checkboxes" *ngIf="standard">
+      <ng-container *ngFor="let cb of getUses(levelIndex); let i = index">
+        <div *ngIf="i === 0">Spell Slots:</div>
+        <div class="box" *ngIf="cb" (click)="changeUses(levelIndex, -1, false)">
+          <div class="filled"></div>
         </div>
-        <div class="checkboxes" *ngIf="pact">
-            <ng-container *ngFor="let cb of getUses(i, true); let i = index">
-                <div *ngIf="i === 0">
-                    Pact Slots:
-                </div>
-                <div class="box" *ngIf="cb" (click)="changeUses(i, -1, true)">
-                    <div class="filled"></div>
-                </div>
-                <div class="box" *ngIf="!cb" (click)="changeUses(i, 1, true)"></div>
-            </ng-container>
-        </div>
+        <div
+          class="box"
+          *ngIf="!cb"
+          (click)="changeUses(levelIndex, 1, false)"
+        ></div>
+      </ng-container>
     </div>
-    <nz-table [nzData]="level.spells" [nzShowPagination]="false" [nzPageSize]="1 / 0">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Casting Time</th>
-                <th>Range</th>
-                <th>Hit / DC</th>
-                <th>Effect</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let spell of level.spells" class="spell" (click)="openModal(spell.spell.name)">
-                <td class="spell-name">
-                    <div>
-                        {{ spell.spell.name }}
-                        <sup *ngIf="spell.spell.duration.includes('Concentration')" title="Concentration">
-                            C
-                        </sup>
-                    </div>
-                    <div class="subheader">
-                        {{ spell.source?.join(' - ') }}
-                    </div>
-                    <div class="subheader">
-                        {{ spell.ability.toUpperCase() }}
-                    </div>
-                </td>
-                <td class="casting-time">
-                    {{ spell.spell.castingTime.split(',')[0] }}
-                    <sup *ngIf="spell.spell.ritual" title="Ritual">
-                        R
-                    </sup>
-                </td>
-                <td class="range" [innerHTML]="getRangeString(spell.spell)"></td>
-                <td class="hit-dc">
-                    <ng-container *ngIf="spell.spell.type === 'attack'">
-                        {{ formatModifier(getSpellAttackMod(spell.ability)) }}
-                    </ng-container>
-                    <ng-container *ngIf="spell.spell.type === 'save'">
-                        DC {{ getSpellDC(spell.ability) }} {{ spell.spell.save.toUpperCase() }}
-                    </ng-container>
-                    <ng-container *ngIf="spell.spell.type === ['attack', 'save']">
-                        {{ formatModifier(getSpellAttackMod(spell.ability)) }} / DC {{ getSpellDC(spell.ability) }} {{ spell.spell.save.toUpperCase() }}
-                    </ng-container>
-                    <ng-container *ngIf="spell.spell.type === undefined">
-                        -
-                    </ng-container>
-                </td>
-                <td class="effect">
-                    <div [innerHTML]="getEffectString(spell.spell, spell.ability, spell.source.includes('Signature Cantrip'))"></div>
-                </td>
-            </tr>
-        </tbody>
-    </nz-table>
+    <div class="checkboxes" *ngIf="pact">
+      <ng-container *ngFor="let cb of getUses(levelIndex, true); let i = index">
+        <div *ngIf="i === 0">Pact Slots:</div>
+        <div class="box" *ngIf="cb" (click)="changeUses(levelIndex, -1, true)">
+          <div class="filled"></div>
+        </div>
+        <div
+          class="box"
+          *ngIf="!cb"
+          (click)="changeUses(levelIndex, 1, true)"
+        ></div>
+      </ng-container>
+    </div>
+  </div>
+  <nz-table
+    [nzData]="level.spells"
+    [nzShowPagination]="false"
+    [nzPageSize]="1 / 0"
+  >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Casting Time</th>
+        <th>Range</th>
+        <th>Hit / DC</th>
+        <th>Effect</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let spell of level.spells"
+        class="spell"
+        (click)="openModal(spell.spell.name)"
+      >
+        <td class="spell-name">
+          <div>
+            {{ spell.spell.name }}
+            <sup
+              *ngIf="spell.spell.duration.includes('Concentration')"
+              title="Concentration"
+            >
+              C
+            </sup>
+          </div>
+          <div class="subheader">
+            {{ spell.source?.join(" - ") }}
+          </div>
+          <div class="subheader">
+            {{ spell.ability.toUpperCase() }}
+          </div>
+        </td>
+        <td class="casting-time">
+          {{ spell.spell.castingTime.split(",")[0] }}
+          <sup *ngIf="spell.spell.ritual" title="Ritual"> R </sup>
+        </td>
+        <td class="range" [innerHTML]="getRangeString(spell.spell)"></td>
+        <td class="hit-dc">
+          <ng-container *ngIf="spell.spell.type === 'attack'">
+            {{ formatModifier(getSpellAttackMod(spell.ability)) }}
+          </ng-container>
+          <ng-container *ngIf="spell.spell.type === 'save'">
+            DC {{ getSpellDC(spell.ability) }}
+            {{ spell.spell.save.toUpperCase() }}
+          </ng-container>
+          <ng-container *ngIf="spell.spell.type === ['attack', 'save']">
+            {{ formatModifier(getSpellAttackMod(spell.ability)) }} / DC
+            {{ getSpellDC(spell.ability) }} {{ spell.spell.save.toUpperCase() }}
+          </ng-container>
+          <ng-container *ngIf="spell.spell.type === undefined">
+            -
+          </ng-container>
+        </td>
+        <td class="effect">
+          <div
+            [innerHTML]="
+              getEffectString(
+                spell.spell,
+                spell.ability,
+                spell.source.includes('Signature Cantrip')
+              )
+            "
+          ></div>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
 </div>
 
-<nz-modal [(nzVisible)]="modalVisible" [nzTitle]="modalOption" [nzCancelText]="null" [nzClosable]="false" [nzOkText]="null" (nzOnCancel)="modalVisible = false">
-    <ng-container *nzModalContent>
-        <app-spell [name]="modalOption"></app-spell>
-    </ng-container>
+<nz-modal
+  [(nzVisible)]="modalVisible"
+  [nzTitle]="modalOption"
+  [nzCancelText]="null"
+  [nzClosable]="false"
+  [nzOkText]="null"
+  (nzOnCancel)="modalVisible = false"
+>
+  <ng-container *nzModalContent>
+    <app-spell [name]="modalOption"></app-spell>
+  </ng-container>
 </nz-modal>
