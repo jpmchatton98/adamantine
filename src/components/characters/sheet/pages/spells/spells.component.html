@@ -82,10 +82,10 @@
         </td>
         <td class="range" [innerHTML]="getRangeString(spell.spell)"></td>
         <td class="hit-dc">
-          <ng-container *ngIf="spell.spell.type.includes('attack')">
+          <ng-container *ngIf="spell.spell.type?.includes('attack')">
             {{ formatModifier(getSpellAttackMod(spell.ability)) }}
           </ng-container>
-          <ng-container *ngIf="spell.spell.type.includes('save')">
+          <ng-container *ngIf="spell.spell.type?.includes('save')">
             DC {{ getSpellDC(spell.ability) }}
             {{ spell.spell.save.toUpperCase() }}
           </ng-container>
