@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from 'src/services/data.service';
+import { HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-monster',
@@ -9,9 +10,23 @@ import { DataService } from 'src/services/data.service';
 export class MonsterComponent implements OnInit {
   @Input()
   set name(monsterName: string) {
-    this.monster = this.dataService.getMonster(monsterName);
+    this.data = this.dataService.getMonster(monsterName);
+    this.monster = JSON.parse(JSON.stringify(this.data));
   }
+  public data: any;
   public monster: any;
+
+  public settingsModal: boolean = false;
+
+  public direBeast: boolean = false;
+  public direMonster: any;
+
+  public acString: string = '';
+  public hpString: string = '';
+  public speedString: string = '';
+
+  public saveString: string = '';
+  public skillString: string = '';
 
   constructor(private dataService: DataService) {}
 
@@ -24,8 +39,22 @@ export class MonsterComponent implements OnInit {
     cha: 'Charisma',
   };
 
+  public sizes = [
+    'Fine',
+    'Diminutive',
+    'Tiny',
+    'Small',
+    'Medium',
+    'Large',
+    'Huge',
+    'Gargantuan',
+    'Titanic',
+    'Colossal',
+    'Kaiju',
+  ];
+
   public ngOnInit(): void {
-    this.monster.ac = this.monster.ac
+    this.acString = this.monster.ac
       .map((ac: any) => {
         if (ac.from && ac.condition) {
           return `${ac.ac} (${ac.from}, ${ac.condition})`;
@@ -38,6 +67,15 @@ export class MonsterComponent implements OnInit {
         }
       })
       .join(', ');
+    const hitDice = parseInt(this.monster.hp.formula.split('d')[0].trim());
+    const hitDie = parseInt(
+      this.monster.hp.formula.split('d')[1].split('+')[0].trim()
+    );
+    const conMod = Math.floor((this.monster.con - 10) / 2);
+
+    this.hpString = `${
+      (hitDie / 2 + conMod) * hitDice
+    } (${hitDice}d${hitDie} + ${conMod})`;
 
     let speed = [];
 
@@ -68,15 +106,15 @@ export class MonsterComponent implements OnInit {
       }
     }
 
-    this.monster.speed = speed.join(', ');
+    this.speedString = speed.join(', ');
 
     if (this.monster.skill) {
-      this.monster.skill = Object.entries(this.monster.skill)
+      this.skillString = Object.entries(this.monster.skill)
         .map(([k, v]: any) => `${this.titleCase(k)} ${v}`)
         .join(', ');
     }
     if (this.monster.save) {
-      this.monster.save = Object.entries(this.monster.save)
+      this.saveString = Object.entries(this.monster.save)
         .map(([k, v]: any) => `${this.scoreKey[k]} ${v}`)
         .join(', ');
     }
@@ -170,6 +208,15 @@ export class MonsterComponent implements OnInit {
 
       this.monster.spellString = spellString;
     }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('dire') === '1') {
+      this.direBeast = true;
+      this.updateDireBeast();
+    } else {
+      this.direBeast = false;
+      this.updateDireBeast();
+    }
   }
 
   public modifier(score: number): string {
@@ -213,5 +260,278 @@ export class MonsterComponent implements OnInit {
           .concat(`and ${array.slice(-1)}`)
           .join(', ')
       : array.join(', ');
+  }
+
+  public updateDireBeast() {
+    let currentUrl = window.location.href;
+    currentUrl = currentUrl.split('?')[0];
+
+    window.history.replaceState(
+      {},
+      '',
+      currentUrl + `?dire=${this.direBeast ? '1' : '0'}`
+    );
+
+    if (this.direBeast) {
+      if (this.direMonster) {
+        this.monster = this.direMonster;
+      } else {
+        this.direMonster = JSON.parse(JSON.stringify(this.monster));
+
+        this.direMonster.name = `Dire ${this.direMonster.name}`;
+
+        this.direMonster.ac.forEach((ac) => {
+          if (ac.ac) {
+            ac.ac += 1;
+          } else {
+            ac += 1;
+          }
+        });
+
+        this.direMonster.str = Math.max(12, this.direMonster.str + 2);
+        this.direMonster.con += 2;
+
+        const hitDice = parseInt(this.monster.hp.formula.split('d')[0].trim());
+        const hitDie = parseInt(
+          this.monster.hp.formula.split('d')[1].split('+')[0].trim()
+        );
+        const conMod = Math.floor((this.monster.con - 10) / 2);
+
+        if (this.direMonster.action) {
+          this.direMonster.action = this.direMonster.action.map((action) => {
+            action.entries = action.entries.map((entry) => {
+              if (entry.includes('Attack')) {
+                entry = entry.replace(
+                  /(?<=\+)([0-9]+)(?= to hit)/,
+                  function ($0, $1) {
+                    return parseInt($1) + 1;
+                  }
+                );
+                entry = entry.replace(
+                  /(?<=\()([0-9]+)d([0-9]+)/g,
+                  function ($0, $1, $2) {
+                    return (
+                      parseInt($1) +
+                      1 +
+                      'd' +
+                      Math.min(parseInt($2) + 2, 12).toString()
+                    );
+                  }
+                );
+                entry = entry.replace(
+                  /(?<=\+ )([0-9]+)(?=\))/g,
+                  function ($0, $1) {
+                    return parseInt($1) + 2;
+                  }
+                );
+                entry = entry.replace(/\- ([0-9]+)(?=\))/g, function ($0, $1) {
+                  const mod = parseInt($1) * -1 + 2;
+                  if (mod < 0) {
+                    return `- ${Math.abs(mod)}`;
+                  } else if (mod > 0) {
+                    return `+ ${mod}`;
+                  }
+                });
+
+                entry = entry.replace(
+                  /([0-9]+)( \([0-9]+d[0-9]+(?: \+ [0-9]+)?)/g,
+                  function ($0, $1, $2) {
+                    const dice = parseInt(
+                      $2
+                        .split('d')[0]
+                        .replace(/[\(\)]/, '')
+                        .trim()
+                    );
+                    const die = parseInt(
+                      $2
+                        .split('d')[1]
+                        .split('+')[0]
+                        .replace(/[\(\)]/, '')
+                        .trim()
+                    );
+
+                    let mod = 0;
+                    if ($2.includes('+')) {
+                      mod = parseInt(
+                        $2
+                          .split('+')[1]
+                          .replace(/[\(\)]/, '')
+                          .trim()
+                      );
+                    }
+
+                    return `${(die / 2 + 1) * dice + mod}${$2}`;
+                  }
+                );
+
+                entry = entry.replace(
+                  '<em>Hit:</em> 1 ',
+                  '<em>Hit:</em> 5 (1d4 + 2) '
+                );
+              }
+
+              if (entry.includes('DC')) {
+                entry = entry.replace(/(?<=DC )[0-9]+/g, function ($0) {
+                  return parseInt($0) + 1;
+                });
+              }
+
+              return entry;
+            });
+
+            return action;
+          });
+        }
+
+        this.direMonster.hp.formula = `${hitDice + 3}d${hitDie + 2} + ${
+          conMod * hitDice
+        }`;
+
+        this.direMonster.cr = Math.round(this.direMonster.cr + 2);
+
+        for (let speed of Object.keys(this.direMonster.speed)) {
+          if (this.direMonster.speed[speed] !== 0) {
+            this.direMonster.speed[speed] += 10;
+          }
+        }
+        if (this.direMonster.skill) {
+          if (this.direMonster.skill['Athletics']) {
+            const prof =
+              parseInt(this.direMonster.skill['Athletics'].replace('+', '')) -
+              Math.floor((this.monster.str - 10) / 2);
+            this.direMonster.skill['Athletics'] = `+${
+              prof + Math.floor((this.direMonster.str - 10) / 2)
+            }`;
+          }
+          if (this.direMonster.skill['con']) {
+            this.direMonster.save['Endurance'] =
+              '+' +
+              parseInt(this.direMonster.skill['Endurance'].replace('+', '')) +
+              1;
+          }
+        }
+        if (this.direMonster.save) {
+          if (this.direMonster.save['str']) {
+            const prof =
+              parseInt(this.direMonster.save['str'].replace('+', '')) -
+              Math.floor((this.monster.str - 10) / 2);
+            this.direMonster.save['str'] = `+${
+              prof + Math.floor((this.direMonster.str - 10) / 2)
+            }`;
+          }
+          if (this.direMonster.save['con']) {
+            this.direMonster.save['con'] =
+              '+' +
+              (parseInt(this.direMonster.save['con'].replace('+', '')) + 1);
+          }
+        }
+
+        if (this.direMonster.swarmSize) {
+          this.direMonster.size =
+            this.sizes[
+              this.sizes.findIndex((s) => s === this.direMonster.size) + 2
+            ];
+          this.direMonster.swarmSize =
+            this.sizes[
+              this.sizes.findIndex((s) => s === this.direMonster.swarmSize) + 1
+            ];
+        } else {
+          this.direMonster.size =
+            this.sizes[
+              this.sizes.findIndex((s) => s === this.direMonster.size) + 1
+            ];
+        }
+
+        if (this.direMonster.trait) {
+          this.direMonster.trait = [
+            {
+              name: 'Dire Rage',
+              entries: [
+                `The ${this.direMonster.name.toLowerCase()} can make an additional attack with one of its natural weapons whenever it takes the Attack action.`,
+              ],
+            },
+            ...this.direMonster.trait,
+          ];
+        } else {
+          this.direMonster.trait = [
+            {
+              name: 'Dire Rage',
+              entries: [
+                `The ${this.direMonster.name.toLowerCase()} can make an additional attack with one of its natural weapons whenever it takes the Attack action.`,
+              ],
+            },
+          ];
+        }
+
+        this.monster = this.direMonster;
+      }
+    } else {
+      this.monster = this.data;
+    }
+
+    this.acString = this.monster.ac
+      .map((ac: any) => {
+        if (ac.from && ac.condition) {
+          return `${ac.ac} (${ac.from}, ${ac.condition})`;
+        } else if (ac.from) {
+          return `${ac.ac} (${ac.from})`;
+        } else if (ac.condition) {
+          return `${ac.ac} (${ac.condition})`;
+        } else {
+          return ac.toString();
+        }
+      })
+      .join(', ');
+
+    const hitDice = parseInt(this.monster.hp.formula.split('d')[0].trim()) + 3;
+    const hitDie =
+      parseInt(this.monster.hp.formula.split('d')[1].split('+')[0].trim()) + 2;
+    const conMod = Math.floor((this.monster.con - 10) / 2);
+
+    this.hpString = `${
+      (hitDie / 2 + conMod) * hitDice
+    } (${hitDice}d${hitDie} + ${conMod})`;
+
+    let speed = [];
+
+    if (this.monster.speed.walk) {
+      let speedString;
+
+      if (this.monster.speed.walk.condition) {
+        speedString = `${this.monster.speed.walk.number} ft. ${this.monster.speed.walk.condition}`;
+      } else {
+        speedString = `${this.monster.speed.walk} ft.`;
+      }
+      speed.push(speedString);
+    } else {
+      speed.push(`0 ft.`);
+    }
+
+    for (let [key, v] of Object.entries(this.monster.speed)) {
+      const value: any = v;
+
+      if (key !== 'walk' && key !== 'hover') {
+        if (this.monster.speed.walk.condition) {
+          speed.push(`${key} ${value.number} ft. ${value.condition}`);
+        } else {
+          speed.push(`${key} ${value} ft.`);
+        }
+      } else if (key === 'hover') {
+        speed.push(`fly ${value} ft. (hover)`);
+      }
+    }
+
+    this.speedString = speed.join(', ');
+
+    if (this.monster.skill) {
+      this.skillString = Object.entries(this.monster.skill)
+        .map(([k, v]: any) => `${this.titleCase(k)} ${v}`)
+        .join(', ');
+    }
+    if (this.monster.save) {
+      this.saveString = Object.entries(this.monster.save)
+        .map(([k, v]: any) => `${this.scoreKey[k]} ${v}`)
+        .join(', ');
+    }
   }
 }

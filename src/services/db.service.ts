@@ -8,7 +8,7 @@ export class DBService {
   private baseUrl = 'https://adamantine-dnd.us-3.evennode.com';
 
   constructor(private http: HttpClient) {
-    this.baseUrl = 'http://localhost:8080';
+    // this.baseUrl = 'http://localhost:8080';
   }
 
   public setCharacter(

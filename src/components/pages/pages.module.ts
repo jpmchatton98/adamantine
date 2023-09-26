@@ -48,6 +48,7 @@ import { SheetChoiceComponent } from './features/sheet-choice/sheet-choice.compo
 import { SheetListedComponent } from './features/sheet-listed/sheet-listed.component';
 import { SheetUsesComponent } from './features/sheet-uses/sheet-uses.component';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
 
 registerLocaleData(en);
 
@@ -97,6 +98,7 @@ registerLocaleData(en);
     NzModalModule,
     NzButtonModule,
     NzCheckboxModule,
+    NzSwitchModule,
     StoreModule.forRoot({ update: updateReducer }),
   ],
   providers: [DataService, { provide: NZ_I18N, useValue: en_US }],

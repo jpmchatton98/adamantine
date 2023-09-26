@@ -8371,7 +8371,7 @@
     "beastType": ["mammal"],
     "alignment": ["U"],
     "ac": [12],
-    "hp": { "average": 59, "formula": "7d10 + 12" },
+    "hp": { "average": 59, "formula": "7d8 + 12" },
     "speed": { "walk": 30, "climb": 30 },
     "str": 19,
     "dex": 14,
@@ -21976,7 +21976,7 @@
     "tags": ["dinosaur"]
   },
   {
-    "name": "Dire Troll",
+    "name": "Blood Troll",
     "size": "Huge",
     "type": "giant",
     "alignment": ["C", "E"],
@@ -22037,50 +22037,6 @@
       }
     ],
     "tags": ["troll"]
-  },
-  {
-    "name": "Dire Wolf",
-    "srd": true,
-    "basicRules": true,
-    "size": "Large",
-    "type": "beast",
-    "beastType": ["mammal"],
-    "alignment": ["U"],
-    "ac": [{ "ac": 14, "from": ["natural armor"] }],
-    "hp": { "average": 37, "formula": "5d10 + 10" },
-    "speed": { "walk": 50 },
-    "str": 17,
-    "dex": 15,
-    "con": 15,
-    "int": 3,
-    "wis": 12,
-    "cha": 7,
-    "skill": { "perception": "+3", "stealth": "+4" },
-    "passive": 13,
-    "cr": 1,
-    "greatSteed": true,
-    "trait": [
-      {
-        "name": "Keen Hearing and Smell",
-        "entries": [
-          "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
-        ]
-      },
-      {
-        "name": "Pack Tactics",
-        "entries": [
-          "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Bite",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
-        ]
-      }
-    ]
   },
   {
     "name": "Displacer Beast",

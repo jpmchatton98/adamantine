@@ -1,3 +1,19 @@
+.header {
+    position: relative;
+    .settings {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        .header-button {
+            border: 0px;
+            background-color: white;
+            color: black; 
+            font-size: 30px;      
+        }
+    }
+}
+
 .scores {
     display: flex;
     flex-direction: row;

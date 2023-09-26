@@ -114,10 +114,19 @@ export class BestiaryComponent implements OnInit {
         }
         return false;
       } else {
-        return (
-          this.sizeIndex[m.size] >= this.filters.size[0] &&
-          this.sizeIndex[m.size] <= this.filters.size[1]
-        );
+        if (m.type.includes('beast')) {
+          return (
+            (this.sizeIndex[m.size] >= this.filters.size[0] &&
+              this.sizeIndex[m.size] <= this.filters.size[1]) ||
+            (this.sizeIndex[this.getDireSize(m.size)] >= this.filters.size[0] &&
+              this.sizeIndex[this.getDireSize(m.size)] <= this.filters.size[1])
+          );
+        } else {
+          return (
+            this.sizeIndex[m.size] >= this.filters.size[0] &&
+            this.sizeIndex[m.size] <= this.filters.size[1]
+          );
+        }
       }
     });
     if (this.filters.tags.length) {
@@ -152,11 +161,21 @@ export class BestiaryComponent implements OnInit {
         return false;
       });
     }
-    this.monsters = this.monsters.filter(
-      (m: any) =>
-        m.cr >= this.crDecode(this.filters.cr[0]) &&
-        m.cr <= this.crDecode(this.filters.cr[1])
-    );
+    this.monsters = this.monsters.filter((m: any) => {
+      if (m.type.includes('beast')) {
+        return (
+          (m.cr >= this.crDecode(this.filters.cr[0]) &&
+            m.cr <= this.crDecode(this.filters.cr[1])) ||
+          (Math.round(m.cr + 2) >= this.crDecode(this.filters.cr[0]) &&
+            Math.round(m.cr + 2) <= this.crDecode(this.filters.cr[1]))
+        );
+      } else {
+        return (
+          m.cr >= this.crDecode(this.filters.cr[0]) &&
+          m.cr <= this.crDecode(this.filters.cr[1])
+        );
+      }
+    });
   }
 
   public crKey(cr: number): number {
@@ -219,5 +238,15 @@ export class BestiaryComponent implements OnInit {
     return Object.keys(this.sizeIndex).find(
       (key) => this.sizeIndex[key] === sizeId
     );
+  }
+
+  public getDireSize(size: string): string {
+    const index = this.sizeIndex[size];
+    return Object.keys(this.sizeIndex).find(
+      (key) => this.sizeIndex[key] === index + 1
+    );
+  }
+  public round(number) {
+    return Math.round(number);
   }
 }

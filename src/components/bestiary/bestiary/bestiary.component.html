@@ -148,18 +148,39 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of bestiary.data">
-      <td>
-        <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
-      </td>
-      <td>
-        {{ data.type }}
-        <ng-container *ngIf="data.tags">
-          ({{ data.tags.sort().join(", ") }})
-        </ng-container>
-      </td>
-      <td>{{ data.size }}</td>
-      <td>{{ formatCr(data.cr) }}</td>
-    </tr>
+    <ng-container *ngFor="let data of bestiary.data">
+      <tr *ngIf="data.type.includes('beast')">
+        <td>
+          <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a> (<a
+            routerLink="/bestiary/{{ data.index }}"
+            [queryParams]="{ dire: '1' }"
+            >Dire {{ data.name }}</a
+          >)
+        </td>
+        <td>
+          {{ data.type }}
+          <ng-container *ngIf="data.tags">
+            ({{ data.tags.sort().join(", ") }})
+          </ng-container>
+        </td>
+        <td>{{ data.size }} (Dire: {{ getDireSize(data.size) }})</td>
+        <td>
+          {{ formatCr(data.cr) }} (Dire: {{ formatCr(round(data.cr + 2)) }})
+        </td>
+      </tr>
+      <tr *ngIf="!data.type.includes('beast')">
+        <td>
+          <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
+        </td>
+        <td>
+          {{ data.type }}
+          <ng-container *ngIf="data.tags">
+            ({{ data.tags.sort().join(", ") }})
+          </ng-container>
+        </td>
+        <td>{{ data.size }}</td>
+        <td>{{ formatCr(data.cr) }}</td>
+      </tr>
+    </ng-container>
   </tbody>
 </nz-table>
