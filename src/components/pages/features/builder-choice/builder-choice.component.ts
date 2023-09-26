@@ -312,6 +312,29 @@ export class BuilderChoiceComponent implements OnInit {
           choiceOptions = this.dataService
             .getExtraTabDataUnsplit(choice.type)
             .filter((i: any) => !i.prereq && !i.prereqLevel);
+
+          if (choice.options) {
+            choiceOptions = choiceOptions.filter((i: any) =>
+              choice.options.includes(i.name)
+            );
+          }
+
+          if (choice.type === 'fighting-style') {
+            for (let o of choiceOptions) {
+              if (
+                [
+                  'Arcane Warrior',
+                  'Blessed Warrior',
+                  'Druidic Warrior',
+                  'Esoteric Warrior',
+                ].includes(o.name)
+              ) {
+                for (let c of o.choices) {
+                  c.ability = choice.ability;
+                }
+              }
+            }
+          }
         } else if (choice?.type === 'asi') {
           choiceOptions = choice.options.filter(async (o: any) => {
             if (o === this.choiceOption) {
@@ -403,11 +426,39 @@ export class BuilderChoiceComponent implements OnInit {
                   'Tungsten',
                 ].includes(this.characterObj.subrace);
               }
+              if (o.name.includes('Planar')) {
+                return [
+                  'Adamantine',
+                  'Arboreal',
+                  'Astral',
+                  'Battle',
+                  'Beast',
+                  'Blight',
+                  'Chaos',
+                  'Chole',
+                  'Concordant',
+                  'Edict',
+                  'Elysian',
+                  'Gloom',
+                  'Hellfire',
+                  'Howling',
+                  'Mirage',
+                  'Paradise',
+                  'Pyroclastic',
+                  'Radiant',
+                  'Rust',
+                  'Tarterian',
+                ].includes(this.characterObj.subrace);
+              }
             } else {
               return true;
             }
           });
         } else if (choice.id === 'metallic-breath') {
+          choiceOptions = choiceOptions.filter((o: any) =>
+            o.name.includes(this.characterObj.subrace)
+          );
+        } else if (choice.id === 'planar-breath') {
           choiceOptions = choiceOptions.filter((o: any) =>
             o.name.includes(this.characterObj.subrace)
           );

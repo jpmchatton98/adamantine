@@ -112,365 +112,49 @@
           "options": ["Shields"]
         }
       ],
-      "choices": {
-        "id": "B4D906BC-CDC4-4D2B-887E-61F8C195F04D",
-        "type": "trait",
-        "options": [
-          {
-            "name": "Archery",
-            "traits": [
-              {
-                "name": "",
-                "description": "You gain a +2 bonus to attack rolls with ranged weapons.",
-                "granted": [
-                  {
-                    "type": "attack-bonus",
-                    "amount": 2,
-                    "limits": ["Ranged"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Bersekergang",
-            "traits": [
-              {
-                "name": "",
-                "description": "You fight with reckless abandon in battle. Once per turn, you can grant yourself advantage on a single attack roll. Once you take this advantaged attack, your Armor Class is reduced by 2 until the beginning of your next turn."
-              }
-            ]
-          },
-          {
-            "name": "Blind Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.",
-                "granted": [
-                  {
-                    "type": "blindsight",
-                    "amount": 10
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Classical Swordplay",
-            "traits": [
-              {
-                "name": "",
-                "description": "While you are wielding a finesse weapon and nothing else, you gain a +1 bonus to your attack rolls and a +2 to your Armor Class so long as you are not wearing heavy armor.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 1,
-                    "limits": ["Finesse"]
-                  },
-                  {
-                    "type": "armor-bonus",
-                    "amount": 2,
-                    "limits": ["Unarmored", "Light", "Medium"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Close-Quarters Shooter",
-            "traits": [
-              {
-                "name": "",
-                "description": "When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you. You have a +1 bonus to attack rolls on ranged attacks.",
-                "granted": [
-                  {
-                    "type": "attack-bonus",
-                    "amount": 1,
-                    "limits": ["Ranged"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Defensive Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "While wearing armor or wielding a shield, you gain a +1 bonus to your Armor Class.",
-                "granted": [
-                  {
-                    "type": "armor-bonus",
-                    "amount": 1,
-                    "limits": ["Light", "Medium", "Heavy", "Shields"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Dual Wielding",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you take the Attack action while two-weapon fighting, you can make a single additional attack with your off-hand weapon as part of your action instead of your bonus action, adding your ability modifier to the damage of this attack."
-              }
-            ]
-          },
-          {
-            "name": "Dueling",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with it.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Two-Handed"],
-                    "invert": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Featherweight Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "While you are wielding only light weapons, your movement speed increases by 10 feet and you gain a +2 bonus to your damage rolls, so long as you are not wearing medium armor, heavy armor, or wielding a shield.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Light"]
-                  },
-                  {
-                    "type": "speed-bonus",
-                    "amount": 10
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Great Weapon Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you roll a 1 or 2 on the damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the damage, though you must use the new roll, even if the new roll is a 1 or a 2.</p><p>The weapon must have the heavy, versatile, or two-handed property to gain this benefit."
-              }
-            ]
-          },
-          {
-            "name": "Heavyweight Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "You use your weight, and that of your weapon, to land devastating blows. While you are wielding a heavy weapon, you gain a +2 bonus to damage rolls and you have advantage on Strength (Athletics) checks made to Shove.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Heavy"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Improvised Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "You gain proficiency with improvised weapons. Once per turn, when you hit with a improvised weapon attack, you can roll the damage die twice and take the higher roll. When you do this, the improvised weapon is destroyed and cannot be used for further attacks. You can't use this feature to destroy magical objects."
-              }
-            ]
-          },
-          {
-            "name": "Interception",
-            "traits": [
-              {
-                "name": "",
-                "description": "When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction."
-              }
-            ]
-          },
-          {
-            "name": "Mounted Warrior",
-            "traits": [
-              {
-                "name": "",
-                "description": "Once per turn, when you hit a creature with a melee attack while riding a mount, you can force the target to make a Strength saving throw against your Exploit save DC. On a failed save, a Large or smaller target is knocked prone."
-              }
-            ]
-          },
-          {
-            "name": "Marine Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you are not wearing medium or heavy armor, or using a shield, you have a swimming speed equal to your movement speed, and you gain a +1 bonus to your Armor Class.",
-                "granted": [
-                  {
-                    "type": "armor-bonus",
-                    "amount": 1,
-                    "limits": ["Unarmored", "Light"]
-                  },
-                  {
-                    "type": "speed",
-                    "speed": "swim",
-                    "amount": -1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Melee Marksman",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you make a ranged attack targeting a creature within 5 feet of you, you do not have disadvantage on the attack roll.</p><p>If you make a ranged attack against a creature within 5 feet, you can use a bonus action to strike the creature with your ranged weapon, dealing 1d4 bludgeoning damage on hit."
-              }
-            ]
-          },
-          {
-            "name": "Mountain Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you are not wearing medium or heavy armor, or using a shield, you have a climbing speed equal to your walking speed, and you gain a +1 bonus to your Armor Class.",
-                "granted": [
-                  {
-                    "type": "armor-bonus",
-                    "amount": 1,
-                    "limits": ["Unarmored", "Light"]
-                  },
-                  {
-                    "type": "speed",
-                    "speed": "climb",
-                    "amount": -1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Pit Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "Your have trained to fight with weapons typically associated with gladiators, granting you the following benefits:<ul><li>When making an attack roll with a net against a creature within 5 feet, you do not have disadvantage on the roll.</li><li>When you take the Attack action on your turn, making an attack with a net only takes the place of one attack.</li></ul>"
-              }
-            ]
-          },
-          {
-            "name": "Protection",
-            "traits": [
-              {
-                "name": "",
-                "description": "When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
-              }
-            ]
-          },
-          {
-            "name": "Shield Warrior",
-            "traits": [
-              {
-                "name": "",
-                "description": "If you are wielding a shield and no other weapons, you gain a +1 bonus to both your damage rolls with shield attacks, and to your Armor Class.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 1,
-                    "limits": ["Shields"]
-                  },
-                  {
-                    "type": "armor-bonus",
-                    "amount": 1,
-                    "limits": ["Shields"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Standard Bearer",
-            "traits": [
-              {
-                "name": "",
-                "description": "When a creature within 5 feet of you makes an attack against a creature that you can see, you can grant them advantage on their attack roll as a reaction. You must be carrying a banner, flag, or standard in your hand to use this reaction."
-              }
-            ]
-          },
-          {
-            "name": "Strongbow",
-            "traits": [
-              {
-                "name": "",
-                "description": "You can use your Strength score, in place of your Dexterity, for attack and damage rolls with ranged weapons. If using a composite bow, its special property changes to add your Dexterity modifier to the damage.",
-                "attack-modifier": {
-                  "score": "str",
-                  "limits": ["Ranged"]
-                }
-              }
-            ]
-          },
-          {
-            "name": "Thrown Weapon Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "You can draw a weapon that has the thrown property as part of the attack you make with the weapon.</p><p>In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Thrown"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Versatile Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "While wielding a single versatile weapon and no shield, you can choose to wield your weapon one or two-handed until the start of your next turn. When wielding it one-handed you gain a +1 bonus to attack rolls and to your Armor Class. Wielding it two-handed you gain a +2 bonus to your damage rolls."
-              }
-            ]
-          },
-          {
-            "name": "Unarmed Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.</p><p>At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.",
-                "granted": [
-                  {
-                    "type": "unarmed-die",
-                    "die-size": 6,
-                    "versatile": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Wrestler",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you hit a creature with a melee attack, you can attempt to grapple that creature as a bonus action on that turn, so long as your have a free hand to do so. Also, you can drag grappled creatures up to your full movement speed."
-              }
-            ]
-          }
-        ]
-      }
+      "choices": [
+        {
+          "id": "973D48FE-D727-4F45-BF87-7ACE35D0E380",
+          "type": "fighting-style",
+          "options": [
+            "Aggressive Grappler",
+            "Archery",
+            "Berserkergang",
+            "Blind Fighting",
+            "Charger",
+            "Classical Swordplay",
+            "Close-Quarters Shooter",
+            "Crusher",
+            "Critical Momentum",
+            "Deep Cut",
+            "Defensive Fighting",
+            "Dual Wielding",
+            "Dueling",
+            "Featherweight Fighting",
+            "Great Weapon Fighting",
+            "Heavyweight Fighting",
+            "Improvised Fighting",
+            "Interception",
+            "Mounted Warrior",
+            "Marine Fighting",
+            "Melee Marksman",
+            "Mountain Fighting",
+            "Piercer",
+            "Pit Fighting",
+            "Precision Shooter",
+            "Protection",
+            "Savage Attacker",
+            "Shield Warrior",
+            "Slasher",
+            "Standard Bearer",
+            "Strongbow",
+            "Thrown Weapon Fighting",
+            "Versatile Fighting",
+            "Unarmed Fighting",
+            "Wrestler"
+          ]
+        }
+      ]
     },
     {
       "name": "Gunslinger",
@@ -716,6 +400,22 @@
       ]
     },
     {
+      "name": "Bullywug",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe air as well as water, and you have a swimming speed equal to your walking speed.",
+          "granted": [
+            {
+              "type": "speed",
+              "speed": "swim",
+              "amount": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Cecaelia",
       "traits": [
         {
@@ -748,45 +448,11 @@
       ]
     },
     {
-      "name": "Winged Bronze Dragonborn",
+      "name": "Pyroclastic Dragonborn",
       "traits": [
         {
-          "name": "Dragon Wings",
-          "description": "You have large wings resembling those of a dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
-          "granted": [
-            {
-              "type": "speed",
-              "speed": "fly",
-              "amount": -1
-            }
-          ]
-        },
-        {
-          "name": "Seawyrm",
-          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
-          "granted": [
-            {
-              "type": "speed",
-              "speed": "swim",
-              "amount": -1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Winged Dragonborn",
-      "traits": [
-        {
-          "name": "Dragon Wings",
-          "description": "You have large wings resembling those of a dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
-          "granted": [
-            {
-              "type": "speed",
-              "speed": "fly",
-              "amount": -1
-            }
-          ]
+          "name": "Lavawyrm",
+          "description": "You have a swimming speed equal to your walking speed, and you can walk across or swim through lava without taking damage."
         }
       ]
     },
@@ -835,6 +501,16 @@
               "amount": -1
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Ettercap",
+      "traits": [
+        {
+          "name": "Spider Climb",
+          "description": "You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
+          "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
         }
       ]
     },
@@ -948,6 +624,26 @@
               "amount": -1
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Harpy",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+          "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
+        }
+      ]
+    },
+    {
+      "name": "Imp",
+      "traits": [
+        {
+          "name": "Flight",
+          "description": "You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.",
+          "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
         }
       ]
     },
@@ -1178,7 +874,16 @@
         }
       ]
     },
-
+    {
+      "name": "Sahuagin",
+      "traits": [
+        {
+          "name": "Amphibious",
+          "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
+          "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+        }
+      ]
+    },
     {
       "name": "Tabaxi",
       "traits": [
@@ -5039,6 +4744,10 @@
   ],
   "fighting-style": [
     {
+      "name": "Aggressive Grappler",
+      "description": "You have advantage on attack rolls against a creature you are grappling."
+    },
+    {
       "name": "Archery",
       "description": "You gain a +2 bonus to attack rolls with ranged weapons."
     },
@@ -5057,12 +4766,28 @@
       ]
     },
     {
+      "name": "Charger",
+      "description": "When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature."
+    },
+    {
       "name": "Classical Swordplay",
       "description": "While you are wielding a finesse weapon and nothing else, you gain a +1 bonus to your attack rolls and a +2 to your Armor Class so long as you are not wearing heavy armor."
     },
     {
       "name": "Close-Quarters Shooter",
       "description": "When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you. You have a +1 bonus to attack rolls on ranged attacks."
+    },
+    {
+      "name": "Critical Momentum",
+      "description": "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action. You must be wielding a heavy weapon to use this skill."
+    },
+    {
+      "name": "Crusher",
+      "description": "When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn."
+    },
+    {
+      "name": "Deep Cut",
+      "description": "When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
     },
     {
       "name": "Defensive Fighting",
@@ -5082,7 +4807,7 @@
     },
     {
       "name": "Great Weapon Fighting",
-      "description": "When you roll a 1 or 2 on the damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the damage, though you must use the new roll, even if the new roll is a 1 or a 2.</p><p>The weapon must have the heavy, versatile, or two-handed property to gain this benefit."
+      "description": "Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
     },
     {
       "name": "Heavyweight Fighting",
@@ -5127,16 +4852,32 @@
       ]
     },
     {
+      "name": "Piercer",
+      "description": "Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll."
+    },
+    {
       "name": "Pit Fighting",
       "description": "Your have trained to fight with weapons typically associated with gladiators, granting you the following benefits:<ul><li>When making an attack roll with a net against a creature within 5 feet, you do not have disadvantage on the roll.</li><li>When you take the Attack action on your turn, making an attack with a net only takes the place of one attack.</li></ul>"
+    },
+    {
+      "name": "Precision Shooter",
+      "description": "Your ranged weapon attacks ignore half cover and three-quarters cover."
     },
     {
       "name": "Protection",
       "description": "When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
     },
     {
+      "name": "Savage Attacker",
+      "description": "Once per turn when you roll damage for a weapon attack, you can reroll the weapon's damage dice and use either total."
+    },
+    {
       "name": "Shield Warrior",
-      "description": "If you are wielding a shield and no other weapons, you gain a +1 bonus to both your damage rolls with shield attacks, and to your Armor Class."
+      "description": "While wielding a shield, if you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield."
+    },
+    {
+      "name": "Slasher",
+      "description": "Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn."
     },
     {
       "name": "Standard Bearer",
@@ -5170,90 +4911,103 @@
           "id": "08B1EE25-A1F4-4CB3-ABFF-898EFB1B2C04",
           "type": "spell",
           "level": 0,
-          "list": "Arcane",
-          "ability": "F2FBD875-5E5C-4485-B4B6-A4A231497F68"
+          "list": "Arcane"
         },
         {
           "id": "4705EE6C-74DD-4E8B-8D9C-F940DE12043A",
           "type": "spell",
           "level": 0,
-          "list": "Arcane",
-          "ability": "F2FBD875-5E5C-4485-B4B6-A4A231497F68"
+          "list": "Arcane"
         }
       ]
     },
     {
       "name": "Blessed Warrior",
-      "traits": [
+      "description": "You learn two cantrips of your choice from the Divine spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Divine spell list.",
+      "choices": [
         {
-          "name": "",
-          "description": "You learn two cantrips of your choice from the Divine spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Divine spell list.",
-          "choices": [
-            {
-              "id": "460E5038-7E35-4FAA-B44E-D5A28300AA91",
-              "type": "spell",
-              "list": "divine",
-              "level": 0,
-              "ability": "AE907445-7FA4-47C1-916D-99B82D61ACFD"
-            },
-            {
-              "id": "469EC638-AB98-4E47-9E1A-0D77CE094F49",
-              "type": "spell",
-              "list": "divine",
-              "level": 0,
-              "ability": "AE907445-7FA4-47C1-916D-99B82D61ACFD"
-            }
-          ]
+          "id": "460E5038-7E35-4FAA-B44E-D5A28300AA91",
+          "type": "spell",
+          "list": "Divine",
+          "level": 0
+        },
+        {
+          "id": "469EC638-AB98-4E47-9E1A-0D77CE094F49",
+          "type": "spell",
+          "list": "Divine",
+          "level": 0
         }
       ]
     },
     {
       "name": "Druidic Warrior",
-      "traits": [
+      "description": "You learn two cantrips of your choice from the Primal spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Primal spell list.",
+      "choices": [
         {
-          "name": "",
-          "description": "You learn two cantrips of your choice from the Primal spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Primal spell list.",
-          "choices": [
-            {
-              "id": "E346DAF3-D721-4F44-8FFC-4CC62EB742A2",
-              "type": "spell",
-              "list": "primal",
-              "level": 0,
-              "ability": "wis"
-            },
-            {
-              "id": "18FB7D7D-7B88-4B5D-B404-52F48F3F7025",
-              "type": "spell",
-              "list": "primal",
-              "level": 0,
-              "ability": "wis"
-            }
-          ]
+          "id": "E346DAF3-D721-4F44-8FFC-4CC62EB742A2",
+          "type": "spell",
+          "list": "Primal",
+          "level": 0
+        },
+        {
+          "id": "18FB7D7D-7B88-4B5D-B404-52F48F3F7025",
+          "type": "spell",
+          "list": "Primal",
+          "level": 0
         }
       ]
     },
     {
       "name": "Esoteric Warrior",
-      "traits": [
+      "description": "You learn two cantrips of your choice from the Occult spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Occult spell list.",
+      "choices": [
         {
-          "name": "",
-          "description": "You learn two cantrips of your choice from the Occult spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Occult spell list.",
-          "choices": [
-            {
-              "id": "F59E54EA-5D85-40F0-A320-9278998C3872",
-              "type": "spell",
-              "list": "occult",
-              "level": 0,
-              "ability": "AE907445-7FA4-47C1-916D-99B82D61ACFD"
-            },
-            {
-              "id": "326E899F-FEE0-49E4-9289-D7DDEDC5B0A8",
-              "type": "spell",
-              "list": "occult",
-              "level": 0,
-              "ability": "AE907445-7FA4-47C1-916D-99B82D61ACFD"
-            }
-          ]
+          "id": "F59E54EA-5D85-40F0-A320-9278998C3872",
+          "type": "spell",
+          "list": "Occult",
+          "level": 0
+        },
+        {
+          "id": "326E899F-FEE0-49E4-9289-D7DDEDC5B0A8",
+          "type": "spell",
+          "list": "Occult",
+          "level": 0
+        }
+      ]
+    },
+    {
+      "name": "Musical Warrior",
+      "description": "You learn two cantrips of your choice from the Melodic spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Melodic spell list.",
+      "choices": [
+        {
+          "id": "A14AA951-39A2-45F5-9BFE-848C1C2960CA",
+          "type": "spell",
+          "list": "Melodic",
+          "level": 0
+        },
+        {
+          "id": "9B353675-024B-4565-B458-5DF7E3110D05",
+          "type": "spell",
+          "list": "Melodic",
+          "level": 0
+        }
+      ]
+    },
+    {
+      "name": "Psychic Warrior",
+      "description": "You learn two cantrips of your choice from the Psionic spell list. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the Psionic spell list.",
+      "choices": [
+        {
+          "id": "EC41219E-1B17-4BA3-AA18-A273D7BC06A6",
+          "type": "spell",
+          "list": "Psionic",
+          "level": 0
+        },
+        {
+          "id": "C33152B3-69FA-459C-B36B-57B5A48030AA",
+          "type": "spell",
+          "list": "Psionic",
+          "level": 0
         }
       ]
     }
@@ -5839,160 +5593,29 @@
       "name": "Adept Fighting Style",
       "prereqLevel": 5,
       "description": "You have trained in a specialized style of fighting. You gain a Fighting Style of your choice from the list below. As a monk, you can only gain one Fighting Style through this Technique.",
-      "choices": {
-        "id": "2B4DBF1C-DFBD-465E-BC89-A33530C09697",
-        "type": "trait",
-        "options": [
-          {
-            "name": "Archery",
-            "traits": [
-              {
-                "name": "",
-                "description": "You gain a +2 bonus to attack rolls with ranged weapons.",
-                "granted": [
-                  {
-                    "type": "attack-bonus",
-                    "amount": 2,
-                    "limits": ["Ranged"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Blind Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.",
-                "granted": [
-                  {
-                    "type": "blindsight",
-                    "amount": 10
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Classical Swordplay",
-            "traits": [
-              {
-                "name": "",
-                "description": "While you are wielding a finesse weapon and nothing else, you gain a +1 bonus to your attack rolls and a +2 to your Armor Class so long as you are not wearing heavy armor.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 1,
-                    "limits": ["Finesse"]
-                  },
-                  {
-                    "type": "armor-bonus",
-                    "amount": 2,
-                    "limits": ["Unarmored", "Light", "Medium"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Close-Quarters Shooter",
-            "traits": [
-              {
-                "name": "",
-                "description": "When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you. You have a +1 bonus to attack rolls on ranged attacks.",
-                "granted": [
-                  {
-                    "type": "attack-bonus",
-                    "amount": 1,
-                    "limits": ["Ranged"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Dual Wielding",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you take the Attack action while two-weapon fighting, you can make a single additional attack with your off-hand weapon as part of your action instead of your bonus action, adding your ability modifier to the damage of this attack."
-              }
-            ]
-          },
-          {
-            "name": "Dueling",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with it.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Two-Handed"],
-                    "invert": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Featherweight Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "While you are wielding only light weapons, your movement speed increases by 10 feet and you gain a +2 bonus to your damage rolls, so long as you are not wearing medium armor, heavy armor, or wielding a shield.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Light"]
-                  },
-                  {
-                    "type": "speed-bonus",
-                    "amount": 10
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Melee Marksman",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you make a ranged attack targeting a creature within 5 feet of you, you do not have disadvantage on the attack roll.</p><p>If you make a ranged attack against a creature within 5 feet, you can use a bonus action to strike the creature with your ranged weapon, dealing 1d4 bludgeoning damage on hit."
-              }
-            ]
-          },
-          {
-            "name": "Thrown Weapon Fighting",
-            "traits": [
-              {
-                "name": "",
-                "description": "You can draw a weapon that has the thrown property as part of the attack you make with the weapon.</p><p>In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.",
-                "granted": [
-                  {
-                    "type": "damage-bonus",
-                    "amount": 2,
-                    "limits": ["Thrown"]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Wrestler",
-            "traits": [
-              {
-                "name": "",
-                "description": "When you hit a creature with a melee attack, you can attempt to grapple that creature as a bonus action on that turn, so long as your have a free hand to do so. Also, you can drag grappled creatures up to your full movement speed."
-              }
-            ]
-          }
-        ]
-      }
+      "choices": [
+        {
+          "id": "161B961F-11E9-4550-94F4-1DC008A49E40",
+          "type": "fighting-style",
+          "options": [
+            "Aggressive Grappler",
+            "Archery",
+            "Blind Fighting",
+            "Classical Swordplay",
+            "Close-Quarters Shooter",
+            "Crusher",
+            "Dual Wielding",
+            "Dueling",
+            "Featherweight Fighting",
+            "Melee Marksman",
+            "Piercer",
+            "Precision Shooter",
+            "Slasher",
+            "Thrown Weapon Fighting",
+            "Wrestler"
+          ]
+        }
+      ]
     },
     {
       "name": "Crushing Strike",

@@ -826,7 +826,7 @@
     "size": -1,
     "speed": 30,
     "darkvision": 60,
-    "languages": ["Common", "Gnomish"],
+    "languages": ["Common", "Gnomish", "Binary"],
     "traits": [
       {
         "name": "Armored Casing",
@@ -1880,6 +1880,207 @@
               ]
             },
             {
+              "name": "Pureblood Planar",
+              "traits": [
+                {
+                  "name": "Planar Breath Weapon",
+                  "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. The specific nature of your Planar Breath Weapon is determined by your subrace.  Once you use your Planar Breath Weapon, you can't do so again until you finish a long rest.",
+                  "uses": {
+                    "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  "choices": {
+                    "id": "planar-breath",
+                    "type": "trait",
+                    "options": [
+                      {
+                        "name": "Adamantine Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Paralyzing Breath",
+                            "description": "Each creature in the cone must succeed on a Constitution saving throw or become paralyzed until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Arboreal Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Entangling Breath",
+                            "description": "Each creature in the cone must succeed on a Dexterity saving throw or become restrained until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Astral Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Banishing Breath",
+                            "description": "Each creature in the cone must succeed on a Charisma saving throw or be banished to a harmless demiplane. While there, the target is incapacitated. The target remains there until the start of your next turn, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Battle Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Fear Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or become frightened of you until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Beast Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Freezeshock Breath",
+                            "description": "Each creature in the cone must succeed on a Dexterity saving throw.  On a failed saving throw a creature takes 1d10 damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).  The damage type for each creature is cold or lightning, whichever would deal more damage."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Blight Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Fear Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or become frightened of you until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Chaos Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Chaos Breath",
+                            "description": "Each creature in the cone must succeed on a Dexterity saving throw.  On a failed saving throw a creature takes 1d10 damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>For each creature that takes damage, roll a d8.  The damage type is determined by the table below.<table><tr><th>d8</th><th>Damage Type</th></tr><tr><td>1</td><td>Acid</td></tr><tr><td>2</td><td>Cold</td></tr><tr><td>3</td><td>Fire</td></tr><tr><td>4</td><td>Force</td></tr><tr><td>5</td><td>Lightning</td></tr><tr><td>6</td><td>Poison</td></tr><tr><td>7</td><td>Psychic</td></tr><tr><td>8</td><td>Thunder</td></tr></table>"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Chole Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Insanity Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or suffer a random form of short-term madness until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Concordant Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Antithetical Breath",
+                            "description": "Each creature in the cone must succeed on a Charisma saving throw or take force damage in an amount determined by how different their alignment is from your own.  the target takes 1d10 force damage if its moral identity (good, neutral, or evil) differs from your own. Additionally, if the target's ideals towards society and order (lawful, neutral, or chaotic) also differ from your own, it takes an additional 1d10 force damage. If the target shares your alignment, the breath has no effect. This breath does not reveal a creature's alignment to you.</p><p>Both instances of damage increase by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Edict Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Commanding Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or be under the effects of the Command spell until the start of your next turn.  You can choose the command for each creature individually."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Elysian Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Inebriation Breath",
+                            "description": "Each creature in the cone must succeed on a Constitution saving throw or become poisoned until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Gloom Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Apathy Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or be overwhelmed with apathy until the start of your next turn.  An apathetic creature takes no actions and does not move."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Hellfire Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Hellfire Breath",
+                            "description": "Each creature in the cone must succeed on a Constitution saving throw or become vulnerable to fire and necrotic damage until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Howling Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Insanity Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or suffer a random form of short-term madness until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Mirage Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Sleep Breath",
+                            "description": "Each creature in the cone must succeed on a Constitution saving throw or become unconscious until the start of your next turn or until they take any damage or a creature within 5 feet of them uses an action to shake or slap them awake."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Paradise Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Banishing Breath",
+                            "description": "Each creature in the cone must succeed on a Charisma saving throw or be banished to a harmless demiplane. While there, the target is incapacitated. The target remains there until the start of your next turn, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Pyroclastic Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Lava Breath",
+                            "description": "Each creature in the cone must succeed on a Dexterity saving throw or become coated in lava until the start of your next turn.  When a creature starts its turn coated in lava, it takes 1d10 fire damage and must use its action to remove the lava from itself.  This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Radiant Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Repulsion Breath",
+                            "description": "Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Rust Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Rust Breath",
+                            "description": "Each metallic object in the cone becomes coated in rust.  Armor takes a penalty to the AC it provides equal to your proficiency bonus, and weapons take a penalty to attack and damage rolls equal to your proficiency bonus.  This lasts until the start of your next turn."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Tarterian Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Despair Breath",
+                            "description": "Each creature in the cone must succeed on a Wisdom saving throw or become demoralized until the start of your next turn.  While demoralized, a creature has disadvantage on attack rolls, saving throws, and damage rolls."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
               "name": "Ravenite",
               "traits": [
                 {
@@ -2326,6 +2527,565 @@
               {
                 "type": "condition-advantage",
                 "options": ["Charmed", "Frightened"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Adamantine",
+        "description": "<em>Planar subrace (Arcadia)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+          },
+          {
+            "name": "Noble Knight",
+            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Frightened"]
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Celestial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Celestial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arboreal",
+        "description": "<em>Planar subrace (Arborea)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to poison damage. Your breath weapon deals piercing damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Poison"] }]
+          },
+          {
+            "name": "Speak with Small Beasts",
+            "description": "Through sound and gestures, you may communicate simple ideas with Small or smaller beasts."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Celestial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Celestial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Astral",
+        "description": "<em>Planar subrace (Astral)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to radiant damage. Your breath weapon deals radiant damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Radiant"] }]
+          },
+          {
+            "name": "Unusual Nature",
+            "description": "You do not need to breathe and you do not age."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Deep Speech.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Deep Speech"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Battle",
+        "description": "<em>Planar subrace (Ysgard)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to thunder damage. Your breath weapon deals thunder damage and imposes a Constitution saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Thunder"] }]
+          },
+          {
+            "name": "Courageous",
+            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Frightened"]
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Celestial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Celestial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beast",
+        "description": "<em>Planar subrace (Beastlands)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to acid damage. Your breath weapon deals acid damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Acid"] }]
+          },
+          {
+            "name": "Thick Hide",
+            "description": "You reduce all piercing and slashing damage you take by an amount equal to half your proficiency bonus."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Sylvan.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Sylvan"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blight",
+        "description": "<em>Planar subrace (Shadowfell)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Constitution saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+          },
+          {
+            "name": "Deathbringer",
+            "description": "You have proficiency in the Intimidation skill.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Intimidation"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Undercommon.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Undercommon"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chaos",
+        "description": "<em>Planar subrace (Limbo)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to force damage. Your breath weapon deals force damage and imposes a Strength saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Force"] }]
+          },
+          {
+            "name": "Chaotic",
+            "description": "Your mind cannot be read by magical means, and creatures have disadvantage on ability checks made to determine your true intentions."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Primordial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Primordial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chole",
+        "description": "<em>Planar subrace (Abyss)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to poison damage. Your breath weapon deals poison damage and imposes a Wisdom saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Poison"] }]
+          },
+          {
+            "name": "Insanity",
+            "description": "Your mind cannot be read by magical means, and creatures have disadvantage on ability checks made to determine your true intentions."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Abyssal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Abyssal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Condordant",
+        "description": "<em>Planar subrace (Outlands)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to force damage. Your breath weapon deals force damage and imposes a Charisma saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Force"] }]
+          },
+          {
+            "name": "Axiomatic",
+            "description": "You have advantage on saving throws against effects that would force you to act against your will.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed"]
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write one additional language of your choice.",
+            "choices": [
+              {
+                "id": "2F55E798-CD38-4BE0-A35A-85D0C32070B0",
+                "type": "language"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Edict",
+        "description": "<em>Planar subrace (Mechanus)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to force damage. Your breath weapon deals force damage and imposes a Strength saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Force"] }]
+          },
+          {
+            "name": "Truespeech",
+            "description": "When you speak, any creature that can understand at least one language can understand your speech.  You gain no ability to understand other creatures with whom you do not share a language."
+          }
+        ]
+      },
+      {
+        "name": "Elysian",
+        "description": "<em>Planar subrace (Elysium)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to thunder damage. Your breath weapon deals thunder damage and imposes a Constitution saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Thunder"] }]
+          },
+          {
+            "name": "Studious",
+            "description": "You have proficiency in the History skill.",
+            "granted": [{ "type": "skill", "options": ["History"], "level": 1 }]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Celestial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Celestial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gloom",
+        "description": "<em>Planar subrace (Hades)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to psychic damage. Your breath weapon deals psychic damage and imposes a Wisdom saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Psychic"] }]
+          },
+          {
+            "name": "Superior Darkvision",
+            "description": "The range of your darkvision increases to 120 feet.",
+            "granted": [{ "type": "darkvision", "range": 120 }]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Infernal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hellfire",
+        "description": "<em>Planar subrace (Nine Hells)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+          },
+          {
+            "name": "Fiendish Nature",
+            "description": "Your creature type is Fiend, rather than Humanoid, and you have advantage on saving throws against being charmed.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed"]
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Infernal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Howling",
+        "description": "<em>Planar subrace (Pandemonium)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to thunder damage. Your breath weapon deals thunder damage and imposes a Wisdom saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Thunder"] }]
+          },
+          {
+            "name": "Howling Scream",
+            "description": "You cannot be silenced."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Abyssal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Abyssal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mirage",
+        "description": "<em>Planar subrace (Feywild)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to psychic damage. Your breath weapon deals psychic damage and imposes a Intelligence saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Psychic"] }]
+          },
+          {
+            "name": "Fey Ancestry",
+            "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+            "granted": [
+              { "type": "condition-advantage", "options": ["Charmed"] }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Sylvan.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Sylvan"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Paradise",
+        "description": "<em>Planar subrace (Bytopia)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to force damage. Your breath weapon deals force damage and imposes a Strength saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Force"] }]
+          },
+          {
+            "name": "Paradisical Joy",
+            "description": "You have proficiency in the Performance skill.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Performance"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Celestial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Celestial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pyroclastic",
+        "description": "<em>Planar subrace (Gehenna)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Constitution saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+          },
+          {
+            "name": "Lavawyrm",
+            "description": "You have a swimming speed equal to your walking speed, and you can walk across or swim through lava without taking damage."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Infernal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Radiant",
+        "description": "<em>Planar subrace (Mount Celestia)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to radiant damage. Your breath weapon deals radiant damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Radiant"] }]
+          },
+          {
+            "name": "Celestial Nature",
+            "description": "Your creature type is Celestial, rather than Humanoid, and you have advantage on saving throws against being charmed.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed"]
+              }
+            ]
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Celestial.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Celestial"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rust",
+        "description": "<em>Planar subrace (Acheron)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to acid damage. Your breath weapon deals acid damage and imposes a Constitution saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Acid"] }]
+          },
+          {
+            "name": "Strange Diet",
+            "description": "Instead of eating food, you must eat at least one pound of metal each week to avoid starvation.</p><p>In addition, you can innately sense any metal within 30 feet of you."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Infernal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tarterian",
+        "description": "<em>Planar subrace (Carceri)</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to force damage. Your breath weapon deals force damage and imposes a Strength saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Force"] }]
+          },
+          {
+            "name": "Warden",
+            "description": "Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach."
+          },
+          {
+            "name": "Planar Tongue",
+            "description": "You can speak, read, and write Abyssal.",
+            "granted": [
+              {
+                "type": "language",
+                "options": ["Abyssal"]
               }
             ]
           }
@@ -8836,6 +9596,185 @@
     "name": "Reborn"
   },
   {
+    "description": "Some beings look at their frail, mortal bodies with disgust.  They seek to replace their flesh with the cold certainty of steel, and will go to any means to do so.  They transform themselves into biomechanical constructs of their own design, wielding their technological prowess to be better than those around them.",
+    "asis": [
+      { "con": 1 },
+      {
+        "id": "33F626C3-3C56-4643-8B54-636A5BA30A90",
+        "type": "asi",
+        "options": ["str", "dex", "con", "int", "wis", "cha"],
+        "amount": 1
+      }
+    ],
+    "lifespan": -1,
+    "height": [3, 7],
+    "weight": [40, 500],
+    "category": "Artificial",
+    "type": "Humanoid",
+    "size": {
+      "id": "CD2E8B9F-F2B7-4950-B601-60B4D0E4DBD7",
+      "type": "text",
+      "options": ["Small", "Medium", "Large"],
+      "grants": "size"
+    },
+    "speed": 30,
+    "darkvision": 0,
+    "languages": [
+      "Common",
+      "Binary",
+      { "id": "288B142C-7694-4CF1-820C-70F0C1B5985F", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Ancestral Legacy",
+        "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
+        "choices": {
+          "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
+          "type": "trait",
+          "options": [
+            {
+              "name": "Existing Race",
+              "traits": [
+                {
+                  "name": "Ancestry",
+                  "description": "You gain any traits that grant a climbing, flying, or swimming speed you gained from your original race.",
+                  "choices": [
+                    {
+                      "id": "BA4C099D-1BE6-4A38-9D25-E953072F6782",
+                      "type": "ancestry"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "No Existing Race",
+              "traits": [
+                {
+                  "name": "Skill Versatility",
+                  "description": "You gain proficiency in two skills of your choice.",
+                  "choices": [
+                    {
+                      "id": "5F6FCCE4-6109-4ED2-A8C9-B9C006A9BD1B",
+                      "type": "skill",
+                      "level": 1
+                    },
+                    {
+                      "id": "6CBB04CE-FEE1-4BF6-A50A-FAAB0B34FD75",
+                      "type": "skill",
+                      "level": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "Biomechanical Nature",
+        "description": "Your body is exceedingly good at staying alive, represented by the following benefits:</p>\n<ul>\n    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>\n    <li>You have advantage on death saving throws.</li>\n    <li>You don't need to eat, drink, or breathe.</li>\n    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>\n</ul>",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Disease", "Poisoned"] },
+          { "type": "damage-resistance", "options": ["Poison"] },
+          { "type": "save-advantage", "options": ["death"] }
+        ]
+      },
+      {
+        "name": "Tinker",
+        "description": "You have proficiency with tinker's tools.",
+        "granted": [
+          {
+            "type": "tool",
+            "options": ["Tinker's Tools"],
+            "level": 1
+          }
+        ]
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Cerebral Augmentations",
+        "description": "Cerebral implants are embedded in the brain of a cyborg to enhance mental prowess and to protect against mind-altering effects.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Mind Shielding Unit",
+            "description": "You have advantage on saving throws against mind-altering effects (such as being charmed, confused, compelled, frightened, or put to sleep) by magic.</p><p>In addition, your mind cannot be read by magical means.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Frightened"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Muscular Augmentations",
+        "description": "Muscular augments are implants placed strategically at the shoulders and hips to direct pulses of energy through muscle fibers, allowing for bursts of speed, strength, and flexibility.",
+        "asis": [{ "dex": 1 }],
+        "traits": [
+          {
+            "name": "Overclock Unit",
+            "description": "You can activate your muscular augments for a burst of speed. When you move on your turn in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again until you recharge the unit by moving 0 feet on one of your turns."
+          },
+          {
+            "name": "Peak Fitness",
+            "description": "You have proficiency in either the Acrobatics or Athletics skill.",
+            "choices": {
+              "id": "194D605F-1126-4AAB-B10F-38A26861AB02",
+              "type": "skill",
+              "options": ["Acrobatics", "Athletics"],
+              "level": 1
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ocular Augmentations",
+        "description": "Cyborgs with ocular augments replace their eyes with enchanted orbs that allow their sight to persist even in the most unfavorable conditions.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Darkvision",
+            "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+            "granted": [{ "type": "darkvision", "range": 60 }]
+          },
+          {
+            "name": "Clarity Unit",
+            "description": "You have advantage on saving throws against being blinded.</p><p>Additionally, you can see in an area within 30 feet of you that is lightly obscured as if it were unobscured, and can see in an area within 15 feet of you that is heavily obscured as if it were only lightly obscured.",
+            "granted": [
+              { "type": "condition-advantage", "options": ["Blinded"] }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Weaponry Augmentations",
+        "description": "Cyborgs sometimes augment themselves with weaponry, effectively turning their bodies into living weapons.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Integrated Weapon",
+            "description": "Over the course of a long rest, you can integrate a one-handed weapon with which you are proficient into one of your arms. As a bonus action, you can retract the weapon into your forearm or extend it from there. While it is extended, you can use the weapon as if you were holding it, and you can't use that hand for other purposes. You can't be disarmed of the weapon while it is extended."
+          },
+          {
+            "name": "Weapon Training",
+            "description": "You are proficient with one exotic weapon of your choice.",
+            "choices": [
+              {
+                "id": "0FBF049F-E383-405A-A480-3DB5151400F9",
+                "type": "exotic-weapon"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "name": "Cyborg"
+  },
+  {
     "description": "Rhinox are huge and gentle, but rather dim-witted.  Their bodies bear the thick skin of a pachyderm, and their heads resemble those of a rhinoceros.  Their brawn rivals even that of a hill giant, but they rarely use it for violence.  Most loathe to fight, using their strength only in self-defense.</p><p>Rhinox are at home on the savannah, and urban rhinox are rare.  They revere the fey, from which they trace their earliest bloodlines back to.",
     "asis": [{ "str": 2 }, { "wis": 1 }],
     "maturity": 16,
@@ -9186,6 +10125,7 @@
     "darkvision": 0,
     "languages": [
       "Common",
+      "Binary",
       { "id": "9CF2B447-8D3E-4FD8-9855-0C2B0358DA2B", "type": "language" },
       { "id": "ABE65610-4B22-4F9A-99DD-B24234CCA3F3", "type": "language" }
     ],
@@ -10476,6 +11416,7 @@
     "darkvision": 0,
     "languages": [
       "Common",
+      "Binary",
       { "id": "E7C23628-E5A4-4767-A6A3-DE8A6656F28F", "type": "language" }
     ],
     "traits": [

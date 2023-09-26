@@ -31,8 +31,15 @@
     "name": "Crystal",
     "cost": 10,
     "weight": 1,
-    "description": "A crystal imbued with arcane energy.",
+    "description": "A crystal imbued with magical energy.",
     "type": "Arcane or Occult"
+  },
+  {
+    "name": "Dowsing Rod",
+    "cost": 14,
+    "weight": 2,
+    "description": "A large, forked wand that can be used to locate water.",
+    "type": "Primal"
   },
   {
     "name": "Emblem",
@@ -56,6 +63,13 @@
     "type": "Arcane"
   },
   {
+    "name": "Religious Text",
+    "cost": 25,
+    "weight": 5,
+    "description": "A non-magical religious text, containing scripture, stories, and teachings of a particular faith.",
+    "type": "Divine"
+  },
+  {
     "name": "Reliquary",
     "cost": 5,
     "weight": 2,
@@ -75,6 +89,13 @@
     "weight": 2,
     "description": "A medium-length rod of wood capped with metal endcaps.",
     "type": "Arcane"
+  },
+  {
+    "name": "Spellbook",
+    "cost": 25,
+    "weight": 5,
+    "description": "A specially prepared book made of magically enhanced materials and ink, used by wizards for storing spells.  Spellbooks are also sometimes called grimoires or codices.",
+    "type": "Arcane or Occult"
   },
   {
     "name": "Spirit Lantern",

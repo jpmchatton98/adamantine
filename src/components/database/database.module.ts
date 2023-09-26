@@ -24,6 +24,7 @@ import { TransformationTabComponent } from 'src/components/database/tabs/transfo
 import { ExtraTabComponent } from 'src/components/database/tabs/extra-tab/extra-tab.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { PagesModule } from '../pages/pages.module';
+import { FightingStyleTabComponent } from './tabs/fighting-style-tab/fighting-style-tab.component';
 
 registerLocaleData(en);
 
@@ -39,6 +40,7 @@ registerLocaleData(en);
     FeatTabComponent,
     TransformationTabComponent,
     ExtraTabComponent,
+    FightingStyleTabComponent,
   ],
   imports: [
     PagesModule,

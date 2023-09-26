@@ -337,28 +337,34 @@ export class CharacterSheetService {
       name: 'Playing Cards',
       score: 'wis',
     },
-    { name: 'Bagpipes', score: 'cha', instrument: true },
-    { name: 'Birdpipes', score: 'cha', instrument: true },
-    { name: 'Drum', score: 'cha', instrument: true },
-    { name: 'Dulcimer', score: 'cha', instrument: true },
-    { name: 'Flute', score: 'cha', instrument: true },
-    { name: 'Glaur', score: 'cha', instrument: true },
-    { name: 'Hand Drum', score: 'cha', instrument: true },
-    { name: 'Horn', score: 'cha', instrument: true },
-    { name: 'Longhorn', score: 'cha', instrument: true },
-    { name: 'Lute', score: 'cha', instrument: true },
-    { name: 'Lyre', score: 'cha', instrument: true },
-    { name: 'Pan Flute', score: 'cha', instrument: true },
-    { name: 'Shawm', score: 'cha', instrument: true },
-    { name: 'Songhorn', score: 'cha', instrument: true },
-    { name: 'Tantan', score: 'cha', instrument: true },
-    { name: 'Thelarr', score: 'cha', instrument: true },
-    { name: 'Tocken', score: 'cha', instrument: true },
-    { name: 'Viol', score: 'cha', instrument: true },
-    { name: 'Wargong', score: 'cha', instrument: true },
-    { name: 'Whistle-Stick', score: 'cha', instrument: true },
-    { name: 'Yarting', score: 'cha', instrument: true },
-    { name: 'Zulkoon', score: 'cha', instrument: true },
+    { name: 'Accordion', ability: 'cha', instrument: true },
+    { name: 'Bagpipes', ability: 'cha', instrument: true },
+    { name: 'Bass', ability: 'cha', instrument: true },
+    { name: 'Cello', ability: 'cha', instrument: true },
+    { name: 'Clarinet', ability: 'cha', instrument: true },
+    { name: 'Cymbals', ability: 'cha', instrument: true },
+    { name: 'Drum', ability: 'cha', instrument: true },
+    { name: 'Flute', ability: 'cha', instrument: true },
+    { name: 'Gong', ability: 'cha', instrument: true },
+    { name: 'Guitar, acoustic', ability: 'cha', instrument: true },
+    { name: 'Guitar, banjo', ability: 'cha', instrument: true },
+    { name: 'Guitar, bass', ability: 'cha', instrument: true },
+    { name: 'Guitar, electric', ability: 'cha', instrument: true },
+    { name: 'Guitar, ukelele', ability: 'cha', instrument: true },
+    { name: 'Horn', ability: 'cha', instrument: true },
+    { name: 'Kazoo', ability: 'cha', instrument: true },
+    { name: 'Lute', ability: 'cha', instrument: true },
+    { name: 'Lyre', ability: 'cha', instrument: true },
+    { name: 'Maracas', ability: 'cha', instrument: true },
+    { name: 'Pan Flute', ability: 'cha', instrument: true },
+    { name: 'Saxophone', ability: 'cha', instrument: true },
+    { name: 'Trombone', ability: 'cha', instrument: true },
+    { name: 'Tambourine', ability: 'cha', instrument: true },
+    { name: 'Trumpet', ability: 'cha', instrument: true },
+    { name: 'Tuba', ability: 'cha', instrument: true },
+    { name: 'Viola', ability: 'cha', instrument: true },
+    { name: 'Violin', ability: 'cha', instrument: true },
+    { name: 'Vocals', ability: 'cha', instrument: true },
   ];
 
   public damageIcons = {
@@ -1103,11 +1109,19 @@ export class CharacterSheetService {
           senses['darkvision'] = raceData.darkvision;
         }
         for (let feature of raceData.traits) {
-          senses = this.getSensesFromFeature(feature, senses);
+          senses = this.getSensesFromFeature(
+            feature,
+            senses,
+            this.character.race.choices
+          );
         }
         if (subraceData) {
           for (let feature of subraceData.traits) {
-            senses = this.getSensesFromFeature(feature, senses);
+            senses = this.getSensesFromFeature(
+              feature,
+              senses,
+              this.character.race.choices
+            );
           }
         }
       }
@@ -1118,11 +1132,11 @@ export class CharacterSheetService {
       if (classData) {
         for (let i = 1; i <= c.level; i++) {
           for (let feature of classData.features[i] ?? []) {
-            senses = this.getSensesFromFeature(feature, senses);
+            senses = this.getSensesFromFeature(feature, senses, c.choices);
           }
           if (subclassData) {
             for (let feature of subclassData.features[i] ?? []) {
-              senses = this.getSensesFromFeature(feature, senses);
+              senses = this.getSensesFromFeature(feature, senses, c.choices);
             }
           }
         }
@@ -1132,33 +1146,43 @@ export class CharacterSheetService {
       if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
         const featData = this.dataService.getFeat(choice.value);
         if (featData) {
-          senses = this.getSensesFromFeature(featData, senses);
+          senses = this.getSensesFromFeature(
+            featData,
+            senses,
+            this.character.background.choices
+          );
         }
       }
     });
 
     return senses;
   }
-  public getSensesFromFeature(feature: any, senses: any): any {
+  public getSensesFromFeature(feature: any, senses: any, choices: any[]): any {
     if (feature.granted) {
       for (let g of feature.granted) {
+        if (g.range && !g.amount) {
+          g.amount = g.range;
+        }
+
         if (g.type === 'darkvision') {
           if (
-            (senses['darkvision'] < g.amount && senses['darkvision'] !== -1) ||
+            ((senses['darkvision'] ?? 0) < g.amount &&
+              senses['darkvision'] !== -1) ||
             g.amount === -1
           ) {
             senses['darkvision'] = g.amount;
           }
         } else if (g.type === 'blindsight') {
           if (
-            (senses['blindsight'] < g.amount && senses['blindsight'] !== -1) ||
+            ((senses['blindsight'] ?? 0) < g.amount &&
+              senses['blindsight'] !== -1) ||
             g.amount === -1
           ) {
             senses['blindsight'] = g.amount;
           }
         } else if (g.type === 'tremorsense') {
           if (
-            (senses['tremorsense'] < g.amount &&
+            ((senses['tremorsense'] ?? 0) < g.amount &&
               senses['tremorsense'] !== -1) ||
             g.amount === -1
           ) {
@@ -1166,7 +1190,8 @@ export class CharacterSheetService {
           }
         } else if (g.type === 'truesight') {
           if (
-            (senses['truesight'] < g.amount && senses['truesight'] !== -1) ||
+            ((senses['truesight'] ?? 0) < g.amount &&
+              senses['truesight'] !== -1) ||
             g.amount === -1
           ) {
             senses['truesight'] = g.amount;
@@ -1176,7 +1201,44 @@ export class CharacterSheetService {
     }
     if (feature.subFeatures) {
       for (let f of feature.subFeatures) {
-        senses = this.getSensesFromFeature(f, senses);
+        senses = this.getSensesFromFeature(f, senses, choices);
+      }
+    }
+
+    if (feature.choices) {
+      if (Array.isArray(feature.choices)) {
+        for (let choice of feature.choices) {
+          senses = this.getChoiceSenses(choice, senses, choices);
+        }
+      } else {
+        let choice = feature.choices;
+        senses = this.getChoiceSenses(choice, senses, choices);
+      }
+    }
+
+    return senses;
+  }
+  private getChoiceSenses(choice: any, senses: any, choices: any[]) {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        senses = this.getSensesFromFeature(trait, senses, choices);
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        senses = this.getSensesFromFeature(feat, senses, choices);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        senses = this.getSensesFromFeature(data, senses, choices);
       }
     }
 

@@ -10,3 +10,14 @@
     </ng-container>
   </ng-container>
 </ng-container>
+<ng-container *ngIf="choice.type === 'fighting-style' && !choice.prereq">
+  <ng-container *ngFor="let option of choice.options">
+    <h6>{{ option }}</h6>
+    <app-display-feature
+      [feature]="getFightingStyle(option)"
+      [choiceFeature]="true"
+      [level]="level + 1"
+      [displayHeader]="false"
+    ></app-display-feature>
+  </ng-container>
+</ng-container>

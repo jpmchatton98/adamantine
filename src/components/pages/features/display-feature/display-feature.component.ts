@@ -18,6 +18,7 @@ export class DisplayFeatureComponent {
   @Input() level = 0;
 
   @Input() showPrereqLevel: boolean = true;
+  @Input() displayHeader: boolean = true;
 
   public isArray(array: any): boolean {
     return Array.isArray(array);
