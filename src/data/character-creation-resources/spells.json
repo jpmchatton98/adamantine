@@ -11649,6 +11649,34 @@
     "ritual": false
   },
   {
+    "name": "Giant Growth",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S",
+    "duration": "Concentration, up to 1 minute",
+    "description": "<p>For the duration, you cause a creature of your choice to grow to enormous size. If the target is unwilling, it can make a Constitution saving throw to be unaffected on a success. Everything the creature is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.</p><p>The target's size is multiplied by eight in all dimensions and its weight is multiplied by one-hundred twenty-eight. This growth increases its size by three categories-from Medium to Gargantuan, for example. If there isn't enough room for the target to double its size, the creature attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws, and can reroll both of the dice once. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them add twice your spellcasting modifier as extra damage.</p>",
+    "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Dimunition",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S",
+    "duration": "Concentration, up to 1 minute",
+    "description": "<p>For the duration, you cause a creature to shrink dramatically. If the target is unwilling, it can make a Constitution saving throw to be unaffected on a success. Everything the creature is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.</p><p>The target's size is quartered in all dimensions and its weight is divided by thirty-two. This growth reduces its size by two categories-from Medium to Tiny, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws, and must reroll one of the dice once, taking the lowest of the three rolls. The target's weapons also shrink to match its new size. While these weapons are shrunken, the target's attacks with them subtract your spellcasting modifier from their damage.</p>",
+    "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
     "name": "Redwood Expansion",
     "school": "Transmutation",
     "level": 3,
@@ -14576,10 +14604,10 @@
     "school": "Transmutation",
     "level": 9,
     "castingTime": "1 bonus action",
-    "range": "Self",
+    "range": "30 feet",
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
-    "description": "<p>You grow to the size of creatures of legend. For the duration, your size increases to Gargantuan. Your size is multiplied by sixteen in all dimensions and your weight is multiplied by sixty-four. If there isn't enough room for you to increase in size, the you attain the maximum possible size in the space available.</p><p>Until the spell ends, you gain the following benefits.</p><ul><li>Your Strength score increases to 24. If it is already higher than 24, this effect is ignored.</li><li>You have advantage on all Strength-based and Constitution-based ability checks, attack rolls, and saving throws.</li><li>Your weapons grow to match your new size. Your attacks deal an additional 6d6 bludgeoning damage and score critical hits on a roll of 19 or 20.</li><li>You can cast the mold earth and thunderclap cantrips as a bonus action without verbal or material components by stomping your foot. Strength is your spellcasting ability for these spells.</li><li>All weapons, objects, and medium or smaller creatures that you can lift gain the thrown (20/60) property for you and you are proficient with using them as weapons. You must grapple a creature in order to use it as a weapon.</li><li>You gain 80 temporary hit points. If any of these remain when the spell ends, they are lost.</li></ul>",
+    "description": "<p>You cause a willing creature of your choice within range to grow to the size of creatures of legend. Everything the creature is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.</p><p>The target's size is multiplied by sixteen in all dimensions and its weight is multiplied by one thousand. This growth increases its size by two categories-from Medium to Titanic, for example. If there isn't enough room for the target to increase its size, the creature attains the maximum possible size in the space available.  Until the spell ends, the target also gains the following benefits:<ul><li>The target has advantage on Strength and Constitution ability checks and saving throws, can reroll both of the dice once, and adds your spellcasting ability modifier to the roll.</li><li>The target can lift any object or creature smaller than themselves, regardless of weight.</li><li>The target has resistance to all damage types except for psychic.</li><li>The target's attacks are made at advantage and deal an additional 4d10 damage.</li><li>The target's speed doubles.</li><li>The target's reach with all melee attacks is doubled.</li><li>The target gains a number of temporary hit points equal to half their hit point maximum.  If any of these temporary hit points remain when the spell ends, they are lost.</li></ul>",
     "lists": ["Arcane", "Primal"],
     "ritual": 0
   },
