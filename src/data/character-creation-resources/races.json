@@ -39,7 +39,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -85,7 +86,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "finesse": true
@@ -144,7 +146,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "finesse": true
@@ -330,7 +333,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ],
             "finesse": true
@@ -1036,7 +1040,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "description": "If you hit with your pincer attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained. You have two pincers, each of which can grapple only a single target."
@@ -1051,7 +1056,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "piercing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "description": "If you hit with your stinger, your target must make a {dc-con} Constitution saving throw. On a failed save, the target takes 2d4 poison damage."
@@ -1087,7 +1093,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "bludgeoning",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -1250,7 +1257,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ],
             "finesse": true,
@@ -1500,7 +1508,8 @@
                             "dice": 1,
                             "die": 8,
                             "type": "bludgeoning",
-                            "mod": true
+                            "mod": true,
+                            "unarmed": true
                           }
                         ]
                       }
@@ -1547,7 +1556,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -1687,7 +1697,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "bludgeoning",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ],
             "description": "If you hit with your tentacle attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained, and you can't attack another target with your tentacles."
@@ -1884,7 +1895,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "piercing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -2049,7 +2061,8 @@
                 "dice": 1,
                 "die": 12,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           },
@@ -2063,7 +2076,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           },
@@ -2083,7 +2097,8 @@
                 "dice": 1,
                 "die": 10,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -2197,7 +2212,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": ["bludgeoning", "piercing"],
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ],
             "description": "When you attack with this and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:<ul><li>You regain hit points equal to the damage dealt by the attack.</li><li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the mundane damage dealt by the attack.</li></ul>",
@@ -3031,7 +3047,8 @@
                           "dice": 1,
                           "die": 6,
                           "type": "piercing",
-                          "mod": true
+                          "mod": true,
+                          "unarmed": true
                         }
                       ]
                     }
@@ -3058,7 +3075,8 @@
                           "dice": 1,
                           "die": 6,
                           "type": "piercing",
-                          "mod": true
+                          "mod": true,
+                          "unarmed": true
                         },
                         {
                           "dice": 1,
@@ -6412,7 +6430,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "lightning",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "finesse": true
@@ -6524,7 +6543,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "finesse": true
@@ -7072,7 +7092,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -7140,7 +7161,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -10115,7 +10137,8 @@
                               "dice": 1,
                               "die": 8,
                               "type": "bludgeoning",
-                              "mod": true
+                              "mod": true,
+                              "unarmed": true
                             }
                           ]
                         }
@@ -10364,7 +10387,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -10454,7 +10478,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "piercing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -10663,7 +10688,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -10748,7 +10774,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "piercing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -10821,7 +10848,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               },
@@ -10967,7 +10995,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": ["bludgeoning", "piercing"],
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -11192,7 +11221,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -11248,7 +11278,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": ["bludgeoning", "piercing"],
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -11704,7 +11735,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -11878,7 +11910,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -12158,7 +12191,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -12197,7 +12231,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "slashing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "finesse": true
@@ -12331,7 +12366,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "piercing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -12795,7 +12831,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": "bludgeoning",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -12837,7 +12874,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "bludgeoning",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -13157,7 +13195,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "bludgeoning",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -13270,7 +13309,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ],
             "finesse": true
@@ -13327,7 +13367,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "bludgeoning",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -13479,7 +13520,8 @@
                 "dice": 1,
                 "die": 8,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -14438,7 +14480,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "slashing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -14580,7 +14623,8 @@
                 "dice": 1,
                 "die": 6,
                 "type": "piercing",
-                "mod": true
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
@@ -14777,7 +14821,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "bludgeoning",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ]
               }
@@ -14949,7 +14994,8 @@
                     "dice": 1,
                     "die": 8,
                     "type": "bludgeoning",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "description": "If you hit with your constrict attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained, and you can't constrict another target."
@@ -14964,7 +15010,8 @@
                     "dice": 1,
                     "die": 6,
                     "type": "piercing",
-                    "mod": true
+                    "mod": true,
+                    "unarmed": true
                   }
                 ],
                 "description": "If you hit with your bite, your target must make a {dc-con} Constitution saving throw. On a failed save, the target takes 2d4 poison damage."
@@ -15015,7 +15062,8 @@
                                 "dice": 1,
                                 "die": 8,
                                 "type": "bludgeoning",
-                                "mod": true
+                                "mod": true,
+                                "unarmed": true
                               }
                             ],
                             "description": "If you hit with your constrict attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained, and you can't constrict another target."
@@ -15053,7 +15101,8 @@
                                 "dice": 1,
                                 "die": 6,
                                 "type": "piercing",
-                                "mod": true
+                                "mod": true,
+                                "unarmed": true
                               }
                             ],
                             "description": "If you hit with your bite, your target must make a {dc-con} Constitution saving throw. On a failed save, the target takes 2d4 poison damage."
