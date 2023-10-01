@@ -8717,7 +8717,7 @@
     {
       "name": "Slayer I",
       "prereqLevel": 3,
-      "description": " When you hit a creature with a weapon attack you can mark it as your Favored Foe as part of the same attack, and apply your Favored Foe damage bonus to the damage roll.</p><p>Moreover, whenever you make a Wisdom (Perception) or a Wisdom (Survival) check to locate or track your Favored Foe, you can treat a roll of 7 or lower on the d20 as an 8.",
+      "description": " When you hit a creature with a weapon attack you can mark it as your Hunter's Prey as part of the same attack, and apply your Hunter's Prey damage bonus to the damage roll.</p><p>Moreover, whenever you make a Wisdom (Perception) or a Wisdom (Survival) check to locate or track your Hunter's Prey, you can treat a roll of 7 or lower on the d20 as an 8.",
       "prereq": {
         "type": "list",
         "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
@@ -8883,7 +8883,7 @@
     {
       "name": "Slayer II",
       "prereqLevel": 6,
-      "description": "Your tracking abilities have become supernaturally accurate. You always know the exact direction and distance of your Favored Foe while you are on the same plane of existence.",
+      "description": "Your tracking abilities have become supernaturally accurate. You always know the exact direction and distance of your Hunter's Prey while you are on the same plane of existence.",
       "prereq": {
         "type": "list",
         "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
@@ -8982,7 +8982,7 @@
     {
       "name": "Slayer III",
       "prereqLevel": 14,
-      "description": "Once per turn, when you hit your Favored Foe with a weapon attack, you can force it to make a Constitution saving throw against your Spell Save DC. On a failed save, the creature is blinded, deafened, frightened, muted, poisoned, or restrained (your choice) until the beginning of your next turn.",
+      "description": "Once per turn, when you hit your Hunter's Prey with a weapon attack, you can force it to make a Constitution saving throw against your Spell Save DC. On a failed save, the creature is blinded, deafened, frightened, muted, poisoned, or restrained (your choice) until the beginning of your next turn.",
       "prereq": {
         "type": "list",
         "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",

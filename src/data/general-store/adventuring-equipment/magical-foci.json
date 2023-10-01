@@ -7,6 +7,13 @@
     "type": "Divine or Occult"
   },
   {
+    "name": "Athame",
+    "cost": 5,
+    "weight": 1,
+    "description": "A small knife, often made of obsidian or glass, that is used in occult rituals for drawing blood or sacrifices.",
+    "type": "Occult"
+  },
+  {
     "name": "Censer",
     "cost": 5,
     "weight": 2,
@@ -63,6 +70,13 @@
     "type": "Arcane"
   },
   {
+    "name": "Poppet",
+    "cost": 1,
+    "weight": 1,
+    "description": "A doll resembling a person, often a specific person, through which curses can be focused.",
+    "type": "Occult"
+  },
+  {
     "name": "Religious Text",
     "cost": 25,
     "weight": 5,
@@ -75,13 +89,6 @@
     "weight": 2,
     "description": "A small box used for containing holy relics.",
     "type": "Divine"
-  },
-  {
-    "name": "Ritual Knife",
-    "cost": 5,
-    "weight": 1,
-    "description": "A small knife, often made of obsidian or glass, that is used in occult rituals for drawing blood or sacrifices.",
-    "type": "Occult"
   },
   {
     "name": "Rod",
@@ -110,6 +117,13 @@
     "weight": 4,
     "description": "A long length of wood used to focus magical spells.  A staff can be used as a quarterstaff.",
     "type": "Arcane, Occult, or Primal"
+  },
+  {
+    "name": "Talisman",
+    "cost": 5,
+    "weight": 1,
+    "description": "A small object imbued with divine or profane energy.",
+    "type": "Divine or Occult"
   },
   {
     "name": "Totem",
