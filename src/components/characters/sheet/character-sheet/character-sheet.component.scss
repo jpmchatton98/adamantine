@@ -143,6 +143,11 @@
             flex-direction: column;
             gap: 15px;
 
+            &.left-col {
+                min-width: 250px;
+                max-width: 250px;
+            }
+
             .saves {
                 border: 1px solid black;
                 border-radius: 10px;

@@ -703,14 +703,9 @@ export class CharacterSheetService {
         });
       }
     });
-    this.character?.override?.choices.forEach((choice) => {
-      if (skillList.includes(choice.value)) {
-        skillProfs.push({
-          id: choice.id,
-          value: choice.value,
-          level: choice.level,
-        });
-      }
+
+    this.character?.overrides?.forEach((feature) => {
+      skillProfs.push(...this.getFeatureSkillProfs(feature, []));
     });
 
     skillProfs = this.adjustLevels(skillProfs);
@@ -896,15 +891,9 @@ export class CharacterSheetService {
         });
       }
     });
-    this.character?.override?.choices.forEach((choice) => {
-      if (skillList.includes(choice.value)) {
-        skillProfs.push({
-          id: choice.id,
-          value: choice.value,
-          level: choice.level,
-          instrument: instruments.includes(choice.value),
-        });
-      }
+
+    this.character?.overrides?.forEach((feature) => {
+      skillProfs.push(...this.getFeatureToolProfs(feature, []));
     });
 
     skillProfs = this.adjustLevels(skillProfs);
@@ -1044,6 +1033,13 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      profs = {
+        ...profs,
+        ...this.getSaveProfsFromFeature(feature, []),
+      };
+    });
+
     return profs;
   }
   public getSaveProfsFromFeature(feature: any, choices: any[]): any {
@@ -1153,6 +1149,10 @@ export class CharacterSheetService {
           );
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      senses = this.getSensesFromFeature(feature, senses, []);
     });
 
     return senses;
@@ -1312,6 +1312,10 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      skillProfs.push(...this.getFeatureSkillOverrides(feature, []));
+    });
+
     skillProfs = this.cleanupSkillOverrides(skillProfs);
     return skillProfs;
   }
@@ -1446,6 +1450,10 @@ export class CharacterSheetService {
           );
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      skillProfs.push(...this.getFeatureToolOverrides(feature, []));
     });
 
     skillProfs = this.cleanupToolOverrides(skillProfs);
@@ -1607,6 +1615,14 @@ export class CharacterSheetService {
           );
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      spellList.push(
+        ...this.getFeatureSpells(feature, [], this.getTotalLevel(), 0, [
+          feature.name,
+        ])
+      );
     });
 
     const splitSpells: any[] = [];
@@ -1997,6 +2013,14 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      exploitList.push(
+        ...this.getFeatureExploits(feature, [], this.getTotalLevel(), 0, [
+          feature.name,
+        ])
+      );
+    });
+
     const splitExploits: any[] = [];
     for (let i = 0; i < 5; i++) {
       if (
@@ -2373,6 +2397,10 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      profs = [...profs, ...this.getFeatureArmorProfs(feature, [])];
+    });
+
     profs = [...new Set(profs)];
     profs = profs.sort();
 
@@ -2519,10 +2547,9 @@ export class CharacterSheetService {
         profs.push(choice.value);
       }
     });
-    this.character?.override?.choices?.forEach((choice) => {
-      if (languageList.includes(choice.value)) {
-        profs.push(choice.value);
-      }
+
+    this.character?.overrides?.forEach((feature) => {
+      profs = [...profs, ...this.getFeatureLanguageProfs(feature, [])];
     });
 
     profs = [...new Set(profs)];
@@ -2689,6 +2716,10 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      profs = [...profs, ...this.getFeatureWeaponProfs(feature, [])];
+    });
+
     return profs;
   }
   private getFeatureWeaponProfs(feature: any, choices: any[]): any {
@@ -2813,6 +2844,13 @@ export class CharacterSheetService {
           ];
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      damageDefenses = [
+        ...damageDefenses,
+        ...this.getFeatureDamageDefenses(feature, []),
+      ];
     });
 
     damageDefenses = damageDefenses.sort((a, b) => {
@@ -3033,6 +3071,13 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      conditionDefenses = [
+        ...conditionDefenses,
+        ...this.getFeatureConditionDefenses(feature, []),
+      ];
+    });
+
     conditionDefenses = conditionDefenses.sort((a, b) => {
       if (a.type.localeCompare(b.type) < 0) {
         return -1;
@@ -3233,6 +3278,10 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      hpBonus += this.getFeatureHpBonus(feature, []);
+    });
+
     return hpBonus;
   }
   public getFeatureHpBonus(feature: any, choices: any[]): number {
@@ -3364,6 +3413,10 @@ export class CharacterSheetService {
           );
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      initBonus += this.getFeatureInitBonus(feature, []);
     });
 
     return initBonus;
@@ -3521,6 +3574,10 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      saveBonus = this.getFeatureSaveBonus(feature, [], saveBonus);
+    });
+
     return saveBonus;
   }
   public getFeatureSaveBonus(
@@ -3671,6 +3728,10 @@ export class CharacterSheetService {
       }
     });
 
+    this.character?.overrides?.forEach((feature) => {
+      telepathy = this.getFeatureTelepathy(feature, [], telepathy);
+    });
+
     return telepathy;
   }
   public getFeatureTelepathy(feature: any, choices: any[], telepathy): number {
@@ -3803,6 +3864,10 @@ export class CharacterSheetService {
           );
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      infusions = this.getFeatureInfusions(feature, [], infusions);
     });
 
     return infusions;
@@ -3969,6 +4034,16 @@ export class CharacterSheetService {
           );
         }
       }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      [speeds, speedBonuses] = this.getFeatureSpeeds(
+        feature,
+        [],
+        this.getTotalLevel(),
+        speeds,
+        speedBonuses
+      );
     });
 
     for (let k of Object.keys(speeds)) {
@@ -4298,35 +4373,37 @@ export class CharacterSheetService {
   ): number {
     let maxUses = 0;
     if (!dataObj) {
-      const choiceEntry = characterObj.choices.find(
+      const choiceEntry = characterObj.choices?.find(
         (ch) => ch.id === 'bg-feat'
       )?.value;
       const featData = this.dataService.getFeat(choiceEntry);
 
-      const choiceEntry4 = characterObj.choices.find(
+      const choiceEntry4 = characterObj.choices?.find(
         (ch) => ch.id === 'bg-feat-4'
       )?.value;
       const featData4 = this.dataService.getFeat(choiceEntry4);
 
-      return (
-        this.getFeatureUses(
-          featData,
-          characterObj.choices,
-          useId,
-          level,
-          maxUses
-        ) ||
-        this.getFeatureUses(
-          featData4,
-          characterObj.choices,
-          useId,
-          level,
-          maxUses
-        )
-      );
+      if (featData || featData4) {
+        return (
+          this.getFeatureUses(
+            featData,
+            characterObj.choices,
+            useId,
+            level,
+            maxUses
+          ) ||
+          this.getFeatureUses(
+            featData4,
+            characterObj.choices,
+            useId,
+            level,
+            maxUses
+          )
+        );
+      }
     }
 
-    if (dataObj.traits) {
+    if (dataObj?.traits) {
       for (let trait of dataObj.traits) {
         maxUses = this.getFeatureUses(
           trait,
@@ -4336,7 +4413,7 @@ export class CharacterSheetService {
           maxUses
         );
       }
-    } else if (dataObj.features) {
+    } else if (dataObj?.features) {
       for (let i = 1; i <= level; i++) {
         if (dataObj.features[i]) {
           for (let feature of dataObj.features[i]) {
@@ -4352,7 +4429,7 @@ export class CharacterSheetService {
       }
     }
 
-    if (dataObj.subraces) {
+    if (dataObj?.subraces) {
       let subrace = dataObj.subraces.find(
         (s) => s.name === characterObj.subrace
       );
@@ -4368,7 +4445,7 @@ export class CharacterSheetService {
         }
       }
     }
-    if (dataObj.subclasses) {
+    if (dataObj?.subclasses) {
       let subclass = dataObj.subclasses.find(
         (s) => s.name === characterObj.subclass
       );
@@ -4388,6 +4465,10 @@ export class CharacterSheetService {
         }
       }
     }
+
+    this.character?.overrides?.forEach((feature) => {
+      maxUses = this.getFeatureUses(feature, [], useId, level, maxUses);
+    });
 
     return maxUses;
   }
@@ -4606,35 +4687,37 @@ export class CharacterSheetService {
   ): number {
     let reset = 0;
     if (!dataObj) {
-      const choiceEntry = characterObj.choices.find(
+      const choiceEntry = characterObj.choices?.find(
         (ch) => ch.id === 'bg-feat'
       )?.value;
       const featData = this.dataService.getFeat(choiceEntry);
 
-      const choiceEntry4 = characterObj.choices.find(
+      const choiceEntry4 = characterObj.choices?.find(
         (ch) => ch.id === 'bg-feat-4'
       )?.value;
       const featData4 = this.dataService.getFeat(choiceEntry4);
 
-      return (
-        this.getFeatureUseReset(
-          featData,
-          characterObj.choices,
-          useId,
-          level,
-          reset
-        ) ||
-        this.getFeatureUseReset(
-          featData4,
-          characterObj.choices,
-          useId,
-          level,
-          reset
-        )
-      );
+      if (featData || featData4) {
+        return (
+          this.getFeatureUseReset(
+            featData,
+            characterObj.choices,
+            useId,
+            level,
+            reset
+          ) ||
+          this.getFeatureUseReset(
+            featData4,
+            characterObj.choices,
+            useId,
+            level,
+            reset
+          )
+        );
+      }
     }
 
-    if (dataObj.traits) {
+    if (dataObj?.traits) {
       for (let trait of dataObj.traits) {
         reset = this.getFeatureUseReset(
           trait,
@@ -4644,7 +4727,7 @@ export class CharacterSheetService {
           reset
         );
       }
-    } else if (dataObj.features) {
+    } else if (dataObj?.features) {
       for (let i = 1; i <= level; i++) {
         if (dataObj.features[i]) {
           for (let feature of dataObj.features[i]) {
@@ -4660,7 +4743,7 @@ export class CharacterSheetService {
       }
     }
 
-    if (dataObj.subraces) {
+    if (dataObj?.subraces) {
       let subrace = dataObj.subraces.find(
         (s) => s.name === characterObj.subrace
       );
@@ -4676,7 +4759,7 @@ export class CharacterSheetService {
         }
       }
     }
-    if (dataObj.subclasses) {
+    if (dataObj?.subclasses) {
       let subclass = dataObj.subclasses.find(
         (s) => s.name === characterObj.subclass
       );
@@ -4697,6 +4780,10 @@ export class CharacterSheetService {
       }
     }
 
+    this.character?.overrides?.forEach((feature) => {
+      reset = this.getFeatureUseReset(feature, [], useId, level, reset);
+    });
+
     return reset;
   }
   private getFeatureUseReset(
@@ -4707,6 +4794,7 @@ export class CharacterSheetService {
     reset: number
   ): number {
     if (feature.uses) {
+      console.log(feature);
       let use;
       if (Array.isArray(feature.uses)) {
         use = feature.uses.find((u) => u.id === useId);
@@ -4812,15 +4900,6 @@ export class CharacterSheetService {
       for (let c of this.character?.classes) {
         if (c.subclass === 'Master At Arms') {
           return true;
-        } else {
-          for (let ch of c.choices) {
-            if (
-              ch.id === '06D21A61-5648-43A7-8ACA-F32A583386DD' &&
-              ch.value === 'Master At Arms'
-            ) {
-              return true;
-            }
-          }
         }
       }
     }

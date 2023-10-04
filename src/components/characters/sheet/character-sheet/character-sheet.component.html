@@ -173,7 +173,7 @@
     </div>
   </div>
   <div class="sheet-row">
-    <div class="sheet-col">
+    <div class="sheet-col left-col">
       <div class="saves">
         <h6>Saving Throws</h6>
         <div class="save-list">
@@ -854,6 +854,17 @@
                   [characterId]="characterId"
                   [characterObj]="character.background"
                   [feature]="gritFeature"
+                  [characterLevel]="characterLevel()"
+                ></app-sheet-feature>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="character.overrides">
+              <h5>DM Override Features</h5>
+              <div *ngFor="let feature of character.overrides">
+                <app-sheet-feature
+                  [characterId]="characterId"
+                  [characterObj]="character"
+                  [feature]="feature"
                   [characterLevel]="characterLevel()"
                 ></app-sheet-feature>
               </div>
