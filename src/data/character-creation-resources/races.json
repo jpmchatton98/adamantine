@@ -13673,8 +13673,10 @@
         "traits": [
           {
             "name": "Devil Tongue",
-            "description": "You can speak, read, and write Infernal.",
-            "granted": [{ "type": "language", "options": ["Infernal"] }]
+            "description": "You can speak, read, and write Infernal and Celestial.",
+            "granted": [
+              { "type": "language", "options": ["Infernal", "Celestial"] }
+            ]
           },
           {
             "name": "Hellish Resistance",

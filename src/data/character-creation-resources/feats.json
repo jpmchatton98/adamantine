@@ -198,11 +198,12 @@
           "name": "Clubs",
           "traits": [
             {
-              "name": "Concussion",
-              "description": "When you hit a creature with an opportunity attack using a club, you can force them to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength or Dexterity modifier).  On a failed saving throw, the target is dazed until the end of its next turn.  While dazed, the creature's speed is halved and it cannot take reactions.  A creature immune to being stunned is immune to being dazed."
+              "name": "Bonebreaker",
+              "description": "As a bonus action on your turn, you can wind up for a swing with a club.  Your next attack with a club deals an additional die of damage."
             },
             {
-              "name": ""
+              "name": "Concussion",
+              "description": "When you hit a creature with an opportunity attack using a club, you can force them to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength or Dexterity modifier).  On a failed saving throw, the target is dazed until the end of its next turn.  While dazed, the creature's speed is halved and it cannot take reactions.  A creature immune to being stunned is immune to being dazed."
             }
           ]
         },
@@ -210,22 +211,40 @@
           "name": "Flails",
           "traits": [
             {
-              "name": "Winding Strike",
-              "description": "As a bonus action on your turn, you can prepare yourself to extend your flail to sweep over targets' shields. Until the end of this turn, your attack rolls with a flail gain a +2 bonus against any target using a shield."
-            },
-            {
               "name": "Brutal Guardian",
               "description": "When you hit with an opportunity attack using a flail, the target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength or Dexterity modifier) or be knocked prone."
+            },
+            {
+              "name": "Winding Strike",
+              "description": "As a bonus action on your turn, you can prepare yourself to extend your flail to sweep over targets' shields. Until the end of this turn, your attack rolls with a flail gain a +2 bonus against any target using a shield."
             }
           ]
         },
         {
           "name": "Hammers",
-          "traits": []
+          "traits": [
+            {
+              "name": "Crush",
+              "description": "You deal double damage to objects and structures with attacks made with a hammer."
+            },
+            {
+              "name": "Kneebreaker",
+              "description": "When you hit with an opportunity attack using a hammer, you score a critical hit on a roll of 19 or 20."
+            }
+          ]
         },
         {
           "name": "Pickaxes",
-          "traits": []
+          "traits": [
+            {
+              "name": "Armor Breaker",
+              "description": "When you hit a creature with an opportunity attack using a pickaxe, you can remove one damage resistance of your choice until the end of your next turn."
+            },
+            {
+              "name": "Hooked Grapple",
+              "description": "When you are wielding a pickaxe, you can attempt to grapple a creature in place of an attack of opportunity.  You can grapple a creature using a pickaxe, and a creature grappled in such a way takes piercing damage equal to your proficiency bonus at the start of each of your turns."
+            }
+          ]
         },
         {
           "name": "Polearms",
@@ -244,6 +263,10 @@
           "name": "Shortblades",
           "traits": [
             {
+              "name": "Blade Dance",
+              "description": "As a bonus action, you can assume an acrobatic stance, provided you have a shortblade in hand. Doing so grants advantage on Dexterity saving throws until the start of your next turn or until you're not holding a shortblade."
+            },
+            {
               "name": "Disarm",
               "description": "When you make an opportunity attack with a shortblade against a creature wielding a weapon, you can force them to make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength or Dexterity modifier).  On a failed saving throw, the target drops one weapon of your choice, and it flies away 5 feet in a random direction."
             }
@@ -253,12 +276,12 @@
           "name": "Spears",
           "traits": [
             {
-              "name": "Surgebreaker",
-              "description": "As a bonus action, you can set your spear to receive a charge. If a creature moves within your spear's reach on its next turn, you can make a melee attack against it with your spear as a reaction. If the attack hits, the target takes an extra die of damage."
+              "name": "Long Reach",
+              "description": "As a bonus action, you can increase your reach with a spear you're holding by 5 feet until the start of your next turn."
             },
             {
-              "name": "Long Reach",
-              "description": "As a bonus action on your turn, you can increase your reach with a spear by 5 feet for the rest of your turn."
+              "name": "Surgebreaker",
+              "description": "As a bonus action, you can set your spear to receive a charge. If a creature moves within your spear's reach on its next turn, you can make a melee attack against it with your spear as a reaction. If the attack hits, the target takes an extra die of damage."
             }
           ]
         },
@@ -266,12 +289,12 @@
           "name": "Swords",
           "traits": [
             {
-              "name": "Parrying Stance",
-              "description": "On your turn, you can use your reaction to assume a parrying stance, provided you have a sword in hand. Doing so grants a +1 bonus to your AC until the start of your next turn or until you're not holding a sword."
-            },
-            {
               "name": "Deft Defender",
               "description": "When you make an opportunity attack with a sword, you have advantage on the attack roll."
+            },
+            {
+              "name": "Parrying Stance",
+              "description": "As a bonus action, you can assume a parrying stance, provided you have a sword in hand. Doing so grants a +1 bonus to your AC until the start of your next turn or until you're not holding a sword."
             }
           ]
         }
@@ -2003,7 +2026,7 @@
     "name": "Adaptive Shapechange",
     "prereq": [
       {
-        "race": ["changeling"]
+        "race": ["changeling", "synthsteel"]
       }
     ],
     "type": "racial",
@@ -2363,7 +2386,7 @@
     "name": "Prodigy",
     "prereq": [
       {
-        "race": ["human", "half-elf", "half-orc"]
+        "race": ["human", "half-elf", "half-dwarf", "half-orc"]
       }
     ],
     "type": "racial",
@@ -2958,7 +2981,7 @@
     "name": "Mechanical Resolve",
     "prereq": [
       {
-        "race": ["autognome", "warforged"]
+        "race": ["autognome", "cyborg", "synthsteel", "warforged"]
       }
     ],
     "type": "racial",
@@ -3223,7 +3246,9 @@
         "race": [
           "autognome",
           "bio-tinker",
+          "cyborg",
           "dhampir",
+          "dullahan",
           "ghost",
           "ghoul",
           "gnome",
@@ -3234,6 +3259,7 @@
           "illithid",
           "kender",
           "kobold",
+          "lanternfolk",
           "leshy",
           "mousefolk",
           "mummy",
@@ -3263,7 +3289,9 @@
         "race": [
           "autognome",
           "bio-tinker",
+          "cyborg",
           "dhampir",
+          "dullahan",
           "ghost",
           "ghoul",
           "gnome",
@@ -3274,6 +3302,7 @@
           "illithid",
           "kender",
           "kobold",
+          "lanternfolk",
           "leshy",
           "mousefolk",
           "mummy",
