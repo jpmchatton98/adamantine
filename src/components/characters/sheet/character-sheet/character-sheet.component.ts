@@ -113,6 +113,8 @@ export class CharacterSheetComponent implements OnInit {
 
   public telepathy = 0;
 
+  public creatureType = '';
+
   // TODO: remove this and replace with automatic calculation
   public ac = 0;
 
@@ -257,6 +259,11 @@ export class CharacterSheetComponent implements OnInit {
       .then((val) => {
         this.telepathy = val;
       });
+
+    await this.characterSheetService
+      .getCreatureType(this.characterId)
+      .then((val) => (this.creatureType = val));
+
     this.loaded = true;
 
     this.store.select(selectUpdate).subscribe(async (update) => {

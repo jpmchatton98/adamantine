@@ -103,7 +103,7 @@
   {
     "name": "Aartuk Elder",
     "size": "Large",
-    "type": "plant",
+    "type": "aberration plant",
     "alignment": ["L", "E"],
     "alignmentPrefix": "typically ",
     "ac": [{ "ac": 16, "from": ["natural armor"] }],
@@ -172,7 +172,7 @@
   {
     "name": "Aartuk Starhorror",
     "size": "Medium",
-    "type": "plant",
+    "type": "aberration plant",
     "alignment": ["L", "E"],
     "alignmentPrefix": "typically ",
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
@@ -248,7 +248,7 @@
   {
     "name": "Aartuk Weedling",
     "size": "Medium",
-    "type": "plant",
+    "type": "aberration plant",
     "alignment": ["L", "E"],
     "alignmentPrefix": "typically ",
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
@@ -10510,7 +10510,7 @@
   {
     "name": "Astral Blight",
     "size": "Medium",
-    "type": "plant",
+    "type": "aberration plant",
     "alignment": ["U"],
     "ac": [{ "ac": 12, "from": ["natural armor"] }],
     "hp": { "average": 26, "formula": "4d8 + 8" },
@@ -14507,7 +14507,8 @@
   {
     "name": "Bone Knight",
     "size": "Medium",
-    "type": "humanoid",
+    "type": "undead",
+    "tags": ["corporeal"],
     "alignment": ["L", "NX", "C", "NY", "E"],
     "ac": [{ "ac": 20, "from": ["bonecraft armor"] }],
     "hp": { "average": 84, "formula": "13d8 + 26" },
@@ -16340,7 +16341,7 @@
       }
     ],
     "size": "Large",
-    "type": "giant",
+    "type": "undead giant",
     "alignment": ["C", "E"],
     "ac": [{ "ac": 11, "from": ["hide armor"] }],
     "hp": { "average": 59, "formula": "7d10 + 21" },
@@ -16362,7 +16363,7 @@
         ]
       }
     ],
-    "tags": ["ogre"]
+    "tags": ["corporeal", "ogre"]
   },
   {
     "name": "Carrion Stalker",
@@ -16409,7 +16410,7 @@
   {
     "name": "Carrionette",
     "size": "Small",
-    "type": "construct",
+    "type": "construct undead",
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 27, "formula": "6d6 + 6" },
     "speed": { "walk": 25 },
@@ -17812,7 +17813,7 @@
   {
     "name": "Clockwork Dragon",
     "size": "Medium",
-    "type": "construct",
+    "type": "construct dragon",
     "alignment": ["N"],
     "ac": [{ "ac": 16, "from": ["natural armor"] }],
     "hp": { "average": 22, "formula": "4d8 + 4" },
@@ -20236,6 +20237,48 @@
       }
     ],
     "tags": ["shadowy"]
+  },
+  {
+    "name": "Dreadwolf",
+    "srd": true,
+    "basicRules": true,
+    "size": "Medium",
+    "type": "beast",
+    "alignment": ["N", "E"],
+    "ac": [12],
+    "hp": { "average": 39, "formula": "6d8 + 12" },
+    "speed": { "walk": 40 },
+    "str": 15,
+    "dex": 14,
+    "con": 14,
+    "int": 3,
+    "wis": 13,
+    "cha": 6,
+    "skill": { "perception": "+5", "stealth": "+4" },
+    "senses": ["darkvision 120 ft."],
+    "passive": 15,
+    "cr": 0.5,
+    "steed": true,
+    "trait": [
+      {
+        "name": "Two-Headed",
+        "entries": [
+          "The dreadwolf has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The dreadwolf makes two bite attacks."]
+      },
+      {
+        "name": "Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) piercing damage."
+        ]
+      }
+    ]
   },
   {
     "name": "Death Dog",
@@ -23395,7 +23438,7 @@
   {
     "name": "Dragonblood Ooze",
     "size": "Large",
-    "type": "ooze",
+    "type": "dragon ooze",
     "alignment": ["U"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
     "hp": { "average": 68, "formula": "8d10 + 24" },
@@ -23462,7 +23505,7 @@
   {
     "name": "Dragonbone Golem",
     "size": "Large",
-    "type": "construct",
+    "type": "construct dragon",
     "alignment": ["U"],
     "ac": [{ "ac": 17, "from": ["natural armor"] }],
     "hp": { "average": 161, "formula": "19d10 + 57" },
@@ -23740,6 +23783,7 @@
     "name": "Dream Eater",
     "size": "Medium",
     "type": "aberration",
+    "tags": ["beholderkin"],
     "alignment": ["C", "E"],
     "alignmentPrefix": "typically ",
     "ac": [15],
@@ -25903,7 +25947,7 @@
   {
     "name": "Duergar Hammerer",
     "size": "Medium",
-    "type": "construct",
+    "type": "construct humanoid",
     "alignment": ["A"],
     "ac": [{ "ac": 17, "from": ["natural armor"] }],
     "hp": { "average": 33, "formula": "6d8 + 6" },
@@ -26196,7 +26240,7 @@
     "name": "Duergar Screamer",
     "reprintedAs": ["Duergar Screamer|MPMM"],
     "size": "Medium",
-    "type": "construct",
+    "type": "construct humanoid",
     "alignment": ["L", "E"],
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 38, "formula": "7d8 + 7" },
@@ -29251,7 +29295,7 @@
   {
     "name": "Fiendish Flesh Golem",
     "size": "Large",
-    "type": "construct",
+    "type": "construct fiend undead",
     "alignment": ["U"],
     "ac": [{ "ac": 12, "from": ["natural armor"] }],
     "hp": { "average": 210, "formula": "20d10 + 100" },
@@ -30066,7 +30110,7 @@
     "srd": true,
     "basicRules": true,
     "size": "Medium",
-    "type": "construct",
+    "type": "construct undead",
     "alignment": ["N"],
     "ac": [9],
     "hp": { "average": 93, "formula": "11d8 + 44" },
@@ -30528,7 +30572,8 @@
   {
     "name": "Fomorian",
     "size": "Huge",
-    "type": "giant",
+    "type": "fey giant",
+    "tags": ["unseelie"],
     "alignment": ["C", "E"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
     "hp": { "average": 149, "formula": "13d12 + 65" },
@@ -37093,7 +37138,7 @@
     "name": "Gomazoa",
     "speed": { "fly": 10 },
     "size": "Large",
-    "type": "plant",
+    "type": "aberration",
     "alignment": ["N", "E"],
     "ac": [{ "ac": 20, "from": ["natural armor"] }],
     "hp": { "average": 93, "formula": "11d10 + 33" },
@@ -39910,7 +39955,7 @@
   {
     "name": "Hellfire Engine",
     "size": "Huge",
-    "type": "construct",
+    "type": "construct fiend",
     "alignment": ["L", "E"],
     "alignmentPrefix": "Typically ",
     "ac": [{ "ac": 18, "from": ["natural armor"] }],
@@ -40057,6 +40102,7 @@
     "name": "Hellwasp",
     "size": "Large",
     "type": "fiend",
+    "tags": ["devil"],
     "alignment": ["L", "E"],
     "ac": [{ "ac": 19, "from": ["natural armor"] }],
     "hp": { "average": 52, "formula": "8d10 + 8" },
@@ -40104,8 +40150,8 @@
   {
     "name": "Hellwasp Grub",
     "size": "Small",
-    "type": "beast",
-    "beastType": ["arthropod"],
+    "type": "fiend",
+    "tags": ["devil"],
     "alignment": ["U"],
     "ac": [{ "ac": 13, "from": ["natural armor"] }],
     "hp": { "average": 4, "formula": "1d6 + 1" },
@@ -43444,7 +43490,7 @@
     ]
   },
   {
-    "name": "Jabberwock",
+    "name": "Jabberwocky",
     "size": "Huge",
     "type": "dragon",
     "alignment": ["C", "E"],
@@ -43483,7 +43529,7 @@
       {
         "name": "Confusing Burble",
         "entries": [
-          "The jabberwock burbles to itself unless it is incapacitated. Any creature that starts its turn within 30 feet of the jabberwock and is able to hear its burbling must make a DC 18 Charisma saving throw. On a failed saving throw, the creature can't take reactions until the start of its next turn, and it rolls a  to determine what it does during its current turn:",
+          "The jabberwocky burbles to itself unless it is incapacitated. Any creature that starts its turn within 30 feet of the jabberwocky and is able to hear its burbling must make a DC 18 Charisma saving throw. On a failed saving throw, the creature can't take reactions until the start of its next turn, and it rolls a  to determine what it does during its current turn:",
           {
             "type": "list",
             "style": "list-hang-notitle",
@@ -43510,26 +43556,26 @@
       {
         "name": "Legendary Resistance (3/Day)",
         "entries": [
-          "If the jabberwock fails a saving throw, it can choose to succeed instead."
+          "If the jabberwocky fails a saving throw, it can choose to succeed instead."
         ]
       },
       {
         "name": "Regeneration",
         "entries": [
-          "The jabberwock regains 10 hit points at the start of its turn. If the jabberwock takes slashing damage, this trait doesn't function at the start of its next turn. The jabberwock dies only if it starts its turn with 0 hit points and doesn't regenerate."
+          "The jabberwocky regains 10 hit points at the start of its turn. If the jabberwocky takes slashing damage, this trait doesn't function at the start of its next turn. The jabberwocky dies only if it starts its turn with 0 hit points and doesn't regenerate."
         ]
       },
       {
         "name": "Uncanny Tracker",
         "entries": [
-          "The jabberwock can unerringly track any creature it has wounded in the last 24 hours, and it knows the distance and direction to its quarry as long as the two of them are on the same plane of existence."
+          "The jabberwocky can unerringly track any creature it has wounded in the last 24 hours, and it knows the distance and direction to its quarry as long as the two of them are on the same plane of existence."
         ]
       }
     ],
     "action": [
       {
         "name": "Multiattack",
-        "entries": ["The jabberwock makes two Rend attacks."]
+        "entries": ["The jabberwocky makes two Rend attacks."]
       },
       {
         "name": "Rend",
@@ -43546,23 +43592,23 @@
       {
         "name": "Fiery Gaze (Recharge 5-6)",
         "entries": [
-          "Unless it is blinded, the jabberwock emits a 120-foot-long, 5-foot-wide line of fire from its eyes. Each creature in that line must make a DC 18 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one."
+          "Unless it is blinded, the jabberwocky emits a 120-foot-long, 5-foot-wide line of fire from its eyes. Each creature in that line must make a DC 18 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one."
         ]
       }
     ],
     "legendary": [
       {
         "name": "Tail Attack",
-        "entries": ["The jabberwock makes one Tail attack."]
+        "entries": ["The jabberwocky makes one Tail attack."]
       },
       {
         "name": "Rend Attack (2 Actions)",
-        "entries": ["The jabberwock makes one Rend attack."]
+        "entries": ["The jabberwocky makes one Rend attack."]
       },
       {
         "name": "Wing Attack (3 Actions)",
         "entries": [
-          "The jabberwock beats its wings. Each creature within 10 feet of the jabberwock must succeed on a DC 18 Dexterity saving throw or take 8 (1d6 + 5) bludgeoning damage and be knocked prone."
+          "The jabberwocky beats its wings. Each creature within 10 feet of the jabberwock must succeed on a DC 18 Dexterity saving throw or take 8 (1d6 + 5) bludgeoning damage and be knocked prone."
         ]
       }
     ]
@@ -43662,8 +43708,7 @@
   {
     "name": "Jammer Leech",
     "size": "Tiny",
-    "type": "beast",
-    "beastType": ["arthropod"],
+    "type": "aberration",
     "alignment": ["U"],
     "ac": [{ "ac": 12, "from": ["natural armor"] }],
     "hp": { "average": 27, "formula": "5d4 + 15" },
@@ -49285,8 +49330,8 @@
       }
     ],
     "size": "Huge",
-    "type": "beast",
-    "beastType": ["fish"],
+    "type": "fey",
+    "tags": ["seelie"],
     "alignment": ["U"],
     "ac": [{ "ac": 13, "from": ["natural armor"] }],
     "hp": { "average": 126, "formula": "11d12 + 55" },
@@ -58498,7 +58543,8 @@
   {
     "name": "Rotter",
     "size": "Medium",
-    "type": "construct",
+    "type": "undead",
+    "tags": ["corporeal"],
     "alignment": ["U"],
     "ac": [{ "ac": 18, "from": ["natural armor", "shield"] }],
     "hp": { "average": 75, "formula": "10d8 + 30" },
@@ -63529,8 +63575,7 @@
   {
     "name": "Space Eel",
     "size": "Small",
-    "type": "beast",
-    "beastType": ["fish"],
+    "type": "aberration",
     "alignment": ["U"],
     "ac": [14],
     "hp": { "average": 7, "formula": "2d6" },
@@ -63571,8 +63616,7 @@
   {
     "name": "Space Guppy",
     "size": "Small",
-    "type": "beast",
-    "beastType": ["fish"],
+    "type": "aberration",
     "alignment": ["U"],
     "ac": [13],
     "hp": { "average": 3, "formula": "1d6" },
@@ -63613,8 +63657,7 @@
   {
     "name": "Space Hamster",
     "size": "Tiny",
-    "type": "beast",
-    "beastType": ["mammal"],
+    "type": "aberration",
     "alignment": ["N", "G"],
     "alignmentPrefix": "typically ",
     "ac": [15],
@@ -63655,8 +63698,7 @@
   {
     "name": "Space Mollymawk",
     "size": "Small",
-    "type": "beast",
-    "beastType": ["bird"],
+    "type": "aberration",
     "alignment": ["U"],
     "ac": [12],
     "hp": { "average": 3, "formula": "1d6" },
@@ -63695,8 +63737,7 @@
   {
     "name": "Space Swine",
     "size": "Medium",
-    "type": "beast",
-    "beastType": ["mammal"],
+    "type": "aberration",
     "alignment": ["U"],
     "ac": [11],
     "hp": { "average": 22, "formula": "4d8 + 4" },
@@ -64504,7 +64545,7 @@
   {
     "name": "Star Lancer",
     "size": "Large",
-    "type": "celestial",
+    "type": "aberration",
     "alignment": ["N"],
     "alignmentPrefix": "typically ",
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
@@ -64875,7 +64916,8 @@
   {
     "name": "Starlight Apparition",
     "size": "Medium",
-    "type": "celestial",
+    "type": "undead aberration",
+    "tags": ["ethereal"],
     "alignment": ["N", "G"],
     "alignmentPrefix": "typically ",
     "ac": [10],
@@ -82744,6 +82786,1016 @@
         "name": "Talons",
         "entries": [
           "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) slashing damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cyclonosaurus",
+    "srd": true,
+    "basicRules": true,
+    "size": "Gargantuan",
+    "type": "beast",
+    "beastType": ["reptile"],
+    "tags": ["dinosaur"],
+    "alignment": ["N", "G"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 155, "formula": "10d20 + 50" },
+    "speed": { "walk": 20, "fly": 120 },
+    "str": 26,
+    "dex": 10,
+    "con": 21,
+    "int": 3,
+    "wis": 10,
+    "cha": 5,
+    "skill": { "perception": "+4" },
+    "passive": 14,
+    "cr": 10,
+    "trait": [
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "The cyclonosaurus has advantage on saving throws against spells and other magical effects."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The cyclonosaurus makes one Bite attack and one Talons attack."
+        ]
+      },
+      {
+        "name": "Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +12 to hit, reach 10 ft., one target. <em>Hit:</em> 27 (3d12 + 8) piercing damage.   If the target is a Huge or smaller creature, it is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the cyclonosaurus can't Bite another target."
+        ]
+      },
+      {
+        "name": "Talons",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +12 to hit, reach 10 ft., one target. <em>Hit:</em> 24 (3d10 + 8) slashing damage."
+        ]
+      },
+      {
+        "name": "Wing Gusts (Recharge 5-6)",
+        "entries": [
+          "The cyclonosaurus beats its wings, creating bursts of thunderous force. Each creature within 10 feet of the aerosaur must make a DC 20 Strength saving throw. On a failed save, a creature takes 38 (7d10) thunder damage, is pushed up to 30 feet horizontally from the cyclonosaurus, and is knocked prone. On a successful save, a creature takes half as much damage and is pushed up to 15 feet horizontally from the cyclonosaurus."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Altisaurus",
+    "srd": true,
+    "basicRules": true,
+    "size": "Gargantuan",
+    "type": "beast",
+    "beastType": ["reptile"],
+    "tags": ["dinosaur"],
+    "alignment": ["N", "G"],
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 198, "formula": "12d20 + 72" },
+    "speed": { "walk": 40 },
+    "str": 28,
+    "dex": 6,
+    "con": 23,
+    "int": 3,
+    "wis": 12,
+    "cha": 7,
+    "skill": { "perception": "+11" },
+    "passive": 21,
+    "cr": 13,
+    "trait": [
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "The altisaurus has advantage on saving throws against spells and other magical effects."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The altisaurus makes one Stomp attack and one Tail attack. The altisaurus can't make both attacks against the same target."
+        ]
+      },
+      {
+        "name": "Stomp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +14 to hit, reach 10 ft., one target. <em>Hit:</em> 33 (7d6 + 9) bludgeoning damage.   If the target is a Huge or smaller creature, it must succeed on a DC 22 Strength saving throw or be knocked prone."
+        ]
+      },
+      {
+        "name": "Tail",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +14 to hit, reach 20 ft., one target. <em>Hit:</em> 45 (8d8 + 9) bludgeoning damage and the target is pushed 20 feet away from the altisaurus."
+        ]
+      },
+      {
+        "name": "Earthquake Stomp (Recharge 5-6)",
+        "entries": [
+          "The altisaurus stomps its feet, sending tremors through the ground around itself.  Creatures on the ground within 60 feet of it must make a DC 22 Strength saving throw or fall prone and take 38 (7d10) bludgeoning damage, taking half as much damage and not being knocked prone on a successful save."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Regisaur",
+    "srd": true,
+    "basicRules": true,
+    "size": "Gargantuan",
+    "type": "beast",
+    "beastType": ["reptile"],
+    "tags": ["dinosaur"],
+    "alignment": ["N", "G"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 181, "formula": "11d20 + 66" },
+    "speed": { "walk": 40 },
+    "str": 27,
+    "dex": 8,
+    "con": 23,
+    "int": 4,
+    "wis": 12,
+    "cha": 6,
+    "passive": 11,
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "The regisaur has advantage on saving throws against spells and other magical effects."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The regisaur makes one Bite attack and one Tail attack. The regisaur can't make both attacks against the same target."
+        ]
+      },
+      {
+        "name": "Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 10 ft., one target. <em>Hit:</em> 47 (6d12 + 8) piercing damage, and the target is grappled (escape DC 18).  Until this grapple ends, the target is restrained, and the regisaur can't bite another target."
+        ]
+      },
+      {
+        "name": "Tail",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 20 ft., one target. <em>Hit:</em> 26 (4d8 + 8) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Swallow (Recharge 5-6)",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 20 ft., one Huge or smaller creature grappled by the regisaur. <em>Hit:</em> The regisaur swallows the target, and the grapple ends. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the regisaur, and it takes 7 (2d6) acid damage at the start of each of its turns. The regisaur can have up to two creatures swallowed at a time.",
+          "If the regisaur takes 25 damage or more on a single turn from a swallowed creature, the regisaur must succeed on a DC 16 Constitution saving throw at the end of that turn or regurgitate the creature, which falls in a space within 5 feet of the regisaur is knocked prone."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Titanoceratops",
+    "srd": true,
+    "basicRules": true,
+    "size": "Gargantuan",
+    "type": "beast",
+    "beastType": ["reptile"],
+    "tags": ["dinosaur"],
+    "alignment": ["N", "G"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 139, "formula": "9d20 + 45" },
+    "speed": { "walk": 50 },
+    "str": 24,
+    "dex": 8,
+    "con": 21,
+    "int": 4,
+    "wis": 10,
+    "cha": 7,
+    "passive": 10,
+    "cr": 9,
+    "trait": [
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "The titanoceratops has advantage on saving throws against spells and other magical effects."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The titanoceratops makes one Gore attack and one Stomp attack."
+        ]
+      },
+      {
+        "name": "Gore",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 10 ft., one target. <em>Hit:</em> 29 (4d10 + 7) piercing damage.  If the titanoceratops moved at least 20 feet in a straight line toward the target immediately before the hit, the target takes an extra 11 (2d10) piercing damage; if the target is a creature, it also must succeed on a DC 19 Strength saving throw or be pushed up to 20 feet from the titanoceratops and be knocked prone."
+        ]
+      },
+      {
+        "name": "Stomp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 29 (4d10 + 7) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Brutal Charge (Recharge 5-6)",
+        "entries": [
+          "The titanoceratops moves up to twice its speed in a straight line.  It can make one Gore attack against each creature in its path, gaining advantage on the attack roll."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grolantor",
+    "srd": true,
+    "basicRules": true,
+    "size": "Kaiju",
+    "type": "giant",
+    "tags": ["hill", "titan"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 697, "formula": "34d20 + 340" },
+    "speed": { "walk": 60 },
+    "str": 29,
+    "dex": 14,
+    "con": 30,
+    "int": 15,
+    "wis": 21,
+    "cha": 18,
+    "save": { "wis": "+14", "cha": "+13" },
+    "skill": { "endurance": "+19", "perception": "+14" },
+    "resist": [
+      "cold",
+      "fire",
+      "lightning",
+      {
+        "resist": ["bludgeoning", "piercing", "slashing"],
+        "note": "from nonmagical attacks",
+        "cond": true
+      }
+    ],
+    "immune": ["poison"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "poisoned"
+    ],
+    "passive": 24,
+    "languages": ["Jiganti"],
+    "cr": 30,
+    "trait": [
+      {
+        "name": "Runic Fury (Recharges after a Short or Long Rest)",
+        "entries": [
+          "If Grolantor would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Inhale, and he regains any expended uses of Legendary Resistance. Additionally, Grolantor can now use the options in the \"Mythic Actions\" section for 1 hour."
+        ]
+      },
+      {
+        "name": "Legendary Resistance (5/Day)",
+        "description": "If Grolantor fails a saving throw, he can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "Grolantor has advantage on saving throws against spells and other magical effects."
+        ]
+      },
+      {
+        "name": "Siege Monster",
+        "entries": ["Grolantor deals double damage to objects and structures."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Grolantor makes one Great Tree Club attack and two Slam attacks, or he makes three Boulder attacks."
+        ]
+      },
+      {
+        "name": "Great Tree Club",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +18 to hit, reach 30 ft., one target. <em>Hit:</em> 47 (7d10 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 26 Strength saving throw or be pushed horizontally up to 100 feet straight away from Grolantor and be knocked prone."
+        ]
+      },
+      {
+        "name": "Slam",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +18 to hit, reach 20 ft., one target. <em>Hit:</em> 40 (7d8 + 9) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Boulder",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +18 to hit, range 120/480 ft., one target. <em>Hit:</em> 48 (6d12 + 9) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Inhale (Recharge 5-6)",
+        "entries": [
+          "Grolantor inhales a vortex of air in a 120-foot line that is 15 feet wide. Each creature in that area that is Huge or smaller must succeed on a DC 26 Strength saving throw or be pulled up to 120 feet straight towards Grolantor and be swallowed. A swallowed creature is restrained and blinded, has total cover against attacks and other effects outside Grolantor, and takes 38 (11d6) acid damage at the start of each of Grolantor's turns.",
+          "Grolantor's stomach can hold up to two creatures at a time. If Grolantor takes 100 damage or more on a single turn from a creature inside it, he must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of him and are knocked prone. If Grolantor dies, any swallowed creature is no longer restrained and can escape from the corpse using 15 feet of movement, exiting prone."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Attack",
+        "entries": ["Grolantor makes one Slam attack."]
+      },
+      {
+        "name": "Earth-Shaking Movement",
+        "entries": [
+          "Grolantor moves up to his speed and then sends a shock wave through the ground in a 90-foot-radius circle centered on himself. Each creature on the ground in that area that is concentrating must succeed on a DC 26 Constitution saving throw or lose concentration and be knocked prone."
+        ]
+      },
+      {
+        "name": "Feed (Costs 2 Actions)",
+        "entries": [
+          "All creatures within Grolantor's stomach take 18 (5d6) acid damage and Grolantor regains hit points equal to the total damage dealt."
+        ]
+      }
+    ],
+    "mythicHeader": [
+      "If Grolantor's Runic Fury trait has activated in the last hour, he can use the options below as legendary actions."
+    ],
+    "mythic": [
+      {
+        "name": "Devour (Costs 2 Actions)",
+        "entries": ["Grolantor recharges his Inhale and uses it."]
+      },
+      {
+        "name": "Earthquake (Costs 3 Actions)",
+        "entries": [
+          "Grolantor slams into the ground, creating a massive shockwave in a 120-foot radius centered on himself.  The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a DC 26 Constitution saving throw. On a failed save, the creature's concentration is broken.",
+          "Each creature on the ground must make a DC 26 Dexterity saving throw or be knocked prone.  Fissures open throughout the area. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a DC 26 Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.",
+          "A fissure that opens beneath a structure causes it to automatically collapse.  The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a DC 26 Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Skoraeus Stonebones",
+    "srd": true,
+    "basicRules": true,
+    "size": "Kaiju",
+    "type": "giant",
+    "tags": ["stone", "titan"],
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 105, "formula": "10d12 + 40" },
+    "speed": { "walk": 60 },
+    "str": 30,
+    "dex": 20,
+    "con": 30,
+    "int": 19,
+    "wis": 24,
+    "cha": 14,
+    "save": { "dex": "+14", "wis": "+16" },
+    "skill": { "acrobatics": "+14", "perception": "+16" },
+    "resist": [
+      "cold",
+      "fire",
+      "lightning",
+      {
+        "resist": ["bludgeoning", "piercing", "slashing"],
+        "note": "from nonmagical attacks",
+        "cond": true
+      }
+    ],
+    "immune": ["acid"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "poisoned"
+    ],
+    "passive": 26,
+    "senses": ["truesight 120 ft."],
+    "languages": ["Jiganti"],
+    "cr": 30,
+    "trait": [
+      {
+        "name": "Runic Fury (Recharges after a Short or Long Rest)",
+        "entries": [
+          "If Skoraeus would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Entombing Grasp, and he regains any expended uses of Legendary Resistance. Additionally, Skoraeus can now use the options in the \"Mythic Actions\" section for 1 hour."
+        ]
+      },
+      {
+        "name": "Legendary Resistance (5/Day)",
+        "description": "If Skoraeus fails a saving throw, he can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "Skoraeus has advantage on saving throws against spells and other magical effects."
+        ]
+      },
+      {
+        "name": "Siege Monster",
+        "entries": ["Skoraeus deals double damage to objects and structures."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Skoraeus makes one Crystal Club attack and two Slam attacks, then uses Entombing Grasp if available. Alternatively, he makes three Runic Boulder attacks."
+        ]
+      },
+      {
+        "name": "Crystal Club",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +19 to hit, reach 30 ft., one target. <em>Hit:</em> 55 (7d12 + 10) bludgeoning damage.  Whether the attack hits or not, the club flares with bright light, and the target must succeed on a DC 25 Constitution saving throw or take 22 (5d8) radiant damage and be blinded until the start of Skoraeus' next turn."
+        ]
+      },
+      {
+        "name": "Slam",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +19 to hit, reach 20 ft., one target. <em>Hit:</em> 43 (6d10 + 10) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Runic Boulder",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +19 to hit, range 120/480 ft., one target. <em>Hit:</em> 37 (6d8 + 10) bludgeoning damage.  The boulder then explodes, and any creature within 30 feet of the target must make a DC 25 Dexterity saving throw.  On a failed save, a creature takes 26 (4d12) force damage and is knocked prone, taking half as much damage and not being knocked prone on a successful save."
+        ]
+      },
+      {
+        "name": "Entombing Grasp (Recharge 5-6)",
+        "entries": [
+          "Skoraeus wreathes his hand in petrifying magic and touches one Huge or smaller creature he can see within 20 feet of itself. The target must succeed on a DC 27 Dexterity saving throw or take 38 (11d6) force damage and be grappled (escape DC 22). At the start of Skoraeus' next turn, if the target is still grappled, the target becomes petrified."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Attack",
+        "entries": ["Skoraeus makes one Slam attack."]
+      },
+      {
+        "name": "Earth-Shaking Movement",
+        "entries": [
+          "Skoraeus moves up to his speed and then sends a shock wave through the ground in a 90-foot-radius circle centered on himself. Each creature on the ground in that area that is concentrating must succeed on a DC 27 Constitution saving throw or lose concentration and be knocked prone."
+        ]
+      },
+      {
+        "name": "Stone Spikes (Costs 2 Actions)",
+        "entries": [
+          "Skoraeus causes the ground in a 20-foot square within 90 feet of himself to sprout crystal spikes until the start of hus next turn. The area becomes difficult terrain for the duration. A creature takes 10 (3d6) piercing damage for each 5 feet it moves on this terrain."
+        ]
+      }
+    ],
+    "mythicHeader": [
+      "If Skoraeus' Runic Fury trait has activated in the last hour, he can use the options below as legendary actions."
+    ],
+    "mythic": [
+      {
+        "name": "Crystal Flare (Costs 2 Actions)",
+        "entries": [
+          "Skoraeus causes the crystals on his body to flare with light. Each creature within 30 feet of him must succeed on a DC 27 Constitution saving throw or take 28 (8d6) radiant damage and be blinded condition until the end of Skoraeus' next turn."
+        ]
+      },
+      {
+        "name": "Shattering Battlecry (Costs 3 Actions)",
+        "entries": [
+          "Skoraeus lets out a painfully load roar. Each creature within 60 feet of him must make a DC 27 Constitution saving throw. On a failed save, a creature takes 49 (9d10) thunder damage and is incapacitated until the end of its next turn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Þrym",
+    "srd": true,
+    "basicRules": true,
+    "size": "Kaiju",
+    "type": "giant",
+    "tags": ["frost", "titan"],
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 738, "formula": "36d20 + 360" },
+    "speed": { "walk": 60 },
+    "str": 30,
+    "dex": 16,
+    "con": 30,
+    "int": 17,
+    "wis": 20,
+    "cha": 21,
+    "save": { "wis": "+14", "cha": "+14" },
+    "skill": { "athletics": "+19", "perception": "+14" },
+    "resist": [
+      "fire",
+      "lightning",
+      {
+        "resist": ["bludgeoning", "piercing", "slashing"],
+        "note": "from nonmagical attacks",
+        "cond": true
+      }
+    ],
+    "immune": ["cold"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "poisoned"
+    ],
+    "passive": 24,
+    "senses": ["truesight 120 ft."],
+    "languages": ["Jiganti"],
+    "cr": 30,
+    "trait": [
+      {
+        "name": "Runic Fury (Recharges after a Short or Long Rest)",
+        "entries": [
+          "If Þrym would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Glacial Upheaval, and he regains any expended uses of Legendary Resistance. Additionally, Þrym can now use the options in the \"Mythic Actions\" section for 1 hour."
+        ]
+      },
+      {
+        "name": "Legendary Resistance (5/Day)",
+        "description": "If Þrym fails a saving throw, he can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "Þrym has advantage on saving throws against spells and other magical effects."
+        ]
+      },
+      {
+        "name": "Siege Monster",
+        "entries": ["Þrym deals double damage to objects and structures."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Þrym makes one Ice Axe and two Slam attacks, or he makes three Glacier Throw attacks."
+        ]
+      },
+      {
+        "name": "Ice Axe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 30 ft., one target. <em>Hit:</em> 36 (4d12 + 10) slashing damage plus 18 (4d8) cold damage."
+        ]
+      },
+      {
+        "name": "Slam",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 20 ft., one target. <em>Hit:</em> 32 (4d10 + 10) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Glacier Throw",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +17 to hit, range 120/480 ft., one target. <em>Hit:</em> 36 (4d12 + 10) bludgeoning damage plus 14 (4d6) cold damage, and the target must succeed on a DC 25 Strength saving throw or be knocked prone."
+        ]
+      },
+      {
+        "name": "Glacial Upheaval (Recharge 5-6)",
+        "entries": [
+          "Þrym digs his hands into the ground at a point he can see within 30 feet of himself and launches a magically conjured mass of ice into the air. Each creature other than Þrym in a 30-foot-radius, 100-foot-high cylinder centered on that point must make a DC 25 Dexterity saving throw. On a failed save, a creature takes 36 (8d8) bludgeoning damage plus 19 (3d12) cold damage and is pushed vertically to the top of the cylinder, at which point the creature falls. On a successful save, a creature takes half as much damage and is pushed to the nearest unoccupied space outside the cylinder with no additional effects.",
+          "At the start of Þrym's next turn, a mass of ice plummets to the ground on a point Þrym can see within 60 feet of the point he dug his hands into. Each creature in a 30-foot-radius, 100-foot-high cylinder centered on that point must succeed on a DC 25 Dexterity saving throw or take 18 (4d8) bludgeoning damage plus 18 (4d8) cold damage."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Attack",
+        "entries": ["Þrym makes one Slam attack."]
+      },
+      {
+        "name": "Earth-Shaking Movement",
+        "entries": [
+          "Þrym moves up to his speed and then sends a shock wave through the ground in a 90-foot-radius circle centered on himself. Each creature on the ground in that area that is concentrating must succeed on a DC 27 Constitution saving throw or lose concentration and be knocked prone."
+        ]
+      },
+      {
+        "name": "Chilling Mist (Costs 2 Actions)",
+        "entries": [
+          "Þrym magically conjures a cloud of chilling mist that fills a 30-foot-radius sphere centered on a point he can see within 90 feet of himself. The mist spreads around corners. Each creature in that area must succeed on a DC 27 Constitution saving throw or take 35 (10d6) cold damage and be unable to use reactions until the start of its next turn."
+        ]
+      }
+    ],
+    "mythicHeader": [
+      "If Þrym's Runic Fury trait has activated in the last hour, he can use the options below as legendary actions."
+    ],
+    "mythic": [
+      {
+        "name": "Ice Wolves (Costs 2 Actions)",
+        "entries": [
+          "Þrym magically summons 1d4 wolves made of ice (use the Dire Guardian Wolf stat block to represent them, but they are elementals rather than beasts). The wolves appear in unoccupied spaces Þrym can see within 30 feet of himself. The wolves take their turn immediately after Þrym on the same initiative count, and they obey Þrym's commands. The wolves gain a +6 bonus to their attack and damage rolls while they are within 30 feet of Þrym. The wolves disappear after 1 minute, when Þrym dies, or when Þrym uses this action again."
+        ]
+      },
+      {
+        "name": "Freezing Breath (Costs 3 Actions)",
+        "entries": [
+          "Þrym exhales a blast of frost in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw. On a failed save, a creature takes 71 (11d12) cold damage, and its speed is reduced to 0 until the end of its next turn. On a successful save, a creature takes half as much damage only. If this damage would reduce the target to 0 hit points, the target drops to 1 hit point instead and is petrified, turning into a frozen statue.",
+          "If the statue takes bludgeoning damage, it shatters, killing the frozen creature. If the statue would take fire damage, it instead takes no damage and thaws, ending the petrification."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Surtr",
+    "srd": true,
+    "basicRules": true,
+    "size": "Kaiju",
+    "type": "giant",
+    "tags": ["fire", "titan"],
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 20, "from": ["plate armor"] }],
+    "hp": { "average": 738, "formula": "36d20 + 360" },
+    "speed": { "walk": 60 },
+    "str": 32,
+    "dex": 17,
+    "con": 30,
+    "int": 21,
+    "wis": 24,
+    "cha": 20,
+    "save": { "dex": "+12", "cha": "+14" },
+    "skill": { "athletics": "+20", "perception": "+16" },
+    "resist": [
+      "cold",
+      "lightning",
+      {
+        "resist": ["bludgeoning", "piercing", "slashing"],
+        "note": "from nonmagical attacks",
+        "cond": true
+      }
+    ],
+    "immune": ["fire"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "poisoned"
+    ],
+    "passive": 26,
+    "senses": ["truesight 120 ft."],
+    "languages": ["Jiganti"],
+    "cr": 30,
+    "trait": [
+      {
+        "name": "Runic Fury (Recharges after a Short or Long Rest)",
+        "entries": [
+          "If Surtr would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Lava Wave, and he regains any expended uses of Legendary Resistance. Additionally, Surtr can now use the options in the \"Mythic Actions\" section for 1 hour."
+        ]
+      },
+      {
+        "name": "Legendary Resistance (5/Day)",
+        "description": "If Surtr fails a saving throw, he can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "Surtr has advantage on saving throws against spells and other magical effects."
+        ]
+      },
+      {
+        "name": "Siege Monster",
+        "entries": ["Surtr deals double damage to objects and structures."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Surtr makes one Lava Blade and two Slam attacks, or he makes three Lava Ball attacks."
+        ]
+      },
+      {
+        "name": "Lava Blade",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +20 to hit, reach 30 ft., one target. <em>Hit:</em> 38 (5d10 + 11) slashing damage plus 18 (4d8) fire damage."
+        ]
+      },
+      {
+        "name": "Slam",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +20 to hit, reach 20 ft., one target. <em>Hit:</em> 44 (6d10 + 11) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Lava Ball",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +20 to hit, range 120/480 ft., one target. <em>Hit:</em> 37 (4d12 + 11) bludgeoning damage plus 10 (3d6) fire damage, and the target must succeed on a DC 28 Strength saving throw or be knocked prone."
+        ]
+      },
+      {
+        "name": "Lava Wave (Recharge 5-6)",
+        "entries": [
+          "Surtr emits a wave of lava from his blade, hands, or mouth in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw. On a failed save, a creature takes 77 (14d10) fire damage and is restrained in hardening rock (escape DC 27). The rock has AC 17 and 40 hit points, and it is immune to fire, poison, and psychic damage. On a successful save, a creature takes half as much damage and isn't restrained."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Attack",
+        "entries": ["Surtr makes one Slam attack."]
+      },
+      {
+        "name": "Earth-Shaking Movement",
+        "entries": [
+          "Surtr moves up to his speed and then sends a shock wave through the ground in a 90-foot-radius circle centered on himself. Each creature on the ground in that area that is concentrating must succeed on a DC 27 Constitution saving throw or lose concentration and be knocked prone."
+        ]
+      },
+      {
+        "name": "Incendiary Smoke (Costs 2 Actions)",
+        "entries": [
+          "Surtr causes smoke and white-hot embers to billow from its skin, filling a 30-foot-radius sphere centered on himself that lasts until the start of his next turn. While Surtr's skin billows smoke, ranged attacks against him are made with disadvantage. A creature that moves into the smoke for the first time on a turn or starts its turn there must succeed on a DC 27 Constitution saving throw or take 14 (4d6) fire damage."
+        ]
+      }
+    ],
+    "mythicHeader": [
+      "If Surtr's Runic Fury trait has activated in the last hour, he can use the options below as legendary actions."
+    ],
+    "mythic": [
+      {
+        "name": "Volcanic Fury (Costs 2 Actions)",
+        "entries": [
+          "Surtr causes any volcanic rock created by his Lava Wave action to become lava once again.  Creatures restrained by the rock take 77 (14d10) fire damage, and the lava cools once again in 1 minute.  While it is liquid, the lava is difficult terrain and creatures that enter it or start their turn there take 30 (5d10) fire damage."
+        ]
+      },
+      {
+        "name": "Ragnarok (Costs 3 Actions)",
+        "entries": [
+          "Surtr causes a masssive fiery explosion centered on himself.  Each creature in a 120-foot-radius sphere centered him must make a DC 27 Dexterity saving throw. The sphere spreads around corners. A creature takes 80 (20d6) fire damage on a failed save, or half as much damage on a successful one.  The ground within this area becomes covered in lava that cools after 1 minute.  While it is liquid, the lava is difficult terrain and creatures that enter it or start their turn there take 30 (5d10) fire damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Memnor",
+    "srd": true,
+    "basicRules": true,
+    "size": "Kaiju",
+    "type": "giant",
+    "tags": ["cloud", "titan"],
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 20, "from": ["natural armor"] }],
+    "hp": { "average": 820, "formula": "40d20 + 400" },
+    "speed": { "walk": 60, "hover": 80 },
+    "str": 32,
+    "dex": 18,
+    "con": 30,
+    "int": 24,
+    "wis": 22,
+    "cha": 26,
+    "save": { "dex": "+13", "cha": "+17" },
+    "skill": { "arcana": "+16", "perception": "+15" },
+    "resist": [
+      "cold",
+      "fire",
+      "lightning",
+      {
+        "resist": ["bludgeoning", "piercing", "slashing"],
+        "note": "from nonmagical attacks",
+        "cond": true
+      }
+    ],
+    "immune": ["thunder"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "poisoned"
+    ],
+    "passive": 25,
+    "senses": ["truesight 120 ft."],
+    "languages": ["Jiganti"],
+    "cr": 30,
+    "trait": [
+      {
+        "name": "Runic Fury (Recharges after a Short or Long Rest)",
+        "entries": [
+          "If Memnor would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Thunderous Vortex, and he regains any expended uses of Legendary Resistance. Additionally, Memnor can now use the options in the \"Mythic Actions\" section for 1 hour."
+        ]
+      },
+      {
+        "name": "Legendary Resistance (5/Day)",
+        "description": "If Memnor fails a saving throw, he can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "Memnor has advantage on saving throws against spells and other magical effects."
+        ]
+      },
+      {
+        "name": "Siege Monster",
+        "entries": ["Memnor deals double damage to objects and structures."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Memnor makes one Cloud Morningstar and two Slam attacks, or he makes three Wind Javelin attacks."
+        ]
+      },
+      {
+        "name": "Cloud Morningstar",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +20 to hit, reach 30 ft., one target. <em>Hit:</em> 33 (4d10 + 11) bludgeoning damage plus 22 (4d10) thunder damage."
+        ]
+      },
+      {
+        "name": "Slam",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +20 to hit, reach 20 ft., one target. <em>Hit:</em> 44 (6d10 + 11) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Wind Javelin",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +20 to hit, range 120/480 ft., one target. <em>Hit:</em> 50 (6d12 + 11) thunder damage, and the target must succeed on a DC 28 Strength saving throw or be knocked prone."
+        ]
+      },
+      {
+        "name": "Thunderous Vortex (Recharge 5-6)",
+        "entries": [
+          "Memnor magically creates a vortex of wind in a 60-foot-radius sphere centered on a point he can see within 120 feet of himself. Each creature in the sphere must succeed on a DC 26 Strength saving throw or be pulled straight toward the sphere's center, ending in an unoccupied space as close as possible to the center. Then a burst of thunder erupts in a 30-foot-radius sphere centered on the same point. Each creature in that area takes 65 (10d12) thunder damage and must succeed on a DC 26 Constitution saving throw or be stunned condition until the end of their next turn."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Attack",
+        "entries": ["Memnor makes one Slam attack."]
+      },
+      {
+        "name": "Earth-Shaking Movement",
+        "entries": [
+          "Memnor moves up to his speed and then sends a shock wave through the ground in a 90-foot-radius circle centered on himself. Each creature on the ground in that area that is concentrating must succeed on a DC 28 Constitution saving throw or lose concentration and be knocked prone."
+        ]
+      },
+      {
+        "name": "Fog of Deception (Costs 2 Actions)",
+        "entries": [
+          "Memnor conjures a magical cloud that fills a 30-foot-radius sphere centered on a point he can see within 90 feet of himself. Each creature in that area must make a DC 26 Wisdom saving throw. On a failed save, a creature is charmed by Memnor until the end of their next turn. While a creature is charmed in this way, the creature must use its action to make a melee attack against a creature other than itself of Memnor's choice. If no creature is within its reach, the affected creature makes a ranged attack against a creature of Memnor's choice, throwing its weapon if necessary. On a successful save, a creature is immune to Memnor's Fog of Deception for the next 24 hours."
+        ]
+      }
+    ],
+    "mythicHeader": [
+      "If Memnor's Runic Fury trait has activated in the last hour, he can use the options below as legendary actions."
+    ],
+    "mythic": [
+      {
+        "name": "Thunderous Rebuke (Costs 2 Actions)",
+        "entries": [
+          "Memnor creates a blast of thunder around himself.  Creatures within 30 feet of him must make a DC 28 Constitution saving throw.  On a failed save, a creature takes 44 (8d10) thunder damage and is pushed 30 feet away from Memnor and knocked prone, taking half as much damage and not suffering any additional effects on a successful save."
+        ]
+      },
+      {
+        "name": "Vortex (Costs 3 Actions)",
+        "entries": [
+          "Memnor conjures a vortex of wind at a point he can see within 90 feet of himself. The wind vortex is a 30-foot-radius, 100-foot-high cylinder centered on that point. Each creature other than Memnor in that area must make a DC 28 Dexterity saving throw. On a failed save, a creature takes 84 (13d12) bludgeoning damage and is restrained within the vortex. On a successful save, a creature takes half as much damage and is pushed to the nearest unoccupied space outside the cylinder. The vortex lasts until the start of Memnor's next turn. A creature restrained in the vortex falls prone when the vortex ends.",
+          "A creature restrained in the vortex can use its action to try to escape. The creature makes a DC 21 Strength (Athletics) or Dexterity (Acrobatics) check. On a successful check, the creature escapes and moves 3d6 x 10 feet away from the vortex in a random direction."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Stronmaus",
+    "srd": true,
+    "basicRules": true,
+    "size": "Kaiju",
+    "type": "giant",
+    "tags": ["storm", "titan"],
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 20, "from": ["natural armor"] }],
+    "hp": { "average": 779, "formula": "38d20 + 380" },
+    "speed": { "walk": 60, "hover": 80, "swim": 80 },
+    "str": 32,
+    "dex": 20,
+    "con": 30,
+    "int": 26,
+    "wis": 28,
+    "cha": 24,
+    "skill": { "arcana": "+17", "history": "+17", "perception": "+18" },
+    "resist": [
+      "cold",
+      "fire",
+      {
+        "resist": ["bludgeoning", "piercing", "slashing"],
+        "note": "from nonmagical attacks",
+        "cond": true
+      }
+    ],
+    "immune": ["lightning", "thunder"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone"
+    ],
+    "passive": 28,
+    "senses": ["truesight 120 ft."],
+    "languages": ["Jiganti"],
+    "cr": 30,
+    "trait": [
+      {
+        "name": "Runic Fury (Recharges after a Short or Long Rest)",
+        "entries": [
+          "If Stronmaus would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Vengeful Storm, and he regains any expended uses of Legendary Resistance. Additionally, Stronmaus can now use the options in the \"Mythic Actions\" section for 1 hour."
+        ]
+      },
+      {
+        "name": "Legendary Resistance (5/Day)",
+        "description": "If Stronmaus fails a saving throw, he can choose to succeed instead."
+      },
+      {
+        "name": "Magic Resistance",
+        "entries": [
+          "Stronmaus has advantage on saving throws against spells and other magical effects."
+        ]
+      },
+      {
+        "name": "Siege Monster",
+        "entries": ["Stronmaus deals double damage to objects and structures."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Stronmaus makes one Lightning Sword and two Slam attacks, or he makes three Hailstone attacks."
+        ]
+      },
+      {
+        "name": "Lightning Sword",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +20 to hit, reach 30 ft., one target. <em>Hit:</em> 37 (4d12 + 11) slashing damage plus 22 (4d10) lightning damage."
+        ]
+      },
+      {
+        "name": "Slam",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +20 to hit, reach 20 ft., one target. <em>Hit:</em> 44 (6d10 + 11) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Hailstone",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +20 to hit, range 120/480 ft., one target. <em>Hit:</em> 32 (4d10 + 10) bludgeoning damage plus 18 (4d8) cold damage, and the target must succeed on a DC 28 Strength saving throw or be knocked prone."
+        ]
+      },
+      {
+        "name": "Vengeful Storm (Recharge 5-6)",
+        "entries": [
+          "Stronmaus conjures a churning storm cloud in a 30-foot-radius, 10-foot-tall cylinder centered on a point within 120 feet of himself. The cloud's area is heavily obscured. The cloud lasts for 1 minute, until Stronmaus dies, or when Stronmaus chooses to end it (no action required).",
+          "When the cloud appears, and as an action on later turns, Stronmaus can cause bolts of lightning to strike down from it.  Each creature below the cloud must succeed on DC 26 Dexterity saving throw or take 18 (4d8) lightning damage and be stunned condition until the end of their next turn."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Attack",
+        "entries": ["Stronmaus makes one Slam attack."]
+      },
+      {
+        "name": "Earth-Shaking Movement",
+        "entries": [
+          "Stronmaus moves up to his speed and then sends a shock wave through the ground in a 90-foot-radius circle centered on himself. Each creature on the ground in that area that is concentrating must succeed on a DC 27 Constitution saving throw or lose concentration and be knocked prone."
+        ]
+      },
+      {
+        "name": "Booming Step (Costs 2 Actions)",
+        "entries": [
+          "Stronmaus crackles with thunder and then magically teleports up to 60 feet to an unoccupied space he can see. Each creature within 10 feet of the space the cradle left must make a DC 27 Constitution saving throw, taking 14 (4d6) thunder damage on a failed save, or half as much damage on a successful one."
+        ]
+      }
+    ],
+    "mythicHeader": [
+      "If Stronmaus' Runic Fury trait has activated in the last hour, he can use the options below as legendary actions."
+    ],
+    "mythic": [
+      {
+        "name": "Acid Rain (Costs 2 Actions)",
+        "entries": [
+          "Stronmaus summons his Vengeful Storm if it doesn't already exist, and causes it to pour acidic liquid.  Each creature below the cloud must succeed on a DC 26 Constitution saving throw or be covered in acid for 1 minute or until a creature uses its action to remove the acid from itself or another creature. A creature covered in the acid takes 26 (4d12) acid damage at the start of each of its turns."
+        ]
+      },
+      {
+        "name": "Freezing Storm (Costs 3 Actions)",
+        "entries": [
+          "Stronmaus summons his Vengeful Storm if it doesn't already exist, and causes it to blow freezing rain.  Each creature below the cloud must succeed on a DC 26 Dexterity saving throw or take 28 (8d6) cold damage and be hindered by ice formations for 1 minute or until it or another creature within reach of it uses an action to break away the ice. A creature hindered by ice has its speed reduced to 0."
         ]
       }
     ]

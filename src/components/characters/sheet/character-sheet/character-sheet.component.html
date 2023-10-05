@@ -233,11 +233,11 @@
           </div>
         </div>
       </div>
-      <div
-        class="defenses"
-        *ngIf="defenses.damage?.length || defenses.condition?.length"
-      >
+      <div class="defenses">
         <h6>Defenses</h6>
+        <div class="subheader">
+          <strong>Creature Type:</strong> {{ creatureType }}
+        </div>
         <div class="subheader" *ngIf="defenses.damage?.length">
           <strong>Damage</strong>
           <div class="icons" *ngIf="getSetting('defense') === 0">

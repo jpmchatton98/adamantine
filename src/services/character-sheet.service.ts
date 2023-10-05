@@ -4892,6 +4892,18 @@ export class CharacterSheetService {
     return reset;
   }
 
+  public async getCreatureType(characterId) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
+      await this.getCharacterFromDb(characterId);
+    }
+    if (this.character?.race) {
+      const raceData = this.dataService.getRace(this.character.race.name);
+      return raceData.type;
+    }
+
+    return 'Humanoid';
+  }
+
   public async dieSizeUp(characterId) {
     if (!this.character || !Object.keys(this.character ?? {}).length) {
       await this.getCharacterFromDb(characterId);

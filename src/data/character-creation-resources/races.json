@@ -4634,6 +4634,10 @@
               {
                 "type": "condition-advantage",
                 "options": ["Charmed"]
+              },
+              {
+                "type": "creature-type",
+                "options": ["Fiend"]
               }
             ]
           },
@@ -4887,6 +4891,10 @@
               {
                 "type": "condition-advantage",
                 "options": ["Charmed"]
+              },
+              {
+                "type": "creature-type",
+                "options": ["Celestial"]
               }
             ]
           },
@@ -5259,7 +5267,13 @@
           },
           {
             "name": "Elemental Nature",
-            "description": "Your creature type is Elemental, rather than Humanoid."
+            "description": "Your creature type is Elemental, rather than Humanoid.",
+            "granted": [
+              {
+                "type": "creature-type",
+                "options": ["Elemental"]
+              }
+            ]
           },
           {
             "name": "Fiery Weapons",
