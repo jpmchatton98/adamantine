@@ -72,6 +72,7 @@ export class CharacterSheetComponent implements OnInit {
   public skills: any[] = [];
   public skillProfs: any[] = [];
   public skillOverrides: any[] = [];
+  public passiveBonuses: any = {};
 
   public tools: any[] = [];
   public toolProfs: any[] = [];
@@ -165,6 +166,10 @@ export class CharacterSheetComponent implements OnInit {
     await this.characterSheetService
       .getCharacterToolOverrides(this.characterId)
       .then((val) => (this.toolOverrides = val));
+
+    await this.characterSheetService
+      .getCharacterPassives(this.characterId)
+      .then((val) => (this.passiveBonuses = val));
 
     await this.characterSheetService
       .getCharacterSpells(this.characterId)
@@ -629,7 +634,11 @@ export class CharacterSheetComponent implements OnInit {
     );
   }
   public getPassiveMod(skill): number {
-    return 10 + this.getSkillMod(skill);
+    if (Object.keys(this.passiveBonuses).includes(skill.name)) {
+      return 10 + this.getSkillMod(skill) + this.passiveBonuses[skill.name];
+    } else {
+      return 10 + this.getSkillMod(skill);
+    }
   }
   public getSkillScore(skill): number {
     let score = skill.score;

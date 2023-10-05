@@ -58,7 +58,7 @@ export class CharacterSheetService {
       score: 'cha',
       skill: 'Society',
       description:
-        'Your Charisma (Society) check - referred to as your Charisma (Etiquette) check - measures your ability to interact with others in the manners of local high society, including the etiquette of your actions.  You may need to make this check to seem as though you belong in a party of nobles or a meeting of crime lords.',
+        'Your Charisma (Society) check - referred to as a Charisma (Etiquette) check - measures your ability to interact with others in the manners of local high society, including the etiquette of your actions.  You may need to make this check to seem as though you belong in a party of nobles or a meeting of crime lords.',
     },
     {
       name: 'Deception',
@@ -129,7 +129,7 @@ export class CharacterSheetService {
       score: 'cha',
       skill: 'Religion',
       description:
-        "Your Charisma (Religion) check - referred to as your Charisma (Prayer) check - determines your ability to communicate and parley with deities or other powerful otherworldly beings, such as a warlock's patron.",
+        "Your Charisma (Religion) check - referred to as a Charisma (Prayer) check - determines your ability to communicate and parley with deities or other powerful otherworldly beings, such as a warlock's patron.",
     },
     {
       name: 'Religion',
@@ -4794,7 +4794,6 @@ export class CharacterSheetService {
     reset: number
   ): number {
     if (feature.uses) {
-      console.log(feature);
       let use;
       if (Array.isArray(feature.uses)) {
         use = feature.uses.find((u) => u.id === useId);
@@ -4890,6 +4889,198 @@ export class CharacterSheetService {
     }
 
     return reset;
+  }
+
+  public async getCharacterPassives(characterId) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
+      await this.getCharacterFromDb(characterId);
+    }
+    let passiveBonuses = {};
+
+    const raceData = this.dataService.getRace(this.character?.race?.name);
+    let subraceData;
+    if (this.character?.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        this.character?.race.name,
+        this.character?.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        passiveBonuses = this.getFeaturePassives(
+          trait,
+          this.character?.race.choices,
+          passiveBonuses
+        );
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        passiveBonuses = this.getFeaturePassives(
+          trait,
+          this.character?.race.choices,
+          passiveBonuses
+        );
+      }
+    }
+
+    this.character?.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            passiveBonuses = this.getFeaturePassives(
+              feature,
+              c.choices,
+              passiveBonuses
+            );
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            passiveBonuses = this.getFeaturePassives(
+              feature,
+              c.choices,
+              passiveBonuses
+            );
+          });
+        }
+      }
+    });
+    this.character?.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          passiveBonuses = this.getFeaturePassives(
+            featData,
+            this.character?.background.choices,
+            passiveBonuses
+          );
+        }
+      }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      passiveBonuses = this.getFeaturePassives(feature, [], passiveBonuses);
+    });
+
+    return passiveBonuses;
+  }
+  public getFeaturePassives(
+    feature: any,
+    choices: any[],
+    passiveBonuses
+  ): number {
+    feature.granted?.forEach((g) => {
+      if (g.type === 'passive-skill') {
+        for (let skill of g.options) {
+          let amount = g.amount;
+          if (typeof amount === 'string') {
+            if (amount.includes('-')) {
+              const choiceEntry = choices.find((ch) => ch.id === amount);
+              if (choiceEntry) {
+                amount = this.getScore(choiceEntry.value);
+              }
+            } else {
+              amount = this.getScore(amount);
+            }
+          }
+
+          if (Object.keys(passiveBonuses).includes(skill)) {
+            passiveBonuses[skill] += amount;
+          } else {
+            passiveBonuses[skill] = amount;
+          }
+        }
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      passiveBonuses = this.getFeaturePassives(s, choices, passiveBonuses);
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        passiveBonuses = this.getChoicePassives(
+          choice,
+          choices,
+          passiveBonuses
+        );
+      }
+    } else {
+      passiveBonuses = this.getChoicePassives(
+        feature.choices,
+        choices,
+        passiveBonuses
+      );
+    }
+
+    if (feature.listed) {
+      passiveBonuses = this.getListedPassives(
+        feature.listed,
+        choices,
+        passiveBonuses
+      );
+    }
+
+    return passiveBonuses;
+  }
+  private getChoicePassives(
+    choice: any,
+    choices: any[],
+    passiveBonuses
+  ): number {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    if (choice?.type === 'trait') {
+      const traits =
+        choice.options?.find((o: any) => o.name === choiceEntry?.value)
+          ?.traits ?? [];
+      for (let trait of traits) {
+        passiveBonuses = this.getFeaturePassives(
+          trait,
+          choices,
+          passiveBonuses
+        );
+      }
+    } else if (choice?.type === 'feat') {
+      const feat = this.dataService.getFeat(choiceEntry?.value);
+      if (feat) {
+        passiveBonuses = this.getFeaturePassives(feat, choices, passiveBonuses);
+      }
+    } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+      const data = this.dataService.getGenericListItem(
+        choice?.type,
+        choiceEntry?.value
+      );
+      if (data) {
+        passiveBonuses = this.getFeaturePassives(data, choices, passiveBonuses);
+      }
+    }
+
+    return passiveBonuses;
+  }
+  private getListedPassives(
+    listed: any,
+    choices: any[],
+    passiveBonuses
+  ): number {
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          passiveBonuses = this.getFeaturePassives(
+            data,
+            choices,
+            passiveBonuses
+          );
+        }
+      }
+    }
+
+    return passiveBonuses;
   }
 
   public async getCreatureType(characterId) {

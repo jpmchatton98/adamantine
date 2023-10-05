@@ -1362,7 +1362,14 @@
       "type": "asi",
       "amount": 1,
       "options": ["int", "wis"]
-    }
+    },
+    "granted": [
+      {
+        "type": "passive-skill",
+        "options": ["Insight", "Perception"],
+        "amount": 5
+      }
+    ]
   },
   {
     "name": "Outlaw",
