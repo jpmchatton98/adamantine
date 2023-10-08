@@ -541,7 +541,7 @@
   },
   {
     "name": "Exotic Weapon Training",
-    "type": "combat",
+    "type": "martial",
     "repeatable": true,
     "description": "You have trained with specialized weapons, gaining the following benefits:\n<ul>\n<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with two exotic weapons of your choice.</li>\n</ul>",
     "choices": [
@@ -755,7 +755,7 @@
   },
   {
     "name": "Gunner",
-    "type": "combat",
+    "type": "martial",
     "description": "You have a quick hand and keen eye when employing firearms, granting you the following benefits:\n<ul>\n<li>Increase your Dexterity score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with firearms.</li>\n<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</li>\n<li>You can reload firearms using your Use an Object interaction rather than their normal reloading time.</li>\n</ul>",
     "granted": [
       {
@@ -793,7 +793,7 @@
         "medium": true
       }
     ],
-    "type": "combat",
+    "type": "martial",
     "description": "You have trained to master the use of heavy armor, gaining the following benefits:\n<ul>\n<li>Increase your Strength score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with heavy armor.</li><li>The time it takes for you to don or doff heavy armor is reduced to 1 minute.</li></ul>",
     "granted": [
       {
@@ -899,7 +899,7 @@
   },
   {
     "name": "Lightly Armored",
-    "type": "combat",
+    "type": "martial",
     "description": "You have trained to master the use of light armor, gaining the following benefits.\n<ul>\n<li>Increase your Dexterity score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with light armor.</li><li>If your Dexterity modifier is negative, it is not applied to your Armor Class while wearing light armor.</li></ul>",
     "granted": [
       {
@@ -1293,7 +1293,7 @@
         "light": true
       }
     ],
-    "type": "combat",
+    "type": "martial",
     "description": "You have trained to master the use of medium armor, gaining the following benefits:\n<ul>\n<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with medium armor.</li><li>The time it takes for you to don medium armor is reduced to 1 minute.</li></ul>\n",
     "choices": {
       "id": "5B708195-1359-4272-8D8A-542986442D2F",
@@ -1305,6 +1305,23 @@
       {
         "type": "armor",
         "options": ["Medium"]
+      }
+    ]
+  },
+  {
+    "name": "Martial Training",
+    "type": "martial",
+    "description": "You have trained with all manner of martial weaponry, gaining the following benefits:\n<ul>\n<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with all martial weapons.</li></ul>\n",
+    "choices": {
+      "id": "5B708195-1359-4272-8D8A-542986442D2F",
+      "type": "asi",
+      "amount": 1,
+      "options": ["str", "dex"]
+    },
+    "granted": [
+      {
+        "type": "weapon",
+        "options": ["martial"]
       }
     ]
   },
@@ -1476,7 +1493,7 @@
   },
   {
     "name": "Revenant Warrior",
-    "type": "combat",
+    "type": "martial",
     "description": "You have trained extensively with double weapons. You gain the following benefits:\n<ul>\n<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with one weapon of your choice that has the Double property.</li>\n<li>While wielding weapon with the Double property with two hands, you gain +1 AC.</li>\n</ul>",
     "choices": [
       {
@@ -1592,18 +1609,13 @@
     ]
   },
   {
-    "name": "Sharpshooter",
-    "type": "combat",
-    "description": "You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:\n<ul>\n<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>\n<li>Your ranged weapon attacks ignore half and three-quarters cover.</li>\n<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If that attack hits, you add +10 to the attack's damage.</li>\n</ul>"
-  },
-  {
     "name": "Shield Master",
     "type": "combat",
     "description": "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:\n<ul>\n<li>If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.</li>\n<li>If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect.</li>\n<li>If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.</li>\n</ul>"
   },
   {
     "name": "Shield Training",
-    "type": "combat",
+    "type": "martial",
     "description": "You've trained in the effective use of shields. You gain the following benefits:\n<ul>\n<li>Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</li>\n<li>You gain proficiency with shields.</li>\n<li>In combat, you can don or doff a shield as the free object interaction on your turn.</li>\n<li>If can cast spells, you can use a shield as a spellcasting focus.</li>\n</ul>",
     "choices": {
       "id": "8C25A7F6-2F14-45FB-AD3C-D319F7D097F3",
@@ -1741,6 +1753,26 @@
     "choices": {
       "id": "96262067-15CC-46A4-AEF5-56FA94537A15",
       "type": "astounding-power"
+    }
+  },
+  {
+    "name": "Scholarly Bearing",
+    "type": "multiclass",
+    "repeatable": true,
+    "description": "You have studied a particular field to an extreme: you learn one Scholarly Pursuit of your choice from the savant class, assuming you meet its prerequisites.\n<br><br>\n    Whenever you gain a level, you can replace the pursuit with another one from the savant class.\n",
+    "choices": {
+      "id": "1357A806-4EFB-450D-B0CF-6CD54350C36B",
+      "type": "scholarly-pursuit"
+    }
+  },
+  {
+    "name": "Wilderness Wanderer",
+    "type": "multiclass",
+    "repeatable": true,
+    "description": "You have spent a large amount of time in the wild: you learn one Survivalist Knack of your choice from the nomad or ranger class, assuming you meet its prerequisites.\n<br><br>\n    Whenever you gain a level, you can replace the pursuit with another one from the nomad or ranger class.\n",
+    "choices": {
+      "id": "7CAC97F0-A40B-4615-90B2-0541C1C281E1",
+      "type": "survivalist-knack"
     }
   },
   {
@@ -2134,7 +2166,7 @@
       }
     ],
     "type": "racial",
-    "description": "You have traces of pixie blood in your veins, allowing you to make yourself invisible. You can cast the Invisibility spell. Charisma is your spellcasting ability for it. You can cast it in this way once, and regain the ability to do so when you finish a long rest.",
+    "description": "You have traces of pixie blood in your veins, allowing you to make yourself invisible. You can cast the Invisibility spell on yourself. Charisma is your spellcasting ability for it. You can cast it in this way once, and regain the ability to do so when you finish a long rest.",
     "granted": [
       {
         "type": "spell",
@@ -2299,6 +2331,24 @@
     ],
     "type": "racial",
     "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started."
+  },
+  {
+    "name": "Touch of Yeenoghu",
+    "prereq": [
+      {
+        "race": ["gnoll"]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been touched by the magic of Yeenoghu, master of all gnolls.  Once per turn when you hit with a melee attack, you can force the target to make a Wisdom saving throw (DC = 8 + your Constitution modifier + your proficiency bonus).  On a failed saving throw, the target suffers one of the following additional effects of your choice:<ul><li>The attack deals extra psychic damage equal to your level.</li><li>The target is paralyzed until the start of your next turn.</li><li>The target is under the effects of the Confusion spell until the start of your next turn.</li></ul>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+    "uses": [
+      {
+        "id": "D6114854-35B1-4836-8BA8-3040616CC95C",
+        "type": "derived",
+        "source": "proficiency",
+        "reset": 2
+      }
+    ]
   },
   {
     "name": "Orcish Fury",
@@ -3652,7 +3702,7 @@
   },
   {
     "name": "Jotunn Strike",
-    "type": "combat",
+    "type": "magic",
     "description": "You have absorbed primeval magic that gives you an echo of the might of giants.  Choose a type of giant.  Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the type of giant you chose.  The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier. You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
     "choices": [
       {

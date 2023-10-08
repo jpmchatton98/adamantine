@@ -1878,6 +1878,106 @@
       }
     }
   ],
+  "artisanal-mask": [
+    {
+      "name": "Aristocratic Mask",
+      "description": "A mask designed to replicate the look of a noble lord or lady, often crafted with ostentatious and luxurious materials.</p><p>While wearing this mask, you have advantage on Charisma checks you make towards common folk, so long as they are indifferent or friendly towards you and your allies.  In addition, creatures will believe you to be a member of the nobility unless you give them a reason to think otherwise.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "As a bonus action on your turn you can grant one creature that can hear you temporary hit points equal to one roll of your Bardic Inspiration die + your spellcasting ability modifier.</p><p>If you grant these temporary hit points to another creature, any previous temporary hit points from this feature dispel."
+        },
+        {
+          "name": "Masterwork",
+          "description": "As a bonus action on your turn you can order a willing creature within 30 feet that can hear an understand you to move 30 feet without provoking opportunity attacks."
+        }
+      ]
+    },
+    {
+      "name": "Barbaric Mask",
+      "description": "A mask created to resemble a wild warrior or beast of the wilderness, often crafted with raw, crude natural materials.</p><p>When you don this mask, your current hit points and hit point maximum are increased by an amount equal to your Bard level.  In addition, you gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "When you take the Attack action on your turn you can make two attacks as part of that same Attack action."
+        },
+        {
+          "name": "Masterwork",
+          "description": "When you hit a target with a melee weapon attack you deal additional damage equal to one roll of your Bardic Inspiration die on hit."
+        }
+      ]
+    },
+    {
+      "name": "Devious Mask",
+      "description": "A mask crafted to resemble a common criminal or thief, often crafted with dark materials and including a hood or cowl.</p><p>While wearing this mask, you can use a bonus action to take the Hide, Disengage, or Use and Object actions, and when you make a Dexterity check, you gain a bonus to your roll equal to one roll of your Bardic Inspiration die.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "When a creature you can see hits you with an attack, you can use your reaction to halve the amount of damage that you would have taken from that attack."
+        },
+        {
+          "name": "Masterwork",
+          "description": "Whenever you make a Dexterity saving throw, you gain a bonus to your roll equal to one roll of your Bardic Inspiraiton die."
+        }
+      ]
+    },
+    {
+      "name": "Knightly Mask",
+      "description": "This mask is crafted to resemble an armored paragon of chivalry, and is often polished to a shine in the sunlight.</p><p>While wearing this mask, you are proficient with martial weapons and you gain a +2 bonus to your Armor Class.</p><p>In addition, once per turn when you hit a Large or smaller creature with a melee weapon attack you can force it to make a Dexterity saving throw against your spell save DC. On a failed save, the creature is knocked prone, knocked back 10 feet in a straight line, or must drop on object it is holding.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "When you take the Attack action on your turn you can make two attacks as part of that same Attack action."
+        },
+        {
+          "name": "Masterwork",
+          "description": "When a creature that you can see targets you with an attack, you can use a reaction to add one roll of your Bardic Inspiration die to your Armor Class against the attack.</p><p>If the attack misses, you can make a single melee weapon attack against that creature as part of the same reaction."
+        }
+      ]
+    },
+    {
+      "name": "Priestly Mask",
+      "description": "This mask is crafted to resemble a prophet, saint, or other holy person, often made from delicate yet beautiful materials.</p><p>While wearing this Mask, you can use your bonus action to expend a Bardic Inspiration die to restore hit points to one creature that can hear you within 30 feet equal to one roll of your Bardic Inspiration die.  In addition, when you restore hit points, or grant temporary hit points to a creature, you add your spellcasting ability modifier to the number of hit points (or temporary hit points) granted.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "When you damage a creature with a spell or a weapon attack, you can expend a use of Bardic Inspiration to deal radiant damage in place of the normal damage type."
+        },
+        {
+          "name": "Masterwork",
+          "description": "As an action, you can touch a creature that has died within the last minute, expend a Bardic Inspiration die, and restore that creature to life with 1 hit point.</p><p>However, any creature restored to life in this way gains one level of exhaustion."
+        }
+      ]
+    },
+    {
+      "name": "Scholarly Mask",
+      "description": "This mask is crafted to resemble a distinguished humanoid deep in thought, often crafted from rare and esoteric materials.</p><p>While you are wearing this Mask, you gain a bonus to any Intelligence ability checks or saving throws equal to one roll of your Bardic Inspiration die.  In addition, when you deal damage to a creature with a weapon attack you learn one of the following characteristics about that creature of your choice: its Armor Class, highest ability score, lowest ability score, or its spellcasting ability.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "While wearing this Mask you can speak, read, and write all languages, and you can treat a roll of 7 or lower on the d20 for any Intelligence ability check as an 8."
+        },
+        {
+          "name": "Masterwork",
+          "description": "If you spend 1 hour examining one place, creature, or object, you learn one fact about it as if you had cast the legend lore spell. However, the target need not be of legendary importance for you to learn something."
+        }
+      ]
+    },
+    {
+      "name": "Virtuoso Mask",
+      "description": "This mask is created to resemble a great performer at home on the stage, often crafted to draw attention and stand out.</p><p>When you make a Charisma (Performance) or a musical instrument check while you are wearing this Mask you gain a bonus to the roll equal to a roll of your Bardic Inspiration die.  In addition, whenever you perform or play an instrument for a creature for at least 1 minute, you have advantage on ability checks you make to influence, interact, or gather information on that creature for the next hour.",
+      "subFeatures": [
+        {
+          "name": "Greater",
+          "description": "When you cast a spell with a verbal component while holding a musical instrument, the range of that spell is doubled. Spells with a range of touch gains a range of 30 feet."
+        },
+        {
+          "name": "Masterwork",
+          "description": "Whenever you perform or play an instrument for a creature for at least 1 minute, it is charmed for 1 hour, or until you damage it or force it to make a saving throw."
+        }
+      ]
+    }
+  ],
   "bg-feature": [
     {
       "name": "Abnormal Demeanor",
@@ -4870,6 +4970,10 @@
     {
       "name": "Savage Attacker",
       "description": "Once per turn when you roll damage for a weapon attack, you can reroll the weapon's damage dice and use either total."
+    },
+    {
+      "name": "Sharpshooter",
+      "description": "Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
     },
     {
       "name": "Shield Warrior",
