@@ -3726,11 +3726,7 @@
     "resist": [
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -3794,11 +3790,7 @@
     "resist": [
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
@@ -4003,11 +3995,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["charmed", "frightened", "poisoned"],
@@ -4095,11 +4083,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "necrotic", "poison"],
     "conditionImmune": [
@@ -4320,11 +4304,7 @@
     "immune": [
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -4569,11 +4549,7 @@
     "passive": 17,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "poisoned"],
@@ -5734,11 +5710,7 @@
     "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
     "passive": 17,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Infernal"],
     "cr": 15,
@@ -7420,11 +7392,7 @@
     "passive": 20,
     "immune": [
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "frightened"],
     "languages": ["Common", "Celestial"],
@@ -7550,11 +7518,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 21,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage while in dim light or darkness"
     ],
     "languages": ["Common"],
     "cr": 13,
@@ -8207,11 +8171,7 @@
     "passive": 15,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common", "Jiganti", "Sylvan"],
     "cr": 6,
@@ -8587,11 +8547,7 @@
     "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
     "passive": 23,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -8720,11 +8676,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["charmed", "poisoned"],
@@ -9095,13 +9047,8 @@
     "skill": { "arcana": "+13", "history": "+13" },
     "passive": 12,
     "resist": [
-      { "special": "damage from spells" },
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "(from stoneskin)",
-        "cond": true,
-        "preNote": "nonmagical"
-      }
+      "damage from spells",
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["any six languages"],
     "cr": 12,
@@ -9291,11 +9238,7 @@
     "passive": 19,
     "resist": [
       "radiant",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened"],
     "languages": ["all", "telepathy 120 ft."],
@@ -9379,11 +9322,7 @@
     "senses": ["darkvision 120 ft."],
     "passive": 20,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened"],
     "languages": ["all"],
@@ -9473,11 +9412,7 @@
     "passive": 11,
     "resist": [
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["lightning", "poison"],
     "conditionImmune": [
@@ -9692,11 +9627,7 @@
       "fire",
       "lightning",
       "radiant",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -9837,11 +9768,7 @@
       "fire",
       "lightning",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -10009,11 +9936,7 @@
       "lightning",
       "necrotic",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -10180,11 +10103,7 @@
       "fire",
       "lightning",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "blinded",
@@ -10570,11 +10489,7 @@
     "senses": ["darkvision 120 ft."],
     "passive": 19,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -10682,11 +10597,7 @@
     "immune": [
       "cold",
       "necrotic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["radiant"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -11209,11 +11120,7 @@
     "resist": [
       "acid",
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -11371,11 +11278,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -11479,11 +11382,7 @@
     "passive": 23,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -11673,11 +11572,7 @@
     "resist": [
       "cold",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -11965,11 +11860,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "necrotic", "poison"],
     "conditionImmune": [
@@ -12042,11 +11933,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -12156,11 +12043,7 @@
     "passive": 18,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -12313,11 +12196,7 @@
     "resist": [
       "cold",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -12559,11 +12438,7 @@
     "passive": 10,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -12630,11 +12505,7 @@
     "resist": [
       "cold",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -13187,11 +13058,7 @@
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 16,
     "resist": [
-      {
-        "resist": ["piercing", "slashing"],
-        "note": "from nonmagical attacks that aren't adamantine",
-        "cond": true
-      }
+      "piercing and slashing damage from nonmagical attacks that aren't adamantine"
     ],
     "languages": ["Terran"],
     "trait": [
@@ -13329,11 +13196,7 @@
     "passive": 16,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -13681,11 +13544,7 @@
     "resist": [
       "cold",
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -13977,11 +13836,7 @@
     "passive": 16,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "lightning", "poison"],
     "conditionImmune": ["poisoned"],
@@ -14239,11 +14094,7 @@
     "resist": [
       "cold",
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "conditionImmune": ["charmed", "frightened", "poisoned"],
@@ -14460,11 +14311,7 @@
     "passive": 12,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -14837,11 +14684,7 @@
       "fire",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "blinded",
@@ -15405,11 +15248,7 @@
     "passive": 16,
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -15835,11 +15674,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -15909,11 +15744,7 @@
       "necrotic",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -15992,11 +15823,7 @@
       "fire",
       "lightning",
       "poison",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Abyssal", "Common", "Infernal"],
     "cr": 5,
@@ -16150,11 +15977,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -16898,11 +16721,7 @@
     "passive": 11,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -17381,11 +17200,7 @@
     "senses": ["darkvision 120 ft."],
     "passive": 13,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical weapons",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "cr": 3,
     "trait": [
@@ -17670,11 +17485,7 @@
       "acid",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -18301,11 +18112,7 @@
       "fire",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -18985,11 +18792,7 @@
     "resist": ["radiant"],
     "immune": [
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["all", "telepathy 120 ft."],
     "cr": 4,
@@ -19282,11 +19085,7 @@
     "senses": ["truesight 120 ft."],
     "passive": 18,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["psychic"],
     "conditionImmune": ["charmed", "frightened"],
@@ -19424,11 +19223,7 @@
     "senses": ["blindsight 60 ft."],
     "passive": 14,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "poison"],
     "vulnerable": ["fire"],
@@ -19560,11 +19355,7 @@
     "immune": [
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -20768,11 +20559,7 @@
     "passive": 11,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
@@ -20852,11 +20639,7 @@
     "passive": 14,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
@@ -20954,11 +20737,7 @@
     "passive": 14,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
@@ -21487,21 +21266,13 @@
     "senses": ["truesight 120 ft."],
     "passive": 13,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from magic weapons",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from magical attacks"
     ],
     "immune": [
       "necrotic",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -21598,11 +21369,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -21765,11 +21532,7 @@
     "passive": 19,
     "resist": [
       "radiant",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened"],
     "languages": ["all", "telepathy 120 ft."],
@@ -21904,11 +21667,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -22038,11 +21797,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["frightened", "poisoned"],
     "languages": ["Jiganti"],
@@ -23080,11 +22835,7 @@
     "resist": [
       "acid",
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "necrotic", "poison", "psychic"],
     "conditionImmune": [
@@ -23798,11 +23549,7 @@
     "senses": ["blindsight 120 ft. (blind beyond this radius)"],
     "passive": 13,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["psychic"],
     "conditionImmune": [
@@ -26970,11 +26717,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -27100,11 +26843,7 @@
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "vulnerable": ["thunder"],
@@ -27163,11 +26902,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
@@ -27498,11 +27233,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "necrotic", "poison"],
     "conditionImmune": [
@@ -28002,11 +27733,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["lightning", "poison", "thunder"],
     "conditionImmune": [
@@ -28322,11 +28049,7 @@
     "senses": ["truesight 120 ft."],
     "passive": 16,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["all"],
     "cr": 23,
@@ -28489,11 +28212,7 @@
     "passive": 12,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -28627,11 +28346,7 @@
     "passive": 13,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
@@ -29312,11 +29027,7 @@
     "immune": [
       "lightning",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks that aren't silvered",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered"
     ],
     "conditionImmune": [
       "charmed",
@@ -29486,11 +29197,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": [
@@ -29557,11 +29264,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
@@ -29715,11 +29418,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": [
@@ -29785,11 +29484,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire"],
     "vulnerable": ["cold"],
@@ -30126,11 +29821,7 @@
     "immune": [
       "lightning",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -30843,11 +30534,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -31476,11 +31163,7 @@
     "immune": [
       "necrotic",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["fire"],
     "conditionImmune": [
@@ -31541,7 +31224,7 @@
       {
         "name": "Rotting Fist",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (3d6 + 4) bludgeoning damage plus 21 (6d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 () for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to spores. The curse lasts until removed by the remove curse spell or other magic."
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (3d6 + 4) bludgeoning damage plus 21 (6d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to spores. The curse lasts until removed by the remove curse spell or other magic."
         ]
       },
       {
@@ -31721,11 +31404,7 @@
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 11,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "paralyzed", "petrified", "poisoned"],
@@ -31780,11 +31459,7 @@
     "resist": [
       "cold",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -31835,11 +31510,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks that aren't adamantine",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't adamantine"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "petrified", "poisoned"],
@@ -32325,11 +31996,7 @@
     "senses": ["truesight 120 ft."],
     "passive": 20,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -32512,11 +32179,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "necrotic", "poison"],
     "conditionImmune": [
@@ -35974,11 +35637,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -36185,11 +35844,7 @@
     "passive": 13,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -37366,11 +37021,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -37694,11 +37345,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -37925,11 +37572,7 @@
     "passive": 16,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -38362,11 +38005,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "cr": 2,
     "trait": [
@@ -38416,11 +38055,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "cr": 7,
     "trait": [
@@ -39170,11 +38805,7 @@
     "senses": ["truesight 120 ft."],
     "passive": 18,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["psychic"],
     "conditionImmune": ["charmed", "frightened"],
@@ -39973,11 +39604,7 @@
     "resist": [
       "cold",
       "psychic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks that aren't silvered",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": [
@@ -40193,11 +39820,7 @@
     "senses": ["blindsight 60 ft. (blind beyond this radius)"],
     "passive": 14,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["force", "necrotic", "poison"],
     "conditionImmune": [
@@ -40261,11 +39884,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -41076,11 +40695,7 @@
     "save": { "dex": "+3", "con": "+4", "cha": "+6" },
     "passive": 14,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -41266,11 +40881,7 @@
     "passive": 13,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -41386,11 +40997,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["frightened"],
     "languages": ["understands Abyssal but can't speak"],
@@ -41622,11 +41229,7 @@
     "immune": [
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -41755,11 +41358,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage while in dim light or darkness"
     ],
     "languages": ["Common"],
     "cr": 11,
@@ -41858,11 +41457,7 @@
     "passive": 21,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -42070,11 +41665,7 @@
     "resist": [
       "cold",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "vulnerable": ["fire"],
@@ -42349,11 +41940,7 @@
     "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison", "cold"],
     "conditionImmune": ["poisoned"],
@@ -42891,11 +42478,7 @@
     "passive": 11,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -42965,11 +42548,7 @@
       "fire",
       "lightning",
       "poison",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Abyssal", "Common", "Infernal", "telepathy 60 ft."],
     "cr": 4,
@@ -43094,11 +42673,7 @@
     "senses": ["blindsight 60 ft. (blind beyond this radius)"],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["blinded"],
     "languages": [
@@ -43162,11 +42737,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 18,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -43223,11 +42794,7 @@
     "passive": 10,
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -43324,11 +42891,7 @@
       "fire",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -43516,13 +43079,6 @@
     "senses": ["truesight 120 ft."],
     "passive": 18,
     "immune": ["poison"],
-    "vulnerable": [
-      {
-        "vulnerable": ["slashing"],
-        "note": "from a vorpal sword",
-        "cond": true
-      }
-    ],
     "conditionImmune": ["charmed", "frightened", "poisoned"],
     "cr": 13,
     "trait": [
@@ -43851,11 +43407,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "blinded",
@@ -44026,11 +43578,7 @@
     "senses": ["truesight 120 ft."],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["lightning"],
     "conditionImmune": ["frightened", "paralyzed"],
@@ -44915,11 +44463,7 @@
     "senses": ["darkvision 120 ft.", "tremorsense 120 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Dwarvish", "Gnomish", "Sylvan", "Terran", "Undercommon"],
     "cr": 7,
@@ -45010,11 +44554,7 @@
     "passive": 14,
     "immune": [
       "lightning",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["frightened", "paralyzed"],
     "languages": [
@@ -45111,11 +44651,7 @@
     "skill": { "perception": "+5" },
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["any two languages"],
     "cr": 5,
@@ -45812,11 +45348,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 14,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": [
@@ -45916,11 +45448,7 @@
     "resist": ["cold", "lightning", "necrotic"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -46101,11 +45629,7 @@
     "immune": [
       "lightning",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -46584,11 +46108,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage while in dim light or darkness"
     ],
     "languages": ["Common"],
     "cr": 9,
@@ -46647,11 +46167,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 8,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage while in dim light or darkness"
     ],
     "languages": ["Common"],
     "cr": 7,
@@ -47106,11 +46622,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire"],
     "languages": ["Ignan"],
@@ -47461,11 +46973,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -47610,11 +47118,7 @@
     "passive": 20,
     "resist": [
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -47746,11 +47250,7 @@
       "fire",
       "lightning",
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["charmed", "exhaustion", "poisoned"],
@@ -48069,11 +47569,7 @@
     "resist": [
       "acid",
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -48319,11 +47815,7 @@
     "passive": 11,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["frightened", "poisoned"],
@@ -48399,11 +47891,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -48661,11 +48149,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -49042,11 +48526,7 @@
     "passive": 21,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -49176,11 +48656,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -49486,18 +48962,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 18,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
-    ],
-    "vulnerable": [
-      {
-        "vulnerable": ["piercing"],
-        "note": "from magic weapons wielded by good creatures",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common", "Infernal"],
     "cr": 15,
@@ -49600,11 +49065,7 @@
     "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
     "passive": 20,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["telepathy 120 ft."],
     "cr": 11,
@@ -49961,11 +49422,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "vulnerable": ["fire"],
@@ -49988,7 +49445,7 @@
       {
         "name": "Rotting Fist",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 () for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
         ]
       },
       {
@@ -50022,11 +49479,7 @@
     "immune": [
       "necrotic",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["fire"],
     "conditionImmune": [
@@ -50411,11 +49864,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -50666,11 +50115,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -50740,11 +50185,7 @@
     "resist": [
       "acid",
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "frightened", "poisoned"],
@@ -51739,11 +51180,7 @@
     "resist": [
       "cold",
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks that aren't silvered",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered"
     ],
     "conditionImmune": ["charmed"],
     "languages": ["Abyssal", "Common", "Infernal", "Primordial"],
@@ -52080,11 +51517,7 @@
     "passive": 17,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -52148,11 +51581,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "conditionImmune": [
@@ -52566,11 +51995,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -53182,11 +52607,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -53919,11 +53340,7 @@
     "immune": [
       "necrotic",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -54156,11 +53573,7 @@
     "passive": 20,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "poisoned"],
@@ -54591,11 +54004,7 @@
     "immune": [
       "lightning",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -54857,11 +54266,7 @@
     "skill": { "perception": "+5" },
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["understands Common and Elvish but can't speak"],
     "cr": 2,
@@ -54926,11 +54331,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -54997,11 +54398,7 @@
     "senses": ["truesight 120 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["petrified"],
     "languages": ["Undercommon", "understands Common", "telepathy 100 ft."],
@@ -55192,11 +54589,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": [
@@ -55608,11 +55001,7 @@
     "passive": 14,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -55770,11 +55159,7 @@
     "passive": 21,
     "resist": [
       "radiant",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened"],
     "languages": ["all", "telepathy 120 ft."],
@@ -56121,11 +55506,7 @@
     "passive": 10,
     "resist": [
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -56250,11 +55631,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "conditionImmune": [
@@ -57065,11 +56442,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -57264,18 +56637,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 13,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
-    ],
-    "vulnerable": [
-      {
-        "vulnerable": ["piercing"],
-        "note": "from magic weapons wielded by good creatures",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common", "Infernal"],
     "cr": 13,
@@ -57423,11 +56785,7 @@
     "passive": 18,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -57699,11 +57057,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "piercing and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["bludgeoning"],
     "size": "Medium",
@@ -58058,11 +57412,7 @@
       "necrotic",
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -59853,11 +59203,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire"],
     "vulnerable": ["cold"],
@@ -60201,11 +59547,7 @@
     "passive": 11,
     "resist": [
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["force", "lightning", "poison"],
     "conditionImmune": ["charmed", "paralyzed", "poisoned"],
@@ -60262,11 +59604,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "vulnerable": ["fire"],
@@ -61122,11 +60460,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "vulnerable": ["radiant"],
@@ -61196,11 +60530,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "vulnerable": ["radiant"],
@@ -61272,11 +60602,7 @@
       "fire",
       "necrotic",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "lightning", "poison"],
     "vulnerable": ["radiant"],
@@ -61341,11 +60667,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks while in dim light or darkness"
     ],
     "cr": 2,
     "greatSteed": true,
@@ -61400,11 +60722,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks while in dim light or darkness"
     ],
     "cr": 3,
     "trait": [
@@ -61949,11 +61267,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -62440,11 +61754,7 @@
     "resist": [
       "cold",
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -62847,11 +62157,7 @@
     "senses": ["blindsight 120 ft."],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["cold", "fire"],
     "conditionImmune": [
@@ -63051,11 +62357,7 @@
     "immune": [
       "cold",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["fire"],
     "conditionImmune": [
@@ -63230,11 +62532,7 @@
     "passive": 24,
     "resist": [
       "radiant",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
@@ -63868,11 +63166,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "conditionImmune": [
@@ -64082,11 +63376,7 @@
     "passive": 12,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -64227,11 +63517,7 @@
     "passive": 13,
     "resist": ["acid", "cold", "fire"],
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "exhaustion",
@@ -64644,11 +63930,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "frightened"],
     "languages": ["Deep Speech"],
@@ -64703,11 +63985,7 @@
     "passive": 16,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["psychic"],
     "conditionImmune": [
@@ -64860,11 +64138,7 @@
     "passive": 19,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["psychic"],
     "conditionImmune": ["charmed", "frightened"],
@@ -64935,11 +64209,7 @@
       "acid",
       "cold",
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison", "radiant"],
     "conditionImmune": [
@@ -65077,11 +64347,7 @@
     "immune": [
       "poison",
       "psychic",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -65270,11 +64536,7 @@
     "passive": 10,
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -65453,11 +64715,7 @@
     "passive": 10,
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "blinded",
@@ -65599,11 +64857,7 @@
     "passive": 20,
     "resist": [
       "cold",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["lightning", "thunder"],
     "languages": ["Common", "Jiganti"],
@@ -65800,11 +65054,7 @@
       "fire",
       "lightning",
       "poison",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Abyssal", "Common", "Infernal", "telepathy 60 ft."],
     "cr": 4,
@@ -67286,11 +66536,7 @@
     "immune": [
       "fire",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "frightened", "paralyzed", "poisoned"],
     "cr": 30,
@@ -67782,11 +67028,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 12,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "cr": 2,
     "greatSteed": true,
@@ -68745,11 +67987,7 @@
     "resist": ["cold", "lightning", "thunder"],
     "immune": [
       "fire",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "frightened", "paralyzed", "restrained"],
     "cr": 26,
@@ -69015,11 +68253,7 @@
     "passive": 10,
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "vulnerable": ["thunder"],
     "conditionImmune": ["frightened", "grappled", "poisoned", "restrained"],
@@ -69185,11 +68419,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["charmed", "frightened", "poisoned"],
@@ -69409,11 +68639,7 @@
     "passive": 13,
     "resist": [
       "radiant",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "vulnerable": ["necrotic"],
@@ -69843,11 +69069,7 @@
     "passive": 17,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["the languages it knew in life"],
     "cr": 13,
@@ -69969,11 +69191,7 @@
     "passive": 13,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks not made with living wood weapons",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common"],
     "cr": 5,
@@ -70079,11 +69297,7 @@
     "passive": 13,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["the languages it knew in life"],
     "cr": 5,
@@ -70232,11 +69446,7 @@
       "lightning",
       "necrotic",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -70366,11 +69576,7 @@
     "resist": ["cold", "lightning", "necrotic"],
     "immune": [
       { "immune": ["poison"] },
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -70969,11 +70175,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -71217,11 +70419,7 @@
     "immune": [
       "necrotic",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -71560,11 +70758,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
@@ -71647,11 +70841,7 @@
     "passive": 10,
     "resist": [
       "acid",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -71720,11 +70910,7 @@
     "passive": 10,
     "resist": [
       "acid",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
@@ -71768,11 +70954,7 @@
     "passive": 10,
     "resist": [
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -71871,11 +71053,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 13,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Goblish (can't speak in bat form)"],
     "cr": 2,
@@ -71970,11 +71148,7 @@
     "skill": { "perception": "+7" },
     "passive": 17,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common (can't speak in bear form)"],
     "cr": 5,
@@ -72046,11 +71220,7 @@
     "skill": { "perception": "+2" },
     "passive": 12,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common (can't speak in boar form)"],
     "cr": 4,
@@ -72118,11 +71288,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "cr": 4,
     "trait": [
@@ -72199,11 +71365,7 @@
     "senses": ["darkvision 60 ft. (rat form only)"],
     "passive": 12,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common (can't speak in rat form)"],
     "cr": 2,
@@ -72336,11 +71498,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common (can't speak in tiger form)"],
     "cr": 4,
@@ -72425,11 +71583,7 @@
     "skill": { "perception": "+4" },
     "passive": 14,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "languages": ["Common (can't speak in wolf form)"],
     "cr": 3,
@@ -72494,11 +71648,7 @@
     "senses": ["darkvision 120 ft."],
     "passive": 11,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "fire", "poison"],
     "conditionImmune": ["poisoned"],
@@ -72624,11 +71774,7 @@
     "passive": 13,
     "resist": [
       "necrotic",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
@@ -72694,11 +71840,7 @@
       "fire",
       "necrotic",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["lightning", "poison"],
     "conditionImmune": [
@@ -72770,11 +71912,7 @@
     "passive": 10,
     "resist": [
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -73203,11 +72341,7 @@
       "fire",
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["necrotic", "poison"],
     "conditionImmune": [
@@ -73269,11 +72403,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 8,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "while in dim light or darkness",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage while in dim light or darkness"
     ],
     "cr": 0.25,
     "familiar": true,
@@ -73409,11 +72539,7 @@
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 16,
     "resist": [
-      {
-        "resist": ["piercing", "slashing"],
-        "note": "from nonmagical attacks that aren't adamantine",
-        "cond": true
-      }
+      "piercing and slashing damage from nonmagical attacks that aren't adamantine"
     ],
     "languages": ["Terran"],
     "cr": 5,
@@ -73534,11 +72660,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
@@ -73680,11 +72802,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -73792,11 +72910,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 15,
     "immune": [
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened"],
     "languages": ["understands Common, Elvish and Sylvan but can't speak"],
@@ -76669,11 +75783,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -76920,11 +76030,7 @@
     "resist": ["cold", "fire", "lightning"],
     "immune": [
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "that is nonmagical",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
     "languages": ["all", "telepathy 120 ft."],
@@ -78908,11 +78014,7 @@
     "wis": 11,
     "cha": 14,
     "resist": [
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold", "necrotic", "poison"],
     "conditionImmune": [
@@ -79498,11 +78600,7 @@
     "skill": { "perception": "+3" },
     "passive": 13,
     "resist": [
-      {
-        "resist": ["piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "piercing and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": ["petrified", "poisoned"],
@@ -79606,11 +78704,7 @@
     "resist": [
       "lightning",
       "thunder",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -81623,11 +80717,7 @@
       "acid",
       "fire",
       "poison",
-      {
-        "immune": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "conditionImmune": [
       "charmed",
@@ -83035,11 +82125,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["poison"],
     "conditionImmune": [
@@ -83166,11 +82252,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["acid"],
     "conditionImmune": [
@@ -83296,11 +82378,7 @@
     "resist": [
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["cold"],
     "conditionImmune": [
@@ -83428,11 +82506,7 @@
     "resist": [
       "cold",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["fire"],
     "conditionImmune": [
@@ -83559,11 +82633,7 @@
       "cold",
       "fire",
       "lightning",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["thunder"],
     "conditionImmune": [
@@ -83689,11 +82759,7 @@
     "resist": [
       "cold",
       "fire",
-      {
-        "resist": ["bludgeoning", "piercing", "slashing"],
-        "note": "from nonmagical attacks",
-        "cond": true
-      }
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
     ],
     "immune": ["lightning", "thunder"],
     "conditionImmune": [

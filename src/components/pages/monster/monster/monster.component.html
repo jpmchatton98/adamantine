@@ -14,6 +14,23 @@
       ></nz-switch>
       Dire Beast
     </div>
+
+    <ng-container
+      *ngIf="
+        (!monster.type.includes('construct') &&
+          !monster.type.includes('undead')) ||
+        this.undead
+      "
+    >
+      <h5>Undead</h5>
+      <nz-radio-group [(ngModel)]="undead" (ngModelChange)="updateUndead()">
+        <label nz-radio nzValue="undefined">N/A</label>
+        <label nz-radio nzValue="ghost">Ghost</label>
+        <label nz-radio nzValue="mummy">Mummy</label>
+        <label nz-radio nzValue="skeleton">Skeleton</label>
+        <label nz-radio nzValue="zombie">Zombie</label>
+      </nz-radio-group>
+    </ng-container>
   </ng-container>
 </nz-modal>
 
