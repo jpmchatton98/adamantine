@@ -16910,5 +16910,17 @@
     "ritual": 0,
     "type": "save",
     "save": "int"
+  },
+  {
+    "name": "Instant Orchestra",
+    "school": "Transmutation",
+    "level": 1,
+    "casting-time": "1 action",
+    "range": "10 feet",
+    "components": "V, S, M (any number of musical instruments worth at least 1 sp)",
+    "duration": "Up to 1 hour",
+    "description": "When you cast this spell, you animate the musical instruments that serve as its material component so that they will play along with you when you play music, so long as they remain within range.</p><p>In addition, while you are playing music while this spell is active, you can cause harmless sensory effects to appear within range, such as floating musical notes, sparks, or smoke.",
+    "lists": ["Melodic"],
+    "ritual": 1
   }
 ]

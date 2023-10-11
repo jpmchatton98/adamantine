@@ -24,6 +24,12 @@
     "description": "Shelled aquatic animals such as clams, crayfish, lobsters, mussels, oysters, or snails"
   },
   {
+    "name": "Straw (pound)",
+    "cost": 0.01,
+    "weight": 1,
+    "description": "A cheap building material made of dried grasses"
+  },
+  {
     "name": "Butter (pound)",
     "cost": 0.02,
     "weight": 1,
@@ -174,6 +180,12 @@
     "description": "A hard, brittle, clear material made from sand in a kiln."
   },
   {
+    "name": "Grout (pound)",
+    "cost": 0.1,
+    "weight": 1,
+    "description": "A sticky material made from limestone, used to bind bricks and the like together"
+  },
+  {
     "name": "Hardwood, logs (pound)",
     "cost": 0.1,
     "weight": 1,
@@ -232,6 +244,12 @@
     "cost": 0.5,
     "weight": 1,
     "description": "A good loaf of bread, including leaveners and seasonings"
+  },
+  {
+    "name": "Bricks (pound)",
+    "cost": 0.5,
+    "weight": 1,
+    "description": "A sturdy building material made from firing clay"
   },
   {
     "name": "Cheese, standard (wheel)",
@@ -382,6 +400,12 @@
     "cost": 5,
     "weight": 1,
     "description": "Hides prepared for being made into leather"
+  },
+  {
+    "name": "Lamb (pound)",
+    "cost": 5,
+    "weight": 1,
+    "description": "A more mild version of mutton that comes from young sheep"
   },
   {
     "name": "Linen (pound)",

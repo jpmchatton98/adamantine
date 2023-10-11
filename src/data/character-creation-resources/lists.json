@@ -144,6 +144,7 @@
             "Precision Shooter",
             "Protection",
             "Savage Attacker",
+            "Sharpshooter",
             "Shield Warrior",
             "Slasher",
             "Standard Bearer",
@@ -8768,6 +8769,20 @@
       "description": "You have a deep knowledge of plants and their healing properties. You have advantage on Intelligence (Nature) checks to identify the medicinal properties of plants, and Wisdom (Medicine) checks made to stabilize creatures."
     },
     {
+      "name": "Orator I",
+      "description": "You are a master at speaking in all manner of tongues. You learn two additional languages of your choice.",
+      "choices": [
+        {
+          "id": "E9D5ABE2-FE7C-44D9-9ED1-AE2FBBD9E929",
+          "type": "language"
+        },
+        {
+          "id": "E9D5ABE2-FE7C-44D9-9ED1-AE2FBBD9E929",
+          "type": "language"
+        }
+      ]
+    },
+    {
       "name": "Ranger Knight I",
       "description": "Though you spend your time in the wilderness you still have some military training. You gain proficiency in heavy armor.",
       "granted": [
@@ -8819,6 +8834,36 @@
       }
     },
     {
+      "name": "Orator II",
+      "prereqLevel": 3,
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Orator I"
+      },
+      "description": "You can understand any tongue, even if you can't speak it yourself.  You are always under the effects of the Comprehend Languages spell."
+    },
+    {
+      "name": "Ranger Knight II",
+      "prereqLevel": 3,
+      "description": "Though you are a warrior of the wild you understand chivalry and politics. Whenever you make an Intelligence (History) or Charisma (Persuasion) check you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1).",
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Ranger Knight I"
+      }
+    },
+    {
+      "name": "Rider II",
+      "prereqLevel": 3,
+      "description": "You have trained to fight from your mount. You gain the Mounted Warrior Fighting Style. If you already know this Fighting Style you learn another Ranger Fighting Style of your choice.</p><p>Also, you can ride mounts that are your size or larger.",
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Rider I"
+      }
+    },
+    {
       "name": "Slayer I",
       "prereqLevel": 3,
       "description": " When you hit a creature with a weapon attack you can mark it as your Hunter's Prey as part of the same attack, and apply your Hunter's Prey damage bonus to the damage roll.</p><p>Moreover, whenever you make a Wisdom (Perception) or a Wisdom (Survival) check to locate or track your Hunter's Prey, you can treat a roll of 7 or lower on the d20 as an 8.",
@@ -8846,26 +8891,6 @@
         "type": "list",
         "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
         "value": "Strider I"
-      }
-    },
-    {
-      "name": "Ranger Knight II",
-      "prereqLevel": 3,
-      "description": "Though you are a warrior of the wild you understand chivalry and politics. Whenever you make an Intelligence (History) or Charisma (Persuasion) check you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1).",
-      "prereq": {
-        "type": "list",
-        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
-        "value": "Ranger Knight I"
-      }
-    },
-    {
-      "name": "Rider II",
-      "prereqLevel": 3,
-      "description": "You have trained to fight from your mount. You gain the Mounted Warrior Fighting Style. If you already know this Fighting Style you learn another Ranger Fighting Style of your choice.</p><p>Also, you can ride mounts that are your size or larger.",
-      "prereq": {
-        "type": "list",
-        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
-        "value": "Rider I"
       }
     },
     {

@@ -657,6 +657,7 @@
           "Precision Shooter",
           "Protection",
           "Savage Attacker",
+          "Sharpshooter",
           "Shield Warrior",
           "Slasher",
           "Standard Bearer",
@@ -2294,11 +2295,19 @@
     "name": "Poisonous Skin",
     "prereq": [
       {
-        "race": ["grung"]
+        "race": ["bullywug", "grung"]
       }
     ],
     "type": "racial",
-    "description": "If you hit a creature with an unarmed strike, they must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed saving throw, the target takes 2d4 poison damage."
+    "description": "Once per turn if you hit a creature with an unarmed strike, they must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed saving throw, the target takes 2d4 poison damage.</p><p>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+    "uses": [
+      {
+        "id": "514D67CC-FBAB-4FC1-8A87-53C3C8A9D162",
+        "type": "derived",
+        "source": "proficiency",
+        "reset": 2
+      }
+    ]
   },
   {
     "name": "Everybody's Friend",
@@ -2576,6 +2585,51 @@
       {
         "type": "condition-immunity",
         "options": ["Frightened"]
+      }
+    ]
+  },
+  {
+    "name": "Touch of Nyx",
+    "prereq": [
+      {
+        "race": ["harpy"]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been blessed by the goddess of harpies, the primordial god of night Nyx, to wield some of her dark magic. You know the Gloom cantrip. When you reach 3rd level, you can cast the Bane spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell once with this trait, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Gloom"],
+        "ability": "wis"
+      },
+      {
+        "type": "spell",
+        "options": ["Bane"],
+        "prereq": 3,
+        "ability": "wis"
+      },
+      {
+        "type": "spell",
+        "options": ["Darkness"],
+        "prereq": 5,
+        "ability": "wis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "EE927060-6C86-487B-BB2B-8B6D2122FD56",
+        "type": "fixed",
+        "amount": 1,
+        "prereq": 3,
+        "reset": 2
+      },
+      {
+        "id": "F15468D9-A5A3-4AE1-BA44-63112F761078",
+        "type": "fixed",
+        "amount": 1,
+        "prereq": 5,
+        "reset": 2
       }
     ]
   },
