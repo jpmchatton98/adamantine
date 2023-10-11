@@ -26485,12 +26485,6 @@
     ],
     "mythic": [
       {
-        "name": "",
-        "entries": [
-          "If the dullahan's Headless Summoning trait is active, it can use the options below as legendary actions."
-        ]
-      },
-      {
         "name": "Coordinated Assault",
         "entries": [
           "The dullahan makes a Battleaxe attack, and then one death's head the dullahan can see within 30 feet of it can use its reaction to make a melee attack."
@@ -78599,9 +78593,7 @@
     "cha": 6,
     "skill": { "perception": "+3" },
     "passive": 13,
-    "resist": [
-      "piercing and slashing damage from nonmagical attacks"
-    ],
+    "resist": ["piercing and slashing damage from nonmagical attacks"],
     "immune": ["poison"],
     "conditionImmune": ["petrified", "poisoned"],
     "languages": ["understands Terran but can't speak"],
