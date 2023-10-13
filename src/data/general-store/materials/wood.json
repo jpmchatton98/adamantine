@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Firewood",
+    "cost": 0.01,
+    "rarity": 0,
+    "weight": 1,
+    "uses": "Cooking, Woodworking"
+  },
+  {
+    "name": "Wood Scraps",
+    "cost": 0.02,
+    "rarity": 0,
+    "weight": 1,
+    "uses": "Tinkering, Woodworking"
+  },
+  {
+    "name": "Branch, common",
+    "cost": 0.1,
+    "rarity": 1,
+    "weight": 2,
+    "uses": "Blacksmithing, Whittling, Woodworking"
+  },
+  {
+    "name": "Branch, quality",
+    "cost": 2,
+    "rarity": 1,
+    "weight": 2,
+    "uses": "Blacksmithing, Whittling, Woodworking"
+  },
+  {
+    "name": "Branch, uncommon",
+    "cost": 25,
+    "rarity": 2,
+    "weight": 2,
+    "uses": "Whittling"
+  },
+  {
+    "name": "Branch, rare",
+    "cost": 80,
+    "rarity": 3,
+    "weight": 2,
+    "uses": "Whittling"
+  },
+  {
+    "name": "Branch, very rare",
+    "cost": 800,
+    "rarity": 4,
+    "weight": 2,
+    "uses": "Whittling"
+  },
+  {
+    "name": "Branch, legendary",
+    "cost": 2000,
+    "rarity": 5,
+    "weight": 2,
+    "uses": "Whittling"
+  }
+]

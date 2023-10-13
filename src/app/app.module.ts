@@ -23,6 +23,7 @@ import { GeneralStoreModule } from 'src/components/general-store/general-store.m
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DBService } from 'src/services/db.service';
 import { DmToolsModule } from 'src/components/dm-tools/dm-tools.module';
+import { CraftingModule } from 'src/components/crafting/crafting.module';
 
 registerLocaleData(en);
 
@@ -46,6 +47,7 @@ registerLocaleData(en);
     BestiaryModule,
     GeneralStoreModule,
     DmToolsModule,
+    CraftingModule,
   ],
   providers: [DataService, DBService, { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

@@ -1,0 +1,4680 @@
+<nz-tabset [nzSize]="'large'" [nzAnimated]="false">
+  <nz-tab nzTitle="Basics">
+    Each step will be outlined in more depth, but the following serves as a
+    summary and reference for the process.
+
+    <h6>1. Select an Item</h6>
+    <div>Find the item you would like to craft on a crafting table.</div>
+    <h6>2. Check with the GM</h6>
+    <div>
+      They will confirm if that item exists and has the default rarity in their
+      game. This system is a tool, it does not supersede worldbuilding.
+    </div>
+    <h6>3. Gather the Materials</h6>
+    <div>
+      Materials can be looted from humanoids, harvested from more exotic
+      creature types, purchased at stores, or gathered from the wilderness. The
+      specifics of any material and where it can be found is covered in the
+      materials section.
+    </div>
+    <h6>4. Begin Crafting</h6>
+    <div>
+      You can find the related tool and ability score on the table below. Use
+      the related tool and skill to determine your crafting modifier.
+
+      <ul>
+        <li>
+          You can make progress in 2 hour increments. For each 2 hours spent,
+          make a crafting roll using the formula above and compare the result to
+          the DC listed for the item.
+        </li>
+        <li>
+          On a failure, no progress is made. If you fail three times in a row,
+          the crafting fails and all materials are lost.
+        </li>
+        <li>
+          On a success, 2 hours of progress is made, and you can mark your
+          progress put it aside or continue to craft.
+        </li>
+        <li>
+          Once your completed progress on an item is equal to the crafting time
+          listed, the item is complete.
+        </li>
+      </ul>
+    </div>
+
+    <nz-tabset nzSize="small" [nzAnimated]="false">
+      <nz-tab nzTitle="Crafting Time">
+        <div>
+          <div>
+            All items have a crafting time measured in hours. Crafting is
+            completed in 2 hour chunks. Some branches of crafting must make all
+            their checks consecutively (like Alchemy) while some do not (like
+            Blacksmithing or Enchanting). A crafting roll is made every 2 hours
+            of work on an item.
+          </div>
+          <div>
+            On a success, you mark 2 hours of completed time. Once the completed
+            time is equal to the crafting time, the item is complete. On a
+            failure, the crafting time is lost and no progress has been made
+            during the 2 hours.
+          </div>
+          <div>
+            If you fail three times in a row, the crafting is a failure and all
+            materials are lost.
+          </div>
+        </div>
+
+        <h5>Crafting During a Rest</h5>
+        <div>
+          <div>
+            During a long rest, you can make up to 2 hours of progress during a
+            crafting project if you do nothing else during the long rest besides
+            craft and sleep. During this time, you have disadvantage on any
+            Wisdom (Perception) checks and a -5 to all Passive Perception checks
+            as you are focused on your craft.
+          </div>
+          <div>
+            If you do not have to rest, such as is the case with thri-kreen, you
+            can make up to 8 hours of progress during a long rest. You make four
+            checks, one for each two hour increment.
+          </div>
+          <div>
+            For most projects, this progress can be banked completing the
+            project 2 hours at a time. For some types of crafting, like alchemy,
+            you can't make incremental progress, but you can continue for 2
+            additional hours of crafting before or after a long rest in which
+            you crafted to get 4 hours (for example).
+          </div>
+        </div>
+
+        <h5>Crafting Rolls</h5>
+        <div>
+          <div>
+            Each profession lists the related ability modifier and tool used to
+            calculate your crafting roll modifier. In many cases, attempting to
+            craft without the applicable tool is impossible. Your GM may allow
+            improvised tools, and in that case the check is made with
+            disadvantage.
+          </div>
+          <div>
+            Beyond the tool, most branches of crafting require a heat source,
+            and some require more infastructure. These are generally approached
+            logically and are at the discretion of the GM. For an adventurer
+            looking for more portable workshop tools, investigate the Crafting
+            Magic Spells and Crafting Utility Magic Items sections; these offer
+            additional avenues for increased portability.
+          </div>
+          <div>
+            Here is a list of some of the additional requirements by branch:
+            <ul>
+              <li>
+                Blacksmithing can perform minor crafts with a simple heat
+                source, but requires a forge and anvil to make new items.
+              </li>
+              <li>Alchemy and Cooking almost always requires a heat source.</li>
+              <li>
+                Tinkering, Jewelcrafting, and Poisoncraft sometimes require a
+                heat source.
+              </li>
+              <li>
+                Enchanting, Scribing, Woodworking, Whittling, Poisoncraft,
+                Leatherworking, Engineering, Runecarving rarely require anything
+                besides the tools of the profession.
+              </li>
+            </ul>
+          </div>
+
+          <h6>Expertise</h6>
+          <div>
+            Features that grant tool expertise (the ability to add twice your
+            proficiency bonus to ability checks made with a tool) are calculated
+            into your crafting roll modifier, but do not add to an the
+            calculated DC the effects of that item have.
+          </div>
+
+          <h6>Bonuses</h6>
+          <div>
+            <div>
+              A crafting roll is a special type of ability check and you can't
+              add temporary bonuses to your roll (such as Bardic Inspiration or
+              the guidance spell) as the crafting roll represents the entire
+              time you spend working the item.
+            </div>
+            <div>
+              In general, the intention is that no external bonuses apply,
+              unless they specifically state they do. This would include feats
+              (such as ones that allow you to reroll certain rolls), class
+              features (such as ones that allows you to add dice to certain
+              rolls), etc.
+            </div>
+            <div>
+              You can gain can advantage if another player with proficiency in
+              the related tool helps for the whole crafting time.
+            </div>
+          </div>
+
+          <h6>Taking 10</h6>
+          <div>
+            <div>
+              When you craft something, double the crafting period (from 2 hours
+              to 4 hours per check) to "take a 10" on the crafting roll, meaning
+              that your crafting checks are 10 + your modifier. This provides a
+              floor level that you can always succeed on if you choose to take
+              your time.
+            </div>
+            <div>
+              If someone with proficiency is aiding you for the entire duration
+              of the crafting, the crafting check doesn't gain any bonus, but
+              can be completed in the standard 2 hours.
+            </div>
+          </div>
+
+          <h6>Workdays</h6>
+          <div>
+            <div>
+              When a character is spending all day working, they make 8 hours of
+              progress, and cannot exceed 8 hours working on a crafting project
+              during a day. Players will occasionally want to work longer than 8
+              hours, but this fails to account for the limitations of mortals:
+              player characters still need to eat, sleep, and will eventually
+              lose their focus and ability to work. This is primarily
+              implemented for balance reasons, but also helps model how much
+              productive time a character can spend; they are not just working 8
+              hours straight and idling for 8 hours, but rather a model of the
+              natural flow of a day, taking breaks, etc.
+            </div>
+            <div>
+              A GM can choose to overrule this and allow extreme crafting days
+              in special circumstances, but in almost all cases working over 8
+              hours on a crafting project would leave a character with one or
+              more levels of Exhaustion.
+            </div>
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Valuable Gear">
+        <div>
+          <div>
+            In some cases, you may want to make something that is more valuable.
+            While selling more valuable gear may be quite difficult, as is often
+            said, magic has expensive tastes. Many magic items that an Enchanter
+            might want require items of a certain value.
+          </div>
+          <div>
+            Here's some examples of specific modifiers you can add to increase
+            the value of an item:
+
+            <table>
+              <tr>
+                <th>Modifier</th>
+                <th>Materials</th>
+                <th>DC</th>
+                <th>Value Added</th>
+              </tr>
+              <tr>
+                <td>Bejeweled</td>
+                <td>One or more gemstones</td>
+                <td>+1 per gemstone</td>
+                <td>Total value of all gemstones</td>
+              </tr>
+              <tr>
+                <td>Gilded</td>
+                <td>10 gold scraps</td>
+                <td>+2</td>
+                <td>+20 gp</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            Additionally, you can generally increase the value of an item simply
+            by making it more ornate and exercising greater craftsmanship. You
+            can, when you start crafting an item, raise the DC and/or crafting
+            time of that item artificially. When you do so, that items value is
+            recalculated.
+          </div>
+        </div>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Crafting Materials">
+    <div>
+      Without materials, there is nothing to craft from. Crafting does not make
+      things from thin air, it makes more useful things from less useful things.
+      Gathering the materials will be the essential first step in any job.
+      Materials are generally found in three ways.
+    </div>
+    <h6>Loot & Salvaging</h6>
+    <div>
+      Nothing is useless when you have a party of crafters. One of the main
+      sources of materials will be the things you find. Nothing is useless when
+      you have an expert craftsman in the party
+    </div>
+
+    <h6>Gathering & Harvesting</h6>
+    <div>
+      How something is gathered varies on the profession; in many cases, it can
+      only be gathered when the opportunity arises. Dragon scales, for example,
+      are a lot easier to gather when there is a dead dragon nearby. Be it
+      harvesting rare herbs, monster parts, or minerals, gathering is an
+      opportunity you won't want to pass up.
+    </div>
+
+    <h6>Purchasing</h6>
+    <div>
+      <div>
+        Rarely will everything you need to craft what you want fall into you
+        hands without the assistance of the oldest and most powerful tool of any
+        craftsman: money. When you don't have what you need, frequently you can
+        buy it. For some professions, there will be a lot more materials that
+        can be purchased, while others will rely more on the other routes.
+      </div>
+      <div>
+        In general, the buying price of a material is its listed value, and its
+        selling price is usually half of that to an interested property.
+      </div>
+      <div>
+        Between negotiation, market fluctuation, and GM moods, you may get
+        better or worse prices. Note that many materials are simply junk to a
+        party that does not have a use for them, and will only sell to
+        interested parties that can use or resell them.
+      </div>
+      <div>
+        Threatening to burn down a merchant's shop because they will not offer
+        you the listed price may result in an Intimidation check, but does not
+        change market realities and is typically not beneficial to your
+        reputation; most merchants that have the gold to buy and sell expensive
+        materials have dealt with adventurers before and are not easily
+        intimidated.
+      </div>
+    </div>
+
+    <nz-tabset nzSize="small" [nzAnimated]="false">
+      <nz-tab nzTitle="Essences">
+        <div>
+          <div>
+            While reagents are substances that contain a glimmer of magical
+            power that can be harnessed through refinement, Essences are more
+            purified forms of magical power. These come in five types: Arcane,
+            Divine, Occult, Primal, and Psionic as well as in the five normal
+            rarities (common, uncommon, rare, very rare, and legendary). These
+            essences are the pure stuff of magic that makes things work.
+          </div>
+          <div>
+            You can get these by rendering down magical reagents, salvaging
+            magic items, harvesting them from magical monsters, or through the
+            hard work of spell casters. Or you can find them as loot from people
+            that have already done one of those harder steps. The rules for
+            rendering them down from materials are contained within each branch
+            of crafting, while the rules for creating them yourself are under
+            Enchanting, as it is their domain and skill set needed to do so.
+          </div>
+          <div>
+            While all branches occasionally use essences when extra magical
+            power is needed, they are the primary material of Enchanters, and
+            their pricing can be found in that section.
+          </div>
+          <div>
+            Essences can be found as loot during the courses of your adventures,
+            but can also be harvested (from monsters), salvaged (from magical
+            equipment), synthesized (from reagents), or created from the raw
+            power of a spell caster, though the method is long and arduous.
+          </div>
+          <div>
+            Essences are flexible in their exact nature. There are many paths to
+            each desired outcome, and this flexibility is represented in
+            Essences. While the traditional way to make a belt of hill giant
+            strength may call for a hill giant heart as its essence, an
+            enchanter may substitute a dragon heart as their primal essences to
+            make a belt of dragon strength that just has the same statistical
+            effect.
+          </div>
+        </div>
+
+        <h6>Creating Essences</h6>
+        <div>
+          <div>
+            Another potential source of an Essence is being created by a
+            spellcaster. This process is long and arduous, and typically only
+            suited to downtime. A creature with the spell casting feature can
+            create 1 essence during 1 workweek (5 days, 8 hours a day); this
+            process can't be completed faster and for the duration they are
+            considered to have spent all of their spell slots
+          </div>
+          <div>
+            At 1st level or higher can make a common essence in this way, a
+            caster 5th level or higher can make an uncommon essence this way, a
+            caster at 11th level can make a rare essence in this way, and a
+            caster at 17th level or higher can make a very rare essence this
+            way. Legendary essences require special rituals, more casters, and
+            take far longer; they are exceedingly hard to make.
+          </div>
+          <div>
+            The type of essence produced depends on which spell lists you have
+            access to. Those who have access to the Melodic spell list can make
+            Arcane essences, and Artificers can make any type of essence.
+          </div>
+        </div>
+
+        <h6>Salvaging Essences</h6>
+        <div>
+          <div>
+            You also may be able to salvage magical essence from unwanted or
+            broken magical items, though such a reclamation process can be
+            difficult, and rarely results in more than a fraction of the essence
+            infused into the original item. An item returns one essence equal to
+            its rarity when harvested. The process takes 2 hours to complete,
+            and doesn't work if the item is currently attuned to any creature.
+            An essence can only be salvaged from permanent magic items; a
+            permanent magic item is one that recharges or doesn't have a
+            limitation on its charges or uses. A magic item with charges or uses
+            can only be salvaged while it is at full charges or uses.
+          </div>
+          <div>
+            The item becomes nonmagical after the essence is salvaged from it.
+            If it required magic to function or exist, it is destroyed.
+          </div>
+        </div>
+
+        <h6>Synthesizing Essences</h6>
+        <div>
+          <div>
+            In addition to harvesting essences from magical monsters fully
+            intact, a more approachable and incremental way is to combine
+            several reagents to get an essence. You have to combine three
+            reagents of the same rarity to gain one essence of that rarity. You
+            can combine reagents in the following ways. This process takes 4
+            hours, and requires alchemist's supplies and a heat source.
+
+            <table>
+              <tr>
+                <th>Essence</th>
+                <th>Curative</th>
+                <th>Poisonous</th>
+                <th>Reactive</th>
+              </tr>
+              <tr>
+                <td>Arcane</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Divine</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Occult</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Primal</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Psionic</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Hides & Leathers">
+        <div>
+          <div>
+            Hides, scales, and carapaces all tend to be harvested from monsters.
+            Leather is a product of hides that can be processed from what it is
+            harvested from the monster.
+          </div>
+          <div>
+            The GM determines if a monster provides hide, scale, or carapace.
+            Hides do not come in different sizes, rather larger creatures simply
+            provide more hides, and monsters that are not large enough to
+            produce one hide provide only hide scraps.
+          </div>
+          <div>
+            Scales are likewise abstracted: each increment is simply an
+            arbitrary unit of scales that the unit of scales covers. Scales can
+            be much larger or small from different-sized creatures.
+          </div>
+          <div>
+            Creatures are harvested using a Survival check, with its DC listed
+            below. If the DC check is failed, the harvest does not fail
+            entirely, but instead they get 1d4 hide scrapes in place of any
+            hides, carapaces of one size smaller, and half as many scales.
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Ingots">
+        <div>Ingots are chunks of metal that can be used to craft things.</div>
+        <h6>Salvaging Ingots</h6>
+        <div>
+          Metal items can be converted back to ingots quite efficiently, but
+          require a forge to do so. With a forge and 2 hours per item, a metal
+          item can be rendered down into its component ingots. Advanced metals
+          may require special tools to smelt.
+        </div>
+        <h6>Smelting Ore</h6>
+        <div>
+          Creating ingots from raw ore is largely out of scope for most
+          adventurers, but you can create ingots from raw ore with a suitable
+          facility. For more details see the Components and Materials table
+          under Blacksmithing.
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Magical Ink">
+        <div>
+          <div>
+            While ink has many uses, crafting is mostly concerned with magical
+            ink which has the power to hold the arcane words of scrolls. This is
+            synthesized by alchemists from the magical properties of reagents,
+            as it is concerned with extracting their magical properties, the
+            exact nature of the reagents used do not effect the final ink beyond
+            its potency.
+          </div>
+          <div>
+            Magical ink is not typically found or harvested on its own, though
+            it may be found as loot, and in some instances a GM could rule that
+            some blood collected from a fiend, celestial or dragon could be
+            counted as such. It is generally created from reagents or purchased
+            from alchemists that create it from reagents.
+          </div>
+          <div>
+            Magical ink can't be salvaged once they have been combined into
+            another form (such as potions, essences, or ink).
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Parts">
+        <div>
+          <div>
+            The term “parts” is used to refer to gears, wires, springs, windy
+            bits, screws, nails, and doodads. Parts can be either found or
+            salvaged or forged from metal scraps (or even straight from ingots
+            by a Blacksmith for those that really want to be industrial about
+            it). The exact nature of each item making up this collection is left
+            abstracted.
+          </div>
+          <div>
+            In addition, metal scraps are collections of salvaged material that
+            generally fall into the category of things “too small to track”
+            which can then be used for the creations of tinkerers. In addition
+            to all of this, occasionally tinkers will use ingots... particularly
+            ones of tin (which is their namesake, after all).
+          </div>
+          <div>
+            Like other crafting branches, there are also named components for
+            more iconic pieces of gear—the stock of a crossbow, for example, or
+            other items. The cost for these items can be found on the common
+            component table, and are generally minor.
+          </div>
+          <div>
+            Lastly, Tinkerers use essences when constructing things that push
+            beyond the mundane principles of plausibility, crafting magical
+            properties into their inventions.
+          </div>
+        </div>
+
+        <h6>Salvaging Parts</h6>
+        <div>
+          The other main way to acquire parts is to salvage them. What can be
+          salvaged is determined by the GM, but in general common items provide
+          parts, uncommon or expensive items may provide fancy parts, and
+          esoteric parts are found only from esoteric sources at your GM's
+          discretion. Tools, vehicles, and complex items generally return 1d4
+          metal scraps and 1d4 parts for a Small or smaller item, 2d6 metal
+          scraps for a Medium-sized item, 3d8 metal scraps for a Large-sized
+          item, and more for larger items, though they may return less of rare
+          types of parts.
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Reagents">
+        <div>
+          <div>
+            Reagents are a huge range of things; most often they are plants that
+            contain some magical essence, but almost as frequently they are
+            harvested from various magically inclined monsters. The exact source
+            of a reagent usually does not matter beyond defining its type, as
+            the part of the reagent used is the fragment of magic contained
+            within that is distilled out.
+          </div>
+          <div>
+            There are many different ways to make a potion. Consequently, the
+            materials are sorted into categories. These categories include
+            curative, reactive, and poisonous. These each come in the standard
+            material rarities: common, uncommon, rare, very rare, and legendary.
+          </div>
+          <div>
+            Reagents can't be salvaged once they have been combined into another
+            form (such as potions, essences, or ink).
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Wood">
+        <div>
+          Commonly available in its lowest quality (firewood), higher quality
+          woods are often found in rather exotic locations. Wooden branches
+          (including wood scraps) are assumed to be of a useful wood that can be
+          worked, while firewood covers everything else, with more useful woods
+          falling into categories such as quality or rarer options. Wood scraps
+          are assumed to be scraps of common branch quality wood, and
+          consequently can't be salvaged from firewood.
+        </div>
+        <h6>Salvaging Wood</h6>
+        <div>
+          <div>
+            For the most part, wood can't be easily salvaged. Wood carving is
+            not necessarily a reversible process, and wood can't be smelted
+            down.
+          </div>
+          <div>
+            You can render wooden crafted product into wood scraps equal to 4 x
+            the number of branches used to create it.
+          </div>
+        </div>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Alchemy">
+    <div>
+      <div>
+        Alchemy is a crafting art that almost all adventures have some degree of
+        interest in the results of. The source of the ever in demand Potion of
+        Healings, it is a versatile trade that fuels (sometimes quite literally)
+        the adventuring life.
+      </div>
+      <div>
+        It doesn't take many experiences with the powers of potions for an
+        adventurer to consider if they can get away with simmering a Potion of
+        Healing next to the stew over that night's cooking fire... of course
+        it's easier said than done for the result of such things to come away
+        not poisonous.
+      </div>
+      <div>
+        Alchemy tends to be a very quick form of crafting, but with this comes
+        additional risks with most crafts resting on a single roll, and failure
+        resulting in the loss of all materials. Although taking that chance is
+        frequently worth it during a busy adventuring season, consider the
+        "Taking 10" option outlined in the craft introduction when speed is not
+        of the essence.
+      </div>
+    </div>
+
+    <h5>Related Tool</h5>
+    <div>
+      <div>
+        Alchemy works using alchemist's supplies. Attempting to craft a potion
+        without these will almost always be made with disadvantage, and
+        proficiency with these allows you to add your proficiency to any alchemy
+        crafting roll.
+      </div>
+      <div>Alchemy uses your Intelligence modifier.</div>
+    </div>
+
+    <h5>Shelf Life</h5>
+    <div>
+      A unique attribute to alchemy, potions once crafted have a shelf life of 1
+      year before coming expired. This shelf life is shortened to 1 month if the
+      potion contains any reactive ingredient.
+    </div>
+    <h6>Expired Potions</h6>
+    <div>
+      <div>
+        If an expired potion is used or consumed within double its shelf life,
+        roll a d4. On a 1, you become poisoned for 1 minute. On a 2 or 3, the
+        potion will work with reduced effect; its duration will be halved if it
+        had a duration, and damage or healing it dealt will be halved. On a 4,
+        it works as expected.
+      </div>
+      <div>
+        Any potion that is older than twice its shelf life has no effect besides
+        causing the imbiber to become poisoned for 1 minute.
+      </div>
+    </div>
+
+    <h5>Crafting Roll</h5>
+    <div>
+      <div>
+        Putting that together means that when you want to work on Alchemy, your
+        crafting roll is as follows:
+      </div>
+      <div>
+        <strong>Alchemy Modifier = </strong> your Alchemist's Supplies modifier
+      </div>
+    </div>
+    <h6>Success and Failure</h6>
+    <div>
+      <div>
+        For Alchemy, after you make the crafting roll and succeed mark your
+        progress on a crafting project. If you succeed, you make 2 hours of
+        progress toward the total crafting time (and have completed one of the
+        required checks for making an item). Checks for Alchemy must be
+        consecutive, meaning that if you wish to continue after a failed craft,
+        you need to extend your crafting time.
+      </div>
+      <div>
+        Failure means that no progress is made during that time. Once an item is
+        started, even if no progress is made, the components reserved for that
+        item can only be recovered via salvage. If you fail three times in a
+        row, all progress and materials are lost and can no longer be salvaged.
+      </div>
+    </div>
+
+    <h5>Alchemy Saving Throw</h5>
+    <div>
+      <div>
+        Some alchemical creations trigger a saving throw. In instances that they
+        do, the following is the formula for calculating the saving throw. The
+        saving throw is calculated at the time of creation based on the creators
+        attributes and proficiency, and doesn't change once it is created.
+      </div>
+      <div>
+        <strong>Alchemy DC = </strong> 8 + your Alchemist's Supplies modifier
+      </div>
+    </div>
+
+    <h5>Herbalist's Limited Alchemy</h5>
+    <div>
+      <div>
+        While herbalism is primarily used for gathering herbs, a creature with
+        proficiency with herbalism kits has a limited proficiency in creating
+        potions in addition to gathering herbs. You can use proficiency with an
+        herbalism kit in place of alchemist's supplies when creating potions of
+        healing, antidotes, antitoxins, and vials of poison.
+      </div>
+      <div>
+        When crafting in this way, you use an herbalism kit and proficiency with
+        it in place of alchemist's supplies, and you use your Wisdom modifier in
+        place of your Intelligence modifier. This crafting otherwise works the
+        same as using alchemist's supplies.
+      </div>
+      <div>
+        You can add additional reagent modifiers when crafting in this way.
+      </div>
+    </div>
+
+    <nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+      <nz-tab nzTitle="Concoctions">
+        In order to craft a concoction, you must have a sealable container made
+        of glass to craft it in.
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alchemist's Grenade, basic</td>
+              <td>
+                <div>3&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Common</td>
+              <td>50 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Napalm, basic</td>
+              <td>
+                <div>3&times; common reactive reagent</div>
+                <div>1&times; common curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Common</td>
+              <td>70 gp</td>
+            </tr>
+            <tr>
+              <td>Bottled Wind</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Common</td>
+              <td>40 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Tar</td>
+              <td>
+                <div>
+                  (a) 1&times; scroll of web or (b) 2&times; uncommon poisonous
+                  reagent
+                </div>
+                <div>1&times; uncommon poisonous reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>140 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemist's Grenade, potent</td>
+              <td>
+                <div>3&times; uncommon reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>140 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Napalm, potent</td>
+              <td>
+                <div>3&times; uncommon reactive reagent</div>
+                <div>1&times; uncommon curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Uncommon</td>
+              <td>160 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemist's Grenade, powerful</td>
+              <td>
+                <div>3&times; rare reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>17</td>
+              <td>Rare</td>
+              <td>690 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Napalm, powerful</td>
+              <td>
+                <div>3&times; rare reactive reagent</div>
+                <div>1&times; rare curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>18</td>
+              <td>Rare</td>
+              <td>730 gp</td>
+            </tr>
+            <tr>
+              <td>Liquid Lightning</td>
+              <td>
+                <div>2&times; rare reactive reagent</div>
+                <div>1&times; uncommon primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>640 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Explosives">
+        In order to craft an explosive, you must have a sealable container made
+        of clay, glass, or metal to craft it in.
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Blasting Powder</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Common</td>
+              <td>40 gp</td>
+            </tr>
+            <tr>
+              <td>Dwarven Alcohol</td>
+              <td>
+                <div>1&times; flask of mead</div>
+                <div>1&times; common reactive reagent</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>12</td>
+              <td>Common</td>
+              <td>20 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Explosive, simple</td>
+              <td>
+                <div>2&times; blasting powder</div>
+                <div>1&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Common</td>
+              <td>120 gp</td>
+            </tr>
+            <tr>
+              <td>Smokepowder</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Common</td>
+              <td>40 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Explosive, potent</td>
+              <td>
+                <div>4&times; blasting powder</div>
+                <div>1&times; uncommon reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>17</td>
+              <td>Uncommon</td>
+              <td>275 gp</td>
+            </tr>
+            <tr>
+              <td>Alchemical Explosive, powerful</td>
+              <td>
+                <div>8&times; blasting powder</div>
+                <div>1&times; rare reactive reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Rare</td>
+              <td>750 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Magical Dust">
+        In order to craft magical dust, you must have a container made of cloth,
+        glass, or metal to craft it in.
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dust of Corrosion</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; common occult essence</div>
+                <div>2&times; common reactive reagent</div>
+                <div>1&times; common poisonous reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>100 gp</td>
+            </tr>
+            <tr>
+              <td>Dust of Deliciousness</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; common divine essence</div>
+                <div>1&times; common reactive reagent</div>
+                <div>2&times; common curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>65 gp</td>
+            </tr>
+            <tr>
+              <td>Dust of Disappearance</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; common arcane essence</div>
+                <div>2&times; common reactive reagent</div>
+                <div>1&times; common curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>130 gp</td>
+            </tr>
+            <tr>
+              <td>Dust of Dryness</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; common primal essence</div>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; common poisonous reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>100 gp</td>
+            </tr>
+            <tr>
+              <td>Dust of Sneezing and Choking</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; common poisonous reagent</div>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; uncommon poisonous reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>95 gp</td>
+            </tr>
+            <tr>
+              <td>Pixie Dust</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; common arcane essence</div>
+                <div>3&times; common reactive reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>250 gp</td>
+            </tr>
+            <tr>
+              <td>Reincarnation Dust</td>
+              <td>
+                <div>1&times; hanful of detritus</div>
+                <div>1&times; very rare divine essence</div>
+                <div>2&times; very rare curative reagent</div>
+                <div>1&times; very rare reactive reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5000 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Magical Ink">
+        In order to craft magical ink, you must have a container made of clay,
+        glass, or metal to craft it in.
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Magical Ink, common</td>
+              <td>
+                <div>1&times; common curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>10</td>
+              <td>Common</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>Magical Ink, uncommon</td>
+              <td>
+                <div>1&times; uncommon curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+              <td>Uncommon</td>
+              <td>40 gp</td>
+            </tr>
+            <tr>
+              <td>Magical Ink, rare</td>
+              <td>
+                <div>1&times; rare curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Rare</td>
+              <td>200 gp</td>
+            </tr>
+            <tr>
+              <td>Magical Ink, very rare</td>
+              <td>
+                <div>1&times; very rare curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+              <td>Very Rare</td>
+              <td>2000 gp</td>
+            </tr>
+            <tr>
+              <td>Magical Ink, legendary</td>
+              <td>
+                <div>1&times; legendary curative reagent</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>18</td>
+              <td>Legendary</td>
+              <td>5000 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Oils">
+        In order to craft an oil, you must have a sealable container made of
+        glass to craft it in. An oil that is very rare or rarer must be made in
+        a crystal vial.
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Burning Oil</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Common</td>
+              <td>40 gp</td>
+            </tr>
+            <tr>
+              <td>Frost Oil</td>
+              <td>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; common primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Common</td>
+              <td>75 gp</td>
+            </tr>
+            <tr>
+              <td>Silver Oil</td>
+              <td>
+                <div>4&times; silver scraps</div>
+                <div>1&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+              <td>Common</td>
+              <td>20 gp</td>
+            </tr>
+            <tr>
+              <td>Flametongue Oil</td>
+              <td>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>1&times; common arcane essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>170 gp</td>
+            </tr>
+            <tr>
+              <td>Oil of Slipperiness</td>
+              <td>
+                <div>2&times; uncommon curative reagent</div>
+                <div>1&times; common psionic essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+              <td>Uncommon</td>
+              <td>140 gp</td>
+            </tr>
+            <tr>
+              <td>Oil of Etherealness</td>
+              <td>
+                <div>2&times; rare curative reagent</div>
+                <div>1&times; rare occult essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Rare</td>
+              <td>200 gp</td>
+            </tr>
+            <tr>
+              <td>Oil of Sharpness</td>
+              <td>
+                <div>1&times; rare poisonous reagent</div>
+                <div>2&times; very rare reactive reagent</div>
+                <div>300 gp of precious metal flakes</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5200 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Potions">
+        In order to craft a potion, you must have a sealable container made of
+        glass to craft it in. A potion that is very rare or rarer must be made
+        in a crystal vial.
+
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Potion of Climbing</td>
+              <td>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; common poisonous reagent</div>
+                <div>1&times; uncommon reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Common</td>
+              <td>85 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Comprehension</td>
+              <td>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; common arcane essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Common</td>
+              <td>50 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Healing, basic</td>
+              <td>
+                <div>3&times; common curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Common</td>
+              <td>50 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Watchful Rest</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+                <div>1&times; common psionic essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Common</td>
+              <td>100 gp</td>
+            </tr>
+            <tr>
+              <td>Philter of Love</td>
+              <td>
+                <div>2&times; uncommon poisonous reagent</div>
+                <div>1&times; uncommon curative reagent</div>
+                <div>1&times; common psionic essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>175 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Advantage</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+                <div>1&times; common curative reagent</div>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; common primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>200 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Animal Friendship</td>
+              <td>
+                <div>2&times; common reactive reagent</div>
+                <div>1&times; common poisonous reagent</div>
+                <div>1&times; uncommon curative reagent</div>
+                <div>1&times; common primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Uncommon</td>
+              <td>145 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Fire Breath</td>
+              <td>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; uncommon reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>145 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Strength, hill</td>
+              <td>
+                <div>1&times; uncommon primal essence</div>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; uncommon curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>260 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Growth</td>
+              <td>
+                <div>1&times; common reactive reagent</div>
+                <div>1&times; uncommon curative reagent</div>
+                <div>1&times; uncommon reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>115 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Healing, greater</td>
+              <td>
+                <div>1&times; common curative reagent</div>
+                <div>2&times; uncommon curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>120 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Poison</td>
+              <td>
+                <div>1&times; common poisonous reagent</div>
+                <div>2&times; uncommon poisonous reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Uncommon</td>
+              <td>65 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Resistance</td>
+              <td>
+                <div>1&times; uncommon primal essence</div>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; common curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>240 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Water Breathing</td>
+              <td>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; uncommon poisonous reagent</div>
+                <div>1&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>120 gp</td>
+            </tr>
+            <tr>
+              <td>Draught of Ascension</td>
+              <td>
+                <div>1&times; rare reactive reagent</div>
+                <div>1&times; rare poisonous reagent</div>
+                <div>1&times; uncommon divine essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>680 gp</td>
+            </tr>
+            <tr>
+              <td>Draught of Damnation</td>
+              <td>
+                <div>1&times; rare reactive reagent</div>
+                <div>1&times; rare poisonous reagent</div>
+                <div>1&times; uncommon occult essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>680 gp</td>
+            </tr>
+            <tr>
+              <td>Elixir of Health</td>
+              <td>
+                <div>2&times; uncommon curative reagent</div>
+                <div>1&times; rare curative reagent</div>
+                <div>1&times; uncommon divine essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>525 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Aqueous Form</td>
+              <td>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; rare curative regeant</div>
+                <div>1&times; rare reactive reagent</div>
+                <div>1&times; uncommon primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Rare</td>
+              <td>350 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Clairvoyance</td>
+              <td>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; uncommon poisonous reagent</div>
+                <div>2&times; rare reactive reagent</div>
+                <div>1&times; common psionic essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>570 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Dimunition</td>
+              <td>
+                <div>1&times; uncommon curative reagent</div>
+                <div>1&times; rare curative reagent</div>
+                <div>1&times; rare poisonous reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>480 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Gaseous Form</td>
+              <td>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>1&times; rare curative regeant</div>
+                <div>1&times; rare reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>480 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Strength, fire</td>
+              <td>
+                <div>1&times; rare primal essence</div>
+                <div>2&times; rare reactive reagent</div>
+                <div>1&times; rare curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+              <td>Rare</td>
+              <td>700 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Strength, frost</td>
+              <td>
+                <div>1&times; rare primal essence</div>
+                <div>1&times; rare reactive reagent</div>
+                <div>1&times; rare curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>620 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Strength, stone</td>
+              <td>
+                <div>1&times; uncommon primal essence</div>
+                <div>1&times; rare reactive reagent</div>
+                <div>1&times; rare curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>560 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Healing, superior</td>
+              <td>
+                <div>2&times; uncommon curative reagent</div>
+                <div>2&times; rare curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>525 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Heroism</td>
+              <td>
+                <div>1&times; uncommon curative reagent</div>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>2&times; rare curative reagent</div>
+                <div>1&times; common divine essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>480 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Invulnerability</td>
+              <td>
+                <div>2&times; uncommon curative reagent</div>
+                <div>2&times; rare curative reagent</div>
+                <div>1&times; uncommon divine essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>550 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Maximum Power</td>
+              <td>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>2&times; rare reactive reagent</div>
+                <div>1&times; uncommon primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>550 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Mind Control, beasts</td>
+              <td>
+                <div>2&times; uncommon poisonous reagent</div>
+                <div>1&times; rare poisonous reagent</div>
+                <div>1&times; uncommon primal essence</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>550 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Mind Control, humanoids</td>
+              <td>
+                <div>2&times; uncommon poisonous reagent</div>
+                <div>1&times; rare poisonous reagent</div>
+                <div>1&times; uncommon psionic essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>600 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Mind Reading</td>
+              <td>
+                <div>1&times; uncommon poisonous reagent</div>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; rare poisonous reagent</div>
+                <div>1&times; rare reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>550 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Flying</td>
+              <td>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>2&times; rare curative reagent</div>
+                <div>2&times; very rare reactive reagent</div>
+                <div>1&times; uncommon primal essence</div>
+                <div>1&times; uncommon arcane essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5500 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Strength, cloud</td>
+              <td>
+                <div>1&times; rare primal essence</div>
+                <div>1&times; very rare reactive reagent</div>
+                <div>1&times; very rare curative reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Healing, supreme</td>
+              <td>
+                <div>1&times; uncommon curative reagent</div>
+                <div>1&times; rare curative reagent</div>
+                <div>2&times; very rare curative reagent</div>
+                <div>1&times; uncommon divine essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+              <td>Very Rare</td>
+              <td>5000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Invisibility</td>
+              <td>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>2&times; rare curative reagent</div>
+                <div>1&times; very rare curative reagent</div>
+                <div>1&times; very rare reactive reagent</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5200 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Longevity</td>
+              <td>
+                <div>1&times; uncommon curative reagent</div>
+                <div>2&times; rare curative reagent</div>
+                <div>1&times; very rare curative reagent</div>
+                <div>1&times; uncommon divine essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+              <td>Very Rare</td>
+              <td>4000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Mind Control, monsters</td>
+              <td>
+                <div>2&times; rare poisonous reagent</div>
+                <div>1&times; very rare poisonous reagent</div>
+                <div>1&times; rare psionic essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Possibility</td>
+              <td>
+                <div>2&times; rare reactive reagent</div>
+                <div>1&times; rare curative reagent</div>
+                <div>1&times; very rare reactive reagent</div>
+                <div>1&times; rare primal essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>5500 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Speed</td>
+              <td>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>2&times; rare reactive reagent</div>
+                <div>1&times; very rare reactive reagent</div>
+                <div>1&times; very rare curative reagent</div>
+                <div>1&times; rare arcane essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>20</td>
+              <td>Very Rare</td>
+              <td>6150 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Vitality</td>
+              <td>
+                <div>1&times; uncommon curative reagent</div>
+                <div>2&times; rare curative reagent</div>
+                <div>1&times; very rare curative reagent</div>
+                <div>1&times; rare divine essence</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+              <td>Very Rare</td>
+              <td>6150 gp</td>
+            </tr>
+            <tr>
+              <td>Panacea</td>
+              <td>
+                <div>1&times; legendary curative reagent</div>
+                <div>2&times; very rare curative reagent</div>
+                <div>1&times; legendary divine essence</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>24</td>
+              <td>Legendary</td>
+              <td>54000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Dragon's Majesty</td>
+              <td>
+                <div>2&times; very rare reactive reagent</div>
+                <div>2&times; legendary reactive reagent</div>
+                <div>1&times; very rare primal essence</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>24</td>
+              <td>Legendary</td>
+              <td>40000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Size</td>
+              <td>
+                <div>1&times; very rare reactive reagent</div>
+                <div>1&times; legendary curative reagent</div>
+                <div>1&times; legendary reactive reagent</div>
+                <div>1&times; very rare primal essence</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>23</td>
+              <td>Legendary</td>
+              <td>22000 gp</td>
+            </tr>
+            <tr>
+              <td>Potion of Giant Strength, storm</td>
+              <td>
+                <div>1&times; very rare primal essence</div>
+                <div>1&times; legendary reactive reagent</div>
+                <div>1&times; legendary curative reagent</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>23</td>
+              <td>Legendary</td>
+              <td>25000 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Miscellaneous">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Antidote, basic</td>
+              <td>
+                <div>1&times; common poisonous reagent</div>
+                <div>2&times; common curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Common</td>
+              <td>50 gp</td>
+            </tr>
+            <tr>
+              <td>Perfume of Bewitching</td>
+              <td>
+                <div>2&times; common poisonous reagent</div>
+                <div>1&times; common reactive reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>13</td>
+              <td>Common</td>
+              <td>50 gp</td>
+            </tr>
+            <tr>
+              <td>Antidote, lycanthropy</td>
+              <td>
+                <div>1&times; uncommon poisonous reagent</div>
+                <div>2&times; uncommon curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>250 gp</td>
+            </tr>
+            <tr>
+              <td>Antidote, mummy rot</td>
+              <td>
+                <div>1&times; uncommon poisonous reagent</div>
+                <div>2&times; uncommon curative reagent</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>250 gp</td>
+            </tr>
+            <tr>
+              <td>Restorative Ointment</td>
+              <td>
+                <div>1&times; common divine essence</div>
+                <div>2&times; uncommon curative reagent</div>
+                <div>3&times; common curative reagent</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>250 gp</td>
+            </tr>
+            <tr>
+              <td>Sovereign Glue</td>
+              <td>
+                <div>1&times; legendary curative reagent</div>
+                <div>1&times; legendary reactive reagent</div>
+                <div>1&times; very rare divine essence</div>
+              </td>
+              <td>16</td>
+              <td>8</td>
+              <td>22</td>
+              <td>Legendary</td>
+              <td>25000 gp</td>
+            </tr>
+            <tr>
+              <td>Universal Solvent</td>
+              <td>
+                <div>1&times; legendary poisonous reagent</div>
+                <div>1&times; legendary reactive reagent</div>
+                <div>1&times; very rare primal essence</div>
+              </td>
+              <td>16</td>
+              <td>8</td>
+              <td>22</td>
+              <td>Legendary</td>
+              <td>25000 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Modifiers">
+        The following are alchemical modifiers that can be applied to a potion.
+        All alchemical modifiers require approval from the GM if the modifier
+        will work with a given potion or creation.
+
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Modifier</td>
+              <td>DC</td>
+              <td>Effect</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aerosol</td>
+              <td>+8</td>
+              <td>
+                Requires two additional reactive reagents of equal rarity to the
+                rarest reagent of the potion. Rather than drinking it, when
+                uncorked or broken (as an action) it effects all creatures in a
+                5-foot radius as if they'd consumed it.
+              </td>
+            </tr>
+            <tr>
+              <td>Celestial</td>
+              <td>+3</td>
+              <td>
+                Requires an additional common divine essence. Adds the effect of
+                lesser restoration to the potion.
+              </td>
+            </tr>
+            <tr>
+              <td>Divine</td>
+              <td>+6</td>
+              <td>
+                Requires an additional rare divine essence. Adds the effect of
+                greater restoration to the potion.
+              </td>
+            </tr>
+            <tr>
+              <td>Expansive</td>
+              <td>+5</td>
+              <td>
+                Requires an additional common reactive reagent. Expands the area
+                of effect of any area of effect the potion has by 5 feet.
+              </td>
+            </tr>
+            <tr>
+              <td>Insidious</td>
+              <td>+3</td>
+              <td>
+                The effect of the potions becomes shrouded from magic such as
+                identify. You can make the potion appear as another potion of
+                the same rarity. Another alchemist can indentify it by making an
+                Alchemy Check against your Alchemy DC.
+              </td>
+            </tr>
+          </tbody>
+        </nz-table>
+
+        You can simply load more reagents into any potion, increasing its
+        potency in different ways, though it increases the difficulty. You can
+        make a "custom potion" simply by using these modifiers with no base
+        potion. When you do so, the base DC is 8.
+
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Additional Reagent</td>
+              <td>DC</td>
+              <td>Effect</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Common Curative</td>
+              <td>+2</td>
+              <td>The potion restores +1d4 hit points when consumed.</td>
+            </tr>
+            <tr>
+              <td>Common Reactive</td>
+              <td>+2</td>
+              <td>
+                The potion deals +1d4 force damage when shattered (or consumed)
+              </td>
+            </tr>
+            <tr>
+              <td>Common Poisonous</td>
+              <td>+2</td>
+              <td>The potion deals +1d4 poison damage when consumed.</td>
+            </tr>
+            <tr>
+              <td>Uncommon Curative</td>
+              <td>+3</td>
+              <td>The potion restores +2d4 hit points when consumed.</td>
+            </tr>
+            <tr>
+              <td>Uncommon Reactive</td>
+              <td>+3</td>
+              <td>
+                The potion deals +2d4 force damage when shattered (or consumed)
+              </td>
+            </tr>
+            <tr>
+              <td>Uncommon Poisonous</td>
+              <td>+3</td>
+              <td>The potion deals +2d4 poison damage when consumed.</td>
+            </tr>
+            <tr>
+              <td>Rare Curative</td>
+              <td>+4</td>
+              <td>The potion restores +3d4 hit points when consumed.</td>
+            </tr>
+            <tr>
+              <td>Rare Reactive</td>
+              <td>+4</td>
+              <td>
+                The potion deals +3d4 force damage when shattered (or consumed)
+              </td>
+            </tr>
+            <tr>
+              <td>Rare Poisonous</td>
+              <td>+4</td>
+              <td>The potion deals +3d4 poison damage when consumed.</td>
+            </tr>
+            <tr>
+              <td>Very Rare Curative</td>
+              <td>+5</td>
+              <td>The potion restores +4d4 hit points when consumed.</td>
+            </tr>
+            <tr>
+              <td>Very Rare Reactive</td>
+              <td>+5</td>
+              <td>
+                The potion deals +4d4 force damage when shattered (or consumed)
+              </td>
+            </tr>
+            <tr>
+              <td>Very Rare Poisonous</td>
+              <td>+5</td>
+              <td>The potion deals +4d4 poison damage when consumed.</td>
+            </tr>
+            <tr>
+              <td>Legendary Curative</td>
+              <td>+6</td>
+              <td>The potion restores +5d4 hit points when consumed.</td>
+            </tr>
+            <tr>
+              <td>Legendary Reactive</td>
+              <td>+6</td>
+              <td>
+                The potion deals +5d4 force damage when shattered (or consumed)
+              </td>
+            </tr>
+            <tr>
+              <td>Legendary Poisonous</td>
+              <td>+6</td>
+              <td>The potion deals +5d4 poison damage when consumed.</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Blacksmithing">
+    <div>
+      <div>
+        Blacksmithing is a popular professional interest of two sorts of
+        adventurers: those that want to hit things with heavy metal objects, and
+        those that want a heavy metal object between them and the thing hitting
+        them
+      </div>
+      <div>
+        While often relying on the town blacksmith to do their work for them is
+        a fine option, rolling up your sleeves and doing the work yourself can
+        allow you to express your creativity... and may save you a few coins in
+        the process.
+      </div>
+      <div>
+        Blacksmithing is slow hard work, but has a higher tolerance for failure
+        than most, and is more dependent on knowing your material, as the
+        templates you work from tend to be common across many of them.
+      </div>
+    </div>
+
+    <h5>Related Tool</h5>
+    <div>
+      <div>
+        Blacksmithing works using blacksmith's tools. Attempting to craft an
+        item without blacksmith's tools will often be impossible, though a GM
+        may let you use makeshift tools to make a check with disadvantage.
+        Proficiency in blacksmith's tools allows you to add your proficiency
+        bonus to any blacksmithing check.
+      </div>
+      <div>
+        While Blacksmiths can benefit from their skills in small ways such as
+        sharpening their weapons and retrofitting their gear on the go, many of
+        their crafting options require a fully equipped Forge; a fully equipped
+        Forge entails a forge, anvil, and blacksmith's tools.
+      </div>
+    </div>
+
+    <h5>Magical Forges</h5>
+    <div>
+      The worlds of the planar multiverse are a fantastical place with many
+      wonders. Sometimes you may find locations that have been constructed in
+      such a way as to leverage powerful primal powers in the forging technique:
+      for example, a forge at the heart of a volcano or atop an ever-frozen
+      glacier, which might imbue items crafted there with special properties.
+    </div>
+
+    <h5>Crafting Roll</h5>
+    <div>
+      <div>
+        Putting that together means that when you would like to smith an item,
+        your crafting roll is as follows:
+      </div>
+      <div>
+        <strong>Blacksmithing Modifier =</strong> your Blacksmith's Tools
+        modifier
+      </div>
+    </div>
+
+    <h6>Success and Failure</h6>
+    <div>
+      <div>
+        After you make a crafting roll, if you succeed, you make 2 hours of
+        progress toward the total crafting time (and have completed one of the
+        required checks for making an item).
+      </div>
+      <div>
+        Checks for Blacksmithing do not need to be immediately consecutive. If
+        you fail three times in a row, all progress and materials are lost and
+        can no longer be salvaged. Failure means that no progress is made during
+        that time.
+      </div>
+      <div>
+        Once an item is started, even if no progress is made, the components
+        reserved for that item can only be recovered via salvage.
+      </div>
+    </div>
+
+    <h5>Maintenance & Modifications</h5>
+    <div>
+      <div>
+        While the primary purpose of Blacksmithing is to forge armor and weapons
+        from metal, for an adventurer such events are important milestones that
+        generally will not occur everyday. The following are some tasks that
+        require proficiency with Blacksmith's Tools that provide a more
+        day-to-day utility to the proficiency, giving them minor ways to enhance
+        or adapt their gear.
+      </div>
+      <div>
+        These are minor crafts can be completed in 2 hours with the expenditure
+        of 5 gp worth of materials. They can be done as part of a long rest, but
+        have limitations the normally crafted items do not (such as a maximum
+        stockpile of minor crafts).
+      </div>
+      <div>The following are "minor crafting options" for Blacksmiths:</div>
+    </div>
+    <h6>Maintain Gear</h6>
+    <div>
+      <div>
+        One of the perks of having a blacksmith in the field is their ability to
+        keep gear in its best condition, giving you an edge (sometimes
+        literally) in the quality of your gear and weapons. Over the course of 2
+        hours, a Blacksmith can maintain a number of weapons or sets of armor
+        equal to their proficiency bonus, granting each weapon or armor
+        maintained a special d6 Quality Die.
+      </div>
+      <div>
+        For a weapon, this can be rolled and added to an attack or damage roll,
+        representing a case where the perfect state of the gear turned a miss
+        into a hit or dealt a bit of extra damage. For a set of armor, the die
+        can be rolled when hit by an attack, and the damage taken from that
+        attack can be reduced by that amount.
+      </div>
+      <div>
+        Rolling this die doesn't require an action, but once rolled it is spent
+        and can't be regained until the blacksmith maintains that armor or
+        weapon again.
+      </div>
+    </div>
+    <h6>Modify Armor</h6>
+    <div>
+      While the field crafting of armor is often not possible, you can make
+      smaller adjustments on the go. Over the course of 2 hours, you can turn a
+      set of plate mail into a half plate or a breastplate, refit a set of heavy
+      or medium armor to fit another user that is equal in size or smaller than
+      the original user.
+    </div>
+    <h6>Modify Weapon</h6>
+    <div>
+      Every adventure has slightly different preferences in their gear, and your
+      skills allow you make slight modifications to nonmagical weapons made of
+      metal. These modifications take 2 hours, require a heat source, and
+      require you to pass a DC 14 blacksmithing check (on failure, the weapon is
+      damaged and has a -1 penalty to its attack rolls until fixed). You can
+      perform one of the following modifications:
+
+      <ul>
+        <li>
+          You can weight a weapon, giving it the heavy property. If it did not
+          already have the two-handed property, it gains the two-handed
+          property.
+        </li>
+        <li>
+          You can remove the heavy property from a weapon, reducing its damage
+          dice by one step.
+        </li>
+        <li>
+          You can add the light property to a weapon without the heavy property,
+          reducing its damage dice by one step.
+        </li>
+        <li>
+          You can silver the weapon (requires 5 silver scraps for one-handed
+          weapons, 10 for two-handed weapons, and 15 for massive weapons).
+        </li>
+      </ul>
+    </div>
+    <h6>Repair Gear</h6>
+    <div>
+      Sometime in the course of adventuring, weapons or armor will become
+      severely damaged, suffering a penalty to its attack rolls or AC. Over the
+      course of 2 hours, you can repair this damage, though at the discretion of
+      the GM you may need other materials to perform this task if it is heavily
+      damaged. Weapons that are entirely broken (such as a snapped sword) are
+      generally beyond simple repair.
+    </div>
+
+    <nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+      <nz-tab nzTitle="Simple Weapons">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cleaver</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Dagger</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Gauntlet</td>
+              <td>
+                <div>(a) 1&times; ingot or (b) 1&times; spiked gauntlet</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Gauntlet, spiked</td>
+              <td>
+                <div>(a) 1&times; ingot or (b) 1&times; gauntlet</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Handaxe</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Javelin</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Kukri</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Light Hammer</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Light Pick</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Longspear</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Mace</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Machete</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Scythe</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Shortsword</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Sickle</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Spear</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>2&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>Swordstaff</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Whip</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; chain</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Martial Weapons">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Battleaxe</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Bec de Corbin</td>
+              <td>
+                <div>5&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Cavalry Sabre</td>
+              <td>
+                <div>8&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Flail</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+                <div>1&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Foil</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Glaive</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Greataxe</td>
+              <td>
+                <div>8&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Greatspear</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Greatsword</td>
+              <td>
+                <div>10&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Halberd</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Heavy Flail</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+                <div>2&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Heavy Pick</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Lance</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Longhammer</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Longsword</td>
+              <td>
+                <div>4&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Maul</td>
+              <td>
+                <div>8&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Maulaxe</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Morningstar</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Pike</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Poleaxe</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Rapier</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Sabre</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Scimitar</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Trident</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>War Pick</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Warhammer</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Exotic Weapons">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bastard Sword</td>
+              <td>
+                <div>7&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Bearded Axe</td>
+              <td>
+                <div>5&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Buster Sword</td>
+              <td>
+                <div>20&times; ingot</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Cane Sword</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Chain Dagger</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>1&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Chakram</td>
+              <td>
+                <div>3&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Claw</td>
+              <td>
+                <div>3&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Dagger, boot-toe</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Dagger, wrist</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Dire Flail</td>
+              <td>
+                <div>6&times; ingot</div>
+                <div>1&times; branch</div>
+                <div>3&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Double Scimitar</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Double Spear</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Executioner's Axe</td>
+              <td>
+                <div>16&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Flying Sword</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Greatpick</td>
+              <td>
+                <div>8&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Guandao</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Katana</td>
+              <td>
+                <div>4&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Katar</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Khopesh</td>
+              <td>
+                <div>4&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Kunai</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Kusarigama</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Longpick</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Longtrident</td>
+              <td>
+                <div>10&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Megaton Hammer</td>
+              <td>
+                <div>30&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Meteor Hammer</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Odachi</td>
+              <td>
+                <div>8&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>Phalanx Pike</td>
+              <td>
+                <div>8&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Quad Spear</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Sai</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Shuriken</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Spiked Chain</td>
+              <td>
+                <div>1&times; ingot</div>
+                <div>2&times; chain</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Spiral Rapier</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>Springflail</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+                <div>1&times; chain</div>
+                <div>1&times; parts</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>Tonfa, bladed</td>
+              <td>
+                <div>2&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>War Mallet</td>
+              <td>
+                <div>3&times; ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>6</td>
+              <td>2</td>
+              <td>17</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Armor">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chain Shirt</td>
+              <td><div>5&times; ingot</div></td>
+              <td>14</td>
+              <td>7</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Scale Mail</td>
+              <td>
+                <div>8&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>14</td>
+              <td>7</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Lamellar</td>
+              <td>
+                <div>10&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>16</td>
+              <td>8</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Breastplate</td>
+              <td><div>10&times; ingot</div></td>
+              <td>16</td>
+              <td>8</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Half Plate</td>
+              <td>
+                <div>16&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>28</td>
+              <td>14</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Ring Mail</td>
+              <td>
+                <div>4&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>10</td>
+              <td>5</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Chain Mail</td>
+              <td>
+                <div>9&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>14</td>
+              <td>7</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Light Plate</td>
+              <td>
+                <div>18&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>20</td>
+              <td>10</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Splint</td>
+              <td>
+                <div>12&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>28</td>
+              <td>14</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Plate</td>
+              <td>
+                <div>30&times; ingot</div>
+                <div>1&times; armor padding</div>
+              </td>
+              <td>56</td>
+              <td>28</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Heavy Plate</td>
+              <td>
+                <div>50&times; ingot</div>
+                <div>2&times; armor padding</div>
+              </td>
+              <td>72</td>
+              <td>36</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>Fortress Plate</td>
+              <td>
+                <div>75&times; ingot</div>
+                <div>4&times; armor padding</div>
+              </td>
+              <td>168</td>
+              <td>84</td>
+              <td>22</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Shields">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Buckler</td>
+              <td><div>1&times; ingot</div></td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Heater Shield</td>
+              <td><div>2&times; ingot</div></td>
+              <td>6</td>
+              <td>3</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Kite Shield</td>
+              <td><div>4&times; ingot</div></td>
+              <td>8</td>
+              <td>4</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Tower Shield</td>
+              <td><div>8&times; ingot</div></td>
+              <td>10</td>
+              <td>5</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Snarlshield</td>
+              <td><div>5&times; ingot</div></td>
+              <td>8</td>
+              <td>4</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Wall Shield</td>
+              <td><div>5&times; ingot</div></td>
+              <td>8</td>
+              <td>4</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Warshield</td>
+              <td><div>4&times; ingot</div></td>
+              <td>8</td>
+              <td>4</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Components & Materials">
+        <div>
+          <div>
+            The creation of ingots requires a bloomery, a special structure not
+            present in most forges.
+          </div>
+          <div>
+            The creation of cold iron, mithral, adamantine, or dragonsteel
+            ingots requires a magical forge.
+          </div>
+        </div>
+
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20&times; Metal Scrap</td>
+              <td><div>1&times; ingot</div></td>
+              <td>4</td>
+              <td>2</td>
+              <td>5</td>
+              <td>varies</td>
+              <td>varies</td>
+            </tr>
+            <tr>
+              <td>1&times; Ingot</td>
+              <td><div>20&times; metal scrap</div></td>
+              <td>2</td>
+              <td>1</td>
+              <td>5</td>
+              <td>varies</td>
+              <td>varies</td>
+            </tr>
+            <tr>
+              <td>1&times; ingot</td>
+              <td><div>1&times; ore</div></td>
+              <td>2</td>
+              <td>1</td>
+              <td>5</td>
+              <td>varies</td>
+              <td>varies</td>
+            </tr>
+            <tr>
+              <td>Parts</td>
+              <td><div>5&times; metal scrap</div></td>
+              <td>4</td>
+              <td>2</td>
+              <td>9</td>
+              <td>Common</td>
+              <td>2 gp</td>
+            </tr>
+            <tr>
+              <td>Parts, fancy</td>
+              <td><div>1&times; iron ingot</div></td>
+              <td>4</td>
+              <td>2</td>
+              <td>12</td>
+              <td>Uncommon</td>
+              <td>10 gp</td>
+            </tr>
+            <tr>
+              <td>Parts, esoteric</td>
+              <td><div>1&times; steel ingot</div></td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>100 gp</td>
+            </tr>
+            <tr>
+              <td>Buckle</td>
+              <td><div>5&times; metal scrap</div></td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>100 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+
+        <h6>Alloys</h6>
+        <div>
+          These special metals also require a bloomery to make, and cannot be
+          smelted from ore.
+        </div>
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brass Ingot</td>
+              <td>
+                <div>1&times; copper ingot</div>
+                <div>1&times; zinc ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>8</td>
+              <td>Uncommon</td>
+              <td>3 gp</td>
+            </tr>
+            <tr>
+              <td>Bronze Ingot</td>
+              <td>
+                <div>1&times; copper ingot</div>
+                <div>1&times; tin ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>8</td>
+              <td>Uncommon</td>
+              <td>3 gp</td>
+            </tr>
+            <tr>
+              <td>Steel Ingot</td>
+              <td>
+                <div>1&times; iron ingot</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>8</td>
+              <td>Uncommon</td>
+              <td>5 gp</td>
+            </tr>
+            <tr>
+              <td>Electrum Ingot</td>
+              <td>
+                <div>1&times; gold ingot</div>
+                <div>1&times; silver ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>8</td>
+              <td>Rare</td>
+              <td>100 gp</td>
+            </tr>
+            <tr>
+              <td>Dragonsteel Ingot</td>
+              <td>
+                <div>1&times; steel ingot</div>
+                <div>
+                  (a) 1&times; rare primal essence or (b) the help of a bound or
+                  willing dragon
+                </div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Rare</td>
+              <td>100 gp</td>
+            </tr>
+            <tr>
+              <td>Adamantine Ingot</td>
+              <td>
+                <div>1&times; electrum ingot</div>
+                <div>1&times; adamant ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Very Rare</td>
+              <td>600 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Miscellaneous">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ball Bearings (1000)</td>
+              <td>
+                <div>1&times; iron ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>8</td>
+              <td>1 gp</td>
+            </tr>
+            <tr>
+              <td>Bell</td>
+              <td>
+                <div>2&times; metal scrap</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+              <td>1 gp</td>
+            </tr>
+            <tr>
+              <td>Bucket</td>
+              <td>
+                <div>4&times; metal scrap</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>5</td>
+              <td>3 sp</td>
+            </tr>
+            <tr>
+              <td>20&times; Caltrop</td>
+              <td>
+                <div>1&times; iron ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+              <td>1 gp</td>
+            </tr>
+            <tr>
+              <td>Chain (10 ft)</td>
+              <td>
+                <div>1&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>10</td>
+              <td>varies</td>
+            </tr>
+            <tr>
+              <td>2&times; Crampon</td>
+              <td>
+                <div>1&times; iron ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>10</td>
+              <td>2 gp</td>
+            </tr>
+            <tr>
+              <td>Hammer</td>
+              <td>
+                <div>1&times; iron ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+              <td>2 gp</td>
+            </tr>
+            <tr>
+              <td>Hammer, sledge</td>
+              <td>
+                <div>3&times; iron ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>10</td>
+              <td>2 gp</td>
+            </tr>
+            <tr>
+              <td>Helmet</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>8</td>
+              <td>4</td>
+              <td>12</td>
+              <td>1 gp</td>
+            </tr>
+            <tr>
+              <td>4&times; Horseshoe</td>
+              <td>
+                <div>2&times; ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>10</td>
+              <td>5 gp</td>
+            </tr>
+            <tr>
+              <td>10&times; Nail</td>
+              <td>
+                <div>2&times; iron ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>8</td>
+              <td>1 gp</td>
+            </tr>
+            <tr>
+              <td>20&times; Piton</td>
+              <td>
+                <div>1&times; iron ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>8</td>
+              <td>1 gp</td>
+            </tr>
+            <tr>
+              <td>Pickaxe</td>
+              <td>
+                <div>2&times; iron ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>10</td>
+              <td>2 sp</td>
+            </tr>
+            <tr>
+              <td>Pot, iron</td>
+              <td>
+                <div>1&times; iron ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+              <td>2 gp</td>
+            </tr>
+            <tr>
+              <td>Ram</td>
+              <td>
+                <div>8&times; iron ingot</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>8</td>
+              <td>4 gp</td>
+            </tr>
+            <tr>
+              <td>Saw</td>
+              <td>
+                <div>1&times; iron ingot</div>
+                <div>1&times; branch</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+              <td>5 gp</td>
+            </tr>
+            <tr>
+              <td>Skillet, iron</td>
+              <td>
+                <div>1&times; iron ingot</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>9</td>
+              <td>2 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Crafting Modifiers">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Modifier</td>
+              <td>DC</td>
+              <td>Weapon Effect</td>
+              <td>Armor Effect</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aerodynamic</td>
+              <td>+4</td>
+              <td>
+                The weapon gains the Thrown (10/30) property if it doesn't have
+                the Thrown property. If it has the Thrown property, the range
+                increases by 10/30 feet instead.
+              </td>
+              <td>
+                Your falling speed increases to 520 feet per round while wearing
+                this armor.
+              </td>
+            </tr>
+            <tr>
+              <td>Dwarven</td>
+              <td>+4</td>
+              <td>
+                A weapon with the light property forged from it loses the light
+                property. If the weapon didn't have the light property, it gains
+                the heavy property.
+              </td>
+              <td>
+                If an Effect moves you against your will along the ground while
+                wearing this armor, you can use your Reaction to reduce the
+                distance you are moved by up to 10 feet. The weight of the armor
+                is increased by 50%.
+              </td>
+            </tr>
+            <tr>
+              <td>Elven</td>
+              <td>+5</td>
+              <td>
+                If the weapon didn't have the massive property, it gains the
+                finesse property.
+              </td>
+              <td>
+                You are considered proficient with this armor even if you lack
+                proficiency.
+              </td>
+            </tr>
+            <tr>
+              <td>Fragile</td>
+              <td>-3</td>
+              <td>
+                A Fragile weapon breaks on an attack roll of 1 against an
+                armored target (a target wearing armor or with the natural armor
+                property) if that armor doesn't have the Fragile property.
+              </td>
+              <td>
+                A Fragile set of armor is destroyed when you take a critical
+                strike from a creature wielding a weapon without the Fragile
+                property.
+              </td>
+            </tr>
+            <tr>
+              <td>Hardened</td>
+              <td>+4</td>
+              <td>The weapon's Quality Die when maintained becomes a d12.</td>
+              <td>The armor's Quality Die when maintained becomes a d12.</td>
+            </tr>
+            <tr>
+              <td>Masterwork</td>
+              <td>+6</td>
+              <td>
+                A Masterwork weapon gains +1 to attack rolls. Removes the
+                fragile property if present.
+              </td>
+              <td>
+                A set of Masterwork armor reduces all bludgeoning, piercing and
+                slashing damage you take by an amount equal to the blacksmith's
+                proficiency bonus. Removes the fragile property if present.
+              </td>
+            </tr>
+            <tr>
+              <td>Segmented</td>
+              <td>+4</td>
+              <td>-</td>
+              <td>The armor can be donned or doffed in half as much time.</td>
+            </tr>
+            <tr>
+              <td>Slotted</td>
+              <td>+2</td>
+              <td>
+                This weapon can hold 1 magical gem crafted by an Enchanter.
+              </td>
+              <td>This armor can hold 1 magical gem crafted by Enchanter.</td>
+            </tr>
+            <tr>
+              <td>Spiked</td>
+              <td>+4</td>
+              <td>-</td>
+              <td>
+                Attackers that strike you with unarmed strikes or natural
+                weapons take 1d4 piercing damage. A creature that ends its turn
+                while grappling you takes 1d4 piercing damage.
+              </td>
+            </tr>
+          </tbody>
+        </nz-table>
+
+        Masterwork: Failing a crafting roll for Masterwork doesn't cause a
+        failure, but the resulting weapon is only a Masterwork if all crafting
+        rolls that succeed pass the DC of Masterwork. An item is automatically
+        masterwork if every roll qualified for a Masterwork version.
+      </nz-tab>
+      <nz-tab nzTitle="Material Modifiers">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Metal</td>
+              <td>DC</td>
+              <td>Weapon Effect</td>
+              <td>Armor Effect</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Adamantine</td>
+              <td>+7</td>
+              <td>
+                The weapon deals double damage against objects and structures,
+                and is considered magical when used to attack a construct.
+              </td>
+              <td>
+                While you're wearing it, any critical hit against you becomes a
+                normal hit.
+              </td>
+            </tr>
+            <tr>
+              <td>Bronze</td>
+              <td>-3</td>
+              <td>
+                <div>
+                  Weapons forged from Bronze are inferior, having -1 to attack
+                  and damage rolls. Gains the Fragile property.
+                </div>
+
+                <div>
+                  A Fragile weapon breaks on an attack roll of 1 against an
+                  armored target (a target wearing armor or with the natural
+                  armor property) if that armor doesn't have the Fragile
+                  property
+                </div>
+              </td>
+              <td>
+                <div>
+                  Armor forged from bronze is inferior, having a -1 penalty to
+                  its AC. Gains the Fragile property.
+                </div>
+                <div>
+                  A Fragile set of armor is destroyed when you take a critical
+                  strike from a creature wielding a weapon without the Fragile
+                  property
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Cold Iron</td>
+              <td>+2</td>
+              <td>
+                The weapon is considered magical when used to attack a celestial
+                or fey.
+              </td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Dragonsteel</td>
+              <td>+6</td>
+              <td>
+                A weapon forged from dragonsteel deals an extra 1d4 damage of
+                the dragon's type on hit.
+              </td>
+              <td>
+                Wearing armor forged from dragonsteel grants resistance to the
+                dragon's type.
+              </td>
+            </tr>
+            <tr>
+              <td>Mithral</td>
+              <td>+5</td>
+              <td>
+                A weapon with the heavy property forged from it loses the heavy
+                property. If the weapon didn't have the heavy property, it gains
+                the light property. The DC of an Enchanter applying an
+                Enchantment to it is reduced by 4, and it always counts has
+                having 1 common essence of any type as part of the craft.
+              </td>
+              <td>
+                If the armor normally imposes disadvantage on Dexterity
+                (Stealth) checks or has a Strength requirement, the mithral
+                version of the armor doesn't. The DC of an Enchanter applying an
+                Enchantment to it is reduced by 4, and it always counts has
+                having 1 common essence of any type as part of the craft.
+              </td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Cooking">
+    <div>
+      <div>
+        Adventures need to eat. While some are content to eat the same stale old
+        rations, some prefer to apply their skills to be kept well fed... even
+        in the depths of a dungeon where fresh ingredients can be... strange.
+      </div>
+      <div>
+        Not only can someone with talent produce tasty treats, but being well
+        fed can have a variety of benefits... particularly when eating correctly
+        prepared magical ingredients.
+      </div>
+    </div>
+
+    <h5>Related Tool & Ability Score</h5>
+    <div>
+      Cooking works using cook's utensils. Attempting to craft a meal without
+      these will almost always be made with disadvantage, and proficiency with
+      these allows you to add your proficiency to any cooking crafting roll.
+      Cooking uses your Wisdom modifier.
+    </div>
+
+    <h5>Duration</h5>
+    <div>
+      The duration a meal remains edible depends on the type of meal made. A
+      feast must be consumed within an hour, a snack lasts for 1 day, and
+      rations lasts 1 month.
+    </div>
+
+    <h5>Ingredients</h5>
+    <div>
+      The materials for cooking are fresh ingredients and supplies. A fresh
+      ingredient is something you harvest that can increase the quality of your
+      food and sometimes provide supernatural boosts beyond mere satiation.
+      Staples include seasonings, spices, flour or even turnips! Foods that last
+      awhile can be cooked into perfectly fine meals, but have less benefits
+      than eating a good meal. Some ingredients additionally have the exotic
+      property, and may confer special effects.
+    </div>
+
+    <h6>Ingredient Expiration</h6>
+    <div>
+      <div>
+        Normal Ingredients expire very quickly, and must be used within 24 hours
+        of being harvested or they become unusable. Preserved rations would fall
+        into the staples category and cannot typically be used to cook anything
+        besides basic meals.
+      </div>
+      <div>
+        The ability to gain any sort of magical benefit is linked to its
+        freshness; even well prepared preserved foods provide only the benefit
+        of a Basic Meal (which is a satisfying and good tasting meal, but its
+        benefits are not otherwise magical).
+      </div>
+      <div>
+        Unlike Fresh Ingredients, Staples last significantly longer and do not
+        need to have their expiration tracked for the purposes of this system.
+      </div>
+    </div>
+
+    <h6>Satiation</h6>
+    <div>
+      The magical benefits you get consuming rare and magical foods cannot be
+      gained again until 24 hours have passed for any particular food. When
+      combined with the ingredient expiration above, this typically means that
+      any ingredient collected is only good for a single meal; this is
+      intentional. You can harvest more if you wish, but cooking naturally is a
+      profession of fleeting achievement and fickle opportunity.
+    </div>
+
+    <h5>Crafting Roll</h5>
+    <div>
+      <div>
+        Putting that together means that when you would like to create a meal,
+        your crafting roll is as follows:
+      </div>
+      <div>
+        <strong>Cooking Modifier =</strong> your Cook's Utensils modifier
+      </div>
+      <h6>Success and Failure</h6>
+      <div>
+        For cooking, all crafting rolls must be made consequetively. Make all
+        checks listed for the items. If you succeed a greater number of times
+        than you fail, the meal is successfully completed, otherwise, it is
+        inedible and all ingrediants are lost.
+      </div>
+    </div>
+
+    <h5>Exotic Ingredients</h5>
+    <div>
+      <div>
+        While standard meals are made from a selection of ingredient types and
+        generally a seasoning, exotic ingredients have specialized effects. When
+        making a meal from these ingredients, the meal's effect is a combination
+        of the effect of the exotic ingredients added.
+      </div>
+      <div>
+        An Exotic Meal (meal cooked entirely from exotic ingredients) doesn't
+        need a recipe and has a crafting time of 1 hour, and the difficulty is
+        the difficulty of all the exotic ingredients added together, with 1
+        check needed per exotic ingredient added.
+      </div>
+      <div>
+        Exotic ingredients can be combined with a standard meal by adding the DC
+        of the standard meal to the combined difficulty of the exotic
+        ingredients added. This can cause unusual meals and frequently has
+        unattainably high difficulty to make it work, as adding random new
+        components to meals typically wrecks the taste.
+      </div>
+    </div>
+
+    <h5>Basic Cooking</h5>
+    <div>
+      <div>
+        While the rules present a handful of ways to use cooking for more exotic
+        ends, the most common application of cooking is just to produce an
+        edible meal during a long rest—something any adventuring group would
+        welcome. This is called a Quality Meal and provides greater benefit than
+        rations, though the benefits it provides are not magical, and merely
+        stem from it being a satisfying meal. You can do so by expending 1 fresh
+        ingredient of any type and 1 common supplies to feed up to 5 allies or
+        willing creatures, or by spending common supplies per creature being
+        cooked for. These materials must have been purchased within the last
+        week. Any creature, even one not proficient with cook's utensils can
+        take this action.
+      </div>
+      <div>
+        You and all willing creatures (willing to eat your cooking) regain an
+        additional Hit Die (up to their maximum). If you have proficiency with
+        cook's utensils, creatures regain additional Hit Dice equal to your
+        Proficiency bonus.
+      </div>
+    </div>
+
+    <nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+      <nz-tab nzTitle="Feasts">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Common Feast</td>
+              <td>
+                <div>1&times; common fresh ingredient</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>1</td>
+              <td>1</td>
+              <td>8</td>
+              <td>Common</td>
+              <td>3 gp</td>
+            </tr>
+            <tr>
+              <td>Enhancing Feast</td>
+              <td>
+                <div>1&times; uncommon fresh ingredient</div>
+                <div>1&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>Meat Feast</td>
+              <td>
+                <div>1&times; uncommon meat</div>
+                <div>1&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>What Doesn't Kill You... Feast</td>
+              <td>
+                <div>
+                  1&times; uncommon meat from a creature that can deal poison
+                  damage
+                </div>
+                <div>2&times; uncommon poisonous reagent</div>
+                <div>1&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Uncommon</td>
+              <td>11 gp</td>
+            </tr>
+            <tr>
+              <td>Seaworthy Bouillabaisse</td>
+              <td>
+                <div>
+                  1&times; uncommon meat from a creature with a higher swimming
+                  speed than walking speed
+                </div>
+                <div>2&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>12</td>
+              <td>Uncommon</td>
+              <td>25 gp</td>
+            </tr>
+            <tr>
+              <td>Wondrous Feast</td>
+              <td>
+                <div>1&times; rare fresh ingredient</div>
+                <div>1&times; uncommon reagent</div>
+                <div>1&times; luxuries</div>
+                <div>1&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>Hearty Meat Feast</td>
+              <td>
+                <div>1&times; rare meat</div>
+                <div>1&times; uncommon reagent</div>
+                <div>1&times; luxuries</div>
+                <div>1&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>Elementally Fortifying Feast</td>
+              <td>
+                <div>
+                  1&times; rare meat from a creature with an elemental
+                  resistance or immunity
+                </div>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>1&times; common primal essence</div>
+                <div>2&times; luxuries</div>
+                <div>2&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>16</td>
+              <td>Rare</td>
+              <td>35 gp</td>
+            </tr>
+            <tr>
+              <td>Heroes' Feast</td>
+              <td>
+                <div>4&times; rare curative reagent</div>
+                <div>2&times; uncommon divine essence</div>
+                <div>4&times; luxuries</div>
+                <div>4&times; supplies</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+              <td>Rare</td>
+              <td>150 gp</td>
+            </tr>
+            <tr>
+              <td>Superb Feast</td>
+              <td>
+                <div>1&times; very rare fresh ingredient</div>
+                <div>1&times; rare reagent</div>
+                <div>2&times; luxuries</div>
+                <div>2&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+              <td>Very Rare</td>
+              <td>30 gp</td>
+            </tr>
+            <tr>
+              <td>Superb Meat Feast</td>
+              <td>
+                <div>1&times; very rare meat</div>
+                <div>1&times; rare reagent</div>
+                <div>2&times; luxuries</div>
+                <div>2&times; special ingredients</div>
+                <div>2&times; supplies</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+              <td>Very Rare</td>
+              <td>30 gp</td>
+            </tr>
+            <tr>
+              <td>Legendary Feast</td>
+              <td>
+                <div>1&times; legendary fresh ingredient</div>
+                <div>1&times; very rare reagent</div>
+                <div>3&times; luxuries</div>
+                <div>3&times; special ingredients</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+              <td>Legendary</td>
+              <td>300 gp</td>
+            </tr>
+            <tr>
+              <td>Legendary Meat Feast</td>
+              <td>
+                <div>1&times; legendary meat</div>
+                <div>1&times; very rare reagent</div>
+                <div>3&times; luxuries</div>
+                <div>3&times; special ingredients</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>20</td>
+              <td>Legendary</td>
+              <td>300 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+
+        <h6>Common Feast</h6>
+        <div>
+          <div>
+            Up to 5 creatures can consume this feast within an hour of it being
+            prepared. After consuming this hearty meal, you become satiated for
+            the next 24 hours. This is a hearty meal well surpassing the
+            benefits of normal meals or rations, and each creature that consumes
+            it regains an additional Hit Die during the next long rest.
+          </div>
+          <div>
+            If cooked by a creature with proficiency in cook's utensils,
+            creatures that consume this feast regain additional Hit Dice equal
+            to the cook's proficiency bonus during the next long rest instead.
+          </div>
+        </div>
+
+        <h6>Uncommon Feast</h6>
+        <div>
+          <div>
+            Up to 5 creatures can consume this feast within an hour of it being
+            prepared. After consuming this hearty meal, you become satiated for
+            the next 24 hours. You gain the benefits for a common feast, but can
+            gain additional benefits by trading in Hit Dice that would be gained
+            as part of your next long rest after consuming this meal. These Hit
+            Dice are consumed after calculating how many you would have after
+            the rest (including the benefits of the feast), but you can trade
+            Hit Dice in this way you would normally lose if you have more than
+            your maximum Hit Dice.
+          </div>
+          <div>
+            You can trade Hit Dice in this way up to a number equal to your
+            proficiency bonus. The benefits scale based on the rarity on the
+            feast.
+          </div>
+          <table>
+            <tr>
+              <th>Benefits (Enhancing/Wondrous/Superb/Legendary)</th>
+            </tr>
+            <tr>
+              <td>
+                Roll a [d4/d6/d8/d12] per Hit Die traded and gain temporary hit
+                points equal to the value rolled.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Trade three Hit Dice for an additional spell slot of
+                [1st/2nd/3rd/4th] level.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gain a point that can be expended like Inspiration by trading
+                [5/4/3/2] Hit Dice per point.
+              </td>
+            </tr>
+          </table>
+          <div>Any benefit from a feast fades after 24 hours.</div>
+        </div>
+
+        <h6>Meat Feast</h6>
+        <div>
+          <div>
+            Up to 5 creatures can consume this feast within an hour of it being
+            prepared. After consuming this hearty meal, you become satiated for
+            the next 24 hours. Consuming the essence of a properly prepared
+            creature of great power confers some of its power to you while
+            satiated by the feast.
+          </div>
+          <div>
+            You can add +1/+2/+3/+4 to ability checks and saving throws of the
+            prepared creatures highest stat (if multiple stats are tied, the
+            cook chooses which when preparing the meal). Alternatively, the cook
+            can bring forth exotic properties of the creature, conferring one
+            trait of the cooked animal to those that consume it as per the
+            following table (this replaces the benefit to ability checks and
+            saves):
+          </div>
+          <table>
+            <tr>
+              <th>Minimum Rarity</th>
+              <th>Creature Boon</th>
+            </tr>
+            <tr>
+              <td>Standard</td>
+              <td>Hold Breath, Keen Senses, Pounce, Stone Camouflage</td>
+            </tr>
+            <tr>
+              <td>Hearty</td>
+              <td>Amphibious, Web Walker</td>
+            </tr>
+            <tr>
+              <td>Superb</td>
+              <td>Pack Tactics, Spider Climb</td>
+            </tr>
+            <tr>
+              <td>Legendary</td>
+              <td>Magic Resistance, Regeneration, Shapechanger (mimic)</td>
+            </tr>
+          </table>
+          <div>
+            The details from the creature boon can be found on the creature stat
+            block. The cook must be aware of the creature's property to make the
+            meal imbue that property, and the GM may adjust the property in
+            cases where it would not work for players or be too powerful as
+            written. At the GM's discretion, any ability can be added to this
+            list.
+          </div>
+        </div>
+
+        <h6>Elementally Fortifying Feast</h6>
+        <div>
+          <div>
+            Up to 5 creatures can consume this feast within an hour of it being
+            prepared. After consuming this hearty meal, you become satiated for
+            the next 24 hours. The magical properties of the meal confer the
+            following special benefits:
+          </div>
+          <table>
+            <tr>
+              <th>Element</th>
+              <th>Benefit</th>
+            </tr>
+            <tr>
+              <td>Cold</td>
+              <td>
+                Advantage on saves against cold climates and resistance to cold
+                damage.
+              </td>
+            </tr>
+            <tr>
+              <td>Fire</td>
+              <td>
+                Advantage on saves against hot climates and resistance to fire
+                damage.
+              </td>
+            </tr>
+            <tr>
+              <td>Lightning</td>
+              <td>
+                Advantage on Constituation saving throws against the stunned
+                condition and resistance to lightning damage
+              </td>
+            </tr>
+          </table>
+          <div>
+            These benefits fade after 24 hours. You can't gain the benefits of
+            another feast until these benefits fade and you are no longer
+            satiated.
+          </div>
+        </div>
+
+        <h6>Seaworthy Bouillabaisse</h6>
+        <div>
+          <div>
+            Up to 5 creatures can consume this feast within an hour of it being
+            prepared. After consuming this hearty meal, you become satiated for
+            the next 24 hours. The magical properties of the meal grant you
+            immunity to sea sickness as well as advantage on Dexterity or
+            Constitution saving throws involving the motion of sea vessels.
+          </div>
+          <div>
+            Additionally, if you do not have proficiency in Water Vehicles, you
+            can add half your proficiency bonus (rounded down) to any check
+            involving them for the duration.
+          </div>
+        </div>
+
+        <h6>Heroes' Feast</h6>
+        <div>
+          A magnificent spread of food. Cooking this has the effect of casting
+          the spell heroes' feast, except it's made of real food and not poofed
+          into existence by strange magics.
+        </div>
+
+        <h6>What Doesn't Kill You... Feast</h6>
+        <div>
+          <div>
+            Up to 5 creatures can consume this feast within an hour of it being
+            prepared. After consuming this dubious meal, you gain resistance to
+            poison damage, and gain advantage on saving throws against being
+            poisoned for 24 hours.
+          </div>
+          <div>
+            If the source of a poison saving throw is the same as the source of
+            the meat or poisonous reagent used to make the feast, the advantage
+            against being poisoned by that creature or effect lasts one week.
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Snacks">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Materials</td>
+              <td>Crafting Time (hours)</td>
+              <td>Checks</td>
+              <td>DC</td>
+              <td>Rarity</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5&times; Flame Breathing Jerky</td>
+              <td>
+                <div>
+                  1&times; uncommon or rarer meat from a creature that is immune
+                  to fire damage
+                </div>
+                <div>2&times; uncommon reactive reagent</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>6</td>
+              <td>3</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>25 gp</td>
+            </tr>
+            <tr>
+              <td>5&times; Mint Chew</td>
+              <td>
+                <div>2&times; uncommon curative reagent</div>
+                <div>1&times; special ingredients</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>14</td>
+              <td>Uncommon</td>
+              <td>10 gp</td>
+            </tr>
+            <tr>
+              <td>5&times; Morph Cookies</td>
+              <td>
+                <div>1&times; fresh ingredient from a shapechanger</div>
+                <div>1&times; luxuries</div>
+                <div>1&times; special ingredients</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>2</td>
+              <td>1</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>5&times; Seeing Sticks</td>
+              <td>
+                <div>
+                  1&times; fresh ingredient from a creature with blindsight,
+                  truesight, or tremorsense
+                </div>
+                <div>1&times; uncommon reactive reagent</div>
+                <div>1&times; luxuries</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>15</td>
+              <td>Uncommon</td>
+              <td>15 gp</td>
+            </tr>
+            <tr>
+              <td>5&times; Quickening Candies</td>
+              <td>
+                <div>1&times; luxuries</div>
+                <div>2&times; special ingredients</div>
+                <div>1&times; supplies</div>
+              </td>
+              <td>4</td>
+              <td>2</td>
+              <td>18</td>
+              <td>Rare</td>
+              <td>250 gp</td>
+            </tr>
+          </tbody>
+        </nz-table>
+
+        <h6>Flame Breathing Jerky</h6>
+        <div>
+          <div>
+            A tough jerky with exotic flavoring. Very spicy, uncomfortably so.
+            After a creature consumes this snack as an action, they gain the
+            following benefits for the next 10 minutes:
+          </div>
+          <ul>
+            <li>You can't be put to sleep by magical means.</li>
+            <li>You have disadvantage on Wisdom checks.</li>
+            <li>
+              You have disadvantage on Constitution saving throws to maintain
+              concentration on a spell.
+            </li>
+            <li>
+              You can use a bonus action to exhale fire at a target within 10
+              feet of you. The target must make a DC 13 Dexterity saving throw,
+              taking 2d6 fire damage on a failed save, or half as much damage on
+              a successful one.
+            </li>
+          </ul>
+          <div>
+            You can eat a number of pieces of this jerky equal to your
+            Constitution modifier per day.
+          </div>
+        </div>
+        <h6>Mint Chew</h6>
+        <div>
+          <div>
+            A chewy minty candy. You can pop one into your mouth as a bonus
+            action. While being chewed (for up to 10 minutes), you are energized
+            and can ignore the effects of up to 3 levels of Exhaustion for the
+            duration, and can't be put to sleep by magical means.
+          </div>
+          <div>
+            You can only gain this benefit once per day, after which consuming
+            additional pieces of the candy has no effect until you finish a long
+            rest.
+          </div>
+        </div>
+        <h6>Morph Cookies</h6>
+        <div>
+          <div>
+            Consuming one of these has the effects of casting alter self,
+            however you can't change the adaptation unless you consume another
+            cookie. This effect doesn't require concentration to maintain, and
+            can be extended by consuming an additional morph cookie.
+          </div>
+          <div>
+            If the ingredient came from a mimic, you can additionally transform
+            your appearance to creatures with a different basic shape than you,
+            though you remain the same size.
+          </div>
+        </div>
+        <h6>Seeing Sticks</h6>
+        <div>
+          <div>
+            A stick of hard tacky substance. You can pop one into your mouth as
+            a bonus action. While being sucked (for up to 10 minutes), you gain
+            expanded senses and have advantage on Wisdom (Perception) checks,
+            saving throws against Illusion spells, and Intelligence
+            (Investigation) checks to see through illusions, though because of
+            the bad taste inherent to the formulation, continuing to suck on the
+            seeing stick requires concentration, as if concentrating on a spell.
+          </div>
+          <div>
+            By adding the optional common supplies ingredient, they can be
+            sweetened, granting you advantage on Constitution saving throws made
+            to maintain your concentration against spitting them out; this
+            increases the DC of the recipe by 1.
+          </div>
+        </div>
+        <h6>Quickening Candies</h6>
+        <div>
+          A small hard candy ball, with extreme caffineated properties. When you
+          pop one of these into your mouth as a bonus action, you are under the
+          effect of haste for 1d4 rounds. You still suffer the normal effect of
+          haste ending when the effect ends.
+        </div>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Enchanting"></nz-tab>
+  <nz-tab nzTitle="Engineering"></nz-tab>
+  <nz-tab nzTitle="Leatherworking"></nz-tab>
+  <nz-tab nzTitle="Poisoncraft"></nz-tab>
+  <nz-tab nzTitle="Runecarving"></nz-tab>
+  <nz-tab nzTitle="Scribing"></nz-tab>
+  <nz-tab nzTitle="Tinkering"></nz-tab>
+  <nz-tab nzTitle="Whittling"></nz-tab>
+  <nz-tab nzTitle="Woodcarving"></nz-tab>
+  <nz-tab nzTitle="Minor Branches">
+    <nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+      <nz-tab nzTitle="Brewing"></nz-tab>
+      <nz-tab nzTitle="Carpentry"></nz-tab>
+      <nz-tab nzTitle="Cobbling"></nz-tab>
+      <nz-tab nzTitle="Glassblowing"></nz-tab>
+      <nz-tab nzTitle="Jewelcrafting"></nz-tab>
+      <nz-tab nzTitle="Masonry"></nz-tab>
+      <nz-tab nzTitle="Painting"></nz-tab>
+      <nz-tab nzTitle="Tailoring"></nz-tab>
+      <nz-tab nzTitle="Weaving"></nz-tab>
+    </nz-tabset>
+  </nz-tab>
+</nz-tabset>

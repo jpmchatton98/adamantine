@@ -13,6 +13,7 @@ import { BestiaryComponent } from 'src/components/bestiary/bestiary/bestiary.com
 import { CharacterBuilderComponent } from 'src/components/characters/builder/character-builder/character-builder.component';
 import { CharactersComponent } from 'src/components/characters/characters/characters.component';
 import { CharacterSheetComponent } from 'src/components/characters/sheet/character-sheet/character-sheet.component';
+import { CraftingComponent } from 'src/components/crafting/crafting.component';
 import { DatabaseComponent } from 'src/components/database/database.component';
 import { DmToolsComponent } from 'src/components/dm-tools/dm-tools.component';
 import { GeneralStoreComponent } from 'src/components/general-store/general-store.component';
@@ -153,6 +154,11 @@ const routes: Routes = [
   {
     path: 'dm-tools',
     component: DmToolsComponent,
+  },
+
+  {
+    path: 'crafting',
+    component: CraftingComponent,
   },
 
   {

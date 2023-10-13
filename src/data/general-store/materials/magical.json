@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Crystal Vial",
+    "cost": 10,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Alchemy"
+  },
+  {
+    "name": "Essence, common (arcane)",
+    "cost": 45,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, uncommon (arcane)",
+    "cost": 150,
+    "rarity": 2,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, rare (arcane)",
+    "cost": 700,
+    "rarity": 3,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, very rare (arcane)",
+    "cost": 7000,
+    "rarity": 4,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, legendary (arcane)",
+    "cost": 25000,
+    "rarity": 5,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, common (divine)",
+    "cost": 45,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, uncommon (divine)",
+    "cost": 150,
+    "rarity": 2,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, rare (divine)",
+    "cost": 700,
+    "rarity": 3,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, very rare (divine)",
+    "cost": 7000,
+    "rarity": 4,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, legendary (divine)",
+    "cost": 25000,
+    "rarity": 5,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, common (occult)",
+    "cost": 45,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, uncommon (occult)",
+    "cost": 150,
+    "rarity": 2,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, rare (occult)",
+    "cost": 700,
+    "rarity": 3,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, very rare (occult)",
+    "cost": 7000,
+    "rarity": 4,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, legendary (occult)",
+    "cost": 25000,
+    "rarity": 5,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, common (primal)",
+    "cost": 45,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, uncommon (primal)",
+    "cost": 150,
+    "rarity": 2,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, rare (primal)",
+    "cost": 700,
+    "rarity": 3,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, very rare (primal)",
+    "cost": 7000,
+    "rarity": 4,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, legendary (primal)",
+    "cost": 25000,
+    "rarity": 5,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, common (psionic)",
+    "cost": 45,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, uncommon (psionic)",
+    "cost": 150,
+    "rarity": 2,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, rare (psionic)",
+    "cost": 700,
+    "rarity": 3,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, very rare (psionic)",
+    "cost": 7000,
+    "rarity": 4,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Essence, legendary (psionic)",
+    "cost": 25000,
+    "rarity": 5,
+    "weight": 1,
+    "uses": "Alchemy, Enchanting, Scribing, Whittling"
+  },
+  {
+    "name": "Magical Ink, common",
+    "cost": 15,
+    "rarity": 1,
+    "weight": 0.1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Magical Ink, uncommon",
+    "cost": 40,
+    "rarity": 2,
+    "weight": 0.1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Magical Ink, rare",
+    "cost": 200,
+    "rarity": 3,
+    "weight": 0.1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Magical Ink, very rare",
+    "cost": 2000,
+    "rarity": 4,
+    "weight": 0.1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Magical Ink, legendary",
+    "cost": 5000,
+    "rarity": 5,
+    "weight": 0.1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Parchment, common",
+    "cost": 0.1,
+    "rarity": 1,
+    "weight": 1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Parchment, uncommon",
+    "cost": 40,
+    "rarity": 2,
+    "weight": 1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Parchment, rare",
+    "cost": 200,
+    "rarity": 3,
+    "weight": 1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Parchment, very rare",
+    "cost": 2000,
+    "rarity": 4,
+    "weight": 1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Parchment, legendary",
+    "cost": 5000,
+    "rarity": 5,
+    "weight": 1,
+    "uses": "Scribing"
+  },
+  {
+    "name": "Reagent, common (curative)",
+    "cost": 15,
+    "rarity": 1,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, uncommon (curative)",
+    "cost": 40,
+    "rarity": 2,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, rare (curative)",
+    "cost": 200,
+    "rarity": 3,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, very rare (curative)",
+    "cost": 2000,
+    "rarity": 4,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, legendary (curative)",
+    "cost": 5000,
+    "rarity": 5,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, common (poisonous)",
+    "cost": 15,
+    "rarity": 1,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, uncommon (poisonous)",
+    "cost": 40,
+    "rarity": 2,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, rare (poisonous)",
+    "cost": 200,
+    "rarity": 3,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, very rare (poisonous)",
+    "cost": 2000,
+    "rarity": 4,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, legendary (poisonous)",
+    "cost": 5000,
+    "rarity": 5,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, common (reactive)",
+    "cost": 15,
+    "rarity": 1,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, uncommon (reactive)",
+    "cost": 40,
+    "rarity": 2,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, rare (reactive)",
+    "cost": 200,
+    "rarity": 3,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, very rare (reactive)",
+    "cost": 2000,
+    "rarity": 4,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  },
+  {
+    "name": "Reagent, legendary (reactive)",
+    "cost": 5000,
+    "rarity": 5,
+    "weight": 0.2,
+    "uses": "Alchemy, Poisoncraft"
+  }
+]
