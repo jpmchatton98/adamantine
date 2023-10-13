@@ -1,0 +1,1493 @@
+<nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+  <nz-tab nzTitle="Brewing">
+    <div>
+      <div>
+        Brewing primarily the art of fermenting things into alcoholic
+        substances, most often forms of ales. While of little practical use, it
+        is an art of personal enthusiasm for many of the adventuring sorts and
+        layfolk of the world.
+      </div>
+      <div>
+        <strong>Brewing Modifier =</strong> your Brewer's Supplies modifier
+      </div>
+      <div>
+        In order to brew alcohol, you must have a sealable container, usually a
+        barrel, to brew in.
+      </div>
+    </div>
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Brewing Time (days)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Beer</td>
+          <td>
+            <div>1&times; supplies</div>
+            <div>water</div>
+          </td>
+          <td>3 - 14</td>
+          <td>2</td>
+          <td>12</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Mead</td>
+          <td>
+            <div>1&times; supplies</div>
+            <div>water</div>
+          </td>
+          <td>3 - 14</td>
+          <td>2</td>
+          <td>12</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Wine</td>
+          <td>
+            <div>1&times; special ingredients</div>
+            <div>water</div>
+          </td>
+          <td>30+</td>
+          <td>3</td>
+          <td>14</td>
+          <td>varies</td>
+        </tr>
+        <tr>
+          <td>Liquor</td>
+          <td>
+            <div>1&times; special ingredients</div>
+            <div>water</div>
+          </td>
+          <td>30+</td>
+          <td>3</td>
+          <td>16</td>
+          <td>varies</td>
+        </tr>
+        <tr>
+          <td>Dwarven Alcohol</td>
+          <td>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>12</td>
+          <td>20 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Carpentry">
+    <div>
+      <div>
+        Carpentry makes furniture and small-scale construction. Often used to
+        make simple mundane objects or modifications.
+      </div>
+      <div>
+        <strong>Carpentry Modifier =</strong> your Carpenter's Tools modifier
+      </div>
+    </div>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4&times; Chair</td>
+          <td>
+            <div>4&times; common branch</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Door</td>
+          <td>
+            <div>4&times; common branch</div>
+            <div>2&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>10</td>
+          <td>6 gp</td>
+        </tr>
+        <tr>
+          <td>Table</td>
+          <td>
+            <div>8&times; common branch</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>3 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Cobbling">
+    <div>
+      <div>
+        Cobbling is the art of making shoes and boots, typically from leather. A
+        narrow but occasionally useful art of crafting—after all, most
+        adventurers and common folk alike prefer to wear shoes. Often the best
+        route of making boots fit for magical enchantment.
+      </div>
+      <div>
+        <strong>Cobbling Modifier =</strong> your Cobbler's Tools modifier
+      </div>
+    </div>
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Boots</td>
+          <td>
+            <div>1&times; tanned leather</div>
+            <div>1&times; buckle</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>5 gp</td>
+        </tr>
+        <tr>
+          <td>Shoes, basic</td>
+          <td>
+            <div>8&times; leather scrap</div>
+            <div>1&times; buckle</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>9</td>
+          <td>2 gp</td>
+        </tr>
+        <tr>
+          <td>Shoes, nice</td>
+          <td>
+            <div>1&times; tanned leather</div>
+            <div>1&times; buckle</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>16</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Shoes, fancy</td>
+          <td>
+            <div>1&times; tanned leather</div>
+            <div>1&times; buckle</div>
+            <div>50 gp of metal scraps or gemstones</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>16</td>
+          <td>240 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Glassblowing">
+    <div>
+      <div>
+        Glassblowing is the art of working glass with blown air to create
+        bottles, vials, and small glass arts. Glassblowing typically requires
+        glassblowers tools and a source of great heat (generally a specific heat
+        source, or a forge, or a magical source).
+      </div>
+      <div>
+        <strong>Glassblowing Modifier =</strong> your Glassblower's Tools
+        modifier
+      </div>
+    </div>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bottle</td>
+          <td>
+            <div>1&times; glass</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>2 gp</td>
+        </tr>
+        <tr>
+          <td>Jug</td>
+          <td>
+            <div>2&times; glass</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>11</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Parts, fancy</td>
+          <td>
+            <div>1&times; glass</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>11</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Parts, esoteric</td>
+          <td>
+            <div>2&times; glass</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>15</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Vial</td>
+          <td>
+            <div>1&times; glass</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>9</td>
+          <td>1 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Jewelcrafting">
+    <div>
+      <div>
+        The art of making jewelry of all forms, from cutting gems, setting them,
+        or creating fine metal works.
+      </div>
+      <div>
+        <strong>Jewelcrafting Modifier =</strong> your Jeweler's Tools modifier
+        + your Whitesmith's Tools modifier
+      </div>
+    </div>
+
+    <h6>Cut Jewel</h6>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Cut</td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>&times;1.25</td>
+        </tr>
+        <tr>
+          <td>Exotic Cut</td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>&times;1.5</td>
+        </tr>
+      </tbody>
+    </nz-table>
+    If a check is failed by 5 or more, the gem shatters and the material
+    component is lost.
+
+    <h6>Jewelery</h6>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Amulet, plain</td>
+          <td>3&times; gold scrap</td>
+          <td>8</td>
+          <td>4</td>
+          <td>16</td>
+          <td>150 gp</td>
+        </tr>
+        <tr>
+          <td>Amulet, gold</td>
+          <td>
+            <div>4&times; gold scrap</div>
+            <div>50 gp worth of gemstones</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>19</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Amulet, platnum</td>
+          <td>
+            <div>4&times; platinum scrap</div>
+            <div>200 gp worth of gemstones</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>20</td>
+          <td>650 gp</td>
+        </tr>
+        <tr>
+          <td>Ring, silver</td>
+          <td>3&times; silver scrap</td>
+          <td>8</td>
+          <td>4</td>
+          <td>16</td>
+          <td>20 gp</td>
+        </tr>
+        <tr>
+          <td>Ring, gold</td>
+          <td>3&times; gold scrap</td>
+          <td>12</td>
+          <td>6</td>
+          <td>19</td>
+          <td>200 gp</td>
+        </tr>
+        <tr>
+          <td>Ring, platinum</td>
+          <td>3&times; platinum scrap</td>
+          <td>16</td>
+          <td>8</td>
+          <td>20</td>
+          <td>420 gp</td>
+        </tr>
+        <tr>
+          <td>Ring, socketed</td>
+          <td>3&times; silver scrap</td>
+          <td>8</td>
+          <td>4</td>
+          <td>19</td>
+          <td>45 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    <h6>Miscellaneous</h6>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Glasses, simple</td>
+          <td>
+            <div>1&times; metal scrap</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Glasses, fancy</td>
+          <td>
+            <div>1&times; silver scrap</div>
+            <div>1&times; esoteric parts</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>17</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Goggles</td>
+          <td>
+            <div>1&times; tanned leather</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>1 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Masonry">
+    <div>
+      <div>
+        Masonry is the art of working of stone. They can provide skilled labor
+        for large scale stoneworking projects, or create statues and small
+        stonecarvings.
+      </div>
+      <div><strong>Masonry Modifier =</strong> your Mason's Tools modifier</div>
+    </div>
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Statue, simple</td>
+          <td>
+            <div>1&times; stone</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>12</td>
+          <td>35 gp</td>
+        </tr>
+        <tr>
+          <td>Statue, fancy</td>
+          <td>
+            <div>1&times; stone</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>18</td>
+          <td>670 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Painting">
+    <div>
+      <div>
+        Painting is an artistic pursuit of making art and portraits, typically
+        on canvas. It can be used for a wide range of other purposes, such as
+        making signs, disguises, and illustrations. Some magic items require
+        valuable art as a basis.
+      </div>
+      <div>
+        <strong>Painting Modifier =</strong> your Painter's Supplies modifier
+      </div>
+    </div>
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Painting, simple</td>
+          <td>
+            <div>1&times; paint</div>
+            <div>1&times; canvas</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>8</td>
+          <td>4 sp</td>
+        </tr>
+        <tr>
+          <td>Painting, fancy</td>
+          <td>
+            <div>1&times; paint</div>
+            <div>1&times; canvas</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>15</td>
+          <td>150 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Poisoncraft">
+    <div>
+      <div>
+        A subdomain of alchemy, the profession of poisoncraft is often seen as
+        the "dark side" of Alchemy. While Alchemy often deals in poisonous
+        reagents, typically speaking they aim to tame the poison, channeling it
+        into useful effects. While capable of making crudely poisonous potions,
+        such things are generally considered failures to an alchemist. To a
+        poisoner, they are considered the art itself.
+      </div>
+      <div>
+        Poisoncraft shares Shelf Life and Reagents with Alchemy; for details
+        regarding those, see Alchemy.
+      </div>
+    </div>
+
+    <h5>Related Tool & Ability Score</h5>
+    <div>
+      <div>
+        Poisoncraft works using Poisoner's Kit. Attempting to craft a potion
+        without these will almost always be made with disadvantage, and
+        proficiency with these allows you to add your proficiency to any
+        poisoncraft crafting roll.
+      </div>
+    </div>
+    <h6>Applying the Poison</h6>
+    <div>
+      Applying an Injury poison to a weapon or a Contact poison to an object,
+      requires a poisoner's kit and proficiency with it. To attempt to apply the
+      poison without a kit, make a DC 15 Dexterity check, adding your
+      proficiency bonus if you are proficient with the poisoner's kit. On a
+      failure, the poison is not applied and you suffer the effects of the
+      poison.
+    </div>
+
+    <h5>Crafting Roll</h5>
+    <div>
+      <div>
+        Putting that together means that when you would like to create poison,
+        your crafting roll is as follows:
+      </div>
+      <div>
+        <strong>Poisoncraft Modifier =</strong> your Poisoner's Kit modifier
+      </div>
+    </div>
+    <h6>Poisoncraft Saving Throw</h6>
+    <div>
+      <div>
+        When a poison requires a saving throw, the following is the formula for
+        calculating the saving throw. The saving throw is calculated at the time
+        of creation based on the creators attributes and proficiency, and
+        doesn't change once it is created.
+      </div>
+      <div><strong>Poison DC =</strong> 8 + your Poisoner's Kit modifier</div>
+    </div>
+    <h6>Success and Failure</h6>
+    <div>
+      <div>
+        For Poisoncraft, after you make the crafting roll and succeed, mark your
+        progress on a crafting project. If you succeed, you make 2 hours of
+        progress toward the total crafting time (and have completed one of the
+        required checks for making an item). Checks for Poisoncraft do not need
+        to be immediately consecutive. Failure means that no progress is made
+        during that time. Once an item is started, even if no progress is made,
+        the components reserved for that item can only be recovered via salvage.
+      </div>
+      <div>
+        If you fail three times in a row, all progress and materials are lost
+        and can no longer be salvaged.
+      </div>
+    </div>
+
+    <div>
+      In order to craft a poison, you must have a sealable container made of
+      glass to craft it in. A poison that is very rare or rarer must be made in
+      a crystal vial.
+    </div>
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Contact Poison, simple</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Dizzying Touch</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+            <div>1&times; common psionic essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>45 gp</td>
+        </tr>
+        <tr>
+          <td>Ingested Poison, simple</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+          <td>Common</td>
+          <td>35 gp</td>
+        </tr>
+        <tr>
+          <td>Inhaled Poison, simple</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+            <div>1&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>60 gp</td>
+        </tr>
+        <tr>
+          <td>Injury Poison, simple</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Assassin's Blood</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>150 gp</td>
+        </tr>
+        <tr>
+          <td>Burning Wound</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>2&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Uncommon</td>
+          <td>150 gp</td>
+        </tr>
+        <tr>
+          <td>Contact Poison, potent</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Ingested Poison, potent</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>95 gp</td>
+        </tr>
+        <tr>
+          <td>Inhaled Poison, potent</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>140 gp</td>
+        </tr>
+        <tr>
+          <td>Injury Poison, potent</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Old Reliable</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>70 gp</td>
+        </tr>
+        <tr>
+          <td>Truth Serum</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon psionic essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Uncommon</td>
+          <td>150 gp</td>
+        </tr>
+        <tr>
+          <td>Withering Soul</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon occult essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Burnt Othur Fumes</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>500 gp</td>
+        </tr>
+        <tr>
+          <td>Drow Poison</td>
+          <td>
+            <div>2&times; rare poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Rare</td>
+          <td>200 gp</td>
+        </tr>
+        <tr>
+          <td>Essence of Ether</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>270 gp</td>
+        </tr>
+        <tr>
+          <td>Fainting Fumes</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>415 gp</td>
+        </tr>
+        <tr>
+          <td>Knockout Poison</td>
+          <td>
+            <div>3&times; rare poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>760 gp</td>
+        </tr>
+        <tr>
+          <td>Malice</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Oil of Taggit</td>
+          <td><div>3&times; rare poisonous reagent</div></td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>400 gp</td>
+        </tr>
+        <tr>
+          <td>Pale Tincture</td>
+          <td>
+            <div>2&times; rare poisonous reagent</div>
+            <div>1&times; uncommon occult essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Paralyzing Poison</td>
+          <td>
+            <div>2&times; rare poisonous reagent</div>
+            <div>2&times; uncommon poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>590 gp</td>
+        </tr>
+        <tr>
+          <td>Torpor</td>
+          <td>
+            <div>2&times; rare poisonous reagent</div>
+            <div>1&times; uncommon occult essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>600 gp</td>
+        </tr>
+        <tr>
+          <td>Veins of Tar</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; special ingredients</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>300 gp</td>
+        </tr>
+        <tr>
+          <td>Whispers of Madness</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; uncommon psionic essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>450 gp</td>
+        </tr>
+        <tr>
+          <td>Biza's Breath</td>
+          <td>
+            <div>2&times; very rare poisonous reagent</div>
+            <div>1&times; very rare reactive reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Very Rare</td>
+          <td>1000 gp</td>
+        </tr>
+        <tr>
+          <td>Injury Poison, grievous</td>
+          <td>
+            <div>1&times; very rare poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>Very Rare</td>
+          <td>2380 gp</td>
+        </tr>
+        <tr>
+          <td>Ivana's Whisper</td>
+          <td>
+            <div>2&times; very rare poisonous reagent</div>
+            <div>1&times; very rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Very Rare</td>
+          <td>1500 gp</td>
+        </tr>
+        <tr>
+          <td>Midnight Tears</td>
+          <td>
+            <div>1&times; very rare poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Very Rare</td>
+          <td>2300 gp</td>
+        </tr>
+        <tr>
+          <td>Slow Death</td>
+          <td>
+            <div>2&times; very rare poisonous reagent</div>
+            <div>2&times; very rare curative reagent</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>18</td>
+          <td>Very Rare</td>
+          <td>6800 gp</td>
+        </tr>
+        <tr>
+          <td>Endless Dreams</td>
+          <td>
+            <div>1&times; legendary poisonous reagent</div>
+            <div>2&times; very rare curative reagent</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>20</td>
+          <td>Legendary</td>
+          <td>11000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Tailoring">
+    <div>
+      <div>
+        The art of turning textiles into clothes and cloth-based accessories,
+        from utilitarian to ornate gowns. Ornate clothing sometimes serves as
+        the basis of magic gear.
+      </div>
+      <div>
+        <strong>Tailoring Modifier =</strong> your Tailor's Tools modifier
+      </div>
+    </div>
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bandana</td>
+          <td>
+            <div>5&times; cloth scrap</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>2 sp</td>
+        </tr>
+        <tr>
+          <td>Cape</td>
+          <td>
+            <div>1&times; cloth</div>
+            <div>4&times; cloth scrap</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>3 sp</td>
+        </tr>
+        <tr>
+          <td>Cloak</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>4 sp</td>
+        </tr>
+        <tr>
+          <td>Clothes, cold weather</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>4&times; cloth scrap</div>
+            <div>2&times; thread</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>10</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Clothes, common</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>5 sp</td>
+        </tr>
+        <tr>
+          <td>Clothes, costume</td>
+          <td>
+            <div>2&times; silk</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>12</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Clothes, fine</td>
+          <td>
+            <div>2&times; silk</div>
+            <div>2&times; thread</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>16</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>Clothes, hot weather</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>10</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Clothes, robes</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>10</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Clothes, traveler's</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>4&times; cloth scrap</div>
+            <div>2&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>9</td>
+          <td>2 gp</td>
+        </tr>
+        <tr>
+          <td>Clothes, vestments</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>10</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Gloves</td>
+          <td>
+            <div>5&times; cloth scrap</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>2 sp</td>
+        </tr>
+        <tr>
+          <td>Hat</td>
+          <td>
+            <div>5&times; cloth scrap</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>2 sp</td>
+        </tr>
+        <tr>
+          <td>Mantle</td>
+          <td>
+            <div>1&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+          <td>2 sp</td>
+        </tr>
+        <tr>
+          <td>Outfit, pride silk</td>
+          <td>
+            <div>2&times; pride silk</div>
+            <div>2&times; thread</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>18</td>
+          <td>500 gp</td>
+        </tr>
+        <tr>
+          <td>Outlaw's Duster</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>4&times; cloth scrap</div>
+            <div>1&times; thread</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>16</td>
+          <td>150 gp</td>
+        </tr>
+        <tr>
+          <td>Robe</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>4&times; cloth scrap</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>10</td>
+          <td>6 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Weaving">
+    <div>
+      <div>
+        Weaving allows you to create textiles from raw material. This is rarely
+        within the scope of what adventurers will pursue, but occasionally
+        useful. This largely exists as a background explaination for textiles.
+      </div>
+      <div>
+        <strong>Weaving Modifier =</strong> your Weaver's Tools modifier
+      </div>
+    </div>
+
+    <h6>Materials</h6>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cloth</td>
+          <td>
+            <div>(a) 1&times; cotton or (b) 1&times; wool</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+          <td>1 sp</td>
+        </tr>
+        <tr>
+          <td>20&times; Cloth Scrap</td>
+          <td>
+            <div>1&times; cloth</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+          <td>1 cp</td>
+        </tr>
+        <tr>
+          <td>Pride Silk</td>
+          <td>
+            <div>1&times; raw pride silk</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Rope, hempen (50 ft)</td>
+          <td>
+            <div>10&times; cotton</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Rope, silk (50 ft)</td>
+          <td>
+            <div>10&times; raw silk</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>Rope, pride silk (50 ft)</td>
+          <td>
+            <div>10&times; raw pride silk</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>25 gp</td>
+        </tr>
+        <tr>
+          <td>Silk</td>
+          <td>
+            <div>1&times; raw silk</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>String (10 ft)</td>
+          <td>
+            <div>1&times; cloth</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>1 sp</td>
+        </tr>
+        <tr>
+          <td>Thread</td>
+          <td>
+            <div>1&times; cloth scrap</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>1 sp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    <h6>Miscellaneous</h6>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Item</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bedroll</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>10</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Blanket</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td>5 sp</td>
+        </tr>
+        <tr>
+          <td>Cot</td>
+          <td>
+            <div>2&times; cloth</div>
+            <div>1&times; thread</div>
+            <div>4&times; wood scrap</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>12</td>
+          <td>3 gp</td>
+        </tr>
+        <tr>
+          <td>Tent</td>
+          <td>
+            <div>4&times; cloth</div>
+            <div>1&times; thread</div>
+            <div>2&times; common branch</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>14</td>
+          <td>2 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+</nz-tabset>

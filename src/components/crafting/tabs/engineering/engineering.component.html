@@ -1,0 +1,806 @@
+<div>
+  Engineering is an academic art of turning labor and materials into grand
+  creations. At its smallest scale, it is used for pratical applications like
+  siege equipment, but scales up to building bridges, buildings, and even ships.
+  An engineer is a deeply sought after resource for any lord or kingdom, but has
+  knowledge that savvy adventurers can put to great use on occasion.
+</div>
+
+<h5>Related Tool & Ability Score</h5>
+<div>
+  Engineering uses carpenter's tools and mason's tools. Checks can be made with
+  a substitute tool at your GM's discretion, but are made with disadvantage.
+</div>
+
+<h5>Materials</h5>
+<div>
+  Engineering uses materials in a larger bulk than most crafting branches. These
+  are represented in “Units” of materials. These can be directly harvested in
+  bulk, or represent collections of similar individual materials.
+</div>
+<h6>Bulk Materials</h6>
+<table>
+  <tr>
+    <th>Material</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Lumber</td>
+    <td>1 gp</td>
+  </tr>
+  <tr>
+    <td>Stone</td>
+    <td>1 gp</td>
+  </tr>
+  <tr>
+    <td>Cement</td>
+    <td>1 sp</td>
+  </tr>
+</table>
+
+<h6>Felling Trees</h6>
+<div>
+  <div>
+    You can convert trees that are at least 20 feet tall into units of lumber. A
+    20 foot tall tree will produce 1 unit of lumber, and an additional unit of
+    lumber for each 10 feet of tree height. At your GM's discrection, some trees
+    may not be suitable lumber. It takes 4 hours of work by a laborer to convert
+    trees to units of lumber.
+  </div>
+  <div>A unit of lumber can be converted to 10 common branches.</div>
+</div>
+
+<h6>Quarrying Stone</h6>
+<div>
+  <div>
+    Quarrying Stone is significantly harder and at the edge of what this system
+    attempts to define. As a rule of thumb, if a quarry that can produce stone
+    is available, 1 laborer can produce 1 unit of stone in 8 hours of hard labor
+    (1 unit per day). A laborer with a Strength ability score of 18 or higher
+    can produce twice as much stone in the same time period.
+  </div>
+  <div>
+    Setting up a quarry exceeds the scope of this system, but would take days or
+    weeks.
+  </div>
+</div>
+
+<h5>Crafting Roll</h5>
+<div>
+  <strong>Engineering Modifier =</strong> your Carpenter's Tools modifier + your
+  Mason's Tools modifier
+</div>
+<h6>Success and Failure</h6>
+<div>
+  <div>
+    After making a crafting roll, if you succeed, you make 2 hours of progress
+    toward the total crafting time (and have completed one of the required
+    checks for making an item).
+  </div>
+  <div>
+    Checks for Engineering do not need to be immediately consecutive. If you
+    fail three times in a row, all progress and materials are lost and can no
+    longer be salvaged. Failure means that no progress is made during that time.
+  </div>
+  <div>
+    Once an item is started, even if no progress is made, the components
+    reserved for that item can only be recovered via salvage.
+  </div>
+</div>
+
+<h5>Labor</h5>
+<div>
+  <div>
+    Unlike most crafting, Engineering can encompass large projects that require
+    additional laborers. A laborer can be any creature with a Strength of 12 or
+    higher that can understand you, lift and carry objects, and is willing to
+    work for you for the duration. You can be your own laborer if you fit the
+    requirements. A creature with a Strength of 18 or higher or proficiency with
+    carpenter's tools or mason's tools can count as a skilled laborer, and is
+    worth two laborers. Two creatures of insufficient Strength ability score but
+    with 8 or more Strength ability score working together can be counted as
+    single laborer, but only for 4 hours a day, after which more labor confers a
+    level of exhaustion.
+  </div>
+  <div>
+    Additional labor doesn't inherently speed a project up, though a GM may rule
+    that it is possible in a case by case basis. Checks can be made with
+    insufficient labor as long as you have half the labor pool needed, but each
+    crafting check takes 4 hours in this case.
+  </div>
+</div>
+
+<nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+  <nz-tab nzTitle="Bridges">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Size</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Laborers</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wooden Bridge, narrow</td>
+          <td>10 ft long &times; 5 ft wide</td>
+          <td>
+            <div>1&times; lumber</div>
+            <div>2&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Wooden Bridge, large</td>
+          <td>10 ft long &times; 10 ft wide</td>
+          <td>
+            <div>3&times; lumber</div>
+            <div>6&times; parts</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Wooden Bridge, huge</td>
+          <td>10 ft long &times; 15 ft wide</td>
+          <td>
+            <div>5&times; lumber</div>
+            <div>10&times; parts</div>
+          </td>
+          <td>16</td>
+          <td>2</td>
+          <td>8</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Stone Bridge, narrow</td>
+          <td>10 ft long &times; 5 ft wide</td>
+          <td>
+            <div>1&times; stone</div>
+            <div>1&times; cement</div>
+          </td>
+          <td>8</td>
+          <td>0</td>
+          <td>4</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Stone Bridge, large</td>
+          <td>10 ft long &times; 10 ft wide</td>
+          <td>
+            <div>3&times; stone</div>
+            <div>3&times; cement</div>
+          </td>
+          <td>16</td>
+          <td>1</td>
+          <td>8</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Stone Bridge, huge</td>
+          <td>10 ft long &times; 15 ft wide</td>
+          <td>
+            <div>5&times; stone</div>
+            <div>5&times; cement</div>
+          </td>
+          <td>32</td>
+          <td>2</td>
+          <td>16</td>
+          <td>18</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Buildings">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Size</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Laborers</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Shelter</td>
+          <td>10 ft &times; 10 ft</td>
+          <td>
+            <div>1&times; lumber</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Shack</td>
+          <td>15 ft &times; 15 ft</td>
+          <td>
+            <div>2&times; lumber</div>
+            <div>2&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>5</td>
+          <td>2</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Small House</td>
+          <td>25 ft &times; 25 ft</td>
+          <td>
+            <div>6&times; lumber</div>
+            <div>6&times; parts</div>
+          </td>
+          <td>8</td>
+          <td>5</td>
+          <td>4</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Small Temple</td>
+          <td>25 ft &times; 35 ft</td>
+          <td>
+            <div>8&times; lumber</div>
+            <div>2&times; stone</div>
+            <div>4&times; cement</div>
+            <div>12&times; parts</div>
+            <div>4&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>5</td>
+          <td>8</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Large House</td>
+          <td>35 ft &times; 35 ft</td>
+          <td>
+            <div>10&times; lumber</div>
+            <div>5&times; stone</div>
+            <div>5&times; cement</div>
+            <div>10&times; parts</div>
+            <div>5&times; fancy parts</div>
+          </td>
+          <td>24</td>
+          <td>10</td>
+          <td>12</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Mansion</td>
+          <td>50 ft &times; 50 ft</td>
+          <td>
+            <div>25&times; lumber</div>
+            <div>20&times; stone</div>
+            <div>20&times; cement</div>
+            <div>20&times; parts</div>
+            <div>5&times; fancy parts</div>
+          </td>
+          <td>80</td>
+          <td>10</td>
+          <td>40</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Cathedral</td>
+          <td>50 ft &times; 100 ft</td>
+          <td>
+            <div>50&times; lumber</div>
+            <div>50&times; stone</div>
+            <div>20&times; cement</div>
+            <div>20&times; parts</div>
+            <div>10&times; fancy parts</div>
+            <div>2&times; esoteric parts</div>
+          </td>
+          <td>160</td>
+          <td>10</td>
+          <td>80</td>
+          <td>19</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Fortifications">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Size</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Laborers</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Battlement, stone</td>
+          <td>10 ft long &times; 15 ft wide &times; 20 ft tall</td>
+          <td>
+            <div>5&times; stone</div>
+            <div>5&times; cement</div>
+          </td>
+          <td>24</td>
+          <td>2</td>
+          <td>12</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Battlement, wood</td>
+          <td>10 ft long &times; 15 ft wide &times; 20 ft tall</td>
+          <td>
+            <div>5&times; lumber</div>
+            <div>4&times; parts</div>
+            <div>4&times; metal scrap</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>2</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Tower, stone</td>
+          <td>20 ft long &times; 20 ft wide &times; 40 ft tall</td>
+          <td>
+            <div>8&times; stone</div>
+            <div>8&times; cement</div>
+          </td>
+          <td>32</td>
+          <td>3</td>
+          <td>16</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Tower, wood</td>
+          <td>20 ft long &times; 20 ft wide &times; 40 ft tall</td>
+          <td>
+            <div>8&times; lumber</div>
+            <div>5&times; parts</div>
+          </td>
+          <td>16</td>
+          <td>3</td>
+          <td>8</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Wall, stone</td>
+          <td>10 ft long &times; 10 ft wide &times; 10 ft tall</td>
+          <td>
+            <div>1&times; stone</div>
+            <div>1&times; cement</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Wall, wood</td>
+          <td>10 ft long &times; 10 ft wide &times; 10 ft tall</td>
+          <td><div>2&times; lumber</div></td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Siege Weapons">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Size</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Laborers</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ballista</td>
+          <td>Large</td>
+          <td>
+            <div>2&times; lumber</div>
+            <div>4&times; quality branch</div>
+            <div>10&times; parts</div>
+            <div>5&times; rope</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Cannon</td>
+          <td>Large</td>
+          <td>
+            <div>1&times; lumber</div>
+            <div>10&times; parts</div>
+            <div>2&times; fancy parts</div>
+            <div>10&times; ingot</div>
+          </td>
+          <td>16</td>
+          <td>1</td>
+          <td>8</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Catapult</td>
+          <td>Large</td>
+          <td>
+            <div>4&times; lumber</div>
+            <div>4&times; quality branch</div>
+            <div>20&times; parts</div>
+            <div>2&times; fancy parts</div>
+            <div>4&times; rope</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Ram</td>
+          <td>Large</td>
+          <td>
+            <div>4&times; lumber</div>
+            <div>10&times; rawhide</div>
+            <div>10&times; parts</div>
+            <div>2&times; rope</div>
+            <div>2&times; ingot</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Trebuchet</td>
+          <td>Huge</td>
+          <td>
+            <div>8&times; lumber</div>
+            <div>20&times; parts</div>
+            <div>2&times; fancy parts</div>
+            <div>10&times; rope</div>
+          </td>
+          <td>16</td>
+          <td>2</td>
+          <td>8</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Siege Tower</td>
+          <td>Gargantuan</td>
+          <td>
+            <div>10&times; lumber</div>
+            <div>20&times; parts</div>
+            <div>10&times; rope</div>
+          </td>
+          <td>8</td>
+          <td>3</td>
+          <td>4</td>
+          <td>18</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Ships">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Size</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Laborers</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Canoe</td>
+          <td>Large</td>
+          <td>
+            <div>3&times; lumber</div>
+            <div>8&times; parts</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Rowboat</td>
+          <td>Large</td>
+          <td>
+            <div>3&times; lumber</div>
+            <div>8&times; parts</div>
+          </td>
+          <td>8</td>
+          <td>1</td>
+          <td>4</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Galley</td>
+          <td>130 ft long &times; 20 ft wide</td>
+          <td>
+            <div>100&times; lumber</div>
+            <div>20&times; quality branch</div>
+            <div>100&times; parts</div>
+            <div>10&times; fancy parts</div>
+            <div>12&times; rope</div>
+          </td>
+          <td>160</td>
+          <td>10</td>
+          <td>80</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Galleon</td>
+          <td>130 ft long &times; 30 ft wide</td>
+          <td>
+            <div>150&times; lumber</div>
+            <div>30&times; quality branch</div>
+            <div>100&times; parts</div>
+            <div>25&times; fancy parts</div>
+            <div>50&times; rope</div>
+          </td>
+          <td>240</td>
+          <td>10</td>
+          <td>120</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Keelboat</td>
+          <td>40 ft long &times; 15 ft wide</td>
+          <td>
+            <div>20&times; lumber</div>
+            <div>20&times; parts</div>
+            <div>5&times; fancy parts</div>
+            <div>10&times; rawhide</div>
+            <div>4&times; rope</div>
+          </td>
+          <td>40</td>
+          <td>6</td>
+          <td>15</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Longboat</td>
+          <td>100 ft long &times; 15 ft wide</td>
+          <td>
+            <div>40&times; lumber</div>
+            <div>10&times; quality branch</div>
+            <div>100&times; parts</div>
+            <div>5&times; fancy parts</div>
+            <div>10&times; rope</div>
+          </td>
+          <td>80</td>
+          <td>10</td>
+          <td>40</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Schooner</td>
+          <td>85 ft long &times; 20 ft wide</td>
+          <td>
+            <div>60&times; lumber</div>
+            <div>10&times; quality branch</div>
+            <div>100&times; parts</div>
+            <div>10&times; fancy parts</div>
+            <div>40&times; rope</div>
+          </td>
+          <td>80</td>
+          <td>10</td>
+          <td>40</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Sloop</td>
+          <td>60 ft long &times; 15 ft wide</td>
+          <td>
+            <div>30&times; lumber</div>
+            <div>10&times; quality branch</div>
+            <div>100&times; parts</div>
+            <div>5&times; fancy parts</div>
+            <div>15&times; rope</div>
+          </td>
+          <td>60</td>
+          <td>10</td>
+          <td>30</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Warship, galleon</td>
+          <td>130 ft long &times; 30 ft wide</td>
+          <td>
+            <div>1&times; galleon</div>
+            <div>32&times; cannon</div>
+          </td>
+          <td>40</td>
+          <td>10</td>
+          <td>20</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Warship, schooner</td>
+          <td>85 ft long &times; 20 ft wide</td>
+          <td>
+            <div>1&times; schooner</div>
+            <div>18&times; cannon</div>
+          </td>
+          <td>30</td>
+          <td>10</td>
+          <td>15</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Warship, sloop</td>
+          <td>60 ft long &times; 15 ft wide</td>
+          <td>
+            <div>1&times; sloop</div>
+            <div>14&times; cannon</div>
+          </td>
+          <td>24</td>
+          <td>10</td>
+          <td>12</td>
+          <td>17</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Vehicles">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Size</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Laborers</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Carriage</td>
+          <td>Large</td>
+          <td>
+            <div>3&times; lumber</div>
+            <div>2&times; quality branch</div>
+            <div>1&times; tanned leather</div>
+            <div>5&times; parts</div>
+            <div>2&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>1</td>
+          <td>8</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Cart</td>
+          <td>Large</td>
+          <td>
+            <div>2&times; lumber</div>
+            <div>4&times; leather scrap</div>
+            <div>4&times; metal scrap</div>
+            <div>2&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Chariot</td>
+          <td>Large</td>
+          <td>
+            <div>2&times; lumber</div>
+            <div>2&times; quality branch</div>
+            <div>2&times; tanned leather</div>
+            <div>4&times; parts</div>
+            <div>2&times; fancy parts</div>
+          </td>
+          <td>20</td>
+          <td>1</td>
+          <td>10</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Handcart</td>
+          <td>Large</td>
+          <td>
+            <div>2&times; lumber</div>
+            <div>2&times; leather scrap</div>
+            <div>2&times; metal scrap</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Sled</td>
+          <td>Medium</td>
+          <td>
+            <div>1&times; lumber</div>
+            <div>2&times; common branch</div>
+            <div>2&times; parts</div>
+            <div>4&times; leather scrap</div>
+          </td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Wagon</td>
+          <td>Huge</td>
+          <td>
+            <div>3&times; lumber</div>
+            <div>2&times; quality branch</div>
+            <div>4&times; parts</div>
+            <div>4&times; rawhide</div>
+          </td>
+          <td>10</td>
+          <td>1</td>
+          <td>5</td>
+          <td>14</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+</nz-tabset>

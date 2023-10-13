@@ -1,0 +1,784 @@
+<div>
+  Woodcarving is the branch of crafting concerned with creating objects from
+  wood, primarily working with branches to carve bows, musical instruments, and
+  some simple armor. A simple branch of crafting, it provides many of an
+  adventurer's common necessities, particularly for those with more ranged
+  styles. A good woodcarver never fears running out of arrows, and can find
+  their materials quite readily.
+</div>
+
+<h5>Related Tool & Ability Score</h5>
+<div>
+  Woodcarving works using woodcarver's tools. Attempting to craft items with
+  Woodcarving without these will almost always be made with disadvantage, and
+  proficiency with these allows you to add your proficiency in them to any
+  Woodcarving crafting roll.
+</div>
+
+<h5>Materials: Wood</h5>
+<div>
+  Woodcarving is a bit more straight forward than other types of crafting in
+  that it primarily has only category of material: wood. This can come in
+  several different form factors, but is measured in branches, consistent pieces
+  of useful wood.
+</div>
+
+<h5>Crafting Roll</h5>
+<div>
+  <div>
+    Putting that together means that when you would like to make an item, your
+    crafting roll is as follows:
+  </div>
+  <div>
+    <strong>Woodcarving Modifier =</strong> your Woodcarver's Tools modifier
+  </div>
+</div>
+
+<h6>Success and Failure</h6>
+<div>
+  <div>
+    For Woodworking, after you make the crafting roll and succeed, mark your
+    progress on a crafting project. If you succeed, you make 2 hours of progress
+    toward the total crafting time (and have completed one of the required
+    checks for making an item). Checks for Woodworking do not need to be
+    immediately consecutive. Failure means that no progress is made during that
+    time. Once an item is started, even if no progress is made, the components
+    reserved for that item.
+  </div>
+  <div>
+    If you fail three times in a row, all progress and materials are lost and
+    can no longer be salvaged.
+  </div>
+</div>
+
+<nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+  <nz-tab nzTitle="Ammunition">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10&times; Arrow</td>
+          <td>
+            <div>1&times; common branch</div>
+            <div>1&times; metal scrap</div>
+            <div>1&times; fletching</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>10&times; Heavy Arrow</td>
+          <td>
+            <div>1&times; quality branch</div>
+            <div>2&times; metal scrap</div>
+            <div>2&times; fletching</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>10&times; Bolt</td>
+          <td>
+            <div>1&times; common branch</div>
+            <div>1&times; metal scrap</div>
+            <div>1&times; fletching</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>10&times; Heavy Bolt</td>
+          <td>
+            <div>1&times; quality branch</div>
+            <div>2&times; metal scrap</div>
+            <div>2&times; fletching</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>10&times; Dart</td>
+          <td>
+            <div>2&times; wood scrap</div>
+            <div>1&times; metal scrap</div>
+            <div>1&times; fletching</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>10&times; Blowgun Needles</td>
+          <td>
+            <div>2&times; wood scrap</div>
+            <div>1&times; metal scrap</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Carved Branches">
+    <div>
+      <div>
+        Woodworkers can increase the rarity of a branch through expert carving
+        techniques. A wooden branch of higher quality produced through
+        woodcarving can't be used as the material to make a branch of even
+        higher rarity, but otherwise a carved branch serves as a branch of their
+        finished rarity for crafting (such as enchanting or other woodworking
+        items that call for a branch of that rarity).
+      </div>
+      <div>
+        Effectively, carving the branch can only increase the rarity of a branch
+        by one step.
+      </div>
+    </div>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Branch, quality</td>
+          <td>1&times; common branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>9</td>
+          <td>Common</td>
+          <td>2 gp</td>
+        </tr>
+        <tr>
+          <td>Branch, uncommon</td>
+          <td>1&times; quality branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>25 gp</td>
+        </tr>
+        <tr>
+          <td>Branch, rare</td>
+          <td>1&times; uncommon branch</td>
+          <td>6</td>
+          <td>3</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>70 gp</td>
+        </tr>
+        <tr>
+          <td>Branch, very rare</td>
+          <td>1&times; rare branch</td>
+          <td>12</td>
+          <td>6</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>800 gp</td>
+        </tr>
+        <tr>
+          <td>Branch, legendary</td>
+          <td>1&times; very rare branch</td>
+          <td>12</td>
+          <td>6</td>
+          <td>20</td>
+          <td>Legendary</td>
+          <td>2000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Instruments">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bass</td>
+          <td>
+            <div>5&times; quality branch</div>
+            <div>3&times; string</div>
+            <div>2&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Cello</td>
+          <td>
+            <div>4&times; quality branch</div>
+            <div>3&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Drum</td>
+          <td>
+            <div>4&times; common branch</div>
+            <div>2&times; rawhide</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Flute</td>
+          <td>1&times; quality branch</td>
+          <td>9</td>
+          <td>4</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Guitar, acoustic</td>
+          <td>
+            <div>2&times; quality branch</div>
+            <div>2&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Guitar, banjo</td>
+          <td>
+            <div>2&times; quality branch</div>
+            <div>2&times; string</div>
+            <div>1&times; fancy parts</div>
+            <div>1&times; rawhide</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Guitar, ukelele</td>
+          <td>
+            <div>1&times; quality branch</div>
+            <div>1&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Horn</td>
+          <td>1&times; wood scrap</td>
+          <td>2</td>
+          <td>1</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Lute</td>
+          <td>
+            <div>2&times; quality branch</div>
+            <div>2&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Lyre</td>
+          <td>
+            <div>2&times; quality branch</div>
+            <div>2&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>10</td>
+          <td>5</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Maracas</td>
+          <td>
+            <div>2&times; common branch</div>
+            <div>2&times; wood scrap</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Pan Flute</td>
+          <td>1&times; quality branch</td>
+          <td>8</td>
+          <td>4</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>Tambourine</td>
+          <td>
+            <div>2&times; common branch</div>
+            <div>1&times; metal scrap</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>Viola</td>
+          <td>
+            <div>3&times; quality branch</div>
+            <div>2&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Violin</td>
+          <td>
+            <div>2&times; quality branch</div>
+            <div>2&times; string</div>
+            <div>1&times; fancy parts</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>14</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Shields">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Heater Shield</td>
+          <td>
+            <div>4&times; common branch</div>
+            <div>1&times; metal scrap</div>
+            <div>1&times; leather scrap</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Kite Shield</td>
+          <td>
+            <div>6&times; common branch</div>
+            <div>2&times; metal scrap</div>
+            <div>2&times; leather scrap</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>11</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Weapons">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Javelin</td>
+          <td>1&times; common branch</td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Quarterstaff</td>
+          <td>1&times; common branch</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Stake</td>
+          <td>1&times; wood scrap</td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Switch</td>
+          <td>1&times; common branch</td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Terbutje</td>
+          <td>
+            <div>1&times; common branch</div>
+            <div>1&times; metal scrap</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>Atltal</td>
+          <td>1&times; common branch</td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Shortbow</td>
+          <td>
+            <div>1&times; common branch</div>
+            <div>1&times; leather scrap</div>
+            <div>1&times; string</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Baton</td>
+          <td>1&times; quality branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Knobkerrie</td>
+          <td>1&times; quality branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Longbow</td>
+          <td>
+            <div>1&times; quality branch</div>
+            <div>1&times; leather scrap</div>
+            <div>1&times; string</div>
+          </td>
+          <td>14</td>
+          <td>7</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Bo Staff</td>
+          <td>1&times; uncommon branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Boomerang</td>
+          <td>1&times; uncommon branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Nunchaku</td>
+          <td>
+            <div>2&times; uncommon branch</div>
+            <div>1&times; chain</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Tonfa</td>
+          <td>1&times; uncommon branch</td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Tonfa, spiked</td>
+          <td>
+            <div>1&times; uncommon branch</div>
+            <div>1&times; metal scrap</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Longbow, composite</td>
+          <td>
+            <div>1&times; uncommon branch</div>
+            <div>1&times; leather scrap</div>
+            <div>1&times; string</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>24</td>
+          <td>12</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Shortbow, composite</td>
+          <td>
+            <div>1&times; uncommon branch</div>
+            <div>1&times; leather scrap</div>
+            <div>1&times; string</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>24</td>
+          <td>12</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Warbow</td>
+          <td>
+            <div>1&times; uncommon branch</div>
+            <div>2&times; leather scrap</div>
+            <div>1&times; string</div>
+          </td>
+          <td>24</td>
+          <td>12</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Miscellaneous">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5&times; wood scrap</td>
+          <td>1&times; branch</td>
+          <td>2</td>
+          <td>1</td>
+          <td>5</td>
+          <td>Common</td>
+          <td>1 sp</td>
+        </tr>
+        <tr>
+          <td>10-foot Pole</td>
+          <td>1&times; common branch</td>
+          <td>2</td>
+          <td>1</td>
+          <td>8</td>
+          <td>Common</td>
+          <td>5 cp</td>
+        </tr>
+        <tr>
+          <td>10-foot Pole, collapsing</td>
+          <td>
+            <div>1&times; common branch</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+          <td>Common</td>
+          <td>5 sp</td>
+        </tr>
+        <tr>
+          <td>Barrel</td>
+          <td>
+            <div>4&times; common branch</div>
+            <div>2&times; metal scrap</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>12</td>
+          <td>Common</td>
+          <td>2 gp</td>
+        </tr>
+        <tr>
+          <td>Figurine, common</td>
+          <td>1&times; common branch</td>
+          <td>8</td>
+          <td>4</td>
+          <td>8</td>
+          <td>Common</td>
+          <td>4 sp</td>
+        </tr>
+        <tr>
+          <td>Figurine, quality</td>
+          <td>1&times; quality branch</td>
+          <td>8</td>
+          <td>4</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Figurine, superb</td>
+          <td>1&times; uncommon branch</td>
+          <td>8</td>
+          <td>4</td>
+          <td>18</td>
+          <td>Rare</td>
+          <td>400 gp</td>
+        </tr>
+        <tr>
+          <td>Keg</td>
+          <td>
+            <div>2&times; common branch</div>
+            <div>1&times; metal scrap</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>1 gp</td>
+        </tr>
+        <tr>
+          <td>Ladder</td>
+          <td>
+            <div>2&times; common branch</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>Common</td>
+          <td>1 sp</td>
+        </tr>
+        <tr>
+          <td>Ladder, folding</td>
+          <td>
+            <div>2&times; common branch</div>
+            <div>1&times; parts</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>1 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Exotic Woods">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Wood</td>
+          <td>DC</td>
+          <td>Effect</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brittle</td>
+          <td>
+            This inferior type of wood causes weapons made of it to break when
+            rolling a 1, or armor made of it to break when you are struck by a
+            critical hit.
+          </td>
+          <td>-2</td>
+        </tr>
+        <tr>
+          <td>Featherlight</td>
+          <td>
+            This unique light but sturdy wood reduces the weight of things made
+            of it by half. Ammunition doesn't have disadvantage when attacking
+            at long range.
+          </td>
+          <td>+4</td>
+        </tr>
+        <tr>
+          <td>Resonant</td>
+          <td>
+            Instruments made from these special types of wood provide +1 bonus
+            to your spell save DC when used as a spellcasting focus.
+          </td>
+          <td>+8</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+</nz-tabset>

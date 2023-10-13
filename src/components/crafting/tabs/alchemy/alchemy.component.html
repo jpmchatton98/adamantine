@@ -1,0 +1,1536 @@
+<div>
+  <div>
+    Alchemy is a crafting art that almost all adventures have some degree of
+    interest in the results of. The source of the ever in demand Potion of
+    Healings, it is a versatile trade that fuels (sometimes quite literally) the
+    adventuring life.
+  </div>
+  <div>
+    It doesn't take many experiences with the powers of potions for an
+    adventurer to consider if they can get away with simmering a Potion of
+    Healing next to the stew over that night's cooking fire... of course it's
+    easier said than done for the result of such things to come away not
+    poisonous.
+  </div>
+  <div>
+    Alchemy tends to be a very quick form of crafting, but with this comes
+    additional risks with most crafts resting on a single roll, and failure
+    resulting in the loss of all materials. Although taking that chance is
+    frequently worth it during a busy adventuring season, consider the "Taking
+    10" option outlined in the craft introduction when speed is not of the
+    essence.
+  </div>
+</div>
+
+<h5>Related Tool</h5>
+<div>
+  <div>
+    Alchemy works using alchemist's supplies. Attempting to craft a potion
+    without these will almost always be made with disadvantage, and proficiency
+    with these allows you to add your proficiency to any alchemy crafting roll.
+  </div>
+  <div>Alchemy uses your Intelligence modifier.</div>
+</div>
+
+<h5>Shelf Life</h5>
+<div>
+  A unique attribute to alchemy, potions once crafted have a shelf life of 1
+  year before coming expired. This shelf life is shortened to 1 month if the
+  potion contains any reactive ingredient.
+</div>
+<h6>Expired Potions</h6>
+<div>
+  <div>
+    If an expired potion is used or consumed within double its shelf life, roll
+    a d4. On a 1, you become poisoned for 1 minute. On a 2 or 3, the potion will
+    work with reduced effect; its duration will be halved if it had a duration,
+    and damage or healing it dealt will be halved. On a 4, it works as expected.
+  </div>
+  <div>
+    Any potion that is older than twice its shelf life has no effect besides
+    causing the imbiber to become poisoned for 1 minute.
+  </div>
+</div>
+
+<h5>Crafting Roll</h5>
+<div>
+  <div>
+    Putting that together means that when you want to work on Alchemy, your
+    crafting roll is as follows:
+  </div>
+  <div>
+    <strong>Alchemy Modifier = </strong> your Alchemist's Supplies modifier
+  </div>
+</div>
+<h6>Alchemy Saving Throw</h6>
+<div>
+  <div>
+    Some alchemical creations trigger a saving throw. In instances that they do,
+    the following is the formula for calculating the saving throw. The saving
+    throw is calculated at the time of creation based on the creators attributes
+    and proficiency, and doesn't change once it is created.
+  </div>
+  <div>
+    <strong>Alchemy DC = </strong> 8 + your Alchemist's Supplies modifier
+  </div>
+</div>
+<h6>Success and Failure</h6>
+<div>
+  <div>
+    For Alchemy, after you make the crafting roll and succeed mark your progress
+    on a crafting project. If you succeed, you make 2 hours of progress toward
+    the total crafting time (and have completed one of the required checks for
+    making an item). Checks for Alchemy must be consecutive, meaning that if you
+    wish to continue after a failed craft, you need to extend your crafting
+    time.
+  </div>
+  <div>
+    Failure means that no progress is made during that time. Once an item is
+    started, even if no progress is made, the components reserved for that item
+    can only be recovered via salvage. If you fail three times in a row, all
+    progress and materials are lost and can no longer be salvaged.
+  </div>
+</div>
+
+<h5>Herbalist's Limited Alchemy</h5>
+<div>
+  <div>
+    While herbalism is primarily used for gathering herbs, a creature with
+    proficiency with herbalism kits has a limited proficiency in creating
+    potions in addition to gathering herbs. You can use proficiency with an
+    herbalism kit in place of alchemist's supplies when creating potions of
+    healing, antidotes, antitoxins, and vials of poison.
+  </div>
+  <div>
+    When crafting in this way, you use an herbalism kit and proficiency with it
+    in place of alchemist's supplies, and you use your Wisdom modifier in place
+    of your Intelligence modifier. This crafting otherwise works the same as
+    using alchemist's supplies.
+  </div>
+  <div>You can add additional reagent modifiers when crafting in this way.</div>
+</div>
+
+<nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+  <nz-tab nzTitle="Concoctions">
+    In order to craft a concoction, you must have a sealable container made of
+    glass to craft it in.
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alchemist's Grenade, basic</td>
+          <td>
+            <div>3&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Napalm, basic</td>
+          <td>
+            <div>3&times; common reactive reagent</div>
+            <div>1&times; common curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>70 gp</td>
+        </tr>
+        <tr>
+          <td>Bottled Wind</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Tar</td>
+          <td>
+            <div>
+              (a) 1&times; scroll of web or (b) 2&times; uncommon poisonous
+              reagent
+            </div>
+            <div>1&times; uncommon poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>140 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemist's Grenade, potent</td>
+          <td>
+            <div>3&times; uncommon reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>140 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Napalm, potent</td>
+          <td>
+            <div>3&times; uncommon reactive reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Uncommon</td>
+          <td>160 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemist's Grenade, powerful</td>
+          <td>
+            <div>3&times; rare reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>690 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Napalm, powerful</td>
+          <td>
+            <div>3&times; rare reactive reagent</div>
+            <div>1&times; rare curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>18</td>
+          <td>Rare</td>
+          <td>730 gp</td>
+        </tr>
+        <tr>
+          <td>Liquid Lightning</td>
+          <td>
+            <div>2&times; rare reactive reagent</div>
+            <div>1&times; uncommon primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>640 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Explosives">
+    In order to craft an explosive, you must have a sealable container made of
+    clay, glass, or metal to craft it in.
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Blasting Powder</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Dwarven Alcohol</td>
+          <td>
+            <div>1&times; flask of mead</div>
+            <div>1&times; common reactive reagent</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>12</td>
+          <td>Common</td>
+          <td>20 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Explosive, simple</td>
+          <td>
+            <div>2&times; blasting powder</div>
+            <div>1&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Common</td>
+          <td>120 gp</td>
+        </tr>
+        <tr>
+          <td>Smokepowder</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Common</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Explosive, potent</td>
+          <td>
+            <div>4&times; blasting powder</div>
+            <div>1&times; uncommon reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>17</td>
+          <td>Uncommon</td>
+          <td>275 gp</td>
+        </tr>
+        <tr>
+          <td>Alchemical Explosive, powerful</td>
+          <td>
+            <div>8&times; blasting powder</div>
+            <div>1&times; rare reactive reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Rare</td>
+          <td>750 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Magical Dust">
+    In order to craft magical dust, you must have a container made of cloth,
+    glass, or metal to craft it in.
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dust of Corrosion</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; common occult essence</div>
+            <div>2&times; common reactive reagent</div>
+            <div>1&times; common poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Dust of Deliciousness</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; common divine essence</div>
+            <div>1&times; common reactive reagent</div>
+            <div>2&times; common curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>65 gp</td>
+        </tr>
+        <tr>
+          <td>Dust of Disappearance</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; common arcane essence</div>
+            <div>2&times; common reactive reagent</div>
+            <div>1&times; common curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>130 gp</td>
+        </tr>
+        <tr>
+          <td>Dust of Dryness</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; common primal essence</div>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; common poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Dust of Sneezing and Choking</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; common poisonous reagent</div>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; uncommon poisonous reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>95 gp</td>
+        </tr>
+        <tr>
+          <td>Pixie Dust</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; common arcane essence</div>
+            <div>3&times; common reactive reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Reincarnation Dust</td>
+          <td>
+            <div>1&times; hanful of detritus</div>
+            <div>1&times; very rare divine essence</div>
+            <div>2&times; very rare curative reagent</div>
+            <div>1&times; very rare reactive reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Magical Ink">
+    In order to craft magical ink, you must have a container made of clay,
+    glass, or metal to craft it in.
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Magical Ink, common</td>
+          <td>
+            <div>1&times; common curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>Common</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>Magical Ink, uncommon</td>
+          <td>
+            <div>1&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+          <td>Uncommon</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Magical Ink, rare</td>
+          <td>
+            <div>1&times; rare curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Rare</td>
+          <td>200 gp</td>
+        </tr>
+        <tr>
+          <td>Magical Ink, very rare</td>
+          <td>
+            <div>1&times; very rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Very Rare</td>
+          <td>2000 gp</td>
+        </tr>
+        <tr>
+          <td>Magical Ink, legendary</td>
+          <td>
+            <div>1&times; legendary curative reagent</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>18</td>
+          <td>Legendary</td>
+          <td>5000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Oils">
+    In order to craft an oil, you must have a sealable container made of glass
+    to craft it in. An oil that is very rare or rarer must be made in a crystal
+    vial.
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Burning Oil</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>40 gp</td>
+        </tr>
+        <tr>
+          <td>Frost Oil</td>
+          <td>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; common primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>75 gp</td>
+        </tr>
+        <tr>
+          <td>Silver Oil</td>
+          <td>
+            <div>4&times; silver scraps</div>
+            <div>1&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+          <td>Common</td>
+          <td>20 gp</td>
+        </tr>
+        <tr>
+          <td>Flametongue Oil</td>
+          <td>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>1&times; common arcane essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>170 gp</td>
+        </tr>
+        <tr>
+          <td>Oil of Slipperiness</td>
+          <td>
+            <div>2&times; uncommon curative reagent</div>
+            <div>1&times; common psionic essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+          <td>Uncommon</td>
+          <td>140 gp</td>
+        </tr>
+        <tr>
+          <td>Oil of Etherealness</td>
+          <td>
+            <div>2&times; rare curative reagent</div>
+            <div>1&times; rare occult essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Rare</td>
+          <td>200 gp</td>
+        </tr>
+        <tr>
+          <td>Oil of Sharpness</td>
+          <td>
+            <div>1&times; rare poisonous reagent</div>
+            <div>2&times; very rare reactive reagent</div>
+            <div>300 gp of precious metal flakes</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5200 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Potions">
+    In order to craft a potion, you must have a sealable container made of glass
+    to craft it in. A potion that is very rare or rarer must be made in a
+    crystal vial.
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Potion of Climbing</td>
+          <td>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; common poisonous reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>85 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Comprehension</td>
+          <td>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; common arcane essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Healing, basic</td>
+          <td>
+            <div>3&times; common curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Watchful Rest</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+            <div>1&times; common psionic essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Common</td>
+          <td>100 gp</td>
+        </tr>
+        <tr>
+          <td>Philter of Love</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+            <div>1&times; common psionic essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>175 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Advantage</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+            <div>1&times; common curative reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; common primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>200 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Animal Friendship</td>
+          <td>
+            <div>2&times; common reactive reagent</div>
+            <div>1&times; common poisonous reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+            <div>1&times; common primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Uncommon</td>
+          <td>145 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Fire Breath</td>
+          <td>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>145 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Strength, hill</td>
+          <td>
+            <div>1&times; uncommon primal essence</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>260 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Growth</td>
+          <td>
+            <div>1&times; common reactive reagent</div>
+            <div>1&times; uncommon curative reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>115 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Healing, greater</td>
+          <td>
+            <div>1&times; common curative reagent</div>
+            <div>2&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>120 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Poison</td>
+          <td>
+            <div>1&times; common poisonous reagent</div>
+            <div>2&times; uncommon poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Uncommon</td>
+          <td>65 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Resistance</td>
+          <td>
+            <div>1&times; uncommon primal essence</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; common curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>240 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Water Breathing</td>
+          <td>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>1&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>120 gp</td>
+        </tr>
+        <tr>
+          <td>Draught of Ascension</td>
+          <td>
+            <div>1&times; rare reactive reagent</div>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; uncommon divine essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>680 gp</td>
+        </tr>
+        <tr>
+          <td>Draught of Damnation</td>
+          <td>
+            <div>1&times; rare reactive reagent</div>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; uncommon occult essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>680 gp</td>
+        </tr>
+        <tr>
+          <td>Elixir of Health</td>
+          <td>
+            <div>2&times; uncommon curative reagent</div>
+            <div>1&times; rare curative reagent</div>
+            <div>1&times; uncommon divine essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>525 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Aqueous Form</td>
+          <td>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; rare curative regeant</div>
+            <div>1&times; rare reactive reagent</div>
+            <div>1&times; uncommon primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Rare</td>
+          <td>350 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Clairvoyance</td>
+          <td>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>2&times; rare reactive reagent</div>
+            <div>1&times; common psionic essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>570 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Dimunition</td>
+          <td>
+            <div>1&times; uncommon curative reagent</div>
+            <div>1&times; rare curative reagent</div>
+            <div>1&times; rare poisonous reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>480 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Gaseous Form</td>
+          <td>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>1&times; rare curative regeant</div>
+            <div>1&times; rare reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>480 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Strength, fire</td>
+          <td>
+            <div>1&times; rare primal essence</div>
+            <div>2&times; rare reactive reagent</div>
+            <div>1&times; rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>700 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Strength, frost</td>
+          <td>
+            <div>1&times; rare primal essence</div>
+            <div>1&times; rare reactive reagent</div>
+            <div>1&times; rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>620 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Strength, stone</td>
+          <td>
+            <div>1&times; uncommon primal essence</div>
+            <div>1&times; rare reactive reagent</div>
+            <div>1&times; rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>560 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Healing, superior</td>
+          <td>
+            <div>2&times; uncommon curative reagent</div>
+            <div>2&times; rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>525 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Heroism</td>
+          <td>
+            <div>1&times; uncommon curative reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>2&times; rare curative reagent</div>
+            <div>1&times; common divine essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>480 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Invulnerability</td>
+          <td>
+            <div>2&times; uncommon curative reagent</div>
+            <div>2&times; rare curative reagent</div>
+            <div>1&times; uncommon divine essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>550 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Maximum Power</td>
+          <td>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>2&times; rare reactive reagent</div>
+            <div>1&times; uncommon primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>550 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Mind Control, beasts</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; uncommon primal essence</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>550 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Mind Control, humanoids</td>
+          <td>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; uncommon psionic essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>600 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Mind Reading</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; rare poisonous reagent</div>
+            <div>1&times; rare reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>550 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Flying</td>
+          <td>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>2&times; rare curative reagent</div>
+            <div>2&times; very rare reactive reagent</div>
+            <div>1&times; uncommon primal essence</div>
+            <div>1&times; uncommon arcane essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5500 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Strength, cloud</td>
+          <td>
+            <div>1&times; rare primal essence</div>
+            <div>1&times; very rare reactive reagent</div>
+            <div>1&times; very rare curative reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Healing, supreme</td>
+          <td>
+            <div>1&times; uncommon curative reagent</div>
+            <div>1&times; rare curative reagent</div>
+            <div>2&times; very rare curative reagent</div>
+            <div>1&times; uncommon divine essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>Very Rare</td>
+          <td>5000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Invisibility</td>
+          <td>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>2&times; rare curative reagent</div>
+            <div>1&times; very rare curative reagent</div>
+            <div>1&times; very rare reactive reagent</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5200 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Longevity</td>
+          <td>
+            <div>1&times; uncommon curative reagent</div>
+            <div>2&times; rare curative reagent</div>
+            <div>1&times; very rare curative reagent</div>
+            <div>1&times; uncommon divine essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>17</td>
+          <td>Very Rare</td>
+          <td>4000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Mind Control, monsters</td>
+          <td>
+            <div>2&times; rare poisonous reagent</div>
+            <div>1&times; very rare poisonous reagent</div>
+            <div>1&times; rare psionic essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Possibility</td>
+          <td>
+            <div>2&times; rare reactive reagent</div>
+            <div>1&times; rare curative reagent</div>
+            <div>1&times; very rare reactive reagent</div>
+            <div>1&times; rare primal essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>5500 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Speed</td>
+          <td>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>2&times; rare reactive reagent</div>
+            <div>1&times; very rare reactive reagent</div>
+            <div>1&times; very rare curative reagent</div>
+            <div>1&times; rare arcane essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>20</td>
+          <td>Very Rare</td>
+          <td>6150 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Vitality</td>
+          <td>
+            <div>1&times; uncommon curative reagent</div>
+            <div>2&times; rare curative reagent</div>
+            <div>1&times; very rare curative reagent</div>
+            <div>1&times; rare divine essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>19</td>
+          <td>Very Rare</td>
+          <td>6150 gp</td>
+        </tr>
+        <tr>
+          <td>Panacea</td>
+          <td>
+            <div>1&times; legendary curative reagent</div>
+            <div>2&times; very rare curative reagent</div>
+            <div>1&times; legendary divine essence</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>24</td>
+          <td>Legendary</td>
+          <td>54000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Dragon's Majesty</td>
+          <td>
+            <div>2&times; very rare reactive reagent</div>
+            <div>2&times; legendary reactive reagent</div>
+            <div>1&times; very rare primal essence</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>24</td>
+          <td>Legendary</td>
+          <td>40000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Size</td>
+          <td>
+            <div>1&times; very rare reactive reagent</div>
+            <div>1&times; legendary curative reagent</div>
+            <div>1&times; legendary reactive reagent</div>
+            <div>1&times; very rare primal essence</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>23</td>
+          <td>Legendary</td>
+          <td>22000 gp</td>
+        </tr>
+        <tr>
+          <td>Potion of Giant Strength, storm</td>
+          <td>
+            <div>1&times; very rare primal essence</div>
+            <div>1&times; legendary reactive reagent</div>
+            <div>1&times; legendary curative reagent</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>23</td>
+          <td>Legendary</td>
+          <td>25000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Miscellaneous">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Antidote, basic</td>
+          <td>
+            <div>1&times; common poisonous reagent</div>
+            <div>2&times; common curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Perfume of Bewitching</td>
+          <td>
+            <div>2&times; common poisonous reagent</div>
+            <div>1&times; common reactive reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>50 gp</td>
+        </tr>
+        <tr>
+          <td>Antidote, lycanthropy</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>2&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Antidote, mummy rot</td>
+          <td>
+            <div>1&times; uncommon poisonous reagent</div>
+            <div>2&times; uncommon curative reagent</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Restorative Ointment</td>
+          <td>
+            <div>1&times; common divine essence</div>
+            <div>2&times; uncommon curative reagent</div>
+            <div>3&times; common curative reagent</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>250 gp</td>
+        </tr>
+        <tr>
+          <td>Sovereign Glue</td>
+          <td>
+            <div>1&times; legendary curative reagent</div>
+            <div>1&times; legendary reactive reagent</div>
+            <div>1&times; very rare divine essence</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>22</td>
+          <td>Legendary</td>
+          <td>25000 gp</td>
+        </tr>
+        <tr>
+          <td>Universal Solvent</td>
+          <td>
+            <div>1&times; legendary poisonous reagent</div>
+            <div>1&times; legendary reactive reagent</div>
+            <div>1&times; very rare primal essence</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>22</td>
+          <td>Legendary</td>
+          <td>25000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Modifiers">
+    The following are alchemical modifiers that can be applied to a potion. All
+    alchemical modifiers require approval from the GM if the modifier will work
+    with a given potion or creation.
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Modifier</td>
+          <td>DC</td>
+          <td>Effect</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aerosol</td>
+          <td>+8</td>
+          <td>
+            Requires two additional reactive reagents of equal rarity to the
+            rarest reagent of the potion. Rather than drinking it, when uncorked
+            or broken (as an action) it effects all creatures in a 5-foot radius
+            as if they'd consumed it.
+          </td>
+        </tr>
+        <tr>
+          <td>Celestial</td>
+          <td>+3</td>
+          <td>
+            Requires an additional common divine essence. Adds the effect of
+            lesser restoration to the potion.
+          </td>
+        </tr>
+        <tr>
+          <td>Divine</td>
+          <td>+6</td>
+          <td>
+            Requires an additional rare divine essence. Adds the effect of
+            greater restoration to the potion.
+          </td>
+        </tr>
+        <tr>
+          <td>Expansive</td>
+          <td>+5</td>
+          <td>
+            Requires an additional common reactive reagent. Expands the area of
+            effect of any area of effect the potion has by 5 feet.
+          </td>
+        </tr>
+        <tr>
+          <td>Insidious</td>
+          <td>+3</td>
+          <td>
+            The effect of the potions becomes shrouded from magic such as
+            identify. You can make the potion appear as another potion of the
+            same rarity. Another alchemist can indentify it by making an Alchemy
+            Check against your Alchemy DC.
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    You can simply load more reagents into any potion, increasing its potency in
+    different ways, though it increases the difficulty. You can make a "custom
+    potion" simply by using these modifiers with no base potion. When you do so,
+    the base DC is 8.
+
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Additional Reagent</td>
+          <td>DC</td>
+          <td>Effect</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Common Curative</td>
+          <td>+2</td>
+          <td>The potion restores +1d4 hit points when consumed.</td>
+        </tr>
+        <tr>
+          <td>Common Reactive</td>
+          <td>+2</td>
+          <td>
+            The potion deals +1d4 force damage when shattered (or consumed)
+          </td>
+        </tr>
+        <tr>
+          <td>Common Poisonous</td>
+          <td>+2</td>
+          <td>The potion deals +1d4 poison damage when consumed.</td>
+        </tr>
+        <tr>
+          <td>Uncommon Curative</td>
+          <td>+3</td>
+          <td>The potion restores +2d4 hit points when consumed.</td>
+        </tr>
+        <tr>
+          <td>Uncommon Reactive</td>
+          <td>+3</td>
+          <td>
+            The potion deals +2d4 force damage when shattered (or consumed)
+          </td>
+        </tr>
+        <tr>
+          <td>Uncommon Poisonous</td>
+          <td>+3</td>
+          <td>The potion deals +2d4 poison damage when consumed.</td>
+        </tr>
+        <tr>
+          <td>Rare Curative</td>
+          <td>+4</td>
+          <td>The potion restores +3d4 hit points when consumed.</td>
+        </tr>
+        <tr>
+          <td>Rare Reactive</td>
+          <td>+4</td>
+          <td>
+            The potion deals +3d4 force damage when shattered (or consumed)
+          </td>
+        </tr>
+        <tr>
+          <td>Rare Poisonous</td>
+          <td>+4</td>
+          <td>The potion deals +3d4 poison damage when consumed.</td>
+        </tr>
+        <tr>
+          <td>Very Rare Curative</td>
+          <td>+5</td>
+          <td>The potion restores +4d4 hit points when consumed.</td>
+        </tr>
+        <tr>
+          <td>Very Rare Reactive</td>
+          <td>+5</td>
+          <td>
+            The potion deals +4d4 force damage when shattered (or consumed)
+          </td>
+        </tr>
+        <tr>
+          <td>Very Rare Poisonous</td>
+          <td>+5</td>
+          <td>The potion deals +4d4 poison damage when consumed.</td>
+        </tr>
+        <tr>
+          <td>Legendary Curative</td>
+          <td>+6</td>
+          <td>The potion restores +5d4 hit points when consumed.</td>
+        </tr>
+        <tr>
+          <td>Legendary Reactive</td>
+          <td>+6</td>
+          <td>
+            The potion deals +5d4 force damage when shattered (or consumed)
+          </td>
+        </tr>
+        <tr>
+          <td>Legendary Poisonous</td>
+          <td>+6</td>
+          <td>The potion deals +5d4 poison damage when consumed.</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+</nz-tabset>

@@ -11,9 +11,21 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { CraftingComponent } from './crafting.component';
+import { AlchemyComponent } from './tabs/alchemy/alchemy.component';
+import { BlacksmithingComponent } from './tabs/blacksmithing/blacksmithing.component';
+import { CookingComponent } from './tabs/cooking/cooking.component';
+import { EnchantingComponent } from './tabs/enchanting/enchanting.component';
+import { EngineeringComponent } from './tabs/engineering/engineering.component';
+import { LeatherworkingComponent } from './tabs/leatherworking/leatherworking.component';
+import { RunecarvingComponent } from './tabs/runecarving/runecarving.component';
+import { ScribingComponent } from './tabs/scribing/scribing.component';
+import { TinkeringComponent } from './tabs/tinkering/tinkering.component';
+import { WhittlingComponent } from './tabs/whittling/whittling.component';
+import { WoodcarvingComponent } from './tabs/woodcarving/woodcarving.component';
+import { MinorComponent } from './tabs/minor/minor.component';
 
 @NgModule({
-  declarations: [CraftingComponent],
+  declarations: [CraftingComponent, AlchemyComponent, BlacksmithingComponent, CookingComponent, EnchantingComponent, EngineeringComponent, LeatherworkingComponent, RunecarvingComponent, ScribingComponent, TinkeringComponent, WhittlingComponent, WoodcarvingComponent, MinorComponent],
   imports: [
     CommonModule,
     FormsModule,

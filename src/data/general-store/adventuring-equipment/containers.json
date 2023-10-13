@@ -64,7 +64,7 @@
   },
   {
     "name": "Keg",
-    "cost": 30,
+    "cost": 1,
     "weight": 35,
     "capacity": "20 gal or 2 ft<sup>3</sup>",
     "description": "A lighter wooden barrel, usually used for storing liquids or black powder."

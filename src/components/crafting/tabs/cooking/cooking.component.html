@@ -1,0 +1,707 @@
+<div>
+  <div>
+    Adventures need to eat. While some are content to eat the same stale old
+    rations, some prefer to apply their skills to be kept well fed... even in
+    the depths of a dungeon where fresh ingredients can be... strange.
+  </div>
+  <div>
+    Not only can someone with talent produce tasty treats, but being well fed
+    can have a variety of benefits... particularly when eating correctly
+    prepared magical ingredients.
+  </div>
+</div>
+
+<h5>Related Tool & Ability Score</h5>
+<div>
+  Cooking works using cook's utensils. Attempting to craft a meal without these
+  will almost always be made with disadvantage, and proficiency with these
+  allows you to add your proficiency to any cooking crafting roll. Cooking uses
+  your Wisdom modifier.
+</div>
+
+<h5>Duration</h5>
+<div>
+  The duration a meal remains edible depends on the type of meal made. A feast
+  must be consumed within an hour, a snack lasts for 1 day, and rations lasts 1
+  month.
+</div>
+
+<h5>Ingredients</h5>
+<div>
+  The materials for cooking are fresh ingredients and supplies. A fresh
+  ingredient is something you harvest that can increase the quality of your food
+  and sometimes provide supernatural boosts beyond mere satiation. Staples
+  include seasonings, spices, flour or even turnips! Foods that last awhile can
+  be cooked into perfectly fine meals, but have less benefits than eating a good
+  meal. Some ingredients additionally have the exotic property, and may confer
+  special effects.
+</div>
+
+<h6>Ingredient Expiration</h6>
+<div>
+  <div>
+    Normal Ingredients expire very quickly, and must be used within 24 hours of
+    being harvested or they become unusable. Preserved rations would fall into
+    the staples category and cannot typically be used to cook anything besides
+    basic meals.
+  </div>
+  <div>
+    The ability to gain any sort of magical benefit is linked to its freshness;
+    even well prepared preserved foods provide only the benefit of a Basic Meal
+    (which is a satisfying and good tasting meal, but its benefits are not
+    otherwise magical).
+  </div>
+  <div>
+    Unlike Fresh Ingredients, Staples last significantly longer and do not need
+    to have their expiration tracked for the purposes of this system.
+  </div>
+</div>
+
+<h6>Satiation</h6>
+<div>
+  The magical benefits you get consuming rare and magical foods cannot be gained
+  again until 24 hours have passed for any particular food. When combined with
+  the ingredient expiration above, this typically means that any ingredient
+  collected is only good for a single meal; this is intentional. You can harvest
+  more if you wish, but cooking naturally is a profession of fleeting
+  achievement and fickle opportunity.
+</div>
+
+<h5>Crafting Roll</h5>
+<div>
+  <div>
+    Putting that together means that when you would like to create a meal, your
+    crafting roll is as follows:
+  </div>
+  <div><strong>Cooking Modifier =</strong> your Cook's Utensils modifier</div>
+  <h6>Success and Failure</h6>
+  <div>
+    For cooking, all crafting rolls must be made consequetively. Make all checks
+    listed for the items. If you succeed a greater number of times than you
+    fail, the meal is successfully completed, otherwise, it is inedible and all
+    ingrediants are lost.
+  </div>
+</div>
+
+<h5>Exotic Ingredients</h5>
+<div>
+  <div>
+    While standard meals are made from a selection of ingredient types and
+    generally a seasoning, exotic ingredients have specialized effects. When
+    making a meal from these ingredients, the meal's effect is a combination of
+    the effect of the exotic ingredients added.
+  </div>
+  <div>
+    An Exotic Meal (meal cooked entirely from exotic ingredients) doesn't need a
+    recipe and has a crafting time of 1 hour, and the difficulty is the
+    difficulty of all the exotic ingredients added together, with 1 check needed
+    per exotic ingredient added.
+  </div>
+  <div>
+    Exotic ingredients can be combined with a standard meal by adding the DC of
+    the standard meal to the combined difficulty of the exotic ingredients
+    added. This can cause unusual meals and frequently has unattainably high
+    difficulty to make it work, as adding random new components to meals
+    typically wrecks the taste.
+  </div>
+</div>
+
+<h5>Basic Cooking</h5>
+<div>
+  <div>
+    While the rules present a handful of ways to use cooking for more exotic
+    ends, the most common application of cooking is just to produce an edible
+    meal during a long rest—something any adventuring group would welcome. This
+    is called a Quality Meal and provides greater benefit than rations, though
+    the benefits it provides are not magical, and merely stem from it being a
+    satisfying meal. You can do so by expending 1 fresh ingredient of any type
+    and 1 common supplies to feed up to 5 allies or willing creatures, or by
+    spending common supplies per creature being cooked for. These materials must
+    have been purchased within the last week. Any creature, even one not
+    proficient with cook's utensils can take this action.
+  </div>
+  <div>
+    You and all willing creatures (willing to eat your cooking) regain an
+    additional Hit Die (up to their maximum). If you have proficiency with
+    cook's utensils, creatures regain additional Hit Dice equal to your
+    Proficiency bonus.
+  </div>
+</div>
+
+<nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+  <nz-tab nzTitle="Feasts">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Common Feast</td>
+          <td>
+            <div>1&times; common fresh ingredient</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>1</td>
+          <td>1</td>
+          <td>8</td>
+          <td>Common</td>
+          <td>3 gp</td>
+        </tr>
+        <tr>
+          <td>Enhancing Feast</td>
+          <td>
+            <div>1&times; uncommon fresh ingredient</div>
+            <div>1&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>Meat Feast</td>
+          <td>
+            <div>1&times; uncommon meat</div>
+            <div>1&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>What Doesn't Kill You... Feast</td>
+          <td>
+            <div>
+              1&times; uncommon meat from a creature that can deal poison damage
+            </div>
+            <div>2&times; uncommon poisonous reagent</div>
+            <div>1&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Uncommon</td>
+          <td>11 gp</td>
+        </tr>
+        <tr>
+          <td>Seaworthy Bouillabaisse</td>
+          <td>
+            <div>
+              1&times; uncommon meat from a creature with a higher swimming
+              speed than walking speed
+            </div>
+            <div>2&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>12</td>
+          <td>Uncommon</td>
+          <td>25 gp</td>
+        </tr>
+        <tr>
+          <td>Wondrous Feast</td>
+          <td>
+            <div>1&times; rare fresh ingredient</div>
+            <div>1&times; uncommon reagent</div>
+            <div>1&times; luxuries</div>
+            <div>1&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>Hearty Meat Feast</td>
+          <td>
+            <div>1&times; rare meat</div>
+            <div>1&times; uncommon reagent</div>
+            <div>1&times; luxuries</div>
+            <div>1&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>Elementally Fortifying Feast</td>
+          <td>
+            <div>
+              1&times; rare meat from a creature with an elemental resistance or
+              immunity
+            </div>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>1&times; common primal essence</div>
+            <div>2&times; luxuries</div>
+            <div>2&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>35 gp</td>
+        </tr>
+        <tr>
+          <td>Heroes' Feast</td>
+          <td>
+            <div>4&times; rare curative reagent</div>
+            <div>2&times; uncommon divine essence</div>
+            <div>4&times; luxuries</div>
+            <div>4&times; supplies</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>Rare</td>
+          <td>150 gp</td>
+        </tr>
+        <tr>
+          <td>Superb Feast</td>
+          <td>
+            <div>1&times; very rare fresh ingredient</div>
+            <div>1&times; rare reagent</div>
+            <div>2&times; luxuries</div>
+            <div>2&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>Very Rare</td>
+          <td>30 gp</td>
+        </tr>
+        <tr>
+          <td>Superb Meat Feast</td>
+          <td>
+            <div>1&times; very rare meat</div>
+            <div>1&times; rare reagent</div>
+            <div>2&times; luxuries</div>
+            <div>2&times; special ingredients</div>
+            <div>2&times; supplies</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>Very Rare</td>
+          <td>30 gp</td>
+        </tr>
+        <tr>
+          <td>Legendary Feast</td>
+          <td>
+            <div>1&times; legendary fresh ingredient</div>
+            <div>1&times; very rare reagent</div>
+            <div>3&times; luxuries</div>
+            <div>3&times; special ingredients</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>20</td>
+          <td>Legendary</td>
+          <td>300 gp</td>
+        </tr>
+        <tr>
+          <td>Legendary Meat Feast</td>
+          <td>
+            <div>1&times; legendary meat</div>
+            <div>1&times; very rare reagent</div>
+            <div>3&times; luxuries</div>
+            <div>3&times; special ingredients</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>20</td>
+          <td>Legendary</td>
+          <td>300 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    <h6>Common Feast</h6>
+    <div>
+      <div>
+        Up to 5 creatures can consume this feast within an hour of it being
+        prepared. After consuming this hearty meal, you become satiated for the
+        next 24 hours. This is a hearty meal well surpassing the benefits of
+        normal meals or rations, and each creature that consumes it regains an
+        additional Hit Die during the next long rest.
+      </div>
+      <div>
+        If cooked by a creature with proficiency in cook's utensils, creatures
+        that consume this feast regain additional Hit Dice equal to the cook's
+        proficiency bonus during the next long rest instead.
+      </div>
+    </div>
+
+    <h6>Uncommon Feast</h6>
+    <div>
+      <div>
+        Up to 5 creatures can consume this feast within an hour of it being
+        prepared. After consuming this hearty meal, you become satiated for the
+        next 24 hours. You gain the benefits for a common feast, but can gain
+        additional benefits by trading in Hit Dice that would be gained as part
+        of your next long rest after consuming this meal. These Hit Dice are
+        consumed after calculating how many you would have after the rest
+        (including the benefits of the feast), but you can trade Hit Dice in
+        this way you would normally lose if you have more than your maximum Hit
+        Dice.
+      </div>
+      <div>
+        You can trade Hit Dice in this way up to a number equal to your
+        proficiency bonus. The benefits scale based on the rarity on the feast.
+      </div>
+      <table>
+        <tr>
+          <th>Benefits (Enhancing/Wondrous/Superb/Legendary)</th>
+        </tr>
+        <tr>
+          <td>
+            Roll a [d4/d6/d8/d12] per Hit Die traded and gain temporary hit
+            points equal to the value rolled.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Trade three Hit Dice for an additional spell slot of
+            [1st/2nd/3rd/4th] level.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gain a point that can be expended like Inspiration by trading
+            [5/4/3/2] Hit Dice per point.
+          </td>
+        </tr>
+      </table>
+      <div>Any benefit from a feast fades after 24 hours.</div>
+    </div>
+
+    <h6>Meat Feast</h6>
+    <div>
+      <div>
+        Up to 5 creatures can consume this feast within an hour of it being
+        prepared. After consuming this hearty meal, you become satiated for the
+        next 24 hours. Consuming the essence of a properly prepared creature of
+        great power confers some of its power to you while satiated by the
+        feast.
+      </div>
+      <div>
+        You can add +1/+2/+3/+4 to ability checks and saving throws of the
+        prepared creatures highest stat (if multiple stats are tied, the cook
+        chooses which when preparing the meal). Alternatively, the cook can
+        bring forth exotic properties of the creature, conferring one trait of
+        the cooked animal to those that consume it as per the following table
+        (this replaces the benefit to ability checks and saves):
+      </div>
+      <table>
+        <tr>
+          <th>Minimum Rarity</th>
+          <th>Creature Boon</th>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>Hold Breath, Keen Senses, Pounce, Stone Camouflage</td>
+        </tr>
+        <tr>
+          <td>Hearty</td>
+          <td>Amphibious, Web Walker</td>
+        </tr>
+        <tr>
+          <td>Superb</td>
+          <td>Pack Tactics, Spider Climb</td>
+        </tr>
+        <tr>
+          <td>Legendary</td>
+          <td>Magic Resistance, Regeneration, Shapechanger (mimic)</td>
+        </tr>
+      </table>
+      <div>
+        The details from the creature boon can be found on the creature stat
+        block. The cook must be aware of the creature's property to make the
+        meal imbue that property, and the GM may adjust the property in cases
+        where it would not work for players or be too powerful as written. At
+        the GM's discretion, any ability can be added to this list.
+      </div>
+    </div>
+
+    <h6>Elementally Fortifying Feast</h6>
+    <div>
+      <div>
+        Up to 5 creatures can consume this feast within an hour of it being
+        prepared. After consuming this hearty meal, you become satiated for the
+        next 24 hours. The magical properties of the meal confer the following
+        special benefits:
+      </div>
+      <table>
+        <tr>
+          <th>Element</th>
+          <th>Benefit</th>
+        </tr>
+        <tr>
+          <td>Cold</td>
+          <td>
+            Advantage on saves against cold climates and resistance to cold
+            damage.
+          </td>
+        </tr>
+        <tr>
+          <td>Fire</td>
+          <td>
+            Advantage on saves against hot climates and resistance to fire
+            damage.
+          </td>
+        </tr>
+        <tr>
+          <td>Lightning</td>
+          <td>
+            Advantage on Constituation saving throws against the stunned
+            condition and resistance to lightning damage
+          </td>
+        </tr>
+      </table>
+      <div>
+        These benefits fade after 24 hours. You can't gain the benefits of
+        another feast until these benefits fade and you are no longer satiated.
+      </div>
+    </div>
+
+    <h6>Seaworthy Bouillabaisse</h6>
+    <div>
+      <div>
+        Up to 5 creatures can consume this feast within an hour of it being
+        prepared. After consuming this hearty meal, you become satiated for the
+        next 24 hours. The magical properties of the meal grant you immunity to
+        sea sickness as well as advantage on Dexterity or Constitution saving
+        throws involving the motion of sea vessels.
+      </div>
+      <div>
+        Additionally, if you do not have proficiency in Water Vehicles, you can
+        add half your proficiency bonus (rounded down) to any check involving
+        them for the duration.
+      </div>
+    </div>
+
+    <h6>Heroes' Feast</h6>
+    <div>
+      A magnificent spread of food. Cooking this has the effect of casting the
+      spell heroes' feast, except it's made of real food and not poofed into
+      existence by strange magics.
+    </div>
+
+    <h6>What Doesn't Kill You... Feast</h6>
+    <div>
+      <div>
+        Up to 5 creatures can consume this feast within an hour of it being
+        prepared. After consuming this dubious meal, you gain resistance to
+        poison damage, and gain advantage on saving throws against being
+        poisoned for 24 hours.
+      </div>
+      <div>
+        If the source of a poison saving throw is the same as the source of the
+        meat or poisonous reagent used to make the feast, the advantage against
+        being poisoned by that creature or effect lasts one week.
+      </div>
+    </div>
+  </nz-tab>
+  <nz-tab nzTitle="Snacks">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time (hours)</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5&times; Flame Breathing Jerky</td>
+          <td>
+            <div>
+              1&times; uncommon or rarer meat from a creature that is immune to
+              fire damage
+            </div>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>25 gp</td>
+        </tr>
+        <tr>
+          <td>5&times; Mint Chew</td>
+          <td>
+            <div>2&times; uncommon curative reagent</div>
+            <div>1&times; special ingredients</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>10 gp</td>
+        </tr>
+        <tr>
+          <td>5&times; Morph Cookies</td>
+          <td>
+            <div>1&times; fresh ingredient from a shapechanger</div>
+            <div>1&times; luxuries</div>
+            <div>1&times; special ingredients</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>5&times; Seeing Sticks</td>
+          <td>
+            <div>
+              1&times; fresh ingredient from a creature with blindsight,
+              truesight, or tremorsense
+            </div>
+            <div>1&times; uncommon reactive reagent</div>
+            <div>1&times; luxuries</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>15 gp</td>
+        </tr>
+        <tr>
+          <td>5&times; Quickening Candies</td>
+          <td>
+            <div>1&times; luxuries</div>
+            <div>2&times; special ingredients</div>
+            <div>1&times; supplies</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>18</td>
+          <td>Rare</td>
+          <td>250 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    <h6>Flame Breathing Jerky</h6>
+    <div>
+      <div>
+        A tough jerky with exotic flavoring. Very spicy, uncomfortably so. After
+        a creature consumes this snack as an action, they gain the following
+        benefits for the next 10 minutes:
+      </div>
+      <ul>
+        <li>You can't be put to sleep by magical means.</li>
+        <li>You have disadvantage on Wisdom checks.</li>
+        <li>
+          You have disadvantage on Constitution saving throws to maintain
+          concentration on a spell.
+        </li>
+        <li>
+          You can use a bonus action to exhale fire at a target within 10 feet
+          of you. The target must make a DC 13 Dexterity saving throw, taking
+          2d6 fire damage on a failed save, or half as much damage on a
+          successful one.
+        </li>
+      </ul>
+      <div>
+        You can eat a number of pieces of this jerky equal to your Constitution
+        modifier per day.
+      </div>
+    </div>
+    <h6>Mint Chew</h6>
+    <div>
+      <div>
+        A chewy minty candy. You can pop one into your mouth as a bonus action.
+        While being chewed (for up to 10 minutes), you are energized and can
+        ignore the effects of up to 3 levels of Exhaustion for the duration, and
+        can't be put to sleep by magical means.
+      </div>
+      <div>
+        You can only gain this benefit once per day, after which consuming
+        additional pieces of the candy has no effect until you finish a long
+        rest.
+      </div>
+    </div>
+    <h6>Morph Cookies</h6>
+    <div>
+      <div>
+        Consuming one of these has the effects of casting alter self, however
+        you can't change the adaptation unless you consume another cookie. This
+        effect doesn't require concentration to maintain, and can be extended by
+        consuming an additional morph cookie.
+      </div>
+      <div>
+        If the ingredient came from a mimic, you can additionally transform your
+        appearance to creatures with a different basic shape than you, though
+        you remain the same size.
+      </div>
+    </div>
+    <h6>Seeing Sticks</h6>
+    <div>
+      <div>
+        A stick of hard tacky substance. You can pop one into your mouth as a
+        bonus action. While being sucked (for up to 10 minutes), you gain
+        expanded senses and have advantage on Wisdom (Perception) checks, saving
+        throws against Illusion spells, and Intelligence (Investigation) checks
+        to see through illusions, though because of the bad taste inherent to
+        the formulation, continuing to suck on the seeing stick requires
+        concentration, as if concentrating on a spell.
+      </div>
+      <div>
+        By adding the optional common supplies ingredient, they can be
+        sweetened, granting you advantage on Constitution saving throws made to
+        maintain your concentration against spitting them out; this increases
+        the DC of the recipe by 1.
+      </div>
+    </div>
+    <h6>Quickening Candies</h6>
+    <div>
+      A small hard candy ball, with extreme caffineated properties. When you pop
+      one of these into your mouth as a bonus action, you are under the effect
+      of haste for 1d4 rounds. You still suffer the normal effect of haste
+      ending when the effect ends.
+    </div>
+  </nz-tab>
+</nz-tabset>
