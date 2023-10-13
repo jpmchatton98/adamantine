@@ -119,13 +119,6 @@
     "description": "Pouches, clippers, leather gloves, a mortar and pestle, and glass jars"
   },
   {
-    "name": "Horologist's Tools",
-    "cost": 40,
-    "weight": 3,
-    "ability": "Intelligence",
-    "description": "A small saw, a small hammer, files, a caliper, tweezers, a loupe, and a set of dies."
-  },
-  {
     "name": "Jeweler's Tools",
     "cost": 25,
     "weight": 2,

@@ -246,10 +246,6 @@ export class CharacterBuilderService {
       score: 'wis',
     },
     {
-      name: "Horologist's Tools",
-      score: 'int',
-    },
-    {
       name: "Jeweler's Tools",
       score: 'dex',
     },

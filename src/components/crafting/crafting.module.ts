@@ -25,7 +25,21 @@ import { WoodcarvingComponent } from './tabs/woodcarving/woodcarving.component';
 import { MinorComponent } from './tabs/minor/minor.component';
 
 @NgModule({
-  declarations: [CraftingComponent, AlchemyComponent, BlacksmithingComponent, CookingComponent, EnchantingComponent, EngineeringComponent, LeatherworkingComponent, RunecarvingComponent, ScribingComponent, TinkeringComponent, WhittlingComponent, WoodcarvingComponent, MinorComponent],
+  declarations: [
+    CraftingComponent,
+    AlchemyComponent,
+    BlacksmithingComponent,
+    CookingComponent,
+    EnchantingComponent,
+    EngineeringComponent,
+    LeatherworkingComponent,
+    RunecarvingComponent,
+    ScribingComponent,
+    TinkeringComponent,
+    WhittlingComponent,
+    WoodcarvingComponent,
+    MinorComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
