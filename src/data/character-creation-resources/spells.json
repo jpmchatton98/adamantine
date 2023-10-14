@@ -16915,7 +16915,7 @@
     "name": "Instant Orchestra",
     "school": "Transmutation",
     "level": 1,
-    "casting-time": "1 action",
+    "castingTime": "1 action",
     "range": "10 feet",
     "components": "V, S, M (any number of musical instruments worth at least 1 sp)",
     "duration": "Up to 1 hour",
