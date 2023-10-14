@@ -7697,7 +7697,7 @@
   {
     "name": "Alchemist's Grenade, basic",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A small flask of volatile, prismatic liquid. It deals 2d10 damage when poured on an object. Can be used as an improvised ranged weaponwith the thrown (20/60) property, dealing 2d10 damage on hit.</p><p>When you create the grenade, you choose its damage type from acid,cold, fire, lightning, poison, or thunder.",
     "index": "alchemistsgrenadebasic"
@@ -7705,7 +7705,7 @@
   {
     "name": "Alchemist's Grenade, potent",
     "rarity": 1,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A small flask of volatile, prismatic liquid. It deals 3d10 damage when poured on an object. Can be used as an improvised ranged weaponwith the thrown (20/60) property, dealing 3d10 damage on hit.</p><p>When you create the grenade, you choose its damage type from acid,cold, fire, lightning, poison, or thunder.",
     "index": "alchemistsgrenadepotent"
@@ -7713,7 +7713,7 @@
   {
     "name": "Alchemist's Grenade, powerful",
     "rarity": 2,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A small flask of volatile, prismatic liquid. It deals 4d10 damage when poured on an object. Can be used as an improvised ranged weaponwith the thrown (20/60) property, dealing 4d10 damage on hit.</p><p>When you create the grenade, you choose its damage type from acid,cold, fire, lightning, poison, or thunder.",
     "index": "alchemistsgrenadepowerful"
@@ -7721,7 +7721,7 @@
   {
     "name": "Alchemical Napalm, basic",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A vicious sticky flammable substance. It deals 3d4 damage when poured on an object. Can be used as an improvised ranged weapon with the thrown (20/60) property, dealing 3d4 damage on a hit.</p><p>On hit, the target creature or object continues to burn for one minute, taking 1d4 damage at the start of their turn (or at the start of your turn for an object without a turn) until a creature spends an action to put the flames out.</p><p>When you create the napalm, you choose its damage type from acid, cold, fire, lightning, poison, or thunder.",
     "index": "alchemicalnapalmbasic"
@@ -7729,7 +7729,7 @@
   {
     "name": "Alchemical Napalm, potent",
     "rarity": 1,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A vicious sticky flammable substance. It deals 3d4 damage when poured on an object. Can be used as an improvised ranged weapon with the thrown (20/60) property, dealing 4d4 damage on a hit.</p><p>On hit, the target creature or object continues to burn for one minute, taking 2d4 damage at the start of their turn (or at the start of your turn for an object without a turn) until a creature spends an action to put the flames out.</p><p>When you create the napalm, you choose its damage type from acid, cold, fire, lightning, poison, or thunder.",
     "index": "alchemicalnapalmpotent"
@@ -7737,7 +7737,7 @@
   {
     "name": "Alchemical Napalm, powerful",
     "rarity": 2,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A vicious sticky flammable substance. It deals 3d4 damage when poured on an object. Can be used as an improvised ranged weapon with the thrown (20/60) property, dealing 5d4 damage on a hit.</p><p>On hit, the target creature or object continues to burn for one minute, taking 3d4 damage at the start of their turn (or at the start of your turn for an object without a turn) until a creature spends an action to put the flames out.</p><p>When you create the napalm, you choose its damage type from acid, cold, fire, lightning, poison, or thunder.",
     "index": "alchemicalnapalmpowerful"
@@ -7745,7 +7745,7 @@
   {
     "name": "Alchemical Tar",
     "rarity": 1,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "When broken and exposed to air, it creates a very sticky rapidly expanding web like foam, with the effect of the spell web centered on here the flask breaks. You can reliably throw the flask to a target point within 30 feet, shattering it on impact.",
     "index": "alchemicaltar"
@@ -7753,7 +7753,7 @@
   {
     "name": "Liquid Lightning",
     "rarity": 2,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "Drinking this potion allows you to zip around for 1 minute as pure electricity. As a bonus action on each of your turns before the effect ends, you can transform into a bolt of lightning and instantly travel in a straight line to an unoccupied space you can see within 30 feet. This movement doesn't provoke opportunity attacks and you are immune to lightning damage while in this form.</p><p>You can pass through small holes, narrow openings, and even mere cracks, as well as through conductive materials such as metal. Each creature in your travel path must succeed on a DC 15 Dexterity saving throw, or take 3d6 lightning damage. You immediately revert to your normal form upon reaching the destination. This potion's stormy liquid arcs with tiny bolts of lightning and it numbs the tongue when sipped.",
     "index": "liquidlightning"
@@ -7761,7 +7761,7 @@
   {
     "name": "Alchemical Explosive, simple",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A bundled explosive alchemical preparation. It can be detonated by dealing 1 fire or lightning damage to it. As an action, a packet of this explosive can be accurately thrown 20 feet, but will not detonate on impact (usually). When it detonates, all creatures within 10 feet of the target point must make a Dexterity saving throw with a DC equal to the crafter's Alchemy DC. On failure, they take 2d8 fire damage, or half as much on a success. Creatures in range of more than one explosive take damage only from the highest damage effect.</p><p>You can fuse your explosives. When fused, intentionally dealing fire damage to the explosives (or otherwise lighting the fuse) causes it to detonate on a delay, selected from: short (the end of your turn), medium (the start of your next turn), and long (2 rounds, at the start of your turn).",
     "index": "alchemicalexplosivesimple"
@@ -7769,7 +7769,7 @@
   {
     "name": "Alchemical Explosive, potent",
     "rarity": 1,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A bundled explosive alchemical preparation. It can be detonated by dealing 1 fire or lightning damage to it. As an action, a packet of this explosive can be accurately thrown 20 feet, but will not detonate on impact (usually). When it detonates, all creatures within 15 feet of the target point must make a Dexterity saving throw with a DC equal to the crafter's Alchemy DC. On failure, they take 4d8 fire damage, or half as much on a success. Creatures in range of more than one explosive take damage only from the highest damage effect.</p><p>You can fuse your explosives. When fused, intentionally dealing fire damage to the explosives (or otherwise lighting the fuse) causes it to detonate on a delay, selected from: short (the end of your turn), medium (the start of your next turn), and long (2 rounds, at the start of your turn).",
     "index": "alchemicalexplosivepotent"
@@ -7777,7 +7777,7 @@
   {
     "name": "Alchemical Explosive, powerful",
     "rarity": 2,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A bundled explosive alchemical preparation. It can be detonated by dealing 1 fire or lightning damage to it. As an action, a packet of this explosive can be accurately thrown 20 feet, but will not detonate on impact (usually). When it detonates, all creatures within 20 feet of the target point must make a Dexterity saving throw with a DC equal to the crafter's Alchemy DC. On failure, they take 8d8 fire damage, or half as much on a success. Creatures in range of more than one explosive take damage only from the highest damage effect.</p><p>You can fuse your explosives. When fused, intentionally dealing fire damage to the explosives (or otherwise lighting the fuse) causes it to detonate on a delay, selected from: short (the end of your turn), medium (the start of your next turn), and long (2 rounds, at the start of your turn).",
     "index": "alchemicalexplosivepowerful"
@@ -7785,7 +7785,7 @@
   {
     "name": "Blasting Powder",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A fine grey powder with large grains and the faint smell of sulfur and charcoal that comes in small packets weighing 1/2 pound.</p><p>When ignited by 1 or more fire or lightning damage, it explodes violently. All creatures within 10 feet of it must make a DC 14 Dexterity saving throw. On failure, they take 2d4 fire damage, or half as much on a success. The amount of damage increases by 2d4 and the radius increases by 5 feet for each additional packet of Blasting Powder detonated in the same spot, up to a maximum of five packets. Deals double damage to buildings and structures. Creatures in range of more than one stack of up to 5 explosives at the same time take damage only from the highest damage effect.",
     "index": "blastingpowder"
@@ -7793,7 +7793,7 @@
   {
     "name": "Dwarven Alcohol",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "Only dwarves really know if the name of this liquid explosive is a joke or not, but must assume it is an acquired taste. An explosively flammable liquid that comes in a flask, this flask can be splashed across a 5 foot square within 5 feet. Once splashed, it can be ignited by 1 or more fire or lightning damage. When ignited it explodes in a plume of fire, dealing 2d4 fire damage to all creatures within 5 feet of the container, or within a square that has been soaked with it.",
     "index": "dwarvenalcohol"
@@ -7801,7 +7801,7 @@
   {
     "name": "Burning Oil",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "As an action, you can coat a weapon in this oil and ignite it. For 1 minute, the ignited weapon burns, dealing an extra 1d4 fire to attacks made with it, and providing bright light in a 20-foot radius and dim light for an additional 20 feet.",
     "index": "burningoil"
@@ -7809,7 +7809,7 @@
   {
     "name": "Frost Oil",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "As an action, you can coat a weapon in this oil, causing it freeze over, covered in icy crystals. For 1 minute, the weapon deals an extra 1d6 cold damage on hit.",
     "index": "frostoil"
@@ -7817,7 +7817,7 @@
   {
     "name": "Silver Oil",
     "rarity": 0,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "A sparkling chromatic oil. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is considered silvered.",
     "index": "silveroil"
@@ -7825,7 +7825,7 @@
   {
     "name": "Flametongue Oil",
     "rarity": 1,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "As an action, you can coat a weapon in this oil and ignite it.  For 1 minute, the ignited weapon burns, dealing an extra 2d6 fire to attacks made with it, and providing bright light in a 20-foot radius and dim light for an additional 20 feet.",
     "index": "flametongueoil"
@@ -7833,7 +7833,7 @@
   {
     "name": "Draught of Ascension",
     "rarity": 2,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "This sticky, cream-colored liquid has a living viscosity to it, churning slowly within the flask. When you drink this potion, you become a celestial (as if by the spell shapechange for 1 hour). The type of celestial you become is determined by your level. The new orm is a random celestial with a Challenge Rating equal to your level, up to a maximum of 10. If there are multiple options at that Challenge Rating, roll to determine which option is selected.</p><p>When the effect ends and you revert to your normal form, you take 1d6 radiant damage per CR of the celestial who's form you assumed as the brilliance of pure light burns your body as it leaves. If this damage kills you, your body is turned to ash.",
     "index": "draughtofascension"
@@ -7841,7 +7841,7 @@
   {
     "name": "Draught of Damnation",
     "rarity": 2,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "This sticky red liquid has a living viscosity to it, churning slowly within the flask. When you drink this potion, you become a fiend (as if by the spell shapechange for 1 hour). The type of fiend you become is determined by your level. The new orm is a random fiend with a Challenge Rating equal to your level, up to a maximum of 10. If there are multiple options at that Challenge Rating, roll to determine which option is selected.</p><p>When the effect ends and you revert to your normal form, you take 1d6 necrotic damage per CR of the fiend who's form you assumed as the toxins of pure evil attempt to destroy your body before relinquishing control of it. If this damage kills you, your soul is dragged to the realm of the fiends by the malignant will of the fiend.",
     "index": "draughtofdamnation"
@@ -7849,9 +7849,129 @@
   {
     "name": "Panacea",
     "rarity": 4,
-    "attunemnt": false,
+    "attunement": false,
     "type": "potion",
     "description": "When you drink this potion, you regain all lost hit points, all status effects are removed, all reductions to ability scores are removed, any missing limbs are restored, all diseases are cured, all curses are removed, and all levels of exhaustions are removed, and you cease to age for 1 year. This potion can remove effects that can otherwise only be removed by wish.</p><p>If you ever drink a second panacea potion, make a DC 30 Constitution saving throw. On failure, you gain no benefits from it and die.",
     "index": "panacea"
+  },
+  {
+    "name": "Blast Stick",
+    "rarity": 0,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has an 20 charges. This wand is considered a ranged weapon with a range of 60/180, and the Light property. It deals 1d6 force damage on hit. Each time you make an attack with it, it expends one charge. If you have a spellcasting modifier, you can use your spellcasting ability in place of your Dexterity modifier when making an attack with this wand.</p><p>The wand regains 1d10 + 10 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand explodes, producing a loud but otherwise harmless magical explosion.",
+    "index": "blaststick"
+  },
+  {
+    "name": "Goodberry Dispenser",
+    "rarity": 0,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has 10 charges. While holding it as an an action you can tap the tip to your palm and expend 1 of its charges to create a single berry as if from the goodberry spell in your hand.</p><p>The wand regains 1d10 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand explodes, producing a splattering burst of sticky and sour juice.",
+    "index": "goodberrydispenser"
+  },
+  {
+    "name": "Magician's Wand",
+    "rarity": 0,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has has 6 charges. While holding it, you can use an action to expend 1 of its charges to cast minor illusion. When you cast minor illusion using this wand, you have advantage on Dexterity (Sleight of Hand) checks involving tricks or illusions until the end of your turn.</p><p>The wand regains 1d4 + 2 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand fades away as if it, too, was an illusion.",
+    "index": "magicianswand"
+  },
+  {
+    "name": "Wand of Chores",
+    "rarity": 0,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has 6 charges. While holding it, you can use an action to expend 1 of its charges to cast prestidigitation. The wand regains 1d4 + 2 expended charges daily at dawn.</p><p>If you expend the wand's last charge, roll a d20. On a 1, the wand breaks, dumping the last 10 instances of filth it has cleaned up.",
+    "index": "wandofchores"
+  },
+  {
+    "name": "Whisperstick",
+    "rarity": 0,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has 6 charges. While holding it, you can use an action to expend 1 of its charges to cast message. You need to point the wand at the target to cast it in this way.</p><p>The wand regains 1d4 + 2 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand breaks, making a loud bang audible up to 100 feet.",
+    "index": "whisperstick"
+  },
+  {
+    "name": "Lesser Wand (Cantrip)",
+    "rarity": 0,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand0"
+  },
+  {
+    "name": "Lesser Wand (1st-Level)",
+    "rarity": 1,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand1"
+  },
+  {
+    "name": "Lesser Wand (2nd-Level)",
+    "rarity": 1,
+    "attunement": false,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand2"
+  },
+  {
+    "name": "Lesser Wand (3rd-Level)",
+    "rarity": 2,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand3"
+  },
+  {
+    "name": "Lesser Wand (4th-Level)",
+    "rarity": 2,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand4"
+  },
+  {
+    "name": "Lesser Wand (5th-Level)",
+    "rarity": 2,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand5"
+  },
+  {
+    "name": "Lesser Wand (6th-Level)",
+    "rarity": 2,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand6"
+  },
+  {
+    "name": "Lesser Wand (7th-Level)",
+    "rarity": 3,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand7"
+  },
+  {
+    "name": "Lesser Wand (8th-Level)",
+    "rarity": 3,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand8"
+  },
+  {
+    "name": "Lesser Wand (9th-Level)",
+    "rarity": 4,
+    "attunement": true,
+    "type": "wand",
+    "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
+    "index": "lesserwand9"
   }
 ]
