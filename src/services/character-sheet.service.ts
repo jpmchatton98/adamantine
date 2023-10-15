@@ -382,6 +382,7 @@ export class CharacterSheetService {
     blinded: 'eye-off',
     broken: 'shield-remove',
     charmed: 'heart',
+    criticalhits: 'dice-d20',
     deafened: 'ear-hearing-off',
     disease: 'virus',
     exhaustion: 'sleep',

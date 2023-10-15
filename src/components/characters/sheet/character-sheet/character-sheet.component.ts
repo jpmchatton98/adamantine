@@ -800,7 +800,9 @@ export class CharacterSheetComponent implements OnInit {
     return this.characterSheetService.damageIcons[damageType];
   }
   public getConditionIcon(condition: string) {
-    return this.characterSheetService.conditionIcons[condition];
+    return this.characterSheetService.conditionIcons[
+      condition.toLowerCase().replace(' ', '')
+    ];
   }
   public hasResistance() {
     return !!this.defenses.damage.find((d) => d.level === 1);
