@@ -1,1 +1,913 @@
-<p>runecarving works!</p>
+<div>
+  Runecarving is the art of marking special magical enhancements in the form of
+  magical runes. These are symbolic representations that channel and focus power
+  to confer a special magical effect to the item they are marked on.
+</div>
+
+<h5>Related Tool & Ability Score</h5>
+<div>
+  Rune carving comes in two different traditions; you can mark runes from either
+  tradition. Either tradition uses Whitesmith's Tools.
+</div>
+<h6>Academic Tradition</h6>
+<div>
+  The runes of mages, scholors, and elves, these traditions are not necessarily
+  any less ancient, but runecarvers of these traditions seek new knowledge and
+  expression, rather than being rooted in the old ways.
+</div>
+<h6>Ancient Tradition</h6>
+<div>The runes of the Giants, Dwarves, and other ancient traditions.</div>
+
+<h5>Materials</h5>
+<div>
+  Runecarving uses primarily magical ink and essences to imbue their runes with
+  the prerequisite magical properties.
+</div>
+
+<h5>Crafting Roll</h5>
+<div>
+  <div>
+    Putting that together means that when you would like to inscribe a rune,
+    your crafting roll is as follows:
+  </div>
+  <div>
+    <strong>Runecarving Modifier =</strong> your Whitesmith's Tools modifier
+  </div>
+</div>
+<h6>Runic Saving Throw</h6>
+<div>
+  <div>
+    Some runes require a saving throw, the following is the formula for
+    calculating the saving throw. The saving throw is calculated at the time of
+    creation based on the creators attributes and proficiency, and doesn't
+    change once it is created. A saving throw doesn't include any expertise or
+    other bonuses a crafter has to the crafting roll.
+  </div>
+  <div><strong>Runic DC = </strong> 8 + your Whitesmith's Tools modifier</div>
+  <div>
+    <strong>Runic Attack Modifier = </strong> your Whitesmith's Tools modifier
+  </div>
+</div>
+<h6>Success and Failure</h6>
+<div>
+  <div>
+    After you make a crafting roll, if you succeed, you make 2 hours of progress
+    toward the total crafting time (and have completed one of the required
+    checks for making an item).
+  </div>
+  <div>
+    Checks for Runecarving do not need to be immediately consecutive. If you
+    fail three times in a row, all progress and materials are lost and can no
+    longer be salvaged. Failure means that no progress is made during that time.
+  </div>
+  <div>
+    Once an item is started, even if no progress is made, the components
+    reserved for that item can only be recovered via salvage.
+  </div>
+</div>
+
+<h5>Carving a Rune</h5>
+<div>
+  You can place a rune on a weapon, set of armor, or item. When you place an
+  rune on an item, that item requires attunement. When a creature is attuned to
+  it, the rune grants the wielder certain benefits as defined by the rune. An
+  item becomes a magical item of the rarity of the rune placed on it when a rune
+  is palced on it.
+</div>
+<h6>Runes on Magical Items</h6>
+<div>
+  Placing a rune on a magical item is exceedingly difficult. Magical items
+  resist modification, and their magic interfers with the rune. It can be done
+  with additional difficult as per the table below. If the item has attunement,
+  the rune still requires seperate attunement.
+
+  <table>
+    <tr>
+      <th>Item Rarity</th>
+      <th>DC</th>
+    </tr>
+    <tr>
+      <td>Common</td>
+      <td>+5</td>
+    </tr>
+    <tr>
+      <td>Uncommon</td>
+      <td>+7</td>
+    </tr>
+    <tr>
+      <td>Rare</td>
+      <td>+10</td>
+    </tr>
+    <tr>
+      <td>Very Rare</td>
+      <td>+14</td>
+    </tr>
+    <tr>
+      <td>Legendary</td>
+      <td>+20</td>
+    </tr>
+  </table>
+</div>
+
+<nz-tabset [nzSize]="'small'" [nzAnimated]="false">
+  <nz-tab nzTitle="Academic Runes">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Cost</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Color</td>
+          <td>
+            <div>1&times; common magical ink</div>
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>13</td>
+          <td>Common</td>
+          <td>20 gp</td>
+        </tr>
+        <tr>
+          <td>Comprehension</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon arcane essence</div>
+            <div>1&times; common divine essence</div>
+            <div>1&times; scroll of comprehend languages</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>350 gp</td>
+        </tr>
+        <tr>
+          <td>Connection</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon divine essence</div>
+            <div>1&times; scroll of calm emotions</div>
+            <div>1&times; scroll of detect thoughts</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>390 gp</td>
+        </tr>
+        <tr>
+          <td>Gravity</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon arcane essence</div>
+            <div>1&times; scroll of levitate</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>320 gp</td>
+        </tr>
+        <tr>
+          <td>Protection</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon arcane essence</div>
+            <div>1&times; scroll of shield</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>305 gp</td>
+        </tr>
+        <tr>
+          <td>Skill</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon arcane essence</div>
+            <div>1&times; scroll of enhance ability</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>Uncommon</td>
+          <td>490 gp</td>
+        </tr>
+        <tr>
+          <td>Blood</td>
+          <td>
+            <div>1&times; rare magical ink</div>
+            <div>1&times; rare occult essence</div>
+            <div>1&times; scroll of vampiric touch</div>
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>1400 gp</td>
+        </tr>
+        <tr>
+          <td>Power</td>
+          <td>
+            <div>1&times; rare magical ink</div>
+            <div>1&times; rare arcane essence</div>
+            <div>2&times; uncommon arcane essence</div>
+          </td>
+          <td>10</td>
+          <td>5</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>1600 gp</td>
+        </tr>
+        <tr>
+          <td>Space</td>
+          <td>
+            <div>1&times; rare magical ink</div>
+            <div>1&times; rare arcane essence</div>
+            <div>2&times; uncommon arcane essence</div>
+            <div>1&times; scroll of dimenson door</div>
+          </td>
+          <td>10</td>
+          <td>5</td>
+          <td>17</td>
+          <td>Rare</td>
+          <td>2000 gp</td>
+        </tr>
+        <tr>
+          <td>Reality</td>
+          <td>
+            <div>1&times; very rare magical ink</div>
+            <div>1&times; very rare arcane essence</div>
+            <div>2&times; rare arcane essence</div>
+            <div>1&times; scroll of creation</div>
+            <div>1&times; scroll of major image</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>18</td>
+          <td>Very Rare</td>
+          <td>14000 gp</td>
+        </tr>
+        <tr>
+          <td>Speed</td>
+          <td>
+            <div>1&times; very rare magical ink</div>
+            <div>1&times; very rare arcane essence</div>
+            <div>1&times; scroll of haste</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>17</td>
+          <td>Very Rare</td>
+          <td>10500 gp</td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td>
+            <div>1&times; legendary magical ink</div>
+            <div>1&times; legendary arcane essence</div>
+            <div>1&times; very rare arcane essence</div>
+            <div>2&times; rare divine essence</div>
+            <div>1&times; scroll of time stop</div>
+          </td>
+          <td>24</td>
+          <td>12</td>
+          <td>21</td>
+          <td>Legendary</td>
+          <td>100000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    <h5>Rune Effects</h5>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Rune</td>
+          <td>Description</td>
+          <td>Passive Effect</td>
+          <td>Active Effect</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Color</td>
+          <td>A multifaced rune the glimmers a shifting color.</td>
+          <td>-</td>
+          <td>
+            A creature that touches an item with this rune can change the color
+            of that item as an action.
+          </td>
+        </tr>
+        <tr>
+          <td>Comprehension</td>
+          <td>
+            A rune that resembles a script that no one can determine the nature
+            of, glowing a steady white-blue light.
+          </td>
+          <td>
+            When marked on armor or an item, the attuned wearer can read all
+            writing, even if it is not in a language they would normally
+            understand. This confers only the literal meaning of the text, and
+            doesn't break a cipher or code.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can cast comprehend
+            languages without expending a spell slot. Once activated, it can't
+            be activated again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Connection</td>
+          <td>
+            A rune made up of an interlocking square, circle, and triangle, that
+            courses with pure white light.
+          </td>
+          <td>
+            When marked on an item, an attuned wearer can spend an action to
+            gain supernatural insight into other sentient creatures for 10
+            minutes. You gain advantage on all Wisdom (Insight) checks, but
+            dealing damage to another sentient creature while in this heightened
+            state of awareness causes you to take 1 psychic damage
+          </td>
+          <td>
+            While attuned to an item with this rune, you can force another
+            creature to experience a brief flash of connection to your state of
+            mind. The effects of this may vary, but most often allows you to
+            gain advantage on a Charisma (Persuasion) check with them. If used
+            as a reaction to taking damage, you can force the creature that
+            dealt the damage to you to take psychic damage equal to half the
+            damage dealt. Once activated, it can't be activated again until the
+            next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Gravity</td>
+          <td>
+            An rune formed of detailed concentric circles that faintly glimmers
+            with soft purple glow.
+          </td>
+          <td>
+            When marked on armor or an item, or a weapon, an attuned wielder
+            takes no falling damage.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast levitate as a bonus action without expending a spell slot. This
+            uses the creator's Rune DC (set at the time of carving the rune).
+            Once a rune's power is used, the rune's active can't be used again
+            until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Protection</td>
+          <td>
+            A complicated rune with twisting multilayered geometric markings
+            that glimmers a dull grey.
+          </td>
+          <td>
+            When marked on armor or an item, any time an attuned wearer takes
+            damage, that damage is reduced by 1.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast shield without expending a spell slot. Once a rune's power is
+            used, the rune's active can't be used again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Skill</td>
+          <td>
+            An intricate rune that pulses with swirling lights, varying in
+            design to incorporate a mark of the skill granted.
+          </td>
+          <td>
+            When marked on an item, an attuned wearer gains proficiency in one
+            skill, selected when the rune is marked by the creator of the rune
+          </td>
+          <td>
+            While attuned to an item with this rune, you can activate this rune
+            gain advantage on an ability check for the skill granted by this
+            rune. Once activated, it can't be activated again until the next
+            dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Blood</td>
+          <td>
+            A swirling rune with repeating spiraling patterns that pulses with a
+            deep red light.
+          </td>
+          <td>
+            When marked on a weapon, if an attuned wielder deals damage with
+            that weapon to a living creature of CR 1/4 or higher, the weapon
+            deals an extra 1d4 necrotic damage, and the wielder regains hit
+            points equal to the necrotic damage dealt.
+          </td>
+          <td>
+            After dealing necrotic damage with this weapon, an attuned wielder
+            can use their bonus action to activate the rune, drawing the blood
+            of the creature dealing an extra 3d4 necrotic damage, and regainin
+            hit points equal to the additional necrotic damage dealt. Once a
+            rune's power is used, the rune's active can't be used again until
+            the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Power</td>
+          <td>
+            A vibrant rune with intricate line work that shines a bright cyan.
+          </td>
+          <td>
+            When wearing armor or an item marked with this rune, once per turn
+            when the wearer rolls for damage with a spell, they can maximize one
+            die of the damage roll. When wielding a weapon marked with this
+            rune, the damage of that weapon is considered magical, and once per
+            turn, when the wielder rolls damage for an attack with that weapon,
+            they can maximize one damage die.
+          </td>
+          <td>
+            While attuned to an item with this rune, when you cast a spell, you
+            can use this rune to empower it, casting it as if it was one level
+            higher. Once activated, it can't be activated again until the next
+            dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Space</td>
+          <td>
+            A deceptively simply rune made of up lines of varying lengths in an
+            odd arrangement that glows a steady dim grey light.
+          </td>
+          <td>
+            On your turn, you can replace your movement by teleporting 10 feet
+            in any direction to an empty space you can see.
+          </td>
+          <td>
+            You can cast dimension door without expending a spell slot. Once
+            activated, it can't be activated again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Reality</td>
+          <td>
+            A fanciful twisting rune that confuses the eye with ever shifting
+            patterns of colors.
+          </td>
+          <td>
+            When marked on an item, an attuned wearer can cast ever more
+            convincing illusions. Creatures have disadvantage on their first
+            Intelligence (Investigation) check to determine if a spell you cast
+            is an illusion (the first check it makes against that spell).
+          </td>
+          <td>
+            You can cause one illusion you've made to become real. This effects
+            a 10 foot by 10 foot cube of the illusion if it is larger than that.
+            This can't create an object worth more than 100 gp, lasts 1 hour,
+            and can't create a creature of a CR greater than 5 (when attempting
+            to, it may create a weakened version of that creature, or simply
+            fail). If the illusion directly causes damage (from falling on a
+            creature, or otherwise being harmful) it can deal a maximum of 8d8
+            damage (potentially split across multiple creatures). This limit
+            doesn't apply to creatures created through it. Once activated, it
+            can't be activated again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Speed</td>
+          <td>A flickering white rune with jagged lines.</td>
+          <td>
+            When marked on armor or an item, an attuned wearer can take the dash
+            action as a bonus action on their turn. When marked on a weapon with
+            light property, an attuned wearer can make a single weapon attack
+            with the bonus action on their turn.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast haste without expending a spell slot. Once activated, it can't
+            be activated again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td>
+            A complicated geometric rune that slowly pulses with pale grey
+            light.
+          </td>
+          <td>
+            When marked on armor or an item, your speed increases by 20 feet,
+            you gain a +2 bonus to AC and Dexterity saving throws, and you can
+            take two reactions per round, though you can't take multiple
+            reactions on the same turn. You age twice as fast while attuned to
+            this rune.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast time stop without expending a spell slot. Alternatively, you
+            can use this rune as a reaction failing a Dexterity saving throw or
+            being hit by an attack to automatically pass a Dexterity saving
+            throw, or cause an attack to miss. You can use this ability after
+            the roll to change its outcome. Once activated, it can't be
+            activated again until the next dawn.
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Ancient Runes">
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Materials</td>
+          <td>Crafting Time</td>
+          <td>Checks</td>
+          <td>DC</td>
+          <td>Rarity</td>
+          <td>Cost</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Light</td>
+          <td>
+            <div>1&times; common magical ink</div>
+            <div>1&times; common primal essence</div>
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>12</td>
+          <td>Common</td>
+          <td>70 gp</td>
+        </tr>
+        <tr>
+          <td>Fire</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon primal essence</div>
+            <div>2&times; uncommon reactive reagent</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>330 gp</td>
+        </tr>
+        <tr>
+          <td>Frost</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon primal essence</div>
+            <div>2&times; common primal essence</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>330 gp</td>
+        </tr>
+        <tr>
+          <td>Lightning</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon primal essence</div>
+            <div>1&times; common arcane essence</div>
+            <div>1&times; common primal essence</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>330 gp</td>
+        </tr>
+        <tr>
+          <td>Size</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon primal essence</div>
+            <div>2&times; uncommon reactive reagent</div>
+            <div>1&times; scroll of enlarge/reduce</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>320 gp</td>
+        </tr>
+        <tr>
+          <td>Vision</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; uncommon primal essence</div>
+            <div>1&times; common arcane essence</div>
+            <div>1&times; common divine essence</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>14</td>
+          <td>Uncommon</td>
+          <td>330 gp</td>
+        </tr>
+        <tr>
+          <td>Brutality</td>
+          <td>
+            <div>1&times; rare magical ink</div>
+            <div>3&times; rare primal essence</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>3300 gp</td>
+        </tr>
+        <tr>
+          <td>Destruction</td>
+          <td>
+            <div>1&times; rare magical ink</div>
+            <div>3&times; rare primal essence</div>
+            <div>3&times; uncommon primal essence</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>16</td>
+          <td>Rare</td>
+          <td>3500 gp</td>
+        </tr>
+        <tr>
+          <td>Vigor</td>
+          <td>
+            <div>1&times; uncommon magical ink</div>
+            <div>1&times; rare primal essence</div>
+            <div>1&times; uncommon divine essence</div>
+            <div>4&times; rare curative reagent</div>
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>15</td>
+          <td>Rare</td>
+          <td>1900 gp</td>
+        </tr>
+        <tr>
+          <td>Wrath</td>
+          <td>
+            <div>1&times; very rare magical ink</div>
+            <div>1&times; very rare primal essence</div>
+            <div>2&times; rare primal essence</div>
+          </td>
+          <td>16</td>
+          <td>8</td>
+          <td>17</td>
+          <td>Very Rare</td>
+          <td>12000 gp</td>
+        </tr>
+        <tr>
+          <td>Death</td>
+          <td>
+            <div>1&times; legendary magical ink</div>
+            <div>1&times; legendary primal essence</div>
+            <div>1&times; legendary divine essence</div>
+            <div>4&times; rare primal essence</div>
+          </td>
+          <td>24</td>
+          <td>12</td>
+          <td>19</td>
+          <td>Legendary</td>
+          <td>65000 gp</td>
+        </tr>
+      </tbody>
+    </nz-table>
+
+    <h5>Rune Effects</h5>
+    <nz-table
+      [nzData]="['yo mama']"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+      nzSize="small"
+    >
+      <thead>
+        <tr>
+          <td>Rune</td>
+          <td>Description</td>
+          <td>Passive Effect</td>
+          <td>Active Effect</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Light</td>
+          <td>A simple circular rune the shines a constant white light.</td>
+          <td>-</td>
+          <td>
+            A creature that touches an item bearing this rune can cast the light
+            spell targeting that item.
+          </td>
+        </tr>
+        <tr>
+          <td>Fire</td>
+          <td>
+            An chaotic flowing rune with no straight lines. It pulses with a
+            flickering orange energy.
+          </td>
+          <td>
+            When marked on armor or an item, an attuned wearer gains resistance
+            to fire damage. When marked on a weapon, an attuned wielder deals
+            deals 1d4 additional fire damage on hit with that weapon.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast burning hands (2nd level) as a bonus action without expending a
+            spell slot. This uses the crafter's Rune DC (set at the time of
+            carving the rune). Once a rune's power is used, the rune's active
+            can't be used again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Frost</td>
+          <td>
+            An angular geometric rune that softly pulses with a faint white
+            light.
+          </td>
+          <td>
+            When marked on armor or an item, an attuned wearer gains resistance
+            to cold damage. When marked on a weapon, an attuned wielder deals
+            deals 1d4 additional cold damage on hit with that weapon.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can grant yourself 10
+            temporary hit points as a bonus action, lasting for 1 hour. If a
+            creature hits you with a melee attack while you have these hit
+            points, the creature takes 5 cold damage. Once a rune's power is
+            used, the rune's active can't be used again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Lightning</td>
+          <td>A jagged rune that flashes and crackles with blue light.</td>
+          <td>
+            When marked on armor or an item, the wearer's speed is increased by
+            10 feet. When marked on a weapon, an attuned wielder deals an extra
+            1d4 lightning damage on hit with that weapon.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast crackle as a bonus action without expending a spell slot. This
+            uses the crafter's Rune Attack Modifier and Rune DC (set at the time
+            of carving the rune)C. Once a rune's power is used, the rune's
+            active can't be used again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Size</td>
+          <td>
+            A rune of layered circles with a pale green light flowing through
+            them.
+          </td>
+          <td>
+            When marked on armor or an item, an attuned wearer grows 1 foot,
+            counts as one size larger when determining your carrying capacity
+            and the weight you can push, drag, or lift. When marked on a weapon,
+            the weapon grows larger when wielded by an attuned wielder and gains
+            the heavy property if it doesn't already have it (losing the light
+            property if it has the light property).
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast enlarge/reduce as a bonus action without expending a spell
+            slot. Once a rune's power is used, the rune's active can't be used
+            again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Vision</td>
+          <td>An eye shaped rune the dimly pulses a faint purple light.</td>
+          <td>
+            When marked on armor or an item, an attuned wearer grains dark
+            vision with a range of 30 feet. If the the attuned wearer already
+            has darkvision, the range of the darkvision increases by 30 feet.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can grant yourself 60
+            feet of blindsight as a bonus action. This lasts until the start of
+            your next turn. Once a rune's power is used, the rune's active can't
+            be used again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Brutality</td>
+          <td>
+            A rune made of large chaotic interlocking pattern that burns with a
+            dull orange light.
+          </td>
+          <td>
+            When marked on a weapon, an attuned wielder of the weapon is healed
+            for 1d12 hit points when deal a critical strike with the marked
+            weapon.
+          </td>
+          <td>
+            An attuned wielder can activate the rune (no action required) during
+            their turn. Until the end of their turn, whenever they miss an
+            attack roll against a target within their reach, the attack still
+            deals half damage to the target. Once activated, it can't be
+            activated until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Destruction</td>
+          <td>
+            A simple rune with bold slashing struct that glow with vibrant and
+            pulsing red light.
+          </td>
+          <td>
+            When marked on a weapon, the weapon deals an extra 1d6 damage on hit
+            when wielded by an attuned wearer. Its damage overcomes all
+            resistance to damage.
+          </td>
+          <td>
+            When the attuned wielder makes an attack with a weapon marked with
+            this rune, they can make the attack a critical hit. Once activated,
+            it can't be activated again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Vigor</td>
+          <td>
+            A bold rune with intertwined lines that hums slightly, beating with
+            a faint red light.
+          </td>
+          <td>
+            When marked on armor or an item, an attuned wearer can spend a Hit
+            Die as a bonus action, rolling it and regaining hit points as
+            normal. When marked on a weapon, an attuned wielder gains temporary
+            hit points equal to the Constitution modifier when dealing damage to
+            a living target.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast cure wounds (2nd level) as a bonus action without expending a
+            spell slot. Once a rune's power is used, the rune's active can't be
+            used again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Wrath</td>
+          <td>
+            A jagged chaotic rune that spreads out in all directions and flashes
+            with angry red light.
+          </td>
+          <td>
+            When marked on an item, the attuned wearer can use their reaction to
+            inflict 1d6 lightning damage on any creature within 30 feet of them
+            that deals damage to them.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use that item to
+            cast chain lightning without expending a spell slot. Once activated,
+            it can't be activated again until the next dawn.
+          </td>
+        </tr>
+        <tr>
+          <td>Death</td>
+          <td>A rune of ominous complexity wreathed in shadows.</td>
+          <td>
+            While marked on armor or any item, the attuned wearer can't die
+            unless the rune is removed from the possession. They are still
+            incapacitated and unconcious when reduced to 0 hit points, but
+            reaching 3 death saving throws has no effect while the rune is being
+            worn or carried on their person. While attuned to this rune, undead
+            of CR 5 or lower treat you as another undead, and only attack you if
+            otherwise commanded to by a controlling entity or attacked by you.
+          </td>
+          <td>
+            While attuned to an item with this rune, you can use item to cast
+            power word kill without expending a spell slot. Once this rune's
+            power is used, you can't use it again until the next dawn.
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+</nz-tabset>
