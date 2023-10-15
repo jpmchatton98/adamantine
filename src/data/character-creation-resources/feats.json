@@ -1384,7 +1384,7 @@
     "granted": [
       {
         "type": "passive-skill",
-        "options": ["Insight", "Perception"],
+        "options": ["Investigation", "Perception"],
         "amount": 5
       }
     ]
