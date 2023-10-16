@@ -1,0 +1,411 @@
+[
+  {
+    "tool": "Alchemist's Supplies",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "bottle", "quantity": 2 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 0,
+    "cost": 50
+  },
+  {
+    "tool": "Angler's Tools",
+    "materials": [
+      { "item": "wood scrap", "quantity": 4 },
+      { "item": "string", "quantity": 2 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 13,
+    "rarity": 0,
+    "cost": 1
+  },
+  {
+    "tool": "Archeologist's Supplies",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 5
+  },
+  {
+    "tool": "Blacksmith's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "hammer", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 20
+  },
+  {
+    "tool": "Brewer's Supplies",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "bottle", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 20
+  },
+  {
+    "tool": "Calligrapher's Supplies",
+    "materials": [
+      { "item": "parchment", "quantity": 10 },
+      { "item": "ink", "quantity": 2 },
+      { "item": "fletching", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 10
+  },
+  {
+    "tool": "Carpenter's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "handaxe", "quantity": 2 },
+      { "item": "saw", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 8
+  },
+  {
+    "tool": "Cartographer's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 1 },
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "compass", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 15
+  },
+  {
+    "tool": "Chandler's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "wax", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 29
+  },
+  {
+    "tool": "Cobbler's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 3 },
+      { "item": "parts", "quantity": 1 },
+      { "item": "leather scrap", "quantity": 5 },
+      { "item": "thread", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 5
+  },
+  {
+    "tool": "Cook's Utensils",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "iron pot", "quantity": 5 },
+      { "item": "iron skillet", "quantity": 5 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 13,
+    "rarity": 0,
+    "cost": 1
+  },
+  {
+    "tool": "Disguise Kit",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "ink", "quantity": 2 },
+      { "item": "wax", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 25
+  },
+  {
+    "tool": "Forgery Kit",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "parchment", "quantity": 10 },
+      { "item": "ink", "quantity": 2 },
+      { "item": "fletching", "quantity": 1 },
+      { "item": "wax", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 15
+  },
+  {
+    "tool": "Gardener's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 8
+  },
+  {
+    "tool": "Glassblower's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "glass", "quantity": 2 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 13,
+    "rarity": 0,
+    "cost": 3
+  },
+  {
+    "tool": "Healer's Kit",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "cloth scrap", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 5
+  },
+  {
+    "tool": "Herbalism Kit",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 5
+  },
+  {
+    "tool": "Jeweler's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 25
+  },
+  {
+    "tool": "Leatherworker's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "leather scrap", "quantity": 5 },
+      { "item": "thread", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 5
+  },
+  {
+    "tool": "Mason's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 10
+  },
+  {
+    "tool": "Navigator's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "astrolabe", "quantity": 1 },
+      { "item": "compass", "quantity": 1 },
+      { "item": "sextant", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 25
+  },
+  {
+    "tool": "Painter's Supplies",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "ink", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 10
+  },
+  {
+    "tool": "Poisoner's Kit",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "bottle", "quantity": 2 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 0,
+    "cost": 50
+  },
+  {
+    "tool": "Potter's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 10
+  },
+  {
+    "tool": "Surgery Kit",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 0,
+    "cost": 50
+  },
+  {
+    "tool": "Tailor's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "chalk", "quantity": 5 },
+      { "item": "cloth scrap", "quantity": 5 },
+      { "item": "thread", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 25
+  },
+  {
+    "tool": "Thieves' Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 25
+  },
+  {
+    "tool": "Tinker's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "cloth scrap", "quantity": 1 },
+      { "item": "leather scrap", "quantity": 1 },
+      { "item": "thread", "quantity": 1 },
+      { "item": "wood scrap", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 0,
+    "cost": 50
+  },
+  {
+    "tool": "Weaver's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "cloth scrap", "quantity": 5 },
+      { "item": "thread", "quantity": 5 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 13,
+    "rarity": 0,
+    "cost": 1
+  },
+  {
+    "tool": "Whitesmith's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "fancy parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "cost": 13
+  },
+  {
+    "tool": "Woodcarver's Tools",
+    "materials": [
+      { "item": "metal scrap", "quantity": 4 },
+      { "item": "parts", "quantity": 2 },
+      { "item": "wood scrap", "quantity": 5 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 13,
+    "rarity": 0,
+    "cost": 1
+  }
+]

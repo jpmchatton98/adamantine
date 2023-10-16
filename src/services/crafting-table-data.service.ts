@@ -13,6 +13,8 @@ import magicTattoos from '../data/crafting/enchanting/tattoos.json';
 import magicWeapons from '../data/crafting/enchanting/weapons.json';
 import magicMisc from '../data/crafting/enchanting/misc.json';
 
+import tools from '../data/crafting/tinkering/tools.json';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -31,6 +33,9 @@ export class CraftingTableDataService {
       tattoos: magicTattoos,
       weapons: magicWeapons,
       misc: magicMisc,
+    },
+    tinkering: {
+      tools: tools,
     },
   };
 

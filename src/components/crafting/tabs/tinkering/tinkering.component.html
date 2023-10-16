@@ -160,6 +160,20 @@
           <td>1 gp</td>
         </tr>
         <tr>
+          <td>Censer</td>
+          <td>
+            <div>3&times; metal scrap</div>
+            <div>2&times; parts</div>
+            <div>1&times; bottle</div>
+            <div>1&times; chain</div>
+          </td>
+          <td>6</td>
+          <td>3</td>
+          <td>15</td>
+          <td>Common</td>
+          <td>5 gp</td>
+        </tr>
+        <tr>
           <td>Climber's Kit</td>
           <td>
             <div>10&times; piton</div>
@@ -666,37 +680,9 @@
       </tbody>
     </nz-table>
   </nz-tab>
-  <!-- <nz-tab nzTitle="Tools">
-    <nz-table
-      [nzData]="['yo mama']"
-      [nzShowPagination]="false"
-      [nzPageSize]="1 / 0"
-      nzSize="small"
-    >
-      <thead>
-        <tr>
-          <td>Name</td>
-          <td>Materials</td>
-          <td>Crafting Time (hours)</td>
-          <td>Checks</td>
-          <td>DC</td>
-          <td>Rarity</td>
-          <td>Value</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </nz-table>
-  </nz-tab> -->
+  <nz-tab nzTitle="Tools">
+    <craft-table [data]="getTableData('tools')"></craft-table>
+  </nz-tab>
   <nz-tab nzTitle="Vehicles">
     <nz-table
       [nzData]="['yo mama']"
@@ -900,6 +886,15 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td>Paper</td>
+          <td>1&times; wood scrap</td>
+          <td>4</td>
+          <td>2</td>
+          <td>9</td>
+          <td>Common</td>
+          <td>1 gp</td>
+        </tr>
         <tr>
           <td>Parts</td>
           <td>5&times; metal scrap</td>
