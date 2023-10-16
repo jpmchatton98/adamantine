@@ -10,7 +10,7 @@
     "craftingChecks": 3,
     "dc": 16,
     "rarity": 0,
-    "cost": 50
+    "value": 50
   },
   {
     "tool": "Angler's Tools",
@@ -22,7 +22,7 @@
     "craftingChecks": 1,
     "dc": 13,
     "rarity": 0,
-    "cost": 1
+    "value": 1
   },
   {
     "tool": "Archeologist's Supplies",
@@ -34,7 +34,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 5
+    "value": 5
   },
   {
     "tool": "Blacksmith's Tools",
@@ -47,7 +47,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 20
+    "value": 20
   },
   {
     "tool": "Brewer's Supplies",
@@ -60,7 +60,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 20
+    "value": 20
   },
   {
     "tool": "Calligrapher's Supplies",
@@ -73,7 +73,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 10
+    "value": 10
   },
   {
     "tool": "Carpenter's Tools",
@@ -87,7 +87,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 8
+    "value": 8
   },
   {
     "tool": "Cartographer's Tools",
@@ -101,7 +101,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 15
+    "value": 15
   },
   {
     "tool": "Chandler's Tools",
@@ -114,7 +114,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 29
+    "value": 29
   },
   {
     "tool": "Cobbler's Tools",
@@ -128,7 +128,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 5
+    "value": 5
   },
   {
     "tool": "Cook's Utensils",
@@ -141,7 +141,7 @@
     "craftingChecks": 1,
     "dc": 13,
     "rarity": 0,
-    "cost": 1
+    "value": 1
   },
   {
     "tool": "Disguise Kit",
@@ -155,7 +155,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 25
+    "value": 25
   },
   {
     "tool": "Forgery Kit",
@@ -171,7 +171,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 15
+    "value": 15
   },
   {
     "tool": "Gardener's Tools",
@@ -183,7 +183,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 8
+    "value": 8
   },
   {
     "tool": "Glassblower's Tools",
@@ -196,7 +196,7 @@
     "craftingChecks": 1,
     "dc": 13,
     "rarity": 0,
-    "cost": 3
+    "value": 3
   },
   {
     "tool": "Healer's Kit",
@@ -209,7 +209,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 5
+    "value": 5
   },
   {
     "tool": "Herbalism Kit",
@@ -221,7 +221,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 5
+    "value": 5
   },
   {
     "tool": "Jeweler's Tools",
@@ -233,7 +233,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 25
+    "value": 25
   },
   {
     "tool": "Leatherworker's Tools",
@@ -247,7 +247,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 5
+    "value": 5
   },
   {
     "tool": "Mason's Tools",
@@ -259,7 +259,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 10
+    "value": 10
   },
   {
     "tool": "Navigator's Tools",
@@ -274,7 +274,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 25
+    "value": 25
   },
   {
     "tool": "Painter's Supplies",
@@ -287,7 +287,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 10
+    "value": 10
   },
   {
     "tool": "Poisoner's Kit",
@@ -300,7 +300,7 @@
     "craftingChecks": 3,
     "dc": 16,
     "rarity": 0,
-    "cost": 50
+    "value": 50
   },
   {
     "tool": "Potter's Tools",
@@ -312,7 +312,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 10
+    "value": 10
   },
   {
     "tool": "Surgery Kit",
@@ -324,7 +324,7 @@
     "craftingChecks": 3,
     "dc": 16,
     "rarity": 0,
-    "cost": 50
+    "value": 50
   },
   {
     "tool": "Tailor's Tools",
@@ -339,7 +339,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 25
+    "value": 25
   },
   {
     "tool": "Thieves' Tools",
@@ -351,7 +351,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 25
+    "value": 25
   },
   {
     "tool": "Tinker's Tools",
@@ -367,7 +367,7 @@
     "craftingChecks": 3,
     "dc": 16,
     "rarity": 0,
-    "cost": 50
+    "value": 50
   },
   {
     "tool": "Weaver's Tools",
@@ -381,7 +381,7 @@
     "craftingChecks": 1,
     "dc": 13,
     "rarity": 0,
-    "cost": 1
+    "value": 1
   },
   {
     "tool": "Whitesmith's Tools",
@@ -393,7 +393,7 @@
     "craftingChecks": 2,
     "dc": 15,
     "rarity": 0,
-    "cost": 13
+    "value": 13
   },
   {
     "tool": "Woodcarver's Tools",
@@ -406,6 +406,6 @@
     "craftingChecks": 1,
     "dc": 13,
     "rarity": 0,
-    "cost": 1
+    "value": 1
   }
 ]
