@@ -1,0 +1,278 @@
+[
+  {
+    "name": "Arcane Grimoire, +1",
+    "materials": [
+      { "item": "book worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Minstrel's Symphony, +1",
+    "materials": [
+      { "item": "book worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Necronomicon, +1",
+    "materials": [
+      { "item": "book worth 100 gp", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Survival Guide, +1",
+    "materials": [
+      { "item": "book worth 100 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Universal Encyclopedia, +1",
+    "materials": [
+      { "item": "book worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Arcane Grimoire, +2",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Minstrel's Symphony, +2",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Necronomicon, +2",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Survival Guide, +2",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Universal Encyclopedia, +2",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Arcane Grimoire, +3",
+    "materials": [
+      { "item": "book worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Minstrel's Symphony, +3",
+    "materials": [
+      { "item": "book worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Necronomicon, +3",
+    "materials": [
+      { "item": "book worth 1000 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Survival Guide, +3",
+    "materials": [
+      { "item": "book worth 1000 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Universal Encyclopedia, +3",
+    "materials": [
+      { "item": "book worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Manual of Bodily Health",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 68500
+  },
+  {
+    "name": "Manual of Gainful Exercise",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 2 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 68500
+  },
+  {
+    "name": "Manual of Golems",
+    "materials": [
+      { "item": "book worth 250 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 2 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "scroll of awaken", "quantity": 1 },
+      { "item": "scroll of animate objects", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 4,
+    "value": 12400
+  },
+  {
+    "name": "Manual of Quickness of Action",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 68500
+  },
+  {
+    "name": "Tome of Clear Thought",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 2 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 68500
+  },
+  {
+    "name": "Tome of Leadership and Influence",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 2 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 68500
+  },
+  {
+    "name": "Tome of Understanding",
+    "materials": [
+      { "item": "book worth 500 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 68500
+  }
+]

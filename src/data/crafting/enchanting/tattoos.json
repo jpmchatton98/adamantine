@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Illuminator's Tattoo",
+    "materials": [
+      { "item": "common magical ink", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of light", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Masquerade Tattoo",
+    "materials": [
+      { "item": "common magical ink", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of disguise self", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Barrier Tattoo, small",
+    "materials": [
+      { "item": "uncommon magical ink", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 2 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 17,
+    "rarity": 1,
+    "value": 1000
+  },
+  {
+    "name": "Coiling Grasp Tattoo",
+    "materials": [
+      { "item": "uncommon magical ink", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 2 },
+      { "item": "scroll of eidolic chains", "quantity": 1 },
+      { "item": "scroll of entangle", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 1500
+  },
+  {
+    "name": "Eldritch Claw Tattoo",
+    "materials": [
+      { "item": "uncommon magical ink", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of alter self", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 1200
+  },
+  {
+    "name": "Frenzy Tattoo, +1",
+    "materials": [
+      { "item": "uncommon magical ink", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Barrier Tattoo, medium",
+    "materials": [
+      { "item": "rare magical ink", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 },
+      { "item": "scroll of glyph of warding", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 4000
+  },
+  {
+    "name": "Frenzy Tattoo, +2",
+    "materials": [
+      { "item": "rare magical ink", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Shadowfell Brand Tattoo",
+    "materials": [
+      { "item": "rare magical ink", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 2 },
+      { "item": "uncommon occult essence", "quantity": 2 },
+      { "item": "scroll of darkvision", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3500
+  },
+  {
+    "name": "Absorbing Tattoo",
+    "materials": [
+      { "item": "very rare magical ink", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 },
+      { "item": "rare primal essence", "quantity": 4 },
+      { "item": "scroll of protection from energy", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 40000
+  },
+  {
+    "name": "Barrier Tattoo, large",
+    "materials": [
+      { "item": "very rare magical ink", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 2 },
+      { "item": "rare essence", "quantity": 4 },
+      { "item": "scroll of glyph of warding", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 },
+      { "item": "scroll of stoneskin", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 30000
+  },
+  {
+    "name": "Frenzy Tattoo, +3",
+    "materials": [
+      { "item": "very rare magical ink", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Ghost Step Tattoo",
+    "materials": [
+      { "item": "very rare magical ink", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 },
+      { "item": "rare occult essence", "quantity": 2 },
+      { "item": "scroll of freedom of movement", "quantity": 1 },
+      { "item": "scroll of etherealness", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 20,
+    "rarity": 3,
+    "value": 35000
+  },
+  {
+    "name": "Lifewell Tattoo",
+    "materials": [
+      { "item": "very rare magical ink", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 4 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "scroll of death ward", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 40000
+  },
+  {
+    "name": "Blood Fury Tattoo",
+    "materials": [
+      { "item": "legendary magical ink", "quantity": 1 },
+      { "item": "legendary occult essence", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 4 },
+      { "item": "rare occult essence", "quantity": 2 },
+      { "item": "scroll of enervation", "quantity": 1 },
+      { "item": "scroll of inflict wounds", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 22,
+    "rarity": 4,
+    "value": 100000
+  }
+]

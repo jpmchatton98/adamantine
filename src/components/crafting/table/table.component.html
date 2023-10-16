@@ -1,0 +1,36 @@
+<nz-table
+  [nzData]="['yo mama']"
+  [nzShowPagination]="false"
+  [nzPageSize]="1 / 0"
+  nzSize="small"
+>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Materials</td>
+      <td>Crafting Time (hours)</td>
+      <td>Checks</td>
+      <td>DC</td>
+      <td>Rarity</td>
+      <td>Value</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.name }}</td>
+      <td>
+        <div *ngFor="let material of item.materials">
+          <span *ngIf="material.quantity">
+            {{ material.quantity }}&times;
+          </span>
+          {{ material.item }}
+        </div>
+      </td>
+      <td>{{ item.craftingTime }}</td>
+      <td>{{ item.craftingChecks }}</td>
+      <td>{{ item.dc }}</td>
+      <td>{{ getRarity(item.rarity) }}</td>
+      <td>{{ formatCost(item.value) }}</td>
+    </tr>
+  </tbody>
+</nz-table>

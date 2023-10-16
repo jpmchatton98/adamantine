@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Boots of False Tracks",
+    "materials": [
+      { "item": "boots", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of mold earth", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Boots of Elvenkind",
+    "materials": [
+      { "item": "boots worth 50 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of pass without trace", "quantity": 1 },
+      { "item": "scroll of silence", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 470
+  },
+  {
+    "name": "Boots of Striding and Springing",
+    "materials": [
+      { "item": "boots worth 50 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of jump", "quantity": 1 },
+      { "item": "scroll of longstrider", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 325
+  },
+  {
+    "name": "Boots of the Winterlands",
+    "materials": [
+      { "item": "boots", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of arctic breath", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 1,
+    "value": 760
+  },
+  {
+    "name": "Slippers of Spider Climbing",
+    "materials": [
+      { "item": "shoes", "quantity": 1 },
+      { "item": "common occult essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of spider climb", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 225
+  },
+  {
+    "name": "Winged Boots",
+    "materials": [
+      { "item": "boots worth 50 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of feather fall", "quantity": 1 },
+      { "item": "scroll of fly", "quantity": 1 },
+      { "item": "scroll of levitate", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 15,
+    "rarity": 1,
+    "value": 1000
+  },
+  {
+    "name": "Boots of Levitation",
+    "materials": [
+      { "item": "boots worth 50 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "scroll of levitate", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2600
+  },
+  {
+    "name": "Boots of Speed",
+    "materials": [
+      { "item": "boots worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "uncommon arcane essence", "quantity": 2 },
+      { "item": "scroll of haste", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 3400
+  }
+]

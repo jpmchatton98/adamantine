@@ -3883,7 +3883,7 @@
     {
       "name": "Elder Rune of Immovability",
       "prereqLevel": 7,
-      "description": "As an action, you can active the rune, which causes your Runestone to become magically fixed in place.  Until you use a bonus action to recall the Runestone to your hand, it doesn't move.  Your Runestone can hold up to 8,000 pounds of weight.  More weight causes the rune to dispel and fall.  As an action, a creature can make a Strength check (DC = 10 + your Warlock spell save DC).  On a success, they can move the Runestone up to 10 feet.",
+      "description": "As an action, you can active the rune, which causes your Runestone to become magically fixed in place.  Until you use a bonus action to recall the Runestone to your hand, it doesn't move.  Your Runestone can hold up to 8000 pounds of weight.  More weight causes the rune to dispel and fall.  As an action, a creature can make a Strength check (DC = 10 + your Warlock spell save DC).  On a success, they can move the Runestone up to 10 feet.",
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",

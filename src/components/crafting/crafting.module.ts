@@ -23,6 +23,8 @@ import { TinkeringComponent } from './tabs/tinkering/tinkering.component';
 import { WhittlingComponent } from './tabs/whittling/whittling.component';
 import { WoodcarvingComponent } from './tabs/woodcarving/woodcarving.component';
 import { MinorComponent } from './tabs/minor/minor.component';
+import { CraftingTableDataService } from 'src/services/crafting-table-data.service';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { MinorComponent } from './tabs/minor/minor.component';
     WhittlingComponent,
     WoodcarvingComponent,
     MinorComponent,
+    TableComponent,
   ],
   imports: [
     CommonModule,
@@ -53,5 +56,6 @@ import { MinorComponent } from './tabs/minor/minor.component';
     NzModalModule,
     RouterModule,
   ],
+  providers: [CraftingTableDataService],
 })
 export class CraftingModule {}

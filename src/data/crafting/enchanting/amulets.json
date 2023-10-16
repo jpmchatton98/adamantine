@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Clockwork Amulet",
+    "materials": [
+      { "item": "amulet", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of guidance", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Dark Shard Amulet",
+    "materials": [
+      { "item": "amulet", "quantity": 1 },
+      { "item": "common occult essence", "quantity": 1 },
+      { "item": "scroll of seance", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 150
+  },
+  {
+    "name": "Amulet of Proof Against Detection and Location",
+    "materials": [
+      { "item": "amulet", "quantity": 1 },
+      { "item": "scroll of nondetection", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 350
+  },
+  {
+    "name": "Amulet of the Devout, +1",
+    "materials": [
+      { "item": "amulet worth 100 gp", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Bloodwell Vial, +1",
+    "materials": [
+      { "item": "amulet worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Brooch of Shielding",
+    "materials": [
+      { "item": "amulet or brooch worth 10 gp", "quantity": 1 },
+      { "item": "scroll of magic missile", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 14,
+    "rarity": 1,
+    "value": 444
+  },
+  {
+    "name": "Medallion of Thoughts",
+    "materials": [
+      { "item": "amulet worth 25 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 1 },
+      { "item": "scroll of detect thoughts", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Necklace of Adaptation",
+    "materials": [
+      { "item": "amulet worth 25 gp", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of protection from poison", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 12,
+    "rarity": 1,
+    "value": 170
+  },
+  {
+    "name": "Periapt of Health",
+    "materials": [
+      { "item": "amulet worth 50 gp", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 2 },
+      { "item": "scroll of lesser restoration", "quantity": 1 },
+      { "item": "scroll of purify food and drink", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 12,
+    "rarity": 1,
+    "value": 325
+  },
+  {
+    "name": "Periapt of Wound Closure",
+    "materials": [
+      { "item": "amulet worth 50 gp", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of cure wounds", "quantity": 1 },
+      { "item": "scroll of prayer of healing", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 450
+  },
+  {
+    "name": "Savage Talisman",
+    "materials": [
+      { "item": "amulet worth 10 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "common primal essence", "quantity": 2 },
+      { "item": "scroll of alter self", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 550
+  },
+  {
+    "name": "Spirit Trinket, +1",
+    "materials": [
+      { "item": "amulet worth 100 gp", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Amulet of Health",
+    "materials": [
+      { "item": "amulet worth 200 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 2500
+  },
+  {
+    "name": "Amulet of the Devout, +2",
+    "materials": [
+      { "item": "amulet worth 500 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Bloodwell Vial, +2",
+    "materials": [
+      { "item": "amulet worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Necklace of Fireballs",
+    "materials": [
+      { "item": "gem worth 50 gp", "quantity": 6 },
+      { "item": "rare arcane essence", "quantity": 6 },
+      { "item": "scroll of fireball", "quantity": 6 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 17,
+    "rarity": 2,
+    "value": 15000
+  },
+  {
+    "name": "Necklace of Prayer Beads",
+    "materials": [
+      { "item": "gem worth 50 gp", "quantity": 6 },
+      { "item": "rare divine essence", "quantity": 6 },
+      { "item": "scroll of bless", "quantity": 1 },
+      { "item": "scroll of branding smite", "quantity": 1 },
+      { "item": "scroll of cure wounds", "quantity": 1 },
+      { "item": "scroll of greater restoration", "quantity": 1 },
+      { "item": "scroll of lesser restoration", "quantity": 1 },
+      { "item": "scroll of planar ally", "quantity": 1 },
+      { "item": "scroll of wind walk", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 10000
+  },
+  {
+    "name": "Spirit Trinket, +2",
+    "materials": [
+      { "item": "amulet worth 500 gp", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Squall Collar",
+    "materials": [
+      { "item": "collar worth 100 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of lightning charged", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 4,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1400
+  },
+  {
+    "name": "Amulet of the Devout, +3",
+    "materials": [
+      { "item": "amulet worth 1000 gp", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Amulet of the Planes",
+    "materials": [
+      { "item": "amulet worth 650 gp", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "scroll of plane shift", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 23400
+  },
+  {
+    "name": "Bloodwell Vial, +3",
+    "materials": [
+      { "item": "amulet worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Spirit Trinket, +3",
+    "materials": [
+      { "item": "amulet worth 1000 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Scarab of Protection",
+    "materials": [
+      { "item": "amulet worth 500 gp", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "scroll of holy aura", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 4,
+    "value": 25000
+  },
+  {
+    "name": "Talisman of Pure Good",
+    "materials": [
+      { "item": "amulet worth 1000 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "scroll of fissure", "quantity": 1 },
+      { "item": "scroll of gate", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 88000
+  },
+  {
+    "name": "Talisman of the Sphere",
+    "materials": [
+      { "item": "amulet worth 1000 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 88000
+  },
+  {
+    "name": "Talisman of Ultimate Evil",
+    "materials": [
+      { "item": "amulet worth 1000 gp", "quantity": 1 },
+      { "item": "legendary occult essence", "quantity": 1 },
+      { "item": "scroll of fissure", "quantity": 1 },
+      { "item": "scroll of gate", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 22,
+    "rarity": 4,
+    "value": 27000
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Cloak of Billowing",
+    "materials": [
+      { "item": "cloak", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of gust", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Cloak of Elvenkind",
+    "materials": [
+      { "item": "cloak worth 50 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of pass without trace", "quantity": 1 },
+      { "item": "scroll of silence", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 750
+  },
+  {
+    "name": "Cloak of Protection",
+    "materials": [
+      { "item": "cloak", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 2 },
+      { "item": "scroll of false life", "quantity": 1 },
+      { "item": "scroll of mage armor", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 1,
+    "value": 1150
+  },
+  {
+    "name": "Cloak of the Manta Ray",
+    "materials": [
+      { "item": "cloak", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 2 },
+      { "item": "scroll of alter self", "quantity": 1 },
+      { "item": "scroll of water breathing", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 600
+  },
+  {
+    "name": "Robe of Useful Items",
+    "materials": [
+      { "item": "robe worth 100 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 13 },
+      { "item": "scroll of leomund's secret chest", "quantity": 1 },
+      { "item": "1st-level scroll", "quantity": 1 },
+      { "item": "door", "quantity": 1 },
+      { "item": "gem worth 100 gp", "quantity": 1 },
+      { "item": "ladder", "quantity": 1 },
+      { "item": "painting of a horse worth 75 gp", "quantity": 1 },
+      { "item": "portable ram", "quantity": 1 },
+      { "item": "potion of healing, basic", "quantity": 4 },
+      { "item": "rowboat", "quantity": 1 },
+      { "item": "saddlebags", "quantity": 1 },
+      { "item": "silver coffer worth 500 gp", "quantity": 1 },
+      { "item": "window", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 3560
+  },
+  {
+    "name": "Shadow Cloak, +1",
+    "materials": [
+      { "item": "cloak worth 100 gp", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Cape of the Mountebank",
+    "materials": [
+      { "item": "cape worth 200 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of dimension door", "quantity": 1 },
+      { "item": "scroll of pyrotechnics", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 2000
+  },
+  {
+    "name": "Cloak of Displacement",
+    "materials": [
+      { "item": "cloak worth 50 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 1 },
+      { "item": "scroll of mirror image", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1270
+  },
+  {
+    "name": "Cloak of the Bat",
+    "materials": [
+      { "item": "cloak worth 50 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of darkness", "quantity": 1 },
+      { "item": "scroll of fly", "quantity": 1 },
+      { "item": "scroll of polymorph", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 2,
+    "value": 1500
+  },
+  {
+    "name": "Mantle of Spell Resistance",
+    "materials": [
+      { "item": "mantle worth 100 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of dispel magic", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3280
+  },
+  {
+    "name": "Robe of Eyes",
+    "materials": [
+      { "item": "robe worth 100 gp", "quantity": 1 },
+      { "item": "rare psionic essence", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 1 },
+      { "item": "scroll of arcane eye", "quantity": 1 },
+      { "item": "scroll of darkvision", "quantity": 1 },
+      { "item": "scroll of see invisibility", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2170
+  },
+  {
+    "name": "Shadow Cloak, +2",
+    "materials": [
+      { "item": "cloak worth 500 gp", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Wings of Flying",
+    "materials": [
+      { "item": "cloak worth 50 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of fly", "quantity": 1 },
+      { "item": "scroll of polymorph", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3000
+  },
+  {
+    "name": "Cloak of Arachnida",
+    "materials": [
+      { "item": "cloak worth 200 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of protection from poison", "quantity": 1 },
+      { "item": "scroll of spider climb", "quantity": 1 },
+      { "item": "scroll of web", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 10000
+  },
+  {
+    "name": "Robe of Scintillating Colors",
+    "materials": [
+      { "item": "robe worth 200 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "rare psionic essence", "quantity": 1 },
+      { "item": "scroll of daylight", "quantity": 1 },
+      { "item": "scroll of prismatic spray", "quantity": 1 },
+      { "item": "scroll of wall of light", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 25000
+  },
+  {
+    "name": "Robe of Stars",
+    "materials": [
+      { "item": "robe worth 200 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 6 },
+      { "item": "scroll of blink", "quantity": 1 },
+      { "item": "scroll of etherealness", "quantity": 1 },
+      { "item": "scroll of magic missile", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 19,
+    "rarity": 3,
+    "value": 32800
+  },
+  {
+    "name": "Shadow Cloak, +3",
+    "materials": [
+      { "item": "cloak worth 1000 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Cloak of Invisibility",
+    "materials": [
+      { "item": "cloak worth 500 gp", "quantity": 1 },
+      { "item": "legendary occult essence", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 3 },
+      { "item": "scroll of greater invisibility", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 19,
+    "rarity": 4,
+    "value": 75000
+  },
+  {
+    "name": "Robe of the Archmagi",
+    "materials": [
+      { "item": "robe worth 500 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 5 },
+      { "item": "scroll of antimagic field", "quantity": 1 },
+      { "item": "scroll of greater mage armor", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 100000
+  }
+]

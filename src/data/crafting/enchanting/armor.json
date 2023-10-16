@@ -1,0 +1,323 @@
+[
+  {
+    "name": "Armor of Gleaming",
+    "materials": [
+      { "item": "armor", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of prestidigitation", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Cast-Off Armor",
+    "materials": [
+      { "item": "armor", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of phase", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Smoldering Armor",
+    "materials": [
+      { "item": "armor", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of control flames", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "+1 Shield",
+    "materials": [
+      { "item": "shield", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 2 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "+1 Armor",
+    "materials": [
+      { "item": "armor", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 },
+      { "item": "scroll of mage armor", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 16,
+    "rarity": 2,
+    "value": 3000
+  },
+  {
+    "name": "+2 Shield",
+    "materials": [
+      { "item": "shield", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 },
+      { "item": "scroll of glyph of warding", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3200
+  },
+  {
+    "name": "Armor of Resistance",
+    "materials": [
+      { "item": "armor", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2400
+  },
+  {
+    "name": "Arrow-Catching Shield",
+    "materials": [
+      { "item": "shield", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of warding wind", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 17,
+    "rarity": 2,
+    "value": 1300
+  },
+  {
+    "name": "Captain's Coat",
+    "materials": [
+      { "item": "coat worth 100 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of dancing wave", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of vicious mockery", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1400
+  },
+  {
+    "name": "Glamoured Studded Leather",
+    "materials": [
+      { "item": "+1 studded leather armor", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "scroll of disguise self", "quantity": 1 },
+      { "item": "scroll of silent image", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 15,
+    "rarity": 2,
+    "value": 4200
+  },
+  {
+    "name": "Scale Mail of the Pangolin",
+    "materials": [
+      { "item": "scale mail", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "scroll of mold earth", "quantity": 1 },
+      { "item": "large carapace", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 3000
+  },
+  {
+    "name": "+2 Armor",
+    "materials": [
+      { "item": "armor worth 2000 gp", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 1 },
+      { "item": "rare essence", "quantity": 2 },
+      { "item": "scroll of globe of invulnerability", "quantity": 1 },
+      { "item": "scroll of mage armor", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 },
+      { "item": "scroll of stoneskin", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 20,
+    "rarity": 3,
+    "value": 17000
+  },
+  {
+    "name": "+3 Shield",
+    "materials": [
+      { "item": "shield worth 1000 gp", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 2 },
+      { "item": "rare essence", "quantity": 4 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 },
+      { "item": "scroll of wall of force", "quantity": 1 },
+      { "item": "scroll of wall of stone", "quantity": 1 },
+      { "item": "scroll of wind wall", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 20,
+    "rarity": 3,
+    "value": 24000
+  },
+  {
+    "name": "Animated Shield",
+    "materials": [
+      { "item": "shield worth 200 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "scroll of animate objects", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 12500
+  },
+  {
+    "name": "Breastplate of the Golden Retriever",
+    "materials": [
+      { "item": "breastplate worth 500 gp", "quantity": 1 },
+      { "item": "scroll of mordenkainen's faithful hound", "quantity": 1 },
+      { "item": "scroll of warding bond", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 3,
+    "value": 9700
+  },
+  {
+    "name": "Dark Fathom Armor",
+    "materials": [
+      { "item": "studded leather armor", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "scroll of evard's black tentacles", "quantity": 1 },
+      { "item": "scroll of mage armor", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of water breathing", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 11000
+  },
+  {
+    "name": "Demon Armor",
+    "materials": [
+      { "item": "plate armor", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 1 },
+      { "item": "scroll of summon fiend", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 15,
+    "rarity": 3,
+    "value": 4000
+  },
+  {
+    "name": "Raiment of the Racoon",
+    "materials": [
+      { "item": "studded leather armor", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of polymorph", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 3,
+    "value": 9350
+  },
+  {
+    "name": "Spellguard Shield",
+    "materials": [
+      { "item": "shield worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 3 },
+      { "item": "scroll of rampart of dispel magic", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 65000
+  },
+  {
+    "name": "+3 Armor",
+    "materials": [
+      { "item": "armor worth 4000 gp", "quantity": 1 },
+      { "item": "legendary essence", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 2 },
+      { "item": "scroll of invulnerability", "quantity": 1 }
+    ],
+    "craftingTime": 48,
+    "craftingChecks": 24,
+    "dc": 22,
+    "rarity": 4,
+    "value": 100000
+  },
+  {
+    "name": "Armor of Etherealness",
+    "materials": [
+      { "item": "armor worth 1500 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "scroll of etherealness", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 4,
+    "value": 50000
+  },
+  {
+    "name": "Armor of Invulnerability",
+    "materials": [
+      { "item": "armor worth 4000 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 2 },
+      { "item": "scroll of invulnerability", "quantity": 1 },
+      { "item": "scroll of stoneskin", "quantity": 1 }
+    ],
+    "craftingTime": 48,
+    "craftingChecks": 24,
+    "dc": 23,
+    "rarity": 4,
+    "value": 125000
+  }
+]

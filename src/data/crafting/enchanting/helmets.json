@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Dread Helm",
+    "materials": [
+      { "item": "helmet", "quantity": 1 },
+      { "item": "common occult essence", "quantity": 1 },
+      { "item": "scroll of thaumaturgy", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Hat of Wizardry",
+    "materials": [
+      { "item": "hat", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of prestidigitation", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 150
+  },
+  {
+    "name": "Cap of Water Breathing",
+    "materials": [
+      { "item": "hat", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 3 },
+      { "item": "scroll of water breathing", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 270
+  },
+  {
+    "name": "Circlet of Blasting",
+    "materials": [
+      { "item": "circlet worth 50 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 2 },
+      { "item": "scroll of scorching ray", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 12,
+    "rarity": 1,
+    "value": 250
+  },
+  {
+    "name": "Eyes of Charming",
+    "materials": [
+      { "item": "glasses worth 50 gp", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 1 },
+      { "item": "scroll of charm person", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 1,
+    "value": 300
+  },
+  {
+    "name": "Eyes of Minute Seeing",
+    "materials": [
+      { "item": "glasses worth 50 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of identify", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 1,
+    "value": 190
+  },
+  {
+    "name": "Eyes of the Eagle",
+    "materials": [
+      { "item": "glasses", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 1,
+    "value": 190
+  },
+  {
+    "name": "Goggles of Night",
+    "materials": [
+      { "item": "goggles", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of darkvision", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 13,
+    "rarity": 1,
+    "value": 300
+  },
+  {
+    "name": "Hat of Disguise",
+    "materials": [
+      { "item": "hat", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 1 },
+      { "item": "common occult essence", "quantity": 1 },
+      { "item": "scroll of disguise self", "quantity": 1 },
+      { "item": "scroll of minor illusion", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 340
+  },
+  {
+    "name": "Headband of Intellect",
+    "materials": [
+      { "item": "circlet worth 25 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 2 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 14,
+    "rarity": 1,
+    "value": 540
+  },
+  {
+    "name": "Helm of Comprehending Languages",
+    "materials": [
+      { "item": "helmet worth 25 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of comprehend languages", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 14,
+    "rarity": 1,
+    "value": 280
+  },
+  {
+    "name": "Helm of Telepathy",
+    "materials": [
+      { "item": "helmet worth 50 gp", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 1 },
+      { "item": "common psionic essence", "quantity": 1 },
+      { "item": "scroll of detect thoughts", "quantity": 1 },
+      { "item": "scroll of message", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 15,
+    "rarity": 1,
+    "value": 575
+  },
+  {
+    "name": "Helm of Heroes",
+    "materials": [
+      { "item": "helmet worth 50 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of heroism", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1390
+  },
+  {
+    "name": "Helm of Teleportation",
+    "materials": [
+      { "item": "helmet worth 200 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of teleport", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 2,
+    "value": 16700
+  },
+  {
+    "name": "Helm of Brilliance",
+    "materials": [
+      { "item": "helmet worth 100 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of daylight", "quantity": 1 },
+      { "item": "scroll of fireball", "quantity": 1 },
+      { "item": "scroll of prismatic spray", "quantity": 1 },
+      { "item": "scroll of wall of fire", "quantity": 1 },
+      { "item": "diamond worth 50 gp", "quantity": 5 },
+      { "item": "fire opal worth 10 gp", "quantity": 15 },
+      { "item": "opal worth 10 gp", "quantity": 20 },
+      { "item": "ruby worth 20 gp", "quantity": 10 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 17000
+  }
+]

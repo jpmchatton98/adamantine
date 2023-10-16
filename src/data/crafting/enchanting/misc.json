@@ -1,0 +1,1449 @@
+[
+  {
+    "name": "Conductor's Baton",
+    "materials": [
+      { "item": "common branch", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of thaumaturgy", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 150
+  },
+  {
+    "name": "Empowered Symbol",
+    "materials": [
+      { "item": "holy symbol", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of thaumaturgy", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 150
+  },
+  {
+    "name": "All-Purpose Tool, +1",
+    "materials": [
+      { "item": "set of tools worth 100 gp", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Bag of Beans",
+    "materials": [
+      { "item": "bag", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 6 },
+      { "item": "scroll of conjure animals", "quantity": 1 },
+      { "item": "scroll of plant growth", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 15,
+    "rarity": 1,
+    "value": 1750
+  },
+  {
+    "name": "Bag of Holding",
+    "materials": [
+      { "item": "bag", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 2 },
+      { "item": "scroll of leomund's secret chest", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 1,
+    "value": 1000
+  },
+  {
+    "name": "Bag of Tricks",
+    "materials": [
+      { "item": "bag", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 4 },
+      { "item": "scroll of conjure animals", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 14,
+    "rarity": 1,
+    "value": 520
+  },
+  {
+    "name": "Broom of Flying",
+    "materials": [
+      { "item": "broom", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 2 },
+      { "item": "scroll of fly", "quantity": 1 },
+      { "item": "scroll of tiny servant", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 1,
+    "value": 1050
+  },
+  {
+    "name": "Crystallized Blood of Io, +1",
+    "materials": [
+      { "item": "ruby worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Decanter of Endless Water",
+    "materials": [
+      { "item": "waterskin", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of create or destroy water", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 300
+  },
+  {
+    "name": "Deck of Illusions",
+    "materials": [
+      { "item": "playing card", "quantity": 34 },
+      { "item": "common arcane essence", "quantity": 34 },
+      { "item": "scroll of major image", "quantity": 1 },
+      { "item": "scroll of silent image", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 330
+  },
+  {
+    "name": "Dragon Heart, +1",
+    "materials": [
+      { "item": "uncommon curative reagent", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Efficient Quiver",
+    "materials": [
+      { "item": "quiver worth 25 gp", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of leomund's secret chest", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 430
+  },
+  {
+    "name": "Esoteric Totem, +1",
+    "materials": [
+      { "item": "totem worth 100 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Eversmoking Bottle",
+    "materials": [
+      { "item": "bottle", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of fog cloud", "quantity": 1 },
+      { "item": "scroll of produce flame", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 13,
+    "rarity": 1,
+    "value": 210
+  },
+  {
+    "name": "Gem of Brightness",
+    "materials": [
+      { "item": "gem worth 50 gp", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of daylight", "quantity": 1 },
+      { "item": "scroll of light", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 585
+  },
+  {
+    "name": "Hunter's Compass, +1",
+    "materials": [
+      { "item": "compass worth 100 gp", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Lantern of Revealing",
+    "materials": [
+      { "item": "lantern", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of light", "quantity": 1 },
+      { "item": "scroll of see invisibility", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Luckstone",
+    "materials": [
+      { "item": "agate worth 50 gp", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 2 },
+      { "item": "scroll of fortune's favor", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 415
+  },
+  {
+    "name": "Masterwork Tools, +1",
+    "materials": [
+      { "item": "set of tools worth 100 gp", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Mind Stone, +1",
+    "materials": [
+      { "item": "amethyst worth 100 gp", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Mother of Adamant, +1",
+    "materials": [
+      { "item": "adamantine ingot", "quantity": 1 },
+      { "item": "cold iron ingot", "quantity": 1 },
+      { "item": "dragonsteel ingot", "quantity": 1 },
+      { "item": "mithral ingot", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Pearl of Power",
+    "materials": [
+      { "item": "pearl worth 100 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 5 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 12,
+    "rarity": 1,
+    "value": 350
+  },
+  {
+    "name": "Pipes of Haunting",
+    "materials": [
+      { "item": "pan flute worth 25 gp", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 1 },
+      { "item": "scroll of cause fear", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 485
+  },
+  {
+    "name": "Pipes of the Sewers",
+    "materials": [
+      { "item": "flute worth 25 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of animal friendship", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 345
+  },
+  {
+    "name": "Primal Ash, +1",
+    "materials": [
+      { "item": "uncommon reactive reagent", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Rhythm-Maker's Drum, +1",
+    "materials": [
+      { "item": "drum worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Rope of Climbing",
+    "materials": [
+      { "item": "rope", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of tiny servant", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 1,
+    "value": 300
+  },
+  {
+    "name": "Sending Stones",
+    "materials": [
+      { "item": "stone", "quantity": 2 },
+      { "item": "common psionic essence", "quantity": 2 },
+      { "item": "scroll of sending", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 1,
+    "value": 380
+  },
+  {
+    "name": "Shawm of Sundering",
+    "materials": [
+      { "item": "clarinet worth 50 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 2 },
+      { "item": "scroll of lightning bolt", "quantity": 1 },
+      { "item": "scroll of shatter", "quantity": 1 },
+      { "item": "scroll of thunderwave", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 600
+  },
+  {
+    "name": "Silver Raven",
+    "materials": [
+      { "item": "figurine of a raven worth 10 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of animal messenger", "quantity": 1 },
+      { "item": "scroll of find familiar", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 13,
+    "rarity": 1,
+    "value": 270
+  },
+  {
+    "name": "Slaadmind, +1",
+    "materials": [
+      { "item": "uncommon poisonous reagent", "quantity": 1 },
+      { "item": "uncommon psionic essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Valiant Banner, +1",
+    "materials": [
+      { "item": "banner worth 100 gp", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Yve's Thieves' Tools",
+    "materials": [
+      { "item": "thieves' tools", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 1 },
+      { "item": "common occult essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 440
+  },
+  {
+    "name": "All-Purpose Tool, +2",
+    "materials": [
+      { "item": "set of tools worth 500 gp", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Basalt Panther",
+    "materials": [
+      { "item": "figurine of a panther worth 20 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of conjure animals", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 2,
+    "value": 515
+  },
+  {
+    "name": "Bead of Force",
+    "materials": [
+      { "item": "bead", "quantity": 8 },
+      { "item": "scroll of otiluke's resilient sphere", "quantity": 8 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 2900
+  },
+  {
+    "name": "Bowl of Commanding Water Elementals",
+    "materials": [
+      { "item": "bowl worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "rare curative reagent", "quantity": 2 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2400
+  },
+  {
+    "name": "Brazier of Commanding Fire Elementals",
+    "materials": [
+      { "item": "brazier worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "rare reactive reagent", "quantity": 2 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2400
+  },
+  {
+    "name": "Bronze Griffon",
+    "materials": [
+      { "item": "figurine of a griffon worth 20 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of find greater steed", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2700
+  },
+  {
+    "name": "Censer of Controlling Air Elementals",
+    "materials": [
+      { "item": "censer worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "rare reactive reagent", "quantity": 2 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2400
+  },
+  {
+    "name": "Chime of Opening",
+    "materials": [
+      { "item": "chime worth 50 gp", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 10 },
+      { "item": "scroll of knock", "quantity": 1 }
+    ],
+    "craftingTime": 10,
+    "craftingChecks": 5,
+    "dc": 14,
+    "rarity": 2,
+    "value": 666
+  },
+  {
+    "name": "Crystallized Blood of Io, +2",
+    "materials": [
+      { "item": "ruby worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Dimensional Shackles",
+    "materials": [
+      { "item": "manacles", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "scroll of forbiddance", "quantity": 1 },
+      { "item": "scroll of hold monster", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 4900
+  },
+  {
+    "name": "Dragon Heart, +2",
+    "materials": [
+      { "item": "rare curative reagent", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Ebony Fly",
+    "materials": [
+      { "item": "figurine of a fly worth 20 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of giant insect", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 2,
+    "value": 1300
+  },
+  {
+    "name": "Esoteric Totem, +2",
+    "materials": [
+      { "item": "totem worth 500 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Feather Token, anchor",
+    "materials": [
+      { "item": "fletching", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of entangle", "quantity": 1 },
+      { "item": "scroll of web", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 2,
+    "value": 435
+  },
+  {
+    "name": "Feather Token, bird",
+    "materials": [
+      { "item": "fletching", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of conjure animals", "quantity": 1 },
+      { "item": "scroll of enlarge/reduce", "quantity": 2 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 2,
+    "value": 770
+  },
+  {
+    "name": "Feather Token, fan",
+    "materials": [
+      { "item": "fletching", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of gust of wind", "quantity": 1 },
+      { "item": "scroll of tiny servant", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 2,
+    "value": 525
+  },
+  {
+    "name": "Feather Token, swan boat",
+    "materials": [
+      { "item": "fletching", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of dimension door", "quantity": 1 },
+      { "item": "keelboat", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 2,
+    "value": 4000
+  },
+  {
+    "name": "Feather Token, tree",
+    "materials": [
+      { "item": "fletching", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of plant growth", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 2,
+    "value": 475
+  },
+  {
+    "name": "Feather Token, whip",
+    "materials": [
+      { "item": "fletching", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of animate objects", "quantity": 1 },
+      { "item": "whip", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 16,
+    "rarity": 2,
+    "value": 275
+  },
+  {
+    "name": "Gem of Seeing",
+    "materials": [
+      { "item": "gem worth 50 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of true seeing", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3050
+  },
+  {
+    "name": "Golden Lions",
+    "materials": [
+      { "item": "figurine of a lion worth 20 gp", "quantity": 2 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of conjure animals", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 2,
+    "value": 730
+  },
+  {
+    "name": "Heward's Handy Haversack",
+    "materials": [
+      { "item": "backpack", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of drawmij's instant summons", "quantity": 1 },
+      { "item": "scroll of leomund's secret chest", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 3600
+  },
+  {
+    "name": "Horn of Blasting",
+    "materials": [
+      { "item": "horn worth 100 gp", "quantity": 1 },
+      { "item": "scroll of sonic shriek", "quantity": 1 },
+      { "item": "scroll of thunderwave", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3370
+  },
+  {
+    "name": "Horn of Valhalla, brass",
+    "materials": [
+      { "item": "brass horn worth 50 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of guardian of faith", "quantity": 1 },
+      { "item": "scroll of spirit guardians", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2800
+  },
+  {
+    "name": "Horn of Valhalla, silver",
+    "materials": [
+      { "item": "silver horn worth 50 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of guardian of faith", "quantity": 1 },
+      { "item": "scroll of spirit guardians", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2800
+  },
+  {
+    "name": "Horseshoes of Speed",
+    "materials": [
+      { "item": "horseshoe worth 10 gp", "quantity": 4 },
+      { "item": "uncommon arcane essence", "quantity": 4 },
+      { "item": "common primal essence", "quantity": 4 },
+      { "item": "scroll of longstrider", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1570
+  },
+  {
+    "name": "Hunter's Compass, +2",
+    "materials": [
+      { "item": "compass worth 500 gp", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Iron Bands of Binding",
+    "materials": [
+      { "item": "iron chain", "quantity": 3 },
+      { "item": "rare arcane essence", "quantity": 3 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of entangle", "quantity": 1 },
+      { "item": "scroll of web", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 740
+  },
+  {
+    "name": "Ivory Goats",
+    "materials": [
+      { "item": "figurine of a goat worth 20 gp", "quantity": 3 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of conjure animals", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1700
+  },
+  {
+    "name": "Marble Elephant",
+    "materials": [
+      { "item": "figurine of an elephant worth 20 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of conjure animals", "quantity": 1 },
+      { "item": "scroll of enlarge/reduce", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 2,
+    "value": 600
+  },
+  {
+    "name": "Masterwork Tools, +2",
+    "materials": [
+      { "item": "set of tools worth 500 gp", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Mind Stone, +2",
+    "materials": [
+      { "item": "amethyst worth 500 gp", "quantity": 1 },
+      { "item": "rare psionic essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Mother of Adamant, +2",
+    "materials": [
+      { "item": "adamantine ingot", "quantity": 1 },
+      { "item": "cold iron ingot", "quantity": 1 },
+      { "item": "dragonsteel ingot", "quantity": 1 },
+      { "item": "mithral ingot", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Onyx Dog",
+    "materials": [
+      { "item": "figurine of a dog worth 20 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of conjure animals", "quantity": 1 },
+      { "item": "scroll of see invisibility", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 2,
+    "value": 515
+  },
+  {
+    "name": "Portable Hole",
+    "materials": [
+      { "item": "cloth", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of dimension door", "quantity": 1 },
+      { "item": "scroll of leomund's secret chest", "quantity": 1 },
+      { "item": "scroll of rope trick", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 5000
+  },
+  {
+    "name": "Primal Ash, +2",
+    "materials": [
+      { "item": "rare reactive reagent", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Rhythm-Maker's Drum, +2",
+    "materials": [
+      { "item": "drum worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Rope of Entanglement",
+    "materials": [
+      { "item": "rope", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "scroll of entangle", "quantity": 1 },
+      { "item": "scroll of tiny servant", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 1325
+  },
+  {
+    "name": "Serpentine Owl",
+    "materials": [
+      { "item": "figurine of an owl worth 20 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of find familiar", "quantity": 1 },
+      { "item": "scroll of enlarge/reduce", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 16,
+    "rarity": 2,
+    "value": 475
+  },
+  {
+    "name": "Slaadmind, +2",
+    "materials": [
+      { "item": "rare poisonous reagent", "quantity": 1 },
+      { "item": "rare psionic essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Stone of Controlling Earth Elementals",
+    "materials": [
+      { "item": "stone worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "rare poisonous reagent", "quantity": 2 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 4200
+  },
+  {
+    "name": "Valiant Banner, +2",
+    "materials": [
+      { "item": "banner worth 500 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "All-Purpose Tool, +3",
+    "materials": [
+      { "item": "set of tools worth 1000 gp", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Bag of Devouring",
+    "materials": [
+      { "item": "bag of holding", "quantity": 1 },
+      { "item": "scroll of hunger of hadar", "quantity": 1 },
+      { "item": "scroll of plane shift", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 3,
+    "value": 15000
+  },
+  {
+    "name": "Candle of Invocation",
+    "materials": [
+      { "item": "candle worth 100 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 4 },
+      { "item": "scroll of gate", "quantity": 1 },
+      { "item": "scroll of holy aura", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 19,
+    "rarity": 3,
+    "value": 65000
+  },
+  {
+    "name": "Carpet of Flying",
+    "materials": [
+      { "item": "rug worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 1 },
+      { "item": "scroll of animate objects", "quantity": 1 },
+      { "item": "scroll of fly", "quantity": 1 },
+      { "item": "scroll of levitate", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 19,
+    "rarity": 3,
+    "value": 20000
+  },
+  {
+    "name": "Crystal Ball",
+    "materials": [
+      { "item": "gem worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "scroll of scrying", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 12600
+  },
+  {
+    "name": "Crystal Ball of Mind Reading",
+    "materials": [
+      { "item": "crystal ball", "quantity": 1 },
+      { "item": "very rare psionic essence", "quantity": 1 },
+      { "item": "scroll of detect thoughts", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 19,
+    "rarity": 3,
+    "value": 22200
+  },
+  {
+    "name": "Crystal Ball of Telepathy",
+    "materials": [
+      { "item": "crystal ball", "quantity": 1 },
+      { "item": "very rare psionic essence", "quantity": 1 },
+      { "item": "scroll of sending", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 20,
+    "rarity": 3,
+    "value": 22600
+  },
+  {
+    "name": "Crystallized Blood of Io, +3",
+    "materials": [
+      { "item": "ruby worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Cube of Force",
+    "materials": [
+      { "item": "adamantine ingot", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 },
+      { "item": "scroll of antilife shell", "quantity": 1 },
+      { "item": "scroll of antimagic field", "quantity": 1 },
+      { "item": "scroll of gaseous form", "quantity": 1 },
+      { "item": "scroll of wall of force", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 3,
+    "value": 20000
+  },
+  {
+    "name": "Cubic Gate",
+    "materials": [
+      { "item": "adamantine ingot", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "scroll of gate", "quantity": 1 },
+      { "item": "scroll of plane shift", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 20,
+    "rarity": 3,
+    "value": 75000
+  },
+  {
+    "name": "Dragon Heart, +3",
+    "materials": [
+      { "item": "very rare curative reagent", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Efreeti Bottle",
+    "materials": [
+      { "item": "bottle", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 2 },
+      { "item": "rare arcane essence", "quantity": 3 },
+      { "item": "rare primal essence", "quantity": 3 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "scroll of planar binding", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 18,
+    "rarity": 3,
+    "value": 24000
+  },
+  {
+    "name": "Esoteric Totem, +3",
+    "materials": [
+      { "item": "totem worth 1000 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Horn of Valhalla, bronze",
+    "materials": [
+      { "item": "bronze horn worth 100 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "scroll of guardian of faith", "quantity": 1 },
+      { "item": "scroll of spirit guardians", "quantity": 1 },
+      { "item": "scorll of conjure celestial", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 19,
+    "rarity": 3,
+    "value": 5600
+  },
+  {
+    "name": "Horseshoes of the Zephyr",
+    "materials": [
+      { "item": "horseshoe worth 10 gp", "quantity": 4 },
+      { "item": "rare arcane essence", "quantity": 4 },
+      { "item": "uncommon primal essence", "quantity": 4 },
+      { "item": "scroll of fly", "quantity": 1 },
+      { "item": "scroll of levitate", "quantity": 4 },
+      { "item": "scroll of longstrider", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 5500
+  },
+  {
+    "name": "Hunter's Compass, +3",
+    "materials": [
+      { "item": "compass worth 1000 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Instant Fortress",
+    "materials": [
+      { "item": "adamantine ingot", "quantity": 100 },
+      { "item": "very rare arcane essence", "quantity": 2 },
+      { "item": "rare arcane essence", "quantity": 4 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "scroll of mordenkainen's magnificent mansion", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 18,
+    "rarity": 3,
+    "value": 42000
+  },
+  {
+    "name": "Masterwork Tools, +3",
+    "materials": [
+      { "item": "set of tools worth 1000 gp", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Mind Stone, +3",
+    "materials": [
+      { "item": "amethyst worth 1000 gp", "quantity": 1 },
+      { "item": "very rare psionic essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Mirror of Life Trapping",
+    "materials": [
+      { "item": "mirror worth 50 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 2 },
+      { "item": "scroll of banishment", "quantity": 1 },
+      { "item": "scroll of demiplane", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 19,
+    "rarity": 3,
+    "value": 25000
+  },
+  {
+    "name": "Mother of Adamant, +3",
+    "materials": [
+      { "item": "adamantine ingot", "quantity": 1 },
+      { "item": "cold iron ingot", "quantity": 1 },
+      { "item": "dragonsteel ingot", "quantity": 1 },
+      { "item": "mithral ingot", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Obsidian Steed",
+    "materials": [
+      { "item": "figurine of a horse worth 50 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "scroll of find greater steed", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 3,
+    "value": 10250
+  },
+  {
+    "name": "Primal Ash, +3",
+    "materials": [
+      { "item": "very rare reactive reagent", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Rhythm-Maker's Drum, +3",
+    "materials": [
+      { "item": "drum worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Slaadmind, +3",
+    "materials": [
+      { "item": "very rare poisonous reagent", "quantity": 1 },
+      { "item": "very rare psionic essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Valiant Banner, +3",
+    "materials": [
+      { "item": "banner worth 1000 gp", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Crystal Ball of Thieving",
+    "materials": [
+      { "item": "crystal ball", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "scroll of mage hand", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 4,
+    "value": 40000
+  },
+  {
+    "name": "Crystal Ball of True Seeing",
+    "materials": [
+      { "item": "crystal ball", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "scroll of true seeing", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 21,
+    "rarity": 4,
+    "value": 50000
+  },
+  {
+    "name": "Deck of Many Things",
+    "materials": [
+      { "item": "tarot card", "quantity": 22 },
+      { "item": "tears of the dungeon master", "quantity": 1 }
+    ],
+    "craftingTime": 22,
+    "craftingChecks": 11,
+    "dc": 100,
+    "rarity": 4,
+    "value": 1000000
+  },
+  {
+    "name": "Horn of Valhalla, iron",
+    "materials": [
+      { "item": "iron horn worth 500 gp", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 1 },
+      { "item": "scroll of spirit guardians", "quantity": 1 },
+      { "item": "scorll of conjure celestial", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 20,
+    "rarity": 4,
+    "value": 33800
+  },
+  {
+    "name": "Sphere of Annihilation",
+    "materials": [
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 2 },
+      { "item": "very rare divine essence", "quantity": 1 },
+      { "item": "scroll of demiplane", "quantity": 1 },
+      { "item": "scroll of disintegrate", "quantity": 1 },
+      { "item": "scroll of levitate", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 21,
+    "rarity": 4,
+    "value": 81000
+  },
+  {
+    "name": "Well of Many Worlds",
+    "materials": [
+      { "item": "cloth worth 100 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "scroll of demiplane", "quantity": 1 },
+      { "item": "scroll of plane shift", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 20,
+    "rarity": 4,
+    "value": 75000
+  }
+]

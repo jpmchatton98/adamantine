@@ -340,7 +340,7 @@
       {
         "name": "Insatiable Greed",
         "entries": [
-          "The abhorrent overlord can sense the presence of gold within 1,000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold."
+          "The abhorrent overlord can sense the presence of gold within 1000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold."
         ]
       },
       {
@@ -4553,7 +4553,7 @@
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "poisoned"],
-    "languages": ["Common", "Infernal", "telepathy 1,000 ft."],
+    "languages": ["Common", "Infernal", "telepathy 1000 ft."],
     "cr": 18,
     "spellcasting": [
       {
@@ -5893,7 +5893,7 @@
       {
         "name": "Blessing of the Sea (Recharges after a Short or Long Rest)",
         "entries": [
-          "If the dragon turtle would be reduced to 0 hit points, its current hit point total instead resets to 350 hit points, and it recharges its Steam Breath. Additionally, the dragon turtle can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 62,000 XP (124,000 XP total) for defeating the dragon turtle after its Blessing of the Sea activates."
+          "If the dragon turtle would be reduced to 0 hit points, its current hit point total instead resets to 350 hit points, and it recharges its Steam Breath. Additionally, the dragon turtle can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 62000 XP (124000 XP total) for defeating the dragon turtle after its Blessing of the Sea activates."
         ]
       },
       {
@@ -9642,7 +9642,7 @@
       {
         "name": "Platinum Brilliance (Recharges after a Short or Long Rest)",
         "entries": [
-          "If the aspect would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Breath Weapon, and he regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155,000 XP (310,000 XP total) for defeating the aspect of Bahamut after his Platinum Brilliance activates."
+          "If the aspect would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Breath Weapon, and he regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155000 XP (310000 XP total) for defeating the aspect of Bahamut after his Platinum Brilliance activates."
         ]
       },
       {
@@ -9817,7 +9817,7 @@
       {
         "name": "Ruby Trickery (Recharges after a Short or Long Rest)",
         "entries": [
-          "If the aspect would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Heat Breath, and he regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155,000 XP (310,000 XP total) for defeating the aspect of Sardior after his Platinum Brilliance activates."
+          "If the aspect would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Heat Breath, and he regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155000 XP (310000 XP total) for defeating the aspect of Sardior after his Platinum Brilliance activates."
         ]
       },
       {
@@ -10001,7 +10001,7 @@
       {
         "name": "Dark Reaver (Recharges after a Short or Long Rest)",
         "entries": [
-          "If the aspect would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Darkness Breath, and he regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155,000 XP (310,000 XP total) for defeating the aspect of Null after his Dark Reaver activates."
+          "If the aspect would be reduced to 0 hit points, his current hit point total instead resets to 500 hit points, he recharges his Darkness Breath, and he regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155000 XP (310000 XP total) for defeating the aspect of Null after his Dark Reaver activates."
         ]
       },
       {
@@ -10119,7 +10119,7 @@
       {
         "name": "Chromatic Wrath (Recharges after a Short or Long Rest)",
         "entries": [
-          "If the aspect would be reduced to 0 hit points, her current hit point total instead resets to 500 hit points, she recharges her Chromatic Flames, and she regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155,000 XP (310,000 XP total) for defeating the aspect of Tiamat after her Chromatic Wrath activates."
+          "If the aspect would be reduced to 0 hit points, her current hit point total instead resets to 500 hit points, she recharges her Chromatic Flames, and she regains any expended uses of Legendary Resistance. Additionally, the aspect can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 155000 XP (310000 XP total) for defeating the aspect of Tiamat after her Chromatic Wrath activates."
         ]
       },
       {
@@ -10518,7 +10518,7 @@
       {
         "name": "Demiplanar Donjon",
         "entries": [
-          "Anything the dreadnought swallows is transported to a demiplane that can be entered by no other means except a wish spell or the dreadnought's Bite and Donjon Visit. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the dreadnought's corpse. The demiplane is otherwise indestructible."
+          "Anything the dreadnought swallows is transported to a demiplane that can be entered by no other means except a wish spell or the dreadnought's Bite and Donjon Visit. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the dreadnought's corpse. The demiplane is otherwise indestructible."
         ]
       },
       {
@@ -26439,7 +26439,7 @@
       {
         "name": "Headless Summoning (Recharges after a Short or Long Rest)",
         "entries": [
-          "If the dullahan is reduced to 0 hit points, it doesn't die or fall unconscious. Instead, it regains 97 hit points. In addition, it summons three death's heads, one of each type, in unoccupied spaces within 5 feet of it. The death's heads are under the dullahan's control and act immediately after the dullahan in the initiative order. Additionally, the dullahan can now use the options in the \"Mythic Actions\" section. Award a party an additional 5,900 XP (11,800 XP total) for defeating the dullahan after it uses Headless Summoning."
+          "If the dullahan is reduced to 0 hit points, it doesn't die or fall unconscious. Instead, it regains 97 hit points. In addition, it summons three death's heads, one of each type, in unoccupied spaces within 5 feet of it. The death's heads are under the dullahan's control and act immediately after the dullahan in the initiative order. Additionally, the dullahan can now use the options in the \"Mythic Actions\" section. Award a party an additional 5900 XP (11800 XP total) for defeating the dullahan after it uses Headless Summoning."
         ]
       },
       {
@@ -26948,7 +26948,7 @@
       {
         "name": "Insatiable Greed",
         "entries": [
-          "The eater of hope can sense the presence of gold within 1,000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold."
+          "The eater of hope can sense the presence of gold within 1000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold."
         ]
       },
       {
@@ -36743,7 +36743,7 @@
       {
         "name": "Mountain Born",
         "entries": [
-          "The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+          "The goliath is acclimated to high altitude, including elevations above 20000 feet."
         ]
       },
       {
@@ -40835,7 +40835,7 @@
       {
         "name": "Massive Frame",
         "entries": [
-          "The tortoise can carry up to 20,000 pounds of weight atop its shell, but moves at half speed if the weight exceeds 10,000 pounds. Medium or smaller creatures can move underneath the tortoise while it's not prone.",
+          "The tortoise can carry up to 20000 pounds of weight atop its shell, but moves at half speed if the weight exceeds 10000 pounds. Medium or smaller creatures can move underneath the tortoise while it's not prone.",
           "Any creature under the tortoise when it falls prone is grappled (escape DC 18). Until the grapple ends, the creature is prone and restrained."
         ]
       }

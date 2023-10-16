@@ -1,0 +1,364 @@
+[
+  {
+    "name": "Doodle Ring",
+    "materials": [
+      { "item": "ring", "quantity": 1 },
+      { "item": "scroll of illusory script", "quantity": 1 },
+      { "item": "common magical ink", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Covenant Rings, +1",
+    "materials": [
+      { "item": "ring worth 50 gp", "quantity": 2 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Ring of Jumping",
+    "materials": [
+      { "item": "ring worth 10 gp", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of jump", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 12,
+    "rarity": 1,
+    "value": 140
+  },
+  {
+    "name": "Ring of Mind Shielding",
+    "materials": [
+      { "item": "ring worth 20 gp", "quantity": 1 },
+      { "item": "common psionic essence", "quantity": 1 },
+      { "item": "scroll of detect good and evil", "quantity": 1 },
+      { "item": "scroll of detect thoughts", "quantity": 1 },
+      { "item": "scroll of protection from evil and good", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 1,
+    "value": 350
+  },
+  {
+    "name": "Ring of Resistance",
+    "materials": [
+      { "item": "ring", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 },
+      { "item": "gem worth 50 gp", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 1,
+    "value": 1500
+  },
+  {
+    "name": "Ring of Swimming",
+    "materials": [
+      { "item": "ring", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of alter self", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 1,
+    "value": 150
+  },
+  {
+    "name": "Ring of Warmth",
+    "materials": [
+      { "item": "ring", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 2 },
+      { "item": "scroll of create bonfire", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 14,
+    "rarity": 1,
+    "value": 580
+  },
+  {
+    "name": "Ring of Water Walking",
+    "materials": [
+      { "item": "ring worth 10 gp", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 2 },
+      { "item": "scroll of water walking", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 400
+  },
+  {
+    "name": "Covenant Rings, +2",
+    "materials": [
+      { "item": "ring worth 250 gp", "quantity": 2 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Ring of Animal Influence",
+    "materials": [
+      { "item": "ring worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of animal friendship", "quantity": 1 },
+      { "item": "scroll of fear", "quantity": 1 },
+      { "item": "scroll of speak with animals", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1600
+  },
+  {
+    "name": "Ring of Evasion",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of haste", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2600
+  },
+  {
+    "name": "Ring of Feather Falling",
+    "materials": [
+      { "item": "ring worth 50 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of feather fall", "quantity": 1 },
+      { "item": "scroll of levitate", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 2,
+    "value": 500
+  },
+  {
+    "name": "Ring of Free Action",
+    "materials": [
+      { "item": "ring worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 5 },
+      { "item": "scroll of freedom of movement", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 5000
+  },
+  {
+    "name": "Ring of Protection",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "rare essence", "quantity": 2 },
+      { "item": "scroll of false life", "quantity": 1 },
+      { "item": "scroll of mage armor", "quantity": 1 },
+      { "item": "scroll of protection from energy", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3500
+  },
+  {
+    "name": "Ring of Spell Storing",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 4 },
+      { "item": "uncommon arcane essence", "quantity": 4 },
+      { "item": "common arcane essence", "quantity": 4 },
+      { "item": "spellbook", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 5000
+  },
+  {
+    "name": "Ring of the Ram",
+    "materials": [
+      { "item": "ring worth 200 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of gale bolt", "quantity": 1 },
+      { "item": "scroll of shatter", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 2,
+    "value": 1400
+  },
+  {
+    "name": "Ring of X-ray Vision",
+    "materials": [
+      { "item": "ring worth 200 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of find traps", "quantity": 1 },
+      { "item": "scroll of true seeing", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 2300
+  },
+  {
+    "name": "Covenant Rings, +3",
+    "materials": [
+      { "item": "ring worth 500 gp", "quantity": 2 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Ring of Regeneration",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 3 },
+      { "item": "scroll of regeneration", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 3,
+    "value": 16600
+  },
+  {
+    "name": "Ring of Shooting Stars",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "scroll of crown of stars", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 3,
+    "value": 11000
+  },
+  {
+    "name": "Ring of Telekinesis",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "very rare psionic essence", "quantity": 1 },
+      { "item": "scroll of telekinesis", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 19,
+    "rarity": 3,
+    "value": 18250
+  },
+  {
+    "name": "Ring of Djinni Summoning",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 1 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "scroll of gate", "quantity": 1 },
+      { "item": "the true name of a djinni" }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 20,
+    "rarity": 4,
+    "value": 56000
+  },
+  {
+    "name": "Ring of Elemental Command",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 3 },
+      { "item": "scroll of conjure elemental", "quantity": 1 },
+      { "item": "scroll of dominate monster", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 4,
+    "value": 55000
+  },
+  {
+    "name": "Ring of Invisibility",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "scroll of invisibility", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 22,
+    "rarity": 4,
+    "value": 50000
+  },
+  {
+    "name": "Ring of Spell Turning",
+    "materials": [
+      { "item": "ring worth 400 gp", "quantity": 1 },
+      { "item": "legendary arcane essence", "quantity": 1 },
+      { "item": "scroll of antimagic field", "quantity": 1 },
+      { "item": "scroll of counterspell", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 22,
+    "rarity": 4,
+    "value": 57000
+  },
+  {
+    "name": "Ring of Three Wishes",
+    "materials": [
+      { "item": "ring", "quantity": 1 },
+      { "item": "scroll of wish", "quantity": 3 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 23,
+    "rarity": 4,
+    "value": 133333
+  }
+]

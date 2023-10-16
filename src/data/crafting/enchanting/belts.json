@@ -1,0 +1,180 @@
+[
+  {
+    "name": "Dragonhide Belt, +1",
+    "materials": [
+      { "item": "belt worth 100 gp", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Outlaw's Gun Belt, +1",
+    "materials": [
+      { "item": "belt worth 100 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Belt of Dwarvenkind",
+    "materials": [
+      { "item": "belt worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "scroll of alter self", "quantity": 1 },
+      { "item": "scroll of stoneskin", "quantity": 1 },
+      { "item": "200 gp of quality ale" }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2400
+  },
+  {
+    "name": "Belt of Hill Giant Strength",
+    "materials": [
+      { "item": "belt", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of enlarge/reduce", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 3500
+  },
+  {
+    "name": "Dragonhide Belt, +2",
+    "materials": [
+      { "item": "belt worth 500 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Outlaw's Gun Belt, +2",
+    "materials": [
+      { "item": "belt worth 500 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Belt of Fire Giant Strength",
+    "materials": [
+      { "item": "belt", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 3 },
+      { "item": "very rare arcane essence", "quantity": 3 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of redwood expansion", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 22,
+    "rarity": 3,
+    "value": 47000
+  },
+  {
+    "name": "Belt of Frost Giant Strength",
+    "materials": [
+      { "item": "belt", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 3 },
+      { "item": "uncommon arcane essence", "quantity": 3 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of redwood expansion", "quantity": 1 }
+    ],
+    "craftingTime": 28,
+    "craftingChecks": 14,
+    "dc": 21,
+    "rarity": 3,
+    "value": 36500
+  },
+  {
+    "name": "Belt of Stone Giant Strength",
+    "materials": [
+      { "item": "belt", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 3 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of redwood expansion", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 20,
+    "rarity": 3,
+    "value": 26000
+  },
+  {
+    "name": "Dragonhide Belt, +3",
+    "materials": [
+      { "item": "belt worth 1000 gp", "quantity": 1 },
+      { "item": "very rare divine essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Outlaw's Gun Belt, +3",
+    "materials": [
+      { "item": "belt worth 1000 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Belt of Cloud Giant Strength",
+    "materials": [
+      { "item": "belt", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 3 },
+      { "item": "very rare arcane essence", "quantity": 3 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of giant growth", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 16,
+    "dc": 23,
+    "rarity": 4,
+    "value": 83000
+  },
+  {
+    "name": "Belt of Storm Giant Strength",
+    "materials": [
+      { "item": "belt", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 2 },
+      { "item": "very rare primal essence", "quantity": 3 },
+      { "item": "very rare arcane essence", "quantity": 3 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of giant growth", "quantity": 1 }
+    ],
+    "craftingTime": 48,
+    "craftingChecks": 24,
+    "dc": 25,
+    "rarity": 4,
+    "value": 200000
+  }
+]

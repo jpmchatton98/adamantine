@@ -1,0 +1,637 @@
+[
+  {
+    "name": "Moon-Touched Weapon",
+    "materials": [
+      { "item": "weapon", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of light", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 12,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "+1 Ammunition",
+    "materials": [
+      { "item": "ammunition", "quantity": 1 },
+      { "item": "common essence", "quantity": 1 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 14,
+    "rarity": 1,
+    "value": 60
+  },
+  {
+    "name": "+1 Weapon",
+    "materials": [
+      { "item": "weapon", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 3 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 540
+  },
+  {
+    "name": "Berserker Axe",
+    "materials": [
+      { "item": "axe", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "scroll of aid", "quantity": 1 },
+      { "item": "scroll of crown of madness", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 7,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Dagger of the Ogre Mage",
+    "materials": [
+      { "item": "shortsword worth 50 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 3 },
+      { "item": "scroll of magic weapon", "quantity": 1 },
+      { "item": "cantrip scroll", "quantity": 3 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 1,
+    "value": 612
+  },
+  {
+    "name": "Javelin of Lightning",
+    "materials": [
+      { "item": "javelin", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "scroll of lightning bolt", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 400
+  },
+  {
+    "name": "Mageblade, +1",
+    "materials": [
+      { "item": "weapon worth 100 gp", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Master's Weapon, +1",
+    "materials": [
+      { "item": "weapon worth 100 gp", "quantity": 1 },
+      { "item": "uncommon essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Moon Sickle, +1",
+    "materials": [
+      { "item": "weapon worth 100 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Squall Caller",
+    "materials": [
+      { "item": "battleaxe", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common divine essence", "quantity": 1 },
+      { "item": "scroll of divine arm", "quantity": 1 },
+      { "item": "scroll of windborne weapon", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 380
+  },
+  {
+    "name": "Trident of Fish Command",
+    "materials": [
+      { "item": "trident", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of dominate beast", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 560
+  },
+  {
+    "name": "+2 Ammunition",
+    "materials": [
+      { "item": "ammunition", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 2 }
+    ],
+    "craftingTime": 2,
+    "craftingChecks": 1,
+    "dc": 16,
+    "rarity": 2,
+    "value": 130
+  },
+  {
+    "name": "+2 Weapon",
+    "materials": [
+      { "item": "weapon", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 },
+      { "item": "scroll of elemental weapon", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 5300
+  },
+  {
+    "name": "Dagger of Venom",
+    "materials": [
+      { "item": "+1 dagger", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of nauseating poison", "quantity": 1 },
+      { "item": "potent injury poison", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 2500
+  },
+  {
+    "name": "Flametongue",
+    "materials": [
+      { "item": "weapon", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 5 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "scroll of elemental weapon", "quantity": 1 },
+      { "item": "flametongue oil", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 2,
+    "value": 5800
+  },
+  {
+    "name": "Javelin of the Harpy Eagle",
+    "materials": [
+      { "item": "javelin worth 100 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of windborne weapon", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1300
+  },
+  {
+    "name": "Mace of Disruption",
+    "materials": [
+      { "item": "mace", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of banishment", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 2400
+  },
+  {
+    "name": "Mace of Smiting",
+    "materials": [
+      { "item": "mace", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of staggering smite", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1500
+  },
+  {
+    "name": "Mace of Terror",
+    "materials": [
+      { "item": "mace", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "uncommon divine essence", "quantity": 1 },
+      { "item": "scroll of fear", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 17,
+    "rarity": 2,
+    "value": 1680
+  },
+  {
+    "name": "Mageblade, +2",
+    "materials": [
+      { "item": "sword worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Master's Weapon, +2",
+    "materials": [
+      { "item": "weapon worth 500 gp", "quantity": 1 },
+      { "item": "rare essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Moon Sickle, +2",
+    "materials": [
+      { "item": "sickle worth 500 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Sun Blade",
+    "materials": [
+      { "item": "sword worth 200 gp", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 3 },
+      { "item": "uncommon arcane essence", "quantity": 2 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "scroll of daylight", "quantity": 1 },
+      { "item": "scroll of holy weapon", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 5500
+  },
+  {
+    "name": "Sword of Life Stealing",
+    "materials": [
+      { "item": "sword worth 200 gp", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 2 },
+      { "item": "scroll of vampiric touch", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1800
+  },
+  {
+    "name": "Sword of Wounding",
+    "materials": [
+      { "item": "sword worth 200 gp", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 2 },
+      { "item": "scroll of bestow curse", "quantity": 1 },
+      { "item": "scroll of draining smite", "quantity": 1 },
+      { "item": "very rare poisonous reagent", "quantity": 2 },
+      { "item": "rare poisonous reagent", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 17,
+    "rarity": 2,
+    "value": 5000
+  },
+  {
+    "name": "Vicious Weapon",
+    "materials": [
+      { "item": "weapon", "quantity": 1 },
+      { "item": "uncommon occult essence", "quantity": 3 },
+      { "item": "scroll of supernal smite", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1650
+  },
+  {
+    "name": "Weapon of Slaying",
+    "materials": [
+      { "item": "weapon worth 1000 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 2 },
+      { "item": "rare divine essence", "quantity": 2 },
+      { "item": "scroll of bestow curse", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 1800
+  },
+  {
+    "name": "+3 Ammunition",
+    "materials": [
+      { "item": "ammunition", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 18,
+    "rarity": 3,
+    "value": 585
+  },
+  {
+    "name": "+3 Weapon",
+    "materials": [
+      { "item": "weapon worth 1000 gp", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 3 },
+      { "item": "scroll of elemental weapon", "quantity": 1 },
+      { "item": "scroll of holy weapon", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 3,
+    "value": 26000
+  },
+  {
+    "name": "Arrow of Slaying",
+    "materials": [
+      { "item": "arrow", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "rare divine essence", "quantity": 1 },
+      { "item": "scroll of bestow curse", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 4,
+    "dc": 18,
+    "rarity": 3,
+    "value": 2500
+  },
+  {
+    "name": "Bow of Magic Missiles",
+    "materials": [
+      { "item": "bow", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 3 },
+      { "item": "rare arcane essence", "quantity": 3 },
+      { "item": "scroll of magic missile", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 3,
+    "value": 10000
+  },
+  {
+    "name": "Dancing Sword",
+    "materials": [
+      { "item": "sword worth 100 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 2 },
+      { "item": "uncommon arcane essence", "quantity": 4 },
+      { "item": "scroll of animate objects", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 18500
+  },
+  {
+    "name": "Dwarven Thrower",
+    "materials": [
+      { "item": "+3 warhammer", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 1 },
+      { "item": "scroll of divine arm", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 3,
+    "value": 37000
+  },
+  {
+    "name": "Frostbrand",
+    "materials": [
+      { "item": "weapon", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 },
+      { "item": "scroll of elemental weapon", "quantity": 1 },
+      { "item": "frost oil", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 19,
+    "rarity": 3,
+    "value": 11600
+  },
+  {
+    "name": "Mageblade, +3",
+    "materials": [
+      { "item": "sword worth 1000 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Master's Weapon, +3",
+    "materials": [
+      { "item": "weapon worth 1000 gp", "quantity": 1 },
+      { "item": "very rare essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Moon Sickle, +3",
+    "materials": [
+      { "item": "sickle worth 1000 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Nine Lives Stealer",
+    "materials": [
+      { "item": "sword worth 500 gp", "quantity": 1 },
+      { "item": "scroll of power word: kill", "quantity": 1 },
+      { "item": "scroll of soul cage", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 3,
+    "value": 46600
+  },
+  {
+    "name": "Oathbow",
+    "materials": [
+      { "item": "longbow worth 500 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 },
+      { "item": "scroll of hex", "quantity": 1 },
+      { "item": "scroll of hunter's mark", "quantity": 1 },
+      { "item": "scroll of true strike", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 17700
+  },
+  {
+    "name": "Scimitar of Speed",
+    "materials": [
+      { "item": "scimitar worth 500 gp", "quantity": 1 },
+      { "item": "very rare arcane essence", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of haste", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 3,
+    "value": 10000
+  },
+  {
+    "name": "Sword of Sharpness",
+    "materials": [
+      { "item": "sword worth 500 gp", "quantity": 1 },
+      { "item": "very rare occult essence", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 1 },
+      { "item": "scroll of supernal smite", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 18,
+    "rarity": 3,
+    "value": 11000
+  },
+  {
+    "name": "Defender",
+    "materials": [
+      { "item": "sword worth 1000 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 },
+      { "item": "+3 shield", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 20,
+    "rarity": 4,
+    "value": 59000
+  },
+  {
+    "name": "Dragon Tamer Lance",
+    "materials": [
+      { "item": "lance worth 1000 gp", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 2 },
+      { "item": "uncommon primal essence", "quantity": 8 },
+      { "item": "scroll of chromatic orb", "quantity": 1 },
+      { "item": "scroll of summon draconic spirit", "quantity": 1 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 20,
+    "rarity": 4,
+    "value": 50000
+  },
+  {
+    "name": "Hammer of Thunderbolts",
+    "materials": [
+      { "item": "maul worth 1000 gp", "quantity": 1 },
+      { "item": "legendary primal essence", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 2 },
+      { "item": "scroll of thunderwave", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 20,
+    "rarity": 4,
+    "value": 64000
+  },
+  {
+    "name": "Holy Avenger",
+    "materials": [
+      { "item": "weapon worth 10000 gp", "quantity": 1 },
+      { "item": "legendary divine essence", "quantity": 3 },
+      { "item": "very rare divine essence", "quantity": 3 },
+      { "item": "scroll of holy aura", "quantity": 1 },
+      { "item": "scroll of holy weapon", "quantity": 1 },
+      { "item": "scroll of magic weapon", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 22,
+    "rarity": 4,
+    "value": 158000
+  },
+  {
+    "name": "Luck Blade",
+    "materials": [
+      { "item": "+1 sword", "quantity": 1 },
+      { "item": "scroll of wish", "quantity": 2 }
+    ],
+    "craftingTime": 32,
+    "craftingChecks": 16,
+    "dc": 20,
+    "rarity": 4,
+    "value": 92000
+  }
+]

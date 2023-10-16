@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Bracers of Archery",
+    "materials": [
+      { "item": "bracers", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 2 },
+      { "item": "scroll of hunter's mark", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 15,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Dynamo Handwraps, +1",
+    "materials": [
+      { "item": "cloth worth 100 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Gauntlets of Ogre Power",
+    "materials": [
+      { "item": "gauntlets worth 50 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 1 },
+      { "item": "common arcane essence", "quantity": 1 },
+      { "item": "scroll of enhance ability", "quantity": 1 },
+      { "item": "scroll of enlarge/reduce", "quantity": 1 }
+    ],
+    "craftingTime": 12,
+    "craftingChecks": 6,
+    "dc": 14,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Gloves of Missile Snaring",
+    "materials": [
+      { "item": "gloves", "quantity": 1 },
+      { "item": "uncommon arcane essence", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 1 },
+      { "item": "scroll of magnetization", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 365
+  },
+  {
+    "name": "Gloves of Swimming and Climbing",
+    "materials": [
+      { "item": "gloves", "quantity": 1 },
+      { "item": "common primal essence", "quantity": 2 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 1,
+    "value": 225
+  },
+  {
+    "name": "Gloves of Thievery",
+    "materials": [
+      { "item": "gloves", "quantity": 1 },
+      { "item": "common occult essence", "quantity": 2 },
+      { "item": "scroll of enhance ability", "quantity": 1 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 16,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Haymaker Gloves, +1",
+    "materials": [
+      { "item": "gloves worth 100 gp", "quantity": 1 },
+      { "item": "uncommon primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 15,
+    "rarity": 1,
+    "value": 650
+  },
+  {
+    "name": "Bracers of Defense",
+    "materials": [
+      { "item": "bracers worth 200 gp", "quantity": 1 },
+      { "item": "rare essence", "quantity": 1 },
+      { "item": "scroll of shield", "quantity": 1 },
+      { "item": "scroll of shield of faith", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 2300
+  },
+  {
+    "name": "Bracers of Flying Daggers",
+    "materials": [
+      { "item": "bracers", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "scroll of windborne weapon", "quantity": 1 },
+      { "item": "dagger", "quantity": 5 }
+    ],
+    "craftingTime": 8,
+    "craftingChecks": 4,
+    "dc": 14,
+    "rarity": 2,
+    "value": 1500
+  },
+  {
+    "name": "Claws of the Umber Hulk",
+    "materials": [
+      { "item": "gloves worth 200 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 1 },
+      { "item": "rare psionic essence", "quantity": 1 },
+      { "item": "scroll of alter self", "quantity": 1 },
+      { "item": "scroll of mold earth", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 16,
+    "rarity": 2,
+    "value": 2500
+  },
+  {
+    "name": "Dynamo Handwraps, +2",
+    "materials": [
+      { "item": "cloth worth 500 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Gauntlets of Flaming Fury",
+    "materials": [
+      { "item": "gauntlets worth 200 gp", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 1 },
+      { "item": "scroll of elemental weapon", "quantity": 1 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 18,
+    "rarity": 2,
+    "value": 4000
+  },
+  {
+    "name": "Haymaker Gloves, +2",
+    "materials": [
+      { "item": "gloves worth 500 gp", "quantity": 1 },
+      { "item": "rare primal essence", "quantity": 3 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3300
+  },
+  {
+    "name": "Dynamo Handwraps, +3",
+    "materials": [
+      { "item": "cloth worth 1000 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Haymaker Gloves, +3",
+    "materials": [
+      { "item": "gloves worth 1000 gp", "quantity": 1 },
+      { "item": "very rare primal essence", "quantity": 4 }
+    ],
+    "craftingTime": 24,
+    "craftingChecks": 12,
+    "dc": 19,
+    "rarity": 3,
+    "value": 38000
+  },
+  {
+    "name": "Illusionist's Bracers",
+    "materials": [
+      { "item": "bracers worth 500 gp", "quantity": 1 },
+      { "item": "rare arcane essence", "quantity": 4 },
+      { "item": "scroll of haste", "quantity": 1 }
+    ],
+    "craftingTime": 40,
+    "craftingChecks": 20,
+    "dc": 22,
+    "rarity": 3,
+    "value": 55000
+  }
+]

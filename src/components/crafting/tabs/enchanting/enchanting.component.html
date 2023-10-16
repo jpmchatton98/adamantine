@@ -106,16 +106,40 @@
 </div>
 
 <nz-tabset [nzSize]="'small'" [nzAnimated]="false">
-  <nz-tab nzTitle="Amulets">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Armor & Shields">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Back Items">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Belts">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Books">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Boots">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Bracers & Gloves">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Helmets & Masks">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Rings">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Tattoos">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Weapons">Coming Soon ;)</nz-tab>
-  <nz-tab nzTitle="Wondrous Items">Coming Soon ;)</nz-tab>
+  <nz-tab nzTitle="Amulets">
+    <craft-table [data]="getTableData('amulets')"></craft-table>
+  </nz-tab>
+  <nz-tab nzTitle="Armor & Shields"
+    ><craft-table [data]="getTableData('armor')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Back Items"
+    ><craft-table [data]="getTableData('back')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Belts"
+    ><craft-table [data]="getTableData('belts')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Books"
+    ><craft-table [data]="getTableData('books')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Boots"
+    ><craft-table [data]="getTableData('boots')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Bracers & Gloves"
+    ><craft-table [data]="getTableData('gloves')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Helmets & Masks"
+    ><craft-table [data]="getTableData('hemlets')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Rings"
+    ><craft-table [data]="getTableData('rings')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Tattoos"
+    ><craft-table [data]="getTableData('tattoos')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Weapons"
+    ><craft-table [data]="getTableData('weapons')"></craft-table
+  ></nz-tab>
+  <nz-tab nzTitle="Wondrous Items"
+    ><craft-table [data]="getTableData('misc')"></craft-table
+  ></nz-tab>
 </nz-tabset>
