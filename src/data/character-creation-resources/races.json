@@ -15457,5 +15457,60 @@
       }
     ],
     "name": "Lanternfolk"
+  },
+  {
+    "description": "What... <i>is</i> this?",
+    "asis": [{ "int": 1 }, { "wis": 1 }, { "cha": 1 }],
+    "maturity": 20,
+    "lifespan": -1,
+    "height": [5, 6],
+    "weight": [90, 110],
+    "category": "Extraplanar",
+    "type": "Celestial",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Enigmatic Language"],
+    "traits": [
+      {
+        "name": "Void Body",
+        "description": "You do not need to breathe."
+      },
+      {
+        "name": "Void Magic",
+        "description": "Your magic calls upon a different source than the Spellweave.  Spells that defend against, detect, or dispel magic, such as Antimagic Field, Counterspell, or Detect Magic, fail if used against you.  However, you can also not use such spells.</p><p>In addition, you ignore resistance or immunity to force damage, and cannot be resistant or immune to force damage."
+      },
+      {
+        "name": "Void Mind",
+        "description": "Your thoughts cannot be read by magical means.  Any attempt to do so causes the telepath to take psychic damage equal to your level and be unable to read thoughts or communicate telepathically until they finish a long rest.</p><p>In addition, you seem to have a knack for certain things, but you don't remember why.  You have proficiency in two skills and two tools of your choice.",
+        "choices": [
+          {
+            "id": "F455F394-1857-4B98-9C86-3D01FAB539D3",
+            "type": "skill",
+            "level": 1
+          },
+          {
+            "id": "EAA9F38C-1C6B-49E4-BAD9-4B1B95595321",
+            "type": "skill",
+            "level": 1
+          },
+          {
+            "id": "D79C8D26-8194-4ABC-8E09-F19315AA8BFF",
+            "type": "tool",
+            "level": 1
+          },
+          {
+            "id": "2CFD883F-9C01-423E-BF86-814DFD799A11",
+            "type": "tool",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Void Trance",
+        "description": "Void enigmas do not sleep. Instead they drift into a void trance for 4 hours a day. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+      }
+    ],
+    "name": "Void Enigma"
   }
 ]
