@@ -13243,7 +13243,25 @@
     "traits": [
       {
         "name": "Amorphous",
-        "description": "You can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You also have advantage on ability checks you make to initiate or escape a grapple."
+        "description": "You can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You also have advantage on ability checks you make to initiate or escape a grapple.</p><p>In addition, you can form a limb into a razor-sharp blade as a bonus action, or convert it back to a normal limb.  While an arm is a blade, you can't hold anything in that hand, and it is a natural weapon that deals piercing damage equal to 1d6 + your Strength or Dexterity modifier on a hit.",
+        "actions": [
+          {
+            "id": "D7B1CE17-237F-424B-83C7-5F7024728DA4",
+            "type": "a",
+            "attack": true,
+            "name": "Arm Blade",
+            "damage": [
+              {
+                "dice": 1,
+                "die": 6,
+                "type": "piercing",
+                "mod": true,
+                "unarmed": true
+              }
+            ],
+            "finesse": true
+          }
+        ]
       },
       {
         "name": "Artificial Nature",
