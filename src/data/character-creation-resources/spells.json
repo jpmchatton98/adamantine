@@ -3712,6 +3712,18 @@
     "ritual": 1
   },
   {
+    "name": "Detect Portals",
+    "school": "Divination",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Up to 10 minutes",
+    "description": "For the duration, you sense the presence of portals, even inactive ones, within 30 feet of yourself.</p><p>If you detect a portal in this way, you can use your action to study it. Make a DC 15 ability check using your spellcasting ability. On a successful check, you learn the destination plane of the portal and what portal key it requires, then the spell ends. On a failed check, you learn nothing and can't study that portal again using this spell until you cast it again.</p><p>The spell can penetrate most barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Psionic", "Melodic"],
+    "ritual": 1
+  },
+  {
     "name": "Detect Poison and Disease",
     "school": "Divination",
     "level": 1,
@@ -16921,6 +16933,19 @@
     "duration": "Up to 1 hour",
     "description": "When you cast this spell, you animate the musical instruments that serve as its material component so that they will play along with you when you play music, so long as they remain within range.</p><p>In addition, while you are playing music while this spell is active, you can cause harmless sensory effects to appear within range, such as floating musical notes, sparks, or smoke.",
     "lists": ["Melodic"],
+    "ritual": 1
+  },
+  {
+    "name": "Gate Seal",
+    "school": "Abjuration",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a broken portal key)",
+    "duration": "24 hours",
+    "description": "You fortify the fabric of the planes in a 30-foot cube you can see within range. Within that area, portals close and can't be opened for the duration. Spells and other effects that allow planar travel or open portals, such as gate or plane shift, fail if used to enter or leave the area. The cube is stationary.</p><p>Casting this spell every day for a year in the same spot causes it to last until dispelled.",
+    "higherLevels": "When you cast it using a spell slot above 4th-level, its area increases by 5 feet per level of spell slot above 4th.",
+    "lists": ["Arcane", "Divine", "Occult"],
     "ritual": 1
   }
 ]
