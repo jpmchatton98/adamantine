@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Update } from 'src/components/pages/features/builder.actions';
 import { selectUpdate } from 'src/components/pages/features/builder.selectors';
@@ -10,6 +10,7 @@ import { DBService } from 'src/services/db.service';
   templateUrl: './character-builder.component.html',
   styleUrls: ['./character-builder.component.scss'],
 })
+@HostListener('unloaded')
 export class CharacterBuilderComponent implements OnInit {
   @Input()
   set guid(id: string) {

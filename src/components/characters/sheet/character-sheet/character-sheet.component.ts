@@ -1,4 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  HostListener,
+  Input,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { Store } from '@ngrx/store';
 import { get } from 'http';
 import { Update } from 'src/components/pages/features/builder.actions';
@@ -14,6 +22,7 @@ import { DBService } from 'src/services/db.service';
   templateUrl: './character-sheet.component.html',
   styleUrls: ['./character-sheet.component.scss'],
 })
+@HostListener('unloaded')
 export class CharacterSheetComponent implements OnInit {
   @Input()
   set guid(id: string) {
@@ -132,10 +141,35 @@ export class CharacterSheetComponent implements OnInit {
   ) {}
 
   async ngOnInit() {
+    await this.setup();
+
+    this.store.select(selectUpdate).subscribe(async (update) => {
+      if (update) {
+        if (this.character && this.loaded) {
+          const data = {
+            ...this.dbCharacter,
+            ...this.character,
+          };
+
+          this.dbService.setCharacterNoUser(this.characterId, data);
+
+          this.dbCharacter = data;
+
+          this.calculateHp();
+          this.tempHp = this.character.tempHp ?? 0;
+          this.generateWeaponAttacks();
+        }
+      }
+    });
+  }
+
+  private async setup() {
     await this.dbService.getCharacter(this.characterId).then((val) => {
       this.character = val;
       this.dbCharacter = JSON.parse(JSON.stringify(this.character));
     });
+
+    await this.characterSheetService.getCharacterFromDb(this.characterId);
 
     this.skills = this.characterSheetService.skillData;
     await this.characterSheetService
@@ -271,24 +305,9 @@ export class CharacterSheetComponent implements OnInit {
 
     this.loaded = true;
 
-    this.store.select(selectUpdate).subscribe(async (update) => {
-      if (update) {
-        if (this.character) {
-          const data = {
-            ...this.dbCharacter,
-            ...this.character,
-          };
-
-          this.dbService.setCharacterNoUser(this.characterId, data);
-
-          this.dbCharacter = data;
-        }
-
-        this.calculateHp();
-        this.tempHp = this.character.tempHp ?? 0;
-        this.generateWeaponAttacks();
-      }
-    });
+    this.calculateHp();
+    this.tempHp = this.character.tempHp ?? 0;
+    this.generateWeaponAttacks();
   }
 
   private async calculateHp() {
