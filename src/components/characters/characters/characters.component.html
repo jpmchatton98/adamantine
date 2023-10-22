@@ -1,17 +1,38 @@
-<div>
-  <div *ngFor="let user of users; let i = index">
-    <h5>{{ user }}'s Characters</h5>
-    <button nz-button (click)="create(user)">+ Create New</button>
-    <div *ngFor="let c of userCharacters[i]">
-      <div>
-        {{ getCharName(c) }}
-        <a class="character-btn" routerLink="/characters/{{ c.guid }}/builder"
-          >Builder</a
-        >
-        <a class="character-btn" routerLink="/characters/{{ c.guid }}/sheet"
-          >Sheet</a
-        >
+<div class="characters">
+  <div class="character-col">
+    <h5>Adamantine Players</h5>
+    <div *ngFor="let user of users.adamantine; let i = index">
+      <h5>{{ user }}'s Characters</h5>
+      <button nz-button (click)="create(user)">+ Create New</button>
+      <div *ngFor="let c of userCharacters.adamantine[i]">
+        <div>
+          {{ getCharName(c) }}
+          <a class="character-btn" routerLink="/characters/{{ c.guid }}/builder"
+            >Builder</a
+          >
+          <a class="character-btn" routerLink="/characters/{{ c.guid }}/sheet"
+            >Sheet</a
+          >
+        </div>
       </div>
     </div>
   </div>
+  <!-- <div class="character-col">
+    <h5>Mithal Players</h5>
+    <div *ngFor="let user of users.mithral; let i = index">
+      <h5>{{ user }}'s Characters</h5>
+      <button nz-button (click)="create(user)">+ Create New</button>
+      <div *ngFor="let c of userCharacters.mithral[i]">
+        <div>
+          {{ getCharName(c) }}
+          <a class="character-btn" routerLink="/characters/{{ c.guid }}/builder"
+            >Builder</a
+          >
+          <a class="character-btn" routerLink="/characters/{{ c.guid }}/sheet"
+            >Sheet</a
+          >
+        </div>
+      </div>
+    </div>
+  </div> -->
 </div>

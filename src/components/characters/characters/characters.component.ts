@@ -9,19 +9,28 @@ import { DBService } from 'src/services/db.service';
   styleUrls: ['./characters.component.scss'],
 })
 export class CharactersComponent implements OnInit {
-  public users = ['Brad', 'Joey', 'Jon', 'Maddie', 'Spencer'];
-  public userCharacters = [];
+  public users = {
+    adamantine: ['Brad', 'Joey', 'Jon', 'Maddie', 'Spencer'],
+  };
+  public userCharacters = { adamantine: [], mithral: [] };
 
   constructor(private dbService: DBService, private router: Router) {}
 
   public ngOnInit(): void {
     localStorage.clear();
 
-    for (let i = 0; i < this.users.length; i++) {
-      this.dbService.getUserCharacters(this.users[i]).subscribe((c) => {
-        this.userCharacters[i] = c;
-      });
+    for (let i = 0; i < this.users.adamantine.length; i++) {
+      this.dbService
+        .getUserCharacters(this.users.adamantine[i])
+        .subscribe((c) => {
+          this.userCharacters.adamantine[i] = c;
+        });
     }
+    // for (let i = 0; i < this.users.mithral.length; i++) {
+    //   this.dbService.getUserCharacters(this.users.mithral[i]).subscribe((c) => {
+    //     this.userCharacters.mithral[i] = c;
+    //   });
+    // }
   }
 
   public create(username): void {
