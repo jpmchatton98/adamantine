@@ -3408,7 +3408,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Aeorian Absorber",
@@ -3664,7 +3664,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Young Aerosaur",
@@ -3702,7 +3702,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Air Elemental",
@@ -4175,7 +4175,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Almiraj",
@@ -8147,7 +8147,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Annis Hag",
@@ -9556,7 +9556,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Ash Zombie",
@@ -11670,7 +11670,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Banderhobb",
@@ -15068,7 +15068,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Brontosaurus",
@@ -15102,7 +15102,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Bronze Dragon Wyrmling",
@@ -16652,7 +16652,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Cerodon",
@@ -16699,7 +16699,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Chain Devil",
@@ -17462,7 +17462,7 @@
       }
     ],
     "altArt": [{ "name": "Clawfoot Raptor", "source": "WGE" }],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Clay Golem",
@@ -21245,7 +21245,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Demilich",
@@ -21746,7 +21746,7 @@
     "passive": 10,
     "cr": 0.25,
     "steed": true,
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Dimetrodon",
@@ -21775,7 +21775,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Blood Troll",
@@ -27555,6 +27555,7 @@
     "size": "Huge",
     "type": "beast",
     "beastType": ["reptile"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
     "hp": { "average": 85, "formula": "9d12 + 27" },
@@ -28942,7 +28943,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Feyr",
@@ -30674,7 +30675,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Frog",
@@ -39075,7 +39076,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Half-Ogre",
@@ -39219,7 +39220,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Rabbit",
@@ -46700,6 +46701,7 @@
     "size": "Huge",
     "type": "beast",
     "beastType": ["mammal"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 13, "from": ["natural armor"] }],
     "hp": { "average": 126, "formula": "11d12 + 55" },
@@ -55419,7 +55421,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Podling",
@@ -56220,7 +56222,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Purple Worm",
@@ -56514,7 +56516,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Quickling",
@@ -57111,7 +57113,7 @@
     ]
   },
   {
-    "name": "Reindeer",
+    "name": "Caribou",
     "size": "Large",
     "type": "beast",
     "beastType": ["mammal"],
@@ -57132,7 +57134,7 @@
       {
         "name": "Charge",
         "entries": [
-          "If the reindeer moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 () damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+          "If the caribou moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
         ]
       }
     ],
@@ -57308,6 +57310,7 @@
     "size": "Huge",
     "type": "beast",
     "beastType": ["mammal"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 13, "from": ["natural armor"] }],
     "hp": { "average": 76, "formula": "8d12 + 24" },
@@ -58167,6 +58170,7 @@
     "size": "Large",
     "type": "beast",
     "beastType": ["mammal"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [12],
     "hp": { "average": 52, "formula": "7d10 + 14" },
@@ -59176,7 +59180,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Salamander",
@@ -60951,6 +60955,7 @@
     "size": "Medium",
     "type": "beast",
     "beastType": ["fish"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 18, "from": ["shell plate armor"] }],
     "hp": { "average": 32, "formula": "5d8 + 10" },
@@ -61913,9 +61918,10 @@
   },
   {
     "name": "Sky Leviathan",
-    "size": "Gargantuan",
+    "size": "Colossal",
     "type": "beast",
     "beastType": ["reptile"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
     "hp": { "average": 247, "formula": "15d20 + 90" },
@@ -64434,7 +64440,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Stench Kow",
@@ -66660,7 +66666,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Thri-kreen",
@@ -67632,7 +67638,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Tridrone",
@@ -67694,6 +67700,7 @@
     "size": "Tiny",
     "type": "beast",
     "beastType": ["arthropod"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 11, "from": ["natural armor"] }],
     "hp": { "average": 2, "formula": "1d4" },
@@ -67729,6 +67736,7 @@
     "size": "Medium",
     "type": "beast",
     "beastType": ["arthropod"],
+    "tags": ["ancient"],
     "alignment": ["U"],
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 13, "formula": "3d8" },
@@ -68193,7 +68201,7 @@
     "size": "Huge",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "alignment": ["U"],
     "ac": [{ "ac": 13, "from": ["natural armor"] }],
     "hp": { "average": 136, "formula": "13d12 + 52" },
@@ -69851,7 +69859,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Venom Troll",
@@ -76679,7 +76687,7 @@
     "size": "Tiny",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "ac": [11],
     "hp": { "average": 3, "formula": "1d6" },
     "speed": { "walk": 40 },
@@ -76715,7 +76723,7 @@
     "size": "Tiny",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "ac": [13],
     "hp": { "average": 2, "formula": "1d4" },
     "speed": { "walk": 25, "swim": 25 },
@@ -76750,7 +76758,7 @@
     "size": "Tiny",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "ac": [13],
     "hp": { "average": 2, "formula": "1d4" },
     "speed": { "walk": 30 },
@@ -76792,7 +76800,7 @@
     "size": "Tiny",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "ac": [{ "ac": 13, "from": ["natural armor"] }],
     "hp": { "average": 2, "formula": "1d4" },
     "speed": { "walk": 30 },
@@ -81222,6 +81230,7 @@
     "size": "Gargantuan",
     "type": "beast",
     "beastType": ["reptile"],
+    "tags": ["ancient"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
     "hp": { "average": 105, "formula": "8d20 + 8" },
     "speed": { "walk": 40, "swim": 40 },
@@ -81293,7 +81302,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Iguanodon",
@@ -81336,11 +81345,11 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Megalania",
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "size": "Huge",
     "type": "beast",
     "beastType": ["reptile"],
@@ -81402,7 +81411,7 @@
   },
   {
     "name": "Deinosuchus",
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "size": "Gargantuan",
     "type": "beast",
     "beastType": ["reptile"],
@@ -81493,7 +81502,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Utahraptor",
@@ -81542,7 +81551,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Baryoynx",
@@ -81585,7 +81594,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Argentinosaurus",
@@ -81619,7 +81628,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Kronosaurus",
@@ -81674,7 +81683,7 @@
         ]
       }
     ],
-    "tags": ["dinosaur"]
+    "tags": ["ancient", "dinosaur"]
   },
   {
     "name": "Buffalo",
@@ -81879,7 +81888,7 @@
     "size": "Gargantuan",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "alignment": ["N", "G"],
     "ac": [{ "ac": 14, "from": ["natural armor"] }],
     "hp": { "average": 155, "formula": "10d20 + 50" },
@@ -81935,7 +81944,7 @@
     "size": "Gargantuan",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "alignment": ["N", "G"],
     "ac": [{ "ac": 15, "from": ["natural armor"] }],
     "hp": { "average": 198, "formula": "12d20 + 72" },
@@ -81991,7 +82000,7 @@
     "size": "Gargantuan",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "alignment": ["N", "G"],
     "ac": [{ "ac": 17, "from": ["natural armor"] }],
     "hp": { "average": 181, "formula": "11d20 + 66" },
@@ -82047,7 +82056,7 @@
     "size": "Gargantuan",
     "type": "beast",
     "beastType": ["reptile"],
-    "tags": ["dinosaur"],
+    "tags": ["ancient", "dinosaur"],
     "alignment": ["N", "G"],
     "ac": [{ "ac": 16, "from": ["natural armor"] }],
     "hp": { "average": 139, "formula": "9d20 + 45" },
