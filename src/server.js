@@ -40,7 +40,7 @@ let characterSchema = new mongoose.Schema({
   player: String,
   data: String,
 });
-let characterModel = mongoose.model("CharacterData", characterSchema);
+let characterModel = mongoose.model("TestCharacterData", characterSchema);
 
 function getCharacter(characterId) {}
 
