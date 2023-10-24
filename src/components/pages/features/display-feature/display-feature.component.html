@@ -23,7 +23,7 @@
         >Prerequisite:
         <ng-container *ngIf="isArray(feature.prereq)">
           <ng-container *ngIf="feature.prereq && feature.prereq[0].race">
-            {{ feature.prereq[0].race.join(", ") }}
+            {{ getFeatRacialPrereq(feature.prereq[0]) }}
           </ng-container>
           <ng-container
             *ngIf="feature.prereq && feature.prereq[0].spellcasting"

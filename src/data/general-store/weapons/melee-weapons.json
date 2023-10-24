@@ -1845,7 +1845,7 @@
     "weight": 4.0,
     "properties": [
       {
-        "name": "Thrown",
+        "name": "Thrown (20/60)",
         "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
       },
       {
@@ -2088,7 +2088,7 @@
     "weight": 5,
     "properties": [
       {
-        "name": "Thrown",
+        "name": "Thrown (20/60)",
         "description": "You can make a ranged attack with this weapon by throwing it. You use the same ability modifier for the attack and damage roll that you would use for a melee attack. Two numbers in parentheses appear with the property - the range and long range, respectively, that are used for the weapon when thrown."
       },
       {

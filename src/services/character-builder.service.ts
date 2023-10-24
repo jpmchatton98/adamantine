@@ -878,4 +878,9 @@ export class CharacterBuilderService {
   public characterIsRace(race: string) {
     return this.character?.race?.name?.toLowerCase() === race.toLowerCase();
   }
+  public characterIsSubace(subrace: string) {
+    return this.character?.race?.subrace
+      ?.toLowerCase()
+      .includes(subrace.toLowerCase());
+  }
 }

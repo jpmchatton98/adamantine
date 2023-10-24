@@ -369,5 +369,37 @@
     "longRange": 1600,
 
     "ammunition": "Heavy Arrows"
+  },
+  {
+    "name": "Recurve Bow",
+
+    "description": "An enormous bow specialized for horse archery, favored by centaurs and nomadic peoples.",
+    "damage": "2d10",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 175,
+    "weight": 4.5,
+    "properties": [
+      {
+        "name": "Cavalry",
+        "description": "Attacks made with this weapon while you are not mounted are made at disadvantage."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 2,
+    "range": 600,
+    "longRange": 1800,
+
+    "ammunition": "Heavy Arrows"
   }
 ]

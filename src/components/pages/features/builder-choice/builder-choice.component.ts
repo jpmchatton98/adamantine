@@ -15,6 +15,7 @@ import { CharacterSheetService } from 'src/services/character-sheet.service';
 
 interface IPrereq {
   race?: string[];
+  subrace?: string[];
   spellcasting?: boolean;
   light?: boolean;
   medium?: boolean;
@@ -65,13 +66,8 @@ export class BuilderChoiceComponent implements OnInit {
   }
 
   public async ngOnInit() {
-    if (!this.characterBuilderService.character) {
-      await this.characterBuilderService.getCharacterFromDb(this.characterId);
-    } else if (
-      Object.keys(this.characterBuilderService.character).length === 0
-    ) {
-      await this.characterBuilderService.getCharacterFromDb(this.characterId);
-    }
+    await this.characterBuilderService.getCharacterFromDb(this.characterId);
+
     this.genericListKeys = this.dataService.getGenericListKeys();
 
     const choiceEntry = this.characterObj?.choices.find(
@@ -357,10 +353,33 @@ export class BuilderChoiceComponent implements OnInit {
                 const prereq: IPrereq = p;
 
                 if (prereq.race) {
-                  for (let race of prereq.race) {
+                  for (let i = 0; i < prereq.race.length; i++) {
+                    const race = prereq.race[i];
+
                     let isRace =
                       this.characterBuilderService.characterIsRace(race);
                     if (isRace) {
+                      if (prereq.subrace) {
+                        if (prereq.subrace[i]) {
+                          switch (typeof prereq.subrace[i]) {
+                            case 'string':
+                              return this.characterBuilderService.characterIsSubace(
+                                prereq.subrace[i]
+                              );
+                            case 'object':
+                              for (let subrace of prereq.subrace[i]) {
+                                if (
+                                  this.characterBuilderService.characterIsSubace(
+                                    subrace
+                                  )
+                                ) {
+                                  return true;
+                                }
+                                return false;
+                              }
+                          }
+                        }
+                      }
                       return true;
                     }
                   }

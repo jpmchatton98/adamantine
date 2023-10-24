@@ -30,7 +30,7 @@ export class DBService {
         characterId,
         characterData,
       })
-      .subscribe((response) => console.log(response));
+      .subscribe((response) => console.info(response));
   }
 
   public async getCharacter(characterId: string): Promise<any> {
