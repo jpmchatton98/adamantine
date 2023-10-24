@@ -137,28 +137,40 @@
 <ng-container *ngIf="monster.trait">
   <hr *ngIf="!monster.spellcasting" />
   <div *ngFor="let trait of monster.trait">
-    <app-monster-trait [trait]="trait"></app-monster-trait>
+    <app-monster-trait
+      [trait]="trait"
+      *ngIf="trait.name !== ''"
+    ></app-monster-trait>
   </div>
 </ng-container>
 <ng-container *ngIf="monster.action">
   <hr />
   <h4>Actions</h4>
   <div *ngFor="let trait of monster.action">
-    <app-monster-trait [trait]="trait"></app-monster-trait>
+    <app-monster-trait
+      [trait]="trait"
+      *ngIf="trait.name !== ''"
+    ></app-monster-trait>
   </div>
 </ng-container>
 <ng-container *ngIf="monster.bonus">
   <hr />
   <h4>Bonus Actions</h4>
   <div *ngFor="let trait of monster.bonus">
-    <app-monster-trait [trait]="trait"></app-monster-trait>
+    <app-monster-trait
+      [trait]="trait"
+      *ngIf="trait.name !== ''"
+    ></app-monster-trait>
   </div>
 </ng-container>
 <ng-container *ngIf="monster.reaction">
   <hr />
   <h4>Reactions</h4>
   <div *ngFor="let trait of monster.reaction">
-    <app-monster-trait [trait]="trait"></app-monster-trait>
+    <app-monster-trait
+      [trait]="trait"
+      *ngIf="trait.name !== ''"
+    ></app-monster-trait>
   </div>
 </ng-container>
 
@@ -171,7 +183,10 @@
   another creature's turn. The {{ monster.name.toLowerCase() }} regains spent
   legendary actions at the start of its turn.
   <div *ngFor="let trait of monster.legendary">
-    <app-monster-trait [trait]="trait"></app-monster-trait>
+    <app-monster-trait
+      [trait]="trait"
+      *ngIf="trait.name !== ''"
+    ></app-monster-trait>
   </div>
 </ng-container>
 <ng-container *ngIf="monster.mythic">
@@ -180,6 +195,9 @@
   If the {{ monster.name.toLowerCase() }} has used its Mythic trait in the last
   hour, it can use the options below as legendary actions.
   <div *ngFor="let trait of monster.mythic">
-    <app-monster-trait [trait]="trait"></app-monster-trait>
+    <app-monster-trait
+      [trait]="trait"
+      *ngIf="trait.name !== ''"
+    ></app-monster-trait>
   </div>
 </ng-container>

@@ -1959,28 +1959,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Moon",
-        "description": "Tapping into the innate magic of their fey heritage, these beetle folk possess the ability to bioluminesce.  Also called lightning bugs, golden beetles, or glow worms, they use this ability both to light the way forward and to signal.",
-        "asis": [{ "wis": 1 }],
-        "traits": [
-          {
-            "name": "Bioluminescence",
-            "description": "You know the Light cantrip.  Wisdom is your spellcasting ability for it.</p><p>In addition, your control over the Light cantrip allows you to relay messages to any creature, so long as your light is visible to them.",
-            "granted": [
-              {
-                "type": "spell",
-                "options": ["Light"],
-                "ability": "wis"
-              }
-            ]
-          },
-          {
-            "name": "Lucky",
-            "description": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
-          }
-        ]
       }
     ],
     "name": "Daolagiath"
@@ -12090,12 +12068,6 @@
         ]
       },
       {
-        "name": "Spiritual Panserbjorn",
-        "description": "Spiritual panserbjorn have less in common with their brethren, usually having patterned fur.  Blessed with an innate affinity for the energy known as ki that monks use, they are more often found in temperate environments.",
-        "asis": [{ "wis": 1 }],
-        "traits": []
-      },
-      {
         "name": "Wild Panserbjorn",
         "description": "Brutal survivalists resembling bears of the far north, usually polar bears or brown bears, wild pasernbjorn live on the outskirts of civilization.  Historically more numerous, those still in the wild have become fewer as younger panserbjorn integrate themselves into society.",
         "asis": [{ "wis": 1 }],
@@ -15512,5 +15484,72 @@
       }
     ],
     "name": "Void Enigma"
+  },
+  {
+    "description": "Papillons are tiny butterfly folk who live short but exciting lives.  Always eager for a new adventure, they throw themselves at any challenge and travel any road.  They know their lifespan is incredibly short, but most choose to take joy in the pleasures they can find along the way, and are eternal optimists.  Each possesses a unique pattern on their wide, colorful wings, and they particularly enjoy art, cooking, and other forms of creative outlet.",
+    "asis": [{ "dex": 1 }, { "wis": 1 }, { "cha": 1 }],
+    "maturity": 1,
+    "lifespan": 10,
+    "height": [1, 2],
+    "weight": [1, 5],
+    "category": "Insectoid",
+    "type": "Fey",
+    "size": -2,
+    "speed": 20,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      "Entognatha",
+      "Sylvan",
+      { "id": "CEBE53B7-3D05-438C-B54B-DB829B222F29", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Papillons are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
+      },
+      {
+        "name": "Artistic Spirit",
+        "description": "You have proficiency in the Performance skill and with two tools of your choice.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Performance"],
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "7DBE7AFB-1A14-4F1D-9423-F675CBF86EBF",
+            "type": "tool",
+            "level": 1
+          },
+          {
+            "id": "6CF490C8-3D1C-495F-BCEC-CA8178D7A295",
+            "type": "tool",
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+      },
+      {
+        "name": "Flight",
+        "description": "You have thin, colorful wings that allow you to fly. You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+        "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
+      },
+      {
+        "name": "Optimist",
+        "description": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
+      },
+      {
+        "name": "Secondary Arms",
+        "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
+      }
+    ],
+    "name": "Papillon"
   }
 ]
