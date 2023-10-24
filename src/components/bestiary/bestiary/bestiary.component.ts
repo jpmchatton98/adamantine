@@ -67,7 +67,7 @@ export class BestiaryComponent implements OnInit {
         this.monsterTags = [...this.monsterTags, ...monster.beastType];
       }
     }
-    this.monsterTags.push('familiar', 'steed', 'great steed');
+    this.monsterTags.push('familiar', 'steed', 'great steed', 'mythic');
     this.monsterTags = [...new Set(this.monsterTags.sort())];
 
     for (let cr of [...new Set(this.allMonsters.map((m: any) => m.cr))].sort(
@@ -131,6 +131,12 @@ export class BestiaryComponent implements OnInit {
     });
     if (this.filters.tags.length) {
       this.monsters = this.monsters.filter((m: any) => {
+        if (this.filters.tags.includes('mythic')) {
+          if (m.mythic) {
+            return true;
+          }
+        }
+
         if (!m.tags && !m.beastType) {
           return false;
         }
