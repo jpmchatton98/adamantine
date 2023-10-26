@@ -77,7 +77,7 @@ export class CharacterBuilderComponent implements OnInit {
                       return (
                         objCh.sourceId === ch.id &&
                         (objCh.sourceValue === ch.value ||
-                          ch.list.includes(objCh.sourceValue))
+                          ch.list?.includes(objCh.sourceValue))
                       );
                     }) || objCh.sourceId === ''
                 ) ?? [];
