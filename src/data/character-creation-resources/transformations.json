@@ -1464,7 +1464,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a bulky yeti or large ape. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other apes</li>    <li>If you move at least 15 towards a creature and hit them with a melee attack on the same turn, you can also knock them prone.</li>    <li>Your size increases to Huge, and you gain advantage on Strength ability checks and saving throws.</li></ul>"
+                      "description": "Your kindred form takes the shape of a bulky yeti or large ape. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other apes</li>    <li>When you make any ability check using your Strength, you can add your Constitution modifier to the result</li><li>If you move at least 15 towards a creature and hit them with a melee attack on the same turn, you can also knock them prone.</li></ul>"
                     }
                   ]
                 }
