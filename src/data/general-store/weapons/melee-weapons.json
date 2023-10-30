@@ -212,8 +212,12 @@
     "damage": "4d4",
     "damageTypes": "Slashing",
     "cost": 50,
-    "weight": 25.0,
+    "weight": 10.0,
     "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
       {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
@@ -362,6 +366,31 @@
       {
         "name": "Unarmed",
         "description": "You can use this weapon to make an unarmed strike."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Sword",
+    "name": "Claymore",
+
+    "description": "A greatsword with a wavy blade designed to resemble fire.",
+    "damage": "4d4",
+    "damageTypes": "Slashing",
+    "cost": 50,
+    "weight": 5.0,
+    "properties": [
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
       }
     ],
     "type": 2
@@ -625,6 +654,23 @@
     "type": 2
   },
   {
+    "class": "Sword",
+    "name": "Falcata",
+
+    "description": "A front-heavy sword which delivers blows like an axe.",
+    "damage": "2d4",
+    "damageTypes": "Slashing",
+    "cost": 25,
+    "weight": 3.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 1
+  },
+  {
     "class": "Flail",
     "name": "Flail",
 
@@ -635,8 +681,33 @@
     "weight": 4.0,
     "properties": [
       {
+        "name": "Versatile (1d10)",
+        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Sword",
+    "name": "Flamberge",
+
+    "description": "A greatsword with a wavy blade designed to resemble fire.",
+    "damage": "2d6",
+    "damageTypes": "Slashing",
+    "cost": 25,
+    "weight": 3.0,
+    "properties": [
+      {
         "name": "Brutal",
         "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
       }
     ],
     "type": 1
@@ -842,7 +913,7 @@
     "class": "Sword",
     "name": "Greatsword",
 
-    "description": "A large, two-handed sword, also called a flamberge, claymore, or zweihänder.",
+    "description": "A large, two-handed sword.",
     "damage": "2d6",
     "damageTypes": "Slashing",
     "cost": 50,
@@ -851,6 +922,35 @@
       {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Club",
+    "name": "Great Terbutje",
+
+    "description": "A massive, two-handed terbutje.",
+    "damage": "4d4",
+    "damageTypes": "Piercing",
+    "cost": 45,
+    "weight": 7.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
       },
       {
         "name": "Two-handed",
@@ -956,6 +1056,31 @@
     "type": 1
   },
   {
+    "class": "Club",
+    "name": "Heavy Mace",
+
+    "description": "A heavy ornate mace",
+    "damage": "2d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 35,
+    "weight": 12.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
     "class": "Pickaxe",
     "name": "Heavy Pick",
 
@@ -965,6 +1090,31 @@
     "cost": 30,
     "weight": 8.0,
     "properties": [
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Club",
+    "name": "Heavy Terbutje",
+
+    "description": "A large, two-handed terbutje.",
+    "damage": "2d6",
+    "damageTypes": "Piercing",
+    "cost": 15,
+    "weight": 4.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
       {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
@@ -1454,7 +1604,12 @@
     "damageTypes": "Bludgeoning",
     "cost": 15,
     "weight": 4.0,
-    "properties": [],
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
     "type": 1
   },
   {
@@ -1941,6 +2096,23 @@
   },
   {
     "class": "Club",
+    "name": "Steel Terbutje",
+
+    "description": "A heavier, more well-balanced terbutje with steel spikes in place of obsidian.",
+    "damage": "2d4",
+    "damageTypes": "Piercing",
+    "cost": 5,
+    "weight": 2.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 1
+  },
+  {
+    "class": "Club",
     "name": "Switch",
 
     "description": "A small, slender club, often made from a tree branch.",
@@ -2081,7 +2253,7 @@
     "class": "Spear",
     "name": "Trident",
 
-    "description": "A four pointed spear favored by gladiators and peoples with aquatic or devilish ancestry.",
+    "description": "A three pointed spear favored by gladiators and peoples with aquatic or devilish ancestry.",
     "damage": "1d8",
     "damageTypes": "Piercing",
     "cost": 5,
@@ -2115,16 +2287,11 @@
     "name": "Warhammer",
 
     "description": "A large hammer used as a weapon. A sledgehammer can be used as a warhammer.",
-    "damage": "1d8",
+    "damage": "2d4",
     "damageTypes": "Bludgeoning",
     "cost": 15,
     "weight": 2.0,
-    "properties": [
-      {
-        "name": "Versatile (1d10)",
-        "description": "You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack."
-      }
-    ],
+    "properties": [],
     "type": 1
   },
   {
@@ -2144,6 +2311,35 @@
       {
         "name": "Special",
         "description": "A war mallet can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand."
+      }
+    ],
+    "type": 2
+  },
+  {
+    "class": "Club",
+    "name": "Warmaster's Mace",
+
+    "description": "A massive, two-handed mace with a brutally flanged head.",
+    "damage": "2d8",
+    "damageTypes": "Bludgeoning",
+    "cost": 50,
+    "weight": 35.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
+        "name": "Heavy",
+        "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+      },
+      {
+        "name": "Massive (20)",
+        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
       }
     ],
     "type": 2

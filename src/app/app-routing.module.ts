@@ -20,6 +20,7 @@ import { GeneralStoreComponent } from 'src/components/general-store/general-stor
 import { MagicItemComponent } from 'src/components/general-store/magic-items/magic-item/magic-item.component';
 import { MagicItemsComponent } from 'src/components/general-store/magic-items/magic-items/magic-items.component';
 import { StorePageComponent } from 'src/components/general-store/pages/store-page/store-page.component';
+import { LoreBaseComponent } from 'src/components/lore/lore-base/lore-base.component';
 import { ClassDataComponent } from 'src/components/pages/classes/class-data/class-data.component';
 import { ClassExtraTabComponent } from 'src/components/pages/classes/class-extra-tab/class-extra-tab.component';
 import { ClassSubclassesComponent } from 'src/components/pages/classes/class-subclasses/class-subclasses.component';
@@ -213,6 +214,11 @@ const routes: Routes = [
   {
     path: 'magic-item/:item',
     component: MagicItemComponent,
+  },
+
+  {
+    path: 'lore',
+    component: LoreBaseComponent,
   },
 ];
 

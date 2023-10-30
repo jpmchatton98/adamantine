@@ -1,0 +1,34 @@
+<nz-tabset [nzAnimated]="false" nzSize="large">
+  <nz-tab nzTitle="History">
+    <h5>The Aethergem</h5>
+    <p>
+      The Aethergem is a gemstone of pure astral energy. Forged from artifacts
+      from across the multiverse, it possesses unparalleled power. The Aethergem
+      is so powerful in fact that it can strip the divine powers of any god,
+      even an overdeity, changing them into a mere mortal. It was once split
+      apart, but was recently reforged by the adventurers who Chroneria
+      manipulated into doing her bidding.
+    </p>
+
+    <h5>The Clown</h5>
+    <p>
+      Multiversal travel is a difficult thing to do without the Astral Sea, but
+      at least one being has managed to do it. A strange, clown-like being
+      travels the multiverse through unnatural means. Her portals resemble less
+      planar portals and more holes in the multiverse itself.
+    </p>
+  </nz-tab>
+  <nz-tab nzTitle="Multiverse">
+    <nz-tabset [nzAnimated]="false" nzSize="small">
+      <nz-tab nzTitle="Astral Plane">
+        <app-lore-astral></app-lore-astral>
+      </nz-tab>
+      <nz-tab nzTitle="Astral Sea">
+        <app-lore-sea></app-lore-sea>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Pantheons">
+    <app-lore-pantheons></app-lore-pantheons>
+  </nz-tab>
+</nz-tabset>

@@ -197,7 +197,7 @@
   {
     "name": "Black Opal",
     "cost": 1000,
-    "description": "A predominantly black, but irridescent gemstone."
+    "description": "A predominantly black, but iridescent gemstone."
   },
   {
     "name": "Blue Sapphire",
@@ -212,12 +212,12 @@
   {
     "name": "Fire Opal",
     "cost": 1000,
-    "description": "A predominantly red and orange, but irridescent gemstone."
+    "description": "A predominantly red and orange, but iridescent gemstone."
   },
   {
     "name": "Opal",
     "cost": 1000,
-    "description": "An irridescent gemstone."
+    "description": "An iridescent gemstone."
   },
   {
     "name": "Star Ruby",

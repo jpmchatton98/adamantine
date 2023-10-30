@@ -24,6 +24,7 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DBService } from 'src/services/db.service';
 import { DmToolsModule } from 'src/components/dm-tools/dm-tools.module';
 import { CraftingModule } from 'src/components/crafting/crafting.module';
+import { LoreModule } from 'src/components/lore/lore.module';
 
 registerLocaleData(en);
 
@@ -48,6 +49,7 @@ registerLocaleData(en);
     GeneralStoreModule,
     DmToolsModule,
     CraftingModule,
+    LoreModule,
   ],
   providers: [DataService, DBService, { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
