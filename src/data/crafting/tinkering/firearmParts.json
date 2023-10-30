@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Matchlock Mechanism",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 16,
+    "rarity": 0,
+    "value": 100
+  },
+  {
+    "name": "Flintlock Mechanism",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "parts", "quantity": 4 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 17,
+    "rarity": 0,
+    "value": 150
+  },
+  {
+    "name": "Break-action Mechanism",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 17,
+    "rarity": 1,
+    "value": 200
+  },
+  {
+    "name": "Bolt-action Mechanism",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 17,
+    "rarity": 1,
+    "value": 300
+  },
+  {
+    "name": "Lever-action Mechanism, small",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 18,
+    "rarity": 1,
+    "value": 400
+  },
+  {
+    "name": "Lever-action Mechanism, medium",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 19,
+    "rarity": 1,
+    "value": 500
+  },
+  {
+    "name": "Lever-action Mechanism, large",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 20,
+    "rarity": 1,
+    "value": 600
+  },
+  {
+    "name": "Cylinder-action Mechanism",
+    "materials": [
+      { "item": "metal scrap", "quantity": 5 },
+      { "item": "fancy parts", "quantity": 3 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 18,
+    "rarity": 1,
+    "value": 600
+  },
+  {
+    "name": "Hydraulic Stock",
+    "materials": [
+      { "item": "standard stock", "quantity": 1 },
+      { "item": "fancy parts", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 16,
+    "rarity": 1,
+    "value": 350
+  },
+  {
+    "name": "Barrel Extender",
+    "materials": [
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 17,
+    "rarity": 1,
+    "value": 120
+  },
+  {
+    "name": "Flash Hider",
+    "materials": [
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 3 },
+      { "item": "scroll of gloom", "quantity": 1 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 17,
+    "rarity": 1,
+    "value": 300
+  },
+  {
+    "name": "Suppressor",
+    "materials": [
+      { "item": "esoteric parts", "quantity": 1 },
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 3 },
+      { "item": "scroll of silence", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 19,
+    "rarity": 2,
+    "value": 1500
+  },
+  {
+    "name": "Elemental Enhancer",
+    "materials": [
+      { "item": "fancy parts", "quantity": 3 },
+      { "item": "parts", "quantity": 5 },
+      { "item": "rare primal essence", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 18,
+    "rarity": 2,
+    "value": 2000
+  },
+  {
+    "name": "Elemental Enhancer, adjustable",
+    "materials": [
+      { "item": "esoteric parts", "quantity": 1 },
+      { "item": "fancy parts", "quantity": 3 },
+      { "item": "parts", "quantity": 5 },
+      { "item": "rare primal essence", "quantity": 5 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 20,
+    "rarity": 2,
+    "value": 6250
+  },
+  {
+    "name": "Ethereal Entangler",
+    "materials": [
+      { "item": "fancy parts", "quantity": 3 },
+      { "item": "parts", "quantity": 5 },
+      { "item": "rare occult essence", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 18,
+    "rarity": 2,
+    "value": 3250
+  },
+  {
+    "name": "Straightbolt",
+    "materials": [
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 16,
+    "rarity": 1,
+    "value": 225
+  },
+  {
+    "name": "Swing-Out Cylinder",
+    "materials": [
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 16,
+    "rarity": 1,
+    "value": 425
+  },
+  {
+    "name": "Barrel of Slipperiness",
+    "materials": [
+      { "item": "fancy parts", "quantity": 1 },
+      { "item": "parts", "quantity": 5 },
+      { "item": "scroll of grease", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 18,
+    "rarity": 2,
+    "value": 820
+  },
+  {
+    "name": "Elemental Receiver",
+    "materials": [
+      { "item": "fancy parts", "quantity": 3 },
+      { "item": "parts", "quantity": 5 },
+      { "item": "rare primal essence", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 20,
+    "rarity": 2,
+    "value": 2250
+  },
+  {
+    "name": "Pip Sight",
+    "materials": [
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "parts", "quantity": 3 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 0,
+    "value": 10
+  },
+  {
+    "name": "Ring Sight",
+    "materials": [
+      { "item": "fancy parts", "quantity": 2 },
+      { "item": "parts", "quantity": 4 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "value": 25
+  },
+  {
+    "name": "Glass Sight",
+    "materials": [
+      { "item": "fancy parts", "quantity": 3 },
+      { "item": "parts", "quantity": 5 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 17,
+    "rarity": 1,
+    "value": 120
+  },
+  {
+    "name": "Tube Sight",
+    "materials": [
+      { "item": "fancy parts", "quantity": 4 },
+      { "item": "parts", "quantity": 7 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 18,
+    "rarity": 1,
+    "value": 450
+  },
+  {
+    "name": "Scope",
+    "materials": [
+      { "item": "esoteric parts", "quantity": 1 },
+      { "item": "fancy parts", "quantity": 4 },
+      { "item": "parts", "quantity": 8 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 20,
+    "rarity": 1,
+    "value": 1000
+  },
+  {
+    "name": "Ethereal Sight",
+    "materials": [
+      { "item": "esoteric parts", "quantity": 1 },
+      { "item": "fancy parts", "quantity": 4 },
+      { "item": "parts", "quantity": 8 },
+      { "item": "rare occult essence", "quantity": 1 }
+    ],
+    "craftingTime": 6,
+    "craftingChecks": 3,
+    "dc": 20,
+    "rarity": 2,
+    "value": 3200
+  },
+  {
+    "name": "Gun Legs",
+    "materials": [
+      { "item": "parts", "quantity": 4 },
+      { "item": "common branch", "quantity": 2 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 13,
+    "rarity": 1,
+    "value": 100
+  }
+]

@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 
+import blacksmithingFirearms from '../data/crafting/blacksmithing/firearmParts.json';
+import tinkeringFirearms from '../data/crafting/tinkering/firearmParts.json';
+import woodcarvingFirearms from '../data/crafting/woodcarving/firearmParts.json';
+
 import magicAmulets from '../data/crafting/enchanting/amulets.json';
 import magicArmor from '../data/crafting/enchanting/armor.json';
 import magicBackItems from '../data/crafting/enchanting/back.json';
@@ -20,6 +24,9 @@ import tools from '../data/crafting/tinkering/tools.json';
 })
 export class CraftingTableDataService {
   private tableData = {
+    blacksmithing: {
+      firearmParts: blacksmithingFirearms,
+    },
     enchanting: {
       amulets: magicAmulets,
       armor: magicArmor,
@@ -35,7 +42,11 @@ export class CraftingTableDataService {
       misc: magicMisc,
     },
     tinkering: {
+      firearmParts: tinkeringFirearms,
       tools: tools,
+    },
+    woodcarving: {
+      firearmParts: woodcarvingFirearms,
     },
   };
 

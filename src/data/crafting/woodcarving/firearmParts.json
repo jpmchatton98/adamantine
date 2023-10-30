@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Short Stock",
+    "materials": [{ "item": "common branch", "quantity": 1 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 13,
+    "rarity": 0,
+    "value": 10
+  },
+  {
+    "name": "Standard Stock",
+    "materials": [{ "item": "common branch", "quantity": 1 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 0,
+    "value": 15
+  },
+  {
+    "name": "Wide Stock",
+    "materials": [{ "item": "quality branch", "quantity": 1 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "value": 25
+  }
+]

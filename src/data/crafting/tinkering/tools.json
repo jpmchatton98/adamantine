@@ -1,6 +1,6 @@
 [
   {
-    "tool": "Alchemist's Supplies",
+    "name": "Alchemist's Supplies",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -13,7 +13,7 @@
     "value": 50
   },
   {
-    "tool": "Angler's Tools",
+    "name": "Angler's Tools",
     "materials": [
       { "item": "wood scrap", "quantity": 4 },
       { "item": "string", "quantity": 2 }
@@ -25,7 +25,7 @@
     "value": 1
   },
   {
-    "tool": "Archeologist's Supplies",
+    "name": "Archeologist's Supplies",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 }
@@ -37,7 +37,7 @@
     "value": 5
   },
   {
-    "tool": "Blacksmith's Tools",
+    "name": "Blacksmith's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -50,7 +50,7 @@
     "value": 20
   },
   {
-    "tool": "Brewer's Supplies",
+    "name": "Brewer's Supplies",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -63,7 +63,7 @@
     "value": 20
   },
   {
-    "tool": "Calligrapher's Supplies",
+    "name": "Calligrapher's Supplies",
     "materials": [
       { "item": "parchment", "quantity": 10 },
       { "item": "ink", "quantity": 2 },
@@ -76,7 +76,7 @@
     "value": 10
   },
   {
-    "tool": "Carpenter's Tools",
+    "name": "Carpenter's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },
@@ -90,7 +90,7 @@
     "value": 8
   },
   {
-    "tool": "Cartographer's Tools",
+    "name": "Cartographer's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 1 },
@@ -104,7 +104,7 @@
     "value": 15
   },
   {
-    "tool": "Chandler's Tools",
+    "name": "Chandler's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -117,7 +117,7 @@
     "value": 29
   },
   {
-    "tool": "Cobbler's Tools",
+    "name": "Cobbler's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 3 },
       { "item": "parts", "quantity": 1 },
@@ -131,7 +131,7 @@
     "value": 5
   },
   {
-    "tool": "Cook's Utensils",
+    "name": "Cook's Utensils",
     "materials": [
       { "item": "metal scrap", "quantity": 5 },
       { "item": "iron pot", "quantity": 5 },
@@ -144,7 +144,7 @@
     "value": 1
   },
   {
-    "tool": "Disguise Kit",
+    "name": "Disguise Kit",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -158,7 +158,7 @@
     "value": 25
   },
   {
-    "tool": "Forgery Kit",
+    "name": "Forgery Kit",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -174,7 +174,7 @@
     "value": 15
   },
   {
-    "tool": "Gardener's Tools",
+    "name": "Gardener's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 }
@@ -186,7 +186,7 @@
     "value": 8
   },
   {
-    "tool": "Glassblower's Tools",
+    "name": "Glassblower's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },
@@ -199,7 +199,7 @@
     "value": 3
   },
   {
-    "tool": "Healer's Kit",
+    "name": "Healer's Kit",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },
@@ -212,7 +212,7 @@
     "value": 5
   },
   {
-    "tool": "Herbalism Kit",
+    "name": "Herbalism Kit",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 1 }
@@ -224,7 +224,7 @@
     "value": 5
   },
   {
-    "tool": "Jeweler's Tools",
+    "name": "Jeweler's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 }
@@ -236,7 +236,7 @@
     "value": 25
   },
   {
-    "tool": "Leatherworker's Tools",
+    "name": "Leatherworker's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },
@@ -250,7 +250,7 @@
     "value": 5
   },
   {
-    "tool": "Mason's Tools",
+    "name": "Mason's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 }
@@ -262,7 +262,7 @@
     "value": 10
   },
   {
-    "tool": "Navigator's Tools",
+    "name": "Navigator's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -277,7 +277,7 @@
     "value": 25
   },
   {
-    "tool": "Painter's Supplies",
+    "name": "Painter's Supplies",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },
@@ -290,7 +290,7 @@
     "value": 10
   },
   {
-    "tool": "Poisoner's Kit",
+    "name": "Poisoner's Kit",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -303,7 +303,7 @@
     "value": 50
   },
   {
-    "tool": "Potter's Tools",
+    "name": "Potter's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 }
@@ -315,7 +315,7 @@
     "value": 10
   },
   {
-    "tool": "Surgery Kit",
+    "name": "Surgery Kit",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 }
@@ -327,7 +327,7 @@
     "value": 50
   },
   {
-    "tool": "Tailor's Tools",
+    "name": "Tailor's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -342,7 +342,7 @@
     "value": 25
   },
   {
-    "tool": "Thieves' Tools",
+    "name": "Thieves' Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 }
@@ -354,7 +354,7 @@
     "value": 25
   },
   {
-    "tool": "Tinker's Tools",
+    "name": "Tinker's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 },
@@ -370,7 +370,7 @@
     "value": 50
   },
   {
-    "tool": "Weaver's Tools",
+    "name": "Weaver's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },
@@ -384,7 +384,7 @@
     "value": 1
   },
   {
-    "tool": "Whitesmith's Tools",
+    "name": "Whitesmith's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "fancy parts", "quantity": 2 }
@@ -396,7 +396,7 @@
     "value": 13
   },
   {
-    "tool": "Woodcarver's Tools",
+    "name": "Woodcarver's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },
       { "item": "parts", "quantity": 2 },

@@ -650,6 +650,9 @@
       </tbody>
     </nz-table>
   </nz-tab>
+  <nz-tab nzTitle="Firearm Parts">
+    <craft-table [data]="getTableData('firearmParts')"></craft-table>
+  </nz-tab>
   <nz-tab nzTitle="Miscellaneous">
     <nz-table
       [nzData]="['yo mama']"

@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Snub Barrel",
+    "materials": [{ "item": "metal scrap", "quantity": 5 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 14,
+    "rarity": 0,
+    "value": 15
+  },
+  {
+    "name": "Short Barrel",
+    "materials": [{ "item": "metal scrap", "quantity": 10 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "value": 20
+  },
+  {
+    "name": "Standard Barrel",
+    "materials": [{ "item": "ingot", "quantity": 1 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 16,
+    "rarity": 0,
+    "value": 40
+  },
+  {
+    "name": "Long Barrel",
+    "materials": [{ "item": "ingot", "quantity": 2 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 17,
+    "rarity": 0,
+    "value": 80
+  },
+  {
+    "name": "Pole Barrel",
+    "materials": [{ "item": "ingot", "quantity": 4 }],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 18,
+    "rarity": 1,
+    "value": 150
+  },
+  {
+    "name": "Bayonet, small",
+    "materials": [
+      { "item": "dagger", "quantity": 1 },
+      { "item": "metal scrap", "quantity": 3 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 15,
+    "rarity": 0,
+    "value": 15
+  },
+  {
+    "name": "Bayonet, large",
+    "materials": [
+      { "item": "shortsword", "quantity": 1 },
+      { "item": "metal scrap", "quantity": 3 }
+    ],
+    "craftingTime": 4,
+    "craftingChecks": 2,
+    "dc": 17,
+    "rarity": 0,
+    "value": 45
+  }
+]
