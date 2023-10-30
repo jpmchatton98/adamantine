@@ -27,6 +27,7 @@ import { SiegeWeaponTabComponent } from './tabs/siege-weapon-tab/siege-weapon-ta
 import { MagicItemComponent } from './magic-items/magic-item/magic-item.component';
 import { MagicItemsComponent } from './magic-items/magic-items/magic-items.component';
 import { PetTabComponent } from './tabs/pet-tab/pet-tab.component';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { PetTabComponent } from './tabs/pet-tab/pet-tab.component';
     NzCollapseModule,
     NzButtonModule,
     NzPopoverModule,
+    NzTabsModule,
     RouterModule,
   ],
   providers: [GeneralStoreService],

@@ -201,16 +201,38 @@
     }
   ],
   "barrel": [
-    { "name": "Snub", "range": 15, "longRange": 40, "weight": 1, "cost": 15 },
-    { "name": "Short", "range": 30, "longRange": 60, "weight": 2, "cost": 20 },
+    {
+      "name": "Snub",
+      "range": 15,
+      "longRange": 40,
+      "weight": 1,
+      "cost": 15,
+      "properties": []
+    },
+    {
+      "name": "Short",
+      "range": 30,
+      "longRange": 60,
+      "weight": 2,
+      "cost": 20,
+      "properties": []
+    },
     {
       "name": "Standard",
       "range": 60,
       "longRange": 120,
       "weight": 4,
-      "cost": 40
+      "cost": 40,
+      "properties": []
     },
-    { "name": "Long", "range": 70, "longRange": 200, "weight": 6, "cost": 80 },
+    {
+      "name": "Long",
+      "range": 70,
+      "longRange": 200,
+      "weight": 6,
+      "cost": 80,
+      "properties": []
+    },
     {
       "name": "Pole",
       "range": 100,
@@ -248,21 +270,24 @@
       "normalBonus": 1,
       "longBonus": -2,
       "weight": 2,
-      "cost": 10
+      "cost": 10,
+      "properties": []
     },
     {
       "name": "Standard",
       "normalBonus": 0,
       "longBonus": 0,
       "weight": 3,
-      "cost": 15
+      "cost": 15,
+      "properties": []
     },
     {
       "name": "Wide",
       "normalBonus": -2,
       "longBonus": 1,
       "weight": 4,
-      "cost": 25
+      "cost": 25,
+      "properties": []
     },
     {
       "name": "Hydraulic",
@@ -284,7 +309,8 @@
       "normalRangeBonus": 1.1,
       "longRangeBonus": 1.1,
       "weight": 2,
-      "cost": 120
+      "cost": 120,
+      "properties": []
     },
     {
       "name": "Flash Hider",
@@ -316,31 +342,61 @@
       "name": "Elemental Enhancer, acid",
       "damage": [{ "dice": 1, "die": 6, "types": ["acid"] }],
       "weight": 3,
-      "cost": 2000
+      "cost": 2000,
+      "properties": [
+        {
+          "name": "Elemental (Acid)",
+          "description": "The weapon deals an extra 1d6 damage of an elemental type.  A damage type in parentheses appears with the property - the damage type that this extra damage uses."
+        }
+      ]
     },
     {
       "name": "Elemental Enhancer, cold",
       "damage": [{ "dice": 1, "die": 6, "types": ["cold"] }],
       "weight": 3,
-      "cost": 2000
+      "cost": 2000,
+      "properties": [
+        {
+          "name": "Elemental (Cold)",
+          "description": "The weapon deals an extra 1d6 damage of an elemental type.  A damage type in parentheses appears with the property - the damage type that this extra damage uses."
+        }
+      ]
     },
     {
       "name": "Elemental Enhancer, fire",
       "damage": [{ "dice": 1, "die": 6, "types": ["fire"] }],
       "weight": 3,
-      "cost": 2000
+      "cost": 2000,
+      "properties": [
+        {
+          "name": "Elemental (Fire)",
+          "description": "The weapon deals an extra 1d6 damage of an elemental type.  A damage type in parentheses appears with the property - the damage type that this extra damage uses."
+        }
+      ]
     },
     {
       "name": "Elemental Enhancer, lightning",
       "damage": [{ "dice": 1, "die": 6, "types": ["lightning"] }],
       "weight": 3,
-      "cost": 2000
+      "cost": 2000,
+      "properties": [
+        {
+          "name": "Elemental (Lightning)",
+          "description": "The weapon deals an extra 1d6 damage of an elemental type.  A damage type in parentheses appears with the property - the damage type that this extra damage uses."
+        }
+      ]
     },
     {
       "name": "Elemental Enhancer, thunder",
       "damage": [{ "dice": 1, "die": 6, "types": ["thunder"] }],
       "weight": 3,
-      "cost": 2000
+      "cost": 2000,
+      "properties": [
+        {
+          "name": "Elemental (Thunder)",
+          "description": "The weapon deals an extra 1d6 damage of an elemental type.  A damage type in parentheses appears with the property - the damage type that this extra damage uses."
+        }
+      ]
     },
     {
       "name": "Elemental Enhancer, adjustable",
@@ -352,7 +408,13 @@
         }
       ],
       "weight": 3,
-      "cost": 6250
+      "cost": 6250,
+      "properties": [
+        {
+          "name": "Elemental (Adjustable)",
+          "description": "The weapon deals an extra 1d6 damage of an elemental type.  As a bonus action, you can adjust the elemental damage type between acid, cold, fire, lightning, or thunder."
+        }
+      ]
     },
     {
       "name": "Ethereal Entangler",
@@ -416,20 +478,28 @@
     }
   ],
   "optic": [
-    { "name": "Pip Sight", "normalRangeBonus": 10, "weight": 0, "cost": 10 },
+    {
+      "name": "Pip Sight",
+      "normalRangeBonus": 10,
+      "weight": 0,
+      "cost": 10,
+      "properties": []
+    },
     {
       "name": "Ring Sight",
       "normalRangeBonus": 25,
       "longRangeBonus": 10,
       "weight": 0,
-      "cost": 25
+      "cost": 25,
+      "properties": []
     },
     {
       "name": "Glass Sight",
       "normalRangeBonus": 30,
       "longRangeBonus": 30,
       "weight": 0,
-      "cost": 120
+      "cost": 120,
+      "properties": []
     },
     {
       "name": "Tube Sight",
@@ -437,7 +507,8 @@
       "longRangeBonus": 30,
       "longBonus": 1,
       "weight": 1,
-      "cost": 450
+      "cost": 450,
+      "properties": []
     },
     {
       "name": "Scope",
@@ -445,7 +516,8 @@
       "longRangeBonus": 100,
       "longBonus": 2,
       "weight": 2,
-      "cost": 1000
+      "cost": 1000,
+      "properties": []
     },
     {
       "name": "Ethereal Sight",
@@ -464,20 +536,23 @@
       "name": "Sling",
       "description": "You may draw or stow this firearm as a free action",
       "weight": 2,
-      "cost": 20
+      "cost": 20,
+      "properties": []
     },
     {
       "name": "Gun Legs",
       "description": "The weapon's long range is increased by 50 feet while in cover or prone",
       "weight": 4,
-      "cost": 100
+      "cost": 100,
+      "properties": []
     },
     {
       "name": "Bayonet, small",
       "description": "The weapon may be used to make a melee attack.",
       "damage": { "dice": 1, "die": 4, "type": "piercing" },
       "weight": 1,
-      "cost": 15
+      "cost": 15,
+      "properties": []
     },
     {
       "name": "Bayonet, large",

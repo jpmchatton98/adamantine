@@ -700,6 +700,9 @@ export class GeneralStoreService {
 
     return weight;
   }
+  public getFirearmItemType(type: string): any[] {
+    return firearmData[type];
+  }
 
   public isWeapon(item: string): boolean {
     return [...meleeWeapons, ...rangedWeapons, ...firearmData.default].find(
