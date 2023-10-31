@@ -2853,14 +2853,19 @@
         "race": [
           "azapian",
           "bugbear",
+          "changeling",
           "daolagiath",
+          "dullahan",
           "fairy",
           "firbolg",
+          "goblin",
           "harengon",
           "hexblood",
+          "hobgoblin",
           "papillon",
           "rhinox",
-          "satyr"
+          "satyr",
+          "taurian"
         ]
       }
     ],

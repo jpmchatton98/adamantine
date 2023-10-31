@@ -1,0 +1,19 @@
+<div class="feat-container">
+  <div *ngFor="let category of races">
+    <h5>{{ category.name }}</h5>
+    <div class="race" *ngFor="let race of category.list">
+      <div class="racial-feats">
+        <div *ngFor="let feat of getRacialFeats(race.name)">
+          <a
+            routerLink="/feat/{{ feat.index }}"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+          >
+            {{ feat.name }}
+          </a>
+        </div>
+      </div>
+      <div class="race-name">({{ race.name }})</div>
+    </div>
+  </div>
+</div>

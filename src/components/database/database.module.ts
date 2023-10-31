@@ -25,6 +25,7 @@ import { ExtraTabComponent } from 'src/components/database/tabs/extra-tab/extra-
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { PagesModule } from '../pages/pages.module';
 import { FightingStyleTabComponent } from './tabs/fighting-style-tab/fighting-style-tab.component';
+import { RacialFeatTabComponent } from './tabs/racial-feat-tab/racial-feat-tab.component';
 
 registerLocaleData(en);
 
@@ -38,6 +39,7 @@ registerLocaleData(en);
     ClassTabComponent,
     BackgroundTabComponent,
     FeatTabComponent,
+    RacialFeatTabComponent,
     TransformationTabComponent,
     ExtraTabComponent,
     FightingStyleTabComponent,

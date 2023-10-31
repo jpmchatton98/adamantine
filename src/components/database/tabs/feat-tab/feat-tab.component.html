@@ -1,10 +1,16 @@
 <div class="feat-container">
-    <div *ngFor="let category of feats">
-        <h5>{{ category.name }}</h5>
-        <div *ngFor="let feat of category.list">
-            <a routerLink="/feat/{{ feat.index }}" routerLinkActive="active" ariaCurrentWhenActive="page">
-                {{ feat.name }}
-            </a>
-        </div>
+  <ng-container *ngFor="let category of feats">
+    <div *ngIf="category.name !== 'Racial'">
+      <h5>{{ category.name }}</h5>
+      <div *ngFor="let feat of category.list">
+        <a
+          routerLink="/feat/{{ feat.index }}"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          {{ feat.name }}
+        </a>
+      </div>
     </div>
+  </ng-container>
 </div>

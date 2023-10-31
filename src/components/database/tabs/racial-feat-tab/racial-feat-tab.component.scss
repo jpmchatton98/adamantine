@@ -1,0 +1,29 @@
+.feat-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 11px;
+
+    .race {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .racial-feats {
+            display: flex;
+            flex-direction: column;
+        }
+        .race-name {
+            color: silver;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid silver;
+            padding-bottom: 2px;
+        }
+    }
+}
