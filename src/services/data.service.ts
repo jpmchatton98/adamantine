@@ -438,35 +438,56 @@ export class DataService {
       }
     }
 
-    const firstDegree = splitData.find((l) => l.prereq === 'none');
-    splitData = splitData.filter((l) => l.prereq !== 'none');
-    splitData = splitData.sort((a: any, b: any) => {
-      if (isNaN(a.prereq) && isNaN(b.prereq)) {
-        return 0;
-      } else if (isNaN(a.prereq) && !isNaN(b.prereq)) {
-        return 1;
-      } else if (!isNaN(a.prereq) && isNaN(b.prereq)) {
-        return -1;
-      } else {
-        return a.prereq - b.prereq;
+    if (splitData.findIndex((l) => l.prereq === 'none') !== -1) {
+      let firstDegree = splitData.find((l) => l.prereq === 'none');
+      splitData = splitData.filter((l) => l.prereq !== 'none');
+      splitData = splitData.sort((a: any, b: any) => {
+        if (isNaN(a.prereq) && isNaN(b.prereq)) {
+          return 0;
+        } else if (isNaN(a.prereq) && !isNaN(b.prereq)) {
+          return 1;
+        } else if (!isNaN(a.prereq) && isNaN(b.prereq)) {
+          return -1;
+        } else {
+          return a.prereq - b.prereq;
+        }
+      });
+      splitData = [firstDegree, ...splitData];
+      for (let i = 0; i < splitData.length; i++) {
+        if (!splitData[i].name) {
+          switch (i + 1) {
+            case 1:
+              splitData[i].name = '1st-Degree';
+              break;
+            case 2:
+              splitData[i].name = '2nd-Degree';
+              break;
+            case 3:
+              splitData[i].name = '3rd-Degree';
+              break;
+            default:
+              splitData[i].name = `${i + 1}th-Degree`;
+              break;
+          }
+        }
       }
-    });
-    splitData = [firstDegree, ...splitData];
-    for (let i = 0; i < splitData.length; i++) {
-      if (!splitData[i].name) {
-        switch (i + 1) {
-          case 1:
-            splitData[i].name = '1st-Degree';
-            break;
-          case 2:
-            splitData[i].name = '2nd-Degree';
-            break;
-          case 3:
-            splitData[i].name = '3rd-Degree';
-            break;
-          default:
-            splitData[i].name = `${i + 1}th-Degree`;
-            break;
+    } else {
+      for (let i = 0; i < splitData.length; i++) {
+        if (!splitData[i].name) {
+          switch (i + 1) {
+            case 1:
+              splitData[i].name = '1st-Degree';
+              break;
+            case 2:
+              splitData[i].name = '2nd-Degree';
+              break;
+            case 3:
+              splitData[i].name = '3rd-Degree';
+              break;
+            default:
+              splitData[i].name = `${i + 1}th-Degree`;
+              break;
+          }
         }
       }
     }

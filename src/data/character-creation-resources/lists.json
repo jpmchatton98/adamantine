@@ -2723,27 +2723,18 @@
     },
     {
       "name": "Armor of Shadows",
-      "description": "You can cast Mage Armor on yourself at will, without expending a spell slot or material components. ",
+      "description": "While you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your spellcasting ability modifier.  You can use a shield and still gain this benefit.",
       "granted": [
         {
-          "type": "spell",
-          "options": ["Mage Armor"],
-          "atWill": true,
-          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+          "type": "unarmored",
+          "base": 10,
+          "scores": ["dex", "B85FFA8F-7EE5-4B27-9789-05477333032E"]
         }
       ]
     },
     {
       "name": "Beast Sense",
-      "description": "You can cast Speak With Animals at will, without expending a spell slot. ",
-      "granted": [
-        {
-          "type": "spell",
-          "options": ["Speak with Animals"],
-          "atWill": true,
-          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
-        }
-      ]
+      "description": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion."
     },
     {
       "name": "Beguiling Influence",
@@ -2807,15 +2798,7 @@
     },
     {
       "name": "Eldritch Sight",
-      "description": "You can cast Detect Magic at will, without expending a spell slot or material components. ",
-      "granted": [
-        {
-          "type": "spell",
-          "options": ["Detect Magic"],
-          "atWill": true,
-          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
-        }
-      ]
+      "description": "You can sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>This sense can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
     },
     {
       "name": "Eldritch Spear",
@@ -2907,11 +2890,6 @@
       }
     },
     {
-      "name": "Blasting Blade",
-      "prereqLevel": 5,
-      "description": " When you use your action to cast your Signature Cantrip, you can forgo one of the attack rolls or saving throws to make a single melee weapon attack as part of the action. In addition, being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls. "
-    },
-    {
       "name": "Cloak of Flies",
       "prereqLevel": 5,
       "description": " As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're incapacitated or you dismiss it as a bonus action.</p><p>The aura grants you advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your spellcasting ability modifier (minimum of 0 damage).</p><p>Once you use this invocation, you can't use it again until you finish a short or long rest."
@@ -2961,6 +2939,11 @@
         "amount": 1,
         "reset": 2
       }
+    },
+    {
+      "name": "Occult Strikes",
+      "prereqLevel": 5,
+      "description": " When you use your action to cast your Signature Cantrip, you can forgo one of the attack rolls or saving throws to make a single melee weapon attack as part of the action. In addition, being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls. "
     },
     {
       "name": "One With Shadows",
@@ -3147,15 +3130,7 @@
     {
       "name": "Otherworldly Pay",
       "prereqLevel": 9,
-      "description": " You can cast Jump at will, without expending a spell slot. ",
-      "granted": [
-        {
-          "type": "spell",
-          "options": ["Jump"],
-          "atWill": true,
-          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
-        }
-      ]
+      "description": "Your jump distance is tripled"
     },
     {
       "name": "Whispers of the Grave",
@@ -3676,7 +3651,7 @@
     },
     {
       "name": "Alchemical Restoration",
-      "description": " As an action on your turn, you can cast reincarnate without expending a spell slot or material components. Once you cast reincarnate in this way, you must finish 1d4 long rests before you can cast the spell in this way again.",
+      "description": " As an action on your turn, you can cast Reincarnate without expending a spell slot or material components. Once you cast Reincarnate in this way, you must finish a long rest before you can cast the spell in this way again.",
       "granted": [
         {
           "type": "spell",
@@ -3994,7 +3969,7 @@
     },
     {
       "name": "Cloak of Twilight",
-      "description": "You learn the greater invisibility spell, but it doesn't count against your total number of Spells Known, and you can cast greater invisibility once without expending spell slot. You can't do so again until you finish a long rest.",
+      "description": "You learn the Greater Invisibility spell, but it doesn't count against your total number of Spells Known, and you can cast Greater Invisibility once without expending spell slot. You can't do so again until you finish a long rest.",
       "granted": [
         {
           "type": "spell",
@@ -4148,6 +4123,612 @@
       }
     },
     {
+      "name": "Blasphemous Prayer",
+      "prereqLevel": 5,
+      "description": "You learn one Channel Divinity option of your choice from the options available to Clerics or Paladins, and add it to a page in your Tome.</p><p>Once you use this Channel Divinity you must finish a short or long rest before you can use it again.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Tome"
+      },
+      "choices": [
+        {
+          "id": "D353AC75-E7D3-4E98-B60A-AA8ACA35BE23",
+          "type": "trait",
+          "options": [
+            {
+              "name": "Turn Undead",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you present your Book of Shadows and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+                }
+              ]
+            },
+            {
+              "name": "Arcane Abjuration",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to abjure otherworldly creatures.  As an action, you present your Book of Shadows, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+                }
+              ]
+            },
+            {
+              "name": "Inner Beauty",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your action to change the physical appearance and self-image of a creature you see within 30 feet of you, revealing its true grace or exposing its ugliness for 10 minutes. Choose one of the following effects:<ul><li>The creature must succeed on a Charisma saving throw or become insecure and have its body and visage slightly twisted and deformed, gaining disadvantage on Dexterity and Charisma ability checks for the duration.</li><li>The creature is filled with confidence and it becomes lovelier and more elegant, gaining advantage on Dexterity and Charisma ability checks for the duration.</li></ul>"
+                }
+              ]
+            },
+            {
+              "name": "Touch of Death",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice your warlock level."
+                }
+              ]
+            },
+            {
+              "name": "Prophecy of Doom",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to speak a prophecy, inducing visions and hallucinations in nearby creatures.</p><p>As an action, choose a point within 120 feet of you that you can see and roll on the Eldritch Effects table. Each creature in a 15-foot-radius sphere centered on the chosen point must succeed on a Wisdom saving throw or suffer the temporary effect for 1 minute. At the end of each of its turns, an affected creature can make another Wisdom saving throw, ending the temporary effect on a success.",
+                  "subFeatures": [
+                    {
+                      "name": "Eldritch Effects",
+                      "description": "<table> <tbody><tr> <th>d8</th> <th>Effect</th> </tr> <tr> <td>1</td> <td>The creature cannot speak or cast spells that have verbal components.</td> </tr> <tr> <td>2</td> <td>The creature takes 1d8 psychic damage at the start of each of its turns.</td> </tr> <tr> <td>3</td> <td>The creature is disoriented. It immediately falls prone and falls prone again at the end of each turn it moves 5 feet or more.</td> </tr> <tr> <td>4</td> <td>The creature is distracted by visions and voices and has disadvantage on attack rolls and Wisdom (Perception) ability checks.</td> </tr> <tr> <td>5</td> <td>The creature is unsure of itself. It can move or take an action on its turn but not both and it cannot use reactions.</td> </tr> <tr> <td>6</td> <td>The creature is reckless. It has advantage on attack rolls and attack rolls against it have advantage.</td> </tr> <tr> <td>7</td> <td>The creature is deafened and cannot see objects or creatures further than 30 feet away.</td> </tr> <tr> <td>8</td> <td>The creature is frightened of you.</td> </tr> </tbody></table>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Artisan's Blessing",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to create simple items.  You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a simple or martial weapon, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.</p><p>The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation.</p><p>The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
+                }
+              ]
+            },
+            {
+              "name": "Path to the Grave",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to mark another creature's life force for termination.  As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
+                }
+              ]
+            },
+            {
+              "name": "Rally",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to inspire an ally with resolve and hope.  As an action, you can present your Book of Shadows and select a creature you can see within 60 feet. Until the end of your next turn, the target makes all attack rolls and saving throws with advantage."
+                }
+              ]
+            },
+            {
+              "name": "Spell Shield",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to bestow a temporary resilience to arcane harm. As a bonus action, you present your Book of Shadows and choose a creature you can see (including yourself) within 30 feet. The chosen creature gains temporary hit points equal to 1d10 + your warlock level. While a creature has temporary hit points granted by your spell shield, it has resistance to damage from spells and advantage on saving throws against spells. The creature loses any remaining temporary hit points after 1 hour."
+                }
+              ]
+            },
+            {
+              "name": "Chains of Reckoning",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to invoke judgement upon your enemies. As an action, you present your Book of Shadows, causing a creature you can see within 60 feet of you to be crushed beneath the weight of their sins. For 1 minute, you can apply the bonus damage of Sacred Judgement to that creature when dealing damage with a Divine spell.</p><p>The chosen creature must also make a Wisdom saving throw. On a failed save, the creature is knocked prone and their movement speed becomes 0 for 1 minute. The creature can repeat their saving throw at the end of each of their turns. If the creature has dealt damage since the start of their turn, they make this save at disadvantage."
+                }
+              ]
+            },
+            {
+              "name": "Knowledge of the Ages",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+                }
+              ]
+            },
+            {
+              "name": "Preserve Life",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to heal the badly injured.  As an action, you present your Book of Shadows and evoke healing energy that can restore a number of hit points equal to five times your warlock level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
+                }
+              ]
+            },
+            {
+              "name": "Radiance of the Dawn",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.  As an action, you present your Book of Shadows, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your warlock level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
+                }
+              ]
+            },
+            {
+              "name": "Lucky Break",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to inspire an ally with resolve and hope. As an action, you can present your Book of Shadows and select a creature you can see within 60 feet. Until the end of your next turn, the target makes all attack rolls and saving throws with advantage."
+                }
+              ]
+            },
+            {
+              "name": "Far Rift",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity as an action to present your Book of Shadows and open up a rift in space. Choose a point centered on an unoccupied 10-foot cube within 60 feet of you. The rift appears as a 5-foot radius sphere of blackness with long, lashing tendrils.</p><p>Choose a number of creatures you can see up to your Intelligence modifier within 30 feet of the sphere. Each target must succeed on a Dexterity saving throw or be pulled 20 feet toward the sphere. A creature that is pulled into the sphere's space takes psychic damage equal to 2d8 + your warlock level. The rift then closes."
+                }
+              ]
+            },
+            {
+              "name": "Dragon's Breath",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to unleash a breath attack.  As an action, you bring your Book of Shadows to your lips and summon the wrath of a dragon, and let loose a breath weapon whose area and damage type are described in the color of dragon you chose. Each creature your breath weapon hits must make a Dexterity saving throw against your spell DC. On a failed save they take 3d6 damage of the chosen color or half as much on a successful save.",
+                  "choices": {
+                    "id": "0B823103-2963-4A9A-B4F6-1A5D532DE673",
+                    "type": "trait",
+                    "options": [
+                      {
+                        "name": "Brass",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is fire and your breath weapon manifests in a 15-foot cone."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are converstaion and negotiation."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Bronze",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is lightning and your breath weapon manifests in a 30-foot line."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are courage and valor."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Copper",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is acid and your breath weapon manifests in a 30-foot line."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are trickery and humor."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Gold",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is fire and your breath weapon manifests in a 15-foot cone."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are justice and compassion."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Silver",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is cold and your breath weapon manifests in a 15-foot cone."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are virtue and friendship."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Steel",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is poison and your breath weapon manifests in a 15-foot cone."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are freedom and curiosity."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Tungsten",
+                        "traits": [
+                          {
+                            "name": "Draconic Representation",
+                            "description": "Your draconic damage type is thunder and your breath weapon manifests in a 15-foot cone."
+                          },
+                          {
+                            "name": "Draconic Ideals",
+                            "description": "Your draconic ideals are protection and vigilance."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Charm Animals and Plants",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to charm animals and plants.  As an action, you present your Book of Shadows and invoke the name of your deity. Each creature with an Intelligence score of 4 or less that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate."
+                }
+              ]
+            },
+            {
+              "name": "Midnight Gloom",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to harness the black gloom of midnight, banishing light and draining the life of your foes. As an action, you present your Book of Shadows and all lights within 30 feet of you, magical or non-magical, are instantly put out.</p><p>Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes necrotic damage equal to 2d6 + your warlock level on a failed saving throw, and loses any darkvision they have for 1 minute.  On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success."
+                }
+              ]
+            },
+            {
+              "name": "Order's Demand",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to exert an intimidating presence over others.  As an action, you present your Book of Shadows, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw."
+                }
+              ]
+            },
+            {
+              "name": "Tendrils of Agony",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can present your Book of Shadows and expend a use of your Channel Divinity to unleash a wave of agony that ripples outward from you. Choose a number of creatures up to your Wisdom modifier within 30 feet of you. These creatures must succeed on a Wisdom saving throw against your Divine spell save DC. On a failed save, a creature takes psychic damage equal to 2d6 + your warlock level and the creature is incapacitated for 1 minute. On a successful save, a creature takes half as much damage and suffers no other effects.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                }
+              ]
+            },
+            {
+              "name": "Balm of Peace",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your spellcasting ability modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action."
+                }
+              ]
+            },
+            {
+              "name": "Radiant Defense",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to cloak your allies in radiant armor.  As an action, you channel blessed energy into an ally that you can see within 30 feet of you. The first time that ally is hit by an attack within the next minute, the attacker takes radiant damage equal to 2d10 + your warlock level."
+                }
+              ]
+            },
+            {
+              "name": "Cloying Darkness",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to conjure a cloud of darkness to billow around you, banishing light and draining the life of your foes. As an action, you present your Book of Shadows and all light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your warlock level or lower are dispelled.</p><p>In addition, creatures of your choice within 30 feet must make a Constitution saving throw. A creature takes necrotic damage equal to 2d6 + your warlock level on a failed saving throw, and loses any darkvision they have for 1 minute.</p><p>On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success."
+                }
+              ]
+            },
+            {
+              "name": "Updraft",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to create a powerful blast of wind. As an action, you present your Book of Shadows and invoke the name of your deity. Choose a Large or smaller creature within 60 feet of you. The target must succeed on a Strength saving throw or be blown upwards up to 30 feet. A target can choose to automatically fail this saving throw. If the target doesn't have a hover or fly speed, it immediately falls afterwards, taking fall damage and landing prone."
+                }
+              ]
+            },
+            {
+              "name": "Feat of Strength",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to enhance your physical might. When you make an attack roll, ability check, or saving throw using Strength, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the roll succeeds or fails."
+                }
+              ]
+            },
+            {
+              "name": "Wave of Despair",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can present your Book of Shadows and expend a use of your Channel Divinity to unleash a wave of despair that ripples outward from you. Choose a number of creatures up to your Wisdom modifier within 30 feet of you. These creatures must succeed on a Wisdom saving throw. On a failed save, a creature takes 2d8 psychic damage and the creature must spend its action on its turn wallowing in sadness and grief for 1 minute. On a successful save, a creature takes half as much damage and suffers no other effects. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                }
+              ]
+            },
+            {
+              "name": "Destructive Wrath",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to wield the power of the storm with unchecked ferocity.  When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling."
+                }
+              ]
+            },
+            {
+              "name": "Invoke Duplicity",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to create an illusory duplicate of yourself.</p><p>As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.</p><p>For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+                }
+              ]
+            },
+            {
+              "name": "Twilight Sanctuary",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.  As an action, you present your Book of Shadows, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:<ul><li>You grant it temporary hit points equal to 1d6 plus your warlock level.</li><li>You end one effect on it causing it to be charmed or frightened.</li></ul>"
+                }
+              ]
+            },
+            {
+              "name": "Guided Strike",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+                }
+              ]
+            },
+            {
+              "name": "Ice Prison",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to encase a creature in ice. As an action, you brandish your Book of Shadows, and force a creature you can see within 30 feet of you to make a Strength saving throw. A willing creature can choose to fail their saving throws against this feature.</p><p>On a failed saving throw, the creature is encased in ice for 1 minute, or until you dispel it with an action. While encased in this way, the creature is immune to all damage, is incapacitated, and its speed becomes 0. At the end of each of its turn it can repeat the Strength saving throw, breaking free of the ice on a success."
+                }
+              ]
+            },
+            {
+              "name": "Turn the Faithless",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your Book of Shadows, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p><p>If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned. "
+                }
+              ]
+            },
+            {
+              "name": "Hit and Run",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can imbue yourself with agility in the ways of the skirmisher using your Channel Divinity. For 1 minute, or until you fall unconscious, your movement speed increases by a number of feet equal to 5 x your Intelligence modifier (minimum of 5 feet), your reach increases by 5 feet, and opportunity attacks targeting you are made at disadvantage."
+                }
+              ]
+            },
+            {
+              "name": "Turn the Tide",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Intelligence modifier (minimum of 1) if it has no more than half of its hit points."
+                }
+              ]
+            },
+            {
+              "name": "Turn the Unholy",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you present your Book of Shadows and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+                }
+              ]
+            },
+            {
+              "name": "Pyroburst",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can use your Channel Divinity to cause a burst of fiery energy to radiate from you. Creatures within 20 feet must make a Dexterity saving throw against your spell save DC. Creatures that fail their saving throw take 2d8 fire damage and are pushed 10 feet away from you in a straight line. Creatures that succeed their saving throw take half as much damage and aren't pushed. Unsecured objects within range are pushed in a straight line until they are 30 feet away from you. Flammable objects within range are set alight."
+                }
+              ]
+            },
+            {
+              "name": "Freedom from Chains",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use a bonus action to inspire others to rise against their oppressors. All friendly creatures other than yourself within 30 feet of you can use their reaction to stand if they are prone or to make an ability check or saving throw to attempt to escape from being grappled or restrained.</p><p>You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and regain all expended uses when you finish a long rest."
+                }
+              ]
+            },
+            {
+              "name": "Turn the Lawless",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can utter a prayer that is painful to creatures of chaos. You display your Book of Shadows and speak your condemnatory prayer, using your Channel Divinity. Each aberration, demon, or fey that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+                }
+              ]
+            },
+            {
+              "name": "Fury of the Tides",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As a bonus action, you can expend your Channel Divinity to channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with weapon attack, you can choose to push the target 10 feet away from you. If the target is pushed into an obstacle or another creature, they take additional bludgeoning damage equal to your Intelligence modifier."
+                }
+              ]
+            },
+            {
+              "name": "None But I",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "Your vanity gives your power over yourself that others could never dream of. As a bonus action, you can expend your Channel Divinity to end any magical effects of your choice on yourself."
+                }
+              ]
+            },
+            {
+              "name": "Entropic Infection",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to weaken a creature against entropic energies. As an action, you can force a creature of your choice that you can see within 30 feet of you to make a Constitution saving throw. On a failed save, for the next minute the creature takes an additional 2d6 damage the first time it takes necrotic damage each turn. During this time, the creature loses resistance to necrotic damage if it has it."
+                }
+              ]
+            },
+            {
+              "name": "Golden Suit",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can use your Channel Divinity to coat yourself in shining gold for 1 hour. You gain temporary hit points equal to twice your paladin level for the duration. Whenever a creature hits you with a melee attack while you have these hit points, gold sprays off your armor, causing the creature to suffer disadvantage on their first attack before the end of their next turn."
+                }
+              ]
+            },
+            {
+              "name": "Rebuke the Violent",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
+                }
+              ]
+            },
+            {
+              "name": "Ghostly Blade",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "When you hit a creature with an attack, you may also use your Channel Divinity, empowering your weapon with dreadful shadow. If you do, the target and each other creature of your choice within 5 feet of it must succeed on a Wisdom saving throw or be blinded until the end of their next turn, and all damage that you deal in this attack becomes either psychic or necrotic damage (your choice)."
+                }
+              ]
+            },
+            {
+              "name": "Poison Strike",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to make a weapon deadlier. As a bonus action, you touch one weapon or piece of ammunition and conjure a special poison on it. The poison lasts for 1 minute. The next time you hit a target with an attack using that weapon or ammunition, the target takes poison damage immediately after the attack. The poison damage equals 2d10 + your warlock level, or 20 + your warlock level if you had advantage on the attack roll."
+                }
+              ]
+            },
+            {
+              "name": "Unstoppable Tilt",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You may spend an action to use your Channel Divinity in order to make an unstoppable charge. You may move up to twice your speed in a straight line. You can move through enemy creatures, and the first enemy creature you come into contact with must make a Strength saving throw equal to 8 + your proficiency bonus + your Strength modifier, or they take 2d8 bludgeoning damage and are forcefully moved with you until you finish your charge, or take no damage and are knocked prone. All other creatures you, or the creature you are carrying, pass through after the first must also make the save or be knocked prone."
+                }
+              ]
+            },
+            {
+              "name": "Abjure Enemy",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you present your Book of Shadows and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.</p><p>On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.</p><p>On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage."
+                }
+              ]
+            },
+            {
+              "name": "Turn the Aberrant",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you present your Book of Shadows and speak a prayer censuring aberrations, using your Channel Divinity. Each aberration or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move into a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p><p>A creature's true form is revealed while it is turned."
+                }
+              ]
+            },
+            {
+              "name": "Abjure the Extraplanar",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to castigate unworldly beings.</p><p>As an action, you present your Book of Shadows and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the Dodge action."
+                }
+              ]
+            },
+            {
+              "name": "Inquisitor's Eye",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "You can use your Channel Divinity to open your senses to hidden signs of corruption and malfeasance. As a bonus action, you grant yourself advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) ability checks for the next 10 minutes. During this time, you can't be surprised."
+                }
+              ]
+            },
+            {
+              "name": "Purge Darkness",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can present your Book of Shadows and expend your Channel Divinity to burn away darkness in your vicinity. Choose a number of points within 120 feet of you up to your spellcasting ability modifier (minimum of 1). For the next minute, a 30-foot radius of light spreads out from each of the points. If any of this effect's area overlaps with an area of darkness created by a spell of 2nd level or lower, the spell that created the darkness is dispelled."
+                }
+              ]
+            },
+            {
+              "name": "Dreadful Aspect",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the effect on it."
+                }
+              ]
+            },
+            {
+              "name": "Sacred Duel",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As a bonus action, you can hold aloft your Book of Shadows and initiate a sacred duel between you and a creature within 30 feet who agrees to the duel, marking you both as duelists. For the duration, both duelists have resistance to all damage, except for damage from the other duelist, and they can only target each other with attacks and spells.</p><p>This sacred duel lasts for one minute, or until one of the creatures who entered into the duel falls unconscious."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "uses": [
+        {
+          "id": "9D0F4E71-14A8-4EA1-9663-F7397695CA54",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
       "name": "Far Scribe",
       "prereqLevel": 5,
       "description": "A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus.</p><p>You can cast the Sending spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.</p><p>As an action, you can magically erase a name on the page by touching it.",
@@ -4174,6 +4755,184 @@
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Tome"
       }
+    }
+  ],
+  "elder-arcanum": [
+    {
+      "name": "Minor Arcanum",
+      "prereqLevel": 11,
+      "description": "Choose a 6th-level spell from Occult spell list. You can cast the Minor Arcanum spell once at 6th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Minor Arcanum again.",
+      "choices": [
+        {
+          "id": "1FCE3B54-E6F4-4CD5-867C-3A0AE840B313",
+          "type": "spell",
+          "list": "occult",
+          "level": 6,
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "B070E957-EF21-46E3-AE79-B89CC2B87770",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Greater Arcanum",
+      "prereqLevel": 13,
+      "description": "Choose a 7th-level spell from Occult spell list. You can cast the Greater Arcanum spell once at 7th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Greater Arcanum again.",
+      "choices": [
+        {
+          "id": "3277F3B5-7084-439B-84A1-60D1955CFFCA",
+          "type": "spell",
+          "list": "occult",
+          "level": 7,
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "0A9FAE29-9F89-4BFC-847A-8B0FF913EF21",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Mystic Arcanum",
+      "prereqLevel": 15,
+      "description": "Choose a 8th-level spell from Occult spell list. You can cast the Mystic Arcanum spell once at 8th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Mystic Arcanum again.",
+      "choices": [
+        {
+          "id": "EF047729-957A-4B60-A2FE-C8CA9D2BF505",
+          "type": "spell",
+          "list": "occult",
+          "level": 8,
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "F9195985-A4EB-45DA-92B7-F0D3792DB3F5",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Ancient Arcanum",
+      "prereqLevel": 17,
+      "description": "Choose a 9th-level spell from Occult spell list. You can cast the Ancient Arcanum spell once at 9th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Ancient Arcanum again.",
+      "choices": [
+        {
+          "id": "351B4474-7C07-4796-A2FA-077A31927D79",
+          "type": "spell",
+          "list": "occult",
+          "level": 9,
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "2E77F0F1-6772-4921-840A-91B2E69E068D",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Eldritch Smite",
+      "prereqLevel": 11,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Blade"
+      },
+      "description": "Once per turn when you hit with an attack with a pact weapon, you deal bonus damage to the target as if it had been hit, or failed its saving throw against one manifestation of your Signature Cantrip."
+    },
+    {
+      "name": "Occult Blade",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Blade"
+      },
+      "description": "When you use your action to cast a spell, you can make a single attack with a pact weapon as a bonus action on that same turn."
+    },
+    {
+      "name": "Eldritch Step",
+      "prereqLevel": 15,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Blade"
+      },
+      "description": "Your blade cuts rifts through reality itself. When you make an attack with a pact weapon, you can teleport up to 20 feet to an unoccupied space you can see before or after the attack."
+    },
+    {
+      "name": "Ancient Blade",
+      "prereqLevel": 17,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Blade"
+      },
+      "description": "Your blade has been infused with otherworldly power. As an action, you can flourish a pact weapon, then vanish. Choose up to five targets that you can see within 30 feet and make a single melee weapon attack with a pact weapon against each target. On a hit, creatures take damage as if they had been hit, or failed their saving throw against all four manifestations of your Signature Cantrip.</p><p>You then appear in an unoccupied space of your choice that you can see within 5 feet of one of your targets.</p><p>You can use this feature a number of times equal to your spellcasting ability modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "DCB6BE7C-11B6-4BF2-B66C-C298760FF723",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Empowered Familiar",
+      "prereqLevel": 11,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Chain"
+      },
+      "description": "When you command your familiar to take an Attack action in its stat block it can make two attacks instead of one."
+    },
+    {
+      "name": "Bond of the Master",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Chain"
+      },
+      "description": "While you and your familiar are within 30 feet of each other, you both have advantage on any saving throws you make against spells or other magical effects."
+    },
+    {
+      "name": "Otherworldly Transposition",
+      "prereqLevel": 15,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Chain"
+      },
+      "description": "The chains that bind a familiar and its master offer eldritch protection. As a bonus action on your turn, you can instantly switch places with your familiar so long as you can see it.</p><p>Also, when you cast a spell that targets yourself, you can choose for your familiar to also gain the benefits of the spell so long as it is within 30 feet of you."
+    },
+    {
+      "name": "Ascended Familiar",
+      "prereqLevel": 17,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Chain"
+      },
+      "description": "The will of both familiar and master have become one. Your familiar can act totally independent of you, both in combat and out. You no longer need to issue commands, and your spells can originate from it so long as you are on the same plane of existence. You control your familiar as if it were an independent second player character."
     }
   ],
   "enhancement": [

@@ -3050,51 +3050,6 @@
     ]
   },
   {
-    "name": "Touch of Nyx",
-    "prereq": [
-      {
-        "race": ["harpy"]
-      }
-    ],
-    "type": "racial",
-    "description": "You have been blessed by the goddess of harpies, the primordial god of night Nyx, to wield some of her dark magic. You know the Gloom cantrip. When you reach 3rd level, you can cast the Bane spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell once with this trait, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.",
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Gloom"],
-        "ability": "wis"
-      },
-      {
-        "type": "spell",
-        "options": ["Bane"],
-        "prereq": 3,
-        "ability": "wis"
-      },
-      {
-        "type": "spell",
-        "options": ["Darkness"],
-        "prereq": 5,
-        "ability": "wis"
-      }
-    ],
-    "uses": [
-      {
-        "id": "EE927060-6C86-487B-BB2B-8B6D2122FD56",
-        "type": "fixed",
-        "amount": 1,
-        "prereq": 3,
-        "reset": 2
-      },
-      {
-        "id": "F15468D9-A5A3-4AE1-BA44-63112F761078",
-        "type": "fixed",
-        "amount": 1,
-        "prereq": 5,
-        "reset": 2
-      }
-    ]
-  },
-  {
     "name": "Orcish Strength",
     "prereq": [
       {
@@ -3127,6 +3082,29 @@
     "description": "Through fell magic or an ancestor, you are touched by the corruptive power of Baphomet. You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You have resistance to fire and poison damage.</li><li>You gain a bite attack as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</li></ul>",
     "choices": {
       "id": "261AA845-AB2A-4FB7-AD99-446CCED36E2E",
+      "type": "asi",
+      "amount": 1,
+      "options": ["str", "con"]
+    },
+    "granted": [
+      {
+        "type": "damage-resistance",
+        "options": ["Fire", "Poison"]
+      }
+    ]
+  },
+  {
+    "name": "Ghour Blood",
+    "prereq": [
+      {
+        "race": ["lesser giant"],
+        "subrace": ["ogre"]
+      }
+    ],
+    "type": "racial",
+    "description": "Through fell magic or an ancestor, you are touched by the corruptive power of Baphomet. You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You have resistance to fire and poison damage.</li><li>You gain a bite attack as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</li></ul>",
+    "choices": {
+      "id": "9F849F77-B333-4B3E-B66A-67EDC7F3FF32",
       "type": "asi",
       "amount": 1,
       "options": ["str", "con"]
@@ -3613,6 +3591,23 @@
     ],
     "type": "racial",
     "description": "Your trunk has grown more dexterous and proficient.  You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>Your trunk can fully act as a third arm.  The trunk can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property. </li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Dexterous Tentacles",
+    "prereq": [
+      {
+        "race": ["cecaelia"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your tentacles have grown more dexterous and proficient.  You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>Your tentacles can act as a third arm.  The tentacles can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property. </li></ul>",
     "granted": [
       {
         "type": "asi",
