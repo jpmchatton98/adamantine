@@ -2469,6 +2469,39 @@
     ]
   },
   {
+    "name": "Mountain Mover",
+    "prereq": [
+      {
+        "race": ["goliath"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your strength rivals the giants that roam your homeland. You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You gain a climbing speed equal to your walking speed.</li><li>As an action, you can pick up a large boulder or rip a chunk of natural stone out of the ground and make the attack with it. The boulder is a simple melee weapon with the thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, it deals bludgeoning damage equal to 2d6 + your Strength modifier. A creature struck by this boulder must make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li></ul>",
+    "choices": [
+      {
+        "id": "A8D43E58-D372-4EDB-BD4B-FA8F9D9D44BE",
+        "type": "asi",
+        "amount": 1,
+        "options": ["str", "dex"]
+      }
+    ],
+    "granted": [
+      {
+        "type": "speed",
+        "speed": "climb",
+        "amount": -1
+      }
+    ],
+    "uses": [
+      {
+        "id": "71173F7F-DB58-4197-9395-71F60A983AF0",
+        "type": "derived",
+        "source": "proficiency",
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Strong Wings",
     "prereq": [
       {
@@ -2525,21 +2558,16 @@
       }
     ],
     "type": "racial",
-    "description": "Your shapechanging abilities are particularly refined, and allow you to adapt to your environment. You can cast the Alter Self spell. Charisma is your spellcasting ability for it.",
+    "description": "Your shapechanging abilities are particularly refined, and allow you to adapt to your environment. You can cast the Alter Self spell at will. Charisma is your spellcasting ability for it.",
     "granted": [
       {
         "type": "spell",
         "options": ["Alter Self"],
         "ability": "cha",
-        "ignoreMaxLevel": true
+        "ignoreMaxLevel": true,
+        "atWill": true
       }
-    ],
-    "uses": {
-      "id": "993D89F1-320E-4990-A809-9DB00D4CDC6F",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 1
-    }
+    ]
   },
   {
     "name": "Draconic Ferocity",
@@ -2668,12 +2696,14 @@
         "type": "spell",
         "options": ["Speak with Animals"],
         "atWill": true,
-        "ignoreMaxLevel": true
+        "ignoreMaxLevel": true,
+        "ability": "wis"
       },
       {
         "type": "spell",
         "options": ["Animal Friendship", "Beast Sense"],
-        "ignoreMaxLevel": true
+        "ignoreMaxLevel": true,
+        "ability": "wis"
       }
     ],
     "uses": [
@@ -2685,6 +2715,134 @@
       },
       {
         "id": "59A1A92B-4CA2-47B0-B6EF-3A0DBB143DBD",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Umberlee",
+    "prereq": [
+      {
+        "race": ["merfolk", "triton"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your connection to the sea deepens. You learn the Create or Destroy Water spell and can cast it at will, without expending a spell slot. You also learn the Fog Cloud and Howling Downpour spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Create or Destroy Water"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Fog Cloud", "Howling Downpour"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "25F43F9E-1DAC-44FD-8BD1-1F6077204373",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "9ADD0C4F-8044-4A3F-AC06-072F4E19D136",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Nyx",
+    "prereq": [
+      {
+        "race": ["harpy"]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been touched by the goddess of night and harpies, Nyx. You learn the Bane spell and can cast it at will, without expending a spell slot. You also learn the Grimlore's Shadowblight and Darkness spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Bane"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Grimlore's Shadowblight", "Darkness"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "48C7D2F9-1809-4FD7-A946-919C52CF1499",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "96F3901C-37BD-457A-89A6-CAC9EEA7D1C7",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Orcus",
+    "prereq": [
+      {
+        "race": [
+          "dhampir",
+          "dullahan",
+          "ghost",
+          "ghoul",
+          "lanternfolk",
+          "mummy",
+          "reborn",
+          "skeleton",
+          "wight",
+          "zombie"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "Your undead nature draws directly on the demon Orcus, lord of undeath. You learn the Murmurs of the Restless spell and can cast it at will, without expending a spell slot. You also learn the Ghastly Flight and Drain Life spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Constitution is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Murmurs of the Restless"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "con"
+      },
+      {
+        "type": "spell",
+        "options": ["Ghastly Flight", "Drain Life"],
+        "ignoreMaxLevel": true,
+        "ability": "con"
+      }
+    ],
+    "uses": [
+      {
+        "id": "BBDCB4C6-6428-498E-9B17-66E2484F5508",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "85ECB9B9-18DB-47A7-88A1-F24409C23B49",
         "type": "fixed",
         "amount": 1,
         "reset": 2
@@ -2948,6 +3106,148 @@
     ]
   },
   {
+    "name": "Human Determination",
+    "prereq": [
+      {
+        "race": ["human"]
+      }
+    ],
+    "type": "racial",
+    "description": "You are filled with a determination that can draw the unreachable within your reach. You gain the following benefits:<ul><li>Increase one ability score of your choice by 1, to a maximum of 20.</li><li>When you fail an attack roll, ability check, or saving throw, you can choose to reroll it and take the higher of the two rolls.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</li></ul>",
+    "choices": [
+      {
+        "id": "8768AFFB-9BA5-49F7-B1A1-C7A2A40D34E7",
+        "type": "asi",
+        "amount": 1,
+        "options": ["str", "dex", "con", "int", "wis", "cha"]
+      }
+    ],
+    "uses": [
+      {
+        "id": "9E7E501A-A42E-4489-A1B3-FDD77C1422D3",
+        "type": "derived",
+        "source": "proficiency",
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Dao Heritage",
+    "prereq": [
+      {
+        "race": ["genasi"],
+        "subrace": [["dust", "earth", "mineral", "ooze"]]
+      }
+    ],
+    "type": "racial",
+    "description": "Your heritage includes a dao, genie of the earth.  You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You learn the detect magic spell and can cast it at will, without expending a spell slot.</li><li>You gain tremorsense out to 30 feet.</li></ul>",
+    "choices": [
+      {
+        "id": "883E2207-67E6-4AAC-8840-8888B22B5941",
+        "type": "asi",
+        "options": ["str", "con"],
+        "amount": 1
+      }
+    ],
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "ability": "con",
+        "atWill": true,
+        "ignoreMaxLevel": true
+      },
+      {
+        "type": "tremorsense",
+        "range": 30
+      }
+    ]
+  },
+  {
+    "name": "Djinni Heritage",
+    "prereq": [
+      {
+        "race": ["genasi"],
+        "subrace": [["air", "lightning", "smoke", "vacuum"]]
+      }
+    ],
+    "type": "racial",
+    "description": "Your heritage includes a djinni, genie of the air.  You gain the following benefits:<ul><li>Increase your Dexterity or Constitution score by 1, to a maximum of 20.</li><li>You learn the detect magic spell and can cast it at will, without expending a spell slot.</li><li>Nonmagical ranged attacks against you from more than 30 feet away are made at disadvantage.</li></ul>",
+    "choices": [
+      {
+        "id": "637FBD4A-A993-4DB1-92FB-96ECC2726C2B",
+        "type": "asi",
+        "options": ["dex", "con"],
+        "amount": 1
+      }
+    ],
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "ability": "con",
+        "atWill": true,
+        "ignoreMaxLevel": true
+      }
+    ]
+  },
+  {
+    "name": "Efreeti Heritage",
+    "prereq": [
+      {
+        "race": ["genasi"],
+        "subrace": [["ash", "fire", "magma", "radiance"]]
+      }
+    ],
+    "type": "racial",
+    "description": "Your heritage includes an efreeti, genie of fire.  You gain the following benefits:<ul><li>Increase your Constitution or Intelligence score by 1, to a maximum of 20.</li><li>You learn the detect magic spell and can cast it at will, without expending a spell slot.</li><li>When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to deal 1d4 fire damage to the creature.</li></ul>",
+    "choices": [
+      {
+        "id": "6ADD42E3-AF67-4507-8DA4-EDAEF9A2E3E5",
+        "type": "asi",
+        "options": ["con", "int"],
+        "amount": 1
+      }
+    ],
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "ability": "con",
+        "atWill": true,
+        "ignoreMaxLevel": true
+      }
+    ]
+  },
+  {
+    "name": "Marid Heritage",
+    "prereq": [
+      {
+        "race": ["genasi"],
+        "subrace": [["ice", "mist", "salt", "water"]]
+      }
+    ],
+    "type": "racial",
+    "description": "Your heritage includes a marid, genie of water.  You gain the following benefits:<ul><li>Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li><li>You learn the detect magic spell and can cast it at will, without expending a spell slot.</li><li>You can move into a hostile creature's space regardless of its size, and you can move through a space as narrow as 1 foot wide without squeezing.</li></ul>",
+    "choices": [
+      {
+        "id": "74080E32-07E5-46F7-9635-5CCC7C5B5F03",
+        "type": "asi",
+        "options": ["con", "wis"],
+        "amount": 1
+      }
+    ],
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "ability": "con",
+        "atWill": true,
+        "ignoreMaxLevel": true
+      }
+    ]
+  },
+  {
     "name": "Kalashtar Psionics",
     "prereq": [
       {
@@ -2996,7 +3296,8 @@
     "name": "Master of Mimicry",
     "prereq": [
       {
-        "race": ["kenku"]
+        "race": ["kenku"],
+        "subrace": ["accursed"]
       }
     ],
     "type": "racial",
@@ -3098,7 +3399,7 @@
     "prereq": [
       {
         "race": ["lesser giant"],
-        "subrace": ["ogre"]
+        "subrace": ["cyclops", "ettin", "ogre"]
       }
     ],
     "type": "racial",
@@ -3115,6 +3416,17 @@
         "options": ["Fire", "Poison"]
       }
     ]
+  },
+  {
+    "name": "Improved Regeneration",
+    "prereq": [
+      {
+        "race": ["lesser giant"],
+        "subrace": ["troll"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your regeneration is more powerful, and can even keep you alive when you would otherwise fall.  When you would make a death saving throw, you can instead use your Regeneration trait if possible."
   },
   {
     "name": "Tortle Defender",
@@ -3158,21 +3470,6 @@
       "amount": 1,
       "type": "asi",
       "options": ["int", "cha"]
-    }
-  },
-  {
-    "name": "Kor Weapon Training",
-    "prereq": [
-      {
-        "race": ["kor"]
-      }
-    ],
-    "type": "racial",
-    "description": "You have trained extensively with chain and rope weapons. You gain the following benefits:<ul><li>You gain proficiency with the flying sword, kusarigama, or meteor hammer.</li><li>While wielding one of the above weapons, you gain a +1 bonus to your Armor Class.</li><li>While wielding one of the above weapons, you can grapple a creature up to 10 feet away from you using the weapon. You can only have one creature grappled in this manner at a time.</li></ul>",
-    "choices": {
-      "id": "96475C71-D543-48C0-93CF-AEF96A50DBA5",
-      "type": "exotic-weapon",
-      "limits": ["Flying Sword", "Kusarigama", "Meteor Hammer"]
     }
   },
   {
@@ -4030,7 +4327,7 @@
   {
     "name": "Rune Carver",
     "type": "multiclass",
-    "description": "You've studied the magic of Jotunn runes, granting you the following benefits:<ul><li>You know the Comprehend Languages spell and can cast it at will, but only as a ritual.  Intelligence is your spellcasting ability for it.</li><li>You learn three Runes of your choice.  When you cast a spell of 1st-level or higher, you can invoke one of these runes to modify the spell's effects.  You can invoke runes a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</li></ul>",
+    "description": "You've studied the magic of Jiganti runes, granting you the following benefits:<ul><li>You know the Comprehend Languages spell and can cast it at will, but only as a ritual.  Intelligence is your spellcasting ability for it.</li><li>You learn three Runes of your choice.  When you cast a spell of 1st-level or higher, you can invoke one of these runes to modify the spell's effects.  You can invoke runes a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</li></ul>",
     "choices": [
       {
         "id": "DD8A8E5D-A97C-4BF0-B5B1-47CD3F4D6A5B",

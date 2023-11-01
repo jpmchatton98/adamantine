@@ -268,7 +268,7 @@
     "lifespan": 50,
     "height": [3, 5],
     "weight": [50, 100],
-    "category": "Monstrous",
+    "category": "Animalistic",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -386,7 +386,7 @@
     ],
     "subraces": [
       {
-        "name": "Balance Aasimar",
+        "name": "Balance",
         "description": "Some aasimar are born of celestial entities that are less concerned with rigid order or chaotic freedom, instead working to find a middle ground between the two. Originating from the plane of Elysium, their offspring are healers and warriors, leaders unafraid of either welcoming a friend with open arms or taking war to a foe.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -448,7 +448,7 @@
         ]
       },
       {
-        "name": "Chainwrought Aasimar",
+        "name": "Chainwrought",
         "description": "The great prison of Carceri is not a place one would wish to live in often, but this breed of aasimar have not only survived living as constant wardens; they have flourished. As the foremost level of security, chainwrights are often charged with capture and containment, and they have gotten very good at it over the aeons.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -488,7 +488,7 @@
         ]
       },
       {
-        "name": "Fallen Aasimar",
+        "name": "Fallen",
         "description": "An aasimar who was touched by dark powers as a youth or who turns to evil in early adulthood can become one of the fallen-a group of aasimar whose inner light has been replaced by shadow.",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -524,7 +524,7 @@
         ]
       },
       {
-        "name": "Primal Aasimar",
+        "name": "Primal",
         "description": "While most people think of angels or perhaps other humanoid beings when they hear the word \u0442\u0410\u042ccelestials,\u0442\u0410\u042d the Upper Planes are also home to innumerable celestial entities that take the form of animals, particularly in the wild environments of the Beastlands. Some would be familiar to visitors from the Material Plane, while others are unique to the plane they are found on or are even singular entities within the multiverse. Their descendants are fierce defenders of nature, protecting the flora and fauna of their homelands to the death. While no less beautiful than other aasimar, they are somewhat less charming and take on many bestial features. Most have claws and eyes similar to a cat or other predator, but they can also have antennae, spines, fur, scales, antlers, fangs, or feathers. In this case, it is perhaps best not to ask how their Prime ancestors combined their bloodline with that of a celestial...",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -563,7 +563,7 @@
         ]
       },
       {
-        "name": "Primordial Aasimar",
+        "name": "Primordial",
         "description": "Wielding the elements alongside divine magic, primordial aasimar are touched by both the light of the heavens and the chaos of the elemental planes.  Fighting an eternal battle between their duty to protect and their urge to destroy, they wield the most powerful spellcasting of all aasimar.",
         "asis": [{ "con": 1 }],
         "traits": [
@@ -683,7 +683,7 @@
         ]
       },
       {
-        "name": "Protector Aasimar",
+        "name": "Protector",
         "description": "From a young age, protector aasimar are charged by the powers of good to guard the weak, to strike at evil wherever it arises, and to stand vigilant against the dark.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -718,7 +718,7 @@
         ]
       },
       {
-        "name": "Razorwing Aasimar",
+        "name": "Razorwing",
         "description": "Waging a divine war requires an army, and there is no better army than the spawn of gods who fall under the War domain and their underlings. With a deep sense of honor and barely contained bloodlust, razorwing aasimar are very much used to the flow of blood; whether their own or that of their enemies.",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -754,7 +754,7 @@
         ]
       },
       {
-        "name": "Scourge Aasimar",
+        "name": "Scourge",
         "description": "Scourge aasimar are imbued with a divine energy that blazes intensely within them. It feeds a powerful desire to destroy evil - a desire that is, at its best, unflinching and, at its worst, all-consuming. Many scourge aasimar wear masks to block out the world and focus on containing this power, unmasking themselves only in battle.",
         "asis": [{ "con": 1 }],
         "traits": [
@@ -790,7 +790,7 @@
         ]
       },
       {
-        "name": "Shimmer Aasimar",
+        "name": "Shimmer",
         "description": "Shimmer aasimar are almost exclusively descended from couatls from Mount Celestia. Nearly as vibrant as their ancestors, most have a crown of iridescent feathers mixed into or in place of their hair, and they are remarkably beautiful even for aasimar. Despite this, they are also incredibly shy. They spend much of their time alone, wandering forgotten places until they find one that speaks to their soul. From then on, they are a hidden guardian of that place. Intruders hear entrancing voices in both their ears and minds, but any attempt to find the source fails. A fallen shimmer aasimar is an absolute terror to all who come upon them or their self-declared holy site.",
         "asis": [{ "int": 1 }],
         "traits": [
@@ -825,7 +825,7 @@
         ]
       },
       {
-        "name": "Titan Aasimar",
+        "name": "Titan",
         "description": "Titan aasimar are empowered by the colossal strength of a celestial titan - most commonly, an empyrean.  They stand resolute against those who would do evil, though some, touched by a corrupted or cursed titan, may turn their ire towards the forces of good, seeking only to darken the light in the world.",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -860,7 +860,7 @@
         ]
       },
       {
-        "name": "Twilight Aasimar",
+        "name": "Twilight",
         "description": "Twilight aasimar remain in a grey half state between light and dark for their entire lives. Both the Heavens and Hells regard them with wary respect and fear, because neither has much claim on them and their twin souls give them great power over the forces of both. Were a twilight aasimar to choose a side, they would be a powerful weapon to whoever claimed them. As such, both powers work hard to convince any known twilight aasimars to join them.",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -1978,7 +1978,7 @@
     "lifespan": 400,
     "height": [3, 4],
     "weight": [170, 300],
-    "category": "Monstrous",
+    "category": "Uncommon",
     "type": "Dragon",
     "size": 0,
     "speed": 30,
@@ -2100,7 +2100,7 @@
     "lifespan": -1,
     "height": [3, 7],
     "weight": [40, 300],
-    "category": "Monstrous",
+    "category": "Undead",
     "type": "Humanoid",
     "size": {
       "id": "AA233F81-9A24-4200-B40C-89D47079E205",
@@ -5153,7 +5153,7 @@
     ],
     "subraces": [
       {
-        "name": "Hill Dwarf",
+        "name": "Hill",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -5164,7 +5164,7 @@
         ]
       },
       {
-        "name": "Mountain Dwarf",
+        "name": "Mountain",
         "asis": [{ "str": 1 }],
         "traits": [
           {
@@ -5194,7 +5194,7 @@
         ]
       },
       {
-        "name": "Road Dwarf",
+        "name": "Road",
         "asis": [{ "cha": 1 }],
         "traits": [
           {
@@ -5209,7 +5209,7 @@
         ]
       },
       {
-        "name": "Sea Dwarf",
+        "name": "Sea",
         "asis": [{ "cha": 1 }],
         "traits": [
           {
@@ -5365,7 +5365,7 @@
     ],
     "subraces": [
       {
-        "name": "Astral Elf",
+        "name": "Astral",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -5408,7 +5408,7 @@
         ]
       },
       {
-        "name": "Avariel Elf",
+        "name": "Avariel",
         "asis": [],
         "traits": [
           {
@@ -5424,7 +5424,7 @@
         ]
       },
       {
-        "name": "Desert Elf",
+        "name": "Desert",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -5633,7 +5633,7 @@
         ]
       },
       {
-        "name": "Flame Elf",
+        "name": "Flame",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -5663,7 +5663,7 @@
         ]
       },
       {
-        "name": "High Elf",
+        "name": "High",
         "asis": [{ "int": 1 }],
         "traits": [
           {
@@ -5688,7 +5688,7 @@
         ]
       },
       {
-        "name": "Pallid Elf",
+        "name": "Pallid",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -5739,7 +5739,7 @@
         ]
       },
       {
-        "name": "Rock Elf",
+        "name": "Rock",
         "asis": [{ "str": 1 }],
         "traits": [
           {
@@ -5761,7 +5761,7 @@
         ]
       },
       {
-        "name": "Sea Elf",
+        "name": "Sea",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -5816,7 +5816,7 @@
         ]
       },
       {
-        "name": "Snow Elf",
+        "name": "Snow",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -5839,7 +5839,7 @@
         ]
       },
       {
-        "name": "Urban Elf",
+        "name": "Urban",
         "asis": [{ "int": 1 }],
         "traits": [
           {
@@ -5871,7 +5871,7 @@
         ]
       },
       {
-        "name": "Wood Elf",
+        "name": "Wood",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -6100,7 +6100,7 @@
     "traits": [],
     "subraces": [
       {
-        "name": "Air Genasi",
+        "name": "Air",
         "description": "Most air genasi are descended from the djinn. As changeable as the weather, your moods shift from calm to wild and back again with little warning. You are intimately aware of the world around you, and you revel in this, traveling far and wide to experience as much as you can.</p><p>Air genasi typically have pale skin, hair, and eyes. A faint but constant breeze accompanies them, tousling the hair and stirring the clothing. Some air genasi speak with breathy voices, marked by a faint echo. A few display odd patterns or crystals in their flesh.",
         "asis": [{ "dex": 1 }, { "wis": 1 }],
         "traits": [
@@ -6149,7 +6149,7 @@
         ]
       },
       {
-        "name": "Ash Genasi",
+        "name": "Ash",
         "description": "At some point in life, every creature stops growing and starts dying. You don't know of a time when your gradual and impending death was not something you were intimately aware of. Every day you have a little less energy to sustain you. And yet there is some memory just beyond your grasp of what it feels like to have life burning in your veins, and you desperately want it back, a hunger you can rarely satisfy. You have a fierce determination to feel anything and everything, leaving you susceptible to dangerous vices and risks. And yet you generally can't spare the energy to do these things\u0442\u0410\u0436.unless you take that energy from someone else.</p><p>Ash genasi grow only for the first decade or so of life, after which their elemental nature begins to consume them. They are small, sickly, and have a gray pallor to their flaking skin. They don't have the energy to care about their appearance, and their dirty skin, hair, and clothes combined with an unnerving aura means that few people like spending time around them. Between their own poor health and the lack of support from others, few ash genasi reach much more than middle age, even if they look ancient. They are about as close to being undead as a being can get while still being alive.",
         "asis": [{ "dex": 1 }, { "cha": 1 }],
         "traits": [
@@ -6205,7 +6205,7 @@
         ]
       },
       {
-        "name": "Dust Genasi",
+        "name": "Dust",
         "description": "Many genasi are driven by strong emotions that are imperfect expressions of the elemental force that touched them. As a dust genasi, you are the same, but the emotion that drives you before all others is hate. You hate anything that others have, and not because you want it, but just because it is. You are vengeful, but you take no joy in your vengeance, you simply cannot abide a slight against you. All things must end, and if you have your way you will be the one to end them.</p><p>Dust genasi are tall and gaunt, with nondescript faces beyond eyes that are either solid black or white. Regardless, their eyes are generally dead orbs in dark, hollow sockets. Their tanned skin is papery and dry, and their lips are cracked no matter how much water they might consume. Dust falls from their hair or rises in clouds under their every step. Most live in deserts and wear clothes suited to the heat there.",
         "asis": [{ "dex": 2 }],
         "traits": [
@@ -6248,7 +6248,7 @@
         ]
       },
       {
-        "name": "Earth Genasi",
+        "name": "Earth",
         "description": "As an earth genasi, you are likely descended from the dao genies. You have inherited some measure of control overearth, as well as a steady nature backed by solid confidence. You tend to avoid rash decisions, pausing to consider all your options before taking action.</p><p>Elemental earth manifests differently from one individual to the next. Some earth genasi always have bits of dust falling from their bodies and mud clinging to their clothes, never getting clean no matter how often they bathe. Others are studded with gemstones, with skin tones of deep brown or black, eyes sparkling like agates. Earth genasi can also have smooth metallic flesh, dull iron skin spotted with rust, or a rough, pebbled hide.",
         "asis": [{ "con": 1 }, { "dex": 1 }],
         "traits": [
@@ -6275,7 +6275,7 @@
         ]
       },
       {
-        "name": "Fire Genasi",
+        "name": "Fire",
         "description": "As a fire genasi, you have inherited the volatile mood and keen mind of an efreet or some other native of the Elemental Plane of Fire. You tend toward impatience and making snap judgments. Rather than hide your distinctive appearance, you exult in it.</p><p>Nearly all fire genasi are feverishly hot as if burning inside, an impression reinforced by flaming red, coal black, or ash-gray skin tones. The more human-looking have fiery red hair that writhes under extreme emotion, while exotic specimens sport actual flames dancing on their heads. Fire genasi voices might sound like crackling flames, and their eyes flare when angered. Some are accompanied by the faint scent of brimstone.",
         "asis": [{ "con": 1 }, { "int": 1 }],
         "traits": [
@@ -6333,7 +6333,7 @@
         ]
       },
       {
-        "name": "Ice Genasi",
+        "name": "Ice",
         "description": "As a child of the Plane of Ice, you are coldly rational, analyzing every situation to find the perfect outcome. You may not have a full understanding of the emotions of other people, which can make you seem cruel, and many ice genasi are detached and distant to spare themselves the pain of rejections stemming from this misunderstanding. Despite this, you still have a core of strong emotion. You are more likely than other genasi to have a lawful alignment, disliking change or chaos.</p><p>Ice genasi have sharp, delicate features even when their Prime parents do not. They may have a blue tint to their skin or be unusually pale, with hair and eyes in matching colors. Frost sometimes forms on things they touch, and many breathe frosty plumes even in warm weather. Even slight amounts of heat are uncomfortable to them, and they rarely wear heavy clothes.",
         "asis": [{ "int": 2 }],
         "traits": [
@@ -6396,7 +6396,7 @@
         ]
       },
       {
-        "name": "Lightning Genasi",
+        "name": "Lightning",
         "description": "The Plane of Lightning is a deadly plane formed from a skeleton of electricity around pockets of heavily charged air and boiling black storm clouds. As one touched by it, you are constantly on edge, filled with vibrant energy and delighted to spring into any situation at a moment's notice. Your enthusiasm can be overwhelming both in battle and in conversation, and with your boundless energy, you can't really understand why people sometimes need a break.</p><p>Lightning genasi have pale skin that can be tinged blue, yellow, or red, with those colors becoming particularly vibrant along the \u0442\u0410\u042cedges\u0442\u0410\u042d of their body, such as their jawlines, extremities, and joints. Veins of pulsing light sometimes run through their body, and their eyes often spark, particularly when they get excited (although few can tell the difference between calm and excited). They tend to wear light clothes that won't restrict their movement, and they love metal jewelry that can catch and shape the sparks they create.",
         "asis": [{ "dex": 2 }],
         "traits": [
@@ -6448,7 +6448,7 @@
         ]
       },
       {
-        "name": "Magma Genasi",
+        "name": "Magma",
         "description": "Magma is the union of earth and flame, the most stable element combined with the most chaotic. You have a serene countenance that masks a wild heart, surviving your mad plans through the simple fact that you were too tough for them to kill you. You are quick to laugh and are beloved for the joy you bring to those around you, but you are an equally terrible and implacable foe to those who upset you.</p><p>Magma genasi are generally rather stocky and not particularly tall. Their rough, rocky skin is uncomfortably hot to the touch, and when they bleed, it appears more orange than red and will scald those who touch it. Even those born to wealth wear relatively poor quality clothes, since their wearers don't expect the fabrics to long survive whatever antics they might get into.",
         "asis": [{ "str": 2 }],
         "traits": [
@@ -6484,7 +6484,7 @@
         ]
       },
       {
-        "name": "Mineral Genasi",
+        "name": "Mineral",
         "description": "The Plane of Minerals holds all the riches of the earth within it, and you are a similar treasure to those around you. Solid, dependable, and giving of yourself, you enrich the lives of those around you. However, you may be susceptible to the weaknesses of avarice and may covet the material treasures of others.</p><p>Mineral genasi, like most other genasi with some elemental earth energy, often have skin formed from earthen materials. Unlike others, they rarely have dull or rocky colorations, instead being coated in precious metals, jewels, or at the very least stone like fine marble. Gemstone eyes are also not uncommon. As such, they can rarely pass for human, but often their birth is interpreted as a sign of some divine favor, even going so far as to be mistaken for aasimar.",
         "asis": [{ "dex": 1 }, { "wis": 1 }],
         "traits": [
@@ -6550,7 +6550,7 @@
         ]
       },
       {
-        "name": "Mist Genasi",
+        "name": "Mist",
         "description": "Mist is a veil, a keeper of mystery, and as such you delight in collecting the secrets of others. You aren't necessarily a gossip, but everyone knows that you know, and you aren't averse to making a bit of coin from your knowledge. On the other hand, you are incredibly private, and despise when others delve into your own secrets. Mist can be warm and comforting as a sauna or bitterly cold enough to sap the life from your body, as those who plan to cross you would do well to remember.</p><p>Mist genasi are the pale reflections of smoke genasi, looking as if much of the color has leeched out of them. Most of their hair goes grey in their teens, becoming immaterial near the ends and stirring in every breath of air. Their grey eyes have an odd silver sheen that just can't quite be mistaken for natural, and wisps of mist sometimes spill out of their mouth when they speak. Many wear brightly colored clothing, get extreme hair cuts, or have numerous piercings to make themselves more distinct, but they all have less conspicuous outfits for when they want to sneak around.",
         "asis": [{ "dex": 1 }, { "int": 1 }],
         "traits": [
@@ -6630,7 +6630,7 @@
         ]
       },
       {
-        "name": "Ooze Genasi",
+        "name": "Ooze",
         "description": "After a lifetime of people being repulsed by their appearance, many ooze genasi are quite jaded towards other people. You prefer your own company or that of other outcasts, and are often unwilling to help others without seeing some benefit to yourself. On the other hand, you are susceptible to blind loyalty towards those who treat you kindly, ignoring some of the flaws you would normally be quick to spot.</p><p>Ooze genasi can range from those who look nearly human beyond a sickly tint to their eyes or skin to amorphous yet humanoid shapes that look like melted wax. Rarely are they accounted beautiful by the standards of most other races. Their skin is often coated with a slime that ruins any clothes they wear, and many who flee to isolated homes in the wild go without to save themselves the pointless exertion of trying to clean them.",
         "asis": [{ "con": 1 }, { "wis": 1 }],
         "traits": [
@@ -6674,7 +6674,7 @@
         ]
       },
       {
-        "name": "Radiance Genasi",
+        "name": "Radiance",
         "description": "Many people mistakenly identify radiance genasi as aasimar, and while technically incorrect, they're not far off. As a radiance genasi, you are confident in your beauty and power. From birth you have probably been viewed with awe and showered with the best things in life, including a top-notch education at a temple or academy. This may have left you with a number of flaws such as vanity or a tendency to be be overconfident or self-centered. This is tempered by the fact that you likely ended up in the care of goodly people who tried to instill kindness and generosity within you as well.</p><p>While some have skin in tones natural for the race of their Prime relatives, radiance genasi can be born with brilliantly colored skin in any shade you could think of. Some even have opalescent skin or slowly change colors over the course of few days. Tiny motes of light often float around them like stars, and glowing irises and hair are quite common. Most have access to rich fabrics, and jewels are of particular fascination to them for their refractive properties.",
         "asis": [{ "con": 1 }, { "cha": 1 }],
         "traits": [
@@ -6729,7 +6729,7 @@
         ]
       },
       {
-        "name": "Salt Genasi",
+        "name": "Salt",
         "description": "You do not understand most of the actions others take, nor do you particularly enjoy their presence. Your greatest desire is to be left alone, in a world that is not changed by the random whims of every passing being. Despite this, you have a fascination with novelties, and often build collections of mundane items that have piqued your interest.</p><p>Salt genasi have pale white or brown skin, often with a similarly colored powder or light crusting of crystals on their skin. Even when they are found within the societies of others, they tend to be loners and care little for the application of fashion or beauty standards. While they may not look it, salt genasi can live twice if not three times as long as most humans or genasi.",
         "asis": [{ "int": 2 }],
         "traits": [
@@ -6784,7 +6784,7 @@
         ]
       },
       {
-        "name": "Smoke Genasi",
+        "name": "Smoke",
         "description": "As the manifestation of a para-elemental plane born from the finality of flame carried on the roiling rise of air, you have little in the way of motivation, simply drifting where the universe may take you. While you are not hedonistic, many likely consider you lazy. Despite this, you always seem to rise through the ranks of wherever you end up (be it through luck or skill), high enough that others envy you but not so high that you might miss out on your nap.</p><p>Unsurprisingly, most smoke genasi have a lingering scent of their namesake around them, with the scent growing stronger on the rare occasions they grow irritated or excited. Quite often their hair billows in a cloud-like fashion, becoming wispy and immaterial near the ends. All their features generally have a dark cast to them, though their eyes may occasionally flare with fiery light. They tend to wear clothes in similar colors, and these clothes are always well-made, practical, and comfortable. There is no point in fancy clothes if you can't breathe or stretch in them.",
         "asis": [{ "dex": 1 }, { "cha": 1 }],
         "traits": [
@@ -6851,7 +6851,7 @@
         ]
       },
       {
-        "name": "Vacuum Genasi",
+        "name": "Vacuum",
         "description": "You desire nothing. Truly, literally, nothing. Things have no meaning and power is something for others to hold. This sets you apart from most other beings in an irreconcilable way, but that doesn't matter either. Even your movement is odd, because how does nothing move?</p><p>Vacuum genasi generally have purple-black skin with shimmering metallic markings scattered across it. Their eyes and hair are equally dark. However, from time to time, a ripple of immaterialness will roll through their flesh, making them appear wispy or even disappear from sight completely.",
         "asis": [{ "dex": 2 }],
         "traits": [
@@ -6903,7 +6903,7 @@
         ]
       },
       {
-        "name": "Water Genasi",
+        "name": "Water",
         "description": "The lapping of waves, the spray of sea foam on the wind, the ocean depths \u0442\u0410\u0424 all of these things call to your heart as the descendant of a water elemental such as a marid. You wander freely and take pride in your independence, though others might consider you selfish.</p><p>Most water genasi look as if they just finished bathing, with moisture collecting on their skin and hair. They smell of fresh rain and clean water. Blue or green skin is common, and most have overlarge eyes, blue-black in color. A water genasi's hair might float freely, swaying and waving as if underwater, and their voices have undertones reminiscent of whale song or trickling streams.",
         "asis": [{ "con": 1 }, { "wis": 1 }],
         "traits": [
@@ -7238,7 +7238,7 @@
     ],
     "subraces": [
       {
-        "name": "Forest Gnome",
+        "name": "Forest",
         "asis": [{ "dex": 1 }],
         "traits": [
           {
@@ -7259,7 +7259,7 @@
         ]
       },
       {
-        "name": "Rock Gnome",
+        "name": "Rock",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -7562,7 +7562,7 @@
     ],
     "subraces": [
       {
-        "name": "Forest Goblin",
+        "name": "Forest",
         "asis": [],
         "traits": [
           {
@@ -7575,7 +7575,7 @@
         ]
       },
       {
-        "name": "Lavasteppe Goblin",
+        "name": "Lavasteppe",
         "asis": [],
         "traits": [
           {
@@ -7585,7 +7585,7 @@
         ]
       },
       {
-        "name": "Mountain Goblin",
+        "name": "Mountain",
         "asis": [],
         "traits": [
           {
@@ -7596,7 +7596,7 @@
         ]
       },
       {
-        "name": "Plains Goblin",
+        "name": "Plains",
         "asis": [],
         "traits": [
           {
@@ -7621,7 +7621,7 @@
         ]
       },
       {
-        "name": "Urban Goblin",
+        "name": "Urban",
         "asis": [],
         "traits": [
           {
@@ -7644,7 +7644,7 @@
     "lifespan": 100,
     "height": [7, 8],
     "weight": [280, 340],
-    "category": "Uncommon",
+    "category": "Common",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -7659,7 +7659,7 @@
     ],
     "subraces": [
       {
-        "name": "Cloud Goliath",
+        "name": "Cloud",
         "description": "A cloud goliath prefers physical distance from other creatures, and have reputations for paying little heed to the plights of the world.\n",
         "asis": [{ "str": 2 }, { "wis": 1 }],
         "traits": [
@@ -7705,7 +7705,7 @@
         ]
       },
       {
-        "name": "Fire Goliath",
+        "name": "Fire",
         "description": "As a member of the fire goliath, you find comfort by the heat of the forge or in warm, even volcanic environments.\n",
         "asis": [{ "str": 2 }, { "int": 1 }],
         "traits": [
@@ -7740,7 +7740,7 @@
         ]
       },
       {
-        "name": "Frost Goliath",
+        "name": "Frost",
         "description": "Frost goliaths are fierce and hardy in battle, and they take pride in their scars and grisly trophies taken from their fallen enemies, which they fashion into armor, weapons, and jewelry.\n",
         "asis": [{ "str": 2 }, { "con": 1 }],
         "traits": [
@@ -7782,51 +7782,7 @@
         ]
       },
       {
-        "name": "Golyclops",
-        "description": "Golyclopses are derived from cyclopes. Legend says that cyclopes are derived from a line of giants who had their eyes plucked out by their god, Grolantor, and replaced with one large eye in the center of their forehead.\n",
-        "asis": [{ "con": 2 }, { "str": 1 }],
-        "traits": [
-          {
-            "name": "Depth-Impaired",
-            "description": "You have disadvantage on any ranged attack at a range greater than 30 feet."
-          },
-          {
-            "name": "Retinal Resilience",
-            "description": "You have advantage on saving throws against being blinded.",
-            "granted": [
-              { "type": "condition-advantage", "options": ["Blinded"] }
-            ]
-          },
-          {
-            "name": "All-Seeing Eye",
-            "description": "You have advantage on saving throws against illusions.</p><p>In addition, when you make an Intelligence (Investigation) check to discern whether something within 30 feet of you is an illusion, you can use your reaction to automatically succeed on the check. Once you use this ability, you can't do so again until you finish a long rest.",
-            "uses": {
-              "id": "C673D679-94E5-495F-AE19-AA30F9800CAF",
-              "type": "fixed",
-              "amount": 1,
-              "reset": 2
-            },
-            "actions": [
-              {
-                "id": "C673D679-94E5-495F-AE19-AA30F9800CAF",
-                "hasUses": true,
-                "type": "r",
-                "name": "All-Seeing Eye",
-                "description": "When you make an Intelligence (Investigation) check to discern whether something within 30 feet of you is an illusion, you can choose to automatically succeed on the check."
-              }
-            ]
-          },
-          {
-            "name": "Grotesque Coercion",
-            "description": "You have proficiency in the Intimidation skill.",
-            "granted": [
-              { "type": "skill", "options": ["Intimidation"], "level": 1 }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hill Goliath",
+        "name": "Hill",
         "description": "Hill goliaths have a tendency to doze off in broad daylight atop whatever hill they find themselves on. They are prone to fits of violent destruction, especially when they realize someone has tried to deceive them or make a fool of them.\n",
         "asis": [{ "str": 2 }, { "con": 1 }],
         "traits": [
@@ -7856,7 +7812,7 @@
         ]
       },
       {
-        "name": "Stone Goliath",
+        "name": "Stone",
         "description": "At the highest mountain peaks dwell the reclusive stone goliaths, wandering a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone and give them great physical power. Their hearts are infused with the cold regard of their frigid realm, leaving each goliath with the responsibility to earn a place in the tribe or die trying.\n",
         "asis": [{ "str": "2" }, { "con": 1 }],
         "traits": [
@@ -7887,7 +7843,7 @@
         ]
       },
       {
-        "name": "Storm Goliath",
+        "name": "Storm",
         "description": "Goliaths with storm ancestry believe that storm giants were too proud to willingly create lesser, humanoid offspring and too powerful to be forced to, so they were magically subdued and had their blood stolen.\n",
         "asis": [{ "str": 2 }, { "wis": 1 }],
         "traits": [
@@ -7931,6 +7887,50 @@
             "description": "You have resistance to lightning damage.",
             "granted": [
               { "type": "damage-resistance", "options": ["Lightning"] }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Golyclops",
+        "description": "Golyclopses are derived from cyclopes. Legend says that cyclopes are derived from a line of giants who had their eyes plucked out by their god, Grolantor, and replaced with one large eye in the center of their forehead.\n",
+        "asis": [{ "con": 2 }, { "str": 1 }],
+        "traits": [
+          {
+            "name": "Depth-Impaired",
+            "description": "You have disadvantage on any ranged attack at a range greater than 30 feet."
+          },
+          {
+            "name": "Retinal Resilience",
+            "description": "You have advantage on saving throws against being blinded.",
+            "granted": [
+              { "type": "condition-advantage", "options": ["Blinded"] }
+            ]
+          },
+          {
+            "name": "All-Seeing Eye",
+            "description": "You have advantage on saving throws against illusions.</p><p>In addition, when you make an Intelligence (Investigation) check to discern whether something within 30 feet of you is an illusion, you can use your reaction to automatically succeed on the check. Once you use this ability, you can't do so again until you finish a long rest.",
+            "uses": {
+              "id": "C673D679-94E5-495F-AE19-AA30F9800CAF",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "C673D679-94E5-495F-AE19-AA30F9800CAF",
+                "hasUses": true,
+                "type": "r",
+                "name": "All-Seeing Eye",
+                "description": "When you make an Intelligence (Investigation) check to discern whether something within 30 feet of you is an illusion, you can choose to automatically succeed on the check."
+              }
+            ]
+          },
+          {
+            "name": "Grotesque Coercion",
+            "description": "You have proficiency in the Intimidation skill.",
+            "granted": [
+              { "type": "skill", "options": ["Intimidation"], "level": 1 }
             ]
           }
         ]
@@ -8197,7 +8197,7 @@
     ],
     "subraces": [
       {
-        "name": "Crossblood Half-Dwarf",
+        "name": "Crossblood",
         "asis": [],
         "traits": [
           {
@@ -8219,7 +8219,7 @@
         ]
       },
       {
-        "name": "Hill Half-Dwarf",
+        "name": "Hill",
         "asis": [],
         "traits": [
           {
@@ -8230,7 +8230,7 @@
         ]
       },
       {
-        "name": "Mountain Half-Dwarf",
+        "name": "Mountain",
         "asis": [],
         "traits": [
           {
@@ -8255,7 +8255,7 @@
         ]
       },
       {
-        "name": "Road Half-Dwarf",
+        "name": "Road",
         "asis": [],
         "traits": [
           {
@@ -8265,7 +8265,7 @@
         ]
       },
       {
-        "name": "Sea Half-Dwarf",
+        "name": "Sea",
         "asis": [],
         "traits": [
           {
@@ -8281,7 +8281,7 @@
         ]
       },
       {
-        "name": "Half-Azer",
+        "name": "Azer",
         "asis": [],
         "traits": [
           {
@@ -8308,7 +8308,7 @@
         ]
       },
       {
-        "name": "Half-Duergar",
+        "name": "Duergar",
         "asis": [],
         "traits": [
           {
@@ -8384,7 +8384,7 @@
     ],
     "subraces": [
       {
-        "name": "Crossblood Half-Elf",
+        "name": "Crossblood",
         "asis": [],
         "traits": [
           {
@@ -8406,7 +8406,7 @@
         ]
       },
       {
-        "name": "Astral Half-Elf",
+        "name": "Astral",
         "asis": [],
         "traits": [
           {
@@ -8422,7 +8422,7 @@
         ]
       },
       {
-        "name": "Desert Half-Elf",
+        "name": "Desert",
         "asis": [],
         "traits": [
           {
@@ -8446,7 +8446,7 @@
         ]
       },
       {
-        "name": "Half-Drow",
+        "name": "Drow",
         "asis": [],
         "traits": [
           {
@@ -8491,7 +8491,7 @@
         ]
       },
       {
-        "name": "Half-Eldarin",
+        "name": "Eldarin",
         "asis": [],
         "traits": [
           {
@@ -8615,7 +8615,7 @@
         ]
       },
       {
-        "name": "Flame Half-Elf",
+        "name": "Flame",
         "asis": [],
         "traits": [
           {
@@ -8640,7 +8640,7 @@
         ]
       },
       {
-        "name": "High Half-Elf",
+        "name": "High",
         "asis": [],
         "traits": [
           {
@@ -8657,7 +8657,7 @@
         ]
       },
       {
-        "name": "Pallid Half-Elf",
+        "name": "Pallid",
         "asis": [],
         "traits": [
           {
@@ -8698,7 +8698,7 @@
         ]
       },
       {
-        "name": "Rock Half-Elf",
+        "name": "Rock",
         "asis": [],
         "traits": [
           {
@@ -8713,7 +8713,7 @@
         ]
       },
       {
-        "name": "Sea Half-Elf",
+        "name": "Sea",
         "asis": [],
         "traits": [
           {
@@ -8728,7 +8728,7 @@
         ]
       },
       {
-        "name": "Half-Shadar-Kai",
+        "name": "Shadar-Kai",
         "asis": [],
         "traits": [
           {
@@ -8756,7 +8756,7 @@
         ]
       },
       {
-        "name": "Snow Half-Elf",
+        "name": "Snow",
         "asis": [],
         "traits": [
           {
@@ -8773,7 +8773,7 @@
         ]
       },
       {
-        "name": "Urban Half-Elf",
+        "name": "Urban",
         "asis": [],
         "traits": [
           {
@@ -8783,7 +8783,7 @@
         ]
       },
       {
-        "name": "Wood Half-Elf",
+        "name": "Wood",
         "asis": [],
         "traits": [
           {
@@ -8874,7 +8874,7 @@
     ],
     "subraces": [
       {
-        "name": "Ghostwise Halfling",
+        "name": "Ghostwise",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -8885,7 +8885,7 @@
         ]
       },
       {
-        "name": "Lightfoot Halfling",
+        "name": "Lightfoot",
         "asis": [{ "cha": 1 }],
         "traits": [
           {
@@ -8895,7 +8895,7 @@
         ]
       },
       {
-        "name": "Lotusden Halfling",
+        "name": "Lotusden",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -8940,7 +8940,7 @@
         ]
       },
       {
-        "name": "Silverwit Halfling",
+        "name": "Silverwit",
         "asis": [{ "int": 1 }],
         "traits": [
           {
@@ -8954,7 +8954,7 @@
         ]
       },
       {
-        "name": "Stout Halfling",
+        "name": "Stout",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -9176,7 +9176,7 @@
     ],
     "subraces": [
       {
-        "name": "Cityborn Human",
+        "name": "Cityborn",
         "description": "These humans hail from heavily urbanized environments, having grown up in a place where crime and disease run rampant.  They typically know how to deal with criminal activities, most of them having some experience doing so, even if only as children.",
         "asis": [
           { "dex": 1 },
@@ -9201,7 +9201,7 @@
         ]
       },
       {
-        "name": "Desertborn Human",
+        "name": "Desertborn",
         "description": "Hailing from hot, dry environments such as deserts or plateaus, these humans are natural survivalists.  Their resilience allows them to survive in even the harshest of envrionments.",
         "asis": [
           { "dex": 2 },
@@ -9231,7 +9231,7 @@
         ]
       },
       {
-        "name": "Enhanced Human",
+        "name": "Enhanced",
         "description": "These humans underwent significant physical enhancement through magic or technology.  They tend to be larger and stronger than other humans.",
         "asis": [{ "str": 1 }, { "dex": 1 }, { "con": 1 }],
         "traits": [
@@ -9269,7 +9269,7 @@
         ]
       },
       {
-        "name": "Forestborn Human",
+        "name": "Forestborn",
         "description": "These humans, hailing from forests, jungles, or even swamps, are trackers and hunters, with an innate connection to the natural world.",
         "asis": [
           { "wis": 2 },
@@ -9311,7 +9311,7 @@
         ]
       },
       {
-        "name": "Mountainborn Human",
+        "name": "Mountainborn",
         "description": "These humans hail from mountaintops or even subterranean cave systems.  Natural smiths and masons, these humans have cultural influence from dwarves.",
         "asis": [
           { "str": 2 },
@@ -9353,7 +9353,7 @@
         ]
       },
       {
-        "name": "Plainsborn Human",
+        "name": "Plainsborn",
         "description": "These humans come from flat, rather empty land such as plains or savannahs.  Nomads and wanderers at heart, they are also usually excellent craftsmen.",
         "asis": [
           { "int": 2 },
@@ -9393,7 +9393,7 @@
         ]
       },
       {
-        "name": "Seaborn Human",
+        "name": "Seaborn",
         "description": "From cultures that rule the waves, these humans are sailors or pirates.  Their affinity for the ships they sail, and broad cultural influence, make them renowned merchants.",
         "asis": [
           { "cha": 2 },
@@ -9431,7 +9431,7 @@
         ]
       },
       {
-        "name": "Spaceborn Human",
+        "name": "Spaceborn",
         "description": "Spaceborn possess no true home, wandering the Astral Sea on astral vehicles.  Seekings to chart the Astral Sea, they are an ambitious lot with an affinity for tinkering.",
         "asis": [
           { "int": 2 },
@@ -9461,7 +9461,7 @@
         ]
       },
       {
-        "name": "Versatile Human",
+        "name": "Versatile",
         "asis": [
           {
             "id": "1F6FE8F8-057E-4218-8D0A-22BCF39EEC7A",
@@ -9488,7 +9488,7 @@
         ]
       },
       {
-        "name": "Winterborn Human",
+        "name": "Winterborn",
         "description": "Winterborn hail from the far north, a place where one fights simply to stay alive.  Resilient, practical people, these humans know what it takes to survive.",
         "asis": [
           { "con": 2 },
@@ -9898,7 +9898,7 @@
     "traits": [],
     "subraces": [
       {
-        "name": "Accursed Kenku",
+        "name": "Accursed",
         "description": "Haunted by an ancient crime that robbed them of their wings, the flightless kenku wander the world as vagabonds and burglars who live at the edge of human society. Kenku suffer from a sinister reputation that is not wholly unearned, but they can prove to be valuable allies.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -9941,7 +9941,7 @@
         ]
       },
       {
-        "name": "Blessed Kenku",
+        "name": "Blessed",
         "description": "Though most kenku suffer from the mysterious curse that plagues their race, a lucky few have achieved freedom from this curse, whether through divine means or others.  These blessed kenku delight in creativity and flight.",
         "asis": [{ "cha": 1 }],
         "traits": [
@@ -9994,7 +9994,7 @@
     "lifespan": 60,
     "height": [5, 6],
     "weight": [120, 150],
-    "category": "Monstrous",
+    "category": "Uncommon",
     "type": "Humanoid",
     "size": 0,
     "speed": 35,
@@ -10048,7 +10048,7 @@
     "lifespan": 120,
     "height": [2, 3],
     "weight": [25, 35],
-    "category": "Monstrous",
+    "category": "Uncommon",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -10077,7 +10077,7 @@
     ],
     "subraces": [
       {
-        "name": "Cave Kobold",
+        "name": "Cave",
         "asis": [],
         "traits": [
           {
@@ -10087,7 +10087,7 @@
         ]
       },
       {
-        "name": "Draconic Kobold",
+        "name": "Draconic",
         "asis": [],
         "traits": [
           {
@@ -10179,50 +10179,6 @@
       }
     ],
     "name": "Kobold"
-  },
-  {
-    "description": "Deeply reverent of the land and its sacred sites, the nomadic kor live a spare existence defined by their constant travels. Masters of ropes and hooks, they scale sheer cliffs and cross yawning chasms with such skill and agility that they sometimes seem almost to take flight.\n<br><br>Kor are tall, slender humanoids with light hair and gray, blue-gray, or ivory skin. All kor have slightly pointed ears, and males have short, fleshy barbels on their chins. They paint softly glowing geometric patterns on their faces and bodies. Their clothing tends to leave their arms and shoulders free to facilitate climbing, and they keep most of their gear in pouches and slings at their waists.\n<br><br>The kor have a nonverbal language of hand signs and gestures that allows communication despite significant distance (particularly when augmented with whirling ropes) or howling winds. They also use this sign language among themselves when they wish to avoid being overheard, giving rise to misguided rumors that they are incapable of speech. When they do speak, they typically use as few words as possible to convey their meaning.\n",
-    "asis": [{ "dex": 2 }, { "wis": 1 }],
-    "maturity": 18,
-    "lifespan": 100,
-    "height": [5, 6],
-    "weight": [100, 120],
-    "category": "Uncommon",
-    "type": "Humanoid",
-    "size": 0,
-    "speed": 30,
-    "darkvision": 0,
-    "languages": ["Common", "Kor"],
-    "traits": [
-      {
-        "name": "Athletic",
-        "description": "You have proficiency in the Athletics and Acrobatics skills.",
-        "granted": [
-          {
-            "type": "skill",
-            "options": ["Athletics", "Acrobatics"],
-            "level": 1
-          }
-        ]
-      },
-      {
-        "name": "Kor Climbing",
-        "description": "You have a climbing speed equal to your walking speed.",
-        "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
-      },
-      {
-        "name": "Lucky",
-        "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
-      },
-      {
-        "name": "Brave",
-        "description": "You have advantage on saving throws against being frightened.",
-        "granted": [
-          { "type": "condition-advantage", "options": ["Frightened"] }
-        ]
-      }
-    ],
-    "name": "Kor"
   },
   {
     "description": "The koradi race is a secretive and protective one defined by the natural environment. Though they rarely interact with outsiders, they live in clan-like communities that share in a mutual relationship with the lands they call home.",
@@ -10729,7 +10685,7 @@
     ],
     "subraces": [
       {
-        "name": "Chameleonic Lizardfolk",
+        "name": "Chameleonic",
         "description": "Chameleonic lizardfolk are smaller, frailer lizardfolk with scales that they can change the colors of to blend into their environments.\n",
         "asis": [{ "dex": 1 }],
         "traits": [
@@ -10748,7 +10704,7 @@
         ]
       },
       {
-        "name": "Crocodilian Lizardfolk",
+        "name": "Crocodilian",
         "description": "Larger lizardfolk with long, slender jaws that can crush steel, these lizardfolk are less clever, but are useful for their incredible strength.\n",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -10780,7 +10736,7 @@
         ]
       },
       {
-        "name": "Geckkota Lizardfolk",
+        "name": "Geckkota",
         "description": "Geckkota lizardfolk are particularly small, and have pads on their hands and feet that allow them to climb walls.\n",
         "asis": [{ "dex": 1 }],
         "traits": [
@@ -10792,7 +10748,7 @@
         ]
       },
       {
-        "name": "Monitor Lizardfolk",
+        "name": "Monitor",
         "description": "The most common type of lizardfolk, monitor lizardfolk are little more than tribal barbarians who have a penchant for forging weapons from the bones of their fallen enemies.\n",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -10822,7 +10778,7 @@
         ]
       },
       {
-        "name": "Razortail Lizardfolk",
+        "name": "Razortail",
         "description": "Many reptiles derive their body warmth and energy from the sun, but the razortail lizardfolk are fueled by an inner fire of zeal. Open with their emotions, razortail lizardfolk can be hot-tempered, but they are also quick to their hissing laughter, and they easily form close bonds of friendship. They are fierce warriors and passionate advocates for their guilds and causes.\n",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -10952,7 +10908,7 @@
     ],
     "subraces": [
       {
-        "name": "Elephanti Loxodon",
+        "name": "Elephanti",
         "description": "The smaller elephanti loxodon are the more common variety, and are serene and wise.\n",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -10969,7 +10925,7 @@
         ]
       },
       {
-        "name": "Mammuthus Loxodon",
+        "name": "Mammuthus",
         "description": "The larger cousins of elephanti loxodon, mammuthus loxodon are less serene, but are far stronger.\n",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -11002,7 +10958,7 @@
         ]
       },
       {
-        "name": "Tapiri Loxodon",
+        "name": "Tapiri",
         "description": "The smallest of loxodon, tapiri have a reputation as sages and mystics, with strange abilities related to sleep and dreams.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -11048,7 +11004,7 @@
     ],
     "subraces": [
       {
-        "name": "Hunter Merfolk",
+        "name": "Hunter",
         "asis": [{ "wis": 2 }],
         "traits": [
           {
@@ -11093,7 +11049,7 @@
         ]
       },
       {
-        "name": "Lorekeeper Merfolk",
+        "name": "Lorekeeper",
         "asis": [{ "cha": 1 }, { "int": 1 }],
         "traits": [
           {
@@ -11145,7 +11101,7 @@
         ]
       },
       {
-        "name": "Sage Merfolk",
+        "name": "Sage",
         "asis": [{ "int": 2 }],
         "traits": [
           {
@@ -11559,7 +11515,7 @@
     "lifespan": 60,
     "height": [10, 11],
     "weight": [900, 1000],
-    "category": "Monstrous",
+    "category": "Uncommon",
     "type": "Giant",
     "size": 1,
     "speed": 40,
@@ -11755,7 +11711,7 @@
     "lifespan": 75,
     "height": [6, 8],
     "weight": [230, 280],
-    "category": "Monstrous",
+    "category": "Common",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -11983,7 +11939,7 @@
     ],
     "subraces": [
       {
-        "name": "Cultured Panserbjorn",
+        "name": "Cultured",
         "description": "Originally a wild people, some panserbjorn have managed to grow more cultured over time, integrating themselves into society.  Still often seen as outcasts in many places due in part to their rarity, they are eager learners.",
         "asis": [{ "cha": 1 }],
         "traits": [
@@ -12029,7 +11985,7 @@
         ]
       },
       {
-        "name": "Forest Panserbjorn",
+        "name": "Forest",
         "description": "Though panserbjorn are native to the far, arctic north of many worlds, those that emigrated to warmer locale found themselves with a very different environment, and evolved different abilities.  Most resembling black bears or brown bears, they have a connection to the druidic spirits often found in forests.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -12068,7 +12024,7 @@
         ]
       },
       {
-        "name": "Wild Panserbjorn",
+        "name": "Wild",
         "description": "Brutal survivalists resembling bears of the far north, usually polar bears or brown bears, wild pasernbjorn live on the outskirts of civilization.  Historically more numerous, those still in the wild have become fewer as younger panserbjorn integrate themselves into society.",
         "asis": [{ "wis": 1 }],
         "traits": [
@@ -12093,7 +12049,7 @@
     "lifespan": 100,
     "height": [4, 6],
     "weight": [50, 100],
-    "category": "Monstrous",
+    "category": "Extraplanar",
     "type": "Ooze",
     "size": 0,
     "speed": 30,
@@ -14945,7 +14901,7 @@
     "lifespan": 100,
     "height": [5, 6],
     "weight": [120, 150],
-    "category": "Monstrous",
+    "category": "Animalistic",
     "type": "Fiend",
     "size": 0,
     "speed": 30,
@@ -14970,7 +14926,7 @@
     ],
     "subraces": [
       {
-        "name": "Yuan-Ti Abomination",
+        "name": "Abomination",
         "description": "Yuan-ti abominations resemble a snake with the upper torso of a human, though coated in scales like the rest of their body.  They rank near the top of yuan-ti hierarchy.",
         "asis": [{ "con": 1 }],
         "traits": [
@@ -15027,7 +14983,7 @@
         ]
       },
       {
-        "name": "Yuan-Ti Malison",
+        "name": "Malison",
         "description": "Malison is a term used to refer to any yuan-ti that shares a roughly equal blend of human and snake features.  These snake men serve as a warrior caste in yuan-ti society, and have chameleonic abilities.",
         "asis": [{ "str": 1 }],
         "traits": [
@@ -15136,7 +15092,7 @@
         ]
       },
       {
-        "name": "Yuan-Ti Pureblood",
+        "name": "Pureblood",
         "description": "Purebloods are the most human of yuan-ti.  Other than their eyes having slit pupils or occasional patches of scales, a pureblood could be entirely mistaken for a human.",
         "asis": [{ "int": 1 }],
         "traits": [
@@ -15302,7 +15258,7 @@
     ],
     "subraces": [
       {
-        "name": "Arcane Lantern",
+        "name": "Arcane",
         "description": "Arcane lanternfolk inhabit magical crystals or orbs once used by the wizards they were in life.",
         "asis": [{ "int": 1 }],
         "traits": [
