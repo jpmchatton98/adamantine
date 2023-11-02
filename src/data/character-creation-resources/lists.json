@@ -5953,7 +5953,7 @@
     {
       "name": "Enigma Grenade",
       "prereqLevel": 10,
-      "description": "When this grenade detonates, it creates a blast of pure magical energy.  All creature within 15 feet of it take 2d4 damage.  This damage is untyped, and as such cannot be reduced or prevented in any way.</p><p>This grenade's damage increases to 4d4 at 15th level."
+      "description": "When this grenade detonates, it creates a blast of pure void energy.  All creature within 15 feet of it take 2d4 damage.  This damage is untyped, and as such cannot be reduced or prevented in any way.</p><p>This grenade's damage increases to 4d4 at 15th level."
     },
     {
       "name": "Magnetic Grenade",

@@ -144,15 +144,6 @@
     "index": "1mastersweapon"
   },
   {
-    "name": "+1 Mind Stone",
-    "rarity": 1,
-    "type": "wondrous item",
-    "attunement": true,
-    "attunementDesc": "by a psion",
-    "description": "This deep purple stone allows a psion to enhance their psionic abilities by focusing them through it.<br><br>While holding this stone, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your Psionic spells.<br><br>In addition, you can choose to upcast a Psionic spell you cast by 1 level higher than the number of psi points you used to cast it, even if that would upcast it above your Mental Limit.  Once this property is used, it can't be used again until the next dawn.",
-    "index": "1mindstone"
-  },
-  {
     "name": "+1 Moon Sickle",
     "rarity": 1,
     "type": "weapon (sickle)",
@@ -432,15 +423,6 @@
     "index": "2mastersweapon"
   },
   {
-    "name": "+2 Mind Stone",
-    "rarity": 2,
-    "type": "wondrous item",
-    "attunement": true,
-    "attunementDesc": "by a psion",
-    "description": "This deep purple stone allows a psion to enhance their psionic abilities by focusing them through it.<br><br>While holding this stone, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your Psionic spells.<br><br>In addition, you can choose to upcast a Psionic spell you cast by 1 level higher than the number of psi points you used to cast it, even if that would upcast it above your Mental Limit.  Once this property is used, it can't be used again until the next dawn.",
-    "index": "2mindstone"
-  },
-  {
     "name": "+2 Moon Sickle",
     "rarity": 2,
     "type": "weapon (sickle)",
@@ -718,15 +700,6 @@
     "attunementDesc": "by a fighter",
     "description": "This weapon was passed down through the generations, and has absorbed the knowledge of past warriors, becoming self-aware after being used for one hundred years of battle.<br><br>While you wield this weapon, you gain a +3 bonus to the saving throw DCs of your fighter features.<h4>Sentience</h4> Having absorbed knowledge, a master's weapon has become somewhat self-aware, binding its intelligence to that of its wielder. It has an Intelligence, Wisdom, and Charisma score equivalent to your own, your alignment, and can sense your emotions and empathically communicate with you while it is on your person. It cannot see, but it can hear and can understand the languages you understand.",
     "index": "3mastersweapon"
-  },
-  {
-    "name": "+3 Mind Stone",
-    "rarity": 3,
-    "type": "wondrous item",
-    "attunement": true,
-    "attunementDesc": "by a psion",
-    "description": "This deep purple stone allows a psion to enhance their psionic abilities by focusing them through it.<br><br>While holding this stone, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your Psionic spells.<br><br>In addition, you can choose to upcast a Psionic spell you cast by 1 level higher than the number of psi points you used to cast it, even if that would upcast it above your Mental Limit.  Once this property is used, it can't be used again until the next dawn.",
-    "index": "3mindstone"
   },
   {
     "name": "+3 Moon Sickle",

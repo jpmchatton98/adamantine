@@ -26,4 +26,10 @@ export class ClassTabComponent {
         ?.toLowerCase() ?? ''
     );
   }
+
+  public getIcon(name: string): string {
+    return this.dataService.classIcons[
+      name.toLowerCase().replaceAll(' ', '').replaceAll('-', '')
+    ];
+  }
 }

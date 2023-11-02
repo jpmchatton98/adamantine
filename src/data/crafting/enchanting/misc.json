@@ -252,18 +252,6 @@
     "value": 650
   },
   {
-    "name": "Mind Stone, +1",
-    "materials": [
-      { "item": "amethyst worth 100 gp", "quantity": 1 },
-      { "item": "uncommon psionic essence", "quantity": 3 }
-    ],
-    "craftingTime": 8,
-    "craftingChecks": 4,
-    "dc": 15,
-    "rarity": 1,
-    "value": 650
-  },
-  {
     "name": "Mother of Adamant, +1",
     "materials": [
       { "item": "adamantine ingot", "quantity": 1 },
@@ -862,18 +850,6 @@
     "value": 3300
   },
   {
-    "name": "Mind Stone, +2",
-    "materials": [
-      { "item": "amethyst worth 500 gp", "quantity": 1 },
-      { "item": "rare psionic essence", "quantity": 3 }
-    ],
-    "craftingTime": 24,
-    "craftingChecks": 12,
-    "dc": 17,
-    "rarity": 2,
-    "value": 3300
-  },
-  {
     "name": "Mother of Adamant, +2",
     "materials": [
       { "item": "adamantine ingot", "quantity": 1 },
@@ -1251,18 +1227,6 @@
     "materials": [
       { "item": "set of tools worth 1000 gp", "quantity": 1 },
       { "item": "uncommon essence", "quantity": 4 }
-    ],
-    "craftingTime": 24,
-    "craftingChecks": 12,
-    "dc": 19,
-    "rarity": 3,
-    "value": 38000
-  },
-  {
-    "name": "Mind Stone, +3",
-    "materials": [
-      { "item": "amethyst worth 1000 gp", "quantity": 1 },
-      { "item": "very rare psionic essence", "quantity": 4 }
     ],
     "craftingTime": 24,
     "craftingChecks": 12,
