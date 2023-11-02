@@ -10874,5 +10874,123 @@
         }
       ]
     }
+  ],
+  "animal-enhancement": [
+    {
+      "name": "Manta Glide",
+      "traits": [
+        {
+          "name": "",
+          "description": "If you are not incapacitated or wearing heavy armor, you can extend fin-like membranes and glide. When you do so, you can perform the following aerial maneuvers:<ul><li>When you fall, you can move up to 5 feet horizontally for every 1 foot you descend.</li><li>When you would take damage from a fall, you can use your reaction to reduce the fall's damage to 0.</li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "Nimble Climber",
+      "traits": [
+        {
+          "name": "",
+          "description": "You have a climbing speed equal to your walking speed.",
+          "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+        }
+      ]
+    },
+    {
+      "name": "Tentacle",
+      "traits": [
+        {
+          "name": "",
+          "description": "You have a writhing tentacle in addition to your existing limbs. The tentacle can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
+        }
+      ]
+    },
+    {
+      "name": "Underwater Adaptation",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can breathe air and water, and you gain a swimming speed equal to your walking speed.",
+          "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+        }
+      ]
+    },
+    {
+      "name": "Acid Spit",
+      "prereqLevel": 5,
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can spray acid at a target you can see within 30 feet of you.  The target must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). The target takes 2d10 acid damage if they fail, or half as much if they succeed. The damage increases to 3d10 at 11th level and 4d10 at 17th level. You can use this trait a number of times equal to your Constitution modifier, and regain all expended uses when you finish a long rest.",
+          "uses": {
+            "id": "ED14E76F-EE9E-4F7E-875B-2BDA8545C63A",
+            "type": "derived",
+            "source": "score",
+            "score": "con",
+            "reset": 2
+          },
+          "actions": [
+            {
+              "id": "ED14E76F-EE9E-4F7E-875B-2BDA8545C63A",
+              "hasUses": true,
+              "name": "Acid Spit",
+              "type": "a",
+              "description": "You spray acid at a target you can see within 30 feet of you.  The target must make a DC {dc-con} Dexterity saving throw. The target takes {damage} acid damage if they fail, or half as much if they succeed.",
+              "variables": {
+                "damage": {
+                  "1": "1d10",
+                  "5": "2d10",
+                  "11": "3d10",
+                  "17": "4d10"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Carapace",
+      "prereqLevel": 5,
+      "traits": [
+        {
+          "name": "",
+          "description": "Your skin in places is covered by a thick shell. You gain a +1 to your AC when not wearing heavy armor.",
+          "granted": [
+            {
+              "type": "armor-bonus",
+              "amount": 1,
+              "limits": ["Unarmored", "Light", "Medium"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grappling Appendages",
+      "prereqLevel": 5,
+      "traits": [
+        {
+          "name": "",
+          "description": "You have two special appendages growing alongside with your arms, for which you choose the appearance. As an action, you can use one of them to grapple a creature. Each one is also a natural weapon, which you can use to make an unarmed strike with. If you hit, you deal bludgeoning damage equal to 1d8 + your Strength modifier. Immediately after you hit with an unarmed strike using one, you can try to grapple the target as a bonus action. These appendages are not dexterous enough to use weapons, magic weapons, and other specialized equipment.",
+          "actions": [
+            {
+              "id": "EFD8CF4D-8CD0-4941-8454-0226093EDE6D",
+              "type": "a",
+              "attack": true,
+              "name": "Grappling Appendage",
+              "damage": [
+                {
+                  "dice": 1,
+                  "die": 8,
+                  "type": "bludgeoning",
+                  "mod": true,
+                  "unarmed": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

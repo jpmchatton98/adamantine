@@ -149,7 +149,7 @@
   </thead>
   <tbody>
     <ng-container *ngFor="let data of bestiary.data">
-      <tr *ngIf="data.type.includes('beast')">
+      <!-- <tr *ngIf="data.type.includes('beast')">
         <td>
           <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a> (<a
             routerLink="/bestiary/{{ data.index }}"
@@ -167,8 +167,8 @@
         <td>
           {{ formatCr(data.cr) }} (Dire: {{ formatCr(round(data.cr + 2)) }})
         </td>
-      </tr>
-      <tr *ngIf="!data.type.includes('beast')">
+      </tr> -->
+      <tr>
         <td>
           <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
         </td>
