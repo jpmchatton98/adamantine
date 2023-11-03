@@ -113,20 +113,6 @@ export class BestiaryComponent implements OnInit {
           }
         }
         return false;
-      } else {
-        if (m.type.includes('beast')) {
-          return (
-            (this.sizeIndex[m.size] >= this.filters.size[0] &&
-              this.sizeIndex[m.size] <= this.filters.size[1]) ||
-            (this.sizeIndex[this.getDireSize(m.size)] >= this.filters.size[0] &&
-              this.sizeIndex[this.getDireSize(m.size)] <= this.filters.size[1])
-          );
-        } else {
-          return (
-            this.sizeIndex[m.size] >= this.filters.size[0] &&
-            this.sizeIndex[m.size] <= this.filters.size[1]
-          );
-        }
       }
     });
     if (this.filters.tags.length) {
@@ -168,19 +154,10 @@ export class BestiaryComponent implements OnInit {
       });
     }
     this.monsters = this.monsters.filter((m: any) => {
-      if (m.type.includes('beast')) {
-        return (
-          (m.cr >= this.crDecode(this.filters.cr[0]) &&
-            m.cr <= this.crDecode(this.filters.cr[1])) ||
-          (Math.round(m.cr + 2) >= this.crDecode(this.filters.cr[0]) &&
-            Math.round(m.cr + 2) <= this.crDecode(this.filters.cr[1]))
-        );
-      } else {
-        return (
-          m.cr >= this.crDecode(this.filters.cr[0]) &&
-          m.cr <= this.crDecode(this.filters.cr[1])
-        );
-      }
+      return (
+        m.cr >= this.crDecode(this.filters.cr[0]) &&
+        m.cr <= this.crDecode(this.filters.cr[1])
+      );
     });
   }
 
