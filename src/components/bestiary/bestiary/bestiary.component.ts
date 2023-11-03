@@ -113,6 +113,11 @@ export class BestiaryComponent implements OnInit {
           }
         }
         return false;
+      } else {
+        return (
+          this.sizeIndex[m.size] >= this.filters.size[0] &&
+          this.sizeIndex[m.size] <= this.filters.size[1]
+        );
       }
     });
     if (this.filters.tags.length) {
