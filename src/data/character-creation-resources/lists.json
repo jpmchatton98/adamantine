@@ -8443,6 +8443,10 @@
       "description": "You sing a mesmerizing dance, easing your companions' tired muscles and lifting their spirits. Affected creatures may use your spellcasting ability modifier in place of their relevant ability score on Strength and Dexterity ability checks and saving throws."
     },
     {
+      "name": "Greenwood Gavotte",
+      "description": "You sing an aggressive and lively dance, encouraging your allies to step into the thick of combat. When a targeted creature hits an enemy with a melee attack, the next melee attack against the same enemy has advantage."
+    },
+    {
       "name": "Lightning Lied",
       "description": "You sing a powerful ballad, which imbues your music with crackling energy. While you are singing this song, your concordant notes automatically deal maximum damage for their die size, and their damage type is changed to lightning."
     },
