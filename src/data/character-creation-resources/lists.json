@@ -8435,6 +8435,10 @@
       "description": "Your song conjures a sonorous toll of destruction, able to lay waste to your foes. While you are singing this song, targeted creatures are blessed with thunderous power. Once per round when they deal damage, each of these creatures may add thunder damage equal to your proficiency bonus to a single target."
     },
     {
+      "name": "Disquiet Dirge",
+      "description": "You sing a burrowing, dissonant melody, which causes self-doubt and discordance in the listener's mind. The first time each turn a targeted creature misses with an attack or fails a saving throw, it suffers psychic damage equal to your proficiency modifier."
+    },
+    {
       "name": "Eulogy of Endurance",
       "description": "You sing a stirring melody that bolsters your companions' will to fight on. Affected creatures may use your spellcasting ability modifier in place of their relevant ability score on Constitution and Wisdom ability checks and saving throws."
     },
@@ -8445,6 +8449,10 @@
     {
       "name": "Greenwood Gavotte",
       "description": "You sing an aggressive and lively dance, encouraging your allies to step into the thick of combat. When a targeted creature hits an enemy with a melee attack, the next melee attack against the same enemy has advantage."
+    },
+    {
+      "name": "Hellfire Hora",
+      "description": "You perform a lively dance step, which sets infernal flames licking at the dancers' feet until it envelops their entire bodies. Each targeted creature is wreathed in hellfire. The first time each turn they are hit by a melee attack, the attacker takes fire damage equal to your proficiency bonus."
     },
     {
       "name": "Lightning Lied",
@@ -8469,6 +8477,10 @@
     {
       "name": "Sanguine Sarabande",
       "description": "You sing a slow and sinister dance, sapping the life from your enemies. When a targeted creature is healed, it only recovers for half as much as it otherwise would."
+    },
+    {
+      "name": "Skeletons' Seungmu",
+      "description": "You perform a sinister-yet-sprightly tune, summoning hands of bone to aid your allies. Targeted creatures get advantage on their opportunity attacks, and when they deal damage to an enemy using a concordant note, skeletal hands erupt from the ground to seize the enemy. The attack's target must make a Strength saving throw or be grappled until the end of their next turn, with an escape DC equal to your spell save DC."
     },
     {
       "name": "Sorcerous Shanty",
