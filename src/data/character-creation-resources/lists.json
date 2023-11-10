@@ -4564,6 +4564,15 @@
               ]
             },
             {
+              "name": "Ironworks",
+              "traits": [
+                {
+                  "name": "",
+                  "description": "As an action, you can touch your holy symbol to a metal object that takes up no more than a 5-foot cube and instantly transfigure it into a shape of your choosing. In order to use this to create works that require skill or training, you must be proficient in the relevant set of artisan's tools."
+                }
+              ]
+            },
+            {
               "name": "Freedom from Chains",
               "traits": [
                 {
