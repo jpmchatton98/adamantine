@@ -1644,6 +1644,10 @@
         "granted": [{ "type": "unarmored", "base": 17 }]
       },
       {
+        "name": "Hero in a Half Shell",
+        "description": "When a feature requires you to be wearing armor in order to use it, you can use it while unarmored."
+      },
+      {
         "name": "Secondary Arms",
         "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
       }
@@ -13357,6 +13361,10 @@
         "granted": [{ "type": "unarmored", "base": 17 }]
       },
       {
+        "name": "Hero in a Half Shell",
+        "description": "When a feature requires you to be wearing armor in order to use it, you can use it while unarmored."
+      },
+      {
         "name": "Natural Warrior",
         "description": "You have proficiency in the Athletics and Intimidation skills.",
         "granted": [
@@ -14329,6 +14337,10 @@
             "description": "You withdraw into your shell. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
           }
         ]
+      },
+      {
+        "name": "Hero in a Half Shell",
+        "description": "When a feature requires you to be wearing armor in order to use it, you can use it while unarmored."
       },
       {
         "name": "Survival Instincts",
