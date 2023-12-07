@@ -6098,6 +6098,10 @@
       "description": "<strong>Item:</strong> a glove or gauntlet</p><p>This tiny magical launcher can be loaded with a Tiny object, including but not limited to; ball bearings, a vial of acid, or holy water. As an attack, the wearer can activate the launcher and make a ranged weapon attack at a target up to 30 feet away. The launcher can be reloaded as a bonus action."
     },
     {
+      "name": "Bane Weapon",
+      "description": "<strong>Item:</strong> a simple or martial weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it.</p><p>A bane weapon is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both weapons of dragon slaying and weapons of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.The weapon has 4 charges. When the wielder hits a creature belonging to the type, race, or group associated with the weapon, you can expend 1 charge and inflict an additional 2d6 damage of the weapon's type with the attack. The weapon regains 1d4 charges daily at dawn."
+    },
+    {
       "name": "Boots of False Crowds",
       "description": "<strong>Item:</strong> a pair of boots</p><p>While wearing these boots, the wearer can use a bonus action to click the boots' heels together, making its steps sound as if a large crowd is moving at its location. The sound produced by the boots matches with the current speed of the wearer, and this sound also interacts with its environment. For example, if the wearer is running across a wet surface, the boots will create the sound of a large crowd running accompanied by splashing water. However, the boots can't replicate vibrations or other tactile sensations that would normally result from an actual crowd of people. The wearer can use a bonus action to end this effect."
     },
