@@ -173,6 +173,10 @@ export class ScoreTabComponent implements OnInit {
 
     this.character.scores.rolled = this.scores;
 
+    if (!this.character.scores.base) {
+      this.character.scores.base = {};
+    }
+
     this.character.scores.base.str = this.str[0];
     this.character.scores.base.dex = this.dex[0];
     this.character.scores.base.con = this.con[0];
