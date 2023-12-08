@@ -1,0 +1,19 @@
+.class-link, div > .class-link {
+    display: block;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.header-link {
+    text-align: center;
+}
+
+.tf-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 5px;
+}

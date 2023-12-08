@@ -1,5 +1,12 @@
-<div *ngFor="let tf of transformations">
-    <a routerLink="/transformation/{{ tf.index }}" routerLinkActive="active" ariaCurrentWhenActive="page">
-        {{ tf.name }}
+<div class="tf-body">
+  <div *ngFor="let tf of transformations">
+    <a
+      class="class-link header-link"
+      routerLink="/transformation/{{ tf.index }}"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      {{ tf.name }}
     </a>
+  </div>
 </div>
