@@ -400,10 +400,10 @@ export class CharacterSheetService {
     unconscious: 'bed',
   };
   public aoeIcons = {
+    line: 'ray-start',
     cone: 'cone',
     cube: 'cube-outline',
     cylinder: 'cylinder',
-    line: 'ray-start',
     radius: 'radius-outline',
     sphere: 'sphere',
   };

@@ -325,29 +325,50 @@ export class SpellsComponent implements OnInit {
             mod += this.getModifier(ability);
           }
 
-          return `${dice}d${d.die} ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
-            mod ? Math.abs(mod) : ''
-          } ${d.type
-            .map(
-              (t: string) =>
-                '<span title="' +
-                t +
-                '" class="damage-icon mdi mdi-' +
-                this.characterSheetService.damageIcons[t] +
-                '"></span>'
-            )
-            .join(', ')}`;
+          if (d.dice) {
+            return `${dice}d${d.die} ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
+              mod ? Math.abs(mod) : ''
+            } ${d.type
+              .map(
+                (t: string) =>
+                  '<span title="' +
+                  t +
+                  '" class="damage-icon mdi mdi-' +
+                  this.characterSheetService.damageIcons[t] +
+                  '"></span>'
+              )
+              .join(', ')}`;
+          } else if (d.amount) {
+            return `${d.amount} ${d.type
+              .map(
+                (t: string) =>
+                  '<span title="' +
+                  t +
+                  '" class="damage-icon mdi mdi-' +
+                  this.characterSheetService.damageIcons[t] +
+                  '"></span>'
+              )
+              .join(', ')}`;
+          }
         } else {
           let mod = d.amount ?? 0;
           if (d.addAbility) {
             mod += this.getModifier(ability);
           }
 
-          return `${dice}d${d.die}  ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
-            mod ? Math.abs(mod) : ''
-          }<span  title="${d.type}" class="damage-icon mdi mdi-${
-            this.characterSheetService.damageIcons[d.type]
-          }"></span>`;
+          if (d.dice) {
+            return `${dice}d${d.die}  ${mod > 0 ? '+' : mod < 0 ? '-' : ''} ${
+              mod ? Math.abs(mod) : ''
+            }<span  title="${d.type}" class="damage-icon mdi mdi-${
+              this.characterSheetService.damageIcons[d.type]
+            }"></span>`;
+          } else if (d.amount) {
+            return `${d.amount} <span  title="${
+              d.type
+            }" class="damage-icon mdi mdi-${
+              this.characterSheetService.damageIcons[d.type]
+            }"></span>`;
+          }
         }
       });
 

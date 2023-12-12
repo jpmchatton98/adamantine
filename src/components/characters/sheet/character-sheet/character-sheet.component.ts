@@ -797,12 +797,16 @@ export class CharacterSheetComponent implements OnInit {
   public getDamageString(damageData: any[], ability: string) {
     return damageData
       .map((d: any, index) => {
-        if (index === 0) {
-          return `${d.dice}d${d.die} ${this.formatModifierSplit(
-            this.modifierNumber(ability)
-          )} ${this.formatDamageTypes(d.types)}`;
-        } else {
-          return `${d.dice}d${d.die} ${this.formatDamageTypes(d.types)}`;
+        if (d.dice) {
+          if (index === 0) {
+            return `${d.dice}d${d.die} ${this.formatModifierSplit(
+              this.modifierNumber(ability)
+            )} ${this.formatDamageTypes(d.types)}`;
+          } else {
+            return `${d.dice}d${d.die} ${this.formatDamageTypes(d.types)}`;
+          }
+        } else if (d.amount) {
+          return `${d.amount} ${this.formatDamageTypes(d.types)}`;
         }
       })
       .join(' + ');
