@@ -359,8 +359,8 @@ export class BuilderChoiceComponent implements OnInit {
                     let isRace =
                       this.characterBuilderService.characterIsRace(race);
                     if (isRace) {
-                      if (prereq.subrace) {
-                        if (prereq.subrace[i]) {
+                      if (prereq.subrace?.length) {
+                        if (prereq.subrace[i]?.length) {
                           switch (typeof prereq.subrace[i]) {
                             case 'string':
                               return this.characterBuilderService.characterIsSubace(

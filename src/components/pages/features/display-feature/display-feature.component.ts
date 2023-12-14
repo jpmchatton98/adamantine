@@ -53,8 +53,8 @@ export class DisplayFeatureComponent {
       }
 
       let racePrereq = prereq.race[i];
-      if (prereq.subrace) {
-        if (prereq.subrace[i]) {
+      if (prereq.subrace?.length) {
+        if (prereq.subrace[i]?.length) {
           switch (typeof prereq.subrace[i]) {
             case 'string':
               racePrereq += ` (${prereq.subrace[i]})`;

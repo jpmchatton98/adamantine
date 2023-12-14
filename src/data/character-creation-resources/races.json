@@ -970,7 +970,7 @@
     "lifespan": 80,
     "height": [4, 7],
     "weight": [400, 500],
-    "category": "Insectoid",
+    "category": "Extraplanar",
     "type": "Fiend",
     "size": {
       "id": "0F97AA6C-12D2-478D-B1C2-8644B52447E7",
@@ -1200,7 +1200,7 @@
     "lifespan": 200,
     "height": [4, 5],
     "weight": [125, 175],
-    "category": "Insectoid",
+    "category": "Fey",
     "type": "Fey",
     "size": 0,
     "speed": 30,
@@ -1626,7 +1626,7 @@
     "lifespan": 30,
     "height": [6, 9],
     "weight": [350, 500],
-    "category": "Insectoid",
+    "category": "Fey",
     "type": "Humanoid",
     "size": {
       "id": "970252B5-FCEC-4F4B-96C4-0AC45DBBD631",
@@ -5300,6 +5300,224 @@
         ]
       },
       {
+        "name": "Flame",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Firey Nature",
+            "description": "You have resistance to fire damage.  In addition, you can touch a flammable object that isn't being worn or carried by another creature to set it alight.",
+            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+          },
+          {
+            "name": "Burning Gaze",
+            "description": "Your heritage burns brightest in your eyes. If a creature starts its turn within 30 feet of you and the two of you can see each other, you can use your reaction to force the creature to make a Constitution saving throw (DC 8 + your proficiency bonus + your Charisma modifier). On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again.",
+            "uses": {
+              "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
+                "hasUses": true,
+                "type": "r",
+                "name": "Burning Gaze",
+                "description": "If a creature starts its turn within 30 feet of you and the two of you can see each other, you can force the creature to make a DC {dc-cha} Constitution saving throw. On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "High",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Arcane Gift",
+            "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
+            "choices": {
+              "id": "CB5C39B2-EFB1-44A0-9212-11C8E81E9352",
+              "type": "spell",
+              "list": "arcane",
+              "level": 0,
+              "ability": "int"
+            }
+          },
+          {
+            "name": "Polyglot",
+            "description": "You can speak, read, and write one additional language of your choice.",
+            "choices": {
+              "id": "BB0C0DC9-E7F7-433B-84FD-D1DAEE9F6DBC",
+              "type": "language"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Pallid",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Incisive Sense",
+            "description": "You have advantage on Investigation and Insight checks.",
+            "granted": [
+              {
+                "type": "skill-advantage",
+                "options": ["Investigation", "Insight"]
+              }
+            ]
+          },
+          {
+            "name": "Blessing of the Moonweaver",
+            "description": "You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells.",
+            "granted": [
+              { "type": "spell", "options": ["Light"], "ability": "wis" },
+              {
+                "type": "spell",
+                "options": ["Sleep"],
+                "prereq": 3,
+                "ability": "wis"
+              },
+              {
+                "type": "spell",
+                "options": ["Invisibility"],
+                "prereq": 5,
+                "ability": "wis"
+              }
+            ],
+            "uses": [
+              {
+                "id": "9BF96887-93F9-488D-B087-28C1C6D45769",
+                "type": "fixed",
+                "amount": 1,
+                "prereq": 3,
+                "reset": 2
+              },
+              {
+                "id": "BCBEB60F-8C7E-4CBE-8D2A-A338282C14D3",
+                "type": "fixed",
+                "amount": 1,
+                "prereq": 5,
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rock",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Powerful Build",
+            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
+          },
+          {
+            "name": "Rock Climber",
+            "description": "You have a climbing speed equal to your walking speed.",
+            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+          },
+          {
+            "name": "Resilient",
+            "description": "You have advantage on saving throws against disease.",
+            "granted": [
+              { "type": "condition-advantage", "options": ["Disease"] }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea",
+        "asis": [{ "con": 1 }],
+        "traits": [
+          {
+            "name": "Amphibious",
+            "description": "You have a swimming speed equal to your walking speed, and you can breathe air and water.",
+            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+          },
+          {
+            "name": "Friend of the Sea",
+            "description": "Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed."
+          },
+          {
+            "name": "Wave Speaker",
+            "description": "You can speak, read, and write Aquan.",
+            "granted": [{ "type": "language", "options": ["Aquan"] }]
+          }
+        ]
+      },
+      {
+        "name": "Snow",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Stargazer",
+            "description": "You have spent your life studying the stars. If you can see the night sky, you can cast the Augury spell without expending a spell slot or material components. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "granted": [
+              { "type": "spell", "options": ["Augury"], "ability": "wis" }
+            ],
+            "uses": {
+              "id": "AABC2E55-6415-4F1B-BB2D-BD963BC1CA49",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            }
+          },
+          {
+            "name": "Eye for Detail",
+            "description": "You gain advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to discern the details of unmoving objects."
+          }
+        ]
+      },
+      {
+        "name": "Urban",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Agile Scaler",
+            "description": "You have a climbing speed equal to your walking speed.",
+            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+          },
+          {
+            "name": "Mask of the City",
+            "description": "You can attempt to hide even when you are only lightly obscured by crowds, smoke, structures, and other urban features."
+          },
+          {
+            "name": "Streetwise",
+            "description": "You gain proficiency in one of the following skills of your choice: Deception, Intimidation, Persuasion, Sleight of Hand, Society, or Stealth.",
+            "choices": {
+              "id": "C88E556E-B296-4940-B7E3-5B6FFECF4825",
+              "type": "skill",
+              "level": 1,
+              "limits": [
+                "Deception",
+                "Intimidation",
+                "Persuasion",
+                "Sleight of Hand",
+                "Society",
+                "Stealth"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Wood",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Fleet of Foot",
+            "description": "Your base walking speed increases to 35 feet.",
+            "granted": [{ "type": "speed-bonus", "amount": 5 }]
+          },
+          {
+            "name": "Mask of the Wild",
+            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          }
+        ]
+      },
+      {
         "name": "Drow",
         "asis": [{ "cha": 1 }],
         "traits": [
@@ -5474,154 +5692,6 @@
         ]
       },
       {
-        "name": "Flame",
-        "asis": [{ "wis": 1 }],
-        "traits": [
-          {
-            "name": "Firey Nature",
-            "description": "You have resistance to fire damage.  In addition, you can touch a flammable object that isn't being worn or carried by another creature to set it alight.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
-          },
-          {
-            "name": "Burning Gaze",
-            "description": "Your heritage burns brightest in your eyes. If a creature starts its turn within 30 feet of you and the two of you can see each other, you can use your reaction to force the creature to make a Constitution saving throw (DC 8 + your proficiency bonus + your Charisma modifier). On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again.",
-            "uses": {
-              "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
-              "type": "fixed",
-              "amount": 1,
-              "reset": 2
-            },
-            "actions": [
-              {
-                "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
-                "hasUses": true,
-                "type": "r",
-                "name": "Burning Gaze",
-                "description": "If a creature starts its turn within 30 feet of you and the two of you can see each other, you can force the creature to make a DC {dc-cha} Constitution saving throw. On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "High",
-        "asis": [{ "int": 1 }],
-        "traits": [
-          {
-            "name": "Arcane Gift",
-            "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
-            "choices": {
-              "id": "CB5C39B2-EFB1-44A0-9212-11C8E81E9352",
-              "type": "spell",
-              "list": "arcane",
-              "level": 0,
-              "ability": "int"
-            }
-          },
-          {
-            "name": "Polyglot",
-            "description": "You can speak, read, and write one additional language of your choice.",
-            "choices": {
-              "id": "BB0C0DC9-E7F7-433B-84FD-D1DAEE9F6DBC",
-              "type": "language"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Pallid",
-        "asis": [{ "wis": 1 }],
-        "traits": [
-          {
-            "name": "Incisive Sense",
-            "description": "You have advantage on Investigation and Insight checks.",
-            "granted": [
-              {
-                "type": "skill-advantage",
-                "options": ["Investigation", "Insight"]
-              }
-            ]
-          },
-          {
-            "name": "Blessing of the Moonweaver",
-            "description": "You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells.",
-            "granted": [
-              { "type": "spell", "options": ["Light"], "ability": "wis" },
-              {
-                "type": "spell",
-                "options": ["Sleep"],
-                "prereq": 3,
-                "ability": "wis"
-              },
-              {
-                "type": "spell",
-                "options": ["Invisibility"],
-                "prereq": 5,
-                "ability": "wis"
-              }
-            ],
-            "uses": [
-              {
-                "id": "9BF96887-93F9-488D-B087-28C1C6D45769",
-                "type": "fixed",
-                "amount": 1,
-                "prereq": 3,
-                "reset": 2
-              },
-              {
-                "id": "BCBEB60F-8C7E-4CBE-8D2A-A338282C14D3",
-                "type": "fixed",
-                "amount": 1,
-                "prereq": 5,
-                "reset": 2
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rock",
-        "asis": [{ "str": 1 }],
-        "traits": [
-          {
-            "name": "Powerful Build",
-            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
-          },
-          {
-            "name": "Rock Climber",
-            "description": "You have a climbing speed equal to your walking speed.",
-            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
-          },
-          {
-            "name": "Resilient",
-            "description": "You have advantage on saving throws against disease.",
-            "granted": [
-              { "type": "condition-advantage", "options": ["Disease"] }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Sea",
-        "asis": [{ "con": 1 }],
-        "traits": [
-          {
-            "name": "Amphibious",
-            "description": "You have a swimming speed equal to your walking speed, and you can breathe air and water.",
-            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
-          },
-          {
-            "name": "Friend of the Sea",
-            "description": "Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed."
-          },
-          {
-            "name": "Wave Speaker",
-            "description": "You can speak, read, and write Aquan.",
-            "granted": [{ "type": "language", "options": ["Aquan"] }]
-          }
-        ]
-      },
-      {
         "name": "Shadar-Kai",
         "asis": [{ "con": 1 }],
         "traits": [
@@ -5653,76 +5723,6 @@
                 }
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Snow",
-        "asis": [{ "wis": 1 }],
-        "traits": [
-          {
-            "name": "Stargazer",
-            "description": "You have spent your life studying the stars. If you can see the night sky, you can cast the Augury spell without expending a spell slot or material components. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
-            "granted": [
-              { "type": "spell", "options": ["Augury"], "ability": "wis" }
-            ],
-            "uses": {
-              "id": "AABC2E55-6415-4F1B-BB2D-BD963BC1CA49",
-              "type": "derived",
-              "source": "proficiency",
-              "reset": 2
-            }
-          },
-          {
-            "name": "Eye for Detail",
-            "description": "You gain advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to discern the details of unmoving objects."
-          }
-        ]
-      },
-      {
-        "name": "Urban",
-        "asis": [{ "int": 1 }],
-        "traits": [
-          {
-            "name": "Agile Scaler",
-            "description": "You have a climbing speed equal to your walking speed.",
-            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
-          },
-          {
-            "name": "Mask of the City",
-            "description": "You can attempt to hide even when you are only lightly obscured by crowds, smoke, structures, and other urban features."
-          },
-          {
-            "name": "Streetwise",
-            "description": "You gain proficiency in one of the following skills of your choice: Deception, Intimidation, Persuasion, Sleight of Hand, Society, or Stealth.",
-            "choices": {
-              "id": "C88E556E-B296-4940-B7E3-5B6FFECF4825",
-              "type": "skill",
-              "level": 1,
-              "limits": [
-                "Deception",
-                "Intimidation",
-                "Persuasion",
-                "Sleight of Hand",
-                "Society",
-                "Stealth"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "name": "Wood",
-        "asis": [{ "wis": 1 }],
-        "traits": [
-          {
-            "name": "Fleet of Foot",
-            "description": "Your base walking speed increases to 35 feet.",
-            "granted": [{ "type": "speed-bonus", "amount": 5 }]
-          },
-          {
-            "name": "Mask of the Wild",
-            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
           }
         ]
       }
@@ -8298,6 +8298,156 @@
         ]
       },
       {
+        "name": "Flame",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Burning Gaze",
+            "description": "Your heritage burns brightest in your eyes. If a creature starts its turn within 30 feet of you and the two of you can see each other, you can use your reaction to force the creature to make a Constitution saving throw (DC 8 + your proficiency bonus + your Charisma modifier). On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again.",
+            "uses": {
+              "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
+                "hasUses": true,
+                "type": "r",
+                "name": "Burning Gaze",
+                "description": "If a creature starts its turn within 30 feet of you and the two of you can see each other, you can force the creature to make a DC {dc-cha} Constitution saving throw. On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "High",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Arcane Gift",
+            "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
+            "choices": {
+              "id": "CB5C39B2-EFB1-44A0-9212-11C8E81E9352",
+              "type": "spell",
+              "list": "arcane",
+              "level": 0,
+              "ability": "int"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Pallid",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Blessing of the Moonweaver",
+            "description": "You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells.",
+            "granted": [
+              { "type": "spell", "options": ["Light"], "ability": "wis" },
+              {
+                "type": "spell",
+                "options": ["Sleep"],
+                "prereq": 3,
+                "ability": "wis"
+              },
+              {
+                "type": "spell",
+                "options": ["Invisibility"],
+                "prereq": 5,
+                "ability": "wis"
+              }
+            ],
+            "uses": [
+              {
+                "id": "D47D20DE-1125-4ABA-9D3F-E19DF5390772",
+                "type": "fixed",
+                "amount": 1,
+                "prereq": 3,
+                "reset": 2
+              },
+              {
+                "id": "D2E23C62-607E-4881-A311-0CBCA4212C9B",
+                "type": "fixed",
+                "amount": 1,
+                "prereq": 5,
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rock",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Powerful Build",
+            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
+          },
+          {
+            "name": "Rock Climber",
+            "description": "You have a climbing speed equal to your walking speed.",
+            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+          }
+        ]
+      },
+      {
+        "name": "Sea",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Amphibious",
+            "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
+            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+          },
+          {
+            "name": "Friend of the Sea",
+            "description": "Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed."
+          }
+        ]
+      },
+      {
+        "name": "Snow",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Stargazer",
+            "description": "You have spent your life studying the stars. If you can see the night sky, you can cast the Augury spell without expending a spell slot or material components. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "22B2E540-4AD9-4859-85ED-F54055AB45E8",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            },
+            "granted": [{ "type": "spell", "options": ["Augury"], "level": 1 }]
+          }
+        ]
+      },
+      {
+        "name": "Urban",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Mask of the City",
+            "description": "You can attempt to hide even when you are only lightly obscured by crowds, smoke, structures, and other urban features."
+          }
+        ]
+      },
+      {
+        "name": "Wood",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Mask of the Wild",
+            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          }
+        ]
+      },
+      {
         "name": "Drow",
         "asis": [],
         "traits": [
@@ -8467,119 +8617,6 @@
         ]
       },
       {
-        "name": "Flame",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Burning Gaze",
-            "description": "Your heritage burns brightest in your eyes. If a creature starts its turn within 30 feet of you and the two of you can see each other, you can use your reaction to force the creature to make a Constitution saving throw (DC 8 + your proficiency bonus + your Charisma modifier). On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again.",
-            "uses": {
-              "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
-              "type": "fixed",
-              "amount": 1,
-              "reset": 2
-            },
-            "actions": [
-              {
-                "id": "AB5BBCD5-201C-4236-A7A5-CEB50C85DA30",
-                "hasUses": true,
-                "type": "r",
-                "name": "Burning Gaze",
-                "description": "If a creature starts its turn within 30 feet of you and the two of you can see each other, you can force the creature to make a DC {dc-cha} Constitution saving throw. On a failed save, the creature is blinded for 1 minute and takes 3d6 fire damage. It can repeat the saving throw at the end of each of its turns to end the blinded effect. The effect also ends if the creature starts its turn more than 30 feet away from you.</p><p>You can use this ability once, after which you must complete a long rest before doing so again."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "High",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Arcane Gift",
-            "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
-            "choices": {
-              "id": "CB5C39B2-EFB1-44A0-9212-11C8E81E9352",
-              "type": "spell",
-              "list": "arcane",
-              "level": 0,
-              "ability": "int"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Pallid",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Blessing of the Moonweaver",
-            "description": "You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells.",
-            "granted": [
-              { "type": "spell", "options": ["Light"], "ability": "wis" },
-              {
-                "type": "spell",
-                "options": ["Sleep"],
-                "prereq": 3,
-                "ability": "wis"
-              },
-              {
-                "type": "spell",
-                "options": ["Invisibility"],
-                "prereq": 5,
-                "ability": "wis"
-              }
-            ],
-            "uses": [
-              {
-                "id": "D47D20DE-1125-4ABA-9D3F-E19DF5390772",
-                "type": "fixed",
-                "amount": 1,
-                "prereq": 3,
-                "reset": 2
-              },
-              {
-                "id": "D2E23C62-607E-4881-A311-0CBCA4212C9B",
-                "type": "fixed",
-                "amount": 1,
-                "prereq": 5,
-                "reset": 2
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rock",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Powerful Build",
-            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
-          },
-          {
-            "name": "Rock Climber",
-            "description": "You have a climbing speed equal to your walking speed.",
-            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
-          }
-        ]
-      },
-      {
-        "name": "Sea",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Amphibious",
-            "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
-            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
-          },
-          {
-            "name": "Friend of the Sea",
-            "description": "Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed."
-          }
-        ]
-      },
-      {
         "name": "Shadar-Kai",
         "asis": [],
         "traits": [
@@ -8604,43 +8641,6 @@
                 }
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Snow",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Stargazer",
-            "description": "You have spent your life studying the stars. If you can see the night sky, you can cast the Augury spell without expending a spell slot or material components. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
-            "uses": {
-              "id": "22B2E540-4AD9-4859-85ED-F54055AB45E8",
-              "type": "derived",
-              "source": "proficiency",
-              "reset": 2
-            },
-            "granted": [{ "type": "spell", "options": ["Augury"], "level": 1 }]
-          }
-        ]
-      },
-      {
-        "name": "Urban",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Mask of the City",
-            "description": "You can attempt to hide even when you are only lightly obscured by crowds, smoke, structures, and other urban features."
-          }
-        ]
-      },
-      {
-        "name": "Wood",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Mask of the Wild",
-            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
           }
         ]
       }
@@ -9525,7 +9525,7 @@
     "lifespan": 60,
     "height": [6, 7],
     "weight": [130, 160],
-    "category": "Insectoid",
+    "category": "Animalistic",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -11373,7 +11373,19 @@
     "speed": 40,
     "darkvision": 60,
     "languages": ["Common", "Jiganti"],
-    "traits": [],
+    "traits": [
+      {
+        "name": "Huge Stature",
+        "description": "Your massive stature and the brutal reputation of your race gives others pause.  You have proficiency in the Intimidation skill.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Intimidation"],
+            "level": 1
+          }
+        ]
+      }
+    ],
     "subraces": [
       {
         "name": "Cyclops",
@@ -13385,7 +13397,7 @@
     "lifespan": 30,
     "height": [5, 7],
     "weight": [125, 375],
-    "category": "Insectoid",
+    "category": "Animalistic",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -13428,7 +13440,7 @@
     "lifespan": 30,
     "height": [5, 7],
     "weight": [175, 250],
-    "category": "Insectoid",
+    "category": "Animalistic",
     "type": "Humanoid",
     "size": 0,
     "speed": 30,
@@ -14436,13 +14448,13 @@
         "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
       },
       {
-        "name": "Blood Frenzy",
+        "name": "Blood in the Water",
         "description": "You can sense the general direction of a creature below half of its maximum hit points that is within 100 feet of you. Furthermore, when a creature you damaged on your last turn ends its turn further away from you than it started, you can use your reaction to move up to 30 feet closer to it.",
         "actions": [
           {
             "id": "2DF6F57B-E7DE-489D-9415-2331D38957C2",
             "type": "r",
-            "name": "Blood Frenzy",
+            "name": "Blood in the Water",
             "description": "When a creature you damaged on your last turn ends its turn further away from you than it started, you can move up to 30 feet closer to it."
           }
         ]
@@ -15324,7 +15336,7 @@
     "lifespan": 10,
     "height": [1, 2],
     "weight": [1, 5],
-    "category": "Insectoid",
+    "category": "Fey",
     "type": "Fey",
     "size": -2,
     "speed": 20,

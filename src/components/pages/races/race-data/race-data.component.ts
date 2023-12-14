@@ -64,7 +64,13 @@ export class RaceDataComponent implements OnInit {
           asi_string += ' and ';
         }
 
-        asi_string += ` one other ability score of your choice increases by 1`;
+        if (asi.amount < 0) {
+          asi_string += ` one other ability score of your choice decreases by ${Math.abs(
+            asi.amount
+          )}`;
+        } else {
+          asi_string += ` one other ability score of your choice increases by ${asi.amount}`;
+        }
       } else {
         for (let i = 0; i < Object.keys(asi).length; i++) {
           const asi_key = Object.keys(asi)[i];

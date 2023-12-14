@@ -2812,9 +2812,11 @@
           "mummy",
           "reborn",
           "skeleton",
+          "tiefling",
           "wight",
           "zombie"
-        ]
+        ],
+        "subrace": [[], [], [], [], [], [], [], [], ["Orcusian"], [], []]
       }
     ],
     "type": "racial",
@@ -3795,7 +3797,7 @@
     "name": "Blood Frenzy",
     "prereq": [
       {
-        "race": ["praedaren"]
+        "race": ["praedaren", "sahuagin"]
       }
     ],
     "type": "racial",
