@@ -39,8 +39,6 @@
   ],
   "language": [
     "Abyssal",
-    "Aquan",
-    "Auran",
     "Carcerin",
     "Celestial",
     "Common",
@@ -56,7 +54,6 @@
     "Grung",
     "Hadozee",
     "Halfling",
-    "Ignan",
     "Infernal",
     "Jiganti",
     "Kenderspeak",
@@ -66,8 +63,8 @@
     "Quori",
     "Squeak Speak",
     "Sylvan",
-    "Terran",
-    "Vedalken"
+    "Vedalken",
+    "Undercommmon"
   ],
   "tool": [
     "Air Vehicles",

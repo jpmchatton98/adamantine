@@ -14,13 +14,15 @@ import { LoreBaseComponent } from './lore-base/lore-base.component';
 import { LoreAstralComponent } from './lore-astral/lore-astral.component';
 import { LoreSeaComponent } from './lore-sea/lore-sea.component';
 import { LorePantheonsComponent } from './lore-pantheons/lore-pantheons.component';
+import { LoreLanguagesComponent } from './lore-languages/lore-languages.component';
 
 @NgModule({
   declarations: [
     LoreBaseComponent,
     LoreAstralComponent,
     LoreSeaComponent,
-    LorePantheonsComponent
+    LorePantheonsComponent,
+    LoreLanguagesComponent
   ],
   imports: [
     CommonModule,
