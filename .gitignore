@@ -43,3 +43,4 @@ testem.log
 Thumbs.db
 src/data/*.py
 src/data/character-creation-resources/*.py
+src/server.js
