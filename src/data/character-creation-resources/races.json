@@ -11046,7 +11046,7 @@
     "name": "Merfolk"
   },
   {
-    "description": "Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.\n",
+    "description": "Minotaurs are barrel-chested humanoids with heads resembling those of large land mammals, usually bulls, but they can also be those of various ruminants including deer, elk, moose, caribou, antelopes, bison, or even giraffes. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.\n",
     "asis": [{ "str": 1 }, { "wis": 1 }],
     "maturity": 18,
     "lifespan": 200,
@@ -11208,7 +11208,7 @@
       },
       {
         "name": "Wildhorn",
-        "description": "You are in touch with your bull's ancestry, and retain some of the power and grace of the wilds.",
+        "description": "You are in touch with your animal ancestry, and retain some of the power and grace of the wilds.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {

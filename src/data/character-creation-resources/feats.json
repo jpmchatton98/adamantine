@@ -2686,7 +2686,8 @@
     "name": "Beast Magic",
     "prereq": [
       {
-        "race": ["firbolg", "shifter"]
+        "race": ["firbolg", "minotaur", "shifter"],
+        "subrace": [[], ["wildhorn"], []]
       }
     ],
     "type": "racial",
@@ -3749,7 +3750,7 @@
     ]
   },
   {
-    "name": "Bull's Fury",
+    "name": "Baphomet's Fury",
     "prereq": [
       {
         "race": ["minotaur"]
@@ -3771,7 +3772,7 @@
     }
   },
   {
-    "name": "Bull's Constitution",
+    "name": "Wild Constitution",
     "prereq": [
       {
         "race": ["minotaur"]
