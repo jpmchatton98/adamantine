@@ -38,33 +38,33 @@ export class CharacterSheetService {
       name: 'Athletics',
       score: 'str',
       description:
-        'Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming.',
+        'Your Strength (Athletics) check covers feats of physical strength, including climbing, swimming, and jumping.  It is also used when you attempt to grapple, shove, or trip a creature.',
     },
     {
       name: 'Brawn',
       score: 'str',
       skill: 'Intimidation',
       description:
-        'Your Strength (Intimidation) check - referred to as a Strength (Brawn) check - covers influencing a creature purely through threats of physical violence, or through sheer might.',
+        'Your Strength (Intimidation) check - referred to as a Strength (Brawn) check - covers influencing a creature purely through imposing stature, threats of physical violence, or inducing pain.',
     },
     {
       name: 'Endurance',
       score: 'con',
       description:
-        'Your Constitution (Endurance) check covers attempts to resist the weaknesses of the mortal form.  You make an Endurance check when traveling long distances or attempting to go without food, water, or air.',
+        'Your Constitution (Endurance) check covers attempts to resist the weaknesses of the mortal form, and push beyond your physical limits.  You make an Endurance check when traveling long distances or attempting to go without food, water, air, or sleep.',
     },
     {
       name: 'Etiquette',
       score: 'cha',
       skill: 'Society',
       description:
-        'Your Charisma (Society) check - referred to as a Charisma (Etiquette) check - measures your ability to interact with others in the manners of local high society, including the etiquette of your actions.  You may need to make this check to seem as though you belong in a party of nobles or a meeting of crime lords.',
+        'Your Charisma (Society) check - referred to as a Charisma (Etiquette) check - measures your ability to interact with others in the manners of local high society, including the etiquette of your actions.  You may need to make this check to seem as though you belong in a party of nobles or a meeting of crime bosses.',
     },
     {
       name: 'Deception',
       score: 'cha',
       description:
-        'Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies.',
+        'Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies, though bending the truth is often easier than fabricating a falsehood.',
     },
     {
       name: 'History',
@@ -75,6 +75,8 @@ export class CharacterSheetService {
     {
       name: 'Initiative',
       score: 'dex',
+      description:
+        'Your Dexterity (Initiative) check measures how quickly you react to danger.  It is most often called for at the start of combat to determine the turn order.',
     },
     {
       name: 'Insight',

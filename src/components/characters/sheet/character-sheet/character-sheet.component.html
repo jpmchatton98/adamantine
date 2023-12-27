@@ -368,56 +368,63 @@
         <nz-tabset [nzAnimated]="false">
           <nz-tab nzTitle="Skills">
             <div class="skill-list">
-              <div
-                class="skill"
-                *ngFor="let skill of skills"
-                (click)="skillModalVisible = true; skillModalItem = skill"
-              >
-                <div class="header">
-                  <div class="prof">
-                    <div
-                      *ngIf="getSkillProfLevel(skill) === 0"
-                      title="Not Proficient"
-                      class="mdi mdi-circle-outline"
-                    ></div>
-                    <div
-                      *ngIf="getSkillProfLevel(skill) === 0.5"
-                      title="Half Proficient"
-                      class="mdi mdi-circle-half-full"
-                    ></div>
-                    <div
-                      *ngIf="getSkillProfLevel(skill) === 1"
-                      title="Proficient"
-                      class="mdi mdi-circle"
-                    ></div>
-                    <div
-                      *ngIf="getSkillProfLevel(skill) === 2"
-                      title="Expertise"
-                      class="mdi mdi-circle-slice-8"
-                    ></div>
+              <ng-container *ngFor="let skill of skills">
+                <div
+                  *ngIf="skill.name !== 'Initiative'"
+                  class="skill"
+                  (click)="skillModalVisible = true; skillModalItem = skill"
+                >
+                  <div class="header">
+                    <div class="prof">
+                      <div
+                        *ngIf="getSkillProfLevel(skill) === 0"
+                        title="Not Proficient"
+                        class="mdi mdi-circle-outline"
+                      ></div>
+                      <div
+                        *ngIf="getSkillProfLevel(skill) === 0.5"
+                        title="Half Proficient"
+                        class="mdi mdi-circle-half-full"
+                      ></div>
+                      <div
+                        *ngIf="getSkillProfLevel(skill) === 1"
+                        title="Proficient"
+                        class="mdi mdi-circle"
+                      ></div>
+                      <div
+                        *ngIf="getSkillProfLevel(skill) === 2"
+                        title="Expertise"
+                        class="mdi mdi-circle-slice-8"
+                      ></div>
+                    </div>
+                    <div class="name">
+                      <ng-container *ngIf="!skill.skill; else pseudoSkill">
+                        {{ skill.name }}
+                      </ng-container>
+                      <ng-template #pseudoSkill>
+                        <em>{{ skill.name }}</em>
+                      </ng-template>
+                      <span class="score"
+                        >({{ capitalize(getSkillScore(skill)) }})</span
+                      >
+                    </div>
                   </div>
-                  <div class="name">
-                    {{ skill.name }}
-                    <span class="score"
-                      >({{ capitalize(getSkillScore(skill)) }})</span
-                    >
+                  <div class="value" *ngIf="getSetting('passive') === 0">
+                    <div class="mod">
+                      {{ skillMod(skill) }}
+                    </div>
+                    <div class="passive">({{ getPassiveMod(skill) }})</div>
+                  </div>
+                  <div class="value-bar" *ngIf="getSetting('passive') === 1">
+                    <div class="mod">
+                      {{ skillMod(skill) }}
+                    </div>
+                    <div class="passive">
+                      {{ getPassiveMod(skill) }}
+                    </div>
                   </div>
                 </div>
-                <div class="value" *ngIf="getSetting('passive') === 0">
-                  <div class="mod">
-                    {{ skillMod(skill) }}
-                  </div>
-                  <div class="passive">({{ getPassiveMod(skill) }})</div>
-                </div>
-                <div class="value-bar" *ngIf="getSetting('passive') === 1">
-                  <div class="mod">
-                    {{ skillMod(skill) }}
-                  </div>
-                  <div class="passive">
-                    {{ getPassiveMod(skill) }}
-                  </div>
-                </div>
-              </div>
+              </ng-container>
               <nz-modal
                 [(nzVisible)]="skillModalVisible"
                 [nzTitle]="skillModalItem?.name"
