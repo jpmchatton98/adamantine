@@ -178,7 +178,12 @@ export class ClassTableComponent {
     if (column.type === 'listed') {
       value = feature.listed.maximums[level - 1];
     } else if (column.type === 'uses') {
-      value = feature.uses.amount[level - 1];
+      if (!Array.isArray(feature.uses)) {
+        value = feature.uses.amount[level - 1];
+      } else {
+        const uses = feature.uses.find((u) => u.id === column.useId);
+        value = uses.amount[level - 1];
+      }
     }
 
     if (value === 0) {
