@@ -3300,7 +3300,7 @@
     "prereq": [
       {
         "race": ["kenku"],
-        "subrace": ["accursed"]
+        "subrace": [["accursed"]]
       }
     ],
     "type": "racial",
@@ -3402,7 +3402,7 @@
     "prereq": [
       {
         "race": ["lesser giant"],
-        "subrace": ["cyclops", "ettin", "ogre"]
+        "subrace": [["cyclops", "ettin", "ogre"]]
       }
     ],
     "type": "racial",
@@ -3425,7 +3425,7 @@
     "prereq": [
       {
         "race": ["lesser giant"],
-        "subrace": ["troll"]
+        "subrace": [["troll"]]
       }
     ],
     "type": "racial",
@@ -4631,7 +4631,7 @@
     "prereq": [
       {
         "race": ["lizardfolk"],
-        "subrace": ["crocodilian"]
+        "subrace": [["crocodilian"]]
       }
     ],
     "description": "You master the signature technique of the crocodile, the fearsome death roll.  While grappling a creature with your jaws, you can use your action to death roll, forcing the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier).  On a failed save, a target takes slashing damage equal to the normal damage of your bite attack and is stunned until the end of your next turn, taking half as much damage and not being stunned on a successful save.  If you reduce the target to 0 hit points, they lose one limb of your choice.</p><p>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
