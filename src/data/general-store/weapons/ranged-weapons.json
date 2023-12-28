@@ -270,7 +270,7 @@
       },
       {
         "name": "Special",
-        "description": "You may add your Strength modifier to the damage of a composite bow."
+        "description": "You add both your Strength modifier and Dexterity modifier to the damage of a composite bow."
       },
       {
         "name": "Two-handed",
@@ -314,7 +314,7 @@
     "properties": [
       {
         "name": "Special",
-        "description": "You may add your Strength modifier to the damage of a composite bow."
+        "description": "You add both your Strength modifier and Dexterity modifier to the damage of a composite bow."
       },
       {
         "name": "Two-handed",

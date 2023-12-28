@@ -5635,12 +5635,16 @@
       ]
     },
     {
+      "name": "Brawling",
+      "description": "Your unarmed strikes deal bludgeoning damage equal to 1d6 + your Strength modifier on hit. If you have two free hands and use your action to make only unarmed strikes you can make a single unarmed strike as a bonus action on that turn.</p><p>In addition, at the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you."
+    },
+    {
       "name": "Charger",
       "description": "When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature."
     },
     {
       "name": "Classical Swordplay",
-      "description": "While you are wielding a finesse weapon and nothing else, you gain a +1 bonus to your attack rolls and a +2 to your Armor Class so long as you are not wearing heavy armor."
+      "description": "While wielding a finesse weapon and no other weapons, you gain a +2 bonus to your attack rolls and a +1 to your Armor Class so long as you are not using heavy armor or a shield."
     },
     {
       "name": "Close-Quarters Shooter",
@@ -5734,7 +5738,7 @@
     },
     {
       "name": "Protection",
-      "description": "When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
+      "description": "When a creature you can see hits you, or a target within 5 feet, with a melee attack, you can use a reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon."
     },
     {
       "name": "Savage Attacker",
@@ -5758,7 +5762,7 @@
     },
     {
       "name": "Strongbow",
-      "description": "You can use your Strength score, in place of your Dexterity, for attack and damage rolls with ranged weapons. If using a composite bow, its special property changes to add your Dexterity modifier to the damage."
+      "description": "You can use your Strength modifier, in place of Dexterity, for attack and damage rolls with ranged weapons. When you do so, you gain a +1 to damage rolls with those weapons."
     },
     {
       "name": "Thrown Weapon Fighting",
@@ -5766,11 +5770,7 @@
     },
     {
       "name": "Versatile Fighting",
-      "description": "While wielding a single versatile weapon and no shield, you can choose to wield your weapon one or two-handed until the start of your next turn. When wielding it one-handed you gain a +1 bonus to attack rolls and to your Armor Class. Wielding it two-handed you gain a +2 bonus to your damage rolls."
-    },
-    {
-      "name": "Unarmed Fighting",
-      "description": "Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.</p><p>At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you."
+      "description": "While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or to take the Use an Object action."
     },
     {
       "name": "Wrestler",
