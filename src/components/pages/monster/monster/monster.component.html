@@ -118,7 +118,7 @@
   <div *ngIf="monster.immune">
     <strong>Damage Immunities:</strong> {{ monster.immune }}
   </div>
-  <div><strong>Senses:</strong> {{ monster.senses }}</div>
+  <div><strong>Senses:</strong> {{ senseString }}</div>
   <div *ngIf="monster.languages">
     <strong>Languages:</strong> {{ monster.languages.join(", ") }}
   </div>

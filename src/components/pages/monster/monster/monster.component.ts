@@ -118,6 +118,7 @@ export class MonsterComponent implements OnInit {
 
   public saveString: string = '';
   public skillString: string = '';
+  public senseString: string = '';
 
   constructor(private dataService: DataService) {}
 
@@ -173,7 +174,7 @@ export class MonsterComponent implements OnInit {
     if (this.monster.speed.walk) {
       let speedString;
 
-      if (this.monster.speed.walk.condition) {
+      if (this.monster.speed.walk?.condition) {
         speedString = `${this.monster.speed.walk.number} ft. ${this.monster.speed.walk.condition}`;
       } else {
         speedString = `${this.monster.speed.walk} ft.`;
@@ -187,7 +188,7 @@ export class MonsterComponent implements OnInit {
       const value: any = v;
 
       if (key !== 'walk' && key !== 'hover') {
-        if (this.monster.speed.walk.condition) {
+        if (this.monster.speed.walk?.condition) {
           speed.push(`${key} ${value.number} ft. ${value.condition}`);
         } else {
           speed.push(`${key} ${value} ft.`);
@@ -240,8 +241,10 @@ export class MonsterComponent implements OnInit {
         .join(', ');
     }
 
-    this.monster.senses = this.monster.senses?.join(', ') + ', ' ?? '';
-    this.monster.senses += `passive Perception ${this.monster.passive}`;
+    if (this.monster.senses) {
+      this.senseString = this.monster.senses?.join(', ') + ', ' ?? '';
+    }
+    this.senseString += `passive Perception ${this.monster.passive}`;
 
     if (this.monster.spellcasting) {
       const spellcasting = this.monster.spellcasting[0];
