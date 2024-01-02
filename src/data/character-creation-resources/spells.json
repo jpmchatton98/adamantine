@@ -11771,6 +11771,18 @@
     "ritual": 0
   },
   {
+    "name": "Genesis",
+    "school": "Conjuration",
+    "level": 9,
+    "castingTime": "1 hour",
+    "range": "Self",
+    "components": "V, S, M (a seed from a tree worth 1000 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": "<p>You create life.  A beast, dragon, giant, humanoid, or plant of CR 5 or less of your choice appears at a point within range in an unoccupied space.</p><p>When you cast this spell, you determine the creature's alignment.  You may also choose to instill in this creature a series of fake memories.  If you do, the creature must make an Intelligence (Investigation) or Wisdom (Insight) check to determine if these memories are real or not.  The DM determines the DC of the check based on plausbile the implanted memories are.  If the creature fails the check then it believes that its memories are real until it is given or finds evidence to the contrary.</p><p>The created creature has complete control over its own actions and decisions, and acts on its own initiative.</p>",
+    "lists": ["Primal"],
+    "ritual": 0
+  },
+  {
     "name": "Resistance",
     "school": "Abjuration",
     "level": 0,
