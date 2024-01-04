@@ -1089,6 +1089,7 @@
           "Archery",
           "Berserkergang",
           "Blind Fighting",
+          "Brawling",
           "Charger",
           "Classical Swordplay",
           "Close-Quarters Shooter",
@@ -1119,7 +1120,6 @@
           "Strongbow",
           "Thrown Weapon Fighting",
           "Versatile Fighting",
-          "Unarmed Fighting",
           "Wrestler"
         ]
       }

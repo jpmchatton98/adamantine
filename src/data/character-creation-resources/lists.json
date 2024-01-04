@@ -121,6 +121,7 @@
             "Archery",
             "Berserkergang",
             "Blind Fighting",
+            "Brawling",
             "Charger",
             "Classical Swordplay",
             "Close-Quarters Shooter",
@@ -151,7 +152,6 @@
             "Strongbow",
             "Thrown Weapon Fighting",
             "Versatile Fighting",
-            "Unarmed Fighting",
             "Wrestler"
           ]
         }
@@ -4724,6 +4724,10 @@
                   "description": "As a bonus action, you can hold aloft your Book of Shadows and initiate a sacred duel between you and a creature within 30 feet who agrees to the duel, marking you both as duelists. For the duration, both duelists have resistance to all damage, except for damage from the other duelist, and they can only target each other with attacks and spells.</p><p>This sacred duel lasts for one minute, or until one of the creatures who entered into the duel falls unconscious."
                 }
               ]
+            },
+            {
+              "name": "Holy Fists",
+              "description": "As a bonus action, you can utter a prayer of power to imbue your fists with divine justice. For 1 minute, or until you are incapacitated, your unarmed strikes deal radiant damage in place of the normal bludgeoning damage, and they score a critical hit on a roll of 19-20 on the d20."
             }
           ]
         }
