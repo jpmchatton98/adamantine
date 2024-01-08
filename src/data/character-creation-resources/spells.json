@@ -9174,7 +9174,7 @@
   },
   {
     "name": "Magnetization",
-    "school": "Transmutation",
+    "school": "Transposition",
     "level": 4,
     "castingTime": "1 action",
     "range": "Touch",
@@ -16983,6 +16983,162 @@
     "duration": "Instantaneous",
     "description": "You lock the momentum of the triggering creature, causing it to move in a straight line of length equal to its speed.  The direction of the line is the same as the last direction it moved in, and the movement is unaffected by difficult terrain.  An unwilling creature can make a Strength saving throw to avoid being moved.</p><p>If a sliding creature collides with an object, structure, or creature, any creatures in the collision take 2d8 bludgeoning damage.  A creature in the path of the sliding target may make a Dexterity saving throw, avoiding the collision and causing no damage to either party on a success.",
     "higherLevels": "When you cast it using a spell slot of 2nd level or higher, the distance moved is increased by half of the target's speed for each level of spell slot above 1st.  In addition, the damage in a collision is increased by 1d8 for each level of spell slot above 1st.",
-    "lists": ["Arcane", "Melodic"]
+    "lists": ["Arcane", "Melodic"],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ]
+  },
+  {
+    "name": "Blood to Vitriol",
+    "school": "Transmutation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (flesh scarred by acid)",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You attempt to turn a creature's blood to acid. One creature you can see within range must succeed on a Constitution saving throw or be stunned for 1 minute. A stunned creature repeats this saving throw at the end of each of its turns, taking 5d8 acid damage on a failure, or ending the effect on a success.",
+    "lists": ["Arcane", "Occult", "Primal"],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 8,
+        "type": "acid"
+      }
+    ]
+  },
+  {
+    "name": "Tailored Bane",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "10 minutes",
+    "description": "You weave a magical snare, sculpted to disrupt a specific spell. Choose a spell in secret. When a creature within 60 feet of you casts that spell, you can reveal your choice to end this spell and to gain control of the triggering spell, selecting new targets for it.",
+    "lists": ["Arcane", "Occult", "Primal"]
+  },
+  {
+    "name": "Taste the Air",
+    "school": "Divination",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "Self (60-foot radius)",
+    "components": "S",
+    "duration": "1 round",
+    "description": "Your tongue slithers out to taste the air. Make a Wisdom (Perception) check with advantage. You learn the creature type and exact location of each creature within 60 feet of you whose challenge rating (or level, if it doesn't have a challenge rating) is less than or equal to your result.</p><p>Until the end of your next turn, each affected creature cannot be hidden from you, and you ignore the effects of invisibility on that creature.",
+    "lists": ["Arcane", "Occult", "Primal"]
+  },
+  {
+    "name": "Darting Duplicate",
+    "school": "Illusion",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "An illusory duplicate of you steps clumsily into an unoccupied space within 5 feet of you, presenting a tempting target before winking out of existence.</p><p>Each creature hostile to you that can reach that space must succeed on an Intelligence saving throw or lose its reaction as it makes an attack of opportunity against the duplicate.",
+    "lists": ["Arcane", "Melodic", "Occult", "Primal"],
+    "type": "save",
+    "save": "int"
+  },
+  {
+    "name": "Discharge",
+    "school": "Evocation",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when you succeed on a saving throw against a spell",
+    "range": "60 feet",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": "As a reaction when you succeed on a saving throw against a spell, you convert some of the waste magical energy to electricity and send it rocketing back, dealing 1d10 lightning damage per level of the spell to the spell's caster.",
+    "lists": ["Arcane", "Elemental", "Melodic", "Primal"],
+    "element": "air",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 10,
+        "type": "lightning"
+      }
+    ]
+  },
+  {
+    "name": "Ionic Attunement",
+    "school": "Transmutation",
+    "level": 4,
+    "castingTime": "1 reaction, which you take when you deal 15 or fewer lightning damage to a target",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": "When you deal 15 or fewer (minimum 1) lightning damage to a creature with a spell or magical effect, you can attune your magical energy to that creature's natural frequencies.</p><p>For the next minute, that creature has disadvantage on saving throws against spells and magical effects you control that deal lightning damage, and lightning damage you deal ignores that creature's damage resistance.",
+    "lists": ["Arcane", "Elemental", "Primal"],
+    "element": "air"
+  },
+  {
+    "name": "Lightning Burst",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "120 feet (20-foot sphere)",
+    "components": "V, S, M (a flake of rust)",
+    "duration": "Instantaneous",
+    "description": "A crackling ball of lightning kindles into existence at a point you can see, then rapidly expands. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.",
+    "lists": ["Arcane", "Elemental", "Primal"],
+    "element": "air",
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "lightning"
+      }
+    ]
+  },
+  {
+    "name": "Lodestone Bond",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a bent shoe-nail)",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You generate an irresistibly attractive force between two creatures you can see within range. At the end of each affected creature's turn, it must succeed on a Strength saving throw or be dragged up to 30 feet directly toward the other affected creature.</p><p>Whenever one affected creature enters a space within 5 feet of the other for the first time on a turn, each of them takes 3d6 bludgeoning damage.",
+    "lists": ["Arcane"],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": "bludgeoning"
+      }
+    ]
+  },
+  {
+    "name": "Skyhammer",
+    "school": "Evocation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "1 mile",
+    "components": "V, S, M (fulgurite worth 1 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": "A bolt from the blue rockets downward, blasting a creature you can see within range into the earth.</p><p>The target must make a Dexterity saving throw. It takes 14d10 lightning damage on a failed save, or half as much damage on a successful one. On a failed save, the target also immediately falls up to 500 feet if it is not supported by a solid surface.",
+    "lists": ["Arcane", "Primal"],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 14,
+        "die": 10,
+        "type": "lightning"
+      }
+    ]
   }
 ]
