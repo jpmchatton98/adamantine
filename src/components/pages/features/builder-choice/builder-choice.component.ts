@@ -212,32 +212,6 @@ export class BuilderChoiceComponent implements OnInit {
               choice.limits.includes(o)
             );
           }
-
-          if (choice.type === 'skill') {
-            let characterSkillProfs =
-              this.characterBuilderService.getCharacterSkillProficiencies();
-            choiceOptions = choiceOptions.filter((o: any) => {
-              return !characterSkillProfs.find((p: any) => {
-                return (
-                  p.value === o &&
-                  p.id !== this.choice.id &&
-                  p.level > this.choice.level
-                );
-              });
-            });
-          } else if (choice.type === 'tool') {
-            let characterToolProfs =
-              this.characterBuilderService.getCharacterToolProficiencies();
-            choiceOptions = choiceOptions.filter((o: any) => {
-              return !characterToolProfs.find((p: any) => {
-                return (
-                  p.value === o &&
-                  p.id !== this.choice.id &&
-                  p.level > this.choice.level
-                );
-              });
-            });
-          }
         } else if (choice?.type === 'spell') {
           if (choice.id.includes('sorcerer')) {
             choiceOptions = this.dataService
