@@ -116,6 +116,26 @@ export class BuilderListedComponent implements OnInit {
               }
             });
         }
+      } else if (this.listed.id === 'pale-master-prepared-spells') {
+        const spellbook = this.characterObj.choices.find(
+          (c: any) => c.id === 'pale-master-grimoire'
+        );
+        if (spellbook?.list) {
+          this.options = this.dataService
+            .getSpellsByListUnsplit(this.listed.list)
+            .filter((s: any) => {
+              return spellbook.list.includes(s.name);
+            })
+            .sort((a, b) => {
+              if (a.level < b.level) {
+                return -1;
+              } else if (a.level === b.level) {
+                return a.name.localeCompare(b.name);
+              } else {
+                return 1;
+              }
+            });
+        }
       } else if (this.listed.id === 'sorcerer-spells') {
         const maxSpellLevel = Math.max(
           Math.ceil(this.characterLevel / (this.listed.spellcasterType * 2)),
