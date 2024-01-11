@@ -60,9 +60,11 @@ export class ClassTableComponent {
     if (this.class.spellcastingLevel === 2 && classLevel === 1) {
       return '-';
     }
-    return this.spells[
-      Math.floor((classLevel - 1) / this.class.spellcastingLevel)
-    ][slotLevel - 1];
+    return (
+      this.spells[Math.floor((classLevel - 1) / this.class.spellcastingLevel)][
+        slotLevel - 1
+      ] ?? '-'
+    );
   }
   public getSorceryPoints(classLevel: number): number | string {
     if (this.class.spellcastingLevel === 2 && classLevel === 1) {
