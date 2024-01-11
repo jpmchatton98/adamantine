@@ -23051,7 +23051,8 @@
       "You transform into a cloud of spores and move up to your speed without provoking attacks of opportunity before reverting to your normal form.",
       "You may pass through other creatures and move through a space as small as 1 inch with this movement, and each creature whose space you move through in this way for the first time on a turn must succeed on a Constitution saving throw or be poisoned until the end of your next turn."
     ],
-    "lists": ["Primal", "Occult"],
+    "lists": ["Primal", "Occult", "Elemental"],
+    "element": "Wood",
     "ritual": 0,
     "type": "save",
     "save": "con"
@@ -23071,7 +23072,8 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, you may create an additional area of fungal growth centered on a point you can see within range for every two slot levels above the 3rd."
     ],
-    "lists": ["Primal", "Occult"],
+    "lists": ["Primal", "Occult", "Elemental"],
+    "element": "Wood",
     "ritual": 0,
     "damage": [
       {
