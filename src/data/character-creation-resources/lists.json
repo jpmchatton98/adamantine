@@ -1216,11 +1216,11 @@
     },
     {
       "name": "Pure of Heart",
-      "description": "You are immune to the charmed condition.",
+      "description": "You are immune to the charmed and dominated conditions.",
       "granted": [
         {
           "type": "condition-immunity",
-          "options": ["Charmed"]
+          "options": ["Charmed", "Dominated"]
         }
       ]
     },
@@ -1647,6 +1647,10 @@
                               {
                                 "type": "damage-resistance",
                                 "options": ["Fire"]
+                              },
+                              {
+                                "type": "condition-advantage",
+                                "options": ["Burning"]
                               }
                             ]
                           }
@@ -6628,11 +6632,11 @@
     {
       "name": "Enlightened Integrity",
       "prereqLevel": 13,
-      "description": "Your sense of self and strength of your will are unshakable. You are immune to the charmed and frightened conditions. ",
+      "description": "Your sense of self and strength of your will are unshakable. You are immune to the charmed, dominated, and frightened conditions. ",
       "granted": [
         {
           "type": "condition-immunity",
-          "options": ["Charmed", "Frightened"]
+          "options": ["Charmed", "Dominated", "Frightened"]
         }
       ]
     },
@@ -9762,7 +9766,8 @@
         {
           "type": "damage-resistance",
           "options": ["Fire"]
-        }
+        },
+        { "type": "condition-advantage", "options": ["Burning"] }
       ]
     },
     {
@@ -9927,7 +9932,7 @@
       "granted": [
         {
           "type": "condition-immunity",
-          "options": ["Paralyzed", "Restrained"]
+          "options": ["Paralyzed", "Restrained", "Swallowed"]
         }
       ],
       "prereq": {

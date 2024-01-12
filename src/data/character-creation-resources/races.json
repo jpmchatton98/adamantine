@@ -623,6 +623,10 @@
                           "type": "spell",
                           "options": ["Control Flames"],
                           "ability": "cha"
+                        },
+                        {
+                          "type": "condition-advantage",
+                          "options": ["Burning"]
                         }
                       ]
                     }
@@ -945,7 +949,7 @@
         "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
         "granted": [
           { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Disease"] },
+          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
           {
             "type": "condition-advantage",
             "options": ["Paralyzed", "Poisoned"]
@@ -1159,7 +1163,7 @@
         "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
         "granted": [
           { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Disease"] },
+          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
           {
             "type": "condition-advantage",
             "options": ["Paralyzed", "Poisoned"]
@@ -1942,7 +1946,7 @@
     "height": [3, 7],
     "weight": [40, 300],
     "category": "Undead",
-    "type": "Humanoid",
+    "type": "Undead",
     "size": {
       "id": "AA233F81-9A24-4200-B40C-89D47079E205",
       "type": "text",
@@ -2004,7 +2008,13 @@
       },
       {
         "name": "Deathless Nature",
-        "description": "You don't need to breathe and you don't age."
+        "description": "You don't need to breathe and you don't age.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Choking"]
+          }
+        ]
       },
       {
         "name": "Spider Climb",
@@ -2037,6 +2047,20 @@
             ],
             "description": "When you attack with this and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:<ul><li>You regain hit points equal to the damage dealt by the attack.</li><li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the mundane damage dealt by the attack.</li></ul>",
             "finesse": true
+          }
+        ]
+      },
+      {
+        "name": "Soulbound",
+        "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
           }
         ]
       }
@@ -3125,7 +3149,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -3378,7 +3405,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -3414,7 +3444,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Constitution saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -3529,7 +3562,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -3649,7 +3685,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -3847,7 +3886,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -3971,7 +4013,13 @@
           },
           {
             "name": "Unusual Nature",
-            "description": "You do not need to breathe and you do not age."
+            "description": "You do not need to breathe and you do not age.",
+            "granted": [
+              {
+                "type": "condition-immunity",
+                "options": ["Choking"]
+              }
+            ]
           },
           {
             "name": "Planar Tongue",
@@ -4093,7 +4141,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Constitution saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -4424,7 +4475,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -4632,7 +4686,10 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to fire damage. Your breath weapon deals fire damage and imposes a Constitution saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -4904,7 +4961,7 @@
           },
           {
             "type": "condition-immunity",
-            "options": ["Disease", "Poisoned"]
+            "options": ["Choking", "Disease", "Poisoned"]
           }
         ]
       },
@@ -4933,6 +4990,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Dullahan"
@@ -5081,7 +5148,8 @@
               {
                 "type": "damage-resistance",
                 "options": ["Fire"]
-              }
+              },
+              { "type": "condition-advantage", "options": ["Burning"] }
             ]
           },
           {
@@ -5306,7 +5374,10 @@
           {
             "name": "Firey Nature",
             "description": "You have resistance to fire damage.  In addition, you can touch a flammable object that isn't being worn or carried by another creature to set it alight.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           },
           {
             "name": "Burning Gaze",
@@ -5998,7 +6069,8 @@
             "name": "Failed Flame",
             "description": "You have resistance to cold damage and fire damage",
             "granted": [
-              { "type": "damage-resistance", "options": ["Cold", "Fire"] }
+              { "type": "damage-resistance", "options": ["Cold", "Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
             ]
           },
           {
@@ -6123,7 +6195,10 @@
           {
             "name": "Firey Nature",
             "description": "You have resistance to fire damage.  In addition, you can touch a flammable object that isn't being worn or carried by another creature to set it alight.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           },
           {
             "name": "Hearthflame",
@@ -6301,7 +6376,10 @@
           {
             "name": "Earth's Blood",
             "description": "You have resistance to fire damage. Additionally, you can treat lava and magma as if it were water, taking no damage while moving through it. Your resilience extends to items you are wearing or carrying. You have a swim speed equal to your walking speed when moving through lava or magma.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           },
           {
             "name": "Pyroclastic Burst",
@@ -6489,7 +6567,13 @@
           },
           {
             "name": "Cutaneous Respiration",
-            "description": "You can breathe both air and water, and you do so by taking in oxygen through your skin. As such, you can breathe effectively as long as some portion of your skin is still exposed to viable air or water.</p><p>However, you are incapable of willingly holding your breath."
+            "description": "You can breathe both air and water, and you do so by taking in oxygen through your skin. As such, you can breathe effectively as long as some portion of your skin is still exposed to viable air or water.</p><p>However, you are incapable of willingly holding your breath.",
+            "granted": [
+              {
+                "type": "condition-immunity",
+                "options": ["Choking"]
+              }
+            ]
           },
           {
             "name": "Slime Wave",
@@ -6643,6 +6727,12 @@
                 "name": "Black Lung",
                 "description": "You harmlessly inhale a 10-foot radius of a nonmagical gaseous substance such as poisonous gas or smoke, clearing it."
               }
+            ],
+            "granted": [
+              {
+                "type": "condition-immunity",
+                "options": ["Choking"]
+              }
             ]
           },
           {
@@ -6698,7 +6788,13 @@
         "traits": [
           {
             "name": "Needless",
-            "description": "You do not need to breathe, eat or drink, though you can if you wish to."
+            "description": "You do not need to breathe, eat or drink, though you can if you wish to.",
+            "granted": [
+              {
+                "type": "condition-immunity",
+                "options": ["Choking"]
+              }
+            ]
           },
           {
             "name": "Embrace Emptiness",
@@ -6884,6 +6980,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Ghost"
@@ -6962,6 +7068,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Ghoul"
@@ -7397,7 +7513,8 @@
         "description": "You have resistance to fire and psychic damage. In addition, when you are wearing no armor, your AC is equal to 11 + your Dexterity modifier.",
         "granted": [
           { "type": "damage-resistance", "options": ["Fire", "Psychic"] },
-          { "type": "unarmored", "base": 11, "scores": ["dex"] }
+          { "type": "unarmored", "base": 11, "scores": ["dex"] },
+          { "type": "condition-advantage", "options": ["Burning"] }
         ]
       }
     ],
@@ -7576,7 +7693,10 @@
           {
             "name": "Heat of the Forge",
             "description": "You have resistance to fire damage and are acclimated to extreme heat.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           }
         ]
       },
@@ -11347,6 +11467,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Mummy"
@@ -12399,7 +12529,10 @@
         "name": "Deathless Nature",
         "description": "You have escaped death, a fact represented by the following benefits:</p>\n<ul>\n    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>\n    <li>You have advantage on death saving throws.</li>\n    <li>You don't need to eat, drink, or breathe.</li>\n    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>\n</ul>",
         "granted": [
-          { "type": "condition-advantage", "options": ["Disease", "Poisoned"] },
+          {
+            "type": "condition-advantage",
+            "options": ["Choking", "Disease", "Poisoned"]
+          },
           { "type": "damage-resistance", "options": ["Poison"] },
           { "type": "save-advantage", "options": ["death"] }
         ]
@@ -12487,7 +12620,10 @@
         "name": "Biomechanical Nature",
         "description": "Your body is exceedingly good at staying alive, represented by the following benefits:</p>\n<ul>\n    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>\n    <li>You have advantage on death saving throws.</li>\n    <li>You don't need to eat, drink, or breathe.</li>\n    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>\n</ul>",
         "granted": [
-          { "type": "condition-advantage", "options": ["Disease", "Poisoned"] },
+          {
+            "type": "condition-advantage",
+            "options": ["Choking", "Disease", "Poisoned"]
+          },
           { "type": "damage-resistance", "options": ["Poison"] },
           { "type": "save-advantage", "options": ["death"] }
         ]
@@ -13027,6 +13163,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Skeleton"
@@ -13076,7 +13222,7 @@
         "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
         "granted": [
           { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Disease"] },
+          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
           {
             "type": "condition-advantage",
             "options": ["Paralyzed", "Poisoned"]
@@ -13525,7 +13671,10 @@
           {
             "name": "Hellish Resistance",
             "description": "You have resistance to fire damage.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           },
           {
             "name": "Aggressive",
@@ -13567,7 +13716,10 @@
           {
             "name": "Hellish Resistance",
             "description": "You have resistance to fire damage.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           },
           {
             "name": "Spymaster",
@@ -13652,7 +13804,10 @@
           {
             "name": "Hellish Resistance",
             "description": "You have resistance to fire damage.",
-            "granted": [{ "type": "damage-resistance", "options": ["Fire"] }]
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
           },
           {
             "name": "Party All Night",
@@ -13826,7 +13981,8 @@
             "name": "Hellish Resistance",
             "description": "You have resistance to cold damage and fire damage.",
             "granted": [
-              { "type": "damage-resistance", "options": ["Cold", "Fire"] }
+              { "type": "damage-resistance", "options": ["Cold", "Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
             ]
           },
           {
@@ -14016,7 +14172,10 @@
             "name": "Deathless Nature",
             "description": "Due to your ancestry, you are partially undead. You don't need to eat, drink, or breathe, you don't need to sleep, and you don't age.  You are also immune to disease.",
             "granted": [
-              { "type": "condition-immunity", "options": ["Disease"] }
+              {
+                "type": "condition-immunity",
+                "options": ["Choking", "Disease"]
+              }
             ]
           },
           {
@@ -14538,7 +14697,13 @@
       },
       {
         "name": "Partially Amphibious",
-        "description": "By absorbing oxygen through your skin, you can breathe underwater for up to 1 hour."
+        "description": "By absorbing oxygen through your skin, you can breathe underwater for up to 1 hour.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Choking"]
+          }
+        ]
       }
     ],
     "name": "Vedalken"
@@ -14565,7 +14730,7 @@
         "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
         "granted": [
           { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Disease"] },
+          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
           {
             "type": "condition-advantage",
             "options": ["Paralyzed", "Poisoned"]
@@ -14778,6 +14943,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Wight"
@@ -15093,6 +15268,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "name": "Zombie"
@@ -15142,6 +15327,16 @@
       {
         "name": "Soulbound",
         "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
       }
     ],
     "subraces": [
@@ -15290,7 +15485,13 @@
     "traits": [
       {
         "name": "Void Body",
-        "description": "You do not need to breathe."
+        "description": "You do not need to breathe.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Choking"]
+          }
+        ]
       },
       {
         "name": "Void Magic",
