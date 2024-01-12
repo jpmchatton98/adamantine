@@ -1385,7 +1385,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 24 hours",
     "description": [
-      "You a summon fey spirit, which takes the form of a huge beetle that appears in unoccupied space that you can see within range. The beast is considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. Roll initiative for the summoned creature, which has its own turns. It obeys any verbal commands that you issue to them (no action required by you). If you don't issue any commands, it will defend itself from hostile creatures, but otherwise take no actions. The DM has the creatures' game statistics (stats as a Mammoth but gains 30 ft. fly speed).",
+      "You a summon fey spirit, which takes the form of a huge beetle that appears in unoccupied space that you can see within range. The beast is considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. Roll initiative for the summoned creature, which has its own turns. It obeys any verbal commands that you issue to them (no action required by you). If you don't issue any commands, it will defend itself from hostile creatures, but otherwise take no actions. The DM has the creatures' game statistics (stats as a Mammoth but gains 30 feet fly speed).",
       "Up to 5 creatures of medium size or smaller can mount the beetle at a time, but it only responds to commands given by you."
     ],
     "lists": ["Primal"],
@@ -1505,7 +1505,7 @@
     "components": "V, S",
     "duration": "1 round",
     "description": [
-      "You become a burst of elemental wind until the start of the next turn. You gain resistance to lightning damage and bludgeoning, piercing, and slashing damage from nonmagical attacks. Additionally you gain flying speed of 30 feet, can move through the space of other creatures, and ignore difficult terrain, but will fall at the start of your next turn if not held aloft."
+      "You become a burst of elemental wind until the start of the next turn. You gain resistance to lightning damage and bludgeoning, piercing, and slashing damage from nonmagical attacks. Additionally you gain flying speed of 30 feet, can move through the space of other creatures, and ignore difficult terrain, but will fall at the start of your next turn if not held alofeet"
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal"],
     "ritual": 0,
@@ -2065,7 +2065,7 @@
     "components": "V, S, M (an object that has been struck by natural lightning)",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "You channel calamitous voltage through your body, allowing you to briefly become lightning itself. For the spell's duration, you are immune to lightning damage.<br><br>As a bonus action on each of your turns, you transform into lightning and instantly travel in a straight line up to 100 feet in any direction, rematerializing at the end of the line. Each creature in the line must make a Dexterity saving throw or take 8d8 lightning damage. Objects in the line take the damage as well. If an obstacle would block the path of the line as you travel along it, if it takes enough damage from this spell to destroy a 5-foot square path through it, you can continue traveling. Otherwise, you materialize in front of the obstruction.<br><br>If you rematerialize while in mid-air, you may levitate in that space until the end of your next turn or until you transform into lightning again, as arcs of electricity hold you aloft."
+      "You channel calamitous voltage through your body, allowing you to briefly become lightning itself. For the spell's duration, you are immune to lightning damage.<br><br>As a bonus action on each of your turns, you transform into lightning and instantly travel in a straight line up to 100 feet in any direction, rematerializing at the end of the line. Each creature in the line must make a Dexterity saving throw or take 8d8 lightning damage. Objects in the line take the damage as well. If an obstacle would block the path of the line as you travel along it, if it takes enough damage from this spell to destroy a 5-foot square path through it, you can continue traveling. Otherwise, you materialize in front of the obstruction.<br><br>If you rematerialize while in mid-air, you may levitate in that space until the end of your next turn or until you transform into lightning again, as arcs of electricity hold you alofeet"
     ],
     "lists": ["Arcane", "Occult", "Primal"],
     "ritual": false,
@@ -3570,7 +3570,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.<ul><li><strong>Gusts.</strong> A wind picks up within the cube, continually blowing in a horizontal direction that you choose. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved.</li></ul><ul><li><strong>Downdraft.</strong> You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.</li></ul><ul><li><strong>Updraft.</strong> You cause a sustained updraft within the cube, rising upward from the cube's bottom edge. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.</li></ul>"
+      "You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.<ul><li><strong>Gusts.</strong> A wind picks up within the cube, continually blowing in a horizontal direction that you choose. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved.</li></ul><ul><li><strong>Downdrafeet</strong> You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.</li></ul><ul><li><strong>Updrafeet</strong> You cause a sustained updraft within the cube, rising upward from the cube's bottom edge. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.</li></ul>"
     ],
     "lists": ["Arcane", "Primal", "Psionic"],
     "ritual": 0,
@@ -9281,7 +9281,7 @@
     "description": [
       "A miniature hurricane grows in a 30-foot-radius, 50-foot-high cylinder at a point of your choice within range.  Until the spell ends, you can move the hurricane up to 100 feet as a bonus action on your turn.  The hurricane sucks up any Large or smaller objects that aren't secured to anything and that aren't worn or carried by anyone.",
       "A creature must make a Dexterity saving throw the first time on a turn that it enters the hurricane or that the hurricane enters its space, including when the hurricane first appears. A creature takes 16d8 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Huge or smaller creature that fails the save must succeed on a Strength saving throw or become restrained in the hurricane until the spell ends.",
-      "While a creature is restrained by the hurricane, it is considered underwater.  When a creature starts its turn restrained by the hurricane, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the hurricane and falls when the spell ends, unless the creature has some means to stay aloft.",
+      "While a creature is restrained by the hurricane, it is considered underwater.  When a creature starts its turn restrained by the hurricane, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the hurricane and falls when the spell ends, unless the creature has some means to stay alofeet",
       "A restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the hurricane and is hurled 4d10 x 10 feet away from it in a random direction.",
       "In addition, a 100-foot-radius, 300-foot-high cylinder centered on the hurricane is filled with driving rain and howling winds.  The area becomes difficult terrain and is heavily obscured. Each creature there takes 2d6 cold damage at the start of each of their turns. Ranged weapon attacks and nonmagical flight in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 60 to 100 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical."
     ],
@@ -10571,7 +10571,7 @@
     "description": [
       "One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.",
       "The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.",
-      "When the spell ends, the target floats gently to the ground if it is still aloft."
+      "When the spell ends, the target floats gently to the ground if it is still alofeet"
     ],
     "lists": ["Arcane", "Elemental", "Psionic", "Melodic"],
     "ritual": 0,
@@ -12974,7 +12974,7 @@
       "You beseech an otherworldly entity for aid. The being must be known to you: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this spell to request that creature, though you might get a different creature anyway (DM's choice).",
       "When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services.",
       "Payment can take a variety of forms. A celestial might require a sizable donation of gold or magic items to an allied temple, while a fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you.",
-      "As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minute. A task measured in hours requires 1000 gp per hour. And a task m easured in days (up to 10 days) requires 10000 gp per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.",
+      "As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minute. A task measured in hours requires 1000 gp per hour. And a task m easured in days (up to 10 days) requires 10000 gp per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gifeet Creatures rarely accept tasks that seem suicidal.",
       "After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane.",
       "A creature enlisted to join your group counts as a member of it, receiving a full share of experience points awarded."
     ],
@@ -14178,7 +14178,7 @@
     "description": [
       "You shatter the barriers between realities and timelines, thrusting a creature into turmoil and madness. The target must succeed on a Wisdom saving throw, or it can't take reactions until the spell ends. The affected target must also roll a d10 at the start of each of its turns the number rolled determines what happens to the target as shown on the Reality Break Effects table.",
       "At the end of each of its turns, the affected target can repeat the Wisdom saving throw, ending the spell on itself on a success",
-      "<strong>Reality Break Effects</strong><table><tr><th>d10</th><th>Effect</th></tr><tr><td>1-2</td><td><strong>Vision of the Far Realm.</strong> The target takes 6d12 psychic damage, and it is stunned until the end of the turn</td></tr><tr><td>3-5</td><td><strong>Rending Rift.</strong> The target must make a Dexterity saving throw, taking 8d12 force damage on a failed save, or half as much damage on a successful save.</td></tr><tr><td>6-8</td><td><strong>Wormhole.</strong> The target is teleported, along with everything it is wearing and carrying, up to 30 feet to an unoccupied space of your choice that you can see. The target also takes 10d12 force damage and is knocked prone.</td></tr><tr><td>9-10</td><td><strong>Chill of the Dark Void.</strong> The target takes 10d12 cold damage, and it is blinded until the end of the turn.</td></tr></table>"
+      "<strong>Reality Break Effects</strong><table><tr><th>d10</th><th>Effect</th></tr><tr><td>1-2</td><td><strong>Vision of the Far Realm.</strong> The target takes 6d12 psychic damage, and it is stunned until the end of the turn</td></tr><tr><td>3-5</td><td><strong>Rending Rifeet</strong> The target must make a Dexterity saving throw, taking 8d12 force damage on a failed save, or half as much damage on a successful save.</td></tr><tr><td>6-8</td><td><strong>Wormhole.</strong> The target is teleported, along with everything it is wearing and carrying, up to 30 feet to an unoccupied space of your choice that you can see. The target also takes 10d12 force damage and is knocked prone.</td></tr><tr><td>9-10</td><td><strong>Chill of the Dark Void.</strong> The target takes 10d12 cold damage, and it is blinded until the end of the turn.</td></tr></table>"
     ],
     "lists": ["Arcane"],
     "ritual": 0,
@@ -16741,7 +16741,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Aberrant Spirit stat block. When you cast the spell, choose Beholderkin, Slaad, or Star Spawn. The creature resembles an aberration of that kind, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it take the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Aberrant Spirit</th></tr><tr><td colspan=6><em>Medium aberration</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 40 + 10 for each spell level above 4th</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 ft., fly 30 ft. (hover) (Beholderkin only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16 (+3)</td><td>10 (+0)</td><td>15 (+2)</td><td>16 (+3)</td><td>10 (+0)</td><td>6 (?2)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> psychic</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Deep Speech, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Regeneration (Slaad Only).</em></strong> The aberration regains 5 hit points at the start of its turn if it has at least 1 hit point.</td></tr><tr><td colspan=6><strong><em>Whispering Aura (Star Spawn Only).</em></strong> At the start of each of the aberration's turns, each creature within 5 feet of the aberration must succeed on a Wisdom saving throw against your spell save DC or take 2d6 psychic damage, provided that the aberration isn't incapacitated.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The aberration makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Claws (Slaad Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d10 + 3 + the spell's level slashing damage. If the target is a creature, it can't regain hit points until the start of the aberration's next turn.</td></tr><tr><td colspan=6><strong><em>Eye Ray (Beholderkin Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 150 ft., one creature. <em>Hit:</em> 1d8 + 3 + the spell's level psychic damage.</td></tr><tr><td colspan=6><strong><em>Psychic Slam (Star Spawn Only).</em></strong> <em>Melee Spell Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. <em>Hit:</em> 1d8 + 3 + the spell's level psychic damage</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it take the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Aberrant Spirit</th></tr><tr><td colspan=6><em>Medium aberration</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 40 + 10 for each spell level above 4th</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 feet, fly 30 feet (hover) (Beholderkin only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16 (+3)</td><td>10 (+0)</td><td>15 (+2)</td><td>16 (+3)</td><td>10 (+0)</td><td>6 (?2)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> psychic</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Deep Speech, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Regeneration (Slaad Only).</em></strong> The aberration regains 5 hit points at the start of its turn if it has at least 1 hit point.</td></tr><tr><td colspan=6><strong><em>Whispering Aura (Star Spawn Only).</em></strong> At the start of each of the aberration's turns, each creature within 5 feet of the aberration must succeed on a Wisdom saving throw against your spell save DC or take 2d6 psychic damage, provided that the aberration isn't incapacitated.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The aberration makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Claws (Slaad Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d10 + 3 + the spell's level slashing damage. If the target is a creature, it can't regain hit points until the start of the aberration's next turn.</td></tr><tr><td colspan=6><strong><em>Eye Ray (Beholderkin Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 150 feet, one creature. <em>Hit:</em> 1d8 + 3 + the spell's level psychic damage.</td></tr><tr><td colspan=6><strong><em>Psychic Slam (Star Spawn Only).</em></strong> <em>Melee Spell Attack:</em> your spell attack modifier to hit, reach 5 feet, one creature. <em>Hit:</em> 1d8 + 3 + the spell's level psychic damage</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears on the stat block."
@@ -16759,7 +16759,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Bestial Spirit stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Bestial Spirit</th></tr><tr><td colspan=6><em>Small beast</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 20 (Air only) or 30 (Land and Water only) + 5 for each spell level above 2nd</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 ft., climb 30 ft. (Land only), fly 60 ft. (Air only), swim 30 ft. (Water only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>18 (+4)</td><td>11 (+0)</td><td>16 (+3)</td><td>4 (?4)</td><td>14 (+2)</td><td>5 (?3)</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 12</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Flyby (Air Only).</em></strong> The beast doesn't provoke opportunity attacks when it flies out of an enemy's reach.</td></tr><tr><td colspan=6><strong><em>Pack Tactics (Land and Water Only).</em></strong> The beast has advantage on an attack roll against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't incapacitated.</td></tr><tr><td colspan=6><strong><em>Water Breathing (Water Only).</em></strong> The beast can breathe only underwater.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The beast makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Maul.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + 4 + the spell's level piercing damage.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Bestial Spirit</th></tr><tr><td colspan=6><em>Small beast</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 20 (Air only) or 30 (Land and Water only) + 5 for each spell level above 2nd</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 feet, climb 30 feet (Land only), fly 60 feet (Air only), swim 30 feet (Water only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>18 (+4)</td><td>11 (+0)</td><td>16 (+3)</td><td>4 (?4)</td><td>14 (+2)</td><td>5 (?3)</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 12</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Flyby (Air Only).</em></strong> The beast doesn't provoke opportunity attacks when it flies out of an enemy's reach.</td></tr><tr><td colspan=6><strong><em>Pack Tactics (Land and Water Only).</em></strong> The beast has advantage on an attack roll against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't incapacitated.</td></tr><tr><td colspan=6><strong><em>Water Breathing (Water Only).</em></strong> The beast can breathe only underwater.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The beast makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Maul.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d8 + 4 + the spell's level piercing damage.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 3rd level or higher, use the higher level where the spell's level appears in the stat block."
@@ -16777,7 +16777,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth a celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range. This corporeal form uses the Celestial Spirit stat block. When you cast the spell, choose Avenger or Defender. Your choice determines the creature's attack in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Celestial Spirit</th></tr><tr><td colspan=6><em>Large celestial</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 40 + 10 for each spell level above 5th</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 ft., fly 40 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16 (+3)</td><td>14 (+2)</td><td>16 (+3)</td><td>10 (+0)</td><td>14 (+2)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> radiant</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed, frightened</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Celestial, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The celestial makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Radiant Bow (Avenger Only).</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, reach 150/600 ft., one target. <em>Hit:</em> 2d6 + 2 + the spell's level radiant damage.</td></tr><tr><td colspan=6><strong><em>Radiant Mace (Defender Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d10 + 3 + the spell's level radiant damage, and the celestial can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains 1d10 temporary hit points.</td></tr><tr><td colspan=6><strong><em>Healing Touch (1/Day).</em></strong> The celestial touches another creature. The target magically regains hit points equal to 2d8 + the spell's level.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Celestial Spirit</th></tr><tr><td colspan=6><em>Large celestial</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 40 + 10 for each spell level above 5th</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 feet, fly 40 feet</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16 (+3)</td><td>14 (+2)</td><td>16 (+3)</td><td>10 (+0)</td><td>14 (+2)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> radiant</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed, frightened</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Celestial, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The celestial makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Radiant Bow (Avenger Only).</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, reach 150/600 feet, one target. <em>Hit:</em> 2d6 + 2 + the spell's level radiant damage.</td></tr><tr><td colspan=6><strong><em>Radiant Mace (Defender Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d10 + 3 + the spell's level radiant damage, and the celestial can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains 1d10 temporary hit points.</td></tr><tr><td colspan=6><strong><em>Healing Touch (1/Day).</em></strong> The celestial touches another creature. The target magically regains hit points equal to 2d8 + the spell's level.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 6th level or higher, use the higher level whenever the spell's level appears in the stat block."
@@ -16795,7 +16795,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth the spirit of a construct. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Construct Spirit stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles a golem or a modron (your choice) made of the chosen material, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Construct Spirit</th></tr><tr><td colspan=6><em>Medium construct</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 13 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 40 + 15 for each spell level above 4th</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>18 (+4)</td><td>10 (+0)</td><td>18 (+4)</td><td>14 (+2)</td><td>11 (+0)</td><td>5 (?3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed, exhaustion, frightened, incapacitated, paralyzed, petrified, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Heated Body (Metal Only).</em></strong> A creature that touches the construct or hits it with a melee attack while within 5 feet of it takes 1d10 fire damage.</td></tr><tr><td colspan=6><strong><em>Stony Lethargy (Stone Only).</em></strong> When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The construct makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + 4 + the spell's level bludgeoning damage.</td></tr><tr><th colspan=6>Reactions</th></tr><tr><td colspan=6><strong><em>Berserk Lashing (Clay Only).</em></strong> When the construct takes damage, it makes a slam attack against a random creature within 5 feet of it. If no creature is within reach, the construct moves up to half its speed toward an enemy it can see, without provoking opportunity attacks.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Construct Spirit</th></tr><tr><td colspan=6><em>Medium construct</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 13 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 40 + 15 for each spell level above 4th</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 feet</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>18 (+4)</td><td>10 (+0)</td><td>18 (+4)</td><td>14 (+2)</td><td>11 (+0)</td><td>5 (?3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed, exhaustion, frightened, incapacitated, paralyzed, petrified, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Heated Body (Metal Only).</em></strong> A creature that touches the construct or hits it with a melee attack while within 5 feet of it takes 1d10 fire damage.</td></tr><tr><td colspan=6><strong><em>Stony Lethargy (Stone Only).</em></strong> When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The construct makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d8 + 4 + the spell's level bludgeoning damage.</td></tr><tr><th colspan=6>Reactions</th></tr><tr><td colspan=6><strong><em>Berserk Lashing (Clay Only).</em></strong> When the construct takes damage, it makes a slam attack against a random creature within 5 feet of it. If no creature is within reach, the construct moves up to half its speed toward an enemy it can see, without provoking opportunity attacks.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block."
@@ -16816,7 +16816,7 @@
       "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.<table><tr><th colspan=6>Draconic Spirit</th></tr><tr><td colspan=6><em>Large Dragon, Neutral</em></td></tr><tr><td colspan=6><strong>Armor Class</strong> 14 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points</strong> 50 + 10 for each spell level above 5th (the drake has a number of hit dice [d10s] equal to the level of the spell)</td></tr><tr><td colspan=6><strong>Speed</strong> 30 ft., fly 60 ft., swim 30 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>19 (+4)</td><td>14 (+2)</td><td>17 (+3)</td><td>10 (+0)</td><td>14 (+2)</td><td>14 (+2)</td></tr><tr><td colspan=6><strong>Damage Resistances(Chromatic and Metallic Only)</strong> acid, cold, fire, lightning, poison</td></tr><tr><td colspan=6><strong>Damage Resistances(Gem Only)</strong> force, necrotic, psychic, radiant, thunder</td></tr><tr><td colspan=6><strong>Senses</strong> blindsight 30 ft., darkvision 60 ft., passive Perception 12</td></tr><tr><td colspan=6><strong>Languages</strong> Draconic, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge</strong> - <strong>Proficiency Bonus (PB)</strong> equals your bonus</td></tr><tr><td colspan=6><strong>Shared Resistances.</strong> When you summon the dragon, choose one of its damage resistances. You have resistance to the chosen damage type until the spell ends</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><em><strong>Multiattack.</strong></em> The dragon makes a number of Rend attacks equal to half the spell's level (rounded down), and it uses Breath Weapon.</td></tr><tr><td colspan=6><strong>Rend.</strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 10 ft., one target. <em>Hit:</em> 1d6 plus 4 + the spell's level piercing damage.</td></tr><tr><td colspan=6><strong>Breath Weapon.</strong> The dragon exhales destructive energy in a 30-foot cone. Each creature in that area must make a Dexterity saving throw against your spell save DC. A creature takes 2d6 damage of a type this dragon has resistance to (your choice) on a failed save, or half as much damage on a successful one.</td></tr></table>"
+      "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.<table><tr><th colspan=6>Draconic Spirit</th></tr><tr><td colspan=6><em>Large Dragon, Neutral</em></td></tr><tr><td colspan=6><strong>Armor Class</strong> 14 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points</strong> 50 + 10 for each spell level above 5th (the drake has a number of hit dice [d10s] equal to the level of the spell)</td></tr><tr><td colspan=6><strong>Speed</strong> 30 feet, fly 60 feet, swim 30 feet</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>19 (+4)</td><td>14 (+2)</td><td>17 (+3)</td><td>10 (+0)</td><td>14 (+2)</td><td>14 (+2)</td></tr><tr><td colspan=6><strong>Damage Resistances(Chromatic and Metallic Only)</strong> acid, cold, fire, lightning, poison</td></tr><tr><td colspan=6><strong>Damage Resistances(Gem Only)</strong> force, necrotic, psychic, radiant, thunder</td></tr><tr><td colspan=6><strong>Senses</strong> blindsight 30 feet, darkvision 60 feet, passive Perception 12</td></tr><tr><td colspan=6><strong>Languages</strong> Draconic, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge</strong> - <strong>Proficiency Bonus (PB)</strong> equals your bonus</td></tr><tr><td colspan=6><strong>Shared Resistances.</strong> When you summon the dragon, choose one of its damage resistances. You have resistance to the chosen damage type until the spell ends</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><em><strong>Multiattack.</strong></em> The dragon makes a number of Rend attacks equal to half the spell's level (rounded down), and it uses Breath Weapon.</td></tr><tr><td colspan=6><strong>Rend.</strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 10 feet, one target. <em>Hit:</em> 1d6 plus 4 + the spell's level piercing damage.</td></tr><tr><td colspan=6><strong>Breath Weapon.</strong> The dragon exhales destructive energy in a 30-foot cone. Each creature in that area must make a Dexterity saving throw against your spell save DC. A creature takes 2d6 damage of a type this dragon has resistance to (your choice) on a failed save, or half as much damage on a successful one.</td></tr></table>"
     ],
     "lists": ["Arcane", "Divine", "Occult", "Primal"],
     "ritual": 0
@@ -16831,7 +16831,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth an elemental spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Elemental Spirit stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Elemental Spirit</th></tr><tr><td colspan=6><em>Medium elemental</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 50 + 10 for each spell level above 4th</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 ft. burrow 40 ft. (Earth only) fly 40 ft. (hover) (Air only) swim 40 ft. (Water only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>18 (+4)</td><td>15 (+2)</td><td>17 (+3)</td><td>4 (-3)</td><td>10 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> acid (Water only) lightning and thunder (Air only) piercing and slashing (Earth only)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> poison fire (Fire only)</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> exhaustion, frightened, paralyzed, petrified, petrified, poisoned, unconscious</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Primordial, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Amorphous Form (Air, Fire, and Water Only).</em></strong> The elemental can move through a space as narrow as 1 inch wide without squeezing.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The elemental makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d10 + 4 + the spell's level bludgeoning damage (Air, Earth, and Water only) or fire damage (Fire only).</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Elemental Spirit</th></tr><tr><td colspan=6><em>Medium elemental</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 50 + 10 for each spell level above 4th</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 feet burrow 40 feet (Earth only) fly 40 feet (hover) (Air only) swim 40 feet (Water only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>18 (+4)</td><td>15 (+2)</td><td>17 (+3)</td><td>4 (-3)</td><td>10 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> acid (Water only) lightning and thunder (Air only) piercing and slashing (Earth only)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> poison fire (Fire only)</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> exhaustion, frightened, paralyzed, petrified, petrified, poisoned, unconscious</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Primordial, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Amorphous Form (Air, Fire, and Water Only).</em></strong> The elemental can move through a space as narrow as 1 inch wide without squeezing.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The elemental makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d10 + 4 + the spell's level bludgeoning damage (Air, Earth, and Water only) or fire damage (Fire only).</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block."
@@ -16850,7 +16850,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth a fey spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fey Spirit stat block. When you cast the spell, choose a mood. Fuming, Mirthful, or Tricksy. The creature resembles a fey creature of your choice marked by the chosen mood, which determines one of the traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Fey Spirit</th></tr><tr><td colspan=6><em>Small fey</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 12 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 30 + 10 for each spell level above 3rd</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>13 (+1)</td><td>16 (+3)</td><td>14 (+2)</td><td>14 (+2)</td><td>11 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Sylvan, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The Fey makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Shortsword.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 + 3 + the spell's level piercing damage + 1d6 force damage.</td></tr><tr><th colspan=6>Bonus Actions</th></tr><tr><td colspan=6><strong><em>Fey Step.</em></strong> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey's chosen mood.</td></tr><tr><td colspan=6><strong><em>Fuming.</em></strong> The fey has advantage on the next attack roll it makes before the end of this turn.</td></tr><tr><td colspan=6><strong><em>Mirthful.</em></strong> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any damage.</td></tr><tr><td colspan=6><strong><em>Tricksy.</em></strong> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Fey Spirit</th></tr><tr><td colspan=6><em>Small fey</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 12 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 30 + 10 for each spell level above 3rd</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 feet</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>13 (+1)</td><td>16 (+3)</td><td>14 (+2)</td><td>14 (+2)</td><td>11 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Sylvan, understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The Fey makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Shortsword.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d6 + 3 + the spell's level piercing damage + 1d6 force damage.</td></tr><tr><th colspan=6>Bonus Actions</th></tr><tr><td colspan=6><strong><em>Fey Step.</em></strong> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey's chosen mood.</td></tr><tr><td colspan=6><strong><em>Fuming.</em></strong> The fey has advantage on the next attack roll it makes before the end of this turn.</td></tr><tr><td colspan=6><strong><em>Mirthful.</em></strong> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any damage.</td></tr><tr><td colspan=6><strong><em>Tricksy.</em></strong> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block."
@@ -16868,7 +16868,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth a fiendish spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fiendish Spirit stat block. When you cast the spell, choose Demon, Devil, or Yugoloth. The creature resembles a fiend of the chosen type, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Fiendish Spirit</th></tr><tr><td colspan=6><em>Large fiend</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 12 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 50 (Demon only) or 40 (Devil only) or 60 (Yugoloth only) + 15 for each spell level above 6th</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 ft., climb 40 ft. (Demon only), fly 60 ft. (Devil only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>13 (+1)</td><td>16 (+3)</td><td>15 (+2)</td><td>10 (+0)</td><td>10 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> fire</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Abyssal, Infernal, telepathy 60 ft.</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Death Throes (Demon Only).</em></strong> When the fiend drops to 0 hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC. A creature takes 2d10 + the spell's level ire damage on a failed save, or half as much damage on a successful one.</td></tr><tr><td colspan=6><strong><em>Devil's Sight (Devil Only).</em></strong> Magical darkness doesn't impede the fiend's darkvision.</td></tr><tr><td colspan=6><strong>Magic Resistance.</strong> The fiend has advantage on saving throws against spells and other magical effects.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The fiend makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Bite (Demon Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d12 + 3 + the spell's level necrotic damage.</td></tr><tr><td colspan=6><strong><em>Claws (Yugoloth Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + 3 + the spell's level slashing damage. Immediately after the attack hits or misses, the fiend can magically teleport up to 30 feet to an unoccupied space it can see.</td></tr><tr><td colspan=6><strong><em>Hurl Flame (Devil Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 150 ft., one target. <em>Hit:</em> 2d6 + 3 + the spell's level fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Fiendish Spirit</th></tr><tr><td colspan=6><em>Large fiend</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 12 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 50 (Demon only) or 40 (Devil only) or 60 (Yugoloth only) + 15 for each spell level above 6th</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 feet, climb 40 feet (Demon only), fly 60 feet (Devil only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>13 (+1)</td><td>16 (+3)</td><td>15 (+2)</td><td>10 (+0)</td><td>10 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> fire</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> Abyssal, Infernal, telepathy 60 feet</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Death Throes (Demon Only).</em></strong> When the fiend drops to 0 hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC. A creature takes 2d10 + the spell's level ire damage on a failed save, or half as much damage on a successful one.</td></tr><tr><td colspan=6><strong><em>Devil's Sight (Devil Only).</em></strong> Magical darkness doesn't impede the fiend's darkvision.</td></tr><tr><td colspan=6><strong>Magic Resistance.</strong> The fiend has advantage on saving throws against spells and other magical effects.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The fiend makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Bite (Demon Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d12 + 3 + the spell's level necrotic damage.</td></tr><tr><td colspan=6><strong><em>Claws (Yugoloth Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d8 + 3 + the spell's level slashing damage. Immediately after the attack hits or misses, the fiend can magically teleport up to 30 feet to an unoccupied space it can see.</td></tr><tr><td colspan=6><strong><em>Hurl Flame (Devil Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 150 feet, one target. <em>Hit:</em> 2d6 + 3 + the spell's level fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, use the higher level wherever the spell's level appears in the stat block."
@@ -16925,7 +16925,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth a shadowy spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Shadow Spirit stat block. When you cast the spell, choose an emotion: Fury, Despair, or Fear. The creature resembles a misshapen biped marked by the chosen emotion, which determines certain traits in its stat block. The creature determines when it drop to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after your. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and it uses its move to avoid danger.<table><tr><th colspan=6>Shadow Spirit</th></tr><tr><td colspan=6><em>Medium fiend (shadowfell)</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 35 + 15 for each level of the spell above 3rd</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>13 (+1)</td><td>16 (+3)</td><td>15 (+2)</td><td>4 (?3)</td><td>10 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> necrotic</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> frightened</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 120 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Terror Frenzy (Fury Only).</em></strong> The spirit has advantage on attack rolls against frightened creatures.</td></tr><tr><td colspan=6><strong><em>Weight of Sorrow (Despair Only).</em></strong> Any creature, other than you, that starts its turn within 5 feet of the spirit has its speed reduced by 20 feet until the start of that creature's next turn.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The spirit makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Chilling Hand.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d12 + 3 + the spell's level cold damage.</td></tr><tr><td colspan=6><strong><em>Dreadful Scream (1/Day).</em></strong> The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom saving throw against your spell save DC or be frightened of the spirit for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td></tr><tr><th colspan=6>Bonus Action</th></tr><tr><td colspan=6><strong><em>Shadow Stealth (Fear Only).</em></strong> While in dim light or darkness, the spirit takes the Hide action.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after your. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and it uses its move to avoid danger.<table><tr><th colspan=6>Shadow Spirit</th></tr><tr><td colspan=6><em>Medium fiend (shadowfell)</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 35 + 15 for each level of the spell above 3rd</td></tr><tr><td colspan=6><strong>Speed:</strong> 40 feet</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>13 (+1)</td><td>16 (+3)</td><td>15 (+2)</td><td>4 (?3)</td><td>10 (+0)</td><td>16 (+3)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> necrotic</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> frightened</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 120 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Terror Frenzy (Fury Only).</em></strong> The spirit has advantage on attack rolls against frightened creatures.</td></tr><tr><td colspan=6><strong><em>Weight of Sorrow (Despair Only).</em></strong> Any creature, other than you, that starts its turn within 5 feet of the spirit has its speed reduced by 20 feet until the start of that creature's next turn.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The spirit makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Chilling Hand.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d12 + 3 + the spell's level cold damage.</td></tr><tr><td colspan=6><strong><em>Dreadful Scream (1/Day).</em></strong> The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom saving throw against your spell save DC or be frightened of the spirit for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td></tr><tr><th colspan=6>Bonus Action</th></tr><tr><td colspan=6><strong><em>Shadow Stealth (Fear Only).</em></strong> While in dim light or darkness, the spirit takes the Hide action.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast the spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears on the stat block."
@@ -16944,7 +16944,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth an undead spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Undead Spirit stat block. When you cast the spell, choose the creature's form: Ghostly, Putrid, or Skeletal. The spirit resembles an undead creature with the chosen form, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Undead Spirit</th></tr><tr><td colspan=6><em>Medium undead</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 30 (Ghostly and Putrid only) or 20 (Skeletal only) + 10 for each level of the spell above 3rd</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 ft., fly 40 ft. (hover) (Ghostly only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>12 (+1)</td><td>16 (+3)</td><td>15 (+2)</td><td>4 (?3)</td><td>10 (+0)</td><td>9 (?1)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> necrotic, poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Festering Aura (Putrid Only).</em></strong> Any creature, other than you, that starts its turn within 5 feet of the spirit must succeed on a Constitution saving throw against your spell save DC or be poisoned until the start of its next turn.</td></tr><tr><td colspan=6><strong><em>Incorporeal Passage (Ghostly Only).</em></strong> The spirit can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an objects, it is shunted to the nearest unoccupied space and takes 1d10 force damage for every 5 feet traveled.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The spirit makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Deathly Touch (Ghostly Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. <em>Hit:</em> 1d8 + 3 + the spell's level necrotic damage, and the creature must succeed on a Wisdom saving throw against your spell save DC or be frightened of the undead until the end of the target's next turn.</td></tr><tr><td colspan=6><strong><em>Grave Bolt (Skeletal Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 150 ft., one target. <em>Hit:</em> 2d4 + 3 + the spell's level necrotic damage.</td></tr><tr><td colspan=6><strong><em>Rotting Claw (Putrid Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 + 3 + the spell's level slashing damage. If the target is poisoned, it must succeed on a Constitution saving throw against your spell save DC or be paralyzed until the end of its next turn.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Undead Spirit</th></tr><tr><td colspan=6><em>Medium undead</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 30 (Ghostly and Putrid only) or 20 (Skeletal only) + 10 for each level of the spell above 3rd</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 feet, fly 40 feet (hover) (Ghostly only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>12 (+1)</td><td>16 (+3)</td><td>15 (+2)</td><td>4 (?3)</td><td>10 (+0)</td><td>9 (?1)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> necrotic, poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Festering Aura (Putrid Only).</em></strong> Any creature, other than you, that starts its turn within 5 feet of the spirit must succeed on a Constitution saving throw against your spell save DC or be poisoned until the start of its next turn.</td></tr><tr><td colspan=6><strong><em>Incorporeal Passage (Ghostly Only).</em></strong> The spirit can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an objects, it is shunted to the nearest unoccupied space and takes 1d10 force damage for every 5 feet traveled.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The spirit makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Deathly Touch (Ghostly Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one creature. <em>Hit:</em> 1d8 + 3 + the spell's level necrotic damage, and the creature must succeed on a Wisdom saving throw against your spell save DC or be frightened of the undead until the end of the target's next turn.</td></tr><tr><td colspan=6><strong><em>Grave Bolt (Skeletal Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 150 feet, one target. <em>Hit:</em> 2d4 + 3 + the spell's level necrotic damage.</td></tr><tr><td colspan=6><strong><em>Rotting Claw (Putrid Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one target. <em>Hit:</em> 1d6 + 3 + the spell's level slashing damage. If the target is poisoned, it must succeed on a Constitution saving throw against your spell save DC or be paralyzed until the end of its next turn.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block."
@@ -17855,7 +17855,7 @@
       "When the creature drops to 0 hit points, it reverts to its original form, and any remaining damage carries over to that form."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 4th level or higher, you can animate two additional objects for each slot level above 3rd.<table><tr><th colspan=6>Tiny Servant</th></tr><tr><td colspan=6><em>Tiny Construct</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 15 (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 10 (4d4)</td></tr><tr><td colspan=6><strong>Speed:</strong> 30ft., climb 30 ft.</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>4 (-3)</td><td>16 (+3)</td><td>10 (0)</td><td>2 (-4)</td><td>10 (+0)</td><td>1 (-5)</td></tr><tr><td colspan=6><strong>Damage Immunities</strong> poison, psychic</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> blindsight 60 ft. (blind beyond this radius), passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> &#8212</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Slam.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.</td></tr></table>"
+      "When you cast this spell using a spell slot of 4th level or higher, you can animate two additional objects for each slot level above 3rd.<table><tr><th colspan=6>Tiny Servant</th></tr><tr><td colspan=6><em>Tiny Construct</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 15 (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 10 (4d4)</td></tr><tr><td colspan=6><strong>Speed:</strong> 30feet, climb 30 feet</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>4 (-3)</td><td>16 (+3)</td><td>10 (0)</td><td>2 (-4)</td><td>10 (+0)</td><td>1 (-5)</td></tr><tr><td colspan=6><strong>Damage Immunities</strong> poison, psychic</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> blindsight 60 feet (blind beyond this radius), passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> &#8212</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Slam.</em></strong> Melee Weapon Attack: +5 to hit, reach 5 feet, one target. Hit: 5 (1d4 + 3) bludgeoning damage.</td></tr></table>"
     ],
     "lists": ["Arcane"],
     "ritual": 1
@@ -19136,7 +19136,7 @@
     "description": [
       "A whirlwind howls down to a point on the ground you specify. The whirlwind is a 10-foot-radius, 30-foot-high cylinder centered on that point. Until the spell ends, you can use your action to move the whirlwind up to 30 feet in any direction along the ground. The whirlwind sucks up any Medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone.",
       "A creature must make a Dexterity saving throw the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes 10d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength saving throw or become restrained in the whirlwind until the spell ends.",
-      "When a creature starts its turn restrained by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft.",
+      "When a creature starts its turn restrained by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay alofeet",
       "A restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the whirlwind and is hurled 3d6 x 10 feet away from it in a random direction."
     ],
     "lists": ["Arcane", "Primal"],
@@ -20294,7 +20294,7 @@
       "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.<table><tr><th colspan=6>Shadow Nemesis</th></tr><tr><td colspan=6><em>Same size as the target, undead</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 12 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 50 + 10 for each level of the spell above 5th</td></tr><tr><td colspan=6><strong>Speed:</strong> 25 ft., fly 25 ft. (hover)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16 (+3)</td><td>14 (+2)</td><td>16 (+3)</td><td>12 (+1)</td><td>10 (0)</td><td>19 (+4)</td></tr><tr><td colspan=6><strong>Skills:</strong> Stealth +6</td><tr><td colspan=6><strong>Damage Vulnerabilities:</strong> radiant</td></tr></tr><tr><td colspan=6><strong>Damage Resistances:</strong> Same as target, except for radiant</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> Same as target, except for radiant</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed, exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak and that the target speaks</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Nemesis.</em></strong> The Shadow Nemesis has advantage on attacks against the creature that it is a copy of.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The nemesis makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. <em>Hit:</em> 1d10 + 4 + the spell's level necrotic damage</td></tr><tr><th colspan=6>Bonus Actions</th></tr><tr><td colspan=6><strong><em>Tailing Shadow.</em></strong> The Shadow Nemesis teleports to the closest unoccupied space adjacent to the creature that it is a copy of.</td></tr><tr><td colspan=6><strong><em>Shadow Wrap.</em></strong> This action can be used only against an adjacent creature that was hit successfully by this creature at least twice this turn. That creature becomes grappled by the Shadow Nemesis."
+      "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.<table><tr><th colspan=6>Shadow Nemesis</th></tr><tr><td colspan=6><em>Same size as the target, undead</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 12 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 50 + 10 for each level of the spell above 5th</td></tr><tr><td colspan=6><strong>Speed:</strong> 25 feet, fly 25 feet (hover)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16 (+3)</td><td>14 (+2)</td><td>16 (+3)</td><td>12 (+1)</td><td>10 (0)</td><td>19 (+4)</td></tr><tr><td colspan=6><strong>Skills:</strong> Stealth +6</td><tr><td colspan=6><strong>Damage Vulnerabilities:</strong> radiant</td></tr></tr><tr><td colspan=6><strong>Damage Resistances:</strong> Same as target, except for radiant</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> Same as target, except for radiant</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> charmed, exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak and that the target speaks</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Nemesis.</em></strong> The Shadow Nemesis has advantage on attacks against the creature that it is a copy of.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Multiattack.</em></strong> The nemesis makes a number of attacks equal to half this spell's level (rounded down).</td></tr><tr><td colspan=6><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one creature. <em>Hit:</em> 1d10 + 4 + the spell's level necrotic damage</td></tr><tr><th colspan=6>Bonus Actions</th></tr><tr><td colspan=6><strong><em>Tailing Shadow.</em></strong> The Shadow Nemesis teleports to the closest unoccupied space adjacent to the creature that it is a copy of.</td></tr><tr><td colspan=6><strong><em>Shadow Wrap.</em></strong> This action can be used only against an adjacent creature that was hit successfully by this creature at least twice this turn. That creature becomes grappled by the Shadow Nemesis."
     ],
     "lists": ["Arcane", "Occult"],
     "ritual": 0
@@ -20478,7 +20478,7 @@
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You call forth a skeletal spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Skeletal Spirit stat block. When you cast the spell, choose the creature's form: Warrior, Animal, or Archer. The spirit resembles a skeletal creature with the chosen form, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
-      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Skeletal Spirit</th></tr><tr><td colspan=6><em>Medium undead</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 13 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 5 + 10 for each level of the spell above 1st</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 ft., 40 ft. (Animal only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>10 (0)</td><td>10 (0)</td><td>10 (0)</td><td>4 (-3)</td><td>10 (0)</td><td>9 (-1)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> necrotic, piercing from nonmagical attacks (Warrior only)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Undead Tactics (Animal only).</em></strong> The undead has advantage on an attack roll against a creature if at least one of the undead's allies is within 5 feet of the creature and the ally isn't incapacitated.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Maul (Animal and Warrior only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. <em>Hit:</em> 1d8 + 3 + the spell's level piercing damage.</td></tr><tr><td colspan=6><strong><em>Shoot (Archer Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 80/320 ft., one target. <em>Hit:</em> 2d4 + 3 + the spell's level piercing damage.</td></tr></table>"
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Skeletal Spirit</th></tr><tr><td colspan=6><em>Medium undead</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 13 + the level of the spell (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 5 + 10 for each level of the spell above 1st</td></tr><tr><td colspan=6><strong>Speed:</strong> 30 feet, 40 feet (Animal only)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>10 (0)</td><td>10 (0)</td><td>10 (0)</td><td>4 (-3)</td><td>10 (0)</td><td>9 (-1)</td></tr><tr><td colspan=6><strong>Damage Resistances:</strong> necrotic, piercing from nonmagical attacks (Warrior only)</td></tr><tr><td colspan=6><strong>Damage Immunities:</strong> poison</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=6><strong>Senses:</strong> darkvision 60 feet, passive Perception 10</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=6><strong><em>Undead Tactics (Animal only).</em></strong> The undead has advantage on an attack roll against a creature if at least one of the undead's allies is within 5 feet of the creature and the ally isn't incapacitated.</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Maul (Animal and Warrior only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 feet, one creature. <em>Hit:</em> 1d8 + 3 + the spell's level piercing damage.</td></tr><tr><td colspan=6><strong><em>Shoot (Archer Only).</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 80/320 feet, one target. <em>Hit:</em> 2d4 + 3 + the spell's level piercing damage.</td></tr></table>"
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, use the higher level wherever the spell's level appears in the stat block."
@@ -20967,7 +20967,7 @@
     "components": "V, S",
     "duration": "10 minutes",
     "description": [
-      "You split yourself into six illusory duplicates that each appear in an unoccupied space within 30 ft. as your corporeal body disappears. Each duplicate contains a piece of you and uses your statistics, and whenever one takes damage, you take half as much damage and the duplicate disappears. When the spell ends or when no more duplicates remain, you reappear in the location of the last duplicate to disappear.",
+      "You split yourself into six illusory duplicates that each appear in an unoccupied space within 30 feet as your corporeal body disappears. Each duplicate contains a piece of you and uses your statistics, and whenever one takes damage, you take half as much damage and the duplicate disappears. When the spell ends or when no more duplicates remain, you reappear in the location of the last duplicate to disappear.",
       "On your turn, you may move each of your duplicates up to your speed, and when you use an action, bonus action, or reaction you may do so with any one of the duplicates. The duplicates do not otherwise take actions of their own or have reactions independent of yours."
     ],
     "higherLevels": [
@@ -20988,7 +20988,7 @@
       "A shimmering barrier of magical force appears and protects you. You gain 25 temporary hit points that last until the beginning of your next turn. While you have these temporary hit points, projectiles fired at you freeze in mid-air. Melee attacks bypass these temporary hit points, dealing damage directly to your hit points."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot 2nd Level or higher, when the spell ends one creature you can see within 60 ft. must succeed on a Dexterity saving throw or take 1d8 damage per projectile frozen in the barrier of the projectile's type, or half as much on a success."
+      "When you cast this spell using a spell slot 2nd Level or higher, when the spell ends one creature you can see within 60 feet must succeed on a Dexterity saving throw or take 1d8 damage per projectile frozen in the barrier of the projectile's type, or half as much on a success."
     ],
     "lists": ["Arcane", "Psionic", "Melodic"],
     "ritual": 0
@@ -21522,7 +21522,7 @@
       "A mass of tiny spiders begins to swarm around you in a 15 foot radius. When a creature starts its turn in the area or enters it for the first time on a turn, you may force it to succeed on a Constitution saving throw or take 10 poison damage, or half as much on a success. The spell lasts 8 hours, or until it has dealt a total of 100 damage."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 6th level or higher, the spell's radius increases by 10 ft. and the maximum damage it can deal increases by 100 for each slot level above 5th."
+      "When you cast this spell using a spell slot of 6th level or higher, the spell's radius increases by 10 feet and the maximum damage it can deal increases by 100 for each slot level above 5th."
     ],
     "lists": ["Divine", "Primal", "Occult"],
     "ritual": 0,
@@ -22316,11 +22316,11 @@
     "components": "V, S, M (a giftwrapped item worth at least 1 gp)",
     "duration": "Instantaneous",
     "description": [
-      "You extend a small gift toward a creature within range. If the creature has an Intelligence score of 4 or higher and could carry the gift, it must succeed on a Wisdom saving throw or accept the gift. A target automatically succeeds on this saving throw if it can't be charmed.",
+      "You extend a small gift toward a creature within range. If the creature has an Intelligence score of 4 or higher and could carry the gift, it must succeed on a Wisdom saving throw or accept the gifeet A target automatically succeeds on this saving throw if it can't be charmed.",
       "While it carries the gift, the creature has disadvantage on attacks that target you, and may repeat this saving throw as an action, discarding the gift on a success. A creature makes this saving throw with advantage if you took any hostile action toward it since the end of its last turn."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 5th level or higher, the target is additionally charmed by you while it carries the gift."
+      "When you cast this spell using a spell slot of 5th level or higher, the target is additionally charmed by you while it carries the gifeet"
     ],
     "lists": ["Melodic", "Psionic"],
     "ritual": 0,
@@ -22366,7 +22366,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "An enormous spectral maw breaches forth in a 15 ft. radius through a planar rift centered on a point you can see within range. Each creature in the area must succeed on a Dexterity saving throw or take 8d8 piercing damage and be abducted to the depths of Abysm.",
+      "An enormous spectral maw breaches forth in a 15 feet radius through a planar rift centered on a point you can see within range. Each creature in the area must succeed on a Dexterity saving throw or take 8d8 piercing damage and be abducted to the depths of Abysm.",
       "An abducted creature makes a Charisma saving throw at the end of each of its turns returning to the nearest unoccupied space to where it departed on a success, or taking 4d10 acid damage on a failure. A creature killed by this damage does not return."
     ],
     "lists": ["Occult"],
@@ -22423,7 +22423,7 @@
       "You begin a dread chant of torment that heightens sensations of stress and pain to unbearable levels. Each creature of your choice within 30 feet of you that can hear it must make a Charisma saving throw.",
       "On a failed save, the next time that creature takes damage before the end of your next turn, it takes the same amount of psychic damage. A creature that fails this save by 5 or more takes a point of exhaustion, additionally."
     ],
-    "lists": ["Occult", "Melodic", "Psionic"],
+    "lists": ["Melodic"],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -22915,7 +22915,7 @@
       "Your possessed skin is identical to you in all ways, except the following: It has only half the number of hit points you had at the time you cast the spell, it cannot be healed above this maximum, it is immune to bludgeoning damage, and it can move through spaces as small as 1 inch without squeezing. Your skin can take any actions you could normally take in your own body (such as to fight or cast spells).",
       "When your skin leaves your body, your body's hit points drop to 0 and you are stable. Your body cannot recover hit points until your skin returns; only effects that can regrow body parts can heal you, such as the Regenerate spell.",
       "If your body regains any hit points before your skin returns to it, the skin dies and your consciousness returns automatically to your body.",
-      "When your skin returns to your body, you regain hit points equal to your skin's remaining hit points. If the spell ends before you reunite with your skin or if your skin is killed while you are in your body, you remain incapacitated and at 0 hit points until your skin is restored to you (requiring powerful magic, as described above). If your body dies while you are possessing your skin, you die when the spell ends, regardless of how many hit points the skin has left. If your skin is slain with your consciousness in it, your consciousness returns automatically to your body.",
+      "When your skin returns to your body, you regain hit points equal to your skin's remaining hit points. If the spell ends before you reunite with your skin or if your skin is killed while you are in your body, you remain incapacitated and at 0 hit points until your skin is restored to you (requiring powerful magic, as described above). If your body dies while you are possessing your skin, you die when the spell ends, regardless of how many hit points the skin has lefeet If your skin is slain with your consciousness in it, your consciousness returns automatically to your body.",
       "This spell leaves long scars on your skin where it split apart, although these fade normally with the use of healing magic."
     ],
     "lists": ["Occult"],
@@ -23346,6 +23346,1514 @@
         "dice": 2,
         "die": 6,
         "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Annihilating Aura",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You begin to exude lashing shadowy tendrils of pure antilife energy to a distance of 20 feet. When a living creature starts its turn within this area, you may force it to succeed on a DC Constitution saving throw or take 5d6 necrotic damage. Creatures in the area fail death saves automatically, instead of rolling, and cannot be stabilized without regaining at least 1 hit point."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 2d6 for each slot level above 4th."
+    ],
+    "lists": ["Arcane", "Divine", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 6,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Batrachian Metamorphosis",
+    "school": "Transmutation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You force one creature you can see within range to make a Constitution saving throw. On a failed save, the creature's flesh begins to roll in upon itself as the creature's body slowly turns itself inside out, gaining vulnerability to all damage and disadvantage on all attack rolls and saving throws until the effect ends.",
+      "The affected creature makes a Charisma saving throw at the end of each of its turns, ending the effect after three successes, or transforming into a Gibbering Mouther under the DM's control after three failures until cured by a Wish spell or similar magic."
+    ],
+    "lists": ["Arcane", "Divine", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 6,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Bestow Wound",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when you are hit with an attack",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You forge a sanguine link with a creature, mirroring a wound across that bond. As a reaction when you are hit with an attack, you force one creature you can see within 30 feet to succeed on a Charisma saving throw. On a failure, you take half as much damage from the attack and the target takes the same amount."
+    ],
+    "lists": ["Primal", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Blasphemous Abrogation",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell or producing a magical effect with a divine source",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "As a reaction when a creature you can see within range calls upon a divine source for aid, you attempt to intercede, forcing that creature to succeed on a Charisma saving throw. On a failure, the spell or effect is negated and the creature takes 1d10 necrotic damage."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Bleak Aurora",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet (40-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You fill the air with dull, shifting lights that flare brightly when they contact magic in a 40 foot radius centered on a point you can see within range.",
+      "Ranged attacks that pass through the area are made at disadvantage, and a creature that casts a spell in the area must succeed on a Constitution saving throw or be blinded until the end of its next turn."
+    ],
+    "lists": ["Arcane", "Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Blood Puppeteering",
+    "school": "Sangromancy",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You attempt to wrench control of the body of a creature you can see within range by manipulating its blood. The creature must succeed on a Constitution saving throw or have its movement and attacks controlled by you for the next minute.",
+      "At the beginning of each of the creature's turns, the creature takes 2d10 necrotic damage, then moves up to its speed and takes the attack action, or uses its multiattack if it has one. The affected creature controls its own bonus action and reaction, and repeats this saving throw at the end of each of its turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d10 for each slot level above 6th."
+    ],
+    "lists": ["Arcane", "Primal", "Occult", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Brainrot",
+    "school": "Necromancy",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "1 minute",
+    "description": [
+      "You attempt to infect the brain of a creature you can see within range with a maddening parasitic fungus. The creature must succeed on a Constitution saving throw or become hostile to all living creatures for the next minute, then die. This effect can be removed by any effect that cures disease."
+    ],
+    "lists": ["Primal", "Occult", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Clutch of Terror",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S, M (a drop of fear sweat)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You sink a terrifying spectral claw into the head (or closest equivalent) of a creature within reach and drag it towards you. Make a melee spell attack with a reach of 15 feet.",
+      "On a hit, the target takes 4d10 necrotic damage and is dragged up to 10 feet toward you, then must succeed on a Wisdom saving throw or be frightened for the next minute. A frightened creature repeats this save at the end of each of its turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 2d10 for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Divine", "Occult"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Command Ichor",
+    "school": "Sangromancy",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you take piercing or slashing damage",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You channel hemokinetic force through the spilled blood of a creature in range when it takes piercing or slashing damage, forcing it to succeed on a Strength saving throw or be pushed up to 30 feet in a direction of your choice."
+    ],
+    "lists": ["Arcane", "Occult", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "str"
+  },
+  {
+    "name": "Creeping Bone",
+    "school": "Necromancy",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "One creature grappled by you must succeed on a Constitution saving throw or gain 2d10 cumulative temporary hit points as plates of bone begin to grow over its skin. On each of your turns until the spell ends or you release your grapple, you can use your action to force the target to repeat this save.",
+      "While a creature has any of these temporary hit points, it is restrained. While a creature has 30 or more of these temporary hit points, it is petrified."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "healing": [
+      {
+        "dice": 2,
+        "die": 10,
+        "temporary": true
+      }
+    ]
+  },
+  {
+    "name": "Curse of Stolen Sight",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "5 feet",
+    "components": "V",
+    "duration": "10 days",
+    "description": [
+      "You grasp the face of a creature within your reach and drive your thumb into its eye, forcing it to succeed on a Charisma saving throw or be cursed for the duration of the spell. One of the cursed creature's eyes clouds over, occasionally weeping a small amount of blood, and it and gains disadvantage on Wisdom (Perception) checks.",
+      "As an action, you can see through the cursed creature's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the creature has. During this time, you are deaf and blind with regard to your own senses."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the Duration is 30 days. If you use a spell slot of 7th level or higher, the spell lasts until it is dispelled."
+    ],
+    "lists": ["Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Deathlord's Favor",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You harvest the life from your thralls to heal yourself, reducing each friendly undead creature of your choice that you can see within range to 0 hit points and regaining hit points equal to the total hit points lost in this way."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Death's Aid",
+    "school": "Necromancy",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when you fail a saving throw",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You sacrifice your undead thralls to bolster yourself with the burst of energy released, reducing any number of friendly undead creatures you can see within range to 0 hit points. You add 1d4 to the result of your saving throw for each undead creature killed in this way."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Death Throes",
+    "school": "Necromancy",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when a friendly creature you can see within 30 feet drops to 0 hit points",
+    "range": "30 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "As a reaction when another creature you can see within range is reduced to 0 hit points, you imbue it with a sudden burst of energy, allowing it to use its reaction to make a melee attack before falling unconscious."
+    ],
+    "lists": ["Divine", "Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Demonrot Barbs",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "1 minute",
+    "description": [
+      "You cast forth a hail of barbed spores infused with toxins cultivated by the demon queen of fungus. Make a ranged spell attack against a creature in range. On a hit, the target takes 4d8 piercing damage and suffers one of the following effects of your choice:<ul><li>The creature loses any resistance or immunity to poison damage or the poisoned condition for the next minute.</li><li>One spell effect of 3rd level or below affecting the creature ends.</li><li>The creature has disadvantage on the next Constitution saving throw it makes in the next minute.</li></ul>"
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Murder of Crows",
+    "school": "Conjuration",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "One Large or smaller creature that you can see is mobbed by spectral crows that swarm around it, pecking viciously. The creature is blinded for the duration, or until it moves at least 5 feet, and must succeed on a Dexterity saving throw or take 8d6 piercing damage, or half as much on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, it can affect a Huge or smaller creature. If you cast it using a spell slot of 6th level or higher, it can affect a Gargantuan or smaller creature."
+    ],
+    "lists": ["Primal", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Weaverupture",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You disturb the weave around a creature you can see in range, straining it to its breaking point. The target must make Constitution saving throw. On a failed save, the creature takes 2d10 necrotic damage the next time it casts a spell before the end of your next turn."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 2d10 when you reach 5th level (4d10), 11th level (6d10), and 17th level (8d10)."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Enchain Essence",
+    "school": "Necromancy",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a scrap of scarred skin)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You wrest the raw life essence of a creature you can see within range, twisting and exposing its weaknesses. The target must make a Constitution saving throw. On a failed save, the creature is restrained and has vulnerability to all damage that it is not resistant or immune to for the next minute. The creature repeats this save at the end of each of its turns, ending the effect on a success."
+    ],
+    "lists": ["Melodic", "Divine", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Erratic Fireball",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Special",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You fire a volatile sphere of roiling flame, which travels an uncertain distance before exploding. You choose a direction, launching a fireball that explodes in a 20 foot radius centered on a point 2d8x5 feet away from you. Each creature in the area must succeed on a Dexterity saving throw or take 6d6 fire damage and be knocked prone, or take half as much damage on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d6 for each slot level above 2nd. "
+    ],
+    "lists": ["Arcane", "Primal", "Elemental"],
+    "element": "Fire",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Eternal Tide",
+    "school": "Necromancy",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "As a bonus action on each of your turns, you may restore one hit point to an undead creature that was reduced to 0 hit points since the end of your last turn."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Fireburst",
+    "school": "Evocation",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "20 feet (20-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You cause the fires engulfing a creature to flare explosively. One burning creature within 20 feet erupts in an explosion of flame. It and each other creature within 20 feet of it must succeed on a Dexterity saving throw or take 3d6 fire damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+    ],
+    "lists": ["Arcane", "Primal", "Elemental"],
+    "element": "Fire",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Icy Grip",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "S",
+    "duration": "1 round",
+    "description": [
+      "You attempt to briefly paralyze an immobile creature with overwhelming cold. One grappled or restrained creature within range must succeed on a Constitution saving throw or be paralyzed until the end of your next turn."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Foetid Fusation",
+    "school": "Transposition",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Each creature of your choice that you can see within range must make a Charisma saving throw. Each creature that failed has its initiative reduced to 0, then teleports to an unoccupied space you can see within range.",
+      "You may teleport any two creatures that failed this save into the same space, fusing them together into a single malformed body for the next minute. You may fuse multiple pairs of creatures together in this way.",
+      "While fused, creatures act on the same turn, and only one of them may use movement, use a bonus action, or take reactions in a turn. Whenever one of them takes damage, the other takes the same damage, and up to one of the creatures may repeat this saving throw at the end of their turn, ending the effect and moving to the nearest unoccupied space on a success."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Fold Space",
+    "school": "Transposition",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (a paper crane)",
+    "duration": "Instantaneous",
+    "description": [
+      "You teleport to an unoccupied location you can see within 30 feet. Each creature within 15 feet of the space you departed must succeed on a Strength saving throw or be pulled up to 10 feet toward the space you departed and take 4d10 force damage."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Frozen Blood",
+    "school": "Sangromancy",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You bombard a creature you can see in range with lethal, blood-freezing cold which wears away at the very core of it. The creature must succeed on a Constitution saving throw or take 2d4 points of exhaustion, or half as many on a success."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Frostbite Touch",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "Icy steam rolls off your palm as you attempt to grasp a creature's limb, freezing it solid. Make a melee spell attack attack against the target. On a hit, the target takes 10d6 cold damage and the must succeed on a Constitution saving throw or be afflicted with Frostbite."
+    ],
+    "lists": ["Primal", "Occult", "Arcane"],
+    "ritual": 0,
+    "type": ["attack", "save"],
+    "save": "con",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "cold"
+      }
+    ]
+  },
+  {
+    "name": "Ghastly Scourge",
+    "school": "Necromancy",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "20 feet",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You summon a lash of crackling, unfiltered death and swing it at a creature. Make a melee spell attack with a reach of 20 feet. On a hit, the target takes 6d10 + 60 necrotic damage. If this damage reduces a creature to 0 hit points without killing it, it immediately fails one death save."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 10,
+        "amount": 60,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Glacier Tomb",
+    "school": "Abjuration",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to encase a creature within range in a shell of translucent ice. The creature must succeed on a Constitution saving throw or gain 40 temporary hit points, or half as much on a success. While a creature has any of these temporary hit points, it suffers the following effects:<ul><li>It is restrained and has vulnerability to fire damage.</li><li>It cannot speak or breathe.</li><li>It cannot rest or die.</li><li>It must succeed on a Constitution saving throw at the end of each of its turns or have its Strength and Dexterity scores reduced by 2d6, to a minimum of one, until it is released.</li></ul>"
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "healing": [
+      {
+        "amount": 40,
+        "temporary": true
+      }
+    ]
+  },
+  {
+    "name": "Gravebolt",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You fire a bolt of clinging shadow at a creature, diminishing any lights it carries. Make a ranged spell attack against a creature in range. On a hit, the creature takes 3d10 plus your spellcasting modifier necrotic damage and any sources of bright light within 5 feet of it are reduced to dim light for the next minute."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, you fire an additional bolt at a creature in range for each three spell levels above 2nd."
+    ],
+    "lists": ["Arcane", "Divine", "Occult"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 10,
+        "type": "necrotic",
+        "modifier": true
+      }
+    ]
+  },
+  {
+    "name": "Grave Terror",
+    "school": "Enchantment",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "15 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "One creature you can see within 15 feet must succeed on a Wisdom saving throw or take 18d10 psychic damage and be dragged up to 15 feet toward you, or take half as much damage on a success.",
+      "A creature that isn't frightened may use its reaction to move up 15 feet directly away from you. If it does, it gains advantage on this saving throw."
+    ],
+    "lists": ["Divine", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 10,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Gravity Gash",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (60-foot line)",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You extend your hand and light and air distort as gravity intensifies in a line 60 feet long and 10 feet wide. Each creature in the area must succeed on a Constitution saving throw or take 6d8 force damage and fall prone, or take half as much damage on a success."
+    ],
+    "lists": ["Primal", "Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Hallowed Balance",
+    "school": "Necromancy",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You bind creatures in a web of life, guiding the flow of energies to both harm and heal. Each creature of your choice within range must succeed on a Constitution saving throw or lose half its current hit points.",
+      "You may then restore a number of hit points up to the total amount lost this way, divided as you choose between creatures in range."
+    ],
+    "lists": ["Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Heartstopper",
+    "school": "Sangromancy",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to magically crush a creature's heart within its chest. One creature you can see within range must succeed on a Constitution saving throw or die. A creature with no remaining hit dice makes this save at disadvantage."
+    ],
+    "lists": ["Occult", "Arcane", "Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Necrofire Orb",
+    "school": "Evocation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "120 feet (20-foot sphere)",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "A sphere of crackling necrofire flares in your palm, then rushes to a point you can see within range and explodes. Each creature in a 20-foot-radius sphere centered on that point must succeed on a Dexterity saving throw or take 6d6 fire damage plus 6d6 necrotic damage and be knocked prone. On a success, the creature takes half as much damage and isn't knocked prone."
+    ],
+    "lists": ["Occult", "Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "fire"
+      },
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Horrid Growth",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You seed a creature with spores that burst into fungal growths, anchoring a creature to the nearest surface. Make a melee spell attack. On a hit, the creature takes 6d6 necrotic damage and becomes grappled in place for the spell's duration if it is within 5 feet of a solid surface. The escape DC is equal to your save DC."
+    ],
+    "lists": ["Occult", "Primal"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Icicle Storm",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "120 feet (10-foot cylinder)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Needles of glittering ice rain down in a 10 foot-radius, 40 foot-tall cylinder centered on a point you can see within range. Each creature in the area takes 10 cold damage, then must succeed on a Dexterity saving throw or take 6d6 piercing damage, or half as much on a success."
+    ],
+    "lists": ["Arcane", "Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "amount": 10,
+        "type": "cold"
+      },
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "piercing"
+      }
+    ]
+  },
+  {
+    "name": "Invocation of the Rot Shepherd",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V",
+    "duration": "8 hours",
+    "description": [
+      "You act as a conduit to the energies of undeath, channeling them to empower your undead horde. For the duration, friendly zombies within 30 feet of you may attempt to Grapple or Shove a creature as a bonus action."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Lacerating Rain",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet (15-foot radius)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A hail of jagged blades formed from blood appear in the air and rain down in a 15 foot radius centered on a point you can see within range.",
+      "Each creature in the area make a Dexterity saving throw. On a failed save, a creature takes 7d8 slashing damage and begins to bleed, losing 10 hit points at the start of each of its turns for the next minute, or until it receives any magical healing. On a successful save, a creature takes half as much slashing damage and does not begin to bleed."
+    ],
+    "lists": ["Arcane", "Divine", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 7,
+        "die": 8,
+        "type": "slashing"
+      }
+    ]
+  },
+  {
+    "name": "Lignify",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You transform a creature's flesh, causing it to take on properties of living wood. One creature you can see within range must succeed on a Constitution saving throw or gain the Plant type in addition to its other creature types, plus one additional effect of your choice that lasts until cured by Greater Restoration or similar magic:<ul><li>The creature's movement speed is reduced by half and it cannot fly.</li><li>The creature can't take bonus actions or reactions.</li><li>The creature gains vulnerability to fire damage.</li><li>The creature takes 2d10 fire damage whenever it deals fire damage.</li></ul>"
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, the duration becomes 1 minute (concentration). On each of your turns until the spell ends, you can use your bonus action to force the target to repeat the saving throw, applying another effect of your choice to the target on a failure."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Litany of Forsaken Vows",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You begin a wretched chant that corrupts a mortal's connection to the divine. Each humanoid creature of your choice within 30 feet of you that can hear it must succeed on a Charisma saving throw or be cursed for the next minute.",
+      "Whenever a creature cursed in this way receives magical healing, it gains the same amount of temporary hit points. While it has any of these temporary hit points, the creature becomes hostile to all living creatures."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Mindwreck Binding",
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (a tooth pulled from a living creature)",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You send a pulse of terrible mental static that briefly overwhelms the faculties of nearby creatures. Each creature of your choice within 30 feet of you must succeed on a Wisdom saving throw or be paralyzed until the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, the radius increases by 15 feet for each slot level above 7th. "
+    ],
+    "lists": ["Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Mycelia Snare",
+    "school": "Conjuration",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when you see a creature end its turn within 15 feet of an area affected by the Sprouting Doom spell",
+    "range": "120 feet",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "As a reaction when a creature you can see within 120 feet ends its turn within 15 feet of an area affected by the Sprouting Doom spell, you extend a grasping tendril of pale mycelia from the area towards the creature, forcing it to success on a Strength saving throw or fall prone and be dragged up to 15 feet towards a point of your choice in the area."
+    ],
+    "lists": ["Occult", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "str"
+  },
+  {
+    "name": "Miasma",
+    "school": "Necromancy",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when a creature you can see fails a saving throw by 5 or more",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "As a reaction when a creature you can see within 30 feet fails a Constitution save by 5 or more, you corrupt the creature's wounds with foul vapors. The creature is unaffected by the first source of healing it receives before the end of its next turn."
+    ],
+    "lists": ["Divine", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Necropulse Salvo",
+    "school": "Necromancy",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "120 feet (20-foot cone)",
+    "components": "V, S, M",
+    "duration": "Instantaneous",
+    "description": [
+      "You rend the veil at three points you can see within range, from each of which spill a torrent of negative energy in a 20 foot cone.",
+      "For each of these areas a creature is in, it must succeed on a Dexterity saving throw or take 20d6 necrotic damage and be knocked prone, or take half as much damage on a success."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 20,
+        "die": 6,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Numbing Torpor",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when you are hit with a melee attack with a metal weapon",
+    "range": "Self",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You blow a stream of icy steam over a metal weapon in retaliation, chilling it and forcing the attacker to succeed on a Constitution saving throw or drop its weapon. If the attacker picks up the weapon this turn, up to one creature may use its reaction to make an attack of opportunity against it."
+    ],
+    "lists": ["Primal", "Arcane", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Ossuary Call",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V",
+    "duration": "8 hours",
+    "description": [
+      "You project an aura of magical strength that bolsters your skeletal horde. Friendly skeletons within 30 feet of you may use your spell attack bonus in place of their melee attack bonus, and their weapon damage becomes magical."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Polar Burst",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self (10-foot radius)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A blast of icy wind rushes out from you in each direction, driving your foes away. Each creature within 10 feet of you must succeed on a Strength saving throw or take 3d8 cold damage and be pushed up to 10 feet away."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the radius increases by 5 feet for each slot level above 2nd, and a creature that fails the save is pushed an additional 5 feet away."
+    ],
+    "lists": ["Arcane", "Occult", "Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "cold"
+      }
+    ]
+  },
+  {
+    "name": "Psychic Rebound",
+    "school": "Illusion",
+    "level": 3,
+    "castingTime": "1 reaction, which you take when take damage from an attack",
+    "range": "Self",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You psychically link with your attacker, forcing them to experience your pain in your stead. The attacker must succeed on a Intelligence saving throw or take an amount of psychic damage equal to the damage you took from the triggering attack."
+    ],
+    "lists": ["Occult", "Psionic", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "int"
+  },
+  {
+    "name": "Sapping Cold",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "One creature you can see within 30 feet must succeed on a Constitution saving throw or be unable to gain advantage on any roll for the next minute."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Shadowsink",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "If you are in dim Light or darkness, the shadows around you deepen to a pure black and you sink through to the world of shadow, teleporting to an unoccupied space in dim Light or darkness that you can see within 60 feet.",
+      "When you teleport, each creature within 5 feet of the space you departed must succeed on a Charisma saving throw or be drawn through this passage behind you, taking 5d12 necrotic damage and emerging in the nearest unoccupied space to you on a failure. A creature grappled by you makes this saving throw with disadvantage."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 12,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Shred Lungs",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when a creature that is not hidden from you ends its turn in an area filled with fog or a similar spell effect that you control",
+    "range": "Special",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to savage a creature's lungs with harsh magical vapors as it ends its turn in the area of a gasseous spell effect you control, such as a Fog Cloud or Cloudkill. The creature must succeed on a Constitution saving throw or take 3d10 necrotic damage and be unable to speak or breathe for the next minute.",
+      "An affected creature repeats this saving throw at the end of each of its turns, ending the effect on a success."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Spiritual Arsenal",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You conjure a spectral arsenal of multifarious floating weaponry that flares in and out of existence with each assault, striking at each of your foes. When you cast the spell, you can make a melee spell attack against each creature of your choice within range. On a hit, the target takes 3d8 + your spellcasting ability modifier force damage.",
+      "As a bonus action on each of your turns for the duration, you can repeat this attack."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "modifier": true,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Splinterburst",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 bonus action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "One tree you can see within range explodes in a hail of massive splinters. Each creature within 15 feet of the tree must succeed on a Dexterity saving throw or take 6d8 piercing damage, or half as much on a success."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "piercing"
+      }
+    ]
+  },
+  {
+    "name": "Still Arcana",
+    "school": "Abjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You send out a ripple of stilling antimagic. Each creature within range that is concentrating on a spell must succeed on a Constitution saving throw or lose concentration. You may cast this spell even while incapacitated."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Sudden Wasting",
+    "school": "Necromancy",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You saturate a creature with energies of mixed life and death, accellerating both its own natural healing and decay. The target may expend any number of hit dice to heal itself (without adding its Constitution modifier), then must succeed on a Constitution saving throw or take 16d10 necrotic damage, or half as much on a success.",
+      "If the target is killed by this damage, its flesh rots away into a putrid slurry, leaving only a fungus-encrusted skeleton behind."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 16,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "To Dust",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You cause any number of friendly undead skeletons or skeletal corpses within 30 feet to explode into clouds of bone shrapnel and choking dust. Each creature within 10 feet of one or more exploding skeletons must succeed on a Dexterity saving throw or take 4d6 piercing damage and be unable to speak or breathe until the end of the your next turn."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "piercing"
+      }
+    ]
+  },
+  {
+    "name": "Transporting Touch",
+    "school": "Transposition",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to shove a creature through a spacial rift with a burst of magical force. Make a melee spell attack. On a hit, the target takes 3d10 force damage and must succeed on a Charisma saving throw or be teleported up to 30 feet to an unoccupied space you can see within 30 feet of the target."
+    ],
+    "lists": ["Arcane", "Melodic"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 10,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Twist Spell",
+    "school": "Abjuration",
+    "level": 6,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to wrest control of a rival mage's spell. The spell caster must make a Charisma saving throw. On a failed save, the spell caster takes 1d6 psychic damage per level of the spell, and you choose new targets for the spell."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 6,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Unspeakable Insight",
+    "school": "Enchantment",
+    "level": 6,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
+    "range": "120 feet",
+    "components": "V, S, M (a cracked lens)",
+    "duration": "Instantaneous",
+    "description": [
+      "You fill a creature's mind with insights too terrible to be borne, wreathing it in eldritch energies. One creature you can see or telepathically sense within range must succeed on a Wisdom saving throw or gain 20 temporary hit points.",
+      "While a creature has any of these temporary hit points, its Intelligence score increased by 5, to a maximum of 25. At the end of its turn, a creature loses all of these temporary hit points and takes psychic damage equal to twice the temporary hit points lost."
+    ],
+    "lists": ["Arcane", "Psionic", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "amount": 40,
+        "type": "psychic"
+      }
+    ],
+    "healing": [
+      {
+        "amount": 20,
+        "temporary": true
+      }
+    ]
+  },
+  {
+    "name": "Wake the Bones",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You infuse a living creature's skeleton with necrotic energies, attempting to reanimate it. One creature you can see within range must succeed on a Constitution saving throw or have its skeleton rattle within its flesh, taking 6d6 bludgeoning damage and being dragged up to 10 feet in a direction of your choice on a failure, or taking half as much damage on a success.",
+      "A living creature with 0 hit points that fails this save dies. At the beginning of its following turn, the creature's skeleton tears itself out of the creature's body, acting on the creature's initiative, and is hostile to all living creatures."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "bludgeoning"
+      }
+    ]
+  },
+  {
+    "name": "Wraithblade",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You create a spectral blade in your hand that passes through armor without resistance. This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals 4d8 force damage on a hit and has the finesse and light properties. In addition, it treats all targets as unarmored (An unarmored creature's AC is usually 10 plus its Dexterity modifier). It treats creatures with Natural Armor, Unarmored Defense, or similar traits normally.",
+      "If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the sword to reappear in your hand."
+    ],
+    "lists": ["Primal", "Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Wrench Heart",
+    "school": "Sangromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "One creature you can see within range feels a cold, spectral hand sink into its chest and grip its heart.",
+      "At the beginning of each of the creature's turns it takes 4d8 necrotic damage and must succeed on a Wisdom saving throw or be frightened until the beginning of its next turn, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every slot level above the 3rd."
+    ],
+    "lists": ["Arcane", "Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Astral Maelstrom",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a chunk of marble worth 20 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You create a 5-foot-radius disk of unimaginable density in an unoccupied space you can see within 60 feet that lasts for a minute; raw voidstuff compressed until it glows with a searing light that does not reflect or illuminate. As a bonus action on each of your turns, you can cause each creature within 30 feet of the disk to make a Wisdom saving throw, using its reaction to move 10 feet towards the disk on a failure.",
+      "A creature that begins its turn within 10 feet of the sphere must succeed on a Constitution saving throw or take 6d10 radiant damage."
+    ],
+    "lists": ["Arcane", "Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 10,
+        "type": "radiant"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Flame",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, M (a solution of magnesium in oil)",
+    "duration": "Instantaneous",
+    "description": [
+      "You create a ball of sparking, multicolored fire and hurl it at a creature within range. Make a ranged spell attack. On a hit, the target takes 6d6 fire damage.",
+      "If this attack misses, make a second attack roll against a random creature within 10 feet of the original target. On a hit, the target takes 6d6 fire damage."
+    ],
+    "lists": ["Arcane", "Elemental"],
+    "element": "Fire",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Crumble Space",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, M (a pinch of powdered granite)",
+    "duration": "Instantaneous",
+    "description": [
+      "You collapse a line of space into a single point. Choose a point along a 5 feet wide line that is 30 feet long and wholely within 120 feet. Each creature in the line's area must succeed on a Charisma saving throw or be teleported to the nearest unoccupied space to the chosen point, then take 4d10 force plus 2d12 psychic damage."
+    ],
+    "lists": ["Arcane", "Occult", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "force"
+      },
+      {
+        "dice": 2,
+        "die": 12,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Dematerialize",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 reaction, which you take when targeted with an attack or harmful spell",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "As a reaction to being targeted with an attack or harmful spell, you attempt to dodge across the border ethereal. Roll a d20. On an 11-20, you disappear until the beginning of your next turn, when you reappear in the unoccupied space nearest to where you departed."
+    ],
+    "lists": ["Arcane", "Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Music of the Spheres",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (two stones of equal weight but different size)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You set one object orbiting another by forging a gravitational bond between them. You choose two creatures or objects you can see within range. The first creature is levitated off the ground and revolves up to 30 feet clockwise around the second, maintaining the same distance. A creature levitated in this way may make a Constitution saving throw, resisting the effect on a success.",
+      "On each of your turns until the spell ends, you can use your bonus action to select another two targets."
+    ],
+    "lists": ["Melodic", "Arcane", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Force Rift",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (60-foot line)",
+    "components": "V, S, M (a cracked lodestone)",
+    "duration": "Instantaneous",
+    "description": [
+      "You wrench gravity in a line 100 feet long and 5 feet wide extending from you. Each creature in the line must make a Strength saving throw. A creature takes 5d10 force damage and is knocked prone, or takes half as much damage and is not knocked prone on a successful one. A creature that fails by 5 or more is additionally pushed 15 ft. away."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 10,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Mental Scourge",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a whip or flail)",
+    "duration": "1 round",
+    "description": [
+      "You attempt to turn a creature's mind against it. One creature you can see within range must make a Intelligence saving throw. A creature takes 8d6 psychic damage on a failed save, or half as much damage on a successful one.",
+      "A creature that fails this save by 5 or more additionally has its movement controlled by the you on its following turn. The creature can take its action before or after moving."
+    ],
+    "lists": ["Arcane", "Psionic", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "int",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Untether Mind",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You attempt to share a truth with a creature its mind cannot contain. Make a melee spell attack against the target. On a hit, the target takes 3d10 force plus 6d12 psychic damage and must make a Wisdom saving throw.",
+      "A creature that fails is frightened and blinded until the end of your next turn as its field of perception expands and expands and expands until it encompasses the entirety of the multiverse.",
+      "A creature that fails this save by 10 or more is additionally paralyzed until the end of your next turn."
+    ],
+    "lists": ["Occult", "Psionic"],
+    "ritual": 0,
+    "type": ["attack", "save"],
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 10,
+        "type": "force"
+      },
+      {
+        "dice": 6,
+        "die": 12,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Window to Madness",
+    "school": "Illusion",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot cube)",
+    "components": "V, S, M (a dried pineal gland)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You create an illusory portal to the far realm in an unoccupied space within range that fills a 10 foot cube. A creature other than you that starts its turn within 30 feet of the portal and can see it takes 1d4 psychic damage. A creature other than you that starts its turn within the portal's space must make a Intelligence saving throw. A creature takes 8d8 psychic damage and is stunned until the beginning of its next turn on a failed save, or takes half as much damage and is not stunned on a success.",
+      "On each of your turns until the spell ends, you can use your bonus action to force each creature within 60 feet of the portal to succeed on a Strength saving throw or be pulled 10 feet towards it."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the distance a creature is pulled on a failed Strength save increases by 5 ft. for each slot level above 4th."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "int",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "psychic"
       }
     ]
   }
