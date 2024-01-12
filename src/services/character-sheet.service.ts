@@ -48,6 +48,12 @@ export class CharacterSheetService {
         'Your Strength (Intimidation) check - referred to as a Strength (Brawn) check - covers influencing a creature purely through imposing stature, threats of physical violence, or inducing pain.',
     },
     {
+      name: 'Deception',
+      score: 'cha',
+      description:
+        'Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies, though bending the truth is often easier than fabricating a falsehood.',
+    },
+    {
       name: 'Endurance',
       score: 'con',
       description:
@@ -59,12 +65,6 @@ export class CharacterSheetService {
       skill: 'Society',
       description:
         'Your Charisma (Society) check - referred to as a Charisma (Etiquette) check - measures your ability to interact with others in the manners of local high society, including the etiquette of your actions.  You may need to make this check to seem as though you belong in a party of nobles or a meeting of crime bosses.',
-    },
-    {
-      name: 'Deception',
-      score: 'cha',
-      description:
-        'Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies, though bending the truth is often easier than fabricating a falsehood.',
     },
     {
       name: 'History',
