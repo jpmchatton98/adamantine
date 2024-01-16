@@ -74,31 +74,31 @@ export class InventoryComponent implements OnInit {
     this.searchedItems = this.allItems;
 
     await this.characterSheetService.getCharacterFromDb(this.characterId);
-    await this.characterSheetService
-      .getInfusions(this.characterId)
-      .then((infusions) => {
-        this.infusions = infusions;
+    // await this.characterSheetService
+    //   .getInfusions(this.characterId)
+    //   .then((infusions) => {
+    //     this.infusions = infusions;
 
-        if (this.infusions?.length) {
-          for (let i = 0; i < this.infusions.length; i++) {
-            const data = this.dataService.getGenericListItem(
-              'infusion',
-              this.infusions[i]
-            );
+    //     if (this.infusions?.length) {
+    //       for (let i = 0; i < this.infusions.length; i++) {
+    //         const data = this.dataService.getGenericListItem(
+    //           'infusion',
+    //           this.infusions[i]
+    //         );
 
-            if (data.prereqLevel) {
-              const degree = this.infusionDegrees.find(
-                (d) => d.level === data.prereqLevel
-              );
-              data.cost = degree.degree;
-            } else {
-              data.cost = 1;
-            }
+    //         if (data.prereqLevel) {
+    //           const degree = this.infusionDegrees.find(
+    //             (d) => d.level === data.prereqLevel
+    //           );
+    //           data.cost = degree.degree;
+    //         } else {
+    //           data.cost = 1;
+    //         }
 
-            this.infusions[i] = data;
-          }
-        }
-      });
+    //         this.infusions[i] = data;
+    //       }
+    //     }
+    //   });
 
     this.generateItems();
   }
