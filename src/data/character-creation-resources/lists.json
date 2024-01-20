@@ -9164,6 +9164,30 @@
       }
     },
     {
+      "name": "Physical Fitness",
+      "description": "You know that the key to a healthy mind is a healthy body. You gain proficiency in either Athletics or Acrobatics. Whenever you make an ability check with that skill, you add one roll of your Intellect Die to your check if you do not already do so.</p><p>Also, you gain a climbing speed and a swimming speed equal to your walking speed, and when you make a running jump, you add your Intelligence modifier to the distance.",
+      "granted": [
+        {
+          "type": "speed",
+          "speed": "climb",
+          "amount": -1
+        },
+        {
+          "type": "speed",
+          "speed": "swim",
+          "amount": -1
+        }
+      ],
+      "choices": [
+        {
+          "id": "8F5CE2D1-5573-4B57-9623-E280D3857F31",
+          "type": "skill",
+          "limits": ["Athletics", "Acrobatics"],
+          "level": 1
+        }
+      ]
+    },
+    {
       "name": "Riddles",
       "description": "You have spent a great deal of time pondering and pouring over riddles and rhymes. When you speak, you can choose to speak in Riddles. When you do so, you appear to be speaking normally, but there are hidden messages laced in your words.</p><p>Over a period of 1 hour, which can be during the course of a short or long rest, you can teach a creature to understand your Riddles. A creature with an Intelligence of 13 or higher that understands your Riddles can respond to you in Riddles."
     },
@@ -9246,7 +9270,7 @@
     },
     {
       "name": "Traditions",
-      "description": "You are a student of culture, politics, and traditions. When you make an Intelligence (History) check related to a local custom, culture, or tradition, you have advantage on the roll.</p><p>Your knowledge of local customs makes you an excellent ambassador. The first time you meet a leader or local figure, you have advantage on any Charisma checks you make."
+      "description": "You are a student of culture, politics, and traditions. When you make an Intelligence (Society) check related to a local custom, culture, or tradition, you have advantage on the roll.</p><p>Your knowledge of local customs makes you an excellent ambassador. The first time you meet a leader or local figure, you have advantage on any Charisma checks you make."
     }
   ],
   "sign": [
