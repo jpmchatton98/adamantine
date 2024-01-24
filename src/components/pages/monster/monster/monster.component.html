@@ -49,15 +49,20 @@
 
 <div>
   <em>
-    <ng-container *ngIf="!monster.swarmSize; else swarm">
-      {{ monster.size }} {{ monster.type }}
-      <ng-container *ngIf="monster.tags">
-        ({{ monster.tags.join(", ") }})
+    <div>
+      <ng-container *ngIf="!monster.swarmSize; else swarm">
+        {{ monster.size }} {{ monster.type }}
+        <ng-container *ngIf="monster.tags">
+          ({{ monster.tags.join(", ") }})
+        </ng-container>
       </ng-container>
-    </ng-container>
-    <ng-template #swarm>
-      {{ monster.size }} swarm of {{ monster.swarmSize }} {{ monster.type }}s
-    </ng-template>
+      <ng-template #swarm>
+        {{ monster.size }} swarm of {{ monster.swarmSize }} {{ monster.type }}s
+      </ng-template>
+    </div>
+    <div *ngIf="monster.type === 'beast'">
+      {{ monster.beastType.join(", ") }}
+    </div>
   </em>
 </div>
 
