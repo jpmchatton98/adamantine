@@ -248,11 +248,11 @@
           },
           {
             "name": "Kiwi's Serenity",
-            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           }
@@ -1465,8 +1465,10 @@
       },
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Powerful Build",
@@ -3176,11 +3178,11 @@
           },
           {
             "name": "Arrogant",
-            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           }
@@ -3390,9 +3392,12 @@
           },
           {
             "name": "Fey Ancestry",
-            "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+            "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
             "granted": [
-              { "type": "condition-advantage", "options": ["Charmed"] }
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Dominated"]
+              }
             ]
           }
         ]
@@ -3868,11 +3873,11 @@
           },
           {
             "name": "Titan Hunter",
-            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           }
@@ -3913,11 +3918,11 @@
           },
           {
             "name": "Noble Knight",
-            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           },
@@ -4067,11 +4072,11 @@
           },
           {
             "name": "Courageous",
-            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           },
@@ -4317,7 +4322,7 @@
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed"]
+                "options": ["Charmed", "Dominated"]
               }
             ]
           },
@@ -4502,11 +4507,11 @@
           },
           {
             "name": "Fiendish Nature",
-            "description": "Your creature type is Fiend, rather than Humanoid, and you have advantage on saving throws against being charmed.",
+            "description": "Your creature type is Fiend, rather than Humanoid, and you have advantage on saving throws against being charmed or dominated.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed"]
+                "options": ["Charmed", "Dominated"]
               },
               {
                 "type": "creature-type",
@@ -4608,9 +4613,12 @@
           },
           {
             "name": "Fey Ancestry",
-            "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+            "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
             "granted": [
-              { "type": "condition-advantage", "options": ["Charmed"] }
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Dominated"]
+              }
             ]
           },
           {
@@ -4762,11 +4770,11 @@
           },
           {
             "name": "Celestial Nature",
-            "description": "Your creature type is Celestial, rather than Humanoid, and you have advantage on saving throws against being charmed.",
+            "description": "Your creature type is Celestial, rather than Humanoid, and you have advantage on saving throws against being charmed or dominated.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed"]
+                "options": ["Charmed", "Dominated"]
               },
               {
                 "type": "creature-type",
@@ -5196,11 +5204,11 @@
           },
           {
             "name": "Duergar Resilience",
-            "description": "You have advantage on saving throws against illusions and against being charmed or paralyzed.",
+            "description": "You have advantage on saving throws against illusions and against being charmed, dominated, or paralyzed.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Paralyzed"]
+                "options": ["Charmed", "Dominated", "Paralyzed"]
               }
             ]
           },
@@ -5259,8 +5267,10 @@
     "traits": [
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Trance",
@@ -5820,8 +5830,10 @@
       },
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Fairy Magic",
@@ -6970,11 +6982,11 @@
       },
       {
         "name": "Ghostly Nature",
-        "description": "You have advantage on saving throws against being charmed. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your ghost dies, your essence is irrevocably dispersed, and you are unable to be resurrected.",
+        "description": "You have advantage on saving throws against being charmed or dominated. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your ghost dies, your essence is irrevocably dispersed, and you are unable to be resurrected.",
         "granted": [
           { "type": "damage-immunity", "options": ["Poison"] },
           { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
-          { "type": "condition-advantage", "options": ["Charmed"] }
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
         ]
       },
       {
@@ -7437,11 +7449,11 @@
         "traits": [
           {
             "name": "Mental Discipline",
-            "description": "You have advantage on saving throws against the charmed and frightened conditions.",
+            "description": "You have advantage on saving throws against the charmed, dominated, and frightened conditions.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           },
@@ -7501,8 +7513,10 @@
     "traits": [
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Nimble Escape",
@@ -8350,8 +8364,10 @@
     "traits": [
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       }
     ],
     "subraces": [
@@ -9009,8 +9025,10 @@
       },
       {
         "name": "Fey Resilience",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Magic Token",
@@ -9072,8 +9090,10 @@
     "traits": [
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Saving Face",
@@ -10480,9 +10500,12 @@
         "traits": [
           {
             "name": "Fey Ancestry",
-            "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+            "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
             "granted": [
-              { "type": "condition-advantage", "options": ["Charmed"] }
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Dominated"]
+              }
             ]
           },
           {
@@ -10823,12 +10846,13 @@
       },
       {
         "name": "Leviathan Will",
-        "description": "You have advantage on saving throws against being charmed, frightened, paralyzed, poisoned, stunned, or put to sleep.",
+        "description": "You have advantage on saving throws against being charmed, dominated, frightened, paralyzed, poisoned, stunned, or put to sleep.",
         "granted": [
           {
             "type": "condition-advantage",
             "options": [
               "Charmed",
+              "Dominated",
               "Frightened",
               "Paralyzed",
               "Poisoned",
@@ -10886,11 +10910,11 @@
         "traits": [
           {
             "name": "Elephant's Serenity",
-            "description": "You have advantage on saving throws against being charmed or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           }
@@ -11452,11 +11476,11 @@
       },
       {
         "name": "Strength of Will",
-        "description": "You have advantage on saving throws against being charmed. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
+        "description": "You have advantage on saving throws against being charmed or dominated. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
         "granted": [
           { "type": "damage-immunity", "options": ["Poison"] },
           { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
-          { "type": "condition-advantage", "options": ["Charmed"] }
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
         ]
       },
       {
@@ -11564,13 +11588,14 @@
         "traits": [
           {
             "name": "Two-Headed",
-            "description": "You have advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.",
+            "description": "You have advantage on saving throws against being blinded, charmed, dominated, deafened, frightened, stunned, and knocked unconscious.",
             "granted": [
               {
                 "type": "condition-advantage",
                 "options": [
                   "Blinded",
                   "Charmed",
+                  "Dominated",
                   "Frightened",
                   "Stunned",
                   "Unconscious"
@@ -12353,11 +12378,11 @@
         "traits": [
           {
             "name": "Mind Shielding Unit",
-            "description": "You have advantage on saving throws against mind-altering effects (such as being charmed, confused, compelled, frightened, or put to sleep) by magic.</p><p>In addition, your mind cannot be read by magical means.",
+            "description": "You have advantage on saving throws against mind-altering effects (such as being charmed, confused, compelled, dominated, frightened, or put to sleep) by magic.</p><p>In addition, your mind cannot be read by magical means.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           }
@@ -12648,11 +12673,11 @@
         "traits": [
           {
             "name": "Mind Shielding Unit",
-            "description": "You have advantage on saving throws against mind-altering effects (such as being charmed, confused, compelled, frightened, or put to sleep) by magic.</p><p>In addition, your mind cannot be read by magical means.",
+            "description": "You have advantage on saving throws against mind-altering effects (such as being charmed, confused, compelled, dominated, frightened, or put to sleep) by magic.</p><p>In addition, your mind cannot be read by magical means.",
             "granted": [
               {
                 "type": "condition-advantage",
-                "options": ["Charmed", "Frightened"]
+                "options": ["Charmed", "Dominated", "Frightened"]
               }
             ]
           }
@@ -12751,8 +12776,10 @@
     "traits": [
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Giant Build",
@@ -13941,9 +13968,12 @@
           },
           {
             "name": "Incorruptible",
-            "description": "You have advantage on Insight or Perception checks to detect lies as well advantage on saving throws against being charmed.",
+            "description": "You have advantage on Insight or Perception checks to detect lies as well advantage on saving throws against being charmed or dominated.",
             "granted": [
-              { "type": "condition-advantage", "options": ["Charmed"] }
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Dominated"]
+              }
             ]
           },
           {
@@ -14032,9 +14062,12 @@
           },
           {
             "name": "None Before Me",
-            "description": "You have advantage on saving throws against being charmed.",
+            "description": "You have advantage on saving throws against being charmed or dominated.",
             "granted": [
-              { "type": "condition-advantage", "options": ["Charmed"] }
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Dominated"]
+              }
             ]
           },
           {
@@ -15306,11 +15339,11 @@
     "traits": [
       {
         "name": "Ghostly Nature",
-        "description": "You have advantage on saving throws against being charmed. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your lantern goes out, your essence is irrevocably dispersed, and you are unable to be resurrected.",
+        "description": "You have advantage on saving throws against being charmed or dominated. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your lantern goes out, your essence is irrevocably dispersed, and you are unable to be resurrected.",
         "granted": [
           { "type": "damage-immunity", "options": ["Poison"] },
           { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
-          { "type": "condition-advantage", "options": ["Charmed"] }
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
         ]
       },
       {
@@ -15578,8 +15611,10 @@
       },
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-        "granted": [{ "type": "condition-advantage", "options": ["Charmed"] }]
+        "description": "You have advantage on saving throws against being charmed or dominated, and magic can't put you to sleep.",
+        "granted": [
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
       },
       {
         "name": "Flight",

@@ -9026,6 +9026,18 @@
       }
     },
     {
+      "name": "Bushcraft",
+      "description": "You can use your knowledge of nature to thrive in the wilds. You gain proficiency in Nature.</p><p>Over the course of 10 minutes, which can be during a short or long rest, you can gather natural material and use a dagger or handaxe to create one of the following objects: a club, 1d4 darts, a javelin, a net, 10 feet of rope, or a Bushcraft Snare.</p><p>As an action, you can set a Bushcraft Snare in an adjacent, unoccupied, 5-foot space. The first Large or smaller creature to move into the space must make a Dexterity saving throw against your Intellect save DC or be restrained by the Snare.</p><p>As an action, a creature can make a Strength check against your Intellect save DC, escaping from the Snare on a success.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Nature"],
+          "level": 1
+        }
+      ],
+      "prereqLevel": 5
+    },
+    {
       "name": "Craftsmanship",
       "description": "You are a student of fine creation. You gain proficiency with jeweler's tools, and you add double your proficiency bonus to any check you make that uses your jeweler's tools.</p><p>Also, while you are in sunlight, you can spend 1 hour using jewler's tools to modify a gem you touch so that it absorbs the radiant light of the sun. As an action, you can release the sunlight bound within the gem, causing it to emit bright light in a 30-foot radius and dim light 30 feet beyond that. After 24 hours, gems modified in this way return to normal.",
       "granted": [
@@ -9038,14 +9050,20 @@
     },
     {
       "name": "Equestrianism",
-      "description": "You have developed a great love for the care of horses. You gain proficiency in Animal Handling. Whenever you would make a Wisdom (Animal Handling) check, you can make an Intelligence (Animal Handling) check instead. Also, when you make an Animal Handling check related to caring for, riding, or breeding of horses, you have advantage on your roll.</p><p>Finally, while mounted, you add your Intelligence modifier to any ability check or saving throw your mount makes.",
+      "description": "You have developed a great love for the care of horses. You gain proficiency in Animal Handling. Whenever you would make a Wisdom (Animal Handling) check, you can make an Intelligence (Animal Handling) check instead.</p><p>When you are riding a trained mount, your mount shares your initiative in combat and acts during your turn. Whenever it makes an ability check, damage roll, or saving throw, it can add one roll of your Intellect Die to its roll, and you can use a bonus action on each of your turns to command your mount to attack, or to use another action from its stat block.</p><p>Finally, if you spend 8 hours training a friendly quadruped creature and spend 50 gold on necessary training materials and food, it is considered to be a trained mount for you.",
       "granted": [
         {
           "type": "skill",
           "options": ["Animal Handling"],
           "level": 1
+        },
+        {
+          "type": "skill-ability",
+          "skill": "Animal Handling",
+          "ability": "int"
         }
-      ]
+      ],
+      "prereqLevel": 5
     },
     {
       "name": "Falconry",
@@ -9067,6 +9085,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "First Aid",
+      "description": "You have learned basic medicinal techniques to aid your allies. You gain proficiency in Medicine. Whenever you would make a Wisdom (Medicine) check, you can make an Intelligence (Medicine) check instead.</p><p>During a long rest, you can spend 1 hour using a Healer's Kit to produce a number of potions of healing equal to your Intelligence modifier (minimum of 1). Any unused potions of healing expire 24 hours after you created them.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Medicine"],
+          "level": 1
+        },
+        {
+          "type": "skill-ability",
+          "skill": "Medicine",
+          "ability": "int"
+        }
+      ],
+      "prereqLevel": 5
     },
     {
       "name": "Instruction",
@@ -9100,7 +9135,7 @@
     },
     {
       "name": "Marksmanship",
-      "description": "You gain proficiency with heavy crossbows, light crossbows, and longbows, and with all firearms.  When you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die.",
+      "description": "You bring your intellect to bear in the use of ranged weapons. You gain proficiency in Sleight of Hand. Whenever you would make a Dexterity (Sleight of Hand) check, you can make an Intelligence (Sleight of Hand) check instead.</p><p>You also gain proficiency with all martial ranged weapons, and whenever you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die.",
       "granted": [
         {
           "type": "weapon",
@@ -9110,8 +9145,19 @@
             "Longbow",
             "Firearms"
           ]
+        },
+        {
+          "type": "skill",
+          "options": ["Sleight of Hand"],
+          "level": 1
+        },
+        {
+          "type": "skill-ability",
+          "skill": "Sleight of Hand",
+          "ability": "int"
         }
-      ]
+      ],
+      "prereqLevel": 5
     },
     {
       "name": "First Meditation",
@@ -9126,8 +9172,25 @@
       "description": "You make time each day to clear your mind and keep it sharp. Whenever you roll an Intellect Die and you roll a 1, you can re-roll the Die until you roll a result greater than 1.  You can master this Scholarly Pursuit up to three times, increasing the number you can re-roll by one each time you do. For example, the second time you do, you can re-roll Intellect Die rolls of 2."
     },
     {
+      "name": "Mercantalism",
+      "description": "You are an astute scholar of economics, trade routes, and the marketplace. You gain proficiency in Insight. Whenever you would make a Wisdom (Insight) check, you can make an Intelligence (Insight) check instead.</p><p>While you are trading with a creature whose Intelligence and Wisdom are both lower than your Intelligence, items you purchase from that creature cost 10 percent less, and items you sell are purchased for 10 percent more than usual.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Insight"],
+          "level": 1
+        },
+        {
+          "type": "skill-ability",
+          "skill": "Insight",
+          "ability": "int"
+        }
+      ],
+      "prereqLevel": 5
+    },
+    {
       "name": "Musicianship",
-      "description": "You have an ear for music and song. You gain proficiency in Performance and three musical instruments of your choice. Whenever you make a Charisma (Performance) check, or an ability check that uses a musical instrument proficiency, you gain a bonus to the roll equal to your Intelligence modifier.",
+      "description": "You have an ear for music and song. You gain proficiency in Performance and three musical instruments of your choice. Whenever you make a Charisma (Performance) check, or an ability check that uses a musical instrument proficiency, you gain a bonus to the roll equal to your Intelligence modifier.</p><p>Also, when you play a musical instrument or perform for a creature for 1 minute or longer, you have advantage on any ability checks you make to interact socially with that creature for 1 hour. This benefit instantly ends if you or your allies do anything harmful to the creature or to its allies.",
       "granted": [
         {
           "type": "skill",
@@ -9151,7 +9214,8 @@
           "type": "instrument",
           "level": 1
         }
-      ]
+      ],
+      "prereqLevel": 4
     },
     {
       "name": "Linguistics",
@@ -9184,6 +9248,26 @@
           "type": "skill",
           "limits": ["Athletics", "Acrobatics"],
           "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Polymath",
+      "description": "You have a knack for picking up new skills, though you may not be a master of them all. You gain proficiency in one skill, one tool of your choice, and you learn to speak, read, and write one language of your choice.",
+      "choices": [
+        {
+          "id": "207CE3E6-E7C4-4DF6-AAA8-325EB0BD25CE",
+          "type": "skill",
+          "level": 1
+        },
+        {
+          "id": "B4350222-B40B-42AE-A8C0-B530124E0420",
+          "type": "tool",
+          "level": 1
+        },
+        {
+          "id": "99741E24-8A70-4EF2-A911-C3C4A664C7AC",
+          "type": "language"
         }
       ]
     },
