@@ -5,8 +5,89 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by an artificer",
-    "description": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it.<br><br>While holding this tool, you gain a +1 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.<br><br>As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn.",
+    "description": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it.<br><br>While holding this tool, you gain a +1 bonus to the attack rolls and the saving throw DCs of your artificer features.<br><br>When you would expend Arcane Charges, you can reduce the number you expend by 1, to a minimum of 0. Once this property is used, it can't be used again until the next dawn.",
     "index": "1all-purposetool"
+  },
+  {
+    "name": "+1 Masterwork Tools",
+    "rarity": 1,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a commoner",
+    "description": "This set of tools is exceptionally well made.<br><br>While holding these tools, you gain a +1 bonus to and the saving throw DCs of your commoner features, and to ability checks made with the tools.<br><br>When you would expend a Grit Die, you can choose not to, but still gain its benefits. Once this property is used, it can't be used again until the next dawn.",
+    "index": "1masterworktools"
+  },
+  {
+    "name": "+2 Masterwork Tools",
+    "rarity": 2,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a commoner",
+    "description": "This set of tools is exceptionally well made.<br><br>While holding these tools, you gain a +2 bonus to and the saving throw DCs of your commoner features, and to ability checks made with the tools.<br><br>When you would expend a Grit Die, you can choose not to, but still gain its benefits. Once this property is used, it can't be used again until the next dawn.",
+    "index": "2masterworktools"
+  },
+  {
+    "name": "+3 Masterwork Tools",
+    "rarity": 3,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a commoner",
+    "description": "This set of tools is exceptionally well made.<br><br>While holding these tools, you gain a +3 bonus to and the saving throw DCs of your commoner features, and to ability checks made with the tools.<br><br>When you would expend a Grit Die, you can choose not to, but still gain its benefits. Once this property is used, it can't be used again until the next dawn.",
+    "index": "3masterworktools"
+  },
+  {
+    "name": "+1 Haymaker Gloves",
+    "rarity": 1,
+    "type": "gloves",
+    "attunement": true,
+    "attunementDesc": "by a brawler",
+    "description": "These red gloves enhance the power of one's punches.<br><br>While wearing these gloves, you gain a +1 bonus to and the saving throw DCs of your brawler features.<br><br>When you hit with an unarmed strike, you can choose to forgo rolling to deal the maximum possible damage. Once this property is used, it can't be used again until the next dawn.",
+    "index": "1haymakergloves"
+  },
+  {
+    "name": "+2 Haymaker Gloves",
+    "rarity": 2,
+    "type": "gloves",
+    "attunement": true,
+    "attunementDesc": "by a brawler",
+    "description": "These red gloves enhance the power of one's punches.<br><br>While wearing these gloves, you gain a +2 bonus to the saving throw DCs of your brawler features.<br><br>When you hit with an unarmed strike, you can choose to forgo rolling to deal the maximum possible damage. Once this property is used, it can't be used again until the next dawn.",
+    "index": "2haymakergloves"
+  },
+  {
+    "name": "+3 Haymaker Gloves",
+    "rarity": 3,
+    "type": "gloves",
+    "attunement": true,
+    "attunementDesc": "by a brawler",
+    "description": "These red gloves enhance the power of one's punches.<br><br>While wearing these gloves, you gain a +3 bonus to the saving throw DCs of your brawler features.<br><br>When you hit with an unarmed strike, you can choose to forgo rolling to deal the maximum possible damage. Once this property is used, it can't be used again until the next dawn.",
+    "index": "3haymakergloves"
+  },
+  {
+    "name": "+1 Possessed Broom",
+    "rarity": 1,
+    "type": "staff",
+    "attunement": true,
+    "attunementDesc": "by a witch",
+    "description": "This broom was possessed by a spirit bound to it. While you carry the broom, you gain a +1 bonus to spell attack rolls and the saving throw DCs of your witch spells.<br><br>When you would release a spirit, you can choose to not release it but still gain the benefits as if you had. Once this property is used, it can't be used again until the next dawn.<br><br>In addition, you can use an action to command the broom to perform a simple task, such as cleaning a room.  The broom will try its best to perform your command, and does not stop until it finishes or until 24 hours have passed, whichever comes first.",
+    "index": "1possessedbroom"
+  },
+  {
+    "name": "+2 Possessed Broom",
+    "rarity": 2,
+    "type": "staff",
+    "attunement": true,
+    "attunementDesc": "by a witch",
+    "description": "This broom was possessed by a spirit bound to it. While you carry the broom, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your witch spells.<br><br>When you would release a spirit, you can choose to not release it but still gain the benefits as if you had. Once this property is used, it can't be used again until the next dawn.<br><br>In addition, you can use an action to command the broom to perform a simple task, such as cleaning a room.  The broom will try its best to perform your command, and does not stop until it finishes or until 24 hours have passed, whichever comes first.",
+    "index": "2possessedbroom"
+  },
+  {
+    "name": "+3 Possessed Broom",
+    "rarity": 3,
+    "type": "staff",
+    "attunement": true,
+    "attunementDesc": "by a witch",
+    "description": "This broom was possessed by a spirit bound to it. While you carry the broom, you gain a +3 bonus to spell attack rolls and the saving throw DCs of your witch spells.<br><br>When you would release a spirit, you can choose to not release it but still gain the benefits as if you had. Once this property is used, it can't be used again until the next dawn.<br><br>In addition, you can use an action to command the broom to perform a simple task, such as cleaning a room.  The broom will try its best to perform your command, and does not stop until it finishes or until 24 hours have passed, whichever comes first.",
+    "index": "3possessedbroom"
   },
   {
     "name": "+1 Ammunition",
@@ -252,6 +333,60 @@
     "index": "1universalencyclopedia"
   },
   {
+    "name": "+1 Minstrel's Symphony",
+    "rarity": 1,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a troubadour",
+    "description": "This book contains songs and music created by the greatest musicians in history.<br><br>While you hold the book, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your troubadour spells.<br><br>In addition, when you start singings a Mystic Song, you can choose to not expend a use of your Mystic Songs feature.  Once this property is used, it can't be used again until the next dawn.",
+    "index": "1minstrelssymphony"
+  },
+  {
+    "name": "+2 Minstrel's Symphony",
+    "rarity": 2,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a troubadour",
+    "description": "This book contains songs and music created by the greatest musicians in history.<br><br>While you hold the book, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your troubadour spells.<br><br>In addition, when you start singings a Mystic Song, you can choose to not expend a use of your Mystic Songs feature.  Once this property is used, it can't be used again until the next dawn.",
+    "index": "2minstrelssymphony"
+  },
+  {
+    "name": "+3 Minstrel's Symphony",
+    "rarity": 3,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a troubadour",
+    "description": "This book contains songs and music created by the greatest musicians in history.<br><br>While you hold the book, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your troubadour spells.<br><br>In addition, when you start singings a Mystic Song, you can choose to not expend a use of your Mystic Songs feature.  Once this property is used, it can't be used again until the next dawn.",
+    "index": "3minstrelssymphony"
+  },
+  {
+    "name": "+1 Spirit Trinket",
+    "rarity": 1,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a vessel",
+    "description": "This trinket is an item from your spirit's previous life, preserved and infused with power.<br><br>While you hold the trinket, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your vessel spells.<br><br>In addition, you can regain one vessel spell slot as an action while holding the trinket. You can't use this property again until you finish a long rest.",
+    "index": "1spirittrinket"
+  },
+  {
+    "name": "+2 Spirit Trinket",
+    "rarity": 2,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a vessel",
+    "description": "This trinket is an item from your spirit's previous life, preserved and infused with power.<br><br>While you hold the trinket, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your vessel spells.<br><br>In addition, you can regain one vessel spell slot as an action while holding the trinket. You can't use this property again until you finish a long rest.",
+    "index": "2spirittrinket"
+  },
+  {
+    "name": "+3 Spirit Trinket",
+    "rarity": 3,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "by a vessel",
+    "description": "This trinket is an item from your spirit's previous life, preserved and infused with power.<br><br>While you hold the trinket, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your vessel spells.<br><br>In addition, you can regain one vessel spell slot as an action while holding the trinket. You can't use this property again until you finish a long rest.",
+    "index": "3spirittrinket"
+  },
+  {
     "name": "+1 Valiant Banner",
     "rarity": 1,
     "type": "wondrous item",
@@ -284,7 +419,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by an artificer",
-    "description": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it.<br><br>While holding this tool, you gain a +2 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.<br><br>As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn.",
+    "description": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it.<br><br>While holding this tool, you gain a +2 bonus to the attack rolls and the saving throw DCs of your artificer features.<br><br>When you would expend Arcane Charges, you can reduce the number you expend by 2, to a minimum of 0. Once this property is used, it can't be used again until the next dawn.",
     "index": "2all-purposetool"
   },
   {
@@ -563,7 +698,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by an artificer",
-    "description": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it.<br><br>While holding this tool, you gain a +3 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.<br><br>As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn.",
+    "description": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it.<br><br>While holding this tool, you gain a +3 bonus to the attack rolls and the saving throw DCs of your artificer features.<br><br>When you would expend Arcane Charges, you can reduce the number you expend by 3, to a minimum of 0. Once this property is used, it can't be used again until the next dawn.",
     "index": "3all-purposetool"
   },
   {
