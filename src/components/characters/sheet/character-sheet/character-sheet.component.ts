@@ -125,6 +125,9 @@ export class CharacterSheetComponent implements OnInit {
 
   public creatureType = '';
 
+  public companions = [];
+  public companionData = [];
+
   // TODO: remove this and replace with automatic calculation
   public ac = 0;
 
@@ -302,6 +305,47 @@ export class CharacterSheetComponent implements OnInit {
     await this.characterSheetService
       .getCreatureType(this.characterId)
       .then((val) => (this.creatureType = val));
+
+    await this.characterSheetService
+      .getCompanionIds(this.characterId)
+      .then((val) => {
+        this.companions = val;
+      });
+
+    const splMods = {
+      artificer: 'int',
+      'pale-master': 'F32AC04C-8ED7-46ED-AD0C-A69474CDF942',
+      shaman: '936C2192-64E5-4D43-8482-DF57D53E50A2',
+      ranger: 'wis',
+      wizard: 'DB7673B2-CBC6-4FF1-8639-EDA22B998899',
+      druid: '00C78F01-EC17-4192-A4C9-D1939F6CA631',
+    };
+    for (let companion of this.companions) {
+      if (['race', 'background', 'override'].includes(companion.source)) {
+        this.companionData.push(this.dataService.getMonster(companion.key));
+      } else {
+        const sourceClass = this.character.classes.find(
+          (c) => c.name === companion.source
+        );
+
+        const classLevel = sourceClass?.level ?? 0;
+        const classChoices = sourceClass?.choices ?? [];
+
+        let splMod = splMods[sourceClass.name] ?? '';
+        if (splMod.includes('-')) {
+          splMod = classChoices.find((c) => c.id === splMod)?.value ?? '';
+        }
+
+        this.companionData.push(
+          this.dataService.getCompanion(
+            companion.key,
+            classLevel,
+            classChoices,
+            this.modifierNumber(splMod)
+          )
+        );
+      }
+    }
 
     this.loaded = true;
 

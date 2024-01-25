@@ -884,26 +884,12 @@
               nz-input
               [nzAutosize]="{ minRows: 2, maxRows: 100 }"
             ></textarea>
-            <!-- <editor
-              [(ngModel)]="notes"
-              (ngModelChange)="updateNotes()"
-              apiKey="gtepebyqn85c8hmlcm9pa9zwd0m8n4duglfaa0xrf3zk1o1u"
-              [init]="{
-                                height: 500,
-                                menubar: true,
-                                plugins: [
-                                    'autoresize',
-                                    'charmap',
-                                    'lists',
-                                ],
-                                toolbar:
-                                    'undo redo | bold italic underline | \
-                                    alignleft aligncenter alignright | \
-                                    bullist numlist | charmap hr',
-                            }"
-            ></editor> -->
           </nz-tab>
-          <nz-tab nzTitle="Extras"> Coming Soon </nz-tab>
+          <nz-tab nzTitle="Extras">
+            <ng-container *ngFor="let companion of companionData">
+              <app-monster [monster]="companion"></app-monster>
+            </ng-container>
+          </nz-tab>
         </nz-tabset>
       </div>
     </div>

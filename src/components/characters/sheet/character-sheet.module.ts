@@ -18,6 +18,8 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { MonsterComponent } from './pages/monster/monster.component';
+import { MonsterTraitComponent } from './pages/monster-trait/monster-trait.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
     SpellsComponent,
     InventoryComponent,
     ExploitsComponent,
+    MonsterComponent,
+    MonsterTraitComponent,
   ],
   imports: [
     CommonModule,

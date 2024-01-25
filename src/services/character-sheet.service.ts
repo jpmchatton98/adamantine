@@ -2423,7 +2423,7 @@ export class CharacterSheetService {
       }
     });
     feature.subFeatures?.forEach((s) => {
-      profs.push(...this.getFeatureToolProfs(s, choices));
+      profs.push(...this.getFeatureArmorProfs(s, choices));
     });
 
     if (Array.isArray(feature.choices)) {
@@ -2574,7 +2574,7 @@ export class CharacterSheetService {
       }
     });
     feature.subFeatures?.forEach((s) => {
-      profs.push(...this.getFeatureToolProfs(s, choices));
+      profs.push(...this.getFeatureLanguageProfs(s, choices));
     });
 
     if (Array.isArray(feature.choices)) {
@@ -5115,5 +5115,158 @@ export class CharacterSheetService {
       }
     }
     return false;
+  }
+
+  public async getCompanionIds(characterId) {
+    if (!this.character || !Object.keys(this.character ?? {}).length) {
+      await this.getCharacterFromDb(characterId);
+    }
+
+    let companions: string[] = [];
+
+    const raceData = this.dataService.getRace(this.character?.race?.name);
+    let subraceData;
+    if (this.character?.race?.subrace) {
+      subraceData = this.dataService.getSubrace(
+        this.character?.race.name,
+        this.character?.race.subrace
+      );
+    }
+
+    if (raceData) {
+      for (let trait of raceData.traits) {
+        companions = [
+          ...companions,
+          ...this.getFeatureCompanions(trait, this.character?.race.choices).map(
+            (co) => {
+              co.source = 'race';
+              return co;
+            }
+          ),
+        ];
+      }
+    }
+    if (subraceData) {
+      for (let trait of subraceData.traits) {
+        companions = [
+          ...companions,
+          ...this.getFeatureCompanions(trait, this.character?.race.choices).map(
+            (co) => {
+              co.source = 'race';
+              return co;
+            }
+          ),
+        ];
+      }
+    }
+
+    this.character?.classes?.forEach((c, index) => {
+      const classData = this.dataService.getClass(c.name);
+      const subclassData = classData.subclasses.find(
+        (s: any) => s.name === c.subclass
+      );
+
+      if (classData) {
+        for (let level: number = 1; level <= c.level; level++) {
+          (classData?.features ?? {})[level]?.forEach((feature) => {
+            companions = [
+              ...companions,
+              ...this.getFeatureCompanions(feature, c.choices).map((co) => {
+                co.source = c.name;
+                return co;
+              }),
+            ];
+          });
+          (subclassData?.features ?? {})[level]?.forEach((feature) => {
+            companions = [
+              ...companions,
+              ...this.getFeatureCompanions(feature, c.choices).map((co) => {
+                co.source = c.name;
+                return co;
+              }),
+            ];
+          });
+        }
+      }
+    });
+    this.character?.background?.choices?.forEach((choice) => {
+      if (choice.id === 'bg-feat' || choice.id === 'bg-feat-4') {
+        const featData = this.dataService.getFeat(choice.value);
+        if (featData) {
+          companions = [
+            ...companions,
+            ...this.getFeatureCompanions(
+              featData,
+              this.character?.background.choices
+            ).map((co) => {
+              co.source = 'background';
+              return co;
+            }),
+          ];
+        }
+      }
+    });
+
+    this.character?.overrides?.forEach((feature) => {
+      companions = [
+        ...companions,
+        ...this.getFeatureCompanions(feature, []).map((co) => {
+          co.source = 'override';
+          return co;
+        }),
+      ];
+    });
+
+    companions = [...new Set(companions)];
+    companions = companions.sort();
+
+    return companions;
+  }
+  private getFeatureCompanions(feature: any, choices: any[]): any {
+    let companions = [];
+
+    feature.granted?.forEach((g) => {
+      if (g.type === 'companion') {
+        companions.push({ key: g.key });
+      }
+    });
+    feature.subFeatures?.forEach((s) => {
+      companions.push(...this.getFeatureCompanions(s, choices));
+    });
+
+    if (Array.isArray(feature.choices)) {
+      for (let choice of feature.choices) {
+        companions = [
+          ...companions,
+          ...this.getChoiceItems(
+            choice,
+            choices,
+            this.getFeatureCompanions.bind(this)
+          ),
+        ];
+      }
+    } else {
+      companions = [
+        ...companions,
+        ...this.getChoiceItems(
+          feature.choices,
+          choices,
+          this.getFeatureCompanions.bind(this)
+        ),
+      ];
+    }
+
+    if (feature.listed) {
+      companions = [
+        ...companions,
+        ...this.getListedItems(
+          feature.listed,
+          choices,
+          this.getFeatureCompanions.bind(this)
+        ),
+      ];
+    }
+
+    return companions;
   }
 }

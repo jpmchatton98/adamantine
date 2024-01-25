@@ -8,6 +8,7 @@ import backgroundFeatures from '../data/character-creation-resources/background-
 import feats from '../data/character-creation-resources/feats.json';
 import transformations from '../data/character-creation-resources/transformations.json';
 import generic from '../data/character-creation-resources/generic.json';
+import companions from '../data/character-creation-resources/companions.json';
 import monsters from '../data/monsters.json';
 import { IClass, IRace, ISubclass, ISubrace } from 'src/app/models/data.models';
 
@@ -22,6 +23,7 @@ import tools from '../data/general-store/adventuring-equipment/tools.json';
 import injuries from '../data/house-rules/injuries.json';
 
 import wildMagic from '../data/character-creation-resources/wild-magic.json';
+import { cp } from 'fs';
 
 interface GenericDictionary {
   [value: string]: string;
@@ -31,6 +33,161 @@ interface GenericDictionary {
   providedIn: 'root',
 })
 export class DataService {
+  private skillData = [
+    {
+      name: 'Acrobatics',
+      score: 'dex',
+      description:
+        "Your Dexterity (Acrobatics) check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship's deck.  The DM might also call for a Dexterity (Acrobatics) check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.",
+    },
+    {
+      name: 'Animal Handling',
+      score: 'wis',
+      description:
+        "When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, the DM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver.",
+    },
+    {
+      name: 'Arcana',
+      score: 'int',
+      description:
+        'Your Intelligence (Arcana) check measures your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes.',
+    },
+    {
+      name: 'Athletics',
+      score: 'str',
+      description:
+        'Your Strength (Athletics) check covers feats of physical strength, including climbing, swimming, and jumping.  It is also used when you attempt to grapple, shove, or trip a creature.',
+    },
+    {
+      name: 'Brawn',
+      score: 'str',
+      skill: 'Intimidation',
+      description:
+        'Your Strength (Intimidation) check - referred to as a Strength (Brawn) check - covers influencing a creature purely through imposing stature, threats of physical violence, or inducing pain.',
+    },
+    {
+      name: 'Deception',
+      score: 'cha',
+      description:
+        'Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies, though bending the truth is often easier than fabricating a falsehood.',
+    },
+    {
+      name: 'Endurance',
+      score: 'con',
+      description:
+        'Your Constitution (Endurance) check covers attempts to resist the weaknesses of the mortal form, and push beyond your physical limits.  You make an Endurance check when traveling long distances or attempting to go without food, water, air, or sleep.',
+    },
+    {
+      name: 'Etiquette',
+      score: 'cha',
+      skill: 'Society',
+      description:
+        'Your Charisma (Society) check - referred to as a Charisma (Etiquette) check - measures your ability to interact with others in the manners of local high society, including the etiquette of your actions.  You may need to make this check to seem as though you belong in a party of nobles or a meeting of crime bosses.',
+    },
+    {
+      name: 'History',
+      score: 'int',
+      description:
+        'Your Intelligence (History) check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.',
+    },
+    {
+      name: 'Initiative',
+      score: 'dex',
+      description:
+        'Your Dexterity (Initiative) check measures how quickly you react to danger.  It is most often called for at the start of combat to determine the turn order.',
+    },
+    {
+      name: 'Insight',
+      score: 'wis',
+      description:
+        "Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms.",
+    },
+    {
+      name: 'Intimidation',
+      score: 'cha',
+      description:
+        'When you attempt to influence someone through overt threats, hostile actions, and physical violence, the DM might ask you to make a Charisma (Intimidation) check.',
+    },
+    {
+      name: 'Investigation',
+      score: 'int',
+      description:
+        'When you look around for clues and make deductions based on those clues, you make an Intelligence (Investigation) check. Poring through ancient scrolls in search of a hidden fragment of knowledge might also call for an Intelligence (Investigation) check.',
+    },
+    {
+      name: 'Medicine',
+      score: 'wis',
+      description:
+        'A Wisdom (Medicine) check lets you try to stabilize a dying companion, diagnose an illness, or determine how a creature died.',
+    },
+    {
+      name: 'Nature',
+      score: 'int',
+      description:
+        'Your Intelligence (Nature) check measures your ability to recall lore about terrain, plants and animals, the weather, and natural cycles.',
+    },
+    {
+      name: 'Perception',
+      score: 'wis',
+      description:
+        'Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses.',
+    },
+    {
+      name: 'Performance',
+      score: 'cha',
+      description:
+        'Your Charisma (Performance) check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment.',
+    },
+    {
+      name: 'Persuasion',
+      score: 'cha',
+      description:
+        'When you attempt to influence someone or a group of people with tact, social graces, or good nature, the DM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette.',
+    },
+    {
+      name: 'Prayer',
+      score: 'cha',
+      skill: 'Religion',
+      description:
+        "Your Charisma (Religion) check - referred to as a Charisma (Prayer) check - determines your ability to communicate and parley with deities or other powerful otherworldly beings, such as a warlock's patron.",
+    },
+    {
+      name: 'Religion',
+      score: 'int',
+      description:
+        'Your Intelligence (Religion) check measures your ability to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults.',
+    },
+    {
+      name: 'Sleight of Hand',
+      score: 'dex',
+      description:
+        "Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Dexterity (Sleight of Hand) check. The DM might also call for a Dexterity (Sleight of Hand) check to determine whether you can lift a coin purse off another person or slip something out of another person's pocket.",
+    },
+    {
+      name: 'Society',
+      score: 'int',
+      description:
+        'Your Intelligence (Society) check measures your ability to recall information about local customs, languages, and powerful figures such as nobles or criminal empires.',
+    },
+    {
+      name: 'Stealth',
+      score: 'dex',
+      description:
+        'Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard.',
+    },
+    {
+      name: 'Survival',
+      score: 'wis',
+      description:
+        'The DM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.',
+    },
+    {
+      name: 'Technology',
+      score: 'int',
+      description:
+        'Your Intelligence (Technology) check measures your ability to understand complicated technology of science or artifice, as well as your ability to understand constructs.',
+    },
+  ];
   private spellLists = [
     'arcane',
     'divine',
@@ -748,5 +905,264 @@ export class DataService {
     }
 
     return newData;
+  }
+
+  public getCompanion(
+    companionKey: string,
+    level: number,
+    choices: any[],
+    splMod: number
+  ) {
+    const proficiencyBonus = Math.floor(2 + (level - 1) / 4);
+    let companionData = companions.find((co) => co.key === companionKey);
+
+    let baseStats = companionData.stats['0'].any;
+    if (Object.keys(companionData.stats['0']).length !== 1) {
+      const choiceIndex = choices.find(
+        (c) => c.id === companionData.stats['0'].id
+      );
+      if (choiceIndex) {
+        const choiceValue = choiceIndex.value;
+        const choiceStats = companionData.stats['0'][choiceValue];
+
+        for (let [key, value] of Object.entries(choiceStats)) {
+          let keyValue: any = value;
+
+          if (key === 'ac') {
+            baseStats['ac'] = keyValue;
+          } else {
+            if (Array.isArray(keyValue)) {
+              if (baseStats[key] !== undefined) {
+                baseStats[key] = [...baseStats[key], ...keyValue];
+              }
+            } else if (value.constructor.name == 'Object') {
+              if (baseStats[key] !== undefined) {
+                baseStats[key] = { ...baseStats[key], ...keyValue };
+              }
+            }
+          }
+        }
+      }
+    }
+
+    for (let companionLevel of Object.keys(companionData.stats)) {
+      if (companionLevel === '0') {
+        continue;
+      }
+
+      if (parseInt(companionLevel) <= level) {
+        const levelStats = companionData.stats[companionLevel.toString()];
+        if (levelStats) {
+          if (levelStats['any']) {
+            for (let [key, value] of Object.entries(levelStats['any'])) {
+              let keyValue: any = value;
+
+              if (key === 'ac') {
+                baseStats['ac'] = keyValue;
+              } else {
+                if (Array.isArray(keyValue)) {
+                  if (baseStats[key] !== undefined) {
+                    for (let item of keyValue) {
+                      baseStats[key] = baseStats[key].filter(
+                        (baseItem) => baseItem.name !== item.name
+                      );
+                      baseStats[key].push(item);
+                    }
+                  } else {
+                    baseStats[key] = keyValue;
+                  }
+                } else if (keyValue.constructor.name == 'Object') {
+                  if (baseStats[key] !== undefined) {
+                    baseStats[key] = { ...baseStats[key], ...keyValue };
+                  } else {
+                    baseStats[key] = keyValue;
+                  }
+                }
+              }
+            }
+          }
+          if (levelStats['id']) {
+            const choiceIndex = choices.find((c) => c.id === levelStats['id']);
+            if (choiceIndex) {
+              const choiceValue = choiceIndex.value;
+              const choiceStats = levelStats[choiceValue];
+
+              for (let [key, value] of Object.entries(choiceStats)) {
+                let keyValue: any = value;
+                if (key === 'ac') {
+                  baseStats['ac'] = keyValue;
+                } else {
+                  if (Array.isArray(keyValue)) {
+                    if (baseStats[key] !== undefined) {
+                      for (let item of keyValue) {
+                        baseStats[key] = baseStats[key].filter(
+                          (baseItem) => baseItem.name !== item.name
+                        );
+                        baseStats[key].push(item);
+                      }
+                    } else {
+                      baseStats[key] = keyValue;
+                    }
+                  } else if (keyValue.constructor.name == 'Object') {
+                    if (baseStats[key] !== undefined) {
+                      baseStats[key] = { ...baseStats[key], ...keyValue };
+                    } else {
+                      baseStats[key] = keyValue;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    if (baseStats.trait) {
+      baseStats.trait = baseStats.trait.sort((a, b) =>
+        a.name.localeCompare(b.name)
+      );
+    }
+    if (baseStats.action) {
+      baseStats.action = baseStats.action.sort((a, b) => {
+        if (a.name === 'Multiattack') {
+          return 0;
+        } else if (b.name === 'Multiattack') {
+          return 1;
+        }
+
+        if (
+          a.entries[0].includes('Weapon Attack') &&
+          !b.entries[0].includes('Weapon Attack')
+        ) {
+          return -1;
+        } else if (
+          !a.entries[0].includes('Weapon Attack') &&
+          b.entries[0].includes('Weapon Attack')
+        ) {
+          return 1;
+        }
+
+        if (a.name.includes('(') && !b.name.includes('(')) {
+          return 1;
+        } else if (!a.name.includes('(') && b.name.includes('(')) {
+          return -1;
+        }
+
+        return a.name.localeCompare(b.name);
+      });
+    }
+
+    baseStats = JSON.stringify(baseStats);
+    baseStats = baseStats.replaceAll('{PB}', proficiencyBonus);
+    baseStats = baseStats.replaceAll('{spl-mod}', splMod);
+    baseStats = baseStats.replaceAll(
+      '{spl-atk}',
+      this.formatModifier(splMod + proficiencyBonus)
+    );
+    baseStats = baseStats.replaceAll('{spl-dc}', splMod + proficiencyBonus + 8);
+
+    baseStats = baseStats.replaceAll(/\{[0-9A-F\-]+\}/g, function (match) {
+      if (match === '{2}') {
+        return match;
+      }
+
+      const choiceIndex = choices.find((c) => c.id === match);
+      if (choiceIndex) {
+        return choiceIndex.value;
+      } else {
+        return '';
+      }
+    });
+
+    baseStats = baseStats.replaceAll(/\[[0-9\+]+\]/g, function (match) {
+      return match
+        .replace('[', '')
+        .replace(']', '')
+        .split('+')
+        .reduce((partialSum, a) => partialSum + parseInt(a), 0);
+    });
+    baseStats = baseStats.replaceAll(/\|[0-9\+]+\|/g, function (match) {
+      const mod = match
+        .replace('|', '')
+        .replace('|', '')
+        .split('+')
+        .reduce((partialSum, a) => partialSum + parseInt(a), 0);
+
+      if (mod !== undefined) {
+        if (mod > 0) {
+          return `+${mod}`;
+        } else {
+          return mod.toString();
+        }
+      }
+      return '';
+    });
+    baseStats = JSON.parse(baseStats);
+
+    if (baseStats.pbac) {
+      baseStats.ac[0].ac += proficiencyBonus;
+    }
+    let baseHp = baseStats.hp.base;
+    if (baseStats.hp.levelMod) {
+      baseHp += baseStats.hp.levelMod * level;
+    }
+    if (baseStats.hp.splMod) {
+      baseHp += splMod;
+    }
+    baseStats.hp = { average: baseHp };
+
+    baseStats.skill = {};
+    for (let skill of baseStats.skillProfs) {
+      if (!Object.keys(baseStats.skill).includes(skill)) {
+        if (skill.includes('{2}')) {
+          skill = skill.replace('{2}', '');
+          baseStats.skill[skill] = this.formatModifier(
+            this.getModifier(baseStats[this.getSkillAbility(skill)]) +
+              2 * proficiencyBonus
+          );
+        } else {
+          baseStats.skill[skill] = this.formatModifier(
+            this.getModifier(baseStats[this.getSkillAbility(skill)]) +
+              proficiencyBonus
+          );
+        }
+      }
+    }
+    baseStats.save = {};
+    for (let save of baseStats.saveProfs) {
+      baseStats.save[save] = this.formatModifier(
+        this.getModifier(baseStats[save]) + proficiencyBonus
+      );
+    }
+
+    if (Object.keys(baseStats.skill).includes('perception')) {
+      baseStats.passive =
+        10 + parseInt(baseStats.skill.perception.replace('+', ''));
+    } else {
+      baseStats.passive = 10 + this.getModifier(baseStats.wis);
+    }
+
+    return baseStats;
+  }
+  public getSkillAbility(skill: string): string {
+    return this.skillData.find((s) => s.name.toLowerCase() === skill)?.score;
+  }
+  public getModifier(score: number): number {
+    let mod = -5;
+    if (score) {
+      mod = Math.floor((score - 10) / 2);
+    }
+    return mod;
+  }
+  public formatModifier(modifier: number): string {
+    if (modifier !== undefined) {
+      if (modifier > 0) {
+        return `+${modifier}`;
+      } else {
+        return modifier.toString();
+      }
+    }
+    return '';
   }
 }
