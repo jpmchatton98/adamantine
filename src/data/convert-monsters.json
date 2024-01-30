@@ -1,0 +1,1502 @@
+[
+  {
+    "name": "Black Wyrmling",
+    "size": "Small",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 45, "formula": "13d6 + 13" },
+    "speed": { "walk": 30, "fly": 60, "swim": 30 },
+    "str": 15,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "wis": 11,
+    "cha": 13,
+    "save": { "dex": "+4", "con": "+3", "wis": "+2", "cha": "+3" },
+    "skill": { "perception": "+4", "stealth": "+4" },
+    "senses": ["blindsight 10 ft.", "darkvision 60 ft."],
+    "passive": 14,
+    "immune": ["acid"],
+    "languages": ["Draconic"],
+    "cr": 2,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 5 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 19-20."
+        ],
+        "sort": 0
+      }
+    ],
+    "action": [
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (1d10 + 2) piercing damage plus 3 (1d6) acid damage.",
+          "On a critical hit, one nonmagical weapon or piece of armor that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 15-foot long, 5-foot wide line, forcing each creature in the area to succeed on a DC 11 Dexterity saving throw or take 22 (5d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 12 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 5 feet toward the dragon and the dragon regains its reaction."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Dragon Whelp",
+    "size": "Medium",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 89, "formula": "17d8 + 32" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 17,
+    "dex": 14,
+    "con": 15,
+    "int": 11,
+    "wis": 11,
+    "cha": 14,
+    "save": { "dex": "+4", "con": "+4", "wis": "+2", "cha": "+4" },
+    "skill": { "medicine": "+2", "perception": "+4", "stealth": "+4" },
+    "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
+    "passive": 14,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic"],
+    "cr": 4,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 10 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 19-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes two attacks, one of which can be with its Steelrot Bite."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d10 + 3) piercing damage plus 3 (1d6) acid damage.",
+          "On a critical hit, one nonmagical weapon or piece of armor that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 6 (1d6 + 3) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 13)."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 30 feet, where it splashes in a 5 foot radius, forcing each creature in the area to succeed on a DC 12 Dexterity saving throw or be drenched in sticky sludge (remove DC 12).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 30-foot long, 5-foot wide line, forcing each creature in the area to succeed on a DC 12 Dexterity saving throw or take 27 (6d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 13 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Young Black Dragon",
+    "size": "Large",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 150, "formula": "20d10 + 60" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 19,
+    "dex": 14,
+    "con": 17,
+    "int": 12,
+    "wis": 11,
+    "cha": 15,
+    "save": { "dex": "+5", "con": "+6", "wis": "+3", "cha": "+5" },
+    "skill": { "medicine": "+3", "perception": "+4", "stealth": "+4" },
+    "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
+    "passive": 16,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic"],
+    "cr": 7,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 10 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 19-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes two attacks, one of which can be with its Steelrot Bite or Tailbarb Stab."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 15 (2d10 + 4) piercing damage plus 4 (1d8) acid damage.",
+          "On a critical hit, one nonmagical weapon or piece of armor that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 11 (2d6 + 4) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 15)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 10 ft., one target. <em>Hit:</em> 11 (2d6 + 4) piercing damage and the target begins bleeding (1d10)."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 30 feet, where it splashes in a 5 foot radius, forcing each creature in the area to succeed on a DC 14 Dexterity saving throw or be drenched in sticky sludge (remove DC 14).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 30-foot long, 5-foot wide line, forcing each creature in the area to succeed on a DC 14 Dexterity saving throw or take 49 (11d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 15 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Dragon Rake",
+    "size": "Large",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 221, "formula": "26d10 + 104" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 21,
+    "dex": 14,
+    "con": 19,
+    "int": 13,
+    "wis": 12,
+    "cha": 16,
+    "save": { "dex": "+6", "con": "+8", "wis": "+5", "cha": "+7" },
+    "skill": { "medicine": "+5", "perception": "+9", "stealth": "+6" },
+    "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
+    "passive": 19,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic", "Goblish"],
+    "cr": 11,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 10 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 19-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      },
+      {
+        "name": "Bloodbathed Resistance (1/Day)",
+        "entries": [
+          "If the dragon fails a saving throw while a bleeding or unconscious creature is within 30 feet of it, it can choose to succeed instead."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes two attacks, one of which can be with its Steelrot Bite or Tailbarb Stab."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 16 (2d10 + 5) piercing damage plus 4 (1d8) acid damage.",
+          "On a critical hit, one nonmagical weapon or piece of armor that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d6 + 5) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 17)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 10 ft., one target. <em>Hit:</em> 12 (2d6 + 5) piercing damage and the target begins bleeding (1d10)."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 60 feet, where it splashes in a 5 foot radius, forcing each creature in the area to succeed on a DC 16 Dexterity saving throw or be drenched in sticky sludge (remove DC 16).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 30-foot long, 5-foot wide line, forcing each creature in the area to succeed on a DC 16 Dexterity saving throw or take 49 (11d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 15 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Mire Dive",
+        "entries": [
+          "The dragon moves up to half its speed. If it ends this movement submerged in murky water, it can attempt to Hide."
+        ]
+      },
+      {
+        "name": "Drooling Torment",
+        "entries": [
+          "Acid drips from the dragon's jaws toward a creature grappled by it, dealing 9 (2d8) acid damage to the creature.",
+          "The target can use its reaction to attempt to escape the grapple, avoiding the damage on a success."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Adult Black Dragon",
+    "size": "Huge",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 271, "formula": "24d12 + 130" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 23,
+    "dex": 14,
+    "con": 21,
+    "int": 14,
+    "wis": 13,
+    "cha": 17,
+    "save": { "dex": "+7", "con": "+10", "wis": "+6", "cha": "+8" },
+    "skill": { "medicine": "+6", "perception": "+11", "stealth": "+7" },
+    "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
+    "passive": 21,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic", "Goblish"],
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 10 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 18-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      },
+      {
+        "name": "Bloodbathed Resistance (3/Day)",
+        "entries": [
+          "If the dragon fails a saving throw while a bleeding or unconscious creature is within 30 feet of it, it can choose to succeed instead."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes three attacks, one of which can be with its Steelrot Bite or Tailbarb Stab, and uses its Frightful Presence."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 10 ft., one target. <em>Hit:</em> 17 (2d10 + 6) piercing damage plus 4 (1d8) acid damage.",
+          "On a critical hit, one weapon or piece of armor of Uncommon or lesser rarity that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d6 + 6) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 19)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 15 ft., one target. <em>Hit:</em> 13 (2d6 + 6) piercing damage and the target begins bleeding (1d10).",
+          "Any hit against a prone creature with this attack becomes a critical."
+        ]
+      },
+      {
+        "name": "Frightful Presence",
+        "entries": [
+          "Each creature of the dragon's choice within 120 feet of it must succeed on a DC 16 Wisdom saving throw or be frightened until the beginning of the dragon's next turn, becoming immune to this effect for the next 24 hours on a success."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 60 feet, where it splashes in a 10 foot radius, forcing each creature in the area to succeed on a DC 18 Dexterity saving throw or be drenched in sticky sludge (remove DC 18).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 60-foot long, 5-foot wide line, forcing each creature in the area to succeed on a DC 18 Dexterity saving throw or take 54 (12d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 19 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      },
+      {
+        "name": "Bloodied Breath (1/Day)",
+        "entries": [
+          "When the dragon is reduced below 136 hit points, it can roll to recharge its Flesh-Melting Breath, then immediately use it, if available."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Mire Dive",
+        "entries": [
+          "The dragon moves up to half its speed. If it ends this movement submerged in murky water, it can attempt to Hide."
+        ]
+      },
+      {
+        "name": "Drooling Torment",
+        "entries": [
+          "Acid drips from the dragon's jaws toward a creature grappled by it, dealing 9 (2d8) acid damage to the creature.",
+          "The target can use its reaction to attempt to escape the grapple, avoiding the damage on a success."
+        ]
+      },
+      {
+        "name": "Peel Nerve (Costs 2 Actions)",
+        "entries": [
+          "The dragon makes a Subduing Claw attack.",
+          "If this attack hits a creature grappled by the dragon, the target has one spell affect on it end, or gains vulnerability to acid damage until it regains any hit points if it cannot."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Venerable Black Dragon",
+    "size": "Huge",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 20, "from": ["natural armor"] }],
+    "hp": { "average": 307, "formula": "25d12 + 149" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 25,
+    "dex": 14,
+    "con": 23,
+    "int": 15,
+    "wis": 14,
+    "cha": 18,
+    "save": { "dex": "+8", "con": "+12", "wis": "+8", "cha": "+10" },
+    "skill": { "medicine": "+8", "perception": "+14", "stealth": "+8" },
+    "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
+    "passive": 24,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic", "Goblish"],
+    "cr": 17,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 10 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 18-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      },
+      {
+        "name": "Bloodbathed Resistance (3/Day)",
+        "entries": [
+          "If the dragon fails a saving throw while a bleeding or unconscious creature is within 30 feet of it, it can choose to succeed instead."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes three attacks, one of which can be with its Steelrot Bite or Tailbarb Stab, and uses its Frightful Presence."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 10 ft., one target. <em>Hit:</em> 18 (2d10 + 7) piercing damage plus 13 (3d8) acid damage.",
+          "On a critical hit, one weapon or piece of armor of Uncommon or lesser rarity that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d6 + 7) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 21)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 15 ft., one target. <em>Hit:</em> 14 (2d6 + 7) piercing damage and the target begins bleeding (1d10).",
+          "Any hit against a prone creature with this attack becomes a critical."
+        ]
+      },
+      {
+        "name": "Frightful Presence",
+        "entries": [
+          "Each creature of the dragon's choice within 120 feet of it must succeed on a DC 18 Wisdom saving throw or be frightened until the beginning of the dragon's next turn, becoming immune to this effect for the next 24 hours on a success."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 60 feet, where it splashes in a 10 foot radius, forcing each creature in the area to succeed on a DC 20 Dexterity saving throw or be drenched in sticky sludge (remove DC 20).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 60-foot long, 5-foot wide line, forcing each creature in the area to succeed on a DC 20 Dexterity saving throw or take 54 (12d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 21 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      },
+      {
+        "name": "Bloodied Breath (1/Day)",
+        "entries": [
+          "When the dragon is reduced below 154 hit points, it can roll to recharge its Flesh-Melting Breath, then immediately use it, if available."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Mire Dive",
+        "entries": [
+          "The dragon moves up to half its speed. If it ends this movement submerged in murky water, it can attempt to Hide."
+        ]
+      },
+      {
+        "name": "Drooling Torment",
+        "entries": [
+          "Acid drips from the dragon's jaws toward a creature grappled by it, dealing 9 (2d8) acid damage to the creature.",
+          "The target can use its reaction to attempt to escape the grapple, avoiding the damage on a success."
+        ]
+      },
+      {
+        "name": "Peel Nerve (Costs 2 Actions)",
+        "entries": [
+          "The dragon makes a Subduing Claw attack.",
+          "If this attack hits a creature grappled by the dragon, the target has one spell affect on it end, or gains vulnerability to acid damage until it regains any hit points if it cannot."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ancient Black Dragon",
+    "size": "Gargantuan",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 21, "from": ["natural armor"] }],
+    "hp": { "average": 432, "formula": "24d20 + 168" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 27,
+    "dex": 14,
+    "con": 25,
+    "int": 16,
+    "wis": 15,
+    "cha": 19,
+    "save": { "dex": "+9", "con": "+14", "wis": "+9", "cha": "+11" },
+    "skill": { "medicine": "+9", "perception": "+16", "stealth": "+9" },
+    "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
+    "passive": 26,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic", "Goblish"],
+    "cr": 21,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 10 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 18-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      },
+      {
+        "name": "Bloodbathed Resistance (3/Day)",
+        "entries": [
+          "If the dragon fails a saving throw while a bleeding or unconscious creature is within 30 feet of it, it can choose to succeed instead."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes three attacks, one of which can be with its Steelrot Bite or Tailbarb Stab, and uses its Frightful Presence."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +15 to hit, reach 15 ft., one target. <em>Hit:</em> 19 (2d10 + 8) piercing damage plus 13 (3d8) acid damage.",
+          "On a critical hit, one weapon or piece of armor of Rare or lesser rarity that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +15 to hit, reach 10 ft., one target. <em>Hit:</em> 15 (2d6 + 8) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 23)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 20 ft., one target. <em>Hit:</em> 15 (2d6 + 8) piercing damage and the target begins bleeding (1d10).",
+          "Any hit against a prone creature with this attack becomes a critical."
+        ]
+      },
+      {
+        "name": "Frightful Presence",
+        "entries": [
+          "Each creature of the dragon's choice within 120 feet of it must succeed on a DC 19 Wisdom saving throw or be frightened until the beginning of the dragon's next turn, becoming immune to this effect for the next 24 hours on a success."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 90 feet, where it splashes in a 15 foot radius, forcing each creature in the area to succeed on a DC 22 Dexterity saving throw or be drenched in sticky sludge (remove DC 22).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 90-foot long, 10-foot wide line, forcing each creature in the area to succeed on a DC 22 Dexterity saving throw or take 67 (15d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 23 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      },
+      {
+        "name": "Bloodied Breath (1/Day)",
+        "entries": [
+          "When the dragon is reduced below 217 hit points, it can roll to recharge its Flesh-Melting Breath, then immediately use it, if available."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Mire Dive",
+        "entries": [
+          "The dragon moves up to half its speed. If it ends this movement submerged in murky water, it can attempt to Hide."
+        ]
+      },
+      {
+        "name": "Drooling Torment",
+        "entries": [
+          "Acid drips from the dragon's jaws toward a creature grappled by it, dealing 13 (3d8) acid damage to the creature.",
+          "The target can use its reaction to attempt to escape the grapple, avoiding the damage on a success."
+        ]
+      },
+      {
+        "name": "Peel Nerve (Costs 2 Actions)",
+        "entries": [
+          "The dragon makes a Subduing Claw attack.",
+          "If this attack hits a creature grappled by the dragon, the target has one spell affect on it end, or gains vulnerability to acid damage until it regains any hit points if it cannot."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Wyrm",
+    "size": "Gargantuan",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 21, "from": ["natural armor"] }],
+    "hp": { "average": 555, "formula": "30d20 + 240" },
+    "speed": { "walk": 40, "fly": 80, "swim": 40 },
+    "str": 28,
+    "dex": 17,
+    "con": 26,
+    "int": 17,
+    "wis": 16,
+    "cha": 20,
+    "save": { "dex": "+10", "con": "+15", "wis": "+10", "cha": "+12" },
+    "skill": { "medicine": "+10", "perception": "+17", "stealth": "+10" },
+    "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
+    "passive": 27,
+    "immune": ["acid"],
+    "languages": ["Common", "Draconic", "Goblish", "Abyssal"],
+    "cr": 24,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 15 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 18-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      },
+      {
+        "name": "Bloodbathed Resistance (3/Day)",
+        "entries": [
+          "If the dragon fails a saving throw while a bleeding or unconscious creature is within 30 feet of it, it can choose to succeed instead."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes three attacks, one of which can be with its Steelrot Bite or Tailbarb Stab, and uses its Frightful Presence."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +16 to hit, reach 15 ft., one target. <em>Hit:</em> 20 (2d10 + 9) piercing damage plus 13 (3d8) acid damage.",
+          "On a critical hit, one weapon or piece of armor of Rare or lesser rarity that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +16 to hit, reach 10 ft., one target. <em>Hit:</em> 16 (2d6 + 9) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 24)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +16 to hit, reach 20 ft., one target. <em>Hit:</em> 16 (2d6 + 9) piercing damage and the target begins bleeding (1d10).",
+          "Any hit against a prone creature with this attack becomes a critical."
+        ]
+      },
+      {
+        "name": "Frightful Presence",
+        "entries": [
+          "Each creature of the dragon's choice within 120 feet of it must succeed on a DC 20 Wisdom saving throw or be frightened until the beginning of the dragon's next turn, becoming immune to this effect for the next 24 hours on a success."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 120 feet, where it splashes in a 15 foot radius, forcing each creature in the area to succeed on a DC 23 Dexterity saving throw or be drenched in sticky sludge (remove DC 23).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 120-foot long, 10-foot wide line, forcing each creature in the area to succeed on a DC 23 Dexterity saving throw or take 81 (18d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 24 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 10 feet toward the dragon and the dragon regains its reaction."
+        ]
+      },
+      {
+        "name": "Bloodied Breath (1/Day)",
+        "entries": [
+          "When the dragon is reduced below 278 hit points, it can roll to recharge its Flesh-Melting Breath, then immediately use it, if available."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Mire Dive",
+        "entries": [
+          "The dragon moves up to half its speed. If it ends this movement submerged in murky water, it can attempt to Hide."
+        ]
+      },
+      {
+        "name": "Drooling Torment",
+        "entries": [
+          "Acid drips from the dragon's jaws toward a creature grappled by it, dealing 18 (4d8) acid damage to the creature.",
+          "The target can use its reaction to attempt to escape the grapple, avoiding the damage on a success."
+        ]
+      },
+      {
+        "name": "Peel Nerve (Costs 2 Actions)",
+        "entries": [
+          "The dragon makes a Subduing Claw attack.",
+          "If this attack hits a creature grappled by the dragon, the target has one spell affect on it end, or gains vulnerability to acid damage until it regains any hit points if it cannot."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Greatwyrm",
+    "size": "Titanic",
+    "type": "dragon",
+    "tags": ["chromatic"],
+    "alignment": ["L", "E"],
+    "ac": [{ "ac": 22, "from": ["natural armor"] }],
+    "hp": { "average": 604, "formula": "33d20 + 264" },
+    "speed": { "walk": 60, "fly": 120, "swim": 60 },
+    "str": 29,
+    "dex": 16,
+    "con": 27,
+    "int": 18,
+    "wis": 17,
+    "cha": 21,
+    "save": { "dex": "+11", "con": "+16", "wis": "+11", "cha": "+13" },
+    "skill": { "medicine": "+11", "perception": "+19", "stealth": "+11" },
+    "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
+    "passive": 29,
+    "resist": ["damage from attacks made without advantage"],
+    "immune": ["acid"],
+    "conditionImmune": ["charmed", "frightened", "poisoned"],
+    "languages": ["Common", "Draconic", "Goblish", "Abyssal"],
+    "cr": 26,
+    "trait": [
+      {
+        "name": "Sensitivity Aura",
+        "entries": [
+          "Attacks against creatures within 15 feet of the dragon that do not have resistance or immunity to acid damage score a critical on an 17-20."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Unequaled Cruelty",
+        "entries": [
+          "When the black dragon reduces a creature to 0 hit points, each frightened creature that can see it must use its reaction, if available, to move its speed directly away from it."
+        ]
+      },
+      {
+        "name": "Bloodbathed Resistance (5/Day)",
+        "entries": [
+          "If the dragon fails a saving throw while a bleeding or unconscious creature is within 30 feet of it, it can choose to succeed instead."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dragon makes three attacks, one of which can be with its Steelrot Bite or Tailbarb Stab, and uses its Frightful Presence."
+        ]
+      },
+      {
+        "name": "Steelrot Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 15 ft., one target. <em>Hit:</em> 20 (2d10 + 9) piercing damage plus 18 (4d8) acid damage.",
+          "On a critical hit, one weapon or piece of armor of Very Rare or lesser rarity that the target is wearing or wielding is destroyed (target's choice)."
+        ]
+      },
+      {
+        "name": "Subduing Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 10 ft., one target. <em>Hit:</em> 16 (2d6 + 9) slashing damage.",
+          "Instead of dealing damage, the dragon can knock the target prone or grapple it (escape DC 24)."
+        ]
+      },
+      {
+        "name": "Tailbarb Stab",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 20 ft., one target. <em>Hit:</em> 16 (2d6 + 9) piercing damage and the target begins bleeding (2d10).",
+          "Any hit against a prone creature with this attack becomes a critical."
+        ]
+      },
+      {
+        "name": "Frightful Presence",
+        "entries": [
+          "Each creature of the dragon's choice within 300 feet of it must succeed on a DC 21 Wisdom saving throw or be frightened until the beginning of the dragon's next turn, becoming immune to this effect for the next 24 hours on a success."
+        ]
+      },
+      {
+        "name": "Hacked-Tar Sputum (Recharges when the dragon uses its Flesh-Melting Breath)",
+        "entries": [
+          "The dragon hacks up a glob of spent acid and dead flesh at a point it can see within 300 feet, where it splashes in a 20 foot radius, forcing each creature in the area to succeed on a DC 24 Dexterity saving throw or be drenched in sticky sludge (remove DC 24).",
+          "A sludge-drenched creature is blinded, has its movement reduced by half, and is protected from decay if it dies, extending the time limit of effects that would raise the target from the dead by up to a year."
+        ]
+      },
+      {
+        "name": "Flesh-Melting Breath (Recharge 5-6)",
+        "entries": [
+          "The dragon spews a jet of caustic acid in a 300-foot long, 15-foot wide line, forcing each creature in the area to succeed on a DC 24 Dexterity saving throw or take 99 (22d8) acid damage, or half as much damage on a success.",
+          "A creature that fails this saving throw by 5 or more suffers an acid injury. A creature killed by this damage disintegrates."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cruel Jest",
+        "entries": [
+          "When a creature smaller than the dragon leaves its reach, the dragon can force it to make a DC 25 Dexterity saving throw.",
+          "On a failure, the target is dragged up to 15 feet toward the dragon and the dragon regains its reaction."
+        ]
+      },
+      {
+        "name": "Bloodied Breath (1/Day)",
+        "entries": [
+          "When the dragon is reduced below 303 hit points, it can roll to recharge its Flesh-Melting Breath, then immediately use it, if available."
+        ]
+      }
+    ],
+    "legendary": [
+      {
+        "name": "Mire Dive",
+        "entries": [
+          "The dragon moves up to half its speed. If it ends this movement submerged in murky water, it can attempt to Hide."
+        ]
+      },
+      {
+        "name": "Drooling Torment",
+        "entries": [
+          "Acid drips from the dragon's jaws toward a creature grappled by it, dealing 18 (4d8) acid damage to the creature.",
+          "The target can use its reaction to attempt to escape the grapple, avoiding the damage on a success."
+        ]
+      },
+      {
+        "name": "Peel Nerve (Costs 2 Actions)",
+        "entries": [
+          "The dragon makes a Subduing Claw attack.",
+          "If this attack hits a creature grappled by the dragon, the target has one spell affect on it end, or gains vulnerability to acid damage until it regains any hit points if it cannot."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gelatinous Cub",
+    "size": "Small",
+    "type": "ooze",
+    "alignment": ["U"],
+    "ac": [6],
+    "hp": { "average": 26, "formula": "4d6 + 12" },
+    "speed": { "walk": 15 },
+    "str": 6,
+    "dex": 3,
+    "con": 16,
+    "int": 1,
+    "wis": 6,
+    "cha": 1,
+    "senses": ["blindsight 10 ft. (blind beyond this radius)"],
+    "passive": 8,
+    "conditionImmune": [
+      "blinded",
+      "charmed",
+      "deafened",
+      "exhaustion",
+      "frightened",
+      "prone"
+    ],
+    "immune": ["acid"],
+    "cr": 0.5,
+    "trait": [
+      {
+        "name": "Perfect Transparceny",
+        "entries": [
+          "If the cube has not moved or taken an action in the last minute and has no creatures swallowed, it is invisible to creatures with a Passive Perception lower than 15."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Glistening Pseudopod",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +0 to hit, reach 5 ft., one creature. <em>Hit:</em> The cub presses itself against the target.",
+          "At the end of the target's next turn, it takes 10 (3d6) acid damage if it is within 5 feet of the cub."
+        ]
+      },
+      {
+        "name": "Engulf Object",
+        "entries": [
+          "The cub swallows a Tiny object within 5 feet that is unattended or carried by an incapacitated creature.",
+          "A creature can retrieve the swallowed object as an action with a successful DC 10 Constitution (Athletics) check, taking 3 (1d6) acid damage on a success or failure."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Suction Bond",
+        "entries": [
+          "When a creature would leave the cub's reach, the cub can become attached to the creature (remove DC 10) until the beginning of the cub's next turn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gelatinous Cube",
+    "size": "Large",
+    "type": "ooze",
+    "alignment": ["U"],
+    "ac": [6],
+    "hp": { "average": 73, "formula": "7d10 + 35" },
+    "speed": { "walk": 15 },
+    "str": 14,
+    "dex": 3,
+    "con": 20,
+    "int": 1,
+    "wis": 6,
+    "cha": 1,
+    "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+    "passive": 8,
+    "conditionImmune": [
+      "blinded",
+      "charmed",
+      "deafened",
+      "exhaustion",
+      "frightened",
+      "prone"
+    ],
+    "immune": ["acid"],
+    "cr": 2,
+    "greatSteed": true,
+    "trait": [
+      {
+        "name": "Perfect Transparceny",
+        "entries": [
+          "If the cube has not moved or taken an action in the last minute and has no creatures swallowed, it is invisible to creatures with a Passive Perception lower than 15.",
+          "A Medium or smaller creature that attempts to enter the cube's space is swallowed by it."
+        ]
+      },
+      {
+        "name": "Gushing Collapse",
+        "entries": [
+          "When the cube is reduced to 0 hit points, its membrane ruptures, spilling forth a torrent of cytoplasm.",
+          "Each creature within 5 feet of the cube takes 3 (1d6) acid damage and is pushed up to 10 feet away."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Glistening Pseudopod",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one creature. <em>Hit:</em> 11 (2d8 + 2) bludgeoning damage.",
+          "This attack has advantage against a target with a Passive Perception lower than 15."
+        ]
+      },
+      {
+        "name": "Quivering Lurch (Recharge 5-6)",
+        "entries": [
+          "The cube lunges up to 15 feet, and can enter the space of any Medium or smaller creature.",
+          "Each creature whose space the cube enters in this way must succeed on a DC 12 Strength saving throw or be swallowed (escape DC 12), or move to the nearest unoccupied space on a success.",
+          "A creature swallowed by the cube takes 14 (4d6) acid damage at the beginning of each of the cube's turns."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Vacoule Encasement",
+        "entries": [
+          "When a creature fails an attempt to free a creature swallowed by the cube by 5 or more, the cube can swallow it."
+        ]
+      },
+      {
+        "name": "Wobbly Dispertion",
+        "entries": [
+          "When the cube is hit with an attack by a creature not swallowed by it, it can make a Constitution saving throw with DC equal to the attack's damage, reducing the attack's damage to 1 on a success."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crusher Cube",
+    "size": "Large",
+    "type": "ooze",
+    "alignment": ["U"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 126, "formula": "12d10 + 60" },
+    "speed": { "walk": 20 },
+    "str": 17,
+    "dex": 3,
+    "con": 20,
+    "int": 1,
+    "wis": 6,
+    "cha": 1,
+    "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+    "passive": 8,
+    "conditionImmune": [
+      "blinded",
+      "charmed",
+      "deafened",
+      "exhaustion",
+      "frightened",
+      "prone"
+    ],
+    "resist": ["piercing", "slashing"],
+    "immune": ["acid"],
+    "cr": 6,
+    "trait": [
+      {
+        "name": "Perfect Transparceny",
+        "entries": [
+          "If the cube has not moved or taken an action in the last minute and has no creatures swallowed, it is invisible to creatures with a Passive Perception lower than 16.",
+          "A Medium or smaller creature that attempts to enter the cube's space is swallowed by it."
+        ]
+      },
+      {
+        "name": "Rolling Cube",
+        "entries": [
+          "The cube moves only by rolling in 10 foot increments in cardinal directions, and can enter the space of any Medium or smaller creature.",
+          "A creature whose space the cube enters takes 4 (1d8) bludgeoning damage, then is pushed 10 feet away if possible, or knocked prone and restrained (escape DC 14) until the cube moves if it can't be."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The cube makes two attacks with its Spined Axopod, one of which it can replace with a use of its Split Valves."
+        ]
+      },
+      {
+        "name": "Spined Axopod",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 10 ft., one creature. <em>Hit:</em> 13 (3d6 + 3) piercing damage.",
+          "This attack has advantage against a target with a Passive Perception lower than 16."
+        ]
+      },
+      {
+        "name": "Split Valves",
+        "entries": [
+          "The cube's armor splits as it attempts to absorb a creature restrained beneath it.",
+          "The creature must succeed on a DC 14 Strength saving throw or be swallowed (escape DC 14). On a successful saving throw, the creature can make an opportunity attack against the cube.",
+          "A creature swallowed by the cube takes 14 (4d6) acid damage at the beginning of each of the cube's turns."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Crushing Clunk",
+        "entries": [
+          "When the cube takes 10 or more damage from an attack, it can move exactly 10 feet directly away from the attacker, if possible."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Corruptive Cube",
+    "size": "Huge",
+    "type": "ooze",
+    "alignment": ["U"],
+    "ac": [{ "ac": 10, "from": ["natural armor"] }],
+    "hp": { "average": 212, "formula": "17d12 + 102" },
+    "speed": { "walk": 15, "swim": 15 },
+    "str": 19,
+    "dex": 3,
+    "con": 22,
+    "int": 1,
+    "wis": 9,
+    "cha": 4,
+    "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+    "passive": 9,
+    "conditionImmune": [
+      "blinded",
+      "charmed",
+      "deafened",
+      "exhaustion",
+      "frightened",
+      "prone"
+    ],
+    "immune": ["acid"],
+    "cr": 13,
+    "trait": [
+      {
+        "name": "Perfect Transparceny",
+        "entries": [
+          "If the cube has not moved or taken an action in the last minute and has no creatures swallowed, it is invisible to creatures with a Passive Perception lower than 17.",
+          "A Large or smaller creature that attempts to enter the cube's space is swallowed by it."
+        ]
+      },
+      {
+        "name": "Gushing Collapse",
+        "entries": [
+          "When the cube is reduced to 0 hit points, its membrane ruptures, spilling forth a torrent of cytoplasm.",
+          "Each creature within 15 feet of the cube takes 10 (3d6) acid damage and is pushed up to 20 feet away."
+        ]
+      },
+      {
+        "name": "Rippling Reserves",
+        "entries": [
+          "If the cube has fewer than 107 hit points, it can take two bonus actions on each of its turns."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The cube makes two attacks with its Snaking Pseudopod, one of which it can replace with a use of its Waste Jet."
+        ]
+      },
+      {
+        "name": "Snaking Pseudopod",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 30 ft., one creature. <em>Hit:</em> 17 (3d8 + 4) bludgeoning damage and the target is pulled up to 5 feet toward the cube.",
+          "Then, if the creature is Large or smaller and within 5 feet of the cube it must succeed on a DC 17 Strength saving throw or be swallowed (escape DC 17).",
+          "A creature swallowed by the cube takes 21 (6d6) acid damage at the beginning of each of the cube's turns."
+        ]
+      },
+      {
+        "name": "Waste Jet",
+        "entries": [
+          "A jet of indigestible detritus spurt from the cube in a 20 foot line that is 5 feet wide.",
+          "Each creature in the area must succeed on a DC 19 Strength saving throw or take 18 (4d8) bludgeoning plus 14 (4d6) acid damage and be pushed up to 20 feet away, or take half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Neurophage Intrusion (Recharge 5-6)",
+        "entries": [
+          "Each creature Swallowed by the cube must succeed on a DC 19 Constitution saving throw or take 14 (4d6) acid damage and be infected with Jelly-Brains."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Cyst Armor",
+        "entries": [
+          "The cube hardens its exterior membrane, gaining 20 temporary hit points. While the cube has any of these temporary hit points, it gains the following effects:",
+          "<ul><li>Creatures not swallowed by the cube treat its AC as 21.</li><li>The cube cannot swallow creatures, move, or use reactions.</li><li>The escape DC for creatures swallowed by the cube increases to 21.</li></ul>"
+        ]
+      },
+      {
+        "name": "Cytoplasm Bulge",
+        "entries": [
+          "The cube targets a 30 foot cone extending from itself, concentrating its mass on that side, and ends its turn.",
+          "At the beginning of its next turn, the cube can make a Snaking Pseudopod attack against each creature in the cone."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Vacoule Encasement",
+        "entries": [
+          "When a creature fails an attempt to free a creature swallowed by the cube by 5 or more, the cube can swallow it."
+        ]
+      },
+      {
+        "name": "Wobbly Dispertion",
+        "entries": [
+          "When the cube is hit with an attack by a creature not swallowed by it, it can make a Constitution saving throw with DC equal to the attack's damage, reducing the attack's damage to 1 on a success."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gray Ooze",
+    "srd": true,
+    "size": "Medium",
+    "type": "ooze",
+    "alignment": ["U"],
+    "ac": [6],
+    "hp": { "average": 22, "formula": "3d8 + 9" },
+    "speed": { "walk": 10, "climb": 10 },
+    "str": 12,
+    "dex": 6,
+    "con": 16,
+    "int": 1,
+    "wis": 6,
+    "cha": 2,
+    "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+    "passive": 8,
+    "resist": ["acid", "cold", "fire"],
+    "conditionImmune": [
+      "blinded",
+      "charmed",
+      "deafened",
+      "exhaustion",
+      "frightened",
+      "prone"
+    ],
+    "cr": 0.5,
+    "trait": [
+      {
+        "name": "Amorphous",
+        "entries": [
+          "The ooze can move through a space as narrow as 1 inch wide without squeezing."
+        ]
+      },
+      {
+        "name": "Shape Memory",
+        "entries": [
+          "If the ooze takes any lightning damage, it is paralyzed until the beginning of its next turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Shifting Pseudopod",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (2d6 + 1) acid damage and the target suffers one effect of the ooze's choice:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "name": "Soften Armor",
+                "type": "item",
+                "entries": [
+                  "One piece of nonmagical metal armor the target is wearing softens and sags, offering no AC bonus until the end of the ooze's next turn."
+                ]
+              },
+              {
+                "name": "Soften Weapon",
+                "type": "item",
+                "entries": [
+                  "One nonmagical metal weapon the target is wielding becomes springy and pliable, counting as an improvised weapon until the end of the ooze's next turn."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chaos Meld",
+        "entries": [
+          "One creature within 5 feet that is wearing or wielding an item affected by the ooze's Shifting Pseudopod must make a DC 11 Dexterity saving throw.",
+          "On a failed save, the item liquefies and the ooze absorbs it, gaining 5 temporary hit points. While it has any of these temporary hit points, the ooze's AC is increased to 16."
+        ]
+      },
+      {
+        "name": "Cryptic Mimicry",
+        "entries": [
+          "The ooze mimics the texture of nearby surfaces, becoming indistinguishable from them until it moves or is illuminated by a source of bright light within 10 feet of it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gray Ooze Quagmire",
+    "srd": true,
+    "size": "Large",
+    "type": "ooze",
+    "alignment": ["U"],
+    "ac": [6],
+    "hp": { "average": 123, "formula": "13d10 + 52" },
+    "speed": { "walk": 15, "climb": 15 },
+    "str": 18,
+    "dex": 6,
+    "con": 19,
+    "int": 1,
+    "wis": 6,
+    "cha": 2,
+    "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+    "passive": 8,
+    "resist": ["acid", "cold", "fire"],
+    "conditionImmune": [
+      "blinded",
+      "charmed",
+      "deafened",
+      "exhaustion",
+      "frightened",
+      "prone"
+    ],
+    "cr": 4,
+    "trait": [
+      {
+        "name": "Amorphous",
+        "entries": [
+          "The ooze can move through a space as narrow as 1 inch wide without squeezing."
+        ]
+      },
+      {
+        "name": "False Floor",
+        "entries": [
+          "When a creature steps onto the ooze or fails an attempt to free a creature grappled by the ooze, the ooze can grapple it (escape DC 14).",
+          "A creature that fails an attempt to escape this grapple has disadvantage on its next attempt to escape."
+        ]
+      },
+      {
+        "name": "Shape Memory",
+        "entries": [
+          "If the ooze takes any lightning damage, it is paralyzed until the beginning of its next turn and each creature swallowed by it is expelled into the nearest unoccupied space."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The ooze makes two attacks with its Shifting Pseudopod."]
+      },
+      {
+        "name": "Shifting Pseudopod",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 10 ft., one target. <em>Hit:</em> 11 (2d6 + 4) acid damage plus 4 (1d8) bludgeoning damage and the target suffers one effect of the ooze's choice:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "name": "Soften Armor",
+                "type": "item",
+                "entries": [
+                  "One piece of nonmagical metal armor the target is wearing softens and sags, offering no AC bonus until the end of the ooze's next turn."
+                ]
+              },
+              {
+                "name": "Soften Weapon",
+                "type": "item",
+                "entries": [
+                  "One nonmagical metal weapon the target is wielding becomes springy and pliable, counting as an improvised weapon until the end of the ooze's next turn."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chaos Meld",
+        "entries": [
+          "One creature within 10 feet that is wearing or wielding an item affected by the ooze's Shifting Pseudopod must make a DC 14 Dexterity saving throw.",
+          "On a failed save, the item liquefies and the ooze absorbs it, gaining 5 temporary hit points. While it has any of these temporary hit points, the ooze's AC is increased to 16."
+        ]
+      },
+      {
+        "name": "Cryptic Mimicry",
+        "entries": [
+          "The ooze mimics the texture of nearby surfaces, becoming indistinguishable from them until it moves or is illuminated by a source of bright light within 10 feet of it."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Inexorable Draw",
+        "entries": [
+          "When a creature grappled by the ooze takes an action, the ooze can draw it deeper in, restraining it for as long as it remains grappled.",
+          "If the creature was already restrained, it is instead swallowed by the ooze and begins choking for as long as it remains grappled."
+        ]
+      },
+      {
+        "name": "Vengeful Conduit",
+        "entries": [
+          "When the ooze takes any lightning damage, before being paralyzed by its Shape Memory trait, it can deal an equal amount of lightning damage to each creature grappled by it."
+        ]
+      }
+    ]
+  }
+]

@@ -8615,74 +8615,78 @@
   "recipe": [
     {
       "name": "Beast (Air)",
-      "description": "A creature that eats this Morsel gains a bonus to initiative rolls equal to your Intelligence modifier for 1 hour. "
+      "description": "For 1 hour, the creature gains a bonus to its initiative rolls equal to your Intelligence modifier (minimum of +1), and its walking speed increases by 10 feet."
     },
     {
       "name": "Beast (Land)",
-      "description": "A creature that eats this Morsel regains hit points equal to your Intellect Die + your Intelligence modifier. "
+      "description": "The creature that eats this Morsel regains hit points equal to one roll of your Intellect Die + your Intelligence modifier."
+    },
+    {
+      "name": "Beast (Subterranean)",
+      "description": "For 1 hour, the creature gains darkvision out to 60 feet. If a creature already has darkvision, its radius grows by 30 feet."
     },
     {
       "name": "Beast (Water)",
-      "description": "A creature that eats this Morsel gains a swimming speed equal to their walking speed for 1 hour."
+      "description": "For 1 hour, the creature gains a swimming speed equal to its walking speed, and it can hold its breath for up to 10 minutes."
     },
     {
       "name": "Plant",
-      "description": "A creature that eats this Morsel is instantly cured of one of the following conditions currently affecting it: blinded, deafened, paralyzed, petrified, poisoned, or their level of exhaustion is reduced by 1 (maximum once per day). "
+      "description": "The creature is instantly cured of the following conditions: blinded, deafened, paralyzed, petrified, poisoned, a reduction to an ability score, or a reduction to its hit point maximum."
     },
     {
       "name": "Aberration",
       "prereqLevel": 6,
-      "description": "A creature that eats this Morsel can telepathically speak to creatures within 30 feet for 1 hour. A target must be able to understand at least one language to understand its telepathy. "
+      "description": "For 1 hour, the creature can communicate telepathically with any creature within 30 feet. However, in order to respond to you, a creature must be able to speak at least one language."
     },
     {
       "name": "Dragon",
       "prereqLevel": 6,
-      "description": "A creature that eats this Morsel gains resistance to the damage type of the dragon's breath weapon for 1 hour.</p><p>You can create a separate Recipe in your Cook Book for each type of Dragon you have harvested a sample of. "
+      "description": "For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p><p>You can create a unique Recipe in your Cookbook for each different type of Dragon you have harvested a Sample from."
     },
     {
       "name": "Giant",
       "prereqLevel": 6,
-      "description": "A creature that eats this Morsel grows to become the size of the Giant used in the creation of this Recipe for 1 hour. While it is enlarged in this way, the creature must concentrate on this effect as if they were concentrating on a spell, and it gains a bonus to its Strength checks and Strength saving throws equal to your Intelligence modifier.</p><p>You can create a separate Recipe in your Cook Book for each size of Giant you have harvested a sample of. "
+      "description": "For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p><p>You can create a unique Recipe in your Cookbook for each different Giant you have harvested a Sample from."
     },
     {
       "name": "Ooze",
       "prereqLevel": 6,
-      "description": "A creature that eats this Morsel reduces any lightning or slashing damage it takes by an amount equal to your Intelligence modifier for 1 hour. "
-    },
-    {
-      "name": "Celestial",
-      "prereqLevel": 13,
-      "description": "A creature that eats this Morsel manifests a pair of ethereal angelic wings and gains a 30-foot flying speed for 1 hour. "
+      "description": "For 1 hour, when the creature takes acid, lightning, poison, or slashing damage, it can reduce the damage by an amount equal to your Intelligence modifier (minimum of 1 damage)."
     },
     {
       "name": "Elemental (Air)",
-      "prereqLevel": 13,
-      "description": "A creature that eats this Morsel can take the Dash action as a bonus action, and hold its breath indefinitely for 1 hour. "
+      "prereqLevel": 10,
+      "description": "For 1 hour, the creature can take the Dash action as a bonus action on each turn, and it can hold its breath indefinitely."
     },
     {
       "name": "Elemental (Earth)",
-      "prereqLevel": 13,
-      "description": "A creature that eats this Morsel gains tremorsense out to a 15-foot radius, and gains resistance to non-magical bludgeoning, piercing, and slashing damage for 1 hour. "
+      "prereqLevel": 10,
+      "description": "For 1 hour, the creature gains tremorsense out to a 15-foot radius, and it gains resistance to nonmagical bludgeoning, piercing, and slashing damage."
     },
     {
       "name": "Elemental (Fire)",
-      "prereqLevel": 13,
-      "description": "A creature that eats this Morsel gains immunity to both the charmed and frightened conditions for 1 hour. "
+      "prereqLevel": 10,
+      "description": "For 1 hour, the creature gains resistance to fire damage, and it gains immunity to the charmed and frightened conditions."
     },
     {
       "name": "Elemental (Water)",
-      "prereqLevel": 13,
-      "description": "A creature that eats this Morsel can breathe both air and water, gains a 30-foot swimming speed, and can use its reaction to turn a critical hit into a normal hit for 1 hour. "
+      "prereqLevel": 10,
+      "description": "For 1 hour, the creature can breathe both air and water, gains a swimming speed equal to its walking speed, and can use its reaction to turn a critical hit into a normal hit."
+    },
+    {
+      "name": "Celestial",
+      "prereqLevel": 15,
+      "description": "For 1 hour, the creature manifests a pair of ethereal angelic wings which grant it a flying speed equal to its walking speed."
     },
     {
       "name": "Fey",
-      "prereqLevel": 13,
-      "description": "For the next hour, a creature that eats this Morsel can use a bonus action on its turn to teleport to an unoccupied space it can see within 30 feet. "
+      "prereqLevel": 15,
+      "description": "For 1 hour, the creature can use a bonus action on each turn to teleport up to 30 feet to an unoccupied space it can see."
     },
     {
       "name": "Fiend",
-      "prereqLevel": 13,
-      "description": "A creature that eats this Morsel has advantage on saving throws to resist spells and other magical effects for 1 hour. "
+      "prereqLevel": 15,
+      "description": "For 1 hour, the creature has advantage on any saving throw it is forced to make to resist a spell and other magical effect."
     }
   ],
   "resonant": [
@@ -8954,39 +8958,39 @@
   "rune-scribe": [
     {
       "name": "Rune of Enchantment",
-      "description": "<strong>Item:</strong> a bracelet, diadem, ring, or necklace</p><p>Creatures will treat the bearer of this Runic object one stage friendlier than they normally would. For example, a neutral creature would feel compelled to view the bearer as a friend, and a hostile creature would view the bearer neutrally.</p><p>This treatment ends if the bearer attacks the creature.</p><p>The bearer can invoke this Rune to cast its choice of the Calm Emotions, Charm Person, or Command spell, targeting a total number of creatures equal to your proficiency bonus."
+      "description": "<strong>Item:</strong> a bracelet, diadem, ring, or necklace</p><p> Creatures will treat the bearer of this Runic object one stage friendlier than normal. For example, an indifferent creature might treat the bearer as a friend, or a hostile creature might treat the bearer indifferently. This special treatment instantly ends if the bearer attacks the creature.</p><p>As an action, the bearer can Invoke the Rune to cast either the calm emotions, charm person or command spell, targeting a number of creatures equal to the Rune Scribe's Intelligence modifier (minimum of 1 creature)."
     },
     {
       "name": "Rune of Evocation",
-      "description": "<strong>Item:</strong> a melee weapon</p><p>When the bearer hits a creature with an attack with this Runic weapon, it deals additional acid, cold, fire, poison, or lightning damage (their choice) equal to your Intellect Die.</p><p>When the bearer of this Rune hits with an attack or casts a spell that deals acid, cold, fire, poison, or lightning damage, it can invoke this Rune to cause one target of the attack or spell to take the maximum possible damage in place of rolling."
+      "description": "<strong>Item:</strong> a melee weapon</p><p>When you inscribe the Rune you imbue it with acid, cold, fire, poison, or lighting damage. Whenever the bearer hits with an attack with this Runic weapon, it deals additional damage of the imbued type equal to one roll of your Intellect Die.</p><p>When the bearer hits with an attack with this Runic weapon, it can Invoke the Rune to cause the attack to deal additional damage of the imbued damage type equal to three rolls of the Rune Scribe's Intellect Die."
     },
     {
       "name": "Rune of Illusion",
-      "description": "<strong>Item:</strong> a cloak, robe, or suit of armor</p><p>The bearer of this Runic object can use an action to totally change their appearance, determining the specifics of their changes, including height and weight, though they cannot change their size. They can appear as another race, but they must adopt a form that they have seen before. Their clothing, including the Runic object, and equipment do not change.</p><p>These changes can be detected by a successful Intelligence (Investigation) check made against your Runic save DC.</p><p>The bearer can invoke this Rune to turn invisible for up to 10 minutes. This invisibility instantly ends if they attack a creature or force a creature to make a saving throw."
+      "description": "<strong>Item:</strong> a cloak, robe, or suit of armor</p><p>As an action, the bearer of this Runic object can change its physical appearance to match that of a creature it has seen before, so long as it has the same arrangement of limbs as the bearer. The bearer can determine the specifics of these changes, including race, coloration, hair length, sex, height, and weight, but it cannot change its size. This illusion does not affect clothing, equipment, or game statistics.</p><p>The illusion can be detected with a successful Intelligence (Investigation) check vs. the Rune Scribe's Intellect save DC.</p><p>As an action, the bearer of this Runic object can Invoke this Rune to turn invisible for 10 minutes. This invisibility ends if they attack or force a saving throw."
     },
     {
       "name": "Rune of Necromancy",
-      "description": "<strong>Item:</strong> a belt, ring, or suit of armor</p><p>The bearer of this Runic object can use its bonus action to grant itself temporary hit points equal to your Intelligence modifier (minimum of 1 temporary hit point).</p><p>When the bearer of this Rune is reduced to 0 hit points but not killed outright, it can invoke the Rune to fall to 1 hit point."
+      "description": "<strong>Item:</strong> a belt, ring, or suit of armor</p><p>The bearer of this Runic object can use a bonus action to grant itself temporary hit points equal to the Rune Scribe's Intelligence modifier (minimum of 1 temporary hit point).</p><p>When the bearer of this Runic object is reduced to 0 hit points, but it is not killed outright, it can Invoke this Rune to fall to 1 hit point instead of 0."
     },
     {
       "name": "Rune of Abjuration",
       "prereqLevel": 6,
-      "description": "<strong>Item:</strong> a shield, robe, or suit of armor</p><p>Once per turn, the bearer of this Runic object can reduce the damage they take from a spell or another magical effect by an amount equal to your Intelligence modifier (minimum of 1).</p><p>The bearer can invoke this Rune to cast Counterspell or Dispel Magic at a level equal to your proficiency bonus, using your Intelligence as the spellcasting ability for these spells."
+      "description": "<strong>Item:</strong> a shield, robe, or suit of armor</p><p>Once per turn, the bearer of this Runic object can reduce the damage from a spell or another magical effect by an amount equal the Rune Scribe's Intelligence modifier (minimum of 1).</p><p>When a creature within 30 feet of the bearer of this Runic object casts a spell, the bearer can use its reaction to Invoke this Rune and force the creature that cast the spell to make a Constitution saving throw. On a failure, the triggering spell fails and has no effect."
     },
     {
       "name": "Rune of Conjuration",
       "prereqLevel": 6,
-      "description": "<strong>Item:</strong> a belt, ring, or shield</p><p>The bearer of this Runic object can use its action to expend any amount of its remaining movement speed to teleport to an unoccupied space of their choice it can see within that distance, without provoking opportunity attacks.</p><p>The bearer can invoke this Rune to conjure a creature of its choice that it has seen before with a CR equal to half your proficiency bonus or lower. The creature shares the bearer's initiative in combat and acts immediately after it. The bearer can use its bonus action to command the creature to move and take an action from its stat block. The conjured creature remains for 1 minute or until it is reduced to 0 hit points."
+      "description": "<strong>Item:</strong> a belt, ring, or shield</p><p>As an action, the bearer of this Runic object can expend any amount of its remaining movement speed to instantly teleport to an unoccupied space it can see within that distance.</p><p>As an action, the bearer can Invoke the Rune and force two creatures it can see within 60 feet to make a Charisma saving throw, which a creature can choose to fail. If both fail, they instantly switch places."
     },
     {
       "name": "Rune of Divination",
-      "prereqLevel": 13,
-      "description": "<strong>Item:</strong> a wand, staff, robe, or spellcasting focus</p><p>The bearer of this Runic object can cast Identify and Detect Magic as rituals. It also gains a bonus to Wisdom (Insight) checks equal to your Intelligence modifier (minimum of +1).</p><p>When you inscribe this Rune you roll a d20 and record the result. When a creature within 30 feet of the bearer makes an attack roll, ability check, or saving throw, the bearer can use its reaction to replace the creature's d20 roll with the result of the d20 roll you recorded while inscribing this Rune."
+      "prereqLevel": 10,
+      "description": "<strong>Item:</strong> a wand, staff, robe, or spellcasting focus</p><p>The bearer of this Runic object can use it as a spellcasting focus to cast the comprehend languages, detect magic and identify spells as rituals, without the material components.</p><p>As an action, the bearer can Invoke the Rune to empower their vision. For 1 hour, the bearer has truesight, sees secret doors and traps hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet."
     },
     {
       "name": "Rune of Transmutation",
-      "prereqLevel": 13,
-      "description": "<strong>Item:</strong> a bracelet, diadem, ring, or necklace</p><p>The bearer of this Runic object gains one of the following features: a 30-foot swimming speed, a 30-foot climbing speed, or their walking speed increases by 10 feet. They can use a bonus action to switch between these three features, but they can only benefit from one of these features at a time.</p><p>The bearer can invoke this Rune to transform into a beast with a CR equal to your savant level or lower for 1 hour, or until they use an action to revert to their normal form. They take on the beast's statistics and hit points, but they retain their mental ability scores, alignment, and personality. They are limited in the actions they can perform by the nature of their new form, and their gear melds into their new form.</p><p>When they revert to their normal form, they return to the number of hit points they had before they transformed. If they revert as a result of falling to 0 hit points, any excess damage carries over to their normal form."
+      "prereqLevel": 10,
+      "description": "<strong>Item:</strong> a bracelet, diadem, ring, or necklace</p><p>The bearer of this Runic object gains its choice of a 30-foot swimming speed, a 30-foot climbing speed, or has its walking speed increased by 10 feet. As a bonus action, the bearer can switch its current benefit for another from the above list.</p><p>As an action, the bearer can Invoke this Rune to transform itself into a beast with a CR equal to the Rune Scribe's Savant level or lower, but otherwise using the rules of the polymorph spell. However, unlike polymorph, this transformation does not require concentration."
     }
   ],
   "schematic": [
@@ -9019,259 +9023,12 @@
   ],
   "scholarly-pursuit": [
     {
-      "name": "Agriculture",
-      "description": "You have a keen interest in all growing things. Whenever you make an Intelligence (Nature) check related to plants, farms, agriculture, or gardening you have advantage on your roll.</p><p>In addition, if you spend 8 hours tending to crops, plants, or other farmland, the 8-hour version of plant growth spell takes effect on any land you attended to during that period.",
-      "granted": [
-        {
-          "type": "spell",
-          "options": ["Plant Growth"],
-          "ability": "int",
-          "ignoreMaxLevel": true,
-          "atWill": true
-        }
-      ]
-    },
-    {
-      "name": "Astrology",
-      "description": "You are a student of star charts and constellations, and can use the movements of celestial bodies to predict the future. During a long rest when you can see the night sky, roll one d20 and record the number you rolled. You can replace any attack roll, saving throw, or ability check you make with this foretelling roll. You can choose to do so after you know the roll, but before you know if the roll succeeded or failed.</p><p>Your foretelling roll can be used only once. If you do not use this roll before the end of your next long rest it is lost.",
-      "uses": {
-        "id": "381230A4-E089-411D-971D-6E90D826BC0A",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    },
-    {
-      "name": "Bushcraft",
-      "description": "You can use your knowledge of nature to thrive in the wilds. You gain proficiency in Nature.</p><p>Over the course of 10 minutes, which can be during a short or long rest, you can gather natural material and use a dagger or handaxe to create one of the following objects: a club, 1d4 darts, a javelin, a net, 10 feet of rope, or a Bushcraft Snare.</p><p>As an action, you can set a Bushcraft Snare in an adjacent, unoccupied, 5-foot space. The first Large or smaller creature to move into the space must make a Dexterity saving throw against your Intellect save DC or be restrained by the Snare.</p><p>As an action, a creature can make a Strength check against your Intellect save DC, escaping from the Snare on a success.",
-      "granted": [
-        {
-          "type": "skill",
-          "options": ["Nature"],
-          "level": 1
-        }
-      ],
-      "prereqLevel": 5
-    },
-    {
-      "name": "Craftsmanship",
-      "description": "You are a student of fine creation. You gain proficiency with jeweler's tools, and you add double your proficiency bonus to any check you make that uses your jeweler's tools.</p><p>Also, while you are in sunlight, you can spend 1 hour using jewler's tools to modify a gem you touch so that it absorbs the radiant light of the sun. As an action, you can release the sunlight bound within the gem, causing it to emit bright light in a 30-foot radius and dim light 30 feet beyond that. After 24 hours, gems modified in this way return to normal.",
-      "granted": [
-        {
-          "type": "tool",
-          "options": ["Jeweler's Tools"],
-          "level": 2
-        }
-      ]
-    },
-    {
-      "name": "Equestrianism",
-      "description": "You have developed a great love for the care of horses. You gain proficiency in Animal Handling. Whenever you would make a Wisdom (Animal Handling) check, you can make an Intelligence (Animal Handling) check instead.</p><p>When you are riding a trained mount, your mount shares your initiative in combat and acts during your turn. Whenever it makes an ability check, damage roll, or saving throw, it can add one roll of your Intellect Die to its roll, and you can use a bonus action on each of your turns to command your mount to attack, or to use another action from its stat block.</p><p>Finally, if you spend 8 hours training a friendly quadruped creature and spend 50 gold on necessary training materials and food, it is considered to be a trained mount for you.",
-      "granted": [
-        {
-          "type": "skill",
-          "options": ["Animal Handling"],
-          "level": 1
-        },
-        {
-          "type": "skill-ability",
-          "skill": "Animal Handling",
-          "ability": "int"
-        }
-      ],
-      "prereqLevel": 5
-    },
-    {
-      "name": "Falconry",
-      "description": "You have spent many months learning to train birds of prey. You gain a Falcon companion which uses the Hawk statblock from the Player's Handbook, but it has an Intelligence score of 8. You and your Falcon can communicate simple ideas with each other using simple gestures and sounds. Your Falcon is unwaveringly loyal to you and obeys your commands.</p><p>In combat, your Falcon shares your initiative and acts on your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Falcon acts on its own.</p><p>If your Falcon falls to 0 hit points it makes death saving throws as a player character would. Should your Falcon die, your special skills allow you to track and train another Falcon over the course of an 8 hour period using 5 gp worth of bait.",
-      "granted": [
-        {
-          "type": "companion",
-          "key": "falcon"
-        }
-      ]
-    },
-    {
-      "name": "Fencing",
-      "description": "You gain proficiency with foils, lances, longswords, rapiers, sabres, and scimitars.  When a creature you can see targets you with a melee attack while you are wielding one of these weapons, you can use your reaction to roll your Intellect Die and add it to your Armor class against the attack. If it misses, you can make one melee weapon attack against it as part of the same reaction.",
-      "granted": [
-        {
-          "type": "weapon",
-          "options": [
-            "Foil",
-            "Lance",
-            "Longsword",
-            "Rapier",
-            "Sabre",
-            "Scimitar"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "First Aid",
-      "description": "You have learned basic medicinal techniques to aid your allies. You gain proficiency in Medicine. Whenever you would make a Wisdom (Medicine) check, you can make an Intelligence (Medicine) check instead.</p><p>During a long rest, you can spend 1 hour using a Healer's Kit to produce a number of potions of healing equal to your Intelligence modifier (minimum of 1). Any unused potions of healing expire 24 hours after you created them.",
-      "granted": [
-        {
-          "type": "skill",
-          "options": ["Medicine"],
-          "level": 1
-        },
-        {
-          "type": "skill-ability",
-          "skill": "Medicine",
-          "ability": "int"
-        }
-      ],
-      "prereqLevel": 5
-    },
-    {
       "name": "Instruction",
-      "description": "You have dedicated a significant amount of your studies to the art of education. At the end of a long rest, you can teach a creature that can hear you one proficiency or language you know. Until the end of your next long rest, that creature gains proficiency in one tool, skill, or weapon of your choice, or learns to speak and understand one language of your choice."
+      "description": "You have dedicated a significant amount of your studies to the art of education. Over the course of 1 hour, you can teach one creature that can hear and understand you one skill, tool, or weapon proficiency, or one language you know.</p><p>The creature gains proficiency in that tool, skill, or weapon, or learns to speak that language until it completes a long rest."
     },
     {
-      "name": "Navigation",
-      "description": "You gain proficiency with cartographer's tools, navigator's tools, water vehicles, and astral vehicles. Whenever you make an ability check that uses these tools, you always use your Intelligence score, and you add double your proficiency bonus to your roll.</p><p>In addition, you can never become lost, even by magical means, so long as you can see the night sky or have a map.",
-      "granted": [
-        {
-          "type": "tool",
-          "options": [
-            "Cartographer's Tools",
-            "Navigator's Tools",
-            "Water Vehicles",
-            "Astral Vehicles"
-          ],
-          "level": 2
-        },
-        {
-          "type": "tool-ability",
-          "tool": "Navigator's Tools",
-          "ability": "int"
-        },
-        {
-          "type": "tool-ability",
-          "tool": "Water Vehicles",
-          "ability": "int"
-        }
-      ]
-    },
-    {
-      "name": "Marksmanship",
-      "description": "You bring your intellect to bear in the use of ranged weapons. You gain proficiency in Sleight of Hand. Whenever you would make a Dexterity (Sleight of Hand) check, you can make an Intelligence (Sleight of Hand) check instead.</p><p>You also gain proficiency with all martial ranged weapons, and whenever you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die.",
-      "granted": [
-        {
-          "type": "weapon",
-          "options": [
-            "Crossbow, heavy",
-            "Crossbow, light",
-            "Longbow",
-            "Firearms"
-          ]
-        },
-        {
-          "type": "skill",
-          "options": ["Sleight of Hand"],
-          "level": 1
-        },
-        {
-          "type": "skill-ability",
-          "skill": "Sleight of Hand",
-          "ability": "int"
-        }
-      ],
-      "prereqLevel": 5
-    },
-    {
-      "name": "First Meditation",
-      "description": "You make time each day to clear your mind and keep it sharp. Whenever you roll an Intellect Die and you roll a 1, you can re-roll the Die until you roll a result greater than 1.  You can master this Scholarly Pursuit up to three times, increasing the number you can re-roll by one each time you do. For example, the second time you do, you can re-roll Intellect Die rolls of 2."
-    },
-    {
-      "name": "Second Meditation",
-      "description": "You make time each day to clear your mind and keep it sharp. Whenever you roll an Intellect Die and you roll a 1, you can re-roll the Die until you roll a result greater than 1.  You can master this Scholarly Pursuit up to three times, increasing the number you can re-roll by one each time you do. For example, the second time you do, you can re-roll Intellect Die rolls of 2."
-    },
-    {
-      "name": "Third Meditation",
-      "description": "You make time each day to clear your mind and keep it sharp. Whenever you roll an Intellect Die and you roll a 1, you can re-roll the Die until you roll a result greater than 1.  You can master this Scholarly Pursuit up to three times, increasing the number you can re-roll by one each time you do. For example, the second time you do, you can re-roll Intellect Die rolls of 2."
-    },
-    {
-      "name": "Mercantalism",
-      "description": "You are an astute scholar of economics, trade routes, and the marketplace. You gain proficiency in Insight. Whenever you would make a Wisdom (Insight) check, you can make an Intelligence (Insight) check instead.</p><p>While you are trading with a creature whose Intelligence and Wisdom are both lower than your Intelligence, items you purchase from that creature cost 10 percent less, and items you sell are purchased for 10 percent more than usual.",
-      "granted": [
-        {
-          "type": "skill",
-          "options": ["Insight"],
-          "level": 1
-        },
-        {
-          "type": "skill-ability",
-          "skill": "Insight",
-          "ability": "int"
-        }
-      ],
-      "prereqLevel": 5
-    },
-    {
-      "name": "Musicianship",
-      "description": "You have an ear for music and song. You gain proficiency in Performance and three musical instruments of your choice. Whenever you make a Charisma (Performance) check, or an ability check that uses a musical instrument proficiency, you gain a bonus to the roll equal to your Intelligence modifier.</p><p>Also, when you play a musical instrument or perform for a creature for 1 minute or longer, you have advantage on any ability checks you make to interact socially with that creature for 1 hour. This benefit instantly ends if you or your allies do anything harmful to the creature or to its allies.",
-      "granted": [
-        {
-          "type": "skill",
-          "options": ["Performance"],
-          "level": 1
-        }
-      ],
-      "choices": [
-        {
-          "id": "BED97FE2-142C-49A8-AE7F-D53E579F13E5",
-          "type": "instrument",
-          "level": 1
-        },
-        {
-          "id": "7A700B0E-6524-47D2-824D-271EF7EC48A0",
-          "type": "instrument",
-          "level": 1
-        },
-        {
-          "id": "B0173AB8-230A-4F41-B6D8-191653C2D08D",
-          "type": "instrument",
-          "level": 1
-        }
-      ],
-      "prereqLevel": 4
-    },
-    {
-      "name": "Linguistics",
-      "description": "You learn to speak, read, and write a number of languages equal to your Intelligence modifier. Whenever you make a Charisma (Persuasion) check while speaking to a creature in its native tongue (other than Common) you gain a bonus to your roll equal to your Intelligence modifier (minimum of +1).",
-      "listed": {
-        "id": "70BE6A39-6F00-4465-BFB9-D87A053EDD3E",
-        "type": "language",
-        "addToMaximum": "int",
-        "maximums": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-      }
-    },
-    {
-      "name": "Physical Fitness",
-      "description": "You know that the key to a healthy mind is a healthy body. You gain proficiency in either Athletics or Acrobatics. Whenever you make an ability check with that skill, you add one roll of your Intellect Die to your check if you do not already do so.</p><p>Also, you gain a climbing speed and a swimming speed equal to your walking speed, and when you make a running jump, you add your Intelligence modifier to the distance.",
-      "granted": [
-        {
-          "type": "speed",
-          "speed": "climb",
-          "amount": -1
-        },
-        {
-          "type": "speed",
-          "speed": "swim",
-          "amount": -1
-        }
-      ],
-      "choices": [
-        {
-          "id": "8F5CE2D1-5573-4B57-9623-E280D3857F31",
-          "type": "skill",
-          "limits": ["Athletics", "Acrobatics"],
-          "level": 1
-        }
-      ]
+      "name": "Perfect Recall",
+      "description": "You can recall picture-perfect details from things that you commit to memory. If you spend at least 1 minute observing an object or creature, you can perfectly recall any observable information about that creature or object point in the future."
     },
     {
       "name": "Polymath",
@@ -9294,74 +9051,276 @@
       ]
     },
     {
+      "name": "Quick Study",
+      "description": "You learn exceptionally fast. You gain proficiency in one skill or tool, or learn to speak and read a language of your choice.</p><p>Over the course of 1 hour, which can be during a short or long rest, you can replace this proficiency or language with another proficiency or language of your choice, so long as you have an example to learn from, such as a teacher or manual.",
+      "choices": [
+        {
+          "id": "A5C2A827-750B-429D-931D-73F995F64AAD",
+          "type": ["skill", "tool", "game", "instrument", "language"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Agriculture",
+      "prereqLevel": 4,
+      "description": "You have a keen interest in all growing things. You gain proficiency in Nature, and whenever you make an Intelligence (Nature) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>In addition, if you spend 8 hours tending to crops, plants, or other farmland, the 8-hour version of plant growth spell takes effect on any land you attended to during that period.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Plant Growth"],
+          "ability": "int",
+          "ignoreMaxLevel": true,
+          "atWill": true
+        }
+      ]
+    },
+    {
+      "name": "Astrology",
+      "prereqLevel": 4,
+      "description": "You are a disciple of heavenly bodies and use this knowledge to twist fate. You gain proficiency in Arcana, and whenever you make an Intelligence (Arcana) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>During each long rest that you can see the night sky, roll a d20 and record that number. Once before the end of the next long rest, you can choose to use that roll in place of the d20 for ability check, attack roll, or saving throw before you roll.",
+      "uses": {
+        "id": "381230A4-E089-411D-971D-6E90D826BC0A",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Arcana"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Bushcraft",
+      "prereqLevel": 4,
+      "description": "You can use your knowledge of nature to thrive in the wilds. You gain proficiency in Nature, and whenever you make an Intelligence (Nature) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>Over the course of 10 minutes, which can be during a short or long rest, you can gather natural material and use a dagger or handaxe to create one of the following objects: a club, 1d4 darts, a javelin, a net, 10 feet of rope, or a Bushcraft Snare.</p><p>As an action, you can set a Bushcraft Snare in an adjacent, unoccupied, 5-foot space. The first Large or smaller creature to move into the space must make a Dexterity saving throw against your Intellect save DC or be restrained by the Snare.</p><p>As an action, a creature can make a Strength check against your Intellect save DC, escaping from the Snare on a success.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Nature"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Equestrianism",
+      "prereqLevel": 4,
+      "description": "You have learned to tend to horses and other trained mounts. You gain proficiency in Animal Handling, and whenever you make a Wisdom (Animal Handling) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>When you are riding a trained mount, your mount shares your initiative in combat and acts during your turn. Whenever it makes an ability check, damage roll, or saving throw, it can add one roll of your Intellect Die to its roll, and you can use a bonus action on each of your turns to command your mount to attack, or to use another action from its stat block.</p><p>Finally, if you spend 8 hours training a friendly quadruped creature and spend 50 gold on necessary training materials and food, it is considered to be a trained mount for you.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Animal Handling"],
+          "level": 1
+        },
+        {
+          "type": "skill-ability",
+          "skill": "Animal Handling",
+          "ability": "int"
+        }
+      ]
+    },
+    {
+      "name": "Falconry",
+      "prereqLevel": 4,
+      "description": "You have spent many months learning to train birds of prey. You gain a Falcon companion which uses the Hawk statblock from the Player's Handbook, but it has an Intelligence score of 8. You and your Falcon can communicate simple ideas with each other using simple gestures and sounds. Your Falcon is unwaveringly loyal to you and obeys your commands.</p><p>In combat, your Falcon shares your initiative and acts on your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Falcon acts on its own.</p><p>If your Falcon falls to 0 hit points it makes death saving throws as a player character would. Should your Falcon die, your special skills allow you to track and train another Falcon over the course of an 8 hour period using 5 gp worth of bait.",
+      "granted": [
+        {
+          "type": "companion",
+          "key": "falcon"
+        }
+      ]
+    },
+    {
+      "name": "Fencing",
+      "prereqLevel": 4,
+      "description": "You gain proficiency in Sleight of Hand. Whenever you make a Dexterity (Sleight of Hand) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>You also gain proficiency with foils, lances, longswords, rapiers, sabres, and scimitars, and whenever you make a melee weapon attack, you can use your Intellect Die in place of the weapon's damage die.",
+      "granted": [
+        {
+          "type": "weapon",
+          "options": [
+            "Foil",
+            "Lance",
+            "Longsword",
+            "Rapier",
+            "Sabre",
+            "Scimitar"
+          ]
+        },
+        {
+          "type": "skill",
+          "options": ["Sleight of Hand"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "First Aid",
+      "prereqLevel": 4,
+      "description": "You have learned basic medicinal techniques to aid your allies. You gain proficiency in Medicine, and whenever you make a Wisdom (Medicine) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>During a long rest, you can spend 1-hour using a healer's kit to produce a number of potions of healing equal to your Intelligence modifier (minimum of 1). Any unused potions of healing expire 24 hours after you created them.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Medicine"],
+          "level": 1
+        }
+      ],
+      "uses": [
+        {
+          "id": "FFA86AA6-9178-4F1A-879E-A2F9675FC6F5",
+          "type": "derived",
+          "source": "score",
+          "score": "int",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Linguistics",
+      "prereqLevel": 4,
+      "description": "You are a student of language and the art of the spoken word. You gain proficiency in Persuasion, and whenever you make a Charisma (Persuasion) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>In addition, you learn to speak, read, and write a number of languages equal to your Intelligence modifier.",
+      "listed": {
+        "id": "70BE6A39-6F00-4465-BFB9-D87A053EDD3E",
+        "type": "language",
+        "addToMaximum": "int",
+        "maximums": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      },
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Persuasion"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Marksmanship",
+      "prereqLevel": 4,
+      "description": "You bring your intellect to bear in the use of ranged weapons. You gain proficiency in Sleight of Hand. Whenever you make a Dexterity (Sleight of Hand) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>You also gain proficiency with all martial ranged weapons and firearms, and whenever you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die.",
+      "granted": [
+        {
+          "type": "weapon",
+          "options": [
+            "Crossbow, heavy",
+            "Crossbow, light",
+            "Longbow",
+            "Firearms"
+          ]
+        },
+        {
+          "type": "skill",
+          "options": ["Sleight of Hand"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Mercantalism",
+      "prereqLevel": 4,
+      "description": "You are an astute scholar of economics, trade routes, and the marketplace. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>While you are trading with a creature whose Intelligence and Wisdom are both lower than your Intelligence, items you purchase from that creature cost 10 percent less, and items you sell are purchased for 10 percent more than usual.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Insight"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Musicianship",
+      "prereqLevel": 4,
+      "description": "You have talent for music and song. You gain proficiency in Performance and with one musical instrument. Whenever you make an ability check with either, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>Also, when you play a musical instrument or perform for a creature for 1 minute or longer, you have advantage on any ability checks you make to interact socially with that creature for 1 hour. This benefit instantly ends if you or your allies do anything harmful to the creature or to its allies.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Performance"],
+          "level": 1
+        }
+      ],
+      "choices": [
+        {
+          "id": "BED97FE2-142C-49A8-AE7F-D53E579F13E5",
+          "type": "instrument",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "prereqLevel": 4,
+      "description": "You gain proficiency with cartographer's tools, navigator's tools, water vehicles, and astral vehicles. Whenever you make an ability check that uses any of these proficiencies, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>In addition, you can never become lost, even by magical means, so long as you can see the night sky or have a map.",
+      "granted": [
+        {
+          "type": "tool",
+          "options": [
+            "Cartographer's Tools",
+            "Navigator's Tools",
+            "Water Vehicles",
+            "Astral Vehicles"
+          ],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Physical Fitness",
+      "prereqLevel": 4,
+      "description": "You know that the key to a healthy mind is a healthy body. You gain proficiency in either Athletics or Acrobatics. Whenever you make an ability check with that skill, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>Also, you gain a climbing speed and a swimming speed equal to your walking speed, and when you make a running jump, you add your Intelligence modifier to the distance.",
+      "granted": [
+        {
+          "type": "speed",
+          "speed": "climb",
+          "amount": -1
+        },
+        {
+          "type": "speed",
+          "speed": "swim",
+          "amount": -1
+        }
+      ],
+      "choices": [
+        {
+          "id": "DA40269D-AC8E-4BE3-AF8B-03AD11006B78",
+          "type": "skill",
+          "limits": ["Athletics", "Acrobatics"],
+          "level": 1
+        }
+      ]
+    },
+    {
       "name": "Riddles",
-      "description": "You have spent a great deal of time pondering and pouring over riddles and rhymes. When you speak, you can choose to speak in Riddles. When you do so, you appear to be speaking normally, but there are hidden messages laced in your words.</p><p>Over a period of 1 hour, which can be during the course of a short or long rest, you can teach a creature to understand your Riddles. A creature with an Intelligence of 13 or higher that understands your Riddles can respond to you in Riddles."
+      "prereqLevel": 4,
+      "description": "You have spent a great deal of time learning to speak in both riddles and rhymes. You gain proficiency in Deception. When you make a Charisma (Deception) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>Also, when you speak, you can choose to speak in Riddles. When you do so, you appear to be speaking normally, but you include hidden messages laced in your rhyming words.</p><p>Over the course of 1 hour, which can be during a short or long rest, you can teach a creature with an Intelligence of 11 or higher to understand your Riddles and respond in kind.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Deception"],
+          "level": 1
+        },
+        {
+          "type": "language",
+          "options": ["Riddles"]
+        }
+      ]
     },
     {
       "name": "Secrets and Whispers",
-      "description": "You have a way of finding out news and gathering rumors, even from distant lands. Each time you finish a long rest in a city, town, or settlement, you learn of a one important event that has taken place within the past week.</p><p>Moreover, when you spend a long rest in a town, city, or settlement, you can spend 5 gp to gather news and rumors, including knowledge of secret events, related to that town."
-    },
-    {
-      "name": "First Skill Mastery",
-      "description": "You have spent significant time and effort honing a specific skill. Choose one skill or tool that you are proficient with. Whenever you make an ability check with that proficiency, you can treat a roll of 7 or lower on the d20 as an 8.</p><p>You can master this Scholarly Pursuit more than once, a maximum number of times equal to your proficiency bonus, but you must choose a different proficiency each time.",
-      "choices": {
-        "id": "EEB9F92E-9CD7-4A21-B4D3-AACF5201A5A4",
-        "type": ["skill", "tool"],
-        "limits": "proficient"
-      }
-    },
-    {
-      "name": "Second Skill Mastery",
-      "description": "You have spent significant time and effort honing a specific skill. Choose one skill or tool that you are proficient with. Whenever you make an ability check with that proficiency, you can treat a roll of 7 or lower on the d20 as an 8.</p><p>You can master this Scholarly Pursuit more than once, a maximum number of times equal to your proficiency bonus, but you must choose a different proficiency each time.",
-      "choices": {
-        "id": "B1DF0094-88D4-421A-B4D9-ADA537C9A555",
-        "type": ["skill", "tool"],
-        "limits": "proficient"
-      }
-    },
-    {
-      "name": "Third Skill Mastery",
-      "description": "You have spent significant time and effort honing a specific skill. Choose one skill or tool that you are proficient with. Whenever you make an ability check with that proficiency, you can treat a roll of 7 or lower on the d20 as an 8.</p><p>You can master this Scholarly Pursuit more than once, a maximum number of times equal to your proficiency bonus, but you must choose a different proficiency each time.",
-      "choices": {
-        "id": "CC8C47C7-D35C-49A4-A0D0-C74BFE944A96",
-        "type": ["skill", "tool"],
-        "limits": "proficient"
-      },
-      "prereqLevel": 5
-    },
-    {
-      "name": "Fourth Skill Mastery",
-      "description": "You have spent significant time and effort honing a specific skill. Choose one skill or tool that you are proficient with. Whenever you make an ability check with that proficiency, you can treat a roll of 7 or lower on the d20 as an 8.</p><p>You can master this Scholarly Pursuit more than once, a maximum number of times equal to your proficiency bonus, but you must choose a different proficiency each time.",
-      "choices": {
-        "id": "3B343FAA-BB29-42FE-8CD9-ABD8B38B2CEC",
-        "type": ["skill", "tool"],
-        "limits": "proficient"
-      },
-      "prereqLevel": 9
-    },
-    {
-      "name": "Fifth Skill Mastery",
-      "description": "You have spent significant time and effort honing a specific skill. Choose one skill or tool that you are proficient with. Whenever you make an ability check with that proficiency, you can treat a roll of 7 or lower on the d20 as an 8.</p><p>You can master this Scholarly Pursuit more than once, a maximum number of times equal to your proficiency bonus, but you must choose a different proficiency each time.",
-      "choices": {
-        "id": "0FFC8D5F-2244-4000-BE09-EED1318709B1",
-        "type": ["skill", "tool"],
-        "limits": "proficient"
-      },
-      "prereqLevel": 13
-    },
-    {
-      "name": "Sixth Skill Mastery",
-      "description": "You have spent significant time and effort honing a specific skill. Choose one skill or tool that you are proficient with. Whenever you make an ability check with that proficiency, you can treat a roll of 7 or lower on the d20 as an 8.</p><p>You can master this Scholarly Pursuit more than once, a maximum number of times equal to your proficiency bonus, but you must choose a different proficiency each time.",
-      "choices": {
-        "id": "F85FA87D-C029-498F-95FE-3FF2E04ABF2E",
-        "type": ["skill", "tool"],
-        "limits": "proficient"
-      },
-      "prereqLevel": 17
+      "prereqLevel": 4,
+      "description": "You have a knack for knowing where to eavesdrop and the right person to bribe. You gain proficiency in Stealth. When you make a Dexterity (Stealth) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>Whenever you spend a long rest in a settlement, you can spend 1-hour gathering local rumors to learn of a significant, even secret, event which occurred in there in the last week.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Stealth"],
+          "level": 1
+        }
+      ]
     },
     {
       "name": "Theology",
-      "description": "You are a devoted student of the divine. You learn to speak, read, and write Celestial and gain proficiency in Religion.</p><p>Whenever you make an Intelligence (Religion) check to recall religious devotions, rituals, or customs, or a Charisma check to interact with a Celestial, or another servant of the divine, you can treat a roll of 9 or lower on the d20 as a 10.",
+      "prereqLevel": 4,
+      "description": "You are a dedicated scholar of various holy texts and sacred rituals. You gain proficiency in Religion, and whenever you make an Intelligence (Religion) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>You also learn to speak, read, and write Celestial. Finally, you learn the ceremony spell, but you can only cast it as a ritual. For you, the ritual only takes 10 minutes, and you can cast it without the material components once per long rest.",
       "granted": [
         {
           "type": "language",
@@ -9371,12 +9330,33 @@
           "type": "skill",
           "options": ["Religion"],
           "level": 1
+        },
+        {
+          "type": "spell",
+          "options": ["Ceremony"],
+          "ability": "int",
+          "ignoreMaxLevel": true,
+          "ritualsOnly": true
         }
-      ]
+      ],
+      "uses": {
+        "id": "6104C374-7341-465A-8F9A-3DA27EEF817B",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
     },
     {
       "name": "Traditions",
-      "description": "You are a student of culture, politics, and traditions. When you make an Intelligence (Society) check related to a local custom, culture, or tradition, you have advantage on the roll.</p><p>Your knowledge of local customs makes you an excellent ambassador. The first time you meet a leader or local figure, you have advantage on any Charisma checks you make."
+      "prereqLevel": 4,
+      "description": "You are a student of local cultures, politics, and traditions. You gain proficiency in Society, and whenever you make an Intelligence (Society) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p><p>Whenever you make a Charisma check to interact with a local ruler or otherwise important figure and you incorporate a local custom or tradition, you have advantage on your roll.",
+      "granted": [
+        {
+          "type": "skill",
+          "options": ["Society"],
+          "level": 1
+        }
+      ]
     }
   ],
   "sign": [
@@ -11158,6 +11138,601 @@
           ]
         }
       ]
+    }
+  ],
+  "channel-divinity": [
+    {
+      "name": "Turn Undead",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Abjuration",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to abjure otherworldly creatures.  As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ]
+    },
+    {
+      "name": "Inner Beauty",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your action to change the physical appearance and self-image of a creature you see within 30 feet of you, revealing its true grace or exposing its ugliness for 10 minutes. Choose one of the following effects:<ul><li>The creature must succeed on a Charisma saving throw or become insecure and have its body and visage slightly twisted and deformed, gaining disadvantage on Dexterity and Charisma ability checks for the duration.</li><li>The creature is filled with confidence and it becomes lovelier and more elegant, gaining advantage on Dexterity and Charisma ability checks for the duration.</li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "Touch of Death",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice your savant level."
+        }
+      ]
+    },
+    {
+      "name": "Prophecy of Doom",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to speak a prophecy, inducing visions and hallucinations in nearby creatures.</p><p>As an action, choose a point within 120 feet of you that you can see and roll on the Eldritch Effects table. Each creature in a 15-foot-radius sphere centered on the chosen point must succeed on a Wisdom saving throw or suffer the temporary effect for 1 minute. At the end of each of its turns, an affected creature can make another Wisdom saving throw, ending the temporary effect on a success.",
+          "subFeatures": [
+            {
+              "name": "Eldritch Effects",
+              "description": "<table> <tbody><tr> <th>d8</th> <th>Effect</th> </tr> <tr> <td>1</td> <td>The creature cannot speak or cast spells that have verbal components.</td> </tr> <tr> <td>2</td> <td>The creature takes 1d8 psychic damage at the start of each of its turns.</td> </tr> <tr> <td>3</td> <td>The creature is disoriented. It immediately falls prone and falls prone again at the end of each turn it moves 5 feet or more.</td> </tr> <tr> <td>4</td> <td>The creature is distracted by visions and voices and has disadvantage on attack rolls and Wisdom (Perception) ability checks.</td> </tr> <tr> <td>5</td> <td>The creature is unsure of itself. It can move or take an action on its turn but not both and it cannot use reactions.</td> </tr> <tr> <td>6</td> <td>The creature is reckless. It has advantage on attack rolls and attack rolls against it have advantage.</td> </tr> <tr> <td>7</td> <td>The creature is deafened and cannot see objects or creatures further than 30 feet away.</td> </tr> <tr> <td>8</td> <td>The creature is frightened of you.</td> </tr> </tbody></table>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Artisan's Blessing",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to create simple items.  You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a simple or martial weapon, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.</p><p>The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation.</p><p>The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
+        }
+      ]
+    },
+    {
+      "name": "Path to the Grave",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to mark another creature's life force for termination.  As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
+        }
+      ]
+    },
+    {
+      "name": "Rally",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to inspire an ally with resolve and hope.  As an action, you can present your holy symbol and select a creature you can see within 60 feet. Until the end of your next turn, the target makes all attack rolls and saving throws with advantage."
+        }
+      ]
+    },
+    {
+      "name": "Spell Shield",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to bestow a temporary resilience to arcane harm. As a bonus action, you present your holy symbol and choose a creature you can see (including yourself) within 30 feet. The chosen creature gains temporary hit points equal to 1d10 + your savant level. While a creature has temporary hit points granted by your spell shield, it has resistance to damage from spells and advantage on saving throws against spells. The creature loses any remaining temporary hit points after 1 hour."
+        }
+      ]
+    },
+    {
+      "name": "Chains of Reckoning",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to invoke judgement upon your enemies. As an action, you present your holy symbol, causing a creature you can see within 60 feet of you to be crushed beneath the weight of their sins. For 1 minute, you can apply the bonus damage of Sacred Judgement to that creature when dealing damage with a Divine spell.</p><p>The chosen creature must also make a Wisdom saving throw. On a failed save, the creature is knocked prone and their movement speed becomes 0 for 1 minute. The creature can repeat their saving throw at the end of each of their turns. If the creature has dealt damage since the start of their turn, they make this save at disadvantage."
+        }
+      ]
+    },
+    {
+      "name": "Knowledge of the Ages",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+        }
+      ]
+    },
+    {
+      "name": "Preserve Life",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to heal the badly injured.  As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your savant level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
+        }
+      ]
+    },
+    {
+      "name": "Radiance of the Dawn",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.  As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your savant level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
+        }
+      ]
+    },
+    {
+      "name": "Lucky Break",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to inspire an ally with resolve and hope. As an action, you can present your holy symbol and select a creature you can see within 60 feet. Until the end of your next turn, the target makes all attack rolls and saving throws with advantage."
+        }
+      ]
+    },
+    {
+      "name": "Far Rift",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity as an action to present your holy symbol and open up a rift in space. Choose a point centered on an unoccupied 10-foot cube within 60 feet of you. The rift appears as a 5-foot radius sphere of blackness with long, lashing tendrils.</p><p>Choose a number of creatures you can see up to your Intelligence modifier within 30 feet of the sphere. Each target must succeed on a Dexterity saving throw or be pulled 20 feet toward the sphere. A creature that is pulled into the sphere's space takes psychic damage equal to 2d8 + your savant level. The rift then closes."
+        }
+      ]
+    },
+    {
+      "name": "Dragon's Breath",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to unleash a breath attack.  As an action, you bring your holy symbol to your lips and summon the wrath of a dragon, and let loose a breath weapon whose area and damage type are described in the color of dragon you chose. Each creature your breath weapon hits must make a Dexterity saving throw against your spell DC. On a failed save they take 3d6 damage of the chosen color or half as much on a successful save.",
+          "choices": {
+            "id": "0B823103-2963-4A9A-B4F6-1A5D532DE673",
+            "type": "trait",
+            "options": [
+              {
+                "name": "Brass",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is fire and your breath weapon manifests in a 15-foot cone."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are converstaion and negotiation."
+                  }
+                ]
+              },
+              {
+                "name": "Bronze",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is lightning and your breath weapon manifests in a 30-foot line."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are courage and valor."
+                  }
+                ]
+              },
+              {
+                "name": "Copper",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is acid and your breath weapon manifests in a 30-foot line."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are trickery and humor."
+                  }
+                ]
+              },
+              {
+                "name": "Gold",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is fire and your breath weapon manifests in a 15-foot cone."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are justice and compassion."
+                  }
+                ]
+              },
+              {
+                "name": "Silver",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is cold and your breath weapon manifests in a 15-foot cone."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are virtue and friendship."
+                  }
+                ]
+              },
+              {
+                "name": "Steel",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is poison and your breath weapon manifests in a 15-foot cone."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are freedom and curiosity."
+                  }
+                ]
+              },
+              {
+                "name": "Tungsten",
+                "traits": [
+                  {
+                    "name": "Draconic Representation",
+                    "description": "Your draconic damage type is thunder and your breath weapon manifests in a 15-foot cone."
+                  },
+                  {
+                    "name": "Draconic Ideals",
+                    "description": "Your draconic ideals are protection and vigilance."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Charm Animals and Plants",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to charm animals and plants.  As an action, you present your holy symbol and invoke the name of your deity. Each creature with an Intelligence score of 4 or less that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate."
+        }
+      ]
+    },
+    {
+      "name": "Midnight Gloom",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to harness the black gloom of midnight, banishing light and draining the life of your foes. As an action, you present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put out.</p><p>Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes necrotic damage equal to 2d6 + your savant level on a failed saving throw, and loses any darkvision they have for 1 minute.  On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success."
+        }
+      ]
+    },
+    {
+      "name": "Order's Demand",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to exert an intimidating presence over others.  As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw."
+        }
+      ]
+    },
+    {
+      "name": "Tendrils of Agony",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can present your holy symbol and expend a use of your Channel Divinity to unleash a wave of agony that ripples outward from you. Choose a number of creatures up to your Wisdom modifier within 30 feet of you. These creatures must succeed on a Wisdom saving throw against your Divine spell save DC. On a failed save, a creature takes psychic damage equal to 2d6 + your savant level and the creature is incapacitated for 1 minute. On a successful save, a creature takes half as much damage and suffers no other effects.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        }
+      ]
+    },
+    {
+      "name": "Balm of Peace",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your spellcasting ability modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action."
+        }
+      ]
+    },
+    {
+      "name": "Radiant Defense",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to cloak your allies in radiant armor.  As an action, you channel blessed energy into an ally that you can see within 30 feet of you. The first time that ally is hit by an attack within the next minute, the attacker takes radiant damage equal to 2d10 + your savant level."
+        }
+      ]
+    },
+    {
+      "name": "Cloying Darkness",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to conjure a cloud of darkness to billow around you, banishing light and draining the life of your foes. As an action, you present your holy symbol and all light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your savant level or lower are dispelled.</p><p>In addition, creatures of your choice within 30 feet must make a Constitution saving throw. A creature takes necrotic damage equal to 2d6 + your savant level on a failed saving throw, and loses any darkvision they have for 1 minute.</p><p>On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success."
+        }
+      ]
+    },
+    {
+      "name": "Updraft",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to create a powerful blast of wind. As an action, you present your holy symbol and invoke the name of your deity. Choose a Large or smaller creature within 60 feet of you. The target must succeed on a Strength saving throw or be blown upwards up to 30 feet. A target can choose to automatically fail this saving throw. If the target doesn't have a hover or fly speed, it immediately falls afterwards, taking fall damage and landing prone."
+        }
+      ]
+    },
+    {
+      "name": "Feat of Strength",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to enhance your physical might. When you make an attack roll, ability check, or saving throw using Strength, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the roll succeeds or fails."
+        }
+      ]
+    },
+    {
+      "name": "Wave of Despair",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can present your holy symbol and expend a use of your Channel Divinity to unleash a wave of despair that ripples outward from you. Choose a number of creatures up to your Wisdom modifier within 30 feet of you. These creatures must succeed on a Wisdom saving throw. On a failed save, a creature takes 2d8 psychic damage and the creature must spend its action on its turn wallowing in sadness and grief for 1 minute. On a successful save, a creature takes half as much damage and suffers no other effects. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        }
+      ]
+    },
+    {
+      "name": "Destructive Wrath",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to wield the power of the storm with unchecked ferocity.  When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling."
+        }
+      ]
+    },
+    {
+      "name": "Invoke Duplicity",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to create an illusory duplicate of yourself.</p><p>As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.</p><p>For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+        }
+      ]
+    },
+    {
+      "name": "Twilight Sanctuary",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.  As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:<ul><li>You grant it temporary hit points equal to 1d6 plus your savant level.</li><li>You end one effect on it causing it to be charmed or frightened.</li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "Guided Strike",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+        }
+      ]
+    },
+    {
+      "name": "Ice Prison",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to encase a creature in ice. As an action, you brandish your holy symbol, and force a creature you can see within 30 feet of you to make a Strength saving throw. A willing creature can choose to fail their saving throws against this feature.</p><p>On a failed saving throw, the creature is encased in ice for 1 minute, or until you dispel it with an action. While encased in this way, the creature is immune to all damage, is incapacitated, and its speed becomes 0. At the end of each of its turn it can repeat the Strength saving throw, breaking free of the ice on a success."
+        }
+      ]
+    },
+    {
+      "name": "Turn the Faithless",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p><p>If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned. "
+        }
+      ]
+    },
+    {
+      "name": "Hit and Run",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can imbue yourself with agility in the ways of the skirmisher using your Channel Divinity. For 1 minute, or until you fall unconscious, your movement speed increases by a number of feet equal to 5 x your Intelligence modifier (minimum of 5 feet), your reach increases by 5 feet, and opportunity attacks targeting you are made at disadvantage."
+        }
+      ]
+    },
+    {
+      "name": "Turn the Tide",
+      "traits": [
+        {
+          "name": "",
+          "description": "As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Intelligence modifier (minimum of 1) if it has no more than half of its hit points."
+        }
+      ]
+    },
+    {
+      "name": "Turn the Unholy",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ]
+    },
+    {
+      "name": "Pyroburst",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can use your Channel Divinity to cause a burst of fiery energy to radiate from you. Creatures within 20 feet must make a Dexterity saving throw against your spell save DC. Creatures that fail their saving throw take 2d8 fire damage and are pushed 10 feet away from you in a straight line. Creatures that succeed their saving throw take half as much damage and aren't pushed. Unsecured objects within range are pushed in a straight line until they are 30 feet away from you. Flammable objects within range are set alight."
+        }
+      ]
+    },
+    {
+      "name": "Ironworks",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can touch your holy symbol to a metal object that takes up no more than a 5-foot cube and instantly transfigure it into a shape of your choosing. In order to use this to create works that require skill or training, you must be proficient in the relevant set of artisan's tools."
+        }
+      ]
+    },
+    {
+      "name": "Freedom from Chains",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use a bonus action to inspire others to rise against their oppressors. All friendly creatures other than yourself within 30 feet of you can use their reaction to stand if they are prone or to make an ability check or saving throw to attempt to escape from being grappled or restrained.</p><p>You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and regain all expended uses when you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Turn the Lawless",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can utter a prayer that is painful to creatures of chaos. You display your holy symbol and speak your condemnatory prayer, using your Channel Divinity. Each aberration, demon, or fey that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ]
+    },
+    {
+      "name": "Fury of the Tides",
+      "traits": [
+        {
+          "name": "",
+          "description": "As a bonus action, you can expend your Channel Divinity to channel the powerful might of the waves to bolster your attacks for 1 minute. Once per turn for the duration, when you hit a creature with weapon attack, you can choose to push the target 10 feet away from you. If the target is pushed into an obstacle or another creature, they take additional bludgeoning damage equal to your Intelligence modifier."
+        }
+      ]
+    },
+    {
+      "name": "None But I",
+      "traits": [
+        {
+          "name": "",
+          "description": "Your vanity gives your power over yourself that others could never dream of. As a bonus action, you can expend your Channel Divinity to end any magical effects of your choice on yourself."
+        }
+      ]
+    },
+    {
+      "name": "Entropic Infection",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to weaken a creature against entropic energies. As an action, you can force a creature of your choice that you can see within 30 feet of you to make a Constitution saving throw. On a failed save, for the next minute the creature takes an additional 2d6 damage the first time it takes necrotic damage each turn. During this time, the creature loses resistance to necrotic damage if it has it."
+        }
+      ]
+    },
+    {
+      "name": "Golden Suit",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can use your Channel Divinity to coat yourself in shining gold for 1 hour. You gain temporary hit points equal to twice your paladin level for the duration. Whenever a creature hits you with a melee attack while you have these hit points, gold sprays off your armor, causing the creature to suffer disadvantage on their first attack before the end of their next turn."
+        }
+      ]
+    },
+    {
+      "name": "Rebuke the Violent",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
+        }
+      ]
+    },
+    {
+      "name": "Ghostly Blade",
+      "traits": [
+        {
+          "name": "",
+          "description": "When you hit a creature with an attack, you may also use your Channel Divinity, empowering your weapon with dreadful shadow. If you do, the target and each other creature of your choice within 5 feet of it must succeed on a Wisdom saving throw or be blinded until the end of their next turn, and all damage that you deal in this attack becomes either psychic or necrotic damage (your choice)."
+        }
+      ]
+    },
+    {
+      "name": "Poison Strike",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to make a weapon deadlier. As a bonus action, you touch one weapon or piece of ammunition and conjure a special poison on it. The poison lasts for 1 minute. The next time you hit a target with an attack using that weapon or ammunition, the target takes poison damage immediately after the attack. The poison damage equals 2d10 + your savant level, or 20 + your savant level if you had advantage on the attack roll."
+        }
+      ]
+    },
+    {
+      "name": "Unstoppable Tilt",
+      "traits": [
+        {
+          "name": "",
+          "description": "You may spend an action to use your Channel Divinity in order to make an unstoppable charge. You may move up to twice your speed in a straight line. You can move through enemy creatures, and the first enemy creature you come into contact with must make a Strength saving throw equal to 8 + your proficiency bonus + your Strength modifier, or they take 2d8 bludgeoning damage and are forcefully moved with you until you finish your charge, or take no damage and are knocked prone. All other creatures you, or the creature you are carrying, pass through after the first must also make the save or be knocked prone."
+        }
+      ]
+    },
+    {
+      "name": "Abjure Enemy",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.</p><p>On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.</p><p>On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage."
+        }
+      ]
+    },
+    {
+      "name": "Turn the Aberrant",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you present your holy symbol and speak a prayer censuring aberrations, using your Channel Divinity. Each aberration or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move into a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p><p>A creature's true form is revealed while it is turned."
+        }
+      ]
+    },
+    {
+      "name": "Abjure the Extraplanar",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to castigate unworldly beings.</p><p>As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the Dodge action."
+        }
+      ]
+    },
+    {
+      "name": "Inquisitor's Eye",
+      "traits": [
+        {
+          "name": "",
+          "description": "You can use your Channel Divinity to open your senses to hidden signs of corruption and malfeasance. As a bonus action, you grant yourself advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) ability checks for the next 10 minutes. During this time, you can't be surprised."
+        }
+      ]
+    },
+    {
+      "name": "Purge Darkness",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you can present your holy symbol and expend your Channel Divinity to burn away darkness in your vicinity. Choose a number of points within 120 feet of you up to your spellcasting ability modifier (minimum of 1). For the next minute, a 30-foot radius of light spreads out from each of the points. If any of this effect's area overlaps with an area of darkness created by a spell of 2nd level or lower, the spell that created the darkness is dispelled."
+        }
+      ]
+    },
+    {
+      "name": "Dreadful Aspect",
+      "traits": [
+        {
+          "name": "",
+          "description": "As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the effect on it."
+        }
+      ]
+    },
+    {
+      "name": "Sacred Duel",
+      "traits": [
+        {
+          "name": "",
+          "description": "As a bonus action, you can hold aloft your holy symbol and initiate a sacred duel between you and a creature within 30 feet who agrees to the duel, marking you both as duelists. For the duration, both duelists have resistance to all damage, except for damage from the other duelist, and they can only target each other with attacks and spells.</p><p>This sacred duel lasts for one minute, or until one of the creatures who entered into the duel falls unconscious."
+        }
+      ]
+    },
+    {
+      "name": "Holy Fists",
+      "description": "As a bonus action, you can utter a prayer of power to imbue your fists with divine justice. For 1 minute, or until you are incapacitated, your unarmed strikes deal radiant damage in place of the normal bludgeoning damage, and they score a critical hit on a roll of 19-20 on the d20."
     }
   ]
 }

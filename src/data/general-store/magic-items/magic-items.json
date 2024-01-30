@@ -329,7 +329,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by a savant",
-    "description": "This thick book has information on just about anything and everything.<br><br>While you hold the book, you gain a +1 bonus to your Intelligence and Wisdom ability checks.<br><br>In addition, the book has information on all languages, tools, skills, and weapons for the purposes of learning them through your Expert Student feature.",
+    "description": "This thick book has information on just about anything and everything.<br><br>While you hold the book, you gain a +3 bonus to any roll of your Intellect Die and to your Intellect save DC.<br><br>In addition, when you would roll your Intellect Die, you can instead take the maximum possible roll. Once this property is used, it can't be used again until the next dawn.",
     "index": "1universalencyclopedia"
   },
   {
@@ -662,7 +662,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by a savant",
-    "description": "This thick book has information on just about anything and everything.<br><br>While you hold the book, you gain a +2 bonus to your Intelligence and Wisdom ability checks.<br><br>In addition, the book has information on all languages, tools, skills, and weapons for the purposes of learning them through your Expert Student feature.",
+    "description": "This thick book has information on just about anything and everything.<br><br>While you hold the book, you gain a +3 bonus to any roll of your Intellect Die and to your Intellect save DC.<br><br>In addition, when you would roll your Intellect Die, you can instead take the maximum possible roll. Once this property is used, it can't be used again until the next dawn.",
     "index": "2universalencyclopedia"
   },
   {
@@ -941,7 +941,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by a savant",
-    "description": "This thick book has information on just about anything and everything.<br><br>While you hold the book, you gain a +3 bonus to your Intelligence and Wisdom ability checks.<br><br>In addition, the book has information on all languages, tools, skills, and weapons for the purposes of learning them through your Expert Student feature.",
+    "description": "This thick book has information on just about anything and everything.<br><br>While you hold the book, you gain a +3 bonus to any roll of your Intellect Die and to your Intellect save DC.<br><br>In addition, when you would roll your Intellect Die, you can instead take the maximum possible roll. Once this property is used, it can't be used again until the next dawn.",
     "index": "3universalencyclopedia"
   },
   {
