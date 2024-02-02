@@ -3934,7 +3934,7 @@
       }
     ],
     "type": "racial",
-    "description": "One of your ancestors was a horned devil, vrock, or similar winged fiend.  You manifest the wings of a creature of the night, such as a bat or skeletal dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
+    "description": "One of your ancestors was a cornugon, vrock, or similar winged fiend.  You manifest the wings of a creature of the night, such as a bat or skeletal dragon, which grant you a flying speed equal to your walking speed while you are not wearing medium or heavy armor.",
     "granted": [
       {
         "type": "speed",
@@ -3968,7 +3968,7 @@
       }
     ],
     "type": "racial",
-    "description": "One of your ancestors was a barbed devil or other spiky fiend. Barbs protrude from your head. You gain the following benefits:<ul><li>Increase your Constitution or Charisma score by 1, up to a maximum of 20.</li><li>You gain proficiency in the Intimidation skill. If you're already proficient in it, your proficiency bonus is doubled for any check you make with it.</li><li>As a bonus action, you can cause small barbs to protrude all over your body or cause them to retract. At the start of each of your turns while the barbs are out, you deal 1d6 piercing damage to any creature grappling you or any creature grappled by you.</li></ul>",
+    "description": "One of your ancestors was a hamatula or other spiky fiend. Barbs protrude from your head. You gain the following benefits:<ul><li>Increase your Constitution or Charisma score by 1, up to a maximum of 20.</li><li>You gain proficiency in the Intimidation skill. If you're already proficient in it, your proficiency bonus is doubled for any check you make with it.</li><li>As a bonus action, you can cause small barbs to protrude all over your body or cause them to retract. At the start of each of your turns while the barbs are out, you deal 1d6 piercing damage to any creature grappling you or any creature grappled by you.</li></ul>",
     "choices": {
       "id": "E5175B2F-096B-4FD6-BEA0-B47464F90E31",
       "type": "asi",
@@ -3991,7 +3991,7 @@
       }
     ],
     "type": "racial",
-    "description": "One of your ancestors was a chain devil.  When you hit with an attack, spectral chains manifest, performing one of the following additional effects:<ul><li>The target is pulled 10 feet towards you.</li><li>The target's movement speed is reduced by 10 feet.</li><li>The target cannot take reactions until the start of your next turn.</li></ul>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+    "description": "One of your ancestors was a kyton.  When you hit with an attack, spectral chains manifest, performing one of the following additional effects:<ul><li>The target is pulled 10 feet towards you.</li><li>The target's movement speed is reduced by 10 feet.</li><li>The target cannot take reactions until the start of your next turn.</li></ul>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
     "uses": {
       "id": "B3BD14B2-139D-42CE-B312-8930D2EC3236",
       "type": "derived",

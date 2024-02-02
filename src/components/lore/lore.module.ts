@@ -16,6 +16,7 @@ import { LoreSeaComponent } from './lore-sea/lore-sea.component';
 import { LorePantheonsComponent } from './lore-pantheons/lore-pantheons.component';
 import { LoreLanguagesComponent } from './lore-languages/lore-languages.component';
 import { LorePlanesComponent } from './lore-planes/lore-planes.component';
+import { LoreMagicComponent } from './lore-magic/lore-magic.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LorePlanesComponent } from './lore-planes/lore-planes.component';
     LoreSeaComponent,
     LorePantheonsComponent,
     LoreLanguagesComponent,
-    LorePlanesComponent
+    LorePlanesComponent,
+    LoreMagicComponent
   ],
   imports: [
     CommonModule,

@@ -9836,7 +9836,7 @@
     "components": "V, S, M (a ruby worth at least 999 gp)",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil's type, which must be one of challenge rating 6 or lower, such as a barbed devil or a bearded devil. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 hit points or when the spell ends.",
+      "Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil's type, which must be one of challenge rating 6 or lower, such as a hamatula or a bearded devil. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 hit points or when the spell ends.",
       "The devil is unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. It is under the Dungeon Master's control and acts according to its nature on each of its turns, which might result in its attacking you if it thinks it can prevail, or trying to tempt you to undertake an evil act in exchange for limited service. The DM has the creature's statistics.",
       "On each of your turns, you can try to issue a verbal command to the devil (no action required by you). It obeys the command if the likely outcome is in accordance with its desires, especially if the result would draw you toward evil. Otherwise, you must make a Charisma (Deception, Intimidation, or Persuasion) check contested by its Wisdom (Insight) check. You make the check with advantage if you say the devil's true name. If your check fails, the devil becomes immune to your verbal commands for the duration of the spell, though it can still carry out your commands if it chooses. If your check succeeds, the devil carries out your command- such as \"attack my enemies,\" \"explore the room ahead,\" or \"bear this message to the queen\"-until it completes the activity, at which point it returns to you to report having done so.",
       "If your concentration ends before the spell reaches its full duration, the devil doesn't disappear if it has become immune to your verbal commands. Instead, it acts in whatever manner it chooses for 3d6 minutes, and then it disappears.",
@@ -16652,7 +16652,7 @@
     "level": 8,
     "castingTime": "1 action",
     "range": "150 feet",
-    "components": "S, M (the fang of an ice devil, worth at least 500 gp)",
+    "components": "S, M (the fang of an gelugon, worth at least 500 gp)",
     "duration": "Instantaneous",
     "description": [
       "You conjure five shards of black ice from Stygia, fifth layer of the Nine Hells, which launch themselves at your foes. You can hurl them at one target or several. Make a ranged spell attack for each shard. On a hit, the target takes 3d8 cold damage.",
@@ -20404,7 +20404,7 @@
     "components": "V, S, M (a quill and a vial of your own blood)",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You utter foul words, summoning one devil from the Nine Hells. Roll on the following table to determine what appears.<table><tr><th>d6</th><th>Devils Summoned</th></tr><tr><td>1-2</td><td>Two devils of challenge rating 1 or lower</td></tr><tr><td>3-4</td><td>Four devils of challenge rating 1/2 or lower</td></tr><tr><td>5-6</td><td>Eight devils of challenge rating 1/4 or lower</td></tr></table>The DM chooses the devils, such as imps or spined devils, and you choose the unoccupied spaces you can see within range where they appear. A summoned devil disappears when it drops to 0 hit points or when the spell ends.",
+      "You utter foul words, summoning one devil from the Nine Hells. Roll on the following table to determine what appears.<table><tr><th>d6</th><th>Devils Summoned</th></tr><tr><td>1-2</td><td>Two devils of challenge rating 1 or lower</td></tr><tr><td>3-4</td><td>Four devils of challenge rating 1/2 or lower</td></tr><tr><td>5-6</td><td>Eight devils of challenge rating 1/4 or lower</td></tr></table>The DM chooses the devils, such as imps or spinagons, and you choose the unoccupied spaces you can see within range where they appear. A summoned devil disappears when it drops to 0 hit points or when the spell ends.",
       "The devils are hostile to all creatures, including you. Roll initiative for the summoned devils as a group, which has its own turns. The devils pursue and attack the nearest non-devils to the best of their ability.",
       "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned devils can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
     ],
@@ -20423,7 +20423,7 @@
     "components": "V, S, M (a quill and a vial of your own blood)",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You utter foul words, summoning one devil from the Nine Hells. You choose the devil's type, which must be one of challenge rating 5 or lower, such as a barbed devil or merregon. The devil appears in an unoccupied space you can see within range, and the devil disappears when it drops to 0 hit points or when the spell ends.",
+      "You utter foul words, summoning one devil from the Nine Hells. You choose the devil's type, which must be one of challenge rating 5 or lower, such as a hamatula or merregon. The devil appears in an unoccupied space you can see within range, and the devil disappears when it drops to 0 hit points or when the spell ends.",
       "Roll initiative for the devil, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.",
       "At the end of each of the devil's turns, it makes a Charisma saving throw. The devil has disadvantage on this saving throw if you say its true name. On a failed save, the devil continues to obey you. On a successful save, your control of the devil ends for the rest of the duration, and the devil spends its turns pursuing and attacking the nearest non-devils to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled devil doesn't disappear for 1d6 rounds if it still has hit points.",
       "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned devil can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
