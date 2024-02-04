@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { take } from 'rxjs';
+import { CharacterSheetService } from 'src/services/character-sheet.service';
 import { DBService } from 'src/services/db.service';
 
 @Component({
@@ -15,6 +16,8 @@ export class CharactersComponent implements OnInit {
   public userCharacters = { adamantine: [], mithral: [] };
 
   constructor(private dbService: DBService, private router: Router) {}
+
+  private passiveBonuses;
 
   public ngOnInit(): void {
     localStorage.clear();
@@ -72,8 +75,54 @@ export class CharactersComponent implements OnInit {
     );
   }
 
+  public capitalize(str: string): string {
+    return str.charAt(0).toUpperCase() + str.substring(1);
+  }
+
   public getCharName(character: any) {
     const data = JSON.parse(character.data);
     return data.name;
+  }
+
+  public getCharRace(character: any) {
+    const data = JSON.parse(character.data);
+    if (data.race) {
+      let raceString = this.capitalize(data.race.name);
+
+      if (data.race.subrace) {
+        raceString += ` (${data.race.subrace})`;
+      }
+      return raceString;
+    }
+  }
+  public getCharClasses(character: any) {
+    const data = JSON.parse(character.data);
+    if (data.classes?.length) {
+      let classes = data.classes.map((c) => {
+        let cString = this.capitalize(c.name);
+        if (c.subclass) {
+          cString += ` (${c.subclass})`;
+        }
+
+        cString += ` ${c.level}`;
+        return cString;
+      });
+
+      return classes.join(' / ');
+    }
+  }
+
+  public getCharCurrHp(character: any) {
+    const data = JSON.parse(character.data);
+    return data.hp - (data.currHp ?? 0);
+  }
+  public getCharHp(character: any) {
+    const data = JSON.parse(character.data);
+    console.log(data);
+    return data.hp;
+  }
+  public getCharAc(character: any) {
+    const data = JSON.parse(character.data);
+    return data.ac;
   }
 }

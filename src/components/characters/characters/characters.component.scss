@@ -19,3 +19,14 @@
     justify-content: stretch;
     align-items: stretch;
 }
+
+.player-characters {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .character-box {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}

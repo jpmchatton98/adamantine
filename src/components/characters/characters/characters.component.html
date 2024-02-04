@@ -1,18 +1,31 @@
 <div class="characters">
   <div class="character-col">
-    <h5>Adamantine Players</h5>
     <div *ngFor="let user of users.adamantine; let i = index">
-      <h5>{{ user }}'s Characters</h5>
+      <h4>{{ user }}'s Characters</h4>
       <button nz-button (click)="create(user)">+ Create New</button>
-      <div *ngFor="let c of userCharacters.adamantine[i]">
-        <div>
-          {{ getCharName(c) }}
-          <a class="character-btn" routerLink="/characters/{{ c.guid }}/builder"
-            >Builder</a
-          >
-          <a class="character-btn" routerLink="/characters/{{ c.guid }}/sheet"
-            >Sheet</a
-          >
+      <div class="player-characters">
+        <div
+          class="character-box"
+          *ngFor="let c of userCharacters.adamantine[i]"
+        >
+          <h5>{{ getCharName(c) }}</h5>
+          <div>{{ getCharRace(c) }} {{ getCharClasses(c) }}</div>
+          <div>
+            <a
+              class="character-btn"
+              routerLink="/characters/{{ c.guid }}/builder"
+              >Builder</a
+            >
+            <a class="character-btn" routerLink="/characters/{{ c.guid }}/sheet"
+              >Sheet</a
+            >
+          </div>
+          <div>
+            <strong>Hit Points:</strong>
+            {{ getCharCurrHp(c) }} / {{ getCharHp(c) }}
+            <br />
+            <strong>Armor Class:</strong> {{ getCharAc(c) }}
+          </div>
         </div>
       </div>
     </div>
