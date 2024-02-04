@@ -23308,8 +23308,8 @@
     "duration": "Concentration, up to 1 minute",
     "description": [
       "You conjure an abyssal storm that lasts for a minute and follows your movement, swirling as you circle it.",
-      "On each of your turns, you may call down demonic lightning as a bonus action. You and each creature encircled by the movement you took this turn must succeed on a Dexterity saving throw or take 6d6 lightning plus 2d10 necrotic damage, or half as much on a success.",
-      "A creature is encircled by your movement if the ground you moved over on this turn marks a contiguous path that intersects itself, creating an enclosed shape that contains the creature. The path of your movement counts as part of the shape it encloses."
+      "On each of your turns, you may call down demonic lightning as a bonus action. Each creature encircled by the movement you took this turn must succeed on a Dexterity saving throw or take 6d6 lightning plus 2d10 necrotic damage, or half as much on a success.",
+      "A creature is encircled by your movement if the ground you moved over on this turn marks a contiuous path that intersects itself, creating an enclosed shape that contains the creature. The path of your movement counts as part of the shape it encloses."
     ],
     "lists": ["Divine", "Occult"],
     "ritual": 0,
