@@ -5,6 +5,7 @@ import { CharacterSheetModule } from './sheet/character-sheet.module';
 import { CharactersComponent } from './characters/characters.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 @NgModule({
   declarations: [CharactersComponent],
@@ -14,6 +15,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     CharacterBuilderModule,
     CharacterSheetModule,
     NzButtonModule,
+    NzModalModule,
   ],
 })
 export class CharacterModule {}

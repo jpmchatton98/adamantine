@@ -32,6 +32,11 @@ export class DBService {
       })
       .subscribe((response) => console.info(response));
   }
+  public deleteCharacter(characterId: string): Observable<any> {
+    return this.http.post(this.baseUrl + '/db/deleteCharacter', {
+      characterId,
+    });
+  }
 
   public async getCharacter(characterId: string): Promise<any> {
     return this.http

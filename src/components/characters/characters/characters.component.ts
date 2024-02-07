@@ -18,6 +18,7 @@ export class CharactersComponent implements OnInit {
   constructor(private dbService: DBService, private router: Router) {}
 
   private passiveBonuses;
+  public modalVisible = {};
 
   public ngOnInit(): void {
     localStorage.clear();
@@ -27,13 +28,12 @@ export class CharactersComponent implements OnInit {
         .getUserCharacters(this.users.adamantine[i])
         .subscribe((c) => {
           this.userCharacters.adamantine[i] = c;
+
+          for (let character of this.userCharacters.adamantine[i]) {
+            this.modalVisible[character.guid] = false;
+          }
         });
     }
-    // for (let i = 0; i < this.users.mithral.length; i++) {
-    //   this.dbService.getUserCharacters(this.users.mithral[i]).subscribe((c) => {
-    //     this.userCharacters.mithral[i] = c;
-    //   });
-    // }
   }
 
   public create(username): void {
@@ -50,6 +50,13 @@ export class CharactersComponent implements OnInit {
         console.info(response);
         this.router.navigateByUrl(`/characters/${uuid}/builder`);
       });
+  }
+  public deleteCharacter(characterId): void {
+    localStorage.clear();
+    this.dbService.deleteCharacter(characterId).subscribe((response) => {
+      console.info(response);
+      window.location.reload();
+    });
   }
 
   public generateUUID() {
@@ -118,7 +125,6 @@ export class CharactersComponent implements OnInit {
   }
   public getCharHp(character: any) {
     const data = JSON.parse(character.data);
-    console.log(data);
     return data.hp;
   }
   public getCharAc(character: any) {

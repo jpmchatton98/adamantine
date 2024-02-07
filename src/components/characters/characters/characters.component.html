@@ -26,6 +26,28 @@
             <br />
             <strong>Armor Class:</strong> {{ getCharAc(c) }}
           </div>
+
+          <button
+            nz-button
+            nzType="default"
+            nzDanger
+            (click)="modalVisible[c.guid] = true"
+            class="delete-btn"
+          >
+            <span class="mdi mdi-trash-can"></span> Delete
+          </button>
+          <nz-modal
+            [(nzVisible)]="modalVisible[c.guid]"
+            nzTitle="Delete"
+            nzOkText="Confirm"
+            nzCancelText="Cancel"
+            (nzOnOk)="deleteCharacter(c.guid)"
+            (nzOnCancel)="modalVisible[c.guid] = false"
+          >
+            <ng-container *nzModalContent>
+              <p>Are you sure you want to delete {{ getCharName(c) }}?</p>
+            </ng-container>
+          </nz-modal>
         </div>
       </div>
     </div>
