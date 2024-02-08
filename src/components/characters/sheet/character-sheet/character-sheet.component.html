@@ -120,6 +120,33 @@
             [(ngModel)]="tempHp"
             (ngModelChange)="updateTempHp()"
           />
+          <hr />
+          <h6>Hit Dice</h6>
+          <ng-container *ngFor="let uses of character.uses">
+            <ng-container *ngIf="uses.id.includes('hit-dice')">
+              <div>
+                <strong>d{{ uses.id.replace("hit-dice-", "") }}s</strong>
+              </div>
+              <div class="checkboxes">
+                <ng-container
+                  *ngFor="let cb of getUses(uses.id); let i = index"
+                >
+                  <div
+                    class="box"
+                    *ngIf="cb"
+                    (click)="changeUses(uses.id, -1, false)"
+                  >
+                    <div class="filled"></div>
+                  </div>
+                  <div
+                    class="box"
+                    *ngIf="!cb"
+                    (click)="changeUses(uses.id, 1, false)"
+                  ></div>
+                </ng-container>
+              </div>
+            </ng-container>
+          </ng-container>
         </ng-container>
       </nz-modal>
       <nz-modal
@@ -777,6 +804,7 @@
             ></cs-inventory>
           </nz-tab>
           <nz-tab nzTitle="Features & Traits">
+            {{ hitDice | json }}
             <ng-container *ngIf="character.race">
               <h5>Race Features</h5>
               <div *ngFor="let feature of getRaceFeatures()">

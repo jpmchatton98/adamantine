@@ -1165,4 +1165,11 @@ export class DataService {
     }
     return '';
   }
+
+  public getHitDieSize(className: string): number {
+    const c = classes.find(
+      (cl) => cl.name.toLowerCase().replaceAll(' ', '-') === className
+    );
+    return c?.hitDie ?? 8;
+  }
 }

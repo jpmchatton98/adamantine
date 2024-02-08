@@ -131,6 +131,8 @@ export class CharacterSheetComponent implements OnInit {
   // TODO: remove this and replace with automatic calculation
   public ac = 0;
 
+  public hitDice = {};
+
   public skillModalVisible = false;
   public skillModalItem;
 
@@ -350,6 +352,7 @@ export class CharacterSheetComponent implements OnInit {
     this.loaded = true;
 
     this.calculateHp();
+    this.calculateHitDice();
     this.tempHp = this.character.tempHp ?? 0;
     this.generateWeaponAttacks();
   }
@@ -381,6 +384,41 @@ export class CharacterSheetComponent implements OnInit {
     } else {
       this.currHp = this.character.currHp;
     }
+  }
+  private calculateHitDice() {
+    this.hitDice = {};
+    if (this.character.classes) {
+      for (let c of this.character.classes) {
+        let hitDieSize = this.dataService.getHitDieSize(c.name);
+
+        if (Object.keys(this.hitDice).includes(hitDieSize.toString())) {
+          this.hitDice[hitDieSize.toString()] += c.level;
+        } else {
+          this.hitDice[hitDieSize.toString()] = c.level;
+        }
+      }
+    }
+
+    if (!this.character.uses) {
+      this.character.uses = [];
+    }
+
+    for (let size of Object.keys(this.hitDice).sort()) {
+      const useIndex = this.character.uses.findIndex(
+        (u) => u.id === `hit-dice-${size}`
+      );
+      if (useIndex !== -1) {
+        this.character.uses[useIndex].maxUses = this.hitDice[size];
+      } else {
+        this.character.uses.push({
+          id: `hit-dice-${size}`,
+          currUses: this.hitDice[size],
+          maxUses: this.hitDice[size],
+        });
+      }
+    }
+
+    this.store.dispatch(new Update());
   }
   public heal() {
     this.currHp -= this.hpMod;
@@ -502,6 +540,13 @@ export class CharacterSheetComponent implements OnInit {
     for (let use of this.character.uses ?? []) {
       if (use.reset) {
         use.currUses = use.maxUses;
+      }
+
+      if (use.id.includes('hit-dice')) {
+        if (use.currUses !== use.maxUses) {
+          const missingDice = use.maxUses - use.currUses;
+          use.currUses += Math.max(1, Math.floor(missingDice / 2));
+        }
       }
     }
     this.store.dispatch(new Update());
@@ -943,5 +988,48 @@ export class CharacterSheetComponent implements OnInit {
     }
 
     return speedIndex;
+  }
+
+  public getUseObject(index: string) {
+    if (this.character.uses) {
+      let use = this.character.uses.find((u) => u.id === index);
+
+      if (use) {
+        return use;
+      }
+    }
+  }
+  public getUses(index: string) {
+    let checkboxes = [];
+    const use = this.getUseObject(index);
+
+    let currUses = use?.currUses ?? 0;
+    let maxUses = use?.maxUses ?? 0;
+
+    for (let i = 0; i < maxUses; i++) {
+      checkboxes[i] = i < currUses;
+    }
+
+    return checkboxes;
+  }
+  public getCurrUses(index: string) {
+    const use = this.getUseObject(index);
+    return use.currUses;
+  }
+  public getMaxUses(index: string) {
+    const use = this.getUseObject(index);
+    return use.maxUses;
+  }
+
+  public changeUses(index: string, direction: number) {
+    if (this.character.uses) {
+      let useIndex = this.character.uses.findIndex((u) => u.id === index);
+
+      if (useIndex !== -1) {
+        this.character.uses[useIndex].currUses += direction;
+      }
+    }
+
+    this.store.dispatch(new Update());
   }
 }
