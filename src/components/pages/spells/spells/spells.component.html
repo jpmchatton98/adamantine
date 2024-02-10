@@ -41,6 +41,7 @@
             <th>Range</th>
             <th>Duration</th>
             <th>Components</th>
+            <th>Lists</th>
           </tr>
         </thead>
         <tbody>
@@ -61,6 +62,7 @@
             <td>{{ spell.range }}</td>
             <td>{{ spell.duration }}</td>
             <td>{{ spell.components.split(" (")[0] }}</td>
+            <td>{{ spell.lists.sort().join(", ") }}</td>
           </tr>
         </tbody>
       </nz-table>
