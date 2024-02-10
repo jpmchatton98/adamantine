@@ -24,4 +24,21 @@ export class SpellsComponent {
   constructor(dataService: DataService) {
     this.dataService = dataService;
   }
+
+  public spellLists(spell: any) {
+    if (spell.lists?.length) {
+      return spell.lists
+        .sort()
+        .map((l) => {
+          if (l === 'Elemental') {
+            return `Elemental <sup>${spell.element ?? ''}</sup>`;
+          } else {
+            return l;
+          }
+        })
+        .join(', ');
+    } else {
+      return '';
+    }
+  }
 }
