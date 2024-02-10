@@ -110,6 +110,7 @@ export class CharacterSheetComponent implements OnInit {
   public hpModal = false;
   public acModal = false;
   public speedModal = false;
+  public exhaustionModal = false;
 
   public currHp;
   public tempHp = 0;
@@ -418,6 +419,31 @@ export class CharacterSheetComponent implements OnInit {
       }
     }
 
+    const sprintUseIndex = this.character.uses.findIndex(
+      (u) => u.id === 'sprint'
+    );
+    if (sprintUseIndex !== -1) {
+      this.character.uses[sprintUseIndex].maxUses = this.modifierNumber('con');
+    } else {
+      this.character.uses.push({
+        id: `sprint`,
+        currUses: this.modifierNumber('con'),
+        maxUses: this.modifierNumber('con'),
+        reset: 2,
+      });
+    }
+
+    const exhaustionUseIndex = this.character.uses.findIndex(
+      (u) => u.id === 'exhaustion'
+    );
+    if (exhaustionUseIndex === -1) {
+      this.character.uses.push({
+        id: `exhaustion`,
+        currUses: 0,
+        maxUses: 6,
+      });
+    }
+
     this.store.dispatch(new Update());
   }
   public heal() {
@@ -546,6 +572,11 @@ export class CharacterSheetComponent implements OnInit {
         if (use.currUses !== use.maxUses) {
           const missingDice = use.maxUses - use.currUses;
           use.currUses += Math.max(1, Math.floor(missingDice / 2));
+        }
+      }
+      if (use.id.includes('exhaustion')) {
+        if (use.currUses !== 0) {
+          use.currUses--;
         }
       }
     }

@@ -366,11 +366,6 @@
     ]
   },
   {
-    "name": "Called Shots",
-    "type": "combat",
-    "description": "Practice makes perfect, and with extensive practice you've mastered the art of hitting even smaller targets. Before making an attack with a ranged weapon with which you are proficient, you can choose to take a -5 penalty to the attack roll. If the attack hits, you successfully land a shot on a specific part of the creature. If applicable, the following locations can be hit, with corresponding effects. The saving throw DC for these effects are equal to 8 plus your proficiency bonus and whichever ability score modifier you used to make the attack roll.\n<ul>\n<li><strong>Head.</strong> The target must succeed on a Constitution saving throw or have disadvantage on attack rolls and saving throws until the end of its next turn.</li>\n<li><strong>Torso.</strong> You increase your critical range for this attack by 1.</li>\n<li><strong>Arms.</strong> Choose one of the creature's arms. The target creature must succeed on a Strength Saving Throw or drop whatever is in that arm, knocking the item 10ft. away from you.</li>\n<li><strong>Legs.</strong> The target creature must succeed on a Dexterity Saving Throw or fall prone. Large and larger creatures make this save with advantage.</li>\n<li><strong>Wings.</strong> The target creature must succeed on a Strength Saving Throw or plummet 20ft. Undead and constructs are immune to this effect.</li>\n</ul>\n"
-  },
-  {
     "name": "Cannonmaster",
     "type": "combat",
     "description": "You are a sight to behold on the battlefield, unleashing volley after volley with unprecedented speed. A strong fighter, you are drawn to the most powerful weapons available to you, packing the hardest punch with each shot. You gain the following benefits:\n<ul>\n<li>Increase your Strength by 1, to a maximum of 20.</li>\n<li>When using siege equipment such as cannons, ballista, trebuchet, or other similar weapons that require multiple actions to aim and fire, you may aim and fire them using one action. Additionally, you can use your Strength modifier for the attack and damage rolls made with these weapons.</li>\n<li>When you roll a 1 on a damage die for an attack made with a ranged weapon that uses your Strength modifier, you may roll an additional damage die.</li>\n</ul>\n",

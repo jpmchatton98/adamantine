@@ -147,6 +147,65 @@
               </div>
             </ng-container>
           </ng-container>
+          <h6 style="cursor: pointer" (click)="exhaustionModal = true">
+            Exhaustion
+          </h6>
+          <ng-container *ngFor="let uses of character.uses">
+            <ng-container *ngIf="uses.id.includes('exhaustion')">
+              <div class="checkboxes">
+                <ng-container
+                  *ngFor="let cb of getUses(uses.id); let i = index"
+                >
+                  <div
+                    class="box"
+                    *ngIf="cb"
+                    (click)="changeUses(uses.id, -1, false)"
+                  >
+                    <div class="filled"></div>
+                  </div>
+                  <div
+                    class="box"
+                    *ngIf="!cb"
+                    (click)="changeUses(uses.id, 1, false)"
+                  ></div>
+                </ng-container>
+              </div>
+            </ng-container>
+          </ng-container>
+          <nz-modal
+            [(nzVisible)]="exhaustionModal"
+            [nzTitle]="'Exhaustion'"
+            [nzCancelText]="null"
+            [nzOkText]="null"
+            (nzOnCancel)="exhaustionModal = false"
+          >
+            <ng-container *nzModalContent>
+              <div>
+                <strong>Level 1</strong>
+                You have disadvantage on all ability checks.
+              </div>
+              <div>
+                <strong>Level 2</strong>
+                Your speed is halved.
+              </div>
+              <div>
+                <strong>Level 3</strong>
+                You have disadvantage on all attack rolls and saving throws.
+              </div>
+              <div>
+                <strong>Level 4</strong>
+                Your hit point maximum is halved.
+              </div>
+              <div>
+                <strong>Level 5</strong>
+                Your speed is reduced to 0.
+              </div>
+              <div>
+                <strong>Level 6</strong>
+                You die.
+              </div>
+            </ng-container>
+          </nz-modal>
         </ng-container>
       </nz-modal>
       <nz-modal
@@ -587,14 +646,48 @@
 
             <h5>Special Actions</h5>
 
-            <h6>Dash</h6>
+            <h6>Dash / Sprint</h6>
             <div>
-              <div>
-                When you take the Dash action, you gain extra movement for the
-                current turn. The increase equals your speed, after applying any
-                modifiers.
-              </div>
+              <p>
+                When you take the Dash action, your movement speed is doubled
+                for the current turn. If you take the Dash action multiple times
+                in a single turn, it stacks multiplicatively.
+              </p>
+              <p>
+                By using both your action and your bonus action, you can choose
+                to take the Sprint action. When you do so, you can move up to
+                five times your speed in a straight line. Any opportunity
+                attacks you provoke from this movement are made at advantage.
+              </p>
+              <p>
+                You can take the Sprint action a number of times equal to your
+                Constitution modifier, and regain all expended uses when you
+                finish a long rest. If you take the Sprint action with no uses
+                remaining, you gain a level of exhaustion.
+              </p>
             </div>
+            <ng-container *ngFor="let uses of character.uses">
+              <ng-container *ngIf="uses.id.includes('sprint')">
+                <div class="checkboxes">
+                  <ng-container
+                    *ngFor="let cb of getUses(uses.id); let i = index"
+                  >
+                    <div
+                      class="box"
+                      *ngIf="cb"
+                      (click)="changeUses(uses.id, -1, false)"
+                    >
+                      <div class="filled"></div>
+                    </div>
+                    <div
+                      class="box"
+                      *ngIf="!cb"
+                      (click)="changeUses(uses.id, 1, false)"
+                    ></div>
+                  </ng-container>
+                </div>
+              </ng-container>
+            </ng-container>
 
             <h6>Disengage</h6>
             <div>
@@ -613,20 +706,20 @@
 
             <h6>Help</h6>
             <div>
-              <div>
+              <p>
                 You can lend your aid to another creature in the completion of a
                 task. When you take the Help action, the creature you aid gains
                 advantage on the next ability check it makes to perform the task
                 you are helping with, provided that it makes the check before
                 the start of your next turn.
-              </div>
-              <div>
+              </p>
+              <p>
                 Alternatively, you can aid a friendly creature in attacking a
                 creature within 5 feet of you. You feint, distract the target,
                 or in some other way team up to make your ally's attack more
                 effective. If your ally attacks the target before your next
                 turn, the first attack roll is made with advantage.
-              </div>
+              </p>
             </div>
 
             <h6>Hide</h6>
@@ -637,28 +730,28 @@
 
             <h6>Ready</h6>
             <div>
-              <div>
+              <p>
                 Sometimes you want to get the jump on a foe or wait for a
                 particular circumstance before you act. To do so, you can take
                 the Ready action on your turn, which lets you act using your
                 reaction before the start of your next turn.
-              </div>
-              <div>
+              </p>
+              <p>
                 First, you decide what perceivable circumstance will trigger
                 your reaction. Then, you choose the action you will take in
                 response to that trigger, or you choose to move up to your speed
                 in response to it. When the trigger occurs, you can either take
                 your reaction right after the trigger finishes or ignore the
                 trigger.
-              </div>
-              <div>
+              </p>
+              <p>
                 When you ready a spell, you cast it as normal but hold its
                 energy, which you release with your reaction when the trigger
                 occurs. To be readied, a spell must have a casting time of 1
                 action, and holding onto the spell's magic requires
                 concentration. If your concentration is broken, the spell
                 dissipates without taking effect.
-              </div>
+              </p>
             </div>
 
             <h6>Search</h6>
@@ -682,7 +775,7 @@
 
             <h6>Disarm</h6>
             <div>
-              <div>
+              <p>
                 The target must be no more than two sizes larger than you and
                 must be within your reach. Instead of making an attack roll, you
                 make a Strength (Athletics) check contested by the target's
@@ -690,11 +783,11 @@
                 chooses the ability to use). You succeed automatically if the
                 target is incapacitated. If you succeed, the target drops one
                 item of your choice that it is holding.
-              </div>
+              </p>
             </div>
             <h6>Grapple</h6>
             <div>
-              <div>
+              <p>
                 The target of your grapple must be no more than one size larger
                 than you and must be within your reach. Using at least one free
                 hand, you try to seize the target by making a grapple check
@@ -705,21 +798,21 @@
                 succeed, you subject the target to the grappled condition. The
                 condition specifies the things that end it, and you can release
                 the target whenever you like (no action required).
-              </div>
-              <div>
+              </p>
+              <p>
                 A grappled creature can use its action to escape. To do so, it
                 must succeed on a Strength (Athletics) or Dexterity (Acrobatics)
                 check contested by your Strength (Athletics) check.
-              </div>
-              <div>
+              </p>
+              <p>
                 When you move, you can drag or carry the grappled creature with
                 you, but your speed is halved, unless the creature is two or
                 more sizes smaller than you.
-              </div>
+              </p>
             </div>
             <h6>Shove</h6>
             <div>
-              <div>
+              <p>
                 The target must be no more than one size larger than you and
                 must be within your reach. Instead of making an attack roll, you
                 make a Strength (Athletics) check contested by the target's
@@ -727,11 +820,11 @@
                 chooses the ability to use). You succeed automatically if the
                 target is incapacitated. If you succeed, you push the target 5
                 feet away from you.
-              </div>
+              </p>
             </div>
             <h6>Trip</h6>
             <div>
-              <div>
+              <p>
                 The target must be no more than one size larger than you and
                 must be within your reach. Instead of making an attack roll, you
                 make a Strength (Athletics) check contested by the target's
@@ -739,7 +832,29 @@
                 chooses the ability to use). You succeed automatically if the
                 target is incapacitated. If you succeed, you knock the target
                 prone.
-              </div>
+              </p>
+            </div>
+
+            <h6>Called Shot</h6>
+            <div>
+              <p>
+                When you hit with an attack, instead of dealing damage, you can
+                attempt to inflict some other form of injury. The target must
+                make a saving throw (DC = 8 + your Strength or Dexterity
+                modifier + your proficiency bonus) of a type determined by the
+                DM, depending on what effect you are trying to impose. What
+                exactly the mechanical effect of your called shot is, and how
+                long it lasts, is determined by the DM depending on how
+                effective your called shot would be against your chosen target,
+                by how much the target failed their saving throw, and your
+                creativity.
+              </p>
+              <p>
+                For example, you could deliver a throat chop to an enemy
+                spellcaster in order to silence them, break off the horn of a
+                dragon in order to prevent their horn attack, or rip the eye out
+                of a beholder's eyestalk to prevent them from using that stalk.
+              </p>
             </div>
           </nz-tab>
           <nz-tab nzTitle="Spells" *ngIf="characterSpells.length">
