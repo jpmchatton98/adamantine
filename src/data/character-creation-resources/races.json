@@ -3517,7 +3517,13 @@
           },
           {
             "name": "Tactical Fighter",
-            "description": "You can take the Help action as a bonus action."
+            "description": "You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "5EE043D9-2058-4D67-B185-49C43A3C9277",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            }
           }
         ]
       },
@@ -4880,7 +4886,7 @@
             "granted": [
               {
                 "type": "language",
-                "options": ["Abyssal"]
+                "options": ["Carcerin"]
               }
             ]
           }
@@ -7684,12 +7690,20 @@
           {
             "name": "Legacy of War",
             "description": "You learn one 1st-degree Martial Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
-            "choices": {
-              "id": "681FAB96-7FDA-4ED8-BFD3-7B7268EB7280",
-              "type": "exploit",
-              "list": "martial",
-              "degree": 1
-            },
+            "choices": [
+              {
+                "id": "681FAB96-7FDA-4ED8-BFD3-7B7268EB7280",
+                "type": "exploit",
+                "list": "martial",
+                "degree": 1,
+                "ability": "33E21EFB-39D7-4C58-8364-E038D6144245"
+              },
+              {
+                "id": "33E21EFB-39D7-4C58-8364-E038D6144245",
+                "type": "text",
+                "options": ["str", "dex"]
+              }
+            ],
             "uses": {
               "id": "155D6DEC-5317-46BB-A198-E10CC155CA26",
               "type": "fixed",
@@ -13684,7 +13698,331 @@
     ],
     "subraces": [
       {
-        "name": "Avernese",
+        "name": "Avernese - Bel",
+        "description": "Tieflings with a blood tie to Bel are stronger than the typical tiefling and have expertise in determining battlefield tactics. Not lacking on the battlefield, they feel Bel's rage at being supplanted by an outsider. They tend to have reddish skin and broad horns, and they are significantly more charming and eloquent than their cousins that draw on Zariel's power.",
+        "asis": [{ "str": 1 }, { "con": 1 }, { "int": 1 }],
+        "traits": [
+          {
+            "name": "Devil Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [{ "type": "language", "options": ["Infernal"] }]
+          },
+          {
+            "name": "Hellish Resistance",
+            "description": "You have resistance to fire damage.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Fire"] },
+              { "type": "condition-advantage", "options": ["Burning"] }
+            ]
+          },
+          {
+            "name": "Legacy of War",
+            "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier (your choice) + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
+            "choices": {
+              "id": "2D4F7D02-1DA7-4413-B9A0-E48A857480EC",
+              "type": "exploit",
+              "list": "tactical",
+              "degree": 1,
+              "ability": "int"
+            },
+            "uses": {
+              "id": "A162BC68-77B4-4C1D-8254-3E78B34B8820",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 1
+            }
+          },
+          {
+            "name": "Tactical Genius",
+            "description": "You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "5EE043D9-2058-4D67-B185-49C43A3C9277",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            }
+          }
+        ]
+      },
+      {
+        "name": "Avernese - Tiamat",
+        "description": "Tieflings with a blood tie to Tiamat, also known as Abashian Tieflings, wield demonic aspects in correlation with their infernal magic. They typically have patches of scales in places across their bodies, sharp teeth, and the horns of their draconic ancestors.",
+        "asis": [{ "str": 1 }, { "con": 1 }, { "cha": 1 }],
+        "traits": [
+          {
+            "name": "Devil Tongue",
+            "description": "You can speak, read, and write Infernal and Draconic.",
+            "granted": [
+              { "type": "language", "options": ["Infernal", "Draconic"] }
+            ]
+          },
+          {
+            "name": "Draconic Ancestry",
+            "description": "You are descended from both devils and chromatic dragons.  Choose a dragon type from Black, Blue, Green, Purple, Red, or White.  Your choice grants you resistance to a damage type and advantage on saving throws against a condition.",
+            "choices": {
+              "id": "17F63CCA-A104-4C48-A16B-5A0B3397AE8F",
+              "type": "trait",
+              "options": [
+                {
+                  "name": "Black",
+                  "traits": [
+                    {
+                      "name": "Black Dragon Legacy",
+                      "description": "Your draconic damage type is acid and you have advantage on saving throws against being Broken.",
+                      "granted": [
+                        { "type": "damage-resistance", "options": ["Acid"] },
+                        { "type": "condition-advantage", "options": ["Broken"] }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Blue",
+                  "traits": [
+                    {
+                      "name": "Blue Dragon Legacy",
+                      "description": "Your draconic damage type is lightning and you have advantage on saving throws against being Stunned.",
+                      "granted": [
+                        {
+                          "type": "damage-resistance",
+                          "options": ["Lightning"]
+                        },
+                        {
+                          "type": "condition-advantage",
+                          "options": ["Stunned"]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Green",
+                  "traits": [
+                    {
+                      "name": "Green Dragon Legacy",
+                      "description": "Your draconic damage type is poison and you have advantage on saving throws against being Poisoned.",
+                      "granted": [
+                        { "type": "damage-resistance", "options": ["Poison"] },
+                        {
+                          "type": "condition-advantage",
+                          "options": ["Poisoned"]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Purple",
+                  "traits": [
+                    {
+                      "name": "Purple Dragon Legacy",
+                      "description": "Your draconic damage type is psychic and you have advantage on saving throws against being Charmed.",
+                      "granted": [
+                        {
+                          "type": "damage-resistance",
+                          "options": ["Psychic"]
+                        },
+                        {
+                          "type": "condition-advantage",
+                          "options": ["Charmed"]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Red",
+                  "traits": [
+                    {
+                      "name": "Red Dragon Legacy",
+                      "description": "Your draconic damage type is fire and you have advantage on saving throws against being Burning.",
+                      "granted": [
+                        { "type": "damage-resistance", "options": ["Fire"] },
+                        {
+                          "type": "condition-advantage",
+                          "options": ["Burning"]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "White",
+                  "traits": [
+                    {
+                      "name": "White Dragon Legacy",
+                      "description": "Your draconic damage type is cold and you have advantage on saving throws against being Hobbled.",
+                      "granted": [
+                        { "type": "damage-resistance", "options": ["Cold"] },
+                        {
+                          "type": "condition-advantage",
+                          "options": ["Hobbled"]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Breath Weapon",
+            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><p>The type of saving throw and damage are determined by your draconic ancestry.",
+            "uses": {
+              "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            },
+            "choices": {
+              "id": "17F63CCA-A104-4C48-A16B-5A0B3397AE8F",
+              "type": "trait",
+              "options": [
+                {
+                  "name": "Black",
+                  "traits": [
+                    {
+                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                      "name": "Acid Breath",
+                      "hasUses": true,
+                      "type": "a",
+                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                      "variables": {
+                        "damage": {
+                          "1": "1d10",
+                          "5": "2d10",
+                          "11": "3d10",
+                          "17": "4d10"
+                        },
+                        "damage-type": "acid",
+                        "save-type": "Dexterity",
+                        "desc": "a spray of corrosive acid"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Blue",
+                  "traits": [
+                    {
+                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                      "name": "Lightning Breath",
+                      "hasUses": true,
+                      "type": "a",
+                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                      "variables": {
+                        "damage": {
+                          "1": "1d10",
+                          "5": "2d10",
+                          "11": "3d10",
+                          "17": "4d10"
+                        },
+                        "damage-type": "lightning",
+                        "save-type": "Dexterity",
+                        "desc": "a blast of lightning"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Green",
+                  "traits": [
+                    {
+                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                      "name": "Poison Breath",
+                      "hasUses": true,
+                      "type": "a",
+                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                      "variables": {
+                        "damage": {
+                          "1": "1d10",
+                          "5": "2d10",
+                          "11": "3d10",
+                          "17": "4d10"
+                        },
+                        "damage-type": "poison",
+                        "save-type": "Constitution",
+                        "desc": "a cloud of poisonous gas"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Purple",
+                  "traits": [
+                    {
+                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                      "name": "Dazing Breath",
+                      "hasUses": true,
+                      "type": "a",
+                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                      "variables": {
+                        "damage": {
+                          "1": "1d10",
+                          "5": "2d10",
+                          "11": "3d10",
+                          "17": "4d10"
+                        },
+                        "damage-type": "psychic",
+                        "save-type": "Wisdom",
+                        "desc": "a cloud of dazing gas"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Red",
+                  "traits": [
+                    {
+                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                      "name": "Fire Breath",
+                      "hasUses": true,
+                      "type": "a",
+                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                      "variables": {
+                        "damage": {
+                          "1": "1d10",
+                          "5": "2d10",
+                          "11": "3d10",
+                          "17": "4d10"
+                        },
+                        "damage-type": "fire",
+                        "save-type": "Dexterity",
+                        "desc": "a roaring flame"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "White",
+                  "traits": [
+                    {
+                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                      "name": "Cold Breath",
+                      "hasUses": true,
+                      "type": "a",
+                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                      "variables": {
+                        "damage": {
+                          "1": "1d10",
+                          "5": "2d10",
+                          "11": "3d10",
+                          "17": "4d10"
+                        },
+                        "damage-type": "cold",
+                        "save-type": "Constitution",
+                        "desc": "a blast of sheer cold"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Avernese - Zariel",
         "description": "Tieflings with a blood tie to Zariel are stronger than the typical tiefling and retain a spark of the angelic power she once wielded. Skilled warriors, they hold themselves above and apart from their peers. They tend to have pale gray skin and halo-like ivory horns, and while they are not the most charming of tieflings, they have a cold, classic beauty that stands in opposition to their fiery tempers.",
         "asis": [{ "str": 2 }, { "con": 1 }],
         "traits": [
@@ -14486,6 +14824,25 @@
             }
           }
         ]
+      },
+      {
+        "name": "Tarterian",
+        "description": "Tharizdun the Chained God is the first and greatest demon lord.  Wielding tremendous dark power, he created the Abyss out of the Elemental Chaos long ago.  Fearing the danger of his creation, the gods imprisoned him deep within the Abyss, in a nearly empty layer known as Blackhole.  Due to his imprisonment, tieflings that share his bloodline are extraordinarily rare.  They feel the Chained One's madness, and his desire for freedom.",
+        "asis": [{ "dex": 1 }, { "con": 1 }, { "cha": 1 }],
+        "traits": [
+          {
+            "name": "Demon Tongue",
+            "description": "You can speak, read, and write Abyssal.",
+            "granted": [{ "type": "language", "options": ["Abyssal"] }]
+          },
+          {
+            "name": "Abyssal Resistance",
+            "description": "You have resistance to necrotic damage.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Necrotic"] }
+            ]
+          }
+        ]
       }
     ],
     "name": "Tiefling"
@@ -14792,12 +15149,13 @@
         "traits": [
           {
             "name": "Legacy of War",
-            "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
+            "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier (your choice) + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
             "choices": {
               "id": "2D4F7D02-1DA7-4413-B9A0-E48A857480EC",
               "type": "exploit",
               "list": "tactical",
-              "degree": 1
+              "degree": 1,
+              "ability": "int"
             },
             "uses": {
               "id": "A162BC68-77B4-4C1D-8254-3E78B34B8820",

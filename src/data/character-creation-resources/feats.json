@@ -2723,6 +2723,906 @@
     ]
   },
   {
+    "name": "Compound Legacy",
+    "prereq": [
+      {
+        "race": ["dragonborn"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your draconic legacy draws upon multiple species of dragons.  Choose an additional Draconic Legacy option.",
+    "choices": {
+      "id": "draconic-legacy",
+      "type": "trait",
+      "options": [
+        {
+          "name": "Crossblood",
+          "traits": [
+            {
+              "name": "Natural Armor",
+              "description": "You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+              "granted": [
+                { "type": "unarmored", "base": 13, "scores": ["dex"] }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Draconblood",
+          "traits": [
+            {
+              "name": "Forceful Presence",
+              "description": "When you make a Intimidation or Persuasion check, you can do so with advantage once per short or long rest.",
+              "uses": {
+                "id": "64F63629-DE26-4BCD-B911-A0E0D335D5AB",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Pureblood Chromatic",
+          "traits": [
+            {
+              "name": "Chromatic Infusion",
+              "description": "As a bonus action, you can touch a weapon and infuse it with your breath weapon. For the next minute, the weapon deals an extra 1d4 damage of the same damage type as your breath weapon when it hits. After you use this bonus action, you can't do so again until you finish a long rest.",
+              "uses": {
+                "id": "8E45F498-528C-463B-A207-3C0A23F69ED9",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              },
+              "actions": [
+                {
+                  "id": "8E45F498-528C-463B-A207-3C0A23F69ED9",
+                  "hasUses": true,
+                  "type": "b",
+                  "name": "Chromatic Infusion",
+                  "description": "You can touch a weapon and infuse it with your breath weapon. For the next minute, the weapon deals an extra 1d4 {breath-damage} damage when it hits.",
+                  "variables": {
+                    "breath-damage": {
+                      "choice": "subrace",
+                      "key": {
+                        "Black": "acid",
+                        "Blue": "lightning",
+                        "Green": "poison",
+                        "Purple": "psychic",
+                        "Red": "fire",
+                        "White": "cold"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pureblood Gem",
+          "traits": [
+            {
+              "name": "Psionic Mind",
+              "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature, but the creature must be able to understand at least one language.</p><p>In addition, you learn the Mage Hand cantrip, and the spectral hand is invisible when you cast it.",
+              "granted": [
+                { "type": "telepathy", "range": 30 },
+                {
+                  "type": "spell",
+                  "options": ["Mage Hand"],
+                  "ability": "int"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pureblood Metallic",
+          "traits": [
+            {
+              "name": "Metallic Breath Weapon",
+              "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. The specific nature of your Metallic Breath Weapon is determined by your subrace.  Once you use your Metallic Breath Weapon, you can't do so again until you finish a long rest.",
+              "uses": {
+                "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              },
+              "choices": {
+                "id": "metallic-breath",
+                "type": "trait",
+                "options": [
+                  {
+                    "name": "Brass Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Sleep Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become unconscious until the start of your next turn or until they take any damage or a creature within 5 feet of them uses an action to shake or slap them awake.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Sleep Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become unconscious until the start of your next turn or until they take any damage or a creature within 5 feet of them uses an action to shake or slap them awake"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bronze Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Repulsion Breath",
+                        "description": "Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Repulsion Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Strength",
+                              "effect": "be pushed 20 feet away from you and be knocked prone"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Copper Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Slowing Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or its speed is halved and it cannot take reactions for 1 minute.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Slowing Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "its speed is halved and it cannot take reactions for 1 minute.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gold Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Weakening Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or have disadvantage on Strength ability checks and saving throws for 1 minute.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Weakening Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "have disadvantage on Strength ability checks and saving throws for 1 minute.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Platinum Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Gaseous Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or be under the effects of the Gaseous Form spell until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Gaseous Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "be under the effects of the Gaseous Form spell until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Silver Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Paralyzing Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become paralyzed until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Paralyzing Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become paralyzed until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Steel Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Enthralling Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or be charmed by you for 1 minute.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Enthralling Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "be charmed by you for 1 minute.  An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tungsten Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Concussive Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become stunned until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "AD6E8638-582F-47DA-99A4-1B3FBFE0167F",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Concussive Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become stunned until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Pureblood Planar",
+          "traits": [
+            {
+              "name": "Planar Breath Weapon",
+              "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. The specific nature of your Planar Breath Weapon is determined by your subrace.  Once you use your Planar Breath Weapon, you can't do so again until you finish a long rest.",
+              "uses": {
+                "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              },
+              "choices": {
+                "id": "planar-breath",
+                "type": "trait",
+                "options": [
+                  {
+                    "name": "Adamantine Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Paralyzing Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become paralyzed until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Paralyzing Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become paralyzed until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Arboreal Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Entangling Breath",
+                        "description": "Each creature in the cone must succeed on a Dexterity saving throw or become restrained until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Entangling Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Dexterity",
+                              "effect": "become restrained until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Astral Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Banishing Breath",
+                        "description": "Each creature in the cone must succeed on a Charisma saving throw or be banished to a harmless demiplane. While there, the target is incapacitated. The target remains there until the start of your next turn, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Banishing Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Charisma",
+                              "effect": "be banished to a harmless demiplane. While there, the target is incapacitated. The target remains there until the start of your next turn, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Battle Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Fear Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or become frightened of you until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Fear Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "become frightened of you until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Beast Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Freezeshock Breath",
+                        "description": "Each creature in the cone must succeed on a Dexterity saving throw.  On a failed saving throw a creature takes 1d10 damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).  The damage type for each creature is cold or lightning, whichever would deal more damage.",
+                        "actions": [
+                          {
+                            "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
+                            "name": "Freezeshock Breath",
+                            "hasUses": true,
+                            "type": "a",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Each creature in that area must make a DC {dc-con} Dexterity saving throw. On a failed save, the creature takes {damage} damage. On a successful save, it takes half as much damage.  The damage type for each creature is cold or lightning, whichever would deal more damage.",
+                            "variables": {
+                              "damage": {
+                                "1": "1d10",
+                                "5": "2d10",
+                                "11": "3d10",
+                                "17": "4d10"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Blight Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Fear Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or become frightened of you until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Fear Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "become frightened of you until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Chaos Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Chaos Breath",
+                        "description": "Each creature in the cone must succeed on a Dexterity saving throw.  On a failed saving throw a creature takes 1d10 damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>For each creature that takes damage, roll a d8.  The damage type is determined by the table below.<table><tr><th>d8</th><th>Damage Type</th></tr><tr><td>1</td><td>Acid</td></tr><tr><td>2</td><td>Cold</td></tr><tr><td>3</td><td>Fire</td></tr><tr><td>4</td><td>Force</td></tr><tr><td>5</td><td>Lightning</td></tr><tr><td>6</td><td>Poison</td></tr><tr><td>7</td><td>Psychic</td></tr><tr><td>8</td><td>Thunder</td></tr></table>",
+                        "actions": [
+                          {
+                            "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
+                            "name": "Chaos Breath",
+                            "hasUses": true,
+                            "type": "a",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Each creature in that area must make a DC {dc-con} Dexterity saving throw. On a failed save, the creature takes {damage} damage. On a successful save, it takes half as much damage.</p><p>For each creature that takes damage, roll a d8.  The damage type is determined by the table below.<table><tr><th>d8</th><th>Damage Type</th></tr><tr><td>1</td><td>Acid</td></tr><tr><td>2</td><td>Cold</td></tr><tr><td>3</td><td>Fire</td></tr><tr><td>4</td><td>Force</td></tr><tr><td>5</td><td>Lightning</td></tr><tr><td>6</td><td>Poison</td></tr><tr><td>7</td><td>Psychic</td></tr><tr><td>8</td><td>Thunder</td></tr></table>",
+                            "variables": {
+                              "damage": {
+                                "1": "1d10",
+                                "5": "2d10",
+                                "11": "3d10",
+                                "17": "4d10"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Chole Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Insanity Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or suffer a random form of short-term madness until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Insanity Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "suffer a random form of short-term madness until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Concordant Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Antithetical Breath",
+                        "description": "Each creature in the cone must succeed on a Charisma saving throw or take force damage in an amount determined by how different their alignment is from your own.  the target takes 1d10 force damage if its moral identity (good, neutral, or evil) differs from your own. Additionally, if the target's ideals towards society and order (lawful, neutral, or chaotic) also differ from your own, it takes an additional 1d10 force damage. If the target shares your alignment, the breath has no effect. This breath does not reveal a creature's alignment to you.</p><p>Both instances of damage increase by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+                        "actions": [
+                          {
+                            "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
+                            "name": "Antithetical Breath",
+                            "hasUses": true,
+                            "type": "a",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Each creature in that area must make a DC {dc-con} Charisma saving throw or take force damage in an amount determined by how different their alignment is from your own.  the target takes {damage} force damage if its moral identity (good, neutral, or evil) differs from your own. Additionally, if the target's ideals towards society and order (lawful, neutral, or chaotic) also differ from your own, it takes an additional {damage} force damage. If the target shares your alignment, the breath has no effect. This breath does not reveal a creature's alignment to you.",
+                            "variables": {
+                              "damage": {
+                                "1": "1d10",
+                                "5": "2d10",
+                                "11": "3d10",
+                                "17": "4d10"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Edict Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Commanding Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or be under the effects of the Command spell until the start of your next turn.  You can choose the command for each creature individually.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Commanding Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "be under the effects of the Command spell until the start of your next turn.  You can choose the command for each creature individually"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Elysian Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Inebriation Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become poisoned until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Inebriation Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become poisoned until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gloom Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Apathy Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or be overwhelmed with apathy until the start of your next turn.  An apathetic creature takes no actions and does not move.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Apathy Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "be overwhelmed with apathy until the start of your next turn.  An apathetic creature takes no actions and does not move"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Hellfire Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Hellfire Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become vulnerable to fire and necrotic damage until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Hellfire Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become vulnerable to fire and necrotic damage until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Howling Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Insanity Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or suffer a random form of short-term madness until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Insanity Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "suffer a random form of short-term madness until the start of your next turn"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Mirage Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Sleep Breath",
+                        "description": "Each creature in the cone must succeed on a Constitution saving throw or become unconscious until the start of your next turn or until they take any damage or a creature within 5 feet of them uses an action to shake or slap them awake.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Sleep Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Constitution",
+                              "effect": "become unconscious until the start of your next turn or until they take any damage or a creature within 5 feet of them uses an action to shake or slap them awake"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Paradise Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Banishing Breath",
+                        "description": "Each creature in the cone must succeed on a Charisma saving throw or be banished to a harmless demiplane. While there, the target is incapacitated. The target remains there until the start of your next turn, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Banishing Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Charisma",
+                              "effect": "be banished to a harmless demiplane. While there, the target is incapacitated. The target remains there until the start of your next turn, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pyroclastic Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Lava Breath",
+                        "description": "Each creature in the cone must succeed on a Dexterity saving throw or become coated in lava until the start of your next turn.  When a creature starts its turn coated in lava, it takes 1d10 fire damage and must use its action to remove the lava from itself.  This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+                        "actions": [
+                          {
+                            "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
+                            "name": "Lava Breath",
+                            "hasUses": true,
+                            "type": "a",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Each creature in that area must make a DC {dc-con} Dexterity saving throw or become coated in lava until the start of your next turn.  When a creature starts its turn coated in lava, it takes {damage} fire damage and must use its action to remove the lava from itself.",
+                            "variables": {
+                              "damage": {
+                                "1": "1d10",
+                                "5": "2d10",
+                                "11": "3d10",
+                                "17": "4d10"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Radiant Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Repulsion Breath",
+                        "description": "Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Repulsion Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Strength",
+                              "effect": "be pushed 20 feet away from you and be knocked prone"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Rust Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Rust Breath",
+                        "description": "Each metallic object in the cone becomes coated in rust.  Armor takes a penalty to the AC it provides equal to your proficiency bonus, and weapons take a penalty to attack and damage rolls equal to your proficiency bonus.  This lasts until the start of your next turn.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Rust Breath",
+                            "description": "Each metallic object in the cone becomes coated in rust.  Armor takes a penalty to the AC it provides equal to your proficiency bonus, and weapons take a penalty to attack and damage rolls equal to your proficiency bonus.  This lasts until the start of your next turn."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tarterian Dragonborn",
+                    "traits": [
+                      {
+                        "name": "Despair Breath",
+                        "description": "Each creature in the cone must succeed on a Wisdom saving throw or become demoralized until the start of your next turn.  While demoralized, a creature has disadvantage on attack rolls, saving throws, and damage rolls.",
+                        "actions": [
+                          {
+                            "id": "76E2B08F-7F86-4DB8-82E3-B11F66BA8202",
+                            "hasUses": true,
+                            "type": "a",
+                            "name": "Despair Breath",
+                            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. Creatures in the cone must succeed on a DC {dc-con} {save-type} saving throw or {effect}.",
+                            "variables": {
+                              "save-type": "Wisdom",
+                              "effect": "become demoralized until the start of your next turn.  While demoralized, a creature has disadvantage on attack rolls, saving throws, and damage rolls"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ravenite",
+          "traits": [
+            {
+              "name": "Vengeful Assault",
+              "description": "When you take damage from a creature in range of a weapon you are wielding, you can use your reaction to make an attack against that creature. You can do this once per short or long rest.",
+              "uses": {
+                "id": "64F63629-DE26-4BCD-B911-A0E0D335D5AB",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 1
+              },
+              "actions": [
+                {
+                  "id": "64F63629-DE26-4BCD-B911-A0E0D335D5AB",
+                  "type": "r",
+                  "hasUses": true,
+                  "name": "Vengeful Assault",
+                  "description": "When you take damage from a creature in range of a weapon you are wielding, you can make an attack against that creature."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Savage",
+          "traits": [
+            {
+              "name": "Bite",
+              "description": "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+              "actions": [
+                {
+                  "id": "3BE01CDC-2206-4BBE-8B1D-533A9061D29F",
+                  "type": "a",
+                  "attack": true,
+                  "name": "Bite",
+                  "damage": [
+                    {
+                      "dice": 1,
+                      "die": 6,
+                      "type": "piercing",
+                      "mod": true,
+                      "unarmed": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Elemental Jaws",
+              "description": "When you deal damage with your Bite attack, you can choose to deal an additional 1d6 damage of the same type as your breath weapon. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+              "uses": {
+                "id": "8CE2BB9D-559A-4C92-B960-45AF75044EF4",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 2
+              },
+              "actions": [
+                {
+                  "id": "8CE2BB9D-559A-4C92-B960-45AF75044EF4",
+                  "hasUses": true,
+                  "type": "a",
+                  "attack": true,
+                  "name": "Elemental Bite",
+                  "damage": [
+                    {
+                      "dice": 1,
+                      "die": 6,
+                      "type": "piercing",
+                      "mod": true,
+                      "unarmed": true
+                    },
+                    {
+                      "dice": 1,
+                      "die": 6,
+                      "type": "{breath-damage}"
+                    }
+                  ],
+                  "variables": {
+                    "breath-damage": {
+                      "choice": "subrace",
+                      "key": {
+                        "Black": "acid",
+                        "Blue": "lightning",
+                        "Green": "poison",
+                        "Purple": "psychic",
+                        "Red": "fire",
+                        "White": "cold",
+                        "Amethyst": "force",
+                        "Crystal": "radiant",
+                        "Emerald": "psychic",
+                        "Moonstone": "radiant",
+                        "Obsidian": "fire",
+                        "Ruby": "fire",
+                        "Sapphire": "thunder",
+                        "Topaz": "necrotic",
+                        "Brass": "fire",
+                        "Bronze": "lightning",
+                        "Copper": "acid",
+                        "Gold": "fire",
+                        "Platinum": "radiant",
+                        "Silver": "cold",
+                        "Steel": "poison",
+                        "Tungsten": "thunder",
+                        "Adamantine": "fire",
+                        "Arboreal": "poison",
+                        "Astral": "radiant",
+                        "Battle": "thunder",
+                        "Beast": "acid",
+                        "Blight": "fire",
+                        "Chaos": "force",
+                        "Chole": "poison",
+                        "Concordant": "force",
+                        "Edict": "force",
+                        "Elysian": "radiant",
+                        "Gloom": "psychic",
+                        "Hellfire": "fire",
+                        "Howling": "thunder",
+                        "Mirage": "psychic",
+                        "Paradise": "force",
+                        "Pyroclastic": "fire",
+                        "Radiant": "radiant",
+                        "Rust": "acid",
+                        "Tarterian": "force",
+                        "Shadow": "psychic"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Touch of Umberlee",
     "prereq": [
       {
@@ -2794,6 +3694,46 @@
       },
       {
         "id": "96F3901C-37BD-457A-89A6-CAC9EEA7D1C7",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Lolth",
+    "prereq": [
+      {
+        "race": ["arachnen", "elf", "ettercap", "half-elf"],
+        "subrace": [["Araneae"], ["Drow"], [], ["Drow"]]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been touched by the goddess of drow and of spiders, Lolth. You learn the Creeping Touch spell and can cast it at will, without expending a spell slot. You also learn the Envenomed Touch and Spider Climb spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Creeping Touch"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Envenomed Touch", "Spider Climb"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "E918A517-4767-455A-ABD4-299B7B715876",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "233BC6F1-B5E2-48CD-9A89-0A187F0D71C3",
         "type": "fixed",
         "amount": 1,
         "reset": 2
