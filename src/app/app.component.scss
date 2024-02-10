@@ -19,12 +19,19 @@
 .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     width: 100%;
     border-bottom: 2px solid darkgray;
 
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+    }
     .link {
         border: 1px solid white;
         border-bottom: 0;

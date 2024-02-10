@@ -31,7 +31,7 @@ export class SpellsComponent {
         .sort()
         .map((l) => {
           if (l === 'Elemental') {
-            return `Elemental <sup>${spell.element ?? ''}</sup>`;
+            return `Elemental<sup>${spell.element ?? ''}</sup>`;
           } else {
             return l;
           }

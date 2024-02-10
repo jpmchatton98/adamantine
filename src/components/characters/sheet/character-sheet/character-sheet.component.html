@@ -804,7 +804,6 @@
             ></cs-inventory>
           </nz-tab>
           <nz-tab nzTitle="Features & Traits">
-            {{ hitDice | json }}
             <ng-container *ngIf="character.race">
               <h5>Race Features</h5>
               <div *ngFor="let feature of getRaceFeatures()">
