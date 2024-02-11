@@ -7,11 +7,15 @@ import { DataService } from 'src/services/data.service';
   styleUrls: ['./bestiary.component.scss'],
 })
 export class BestiaryComponent implements OnInit {
-  private allMonsters: any[] = [];
+  private everything: any[] = [];
+  public allMonsters: any[] = [];
   public monsters: any[] = [];
+  public allMinions: any[] = [];
+  public minions: any[] = [];
 
   public monsterTags: string[] = [];
   public crMarks: any[] = [];
+  public minionCrMarks: any[] = [];
   public sizeMarks: any[] = [];
 
   private sizeIndex = {
@@ -49,17 +53,40 @@ export class BestiaryComponent implements OnInit {
     tags: [],
     cr: [0, 43],
   };
+  public minionFilters = {
+    search: '',
+    type: {
+      aberration: false,
+      beast: false,
+      celestial: false,
+      construct: false,
+      dragon: false,
+      elemental: false,
+      fey: false,
+      fiend: false,
+      giant: false,
+      humanoid: false,
+      ooze: false,
+      plant: false,
+      undead: false,
+    },
+    size: [-4, 6],
+    tags: [],
+    cr: [0, 43],
+  };
 
   constructor(private dataService: DataService) {}
 
   public ngOnInit(): void {
-    this.allMonsters = this.dataService.getMonsters();
+    this.everything = this.dataService.getMonsters();
+    this.allMonsters = this.everything.filter((m) => !m.minion);
+    this.allMinions = this.everything.filter((m) => !!m.minion);
 
     for (let [key, value] of Object.entries(this.sizeIndex)) {
       this.sizeMarks[value] = key;
     }
 
-    for (let monster of this.allMonsters) {
+    for (let monster of this.everything) {
       if (monster.tags) {
         this.monsterTags = [...this.monsterTags, ...monster.tags];
       }
@@ -74,6 +101,11 @@ export class BestiaryComponent implements OnInit {
       (a, b) => a - b
     )) {
       this.crMarks[this.crKey(cr)] = this.formatCr(cr);
+    }
+    for (let cr of [...new Set(this.allMinions.map((m: any) => m.cr))].sort(
+      (a, b) => a - b
+    )) {
+      this.minionCrMarks[this.crKey(cr)] = `M${this.formatCr(cr)}`;
     }
 
     this.updateFilters();
@@ -162,6 +194,91 @@ export class BestiaryComponent implements OnInit {
       return (
         m.cr >= this.crDecode(this.filters.cr[0]) &&
         m.cr <= this.crDecode(this.filters.cr[1])
+      );
+    });
+
+    this.minions = this.allMinions.filter((m: any) =>
+      m.name.toLowerCase().includes(this.minionFilters.search.toLowerCase())
+    );
+
+    if (!Object.values(this.filters.type).every((k: any) => !k)) {
+      this.minions = this.minions.filter((m: any) => {
+        if (m.type.includes(' ')) {
+          for (let type of m.type.split(' ')) {
+            let hasType = this.minionFilters.type[type];
+            if (hasType) {
+              return true;
+            }
+          }
+        } else {
+          return this.minionFilters.type[m.type];
+        }
+      });
+    }
+    this.minions = this.minions.filter((m: any) => {
+      if (m.size.includes(' ')) {
+        for (let size of m.size.split(' ')) {
+          size = size
+            .replaceAll(',', '')
+            .replaceAll('or', '')
+            .replaceAll(' ', '');
+          if (
+            this.sizeIndex[size] >= this.minionFilters.size[0] &&
+            this.sizeIndex[size] <= this.minionFilters.size[1]
+          ) {
+            return true;
+          }
+        }
+        return false;
+      } else {
+        return (
+          this.sizeIndex[m.size] >= this.minionFilters.size[0] &&
+          this.sizeIndex[m.size] <= this.minionFilters.size[1]
+        );
+      }
+    });
+    if (this.minionFilters.tags.length) {
+      this.minions = this.minions.filter((m: any) => {
+        if (this.minionFilters.tags.includes('mythic')) {
+          if (m.mythic) {
+            return true;
+          }
+        }
+
+        if (!m.tags && !m.beastType) {
+          return false;
+        }
+
+        for (let tag of m.tags ?? []) {
+          if (this.minionFilters.tags.includes(tag)) {
+            return true;
+          }
+        }
+        for (let type of m.beastType ?? []) {
+          if (this.minionFilters.tags.includes(type)) {
+            return true;
+          }
+        }
+
+        if (this.minionFilters.tags.includes('familiar') && m.familiar) {
+          return true;
+        }
+        if (this.minionFilters.tags.includes('steed') && m.steed) {
+          return true;
+        }
+        if (
+          this.minionFilters.tags.includes('great steed') &&
+          (m.steed || m.greatSteed)
+        ) {
+          return true;
+        }
+        return false;
+      });
+    }
+    this.minions = this.minions.filter((m: any) => {
+      return (
+        m.cr >= this.crDecode(this.minionFilters.cr[0]) &&
+        m.cr <= this.crDecode(this.minionFilters.cr[1])
       );
     });
   }

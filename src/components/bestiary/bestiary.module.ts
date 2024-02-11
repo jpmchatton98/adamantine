@@ -10,6 +10,7 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
 
 @NgModule({
   declarations: [BestiaryComponent],
@@ -24,6 +25,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     NzSliderModule,
     NzInputModule,
     NzCollapseModule,
+    NzTabsModule
   ],
 })
 export class BestiaryModule {}

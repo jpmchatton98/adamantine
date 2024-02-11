@@ -331,16 +331,23 @@ export class MonsterComponent implements OnInit {
   }
 
   public formatCr(cr: number): string {
+    let crString = '';
+
     switch (cr) {
       case 0.125:
-        return '⅛';
+        crString = '⅛';
       case 0.25:
-        return '¼';
+        crString = '¼';
       case 0.5:
-        return '½';
+        crString = '½';
       default:
-        return cr.toString();
+        crString = cr.toString();
     }
+
+    if (this.monster.minion) {
+      return `M${crString}`;
+    }
+    return crString;
   }
 
   private titleCase(str) {

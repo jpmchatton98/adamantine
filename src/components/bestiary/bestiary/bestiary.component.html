@@ -1,186 +1,570 @@
-<div class="search">
-  <nz-input-group [nzPrefix]="prefixSearch">
-    <input
-      nz-input
-      [(ngModel)]="filters.search"
-      (ngModelChange)="updateFilters()"
-    />
-  </nz-input-group>
-</div>
-<ng-template #prefixSearch><span class="mdi mdi-magnify"></span></ng-template>
-<nz-collapse>
-  <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
-    <div>
-      <h4>Type</h4>
-      <div class="type">
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.aberration"
+<nz-tabset [nzSize]="'large'" [nzAnimated]="false">
+  <nz-tab nzTitle="Monsters">
+    <div class="search">
+      <nz-input-group [nzPrefix]="prefixSearch">
+        <input
+          nz-input
+          [(ngModel)]="filters.search"
           (ngModelChange)="updateFilters()"
-          >Aberration</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.beast"
-          (ngModelChange)="updateFilters()"
-          >Beast</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.celestial"
-          (ngModelChange)="updateFilters()"
-          >Celestial</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.construct"
-          (ngModelChange)="updateFilters()"
-          >Construct</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.dragon"
-          (ngModelChange)="updateFilters()"
-          >Dragon</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.elemental"
-          (ngModelChange)="updateFilters()"
-          >Elemental</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.fey"
-          (ngModelChange)="updateFilters()"
-          >Fey</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.fiend"
-          (ngModelChange)="updateFilters()"
-          >Fiend</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.giant"
-          (ngModelChange)="updateFilters()"
-          >Giant</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.humanoid"
-          (ngModelChange)="updateFilters()"
-          >Humanoid</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.ooze"
-          (ngModelChange)="updateFilters()"
-          >Ooze</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.plant"
-          (ngModelChange)="updateFilters()"
-          >Plant</label
-        >
-        <label
-          nz-checkbox
-          [(ngModel)]="filters.type.undead"
-          (ngModelChange)="updateFilters()"
-          >Undead</label
-        >
-      </div>
+        />
+      </nz-input-group>
     </div>
-    <div>
-      <h4>Size</h4>
-      <nz-slider
-        [(ngModel)]="filters.size"
-        nzDots
-        nzRange
-        [nzMin]="-4"
-        [nzMax]="6"
-        [nzStep]="null"
-        [nzMarks]="sizeMarks"
-        [nzTipFormatter]="formatSizeSlider"
-        (nzOnAfterChange)="updateFilters()"
-      ></nz-slider>
-    </div>
-    <div>
-      <h4>Tags</h4>
-      <nz-select
-        nzMode="tags"
-        [(ngModel)]="filters.tags"
-        (ngModelChange)="updateFilters()"
-      >
-        <nz-option
-          *ngFor="let option of monsterTags"
-          [nzLabel]="option"
-          [nzValue]="option"
-        ></nz-option>
-      </nz-select>
-    </div>
-    <div>
-      <h4>CR</h4>
-      <nz-slider
-        [(ngModel)]="filters.cr"
-        nzDots
-        nzRange
-        [nzMin]="0"
-        [nzMax]="33"
-        [nzStep]="null"
-        [nzMarks]="crMarks"
-        [nzTipFormatter]="formatCrSlider"
-        (nzOnAfterChange)="updateFilters()"
-      ></nz-slider>
-    </div>
-  </nz-collapse-panel>
-</nz-collapse>
+    <ng-template #prefixSearch
+      ><span class="mdi mdi-magnify"></span
+    ></ng-template>
+    <nz-collapse>
+      <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
+        <div>
+          <h4>Type</h4>
+          <div class="type">
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.aberration"
+              (ngModelChange)="updateFilters()"
+              >Aberration</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.beast"
+              (ngModelChange)="updateFilters()"
+              >Beast</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.celestial"
+              (ngModelChange)="updateFilters()"
+              >Celestial</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.construct"
+              (ngModelChange)="updateFilters()"
+              >Construct</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.dragon"
+              (ngModelChange)="updateFilters()"
+              >Dragon</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.elemental"
+              (ngModelChange)="updateFilters()"
+              >Elemental</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.fey"
+              (ngModelChange)="updateFilters()"
+              >Fey</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.fiend"
+              (ngModelChange)="updateFilters()"
+              >Fiend</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.giant"
+              (ngModelChange)="updateFilters()"
+              >Giant</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.humanoid"
+              (ngModelChange)="updateFilters()"
+              >Humanoid</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.ooze"
+              (ngModelChange)="updateFilters()"
+              >Ooze</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.plant"
+              (ngModelChange)="updateFilters()"
+              >Plant</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="filters.type.undead"
+              (ngModelChange)="updateFilters()"
+              >Undead</label
+            >
+          </div>
+        </div>
+        <div>
+          <h4>Size</h4>
+          <nz-slider
+            [(ngModel)]="filters.size"
+            nzDots
+            nzRange
+            [nzMin]="-4"
+            [nzMax]="6"
+            [nzStep]="null"
+            [nzMarks]="sizeMarks"
+            [nzTipFormatter]="formatSizeSlider"
+            (nzOnAfterChange)="updateFilters()"
+          ></nz-slider>
+        </div>
+        <div>
+          <h4>Tags</h4>
+          <nz-select
+            nzMode="tags"
+            [(ngModel)]="filters.tags"
+            (ngModelChange)="updateFilters()"
+          >
+            <nz-option
+              *ngFor="let option of monsterTags"
+              [nzLabel]="option"
+              [nzValue]="option"
+            ></nz-option>
+          </nz-select>
+        </div>
+        <div>
+          <h4>CR</h4>
+          <nz-slider
+            [(ngModel)]="filters.cr"
+            nzDots
+            nzRange
+            [nzMin]="0"
+            [nzMax]="33"
+            [nzStep]="null"
+            [nzMarks]="crMarks"
+            [nzTipFormatter]="formatCrSlider"
+            (nzOnAfterChange)="updateFilters()"
+          ></nz-slider>
+        </div>
+      </nz-collapse-panel>
+    </nz-collapse>
 
-<nz-table #bestiary [nzData]="monsters">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Size</th>
-      <th>CR</th>
-    </tr>
-  </thead>
-  <tbody>
-    <ng-container *ngFor="let data of bestiary.data">
-      <!-- <tr *ngIf="data.type.includes('beast')">
-        <td>
-          <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a> (<a
-            routerLink="/bestiary/{{ data.index }}"
-            [queryParams]="{ dire: '1' }"
-            >Dire {{ data.name }}</a
-          >)
-        </td>
-        <td>
-          {{ data.type }}
-          <ng-container *ngIf="data.tags">
-            ({{ data.tags.sort().join(", ") }})
-          </ng-container>
-        </td>
-        <td>{{ data.size }} (Dire: {{ getDireSize(data.size) }})</td>
-        <td>
-          {{ formatCr(data.cr) }} (Dire: {{ formatCr(round(data.cr + 2)) }})
-        </td>
-      </tr> -->
-      <tr>
-        <td>
-          <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
-        </td>
-        <td>
-          {{ data.type }}
-          <ng-container *ngIf="data.tags">
-            ({{ data.tags.sort().join(", ") }})
-          </ng-container>
-        </td>
-        <td>{{ data.size }}</td>
-        <td>{{ formatCr(data.cr) }}</td>
-      </tr>
-    </ng-container>
-  </tbody>
-</nz-table>
+    <nz-table #bestiary [nzData]="monsters">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Size</th>
+          <th>CR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let data of bestiary.data">
+          <tr>
+            <td>
+              <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
+            </td>
+            <td>
+              {{ data.type }}
+              <ng-container *ngIf="data.tags">
+                ({{ data.tags.sort().join(", ") }})
+              </ng-container>
+            </td>
+            <td>{{ data.size }}</td>
+            <td>{{ formatCr(data.cr) }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+  <nz-tab nzTitle="Minions">
+    <div class="search">
+      <nz-input-group [nzPrefix]="prefixSearch">
+        <input
+          nz-input
+          [(ngModel)]="minionFilters.search"
+          (ngModelChange)="updateFilters()"
+        />
+      </nz-input-group>
+    </div>
+    <ng-template #prefixSearch
+      ><span class="mdi mdi-magnify"></span
+    ></ng-template>
+    <nz-collapse>
+      <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
+        <div>
+          <h4>Type</h4>
+          <div class="type">
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.aberration"
+              (ngModelChange)="updateFilters()"
+              >Aberration</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.beast"
+              (ngModelChange)="updateFilters()"
+              >Beast</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.celestial"
+              (ngModelChange)="updateFilters()"
+              >Celestial</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.construct"
+              (ngModelChange)="updateFilters()"
+              >Construct</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.dragon"
+              (ngModelChange)="updateFilters()"
+              >Dragon</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.elemental"
+              (ngModelChange)="updateFilters()"
+              >Elemental</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.fey"
+              (ngModelChange)="updateFilters()"
+              >Fey</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.fiend"
+              (ngModelChange)="updateFilters()"
+              >Fiend</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.giant"
+              (ngModelChange)="updateFilters()"
+              >Giant</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.humanoid"
+              (ngModelChange)="updateFilters()"
+              >Humanoid</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.ooze"
+              (ngModelChange)="updateFilters()"
+              >Ooze</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.plant"
+              (ngModelChange)="updateFilters()"
+              >Plant</label
+            >
+            <label
+              nz-checkbox
+              [(ngModel)]="minionFilters.type.undead"
+              (ngModelChange)="updateFilters()"
+              >Undead</label
+            >
+          </div>
+        </div>
+        <div>
+          <h4>Size</h4>
+          <nz-slider
+            [(ngModel)]="minionFilters.size"
+            nzDots
+            nzRange
+            [nzMin]="-4"
+            [nzMax]="6"
+            [nzStep]="null"
+            [nzMarks]="sizeMarks"
+            [nzTipFormatter]="formatSizeSlider"
+            (nzOnAfterChange)="updateFilters()"
+          ></nz-slider>
+        </div>
+        <div>
+          <h4>Tags</h4>
+          <nz-select
+            nzMode="tags"
+            [(ngModel)]="minionFilters.tags"
+            (ngModelChange)="updateFilters()"
+          >
+            <nz-option
+              *ngFor="let option of monsterTags"
+              [nzLabel]="option"
+              [nzValue]="option"
+            ></nz-option>
+          </nz-select>
+        </div>
+        <div>
+          <h4>CR</h4>
+          <nz-slider
+            [(ngModel)]="minionFilters.cr"
+            nzDots
+            nzRange
+            [nzMin]="3"
+            [nzMax]="15"
+            [nzStep]="null"
+            [nzMarks]="minionCrMarks"
+            [nzTipFormatter]="formatCrSlider"
+            (nzOnAfterChange)="updateFilters()"
+          ></nz-slider>
+        </div>
+      </nz-collapse-panel>
+      <nz-collapse-panel nzHeader="Minion Rules" [nzActive]="false">
+        <h6>Minion Trait</h6>
+        <p>
+          A creature with the minion trait drops to 0 hit points if it takes any
+          damage from an attack or as the result of a failed saving throw. If a
+          minion takes damage from any other source, it is killed if the damage
+          exceeds its maximum hit points, and takes no damage otherwise.
+        </p>
+        <h6>Initiative</h6>
+        <p>
+          Minions of the same type take their turns together on a shared
+          initiative.
+        </p>
+        <h6>Group Attacks</h6>
+        <p>
+          Up to five minions that share a turn may each contribute their actions
+          to a Group Attack against the same target, making a single attack roll
+          and adding +1 for each minion contributing to the attack beyond the
+          first. On a hit, the group attack's damage is multiplied by the number
+          of attackers contributing to it.
+        </p>
+        <h6>Advantage and Disadvantage</h6>
+        <p>
+          A group attack has advantage only if each of the minions contributing
+          to it have advantage, and disadvantage only if each of them have
+          disadvantage.
+        </p>
+        <h6>Triggering Responses</h6>
+        <p>
+          If a group attack triggers a reaction or other response that would
+          ordinarily affect a single attacker, the effect targets a single
+          minion who contributed to the attack.
+        </p>
+        <h6>Damage</h6>
+        <p>
+          Minion attacks deal flat damage, rather than rolling, and deal no
+          additional damage on a critical hit.
+        </p>
+        <h6>Overkill</h6>
+        <p>
+          Powerful attacks can sometimes kill more than one minion with a single
+          blow. A melee attack that deals more damage than a minion target's
+          maximum hit points may apply the damage in excess of that minion's hit
+          points to another minion with the same stat block within the attack's
+          reach. If this damage is still in excess of the second minion's
+          maximum hit points, the attacker may apply the remaining damage to
+          another, and so on.
+        </p>
+        <p>
+          Ranged attacks work the same, except that each additional target must
+          be behind the previous target in a line extending from the attacker.
+        </p>
+        <h6>Challenge Rating</h6>
+        <p>
+          Several minions are meant to count as a single regular enemy of the
+          same nominal CR for the purposes of balancing combat; five minions
+          equate to a regular enemy at lower levels, increasing according to the
+          included table.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Minion CR</th>
+              <th>XP</th>
+              <th>Minions Per Standard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1/2</td>
+              <td>20</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>40</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>90</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>140</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>220</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>225</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>285</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>360</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>485</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>500</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>590</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>720</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>840</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>1,000</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>1,150</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>1,300</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>1,500</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>1,800</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>2,000</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>2,200</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>2,500</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>3,300</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>4,100</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>5,000</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>6,200</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>7,500</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>9,000</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>10,500</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>12,000</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>13,500</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>15,500</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </nz-collapse-panel>
+    </nz-collapse>
+
+    <nz-table #minionBestiary [nzData]="minions">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Size</th>
+          <th>CR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let data of minionBestiary.data">
+          <tr>
+            <td>
+              <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
+            </td>
+            <td>
+              {{ data.type }}
+              <ng-container *ngIf="data.tags">
+                ({{ data.tags.sort().join(", ") }})
+              </ng-container>
+            </td>
+            <td>{{ data.size }}</td>
+            <td>M{{ formatCr(data.cr) }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </nz-table>
+  </nz-tab>
+</nz-tabset>
