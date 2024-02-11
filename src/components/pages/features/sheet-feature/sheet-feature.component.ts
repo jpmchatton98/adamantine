@@ -18,7 +18,7 @@ export class SheetFeatureComponent implements OnInit {
   public featureUses;
 
   public ngOnInit(): void {
-    if (this.feature.uses && Array.isArray(this.feature.uses)) {
+    if (this.feature?.uses && Array.isArray(this.feature?.uses)) {
       this.featureUses = this.feature.uses.filter((value, index) => {
         const id = value.id;
         return (

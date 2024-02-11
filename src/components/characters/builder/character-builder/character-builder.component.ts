@@ -228,6 +228,15 @@ export class CharacterBuilderComponent implements OnInit {
         }
       }
 
+      if (this.character?.overrides) {
+        for (let overrideFeature of this.character.overrides) {
+          scoreMods = this.combineScoreMods(
+            scoreMods,
+            this.getModsFromFeature(overrideFeature, [])
+          );
+        }
+      }
+
       let updated = false;
       for (let key of Object.keys(this.character?.scores?.base ?? {})) {
         let newScore = Math.max(
