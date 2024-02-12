@@ -2922,6 +2922,11 @@
       }
     },
     {
+      "name": "Maddening Blast",
+      "prereqLevel": 5,
+      "description": "When you damage a creature with your Signature Cantrip, you can use a bonus action to cause other targets of your choice within 5 feet of your target to take damage of the type of your Signature Cantrip equal to your spellcasting ability modifier (minimum of 1)."
+    },
+    {
       "name": "Maddening Hex",
       "prereqLevel": 5,
       "description": " As a bonus action, you cause a psychic disturbance around the target cursed by your Hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 5 feet of it. The psychic damage equals your spellcasting abiltiy modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you. "
@@ -3049,6 +3054,11 @@
       }
     },
     {
+      "name": "Ethereal Sight",
+      "prereqLevel": 7,
+      "description": "As an action, you can enhance your vision with the ethereal energy of undeath, allowing you to see through solid objects within 30 feet. For 1 minute, you have darkvision if you did not already, and you perceive objects as ghostly, transparent shadows of themselves. You must concentrate on this sense as if you were concentrating on a spell."
+    },
+    {
       "name": "Ghostly Gaze",
       "prereqLevel": 7,
       "description": " As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have darkvision if you don't already have it. This special sight lasts for 1 minute or until your concentration ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.  Once you use this invocation, you can't use it again until you finish a short or long rest.",
@@ -3058,6 +3068,11 @@
         "amount": 1,
         "reset": 1
       }
+    },
+    {
+      "name": "Otherworldly Nature",
+      "prereqLevel": 7,
+      "description": "Your very being is suffused with eldritch magic. You no longer need to eat, breathe, or sleep. Though, to gain the benefits of a long rest, you must spend 8 hours doing light activity. Also, for every 10 years that pass, your body ages only 1 year."
     },
     {
       "name": "Relentless Hex",
@@ -3112,24 +3127,6 @@
           "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
         }
       ]
-    },
-    {
-      "name": "Minions of Chaos",
-      "prereqLevel": 9,
-      "description": " You can cast Conjure Elemental once without using a spell slot. You can't do so again until you finish a long rest. ",
-      "granted": [
-        {
-          "type": "spell",
-          "options": ["Conjure Elemental"],
-          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
-        }
-      ],
-      "uses": {
-        "id": "A165057A-83E6-4411-A20F-B067EDA0FCFF",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
     },
     {
       "name": "Otherworldly Pay",
@@ -3286,12 +3283,22 @@
     {
       "name": "Thirsting Blade",
       "prereqLevel": 5,
-      "description": " You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn. ",
+      "description": " You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</p><p>Moreover, you can choose for the attacks with your pact weapon to deal the same damage type as your Signature Cantrip.",
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Blade"
       }
+    },
+    {
+      "name": "Occult Smite",
+      "prereqLevel": 7,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Blade"
+      },
+      "description": "Once per turn when you hit with an attack with a pact weapon, you deal bonus damage to the target as if it had been hit, or failed its saving throw against one manifestation of your Signature Cantrip.</p><p>If your Signature Cantrip imposes extra effects, such as the reduced speed of Lance of Lethargy, it suffers those as well."
     },
     {
       "name": "Superior Pact Weapon",
@@ -4112,7 +4119,7 @@
     },
     {
       "name": "Book of Ancient Secrets",
-      "description": " You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.</p><p>On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it.",
+      "description": "Your Eldritch Tome gains two new pages, each detailing one 1st-level ritual spell of your choice from any class spell list. These spells count as Warlock spells for you, but they don't count against your total number of Spells Known.</p><p>You can also mystically add additional ritual spells to your Eldritch Tome, so long as the ritual spell is equal to the level of your Pact Magic spell slots or lower. To do so, you perform a 1-hour ritual during which you burn one scroll detailing the ritual spell and 50 gp worth of incense per level of the spell. After which, a page detailing the spell appears in your Tome.",
       "listed": {
         "id": "CF8BA330-50E9-4089-A6ED-E58B4B733738",
         "type": "spell",
@@ -4776,6 +4783,878 @@
   ],
   "elder-arcanum": [
     {
+      "name": "First Elder Focus",
+      "prereqLevel": 11,
+      "description": "Your Patron has bestowed you with an increased amount of their power. You gain an additional Pact Boon of your choice. You cannot select the same Pact Boon more than once.</p><p>You can learn this Elder Arcanum more than once, but you must select a different Pact Boon each time you learn it.",
+      "choices": {
+        "id": "4021C8FA-CDDE-4505-B22B-ADC3D7E97E8A",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Pact of the Bastion",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create pact armor around yourself. Your pact armor takes the form of light plate. You are proficient with it while you wear it, and if the armor normally has a Strength requirement, the pact armor lacks this requirement for you.</p><p>Your pact armor attaches to you and can't be removed against your will. Your pact armor can be doffed as an action, upon which time it disappears.</p><p>You can transform one magic suit of armor into your pact armor by performing a special ritual while you wear the armor. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the armor, shunting it into an extradimensional space, and it appears whenever you create your pact armor thereafter. You can't affect an artifact or a sentient suit of armor in this way. The armor ceases being your pact armor if you die, if you perform the 1-hour ritual on a different suit of armor, or if you use a 1-hour ritual to break your bond to it. The armor appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Blade",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it, and you can use your spellcasting ability for attack and damage rolls with it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p><p>Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p><p>You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cannon",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use a bonus action to create a loaded pact firearm in your hand. You can choose the form this firearm takes when you create it from the Firearms page. The weapon cannot be a crank gun or hand cannon, and cannot have any modifications.</p><p>You are proficient with it while you wield it. You can use a bonus action to magically create exactly enough ammunition to reload the firearm(s) you are currently wielding, any unused ammunition disappears at the end of your next turn.</p><p>This firearm is considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you can use your spellcasting ability for attack and damage rolls with it. Your pact firearm disappears if it is more than 5 feet away from you for 1 minute. It also disappears if you use this feature again, if you dismiss the firearm as a bonus action, or if you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cards",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron bestows upon you a magical deck of throwable playing cards. The cards themselves return to the deck if thrown as a weapon or placed out of the holder 30 feet from it if not used as a weapon. The cards give you the following benefits: <ul><li>You gain proficiency in playing cards. If you already have proficiency, you double your proficiency bonus for checks made with them.</li><li>You can use your cards as a weapon with the Finesse and Thrown (30/60) properites, and you use your spellcasting ability for attack and damage rolls with it.  A card deals slashing damage equal to 1d8 + your spellcasting ability modifier on a hit.</li></ul> In addition, as an action you can spray cards in a 15-foot cone.  Choose one of the following effects for the cards to perform:<ul><li><strong>Blinding Cards.</strong> Each creature in a the cone must succeed on a Wisdom saving throw against your spell save DC or be blinded until the end of their next turn.</li><li><strong>Cutting Cards.</strong> Each creature in a the cone must make a Dexterity saving throw against your spell save DC. A creature takes force damage equal to your Warlock level on a failed save or half as much damage on a successful one.</li></ul> You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the deck, you can spend 1 hour in a ritual to replace them. A new deck of cards forms in your hands as the original ones burn to ash.",
+                "granted": [
+                  {
+                    "type": "game",
+                    "options": ["Playing Cards"],
+                    "level": 1.5
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "F34DEB0F-A5D0-441E-B3F2-1ACCA2582DE3",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chalice",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a vessel for the creation of potions and poultices. As an action, you can create a Pact Chalice in your empty hand. When summoned, it takes the form of a tiny object of your choice that is capable of holding liquids, and it grants you the benefits listed below:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>It counts as both a herbalism kit and a set of alchemist's supplies, and whenever you make an ability check that uses your Pact Chalice as either of these tools you can add double your proficiency bonus to your roll.</li><li>At the end of each short or long rest, you can use the Pact Chalice to conjure a vial of the following: alchemist's fire, acid, holy water, potion of healing, or potion of climbing. The liquid retains its potency until the end of your next long rest, at which point it becomes inert and unusable.</li></ul>Your Pact Chalice disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Chalice (no action required), or if you die.",
+                "uses": {
+                  "id": "940B3ACD-1E69-43E3-A4B5-CDE1F665910A",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chain",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.  The familiar is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Your Eldritch Familiar is bound to obey your orders to the best of its abilities. In combat, it shares your initiative and it acts on your turn. However, it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action.</p><p>Finally, when you cast a spell, you can choose for it to originate from your Familiar if you are within 60 feet.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Familiar"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Flesh",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron twists your body, enhancing your physicality in a way that reflects their own physical form. While you are not wearing armor or using a shield, your Armor Class is equal to 10 + your Constitution modifier + your spellcasting ability modifier.</p><p>In addition, your hands become savage claws that count as simple melee weapons that deal 1d6 slashing damage on hit, and you can use your spellcasting ability for attack and damage rolls with them.",
+                "granted": [
+                  {
+                    "type": "unarmored",
+                    "base": 10,
+                    "scores": ["con", "B85FFA8F-7EE5-4B27-9789-05477333032E"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Hourglass",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical timekeeping device. As an action, you can conjure this Pact Hourglass in your empty hand. When summoned, it takes the form of a timekeeping device of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>When you are not surprised, you gain a bonus to initiative rolls equal to your spellcasting modifier (minimum of +1).</li><li>When you make an ability check, attack roll, or saving throw, you can choose to re-roll. You can use this feature after you roll, but before you know if you succeed. Once you use this feature to turn failure into success, you must finish a short or long rest before you can use it again.</li></ul>Your Pact Hourglass disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Hourglass (no action required), or you die.",
+                "granted": [
+                  {
+                    "type": "initiative-bonus",
+                    "score": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+                  }
+                ],
+                "uses": {
+                  "id": "F6EFCD0F-98A4-4962-BC13-85A9FE333D65",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Runestone",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron has granted you insight into the magic of Elder Runes, an ancient and mysterious form of magic.  At the end of a long rest, you can designate a Tiny nonmagical stone of your choice as your Runestone.  While it is in your hand you can use your Runestone as a spellcasting focus.</p><p>As an action on your turn you can cause the Runestone to fly and strike a target.  Make a ranged spell attack against a creature you can see within 60 feet of you.  On a hit, the Runestone deals 1d8 magical bludgeoning damage, and the target must make a Strength saving throw or be knocked prone.  You can then call the Runestone back to your hand as a bonus action."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Scepter",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a scepter, rod, or wand through which you can better focus your spells. When you cast a spell using the scepter as your spellcasting focus, you can choose for it to act as though you had cast it with a spell slot of one level higher.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the scepter, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous scepter. The scepter turns to ash when you die.",
+                "uses": [
+                  {
+                    "id": "3DD31539-458F-44E3-9F71-73033E19BC21",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Shroud",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical cloak to shield you from harm and obscure your steps. As an action, you can summon this Pact Shroud, which takes the shape of a spectral cloak reminiscent of your Patron's magic. While wearing your Pact Shroud, you are invisible while you are obscured by shadows, darkness, or other natural phenomenon such as fog or mist.</p><p>Your Pact Shroud disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Shroud (no action required), or you die.</p><p>You can bond a magic robe or cloak as your Pact Shroud by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient clothing, and you can only have one bonded Pact Shroud at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Steed",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Steed spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</p><p>When you cast the spell, the steed is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your steed to use its reaction to make one attack with its reaction.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Steed"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Strings",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has granted you an instrument of otherworldly beauty. As an action, you can summon this Pact Instrument in an empty hand. It takes the form of a musical instrument of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>You are considered proficient with it, and you add double your proficiency bonus to any check you make with it.</li><li>When you use it to cast a spell with a verbal component, or a spell that deals thunder damage, you gain a bonus to one of the spell's damage rolls equal to 1d8.</li></ul>Your Pact Instrument disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss the instrument (no action required), or you die.</p><p>You can bond a magic instrument as your Pact Instrument by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient instruments, and you can only have one bonded Pact Instrument at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Talisman",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p><p>If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Tome",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a grimoire called a Book of Shadows. It contains one copy of each Warlock spell you know and this Tome grants you the following benefits:<ul><li>You learn an Eldritch Invocation of your choice that has no prerequisites. This Invocation doesn't count against your number of Invocations Known, and it cannot be replaced when you gain a Warlock level.</li><li>At the end of a long rest you can replace one Warlock spell in your Tome with another Warlock spell of the same level.</li><li>You can cast any Warlock spell contained within your Tome as a ritual if that Warlock spell has the ritual tag.</li></ul>You can spend 1 hour, which can be during a short or long rest, to conjure an exact copy of your Tome, destroying any of the previous Tomes. If you die your Tome turns to ash.",
+                "choices": [
+                  {
+                    "id": "DCE2ADFA-9DD7-4DB1-BF65-2099474D3B50",
+                    "type": "eldritch-invocation"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Second Elder Focus",
+      "prereqLevel": 13,
+      "description": "Your Patron has bestowed you with an increased amount of their power. You gain an additional Pact Boon of your choice. You cannot select the same Pact Boon more than once.</p><p>You can learn this Elder Arcanum more than once, but you must select a different Pact Boon each time you learn it.",
+      "choices": {
+        "id": "15EA7F97-4E41-4D60-A7F8-E48DD551D84C",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Pact of the Bastion",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create pact armor around yourself. Your pact armor takes the form of light plate. You are proficient with it while you wear it, and if the armor normally has a Strength requirement, the pact armor lacks this requirement for you.</p><p>Your pact armor attaches to you and can't be removed against your will. Your pact armor can be doffed as an action, upon which time it disappears.</p><p>You can transform one magic suit of armor into your pact armor by performing a special ritual while you wear the armor. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the armor, shunting it into an extradimensional space, and it appears whenever you create your pact armor thereafter. You can't affect an artifact or a sentient suit of armor in this way. The armor ceases being your pact armor if you die, if you perform the 1-hour ritual on a different suit of armor, or if you use a 1-hour ritual to break your bond to it. The armor appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Blade",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it, and you can use your spellcasting ability for attack and damage rolls with it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p><p>Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p><p>You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cannon",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use a bonus action to create a loaded pact firearm in your hand. You can choose the form this firearm takes when you create it from the Firearms page. The weapon cannot be a crank gun or hand cannon, and cannot have any modifications.</p><p>You are proficient with it while you wield it. You can use a bonus action to magically create exactly enough ammunition to reload the firearm(s) you are currently wielding, any unused ammunition disappears at the end of your next turn.</p><p>This firearm is considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you can use your spellcasting ability for attack and damage rolls with it. Your pact firearm disappears if it is more than 5 feet away from you for 1 minute. It also disappears if you use this feature again, if you dismiss the firearm as a bonus action, or if you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cards",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron bestows upon you a magical deck of throwable playing cards. The cards themselves return to the deck if thrown as a weapon or placed out of the holder 30 feet from it if not used as a weapon. The cards give you the following benefits: <ul><li>You gain proficiency in playing cards. If you already have proficiency, you double your proficiency bonus for checks made with them.</li><li>You can use your cards as a weapon with the Finesse and Thrown (30/60) properites, and you use your spellcasting ability for attack and damage rolls with it.  A card deals slashing damage equal to 1d8 + your spellcasting ability modifier on a hit.</li></ul> In addition, as an action you can spray cards in a 15-foot cone.  Choose one of the following effects for the cards to perform:<ul><li><strong>Blinding Cards.</strong> Each creature in a the cone must succeed on a Wisdom saving throw against your spell save DC or be blinded until the end of their next turn.</li><li><strong>Cutting Cards.</strong> Each creature in a the cone must make a Dexterity saving throw against your spell save DC. A creature takes force damage equal to your Warlock level on a failed save or half as much damage on a successful one.</li></ul> You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the deck, you can spend 1 hour in a ritual to replace them. A new deck of cards forms in your hands as the original ones burn to ash.",
+                "granted": [
+                  {
+                    "type": "game",
+                    "options": ["Playing Cards"],
+                    "level": 1.5
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "10510C76-5475-424F-95DA-771797AD236B",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chalice",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a vessel for the creation of potions and poultices. As an action, you can create a Pact Chalice in your empty hand. When summoned, it takes the form of a tiny object of your choice that is capable of holding liquids, and it grants you the benefits listed below:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>It counts as both a herbalism kit and a set of alchemist's supplies, and whenever you make an ability check that uses your Pact Chalice as either of these tools you can add double your proficiency bonus to your roll.</li><li>At the end of each short or long rest, you can use the Pact Chalice to conjure a vial of the following: alchemist's fire, acid, holy water, potion of healing, or potion of climbing. The liquid retains its potency until the end of your next long rest, at which point it becomes inert and unusable.</li></ul>Your Pact Chalice disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Chalice (no action required), or if you die.",
+                "uses": {
+                  "id": "28ADF14D-03F0-47D5-8D1B-5A15E5425F26",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chain",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.  The familiar is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Your Eldritch Familiar is bound to obey your orders to the best of its abilities. In combat, it shares your initiative and it acts on your turn. However, it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action.</p><p>Finally, when you cast a spell, you can choose for it to originate from your Familiar if you are within 60 feet.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Familiar"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Flesh",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron twists your body, enhancing your physicality in a way that reflects their own physical form. While you are not wearing armor or using a shield, your Armor Class is equal to 10 + your Constitution modifier + your spellcasting ability modifier.</p><p>In addition, your hands become savage claws that count as simple melee weapons that deal 1d6 slashing damage on hit, and you can use your spellcasting ability for attack and damage rolls with them.",
+                "granted": [
+                  {
+                    "type": "unarmored",
+                    "base": 10,
+                    "scores": ["con", "B85FFA8F-7EE5-4B27-9789-05477333032E"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Hourglass",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical timekeeping device. As an action, you can conjure this Pact Hourglass in your empty hand. When summoned, it takes the form of a timekeeping device of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>When you are not surprised, you gain a bonus to initiative rolls equal to your spellcasting modifier (minimum of +1).</li><li>When you make an ability check, attack roll, or saving throw, you can choose to re-roll. You can use this feature after you roll, but before you know if you succeed. Once you use this feature to turn failure into success, you must finish a short or long rest before you can use it again.</li></ul>Your Pact Hourglass disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Hourglass (no action required), or you die.",
+                "granted": [
+                  {
+                    "type": "initiative-bonus",
+                    "score": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+                  }
+                ],
+                "uses": {
+                  "id": "5E5089DA-2A22-4FBA-8EF8-0182FB234BC3",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Runestone",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron has granted you insight into the magic of Elder Runes, an ancient and mysterious form of magic.  At the end of a long rest, you can designate a Tiny nonmagical stone of your choice as your Runestone.  While it is in your hand you can use your Runestone as a spellcasting focus.</p><p>As an action on your turn you can cause the Runestone to fly and strike a target.  Make a ranged spell attack against a creature you can see within 60 feet of you.  On a hit, the Runestone deals 1d8 magical bludgeoning damage, and the target must make a Strength saving throw or be knocked prone.  You can then call the Runestone back to your hand as a bonus action."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Scepter",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a scepter, rod, or wand through which you can better focus your spells. When you cast a spell using the scepter as your spellcasting focus, you can choose for it to act as though you had cast it with a spell slot of one level higher.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the scepter, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous scepter. The scepter turns to ash when you die.",
+                "uses": [
+                  {
+                    "id": "B7D72314-D719-4774-A4FC-971E01E0C22A",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Shroud",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical cloak to shield you from harm and obscure your steps. As an action, you can summon this Pact Shroud, which takes the shape of a spectral cloak reminiscent of your Patron's magic. While wearing your Pact Shroud, you are invisible while you are obscured by shadows, darkness, or other natural phenomenon such as fog or mist.</p><p>Your Pact Shroud disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Shroud (no action required), or you die.</p><p>You can bond a magic robe or cloak as your Pact Shroud by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient clothing, and you can only have one bonded Pact Shroud at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Steed",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Steed spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</p><p>When you cast the spell, the steed is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your steed to use its reaction to make one attack with its reaction.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Steed"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Strings",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has granted you an instrument of otherworldly beauty. As an action, you can summon this Pact Instrument in an empty hand. It takes the form of a musical instrument of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>You are considered proficient with it, and you add double your proficiency bonus to any check you make with it.</li><li>When you use it to cast a spell with a verbal component, or a spell that deals thunder damage, you gain a bonus to one of the spell's damage rolls equal to 1d8.</li></ul>Your Pact Instrument disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss the instrument (no action required), or you die.</p><p>You can bond a magic instrument as your Pact Instrument by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient instruments, and you can only have one bonded Pact Instrument at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Talisman",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p><p>If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Tome",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a grimoire called a Book of Shadows. It contains one copy of each Warlock spell you know and this Tome grants you the following benefits:<ul><li>You learn an Eldritch Invocation of your choice that has no prerequisites. This Invocation doesn't count against your number of Invocations Known, and it cannot be replaced when you gain a Warlock level.</li><li>At the end of a long rest you can replace one Warlock spell in your Tome with another Warlock spell of the same level.</li><li>You can cast any Warlock spell contained within your Tome as a ritual if that Warlock spell has the ritual tag.</li></ul>You can spend 1 hour, which can be during a short or long rest, to conjure an exact copy of your Tome, destroying any of the previous Tomes. If you die your Tome turns to ash.",
+                "choices": [
+                  {
+                    "id": "C3BE2D87-94AA-4381-84DE-7A5656287C12",
+                    "type": "eldritch-invocation"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Third Elder Focus",
+      "prereqLevel": 15,
+      "description": "Your Patron has bestowed you with an increased amount of their power. You gain an additional Pact Boon of your choice. You cannot select the same Pact Boon more than once.</p><p>You can learn this Elder Arcanum more than once, but you must select a different Pact Boon each time you learn it.",
+      "choices": {
+        "id": "C8419E26-C3F8-4C5F-B5C1-13569A3F4980",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Pact of the Bastion",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create pact armor around yourself. Your pact armor takes the form of light plate. You are proficient with it while you wear it, and if the armor normally has a Strength requirement, the pact armor lacks this requirement for you.</p><p>Your pact armor attaches to you and can't be removed against your will. Your pact armor can be doffed as an action, upon which time it disappears.</p><p>You can transform one magic suit of armor into your pact armor by performing a special ritual while you wear the armor. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the armor, shunting it into an extradimensional space, and it appears whenever you create your pact armor thereafter. You can't affect an artifact or a sentient suit of armor in this way. The armor ceases being your pact armor if you die, if you perform the 1-hour ritual on a different suit of armor, or if you use a 1-hour ritual to break your bond to it. The armor appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Blade",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it, and you can use your spellcasting ability for attack and damage rolls with it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p><p>Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p><p>You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cannon",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use a bonus action to create a loaded pact firearm in your hand. You can choose the form this firearm takes when you create it from the Firearms page. The weapon cannot be a crank gun or hand cannon, and cannot have any modifications.</p><p>You are proficient with it while you wield it. You can use a bonus action to magically create exactly enough ammunition to reload the firearm(s) you are currently wielding, any unused ammunition disappears at the end of your next turn.</p><p>This firearm is considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you can use your spellcasting ability for attack and damage rolls with it. Your pact firearm disappears if it is more than 5 feet away from you for 1 minute. It also disappears if you use this feature again, if you dismiss the firearm as a bonus action, or if you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cards",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron bestows upon you a magical deck of throwable playing cards. The cards themselves return to the deck if thrown as a weapon or placed out of the holder 30 feet from it if not used as a weapon. The cards give you the following benefits: <ul><li>You gain proficiency in playing cards. If you already have proficiency, you double your proficiency bonus for checks made with them.</li><li>You can use your cards as a weapon with the Finesse and Thrown (30/60) properites, and you use your spellcasting ability for attack and damage rolls with it.  A card deals slashing damage equal to 1d8 + your spellcasting ability modifier on a hit.</li></ul> In addition, as an action you can spray cards in a 15-foot cone.  Choose one of the following effects for the cards to perform:<ul><li><strong>Blinding Cards.</strong> Each creature in a the cone must succeed on a Wisdom saving throw against your spell save DC or be blinded until the end of their next turn.</li><li><strong>Cutting Cards.</strong> Each creature in a the cone must make a Dexterity saving throw against your spell save DC. A creature takes force damage equal to your Warlock level on a failed save or half as much damage on a successful one.</li></ul> You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the deck, you can spend 1 hour in a ritual to replace them. A new deck of cards forms in your hands as the original ones burn to ash.",
+                "granted": [
+                  {
+                    "type": "game",
+                    "options": ["Playing Cards"],
+                    "level": 1.5
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "211FF361-6BFF-437B-84D2-9A4C804D9F05",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chalice",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a vessel for the creation of potions and poultices. As an action, you can create a Pact Chalice in your empty hand. When summoned, it takes the form of a tiny object of your choice that is capable of holding liquids, and it grants you the benefits listed below:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>It counts as both a herbalism kit and a set of alchemist's supplies, and whenever you make an ability check that uses your Pact Chalice as either of these tools you can add double your proficiency bonus to your roll.</li><li>At the end of each short or long rest, you can use the Pact Chalice to conjure a vial of the following: alchemist's fire, acid, holy water, potion of healing, or potion of climbing. The liquid retains its potency until the end of your next long rest, at which point it becomes inert and unusable.</li></ul>Your Pact Chalice disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Chalice (no action required), or if you die.",
+                "uses": {
+                  "id": "FD8D59B8-EA78-4036-A3D2-E9B7104AD90C",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chain",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.  The familiar is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Your Eldritch Familiar is bound to obey your orders to the best of its abilities. In combat, it shares your initiative and it acts on your turn. However, it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action.</p><p>Finally, when you cast a spell, you can choose for it to originate from your Familiar if you are within 60 feet.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Familiar"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Flesh",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron twists your body, enhancing your physicality in a way that reflects their own physical form. While you are not wearing armor or using a shield, your Armor Class is equal to 10 + your Constitution modifier + your spellcasting ability modifier.</p><p>In addition, your hands become savage claws that count as simple melee weapons that deal 1d6 slashing damage on hit, and you can use your spellcasting ability for attack and damage rolls with them.",
+                "granted": [
+                  {
+                    "type": "unarmored",
+                    "base": 10,
+                    "scores": ["con", "B85FFA8F-7EE5-4B27-9789-05477333032E"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Hourglass",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical timekeeping device. As an action, you can conjure this Pact Hourglass in your empty hand. When summoned, it takes the form of a timekeeping device of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>When you are not surprised, you gain a bonus to initiative rolls equal to your spellcasting modifier (minimum of +1).</li><li>When you make an ability check, attack roll, or saving throw, you can choose to re-roll. You can use this feature after you roll, but before you know if you succeed. Once you use this feature to turn failure into success, you must finish a short or long rest before you can use it again.</li></ul>Your Pact Hourglass disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Hourglass (no action required), or you die.",
+                "granted": [
+                  {
+                    "type": "initiative-bonus",
+                    "score": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+                  }
+                ],
+                "uses": {
+                  "id": "4042CC23-79D7-4072-9BD7-FA79B1102287",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Runestone",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron has granted you insight into the magic of Elder Runes, an ancient and mysterious form of magic.  At the end of a long rest, you can designate a Tiny nonmagical stone of your choice as your Runestone.  While it is in your hand you can use your Runestone as a spellcasting focus.</p><p>As an action on your turn you can cause the Runestone to fly and strike a target.  Make a ranged spell attack against a creature you can see within 60 feet of you.  On a hit, the Runestone deals 1d8 magical bludgeoning damage, and the target must make a Strength saving throw or be knocked prone.  You can then call the Runestone back to your hand as a bonus action."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Scepter",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a scepter, rod, or wand through which you can better focus your spells. When you cast a spell using the scepter as your spellcasting focus, you can choose for it to act as though you had cast it with a spell slot of one level higher.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the scepter, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous scepter. The scepter turns to ash when you die.",
+                "uses": [
+                  {
+                    "id": "A2B065A7-402A-4802-AC8B-0A512DB149FE",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Shroud",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical cloak to shield you from harm and obscure your steps. As an action, you can summon this Pact Shroud, which takes the shape of a spectral cloak reminiscent of your Patron's magic. While wearing your Pact Shroud, you are invisible while you are obscured by shadows, darkness, or other natural phenomenon such as fog or mist.</p><p>Your Pact Shroud disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Shroud (no action required), or you die.</p><p>You can bond a magic robe or cloak as your Pact Shroud by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient clothing, and you can only have one bonded Pact Shroud at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Steed",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Steed spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</p><p>When you cast the spell, the steed is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your steed to use its reaction to make one attack with its reaction.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Steed"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Strings",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has granted you an instrument of otherworldly beauty. As an action, you can summon this Pact Instrument in an empty hand. It takes the form of a musical instrument of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>You are considered proficient with it, and you add double your proficiency bonus to any check you make with it.</li><li>When you use it to cast a spell with a verbal component, or a spell that deals thunder damage, you gain a bonus to one of the spell's damage rolls equal to 1d8.</li></ul>Your Pact Instrument disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss the instrument (no action required), or you die.</p><p>You can bond a magic instrument as your Pact Instrument by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient instruments, and you can only have one bonded Pact Instrument at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Talisman",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p><p>If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Tome",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a grimoire called a Book of Shadows. It contains one copy of each Warlock spell you know and this Tome grants you the following benefits:<ul><li>You learn an Eldritch Invocation of your choice that has no prerequisites. This Invocation doesn't count against your number of Invocations Known, and it cannot be replaced when you gain a Warlock level.</li><li>At the end of a long rest you can replace one Warlock spell in your Tome with another Warlock spell of the same level.</li><li>You can cast any Warlock spell contained within your Tome as a ritual if that Warlock spell has the ritual tag.</li></ul>You can spend 1 hour, which can be during a short or long rest, to conjure an exact copy of your Tome, destroying any of the previous Tomes. If you die your Tome turns to ash.",
+                "choices": [
+                  {
+                    "id": "10D220B7-4604-46E4-94C3-65376D357922",
+                    "type": "eldritch-invocation"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fourth Elder Focus",
+      "prereqLevel": 17,
+      "description": "Your Patron has bestowed you with an increased amount of their power. You gain an additional Pact Boon of your choice. You cannot select the same Pact Boon more than once.</p><p>You can learn this Elder Arcanum more than once, but you must select a different Pact Boon each time you learn it.",
+      "choices": {
+        "id": "04C4123C-1C15-474B-A601-A878AF4DE904",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Pact of the Bastion",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create pact armor around yourself. Your pact armor takes the form of light plate. You are proficient with it while you wear it, and if the armor normally has a Strength requirement, the pact armor lacks this requirement for you.</p><p>Your pact armor attaches to you and can't be removed against your will. Your pact armor can be doffed as an action, upon which time it disappears.</p><p>You can transform one magic suit of armor into your pact armor by performing a special ritual while you wear the armor. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the armor, shunting it into an extradimensional space, and it appears whenever you create your pact armor thereafter. You can't affect an artifact or a sentient suit of armor in this way. The armor ceases being your pact armor if you die, if you perform the 1-hour ritual on a different suit of armor, or if you use a 1-hour ritual to break your bond to it. The armor appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Blade",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it, and you can use your spellcasting ability for attack and damage rolls with it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p><p>Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p><p>You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest.</p><p>You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cannon",
+            "traits": [
+              {
+                "name": "",
+                "description": "You can use a bonus action to create a loaded pact firearm in your hand. You can choose the form this firearm takes when you create it from the Firearms page. The weapon cannot be a crank gun or hand cannon, and cannot have any modifications.</p><p>You are proficient with it while you wield it. You can use a bonus action to magically create exactly enough ammunition to reload the firearm(s) you are currently wielding, any unused ammunition disappears at the end of your next turn.</p><p>This firearm is considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you can use your spellcasting ability for attack and damage rolls with it. Your pact firearm disappears if it is more than 5 feet away from you for 1 minute. It also disappears if you use this feature again, if you dismiss the firearm as a bonus action, or if you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Cards",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron bestows upon you a magical deck of throwable playing cards. The cards themselves return to the deck if thrown as a weapon or placed out of the holder 30 feet from it if not used as a weapon. The cards give you the following benefits: <ul><li>You gain proficiency in playing cards. If you already have proficiency, you double your proficiency bonus for checks made with them.</li><li>You can use your cards as a weapon with the Finesse and Thrown (30/60) properites, and you use your spellcasting ability for attack and damage rolls with it.  A card deals slashing damage equal to 1d8 + your spellcasting ability modifier on a hit.</li></ul> In addition, as an action you can spray cards in a 15-foot cone.  Choose one of the following effects for the cards to perform:<ul><li><strong>Blinding Cards.</strong> Each creature in a the cone must succeed on a Wisdom saving throw against your spell save DC or be blinded until the end of their next turn.</li><li><strong>Cutting Cards.</strong> Each creature in a the cone must make a Dexterity saving throw against your spell save DC. A creature takes force damage equal to your Warlock level on a failed save or half as much damage on a successful one.</li></ul> You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the deck, you can spend 1 hour in a ritual to replace them. A new deck of cards forms in your hands as the original ones burn to ash.",
+                "granted": [
+                  {
+                    "type": "game",
+                    "options": ["Playing Cards"],
+                    "level": 1.5
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "B5054C80-4E27-46DE-9648-7381B8E66D15",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chalice",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a vessel for the creation of potions and poultices. As an action, you can create a Pact Chalice in your empty hand. When summoned, it takes the form of a tiny object of your choice that is capable of holding liquids, and it grants you the benefits listed below:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>It counts as both a herbalism kit and a set of alchemist's supplies, and whenever you make an ability check that uses your Pact Chalice as either of these tools you can add double your proficiency bonus to your roll.</li><li>At the end of each short or long rest, you can use the Pact Chalice to conjure a vial of the following: alchemist's fire, acid, holy water, potion of healing, or potion of climbing. The liquid retains its potency until the end of your next long rest, at which point it becomes inert and unusable.</li></ul>Your Pact Chalice disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Chalice (no action required), or if you die.",
+                "uses": {
+                  "id": "3FC810B2-1EC6-468B-9FCB-BEF1C0DEA324",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Chain",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.  The familiar is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Your Eldritch Familiar is bound to obey your orders to the best of its abilities. In combat, it shares your initiative and it acts on your turn. However, it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action.</p><p>Finally, when you cast a spell, you can choose for it to originate from your Familiar if you are within 60 feet.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Familiar"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Flesh",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron twists your body, enhancing your physicality in a way that reflects their own physical form. While you are not wearing armor or using a shield, your Armor Class is equal to 10 + your Constitution modifier + your spellcasting ability modifier.</p><p>In addition, your hands become savage claws that count as simple melee weapons that deal 1d6 slashing damage on hit, and you can use your spellcasting ability for attack and damage rolls with them.",
+                "granted": [
+                  {
+                    "type": "unarmored",
+                    "base": 10,
+                    "scores": ["con", "B85FFA8F-7EE5-4B27-9789-05477333032E"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Hourglass",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical timekeeping device. As an action, you can conjure this Pact Hourglass in your empty hand. When summoned, it takes the form of a timekeeping device of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>When you are not surprised, you gain a bonus to initiative rolls equal to your spellcasting modifier (minimum of +1).</li><li>When you make an ability check, attack roll, or saving throw, you can choose to re-roll. You can use this feature after you roll, but before you know if you succeed. Once you use this feature to turn failure into success, you must finish a short or long rest before you can use it again.</li></ul>Your Pact Hourglass disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Hourglass (no action required), or you die.",
+                "granted": [
+                  {
+                    "type": "initiative-bonus",
+                    "score": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+                  }
+                ],
+                "uses": {
+                  "id": "5E58907C-7F74-42DD-AF9E-BC01D28C6FDE",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Runestone",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron has granted you insight into the magic of Elder Runes, an ancient and mysterious form of magic.  At the end of a long rest, you can designate a Tiny nonmagical stone of your choice as your Runestone.  While it is in your hand you can use your Runestone as a spellcasting focus.</p><p>As an action on your turn you can cause the Runestone to fly and strike a target.  Make a ranged spell attack against a creature you can see within 60 feet of you.  On a hit, the Runestone deals 1d8 magical bludgeoning damage, and the target must make a Strength saving throw or be knocked prone.  You can then call the Runestone back to your hand as a bonus action."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Scepter",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a scepter, rod, or wand through which you can better focus your spells. When you cast a spell using the scepter as your spellcasting focus, you can choose for it to act as though you had cast it with a spell slot of one level higher.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you lose the scepter, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous scepter. The scepter turns to ash when you die.",
+                "uses": [
+                  {
+                    "id": "12DB5E08-860C-4C3A-BFA0-C76459051554",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Shroud",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has gifted you a mystical cloak to shield you from harm and obscure your steps. As an action, you can summon this Pact Shroud, which takes the shape of a spectral cloak reminiscent of your Patron's magic. While wearing your Pact Shroud, you are invisible while you are obscured by shadows, darkness, or other natural phenomenon such as fog or mist.</p><p>Your Pact Shroud disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Shroud (no action required), or you die.</p><p>You can bond a magic robe or cloak as your Pact Shroud by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient clothing, and you can only have one bonded Pact Shroud at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Steed",
+            "traits": [
+              {
+                "name": "",
+                "description": "You learn the Find Steed spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</p><p>When you cast the spell, the steed is of a creature type appropriate for your patron, rather than a creature type of your choice.</p><p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your steed to use its reaction to make one attack with its reaction.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Find Steed"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+                    "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Strings",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has granted you an instrument of otherworldly beauty. As an action, you can summon this Pact Instrument in an empty hand. It takes the form of a musical instrument of your choice, and it grants you the following benefits:<ul><li>You can use it as a spellcasting focus for warlock spells.</li><li>You are considered proficient with it, and you add double your proficiency bonus to any check you make with it.</li><li>When you use it to cast a spell with a verbal component, or a spell that deals thunder damage, you gain a bonus to one of the spell's damage rolls equal to 1d8.</li></ul>Your Pact Instrument disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss the instrument (no action required), or you die.</p><p>You can bond a magic instrument as your Pact Instrument by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient instruments, and you can only have one bonded Pact Instrument at a time."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Talisman",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p><p>If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Tome",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your patron gives you a grimoire called a Book of Shadows. It contains one copy of each Warlock spell you know and this Tome grants you the following benefits:<ul><li>You learn an Eldritch Invocation of your choice that has no prerequisites. This Invocation doesn't count against your number of Invocations Known, and it cannot be replaced when you gain a Warlock level.</li><li>At the end of a long rest you can replace one Warlock spell in your Tome with another Warlock spell of the same level.</li><li>You can cast any Warlock spell contained within your Tome as a ritual if that Warlock spell has the ritual tag.</li></ul>You can spend 1 hour, which can be during a short or long rest, to conjure an exact copy of your Tome, destroying any of the previous Tomes. If you die your Tome turns to ash.",
+                "choices": [
+                  {
+                    "id": "280068CD-6033-460D-B28A-CA47C7040D18",
+                    "type": "eldritch-invocation"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "name": "Minor Arcanum",
       "prereqLevel": 11,
       "description": "Choose a 6th-level spell from Occult spell list. You can cast the Minor Arcanum spell once at 6th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Minor Arcanum again.",
@@ -4864,14 +5743,14 @@
       ]
     },
     {
-      "name": "Eldritch Smite",
+      "name": "Otherworldly Step",
       "prereqLevel": 11,
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Blade"
       },
-      "description": "Once per turn when you hit with an attack with a pact weapon, you deal bonus damage to the target as if it had been hit, or failed its saving throw against one manifestation of your Signature Cantrip."
+      "description": "Your Blade cuts rifts through reality itself. When you make an attack with your pact weapon, you can teleport up to 10 feet to an unoccupied space you can see before or after the attack.</p><p>Moreover, when you take the Attack action and only make attacks with a pact weapon, you can make one additional attack with your pact weapon as part of that action."
     },
     {
       "name": "Occult Blade",
@@ -4881,45 +5760,53 @@
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Blade"
       },
-      "description": "When you use your action to cast a spell, you can make a single attack with a pact weapon as a bonus action on that same turn."
+      "description": "You can weave occult spells between your attacks. When you take the Attack action on your turn you can cast one Warlock spell with a casting time of one action in place of one attack.</p><p>If this spell forces a target to make a saving throw, it makes its saving throw with disadvantage if you hit that target with a weapon attack as part of the same Attack action."
     },
     {
-      "name": "Eldritch Step",
+      "name": "Eldritch Wind",
       "prereqLevel": 15,
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Blade"
       },
-      "description": "Your blade cuts rifts through reality itself. When you make an attack with a pact weapon, you can teleport up to 20 feet to an unoccupied space you can see before or after the attack."
+      "description": "As an action, you can infuse your pact weapon with the full power of your Pact and vanish. You instantly make five melee attacks with your pact weapon spread amongst targets you can see within 60 feet of you. On each hit, targets take 6d10 damage of the same type as your Signature Cantrip. Each attack also applies any additional effects of your Signature Cantrip.</p><p>Once you use this Arcanum you must finish a short or long rest before you can use it again. However, if you have no uses left, you can expend a Pact Magic spell slot to use it again.",
+      "uses": [
+        {
+          "id": "6044CE2B-2C7F-4AB4-A00A-F43676A2EEED",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
     },
     {
-      "name": "Ancient Blade",
+      "name": "Awakened Blade",
       "prereqLevel": 17,
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Blade"
       },
-      "description": "Your blade has been infused with otherworldly power. As an action, you can flourish a pact weapon, then vanish. Choose up to five targets that you can see within 30 feet and make a single melee weapon attack with a pact weapon against each target. On a hit, creatures take damage as if they had been hit, or failed their saving throw against all four manifestations of your Signature Cantrip.</p><p>You then appear in an unoccupied space of your choice that you can see within 5 feet of one of your targets.</p><p>You can use this feature a number of times equal to your spellcasting ability modifier (minimum of once), and regain all expended uses when you finish a long rest.",
-      "uses": [
-        {
-          "id": "DCB6BE7C-11B6-4BF2-B66C-C298760FF723",
-          "type": "derived",
-          "source": "proficiency",
-          "reset": 2
-        }
-      ]
+      "description": "Your pact weapon has gained a level of sentience, and this sinister mind guides its strikes and enhances your own mind. While you are holding your pact weapon, you cannot have disadvantage on attack rolls, and whenever you are forced to make a Constitution saving throw to maintain concentration on a spell you add your spellcasting ability modifier to your roll.</p><p>Finally, when you take the Attack action and only make attacks with your pact weapon, you can make on additional attack with your pact weapon as part of that action."
     },
     {
-      "name": "Empowered Familiar",
+      "name": "Minion of Chaos",
       "prereqLevel": 11,
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Chain"
       },
-      "description": "When you command your familiar to take an Attack action in its stat block it can make two attacks instead of one."
+      "description": "As an action you can infuse your familiar with the full power of your Pact. It transforms, as if by the polymorph spell.  For the purposes of the spell, its level is the same as yours, and it can transform into any creature of the same creature type as it, not just beasts.</p><p>The transformation lasts for 1 minute, or until the familiar is reduced to 0 hit points. Once you use this feature you must complete a long rest before you can use it again.",
+      "uses": [
+        {
+          "id": "A1ED3D6B-E0A5-4B7C-8710-C67DDD9ED07D",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
     },
     {
       "name": "Bond of the Master",
@@ -4929,27 +5816,140 @@
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Chain"
       },
-      "description": "While you and your familiar are within 30 feet of each other, you both have advantage on any saving throws you make against spells or other magical effects."
+      "description": "While you and your familiar are within 30 feet of each other, you both have advantage on any saving throws you make against spells or other magical effects.</p><p>Also, when you cast a Warlock spell that targets yourself, you can choose for your familiar to also gain the benefits of the spell so long as it is within 30 feet of you."
     },
     {
-      "name": "Otherworldly Transposition",
+      "name": "Chains of the Abyss",
       "prereqLevel": 15,
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Chain"
       },
-      "description": "The chains that bind a familiar and its master offer eldritch protection. As a bonus action on your turn, you can instantly switch places with your familiar so long as you can see it.</p><p>Also, when you cast a spell that targets yourself, you can choose for your familiar to also gain the benefits of the spell so long as it is within 30 feet of you."
+      "description": "You can dominate other creatures with the eldritch chains of your Pact. You learn the Hold Monster spell, and you can cast it without expending a spell slot or the material components, so long as your target is a celestial, elemental, fey, or fiend.</p><p>You can target an individual creature with hold monster in this way once per long rest, after which, you must expend a Pact Magic spell slot to target it with hold monster again.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Hold Monster"],
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+          "ignoreMaxLevel": true
+        }
+      ]
     },
     {
-      "name": "Ascended Familiar",
+      "name": "Eldritch Domination",
       "prereqLevel": 17,
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Chain"
       },
-      "description": "The will of both familiar and master have become one. Your familiar can act totally independent of you, both in combat and out. You no longer need to issue commands, and your spells can originate from it so long as you are on the same plane of existence. You control your familiar as if it were an independent second player character."
+      "description": "You can extend your will through the chains of your eldritch bond. You can cast the Dominate Monster spell at 9th-level, once per long rest, without expending a spell slot. When you target a creature under the effects of your Hold Monster spell with Dominate Monster, it automatically fails its saving throw, but the effects of hold monster are instantly dispelled.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Dominate Monster"],
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+          "ignoreMaxLevel": true
+        }
+      ],
+      "uses": [
+        {
+          "id": "C84952CB-FCDD-421D-9A09-B1936A488E9E",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Occult Scholar",
+      "prereqLevel": 11,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Tome"
+      },
+      "description": "The occult power of your Tome allows you to prepare spells and eldritch powers. During each long rest, you can spend 1 hour performing a ritual to change the spells in your Eldritch Tome. When you do, you prepare a number of Warlock spells of 1st-level and higher equal to your total Spells Known.</p><p>Moreover, as part of this ritual you can replace one Eldritch Invocation you know with another Eldritch Invocation of your choice. However, this new Eldritch Invocation must be of the same prerequisite level as the Eldritch Invocation it replaces.",
+      "listed": {
+        "id": "35B356DC-16EB-4C36-B2D4-F3AC77C821B7",
+        "type": "spell",
+        "list": "occult",
+        "maximums": [
+          2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15
+        ],
+        "spellcasterType": 1,
+        "maxLevel": 5,
+        "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+      }
+    },
+    {
+      "name": "Greater Magicks",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Tome"
+      },
+      "description": "Your Eldritch Tome has been saturated with magic, allowing you to draw upon an increased amount of eldritch potential. When you cast a spell using a Pact Magic spell slot, you can choose to not expend a spell slot.  You can use this feature once, and regain the ability to do so when you finish a short or long rest.",
+      "uses": [
+        {
+          "id": "1D6BFB56-7685-4C7A-8768-5CA0746086A4",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Arcana of the Ancients",
+      "prereqLevel": 15,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Tome"
+      },
+      "description": "The pages of your Eldritch Tome have been filled with magic from secret societies and dark cults long forgotten. You learn three additional Eldritch Invocations of your choice, and your number of Invocations Known increases by three to match.",
+      "choices": [
+        {
+          "id": "81701B44-E4E5-4F9B-9442-944D677F5863",
+          "type": "eldritch-invocation"
+        },
+        {
+          "id": "1BED30A1-BC53-4F4F-99FE-F36E183A0C7F",
+          "type": "eldritch-invocation"
+        },
+        {
+          "id": "8BA784F9-B030-45B2-A2F2-33E2E31F7F3A",
+          "type": "eldritch-invocation"
+        }
+      ]
+    },
+    {
+      "name": "Distort Reality",
+      "prereqLevel": 17,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Tome"
+      },
+      "description": "A final page appears in your Tome, written in the primordial language of creation. It contains the Wish spell. You can cast Wish once per long rest without expending a spell slot.",
+      "uses": [
+        {
+          "id": "DCB6BE7C-11B6-4BF2-B66C-C298760FF723",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ],
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Wish"],
+          "ignoreMaxLevel": true,
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ]
     }
   ],
   "enhancement": [
