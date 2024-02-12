@@ -3422,11 +3422,11 @@
     }
   },
   {
-    "key": "dragon-knight-purple",
+    "key": "dragon-knight-deep",
     "stats": {
       "0": {
         "any": {
-          "name": "Purple Dragon Companion",
+          "name": "Deep Dragon Companion",
           "size": "Medium",
           "type": "dragon",
           "ac": [{ "ac": 13, "from": ["natural armor"] }],

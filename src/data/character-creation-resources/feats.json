@@ -2783,7 +2783,7 @@
                         "Black": "acid",
                         "Blue": "lightning",
                         "Green": "poison",
-                        "Purple": "psychic",
+                        "Deep": "psychic",
                         "Red": "fire",
                         "White": "cold"
                       }
@@ -3566,7 +3566,7 @@
                         "Black": "acid",
                         "Blue": "lightning",
                         "Green": "poison",
-                        "Purple": "psychic",
+                        "Deep": "psychic",
                         "Red": "fire",
                         "White": "cold",
                         "Amethyst": "force",

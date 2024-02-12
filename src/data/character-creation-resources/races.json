@@ -2153,7 +2153,6 @@
                             "Black": "acid",
                             "Blue": "lightning",
                             "Green": "poison",
-                            "Purple": "psychic",
                             "Red": "fire",
                             "White": "cold"
                           }
@@ -2936,7 +2935,6 @@
                             "Black": "acid",
                             "Blue": "lightning",
                             "Green": "poison",
-                            "Purple": "psychic",
                             "Red": "fire",
                             "White": "cold",
                             "Amethyst": "force",
@@ -2975,6 +2973,7 @@
                             "Radiant": "radiant",
                             "Rust": "acid",
                             "Tarterian": "force",
+                            "Deep": "psychic",
                             "Shadow": "psychic"
                           }
                         }
@@ -3095,47 +3094,6 @@
           },
           {
             "name": "Deceptive",
-            "description": "You have proficiency in the Deception skill.",
-            "granted": [
-              { "type": "skill", "options": ["Deception"], "level": 1 }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Purple",
-        "description": "<em>Chromatic subrace</em>",
-        "asis": [],
-        "traits": [
-          {
-            "name": "Draconic Resilience",
-            "description": "You have resistance to psychic damage. Your breath weapon deals psychic damage and imposes a Wisdom saving throw.",
-            "granted": [
-              { "type": "damage-resistance", "options": ["Psychic"] }
-            ],
-            "actions": [
-              {
-                "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
-                "name": "Dazing Breath",
-                "hasUses": true,
-                "type": "a",
-                "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
-                "variables": {
-                  "damage": {
-                    "1": "1d10",
-                    "5": "2d10",
-                    "11": "3d10",
-                    "17": "4d10"
-                  },
-                  "damage-type": "psychic",
-                  "save-type": "Wisdom",
-                  "desc": "a cloud of dazing gas"
-                }
-              }
-            ]
-          },
-          {
-            "name": "Manipulator",
             "description": "You have proficiency in the Deception skill.",
             "granted": [
               { "type": "skill", "options": ["Deception"], "level": 1 }
@@ -4888,6 +4846,46 @@
                 "type": "language",
                 "options": ["Carcerin"]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deep",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to psychic damage. Your breath weapon deals psychic damage and imposes a Wisdom saving throw.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Psychic"] }
+            ],
+            "actions": [
+              {
+                "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
+                "name": "Dazing Breath",
+                "hasUses": true,
+                "type": "a",
+                "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                "variables": {
+                  "damage": {
+                    "1": "1d10",
+                    "5": "2d10",
+                    "11": "3d10",
+                    "17": "4d10"
+                  },
+                  "damage-type": "psychic",
+                  "save-type": "Wisdom",
+                  "desc": "a cloud of dazing gas"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Manipulator",
+            "description": "You have proficiency in the Deception skill.",
+            "granted": [
+              { "type": "skill", "options": ["Deception"], "level": 1 }
             ]
           }
         ]
@@ -13758,7 +13756,7 @@
           },
           {
             "name": "Draconic Ancestry",
-            "description": "You are descended from both devils and chromatic dragons.  Choose a dragon type from Black, Blue, Green, Purple, Red, or White.  Your choice grants you resistance to a damage type and advantage on saving throws against a condition.",
+            "description": "You are descended from both devils and chromatic dragons.  Choose a dragon type from Black, Blue, Green, Red, or White.  Your choice grants you resistance to a damage type and advantage on saving throws against a condition.",
             "choices": {
               "id": "17F63CCA-A104-4C48-A16B-5A0B3397AE8F",
               "type": "trait",
@@ -13806,25 +13804,6 @@
                         {
                           "type": "condition-advantage",
                           "options": ["Poisoned"]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "name": "Purple",
-                  "traits": [
-                    {
-                      "name": "Purple Dragon Legacy",
-                      "description": "Your draconic damage type is psychic and you have advantage on saving throws against being Charmed.",
-                      "granted": [
-                        {
-                          "type": "damage-resistance",
-                          "options": ["Psychic"]
-                        },
-                        {
-                          "type": "condition-advantage",
-                          "options": ["Charmed"]
                         }
                       ]
                     }
@@ -13943,29 +13922,6 @@
                         "damage-type": "poison",
                         "save-type": "Constitution",
                         "desc": "a cloud of poisonous gas"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "name": "Purple",
-                  "traits": [
-                    {
-                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
-                      "name": "Dazing Breath",
-                      "hasUses": true,
-                      "type": "a",
-                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
-                      "variables": {
-                        "damage": {
-                          "1": "1d10",
-                          "5": "2d10",
-                          "11": "3d10",
-                          "17": "4d10"
-                        },
-                        "damage-type": "psychic",
-                        "save-type": "Wisdom",
-                        "desc": "a cloud of dazing gas"
                       }
                     }
                   ]
