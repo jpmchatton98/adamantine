@@ -24857,5 +24857,356 @@
         "type": "psychic"
       }
     ]
+  },
+  {
+    "name": "Fealty's Clarion",
+    "school": "Transposition",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Infinite",
+    "components": "V, S, M (a token gifted from each summoned creature worth at least 1 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You call upon oaths given by your ally, crushing in your hand a token of fealty gifted to you by them and sending a cry for help rippling across the planes.",
+      "The creature recognizes you as the sender, and can choose to immediately be teleported to an unoccupied space of your choice within 30 feet of you.",
+      "If the creature is dead, it can form a spiritual body to aid you that appears as it did in life with full resources, and dissolves into light when reduced to 0 hit points, or after 1 hour. A dead creature summoned in this way can never again be summoned with this spell."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, you can target one additional creature for each slot level above 7th."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Forment Intrigue",
+    "school": "Enchantment",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, M (a quill or pen snapped in anger)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You send insidious thoughts whispering through the minds of two creatures you can see within range.",
+      "At the beginning of each creature's turn, it must succeed on a Wisdom saving throw or become hostile to the other target and indifferent to all other creatures until the beginning of its next turn.",
+      "If both targets succeed on their saving throw in a round or if one of them is reduced to 0 hit points, the effect ends."
+    ],
+    "lists": ["Melodic", "Occult", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Oathbind",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, M (a golden chain worth 500 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You bind a willing creature to an oath it made in the last minute, cursing it.",
+      "The cursed creature cannot voluntarily take actions directly contrary to that oath, and you know if this curse ends for it."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 9th level, the cursed creature additionally cannot be magically compelled to take such actions."
+    ],
+    "lists": ["Melodic", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Procession of Ancient Right",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 reaction, which you take when you roll initiative",
+    "range": "Self (30-foot radius)",
+    "components": "V, M (a drop of royal blood worth 1 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You call out a command that echoes with the strength of ages. Each creature of your choice within range must make a Wisdom saving throw. On a failure, the creature's initiative is reduced by 5, to a minimum of 0."
+    ],
+    "lists": ["Melodic", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Reveal Pedigree",
+    "school": "Divination",
+    "level": 2,
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a creature or corpse and feel the echoes of history in its blood, learning the name and titles of its most historically significant direct ancestor."
+    ],
+    "lists": ["Melodic", "Divine"],
+    "ritual": 1
+  },
+  {
+    "name": "Sanctum Arms",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Touch (120-foot radius)",
+    "components": "V, M (1,000 gp worth of powdered sapphire, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch the ground and sapphire runes flare out in a 120 foot radius before fading, encircling each creature of your choice in the area and marking their arms and armor.",
+      "When one or more of these targets rolls initiative in the area, each target in the area can summon any arms and armor in the area that are marked in this way to themselves, instantly donning any armor summoned in this way."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Strip Masks",
+    "school": "Abjuration",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Your palm flares with light as it touches a creature, burning away all magical veils. The target must make a Charisma saving throw.",
+      "On a failure, the target takes 12d8 radiant damage and each illusory, shapechanging, or mind-affecting magic effect affecting it ends. This damage can't reduce the target's hit points below 1."
+    ],
+    "lists": ["Divine", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 12,
+        "die": 8,
+        "type": "radiant"
+      }
+    ]
+  },
+  {
+    "name": "Beacon of Valor",
+    "school": "Enchantment",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You let out a defiant cry, bolstering your nearby allies. Each other friendly creature within range that can see you gains advantage on the first attack or saving throw it makes before the end of your next turn."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Peaceshroud",
+    "school": "Enchantment",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "A stilling glow begins to emanate from you in a 30 foot radius for the next hour.",
+      "A creature that starts its turn in the area or enters it for the first time on a turn must make a Wisdom saving throw. On a failure, the creature is unable to take hostile actions until the beginning of its next turn."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Render Judgement",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You call down a flare of scouring light from the sky upon a creature you can see within range. The target must make a Charisma saving throw.",
+      "On a failed save, the target takes 3d8 radiant damage and is cursed until cured by Remove Curse or similar magic. Whenever the cursed creature takes any damage, it takes an additional 1d8 radiant damage if it reduced a creature to 0 hit points in the last hour."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "radiant"
+      }
+    ]
+  },
+  {
+    "name": "Charm Wall",
+    "school": "Transposition",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "S, M (a key copied without its owner's knowledge)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a surface of nonmagical stone or wood and are drawn through it to the nearest unoccupied space directly opposite that surface within 20 feet.",
+      "If no valid space exists within range, you are instead expelled from the surface at the same point you entered."
+    ],
+    "lists": ["Melodic", "Arcane"],
+    "ritual": 0
+  },
+  {
+    "name": "Dark Gleam",
+    "school": "Illusion",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (the tears of a blind person)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a nonmagical light source, twisting the light produced by it. For the duration, the light produced by the enchanted source can be seen only by creatures within 10 feet of it, and provides no illumination for other creatures."
+    ],
+    "lists": ["Primal", "Arcane", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0
+  },
+  {
+    "name": "Darting Bolt",
+    "school": "Evocation",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S, M (a bat's tooth)",
+    "duration": "Instantaneous",
+    "description": [
+      "You flick a bolt, darting chaotically toward a target in range. Make a ranged spell attack. On a hit, the target takes 3d6 force damage.",
+      "If this attack misses, you can make a second attack roll against another creature you can see within 10 feet of the original target."
+    ],
+    "lists": ["Primal", "Arcane", "Elemental"],
+    "ritual": 0,
+    "element": "Aether",
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Glazier's Ace",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self (15-foot cone)",
+    "components": "S, M (a glass bottle worth at least 1 cp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You smash the bottle used in the spell's casting, sending shards flying in a 15 foot cone.",
+      "Each creature in the area must succeed on a Dexterity saving throw or be blinded and bleeding (1d6) for the next minute. An affected creature repeats this saving throw at the end of each of its turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the size of the cone increased by 10 feet for each slot level above 2nd."
+    ],
+    "lists": ["Primal", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex"
+  },
+  {
+    "name": "Greasebody",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (sweat collected from a dying person)",
+    "duration": "Instantaneous",
+    "description": [
+      "You cause a creature or an object you can see within range to grow unnaturally slick. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.",
+      "If the target is a creature, it gains the following effects:<ul><li>The target can attempt to escape from grapples and other forms of restraint as a bonus action.</li><li>If the target expends its last 5 feet of movement on its turn, it continues moving in the same direction for up to 10 additional feet.</li><li>When the target is hit with an attack, it is pushed up to 10 feet from that attack's source.</li></ul>If the target is an object, a creature holding that object must succeed on a Dexterity saving throw at the beginning of each of its turns or throw it 10 feet in a random direction."
+    ],
+    "lists": ["Arcane", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Power Word: Hush",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "30 feet",
+    "components": "V, M (a fresh lily)",
+    "duration": "Instantaneous",
+    "description": [
+      "You utter a word of power that can compel one creature you can see within range to drop unconscious. If the creature you choose has 10 hit points or fewer, it is reduced to 0 hit points. Otherwise, the spell has no effect. If the creature would make death saving throws, it does so as normal."
+    ],
+    "lists": ["Arcane", "Melodic", "Psionic", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Quash Magic",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "30 feet",
+    "components": "V, S, M (the remnants of an expended spell scroll)",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You suppress one spell of 3rd level or below affecting a space or creature you can see within range, negating its effect until the beginning of your next turn.  If the spell is of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the suppressed spell has no effect if its level is less than or equal to the level of the spell slot you used."
+    ],
+    "lists": ["Melodic", "Elemental", "Psionic"],
+    "element": "Aether",
+    "ritual": 0
+  },
+  {
+    "name": "Spell Cheat",
+    "school": "Divination",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You cast a spell of 1st level or below that you saw cast within range since the end of your last turn, using your own spell attack modifier and spell save DC, if applicable."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you can copy a spell of a level less than or equal to the level of spell slot expended."
+    ],
+    "lists": ["Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Tapping Cheat",
+    "school": "Transmutation",
+    "level": 0,
+    "castingTime": "1 bonus action",
+    "range": "Self (5-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You twirl the weapon used in the spell's casting, deftly manipulating its weight. Until the beginning of your next turn, the weapon counts as having the Finesse property, and adds both your Strength and Dexterity modifiers to its damage on a hit, rather than just one of those."
+    ],
+    "higherLevels": [
+      "At 5th level, a creature hit with the weapon used in the spell's casting is pushed 5 feet away. This distance increases by 5 ft. at 11th level (10 ft.) and 17th level (15 ft)."
+    ],
+    "lists": ["Arcane", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Unfasten",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "30 feet",
+    "components": "S, M (a small hand tool)",
+    "duration": "Instantaneous",
+    "description": [
+      "You magically unfasten the armor of a creature you can see within range.",
+      "The target must succeed on a Dexterity saving throw or have the AC bonus offered by its armor reduced by a cumulative 2 until the target takes an action to adjust it. Armor reduced to an AC of 10 falls off entirely until donned again."
+    ],
+    "lists": ["Arcane", "Melodic", "Psionic"],
+    "ritual": 0
   }
 ]

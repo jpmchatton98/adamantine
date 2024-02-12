@@ -285,4 +285,12 @@
       </p>
     </div>
   </nz-tab>
+  <nz-tab nzTitle="Thieves' Cant Glossary">
+    <ng-container *ngFor="let key of keys(thievesCant)">
+      <h6>{{ key }}</h6>
+      <p>
+        {{ thievesCant[key] }}
+      </p>
+    </ng-container>
+  </nz-tab>
 </nz-tabset>
