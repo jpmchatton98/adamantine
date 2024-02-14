@@ -124,10 +124,35 @@
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
-      "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage."
+      "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. Make a ranged spell attack against each target.  On a hit, a target takes 1d6 acid damage."
     ],
     "higherLevels": [
       "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    ],
+    "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 6,
+        "type": "acid"
+      }
+    ]
+  },
+  {
+    "name": "Corrode",
+    "school": "Transmutation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt coat a target within range in corrosive acid. The target must succeed on a Dexterity saving throw or take 1d10 acid damage."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
     ],
     "lists": ["Arcane", "Occult", "Primal"],
     "ritual": 0,
@@ -136,7 +161,7 @@
     "damage": [
       {
         "dice": 1,
-        "die": 6,
+        "die": 10,
         "type": "acid"
       }
     ]
@@ -1279,12 +1304,12 @@
     "name": "Banishing Smite",
     "school": "Transposition",
     "level": 5,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points of fewer, you banish it. If the target is native to a different plane of existence than the on you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+      "When you hit a creature with a melee weapon attack, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points of fewer, you banish it. If the target is native to a different plane of existence than the on you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
     ],
     "lists": ["Divine"],
     "ritual": 0,
@@ -1699,12 +1724,12 @@
     "name": "Blazing Smite",
     "school": "Evocation",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon roars with divine flames, and the attack deals an extra 2d6 fire damage and 2d6 radiant damage to the target and causes the target to ignite in holy flames.<br><br>At the start of each of its turns until the spell ends, the target takes 1d6 fire damage and 1d6 radiant damage. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
+      "When you hit a creature with a melee weapon attack, your weapon roars with divine flames, and the attack deals an extra 2d6 fire damage and 2d6 radiant damage to the target and causes the target to ignite in holy flames.<br><br>At the start of each of its turns until the spell ends, the target takes 1d6 fire damage and 1d6 radiant damage. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the both instances of the initial extra damage dealt by the attack increase by 1d6 for each slot."
@@ -1829,12 +1854,12 @@
     "name": "Blinding Smite",
     "school": "Evocation",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during this spell's duration, you weapon flares with a bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.",
+      "When you hit a creature with a melee weapon attack, you weapon flares with a bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.",
       "A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."
     ],
     "lists": ["Divine", "Elemental"],
@@ -1972,12 +1997,13 @@
     "name": "Bloodletting Smite",
     "school": "Sangromancy",
     "level": 2,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, the target must succeed on a Constitution saving throw or receive a festering wound. A creature with a festering wound takes 2d6 necrotic damage at the beginning of its turn for the remainder of the spell's duration. A creature can only have one festering wound at a time.<br><br>Receiving at least 1 point of magical healing closes a festering wound, ending the recurring damage and the spell."
+      "When you hit a creature with a melee weapon attack, the target must succeed on a Constitution saving throw or receive a festering wound. A creature with a festering wound takes 2d6 necrotic damage at the beginning of its turn for the remainder of the spell's duration. A creature can only have one festering wound at a time.",
+      "Receiving at least 1 point of magical healing closes a festering wound, ending the recurring damage and the spell."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 3rd level or higher, you can increase the damage dealt by a festering wound by 1d6 for each slot level above 2nd."
@@ -2232,12 +2258,12 @@
     "name": "Branding Smite",
     "school": "Evocation",
     "level": 2,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends."
+      "When you hit a creature with a melee weapon attack, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
@@ -3608,12 +3634,12 @@
     "name": "Corrosive Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon corrodes away at their defenses, and the attack deals an extra 1d6 acid damage to the target. In addition, the target takes a cumulative -1 penalty to their Armor Class until the spell ends."
+      "When you hit a creature with a melee weapon attack, your weapon corrodes away at their defenses, and the attack deals an extra 1d6 acid damage to the target. In addition, the target takes a cumulative -1 penalty to their Armor Class until the spell ends."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot."
@@ -3725,12 +3751,13 @@
     "name": "Crackling Smite",
     "school": "Evocation",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a weapon attack before this spell ends, your weapon seethes with electric arcs, and the attack deals an extra 3d8 lightning damage.<br><br>Additionally, the target must succeed on a Constitution saving throw or drop any items or creatures it is holding and fall prone."
+      "When you hit a creature with a melee weapon attack, your weapon seethes with electric arcs, and the attack deals an extra 3d8 lightning damage.",
+      "Additionally, the target must succeed on a Constitution saving throw or drop any items or creatures it is holding and fall prone."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the lightning damage increases by 1d8 for each slot level above 3rd."
@@ -5080,12 +5107,12 @@
     "name": "Draining Smite",
     "school": "Necromancy",
     "level": 2,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon saps the target's very life force, and the attack deals an extra 2d6 necrotic damage to the target. You gain temporary hit points equal to the damage dealt."
+      "When you hit a creature with a melee weapon attack, your weapon saps the target's very life force, and the attack deals an extra 2d6 necrotic damage to the target. You gain temporary hit points equal to the damage dealt."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot."
@@ -7135,12 +7162,13 @@
     "name": "Freezing Smite",
     "school": "Evocation",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon carries an icy burst of energy with it, and the attack deals an extra 3d8 cold damage to the target.<br><br>In addition, the target must make a Strength or Dexterity saving throw (target's choice). On a failed saving throw, the target is coated in a thick layer of ice. For the next minute, the target is considered restrained. It can make a Strength saving throw at the end of each of its turns, breaking the ice and ending the spell on a success. In addition, if the target takes any amount of fire damage, they have advantage on the next saving throw they make against the spell."
+      "When you hit a creature with a melee weapon attack, your weapon carries an icy burst of energy with it, and the attack deals an extra 3d8 cold damage to the target.",
+      "In addition, the target must make a Strength or Dexterity saving throw (target's choice). On a failed saving throw, the target is coated in a thick layer of ice. For the next minute, the target is considered restrained. It can make a Strength saving throw at the end of each of its turns, breaking the ice and ending the spell on a success. In addition, if the target takes any amount of fire damage, they have advantage on the next saving throw they make against the spell."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d8 for each slot."
@@ -7657,12 +7685,12 @@
     "name": "Glacial Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon carries an ice-cold blast of wind with it, and the attack deals an extra 1d10 cold damage to the target and coats them in icy crystals.",
+      "When you hit a creature with a melee weapon attack, your weapon carries an ice-cold blast of wind with it, and the attack deals an extra 1d10 cold damage to the target and coats them in icy crystals.",
       "For the next minute, the target's movement speed is reduced by 10 feet. It can make a Constitution saving throw at the end of each of its turns, shaking off the crystals and ending the spell on a success. In addition, if the target takes any amount of fire damage, the spell ends."
     ],
     "higherLevels": [
@@ -12806,12 +12834,12 @@
     "name": "Petrifying Smite",
     "school": "Transmutation",
     "level": 5,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 10 minutes",
     "description": [
-      "The next time you hit a creature whose body is made of flesh with a melee weapon attack during the spell's duration, your weapon causes their flesh to harden, and the attack deals an extra 3d8 thunder damage to the target.<br><br>In addition, the target must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected.<br><br>A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive keep track of both until the target collects three of a kind.<br><br>If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
+      "When you hit a creature whose body is made of flesh with a melee weapon attack, your weapon causes their flesh to harden, and the attack deals an extra 3d8 thunder damage to the target.<br><br>In addition, the target must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected.<br><br>A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive keep track of both until the target collects three of a kind.<br><br>If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 6th level or higher, the initial extra damage dealt by the attack increases by 1d8 for each slot."
@@ -13121,7 +13149,32 @@
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
-      "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage."
+      "You extend your hand toward a creature you can see within range and spray a stream of poisonous liquid. Make a ranged spell attack against the target. On a hit, the target takes 1d12 poison damage."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
+    ],
+    "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 12,
+        "type": "poison"
+      }
+    ]
+  },
+  {
+    "name": "Disease",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to inflict a creature within range with the symptoms of a flesh-eating disease. The creature must succeed on a Constitution saving throw or take 1d12 poison damage."
     ],
     "higherLevels": [
       "This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
@@ -14915,12 +14968,12 @@
     "name": "Searing Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames.",
+      "When you hit a creature with a melee weapon attack, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames.",
       "At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes 1d6 fire damage. On a successful save, the spells ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
     ],
     "higherLevels": [
@@ -15367,12 +15420,12 @@
     "name": "Shocking Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon is sheathed in electricty, and the attack deals an extra 2d6 lightning damage to the target. In addition, the target cannot take reactions until the start of your next turn."
+      "When you hit a creature with a melee weapon attack, your weapon is sheathed in electricty, and the attack deals an extra 2d6 lightning damage to the target. In addition, the target cannot take reactions until the start of your next turn."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot."
@@ -16022,12 +16075,12 @@
     "name": "Spellbreaking Smite",
     "school": "Abjuration",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon hinders their ability to concentrate, and the attack deals an extra 2d8 psychic damage to the target.<br><br>In addition, the target suffers disadvantage on saving throws made to maintain concentration while the spell lasts, and the next time the target attempts to cast a spell, they must make a Wisdom saving throw. On a failure, the target's spell fails and has no effect, and this spell ends."
+      "When you hit a creature with a melee weapon attack, your weapon hinders their ability to concentrate, and the attack deals an extra 2d8 psychic damage to the target.<br><br>In addition, the target suffers disadvantage on saving throws made to maintain concentration while the spell lasts, and the next time the target attempts to cast a spell, they must make a Wisdom saving throw. On a failure, the target's spell fails and has no effect, and this spell ends."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the initial extra damage dealt by the attack increases by 1d8 for each slot."
@@ -16299,12 +16352,12 @@
     "name": "Staggering Smite",
     "school": "Evocation",
     "level": 4,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn."
+      "When you hit a creature with a melee weapon attack, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn."
     ],
     "lists": ["Divine", "Psionic"],
     "ritual": 0,
@@ -17033,12 +17086,12 @@
     "name": "Sundering Smite",
     "school": "Evocation",
     "level": 5,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit with a melee weapon attack during the spell's duration, your attack deals an extra 6d8 radiant damage. The target must make a Strength saving throw or suffer a -5 AC penalty until the end of its next turn."
+      "When you hit a creature with a melee weapon attack, your attack deals an extra 6d8 radiant damage. The target must make a Strength saving throw or suffer a -5 AC penalty until the end of its next turn."
     ],
     "lists": ["Divine"],
     "ritual": 0,
@@ -17059,12 +17112,12 @@
     "name": "Supernal Smite",
     "school": "Evocation",
     "level": 4,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon shatters the ambient magic surrounding the creature, and the attack deals an extra 4d6 force damage. If the creature is concentrating on a spell, that concentration is broken.<br><br>In addition, any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spells' level. On a successful check, the spell ends."
+      "When you hit a creature with a melee weapon attack, your weapon shatters the ambient magic surrounding the creature, and the attack deals an extra 4d6 force damage. If the creature is concentrating on a spell, that concentration is broken.<br><br>In addition, any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spells' level. On a successful check, the spell ends."
     ],
     "lists": ["Arcane", "Divine"],
     "ritual": false,
@@ -17609,7 +17662,7 @@
     ]
   },
   {
-    "name": "Thunderbolt",
+    "name": "Sonic Boom",
     "school": "Evocation",
     "level": 0,
     "castingTime": "1 action",
@@ -17717,12 +17770,12 @@
     "name": "Thunderous Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone."
+      "When you hit a creature with a melee weapon attack, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone."
     ],
     "lists": ["Divine", "Elemental", "Melodic"],
     "ritual": 0,
@@ -18343,12 +18396,12 @@
     "name": "Vaporous Smite",
     "school": "Evocation",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with a misty white shroud and the attack deals an extra 3d8 radiant damage to the target. Immediately after the attack, your form turns into a gaseous vapor and you are able to travel up to 15 feet without provoking attacks of opportunity. You return to your normal form at the end of your turn."
+      "When you hit a creature with a melee weapon attack, your weapon flares with a misty white shroud and the attack deals an extra 3d8 radiant damage to the target. Immediately after the attack, your form turns into a gaseous vapor and you are able to travel up to 15 feet without provoking attacks of opportunity. You return to your normal form at the end of your turn."
     ],
     "lists": ["Divine"],
     "ritual": 0,
@@ -18426,12 +18479,12 @@
     "name": "Venemous Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon blights the target with weakening poison, and the attack deals an extra 2d6 poison damage to the target. In addition, the target suffers disadvantage on ability checks until the spell ends.<br><br>An affected target can make a Constitution saving throw at the end of each of its turns, ending the spell on a success."
+      "When you hit a creature with a melee weapon attack, your weapon blights the target with weakening poison, and the attack deals an extra 2d6 poison damage to the target. In addition, the target suffers disadvantage on ability checks until the spell ends.<br><br>An affected target can make a Constitution saving throw at the end of each of its turns, ending the spell on a success."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot."
@@ -19182,12 +19235,13 @@
     "name": "Wilting Smite",
     "school": "Sangromancy",
     "level": 2,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "As part of casting this spell, you must expend two hit dice or the spell automatically fails. If you do, the next time you hit a creature with a melee weapon attack during this spell's duration, blood flows over your weapon then desiccates into black spores falling onto the attack's target, and the attack deals an extra necrotic damage to the target. Roll the hit dice expended to cast this spell, and the total equals the amount of this extra necrotic damage. Additionally, the creature loses all damage resistances it has until the start of your next turn."
+      "As part of casting this spell, you must expend two hit dice or the spell automatically fails.",
+      "When you hit a creature with a melee weapon attack, blood flows over your weapon then desiccates into black spores falling onto the attack's target, and the attack deals an extra necrotic damage to the target. Roll the hit dice expended to cast this spell, and the total equals the amount of this extra necrotic damage. Additionally, the creature loses all damage resistances it has until the start of your next turn."
     ],
     "lists": ["Divine", "Occult"],
     "ritual": false
@@ -19500,12 +19554,12 @@
     "name": "Wrathful Smite",
     "school": "Evocation",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+      "When you hit a creature with a melee weapon attack, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
     ],
     "lists": ["Divine", "Psionic", "Melodic"],
     "ritual": 0,
@@ -19560,7 +19614,7 @@
     ]
   },
   {
-    "name": "Zap",
+    "name": "Spark",
     "school": "Evocation",
     "level": 0,
     "castingTime": "1 action",
@@ -22925,12 +22979,12 @@
     "name": "Slaying Smite",
     "school": "Evocation",
     "level": 5,
-    "castingTime": "1 bonus action",
+    "castingTime": "Special",
     "range": "Self",
     "components": "V",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you hit a creature with a melee attack before this spell ends, your weapon is wreathed in deathly energies, and the attack deals an extra 8d8 necrotic damage to the target.",
+      "When you hit a creature with a melee weapon attack, your weapon is wreathed in deathly energies, and the attack deals an extra 8d8 necrotic damage to the target.",
       "Additionally, if this attack reduces the target to 20 hit points or fewer, it must succeed on a Constitution saving throw or die. If the target is not native to the plane you're on, it has disadvantage on this saving throw."
     ],
     "lists": ["Divine"],
