@@ -13861,22 +13861,28 @@
                   "name": "Black",
                   "traits": [
                     {
-                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
                       "name": "Acid Breath",
-                      "hasUses": true,
-                      "type": "a",
-                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
-                      "variables": {
-                        "damage": {
-                          "1": "1d10",
-                          "5": "2d10",
-                          "11": "3d10",
-                          "17": "4d10"
-                        },
-                        "damage-type": "acid",
-                        "save-type": "Dexterity",
-                        "desc": "a spray of corrosive acid"
-                      }
+                      "description": "Your breath weapon deals acid damage and imposes a Dexterity saving throw.",
+                      "actions": [
+                        {
+                          "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                          "name": "Acid Breath",
+                          "hasUses": true,
+                          "type": "a",
+                          "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                          "variables": {
+                            "damage": {
+                              "1": "1d10",
+                              "5": "2d10",
+                              "11": "3d10",
+                              "17": "4d10"
+                            },
+                            "damage-type": "acid",
+                            "save-type": "Dexterity",
+                            "desc": "a spray of corrosive acid"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
@@ -13884,22 +13890,28 @@
                   "name": "Blue",
                   "traits": [
                     {
-                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
                       "name": "Lightning Breath",
-                      "hasUses": true,
-                      "type": "a",
-                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
-                      "variables": {
-                        "damage": {
-                          "1": "1d10",
-                          "5": "2d10",
-                          "11": "3d10",
-                          "17": "4d10"
-                        },
-                        "damage-type": "lightning",
-                        "save-type": "Dexterity",
-                        "desc": "a blast of lightning"
-                      }
+                      "description": "Your breath weapon deals lightning damage and imposes a Dexterity saving throw.",
+                      "actions": [
+                        {
+                          "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                          "name": "Lightning Breath",
+                          "hasUses": true,
+                          "type": "a",
+                          "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                          "variables": {
+                            "damage": {
+                              "1": "1d10",
+                              "5": "2d10",
+                              "11": "3d10",
+                              "17": "4d10"
+                            },
+                            "damage-type": "lightning",
+                            "save-type": "Dexterity",
+                            "desc": "a blast of lightning"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
@@ -13907,22 +13919,28 @@
                   "name": "Green",
                   "traits": [
                     {
-                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
                       "name": "Poison Breath",
-                      "hasUses": true,
-                      "type": "a",
-                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
-                      "variables": {
-                        "damage": {
-                          "1": "1d10",
-                          "5": "2d10",
-                          "11": "3d10",
-                          "17": "4d10"
-                        },
-                        "damage-type": "poison",
-                        "save-type": "Constitution",
-                        "desc": "a cloud of poisonous gas"
-                      }
+                      "description": "Your breath weapon deals poison damage and imposes a Constitution saving throw.",
+                      "actions": [
+                        {
+                          "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                          "name": "Poison Breath",
+                          "hasUses": true,
+                          "type": "a",
+                          "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                          "variables": {
+                            "damage": {
+                              "1": "1d10",
+                              "5": "2d10",
+                              "11": "3d10",
+                              "17": "4d10"
+                            },
+                            "damage-type": "poison",
+                            "save-type": "Constitution",
+                            "desc": "a cloud of poisonous gas"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
@@ -13930,22 +13948,28 @@
                   "name": "Red",
                   "traits": [
                     {
-                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
                       "name": "Fire Breath",
-                      "hasUses": true,
-                      "type": "a",
-                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
-                      "variables": {
-                        "damage": {
-                          "1": "1d10",
-                          "5": "2d10",
-                          "11": "3d10",
-                          "17": "4d10"
-                        },
-                        "damage-type": "fire",
-                        "save-type": "Dexterity",
-                        "desc": "a roaring flame"
-                      }
+                      "description": "Your breath weapon deals fire damage and imposes a Dexterity saving throw.",
+                      "actions": [
+                        {
+                          "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                          "name": "Fire Breath",
+                          "hasUses": true,
+                          "type": "a",
+                          "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                          "variables": {
+                            "damage": {
+                              "1": "1d10",
+                              "5": "2d10",
+                              "11": "3d10",
+                              "17": "4d10"
+                            },
+                            "damage-type": "fire",
+                            "save-type": "Dexterity",
+                            "desc": "a roaring flame"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
@@ -13953,22 +13977,28 @@
                   "name": "White",
                   "traits": [
                     {
-                      "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
                       "name": "Cold Breath",
-                      "hasUses": true,
-                      "type": "a",
-                      "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
-                      "variables": {
-                        "damage": {
-                          "1": "1d10",
-                          "5": "2d10",
-                          "11": "3d10",
-                          "17": "4d10"
-                        },
-                        "damage-type": "cold",
-                        "save-type": "Constitution",
-                        "desc": "a blast of sheer cold"
-                      }
+                      "description": "Your breath weapon deals cold damage and imposes a Constitution saving throw.",
+                      "actions": [
+                        {
+                          "id": "C7E1AB30-B499-4735-A011-81F2DEF0780D",
+                          "name": "Cold Breath",
+                          "hasUses": true,
+                          "type": "a",
+                          "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                          "variables": {
+                            "damage": {
+                              "1": "1d10",
+                              "5": "2d10",
+                              "11": "3d10",
+                              "17": "4d10"
+                            },
+                            "damage-type": "cold",
+                            "save-type": "Constitution",
+                            "desc": "a blast of sheer cold"
+                          }
+                        }
+                      ]
                     }
                   ]
                 }
