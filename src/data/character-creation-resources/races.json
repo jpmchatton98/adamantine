@@ -13744,7 +13744,7 @@
       },
       {
         "name": "Avernese - Tiamat",
-        "description": "Tieflings with a blood tie to Tiamat, also known as Abashian Tieflings, wield demonic aspects in correlation with their infernal magic. They typically have patches of scales in places across their bodies, sharp teeth, and the horns of their draconic ancestors.",
+        "description": "Tieflings with a blood tie to Tiamat, also known as Abashian Tieflings, wield draconic aspects in correlation with their infernal magic. They typically have patches of scales in places across their bodies, sharp teeth, and the horns of their draconic ancestors.",
         "asis": [{ "str": 1 }, { "con": 1 }, { "cha": 1 }],
         "traits": [
           {
