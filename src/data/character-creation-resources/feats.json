@@ -4919,22 +4919,6 @@
     ]
   },
   {
-    "name": "Chains of Hell",
-    "prereq": [
-      {
-        "race": ["tiefling"]
-      }
-    ],
-    "type": "racial",
-    "description": "One of your ancestors was a kyton.  When you hit with an attack, spectral chains manifest, performing one of the following additional effects:<ul><li>The target is pulled 10 feet towards you.</li><li>The target's movement speed is reduced by 10 feet.</li><li>The target cannot take reactions until the start of your next turn.</li></ul>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
-    "uses": {
-      "id": "B3BD14B2-139D-42CE-B312-8930D2EC3236",
-      "type": "derived",
-      "source": "proficiency",
-      "reset": 2
-    }
-  },
-  {
     "name": "Fearless",
     "prereq": [
       {

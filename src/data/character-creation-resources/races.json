@@ -6458,7 +6458,7 @@
           },
           {
             "name": "Razor's Edge",
-            "description": "As a bonus action, you can reshape one or both of your hands into a razor-sharp crystalline blade that you can use as a natural melee weapon. The blades do 1d8 slashing damage and have the finesse and light properties, but while a hand is transformed it cannot precisely manipulate anything, perform the somatic component of spells, or wield other weapons, magic items, or other specialized equipment. Changing your hands back requires a bonus action.",
+            "description": "You can form a limb into a razor-sharp crystalline blade as a bonus action, or convert it back to a normal limb.  While an arm is a blade, you can't hold anything in that hand, and it is a natural weapon that deals piercing damage equal to 1d8 + your Strength or Dexterity modifier on a hit.",
             "actions": [
               {
                 "id": "2E9D98A2-7448-475E-A257-5181995DC440",
@@ -6469,7 +6469,7 @@
                   {
                     "dice": 1,
                     "die": 8,
-                    "type": "slashing",
+                    "type": "piercing",
                     "mod": true,
                     "unarmed": true
                   }
@@ -6836,7 +6836,7 @@
           },
           {
             "name": "Suffocate",
-            "description": "As a bonus action, you create a field of vacuum around yourself with a 10-foot radius for 1 minute. The field is not detectable by mundane senses before it is entered, nor does it register as magical to divination magic. Any poisonous gases, smoke, fog or other gaseous substances are cleared within the area for the duration and take one round after the effect ends to reenter the space. A creature within the field begins suffocating and has disadvantage on any attack rolls, ability checks, or saving throws using Strength, Dexterity, or Intelligence due to the lack of oxygen. Creatures that do not breathe are immune to the effect, and a creature that is holding its breath when it enters the field ignores the effects.",
+            "description": "As a bonus action, you create a field of vacuum around yourself with a 10-foot radius for 1 minute. The field is not detectable by mundane senses before it is entered, nor does it register as magical to divination magic. Any poisonous gases, smoke, fog or other gaseous substances are cleared within the area for the duration and take one round after the effect ends to reenter the space. A creature within the field begins suffocating and has disadvantage on any attack rolls, ability checks, or saving throws using Strength, Dexterity, or Intelligence due to the lack of oxygen. Creatures that do not breathe are immune to the effect, and a creature that is holding its breath when it enters the field ignores the effects.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
             "uses": {
               "id": "3CE2E07F-1072-4E00-9916-1F71F0CB6469",
               "type": "fixed",
@@ -14390,6 +14390,319 @@
         ]
       },
       {
+        "name": "Tarterian",
+        "description": "Carceri, also known as Tartarus, is a great, hellish prison.  Tieflings of Tarterian bloodlines are descended from the demodands, the wardens of this prison.  Their appearance is corpse-like, with loose skin and bloated bodies.",
+        "asis": [{ "con": 2 }, { "int": 1 }],
+        "traits": [
+          {
+            "name": "Demodand Tongue",
+            "description": "You can speak, read, and write Carcerin.",
+            "granted": [{ "type": "language", "options": ["Carcerin"] }]
+          },
+          {
+            "name": "Tarterian Resistance",
+            "description": "You have resistance to force damage.",
+            "granted": [{ "type": "damage-resistance", "options": ["Force"] }]
+          },
+          {
+            "name": "Chains of Hell",
+            "description": "When you hit with an attack, you can cause spectral chains to manifest, binding the limbs of the target and performing one of the following additional effects:<ul><li>The target is pulled 10 feet towards you.</li><li>The target's movement speed is reduced by 10 feet.</li><li>The target cannot take reactions until the start of your next turn.</li></ul>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "B3BD14B2-139D-42CE-B312-8930D2EC3236",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            }
+          },
+          {
+            "name": "Warden",
+            "description": "Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach."
+          }
+        ]
+      },
+      {
+        "name": "Arcanalothian",
+        "description": "Tieflings descended from arcanaloths have a knack for arcane magic and gathering information.  Their appearance is more animalistic, with pointed ears like those of a jackal, short fangs, and small patches of soft fur across their body.",
+        "asis": [{ "cha": 1 }, { "int": 2 }],
+        "traits": [
+          {
+            "name": "Yugoloth Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [{ "type": "language", "options": ["Infernal"] }]
+          },
+          {
+            "name": "Gehennese Resistance",
+            "description": "You have resistance to acid damage.",
+            "granted": [{ "type": "damage-resistance", "options": ["Acid"] }]
+          },
+          {
+            "name": "Information Hoarder",
+            "description": "If you spend at least 1 minute observing an object or creature, you can perfectly recall any observable information about that creature or object point in the future.</p><p>In addition, you have proficiency in Arcana and Investigation.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Arcana", "Investigation"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Arcane Savant",
+            "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
+            "granted": [
+              {
+                "type": "spell",
+                "choices": {
+                  "id": "D152C537-4036-4E15-AFF5-2C686EA73F37",
+                  "type": "spell",
+                  "list": "arcane",
+                  "level": 0,
+                  "ability": "int"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Magical Interference",
+            "description": "When a creature within 30 feet of you casts a spell that involves an attack roll or saving throw, you can use your reaction to make an Arcana check against the creature's spell save DC.  On a successful check, the targets of the creature's spell have advantage on their saving throws, and the creature has disadvantage on its attack rolls that are made as a part of the spell.</p><p>Once you successfully interfere with a creature's spell, you can't do so again until you finish a long rest.",
+            "uses": {
+              "id": "3396AEDE-4AFC-4B6E-9A85-9AFD64EAEF76",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "3396AEDE-4AFC-4B6E-9A85-9AFD64EAEF76",
+                "hasUses": true,
+                "type": "r",
+                "name": "Magical Interference",
+                "description": "When a creature within 30 feet of you casts a spell that involves an attack roll or saving throw, you can use your reaction to make an Arcana check against the creature's spell save DC.  On a successful check, the targets of the creature's spell have advantage on their saving throws, and the creature has disadvantage on its attack rolls that are made as a part of the spell."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Baernolothian",
+        "description": "Tieflings descended from baernoloths have less in common with the other yugoloth-descended tieflings, due to the immensely ancient and Hadean nature of their forebearers.  Their Hadean ancestry steals away their ability to feel emotion, and their skin is a pallid gray.",
+        "asis": [{ "cha": 1 }, { "int": 1 }, { "con": 1 }],
+        "traits": [
+          {
+            "name": "Yugoloth Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [{ "type": "language", "options": ["Infernal"] }]
+          },
+          {
+            "name": "Gehennese Resistance",
+            "description": "You have resistance to necrotic damage.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Necrotic"] }
+            ]
+          },
+          {
+            "name": "Needless",
+            "description": "You do not need to breathe, eat or drink, though you can if you wish to.",
+            "granted": [
+              {
+                "type": "condition-immunity",
+                "options": ["Choking"]
+              }
+            ]
+          },
+          {
+            "name": "Sow Discord",
+            "description": "As an action on your turn, you can implant conflicting thoughts within the mind of a creature within 30 feet of you.  The target must succeed on a Wisdom saving throw (DC = 8 + your Charisma modifier + your proficiency bonus) or be incapacitated. At the end of each of its turns, it takes 1d12 psychic damage, and it can then make another Wisdom saving throw. On a success, this effect ends on the target.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+            "uses": {
+              "id": "DE266732-31F2-4CB8-8B81-088BB4480B0B",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "DE266732-31F2-4CB8-8B81-088BB4480B0B",
+                "hasUses": true,
+                "type": "a",
+                "name": "Sow Discord",
+                "description": "You implant conflicting thoughts within the mind of a creature within 30 feet of you.  The target must succeed on a DC {dc-cha} Wisdom saving throw or be incapacitated. At the end of each of its turns, it takes 1d12 psychic damage, and it can then make another Wisdom saving throw. On a success, this effect ends on the target.",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 12,
+                    "type": "psychic"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Merrenolothian",
+        "description": "Tieflings descended from merrenoloths possess supernaturaly good seafaring abilities, like the yugoloth ferriers of the Styx.  Their appearance is almost skeletal, with curving horns that resemble the hood of a cloak.",
+        "asis": [{ "cha": 1 }, { "dex": 2 }],
+        "traits": [
+          {
+            "name": "Yugoloth Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [{ "type": "language", "options": ["Infernal"] }]
+          },
+          {
+            "name": "Gehennese Resistance",
+            "description": "You have resistance to acid damage.",
+            "granted": [{ "type": "damage-resistance", "options": ["Acid"] }]
+          },
+          {
+            "name": "Amphibious",
+            "description": "You have a swimming speed equal to your walking speed, and you can breathe both air and water.  In addition, your range of vision is doubled underwater.",
+            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+          },
+          {
+            "name": "Drowning Gaze",
+            "description": "As an action, you attempt to fill the lungs of a creature within 30 feet of you with foul water. The target must succeed on a Constitution saving throw (DC = 8 + your Charisma modifier + your proficiency bonus) or take 1d8 acid damage, and on your turn, you can use your action to deal 1d8 acid damage to the target automatically. While the target has the water in its lungs, it is considered to be holding its breath. The target can hold its breath for a number of rounds equal to 1 + its Constitution modifier, then begins choking. The effect ends if you use your action to do anything else or the target moves more than 30 feet away from you or dies. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the effect ends. Creatures that do not breathe or can breathe underwater are immune to the effect.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+            "uses": {
+              "id": "15DF70A4-B617-4CA6-89FB-9085323CAB43",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "15DF70A4-B617-4CA6-89FB-9085323CAB43",
+                "hasUses": true,
+                "type": "a",
+                "name": "Drowning Gaze",
+                "description": "You attempt to fill the lungs of a creature within 30 feet of you with foul water. The target must succeed on a DC {dc-cha} Constitution saving throw or take 1d8 acid damage, and on your turn, you can use your action to deal 1d8 acid damage to the target automatically. While the target has the water in its lungs, it is considered to be holding its breath. The target can hold its breath for a number of rounds equal to 1 + its Constitution modifier, then begins choking. The effect ends if you use your action to do anything else or the target moves more than 30 feet away from you or dies. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the effect ends. Creatures that do not breathe or can breathe underwater are immune to the effect.",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 8,
+                    "type": "cold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Stygian Mariner",
+            "description": "You have proficiency with navigator's tools and water vehicles, and you can't become lost while sailing except by magical means.</p><p>In addition, you are immune to the waters of the River Styx as well as any effect that would steal or modify your memories or detect or read your thoughts.",
+            "granted": [
+              {
+                "type": "tool",
+                "options": ["Navigator's Tools", "Water Vehicles"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oinolothian",
+        "description": "Tieflings descended from oinoloths are infused with disease to their very cores, and spread disease around them whether they want to or not.  They always look sickly, regardless of their overall health.",
+        "asis": [{ "cha": 1 }, { "wis": 2 }],
+        "traits": [
+          {
+            "name": "Yugoloth Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [{ "type": "language", "options": ["Infernal"] }]
+          },
+          {
+            "name": "Gehennese Resistance",
+            "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.  In addition, you are immune to disease.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Poison"] },
+              { "type": "condition-immunity", "options": ["Disease"] },
+              { "type": "condition-advantage", "options": ["Poisoned"] }
+            ]
+          },
+          {
+            "name": "Diseased Rebuke",
+            "description": "When you are hit by a melee attack, you can use your reaction to deal 1d4 necrotic damage to the attacker. You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "B7D0A516-4AEE-44D9-AB27-6C21B1B606D5",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "B7D0A516-4AEE-44D9-AB27-6C21B1B606D5",
+                "hasUses": true,
+                "type": "r",
+                "name": "Diseased Rebuke",
+                "description": "When you are hit by a melee attack, you can deal 1d4 necrotic damage to the attacker."
+              }
+            ]
+          },
+          {
+            "name": "Plaguebringer",
+            "description": "If you force a creature to make a saving throw against an effect that deals necrotic or poison damage, or against a disease, you can force them to make the saving throw with disadvantage.  Once you use this feature, you can't do so again until you finish a long rest.",
+            "uses": {
+              "id": "182B44C2-0F19-4AC4-97BF-C0466B11EB03",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ultrolothian",
+        "description": "Tieflings descended from ultroloths possess some of the abilities of the General, the enigmatic deity of the yugoloths.  Their appearance varies wildly, but their skin is usually a pale shade of green.",
+        "asis": [{ "cha": 1 }, { "int": 1 }, { "str": 1 }],
+        "traits": [
+          {
+            "name": "Yugoloth Tongue",
+            "description": "You can speak, read, and write Infernal.",
+            "granted": [{ "type": "language", "options": ["Infernal"] }]
+          },
+          {
+            "name": "Gehennese Resistance",
+            "description": "You have resistance to acid damage.",
+            "granted": [{ "type": "damage-resistance", "options": ["Acid"] }]
+          },
+          {
+            "name": "Commander's Tongue",
+            "description": "You have proficency in the Deception and Persuasion skills.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Deception", "Persuasion"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Forceful Personality",
+            "description": "You have advantage on saving throws against being charmed or dominated.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": ["Charmed", "Dominated"]
+              }
+            ]
+          },
+          {
+            "name": "Will of the General",
+            "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
+            "choices": {
+              "id": "AD5347FC-8DF0-43C8-B496-E20BFE19F8F3",
+              "type": "exploit",
+              "list": "tactical",
+              "degree": 1,
+              "ability": "int"
+            },
+            "uses": {
+              "id": "0BA26D8F-2858-44E6-9310-C8F0F83FE160",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 1
+            }
+          }
+        ]
+      },
+      {
         "name": "Pazuzian",
         "description": "The indescribably ancient gatekeeper of the Abyss, Pazuzu holds sway over flying and insectoid creatures.  Tieflings of his bloodline can control insects and even fly short distances.  Taller and thinner than most other tieflings, they uniquely possess vestigal wings.",
         "asis": [{ "cha": 2 }, { "dex": 1 }],
@@ -14782,9 +15095,9 @@
         ]
       },
       {
-        "name": "Tarterian",
-        "description": "Tharizdun the Chained God is the first and greatest demon lord.  Wielding tremendous dark power, he created the Abyss out of the Elemental Chaos long ago.  Fearing the danger of his creation, the gods imprisoned him deep within the Abyss, in a nearly empty layer known as Blackhole.  Due to his imprisonment, tieflings that share his bloodline are extraordinarily rare.  They feel the Chained One's madness, and his desire for freedom.",
-        "asis": [{ "dex": 1 }, { "con": 1 }, { "cha": 1 }],
+        "name": "Howling",
+        "description": "Howling tieflings are descended not from the natives of Pandemonium, but from those who have been tainted by its winds.  Their mouths are disproportionally large, often with yellowed, unevenly spaced teeth, and their voices are thundering.",
+        "asis": [{ "con": 2 }, { "wis": 1 }],
         "traits": [
           {
             "name": "Demon Tongue",
@@ -14792,10 +15105,37 @@
             "granted": [{ "type": "language", "options": ["Abyssal"] }]
           },
           {
-            "name": "Abyssal Resistance",
-            "description": "You have resistance to necrotic damage.",
+            "name": "Pandemonian Resistance",
+            "description": "You have resistance to thunder damage.",
+            "granted": [{ "type": "damage-resistance", "options": ["Thunder"] }]
+          },
+          {
+            "name": "Howling Winds",
+            "description": "As a bonus action, you can unleash the howling winds of Pandemonium around yourself with a 10-foot radius for 1 minute. The winds deafen creatures within them, and ranged attacks are made at disadvantage if the target or attacker is within the winds. A creature who ends their turn within the area must succeed on a Wisdom saving throw (DC = 8 + your Wisdom modifier + your proficiency bonus) or suffer a random form of short-term madness until the winds cease.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+            "uses": {
+              "id": "C454B488-6CBD-49F7-8219-5952D3C266CD",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "C454B488-6CBD-49F7-8219-5952D3C266CD",
+                "hasUses": true,
+                "type": "b",
+                "name": "Howling Winds",
+                "description": "You unleash the howling winds of Pandemonium around yourself with a 10-foot radius for 1 minute. The winds deafen creatures within them, and ranged attacks are made at disadvantage if the target or attacker is within the winds. A creature who ends their turn within the area must succeed on a DC {dc-wis} Wisdom saving throw or suffer a random form of short-term madness until the winds cease."
+              }
+            ]
+          },
+          {
+            "name": "Roaring Voice",
+            "description": "You are immune to being silenced.",
             "granted": [
-              { "type": "damage-resistance", "options": ["Necrotic"] }
+              {
+                "type": "condition-immunity",
+                "options": ["Silenced"]
+              }
             ]
           }
         ]
@@ -15105,7 +15445,7 @@
         "traits": [
           {
             "name": "Legacy of War",
-            "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier (your choice) + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
+            "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
             "choices": {
               "id": "2D4F7D02-1DA7-4413-B9A0-E48A857480EC",
               "type": "exploit",
