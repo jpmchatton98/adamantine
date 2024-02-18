@@ -1917,11 +1917,14 @@ export class CharacterSheetService {
       for (let l of choiceEntry?.list ?? []) {
         const spellData = this.dataService.getSpell(l);
         if (spellData.level <= maxSpellLevel || listed.ignoreMaxLevel) {
-          spellList.push({
-            spell: l,
-            ability,
-            source,
-          });
+          const spellbookIds = ['pale-master-grimoire', 'wizard-spellbook'];
+          if (!spellbookIds.includes(listed.id) || !!spellData.ritual) {
+            spellList.push({
+              spell: l,
+              ability,
+              source,
+            });
+          }
         }
       }
     }

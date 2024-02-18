@@ -15324,7 +15324,7 @@
     "description": [
       "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you are immune to force damage."
     ],
-    "lists": ["Arcane", "Psionic"],
+    "lists": ["Arcane", "Psionic", "Occult"],
     "ritual": 0,
     "armor": {
       "bonus": 5
@@ -18773,7 +18773,7 @@
     "description": [
       "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +7 bonus to AC and impose disadvantage on attacks made against you, including against the triggering attack, and you are immune to force damage."
     ],
-    "lists": ["Arcane", "Psionic"],
+    "lists": ["Arcane", "Psionic", "Occult"],
     "ritual": 0,
     "armor": {
       "bonus": 7
@@ -25260,6 +25260,20 @@
       "The target must succeed on a Dexterity saving throw or have the AC bonus offered by its armor reduced by a cumulative 2 until the target takes an action to adjust it. Armor reduced to an AC of 10 falls off entirely until donned again."
     ],
     "lists": ["Arcane", "Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Normalize",
+    "school": "Abjuration",
+    "level": 9,
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": "S, M (a small chain made of enchanted cold iron, worth at least 500 gp per Hit Die of the target)",
+    "duration": "Instantaneous",
+    "description": [
+      "By casting this spell, you can permanently sever a creature from the Weave.  You must be touching an incapacitated creature for the casting of this spell, forcing the target to make a Charisma saving throw.  On a failed save, the target can no longer cast spells.  This effect cannot be reversed by any means short of the wish spell."
+    ],
+    "lists": ["Arcane"],
     "ritual": 0
   }
 ]
