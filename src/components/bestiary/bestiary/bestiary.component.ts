@@ -154,13 +154,14 @@ export class BestiaryComponent implements OnInit {
     });
     if (this.filters.tags.length) {
       this.monsters = this.monsters.filter((m: any) => {
-        if (this.filters.tags.includes('mythic')) {
-          if (m.mythic) {
-            return true;
-          }
-        }
-
-        if (!m.tags && !m.beastType) {
+        if (
+          !m.tags &&
+          !m.beastType &&
+          !m.familiar &&
+          !m.steed &&
+          !m.greatSteed &&
+          !m.mythic
+        ) {
           return false;
         }
 
@@ -187,6 +188,10 @@ export class BestiaryComponent implements OnInit {
         ) {
           return true;
         }
+        if (this.filters.tags.includes('mythic') && m.mythic) {
+          return true;
+        }
+
         return false;
       });
     }
@@ -340,7 +345,7 @@ export class BestiaryComponent implements OnInit {
   }
 
   public formatSizeSlider(sizeId: number): string {
-    return Object.keys(this.sizeIndex).find(
+    return Object.keys(this.sizeIndex ?? {}).find(
       (key) => this.sizeIndex[key] === sizeId
     );
   }
