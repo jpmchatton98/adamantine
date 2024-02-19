@@ -8081,5 +8081,14 @@
     "type": "wand",
     "description": "This wand has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the spell infused in it it. For 1 charge, you cast the spell at its lowest level. You can increase the spell slot level by one for each additional charge you expend (if applicable for the spell). The DC of the spell is crafter's Wand DC.</p><p>The wand doesn't regain charges naturally, but can be recharged.",
     "index": "lesserwand9"
+  },
+  {
+    "name": "Palimpsest Wand",
+    "rarity": 2,
+    "attunement": true,
+    "attunementDesc": "by a spellcaster",
+    "type": "wand",
+    "description": "This hollow crystal wand was crafted as a vessel in which to imprison living spells. The wand has 9 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn.</p><p>You can spend 1 charge to force a charmed or incapacitated living spell within 5 feet to make a Charisma saving throw against your spell save DC. On a failure, the spell becomes trapped within the wand.</p><p>You can spend a number of charges equal to the spell's level to cast a trapped spell, using your spell attack bonus and spell save DC. When you expend the wand's last charge, roll a d20. On a roll of 1, each living spell trapped in the wand escapes.<table><thead><tr><th>Living Spell</th><th>Spells Granted</th></tr></thead><tbody><tr><td>Chaos Ball</td><td>Chromatic Orb</td></tr><tr><td>Chronofog</td><td>Haste, Slow</td></tr><tr><td>Frozen Volley</td><td>Ice Knife, Cloud of Daggers</td></tr><tr><td>Glitterfire</td><td>Faerie Fire, Fireball</td></tr><tr><td>Killing Ward</td><td>Mage Armor, Shield</td></tr><tr><td>Living Blasphemy</td><td>Blight, Unhallow</td></tr><tr><td>Pestilent Wind</td><td>Cloudkill</td></tr><tr><td>Riftblade</td><td>Blade of Disaster</td></tr><tr><td>Roving Hand</td><td>Bigby's Hand</td></tr><tr><td>Splutterflame</td><td>Burning Hands</td></tr><tr><td>Wandering Lightning</td><td>Lightning Bolt</td></tr></tbody></table>",
+    "index": "palimpsestwand"
   }
 ]

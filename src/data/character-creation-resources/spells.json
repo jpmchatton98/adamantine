@@ -20717,16 +20717,300 @@
     "level": 9,
     "castingTime": "1 action",
     "range": "Self (30-foot radius)",
-    "components": "V",
+    "components": "V, S",
     "duration": "Instantaneous",
     "description": [
-      "You attempt to dispel all magical effects and magical items within range, except for those you designate when you cast the spell.",
-      "If a target is an effect, the creator of the effect must make a Charisma saving throw against your spell save DC or be forced to end it.",
-      "If the target is a non-sentient magical item, the holder of the item must make a Charisma saving throw against your spell save DC or the item becomes nonmagical.",
-      "If the target is a sentient magic item, the magic item must make a Charisma saving throw against your spell save DC or it becomes nonmagical and no longer sentient.",
-      "If a magical item targeted by this spell is an artifact, the saving throw is made at advantage.  If you dispel one or more artifacts when you cast this spell, you must make a DC 25 Charisma saving throw or permanently lose the ability to cast spells.  Loss of spellcasting ability in this way cannot be restored by any means short of divine intervention."
+      "You attempt to sunder all active magic in a 30 foot radius centered on yourself. Spells you are concentrating on and magic items you are carrying are unaffected.",
+      "Each spell that is not being concentrated on in the area ends. Each summoned creature in the area disappears. Each nonartifact magic item in the area that no creature is attuned to is destroyed.",
+      "If a spell effect in the area is being concentrated on, the creature concentrating on it must make a Charisma saving throw. On a failed saving throw, the spell ends.",
+      "A creature that is attuned to one or more magic items in the area must make a Charisma saving throw for each of them. On a failed save, the item is destroyed."
     ],
     "lists": ["Arcane"],
+    "ritual": 0
+  },
+  {
+    "name": "Altered Orbs",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S, M (a silver ring)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "For the duration, whenever a creature casts a spell that affects a spherical area centered on a point you can see within range, you can increase or decrease that sphere's radius by 1d4 x 5 feet."
+    ],
+    "lists": ["Arcane", "Psionic", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Arcing Fingertips",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (90-foot cone)",
+    "components": "S, M (a bit of fur and a crystal rod)",
+    "duration": "Instantaneous",
+    "description": [
+      "A bolt of lightning leaps from each of your splayed fingertips. Up to ten creatures in a 90 foot cone must make a Dexterity saving throw.",
+      "A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, you can instead have it target up to 5 creatures each in two 90 foot cones extending from you."
+    ],
+    "lists": ["Arcane", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Celerity",
+    "school": "Transmutation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a collection of myriapod legs)",
+    "duration": "8 hours",
+    "description": [
+      "For the duration, spells you cast with a casting time of 1 action and a range of self can instead be cast with a casting time of 1 bonus action."
+    ],
+    "lists": ["Arcane", "Divine", "Primal", "Psionic", "Melodic", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Cogitation",
+    "school": "Transmutation",
+    "level": 7,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You delve into your mind palace, instantly poring through memories of study and experimentation in minute detail.",
+      "You can immediately replace a number of your prepared spells equal to your spellcasing ability modifier."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, you can use your action to cast a spell this turn as if you had not cast a spell as a bonus action this turn."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0
+  },
+  {
+    "name": "Defense Against Silence",
+    "school": "Abjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "30 feet (5-foot radius)",
+    "components": "S, M (a piece of pottery, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "As part of the casting of this spell, you smash the piece of pottery used as a material component of this spell, creating a zone of magical non-silence in a space you can see within range. For the duration, the area can't be affected by any form of magical silence."
+    ],
+    "lists": ["Arcane", "Divine", "Occult", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Defense Against Oozes and Slimes",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a nacholite crystal)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, a protective barrier envelops you, protecting you against amorphous creatures. Whenever an ooze deals any acid damage to you, that damage is reduced by 5. While you are engulfed or swallowed by an ooze, it is poisoned."
+    ],
+    "lists": ["Arcane", "Primal", "Divine", "Elemental"],
+    "element": "Earth",
+    "ritual": 0
+  },
+  {
+    "name": "Mordenkainen's Faithful Phantoms",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M (a carved cylinder featuring the faces of a celestial, fiend, slaad, and modron)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You sculpt raw magical force into two phantasmal constructs, summoning two Faithful Phantoms to unoccupied spaces within range.",
+      "The phantoms are friendly to you and your companions for the duration, and act on initiative count 0, instead of rolling initiative. they obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to the phantoms, they defend themselves from hostile creatures but otherwise take no actions.",
+      "If your concentration is broken, the phantoms immediately disappear."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0
+  },
+  {
+    "name": "Force Missiles",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A brilliant globe of magical energy darts from your outstretched hand, unerringly striking a target within range.",
+      "The globe deals 11 (2d10) force damage to its target, and half as much force damage to each other creature within 5 feet of it."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the spell creates one more globe for each slot above 4th."
+    ],
+    "lists": ["Arcane", "Elemental"],
+    "element": "Aether",
+    "ritual": 0
+  },
+  {
+    "name": "Ingenious Aegis",
+    "school": "Illusion",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A protective magical force surrounds you. For the duration, you add your Intelligence score to your AC against any attack made by a creature with a lower Intelligence score than you."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Instant Opposition",
+    "school": "Abjuration",
+    "level": 7,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to neutralize a spell as it is cast, meeting it with a tailored blend of opposing cosmic energies; fire with water, order with chaos, etc. The spell caster must succeed on an Intelligence saving throw or have its spell fail.",
+      "If the target fails this saving throw by 5 or more, you can instead have the spell rebound upon its caster. If the spell targets one or more creatures, it instead targets only the spell caster. If the spell targets an area, it instead targets an area centered on the spell caster."
+    ],
+    "lists": ["Arcane", "Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Invisibility to Exotic Ancestries",
+    "school": "Illusion",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You and anything you are wearing or carrying become invisible to humanoid races other than humans, non-drow elves, and dwarves."
+    ],
+    "lists": ["Arcane", "Melodic", "Psionic", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Involuntary Wizardry",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You call forth a magical spasm from a creature you can see within range, forcing it to succeed on a Charisma saving throw or immediately use its highest level unexpended spell slot to cast Magic Missile at that level.",
+      "The missiles produced by it are divided evenly between other creatures within 30 feet of the target, with any extras (those that cannot be divided evenly between creatures within 30 feet of the target) hitting the creature that produced them."
+    ],
+    "lists": ["Arcane", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Lucubration",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You recall a spell of 5th level or below with a casting time greater than 1 action that you cast in the last 8 hours, casting it at its lowest possible level as part of this spell."
+    ],
+    "lists": ["Arcane", "Melodic", "Divine", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Protection from Armored Assailants",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, one willing creature you touch is protected against creatures that are wearing metal armor. Creatures wearing metal armor have disadvantage on attack rolls against the target, and the target can't be grappled or forced to move by them."
+    ],
+    "lists": ["Arcane", "Primal", "Divine", "Occult", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Protection from Avians",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a feather wrapped in rawhide)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, one willing creature you touch is protected against flying creatures. Creatures with a flying speed have disadvantage on attack rolls against the target and cannot gain any benefit from descending towards the target."
+    ],
+    "lists": ["Arcane", "Divine", "Primal", "Elemental"],
+    "element": "Earth",
+    "ritual": 0
+  },
+  {
+    "name": "Protection from Insects and Arachnids",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a preserved butterfly cocoon)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, one willing creature you touch is protected against terrestrial arthropods, such as insects and arachnids. Creatures with exoskeletons have disadvantage on attack rolls against the target and the target has advantage on saving throws against venom injected by them."
+    ],
+    "lists": ["Arcane", "Divine", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Protection from Lycanthropes",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (30 gp worth of powdered moonstone, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, one willing creature you touch is protected against lycanthropes. Creatures afflicted with lycanthropy have disadvantage on attack rolls against the target and the target cannot contract any form of lycanthropy."
+    ],
+    "lists": ["Arcane", "Divine", "Primal", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Protection from Reptiles and Amphibians",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a bit of snakeskin and a dried frog's leg)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, one willing creature you touch is protected against reptiles and amphibians. Reptiles and amphibians have disadvantage on attack rolls against the target and the target has advantage on saving throws against contact poisons produced by them."
+    ],
+    "lists": ["Arcane", "Divine", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Reversed Advance",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (5-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Until the spell ends, a creature that moves within 5 feet of you for the first time on a turn must succeed on a Strength saving throw or be pushed up to 30 feet directly away from you."
+    ],
+    "lists": ["Arcane", "Occult", "Melodic", "Psionic"],
     "ritual": 0
   },
   {
