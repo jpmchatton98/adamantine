@@ -1120,7 +1120,7 @@
     "name": "Arachnen"
   },
   {
-    "description": "Autognomes are mechanical beings built by rock gnomes in their image, usually with a particular purpose in mind. For example, a gnome might build an autognome to be a steadfast colleague or a loyal companion. Sometimes, because of a malfunction or a unique circumstance, an autognome becomes separated from its creator and strikes out on its own.\nAn autognome bears a resemblance to its creator, and most autognomes are programmed to speak and understand Gnomish. The internal components used in an autognome's manufacture can vary wildly; one autognome might have an actual beating heart in its chest cavity, while another might be powered by stardust or intricate clockwork gears.\nRoll on the Autognome History table or choose an entry to determine what event set your auto gnome on the path to adventure. If nothing on the table appeals to you, work with your DM to create an origin story for your autognome.\nLike gnomes, autognomes can live for centuries, up to 500 years.\n<h5>Autognome History</h5>\n<table>\n    <tr>\n        <th>d8</th>\n        <th>Story</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>Your creator gave you autonomy and urged you to follow your dreams.</td>\n    </tr>\n    <tr>\n        <td>2</td>\n        <td>Your creator died, leaving you to fend for yourself.</td>\n    </tr>\n    <tr>\n        <td>3</td>\n        <td>A temporary malfunction caused you to harm your creator, and you fled rather than face reprisal.</td>\n    </tr>\n    <tr>\n        <td>4</td>\n        <td>A glitch caused you to forget your original programming. You don't remember who made you or where you came from.</td>\n    </tr>\n    <tr>\n        <td>5</td>\n        <td>You were stolen from your creator and long to return to them.</td>\n    </tr>\n    <tr>\n        <td>6</td>\n        <td>You didn't like how you were being treated by your creator, so you ran away from home.</td>\n    </tr>\n    <tr>\n        <td>7</td>\n        <td>Your creator built you to complete a special mission.</td>\n    </tr>\n    <tr>\n        <td>8</td>\n        <td>You felt trapped in the role for which you were built and abandoned your creator, determined to find a greater purpose.</td>\n    </tr>\n</table>\n",
+    "description": "Autognomes are mechanical beings built by rock gnomes in their image, usually with a particular purpose in mind. For example, a gnome might build an autognome to be a steadfast colleague or a loyal companion. Sometimes, because of a malfunction or a unique circumstance, an autognome becomes separated from its creator and strikes out on its own.An autognome bears a resemblance to its creator, and most autognomes are programmed to speak and understand Gnomish. The internal components used in an autognome's manufacture can vary wildly; one autognome might have an actual beating heart in its chest cavity, while another might be powered by stardust or intricate clockwork gears.Roll on the Autognome History table or choose an entry to determine what event set your auto gnome on the path to adventure. If nothing on the table appeals to you, work with your DM to create an origin story for your autognome.Like gnomes, autognomes can live for centuries, up to 500 years.<h5>Autognome History</h5><table>    <tr>        <th>d8</th>        <th>Story</th>    </tr>    <tr>        <td>1</td>        <td>Your creator gave you autonomy and urged you to follow your dreams.</td>    </tr>    <tr>        <td>2</td>        <td>Your creator died, leaving you to fend for yourself.</td>    </tr>    <tr>        <td>3</td>        <td>A temporary malfunction caused you to harm your creator, and you fled rather than face reprisal.</td>    </tr>    <tr>        <td>4</td>        <td>A glitch caused you to forget your original programming. You don't remember who made you or where you came from.</td>    </tr>    <tr>        <td>5</td>        <td>You were stolen from your creator and long to return to them.</td>    </tr>    <tr>        <td>6</td>        <td>You didn't like how you were being treated by your creator, so you ran away from home.</td>    </tr>    <tr>        <td>7</td>        <td>Your creator built you to complete a special mission.</td>    </tr>    <tr>        <td>8</td>        <td>You felt trapped in the role for which you were built and abandoned your creator, determined to find a greater purpose.</td>    </tr></table>",
     "asis": [{ "con": 2 }, { "int": 1 }],
     "lifespan": -1,
     "height": [3, 4],
@@ -1552,7 +1552,7 @@
     "name": "Cecaelia"
   },
   {
-    "description": "Changelings can shift their forms with a thought. Many changelings use this gift as a form of artistic and emotional expression. It's also an invaluable tool for grifters, spies, and others who wish to deceive. This leads many people to treat changelings with suspicion.\n",
+    "description": "Changelings can shift their forms with a thought. Many changelings use this gift as a form of artistic and emotional expression. It's also an invaluable tool for grifters, spies, and others who wish to deceive. This leads many people to treat changelings with suspicion.",
     "asis": [
       { "cha": 2 },
       {
@@ -1941,7 +1941,7 @@
     "name": "Demi-Dragon"
   },
   {
-    "description": "<p>Poised between the worlds of the living and the dead, dhampirs retain their grip on life yet are endlessly tested by vicious hungers. Their ties to the undead grant dhampirs a taste of a vampire's deathless prowess in the form of increased speed, darkvision, and a life-draining bite.</p>\n<p>With unique insights into the nature of the undead, many dhampirs become adventurers and monster hunters. Their reasons are often deeply personal. Some seek danger, imagining monsters as personifications of their own hungers. Others pursue revenge against whatever turned them into a dhampir. And still others embrace the solitude of the hunt, striving to distance themselves from those who'd tempt their hunger.</p>\n<h5 id=\"toc0\"><span>Dhampir Hungers</span></h5>\n<p>Every dhampir knows a thirst slaked only by the living. Those who overindulge their thirst risk losing control and forever viewing others as prey. Those who resist might find exceptional ways of controlling their urges or suppress them through constant, molar-grinding restraint. In any case, temptation haunts dhampirs, and circumstances conspire to give them endless reasons to indulge.</p>\n<p>While many dhampirs thirst for blood, your character might otherwise gain sustenance from the living. Roll on or choose an option from the Dhampir Hungers table to determine what tempts your character to feed.</p>\n<table>\n    <tbody>\n    <tr>\n        <th>d6</th>\n        <th>Hunger</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>Blood</td>\n    </tr>\n    <tr>\n        <td>2</td>\n        <td>Flesh or raw meat</td>\n    </tr>\n    <tr>\n        <td>3</td>\n        <td>Cerebral spinal fluid</td>\n    </tr>\n    <tr>\n        <td>4</td>\n        <td>Psychic energy</td>\n    </tr>\n    <tr>\n        <td>5</td>\n        <td>Dreams</td>\n    </tr>\n    <tr>\n        <td>6</td>\n        <td>Life energy</td>\n    </tr>\n    </tbody>\n</table>\n<h5 id=\"toc1\"><span>Dhampir Origins</span></h5>\n<p>Dhampirs often arise from encounters with vampires, but all manner of macabre bargains, necromantic influences, and encounters with mysterious immortals might have transformed your character. The Dhampir Origins table provides suggestions for how your character gained their lineage.</p>\n<table>\n    <tbody>\n    <tr>\n        <th>d8</th>\n        <th>Origin</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>You are the reincarnation of an ancestor who was a vampiric tyrant.</td>\n    </tr>\n    <tr>\n        <td>2</td>\n        <td>Your pact with a predatory deity, fiend, fey, or spirit causes you to share their hunger.</td>\n    </tr>\n    <tr>\n        <td>3</td>\n        <td>You survived being attacked by a vampire but were forever changed.</td>\n    </tr>\n    <tr>\n        <td>4</td>\n        <td>A parasite lives inside you. You indulge its hunger.</td>\n    </tr>\n    <tr>\n        <td>5</td>\n        <td>Tragedy interrupted your transformation into an immortal.</td>\n    </tr>\n    <tr>\n        <td>6</td>\n        <td>You are a diminished form of an otherworldly being. Slaking your hunger hastens your renewal.</td>\n    </tr>\n    <tr>\n        <td>7</td>\n        <td>One of your parents was a vampire.</td>\n    </tr>\n    <tr>\n        <td>8</td>\n        <td>A radical experiment changed your body, making you reliant on others for vital fluids.</td>\n    </tr>\n    </tbody>\n</table>",
+    "description": "<p>Poised between the worlds of the living and the dead, dhampirs retain their grip on life yet are endlessly tested by vicious hungers. Their ties to the undead grant dhampirs a taste of a vampire's deathless prowess in the form of increased speed, darkvision, and a life-draining bite.</p><p>With unique insights into the nature of the undead, many dhampirs become adventurers and monster hunters. Their reasons are often deeply personal. Some seek danger, imagining monsters as personifications of their own hungers. Others pursue revenge against whatever turned them into a dhampir. And still others embrace the solitude of the hunt, striving to distance themselves from those who'd tempt their hunger.</p><h5 id=\"toc0\"><span>Dhampir Hungers</span></h5><p>Every dhampir knows a thirst slaked only by the living. Those who overindulge their thirst risk losing control and forever viewing others as prey. Those who resist might find exceptional ways of controlling their urges or suppress them through constant, molar-grinding restraint. In any case, temptation haunts dhampirs, and circumstances conspire to give them endless reasons to indulge.</p><p>While many dhampirs thirst for blood, your character might otherwise gain sustenance from the living. Roll on or choose an option from the Dhampir Hungers table to determine what tempts your character to feed.</p><table>    <tbody>    <tr>        <th>d6</th>        <th>Hunger</th>    </tr>    <tr>        <td>1</td>        <td>Blood</td>    </tr>    <tr>        <td>2</td>        <td>Flesh or raw meat</td>    </tr>    <tr>        <td>3</td>        <td>Cerebral spinal fluid</td>    </tr>    <tr>        <td>4</td>        <td>Psychic energy</td>    </tr>    <tr>        <td>5</td>        <td>Dreams</td>    </tr>    <tr>        <td>6</td>        <td>Life energy</td>    </tr>    </tbody></table><h5 id=\"toc1\"><span>Dhampir Origins</span></h5><p>Dhampirs often arise from encounters with vampires, but all manner of macabre bargains, necromantic influences, and encounters with mysterious immortals might have transformed your character. The Dhampir Origins table provides suggestions for how your character gained their lineage.</p><table>    <tbody>    <tr>        <th>d8</th>        <th>Origin</th>    </tr>    <tr>        <td>1</td>        <td>You are the reincarnation of an ancestor who was a vampiric tyrant.</td>    </tr>    <tr>        <td>2</td>        <td>Your pact with a predatory deity, fiend, fey, or spirit causes you to share their hunger.</td>    </tr>    <tr>        <td>3</td>        <td>You survived being attacked by a vampire but were forever changed.</td>    </tr>    <tr>        <td>4</td>        <td>A parasite lives inside you. You indulge its hunger.</td>    </tr>    <tr>        <td>5</td>        <td>Tragedy interrupted your transformation into an immortal.</td>    </tr>    <tr>        <td>6</td>        <td>You are a diminished form of an otherworldly being. Slaking your hunger hastens your renewal.</td>    </tr>    <tr>        <td>7</td>        <td>One of your parents was a vampire.</td>    </tr>    <tr>        <td>8</td>        <td>A radical experiment changed your body, making you reliant on others for vital fluids.</td>    </tr>    </tbody></table>",
     "asis": [{ "dex": 1 }, { "con": 1 }, { "cha": 1 }],
     "maturity": 18,
     "lifespan": -1,
@@ -2025,7 +2025,7 @@
       },
       {
         "name": "Lifedrink",
-        "description": "You can drain a creature's life using a natural weapon, which counts as a simple melee weapon with which you are proficient. You can add your Dexterity modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this attack. It deals 1d6 bludgeoning or piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this attack.\n</p>\n<p>When you attack with this and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:</p>\n<ul>\n    <li>You regain hit points equal to the damage dealt by the attack.</li>\n    <li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the mundane damage dealt by the attack.</li>\n</ul>\n<p>You can empower yourself with this attack a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>\n",
+        "description": "You can drain a creature's life using a natural weapon, which counts as a simple melee weapon with which you are proficient. You can add your Dexterity modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this attack. It deals 1d6 bludgeoning or piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this attack.</p><p>When you attack with this and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:</p><ul>    <li>You regain hit points equal to the damage dealt by the attack.</li>    <li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the mundane damage dealt by the attack.</li></ul><p>You can empower yourself with this attack a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>",
         "uses": {
           "id": "6DBAED60-7D7F-4D8B-87E5-ECE2097F4109",
           "type": "derived",
@@ -5815,7 +5815,7 @@
     "name": "Elf"
   },
   {
-    "description": "The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. The first fairies spoke Elvish, Goblin, or Sylvan, and encounters with human visitors prompted many of them to learn Common as well.\n<br><br>Infused with the magic of the Feywild, most fairies look like Small elves with insectile wings, but each fairy has a special physical characteristic that sets the fairy apart. For your fairy, roll on the Fey Characteristics table or choose an option from it. You're also free to come up with your own characteristic if none of the suggestions below fit your character.\n<table>\n<tr>\n<th colspan=\"2\">Fey Characteristics</th>\n</tr>\n<tr>\n<th>d8</th>\n<th>Characteristic</th>\n</tr>\n<tr>\n<td>1</td>\n<td>Your wings are like those of a bird.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>You have shimmering, multicolored skin.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>You have exceptionally large ears.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>A glittering mist constantly surrounds you.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>You have a small spectral horn on your forehead, like a little unicorn horn.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Your legs are insectile.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>You smell like fresh brownies.</td>\n</tr>\n<tr>\n<td>8</td>\n<td>A noticeable, harmless chill surrounds you.</td>\n</tr>\n</table>",
+    "description": "The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. The first fairies spoke Elvish, Goblin, or Sylvan, and encounters with human visitors prompted many of them to learn Common as well.<br><br>Infused with the magic of the Feywild, most fairies look like Small elves with insectile wings, but each fairy has a special physical characteristic that sets the fairy apart. For your fairy, roll on the Fey Characteristics table or choose an option from it. You're also free to come up with your own characteristic if none of the suggestions below fit your character.<table><tr><th colspan=\"2\">Fey Characteristics</th></tr><tr><th>d8</th><th>Characteristic</th></tr><tr><td>1</td><td>Your wings are like those of a bird.</td></tr><tr><td>2</td><td>You have shimmering, multicolored skin.</td></tr><tr><td>3</td><td>You have exceptionally large ears.</td></tr><tr><td>4</td><td>A glittering mist constantly surrounds you.</td></tr><tr><td>5</td><td>You have a small spectral horn on your forehead, like a little unicorn horn.</td></tr><tr><td>6</td><td>Your legs are insectile.</td></tr><tr><td>7</td><td>You smell like fresh brownies.</td></tr><tr><td>8</td><td>A noticeable, harmless chill surrounds you.</td></tr></table>",
     "asis": [{ "cha": 2 }, { "dex": 1 }],
     "maturity": 16,
     "lifespan": 100,
@@ -5944,7 +5944,7 @@
     "name": "Imp"
   },
   {
-    "description": "Firbolgs are fey-oriented half-giants. Their tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.\n",
+    "description": "Firbolgs are fey-oriented half-giants. Their tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.",
     "asis": [{ "wis": 2 }, { "str": 1 }],
     "maturity": 20,
     "lifespan": 500,
@@ -7191,7 +7191,7 @@
     "name": "Gnoll"
   },
   {
-    "description": "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.\n",
+    "description": "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.",
     "asis": [{ "int": 2 }],
     "maturity": 20,
     "lifespan": 350,
@@ -7267,7 +7267,7 @@
     "name": "Gnome"
   },
   {
-    "description": "Giff are tall, broad-shouldered folk with hippo-like features. Some have smooth skin, while others have short bristles on their faces and the tops of their heads. As beings of impressive size and unforgettable appearance, giff are noticed wherever they go.\n",
+    "description": "Giff are tall, broad-shouldered folk with hippo-like features. Some have smooth skin, while others have short bristles on their faces and the tops of their heads. As beings of impressive size and unforgettable appearance, giff are noticed wherever they go.",
     "asis": [{ "str": 2 }, { "dex": 1 }],
     "maturity": 16,
     "lifespan": 70,
@@ -7322,7 +7322,7 @@
     "name": "Giff"
   },
   {
-    "description": "The warlike githyanki and the contemplative githzerai are a sundered people - two cultures that utterly despise one another. The brutal githyanki are trained from birth as warriors, while the githzerai hone their minds to a razor's edge in their fortresses within Limbo. But before there were githyanki or githzerai, these creatures were a single race enslaved by the illithids.\n",
+    "description": "The warlike githyanki and the contemplative githzerai are a sundered people - two cultures that utterly despise one another. The brutal githyanki are trained from birth as warriors, while the githzerai hone their minds to a razor's edge in their fortresses within Limbo. But before there were githyanki or githzerai, these creatures were a single race enslaved by the illithids.",
     "asis": [{ "int": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -7502,7 +7502,7 @@
     "name": "Gith"
   },
   {
-    "description": "Goblins occupy an uneasy place in a dangerous world, and they react by lashing out at any creatures they believe they can bully. Cunning in battle and cruel in victory, goblins are fawning and servile in defeat.\n",
+    "description": "Goblins occupy an uneasy place in a dangerous world, and they react by lashing out at any creatures they believe they can bully. Cunning in battle and cruel in victory, goblins are fawning and servile in defeat.",
     "asis": [{ "dex": 2 }, { "con": 1 }],
     "maturity": 16,
     "lifespan": 60,
@@ -7636,7 +7636,7 @@
     "subraces": [
       {
         "name": "Cloud",
-        "description": "A cloud goliath prefers physical distance from other creatures, and have reputations for paying little heed to the plights of the world.\n",
+        "description": "A cloud goliath prefers physical distance from other creatures, and have reputations for paying little heed to the plights of the world.",
         "asis": [{ "str": 2 }, { "wis": 1 }],
         "traits": [
           {
@@ -7682,7 +7682,7 @@
       },
       {
         "name": "Fire",
-        "description": "As a member of the fire goliath, you find comfort by the heat of the forge or in warm, even volcanic environments.\n",
+        "description": "As a member of the fire goliath, you find comfort by the heat of the forge or in warm, even volcanic environments.",
         "asis": [{ "str": 2 }, { "int": 1 }],
         "traits": [
           {
@@ -7728,7 +7728,7 @@
       },
       {
         "name": "Frost",
-        "description": "Frost goliaths are fierce and hardy in battle, and they take pride in their scars and grisly trophies taken from their fallen enemies, which they fashion into armor, weapons, and jewelry.\n",
+        "description": "Frost goliaths are fierce and hardy in battle, and they take pride in their scars and grisly trophies taken from their fallen enemies, which they fashion into armor, weapons, and jewelry.",
         "asis": [{ "str": 2 }, { "con": 1 }],
         "traits": [
           {
@@ -7770,7 +7770,7 @@
       },
       {
         "name": "Hill",
-        "description": "Hill goliaths have a tendency to doze off in broad daylight atop whatever hill they find themselves on. They are prone to fits of violent destruction, especially when they realize someone has tried to deceive them or make a fool of them.\n",
+        "description": "Hill goliaths have a tendency to doze off in broad daylight atop whatever hill they find themselves on. They are prone to fits of violent destruction, especially when they realize someone has tried to deceive them or make a fool of them.",
         "asis": [{ "str": 2 }, { "con": 1 }],
         "traits": [
           {
@@ -7800,7 +7800,7 @@
       },
       {
         "name": "Stone",
-        "description": "At the highest mountain peaks dwell the reclusive stone goliaths, wandering a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone and give them great physical power. Their hearts are infused with the cold regard of their frigid realm, leaving each goliath with the responsibility to earn a place in the tribe or die trying.\n",
+        "description": "At the highest mountain peaks dwell the reclusive stone goliaths, wandering a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone and give them great physical power. Their hearts are infused with the cold regard of their frigid realm, leaving each goliath with the responsibility to earn a place in the tribe or die trying.",
         "asis": [{ "str": "2" }, { "con": 1 }],
         "traits": [
           {
@@ -7831,7 +7831,7 @@
       },
       {
         "name": "Storm",
-        "description": "Goliaths with storm ancestry believe that storm giants were too proud to willingly create lesser, humanoid offspring and too powerful to be forced to, so they were magically subdued and had their blood stolen.\n",
+        "description": "Goliaths with storm ancestry believe that storm giants were too proud to willingly create lesser, humanoid offspring and too powerful to be forced to, so they were magically subdued and had their blood stolen.",
         "asis": [{ "str": 2 }, { "wis": 1 }],
         "traits": [
           {
@@ -7880,7 +7880,7 @@
       },
       {
         "name": "Golyclops",
-        "description": "Golyclopses are derived from cyclopes. Legend says that cyclopes are derived from a line of giants who had their eyes plucked out by their god, Grolantor, and replaced with one large eye in the center of their forehead.\n",
+        "description": "Golyclopses are derived from cyclopes. Legend says that cyclopes are derived from a line of giants who had their eyes plucked out by their god, Grolantor, and replaced with one large eye in the center of their forehead.",
         "asis": [{ "con": 2 }, { "str": 1 }],
         "traits": [
           {
@@ -7926,7 +7926,7 @@
     "name": "Goliath"
   },
   {
-    "description": "Grung are aggressive froglike humanoids found in rain forests and tropical jungles. They are fiercely territorial and see themselves as superior to most other creatures.\n",
+    "description": "Grung are aggressive froglike humanoids found in rain forests and tropical jungles. They are fiercely territorial and see themselves as superior to most other creatures.",
     "asis": [{ "dex": 2 }, { "con": 1 }],
     "maturity": 5,
     "lifespan": 50,
@@ -8034,7 +8034,7 @@
     "name": "Bullywug"
   },
   {
-    "description": "Hadozees are people with simian features that long ago adapted to live among the tall trees of their home world. They are natural climbers, with feet as dexterous as their hands, even to the extent of having opposable thumbs. Membranes of skin hang loosely from their arms and legs. When stretched taut, these membranes enable a hadozee to glide.\n<br><br>The first hadozees were hunted by large natural predators. To survive in this hostile environment, they developed an instinctual sense of community. Today, that same instinct compels many hadozees to cultivate friendships, knowing there is safety in numbers. They are particularly fond of sailing, and many crews on the seas are full of hadozee.\n",
+    "description": "Hadozees are people with simian features that long ago adapted to live among the tall trees of their home world. They are natural climbers, with feet as dexterous as their hands, even to the extent of having opposable thumbs. Membranes of skin hang loosely from their arms and legs. When stretched taut, these membranes enable a hadozee to glide.<br><br>The first hadozees were hunted by large natural predators. To survive in this hostile environment, they developed an instinctual sense of community. Today, that same instinct compels many hadozees to cultivate friendships, knowing there is safety in numbers. They are particularly fond of sailing, and many crews on the seas are full of hadozee.",
     "asis": [{ "str": 1 }, { "dex": 1 }, { "wis": 1 }],
     "maturity": 18,
     "lifespan": 110,
@@ -8092,7 +8092,7 @@
     "name": "Hadozee"
   },
   {
-    "description": "Harengons originated in the Feywild, where they spoke Sylvan and embodied the spirit of freedom and travel. In time, these rabbitfolk hopped into other worlds, bringing the fey realm's exuberance with them and learning new languages as they went.\n<br><br>Harengons are bipedal, with the characteristic long feet of the rabbits they resemble and fur in a variety of colors. They share the keen senses and powerful legs of leporine creatures and are full of energy, like a wound-up spring. Harengons are blessed with a little fey luck, and they often find themselves a few fortunate feet away from dangers during adventures.\n",
+    "description": "Harengons originated in the Feywild, where they spoke Sylvan and embodied the spirit of freedom and travel. In time, these rabbitfolk hopped into other worlds, bringing the fey realm's exuberance with them and learning new languages as they went.<br><br>Harengons are bipedal, with the characteristic long feet of the rabbits they resemble and fur in a variety of colors. They share the keen senses and powerful legs of leporine creatures and are full of energy, like a wound-up spring. Harengons are blessed with a little fey luck, and they often find themselves a few fortunate feet away from dangers during adventures.",
     "asis": [{ "dex": 2 }, { "wis": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -8349,7 +8349,7 @@
     "name": "Half-Dwarf"
   },
   {
-    "description": "Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves.\n",
+    "description": "Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves.",
     "asis": [
       { "cha": 2 },
       {
@@ -8796,7 +8796,7 @@
     "name": "Half-Elf"
   },
   {
-    "description": "When alliances between humans and orcs are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.\n",
+    "description": "When alliances between humans and orcs are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.",
     "asis": [{ "str": 2 }, { "con": 1 }],
     "maturity": 18,
     "lifespan": 75,
@@ -8843,7 +8843,7 @@
     "name": "Half-Orc"
   },
   {
-    "description": "The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies. Others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. Halflings work readily with others, and they are loyal to their friends, whether halfling or otherwise. They can display remarkable ferocity when their friends, families, or communities are threatened.\n",
+    "description": "The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies. Others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. Halflings work readily with others, and they are loyal to their friends, whether halfling or otherwise. They can display remarkable ferocity when their friends, families, or communities are threatened.",
     "asis": [{ "dex": 2 }],
     "maturity": 18,
     "lifespan": 120,
@@ -9087,7 +9087,7 @@
     "name": "Hexblood"
   },
   {
-    "description": "War is the lifeblood of hobgoblins. Its glories are the dreams that inspire them. Its horrors don't feature in their nightmares. Cowardice is more terrible to hobgoblins than dying, for they carry their living acts into the afterlife. A hero in death becomes a hero eternal.\n",
+    "description": "War is the lifeblood of hobgoblins. Its glories are the dreams that inspire them. Its horrors don't feature in their nightmares. Cowardice is more terrible to hobgoblins than dying, for they carry their living acts into the afterlife. A hero in death becomes a hero eternal.",
     "asis": [{ "con": 2 }, { "int": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -9152,7 +9152,7 @@
     "name": "Hobgoblin"
   },
   {
-    "description": "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.\n",
+    "description": "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
     "asis": [],
     "maturity": 18,
     "lifespan": 100,
@@ -9543,7 +9543,7 @@
     "name": "Human"
   },
   {
-    "description": "Extraplanar invaders with heads resembling cephalopods, illithids are more accurately the consciousness borrowing the flesh of others, as they are created through use of a tadpole that destroys a victim's mind and changes their body to match the hive.  Illithid adventurers are those whose ceremorphosis went wrong, causing them to remain in control.  <h5 id=\"toc0\"><span>Cereomorphosis Fault</span></h5>\n<p>During cereomorphosis, something went wrong which caused your body to be transformed, but your mind to remain intact. While you feel the pull of the elder brain, you are in no way bound by it. However, the mystery of what exactly caused this to happen remains. Roll on or choose an option from the Cereomorphosis Faults table to determine what allowed you to remain free.</p>\n<table>\n    <tbody>\n    <tr>\n        <th>d6</th>\n        <th>Fault</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>Your will was powerful enough to overpower the control. What caused this to be the case? Are there any other side effects of such a powerful will?</td>\n    </tr>\n    <tr>\n        <td>2</td>\n        <td>A god from above or below intervened. Do they demand your servitude? What is your role?</td>\n    </tr>\n    <tr>\n        <td>3</td>\n        <td>You made a contract with an otherworldly being. Who did you bargain with? What was your end of the deal?</td>\n    </tr>\n    <tr>\n        <td>4</td>\n        <td>Magic was used to attempt to stop or reverse it, but it didn't work completely. Who did the magic? Why didn't it work?</td>\n    </tr>\n    <tr>\n        <td>5</td>\n        <td>Another being already holds stake in your mind. Who is it? Are you truly free?</td>\n    </tr>\n    <tr>\n        <td>6</td>\n        <td>There was simply a random fluke, and your tadpole failed to succeed. Why was your tadpole weakened? Does it still live?</td>\n    </tr>\n    </tbody>\n</table>",
+    "description": "Extraplanar invaders with heads resembling cephalopods, illithids are more accurately the consciousness borrowing the flesh of others, as they are created through use of a tadpole that destroys a victim's mind and changes their body to match the hive.  Illithid adventurers are those whose ceremorphosis went wrong, causing them to remain in control.  <h5 id=\"toc0\"><span>Cereomorphosis Fault</span></h5><p>During cereomorphosis, something went wrong which caused your body to be transformed, but your mind to remain intact. While you feel the pull of the elder brain, you are in no way bound by it. However, the mystery of what exactly caused this to happen remains. Roll on or choose an option from the Cereomorphosis Faults table to determine what allowed you to remain free.</p><table>    <tbody>    <tr>        <th>d6</th>        <th>Fault</th>    </tr>    <tr>        <td>1</td>        <td>Your will was powerful enough to overpower the control. What caused this to be the case? Are there any other side effects of such a powerful will?</td>    </tr>    <tr>        <td>2</td>        <td>A god from above or below intervened. Do they demand your servitude? What is your role?</td>    </tr>    <tr>        <td>3</td>        <td>You made a contract with an otherworldly being. Who did you bargain with? What was your end of the deal?</td>    </tr>    <tr>        <td>4</td>        <td>Magic was used to attempt to stop or reverse it, but it didn't work completely. Who did the magic? Why didn't it work?</td>    </tr>    <tr>        <td>5</td>        <td>Another being already holds stake in your mind. Who is it? Are you truly free?</td>    </tr>    <tr>        <td>6</td>        <td>There was simply a random fluke, and your tadpole failed to succeed. Why was your tadpole weakened? Does it still live?</td>    </tr>    </tbody></table>",
     "asis": [{ "int": 2 }, { "wis": 1 }],
     "lifespan": 135,
     "height": [3, 7],
@@ -9635,7 +9635,7 @@
       },
       {
         "name": "Illithid Psionics",
-        "description": "You know the\n    Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the\n    Command spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the\n    Detect Thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.\n</p>\n<p>Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.</p>\n",
+        "description": "You know the    Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the    Command spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the    Detect Thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.</p><p>Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.</p>",
         "granted": [
           { "type": "spell", "options": ["Mage Hand"], "ability": "int" },
           {
@@ -9778,7 +9778,7 @@
     "name": "Ivathi"
   },
   {
-    "description": "The kalashtar are a compound race created from the union of humanity and renegade spirits from the plane of dreams - spirits called quori. Kalashtar are often seen as wise, spiritual people with great compassion for others. But there is an unmistakable alien quality to the kalashtar, as they are haunted by the conflicts of their otherworldly spirits.\n",
+    "description": "The kalashtar are a compound race created from the union of humanity and renegade spirits from the plane of dreams - spirits called quori. Kalashtar are often seen as wise, spiritual people with great compassion for others. But there is an unmistakable alien quality to the kalashtar, as they are haunted by the conflicts of their otherworldly spirits.",
     "asis": [{ "wis": 2 }, { "cha": 1 }],
     "lifespan": 100,
     "height": [5, 6],
@@ -9823,7 +9823,7 @@
     "name": "Kalashtar"
   },
   {
-    "description": "Kender are diminutive Humanoids that look like humans with pointed ears and diverse appearances. Kender have a supernatural curiosity that drives them on to adventures big and small. This curiosity is said to be connected to the whimsical magic of the Feywild, that some believe kender have a high affinity for. Due to their curiosity, many kender have found themselves falling through gates and portals to other planes and worlds.\n<br><br>Unknown to most mortals, a magical phenomenon surrounds a kender. Spurred by their curiosity and love for trinkets, curios, and keepsakes, a kender's pouches or pockets will be magically filled with these objects. No one knows where these objects come from, not even the kender. This has led many kender to be mislabeled as thieves when they fish these items out of their pockets.\n",
+    "description": "Kender are diminutive Humanoids that look like humans with pointed ears and diverse appearances. Kender have a supernatural curiosity that drives them on to adventures big and small. This curiosity is said to be connected to the whimsical magic of the Feywild, that some believe kender have a high affinity for. Due to their curiosity, many kender have found themselves falling through gates and portals to other planes and worlds.<br><br>Unknown to most mortals, a magical phenomenon surrounds a kender. Spurred by their curiosity and love for trinkets, curios, and keepsakes, a kender's pouches or pockets will be magically filled with these objects. No one knows where these objects come from, not even the kender. This has led many kender to be mislabeled as thieves when they fish these items out of their pockets.",
     "asis": [{ "dex": 1 }, { "int": 1 }, { "cha": 1 }],
     "maturity": 20,
     "lifespan": 120,
@@ -9992,7 +9992,7 @@
     "name": "Kenku"
   },
   {
-    "description": "The khenra are tall and lean, with graceful bodies and heads that strongly resemble jackals. Their snouts are long and sharp, and their angular ears rise straight above their heads. Their bodies are covered in dark, sleek hair that ranges from the brown of the desert sands to ebony black. Despite their sharp teeth, they consider biting to be an uncouth and unworthy combat tactic.\n<br><br>Nearly every khenra is born a fraternal or identical twin, and a pair of khenra twins forms an extremely close emotional bond unknown to most other peoples. The death of one twin in training or the trials causes a tremendous shock to the survivor, who typically grows more aggressive and foolhardy in battle. The rare khenra who are born without twins are believed to have killed their siblings in the womb, and are thus viewed as natural-born initiates.\n",
+    "description": "The khenra are tall and lean, with graceful bodies and heads that strongly resemble jackals. Their snouts are long and sharp, and their angular ears rise straight above their heads. Their bodies are covered in dark, sleek hair that ranges from the brown of the desert sands to ebony black. Despite their sharp teeth, they consider biting to be an uncouth and unworthy combat tactic.<br><br>Nearly every khenra is born a fraternal or identical twin, and a pair of khenra twins forms an extremely close emotional bond unknown to most other peoples. The death of one twin in training or the trials causes a tremendous shock to the survivor, who typically grows more aggressive and foolhardy in battle. The rare khenra who are born without twins are believed to have killed their siblings in the womb, and are thus viewed as natural-born initiates.",
     "asis": [{ "dex": 2 }, { "str": 1 }],
     "maturity": 16,
     "lifespan": 60,
@@ -10046,7 +10046,7 @@
     "name": "Khenra"
   },
   {
-    "description": "Kobolds are often dismissed as cowardly, foolish, and weak, but these little reptilian creatures actually have a strong social structure that stresses devotion to the tribe, are clever with their hands, and viciously work together in order to overcome their physical limitations.\n",
+    "description": "Kobolds are often dismissed as cowardly, foolish, and weak, but these little reptilian creatures actually have a strong social structure that stresses devotion to the tribe, are clever with their hands, and viciously work together in order to overcome their physical limitations.",
     "asis": [{ "dex": 2 }, { "cha": 1 }],
     "maturity": 10,
     "lifespan": 120,
@@ -10312,7 +10312,7 @@
     "name": "Koradi"
   },
   {
-    "description": "Prides of these nomadic, lion-like humanoids rarely interact with other peoples, having all they need in their shimmering homeland and knowing the treachery of strangers. Still, some leonin wonder what lies beyond their valley's border mountains and seek to test themselves in a wider world.\n",
+    "description": "Prides of these nomadic, lion-like humanoids rarely interact with other peoples, having all they need in their shimmering homeland and knowing the treachery of strangers. Still, some leonin wonder what lies beyond their valley's border mountains and seek to test themselves in a wider world.",
     "asis": [{ "con": 2 }, { "str": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -10616,7 +10616,7 @@
     "name": "Leshy"
   },
   {
-    "description": "Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.\n",
+    "description": "Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.",
     "asis": [{ "con": 2 }],
     "maturity": 10,
     "lifespan": 60,
@@ -10693,7 +10693,7 @@
     "subraces": [
       {
         "name": "Chameleonic",
-        "description": "Chameleonic lizardfolk are smaller, frailer lizardfolk with scales that they can change the colors of to blend into their environments.\n",
+        "description": "Chameleonic lizardfolk are smaller, frailer lizardfolk with scales that they can change the colors of to blend into their environments.",
         "asis": [{ "dex": 1 }],
         "traits": [
           {
@@ -10712,7 +10712,7 @@
       },
       {
         "name": "Crocodilian",
-        "description": "Larger lizardfolk with long, slender jaws that can crush steel, these lizardfolk are less clever, but are useful for their incredible strength.\n",
+        "description": "Larger lizardfolk with long, slender jaws that can crush steel, these lizardfolk are less clever, but are useful for their incredible strength.",
         "asis": [{ "str": 1 }],
         "traits": [
           {
@@ -10744,7 +10744,7 @@
       },
       {
         "name": "Geckkota",
-        "description": "Geckkota lizardfolk are particularly small, and have pads on their hands and feet that allow them to climb walls.\n",
+        "description": "Geckkota lizardfolk are particularly small, and have pads on their hands and feet that allow them to climb walls.",
         "asis": [{ "dex": 1 }],
         "traits": [
           {
@@ -10756,7 +10756,7 @@
       },
       {
         "name": "Monitor",
-        "description": "The most common type of lizardfolk, monitor lizardfolk are little more than tribal barbarians who have a penchant for forging weapons from the bones of their fallen enemies.\n",
+        "description": "The most common type of lizardfolk, monitor lizardfolk are little more than tribal barbarians who have a penchant for forging weapons from the bones of their fallen enemies.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -10786,7 +10786,7 @@
       },
       {
         "name": "Razortail",
-        "description": "Many reptiles derive their body warmth and energy from the sun, but the razortail lizardfolk are fueled by an inner fire of zeal. Open with their emotions, razortail lizardfolk can be hot-tempered, but they are also quick to their hissing laughter, and they easily form close bonds of friendship. They are fierce warriors and passionate advocates for their guilds and causes.\n",
+        "description": "Many reptiles derive their body warmth and energy from the sun, but the razortail lizardfolk are fueled by an inner fire of zeal. Open with their emotions, razortail lizardfolk can be hot-tempered, but they are also quick to their hissing laughter, and they easily form close bonds of friendship. They are fierce warriors and passionate advocates for their guilds and causes.",
         "asis": [{ "str": 1 }],
         "traits": [
           {
@@ -10822,7 +10822,7 @@
     "name": "Lizardfolk"
   },
   {
-    "description": "These resilient and proud fish-folk have endured war, slavery, and mistreatment at the hands of other aquatic creatures. They dwell in submerged tribal communities along seacoasts, and hunt both above and below the water.\n",
+    "description": "These resilient and proud fish-folk have endured war, slavery, and mistreatment at the hands of other aquatic creatures. They dwell in submerged tribal communities along seacoasts, and hunt both above and below the water.",
     "asis": [{ "str": 2 }, { "dex": 1 }],
     "maturity": 10,
     "lifespan": 80,
@@ -10877,7 +10877,7 @@
     "name": "Locathah"
   },
   {
-    "description": "Loxodons are often oasis of calm. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, &quot;There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.&quot;\n",
+    "description": "Loxodons are often oasis of calm. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, &quot;There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.&quot;",
     "asis": [{ "con": 2 }],
     "maturity": 20,
     "lifespan": 450,
@@ -10917,7 +10917,7 @@
     "subraces": [
       {
         "name": "Elephanti",
-        "description": "The smaller elephanti loxodon are the more common variety, and are serene and wise.\n",
+        "description": "The smaller elephanti loxodon are the more common variety, and are serene and wise.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -10934,7 +10934,7 @@
       },
       {
         "name": "Mammuthus",
-        "description": "The larger cousins of elephanti loxodon, mammuthus loxodon are less serene, but are far stronger.\n",
+        "description": "The larger cousins of elephanti loxodon, mammuthus loxodon are less serene, but are far stronger.",
         "asis": [{ "str": 1 }],
         "traits": [
           {
@@ -11202,7 +11202,7 @@
     "name": "Merfolk"
   },
   {
-    "description": "Minotaurs are barrel-chested humanoids with heads resembling those of large land mammals, usually bulls, but they can also be those of various ruminants including deer, elk, moose, caribou, antelopes, bison, or even giraffes. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.\n",
+    "description": "Minotaurs are barrel-chested humanoids with heads resembling those of large land mammals, usually bulls, but they can also be those of various ruminants including deer, elk, moose, caribou, antelopes, bison, or even giraffes. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.",
     "asis": [{ "str": 1 }, { "wis": 1 }],
     "maturity": 18,
     "lifespan": 200,
@@ -11388,7 +11388,7 @@
     "name": "Minotaur"
   },
   {
-    "description": "The life of the Mousefolk is one spent close to the ground.  With no great empires or kingdoms to call home, the Mousefolk spend their lives carving a place for themselves in the cities of the larger races or in the untamed wilds.  They form tight-knit communities where every member is expected to contribute to the success of the whole.  Some Mousefolk study a trade skill to support their families, while others use their natural agility and intellect for contract services.\n",
+    "description": "The life of the Mousefolk is one spent close to the ground.  With no great empires or kingdoms to call home, the Mousefolk spend their lives carving a place for themselves in the cities of the larger races or in the untamed wilds.  They form tight-knit communities where every member is expected to contribute to the success of the whole.  Some Mousefolk study a trade skill to support their families, while others use their natural agility and intellect for contract services.",
     "asis": [{ "dex": 2 }],
     "maturity": 5,
     "lifespan": 40,
@@ -11736,7 +11736,7 @@
     "name": "Lesser Giant"
   },
   {
-    "description": "Savage and fearless, orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.\n",
+    "description": "Savage and fearless, orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.",
     "asis": [{ "str": 2 }, { "con": 1 }],
     "maturity": 18,
     "lifespan": 75,
@@ -11862,7 +11862,7 @@
     "name": "Nocturne"
   },
   {
-    "description": "Historically solitary and primitive in nature, panserbjorn have, under recent leadership, begun forming increasingly larger communities. This burgeoning civilisation has begun adopting social norms and morals much closer to those found within 'civilised' cultures. Indeed, magical universities now include panserbjorn amongst their alumni, and remote mountain-top temples highly prize these bear-people as monks and clerics. Even the more solitary panserbjorn are sought after as guides for trading caravans or adventurers delving into the tundra.\n",
+    "description": "Historically solitary and primitive in nature, panserbjorn have, under recent leadership, begun forming increasingly larger communities. This burgeoning civilisation has begun adopting social norms and morals much closer to those found within 'civilised' cultures. Indeed, magical universities now include panserbjorn amongst their alumni, and remote mountain-top temples highly prize these bear-people as monks and clerics. Even the more solitary panserbjorn are sought after as guides for trading caravans or adventurers delving into the tundra.",
     "asis": [{ "str": 1 }, { "con": 1 }],
     "maturity": 18,
     "lifespan": 80,
@@ -12075,7 +12075,7 @@
     "name": "Panserbjorn"
   },
   {
-    "description": "Plasmoids are amorphous beings with no typical shape. In the presence of other folk, they often adopt a similar form, but there's little chance of mistaking a plasmoid for anything else. They consume food by osmosis, the way an amoeba does, and excrete waste through tiny pores. They breathe by absorbing oxygen through another set of pores,and their limbs are strong and flexible enough to grasp and manipulate weapons and tools. Although most plasmoids are translucent gray, they can alter their color and translucence by absorbing dyes through their pores.\n",
+    "description": "Plasmoids are amorphous beings with no typical shape. In the presence of other folk, they often adopt a similar form, but there's little chance of mistaking a plasmoid for anything else. They consume food by osmosis, the way an amoeba does, and excrete waste through tiny pores. They breathe by absorbing oxygen through another set of pores,and their limbs are strong and flexible enough to grasp and manipulate weapons and tools. Although most plasmoids are translucent gray, they can alter their color and translucence by absorbing dyes through their pores.",
     "asis": [{ "con": 2 }, { "dex": 1 }],
     "lifespan": 100,
     "height": [4, 6],
@@ -12119,7 +12119,7 @@
     "name": "Plasmoid"
   },
   {
-    "description": "Within rocky coves and coastal inlets, praedaren build their dens. Atop the blood-soaked docks these creatures call home, carcasses of great sea monsters are hoisted by net and harpoon, and the stench of iron and salt permeates the air. Longshoremen work tirelessly to load and unload their vessels, harvest the remains of slain beasts, and repair or dismantle ships that have been salvaged or captured by competing fleets.\n<br><br>These lands are barren and bleak, and largely inhospitable. As a result, the praedaren repurpose much of that they scavenge into their infrastructure. In this wooden, rusting bricolage, one might find any number of foreign ships repurposed for a home, archways carved from monstrous jawbones, or tattered sails strung up for some protection against the elements.\n",
+    "description": "Within rocky coves and coastal inlets, praedaren build their dens. Atop the blood-soaked docks these creatures call home, carcasses of great sea monsters are hoisted by net and harpoon, and the stench of iron and salt permeates the air. Longshoremen work tirelessly to load and unload their vessels, harvest the remains of slain beasts, and repair or dismantle ships that have been salvaged or captured by competing fleets.<br><br>These lands are barren and bleak, and largely inhospitable. As a result, the praedaren repurpose much of that they scavenge into their infrastructure. In this wooden, rusting bricolage, one might find any number of foreign ships repurposed for a home, archways carved from monstrous jawbones, or tattered sails strung up for some protection against the elements.",
     "asis": [{ "str": 2 }],
     "maturity": 18,
     "lifespan": 300,
@@ -12187,7 +12187,7 @@
     "subraces": [
       {
         "name": "Carver",
-        "description": "Carvers are most notably defined by their blade-tipped tail, which is twice the length of their entire body. As a carver, you will use your tail masterfully both in combat as a weapon to flay scale from flesh, and out of combat to cut through water at remarkable speeds.\n",
+        "description": "Carvers are most notably defined by their blade-tipped tail, which is twice the length of their entire body. As a carver, you will use your tail masterfully both in combat as a weapon to flay scale from flesh, and out of combat to cut through water at remarkable speeds.",
         "asis": [{ "dex": 1 }],
         "traits": [
           {
@@ -12240,7 +12240,7 @@
       },
       {
         "name": "Hauler",
-        "description": "As a hauler, your responsibilities often involve the protection and transportation of important objects. Haulers are the largest of all the praedaren subraces. They have huge bellies that are surrounded by thick layers of fat. They use their large stomach and wide gaping mouths to swallow precious loot and store it for safe keeping. They've also been been known to repair metal objects using a salivary gland unique to their kind.\n",
+        "description": "As a hauler, your responsibilities often involve the protection and transportation of important objects. Haulers are the largest of all the praedaren subraces. They have huge bellies that are surrounded by thick layers of fat. They use their large stomach and wide gaping mouths to swallow precious loot and store it for safe keeping. They've also been been known to repair metal objects using a salivary gland unique to their kind.",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -12281,7 +12281,7 @@
       },
       {
         "name": "Looter",
-        "description": "Looters are much smaller than the other praedaren bloodlines. They utilize their size to maneuver through the tight confines present in shipwrecks and undersea caverns, where they're often tasked with retrieving treasure from. Besides their small size, looters also have protruding nostrils, sunken eyes, and a menacing grin, all of which contribute to them occasionally being mistaken as a goblinoid.\n",
+        "description": "Looters are much smaller than the other praedaren bloodlines. They utilize their size to maneuver through the tight confines present in shipwrecks and undersea caverns, where they're often tasked with retrieving treasure from. Besides their small size, looters also have protruding nostrils, sunken eyes, and a menacing grin, all of which contribute to them occasionally being mistaken as a goblinoid.",
         "asis": [{ "dex": 1 }],
         "traits": [
           {
@@ -12303,7 +12303,7 @@
       },
       {
         "name": "Seeker",
-        "description": "This subset of praedaren have a distinguishing head shaped like that of a hammer. Seekers have retained much of their ancestor's sensory capabilities, and because of their usefulness in finding hidden treasures, they are treated like kings by their crew mates.\n",
+        "description": "This subset of praedaren have a distinguishing head shaped like that of a hammer. Seekers have retained much of their ancestor's sensory capabilities, and because of their usefulness in finding hidden treasures, they are treated like kings by their crew mates.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -12318,7 +12318,7 @@
       },
       {
         "name": "Sinker",
-        "description": "Known for their superior jaw strength, muscular build, and all around combat prowess, praedaren of the sinker type are considered the most fearsome foe to have on the sea. Sinkers get their name from their ability to rip holes in the haul of a ship using nothing but their own teeth.\n",
+        "description": "Known for their superior jaw strength, muscular build, and all around combat prowess, praedaren of the sinker type are considered the most fearsome foe to have on the sea. Sinkers get their name from their ability to rip holes in the haul of a ship using nothing but their own teeth.",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -12467,7 +12467,7 @@
     "name": "Quarian"
   },
   {
-    "description": "<p>Death isn't always the end. The reborn exemplify this, being individuals who have died yet, somehow, still live. Some reborn exhibit the scars of fatal ends, their ashen flesh or bloodless veins making it clear that they've been touched by death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own.</p>\n<h5 id=\"toc0\"><span>Faded Memories</span></h5>\n<p>Reborn suffer from some manner of discontinuity, an interruption of their lives or physical state that their minds are ill equipped to deal with. Their memories of events before this interruption are often vague or absent. Occasionally, the most unexpected experiences might cause sensations or visions of the past to come rushing back.</p>\n<p>Rather than sleeping, reborn regularly sit and dwell on the past, hoping for some revelation of what came before. Most of the time, these are dark, silent stretches. Occasionally, though, in a moment of peace, stress, or excitement, a reborn gains a glimpse of what came before. When you desire to have such a dreamlike vision, roll on the Lost Memories table to inspire its details.</p>\n<table>\n    <tbody>\n    <tr>\n        <th colspan=\"2\">Lost Memories</th>\n    </tr>\n    <tr>\n        <th>d8</th>\n        <th>Memory</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>You recall a physically painful moment. What mark or scar on your body does it relate to?</td>\n    </tr>\n    <tr>\n        <td>2</td>\n        <td>A memory brings tears to your eyes. Is it a bitter or cheerful memory? Does recalling it make you feel the same way?</td>\n    </tr>\n    <tr>\n        <td>3</td>\n        <td>You recall a childhood memory. What about that event or who you were still influences you?</td>\n    </tr>\n    <tr>\n        <td>4</td>\n        <td>A memory brings with it the voice of someone once close to you. How do they advise you?</td>\n    </tr>\n    <tr>\n        <td>5</td>\n        <td>You recall enjoying something that you can't stand doing now. What is it? Why don't you like it now?</td>\n    </tr>\n    <tr>\n        <td>6</td>\n        <td>A memory carries a vivid smell or sensation. What are you going to do to recreate that experience?</td>\n    </tr>\n    </tbody>\n</table>\n<h5 id=\"toc1\"><span>Reborn Origins</span></h5>\n<p>Reborn might originate from circumstances similar to those of various undead or constructs. The Reborn Origins table provides suggestions for how your character became reborn.</p>\n<table>\n    <tbody>\n    <tr>\n        <th colspan=\"2\">Reborn Origins</th>\n    </tr>\n    <tr>\n        <th>d10</th>\n        <th>Origins</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>You were magically resurrected but something went wrong.</td>\n    </tr>\n    <tr>\n        <td>2</td>\n        <td>Stitches bind your body's mismatched pieces, and your memories come from multiple different lives.</td>\n    </tr>\n    <tr>\n        <td>3</td>\n        <td>After clawing free from your grave, you realized you have no memories except for a single name.</td>\n    </tr>\n    <tr>\n        <td>4</td>\n        <td>You were a necromancer's undead servant for years. One day, your consciousness returned.</td>\n    </tr>\n    <tr>\n        <td>5</td>\n        <td>You awoke in an abandoned laboratory alongside complex designs for clockwork organs.</td>\n    </tr>\n    <tr>\n        <td>6</td>\n        <td>You were released after being petrified for generations. Your memories have faded, though, and your body isn't what it once was.</td>\n    </tr>\n    <tr>\n        <td>7</td>\n        <td>Your body hosts a possessing spirit that shares its memories and replaces your missing appendages with phantasmal limbs.</td>\n    </tr>\n    <tr>\n        <td>8</td>\n        <td>In public, you pass as an unremarkable individual, but you can feel the itchy straw stuffing inside you.</td>\n    </tr>\n    <tr>\n        <td>9</td>\n        <td>You clung to this life due to a task you have left unfinished. You cannot rest until you complete your task.</td>\n    </tr>\n    <tr>\n        <td>10</td>\n        <td>You were slain, but an otherworldly being brought you back as a partially undead servant. Your patron will not let you rest until your duties are finished.</td>\n    </tr>\n    </tbody>\n</table>",
+    "description": "<p>Death isn't always the end. The reborn exemplify this, being individuals who have died yet, somehow, still live. Some reborn exhibit the scars of fatal ends, their ashen flesh or bloodless veins making it clear that they've been touched by death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own.</p><h5 id=\"toc0\"><span>Faded Memories</span></h5><p>Reborn suffer from some manner of discontinuity, an interruption of their lives or physical state that their minds are ill equipped to deal with. Their memories of events before this interruption are often vague or absent. Occasionally, the most unexpected experiences might cause sensations or visions of the past to come rushing back.</p><p>Rather than sleeping, reborn regularly sit and dwell on the past, hoping for some revelation of what came before. Most of the time, these are dark, silent stretches. Occasionally, though, in a moment of peace, stress, or excitement, a reborn gains a glimpse of what came before. When you desire to have such a dreamlike vision, roll on the Lost Memories table to inspire its details.</p><table>    <tbody>    <tr>        <th colspan=\"2\">Lost Memories</th>    </tr>    <tr>        <th>d8</th>        <th>Memory</th>    </tr>    <tr>        <td>1</td>        <td>You recall a physically painful moment. What mark or scar on your body does it relate to?</td>    </tr>    <tr>        <td>2</td>        <td>A memory brings tears to your eyes. Is it a bitter or cheerful memory? Does recalling it make you feel the same way?</td>    </tr>    <tr>        <td>3</td>        <td>You recall a childhood memory. What about that event or who you were still influences you?</td>    </tr>    <tr>        <td>4</td>        <td>A memory brings with it the voice of someone once close to you. How do they advise you?</td>    </tr>    <tr>        <td>5</td>        <td>You recall enjoying something that you can't stand doing now. What is it? Why don't you like it now?</td>    </tr>    <tr>        <td>6</td>        <td>A memory carries a vivid smell or sensation. What are you going to do to recreate that experience?</td>    </tr>    </tbody></table><h5 id=\"toc1\"><span>Reborn Origins</span></h5><p>Reborn might originate from circumstances similar to those of various undead or constructs. The Reborn Origins table provides suggestions for how your character became reborn.</p><table>    <tbody>    <tr>        <th colspan=\"2\">Reborn Origins</th>    </tr>    <tr>        <th>d10</th>        <th>Origins</th>    </tr>    <tr>        <td>1</td>        <td>You were magically resurrected but something went wrong.</td>    </tr>    <tr>        <td>2</td>        <td>Stitches bind your body's mismatched pieces, and your memories come from multiple different lives.</td>    </tr>    <tr>        <td>3</td>        <td>After clawing free from your grave, you realized you have no memories except for a single name.</td>    </tr>    <tr>        <td>4</td>        <td>You were a necromancer's undead servant for years. One day, your consciousness returned.</td>    </tr>    <tr>        <td>5</td>        <td>You awoke in an abandoned laboratory alongside complex designs for clockwork organs.</td>    </tr>    <tr>        <td>6</td>        <td>You were released after being petrified for generations. Your memories have faded, though, and your body isn't what it once was.</td>    </tr>    <tr>        <td>7</td>        <td>Your body hosts a possessing spirit that shares its memories and replaces your missing appendages with phantasmal limbs.</td>    </tr>    <tr>        <td>8</td>        <td>In public, you pass as an unremarkable individual, but you can feel the itchy straw stuffing inside you.</td>    </tr>    <tr>        <td>9</td>        <td>You clung to this life due to a task you have left unfinished. You cannot rest until you complete your task.</td>    </tr>    <tr>        <td>10</td>        <td>You were slain, but an otherworldly being brought you back as a partially undead servant. Your patron will not let you rest until your duties are finished.</td>    </tr>    </tbody></table>",
     "asis": [
       { "con": 2 },
       {
@@ -12564,7 +12564,7 @@
       },
       {
         "name": "Deathless Nature",
-        "description": "You have escaped death, a fact represented by the following benefits:</p>\n<ul>\n    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>\n    <li>You have advantage on death saving throws.</li>\n    <li>You don't need to eat, drink, or breathe.</li>\n    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>\n</ul>",
+        "description": "You have escaped death, a fact represented by the following benefits:</p><ul>    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>    <li>You have advantage on death saving throws.</li>    <li>You don't need to eat, drink, or breathe.</li>    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li></ul>",
         "granted": [
           {
             "type": "condition-advantage",
@@ -12655,7 +12655,7 @@
       },
       {
         "name": "Biomechanical Nature",
-        "description": "Your body is exceedingly good at staying alive, represented by the following benefits:</p>\n<ul>\n    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>\n    <li>You have advantage on death saving throws.</li>\n    <li>You don't need to eat, drink, or breathe.</li>\n    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>\n</ul>",
+        "description": "Your body is exceedingly good at staying alive, represented by the following benefits:</p><ul>    <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>    <li>You have advantage on death saving throws.</li>    <li>You don't need to eat, drink, or breathe.</li>    <li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li></ul>",
         "granted": [
           {
             "type": "condition-advantage",
@@ -12828,7 +12828,7 @@
     "name": "Rhinox"
   },
   {
-    "description": "Satyrs have a well-earned reputation for their good spirits, gregarious personalities, and love of revels. Most satyrs are driven by two simple desires; to see the world and to sample its every pleasure. While their spontaneity and whimsy sometimes put them at odds with more stoic peoples, satyrs rarely let the moodiness of others hinder their own happiness.\n",
+    "description": "Satyrs have a well-earned reputation for their good spirits, gregarious personalities, and love of revels. Most satyrs are driven by two simple desires; to see the world and to sample its every pleasure. While their spontaneity and whimsy sometimes put them at odds with more stoic peoples, satyrs rarely let the moodiness of others hinder their own happiness.",
     "asis": [{ "cha": 2 }, { "dex": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -12936,7 +12936,7 @@
     "name": "Satyr"
   },
   {
-    "description": "Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect; while they cannot fully change shape they can temporarily enhance their animalistic features - a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife's edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?\n",
+    "description": "Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect; while they cannot fully change shape they can temporarily enhance their animalistic features - a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife's edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?",
     "asis": [{ "dex": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -13292,7 +13292,7 @@
     "name": "Synthsteel"
   },
   {
-    "description": "Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.\n",
+    "description": "Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.",
     "asis": [{ "dex": 2 }, { "cha": 1 }],
     "maturity": 18,
     "lifespan": 100,
@@ -13506,7 +13506,7 @@
     "name": "Taurian"
   },
   {
-    "description": "A place rarely ventured even by powerful tritons is the deepest of ravines in the sea floor. These dark, dismal places are home to a warlike race of beings resembling crabs, covered in thick armor plating and with enormous, brutal claws in place of hands. These people are known as Testasian by tritons, a word that roughly translates to &quot;shelled brute&quot;.\n",
+    "description": "A place rarely ventured even by powerful tritons is the deepest of ravines in the sea floor. These dark, dismal places are home to a warlike race of beings resembling crabs, covered in thick armor plating and with enormous, brutal claws in place of hands. These people are known as Testasian by tritons, a word that roughly translates to &quot;shelled brute&quot;.",
     "asis": [{ "str": 2 }, { "con": 1 }],
     "maturity": 3,
     "lifespan": -1,
@@ -13576,7 +13576,7 @@
     "name": "Testasian"
   },
   {
-    "description": "Thri-kreen have insectile features and two pairs of arms. Their bodies are encased in protective chitin. They can alter the coloration of this carapace to blend in with their natural surroundings.\n<br><br>Although thri-kreen don't sleep, they do require periods of inactivity to revitalize themselves. During these periods, they are fully conscious and aware of what's happening around them.\n<br><br>Thri-kreen speak by clacking their mandibles and waving their antennae, indicating to other thri-kreen what they are thinking and feeling. Other creatures find this method of communication difficult to interpret and impossible to duplicate. To interact with other folk, thri-kreen rely on a form of telepathy.\n",
+    "description": "Thri-kreen have insectile features and two pairs of arms. Their bodies are encased in protective chitin. They can alter the coloration of this carapace to blend in with their natural surroundings.<br><br>Although thri-kreen don't sleep, they do require periods of inactivity to revitalize themselves. During these periods, they are fully conscious and aware of what's happening around them.<br><br>Thri-kreen speak by clacking their mandibles and waving their antennae, indicating to other thri-kreen what they are thinking and feeling. Other creatures find this method of communication difficult to interpret and impossible to duplicate. To interact with other folk, thri-kreen rely on a form of telepathy.",
     "asis": [{ "str": 1 }, { "dex": 1 }, { "con": 1 }],
     "maturity": 1,
     "lifespan": 30,
@@ -15174,7 +15174,7 @@
     "name": "Tiefling"
   },
   {
-    "description": "What many tortles consider a simple life, others might call a life of adventure. Tortles are born near sandy coastlines, but as soon as they're able to walk on two legs, they become nomad survivalists eager to explore the wilderness, experience its many wonders, put their skills to the test, and make new acquaintances.\n",
+    "description": "What many tortles consider a simple life, others might call a life of adventure. Tortles are born near sandy coastlines, but as soon as they're able to walk on two legs, they become nomad survivalists eager to explore the wilderness, experience its many wonders, put their skills to the test, and make new acquaintances.",
     "asis": [{ "con": 2 }, { "wis": 1 }],
     "maturity": 14,
     "lifespan": 500,
@@ -15238,7 +15238,7 @@
     "name": "Tortle"
   },
   {
-    "description": "Tritons guard the ocean depths, building small settlements beside deep trenches, portals to the elemental planes, and other dangerous spots far from the eyes of land-bound folk. Long-established guardians of the deep ocean floor, the noble tritons have gradually become increasingly active in the world above.\n",
+    "description": "Tritons guard the ocean depths, building small settlements beside deep trenches, portals to the elemental planes, and other dangerous spots far from the eyes of land-bound folk. Long-established guardians of the deep ocean floor, the noble tritons have gradually become increasingly active in the world above.",
     "asis": [{ "str": 1 }, { "con": 1 }, { "cha": 1 }],
     "maturity": 18,
     "lifespan": 200,
@@ -15363,7 +15363,7 @@
     "name": "Sahuagin"
   },
   {
-    "description": "Vedalken are tall and slender, standing almost a head taller than humans but weighing about the same. Their hairless skin comes in a range of shades of blue. Their eyes are darker shades of blue or violet. They lack external ears, their noses are broad and flat, and they are partially amphibious.\n",
+    "description": "Vedalken are tall and slender, standing almost a head taller than humans but weighing about the same. Their hairless skin comes in a range of shades of blue. Their eyes are darker shades of blue or violet. They lack external ears, their noses are broad and flat, and they are partially amphibious.",
     "asis": [{ "int": 2 }, { "wis": 1 }],
     "maturity": 18,
     "lifespan": 350,
@@ -15425,7 +15425,7 @@
     "name": "Vedalken"
   },
   {
-    "description": "The warforged were built to fight. The first warforged were mindless automatons, but their creators devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced fully sentient soldiers, blending organic and inorganic materials. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.\n",
+    "description": "The warforged were built to fight. The first warforged were mindless automatons, but their creators devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced fully sentient soldiers, blending organic and inorganic materials. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.",
     "asis": [{ "con": 1 }],
     "lifespan": -1,
     "height": [5, 6],
