@@ -15,6 +15,17 @@ import { CharactersComponent } from 'src/components/characters/characters/charac
 import { CharacterSheetComponent } from 'src/components/characters/sheet/character-sheet/character-sheet.component';
 import { CraftingComponent } from 'src/components/crafting/crafting.component';
 import { DatabaseComponent } from 'src/components/database/database.component';
+import { BackgroundTabComponent } from 'src/components/database/tabs/background-tab/background-tab.component';
+import { ClassTabComponent } from 'src/components/database/tabs/class-tab/class-tab.component';
+import { ExploitTabComponent } from 'src/components/database/tabs/exploit-tab/exploit-tab.component';
+import { FeatTabComponent } from 'src/components/database/tabs/feat-tab/feat-tab.component';
+import { FightingStyleTabComponent } from 'src/components/database/tabs/fighting-style-tab/fighting-style-tab.component';
+import { GeniusTabComponent } from 'src/components/database/tabs/genius-tab/genius-tab.component';
+import { MulticlassingTabComponent } from 'src/components/database/tabs/multiclassing-tab/multiclassing-tab.component';
+import { RaceTabComponent } from 'src/components/database/tabs/race-tab/race-tab.component';
+import { RacialFeatTabComponent } from 'src/components/database/tabs/racial-feat-tab/racial-feat-tab.component';
+import { SpellTabComponent } from 'src/components/database/tabs/spell-tab/spell-tab.component';
+import { TransformationTabComponent } from 'src/components/database/tabs/transformation-tab/transformation-tab.component';
 import { DmToolsComponent } from 'src/components/dm-tools/dm-tools.component';
 import { GeneralStoreComponent } from 'src/components/general-store/general-store.component';
 import { MagicItemComponent } from 'src/components/general-store/magic-items/magic-item/magic-item.component';
@@ -47,8 +58,59 @@ const routes: Routes = [
   },
 
   {
-    path: 'database/:tab',
+    path: 'database',
     component: DatabaseComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'spells',
+        pathMatch: 'full',
+      },
+      {
+        path: 'spells',
+        component: SpellTabComponent,
+      },
+      {
+        path: 'exploits',
+        component: ExploitTabComponent,
+      },
+      {
+        path: 'races',
+        component: RaceTabComponent,
+      },
+      {
+        path: 'classes',
+        component: ClassTabComponent,
+      },
+      {
+        path: 'multiclassing',
+        component: MulticlassingTabComponent,
+      },
+      {
+        path: 'backgrounds',
+        component: BackgroundTabComponent,
+      },
+      {
+        path: 'genius',
+        component: GeniusTabComponent,
+      },
+      {
+        path: 'feats',
+        component: FeatTabComponent,
+      },
+      {
+        path: 'racial-feats',
+        component: RacialFeatTabComponent,
+      },
+      {
+        path: 'fighting-styles',
+        component: FightingStyleTabComponent,
+      },
+      {
+        path: 'transformations',
+        component: TransformationTabComponent,
+      },
+    ],
   },
   {
     path: 'spells/:list',

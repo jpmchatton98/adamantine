@@ -2447,23 +2447,6 @@
     "description": "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:<ul><li>You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.</li><li>You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.</li><li>When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</li></ul>"
   },
   {
-    "name": "Wind Walker",
-    "prereq": [
-      {
-        "race": ["aarakocra"]
-      }
-    ],
-    "type": "racial",
-    "description": "A master of the wind, you can pick up subtle changes in the air, able to adapt to sudden changes.<ul><li>Your flight speed is increased by 10 feet.</li><li>You have advantage on saving throws against effects that involve wind. If you succeed on a saving throw against such an effect, you can use your reaction to immediately move up to half your flying speed.</li><li>In windy conditions, your flight speed is doubled.</li></ul>",
-    "granted": [
-      {
-        "type": "speed-bonus",
-        "speed": "fly",
-        "amount": 10
-      }
-    ]
-  },
-  {
     "name": "Mountain Mover",
     "prereq": [
       {
@@ -3657,6 +3640,587 @@
     ]
   },
   {
+    "name": "Might of the Meager",
+    "prereq": [
+      {
+        "race": [
+          "autognome",
+          "bio-tinker",
+          "cyborg",
+          "dhampir",
+          "dullahan",
+          "ghost",
+          "ghoul",
+          "gnome",
+          "goblin",
+          "grung",
+          "halfling",
+          "hexblood",
+          "illithid",
+          "kender",
+          "kobold",
+          "lanternfolk",
+          "leshy",
+          "mousefolk",
+          "mummy",
+          "reborn",
+          "skeleton",
+          "tiefling",
+          "verdan",
+          "wight",
+          "zombie"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You may be small, but you are fierce.  You gain the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You are considered one size larger for determining your carrying capacity and the weight you can push, drag, and lift.</li><li>You can wield Heavy and Massive weapons as though you were a Medium creature.</li><li>You can grapple and drag creatures as though you were a Medium creature.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "str",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Squat Nimbleness",
+    "prereq": [
+      {
+        "race": [
+          "autognome",
+          "bio-tinker",
+          "cyborg",
+          "dhampir",
+          "dullahan",
+          "ghost",
+          "ghoul",
+          "gnome",
+          "goblin",
+          "grung",
+          "halfling",
+          "hexblood",
+          "illithid",
+          "kender",
+          "kobold",
+          "lanternfolk",
+          "leshy",
+          "mousefolk",
+          "mummy",
+          "reborn",
+          "skeleton",
+          "tiefling",
+          "verdan",
+          "wight",
+          "zombie"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You are uncommonly nimble for your race. You gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>Increase your walking speed by 5 feet.</li><li>You gain proficiency in Acrobatics or Athletics.</li><li>You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.</li></ul>",
+    "choices": [
+      {
+        "id": "49C34350-3A2E-407E-80DD-5DD4DC4EE575",
+        "type": "asi",
+        "options": ["str", "dex"],
+        "amount": 1
+      },
+      {
+        "id": "9839E24A-D423-4AD7-A830-AE4D8CA3B42E",
+        "type": "skill",
+        "limits": ["Acrobatics", "Athletics"],
+        "level": 1
+      }
+    ],
+    "granted": [
+      {
+        "type": "speed-bonus",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "name": "Wind Walker",
+    "prereq": [
+      {
+        "race": [
+          "aarakocra",
+          "azapian",
+          "demi-dragon",
+          "elf",
+          "fairy",
+          "harpy",
+          "imp",
+          "ivathi",
+          "kenku",
+          "kobold",
+          "papillon"
+        ],
+        "subrace": [
+          [],
+          [],
+          [],
+          ["avariel"],
+          [],
+          [],
+          [],
+          [],
+          ["blessed"],
+          ["urd"],
+          []
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "A master of the wind, you can pick up subtle changes in the air, able to adapt to sudden changes.<ul><li>Your flight speed is increased by 10 feet.</li><li>You have advantage on saving throws against effects that involve wind. If you succeed on a saving throw against such an effect, you can use your reaction to immediately move up to half your flying speed.</li><li>In windy conditions, your flight speed is doubled.</li></ul>",
+    "granted": [
+      {
+        "type": "speed-bonus",
+        "speed": "fly",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "Fey Luck",
+    "prereq": [
+      {
+        "race": [
+          "azapian",
+          "bugbear",
+          "changeling",
+          "daolagiath",
+          "dullahan",
+          "elf",
+          "fairy",
+          "firbolg",
+          "goblin",
+          "half-elf",
+          "harengon",
+          "hexblood",
+          "hobgoblin",
+          "rhinox",
+          "satyr",
+          "taurian"
+        ],
+        "subrace": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          ["eladrin"],
+          [],
+          [],
+          [],
+          ["eladrin"],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You are blessed with the luck of fey creatures. When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
+  },
+  {
+    "name": "Touch of Nobanion",
+    "prereq": [
+      {
+        "race": ["leonin"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your lineage traces back to the god of lions, Lord Firemane himself. You learn the Heroism spell and can cast it at will, without expending a spell slot. You also learn the Beacon of Valor and Track spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Heroism"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Beacon of Valor", "Track"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "B40BCC3D-BF56-4043-B097-685C9FE237CA",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "E706823A-C01E-43B5-B568-7EFEEDEE8121",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Kurtulmak",
+    "prereq": [
+      {
+        "race": ["kobold"]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been blessed with draconic magic by Kurtulmak, god of the kobolds. You learn the Feather Fall spell and can cast it at will, without expending a spell slot. You also learn the Absorb Elements and Dragon's Breath spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Feather Fall"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Absorb Elements", "Dragon's Breath"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "3B99C4DA-EA8C-4FDF-909D-A8D99A0E94C1",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "8B2B68D3-0F17-418B-AD4B-95498950514E",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Pan",
+    "prereq": [
+      {
+        "race": ["satyr"]
+      }
+    ],
+    "type": "racial",
+    "description": "You feel the revelrous, musical nature of Pan, god of satyrs. You learn the Heroism spell and can cast it at will, without expending a spell slot. You also learn the Dissonant Whispers and Song of Confidence spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Inspiring Melody"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Dissonant Whispers", "Song of Confidence"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "3B99C4DA-EA8C-4FDF-909D-A8D99A0E94C1",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "8B2B68D3-0F17-418B-AD4B-95498950514E",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Ilsensine",
+    "prereq": [
+      {
+        "race": ["gith", "illithid"],
+        "subrace": [["githghaik"], []]
+      }
+    ],
+    "type": "racial",
+    "description": "Your connection to the God-Brain is stronger than most. You learn the Detect Magic spell and can cast it at will, without expending a spell slot. You also learn the Charm Person and Levitate spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Intelligence is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "int"
+      },
+      {
+        "type": "spell",
+        "options": ["Charm Person", "Levitate"],
+        "ignoreMaxLevel": true,
+        "ability": "int"
+      }
+    ],
+    "uses": [
+      {
+        "id": "CC0A2817-8B69-4BA8-BA08-8F08C6CE722B",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "6F052D6C-F30C-43A7-816E-CD623A2E4E6D",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Vlaakith",
+    "prereq": [
+      {
+        "race": ["gith"],
+        "subrace": ["githyanki"]
+      }
+    ],
+    "type": "racial",
+    "description": "You are the chosen of the lich-queen Vlaakith. You learn the Detect Magic spell and can cast it at will, without expending a spell slot. You also learn the Command and Hold Person spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Intelligence is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "int"
+      },
+      {
+        "type": "spell",
+        "options": ["Command", "Hold Person"],
+        "ignoreMaxLevel": true,
+        "ability": "int"
+      }
+    ],
+    "uses": [
+      {
+        "id": "5678E9A7-CF32-4D66-AAFC-78D6DDBEC6D1",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "D58EE667-2EAD-4FE9-B7C2-FF16521DD48E",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Limbo",
+    "prereq": [
+      {
+        "race": ["gith"],
+        "subrace": ["githzerai"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your time spent in Limbo has modified your psionics, increasing their potency. You learn the Detect Magic spell and can cast it at will, without expending a spell slot. You also learn the Magnify Gravity and Calm Emotions spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Intelligence is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Detect Magic"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "int"
+      },
+      {
+        "type": "spell",
+        "options": ["Magnify Gravity", "Calm Emotions"],
+        "ignoreMaxLevel": true,
+        "ability": "int"
+      }
+    ],
+    "uses": [
+      {
+        "id": "B1661DAA-CE23-4D85-A093-E1E734BF2B49",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "04C0F3F3-B8C9-40FA-93B6-7F8F2001858D",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Baba Yaga",
+    "prereq": [
+      {
+        "race": ["changeling", "hexblood"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your latent hag blood has awakened a connection to the mother of all witches. You learn the Practitioner's Rites spell and can cast it at will, without expending a spell slot. You also learn the Charm Person and Desecration spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Practitioner's Rites"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Charm Person", "Desecration"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "E1026582-A761-46B3-ADF0-10C9E5EA27CE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "AC073C87-303E-4A1E-9DEF-02EB26ED50DE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Anubis",
+    "prereq": [
+      {
+        "race": ["khenra"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your connection to Anubis, patron deity of the khenra, deepens. You learn the False Life spell and can cast it at will, without expending a spell slot. You also learn the Heart Sunder and Hold Person spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["False Life"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Heart Sunder", "Hold Person"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "E1026582-A761-46B3-ADF0-10C9E5EA27CE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "AC073C87-303E-4A1E-9DEF-02EB26ED50DE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of Juiblex",
+    "prereq": [
+      {
+        "race": ["plasmoid", "tiefling"],
+        "subrace": [[], ["juiblexian"]]
+      }
+    ],
+    "type": "racial",
+    "description": "You feel the touch of Juiblex, the primordial demon lord that created all oozes long ago. You learn the Grease spell and can cast it at will, without expending a spell slot. You also learn the Caustic Coating and Melf's Acid Arrow spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Grease"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Caustic Coating", "Melf's Acid Arrow"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "DF4EB42D-2BCF-4A3C-A02B-E7F7DD2CDF31",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "23DDA08C-4116-409B-999A-267F3EA2163C",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Touch of the Raven",
+    "prereq": [
+      {
+        "race": ["dullahan", "elf", "half-elf"],
+        "subrace": [[], ["shadar-kai"], ["shadar-kai"]]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been blessed by the Raven Queen for her own mysterious purposes. You learn the Murmurs of the Restless spell and can cast it at will, without expending a spell slot. You also learn the Dread Will and Shadow Blade spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Murmurs of the Restless"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Dread Will", "Shadow Blade"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "E1026582-A761-46B3-ADF0-10C9E5EA27CE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "AC073C87-303E-4A1E-9DEF-02EB26ED50DE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Touch of Nyx",
     "prereq": [
       {
@@ -3700,7 +4264,7 @@
     "prereq": [
       {
         "race": ["arachnen", "elf", "ettercap", "half-elf"],
-        "subrace": [["Araneae"], ["Drow"], [], ["Drow"]]
+        "subrace": [["araneae"], ["drow"], [], ["drow"]]
       }
     ],
     "type": "racial",
@@ -3736,6 +4300,46 @@
     ]
   },
   {
+    "name": "Touch of Silvanus",
+    "prereq": [
+      {
+        "race": ["elf", "half-elf"],
+        "subrace": [["wood"], ["wood"]]
+      }
+    ],
+    "type": "racial",
+    "description": "You have been touched by the god of wood elves, Silvanus. You learn the Animal Friendship spell and can cast it at will, without expending a spell slot. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Wisdom is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Animal Friendship"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "wis"
+      },
+      {
+        "type": "spell",
+        "options": ["Longstrider", "Pass Without Trace"],
+        "ignoreMaxLevel": true,
+        "ability": "wis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "0C08696A-0A7D-44E7-8B7D-A821ECA484B8",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "F78055DE-2BFA-4340-A788-6533D0B1DA01",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Touch of Orcus",
     "prereq": [
       {
@@ -3752,7 +4356,7 @@
           "wight",
           "zombie"
         ],
-        "subrace": [[], [], [], [], [], [], [], [], ["Orcusian"], [], []]
+        "subrace": [[], [], [], [], [], [], [], [], ["orcusian"], [], []]
       }
     ],
     "type": "racial",
@@ -3941,32 +4545,6 @@
     ],
     "type": "racial",
     "description": "Your people have extraordinary luck, which you have learned to mystically lend to your companions whenever you see them falter. You're not sure how you do it, you just wish it, and it happens. Surely a sign of fortune's favor!<ul><li>When an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.</li><li>When you use this ability, you can't use your Lucky racial trait before the end of your next turn</li></ul>"
-  },
-  {
-    "name": "Fey Luck",
-    "prereq": [
-      {
-        "race": [
-          "azapian",
-          "bugbear",
-          "changeling",
-          "daolagiath",
-          "dullahan",
-          "fairy",
-          "firbolg",
-          "goblin",
-          "harengon",
-          "hexblood",
-          "hobgoblin",
-          "papillon",
-          "rhinox",
-          "satyr",
-          "taurian"
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You are blessed with the luck of fey creatures. When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
   },
   {
     "name": "Uphold the Legion",
@@ -4356,6 +4934,25 @@
     ]
   },
   {
+    "name": "Chilling Gaze",
+    "prereq": [
+      {
+        "race": ["lesser giant"],
+        "subrace": [["yeti"]]
+      }
+    ],
+    "type": "racial",
+    "description": "Your gaze can freeze creatures in place, using the icy magic of the tundra.  As an action, you can fix your gaze on a creature within 40 feet of you.  The target must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus).</p><p>On a failed save, the target takes cold damage equal to your level and gains an equal number of temporary hit points as a crust of ice crawls over it.  While a creature has any of these temporary hit points, it is restrained.  A creature freed from this effect by bludgeoning damage immediately takes slashing damage equal to your level.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+    "uses": [
+      {
+        "id": "06F6AA9B-AF85-4BA4-A7FE-101CD301B844",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Improved Regeneration",
     "prereq": [
       {
@@ -4367,10 +4964,10 @@
     "description": "Your regeneration is more powerful, and can even keep you alive when you would otherwise fall.  When you would make a death saving throw, you can instead use your Regeneration trait if possible."
   },
   {
-    "name": "Tortle Defender",
+    "name": "Shell Defender",
     "prereq": [
       {
-        "race": ["tortle"]
+        "race": ["daolagiath", "testasian", "tortle"]
       }
     ],
     "type": "racial",
@@ -4409,6 +5006,24 @@
       "type": "asi",
       "options": ["int", "cha"]
     }
+  },
+  {
+    "name": "Leafspeak",
+    "prereq": [
+      {
+        "race": ["koradi", "leshy"]
+      }
+    ],
+    "type": "racial",
+    "description": "You can communicate with the plants with which you share heritage.  When you are speaking Druidic, you can communicate with plants as if you were under the effects of a Speak with Plants spell.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Speak with Plants"],
+        "ability": "wis",
+        "ignoreMaxLevel": true
+      }
+    ]
   },
   {
     "name": "Improved Glide",
@@ -5024,105 +5639,6 @@
       "amount": 1,
       "reset": 2
     }
-  },
-  {
-    "name": "Might of the Meager",
-    "prereq": [
-      {
-        "race": [
-          "autognome",
-          "bio-tinker",
-          "cyborg",
-          "dhampir",
-          "dullahan",
-          "ghost",
-          "ghoul",
-          "gnome",
-          "goblin",
-          "grung",
-          "halfling",
-          "hexblood",
-          "illithid",
-          "kender",
-          "kobold",
-          "lanternfolk",
-          "leshy",
-          "mousefolk",
-          "mummy",
-          "reborn",
-          "skeleton",
-          "tiefling",
-          "verdan",
-          "wight",
-          "zombie"
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You may be small, but you are fierce.  You gain the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You are considered one size larger for determining your carrying capacity and the weight you can push, drag, and lift.</li><li>You can wield Heavy and Massive weapons as though you were a Medium creature.</li><li>You can grapple and drag creatures as though you were a Medium creature.</li></ul>",
-    "granted": [
-      {
-        "type": "asi",
-        "score": "str",
-        "amount": 1
-      }
-    ]
-  },
-  {
-    "name": "Squat Nimbleness",
-    "prereq": [
-      {
-        "race": [
-          "autognome",
-          "bio-tinker",
-          "cyborg",
-          "dhampir",
-          "dullahan",
-          "ghost",
-          "ghoul",
-          "gnome",
-          "goblin",
-          "grung",
-          "halfling",
-          "hexblood",
-          "illithid",
-          "kender",
-          "kobold",
-          "lanternfolk",
-          "leshy",
-          "mousefolk",
-          "mummy",
-          "reborn",
-          "skeleton",
-          "tiefling",
-          "verdan",
-          "wight",
-          "zombie"
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You are uncommonly nimble for your race. You gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>Increase your walking speed by 5 feet.</li><li>You gain proficiency in Acrobatics or Athletics.</li><li>You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.</li></ul>",
-    "choices": [
-      {
-        "id": "49C34350-3A2E-407E-80DD-5DD4DC4EE575",
-        "type": "asi",
-        "options": ["str", "dex"],
-        "amount": 1
-      },
-      {
-        "id": "9839E24A-D423-4AD7-A830-AE4D8CA3B42E",
-        "type": "skill",
-        "limits": ["Acrobatics", "Athletics"],
-        "level": 1
-      }
-    ],
-    "granted": [
-      {
-        "type": "speed-bonus",
-        "amount": 5
-      }
-    ]
   },
   {
     "name": "Fell Body",

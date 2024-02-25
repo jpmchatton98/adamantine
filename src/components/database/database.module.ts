@@ -26,6 +26,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { PagesModule } from '../pages/pages.module';
 import { FightingStyleTabComponent } from './tabs/fighting-style-tab/fighting-style-tab.component';
 import { RacialFeatTabComponent } from './tabs/racial-feat-tab/racial-feat-tab.component';
+import { MulticlassingTabComponent } from './tabs/multiclassing-tab/multiclassing-tab.component';
+import { GeniusTabComponent } from './tabs/genius-tab/genius-tab.component';
 
 registerLocaleData(en);
 
@@ -43,6 +45,8 @@ registerLocaleData(en);
     TransformationTabComponent,
     ExtraTabComponent,
     FightingStyleTabComponent,
+    MulticlassingTabComponent,
+    GeniusTabComponent,
   ],
   imports: [
     PagesModule,

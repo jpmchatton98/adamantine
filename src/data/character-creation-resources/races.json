@@ -5939,6 +5939,28 @@
             "description": "You magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw."
           }
         ]
+      },
+      {
+        "name": "Stinger",
+        "description": "Your stinger is a natural melee weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+        "actions": [
+          {
+            "id": "718A6503-32BE-4BD7-BB50-F438EB5B0011",
+            "type": "a",
+            "attack": true,
+            "name": "Stinger",
+            "damage": [
+              {
+                "dice": 1,
+                "die": 6,
+                "type": "piercing",
+                "mod": true,
+                "unarmed": true,
+                "finesse": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "name": "Imp"
