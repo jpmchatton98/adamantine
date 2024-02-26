@@ -4625,7 +4625,7 @@
     "name": "Human Determination",
     "prereq": [
       {
-        "race": ["human"]
+        "race": ["half-elf", "half-dwarf", "half-orc", "human"]
       }
     ],
     "type": "racial",
