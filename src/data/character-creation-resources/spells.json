@@ -69,7 +69,8 @@
         "die": 6,
         "type": ["acid", "cold", "fire", "lightning", "thunder"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Absorbing Ward",
@@ -191,7 +192,11 @@
         "die": 10,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDuration": {
+      "8": "8 hours",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Acrid Delight",
@@ -217,7 +222,8 @@
         "die": 8,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Adrenaline Rush",
@@ -275,7 +281,9 @@
         "die": 8,
         "type": "slashing"
       }
-    ]
+    ],
+    "multiplier": 4,
+    "upcastMultiplier": 1
   },
   {
     "name": "Aether Lance",
@@ -300,7 +308,8 @@
         "die": 4,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Aether Storm",
@@ -325,7 +334,8 @@
         "die": 4,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Aganazzar's Scorcher",
@@ -352,7 +362,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Aid",
@@ -374,7 +385,8 @@
       {
         "amount": 5
       }
-    ]
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Alacritous Interpretation",
@@ -469,11 +481,12 @@
     "healing": [
       {
         "dice": 2,
-        "die": 8,
+        "die": 6,
         "addAbility": true,
         "temporary": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Amorphous Form",
@@ -553,7 +566,17 @@
     "lists": ["Arcane", "Occult", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "2": "30 feet (2 targets)",
+      "3": "30 feet (3 targets)",
+      "4": "30 feet (4 targets)",
+      "5": "30 feet (5 targets)",
+      "6": "30 feet (6 targets)",
+      "7": "30 feet (7 targets)",
+      "8": "30 feet (8 targets)",
+      "9": "30 feet (9 targets)"
+    }
   },
   {
     "name": "Animal Messenger",
@@ -571,7 +594,16 @@
       "If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
     ],
     "lists": ["Arcane", "Primal", "Psionic", "Melodic"],
-    "ritual": 1
+    "ritual": 1,
+    "upcastDuration": {
+      "3": "3 days",
+      "4": "5 days",
+      "5": "7 days",
+      "6": "9 days",
+      "7": "11 days",
+      "8": "13 days",
+      "9": "15 days"
+    }
   },
   {
     "name": "Animal Shapes",
@@ -614,7 +646,17 @@
         "die": 4,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDuration": {
+      "2": "8 hours",
+      "3": "24 hours",
+      "4": "24 hours",
+      "5": "10 days",
+      "6": "10 days",
+      "7": "30 days",
+      "8": "30 days",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Animate Dead",
@@ -633,14 +675,22 @@
       "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
     ],
     "lists": ["Arcane", "Divine", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "4": "10 feet (3 targets)",
+      "5": "10 feet (5 targets)",
+      "6": "10 feet (7 targets)",
+      "7": "10 feet (9 targets)",
+      "8": "10 feet (11 targets)",
+      "9": "10 feet (13 targets)"
+    }
   },
   {
     "name": "Animate Objects",
     "school": "Transmutation",
     "level": 5,
     "castingTime": "1 action",
-    "range": "120 feet",
+    "range": "120 feet (10 targets)",
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -652,7 +702,13 @@
       "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
     ],
     "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "6": "120 feet (12 targets)",
+      "7": "120 feet (14 targets)",
+      "8": "120 feet (16 targets)",
+      "9": "120 feet (18 targets)"
+    }
   },
   {
     "name": "Animate Percussion",
@@ -685,7 +741,13 @@
       "When you cast this spell using a spell slot of 6th level or higher, you animate or reassert control over an additional shadow for every slot level above 5th. Each shadow must come from a different corpse."
     ],
     "lists": ["Occult", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "6": "10 feet (2 targets)",
+      "7": "10 feet (3 targets)",
+      "8": "10 feet (4 targets)",
+      "9": "10 feet (5 targets)"
+    }
   },
   {
     "name": "Antilife Shell",
@@ -758,7 +820,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Arboreal Curse",
@@ -860,7 +923,16 @@
       "When you cast this spell using a spell slot of 3rd level or higher, you can maintain your concentration on the spell for up to 8 hours."
     ],
     "lists": [],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "3": "Concentration, up to 8 hours",
+      "4": "Concentration, up to 8 hours",
+      "5": "Concentration, up to 8 hours",
+      "6": "Concentration, up to 8 hours",
+      "7": "Concentration, up to 8 hours",
+      "8": "Concentration, up to 8 hours",
+      "9": "Concentration, up to 8 hours"
+    }
   },
   {
     "name": "Arctic Breath",
@@ -887,7 +959,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Armament of Irritants",
@@ -910,7 +983,11 @@
         "amount": 100,
         "temporary": true
       }
-    ]
+    ],
+    "upcastAmount": 20,
+    "upcastDuration": {
+      "9": "Up to 10 days"
+    }
   },
   {
     "name": "Armor of Agathys",
@@ -939,7 +1016,8 @@
         "amount": 5,
         "temporary": true
       }
-    ]
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Armor of Bones",
@@ -991,14 +1069,15 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Army of the Dead",
     "school": "Necromancy",
     "level": 4,
     "castingTime": "1 action",
-    "range": "45 feet",
+    "range": "45 feet (2d4 targets)",
     "components": "V, S, M (a vial of blood and a handful of bone dust, which are consumed by the spell)",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -1010,7 +1089,14 @@
       "When you cast this spell using a spell slot of 5th level or higher, you are able to add an addition 1d4 to the total number of skeletons raised by this spell for every slot higher than 4th level."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "5": "45 feet (3d4 targets)",
+      "6": "45 feet (4d4 targets)",
+      "7": "45 feet (5d4 targets)",
+      "8": "45 feet (6d4 targets)",
+      "9": "45 feet (7d4 targets)"
+    }
   },
   {
     "name": "Ascendancy of Vecna",
@@ -1041,7 +1127,10 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDuration": {
+      "9": "Concentration, up to 1 hour"
+    }
   },
   {
     "name": "Ascending Flame",
@@ -1093,7 +1182,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Asmodeous' Eternal Suffering",
@@ -1174,7 +1264,14 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastRange": {
+      "5": "Self (45-foot radius)",
+      "6": "Self (60-foot radius)",
+      "7": "Self (75-foot radius)",
+      "8": "Self (90-foot radius)",
+      "9": "Self (105-foot radius)"
+    }
   },
   {
     "name": "Aura of Life",
@@ -1282,7 +1379,8 @@
         "die": 12,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Bane",
@@ -1301,7 +1399,17 @@
     "lists": ["Arcane", "Divine", "Occult", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastRange": {
+      "2": "30 feet (2 targets)",
+      "3": "30 feet (3 targets)",
+      "4": "30 feet (4 targets)",
+      "5": "30 feet (5 targets)",
+      "6": "30 feet (6 targets)",
+      "7": "30 feet (7 targets)",
+      "8": "30 feet (8 targets)",
+      "9": "30 feet (9 targets)"
+    }
   },
   {
     "name": "Banishing Smite",
@@ -1343,7 +1451,14 @@
     "lists": ["Arcane", "Divine", "Occult", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastRange": {
+      "5": "60 feet (2 targets)",
+      "6": "60 feet (3 targets)",
+      "7": "60 feet (4 targets)",
+      "8": "60 feet (5 targets)",
+      "9": "60 feet (6 targets)"
+    }
   },
   {
     "name": "Banshee's Grievance",
@@ -1369,7 +1484,8 @@
         "die": 8,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Barkskin",
@@ -1589,7 +1705,15 @@
     "lists": ["Arcane", "Divine", "Occult", "Primal", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastDuration": {
+      "4": "Concentration, up to 10 minutes",
+      "5": "8 hours",
+      "6": "8 hours",
+      "7": "24 hours",
+      "8": "24 hours",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Bigby's Hand",
@@ -1617,7 +1741,8 @@
         "die": 8,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Bixmodeus' Binding of Peruding Possession",
@@ -1752,7 +1877,8 @@
         "die": 8,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Bless",
@@ -1769,7 +1895,17 @@
       "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
     ],
     "lists": ["Divine", "Occult", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "2": "30 feet (2 targets)",
+      "3": "30 feet (3 targets)",
+      "4": "30 feet (4 targets)",
+      "5": "30 feet (5 targets)",
+      "6": "30 feet (6 targets)",
+      "7": "30 feet (7 targets)",
+      "8": "30 feet (8 targets)",
+      "9": "30 feet (9 targets)"
+    }
   },
   {
     "name": "Blessing of Rime",
@@ -1794,7 +1930,8 @@
         "die": 8,
         "temporary": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Blight",
@@ -1821,7 +1958,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Blightning",
@@ -1852,7 +1990,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Blinding Smite",
@@ -1897,7 +2036,16 @@
     "ritual": 0,
     "element": "Shadow",
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "upcastRange": {
+      "3": "30 feet (2 targets)",
+      "4": "30 feet (3 targets)",
+      "5": "30 feet (4 targets)",
+      "6": "30 feet (5 targets)",
+      "7": "30 feet (6 targets)",
+      "8": "30 feet (7 targets)",
+      "9": "30 feet (8 targets)"
+    }
   },
   {
     "name": "Blink",
@@ -1932,7 +2080,15 @@
       "When you cast this spell using a spell slot of 5th or 6th level, its duration is 8 hours. When you cast this spell using a spell slot of 7th or 8th level, its duration is 24 hours. When you cast this spell using a spell slot of 9th level, its duration is 7 days."
     ],
     "lists": ["Occult", "Primal"],
-    "ritual": false
+    "ritual": false,
+    "upcastDuration": {
+      "4": "1 hour",
+      "5": "8 hours",
+      "6": "8 hours",
+      "7": "24 hours",
+      "8": "24 hours",
+      "9": "7 days"
+    }
   },
   {
     "name": "Blood Dagger",
@@ -2024,7 +2180,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Bloodlink",
@@ -2118,7 +2275,7 @@
     "school": "Conjuration",
     "level": 1,
     "castingTime": "1 action",
-    "range": "Self (15 foot cone)",
+    "range": "Self (15-foot cone)",
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
@@ -2137,14 +2294,25 @@
         "die": 4,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastRange": {
+      "2": "Self (20-foot cone)",
+      "3": "Self (25-foot cone)",
+      "4": "Self (30-foot cone)",
+      "5": "Self (35-foot cone)",
+      "6": "Self (40-foot cone)",
+      "7": "Self (45-foot cone)",
+      "8": "Self (50-foot cone)",
+      "9": "Self (55-foot cone)"
+    }
   },
   {
     "name": "Bones of the Earth",
     "school": "Transmutation",
     "level": 6,
     "castingTime": "1 action",
-    "range": "120 feet",
+    "range": "120 feet (6 targets)",
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
@@ -2165,7 +2333,12 @@
         "die": 6,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastRange": {
+      "7": "120 feet (8 targets)",
+      "8": "120 feet (10 targets)",
+      "9": "120 feet (12 targets)"
+    }
   },
   {
     "name": "Booming Blade",
@@ -2260,7 +2433,8 @@
         "amount": 25,
         "temporary": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Branding Smite",
@@ -2285,7 +2459,8 @@
         "die": 6,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Brightlance",
@@ -2339,7 +2514,8 @@
         "die": 8,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Burning Hands",
@@ -2367,7 +2543,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Call Lightning",
@@ -2396,7 +2573,8 @@
         "die": 10,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Calling Card",
@@ -2453,7 +2631,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Catnap",
@@ -2486,7 +2665,17 @@
     "lists": ["Arcane", "Divine", "Occult", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "2": "60 feet (2 targets)",
+      "3": "60 feet (3 targets)",
+      "4": "60 feet (4 targets)",
+      "5": "60 feet (5 targets)",
+      "6": "60 feet (6 targets)",
+      "7": "60 feet (7 targets)",
+      "8": "60 feet (8 targets)",
+      "9": "60 feet (9 targets)"
+    }
   },
   {
     "name": "Cauterizing Flame",
@@ -2511,7 +2700,8 @@
         "die": 10,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ceremony",
@@ -2563,7 +2753,9 @@
         "die": 8,
         "type": "lightning"
       }
-    ]
+    ],
+    "multiplier": 4,
+    "upcastMultiplier": 1
   },
   {
     "name": "Chalice of the Night",
@@ -2608,6 +2800,7 @@
     "save": "con",
     "damage": [
       {
+        "id": "E457F294-9B14-4729-B92B-4EA568FAF125",
         "dice": 2,
         "die": 8,
         "type": [
@@ -2621,6 +2814,7 @@
         ]
       },
       {
+        "id": "8A0F2357-799A-4491-8B3E-80B2B0FAD98E",
         "dice": 1,
         "die": 6,
         "type": [
@@ -2633,7 +2827,9 @@
           "thunder"
         ]
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["8A0F2357-799A-4491-8B3E-80B2B0FAD98E"]
   },
   {
     "name": "Chaotic Wellspring",
@@ -2668,7 +2864,14 @@
     "lists": ["Arcane", "Occult", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "5": "30 feet (2 targets)",
+      "6": "30 feet (3 targets)",
+      "7": "30 feet (4 targets)",
+      "8": "30 feet (5 targets)",
+      "9": "30 feet (6 targets)"
+    }
   },
   {
     "name": "Charm Person",
@@ -2687,7 +2890,17 @@
     "lists": ["Arcane", "Occult", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "2": "30 feet (2 targets)",
+      "3": "30 feet (3 targets)",
+      "4": "30 feet (4 targets)",
+      "5": "30 feet (5 targets)",
+      "6": "30 feet (6 targets)",
+      "7": "30 feet (7 targets)",
+      "8": "30 feet (8 targets)",
+      "9": "30 feet (9 targets)"
+    }
   },
   {
     "name": "Chill Touch",
@@ -2738,7 +2951,8 @@
         "die": 8,
         "type": ["acid", "cold", "fire", "lightning", "poison", "thunder"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Circle of Death",
@@ -2764,7 +2978,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Circle of Power",
@@ -2850,7 +3065,8 @@
         "die": 4,
         "type": "slashing"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Cloudkill",
@@ -2878,7 +3094,8 @@
         "die": 8,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Cognition",
@@ -2952,7 +3169,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Color Spray",
@@ -2971,7 +3189,16 @@
     ],
     "lists": ["Arcane", "Melodic", "Elemental"],
     "element": "Light",
-    "ritual": 0
+    "ritual": 0,
+    "damage": [
+      [
+        {
+          "dice": 6,
+          "die": 10
+        }
+      ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Command",
@@ -2995,7 +3222,17 @@
     "lists": ["Arcane", "Divine", "Occult", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "2": "60 feet (2 targets)",
+      "3": "60 feet (3 targets)",
+      "4": "60 feet (4 targets)",
+      "5": "60 feet (5 targets)",
+      "6": "60 feet (6 targets)",
+      "7": "60 feet (7 targets)",
+      "8": "60 feet (8 targets)",
+      "9": "60 feet (9 targets)"
+    }
   },
   {
     "name": "Commendation",
@@ -3131,7 +3368,8 @@
         "die": 8,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Cone of Cold",
@@ -3157,7 +3395,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Conflagrate",
@@ -3202,14 +3441,21 @@
     "lists": ["Arcane", "Occult", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "5": "90 feet (10-foot sphere)",
+      "6": "90 feet (15-foot sphere)",
+      "7": "90 feet (20-foot sphere)",
+      "8": "90 feet (25-foot sphere)",
+      "9": "90 feet (30-foot sphere)"
+    }
   },
   {
     "name": "Conjure Animals",
     "school": "Conjuration",
     "level": 3,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (1/2/4/8 targets)",
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
@@ -3221,7 +3467,15 @@
       "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
     ],
     "lists": ["Primal"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "4": "60 feet (1/2/4/8 targets)",
+      "5": "60 feet (2/4/8/16 targets)",
+      "6": "60 feet (2/4/8/16 targets)",
+      "7": "60 feet (3/6/12/24 targets)",
+      "8": "60 feet (3/6/12/24 targets)",
+      "9": "60 feet (4/8/16/32 targets)"
+    }
   },
   {
     "name": "Conjure Barrage",
@@ -3319,14 +3573,20 @@
       "When you cast this spell using a spell slot of 5th level or higher, the spell's duration increases to 1 hour. Additionally, your telepathic bond with the knowbot is effective out to a range of 1000 feet, and if you leave the range of the bond, the knowbot continues performing its last directed task until the spell expires."
     ],
     "lists": [],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "5": "1 hour",
+      "7": "1 hour",
+      "8": "1 hour",
+      "9": "1 hour"
+    }
   },
   {
     "name": "Conjure Minor Elementals",
     "school": "Conjuration",
     "level": 4,
     "castingTime": "1 minute",
-    "range": "90 feet",
+    "range": "90 feet (1/2/4/8 targets)",
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
@@ -3338,7 +3598,14 @@
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal"],
     "ritual": 1,
-    "element": ""
+    "element": "",
+    "upcastRange": {
+      "5": "90 feet (1/2/4/8 targets)",
+      "6": "90 feet (2/4/8/16 targets)",
+      "7": "90 feet (2/4/8/16 targets)",
+      "8": "90 feet (3/6/12/24 targets)",
+      "9": "90 feet (3/6/12/24 targets)"
+    }
   },
   {
     "name": "Conjure Shambling Mound",
@@ -3352,10 +3619,14 @@
       "You call forth an shambling mound created from any vegetation around you. Choose an unoccupied area near a source of vegetation that you can see within range. A shambling mound will rise from the ground in this location. The mound disappears when it drops to 0 hit points. The mound is friendly to you and your companions for the duration. Roll initiative for the mound, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the mound, it defends itself from hostile creatures but otherwise takes no actions. If your concentration is broken before the spell's duration is reached, you lose control of the mound and it becomes hostile toward you and your companions. A hostile shambling mound can't be dismissed by you. It disappears when its hit points reach 0 or 1 hour after you summoned it, whichever happens first. The DM has the creature's game statistics."
     ],
     "higherLevels": [
-      "When you cast this spell using a 9th- level spell slot, you summon two shambling mounds in unoccupied area that you can see."
+      "When you cast this spell using a 9th-level spell slot, you summon two shambling mounds in unoccupied area that you can see."
     ],
     "lists": ["Arcane", "Primal"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "8": "60 feet",
+      "9": "60 feet (2 targets)"
+    }
   },
   {
     "name": "Conjure Volley",
@@ -3385,7 +3656,7 @@
     "school": "Conjuration",
     "level": 4,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "90 feet (1/2/4/8 targets)",
     "components": "V, S, M (one holly berry per creature summoned)",
     "duration": "Concentration, up to 1 hour",
     "description": [
@@ -3396,7 +3667,14 @@
       "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot, and three times as many with an 8th-level slot."
     ],
     "lists": ["Primal"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "5": "90 feet (1/2/4/8 targets)",
+      "6": "90 feet (2/4/8/16 targets)",
+      "7": "90 feet (2/4/8/16 targets)",
+      "8": "90 feet (3/6/12/24 targets)",
+      "9": "90 feet (3/6/12/24 targets)"
+    }
   },
   {
     "name": "Conjure Wyrmling",
@@ -3410,10 +3688,14 @@
       "You summon a dragon wyrmling of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The color of dragon scales used in the casting determines the type of wyrmling summoned. The wyrmling disappears when it drops to 0 hit points or when the spell ends. The wyrmling is friendly to you and your companions for the duration. Roll initiative for the wyrmling, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the wyrmling, it defends itself from hostile creatures but otherwise takes no actions. The DM has the wyrmling's statistics. You can only have one wyrmling conjured at a time with this spell. Any additional castings of the spell within the duration will cause the prior wyrmling to cease existing or to extend the duration, depending on the scale used."
     ],
     "higherLevels": [
-      "When you cast this spell using an 8th-level spell slot, the duration is up to 24 hours. When using a 9th-level spell slot, the duration is a year and a day."
+      "When you cast this spell using an 8th-level spell slot, the duration is up to 24 hours. When using a 9th-level spell slot, the duration is a year."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "8": "Up to 24 hours",
+      "9": "Up to 1 year"
+    }
   },
   {
     "name": "Consecration",
@@ -3466,7 +3748,17 @@
     "lists": ["Arcane", "Occult", "Primal"],
     "ritual": false,
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "upcastRange": {
+      "2": "60 feet (2 targets)",
+      "3": "60 feet (3 targets)",
+      "4": "60 feet (4 targets)",
+      "5": "60 feet (5 targets)",
+      "6": "60 feet (6 targets)",
+      "7": "60 feet (7 targets)",
+      "8": "60 feet (8 targets)",
+      "9": "60 feet (9 targets)"
+    }
   },
   {
     "name": "Contact Other Plane",
@@ -3621,7 +3913,7 @@
     "school": "Transmutation",
     "level": 2,
     "castingTime": "1 action",
-    "range": "5 feet",
+    "range": "5 feet (4 targets)",
     "components": "V, S, M (four or more arrows or bolts)",
     "duration": "8 hours",
     "description": [
@@ -3641,7 +3933,9 @@
         "die": 6,
         "type": "piercing"
       }
-    ]
+    ],
+    "multiplier": 4,
+    "upcastMultiplier": 2
   },
   {
     "name": "Corrosive Smite",
@@ -3666,7 +3960,8 @@
         "die": 6,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Corruption",
@@ -3737,7 +4032,7 @@
     "school": "Evocation",
     "level": 2,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (3 targets)",
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
@@ -3758,7 +4053,9 @@
         "die": 12,
         "type": "lightning"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Crackling Smite",
@@ -3785,7 +4082,8 @@
         "die": 8,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Crashing Wave",
@@ -3812,7 +4110,8 @@
         "die": 6,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Create Bonfire",
@@ -3909,7 +4208,7 @@
     "school": "Necromancy",
     "level": 6,
     "castingTime": "1 minute",
-    "range": "10 feet",
+    "range": "10 feet (3 targets)",
     "components": "V, S, M (one clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse)",
     "duration": "Instantaneous",
     "description": [
@@ -3921,7 +4220,12 @@
       "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
     ],
     "lists": ["Arcane", "Divine", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "7": "10 feet (4 targets)",
+      "8": "10 feet (5/2 targets)",
+      "9": "10 feet (6/3/2 targets)"
+    }
   },
   {
     "name": "Create Useful Robe Patch",
@@ -3945,7 +4249,7 @@
     "school": "Conjuration",
     "level": 5,
     "castingTime": "1 minute",
-    "range": "30 feet",
+    "range": "30 feet (5-foot cube)",
     "components": "V, S, M (a tiny piece of matter of the same type of the item you plan to create)",
     "duration": "Special",
     "description": [
@@ -3956,7 +4260,13 @@
       "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
     ],
     "lists": ["Arcane"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "6": "30 feet (10-foot cube)",
+      "7": "30 feet (15-foot cube)",
+      "8": "30 feet (20-foot cube)",
+      "9": "30 feet (25-foot cube)"
+    }
   },
   {
     "name": "Creeping Crawling Claw",
@@ -3985,9 +4295,6 @@
     "description": [
       "As part of casting this spell, you must expend eight hit dice or the spell automatically fails. When you do, roll the eight hit dice expended to cast this spell and total them to determine the creature's creeping death threshold. While the spell remains active, if the creature's current hit points ever equal or are less than the creeping death threshold, the creature immediately dies.",
       "As a bonus action on each of your turns while this spell is active, you can force the target to make a Constitution saving throw. On a failure, roll 2d6 and add the result to the creature's creeping death threshold. On a success, add half the result instead. If the creature succeeds on three saving throws, which do not have to be consecutive, this spell ends early."
-    ],
-    "higherLevels": [
-      "When you cast this spell using a spell slot of 2nd level or higher, choose an additional target for the spell for each slot level above 1st."
     ],
     "lists": ["Arcane", "Occult"],
     "ritual": false,
@@ -4131,7 +4438,8 @@
         "die": 8,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Cursed With Undeath",
@@ -4205,7 +4513,13 @@
       "When you cast this spell using a spell slot of 6th level or higher, you animate up to two additional corpses for each slot level above 5th."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "6": "60 feet (3 targets)",
+      "7": "60 feet (5 targets)",
+      "8": "60 feet (7 targets)",
+      "9": "60 feet (9 targets)"
+    }
   },
   {
     "name": "Dark Pact",
@@ -4228,7 +4542,8 @@
         "dice": 2,
         "die": 4
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Dark Sacrament",
@@ -4256,7 +4571,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Dark Star",
@@ -4391,15 +4707,15 @@
     "school": "Necromancy",
     "level": 1,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (10-foot radius)",
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "Grasping spectral hands sprout from the ground in a 10-foot square starting from a point within range. For the duration, these hands turn the ground in the area into difficult terrain.",
+      "Grasping spectral hands sprout from the ground in a 10-foot radius starting from a point within range. For the duration, these hands turn the ground in the area into difficult terrain.",
       "Creatures ending their turn in the area must succeed on a Dexterity saving throw or take 3d6 necrotic damage from the spectral hands."
     ],
     "higherLevels": [
-      "When you cast this spell using certain higher-level spell slots, the area covered by the spell increases. With a 3rd-level slot, the area covered becomes a 20-foot square. With a 5th-level slot, the area covered becomes a 30-foot square. With a 7th-level slot, the area covered becomes a 40-foot square. With a 9th-level slot, the area covered becomes a 50-foot square."
+      "When you cast this spell using certain higher-level spell slots, the area covered by the spell increases. With a 3rd-level slot, the area covered becomes a 20-foot radius. With a 5th-level slot, the area covered becomes a 30-foot radius. With a 7th-level slot, the area covered becomes a 40-foot radius. With a 9th-level slot, the area covered becomes a 50-foot radius."
     ],
     "lists": ["Arcane", "Occult"],
     "ritual": 0,
@@ -4411,7 +4727,17 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastRange": {
+      "2": "60 feet (10-foot radius)",
+      "3": "60 feet (20-foot radius)",
+      "4": "60 feet (20-foot radius)",
+      "5": "60 feet (30-foot radius)",
+      "6": "60 feet (30-foot radius)",
+      "7": "60 feet (40-foot radius)",
+      "8": "60 feet (40-foot radius)",
+      "9": "60 feet (50-foot radius)"
+    }
   },
   {
     "name": "Defile",
@@ -4462,7 +4788,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Demiplane",
@@ -4656,7 +4983,14 @@
       "When you cast this spell using a spell slot of 5th level or higher, roll an additional 1d20 for each slot level above 4th."
     ],
     "lists": ["Arcane", "Divine", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 5,
+        "die": 20
+      }
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Digital Phantom",
@@ -4712,7 +5046,8 @@
         "die": 10,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Disarm",
@@ -4774,7 +5109,8 @@
         "amount": 40,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 3
   },
   {
     "name": "Dispel Evil and Good",
@@ -4826,7 +5162,15 @@
     "lists": ["Arcane", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastRange": {
+      "4": "40 feet",
+      "5": "50 feet",
+      "6": "60 feet",
+      "7": "70 feet",
+      "8": "80 feet",
+      "9": "90 feet"
+    }
   },
   {
     "name": "Dissonant Whispers",
@@ -4852,7 +5196,8 @@
         "die": 6,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Distort Value",
@@ -4926,7 +5271,8 @@
         "die": 10,
         "type": ["necrotic", "radiant"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Divine Favor",
@@ -4948,7 +5294,7 @@
     "school": "Abjuration",
     "level": 2,
     "castingTime": "10 minutes",
-    "range": "Touch",
+    "range": "5 feet",
     "components": "V, S, M (some hair, fingernail clippings, or other piece of the creature's body)",
     "duration": "24 hours",
     "description": [
@@ -4958,7 +5304,17 @@
       "When you cast this spell using a spell slot of 3rd level or higher, the range increases by 5 feet for each slot level above 2nd."
     ],
     "lists": ["Divine"],
-    "ritual": 1
+    "ritual": 1,
+    "upcastRange": {
+      "2": "10 feet",
+      "3": "15 feet",
+      "4": "20 feet",
+      "5": "25 feet",
+      "6": "30 feet",
+      "7": "35 feet",
+      "8": "40 feet",
+      "9": "45 feet"
+    }
   },
   {
     "name": "Divine Word",
@@ -4996,7 +5352,14 @@
     "lists": ["Arcane", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastDuration": {
+      "5": "Concentration, up to 10 minutes",
+      "6": "Concentration, up to 1 hour",
+      "7": "Concentration, up to 8 hours",
+      "8": "Concentration, up to 8 hours",
+      "9": "Concentration, up to 8 hours"
+    }
   },
   {
     "name": "Dominate Monster",
@@ -5018,7 +5381,10 @@
     "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastDuration": {
+      "9": "Concentration, up to 8 hours"
+    }
   },
   {
     "name": "Dominate Person",
@@ -5040,7 +5406,13 @@
     "lists": ["Arcane", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastDuration": {
+      "6": "Concentration, up to 10 minutes",
+      "7": "Concentration, up to 1 hour",
+      "8": "Concentration, up to 8 hours",
+      "9": "Concentration, up to 8 hours"
+    }
   },
   {
     "name": "Draconic Transformation",
@@ -5104,7 +5476,8 @@
           "thunder"
         ]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Drain Life",
@@ -5121,7 +5494,15 @@
       "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
     ],
     "lists": ["Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 2,
+        "die": 8,
+        "addAbility": true
+      }
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Draining Smite",
@@ -5145,7 +5526,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Drawmij's Instant Summons",
@@ -5337,7 +5719,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Earth Ripple",
@@ -5388,7 +5771,8 @@
         "die": 6,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Earth Worm",
@@ -5471,7 +5855,15 @@
     "ritual": 0,
     "element": "Earth",
     "type": "save",
-    "save": "dex"
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 6,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Earthquake",
@@ -5525,7 +5917,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ego Scourge",
@@ -5630,7 +6023,8 @@
         "die": 12,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Elemental Anguish",
@@ -5678,7 +6072,8 @@
         "die": 6,
         "type": ["acid", "cold", "fire", "lightning", "thunder"]
       }
-    ]
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Elemental Weapon",
@@ -5701,9 +6096,13 @@
       {
         "dice": 1,
         "die": 4,
+        "amount": 1,
         "type": ["acid", "cold", "fire", "lightning", "thunder"]
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastAmount": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Embers",
@@ -5732,7 +6131,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Encode Thoughts",
@@ -5791,7 +6191,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Enhance Ability",
@@ -5808,7 +6209,16 @@
       "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
     ],
     "lists": ["Arcane", "Divine", "Occult", "Primal", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "3": "Touch (2 targets)",
+      "4": "Touch (3 targets)",
+      "5": "Touch (4 targets)",
+      "6": "Touch (5 targets)",
+      "7": "Touch (6 targets)",
+      "8": "Touch (7 targets)",
+      "9": "Touch (8 targets)"
+    }
   },
   {
     "name": "Enlarge/Reduce",
@@ -5855,7 +6265,8 @@
         "die": 6,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Entangle",
@@ -5918,7 +6329,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Erode",
@@ -5945,7 +6357,8 @@
         "die": 4,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Erupting Earth",
@@ -5972,7 +6385,8 @@
         "die": 12,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Eruption",
@@ -5986,7 +6400,7 @@
       "Magma erupts in a 10-foot-radius, 40-foot-high cylinder centered on a point within 60 feet of you. Each creature within that area must make a Dexterity saving throw. A creature takes 5d10 fire damage and 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 8th level or higher, the fire damage or the bludgeoning damage (your choice) increases by 1d10 for each slot level above 7th."
+      "When you cast this spell using a spell slot of 8th level or higher, the fire damage and the bludgeoning damage increase by 1d10 each for each slot level above 7th."
     ],
     "lists": ["Arcane", "Divine", "Primal"],
     "ritual": false,
@@ -6003,7 +6417,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Eternal Blood",
@@ -6037,7 +6452,11 @@
       "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
     ],
     "lists": ["Arcane", "Divine", "Occult", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "8": "10 feet (3 targets)",
+      "9": "10 feet (3 targets)"
+    }
   },
   {
     "name": "Evard's Black Tentacles",
@@ -6191,7 +6610,8 @@
         "amount": 4,
         "temporary": true
       }
-    ]
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Far Step",
@@ -6226,7 +6646,15 @@
     "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "4": "30 feet (2 targets)",
+      "5": "30 feet (3 targets)",
+      "6": "30 feet (4 targets)",
+      "7": "30 feet (5 targets)",
+      "8": "30 feet (6 targets)",
+      "9": "30 feet (7 targets)"
+    }
   },
   {
     "name": "Fear",
@@ -6520,7 +6948,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Fireball",
@@ -6547,7 +6976,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Firestorm",
@@ -6624,10 +7054,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver."
-    ],
-    "higherLevels": [
-      "When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd."
+      "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses."
     ],
     "lists": ["Arcane", "Elemental", "Primal"],
     "ritual": 0,
@@ -6666,7 +7093,9 @@
         "type": "fire",
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Flame Strike",
@@ -6680,7 +7109,7 @@
       "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 20-foot radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 6d6 fire damage and 6d6 radiant damage on a failed save, or half as much damage on a successful one."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th."
+      "When you cast this spell using a spell slot of 6th level or higher, the fire damage and the radiant damage increase by 1d6 each for each slot level above 5th."
     ],
     "lists": ["Arcane", "Divine", "Primal"],
     "ritual": 0,
@@ -6697,7 +7126,8 @@
         "die": 6,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Flaming Sphere",
@@ -6726,7 +7156,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Flash Fever",
@@ -6752,7 +7183,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Flash Freeze",
@@ -6779,7 +7211,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Flense",
@@ -6827,7 +7260,7 @@
     "school": "Conjuration",
     "level": 2,
     "castingTime": "1 minute",
-    "range": "Touch",
+    "range": "Touch (3 targets)",
     "components": "V, S",
     "duration": "1 hour",
     "description": [
@@ -6839,7 +7272,16 @@
       "When you cast this spell using a spell slot of 3rd level or higher, you conjure an additional familiar for each slot level above 2nd."
     ],
     "lists": ["Arcane", "Occult", "Primal"],
-    "ritual": 1
+    "ritual": 1,
+    "upcastRange": {
+      "3": "Touch (4 targets)",
+      "4": "Touch (5 targets)",
+      "5": "Touch (6 targets)",
+      "6": "Touch (7 targets)",
+      "7": "Touch (8 targets)",
+      "8": "Touch (9 targets)",
+      "9": "Touch (10 targets)"
+    }
   },
   {
     "name": "Fly",
@@ -6857,7 +7299,15 @@
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal", "Psionic"],
     "ritual": 0,
-    "element": "Air"
+    "element": "Air",
+    "upcastRange": {
+      "4": "Touch (2 targets)",
+      "5": "Touch (3 targets)",
+      "6": "Touch (4 targets)",
+      "7": "Touch (5 targets)",
+      "8": "Touch (6 targets)",
+      "9": "Touch (7 targets)"
+    }
   },
   {
     "name": "Fog Cloud",
@@ -6875,7 +7325,17 @@
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal"],
     "ritual": 0,
-    "element": "Water"
+    "element": "Water",
+    "upcastRange": {
+      "2": "120 feet (40-foot sphere)",
+      "3": "120 feet (60-foot sphere)",
+      "4": "120 feet (80-foot sphere)",
+      "5": "120 feet (120-foot sphere)",
+      "6": "120 feet (160-foot sphere)",
+      "7": "120 feet (200-foot sphere)",
+      "8": "120 feet (240-foot sphere)",
+      "9": "120 feet (280-foot sphere)"
+    }
   },
   {
     "name": "Forbiddance",
@@ -6924,7 +7384,9 @@
         "die": 12,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Force Bolt",
@@ -7130,7 +7592,17 @@
       "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
     ],
     "lists": ["Arcane", "Occult", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "2": "60 feet (2 targets)",
+      "3": "60 feet (3 targets)",
+      "4": "60 feet (4 targets)",
+      "5": "60 feet (5 targets)",
+      "6": "60 feet (6 targets)",
+      "7": "60 feet (7 targets)",
+      "8": "60 feet (8 targets)",
+      "9": "60 feet (9 targets)"
+    }
   },
   {
     "name": "Freedom of Movement",
@@ -7206,7 +7678,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Friends",
@@ -7274,7 +7747,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Frost Nova",
@@ -7300,7 +7774,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Frostbite",
@@ -7378,7 +7853,8 @@
         "die": 10,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Furtive Armory",
@@ -7456,7 +7932,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Gale of Obscurity",
@@ -7541,7 +8018,13 @@
         "die": 10,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDuration": {
+      "6": "30 days",
+      "7": "1 year",
+      "8": "1 year",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Gentle Repose",
@@ -7606,7 +8089,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ghost Light",
@@ -7730,7 +8214,8 @@
         "die": 10,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Glaciate",
@@ -7758,7 +8243,8 @@
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Glacious",
@@ -7786,7 +8272,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Gleam",
@@ -7887,7 +8374,8 @@
         "die": 8,
         "type": ["acid", "cold", "fire", "lightning", "thunder"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Goodberry",
@@ -7925,7 +8413,12 @@
       "When you cast this spell using a 9th level spell slot, you can select one additional creature."
     ],
     "lists": ["Arcane", "Divine", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "7": "Touch",
+      "8": "Touch",
+      "9": "Touch (2 targets)"
+    }
   },
   {
     "name": "Grasping Vine",
@@ -7970,7 +8463,8 @@
         "die": 8,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Gravity Sinkhole",
@@ -7996,7 +8490,8 @@
         "die": 10,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Grease",
@@ -8274,7 +8769,7 @@
       "You hurl a ball of dark energy at a target within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 necrotic damage and must make a Wisdom saving throw or become frightened of you until the end of your next turn."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 2nd level or higher, the damage dealt increases by 1d12 for every two spell slot levels above 1st."
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage dealt increases by 1d12 for every spell slot level above 1st."
     ],
     "lists": ["Arcane", "Occult", "Elemental"],
     "element": "Shadow",
@@ -8287,7 +8782,8 @@
         "die": 12,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Grimlore's Shadowgrasp",
@@ -8315,7 +8811,9 @@
         "die": 12,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Grimlore's Touch of Undeath",
@@ -8361,7 +8859,9 @@
         "die": 12,
         "type": "necrotic"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastDice": 1
   },
   {
     "name": "Grounding Bolt",
@@ -8482,7 +8982,8 @@
         "die": 6,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Guillotine",
@@ -8510,7 +9011,8 @@
         "die": 8,
         "type": "slashing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Gust",
@@ -8583,7 +9085,7 @@
       "The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes 1d10 piercing damage on a failed save, or half as much damage on a successful one."
     ],
     "higherLevels": [
-      "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st (to a maximum of 6d10)."
+      "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
     ],
     "lists": ["Elemental", "Primal"],
     "ritual": 0,
@@ -8596,7 +9098,8 @@
         "die": 10,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Hallow",
@@ -8633,7 +9136,14 @@
     "lists": ["Arcane", "Divine", "Occult"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastDuration": {
+      "5": "8 hours",
+      "6": "8 hours",
+      "7": "24 hours",
+      "8": "24 hours",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Hallucinatory Terrain",
@@ -8706,7 +9216,7 @@
       "At the start of each of your turns, roll a d6 for each affected device to determine its behavior. Except where otherwise indicated, that behavior lasts until the start of your next turn while this spell is in effect.<table><tr><th>d6</th><th>Effect</th></tr><tr><td>1</td><td>The device shuts down and must be restarted. Do not roll again for this device until it is restarted. A construct is considered unconscious until the start of your next turn.</td></tr><tr><td>2-4</td><td>The device does not function. A construct is considered incapacitated until the start of your next turn.</td></tr><tr><td>5</td><td>The device experiences a power surge, causing an electric shock to the wielder (if any and one random creature within 5 feet of the device. Each affected creature must make a Dexterity saving throw against your spell save DC, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one. Constructs are considered their own wielder.</td></tr><tr><td>6</td><td>The device is usable as normal. A construct is unaffected.</td></tr></table>"
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 4th level or higher, the radius of the sphere affected by the spell increases by 5 feet for each slot level above 3rd."
+      "When you cast this spell using a spell slot of 6th level or higher, the radius of the sphere affected by the spell increases by 5 feet for each slot level above 3rd."
     ],
     "lists": [],
     "ritual": 0,
@@ -8718,7 +9228,13 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastRange": {
+      "6": "90 feet (15-foot sphere)",
+      "7": "90 feet (20-foot sphere)",
+      "8": "90 feet (25-foot sphere)",
+      "9": "90 feet (30-foot sphere)"
+    }
   },
   {
     "name": "Heal",
@@ -8740,7 +9256,8 @@
       {
         "amount": 70
       }
-    ]
+    ],
+    "upcastAmount": 10
   },
   {
     "name": "Healing Leeches",
@@ -8780,7 +9297,8 @@
         "dice": 1,
         "die": 6
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Healing Stone",
@@ -8825,7 +9343,8 @@
         "die": 4,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Heart Sunder",
@@ -8883,7 +9402,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Heaven Burst",
@@ -8948,7 +9468,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Hellish Rebuke",
@@ -8975,7 +9496,8 @@
         "die": 10,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Helm's Everwatchful Eye",
@@ -9053,7 +9575,17 @@
         "addAbility": true,
         "temporary": true
       }
-    ]
+    ],
+    "upcastRange": {
+      "2": "Touch (2 targets)",
+      "3": "Touch (3 targets)",
+      "4": "Touch (4 targets)",
+      "5": "Touch (5 targets)",
+      "6": "Touch (6 targets)",
+      "7": "Touch (7 targets)",
+      "8": "Touch (8 targets)",
+      "9": "Touch (9 targets)"
+    }
   },
   {
     "name": "Hex",
@@ -9079,7 +9611,17 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDuration": {
+      "2": "Concentration, up to 1 hour",
+      "3": "Concentration, up to 8 hours",
+      "4": "Concentration, up to 8 hours",
+      "5": "Concentration, up to 24 hours",
+      "6": "Concentration, up to 24 hours",
+      "7": "Concentration, up to 24 hours",
+      "8": "Concentration, up to 24 hours",
+      "9": "Concentration, up to 24 hours"
+    }
   },
   {
     "name": "Hinder",
@@ -9117,7 +9659,13 @@
     "lists": ["Arcane", "Occult", "Psionic", "Melodic", "Primal"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "6": "90 feet (2 targets)",
+      "7": "90 feet (3 targets)",
+      "8": "90 feet (4 targets)",
+      "9": "90 feet (5 targets)"
+    }
   },
   {
     "name": "Hold Person",
@@ -9145,7 +9693,16 @@
     "ritual": 0,
     "element": "Water",
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "3": "60 feet (2 targets)",
+      "4": "60 feet (3 targets)",
+      "5": "60 feet (4 targets)",
+      "6": "60 feet (5 targets)",
+      "7": "60 feet (6 targets)",
+      "8": "60 feet (7 targets)",
+      "9": "60 feet (8 targets)"
+    }
   },
   {
     "name": "Holy Aura",
@@ -9313,7 +9870,17 @@
         "die": 6,
         "type": ["bludgeoning", "piercing", "slashing"]
       }
-    ]
+    ],
+    "upcastDuration": {
+      "2": "Concentration, up to 1 hour",
+      "3": "Concentration, up to 8 hours",
+      "4": "Concentration, up to 8 hours",
+      "5": "Concentration, up to 24 hours",
+      "6": "Concentration, up to 24 hours",
+      "7": "Concentration, up to 24 hours",
+      "8": "Concentration, up to 24 hours",
+      "9": "Concentration, up to 24 hours"
+    }
   },
   {
     "name": "Hunter's Sense",
@@ -9361,7 +9928,7 @@
     "school": "Evocation",
     "level": 2,
     "castingTime": "1 action",
-    "range": "Self (30 foot line)",
+    "range": "Self (30-foot line)",
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
@@ -9422,16 +9989,20 @@
     "save": "dex",
     "damage": [
       {
+        "id": "48464F8B-030E-499C-9E0E-672A26321547",
         "dice": 1,
         "die": 10,
         "type": "piercing"
       },
       {
+        "id": "E1D606EB-DF42-4122-A515-47381C43FCDF",
         "dice": 2,
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["E1D606EB-DF42-4122-A515-47381C43FCDF"]
   },
   {
     "name": "Ice Shard",
@@ -9488,7 +10059,9 @@
         "die": 8,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastMultiplier": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Ice Storm",
@@ -9512,16 +10085,20 @@
     "save": "dex",
     "damage": [
       {
+        "id": "2EB77B36-1598-4B93-93A6-9FA8C4BD8EFF",
         "dice": 2,
         "die": 8,
         "type": "bludgeoning"
       },
       {
+        "id": "2CA8C14A-2226-4C9E-ABDA-C0E8305B9726",
         "dice": 4,
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["2EB77B36-1598-4B93-93A6-9FA8C4BD8EFF"]
   },
   {
     "name": "Ice Wave",
@@ -9535,7 +10112,7 @@
       "You touch the ground within 5 feet of you, sending a wave of ice shooting forward. The ice forms a line outward from your position that can be up to 40 feet long, up to 10 feet wide, and up to 20 feet tall. Each creature within the area must make a Dexterity saving throw. On a failed save, a creature takes 2d8 cold damage and 2d8 bludgeoning damage. Additionally, its movement speed becomes 0 until the end of its next turn. On a successful save, a creature takes half as much damage and it does not suffer a movement speed penalty."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 7th level or higher, the cold damage or the bludgeoning damage (your choice) increases by 1d8 for each slot level above 6th."
+      "When you cast this spell using a spell slot of 7th level or higher, the cold damage and the bludgeoning damage increase by 1d8 each for each slot level above 6th."
     ],
     "lists": ["Arcane", "Primal"],
     "ritual": 0,
@@ -9552,7 +10129,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Iceberg Palisade",
@@ -9585,7 +10163,11 @@
         "die": 8,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDuration": {
+      "8": "Concentration, up to 10 minutes",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Icicle Spear",
@@ -9609,16 +10191,20 @@
     "save": "dex",
     "damage": [
       {
+        "id": "ADFD76BC-1B01-469F-A2EE-39F9D6F9C8BA",
         "dice": 3,
         "die": 10,
         "type": "piercing"
       },
       {
+        "id": "2180F6E7-2EDB-493E-AA84-9470DDCD9C25",
         "dice": 5,
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["2180F6E7-2EDB-493E-AA84-9470DDCD9C25"]
   },
   {
     "name": "Id Insinuation",
@@ -9756,7 +10342,16 @@
       "If you cast this spell using a spell slot of 4th or 5th level, the DC to move the object increases by 5, it can carry up to 8000 pounds of weight, and the duration increases to 24 hours. If you cast this spell using a spell slot of 6th level or higher, the DC to move the object increases by 10, it can carry up to 20000 pounds of weight, and the effect is permanent until dispelled."
     ],
     "lists": ["Arcane", "Psionic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "3": "1 hour",
+      "4": "24 hours",
+      "5": "24 hours",
+      "6": "Until dispelled",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Imprisonment",
@@ -9958,7 +10553,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Infestation",
@@ -10009,7 +10605,8 @@
         "die": 10,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastAmount": 1
   },
   {
     "name": "Injurious Spellbook",
@@ -10035,7 +10632,9 @@
         "die": 8,
         "type": "slashing"
       }
-    ]
+    ],
+    "multiplier": 2,
+    "upcastDice": 1
   },
   {
     "name": "Inner Fire",
@@ -10079,7 +10678,8 @@
         "die": 10,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Intellect Fortress",
@@ -10096,7 +10696,15 @@
       "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them."
     ],
     "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "4": "30 feet (2 targets)",
+      "5": "30 feet (3 targets)",
+      "6": "30 feet (4 targets)",
+      "7": "30 feet (5 targets)",
+      "8": "30 feet (6 targets)",
+      "9": "30 feet (7 targets)"
+    }
   },
   {
     "name": "Interpret Bone",
@@ -10259,7 +10867,16 @@
     ],
     "lists": ["Arcane", "Occult", "Primal", "Psionic", "Melodic", "Elemental"],
     "element": "Light",
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "3": "Touch (2 targets)",
+      "4": "Touch (3 targets)",
+      "5": "Touch (4 targets)",
+      "6": "Touch (5 targets)",
+      "7": "Touch (6 targets)",
+      "8": "Touch (7 targets)",
+      "9": "Touch (8 targets)"
+    }
   },
   {
     "name": "Invisibility to Cameras",
@@ -10367,7 +10984,9 @@
         "die": 4,
         "type": "force"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Jump",
@@ -10409,10 +11028,12 @@
         "die": 12,
         "type": "lightning"
       }
-    ]
+    ],
+    "multiplier": 5,
+    "upcastDice": 1
   },
   {
-    "name": "Kelemvor's Irradiating Beam",
+    "name": "Lathander's Lance",
     "school": "Evocation",
     "level": 7,
     "castingTime": "1 action",
@@ -10437,7 +11058,8 @@
         "die": 10,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Kinetic Jaunt",
@@ -10683,7 +11305,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Light",
@@ -10729,7 +11352,8 @@
         "die": 8,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Lightning Bolt",
@@ -10757,7 +11381,8 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Lightning Charged",
@@ -10784,7 +11409,9 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "multiplier": 6,
+    "upcastMultiplier": 2
   },
   {
     "name": "Lightning Lure",
@@ -10832,7 +11459,7 @@
     "school": "Evocation",
     "level": 1,
     "castingTime": "1 bonus action",
-    "range": "Self (20 feet)",
+    "range": "20 feet",
     "components": "V, S, M (a twig from a tree that has been struck by lightning)",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -10850,7 +11477,19 @@
         "die": 12,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastMultiplier": 2,
+    "upcastRange": {
+      "2": "20 feet",
+      "3": "30 feet",
+      "4": "30 feet",
+      "5": "60 feet",
+      "6": "60 feet",
+      "7": "120 feet",
+      "8": "120 feet",
+      "9": "120 feet"
+    }
   },
   {
     "name": "Lightning-Flash Strike",
@@ -10877,7 +11516,8 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Lingering Vitality",
@@ -10900,7 +11540,8 @@
         "dice": 10,
         "die": 8
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Little Death",
@@ -10982,7 +11623,17 @@
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal", "Psionic", "Melodic"],
     "ritual": 0,
-    "element": "Earth"
+    "element": "Earth",
+    "upcastRange": {
+      "2": "Touch (2 targets)",
+      "3": "Touch (3 targets)",
+      "4": "Touch (4 targets)",
+      "5": "Touch (5 targets)",
+      "6": "Touch (6 targets)",
+      "7": "Touch (7 targets)",
+      "8": "Touch (8 targets)",
+      "9": "Touch (9 targets)"
+    }
   },
   {
     "name": "Lullaby",
@@ -11129,7 +11780,15 @@
     "lists": ["Arcane", "Divine", "Occult", "Melodic"],
     "ritual": 1,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastDuration": {
+      "4": "2 hours",
+      "5": "3 hours",
+      "6": "4 hours",
+      "7": "5 hours",
+      "8": "6 hours",
+      "9": "7 hours"
+    }
   },
   {
     "name": "Magic Jar",
@@ -11191,7 +11850,9 @@
         "amount": 1,
         "type": "force"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Magic Mouth",
@@ -11292,7 +11953,8 @@
         "die": 8,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Major Image",
@@ -11312,7 +11974,15 @@
     ],
     "lists": ["Arcane", "Occult", "Psionic", "Melodic", "Elemental"],
     "element": "Light",
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "4": "Concentration, up to 10 minutes",
+      "5": "Concentration, up to 10 minutes",
+      "6": "Until dispelled",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Mana Burn",
@@ -11339,7 +12009,8 @@
         "die": 6,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Manacle of Burden",
@@ -11460,7 +12131,9 @@
         "amount": 5,
         "temporary": true
       }
-    ]
+    ],
+    "upcastAmount": 5,
+    "upcastDice": 1
   },
   {
     "name": "Mass Cure Wounds",
@@ -11478,13 +12151,15 @@
     ],
     "lists": ["Arcane", "Divine", "Primal", "Melodic"],
     "ritual": 0,
+    "multiplier": 6,
     "healing": [
       {
         "dice": 3,
         "die": 8,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Mass Heal",
@@ -11521,13 +12196,15 @@
     ],
     "lists": ["Arcane", "Divine", "Melodic"],
     "ritual": 0,
+    "multiplier": 6,
     "healing": [
       {
         "dice": 1,
         "die": 4,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Mass Polymorph",
@@ -11569,7 +12246,12 @@
     "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastDuration": {
+      "7": "10 days",
+      "8": "30 days",
+      "9": "1 year"
+    }
   },
   {
     "name": "Mass Vicious Mockery",
@@ -11595,7 +12277,9 @@
         "die": 4,
         "type": "psychic"
       }
-    ]
+    ],
+    "multiplier": 6,
+    "upcastDice": 2
   },
   {
     "name": "Maximillian's Earthen Grasp",
@@ -11681,7 +12365,8 @@
         "die": 4,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Melf's Minute Meteors",
@@ -11708,7 +12393,9 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "multiplier": 6,
+    "upcastMultiplier": 2
   },
   {
     "name": "Mending",
@@ -11892,7 +12579,8 @@
         "die": 8,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Mind Thrust",
@@ -11985,7 +12673,7 @@
       "Until the spell ends, if the target is within 30 feet of you at the start of your turns, using your action, you can force it to succeed on a Constitution saving throw take 1d6 necrotic damage. A creature of your choosing within 5 feet of the target regains hit points equal to half the amount of necrotic damage dealt. A successful saving throw ends the spell."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 on each instance of damage for every three spell slot levels above 1st."
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 on each instance of damage for each spell slot level above 1st."
     ],
     "lists": ["Arcane", "Occult", "Melodic"],
     "ritual": 0,
@@ -11997,7 +12685,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Mislead",
@@ -12119,7 +12808,8 @@
         "die": 10,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Mordenkainen's Faithful Hound",
@@ -12167,7 +12857,7 @@
     "school": "Abjuration",
     "level": 4,
     "castingTime": "1 action",
-    "range": "120 feet",
+    "range": "120 feet (100-foot cube)",
     "components": "V, S, M (a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite)",
     "duration": "24 hours",
     "description": [
@@ -12178,7 +12868,14 @@
       "When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th. Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 5th level."
     ],
     "lists": ["Arcane"],
-    "ritual": 1
+    "ritual": 1,
+    "upcastRange": {
+      "5": "120 feet (200-foot cube)",
+      "6": "120 feet (300-foot cube)",
+      "7": "120 feet (400-foot cube)",
+      "8": "120 feet (500-foot cube)",
+      "9": "120 feet (600-foot cube)"
+    }
   },
   {
     "name": "Mordenkainen's Sword",
@@ -12246,7 +12943,8 @@
         "amount": 5,
         "temporary": true
       }
-    ]
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Mountains to Molehills",
@@ -12359,7 +13057,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Mystra's Bequest",
@@ -12440,7 +13139,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Needle and Thread",
@@ -12466,7 +13166,8 @@
         "die": 8,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Negative Energy Flood",
@@ -12506,7 +13207,17 @@
       "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
     ],
     "lists": ["Arcane", "Divine", "Occult", "Primal", "Melodic"],
-    "ritual": true
+    "ritual": true,
+    "upcastRange": {
+      "2": "Touch (2 targets)",
+      "3": "Touch (3 targets)",
+      "4": "Touch (4 targets)",
+      "5": "Touch (5 targets)",
+      "6": "Touch (6 targets)",
+      "7": "Touch (7 targets)",
+      "8": "Touch (8 targets)",
+      "9": "Touch (9 targets)"
+    }
   },
   {
     "name": "Night Terror",
@@ -12590,7 +13301,8 @@
         "die": 6,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Nystul's Magic Aura",
@@ -12624,7 +13336,14 @@
       "When you cast this spell using a spell slot of 5th level or higher, you can select one additional creature for each slot level above 4th."
     ],
     "lists": ["Arcane", "Divine", "Primal", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "5": "30 feet (2 targets)",
+      "6": "30 feet (3 targets)",
+      "7": "30 feet (4 targets)",
+      "8": "30 feet (5 targets)",
+      "9": "30 feet (6 targets)"
+    }
   },
   {
     "name": "Oghma's Knowledge Transferal",
@@ -12763,7 +13482,8 @@
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Otiluke's Resilient Sphere",
@@ -12886,9 +13606,6 @@
       "A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive keep track of both until the target collects three of a kind.",
       "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
     ],
-    "higherLevels": [
-      "When you cast this spell using a spell slot of 6th level or higher, the initial extra damage dealt by the attack increases by 1d8 for each slot."
-    ],
     "lists": ["Divine"],
     "ritual": false,
     "type": "save",
@@ -12955,7 +13672,8 @@
         "die": 10,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Phantom Steed",
@@ -13072,7 +13790,13 @@
     "lists": ["Arcane", "Divine", "Occult", "Primal"],
     "ritual": 0,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastDuration": {
+      "6": "10 days",
+      "7": "30 days",
+      "8": "180 days",
+      "9": "1 year"
+    }
   },
   {
     "name": "Plane Shift",
@@ -13134,7 +13858,8 @@
         "die": 12,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Venom Darts",
@@ -13145,10 +13870,10 @@
     "components": "V, S",
     "duration": "Up to 1 hour",
     "description": [
-      "You conjure 2d4 magical darts that last for one hour or until they are used. As an action on your turn, you may expend one of the darts to make a ranged spell attack against a creature you can see within in range. On a successful attack, you deal 2d6 poison damage to the target and force them to make a Constitution saving throw or become poisoned until the end of their next turn."
+      "You conjure five magical darts that last for one hour or until they are used. As an action on your turn, you may expend one of the darts to make a ranged spell attack against a creature you can see within in range. On a successful attack, you deal 2d6 poison damage to the target and force them to make a Constitution saving throw or become poisoned until the end of their next turn."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 4th level or higher, the you summon and additional 1d4 darts and they last for 1 additional hour for each slot level above 3rd."
+      "When you cast this spell using a spell slot of 4th level or higher, the you summon two additional darts and they last for 1 additional hour for each slot level above 3rd."
     ],
     "lists": ["Arcane", "Occult", "Primal"],
     "ritual": 0,
@@ -13160,7 +13885,17 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "multiplier": 5,
+    "upcastMultiplier": 2,
+    "upcastDuration": {
+      "4": "Up to 2 hours",
+      "5": "Up to 3 hours",
+      "6": "Up to 4 hours",
+      "7": "Up to 5 hours",
+      "8": "Up to 6 hours",
+      "9": "Up to 7 hours"
+    }
   },
   {
     "name": "Poison Puff",
@@ -13262,7 +13997,8 @@
         "die": 10,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Polar Midnight",
@@ -13343,7 +14079,16 @@
       "If you cast this spell using a spell slot of 3rd level or higher, the duration is 8 hours, and the spell doesn't require concentration. You can end the spell early at any time (no action required)."
     ],
     "lists": ["Occult", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "3": "8 hours",
+      "4": "8 hours",
+      "5": "8 hours",
+      "6": "8 hours",
+      "7": "8 hours",
+      "8": "8 hours",
+      "9": "8 hours"
+    }
   },
   {
     "name": "Power Word: Glory",
@@ -13489,7 +14234,8 @@
         "die": 8,
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Predominance",
@@ -13529,7 +14275,8 @@
         "die": 6,
         "type": "slashing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Prestidigitation",
@@ -13775,7 +14522,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Psionic Oppression",
@@ -13802,7 +14550,8 @@
         "die": 8,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Psionic Strike",
@@ -13933,7 +14682,8 @@
         "die": 6,
         "type": "force"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Purify Food and Drink",
@@ -13969,23 +14719,6 @@
     "save": "con"
   },
   {
-    "name": "Quicken Atavism",
-    "school": "Sangromancy",
-    "level": 4,
-    "castingTime": "16 hours",
-    "range": "Touch",
-    "components": "S",
-    "duration": "Instantaneous",
-    "description": [
-      "You perform a rite of blood on a young person. Choose a humanoid that is a number of years old or less equal to your spellcasting modifier. You imbue them with an atavistic spark, granting them a chance at developing atavism, which takes a full month to mature. Roll percentile dice. On a result of your level or lower, the child's Constitution score raises to 15 if it were lower and they become a 1st-level atavist after the maturation time."
-    ],
-    "higherLevels": [
-      "When you cast this spell using a spell slot of 5th level or higher, the humanoid's maximum age increases by 5 years and the casting time halves for each spell slot above 4th."
-    ],
-    "lists": ["Occult"],
-    "ritual": 1
-  },
-  {
     "name": "Radiant Barrage",
     "school": "Evocation",
     "level": 2,
@@ -14009,7 +14742,9 @@
         "die": 6,
         "type": "radiant"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Radiant Mark",
@@ -14051,7 +14786,8 @@
         "die": 8,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Raise Dead",
@@ -14085,7 +14821,12 @@
       "When you cast this spell using a spell slot of 7th level or higher, the duration is 1 hour. If you use a spell slot of 8th level or higher, the duration is 24 hours. If you use an 9th level spell slot, the spell lasts for 1 month. Using a spell slot of 7th level or higher grants a duration that does not require Concentration."
     ],
     "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "7": "1 hour",
+      "8": "24 hours",
+      "9": "1 month"
+    }
   },
   {
     "name": "Rancorous-Mist Blade",
@@ -14151,7 +14892,8 @@
         "die": 6,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ravenous Void",
@@ -14243,14 +14985,15 @@
         "die": 8,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Raze",
     "school": "Evocation",
     "level": 4,
     "castingTime": "1 Action",
-    "range": "Self (15 foot radius)",
+    "range": "Self (15-foot radius)",
     "components": "V, S, M (a red dragon's scale worth 300 gp)",
     "duration": "Instantaneous",
     "description": [
@@ -14270,7 +15013,14 @@
         "die": 10,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastRange": {
+      "5": "Self (20-foot radius)",
+      "6": "Self (25-foot radius)",
+      "7": "Self (30-foot radius)",
+      "8": "Self (35-foot radius)",
+      "9": "Self (40-foot radius)"
+    }
   },
   {
     "name": "Reality Break",
@@ -14307,7 +15057,16 @@
       "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
     ],
     "lists": ["Divine", "Occult", "Primal"],
-    "ritual": false
+    "ritual": false,
+    "upcastRange": {
+      "3": "Touch (2 targets)",
+      "4": "Touch (3 targets)",
+      "5": "Touch (4 targets)",
+      "6": "Touch (5 targets)",
+      "7": "Touch (6 targets)",
+      "8": "Touch (7 targets)",
+      "9": "Touch (8 targets)"
+    }
   },
   {
     "name": "Reassurance",
@@ -14541,19 +15300,23 @@
     "school": "Conjuration",
     "level": 7,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (2d4 + 5 targets)",
     "components": "V, S, M (a war horn)",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You summon warriors to fight for you and your allies with a blast through a war horn that calls them to arms. Choose between a Knight or a Veteran the chosen creature appears within range, as well as a squad of auxiliary warriors composed of 2d4+4 Guards or Bandits, respectively.",
+      "You summon warriors to fight for you and your allies with a blast through a war horn that calls them to arms. Choose between a Knight or a Veteran the chosen creature appears within range, as well as a squad of auxiliary warriors composed of 2d4 + 4 Guards or Bandits, respectively.",
       "The summoned warriors are friendly to you and your companions for the duration. Roll initiative for the warriors, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to the warriors, they defend themselves from hostile creatures but otherwise take no actions.",
       "If your concentration is broken, the warriors don't disappear. Instead, you lose command of them, and they become neutral to you and your companions, following the command of the Knight or Veteran (as appropriate). Uncontrolled warriors can't be dismissed by you and disappear 1 hour after they are summoned. The DM has the warriors' statistics."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 8th level, the number of auxiliary warriors you may summon increases to 2d6+6. When you cast it using a spell slot of 9th level, this number increases to 2d8+8, or you may summon 12 auxiliary warriors and an additional Knight or Veteran, which must be of the same type as the initial choice."
+      "When you cast this spell using a spell slot of 8th level, the number of auxiliary warriors you may summon increases to 2d6 + 6. When you cast it using a spell slot of 9th level, this number increases to 2d8+ 8, and you may summon an additional Knight or Veteran, which must be of the same type as the initial choice."
     ],
     "lists": ["Arcane", "Divine", "Occult", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "8": "60 feet (2d6 + 7 targets)",
+      "9": "60 feet (2d8 + 10 targets)"
+    }
   },
   {
     "name": "Reverse Gravity",
@@ -14592,7 +15355,7 @@
     "school": "Transposition",
     "level": 4,
     "castingTime": "1 action",
-    "range": "Self (60-ft line)",
+    "range": "Self (60-foot line)",
     "components": "V, S, M (a length of copper wire)",
     "duration": "Instantaneous",
     "description": [
@@ -14612,7 +15375,15 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastRange": {
+      "5": "Self (70-foot line)",
+      "6": "Self (80-foot line)",
+      "7": "Self (90-foot line)",
+      "8": "Self (100-foot line)",
+      "9": "Self (110-foot line)"
+    }
   },
   {
     "name": "Rime's Binding Ice",
@@ -14639,7 +15410,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ring of Fire",
@@ -14692,7 +15464,8 @@
         "die": 10,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Rope Trick",
@@ -14735,7 +15508,8 @@
         "die": 12,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ruin",
@@ -14761,7 +15535,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Sacred Flame",
@@ -14812,7 +15587,9 @@
         "die": 8,
         "addAbility": true
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Sanctuary",
@@ -14851,7 +15628,15 @@
     "lists": ["Arcane", "Occult"],
     "ritual": true,
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "upcastDuration": {
+      "4": "Concentration, up to 2 hours",
+      "5": "Concentration, up to 3 hours",
+      "6": "Concentration, up to 4 hours",
+      "7": "Concentration, up to 5 hours",
+      "8": "Concentration, up to 6 hours",
+      "9": "Concentration, up to 7 hours"
+    }
   },
   {
     "name": "Sanguine Shield",
@@ -14868,7 +15653,14 @@
       "When you cast this spell using a spell slot of 4th level or higher, the maximum number of temporary hit points you can gain from casting it increases by 5 for each two slot levels above 2nd."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": false
+    "ritual": false,
+    "healing": [
+      {
+        "amount": 15,
+        "temporary": true
+      }
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Sapping Sting",
@@ -14953,7 +15745,9 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Scornful Mantle of the Undaunted",
@@ -15052,7 +15846,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "See Invisibility",
@@ -15137,7 +15932,16 @@
       "When you cast this spell with a 4th or 5th level spell slot, you can maintain concentration on this spell for up to 1 hour. When you cast this spell with a 6th level or higher spell slot, you can maintain concentration on this spell for up to 8 hours."
     ],
     "lists": ["Arcane", "Divine", "Occult", "Primal"],
-    "ritual": false
+    "ritual": false,
+    "upcastDuration": {
+      "3": "Concentration, up to 1 minute",
+      "4": "Concentration, up to 1 hour",
+      "5": "Concentration, up to 1 hour",
+      "6": "Concentration, up to 8 hours",
+      "7": "Concentration, up to 8 hours",
+      "8": "Concentration, up to 8 hours",
+      "9": "Concentration, up to 8 hours"
+    }
   },
   {
     "name": "Sequester",
@@ -15180,7 +15984,8 @@
         "die": 8,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Shadow Bind",
@@ -15206,7 +16011,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Shadow Blade",
@@ -15233,7 +16039,9 @@
         "type": "psychic",
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Shadow Embrace",
@@ -15345,7 +16153,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Shawl of the Unseen",
@@ -15502,7 +16311,8 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Shutdown",
@@ -15714,7 +16524,9 @@
         "die": 12,
         "type": "lightning"
       }
-    ]
+    ],
+    "multiplier": 5,
+    "upcastMultiplier": 1
   },
   {
     "name": "Skywrite",
@@ -15744,11 +16556,21 @@
       "Additionally, you may make a single melee attack against any creature that is within 5 feet of your chosen path, doing your normal attack damage on a hit."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for every two slot levels above 1st."
+      "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature with attacks for every two slot levels above 1st."
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal", "Psionic"],
     "ritual": 0,
-    "element": "Earth"
+    "element": "Earth",
+    "upcastRange": {
+      "2": "Self (2 targets)",
+      "3": "Self (3 targets)",
+      "4": "Self (4 targets)",
+      "5": "Self (5 targets)",
+      "6": "Self (6 targets)",
+      "7": "Self (7 targets)",
+      "8": "Self (8 targets)",
+      "9": "Self (9 targets)"
+    }
   },
   {
     "name": "Sleep",
@@ -15766,7 +16588,14 @@
       "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
     ],
     "lists": ["Arcane", "Occult", "Primal", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 5,
+        "die": 8
+      }
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Sleet Storm",
@@ -15832,7 +16661,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Snare",
@@ -15879,7 +16709,8 @@
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Song of the Dead",
@@ -15930,7 +16761,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Soul Cage",
@@ -16052,7 +16884,9 @@
         "die": 8,
         "type": "lightning"
       }
-    ]
+    ],
+    "multiplier": 3,
+    "upcastMultiplier": 1
   },
   {
     "name": "Speak With Animals",
@@ -16117,7 +16951,15 @@
       "When you cast this spell using a spell slot of 4th-level or higher, you can target one additional creature for each slot level above 3rd."
     ],
     "lists": ["Occult"],
-    "ritual": false
+    "ritual": false,
+    "upcastRange": {
+      "4": "10 feet (2 targets)",
+      "5": "10 feet (3 targets)",
+      "6": "10 feet (4 targets)",
+      "7": "10 feet (5 targets)",
+      "8": "10 feet (6 targets)",
+      "9": "10 feet (7 targets)"
+    }
   },
   {
     "name": "Spectral Steed",
@@ -16162,7 +17004,8 @@
         "die": 8,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Spellsteal",
@@ -16188,7 +17031,7 @@
     "school": "Illusion",
     "level": 3,
     "castingTime": "1 action",
-    "range": "30 feet",
+    "range": "30 feet (15-foot sphere)",
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
@@ -16202,7 +17045,15 @@
     "element": "Shadow",
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "4": "30 feet (25-foot sphere)",
+      "5": "30 feet (40-foot sphere)",
+      "6": "30 feet (55-foot sphere)",
+      "7": "30 feet (70-foot sphere)",
+      "8": "30 feet (95-foot sphere)",
+      "9": "30 feet (110-foot sphere)"
+    }
   },
   {
     "name": "Spider Bite",
@@ -16229,7 +17080,8 @@
         "die": 12,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Spider Climb",
@@ -16312,7 +17164,8 @@
         "die": 8,
         "type": ["necrotic", "radiant"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Spirit Shroud",
@@ -16338,7 +17191,8 @@
         "die": 8,
         "type": ["cold", "necrotic", "radiant"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Spirit Swarm",
@@ -16414,7 +17268,9 @@
         "type": "force",
         "addAbility": true
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Staggering Smite",
@@ -16492,7 +17348,7 @@
     "school": "Transmutation",
     "level": 3,
     "castingTime": "1 action",
-    "range": "Touch",
+    "range": "Touch (60-foot line)",
     "components": "V, S",
     "duration": "10 minutes",
     "description": [
@@ -16504,7 +17360,15 @@
     ],
     "lists": ["Elemental", "Primal"],
     "ritual": 1,
-    "element": "Earth"
+    "element": "Earth",
+    "upcastRange": {
+      "4": "Touch (90-foot line)",
+      "5": "Touch (120-foot line)",
+      "6": "Touch (150-foot line)",
+      "7": "Touch (180-foot line)",
+      "8": "Touch (210-foot line)",
+      "9": "Touch (240-foot line)"
+    }
   },
   {
     "name": "Steal Immortality",
@@ -16636,7 +17500,8 @@
         "die": 10,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Stone Shape",
@@ -16700,7 +17565,8 @@
         "die": 6,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Storm of Arrows",
@@ -16726,7 +17592,8 @@
         "die": 6,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Storm of Vengeance",
@@ -17030,7 +17897,7 @@
     "school": "Conjuration",
     "level": 3,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (2/4/8 targets)",
     "components": "V, S, M (a vial of blood from a humanoid killed within the past 24 hours)",
     "duration": "Concentration, up to 1 hour",
     "description": [
@@ -17042,7 +17909,15 @@
       "When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "4": "60 feet (2/4/8 targets)",
+      "5": "60 feet (2/4/8 targets)",
+      "6": "60 feet (4/8/16 targets)",
+      "7": "60 feet (4/8/16 targets)",
+      "8": "60 feet (6/12/24 targets)",
+      "9": "60 feet (6/12/24 targets)"
+    }
   },
   {
     "name": "Summon Shadowspawn",
@@ -17132,7 +18007,8 @@
         "die": 8,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Sunburst",
@@ -17363,7 +18239,8 @@
         "die": 4,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Tasha's Hideous Laughter",
@@ -17406,7 +18283,8 @@
         "die": 6,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Tasha's Otherworldly Guise",
@@ -17531,7 +18409,8 @@
     "lists": ["Arcane"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastMultiplier": 1
   },
   {
     "name": "Tenser's Floating Disk",
@@ -17683,7 +18562,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Thunder Punch",
@@ -17709,7 +18589,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Thunder Step",
@@ -17737,7 +18618,8 @@
         "die": 10,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Sonic Boom",
@@ -17816,7 +18698,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Thunderous Chord",
@@ -17894,7 +18777,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Tidal Wave",
@@ -18326,7 +19210,8 @@
         "die": 6,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Unhinging Inclination",
@@ -18386,7 +19271,7 @@
     "castingTime": "1 action",
     "range": "Touch",
     "components": "V, S, M (a pinch of bone dust)",
-    "duration": "Instantaneous",
+    "duration": "24 hours",
     "description": [
       "You sever a hand from your body and grant it sentience. Your hand becomes a crawling claw with the creature's game statistics, except that it gains proficiency in the Sleight of Hand and Stealth skills, and has advantage on checks made with these skills (the DM has the creature's game statistics).",
       "On each of your turns, you can use a bonus action to mentally command it if the crawling claw is within 1 mile of you. You decide what action the crawling claw will take and where it will move during its next turn, or you can issue a general command. If you issue no commands, the crawling claw only defends itself against hostile creatures. Once given an order, the crawling claw continues to follow it until its task is complete.",
@@ -18396,7 +19281,16 @@
       "If you cast this spell using a spell slot of 4th level or higher, the crawling claw is under your control for 10 days. If you use a spell slot of 6th level or higher, the crawling claw is under your control for 90 days. If you use a spell slot of 8th level or higher, the crawling claw is under your control for a year and 1 day."
     ],
     "lists": ["Occult"],
-    "ritual": 1
+    "ritual": 1,
+    "upcastDuration": {
+      "3": "24 hours",
+      "4": "10 days",
+      "5": "10 days",
+      "6": "90 days",
+      "7": "90 days",
+      "8": "1 year",
+      "9": "1 year"
+    }
   },
   {
     "name": "Unseen Servant",
@@ -18433,7 +19327,7 @@
     "school": "Necromancy",
     "level": 7,
     "castingTime": "1 bonus action",
-    "range": "Self (30 foot radius)",
+    "range": "Self (30-foot radius)",
     "components": "V, S",
     "duration": "Up to 10 minutes",
     "description": [
@@ -18443,7 +19337,11 @@
       "When you cast this spell using a spell slot of 8th level or higher, you can extend the radius by 10 feet for each slot level above 7th."
     ],
     "lists": ["Arcane", "Occult", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "8": "Self (40-foot radius)",
+      "9": "Self (50-foot radius)"
+    }
   },
   {
     "name": "Vampiric Touch",
@@ -18468,7 +19366,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Vaporous Smite",
@@ -18535,7 +19434,7 @@
     "duration": "Concentration, up to 1 minute",
     "description": [
       "You summon a swirling mass of elements in a 15-foot-radius, 40-foot-tall cylinder centered on a point you can see within range. Each creature that begins their turn in the veil or moves into it during their turn must make a Dexterity saving throw. A creature takes 3d6 damage from an element of your choosing (acid, cold, fire, lightning, thunder) on a failed save, or half as much on a successful one, which expends that damage type from the veil.",
-      "The spell ends once all four damage types are expended, or the spell's duration is reached."
+      "The spell ends once all five damage types are expended, or the spell's duration is reached."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 3rd level or higher, the damage from each element increases 1d6 for each slot level above 2nd."
@@ -18551,7 +19450,8 @@
         "die": 6,
         "type": ["acid", "cold", "fire", "lightning", "thunder"]
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Venemous Smite",
@@ -18578,7 +19478,8 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Venemous Strike",
@@ -18626,7 +19527,8 @@
         "die": 8,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Vengeful Spirit",
@@ -18652,7 +19554,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Vermintide",
@@ -18743,7 +19646,8 @@
         "die": 4,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Volcanic Bomb",
@@ -18774,7 +19678,8 @@
         "die": 10,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Vortex Blast",
@@ -18801,7 +19706,8 @@
         "die": 6,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Vortex Warp",
@@ -18820,7 +19726,16 @@
     "lists": ["Arcane"],
     "ritual": 0,
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "upcastRange": {
+      "3": "120 feet",
+      "4": "150 feet",
+      "5": "180 feet",
+      "6": "210 feet",
+      "7": "240 feet",
+      "8": "270 feet",
+      "9": "300 feet"
+    }
   },
   {
     "name": "Wake Plantlife",
@@ -18839,7 +19754,14 @@
     ],
     "lists": ["Elemental", "Primal", "Psionic"],
     "ritual": 0,
-    "element": "Wood"
+    "element": "Wood",
+    "upcastRange": {
+      "5": "60 feet",
+      "6": "60 feet (2 targets)",
+      "7": "60 feet (2 targets)",
+      "8": "60 feet (3 targets)",
+      "9": "60 feet (3 targets)"
+    }
   },
   {
     "name": "Wall",
@@ -18885,7 +19807,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Wall of Force",
@@ -18944,7 +19867,8 @@
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Wall of Light",
@@ -18973,7 +19897,8 @@
         "die": 8,
         "type": "radiant"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Wall of Sand",
@@ -19035,7 +19960,8 @@
         "die": 8,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Wall of Water",
@@ -19127,7 +20053,8 @@
         "die": 6,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Water Breathing",
@@ -19310,7 +20237,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Wilting Smite",
@@ -19445,7 +20373,8 @@
         "die": 6,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Wish",
@@ -19476,7 +20405,7 @@
       "A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st."
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for each slot level above 1st."
     ],
     "lists": ["Arcane", "Elemental", "Occult", "Primal"],
     "ritual": 0,
@@ -19488,7 +20417,8 @@
         "die": 12,
         "type": "lightning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Wither and Bloom",
@@ -19516,7 +20446,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Withering Necrosis",
@@ -19541,7 +20472,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Word of Radiance",
@@ -19693,7 +20625,8 @@
         "die": 4,
         "type": "acid"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Spark",
@@ -19846,7 +20779,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Tremorsense",
@@ -19864,7 +20798,16 @@
     ],
     "lists": ["Arcane", "Divine", "Elemental", "Occult", "Primal", "Melodic"],
     "ritual": 1,
-    "element": "Earth"
+    "element": "Earth",
+    "upcastRange": {
+      "3": "Touch (2 targets)",
+      "4": "Touch (3 targets)",
+      "5": "Touch (4 targets)",
+      "6": "Touch (5 targets)",
+      "7": "Touch (6 targets)",
+      "8": "Touch (7 targets)",
+      "9": "Touch (8 targets)"
+    }
   },
   {
     "name": "Whelm",
@@ -19891,7 +20834,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Amplify Voice",
@@ -19918,7 +20862,8 @@
         "die": 10,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Booming Burst",
@@ -19944,7 +20889,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Vacuum Slash",
@@ -19959,9 +20905,6 @@
       "When a creature comes within 15 feet of the line or starts its turn there, it must succeed on a Strength saving throw or take 5d8 thunder damage, be pulled into the closest space occupied by the portal and become restrained until the spell ends. On a successful save, the creature takes half as much damage and is not pulled or restrained. Any creature that ends its turn in the area of the portal takes 5d6 slashing damage due to the pressure difference. Against a creature made of amorphous material, such as an ooze or air elemental, this slashing damage is maximised.",
       "The spell functions in the same way when cast in a liquid, except that the fluid drained may change the surface level in closed containers at DM discretion.",
       "At the beginning of your next turn after you cast this spell, the portal closes and any restrained creatures are released."
-    ],
-    "higherLevels": [
-      "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     ],
     "lists": ["Arcane", "Occult", "Melodic"],
     "ritual": 0,
@@ -20006,7 +20949,8 @@
         "die": 8,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ruinous Vibration",
@@ -20022,7 +20966,7 @@
       "An object (or part of one) destroyed by this spell shatters into pieces, and can usually be bypassed if it was blocking passage, but its space becomes difficult terrain until cleared."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 9th level or higher, the thunder damage increases by 1d10."
+      "When you cast this spell using a spell slot of 9th level, the thunder damage increases by 1d10."
     ],
     "lists": ["Arcane", "Melodic"],
     "ritual": 0,
@@ -20034,7 +20978,8 @@
         "die": 10,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Resonant Wave",
@@ -20114,7 +21059,16 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastRange": {
+      "3": "60 feet (2 targets)",
+      "4": "60 feet (3 targets)",
+      "5": "60 feet (4 targets)",
+      "6": "60 feet (5 targets)",
+      "7": "60 feet (6 targets)",
+      "8": "60 feet (7 targets)",
+      "9": "60 feet (8 targets)"
+    }
   },
   {
     "name": "Spore Burst",
@@ -20142,7 +21096,8 @@
         "die": 10,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Pernicious Swarm",
@@ -20169,7 +21124,8 @@
         "die": 8,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Envenom",
@@ -20189,7 +21145,16 @@
     "lists": ["Divine", "Primal"],
     "ritual": 0,
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "damage": [
+      {
+        "die": 1,
+        "dice": 12,
+        "type": "poison"
+      }
+    ],
+    "multiplier": 10,
+    "upcastMultiplier": 2
   },
   {
     "name": "Fume Form",
@@ -20239,7 +21204,8 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Torpor Powder",
@@ -20267,7 +21233,8 @@
         "die": 10,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Mortal Tear",
@@ -20342,7 +21309,8 @@
         "die": 10,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Ray of Numbness",
@@ -20368,7 +21336,9 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastMultiplier": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Soul Punch",
@@ -20396,7 +21366,8 @@
         "die": 12,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Heartsight",
@@ -20415,7 +21386,15 @@
       "When you cast this spell using a spell slot of 5th level or higher, you may target an additional creature for each slot level above 4th."
     ],
     "lists": ["Arcane", "Divine", "Occult", "Primal", "Psionic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "4": "Touch (2 targets)",
+      "5": "Touch (3 targets)",
+      "6": "Touch (4 targets)",
+      "7": "Touch (5 targets)",
+      "8": "Touch (6 targets)",
+      "9": "Touch (7 targets)"
+    }
   },
   {
     "name": "Shadow Betrayal",
@@ -20528,14 +21507,15 @@
         "amount": 5,
         "temporary": true
       }
-    ]
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Summon Lesser Devils",
     "school": "Conjuration",
     "level": 3,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (2/4/8 targets)",
     "components": "V, S, M (a quill and a vial of your own blood)",
     "duration": "Concentration, up to 1 hour",
     "description": [
@@ -20547,7 +21527,15 @@
       "When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many devils. If you cast it using a spell slot of 8th or 9th level, you summon three times as many devils."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "4": "60 feet (2/4/8 targets)",
+      "5": "60 feet (2/4/8 targets)",
+      "6": "60 feet (4/8/16 targets)",
+      "7": "60 feet (4/8/16 targets)",
+      "8": "60 feet (6/12/24 targets)",
+      "9": "60 feet (6/12/24 targets)"
+    }
   },
   {
     "name": "Summon Greater Devil",
@@ -20602,7 +21590,18 @@
     ],
     "lists": ["Divine", "Elemental", "Occult"],
     "element": "Fire",
-    "ritual": 0
+    "ritual": 0,
+    "type": ["attack", "save"],
+    "save": "str",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "upcastAmount": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Summon Skeleton",
@@ -20627,7 +21626,7 @@
     "school": "Enchantment",
     "level": 1,
     "castingTime": "1 action",
-    "range": "Self (10 feet)",
+    "range": "10 feet",
     "components": "V, M (a musical instrument worth at least 1 gp)",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -20638,14 +21637,32 @@
       "When you cast this spell using a spell slot of 2nd-level or higher, the range increases by 5 feet and you can grant one additional target temporary hit points each time you play, for each slot level above 1st."
     ],
     "lists": ["Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "2": "15 feet",
+      "3": "20 feet",
+      "4": "25 feet",
+      "5": "30 feet",
+      "6": "35 feet",
+      "7": "40 feet",
+      "8": "45 feet",
+      "9": "50 feet"
+    },
+    "healing": [
+      {
+        "amount": 0,
+        "addAbility": true,
+        "temporary": true
+      }
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Song of Confidence",
     "school": "Enchantment",
     "level": 2,
     "castingTime": "1 action",
-    "range": "Self (15 feet)",
+    "range": "15 feet",
     "components": "V, M (a musical instrument worth at least 1 gp)",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -20653,28 +21670,53 @@
       "As a bonus action on each subsequent turn, you can use an instrument to play this tune again, choosing a new ability score and different creatures to gain this spell's benefits."
     ],
     "higherLevels": [
-      "When cast using a spell slot of 3rd-level or higher, the range increases by 5 feet and you can target one additional creature for each slot level above 2nd."
+      "When cast using a spell slot of 3rd-level or higher, the range increases by 5 feet."
     ],
     "lists": ["Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "3": "20 feet",
+      "4": "25 feet",
+      "5": "30 feet",
+      "6": "35 feet",
+      "7": "40 feet",
+      "8": "45 feet",
+      "9": "50 feet"
+    }
   },
   {
     "name": "Heroic Anthem",
     "school": "Enchantment",
     "level": 3,
     "castingTime": "1 action",
-    "range": "Self (20 feet)",
+    "range": "20 feet",
     "components": "V, M (a musical instrument worth at least 1 gp)",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "You perform an anthem that inspires greatness. A number of creatures of your choice equal to your spellcasting ability modifier (minimum of 1) that can hear you add 1d4 to any damage roll they make before the start of your next turn.",
+      "You perform an anthem that inspires greatness. A number of creatures of your choice equal to your spellcasting ability modifier (minimum of 1) that can hear you add 1d4 thunder damage to any damage roll they make before the start of your next turn.",
       "As a bonus action on each subsequent turn, you can use an instrument to continue this anthem and repeat its effect."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th-level or higher, the range increases by 5 feet and the damage increases by 1d4 for each slot level above 3rd."
     ],
     "lists": ["Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 1,
+        "die": 4,
+        "type": "thunder"
+      }
+    ],
+    "upcastRange": {
+      "4": "25 feet",
+      "5": "30 feet",
+      "6": "35 feet",
+      "7": "40 feet",
+      "8": "45 feet",
+      "9": "50 feet"
+    },
+    "upcastDice": 1
   },
   {
     "name": "Revitalizing Hymn",
@@ -20723,18 +21765,27 @@
       "When you cast this spell using a spell slot of 3rd level, the spell lasts for up to 8 hours. When you use a spell slot of 4th level, the spell lasts for up to 24 hours.  When you use a spell slot of 5th level or higher, the spell lasts until it is dispelled."
     ],
     "lists": ["Arcane", "Psionic", "Occult", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "3": "8 hours",
+      "4": "24 hours",
+      "5": "Until dispelled",
+      "6": "Until dispelled",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Calypso's Disguised Crowd",
     "school": "Illusion",
     "level": 2,
     "castingTime": "1 action",
-    "range": "Touch",
+    "range": "30 feet (2 targets)",
     "components": "V, S",
     "duration": "1 hour",
     "description": [
-      "You make up to two creatures you touch - including clothing, armor, weapons, and other belongings on their person - look different until the spell ends or until you use your action to dismiss it.  You can dismiss the spell all at once or on specific creatures.",
+      "You make up to two creatures you within range look different - including clothing, armor, weapons, and other belongings on their person - until the spell ends or until you use your action to dismiss it.  You can dismiss the spell all at once or on specific creatures.",
       "This spell can make its targets seem 1 foot shorter or taller and can appear thin, fat, or in between. It can't change the targets' body type, so it must create a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.",
       "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to a target's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel their head and hair. If you use this spell to cause a target to appear thinner than they are, the hand of someone who reaches out to touch them would bump into them while it was seemingly still in midair. To discern that a target is disguised, a creature can use its action to inspect the target's appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
     ],
@@ -20742,7 +21793,16 @@
       "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
     ],
     "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "3": "30 feet (3 targets)",
+      "4": "30 feet (4 targets)",
+      "5": "30 feet (5 targets)",
+      "6": "30 feet (6 targets)",
+      "7": "30 feet (7 targets)",
+      "8": "30 feet (8 targets)",
+      "9": "30 feet (9 targets)"
+    }
   },
   {
     "name": "Astral Fire",
@@ -20833,14 +21893,23 @@
     "components": "S, M (a bit of fur and a crystal rod)",
     "duration": "Instantaneous",
     "description": [
-      "A bolt of lightning leaps from each of your splayed fingertips. Up to ten creatures in a 90 foot cone must make a Dexterity saving throw.",
+      "A bolt of lightning leaps from each of your splayed fingertips. Creatures in a 90 foot cone must make a Dexterity saving throw.",
       "A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 6th level or higher, you can instead have it target up to 5 creatures each in two 90 foot cones extending from you."
+      "When you cast this spell using a spell slot of 7th level or higher, you can instead have it target two 90 foot cones extending from you."
     ],
     "lists": ["Arcane", "Primal"],
-    "ritual": 0
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "lightning"
+      }
+    ]
   },
   {
     "name": "Celerity",
@@ -20865,8 +21934,7 @@
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
-      "You delve into your mind palace, instantly poring through memories of study and experimentation in minute detail.",
-      "You can immediately replace a number of your prepared spells equal to your spellcasing ability modifier."
+      "You delve into your mind palace, instantly poring through memories of study and experimentation in minute detail. You can immediately replace a number of your prepared spells equal to your spellcasing ability modifier."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 8th level or higher, you can use your action to cast a spell this turn as if you had not cast a spell as a bonus action this turn."
@@ -20924,19 +21992,26 @@
     "school": "Evocation",
     "level": 4,
     "castingTime": "1 action",
-    "range": "120 feet",
+    "range": "120 feet (5-foot sphere)",
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
-      "A brilliant globe of magical energy darts from your outstretched hand, unerringly striking a target within range.",
-      "The globe deals 11 (2d10) force damage to its target, and half as much force damage to each other creature within 5 feet of it."
+      "A brilliant globe of magical energy darts from your outstretched hand, unerringly striking a target within range. The globe deals 2d10 force damage to its target, and half as much force damage to each other creature within 5 feet of it."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 5th level or higher, the spell creates one more globe for each slot above 4th."
     ],
     "lists": ["Arcane", "Elemental"],
     "element": "Aether",
-    "ritual": 0
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "force"
+      }
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Ingenious Aegis",
@@ -21135,7 +22210,7 @@
     "school": "Abjuration",
     "level": 4,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (30-foot cube)",
     "components": "V, S, M (a broken portal key)",
     "duration": "24 hours",
     "description": [
@@ -21146,7 +22221,14 @@
       "When you cast it using a spell slot above 4th-level, its area increases by 5 feet per level of spell slot above 4th."
     ],
     "lists": ["Arcane", "Divine", "Occult"],
-    "ritual": 1
+    "ritual": 1,
+    "upcastRange": {
+      "5": "60 feet (35-foot cube)",
+      "6": "60 feet (40-foot cube)",
+      "7": "60 feet (45-foot cube)",
+      "8": "60 feet (50-foot cube)",
+      "9": "60 feet (55-foot cube)"
+    }
   },
   {
     "name": "Control the Elements",
@@ -21189,7 +22271,8 @@
         "die": 8,
         "type": "bludgeoning"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Blood to Vitriol",
@@ -21411,7 +22494,13 @@
       "When you cast this spell using a spell slot 2nd Level or higher, when the spell ends one creature you can see within 60 feet must succeed on a Dexterity saving throw or take 1d8 damage per projectile frozen in the barrier of the projectile's type, or half as much on a success."
     ],
     "lists": ["Arcane", "Psionic", "Melodic"],
-    "ritual": 0
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 25,
+        "temporary": true
+      }
+    ]
   },
   {
     "name": "Meteor Salvo",
@@ -21438,7 +22527,9 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastMultiplier": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Seal Deathpact",
@@ -21532,7 +22623,11 @@
     "lists": ["Arcane", "Occult"],
     "ritual": 0,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastRange": {
+      "8": "60 feet",
+      "9": "90 feet"
+    }
   },
   {
     "name": "Blightning Strike",
@@ -21556,16 +22651,20 @@
     "save": "dex",
     "damage": [
       {
+        "id": "E188B54A-BCDD-452D-93C8-2B380B2225CB",
         "dice": 4,
         "die": 6,
         "type": "lightning"
       },
       {
+        "id": "65943BD5-575C-4150-B037-E670EB6E3D92",
         "dice": 2,
         "die": 10,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["65943BD5-575C-4150-B037-E670EB6E3D92"]
   },
   {
     "name": "Bloodflame Spear",
@@ -21599,7 +22698,15 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastRange": {
+      "4": "Self (20-foot line)",
+      "5": "Self (25-foot line)",
+      "6": "Self (30-foot line)",
+      "7": "Self (35-foot line)",
+      "8": "Self (40-foot line)",
+      "9": "Self (45-foot line)"
+    }
   },
   {
     "name": "Boiling Breath",
@@ -21626,7 +22733,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Breath of Thanatos",
@@ -21659,7 +22767,8 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Breath of the Abyss",
@@ -21773,7 +22882,7 @@
     "school": "Conjuration",
     "level": 7,
     "castingTime": "1 action",
-    "range": "60 feet",
+    "range": "60 feet (2 targets)",
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -21784,7 +22893,11 @@
       "When you cast this spell using a spell slot of 8th level or higher, you summon one additional yeth hound for each slot level above 7th."
     ],
     "lists": ["Primal", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "8": "60 feet (3 targets)",
+      "9": "60 feet (4 targets)"
+    }
   },
   {
     "name": "Corpseleech",
@@ -21808,7 +22921,8 @@
         "die": 8,
         "temporary": true
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Corpus Potency",
@@ -21928,7 +23042,8 @@
         "die": 6,
         "temporary": true
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Creeping Ruin",
@@ -21953,7 +23068,13 @@
         "amount": 10,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastRange": {
+      "6": "Self (25-foot radius)",
+      "7": "Self (35-foot radius)",
+      "8": "Self (45-foot radius)",
+      "9": "Self (55-foot radius)"
+    }
   },
   {
     "name": "Crushing Pulse",
@@ -21972,7 +23093,16 @@
     "lists": ["Arcane", "Primal", "Psionic"],
     "ritual": 0,
     "type": "save",
-    "save": "str"
+    "save": "str",
+    "upcastRange": {
+      "3": "Self (20-foot radius)",
+      "4": "Self (25-foot radius)",
+      "5": "Self (30-foot radius)",
+      "6": "Self (35-foot radius)",
+      "7": "Self (40-foot radius)",
+      "8": "Self (45-foot radius)",
+      "9": "Self (50-foot radius)"
+    }
   },
   {
     "name": "Curse of Living Bones",
@@ -22187,7 +23317,8 @@
         "die": 8,
         "type": "slashing"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Displace Soul",
@@ -22251,7 +23382,17 @@
     ],
     "lists": ["Arcane", "Melodic", "Occult", "Elemental"],
     "element": "Shadow",
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "2": "60 feet (2 targets)",
+      "3": "60 feet (3 targets)",
+      "4": "60 feet (4 targets)",
+      "5": "60 feet (5 targets)",
+      "6": "60 feet (6 targets)",
+      "7": "60 feet (7 targets)",
+      "8": "60 feet (8 targets)",
+      "9": "60 feet (9 targets)"
+    }
   },
   {
     "name": "Drown in Blood",
@@ -22324,7 +23465,8 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Exultation of Blood",
@@ -22414,7 +23556,15 @@
         "die": 6,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastRange": {
+      "4": "Self (15-foot radius)",
+      "5": "Self (25-foot radius)",
+      "6": "Self (35-foot radius)",
+      "7": "Self (45-foot radius)",
+      "8": "Self (55-foot radius)",
+      "9": "Self (65-foot radius)"
+    }
   },
   {
     "name": "Ferocity of the Fleshforges",
@@ -22427,9 +23577,6 @@
     "description": [
       "You feed a portion of your own flesh to a friendly beast within 5 feet, causing its flesh to strain and distend. You lose 10 hit points, and the creature transforms into a Nashrou Slayer that acts under your control until no hostile creatures remain within its line of sight, or until you or your allies deal any damage to it, then becomes hostile to all creatures.",
       "As an action, a creature can attempt return the Nashrou Slayer to its previous form with a successful Wisdom (Animal Handling) check against your Spell Save DC."
-    ],
-    "higherLevels": [
-      "When you cast this spell using a spell slot of 4th level or higher, the spell's radius increases by 10 feet for each slot level above 3rd."
     ],
     "lists": ["Primal", "Occult"],
     "ritual": 0
@@ -22474,7 +23621,15 @@
       "When you cast this spell using a spell slot of 4th level or higher, the spell's duration increases by 1 round for each slot level above 3rd."
     ],
     "lists": ["Arcane", "Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "4": "Concentration, up to 2 rounds",
+      "5": "Concentration, up to 3 rounds",
+      "6": "Concentration, up to 4 rounds",
+      "7": "Concentration, up to 5 rounds",
+      "8": "Concentration, up to 6 rounds",
+      "9": "Concentration, up to 7 rounds"
+    }
   },
   {
     "name": "Flaying Scream",
@@ -22521,6 +23676,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, you make one additional attack for each slot level above 6th."
     ],
+    "multiplier": 3,
     "lists": ["Arcane", "Occult"],
     "ritual": 0,
     "type": "attack",
@@ -22535,7 +23691,8 @@
         "die": 10,
         "type": "force"
       }
-    ]
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Flickering Advance",
@@ -22612,7 +23769,8 @@
         "die": 10,
         "type": "psychic"
       }
-    ]
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Glyph of Light's Bane",
@@ -22725,7 +23883,16 @@
     ],
     "lists": ["Primal", "Elemental"],
     "element": "Earth",
-    "ritual": 0
+    "ritual": 0,
+    "upcastDuration": {
+      "3": "Instantaneous",
+      "4": "Instantaneous",
+      "5": "Concentration, up to 1 minute",
+      "6": "Concentration, up to 1 minute",
+      "7": "Concentration, up to 1 minute",
+      "8": "Concentration, up to 1 minute",
+      "9": "Concentration, up to 1 minute"
+    }
   },
   {
     "name": "Harmless Gift",
@@ -22740,7 +23907,7 @@
       "While it carries the gift, the creature has disadvantage on attacks that target you, and may repeat this saving throw as an action, discarding the gift on a success. A creature makes this saving throw with advantage if you took any hostile action toward it since the end of its last turn."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 5th level or higher, the target is additionally charmed by you while it carries the gifeet"
+      "When you cast this spell using a spell slot of 5th level or higher, the target is additionally charmed by you while it carries the gift"
     ],
     "lists": ["Melodic", "Psionic"],
     "ritual": 0,
@@ -23004,7 +24171,8 @@
         "die": 6,
         "type": "piercing"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Panickfog",
@@ -23048,7 +24216,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Poison Edge",
@@ -23123,7 +24292,17 @@
     "lists": ["Melodic", "Psionic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "2": "15 feet (2 targets)",
+      "3": "15 feet (3 targets)",
+      "4": "15 feet (4 targets)",
+      "5": "15 feet (5 targets)",
+      "6": "15 feet (6 targets)",
+      "7": "15 feet (7 targets)",
+      "8": "15 feet (8 targets)",
+      "9": "15 feet (9 targets)"
+    }
   },
   {
     "name": "Rain of Fire",
@@ -23151,7 +24330,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Rend Magic",
@@ -23500,7 +24680,9 @@
         "amount": 20,
         "type": "poison"
       }
-    ]
+    ],
+    "upcastMultiplier": 1,
+    "upcastInterval": 2
   },
   {
     "name": "Steal Dreams",
@@ -23613,7 +24795,8 @@
         "die": 10,
         "type": "thunder"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Toxic Aura",
@@ -23681,7 +24864,10 @@
     "lists": ["Melodic", "Psionic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "9": "40 feet"
+    }
   },
   {
     "name": "Unholy Enthrallment",
@@ -23793,7 +24979,8 @@
         "die": 6,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Batrachian Metamorphosis",
@@ -23900,7 +25087,8 @@
         "die": 10,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Brainrot",
@@ -23942,7 +25130,8 @@
         "die": 10,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Command Ichor",
@@ -24003,7 +25192,15 @@
     "lists": ["Melodic", "Psionic"],
     "ritual": 0,
     "type": "save",
-    "save": "cha"
+    "save": "cha",
+    "upcastDuration": {
+      "4": "10 days",
+      "5": "30 days",
+      "6": "30 days",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Deathlord's Favor",
@@ -24152,7 +25349,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 2
   },
   {
     "name": "Eternal Tide",
@@ -24193,7 +25391,8 @@
         "die": 6,
         "type": "fire"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Icy Grip",
@@ -24349,7 +25548,7 @@
       "You fire a bolt of clinging shadow at a creature, diminishing any lights it carries. Make a ranged spell attack against a creature in range. On a hit, the creature takes 3d10 plus your spellcasting modifier necrotic damage and any sources of bright light within 5 feet of it are reduced to dim light for the next minute."
     ],
     "higherLevels": [
-      "When you cast this spell using a spell slot of 5th level or higher, you fire an additional bolt at a creature in range for each three spell levels above 2nd."
+      "When you cast this spell using a spell slot of 5th level or higher, you fire an additional bolt at a creature in range for each spell level above 2nd."
     ],
     "lists": ["Arcane", "Divine", "Occult"],
     "ritual": 0,
@@ -24361,7 +25560,8 @@
         "type": "necrotic",
         "modifier": true
       }
-    ]
+    ],
+    "upcastMultiplier": 1
   },
   {
     "name": "Grave Terror",
@@ -24576,7 +25776,13 @@
     "lists": ["Primal"],
     "ritual": 0,
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "upcastDuration": {
+      "6": "1 round",
+      "7": "Concentration, up to 1 minute",
+      "8": "Concentration, up to 1 minute",
+      "9": "Concentration, up to 1 minute"
+    }
   },
   {
     "name": "Litany of Forsaken Vows",
@@ -24612,7 +25818,11 @@
     "lists": ["Melodic", "Psionic"],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "upcastRange": {
+      "8": "Self (45-foot radius)",
+      "9": "Self (60-foot radius)"
+    }
   },
   {
     "name": "Mycelia Snare",
@@ -24724,7 +25934,16 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "upcastRange": {
+      "3": "Self (15-foot radius)",
+      "4": "Self (20-foot radius)",
+      "5": "Self (25-foot radius)",
+      "6": "Self (30-foot radius)",
+      "7": "Self (35-foot radius)",
+      "8": "Self (40-foot radius)",
+      "9": "Self (45-foot radius)"
+    }
   },
   {
     "name": "Psychic Rebound",
@@ -25064,7 +26283,8 @@
         "die": 8,
         "type": "necrotic"
       }
-    ]
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Astral Maelstrom",
@@ -25294,7 +26514,11 @@
       "When you cast this spell using a spell slot of 8th level or higher, you can target one additional creature for each slot level above 7th."
     ],
     "lists": ["Divine"],
-    "ritual": 0
+    "ritual": 0,
+    "upcastRange": {
+      "8": "Infinite (2 targets)",
+      "9": "Infinite (3 targets)"
+    }
   },
   {
     "name": "Forment Intrigue",
@@ -25528,7 +26752,16 @@
     "lists": ["Primal", "Melodic"],
     "ritual": 0,
     "type": "save",
-    "save": "dex"
+    "save": "dex",
+    "upcastRange": {
+      "3": "Self (25-foot cone)",
+      "4": "Self (35-foot cone)",
+      "5": "Self (45-foot cone)",
+      "6": "Self (55-foot cone)",
+      "7": "Self (65-foot cone)",
+      "8": "Self (75-foot cone)",
+      "9": "Self (85-foot cone)"
+    }
   },
   {
     "name": "Greasebody",
