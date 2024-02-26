@@ -1,1 +1,542 @@
-[]
+[
+  {
+    "name": "Xorn Minewaif",
+    "size": "Small",
+    "type": "elemental",
+    "tags": ["earth"],
+    "alignment": ["N"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 15, "formula": "2d6 + 8" },
+    "speed": { "walk": 20, "burrow": 20 },
+    "str": 15,
+    "dex": 12,
+    "con": 18,
+    "int": 11,
+    "wis": 10,
+    "cha": 11,
+    "senses": ["darkvision 60 ft.", "tremorsense 30 ft."],
+    "passive": 10,
+    "resist": [
+      "piercing and slashing damage from nonmagical attacks that aren't adamantine"
+    ],
+    "languages": ["Terran"],
+    "cr": 1,
+    "trait": [
+      {
+        "name": "Earth Glide",
+        "entries": [
+          "The xorn can burrow through nonmagical, unworked earth and stone without disturbing the material it moves through."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Buoyant Burrower",
+        "entries": [
+          "If the xorn is burrowing at the end of its turn, it is immediately expelled into the nearest unoccupied space."
+        ],
+        "sort": 2
+      }
+    ],
+    "action": [
+      {
+        "name": "Awkward Gnaw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (2d6 + 2) piercing damage.",
+          "On a missed attack, the xorn falls prone."
+        ]
+      },
+      {
+        "name": "Spinning Claw Fury",
+        "entries": [
+          "Each creature within 5 feet of the xorn must succeed on a DC 12 Dexterity saving throw or take 3 (1d6) slashing damage."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Ducking Dive",
+        "entries": [
+          "When the xorn would make a saving throw against an effect that did not target it, it may immediately move up to its burrow speed.",
+          "If it ends this movement outside the spell's area, the xorn is unaffected by it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Earthmaw Xorn",
+    "size": "Medium",
+    "type": "elemental",
+    "tags": ["earth"],
+    "alignment": ["N"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 73, "formula": "7d8 + 42" },
+    "speed": { "walk": 20, "burrow": 20 },
+    "str": 17,
+    "dex": 10,
+    "con": 22,
+    "int": 11,
+    "wis": 10,
+    "cha": 11,
+    "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
+    "passive": 10,
+    "resist": [
+      "piercing and slashing damage from nonmagical attacks that aren't adamantine"
+    ],
+    "languages": ["Terran"],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Earth Glide",
+        "entries": [
+          "The xorn can burrow through nonmagical, unworked earth and stone without disturbing the material it moves through."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Flesh-Sickened",
+        "entries": [
+          "While it has a dead or unconscious creature grappled in its Dorsal Maw, the xorn is poisoned."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Treasure Sense",
+        "entries": [
+          "The xorn can pinpoint, by scent, the location of precious or magical metals and stones within 60 feet of it."
+        ],
+        "sort": 3
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The xorn makes three attacks with its Scrabbling Claws, one of which it may replace with a use of its Devour Weapon."
+        ]
+      },
+      {
+        "name": "Scrabbling Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 6 (1d6 + 3) slashing damage.",
+          "A creature hit by two or more of these attacks in a turn must succeed on a DC 14 Strength saving throw or drop one object it is carrying."
+        ]
+      },
+      {
+        "name": "Dorsal Maw",
+        "entries": [
+          "The xorn emerges into the space of a creature within 5 feet it is burrowing beneath, forcing it to succeed on a DC 14 Dexterity saving throw or be grappled (escape DC 14), or move into the nearest unoccupied space on a success.",
+          "A creature grappled in this way takes 10 (3d6) piercing damage at the beginning of each of the xorn's turns."
+        ]
+      },
+      {
+        "name": "Devour Weapon",
+        "entries": [
+          "The xorn eats one weapon within 5 feet of it that isn't worn or carried, gaining 13 (3d8) temporary hit points.",
+          "While the xorn has any of these temporary hit points, its attacks deal an additional die of damage and gain any magical effects the weapon had."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Sink into Stone (1/Day)",
+        "entries": [
+          "When the xorn is reduced below 36 hit points, it may move up to half its burrow speed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Diamondhide Xorn",
+    "size": "Large",
+    "type": "elemental",
+    "tags": ["earth"],
+    "alignment": ["N"],
+    "ac": [{ "ac": 23, "from": ["natural armor"] }],
+    "hp": { "average": 138, "formula": "12d10 + 72" },
+    "speed": { "walk": 20, "burrow": 20 },
+    "str": 20,
+    "dex": 10,
+    "con": 23,
+    "int": 12,
+    "wis": 14,
+    "cha": 11,
+    "save": { "con": "+9", "wis": "+5" },
+    "skill": { "perception": "+8", "survival": "+5" },
+    "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
+    "passive": 18,
+    "resist": [
+      "piercing and slashing damage from nonmagical attacks that aren't adamantine"
+    ],
+    "languages": ["Common", "Terran"],
+    "cr": 8,
+    "trait": [
+      {
+        "name": "Crystalline Armor",
+        "entries": [
+          "Whenever the xorn takes 15 or more acid or bludgeoning damage from a single source, its AC is reduced by 2, to a minimum of 19, until it completes a short or long rest."
+        ],
+        "sort": 3
+      },
+      {
+        "name": "Earth Glide",
+        "entries": [
+          "The xorn can burrow through nonmagical, unworked earth and stone without disturbing the material it moves through."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Flesh-Sickened",
+        "entries": [
+          "While it has a dead or unconscious creature grappled in its Dorsal Maw, the xorn is poisoned."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Treasure Sense",
+        "entries": [
+          "The xorn can pinpoint, by scent, the location of precious or magical metals and stones within 60 feet of it."
+        ],
+        "sort": 3
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The xorn makes three attacks with its Scrabbling Claws."]
+      },
+      {
+        "name": "Scrabbling Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage.",
+          "A creature hit by two or more of these attacks in a turn must succeed on a DC 16 Strength saving throw or drop one object it is carrying."
+        ]
+      },
+      {
+        "name": "Dorsal Maw",
+        "entries": [
+          "The xorn emerges into the space of a creature within 5 feet it is burrowing beneath, forcing it to succeed on a DC 16 Dexterity saving throw or be grappled (escape DC 16), or move into the nearest unoccupied space on a success.",
+          "A creature grappled in this way takes 21 (6d6) piercing damage at the beginning of each of the xorn's turns."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Devour Weapon",
+        "entries": [
+          "The xorn eats one weapon within 5 feet of it that isn't worn or carried, gaining 13 (3d8) temporary hit points.",
+          "While the xorn has any of these temporary hit points, its attacks deal an additional die of damage and gain any magical effects the weapon had."
+        ]
+      },
+      {
+        "name": "Strip Armor",
+        "entries": [
+          "One creature grappled in the xorn's Dorsal Maw must make a DC 16 Strength saving throw. On a failed save, one piece of nonmagical metal armor the creature is wearing takes a permanent and cumulative -1 penalty to the AC it offers as part of it is torn away."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Sink into Stone (1/Day)",
+        "entries": [
+          "When the xorn is reduced below 70 hit points, it may move up to half its burrow speed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Magmin Firebug",
+    "size": "Small",
+    "type": "elemental",
+    "tags": ["fire"],
+    "alignment": ["C", "N"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 9, "formula": "2d6 + 2" },
+    "speed": { "walk": 30 },
+    "str": 7,
+    "dex": 15,
+    "con": 12,
+    "int": 8,
+    "wis": 11,
+    "cha": 10,
+    "senses": ["darkvision 60 ft."],
+    "passive": 10,
+    "resist": [
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
+    ],
+    "immune": ["fire"],
+    "languages": ["Ignan"],
+    "cr": 4,
+    "minion": true,
+    "trait": [
+      {
+        "name": "Death Burst",
+        "entries": [
+          "When the magmin dies, it explodes in a burst of fire and magma. Each creature and flammable object within 5 feet of it begins burning (1d10)."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Molten Body",
+        "entries": [
+          "If the magmin takes any cold damage, it is petrified at the end of its next turn.",
+          "Any nonmagical weapon made of metal that hits the magmin melts and warps if it is not petrified. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Minion",
+        "entries": [
+          "If the creature takes damage from an attack or as the result of a failed saving throw, its hit points are reduced to 0. If the creature takes damage from another effect, it dies if the damage equals or exceeds its hit point maximum, otherwise it takes no damage."
+        ],
+        "sort": 2
+      }
+    ],
+    "action": [
+      {
+        "name": "Burning Touch (Group Attack)",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> The target begins burning (1d10)."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cackling Caprice",
+        "entries": [
+          "When the magmin is missed with a melee attack, it can force the attacker to succeed on a DC 12 Dexterity saving throw or be knocked prone."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Magmin Pyroclast",
+    "size": "Small",
+    "type": "elemental",
+    "tags": ["fire"],
+    "alignment": ["C", "N"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 77, "formula": "14d6 + 28" },
+    "speed": { "walk": 30 },
+    "str": 7,
+    "dex": 17,
+    "con": 14,
+    "int": 8,
+    "wis": 11,
+    "cha": 16,
+    "senses": ["darkvision 60 ft."],
+    "passive": 10,
+    "resist": [
+      "bludgeoning, piercing, and slashing damage from nonmagical attacks"
+    ],
+    "immune": ["fire"],
+    "languages": ["Ignan"],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Death Burst",
+        "entries": [
+          "When the magmin dies, it explodes in a burst of fire and magma. Each creature and flammable object within 5 feet of it begins burning (1d10)."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Molten Body",
+        "entries": [
+          "If the magmin takes any cold damage, it is petrified at the end of its next turn.",
+          "Any nonmagical weapon made of metal that hits the magmin melts and warps if it is not petrified. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Aura of Dancing Flames",
+        "entries": [
+          "A creature within 30 feet of the magmin that is burning has disadvantage on attack rolls."
+        ],
+        "sort": 2
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The Magmin makes two attacks with its Burning Touch, one of which it may replace with a use of its Flaming Panic, if available."
+        ]
+      },
+      {
+        "name": "Burning Touch",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> The target begins burning (1d10)."
+        ]
+      },
+      {
+        "name": "Flaming Panic (Recharge 5-6)",
+        "entries": [
+          "The magmin stokes the flames around it to ever greater heights and brightness. Each creature creature within 30 feet of the magmin that is burning takes 10 (3d6) fire damage and must succeed on a DC 13 Wisdom saving throw or use its reaction to move up its speed in a direction of the magmin's choice."
+        ]
+      },
+      {
+        "name": "Magmatic Division (1/Day)",
+        "entries": [
+          "The magmin crams as much earth and rock into itself as it can, darkening and growing larger as it does. At the beginning of its next turn, the magmin dies and seperates into 5 new Magmin Firebugs, which act on its turn."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Cackling Caprice",
+        "entries": [
+          "When the magmin is missed with a melee attack, it can force the attacker to succeed on a DC 13 Dexterity saving throw or be knocked prone."
+        ]
+      },
+      {
+        "name": "Cinder Dance",
+        "entries": [
+          "When a burning creature ends its turn within 30 feet of the magmin, the magmin can force another creature within 10 feet of that creature to succeed on a DC 13 Dexterity saving throw or begin burning (1d10)."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Geonid",
+    "size": "Small",
+    "type": "elemental",
+    "tags": ["earth"],
+    "alignment": ["N"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 26, "formula": "4d6 + 12" },
+    "speed": { "walk": 30 },
+    "str": 12,
+    "dex": 10,
+    "con": 16,
+    "int": 9,
+    "wis": 14,
+    "cha": 11,
+    "skill": { "perception": "+4", "stealth": "+2" },
+    "senses": ["darkvision 60 ft.", "tremorsense 30 ft."],
+    "passive": 14,
+    "cr": 0.25,
+    "familiar": true,
+    "trait": [
+      {
+        "name": "Boulder Guise",
+        "entries": [
+          "While fully withdrawn into its shell, the geonid can't see and is indistinguishable from a small boulder."
+        ]
+      },
+      {
+        "name": "Stone Tell",
+        "entries": [
+          "When the geonid touches a stone, it learns the number and type of creatures that have passed within 10 feet of it in the past 24 hours."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Furtive Snatch",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> The target is grappled (escape DC 11).",
+          "While it has a creature grappled in this way, the geonid can't target another creature with attacks or abilities.",
+          "If the target was already grappled by the geonid, the geonid may instead steal one object it is carrying but not wielding."
+        ]
+      },
+      {
+        "name": "Grinding Mouthstones",
+        "entries": [
+          "One creature restrained by the geonid's Drag In ability must succeed on a DC 13 Constitution saving throw or take 5 (2d4) bludgeoning damage, or half as much on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Crush Toes",
+        "entries": [
+          "The geonid lurches its shell heavily onto a creature grappled by it, forcing it to succeed on a DC 11 Constitution saving throw or take 3 (1d6) bludgeoning damage and be knocked prone."
+        ]
+      },
+      {
+        "name": "Drag In",
+        "entries": [
+          "The geonid attempts to drag a prone creature grappled by it partially into its shell, forcing it to succeed on a DC 11 Strength saving throw or be restrained (escape DC 11).",
+          "A Small or smaller creature that fails this saving throw is dragged fully into the shell, and while restrained in this way is blinded, makes checks to escape at disadvantage, and the geonid has vulnerability to damage dealt by it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Unraveler",
+    "size": "Large",
+    "type": "elemental",
+    "tags": ["chaos"],
+    "alignment": ["N"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 204, "formula": "24d10 + 72" },
+    "speed": { "walk": 20 },
+    "str": 14,
+    "dex": 13,
+    "con": 16,
+    "int": 11,
+    "wis": 12,
+    "cha": 20,
+    "save": { "con": "+7", "cha": "+9" },
+    "resist": ["bludgeoning", "cold", "fire", "lightning"],
+    "immune": ["poison"],
+    "conditionImmune": [
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained"
+    ],
+    "senses": ["darkvision 60 ft.", "tremorsense 30 ft."],
+    "languages": ["Primordial"],
+    "passive": 14,
+    "cr": 10,
+    "trait": [
+      {
+        "name": "Elemental Balance",
+        "entries": [
+          "Whenever the unraveler takes damage of a type it is resistant to, its elemental balance is disrupted, granting the following effects until it takes damage of another type it is resistant to, or until it uses its Restore Balance action:",
+          "<ul><li>The unraveler's attacks deal an additional 2d6 of the triggering damage type.</li><li>The unraveler becomes immune to the triggering damage type.</li><li>The unraveler cannot use its Disjoin Soul action.</li></ul>"
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The unraveler makes two attacks, each of which it may replace with a use of its Disjoin Soul or Restore Balance, if available."
+        ]
+      },
+      {
+        "name": "Omnimental Strike",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (2d6) bludgeoning plus 7 (2d6) cold plus 7 (2d6) fire plus 7 (2d6) lightning damage."
+        ]
+      },
+      {
+        "name": "Disjoin Soul",
+        "entries": [
+          "One creature within 10 feet that the unraveler can see must succeed on a DC 17 Charisma saving throw or be cursed.",
+          "A creature cursed in this way begins to unravel into its raw elemental components, and must succeed on a DC 17 Constitution saving throw at the end of each of its turns or take 9 (2d8) force damage.",
+          "A creature that succeeds on 3 of these saving throws has the effect abate for 24 hours, after which it returns and the creature must save against it anew. A creature killed by this damage collapses into a loose pile of water and minerals."
+        ]
+      },
+      {
+        "name": "Restore Balance (Recharge 5-6)",
+        "entries": [
+          "The unraveler restores itself to perfect order, ending any spells or magical effect on itself, and any ongoing effects from its Elemental Balance trait."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Disjoin Weapon",
+        "entries": [
+          "When the unraveler is hit with nonmagical melee weapon attack, the unraveler can force the attacker to succeed on a DC 17 Dexterity saving throw or have the weapon disintegrate in its grasp, separating into its component elements."
+        ]
+      }
+    ]
+  }
+]
