@@ -22,6 +22,14 @@ export class SpellsComponent implements OnInit {
   public sorcery = 0;
   public currSorcery;
 
+  private sorceryCost = {
+    1: 2,
+    2: 3,
+    3: 5,
+    4: 6,
+    5: 7,
+  };
+
   constructor(
     private characterSheetService: CharacterSheetService,
     private dataService: DataService,
@@ -467,13 +475,80 @@ export class SpellsComponent implements OnInit {
 
     return checkboxes;
   }
-  public getCurrUses(index: number) {
-    const use = this.getUseObject(index);
+  public getCurrUses(index: number, pact: boolean = false) {
+    const use = this.getUseObject(index, pact);
     return use.currUses;
   }
-  public getMaxUses(index: number) {
-    const use = this.getUseObject(index);
+  public getMaxUses(index: number, pact: boolean = false) {
+    const use = this.getUseObject(index, pact);
     return use.maxUses;
+  }
+
+  public canCastSpellStandard(spell: any): boolean {
+    const level = spell?.spell?.level;
+    let currUses = this.getCurrUses(level, false);
+    if (currUses > 0) {
+      return true;
+    }
+  }
+  public canCastSpellPact(spell: any): boolean {
+    const level = spell?.spell?.level;
+    let currUses = this.getCurrUses(level, true);
+    if (currUses > 0) {
+      return true;
+    }
+  }
+  public canCastSpellSorcery(spell: any): boolean {
+    const level = spell?.spell?.level;
+    let currUses = this.currSorcery;
+    if (currUses >= this.sorceryCost[level]) {
+      return true;
+    }
+  }
+
+  public canCastSpell(spell: any): boolean {
+    const level = spell?.spell?.level;
+    if (this.standard) {
+      if (this.canCastSpellStandard(spell)) {
+        return true;
+      }
+    }
+    if (this.pact) {
+      if (this.canCastSpellPact(spell)) {
+        return true;
+      }
+    }
+    if (this.sorcery) {
+      if (this.canCastSpellSorcery(spell)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+  public castSpell(spell: any) {
+    if (!this.canCastSpell(spell)) {
+      return;
+    }
+
+    if (this.standard) {
+      if (this.canCastSpellStandard(spell)) {
+        this.changeUses(spell.spell.level, -1, false);
+        return;
+      }
+    }
+    if (this.pact) {
+      if (this.canCastSpellPact(spell)) {
+        this.changeUses(spell.spell.level, -1, true);
+        return;
+      }
+    }
+    if (this.sorcery) {
+      if (this.canCastSpellSorcery(spell)) {
+        this.changeSorcery(this.sorceryCost[spell.spell.level]);
+        return;
+      }
+    }
   }
 
   public changeUses(index: number, direction: number, pact: boolean) {

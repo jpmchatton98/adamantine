@@ -46,6 +46,7 @@
   >
     <thead>
       <tr>
+        <th *ngIf="level.name !== 'Cantrips'"></th>
         <th>Name</th>
         <th>Casting Time</th>
         <th>Range</th>
@@ -54,12 +55,21 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        *ngFor="let spell of level.spells"
-        class="spell"
-        (click)="openModal(spell.spell.name)"
-      >
-        <td class="spell-name">
+      <tr *ngFor="let spell of level.spells" class="spell">
+        <td *ngIf="level.name !== 'Cantrips'" class="cast-btn-td">
+          <button
+            nz-button
+            (click)="castSpell(spell)"
+            [disabled]="!canCastSpell(spell)"
+            *ngIf="!spell.ritualOnly; else ritualOnly"
+          >
+            <span class="mdi mdi-creation"></span>
+          </button>
+          <ng-template #ritualOnly>
+            <div class="ritual-only">RITUAL</div>
+          </ng-template>
+        </td>
+        <td class="spell-name" (click)="openModal(spell.spell.name)">
           <div>
             {{ spell.spell.name }}
             <sup
@@ -76,12 +86,19 @@
             {{ spell.ability.toUpperCase() }}
           </div>
         </td>
-        <td class="casting-time">
-          {{ spell.spell.castingTime.split(",")[0] }}
-          <sup *ngIf="spell.spell.ritual" title="Ritual"> R </sup>
+        <td class="casting-time" (click)="openModal(spell.spell.name)">
+          <div>
+            {{ spell.spell.castingTime.split(",")[0] }}
+            <span *ngIf="spell.ritualOnly"> + 10 minutes</span>
+            <sup *ngIf="spell.spell.ritual" title="Ritual"> R </sup>
+          </div>
         </td>
-        <td class="range" [innerHTML]="getRangeString(spell.spell)"></td>
-        <td class="hit-dc">
+        <td
+          class="range"
+          [innerHTML]="getRangeString(spell.spell)"
+          (click)="openModal(spell.spell.name)"
+        ></td>
+        <td class="hit-dc" (click)="openModal(spell.spell.name)">
           <ng-container *ngIf="spell.spell.type?.includes('attack')">
             {{ formatModifier(getSpellAttackMod(spell.ability)) }}
           </ng-container>
@@ -93,7 +110,7 @@
             -
           </ng-container>
         </td>
-        <td class="effect">
+        <td class="effect" (click)="openModal(spell.spell.name)">
           <div
             [innerHTML]="
               getEffectString(

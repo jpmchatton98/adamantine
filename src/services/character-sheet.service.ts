@@ -1671,6 +1671,7 @@ export class CharacterSheetService {
                 spell: spellData,
                 ability: s.ability,
                 source: s.source,
+                ritualOnly: s.ritualOnly,
               };
             })
             .filter((s: any) => {
@@ -1725,6 +1726,7 @@ export class CharacterSheetService {
               spell,
               ability,
               source,
+              ritualOnly: g.ritualsOnly,
             });
           }
         }
@@ -1865,6 +1867,7 @@ export class CharacterSheetService {
             spell: choiceEntry.value,
             ability,
             source,
+            ritualOnly: choice.ritualsOnly,
           });
         }
       }
@@ -1923,6 +1926,7 @@ export class CharacterSheetService {
               spell: l,
               ability,
               source,
+              ritualOnly: listed.ritualsOnly,
             });
           }
         }
