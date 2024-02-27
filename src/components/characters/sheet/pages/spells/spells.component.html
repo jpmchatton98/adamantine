@@ -57,17 +57,24 @@
     <tbody>
       <tr *ngFor="let spell of getLevelSpells(level)" class="spell">
         <td *ngIf="level.name !== 'Cantrips'" class="cast-btn-td">
-          <button
-            nz-button
-            (click)="castSpell(spell, level.name[0])"
-            [disabled]="!canCastSpell(spell, level.name[0])"
-            *ngIf="!spell.ritualOnly; else ritualOnly"
-          >
-            <span class="mdi mdi-creation"></span>
-          </button>
-          <ng-template #ritualOnly>
+          <ng-container *ngIf="!spell.ritualOnly">
+            <button
+              nz-button
+              (click)="castSpell(spell, level.name[0])"
+              [disabled]="!canCastSpell(spell, level.name[0])"
+              *ngIf="!spell.atWill || level.name[0] != spell.spell.level"
+            >
+              <span class="mdi mdi-creation"></span>
+            </button>
+            <dic
+              class="ritual-only"
+              *ngIf="spell.atWill && level.name[0] == spell.spell.level"
+              >AT WILL</dic
+            >
+          </ng-container>
+          <ng-container *ngIf="spell.ritualOnly">
             <div class="ritual-only">RITUAL</div>
-          </ng-template>
+          </ng-container>
         </td>
         <td class="spell-name" (click)="openModal(spell.spell.name)">
           <div>
