@@ -32,6 +32,7 @@ export class CharacterSheetComponent implements OnInit {
   public character: any;
   private dbCharacter: any;
   public loaded = false;
+  public upcastShow = false;
 
   public gritFeature: any = {
     name: 'Grit',
@@ -164,6 +165,8 @@ export class CharacterSheetComponent implements OnInit {
           this.calculateHp();
           this.tempHp = this.character.tempHp ?? 0;
           this.generateWeaponAttacks();
+
+          this.upcastShow = this.getSetting('upcasting-show');
         }
       }
     });

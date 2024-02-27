@@ -13,6 +13,7 @@ import { DataService } from 'src/services/data.service';
 export class SpellsComponent implements OnInit {
   @Input() character: any;
   @Input() characterSpells: any[];
+  @Input() upcastShow: number;
 
   public modalVisible;
   public modalOption;
@@ -189,6 +190,120 @@ export class SpellsComponent implements OnInit {
         this.characterSpells = spells;
       }
     });
+  }
+
+  public getLevelSpells(level: any): any {
+    let spells = [...level.spells];
+    if (this.upcastShow === 1) {
+      let base = 0;
+      if (this.characterSpells[0].name === 'Cantrips') {
+        base = 1;
+      }
+
+      for (
+        let spellLevel = base;
+        spellLevel < parseInt(level.name[0]);
+        spellLevel++
+      ) {
+        for (let spell of this.characterSpells[spellLevel].spells) {
+          spell = JSON.parse(JSON.stringify(spell));
+          if (spell.spell.higherLevels) {
+            const upcastSpell = spell.spell;
+
+            const interval = upcastSpell.upcastInterval ?? 1;
+            const levelDiff = parseInt(level.name[0]) - spell.spell.level;
+            if (upcastSpell.upcastDice) {
+              if (upcastSpell.damage) {
+                if (upcastSpell.upcastDiceIds) {
+                  for (let id of upcastSpell.upcastDiceIds) {
+                    const damageIndex = upcastSpell.damage.findIndex(
+                      (d) => d.id === id
+                    );
+                    if (damageIndex !== -1) {
+                      upcastSpell.damage[damageIndex].dice +=
+                        upcastSpell.upcastDice *
+                        Math.floor(levelDiff / interval);
+                    }
+                  }
+                } else {
+                  for (let i = 0; i < upcastSpell.damage.length; i++) {
+                    if (upcastSpell.damage[i].dice) {
+                      upcastSpell.damage[i].dice +=
+                        upcastSpell.upcastDice *
+                        Math.floor(levelDiff / interval);
+                    }
+                  }
+                }
+              }
+              if (upcastSpell.healing) {
+                for (let i = 0; i < upcastSpell.healing.length; i++) {
+                  if (upcastSpell.healing[i].dice) {
+                    upcastSpell.healing[i].dice +=
+                      upcastSpell.upcastDice * Math.floor(levelDiff / interval);
+                  }
+                }
+              }
+            }
+            if (upcastSpell.upcastAmount) {
+              if (upcastSpell.damage) {
+                for (let i = 0; i < upcastSpell.damage.length; i++) {
+                  if (upcastSpell.damage[i].amount) {
+                    upcastSpell.damage[i].amount +=
+                      upcastSpell.upcastAmount *
+                      Math.floor(levelDiff / interval);
+                  }
+                }
+              }
+              if (upcastSpell.healing) {
+                for (let i = 0; i < upcastSpell.healing.length; i++) {
+                  if (upcastSpell.healing[i].amount) {
+                    upcastSpell.healing[i].amount +=
+                      upcastSpell.upcastAmount *
+                      Math.floor(levelDiff / interval);
+                  }
+                }
+              }
+            }
+
+            if (upcastSpell.upcastMultiplier) {
+              if (upcastSpell.multiplier) {
+                upcastSpell.multiplier +=
+                  upcastSpell.upcastMultiplier *
+                  Math.floor(levelDiff / interval);
+              } else {
+                upcastSpell.multiplier =
+                  1 +
+                  upcastSpell.upcastMultiplier *
+                    Math.floor(levelDiff / interval);
+              }
+            }
+
+            if (upcastSpell.upcastDuration) {
+              if (upcastSpell.upcastDuration[level.name[0]]) {
+                upcastSpell.duration =
+                  upcastSpell.upcastDuration[level.name[0]];
+              }
+            }
+            if (upcastSpell.upcastRange) {
+              if (upcastSpell.upcastRange[level.name[0]]) {
+                upcastSpell.range = upcastSpell.upcastRange[level.name[0]];
+              }
+            }
+
+            spell.spell = upcastSpell;
+            spell.upcast = true;
+
+            spells.push(spell);
+          }
+        }
+      }
+
+      spells = spells.sort((a, b) => {
+        return a.spell.name.localeCompare(b.spell.name);
+      });
+    }
+
+    return spells;
   }
 
   private levelFormatter(level: number): string {
@@ -381,6 +496,9 @@ export class SpellsComponent implements OnInit {
       });
 
       damage = damage.join(' + ');
+      if (spell.multiplier) {
+        damage += ` &times; ${spell.multiplier}`;
+      }
 
       if (signature) {
         let m = 1;
@@ -484,68 +602,84 @@ export class SpellsComponent implements OnInit {
     return use.maxUses;
   }
 
-  public canCastSpellStandard(spell: any): boolean {
-    const level = spell?.spell?.level;
+  public canCastSpellStandard(spell: any, atLevel: number): boolean {
+    let level = spell?.spell?.level;
+    if (atLevel) {
+      level = atLevel;
+    }
+
     let currUses = this.getCurrUses(level, false);
     if (currUses > 0) {
       return true;
     }
   }
-  public canCastSpellPact(spell: any): boolean {
-    const level = spell?.spell?.level;
+  public canCastSpellPact(spell: any, atLevel: number): boolean {
+    let level = spell?.spell?.level;
+    if (atLevel) {
+      level = atLevel;
+    }
+
     let currUses = this.getCurrUses(level, true);
     if (currUses > 0) {
       return true;
     }
   }
-  public canCastSpellSorcery(spell: any): boolean {
-    const level = spell?.spell?.level;
+  public canCastSpellSorcery(spell: any, atLevel: number): boolean {
+    let level = spell?.spell?.level;
+    if (atLevel) {
+      level = atLevel;
+    }
+
     let currUses = this.currSorcery;
     if (currUses >= this.sorceryCost[level]) {
       return true;
     }
   }
 
-  public canCastSpell(spell: any): boolean {
-    const level = spell?.spell?.level;
+  public canCastSpell(spell: any, atLevel: number): boolean {
     if (this.standard) {
-      if (this.canCastSpellStandard(spell)) {
+      if (this.canCastSpellStandard(spell, atLevel)) {
         return true;
       }
     }
     if (this.pact) {
-      if (this.canCastSpellPact(spell)) {
+      if (this.canCastSpellPact(spell, atLevel)) {
         return true;
       }
     }
     if (this.sorcery) {
-      if (this.canCastSpellSorcery(spell)) {
+      if (this.canCastSpellSorcery(spell, atLevel)) {
         return true;
       }
     }
 
     return false;
   }
-  public castSpell(spell: any) {
-    if (!this.canCastSpell(spell)) {
+  public castSpell(spell: any, atLevel: number) {
+    if (!this.canCastSpell(spell, atLevel)) {
       return;
     }
 
+    let level = spell.spell.level;
+    if (atLevel) {
+      level = atLevel;
+    }
+
     if (this.standard) {
-      if (this.canCastSpellStandard(spell)) {
-        this.changeUses(spell.spell.level, -1, false);
+      if (this.canCastSpellStandard(spell, atLevel)) {
+        this.changeUses(level, -1, false);
         return;
       }
     }
     if (this.pact) {
-      if (this.canCastSpellPact(spell)) {
-        this.changeUses(spell.spell.level, -1, true);
+      if (this.canCastSpellPact(spell, atLevel)) {
+        this.changeUses(level, -1, true);
         return;
       }
     }
     if (this.sorcery) {
-      if (this.canCastSpellSorcery(spell)) {
-        this.changeSorcery(this.sorceryCost[spell.spell.level]);
+      if (this.canCastSpellSorcery(spell, atLevel)) {
+        this.changeSorcery(this.sorceryCost[level]);
         return;
       }
     }

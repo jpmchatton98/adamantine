@@ -886,6 +886,7 @@
             <cs-spells
               [characterSpells]="characterSpells"
               [character]="character"
+              [upcastShow]="upcastShow"
             ></cs-spells>
           </nz-tab>
           <nz-tab nzTitle="Exploits" *ngIf="characterExploits.length">
@@ -1088,6 +1089,29 @@
           (click)="updateSetting('defense', 1)"
           [ngClass]="{ selected: (getSetting('defense') ?? 0) === 1 }"
         />
+      </div>
+
+      <div><strong>Upcasting</strong></div>
+      <div class="setting">
+        Hide Upcasted Spells
+        <div class="checkboxes">
+          <div class="box" (click)="updateSetting('upcasting-show', 0)">
+            <div
+              class="filled"
+              *ngIf="(getSetting('upcasting-show') ?? 0) === 0"
+            ></div>
+          </div>
+        </div>
+
+        Show Upcasted Spells
+        <div class="checkboxes">
+          <div class="box" (click)="updateSetting('upcasting-show', 1)">
+            <div
+              class="filled"
+              *ngIf="(getSetting('upcasting-show') ?? 0) === 1"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
   </ng-container>
