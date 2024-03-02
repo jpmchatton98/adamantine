@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Amulet, silver",
+    "cost": 150,
+    "weight": 0.5,
+    "description": "An amulet made of silver."
+  },
+  {
+    "name": "Amulet, gold",
+    "cost": 250,
+    "weight": 0.5,
+    "description": "An amulet made of gold."
+  },
+  {
+    "name": "Amulet, platinum",
+    "cost": 650,
+    "weight": 0.5,
+    "description": "An amulet made of platinum."
+  },
+  {
+    "name": "Banner",
+    "cost": 5,
+    "weight": 2,
+    "description": "A broad flag, often carried on a spear or other polearm."
+  },
+  {
+    "name": "Belt",
+    "cost": 1,
+    "weight": 0.5,
+    "description": "A mundane belt made of leather, with a metal buckle."
+  },
+  {
+    "name": "Boots",
+    "cost": 5,
+    "weight": 2,
+    "description": "A pair of sturdy leather boots."
+  },
+  {
+    "name": "Broom",
+    "cost": 0.1,
+    "weight": 2,
+    "description": "A wooden broom with a bristly head."
+  },
+  {
+    "name": "Cape",
+    "cost": 0.3,
+    "weight": 3,
+    "description": "A flowing cloth cape."
+  },
+  {
+    "name": "Cloak",
+    "cost": 0.4,
+    "weight": 3,
+    "description": "A hooded cloak made of insulating cloth."
+  },
+  {
+    "name": "Circlet, silver",
+    "cost": 250,
+    "weight": 0.5,
+    "description": "A circlet made of silver."
+  },
+  {
+    "name": "Circlet, gold",
+    "cost": 400,
+    "weight": 0.5,
+    "description": "A circlet made of gold."
+  },
+  {
+    "name": "Circlet, platinum",
+    "cost": 800,
+    "weight": 0.5,
+    "description": "A circlet made of platinum."
+  },
+  {
+    "name": "Gloves",
+    "cost": 0.2,
+    "weight": 1,
+    "description": "A set of thick leather gloves."
+  },
+  {
+    "name": "Goggles",
+    "cost": 1,
+    "weight": 0.5,
+    "description": "A pair of simple goggles."
+  },
+  {
+    "name": "Hat",
+    "cost": 0.2,
+    "weight": 1,
+    "description": "A piece of cloth headwear."
+  },
+  {
+    "name": "Helmet",
+    "cost": 1,
+    "weight": 4,
+    "description": "A mundane helmet made of leather or metal."
+  },
+  {
+    "name": "Holster",
+    "cost": 0.5,
+    "weight": 0.5,
+    "description": "A holster designed to carry a pistol."
+  },
+  {
+    "name": "Horseshoe",
+    "cost": 0.5,
+    "weight": 2.5,
+    "description": "A mundane horseshoe made of metal."
+  },
+  {
+    "name": "Mantle",
+    "cost": 0.2,
+    "weight": 3,
+    "description": "A broad cape with a cuff."
+  },
+  {
+    "name": "Ring, silver",
+    "cost": 20,
+    "weight": 0.1,
+    "description": "A ring made of silver."
+  },
+  {
+    "name": "Ring, gold",
+    "cost": 200,
+    "weight": 0.1,
+    "description": "A ring made of gold."
+  },
+  {
+    "name": "Ring, platinum",
+    "cost": 420,
+    "weight": 0.1,
+    "description": "A ring made of platinum."
+  },
+  {
+    "name": "Robe",
+    "cost": 6,
+    "weight": 3,
+    "description": "A fancy cape worn by nobles, often with inlaid gems or precious metals."
+  },
+  {
+    "name": "Rug",
+    "cost": 5,
+    "weight": 10,
+    "description": "A large cloth covering for hard floors."
+  }
+]

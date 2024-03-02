@@ -28,11 +28,18 @@
     "description": "A woven basket."
   },
   {
-    "name": "Bottle",
+    "name": "Bottle, glass",
     "cost": 2,
     "weight": 2,
     "capacity": "1.5 pt",
     "description": "A glass bottle used for storing liquids."
+  },
+  {
+    "name": "Bottle, crystal",
+    "cost": 10,
+    "weight": 1,
+    "capacity": "1.5 pt",
+    "description": "A crystal bottle used for storing potions."
   },
   {
     "name": "Bucket",

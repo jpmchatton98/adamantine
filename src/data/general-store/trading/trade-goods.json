@@ -1,530 +1,482 @@
 [
   {
-    "name": "Bread, poor (loaf)",
-    "cost": 0.01,
-    "weight": 3,
-    "description": "A cheaply made loaf of bread, such as hardtack, that mostly consists of just flour and water"
-  },
-  {
-    "name": "Eggs, chicken's (dozen)",
-    "cost": 0.01,
-    "weight": 1.5,
-    "description": "Eggs that come from chickens"
-  },
-  {
-    "name": "Grain (pound)",
+    "name": "Firewood",
     "cost": 0.01,
     "weight": 1,
-    "description": "Plants primarily used for breadstuffs, such as barley, corn, potatoes, rice, rye, or wheat"
+    "description": "A random assortment of wood, good for little else than as fuel for fires."
   },
   {
-    "name": "Shellfish (pound)",
-    "cost": 0.01,
-    "weight": 1,
-    "description": "Shelled aquatic animals such as clams, crayfish, lobsters, mussels, oysters, or snails"
-  },
-  {
-    "name": "Straw (pound)",
-    "cost": 0.01,
-    "weight": 1,
-    "description": "A cheap building material made of dried grasses"
-  },
-  {
-    "name": "Butter (pound)",
+    "name": "Scraps, wood",
     "cost": 0.02,
     "weight": 1,
-    "description": "A cheap cooking fat made from stirring milk"
+    "description": "Scraps of wood left over from other woodworking."
   },
   {
-    "name": "Chicken (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "A cheap, lean meat"
-  },
-  {
-    "name": "Flour (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "A grain that has been ground into a fine powder"
-  },
-  {
-    "name": "Lard (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "A cooking fat rendered from pig fat"
-  },
-  {
-    "name": "Milk, cow's (gallon)",
-    "cost": 0.02,
-    "weight": 8,
-    "description": "A thick, creamy white liquid that comes from cows"
-  },
-  {
-    "name": "Oil, cooking (gallon)",
-    "cost": 0.02,
-    "weight": 8,
-    "description": "A cooking fat rendered from olives"
-  },
-  {
-    "name": "Softwood, logs (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "Logs of a softwood like pine."
-  },
-  {
-    "name": "Stone (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "A hard material used for construction"
-  },
-  {
-    "name": "Vegetable (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "Plants primarily used in savory dishes, such as artichokes, asaparagus, beans, beetroot, cabbage, carrots, cucumbers, endives, fennel, garlic, leeks, lentils, lettuce, onions, parsnips, peas, peppers, shallots, squash, sweet potatoes, tomatoes, turnips, and watercress"
-  },
-  {
-    "name": "Yeast (pound)",
-    "cost": 0.02,
-    "weight": 1,
-    "description": "A collection of micro-organisms used for leavening bread or brewing alcohol"
-  },
-  {
-    "name": "Bread, standard (loaf)",
+    "name": "Fletching",
     "cost": 0.05,
     "weight": 1,
-    "description": "A fairly cheap loaf of bread that includes some seasonings or leaveners"
+    "description": "An arrow fletching made from feathers."
   },
   {
-    "name": "Cheese, poor (wheel)",
+    "name": "Scraps, iron",
     "cost": 0.05,
-    "weight": 10,
-    "description": "A wheel of cheaply made cheese"
+    "weight": 0.25,
+    "description": "Scraps of iron left over from other blacksmithing."
   },
   {
-    "name": "Coal (pound)",
+    "name": "Scraps, lead",
     "cost": 0.05,
-    "weight": 1,
-    "description": "A black rock that can be used as fuel"
+    "weight": 0.35,
+    "description": "Scraps of lead left over from other blacksmithing."
   },
   {
-    "name": "Eggs, duck's (dozen)",
-    "cost": 0.05,
+    "name": "Branch, common",
+    "cost": 0.1,
     "weight": 2,
-    "description": "Larger, richer eggs that come from ducks"
+    "description": "The branch of a softwood tree, such as pine."
   },
   {
-    "name": "Fish, freshwater (pound)",
-    "cost": 0.05,
-    "weight": 1,
-    "description": "Freshwater aquatic animals, such as carp, salmon, pike, or trout"
-  },
-  {
-    "name": "Fruit (pound)",
-    "cost": 0.05,
-    "weight": 1,
-    "description": "Plants primarily used in sweet dishes, such as apples, apricots, cherries, grapes, lemons, melons, oranges, peaches, pineapples, pomegranates, quinces, raspberries, red currants, or strawberries"
-  },
-  {
-    "name": "Glue (pound)",
-    "cost": 0.05,
-    "weight": 1,
-    "description": "A sticky substance used for tinkering."
-  },
-  {
-    "name": "Salt (pound)",
-    "cost": 0.05,
-    "weight": 1,
-    "description": "A white rock that can be used as seasoning"
-  },
-  {
-    "name": "Softwood, planks (pound)",
-    "cost": 0.05,
-    "weight": 1,
-    "description": "Planks of a softwood like pine."
-  },
-  {
-    "name": "Vinegar (gallon)",
-    "cost": 0.05,
-    "weight": 8,
-    "description": "Fermented wine that has acquired a very sour taste"
-  },
-  {
-    "name": "Canvas (pound)",
+    "name": "Canvas",
     "cost": 0.1,
     "weight": 1,
-    "description": "A rough fabric made from cloth fibers"
+    "description": "A rough, sturdy fabric made from cotton."
   },
   {
-    "name": "Clay (pound)",
+    "name": "Cloth",
     "cost": 0.1,
     "weight": 1,
-    "description": "A gray or brown mineral used in pottery."
+    "description": "A smooth fabric made from cotton or wool."
   },
   {
-    "name": "Feathers (pound)",
+    "name": "Meat, common",
     "cost": 0.1,
     "weight": 1,
-    "description": "Feathers that can be used for arrow fletching or quills"
+    "description": "Commonly available meats such as chicken and pork."
   },
   {
-    "name": "Fish, saltwater (pound)",
-    "cost": 0.1,
-    "weight": 1,
-    "description": "Saltwater aquatic animals, such as cod, herring, or tuna"
-  },
-  {
-    "name": "Glass (pound)",
-    "cost": 0.1,
-    "weight": 1,
-    "description": "A hard, brittle, clear material made from sand in a kiln."
-  },
-  {
-    "name": "Grout (pound)",
-    "cost": 0.1,
-    "weight": 1,
-    "description": "A sticky material made from limestone, used to bind bricks and the like together"
-  },
-  {
-    "name": "Hardwood, logs (pound)",
-    "cost": 0.1,
-    "weight": 1,
-    "description": "Logs of a hardwood like oak."
-  },
-  {
-    "name": "Herb (pound)",
-    "cost": 0.1,
-    "weight": 1,
-    "description": "Green, leafy plants primarily used for flavoring, such as basil, dill, mint, oregano, parsley, rosemary, sage, tarragon, or thyme"
-  },
-  {
-    "name": "Iron (ingot)",
+    "name": "Ore, iron",
     "cost": 0.1,
     "weight": 5,
-    "description": "A silvery metal that can be worked into tools or further refined into metals such as steel or dragonsteel"
+    "description": "An ore of iron."
   },
   {
-    "name": "Lead (ingot)",
+    "name": "Ore, lead",
     "cost": 0.1,
     "weight": 7,
-    "description": "A soft, dark-colored metal with a low melting point"
+    "description": "An ore of lead."
   },
   {
-    "name": "Milk, goat's (gallon)",
+    "name": "Scraps, copper",
     "cost": 0.1,
-    "weight": 8,
-    "description": "A stronger-tasting liquid that comes from goats"
+    "weight": 0.3,
+    "description": "Scraps of copper left over from other blacksmithing."
   },
   {
-    "name": "Pickles (pound)",
-    "cost": 0.1,
-    "weight": 1,
-    "description": "Brined and flavored vegetables, usually cucumbers"
-  },
-  {
-    "name": "Rabbit (pound)",
+    "name": "Scraps, hide",
     "cost": 0.1,
     "weight": 1,
-    "description": "Gamey, lean meat that comes from rabbits"
+    "description": "Bits of various hides left over from other leatherworking."
   },
   {
-    "name": "Spices, common (pound)",
+    "name": "Scraps, tin",
+    "cost": 0.1,
+    "weight": 0.225,
+    "description": "Scraps of tin left over from other blacksmithing."
+  },
+  {
+    "name": "Scraps, zinc",
+    "cost": 0.1,
+    "weight": 0.225,
+    "description": "Scraps of zinc left over from other blacksmithing."
+  },
+  {
+    "name": "Silk, raw",
     "cost": 0.1,
     "weight": 1,
-    "description": "More readily available spices, such as cayanne, ginger, mustard, paprika, pepper, or sugar"
+    "description": "The raw threads produced by a silkworm."
   },
   {
-    "name": "Beeswax (pound)",
-    "cost": 0.5,
+    "name": "Supplies",
+    "cost": 0.1,
     "weight": 1,
-    "description": "The raw material of beehives, which is useful for things such as candles and sculpting"
+    "description": "Commonly available supplies such as salt, pepper, vegetables, herbs, fruits, coal, cotton, wool, and pitch."
   },
   {
-    "name": "Bread, good (loaf)",
-    "cost": 0.5,
+    "name": "Thread",
+    "cost": 0.1,
+    "weight": 0.1,
+    "description": "Thin string used for sewing."
+  },
+  {
+    "name": "Scraps, brass",
+    "cost": 0.15,
+    "weight": 0.275,
+    "description": "Scraps of brass left over from other blacksmithing."
+  },
+  {
+    "name": "Scraps, bronze",
+    "cost": 0.15,
+    "weight": 0.25,
+    "description": "Scraps of bronze left over from other blacksmithing."
+  },
+  {
+    "name": "Buckle",
+    "cost": 0.2,
     "weight": 1,
-    "description": "A good loaf of bread, including leaveners and seasonings"
+    "description": "A metal belt buckle."
   },
   {
-    "name": "Bricks (pound)",
-    "cost": 0.5,
-    "weight": 1,
-    "description": "A sturdy building material made from firing clay"
-  },
-  {
-    "name": "Cheese, standard (wheel)",
-    "cost": 0.5,
-    "weight": 10,
-    "description": "A standard wheel of cheese"
-  },
-  {
-    "name": "Copper (ingot)",
-    "cost": 0.5,
+    "name": "Ore, copper",
+    "cost": 0.2,
     "weight": 6,
-    "description": "An orange-ish metal with a high conductance"
+    "description": "An ore of copper."
   },
   {
-    "name": "Duck (pound)",
-    "cost": 0.5,
-    "weight": 1,
-    "description": "A meat that comes from ducks and tastes similar to chicken"
-  },
-  {
-    "name": "Hardwood, planks (pound)",
-    "cost": 0.5,
-    "weight": 1,
-    "description": "Planks of a hardwood like oak."
-  },
-  {
-    "name": "Honey (pound)",
-    "cost": 0.5,
-    "weight": 1,
-    "description": "A thick, sweet product produced by bees"
-  },
-  {
-    "name": "Nuts (pound)",
-    "cost": 0.5,
-    "weight": 1,
-    "description": "Hard-shelled legumes, such as almonds, cashews, peanuts, pecans, or walnuts"
-  },
-  {
-    "name": "Tin (ingot)",
-    "cost": 0.5,
+    "name": "Ore, tin",
+    "cost": 0.2,
     "weight": 4.5,
-    "description": "A soft, silvery metal useful in alloys"
+    "description": "An ore of tin."
   },
   {
-    "name": "Zinc (ingot)",
-    "cost": 0.5,
+    "name": "Ore, zinc",
+    "cost": 0.2,
     "weight": 4.5,
-    "description": "A light, blue-ish white metal used in alloys"
+    "description": "An ore of zinc."
   },
   {
-    "name": "Chevon (pound)",
+    "name": "Scraps, steel",
+    "cost": 0.25,
+    "weight": 0.25,
+    "description": "Scraps of steel left over from other blacksmithing."
+  },
+  {
+    "name": "Meat, uncommon",
+    "cost": 0.5,
+    "weight": 1,
+    "description": "More expensive meats such as beef, duck, or lamb."
+  },
+  {
+    "name": "Scraps, leather",
+    "cost": 0.5,
+    "weight": 1,
+    "description": "Bits of various leathers left over from other leatherworking"
+  },
+  {
+    "name": "Scraps, silver",
+    "cost": 0.75,
+    "weight": 0.325,
+    "description": "Scraps of silver left over from other blacksmithing."
+  },
+  {
+    "name": "Ingot, iron",
     "cost": 1,
-    "weight": 1,
-    "description": "A slightly sweet meat that comes from goats"
-  },
-  {
-    "name": "Cotton (pound)",
-    "cost": 1,
-    "weight": 1,
-    "description": "A fluffy white plant product used in making fabric"
-  },
-  {
-    "name": "Dyes (pound)",
-    "cost": 1,
-    "weight": 1,
-    "description": "Powders made from various materials that can be used for coloration."
-  },
-  {
-    "name": "Pheasant (pound)",
-    "cost": 1,
-    "weight": 1,
-    "description": "Meat from a small, wild bird popular among hunters"
-  },
-  {
-    "name": "Spices, uncommon (pound)",
-    "cost": 1,
-    "weight": 1,
-    "description": "Less readily available spices, such as cinnamon, coriander, mace, nutmeg, turmeric, or vanilla"
-  },
-  {
-    "name": "Turkey (pound)",
-    "cost": 1,
-    "weight": 1,
-    "description": "Meat from a larger wild bird with distinctive plumage"
-  },
-  {
-    "name": "Wool (pound)",
-    "cost": 1,
-    "weight": 1,
-    "description": "A fluffy white product derived from sheep's fur used in making fabric"
-  },
-  {
-    "name": "Brass (ingot)",
-    "cost": 2,
-    "weight": 5.5,
-    "description": "An alloy derived from copper and zinc resistant to corrosion"
-  },
-  {
-    "name": "Bread, fine (loaf)",
-    "cost": 2,
-    "weight": 1,
-    "description": "An excellent loaf of bread, often with special flavorings or ingredients"
-  },
-  {
-    "name": "Bronze (ingot)",
-    "cost": 2,
     "weight": 5,
-    "description": "An alloy derived from copper and tin used for weaponry and armor"
+    "description": "A silvery metal that can be worked into tools or further refined into metals such as steel or dragonsteel."
   },
   {
-    "name": "Mutton (pound)",
-    "cost": 2,
+    "name": "Ingot, lead",
+    "cost": 1,
+    "weight": 7,
+    "description": "A soft, dark-colored metal with a low melting point."
+  },
+  {
+    "name": "Scales",
+    "cost": 1,
     "weight": 1,
-    "description": "A meat that comes from sheep and tastes similar to beef and pork"
+    "description": "The scales of a reptilian creature."
   },
   {
-    "name": "Cheese, good (wheel)",
-    "cost": 3,
-    "weight": 10,
-    "description": "A good wheel of cheese, often with special flavorings"
-  },
-  {
-    "name": "Hides, raw (pound)",
-    "cost": 3,
+    "name": "Silk",
+    "cost": 1,
     "weight": 1,
-    "description": "Raw, untanned hides from animals such as sheep or cows"
+    "description": "A smooth, luxurious fabric made from the byproduct of a silkworm."
   },
   {
-    "name": "Pork (pound)",
-    "cost": 3,
-    "weight": 1,
-    "description": "A lean meat that comes from pigs"
-  },
-  {
-    "name": "Venison (pound)",
-    "cost": 3,
-    "weight": 1,
-    "description": "A gamey meat that comes from wild ungulates, such as deer or elk"
-  },
-  {
-    "name": "Cheese, excellent (wheel)",
-    "cost": 5,
-    "weight": 10,
-    "description": "An excellent wheel of cheese, expensive and hard to find"
-  },
-  {
-    "name": "Hides, tanned (pound)",
-    "cost": 5,
-    "weight": 1,
-    "description": "Hides prepared for being made into leather"
-  },
-  {
-    "name": "Lamb (pound)",
-    "cost": 5,
-    "weight": 1,
-    "description": "A more mild version of mutton that comes from young sheep"
-  },
-  {
-    "name": "Linen (pound)",
-    "cost": 5,
-    "weight": 1,
-    "description": "A thin fabric made from flax"
-  },
-  {
-    "name": "Spices, rare (pound)",
-    "cost": 5,
-    "weight": 1,
-    "description": "Rarer spices, such as allspice, anise, caraway, cardamom, cloves, or cocoa"
-  },
-  {
-    "name": "Beef (pound)",
-    "cost": 10,
-    "weight": 1,
-    "description": "A red meat that comes from cows"
-  },
-  {
-    "name": "Caviar (pound)",
-    "cost": 10,
-    "weight": 1,
-    "description": "Aged and prepared fish eggs popular among aristocrats"
-  },
-  {
-    "name": "Silver, mundane (ingot)",
-    "cost": 10,
+    "name": "Ore, silver",
+    "cost": 1.5,
     "weight": 6.5,
-    "description": "A shiny metal used in jewelery"
+    "description": "An ore of silver."
   },
   {
-    "name": "Steel (ingot)",
-    "cost": 10,
-    "weight": 5,
-    "description": "A processed form of iron that is more sturdy and corrosion resistant"
+    "name": "Branch, quality",
+    "cost": 2,
+    "weight": 2,
+    "description": "The branch from a tree of medium hardness, such as a fruit tree."
   },
   {
-    "name": "Saffron (pound)",
-    "cost": 15,
+    "name": "Hide",
+    "cost": 2,
     "weight": 1,
-    "description": "An incredibly rare spice obtained from a type of flower"
+    "description": "The hide of an animal, usually the hide of livestock like cattle or sheep."
   },
   {
-    "name": "Silk (pound)",
-    "cost": 15,
+    "name": "Hide, raw",
+    "cost": 2,
     "weight": 1,
-    "description": "A luxurious fabric obtained from silkworms"
+    "description": "The hide of an animal that has been scraped and treated with lye in preparation for tanning."
   },
   {
-    "name": "Cold Iron (ingot)",
-    "cost": 50,
+    "name": "Ingot, copper",
+    "cost": 2,
+    "weight": 6,
+    "description": "An orange metal with a high conductance."
+  },
+  {
+    "name": "Ingot, tin",
+    "cost": 2,
     "weight": 4.5,
-    "description": "A rare and sturdy metal with an oddly low melting point when worked correctly"
+    "description": "A soft, silvery metal useful in alloys."
   },
   {
-    "name": "Gold (ingot)",
+    "name": "Ingot, zinc",
+    "cost": 2,
+    "weight": 4.5,
+    "description": "A light, blue-ish white metal used in alloys."
+  },
+  {
+    "name": "Parts, common",
+    "cost": 2,
+    "weight": 1,
+    "description": "Easily crafted, simple mechanical parts."
+  },
+  {
+    "name": "Scraps, gold",
+    "cost": 2.5,
+    "weight": 0.6,
+    "description": "Scraps of gold left over from other blacksmithing."
+  },
+  {
+    "name": "Ingot, brass",
+    "cost": 3,
+    "weight": 5.5,
+    "description": "A golden alloy derived from copper and zinc that is resistant to corrosion."
+  },
+  {
+    "name": "Ingot, bronze",
+    "cost": 3,
+    "weight": 5,
+    "description": "A brown alloy derived from copper and tin used for weaponry and armor."
+  },
+  {
+    "name": "Leather, tanned",
+    "cost": 3,
+    "weight": 1,
+    "description": "The hide of an animal that has been tanned, increasing its strength."
+  },
+  {
+    "name": "Carapace, medium",
+    "cost": 4,
+    "weight": 1,
+    "description": "The carapace of an insectoid creature."
+  },
+  {
+    "name": "Leather, hardened",
+    "cost": 4,
+    "weight": 1,
+    "description": "Leather that has been hardened, further increasing its strength and rigidity."
+  },
+  {
+    "name": "Armor Padding",
+    "cost": 5,
+    "weight": 1,
+    "description": "The padding used in armor, often made from wool."
+  },
+  {
+    "name": "Ingot, steel",
+    "cost": 5,
+    "weight": 5,
+    "description": "A processed form of iron that is more sturdy and resistant to corrosion."
+  },
+  {
+    "name": "Ore, gold",
+    "cost": 5,
+    "weight": 12,
+    "description": "An ore of gold."
+  },
+  {
+    "name": "Scraps, electrum",
+    "cost": 5,
+    "weight": 0.4,
+    "description": "Scraps of electrum left over from other blacksmithing."
+  },
+  {
+    "name": "Scraps, platinum",
+    "cost": 5,
+    "weight": 0.675,
+    "description": "Scraps of platinum left over from other blacksmithing."
+  },
+  {
+    "name": "Special Ingredients",
+    "cost": 5,
+    "weight": 1,
+    "description": "Special cooking supplies such as most meats, spices, oils, and rare seeds."
+  },
+  {
+    "name": "Luxury Ingredients",
+    "cost": 10,
+    "weight": 1,
+    "description": "Hard to obtain luxury goods such as caviar, saffron, and veal."
+  },
+  {
+    "name": "Ore, platinum",
+    "cost": 10,
+    "weight": 13.5,
+    "description": "An ore of platinum."
+  },
+  {
+    "name": "Parts, fancy",
+    "cost": 10,
+    "weight": 1,
+    "description": "Complicated mechanical parts such as cogs, springs, or switches."
+  },
+  {
+    "name": "Ingot, silver",
+    "cost": 15,
+    "weight": 6.5,
+    "description": "A shiny metal used in jewelery."
+  },
+  {
+    "name": "Ink, magical (common)",
+    "cost": 15,
+    "weight": 0.1,
+    "description": "Ink made of magical components."
+  },
+  {
+    "name": "Reagent, common (curative)",
+    "cost": 15,
+    "weight": 1,
+    "description": "A reagent with curative properties."
+  },
+  {
+    "name": "Reagent, common (poisonous)",
+    "cost": 15,
+    "weight": 1,
+    "description": "A reagent with poisonous properties."
+  },
+  {
+    "name": "Reagent, common (reactive)",
+    "cost": 15,
+    "weight": 1,
+    "description": "A reagent with reactive properties."
+  },
+  {
+    "name": "Branch, uncommon",
+    "cost": 25,
+    "weight": 2,
+    "description": "The branch of a hardwood tree, such as oak."
+  },
+  {
+    "name": "Carapace, large",
+    "cost": 30,
+    "weight": 1,
+    "description": "The carapace of an insectoid creature."
+  },
+  {
+    "name": "Ink, magical (uncommon)",
+    "cost": 40,
+    "weight": 0.1,
+    "description": "Ink made of powerful magical components."
+  },
+  {
+    "name": "Parchment, uncommon",
+    "cost": 40,
+    "weight": 0.1,
+    "description": "Parchment enchanted by magical components."
+  },
+  {
+    "name": "Reagent, uncommon (curative)",
+    "cost": 40,
+    "weight": 1,
+    "description": "A magical reagent with curative properties."
+  },
+  {
+    "name": "Reagent, uncommon (poisonous)",
+    "cost": 40,
+    "weight": 1,
+    "description": "A magical reagent with poisonous properties."
+  },
+  {
+    "name": "Reagent, uncommon (reactive)",
+    "cost": 40,
+    "weight": 1,
+    "description": "A magical reagent with reactive properties."
+  },
+  {
+    "name": "Essence, common (arcane)",
+    "cost": 45,
+    "weight": 1,
+    "description": "Magical essence from an aberration, construct, dragon, or giant, or ooze."
+  },
+  {
+    "name": "Essence, common (divine)",
+    "cost": 45,
+    "weight": 1,
+    "description": "Magical essence from a celestial, fiend, or undead."
+  },
+  {
+    "name": "Essence, common (occult)",
+    "cost": 45,
+    "weight": 1,
+    "description": "Magical essence from a fiend or undead."
+  },
+  {
+    "name": "Essence, common (primal)",
+    "cost": 45,
+    "weight": 1,
+    "description": "Magical essence from a construct, dragon, elemental, giant, ooze, or plant."
+  },
+  {
+    "name": "Essence, common (psionic)",
+    "cost": 45,
+    "weight": 1,
+    "description": "Magical essence from an aberration or fey."
+  },
+  {
+    "name": "Ingot, gold",
     "cost": 50,
     "weight": 12,
-    "description": "A yellow, shiny metal prized for use in jewelery"
+    "description": "A yellow, shiny metal prized for use in jewelery."
   },
   {
-    "name": "Ivory (pound)",
-    "cost": 50,
-    "weight": 1,
-    "description": "A shiny, white substance obtained from elephant tusks and prized for its beauty"
-  },
-  {
-    "name": "Pride Silk (pound)",
-    "cost": 50,
-    "weight": 1,
-    "description": "A tougher form of silk, nearly with the properties of hardened leather while maintaining the flexibility of silk"
-  },
-  {
-    "name": "Veal (pound)",
-    "cost": 50,
-    "weight": 1,
-    "description": "A variety of beef obtained from young cows"
-  },
-  {
-    "name": "Dragonsteel (ingot)",
-    "cost": 100,
-    "weight": 5,
-    "description": "A form of steel produced through use of dragonfire"
-  },
-  {
-    "name": "Electrum (ingot)",
+    "name": "Ingot, electrum",
     "cost": 100,
     "weight": 8,
-    "description": "An alloy of gold and silver with an extremely high conductance"
+    "description": "A yellow alloy of gold and silver with an extremely high conductance."
   },
   {
-    "name": "Platinum (ingot)",
+    "name": "Ingot, platinum",
     "cost": 100,
     "weight": 13.5,
-    "description": "A rare, silvery metal used in jewelery"
+    "description": "A rare, silvery metal used in jewelery."
   },
   {
-    "name": "Silver, alchemical (ingot)",
-    "cost": 100,
-    "weight": 8.5,
-    "description": "Silver that has been prepared by an alchemist to be used against monsters of the night"
+    "name": "Essence, uncommon (arcane)",
+    "cost": 150,
+    "weight": 1,
+    "description": "Magical essence from a powerful aberration, construct, dragon, or giant, or ooze."
   },
   {
-    "name": "Titanium (ingot)",
-    "cost": 100,
-    "weight": 3,
-    "description": "An incredibly tough metal favored for armor production"
+    "name": "Essence, uncommon (divine)",
+    "cost": 150,
+    "weight": 1,
+    "description": "Magical essence from a powerful celestial, fiend, or undead."
   },
   {
-    "name": "Adamantine (ingot)",
-    "cost": 500,
-    "weight": 12,
-    "description": "A very tough alloy made from adamant, a metal found in meteorites, and electrum"
+    "name": "Essence, uncommon (occult)",
+    "cost": 150,
+    "weight": 1,
+    "description": "Magical essence from a powerful fiend or undead."
   },
   {
-    "name": "Mithral (ingot)",
-    "cost": 1000,
-    "weight": 1.5,
-    "description": "An absurdly light, blueish metal favored by elves for armor production"
+    "name": "Essence, uncommon (primal)",
+    "cost": 150,
+    "weight": 1,
+    "description": "Magical essence from a powerful construct, dragon, elemental, giant, ooze, or plant."
+  },
+  {
+    "name": "Essence, uncommon (psionic)",
+    "cost": 150,
+    "weight": 1,
+    "description": "Magical essence from a powerful aberration or fey."
   }
 ]

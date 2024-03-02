@@ -60,12 +60,6 @@
     "description": "A small pouch of sand used for making various measurements."
   },
   {
-    "name": "Bandana",
-    "cost": 0.1,
-    "weight": 0.5,
-    "description": "A thin piece of fabric used to cover one's mouth and nose. While wearing a bandana, you have advantage on saving throws against airborne toxins."
-  },
-  {
     "name": "Bathtub, collapsible",
     "cost": 15,
     "weight": 20,
@@ -172,18 +166,6 @@
     "cost": 2,
     "weight": 5,
     "description": "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.  A crowbar can be used as a club in a pinch."
-  },
-  {
-    "name": "Gloves",
-    "cost": 0.2,
-    "weight": 1,
-    "description": "A set of thick leather gloves."
-  },
-  {
-    "name": "Goggles",
-    "cost": 1,
-    "weight": 0.5,
-    "description": "A pair of simple goggles. The wearer is immune to any airborne effect that would blind them."
   },
   {
     "name": "Grappling Hook",

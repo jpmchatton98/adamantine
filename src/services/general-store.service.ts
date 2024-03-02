@@ -6,6 +6,7 @@ import containers from '../data/general-store/adventuring-equipment/containers.j
 import equipmentPacks from '../data/general-store/adventuring-equipment/equipment-packs.json';
 import gamingSets from '../data/general-store/adventuring-equipment/gaming-sets.json';
 import magicalFoci from '../data/general-store/adventuring-equipment/magical-foci.json';
+import mundane from '../data/general-store/adventuring-equipment/mundane.json';
 import instruments from '../data/general-store/adventuring-equipment/musical-instruments.json';
 import poisons from '../data/general-store/adventuring-equipment/poisons.json';
 import tools from '../data/general-store/adventuring-equipment/tools.json';
@@ -89,6 +90,11 @@ export class GeneralStoreService {
           name: 'Magical Foci',
           type: 'generic',
           data: 'magicalFoci',
+        },
+        {
+          name: 'Mundane Items',
+          type: 'generic',
+          data: 'mundane',
         },
         {
           name: 'Musical Instruments',
@@ -303,6 +309,7 @@ export class GeneralStoreService {
     ...equipmentPacks,
     ...gamingSets,
     ...magicalFoci,
+    ...mundane,
     ...instruments,
     ...poisons,
     ...tools,
@@ -329,6 +336,7 @@ export class GeneralStoreService {
     gamingSets: gamingSets,
     magicalFoci: magicalFoci,
     musicalInstruments: instruments,
+    mundane: mundane,
     poisons: poisons,
     tools: tools,
 
@@ -390,6 +398,7 @@ export class GeneralStoreService {
     gamingSets: gamingSets,
     magicalFoci: magicalFoci,
     musicalInstruments: instruments,
+    mundane: mundane,
     tools: tools,
 
     animalEquipment: animalEquipment,
