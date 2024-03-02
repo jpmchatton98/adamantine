@@ -10374,7 +10374,7 @@
     "save": "wis"
   },
   {
-    "name": "Improved Mage Armor",
+    "name": "Mage Aegis",
     "school": "Abjuration",
     "level": 4,
     "castingTime": "1 action",
@@ -10384,7 +10384,7 @@
     "description": [
       "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 15 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Occult"],
     "ritual": 1,
     "armor": {
       "base": 15
@@ -11740,7 +11740,7 @@
     "description": [
       "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Occult"],
     "ritual": 1,
     "armor": {
       "base": 13
