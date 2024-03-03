@@ -1929,7 +1929,10 @@ export class CharacterSheetService {
               spell: l,
               ability,
               source,
-              ritualOnly: listed.ritualsOnly,
+              ritualOnly:
+                listed.ritualsOnly ||
+                listed.id === 'pale-master-grimoire' ||
+                listed.id === 'wizard-spellbook',
               atWill: listed.atWill,
             });
           }
