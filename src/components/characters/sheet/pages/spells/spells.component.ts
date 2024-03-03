@@ -595,11 +595,11 @@ export class SpellsComponent implements OnInit {
   }
   public getCurrUses(index: number, pact: boolean = false) {
     const use = this.getUseObject(index, pact);
-    return use.currUses;
+    return use?.currUses ?? 0;
   }
   public getMaxUses(index: number, pact: boolean = false) {
     const use = this.getUseObject(index, pact);
-    return use.maxUses;
+    return use?.maxUses ?? 0;
   }
 
   public canCastSpellStandard(spell: any, atLevel: number): boolean {
