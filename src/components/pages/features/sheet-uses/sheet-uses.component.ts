@@ -72,6 +72,7 @@ export class SheetUsesComponent implements OnInit {
   }
 
   public changeUses(direction: number) {
+    this.currUses = parseInt(this.currUses.toString());
     this.currUses += direction;
 
     this.checkboxes = [];

@@ -461,6 +461,13 @@ export class CharacterSheetComponent implements OnInit {
   }
   public damage() {
     this.tempHp = this.parseInt(this.tempHp);
+    try {
+      this.hpMod = this.parseInt(this.hpMod);
+    } catch {
+      this.hpMod = 0;
+      return;
+    }
+
     if (this.tempHp > 0) {
       this.tempHp -= this.hpMod;
       if (this.tempHp < 0) {
