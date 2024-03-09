@@ -343,6 +343,30 @@
     "ammunition": "Stones"
   },
   {
+    "name": "Splinterbow",
+
+    "description": "A tiny bow used by those for whom even a shortbow would be too unwieldly.",
+    "damage": "1d4",
+    "damageTypes": "Bludgeoning, Piercing, or Slashing",
+    "cost": 10,
+    "weight": 1.0,
+    "properties": [
+      {
+        "name": "Tiny",
+        "description": "Splinterbows can be used by Tiny races with no restrictions."
+      },
+      {
+        "name": "Two-handed",
+        "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+      }
+    ],
+    "type": 0,
+    "range": 40,
+    "longRange": 160,
+
+    "ammunition": "Splinters"
+  },
+  {
     "name": "Warbow",
 
     "description": "A massive elven bow used by only those with the strength to master it.",

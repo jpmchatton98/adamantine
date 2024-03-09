@@ -60,6 +60,12 @@
     "weight": 0.0625
   },
   {
+    "name": "Splinter",
+    "bundleSize": 20,
+    "cost": 0.01,
+    "weight": 0.01
+  },
+  {
     "name": "Hand-Cannonball",
     "bundleSize": 1,
     "cost": 0.5,
