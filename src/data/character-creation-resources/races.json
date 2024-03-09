@@ -1626,8 +1626,8 @@
     "name": "Changeling"
   },
   {
-    "description": "The noble, armored knights of the Feywild, Daolagiath resemble all manner of beetles.  Strictly honorable and bound by codes as sturdy as their shells, one would be hard-pressed to find a more reliable ally among the denizens of the feywild.  They tower over the other insectile races, and are usually even more broad then they are tall.",
-    "asis": [{ "con": 2 }],
+    "description": "The noble, armored knights of the Feywild, Daolagiath resemble large beetles, with long, curving horns they use to throw their opponents.  As they grow old, their horn grows scarred and brittle, and they retire from adventuring when it eventually breaks off.  Strictly honorable and bound by codes as sturdy as their shells, one would be hard-pressed to find a more reliable ally among the denizens of the feywild.  They tower over the other insectile races, and are usually even more broad then they are tall.",
+    "asis": [{ "con": 2 }, { "str": 1 }],
     "maturity": 1,
     "lifespan": 30,
     "height": [6, 9],
@@ -1656,154 +1656,40 @@
       {
         "name": "Secondary Arms",
         "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
-      }
-    ],
-    "subraces": [
-      {
-        "name": "Bombardier",
-        "description": "The heavy artillery of the knights, bombardiers possess an innate weapon, a cannon-like shell on their backs that can spew forth deadly acid.",
-        "asis": [{ "dex": 1 }],
-        "traits": [
-          {
-            "name": "Acid Cannon",
-            "description": "When you take the Attack action on your turn, you can replace one of your attacks with a spray of acid from your cannon shell in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 acid damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>You can use your Acid Cannon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-            "uses": {
-              "id": "7989DA2F-E7BD-4520-95E5-C832C851D62D",
-              "type": "derived",
-              "source": "proficiency",
-              "reset": 2
-            },
-            "actions": [
-              {
-                "id": "7989DA2F-E7BD-4520-95E5-C832C851D62D",
-                "type": "a",
-                "hasUses": true,
-                "name": "Acid Cannon",
-                "description": "hen you take the Attack action on your turn, you can replace one of your attacks with a spray of acid from your cannon shell in a 15-foot cone. Each creature in that area must make a DC {dc-con} Dexterity saving throw. On a failed save, the creature takes {damage} acid damage. On a successful save, it takes half as much damage.",
-                "variables": {
-                  "damage": {
-                    "1": "1d10",
-                    "5": "2d10",
-                    "11": "3d10",
-                    "17": "4d10"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "Alchemical Mastermind",
-            "description": "You have proficiency with alchemist's supplies and poisoner's kits.",
-            "granted": [
-              {
-                "type": "tool",
-                "options": ["Alchemist's Supplies", "Poisoner's Kit"],
-                "level": 1
-              }
-            ]
-          },
-          {
-            "name": "Corrosive Acid",
-            "description": "When you deal acid damage to a creature, you can choose to also reduce their Armor Class by an amount equal to your proficiency bonus until they finish a long rest.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
-            "uses": [
-              {
-                "id": "051F47AC-B6FF-4BD9-BDD4-2C9F7A59B46D",
-                "type": "fixed",
-                "amount": 1,
-                "reset": 2
-              }
-            ]
-          }
-        ]
       },
       {
-        "name": "Hercules",
-        "description": "The largest of the large, hercules are enormous beetle folk with long, curved horns they use to grab and throw their opponents.  As they grow old, their horn grows scarred and brittle, and they retire from adventuring when it eventually breaks off.",
-        "asis": [{ "str": 1 }],
-        "traits": [
+        "name": "Giant Build",
+        "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift and you have proficiency in the Athletics skill.",
+        "granted": [{ "type": "skill", "options": ["Athletics"], "level": 1 }]
+      },
+      {
+        "name": "Horn",
+        "description": "Your great horn is a natural weapon with which you are proficient.  It deals piercing damage equal to 1d8 + your Strength modifier on a hit.</p><p>In addition, you can grapple a creature up to two sizes larger than you using your horn.  You have advantage on checks made to manipulate the position of a creature grappled in such a way.",
+        "actions": [
           {
-            "name": "Giant Build",
-            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift and you have proficiency in the Athletics skill.",
-            "granted": [
-              { "type": "skill", "options": ["Athletics"], "level": 1 }
-            ]
-          },
-          {
+            "id": "AE71D70B-7854-4629-A467-C83D4B9EF59E",
+            "type": "a",
+            "attack": true,
             "name": "Horn",
-            "description": "Your great horn is a natural weapon with which you are proficient.  It deals piercing damage equal to 1d8 + your Strength modifier on a hit.</p><p>In addition, you can grapple a creature up to two sizes larger than you using your horn.  You have advantage on checks made to manipulate the position of a creature grappled in such a way.",
-            "actions": [
+            "damage": [
               {
-                "id": "AE71D70B-7854-4629-A467-C83D4B9EF59E",
-                "type": "a",
-                "attack": true,
-                "name": "Horn",
-                "damage": [
-                  {
-                    "dice": 1,
-                    "die": 8,
-                    "type": "piercing",
-                    "mod": true,
-                    "unarmed": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Throwing Expert",
-            "description": "You have proficiency with improvised weapons and in the Athletics skill.",
-            "granted": [
-              {
-                "type": "weapon",
-                "options": ["Improvised"]
+                "dice": 1,
+                "die": 8,
+                "type": "piercing",
+                "mod": true,
+                "unarmed": true
               }
             ]
           }
         ]
       },
       {
-        "name": "Ladybug",
-        "description": "Just like the spotted bugs they resemble, these knights are a farmer's best friend.  They possess innate druidic magics that allow them to manipulate plantlife around them.",
-        "asis": [{ "cha": 1 }],
-        "traits": [
+        "name": "Throwing Expert",
+        "description": "You have proficiency with improvised weapons and in the Athletics skill.",
+        "granted": [
           {
-            "name": "Ladybug's Guidance",
-            "description": "You know the Druidcraft cantrip. Starting at 3rd level, you can cast the Goodberry spell with this trait, without requiring a material component. Starting at 5th level, you can also cast the Pullulate spell with this trait, without requiring a material component. Once you cast goodberry or pullulate with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p><p>Charisma is your spellcasting ability for these spells when you cast them with this trait.",
-            "granted": [
-              {
-                "type": "spell",
-                "options": ["Druidcraft"],
-                "ability": "cha"
-              },
-              {
-                "type": "spell",
-                "options": ["Goodberry"],
-                "prereq": 3,
-                "ability": "cha"
-              },
-              {
-                "type": "spell",
-                "options": ["Pullulate"],
-                "prereq": 5,
-                "ability": "cha"
-              }
-            ],
-            "uses": [
-              {
-                "id": "1AA97D17-50B1-4CF2-9A00-F576E7357904",
-                "type": "fixed",
-                "amount": 1,
-                "prereq": 3,
-                "reset": 2
-              },
-              {
-                "id": "78339119-B4CF-40C1-A6F4-DC39265E54E4",
-                "type": "fixed",
-                "amount": 1,
-                "prereq": 5,
-                "reset": 2
-              }
-            ]
+            "type": "weapon",
+            "options": ["Improvised"]
           }
         ]
       }
@@ -13639,6 +13525,64 @@
       }
     ],
     "name": "Thri-kreen"
+  },
+  {
+    "description": "Sprawling networks of tunnels and hovels built far below the surface wherein tens of thousnads happily take on endless labor out of loyalty to queen, mother, and wife, with the only sign of their existence being the occasional outcropping of a fortress absurd in its engineering prowess and density.  This is the existence of the jiengen.",
+    "asis": [{ "str": 2 }, { "cha": 1 }],
+    "maturity": 5,
+    "lifespan": 40,
+    "height": [2, 3],
+    "weight": [20, 40],
+    "category": "Animalistic",
+    "type": "Humanoid",
+    "size": -1,
+    "speed": 25,
+    "darkvision": 60,
+    "languages": ["Common", "Entognatha"],
+    "traits": [
+      {
+        "name": "Born Architect",
+        "description": "The creation of maintenance of architecture is second nature to you.  You have proficiency with carpeneter's tools and mason's tools.</p><p>In addition, whenever you make an Investigation check regarding a building, you gain advantage on the ability check.",
+        "granted": [
+          {
+            "type": "tool",
+            "options": ["Carpenter's Tools", "Mason's Tools"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Keen Smell",
+        "description": "You have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell.</p><p>In addition, you have blindsight out to 5 feet.",
+        "granted": [
+          {
+            "type": "blindsight",
+            "range": 5
+          }
+        ]
+      },
+      {
+        "name": "Natural Armor",
+        "description": "While you aren't wearing armor, your carapace gives you a base Armor Class of 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+        "granted": [{ "type": "unarmored", "base": 12, "scores": ["dex"] }]
+      },
+      {
+        "name": "Secondary Arms",
+        "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
+      },
+      {
+        "name": "Surprising Might",
+        "description": "In spite of your size, you can perform great feats of strength.  You have a climbing speed equal to your walking speed and you are considered one size larger when determining your carrying capacity and the weight you can push, drag, and lift.",
+        "granted": [
+          {
+            "type": "speed",
+            "speed": "climb",
+            "amount": -1
+          }
+        ]
+      }
+    ],
+    "name": "Jiengen"
   },
   {
     "description": "Ettercaps are humanoid spiders that tend, feed, and watch over spiders the way a shepherd oversees a flock of sheep. They lair deep in remote forests.</p><p>Fine strands of silk stream from glands in an ettercap's abdomen, letting it shoot sticky strands of webbing to bind, entrap, or strangle its victims. It can also use its webbing to fashion elaborate snares and nets, which often festoon its lair.",
