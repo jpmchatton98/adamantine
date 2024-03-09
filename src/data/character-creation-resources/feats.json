@@ -3813,6 +3813,7 @@
           "fairy",
           "firbolg",
           "goblin",
+          "gremlin",
           "half-elf",
           "harengon",
           "hexblood",
@@ -3822,6 +3823,7 @@
           "taurian"
         ],
         "subrace": [
+          [],
           [],
           [],
           [],
@@ -6095,6 +6097,101 @@
         "type": "derived",
         "source": "proficiency",
         "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Dungeonsense",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["pudding"]
+      }
+    ],
+    "description": "You've developed a connection with inside spaces. You gain the following benefits:<ul><li>As an action, you can touch a wall, floor, or ceiling and peer through it. Until the start of your next turn, you can see and hear as if you were in the nearest space on the other side of the surface. You can't perceive through a wall, floor, or ceiling that is greater than 5 feet thick, and a layer of lead of any thickness blocks your abilities to perceive through it.</li><li>Whenever you make an Intelligence check to determine the purpose or origin of a room, you are considered proficient in the check and add double your proficiency bonus, instead of your normal proficiency bonus.</li><li>Your teeny scout has blindsight out to 30 feet.</li></ul>"
+  },
+  {
+    "name": "Rapid Healing",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["wealdkin"]
+      }
+    ],
+    "description": "Your rough and tumble way of life leaves you with many wounds, but your superior regeneration rapidly heals your injuries. You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You regain a single Hit Die whenever you finish a short rest.</li><li>When you use your Vermin Recovery trait, you can choose to spend multiple Hit Dice at once, up to an amount equal to your proficiency bonus. You add your Constitution modifier to each Hit Die you spend, and you regain a number of hit points equal to half the total, rounded up.</li></ul>",
+    "choices": {
+      "id": "011BBC3F-16D0-4669-A2B7-9694FA3A2706",
+      "type": "asi",
+      "amount": 1,
+      "options": ["str", "con"]
+    }
+  },
+  {
+    "name": "Pesky Demolitionist",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["gremlin"]
+      }
+    ],
+    "description": "You're an adaptable, chaotic force of destruction. You gain the following benefits:<ul><li>Increase your Dexterity, Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li><li>The extra damage you deal with your Dismantle trait is no longer halved.</li><li>As a bonus action on your turn, you can analyze an object or construct that you can see and plan for a crushing blow. The first attack roll that you make against the object or construct before the end of your turn is a critical hit if you roll a 15 or higher on the d20 for your attack roll. Once you score a critical hit using this feat, you can't use this bonus action again until you finish a long rest.</li></ul>",
+    "choices": {
+      "id": "011BBC3F-16D0-4669-A2B7-9694FA3A2706",
+      "type": "asi",
+      "amount": 1,
+      "options": ["dex", "int", "wis", "cha"]
+    },
+    "uses": [
+      {
+        "id": "4701B8F6-CEA9-4DC8-8B49-93994752FE9B",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Myriad Pockets",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["gremlin"],
+        "subrace": [["house"]]
+      }
+    ],
+    "description": "Your pocket dimension has subdivided and grown, allowing you to store more items and even creatures. You gain the following benefits:<ul><li>Two invisible, intangible bags of holding float around you within your space. Only you can access the bags of holding, and they both empty when you are reduced to 0 hit points.</li><li>Using your Hidden Pockets trait, you can touch another willing Medium or smaller creature as an action and transport them to your pocket dimension. The creature is incapacitated while in your pocket dimension, and it can remain in your pocket dimension up to 1 minute or until you lose concentration, at which point they appear safely on the ground in the nearest unoccupied space of your choice. Once you transport a creature into your pocket dimension, you can't do so again until you finish a long rest.</li></ul>",
+    "uses": [
+      {
+        "id": "7E122200-629B-4072-BE5D-8573B9C532E3",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Somiloquist",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["gremlin"],
+        "subrace": [["bleareye"]]
+      }
+    ],
+    "description": "You learn how to materialize your dreams while you are sleeping. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>While you are unconscious, you can see and hear your surroundings out to a range of 5 feet. Your perception while unconscious doesn't rely on your eyes and ears, but rather appears to you in your dreams.</li><li>At the end of your turn while you are unconscious, you can choose to mumble in your sleep and cause a wild magic surge. Charisma is your spellcasting ability for any spells you cast as a result of this surge. You can mumble in your sleep a number of times equal to your proficiency bonus, and you regain expended uses when you finish a long rest.</li></ul>",
+    "uses": [
+      {
+        "id": "A8D59CD9-60F7-431E-BE9D-CA413344D9D5",
+        "type": "derived",
+        "source": "proficiency",
+        "reset": 2
+      }
+    ],
+    "granted": [
+      {
+        "type": "asi",
+        "score": "cha",
+        "amount": 1
       }
     ]
   }

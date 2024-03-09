@@ -5710,13 +5710,13 @@
     "category": "Fey",
     "type": "Fey",
     "size": -2,
-    "speed": 20,
+    "speed": 25,
     "darkvision": 60,
     "languages": ["Common", "Sylvan"],
     "traits": [
       {
         "name": "Tiny",
-        "description": "Fairies are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
+        "description": "Fairies are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
       },
       {
         "name": "Fey Ancestry",
@@ -5778,13 +5778,13 @@
     "category": "Extraplanar",
     "type": "Fiend",
     "size": -2,
-    "speed": 20,
+    "speed": 25,
     "darkvision": 60,
     "languages": ["Common", "Infernal"],
     "traits": [
       {
         "name": "Tiny",
-        "description": "Imps are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
+        "description": "Imps are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
       },
       {
         "name": "Animal Shape",
@@ -5850,6 +5850,261 @@
       }
     ],
     "name": "Imp"
+  },
+  {
+    "description": "When one imagines a creature skulking through long forgotten halls, typical tropes include colossal arachnids, multiheaded monstrosities, and bloodthirsty stalkers. The diminutive puddings rarely come to mind, but also make a living in abandoned dungeons, dried up mineshafts, and echoing caverns. Puddings transform these subterranean places, ridding them of scourge and offal to make safe havens. A pudding refuge is a sight for any dungeoneering adventurer's sore eyes.",
+    "asis": [{ "con": 2 }, { "wis": 1 }],
+    "maturity": 12,
+    "lifespan": 100,
+    "height": [1, 2],
+    "weight": [5, 10],
+    "category": "Uncommon",
+    "type": "Ooze",
+    "size": -2,
+    "speed": 25,
+    "darkvision": 60,
+    "languages": ["Common", "Undercommon"],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Puddings are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
+      },
+      {
+        "name": "Amorphous",
+        "description": "You can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You also have advantage on ability checks you make to initiate or escape a grapple."
+      },
+      {
+        "name": "Natural Resilience",
+        "description": "You have resistance to acid and poison damage, and you have advantage on saving throws against being poisoned.",
+        "granted": [
+          { "type": "damage-resistance", "options": ["Acid", "Poison"] },
+          { "type": "condition-advantage", "options": ["Poisoned"] }
+        ]
+      },
+      {
+        "name": "Ooze Anatomy",
+        "description": "If you are not incapacitated, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob (no action required)."
+      },
+      {
+        "name": "Teeny Scout",
+        "description": "As an action, you can pinch off a portion of your body and deposit it as a teeny scout in your space. The teeny scout is 1 inch in diameter and weighs 1 ounce. It has an AC of 10 and has 1 hit point. As a bonus action on your turn, you can move the teeny scout up to 20 feet along the ground. The teeny scout has darkvision with a range of 60 feet and is blind beyond this radius. It can telepathically share with you what it sees (no action required). The teeny scout evaporates after 1 minute. It also evaporates if it is reduced to 0 hit points, if it is ever more than 60 feet away from you, or if you choose to end it as an action.</p><p>Once you use this trait, you can't do so again until you finish a long rest.",
+        "uses": {
+          "id": "EBC46112-A0B0-4ED5-92D1-CC806571E326",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        },
+        "actions": [
+          {
+            "id": "EBC46112-A0B0-4ED5-92D1-CC806571E326",
+            "hasUses": true,
+            "type": "a",
+            "name": "Teeny Scout",
+            "description": "You pinch off a portion of your body and deposit it as a teeny scout in your space. The teeny scout is 1 inch in diameter and weighs 1 ounce. It has an AC of 10 and has 1 hit point. As a bonus action on your turn, you can move the teeny scout up to 20 feet along the ground. The teeny scout has darkvision with a range of 60 feet and is blind beyond this radius. It can telepathically share with you what it sees (no action required). The teeny scout evaporates after 1 minute. It also evaporates if it is reduced to 0 hit points, if it is ever more than 60 feet away from you, or if you choose to end it as an action."
+          }
+        ]
+      }
+    ],
+    "name": "Pudding"
+  },
+  {
+    "description": "The forest understory — one day a serene landscape, the next, a battle-struck wasteland of leaf litter and fallen heroes. The unassuming wealdkin are responsible. They are tiny warmongering spirits, but don't let their meager height fool you. Wealdkin hold only one virtue true, that being their love of freedom. If you encroach on their personal autonomy or their sovereign territory, you best pray to your deity of choice for mercy, because the wealdkin certainly won't show you any.",
+    "asis": [{ "dex": 2 }, { "str": 1 }],
+    "maturity": 5,
+    "lifespan": 80,
+    "height": [1, 2],
+    "weight": [5, 10],
+    "category": "Animalistic",
+    "type": "Humanoid",
+    "size": -2,
+    "speed": 25,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      { "id": "A9509999-2F32-4487-9696-8FA369C8C6E4", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Wealdkin are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
+      },
+      {
+        "name": "Scurry",
+        "description": "As an action, you can take the Dash, Disengage, and Dodge actions simultaneously.</p><p>You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>In addition, you have a climbing speed equal to your walking speed.",
+        "uses": {
+          "id": "8C9B5AB0-6C97-40E7-B980-9D615347172B",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": 2
+        },
+        "granted": [
+          {
+            "type": "speed",
+            "speed": "climb",
+            "amount": -1
+          }
+        ]
+      },
+      {
+        "name": "Vermin Recovery",
+        "description": "During combat, you can use a bonus action on your turn after taking the Dodge action or using your Scurry trait to spend one Hit Die and heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to half the total, rounded up (minimum of 1 hit point)."
+      },
+      {
+        "name": "Scratch and Bite",
+        "description": "Your teeth and claws count as natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+        "actions": [
+          {
+            "id": "351D14F8-6CED-4029-AD26-52A9009DB763",
+            "type": "a",
+            "attack": true,
+            "name": "Teeth and Claws",
+            "damage": [
+              {
+                "dice": 1,
+                "die": 6,
+                "type": "piercing",
+                "mod": true,
+                "unarmed": true,
+                "finesse": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "name": "Wealdkin"
+  },
+  {
+    "description": "As chaotic souls of vague fey origin, gremlins are generally unwelcome in town, akin to tieflings, drow, and goblinoids. This is just as well to the gremlins, who directly oppose the trappings of civilizations. Gremlins are innately proficient at destroying machinery by finding and targeting weak points. Machinery in this case ranges from expensive military catapults to the lock on your front door.",
+    "asis": [{ "int": 2 }],
+    "maturity": 3,
+    "lifespan": 50,
+    "height": [1, 2],
+    "weight": [5, 10],
+    "category": "Fey",
+    "type": "Fey",
+    "size": -2,
+    "speed": 25,
+    "languages": ["Common", "Sylvan"],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Gremlins are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
+      },
+      {
+        "name": "Dismantle",
+        "description": "You have advantage on attack rolls and ability checks made to break or dismantle objects.</p><p>Additionally, you deal extra damage when you hit an object or a construct with an attack. This damage equals half your proficiency bonus, rounded up."
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Bleareye",
+        "description": "Spawned by a sleeping beholder, bleareye gremlins bear a similar ability to conjure objects from their dreams. The somnambulistic gremlins live in an eternal state of half-awakedness, and have a habit of nodding off. They happily associate with all other forms of sentient life, either traveling with adventurers or serving as minions.",
+        "asis": [{ "cha": 1 }],
+        "traits": [
+          {
+            "name": "Constant Slumber",
+            "description": "You don't need to sleep, as you get enough rest from your state of half-slumber. Instead of sleeping during a long rest, you can keep watch, read, scribe, or perform similarly leisurely activities."
+          },
+          {
+            "name": "Darkvision",
+            "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern true colors in darkness. Instead, everything appears in a dreamlike swirl of gloomy colors.",
+            "granted": [{ "type": "darkvision", "range": 60 }]
+          },
+          {
+            "name": "Dreamscape",
+            "description": "As an action, you can manifest your dreams in a 15-foot cube centered on yourself. The cube becomes difficult terrain for other creatures as it fills with cluttered images of your design, like swarming butterflies, clacking mousetraps, or writhing vines. The cube moves with you and lasts for 1 minute. It ends early if you become incapacitated, if you die, or if you dismiss it as an action or bonus action.</p><p>Once you use this trait, you can't do so again until you finish a long rest.",
+            "uses": {
+              "id": "34062DE0-1387-4439-AADE-1C386952547C",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "34062DE0-1387-4439-AADE-1C386952547C",
+                "hasUses": true,
+                "type": "a",
+                "name": "Dreamscape",
+                "description": "You manifest your dreams in a 15-foot cube centered on yourself. The cube becomes difficult terrain for other creatures as it fills with cluttered images of your design, like swarming butterflies, clacking mousetraps, or writhing vines. The cube moves with you and lasts for 1 minute. It ends early if you become incapacitated, if you die, or if you dismiss it as an action or bonus action."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grave",
+        "description": "Harbingers of doom, grave gremlins silently gather around the dying like a murder of crows. They respect the dying in pious silence up until the point of their death, then the looting begins. Their evildoings often cause the spirits of the dead to come back with vengeance as will-o-wisps, ghosts, or other profane creatures.</p><p>An obsession with death leads many grave gremlins to associated lines of work, such as graverobbing, brewing poisons, and tending to the sick as plague doctors.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Detect the Dying",
+            "description": "You know the location of any humanoid within 60 feet of you that has 1 hit point or fewer."
+          },
+          {
+            "name": "Grim Judgement",
+            "description": "When you finish a long rest, roll a d20 and record the number rolled. You can choose to replace a death saving throw made by you or a creature that you can see with your d20 roll. You must choose to do so before the death saving throw is rolled.</p><p>Your d20 roll can only be used once, and you lose an unused roll when you finish a long rest.",
+            "uses": {
+              "id": "853D55DC-E959-418F-BE3D-10BB66049AC0",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            }
+          },
+          {
+            "name": "Swan Song",
+            "description": "When you are reduced to 0 hit points but not killed outright, you can choose to make up to three weapon attacks immediately before falling unconscious. You can also cast a cantrip with a casting time of 1 action in place of a weapon attack if you know any. You automatically suffer one failed death saving throw for each attack you make or cantrip you cast.</p><p>Once you use this trait, you can't do so again until you finish a long rest.",
+            "uses": {
+              "id": "37073983-8B77-4309-A687-D3243A4C70D8",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            }
+          }
+        ]
+      },
+      {
+        "name": "House",
+        "description": "Common and prolific, house gremlins are pervasive urban pests. They get their nickname from their tendency to make their homes within the walls of buildings, where they store burgled trinkets. Tame house gremlins, sometimes called brownies, act as servants, maids, cooks, and butlers for their hosts.",
+        "asis": [{ "dex": 1 }],
+        "traits": [
+          {
+            "name": "Hidden Pockets",
+            "description": "As an action, you can touch an object weighing 50 pounds or less and transport it to a pocket dimension that is only accessible to you. The object must not be worn or carried by another creature, and keeping an object in the pocket dimension requires you to maintain concentration (as if you were concentrating on a spell).</p><p>When you lose concentration, the object appears on the ground in the nearest unoccupied space of your choice. It appears harmlessly in a manner that doesn't directly damage itself or any other objects or creatures.",
+            "actions": [
+              {
+                "id": "5A3202B0-AC48-45A2-BEDB-AE3A51B38AB5",
+                "type": "a",
+                "name": "Hidden Pocket",
+                "description": "You touch an object weighing 50 pounds or less and transport it to a pocket dimension that is only accessible to you. The object must not be worn or carried by another creature, and keeping an object in the pocket dimension requires you to maintain concentration (as if you were concentrating on a spell).</p><p>When you lose concentration, the object appears on the ground in the nearest unoccupied space of your choice. It appears harmlessly in a manner that doesn't directly damage itself or any other objects or creatures."
+              }
+            ]
+          },
+          {
+            "name": "Illusory Cloak",
+            "description": "When you take the Dodge action on your turn, you can choose to become invisible until the start of your next turn.</p><p>Once you use this trait, you can't do so again until you finish a long rest.",
+            "uses": {
+              "id": "C202CB31-3C38-4B9D-B0DF-0474D754DEE0",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            }
+          },
+          {
+            "name": "Stealthy",
+            "description": "You have proficiency in the Stealth skill.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Stealth"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "name": "Gremlin"
   },
   {
     "description": "Firbolgs are fey-oriented half-giants. Their tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.",
@@ -12012,7 +12267,7 @@
         ]
       },
       {
-        "name": "Shape Self",
+        "name": "Ooze Anatomy",
         "description": "If you are not incapacitated, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob (no action required). As a bonus action, you can extrude a pseudopod that is up to 6 inches wide and 10 feet long or reabsorb it into your body. You can use this pseudopod to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour out the contents of a container. The pseudopod can't attack, activate magic items, or carry more than 10 pounds.",
         "actions": [
           {
@@ -16223,7 +16478,7 @@
     "category": "Fey",
     "type": "Fey",
     "size": -2,
-    "speed": 20,
+    "speed": 25,
     "darkvision": 60,
     "languages": [
       "Common",
@@ -16234,7 +16489,7 @@
     "traits": [
       {
         "name": "Tiny",
-        "description": "Papillons are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy or Massive properties."
+        "description": "Papillons are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
       },
       {
         "name": "Artistic Spirit",
