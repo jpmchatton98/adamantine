@@ -4165,8 +4165,8 @@
     "name": "Touch of Juiblex",
     "prereq": [
       {
-        "race": ["plasmoid", "tiefling"],
-        "subrace": [[], ["juiblexian"]]
+        "race": ["plasmoid", "pudding", "tiefling"],
+        "subrace": [[], [], ["juiblexian"]]
       }
     ],
     "type": "racial",
