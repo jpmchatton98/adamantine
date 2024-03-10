@@ -974,7 +974,7 @@
     "lifespan": 80,
     "height": [4, 7],
     "weight": [400, 500],
-    "category": "Extraplanar",
+    "category": "Animalistic",
     "type": "Fiend",
     "size": {
       "id": "0F97AA6C-12D2-478D-B1C2-8644B52447E7",
@@ -10059,7 +10059,7 @@
     "darkvision": 0,
     "languages": [
       "Common",
-      "Quori",
+      "Deep Speech",
       { "id": "CC1869BF-5038-4730-8ABE-F028897D682A", "type": "language" }
     ],
     "traits": [
@@ -13143,14 +13143,13 @@
     "lifespan": 100,
     "height": [5, 7],
     "weight": [120, 180],
-    "category": "Uncommon",
+    "category": "Animalistic",
     "type": "Humanoid",
     "size": 0,
     "speed": 35,
     "darkvision": 60,
     "languages": [
       "Common",
-      "Quori",
       { "id": "221EEA50-787C-4FCC-B6B0-694989C75F64", "type": "language" }
     ],
     "traits": [
