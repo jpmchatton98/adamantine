@@ -5948,7 +5948,7 @@
       },
       {
         "name": "Vermin Recovery",
-        "description": "During combat, you can use a bonus action on your turn after taking the Dodge action or using your Scurry trait to spend one Hit Die and heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to half the total, rounded up (minimum of 1 hit point)."
+        "description": "During combat, you can use a bonus action on your turn after taking the Dodge action or using your Scurry trait to spend one Hit Die and heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1 hit point)."
       }
     ],
     "subraces": [
