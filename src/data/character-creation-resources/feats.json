@@ -6125,6 +6125,22 @@
     }
   },
   {
+    "name": "Dire Blood",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["wealdkin"]
+      }
+    ],
+    "description": "You latently grow a powerful wild aspect, that of a dire beast, marking you as a fabled forest warrior. You gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>You regain a single Hit Die whenever you finish a short rest.</li><li>You grow a wild aspect appendage that takes the form of the defining characteristic of a forest creature, such as a set of antlers, talons, or tusks. The appendage counts as a natural weapon and it deals 1d10 bludgeoning, piercing, or slashing damage, whichever is most appropriate for the appendage. You can choose to use either your Strength or Dexterity modifier for the attack and damage rolls of your appendage. Attacks with this special appendage are considered magical for the purposes of overcoming resistance and immunity to nonmagical damage.</li></ul>",
+    "choices": {
+      "id": "78425278-479B-4503-AC8D-D18EDC404AFE",
+      "type": "asi",
+      "amount": 1,
+      "options": ["str", "dex"]
+    }
+  },
+  {
     "name": "Pesky Demolitionist",
     "type": "racial",
     "prereq": [
