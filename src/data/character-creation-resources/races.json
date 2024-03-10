@@ -5909,7 +5909,7 @@
   },
   {
     "description": "The forest understory — one day a serene landscape, the next, a battle-struck wasteland of leaf litter and fallen heroes. The unassuming wealdkin are responsible. They are tiny warmongering spirits, but don't let their meager height fool you. Wealdkin hold only one virtue true, that being their love of freedom. If you encroach on their personal autonomy or their sovereign territory, you best pray to your deity of choice for mercy, because the wealdkin certainly won't show you any.",
-    "asis": [{ "dex": 2 }, { "str": 1 }],
+    "asis": [{ "dex": 2 }],
     "maturity": 5,
     "lifespan": 80,
     "height": [1, 2],
@@ -5921,6 +5921,7 @@
     "darkvision": 60,
     "languages": [
       "Common",
+      "Squeak Speak",
       { "id": "A9509999-2F32-4487-9696-8FA369C8C6E4", "type": "language" }
     ],
     "traits": [
@@ -5948,26 +5949,132 @@
       {
         "name": "Vermin Recovery",
         "description": "During combat, you can use a bonus action on your turn after taking the Dodge action or using your Scurry trait to spend one Hit Die and heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to half the total, rounded up (minimum of 1 hit point)."
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Bushtail",
+        "description": "As bitter rivals of the squeaktooth wealdkin, squirrelfolk are extremely competent warriors. Not only are squirrelfolk able to hold their own against the insidiously ingenious mousefolk, but they're able to project their power. Squirrelfolk regularly show off their might with parades and demonstrations, and they're known for their large egos.",
+        "asis": [{ "cha": 1 }],
+        "traits": [
+          {
+            "name": "Battle Cry",
+            "description": "When you use your Scurry trait, you can choose to command an ally to attack instead of taking the Disengage action. If you do, choose a friendly creature that can see or hear you. That creature can immediately use its reaction to make one weapon attack."
+          }
+        ]
       },
       {
-        "name": "Scratch and Bite",
-        "description": "Your teeth and claws count as natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.",
-        "actions": [
+        "name": "Corsehair",
+        "description": "Blessed with a form of limited prescience, marmotfolk often believe that they know best, making them stubborn and ornery. Their ability to glimpse into the future can be honed, and marmotfolk clans often form around a leader who has heightened foresight, allowing them to predict the flow of the seasons and the coming of conflict.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
           {
-            "id": "351D14F8-6CED-4029-AD26-52A9009DB763",
-            "type": "a",
-            "attack": true,
-            "name": "Teeth and Claws",
-            "damage": [
+            "name": "Coarsehair Clairvoyance",
+            "description": "When you finish a long rest, roll a d20 and record the number rolled. You can choose to replace an ability check roll made by you or a creature that you can see with your d20 roll. You must choose to do so before the ability check is rolled. Your d20 roll can only be used once, and you lose an unused roll when you finish a long rest.",
+            "uses": {
+              "id": "73AAF4BC-B609-46E1-9D88-465101CACD75",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            }
+          }
+        ]
+      },
+      {
+        "name": "Darkmask",
+        "description": "Darkmask wealdkin, or raccoonfolk, are renowned for their ferocious strength. The average raccoonfolk can lift an object many times their size. With an inborn strength and sharp teeth and nails, raccoonfolk make for brutal adversaries.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Scratch and Bite",
+            "description": "Your teeth and claws count as natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+            "actions": [
               {
-                "dice": 1,
-                "die": 6,
-                "type": "piercing",
-                "mod": true,
-                "unarmed": true,
-                "finesse": true
+                "id": "351D14F8-6CED-4029-AD26-52A9009DB763",
+                "type": "a",
+                "attack": true,
+                "name": "Teeth and Claws",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 6,
+                    "type": "piercing",
+                    "mod": true,
+                    "unarmed": true,
+                    "finesse": true
+                  }
+                ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Redtail",
+        "description": "Cunning and slightly amoral Wealdkin by nature, foxfolk rarely settle down in large clans. They are much more comfortable traveling from band to band of Wealdkin, hawking wares and collecting gossip. They are well renowned for spreading said gossip as well, oftentimes leaving a path of destruction as old feuds are reignited in their wake.",
+        "asis": [{ "cha": 1 }],
+        "traits": [
+          {
+            "name": "Sly as a Fox",
+            "description": "When you make a Deception or Persuasion check, you can do so with advantage once per short or long rest.",
+            "uses": {
+              "id": "74C3B5A6-A79B-44A7-B894-0CCC8F3FFF84",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 1
+            }
+          }
+        ]
+      },
+      {
+        "name": "Squeaktooth",
+        "description": "Squeaktooth wealdkin, also known as ratfolk, have a keen intellect and a strategic mind. All ratfolk are taught how to wield a blade, even those that choose to dabble in wizardry. They have a knack for making and executing plans.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Mini Gladiator",
+            "description": "You can wield weapons that have the Light property without any penalties from being Tiny."
+          }
+        ]
+      },
+      {
+        "name": "Softpaw",
+        "description": "Softpaw wealdkin, also known as mousefolk, are exceptionally nimble and brave for their size. Mousefolk also possess an innate connection to the natural world around them, allowing them to speak with other beasts of the forest floor.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Brave",
+            "description": "You have advantage on saving throws against being frightened.",
+            "granted": [
+              { "type": "condition-advantage", "options": ["Frightened"] }
+            ]
+          },
+          {
+            "name": "Speak With Small Beasts",
+            "description": "You can communicate simple ideas with Small or smaller beasts."
+          }
+        ]
+      },
+      {
+        "name": "Whitestripe",
+        "description": "Slightly more solitary than their more clan focused brethren, badgerfolk are irritable creatures which tend to remain firmly rooted in their dens. If provoked, however, they prove to be stubborn and relentless, demanding equitable recompense, or alternatively satisfaction through an honorable duel.",
+        "asis": [{ "con": 1 }],
+        "traits": [
+          {
+            "name": "Burrower",
+            "description": "You have a burrowing speed of 10 feet. You can only dig in dirt and other loose earth.",
+            "granted": [
+              {
+                "type": "speed",
+                "speed": "burrow",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "name": "Darkvision",
+            "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+            "granted": [{ "type": "darkvision", "range": 60 }]
           }
         ]
       }
@@ -11549,74 +11656,6 @@
       }
     ],
     "name": "Minotaur"
-  },
-  {
-    "description": "The life of the Mousefolk is one spent close to the ground.  With no great empires or kingdoms to call home, the Mousefolk spend their lives carving a place for themselves in the cities of the larger races or in the untamed wilds.  They form tight-knit communities where every member is expected to contribute to the success of the whole.  Some Mousefolk study a trade skill to support their families, while others use their natural agility and intellect for contract services.",
-    "asis": [{ "dex": 2 }],
-    "maturity": 5,
-    "lifespan": 40,
-    "height": [2, 3],
-    "weight": [20, 30],
-    "category": "Animalistic",
-    "type": "Humanoid",
-    "size": -1,
-    "speed": 25,
-    "darkvision": 60,
-    "languages": ["Common", "Squeak Speak"],
-    "traits": [
-      {
-        "name": "Keen Senses",
-        "description": "You have proficiency in the Perception skill.",
-        "granted": [{ "type": "skill", "options": ["Perception"], "level": 1 }]
-      },
-      {
-        "name": "Nimble Dodge",
-        "description": "When you are targeted by an opportunity attack, you can use your reaction to impose disadvantage on the attack roll.",
-        "actions": [
-          {
-            "id": "36C7ABFB-3679-4141-937A-BF0F2218B7CD",
-            "type": "r",
-            "name": "Nimble Dodge",
-            "description": "When you are targeted by an opportunity attack, you can impose disadvantage on the attack roll."
-          }
-        ]
-      },
-      {
-        "name": "Scavenger",
-        "description": "You have proficiency in the Survival skill and advantage on checks made to find food an water.",
-        "granted": [{ "type": "skill", "options": ["Survival"], "level": 1 }]
-      }
-    ],
-    "subraces": [
-      {
-        "name": "Softpaw",
-        "asis": [{ "int": 1 }],
-        "traits": [
-          {
-            "name": "Squirm",
-            "description": "You can move through spaces sized for a Tiny creature without squeezing."
-          }
-        ]
-      },
-      {
-        "name": "Meadowgard",
-        "asis": [{ "wis": 1 }],
-        "traits": [
-          {
-            "name": "Brave",
-            "description": "You have advantage on saving throws against being frightened.",
-            "granted": [
-              { "type": "condition-advantage", "options": ["Frightened"] }
-            ]
-          },
-          {
-            "name": "Speak With Small Beasts",
-            "description": "You can communicate simple ideas with Small or smaller beasts."
-          }
-        ]
-      }
-    ],
-    "name": "Mousefolk"
   },
   {
     "description": "Mummies become undead not long after their deaths, but most do not awaken until a long slumber has passed. The contingencies that animate them are not always up to them. Most mummies are protectors and guardians, meant to keep something - cursed treasure, powerful artifacts, or unspeakable evils contained. Some are meant only to watch over the remains of a royal family, ensuring their tombs stay undisturbed. Depending on the length of their slumber, an awakened mummy might find themselves in a world they scarcely recognize. However, the time that has passed has no effect on their preservation, nor their compulsion to see the will of their creators done, until what has been done has been undone, at which time the mummy will resume their slumber until they are called to reanimate again.",
