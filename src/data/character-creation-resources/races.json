@@ -5918,7 +5918,6 @@
     "type": "Humanoid",
     "size": -2,
     "speed": 25,
-    "darkvision": 60,
     "languages": [
       "Common",
       "Squeak Speak",
