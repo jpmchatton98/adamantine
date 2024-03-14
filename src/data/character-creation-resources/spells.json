@@ -2493,6 +2493,37 @@
     ]
   },
   {
+    "name": "Sunlight Javelin",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You create a spear of crackling radiant energy and hurl it at a creature within range. Make a ranged spell attack against it. On a hit, the target takes 3d12 radiant and 3d12 lightning damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the radiant and lightning damage dealt by this spell each increase by 1d12 for each slot level above 4th."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 12,
+        "type": "lightning"
+      },
+      {
+        "dice": 3,
+        "die": 12,
+        "type": "radiant"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
     "name": "Brook Healing",
     "school": "Restoration",
     "level": 4,

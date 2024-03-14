@@ -1487,71 +1487,6 @@
     "name": "Bugbear"
   },
   {
-    "description": "Cecaelias are curious and social half-octopus creatures with a love of novelty. A short-lived race, cecaelias search for every bit of enjoyment they can draw from life. They take pleasure in new experiences, from trying new land fare to meeting a previously unknown race and exploring unknown waters.",
-    "asis": [{ "dex": 1 }, { "wis": 2 }],
-    "maturity": 18,
-    "lifespan": 150,
-    "height": [4, 5],
-    "weight": [100, 120],
-    "category": "Aquatic",
-    "type": "Humanoid",
-    "size": 0,
-    "speed": 30,
-    "darkvision": 60,
-    "languages": ["Common", "Aquan"],
-    "traits": [
-      {
-        "name": "Amphibious",
-        "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
-        "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
-      },
-      {
-        "name": "Ink Cloud",
-        "description": "As an action, you can expel a burst of ink, which functions as the Fog Cloud spell underwater or the Grease spell on land.  Constitution is your spellcasting ability for these spells.  You can use this feature once, and regain all expended uses when you finish a short or long rest.",
-        "granted": [
-          {
-            "type": "spell",
-            "options": ["Fog Cloud", "Grease"],
-            "ability": "con"
-          }
-        ],
-        "uses": {
-          "id": "DF17B20D-686B-4F2C-8EB9-6342650F69EF",
-          "type": "fixed",
-          "amount": 1,
-          "reset": 1
-        }
-      },
-      {
-        "name": "Jet",
-        "description": "You can take the Disengage action as a bonus action."
-      },
-      {
-        "name": "Tentacles",
-        "description": "Your tentacles are natural weapons, which you can use to make unarmed strikes. If you hit with your tentacle attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't attack another target with your tentacles.",
-        "actions": [
-          {
-            "id": "705BE4C0-4935-451C-B6CC-3FE51E9AC793",
-            "type": "a",
-            "name": "Tentacles",
-            "attack": true,
-            "damage": [
-              {
-                "dice": 1,
-                "die": 6,
-                "type": "bludgeoning",
-                "mod": true,
-                "unarmed": true
-              }
-            ],
-            "description": "If you hit with your tentacle attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained, and you can't attack another target with your tentacles."
-          }
-        ]
-      }
-    ],
-    "name": "Cecaelia"
-  },
-  {
     "description": "Changelings can shift their forms with a thought. Many changelings use this gift as a form of artistic and emotional expression. It's also an invaluable tool for grifters, spies, and others who wish to deceive. This leads many people to treat changelings with suspicion.",
     "asis": [
       { "cha": 2 },
@@ -6211,6 +6146,260 @@
       }
     ],
     "name": "Gremlin"
+  },
+  {
+    "description": "When a giant transgresses against its community, the punishment is usually death.  However, when the circumstances justify leniency, exile is often accepted as a suitable alternative.  To ensure exiled giants will never again rejoin their communities, a rune is sometimes carved into their skin, shrinking the giant to the size of a cat.  These giants, called Giain'ts, no longer hold a place anywhere in the Ordning, and are forced to find a new purpose for themselves.",
+    "asis": [{ "con": 2 }],
+    "maturity": 3,
+    "lifespan": 50,
+    "height": [1, 2],
+    "weight": [5, 10],
+    "category": "Uncommon",
+    "type": "Giant",
+    "size": -2,
+    "speed": 30,
+    "languages": ["Common", "Jiganti"],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Giain'ts are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
+      },
+      {
+        "name": "Diminutive Titan",
+        "description": "You are considered a Large creature for the purposes of determining your carrying capacity and the weight you can push, drag, and lift."
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Cloud",
+        "description": "Former cloud giants, cloud giain'ts often come about as a result of risky wagers.  Gambling is rife in their communities as a way of earning wealth and status, but for every winner, a dozen losers exist.  Those who can't pay their debts are cast out, and their possessions are divided among their creditors.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Illusory Double",
+            "description": "Whenever a creature targets you with an attack, you can use your reaction to teleport up to 30 feet to an unoccupied space you can see, causing the attack to automatically miss.  You can't use this feature if the attacker can sense you through means other than sight.</p><p>Once you use this feature, you can't do so again until you finish a long rest.",
+            "uses": [
+              {
+                "id": "ADED991B-4DD0-4E29-A586-E27C7057E902",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ],
+            "actions": [
+              {
+                "id": "ADED991B-4DD0-4E29-A586-E27C7057E902",
+                "hasUses": true,
+                "type": "r",
+                "name": "Illusory Double",
+                "description": "Whenever a creature targets you with an attack, you can use your reaction to teleport up to 30 feet to an unoccupied space you can see, causing the attack to automatically miss.  You can't use this feature if the attacker can sense you through means other than sight."
+              }
+            ]
+          },
+          {
+            "name": "Stealthy",
+            "description": "You have proficiency in Stealth, and you can take the Hide action as a bonus action.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Stealth"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fire",
+        "description": "Fire giants value above all else their craftsmanship and their rivalry with dwarves is the stuff of legend.  Fire giants often employ dwarf and azer slaves to pump their bellows and tend their forges, but to enlist their help in carving fine details brings shame to the entire clan.  But when warfare demands great haste, such giants are often allowed to live at the cost of being branded a giain't.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Born of the Forge",
+            "description": "You have proficiency with light armor and blacksmith's tools, and you have resistance to fire damage.",
+            "granted": [
+              {
+                "type": "armor",
+                "options": ["Light"]
+              },
+              {
+                "type": "tool",
+                "options": ["Blacksmith's Tools"]
+              },
+              {
+                "type": "damage-resistance",
+                "options": ["Fire"]
+              },
+              {
+                "type": "condition-advantage",
+                "options": ["Burning"]
+              }
+            ]
+          },
+          {
+            "name": "Runic Armor",
+            "description": "Over the course of a long rest, you can carve a rune into a suit of armor sized for a Tiny creature.  As a bonus action, you can activate the rune carved into a suit of armor you are wearing, magically wreathing yourself in flames for 1 minute.  While the flames are present, a creature that hits you with a melee attack or ends its turn grappling you takes 1d4 damage.</p><p>Once you use this feature, the rune becomes inert until you finish a long rest.",
+            "uses": [
+              {
+                "id": "81492644-EFC3-450C-B33C-E4DCB8922716",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ],
+            "actions": [
+              {
+                "id": "81492644-EFC3-450C-B33C-E4DCB8922716",
+                "hasUses": true,
+                "type": "b",
+                "name": "Runic Armor",
+                "description": "You activate the rune carved into a suit of armor you are wearing, magically wreathing yourself in flames for 1 minute.  While the flames are present, a creature that hits you with a melee attack or ends its turn grappling you takes 1d4 damage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frost",
+        "description": "Warriors of the frozen wastes, mercy is among the gravest of sins.  However, upholding the Ordning can sometimes lead to conflicting priorities, such as when a frost giant is forced by circumstance to do battle against a higher order of giant who will not take concessions for an answer.  In these cases, a frost giant may be offered lenience for sparing their foe, so long as they put up a good fight in the end.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Chill of Þrym",
+            "description": "Once per turn when you hit a creature with an attack, you can reduce the target's movement speed by 10 feet until the start of your next turn."
+          },
+          {
+            "name": "Iceborn",
+            "description": "You have resistance to cold damage, and you ignore difficult terrain composed of ice or snow.",
+            "granted": [
+              {
+                "type": "damage-resistance",
+                "options": ["Cold"]
+              }
+            ]
+          },
+          {
+            "name": "Tundra Warrior",
+            "description": "You can wield weapons that have the Light property without any penalties from being Tiny."
+          }
+        ]
+      },
+      {
+        "name": "Hill",
+        "description": "Hill giants often lack the intelligence to learn the art of runecarving, but hill giants dimwitted enough to consume the food of a higher ranking giant risk being turned into giain'ts by the other giant's clan.  Such punishment is far more harmful to hill giants than most, both because hill giants see size as their calling in life, and because hill giants are often too violent to function in humanoid societies.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Blubbery",
+            "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+            "granted": [{ "type": "hit-point-level", "amount": 1 }]
+          },
+          {
+            "name": "Iron Stomach",
+            "description": "As an action, you can consume half a pound of food, causing you to regain a number of hit points equal to 1d10 + your Constitution modifier.</p><p>You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": [
+              {
+                "id": "1FBFACA8-8D77-4378-A53A-EF413374C032",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 2
+              }
+            ],
+            "actions": [
+              {
+                "id": "1FBFACA8-8D77-4378-A53A-EF413374C032",
+                "hasUses": true,
+                "type": "a",
+                "name": "Iron Stomach",
+                "description": "You consume half a pound of food, causing you to regain 1d10 +  {mod-con} hit points."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Stone",
+        "description": "To a stone giant, spending too long in the dreaming world of the surface has a way of changing a giant's habits.  While such giants are rarely punished, a stone giant rendered \"delusional\" who commits violent transgressions is usually cast out into the other world to live their lives in exile.  These giain'ts are often viewed with pity rather than contempt, for even despite the destruction, the loss of a friend is never welcome.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Darkvision",
+            "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+            "granted": [{ "type": "darkvision", "range": 60 }]
+          },
+          {
+            "name": "Stonemason",
+            "description": "You have proficiency with mason's tools.",
+            "granted": [
+              {
+                "type": "tool",
+                "options": ["Mason's Tools"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Stone Thrower",
+            "description": "As an action, you can pick up a large stone or rip a chunk of natural stone out of the ground and make the attack with it. The stone is a simple melee weapon with the thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, it deals bludgeoning damage equal to 1d6 + your Strength modifier. A creature struck by this stone must make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "uses": [
+              {
+                "id": "2C095F5D-3492-439A-B391-13C796B562D2",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 2
+              }
+            ],
+            "actions": [
+              {
+                "id": "82E71CE5-ABE1-4D4C-BB3F-50DEAE7353E0",
+                "type": "a",
+                "attack": true,
+                "name": "Stone Throw",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 6,
+                    "type": "bludgeoning",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm",
+        "description": "Unlike other giants, storm giants are usually loners who rarely form clans of their own.  Instead, most who beomce giain'ts do so willingly because they forsee a future where such a debasement is necessary.  Such actions are never taken without trepidation but are seen as a lesser evil for a greater good.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Amphibious",
+            "description": "You can breathe water as well as air, and you have a swimming speed equal to your walking speed.  In addition, your range of vision is doubled underwater.",
+            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+          },
+          {
+            "name": "Tempestuous Resilience",
+            "description": "You have resistance to lightning damage.",
+            "granted": [
+              { "type": "damage-resistance", "options": ["Lightning"] }
+            ]
+          },
+          {
+            "name": "Visions in the Clouds",
+            "description": "When you finish a long rest, roll a d20 and record the number rolled. You can choose to replace an ability check roll made by you or a creature that you can see with your d20 roll. You must choose to do so before the ability check is rolled. Your d20 roll can only be used once, and you lose an unused roll when you finish a long rest.",
+            "uses": {
+              "id": "A2D4D590-DE8A-4BD7-BB55-FED02ADE7EDA",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            }
+          }
+        ]
+      }
+    ],
+    "name": "Giain't"
   },
   {
     "description": "Firbolgs are fey-oriented half-giants. Their tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.",
@@ -11428,6 +11617,65 @@
         ]
       },
       {
+        "name": "Cecaelia",
+        "description": "Cecaelias are curious and social half-octopus merfolk with a love of novelty. They take pleasure in new experiences, from trying new land fare to meeting a previously unknown race and exploring unknown waters.</p><p>Unlike most merfolk, cecaelia retain their aquatic features, including their tentacles, on land.",
+        "asis": [{ "dex": 1 }, { "wis": 1 }],
+        "traits": [
+          {
+            "name": "Ink Spray",
+            "description": "As a bonus action, you can expel a burst of ink. You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>If you are underwater, the ink fills a 15-foot cube centered on you.  The area is heavily obscured for the next minute, or until a current disperses it.</p><p>If you are not underwater, the ink sprays from you in a 15-foot cone.  Creatures within the area must succeed on a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier) or be blinded until the start of your next turn.",
+            "uses": {
+              "id": "DF17B20D-686B-4F2C-8EB9-6342650F69EF",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 1
+            },
+            "actions": [
+              {
+                "id": "DF17B20D-686B-4F2C-8EB9-6342650F69EF",
+                "hasUses": true,
+                "type": "b",
+                "name": "Ink Spray (Underwater)",
+                "description": "You expel a burst of ink that fills a 15-foot cube centered on you.  The area is heavily obscured for the next minute, or until a current disperses it."
+              },
+              {
+                "id": "DF17B20D-686B-4F2C-8EB9-6342650F69EF",
+                "hasUses": true,
+                "type": "b",
+                "name": "Ink Spray (Land)",
+                "description": "You expel a burst of ink in a 15-foot cone centered on you.  Creatures within the area must succeed on a DC {dc-dex} Dexterity saving throw or be blinded until the start of your next turn."
+              }
+            ]
+          },
+          {
+            "name": "Jet",
+            "description": "When you take the Dash action and move away from a hostile creature, you do not provoke opportunity attacks."
+          },
+          {
+            "name": "Tentacles",
+            "description": "Your tentacles are natural weapons, which you can use to make unarmed strikes. If you hit with your tentacle attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't attack another target with your tentacles.",
+            "actions": [
+              {
+                "id": "705BE4C0-4935-451C-B6CC-3FE51E9AC793",
+                "type": "a",
+                "name": "Tentacles",
+                "attack": true,
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 6,
+                    "type": "bludgeoning",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ],
+                "description": "If you hit with your tentacle attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained, and you can't attack another target with your tentacles."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Merrow",
         "description": "A demonic mixture a merfolk and a shark, merrow are terrifying underwater predators with razor claws.",
         "asis": [{ "str": 2 }],
@@ -12252,6 +12500,41 @@
               "amount": 1,
               "reset": 2
             }
+          }
+        ]
+      },
+      {
+        "name": "Spotted",
+        "description": "Found in isolationist villages in mountain valleys and along rivers, spotted panserbjorn are largely unknown, partly as a result of their rarity.  As spiritual as their appetites are strong, they have a long history and a keen wisdom, preferring to keep out of the eyes of society as a whole.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Folk Healer",
+            "description": "You have proficiency with the Medicine skill and with herbalism kits.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Medicine"],
+                "level": 1
+              },
+              {
+                "type": "tool",
+                "options": ["Herbalism Kit"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Spiritual Communion",
+            "description": "You have the ability to cast Speak with Plants as a ritual.  Wisdom is your spellcasting ability for it.</p><p>When cast in this way, you are only able to communicate with plants, not command, move, or control them.",
+            "granted": [
+              {
+                "type": "spell",
+                "options": ["Speak with Plants"],
+                "ability": "wis",
+                "ritualsOnly": true
+              }
+            ]
           }
         ]
       },
