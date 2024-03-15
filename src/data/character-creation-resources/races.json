@@ -8654,6 +8654,7 @@
     "subraces": [
       {
         "name": "Crossblood",
+        "description": "The blood of your dwarvish parent is more diluted, either because your human parent's blood is stronger or because your other parent is an elf or orc.",
         "asis": [],
         "traits": [
           {
@@ -8843,6 +8844,7 @@
     "subraces": [
       {
         "name": "Crossblood",
+        "description": "The blood of your elvish parent is more diluted, either because your human parent's blood is stronger or because your other parent is a dwarf or orc.",
         "asis": [],
         "traits": [
           {
@@ -9268,13 +9270,6 @@
     "languages": ["Common", "Orcish"],
     "traits": [
       {
-        "name": "Menacing",
-        "description": "You gain proficiency in the Intimidation skill.",
-        "granted": [
-          { "type": "skill", "options": ["Intimidation"], "level": 1 }
-        ]
-      },
-      {
         "name": "Relentless Endurance",
         "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
         "uses": {
@@ -9296,6 +9291,117 @@
       {
         "name": "Savage Attacks",
         "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Crossblood",
+        "description": "The blood of your orcish parent is more diluted, either because your human parent's blood is stronger or because your other parent is a dwarf or elf.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Menacing",
+            "description": "You gain proficiency in the Intimidation skill.",
+            "granted": [
+              { "type": "skill", "options": ["Intimidation"], "level": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gruumish",
+        "description": "Gruumsh bestows his kin with vigor, anger, leadership, and a relentless pursuit of excellence.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "All-Seeing Eye",
+            "description": "You have proficiency in either the Investigation or Perception skill.",
+            "choices": [
+              {
+                "id": "352C748C-4466-419A-A473-691818879ED2",
+                "type": "skill",
+                "limits": ["Investigation", "Perception"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ilnevalese",
+        "description": "Ilneval bestows his kin with a worldly understanding and sharp intellect, so that they may better do battle with his foes.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Tactician's Talent",
+            "description": "You have proficiency in either the History or Insight skill.",
+            "choices": [
+              {
+                "id": "4297C7D5-24F0-4B9D-A029-9C04C24304D3",
+                "type": "skill",
+                "limits": ["History", "Insight"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Luthian",
+        "description": "Luthic bestows her kin with an uncommon compassion and wisdom, as well as a sinister cleverness.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Nature and Nurture",
+            "description": "You have proficiency in either the Medicine or Nature skill.",
+            "choices": [
+              {
+                "id": "F1EE1FED-98EC-4C29-A387-822DB613B818",
+                "type": "skill",
+                "limits": ["Medicine", "Nature"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shargaan",
+        "description": "Shargaas bestows his kin with a disquieting focus - a simmering intensity that lies underneath and inspires treachery.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Brutally Cunning",
+            "description": "You have proficiency in either the Deception or Stealth skill.",
+            "choices": [
+              {
+                "id": "7A989354-30FF-4944-BC8A-7346CE2D413E",
+                "type": "skill",
+                "limits": ["Deception", "Stealth"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yurtese",
+        "description": "Yurtus bestows his kin with the strength of plagues and the resilience of undeath.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Plague Vector",
+            "description": "You have proficiency in either the Endurance or Survival skill.",
+            "choices": [
+              {
+                "id": "C367581F-2E7F-413D-B2EB-FCD073EE6944",
+                "type": "skill",
+                "limits": ["Endurance", "Survival"],
+                "level": 1
+              }
+            ]
+          }
+        ]
       }
     ],
     "name": "Half-Orc"
@@ -12186,7 +12292,7 @@
   },
   {
     "description": "Savage and fearless, orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.",
-    "asis": [{ "str": 2 }, { "con": 1 }],
+    "asis": [{ "str": 2 }],
     "maturity": 18,
     "lifespan": 75,
     "height": [6, 8],
@@ -12199,50 +12305,8 @@
     "languages": ["Common", "Orcish"],
     "traits": [
       {
-        "name": "Aggressive",
-        "description": "As a bonus action, you can move up to your speed toward an enemy that you can see or hear. You must end this move closer to the enemy than you started.",
-        "actions": [
-          {
-            "id": "9F2ED2D7-9ACF-417B-BBB1-5ED668BB6F36",
-            "type": "b",
-            "name": "Aggressive",
-            "description": "You move up to your speed toward an enemy that you can see or hear. You must end this move closer to the enemy than you started."
-          }
-        ]
-      },
-      {
-        "name": "Primal Intuition",
-        "description": "You have proficiency in two of the following skills of your choice: Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, or Survival.",
-        "choices": [
-          {
-            "id": "FDAB9B25-940D-4CC7-A700-DF990DB07401",
-            "type": "skill",
-            "limits": [
-              "Animal Handling",
-              "Insight",
-              "Intimidation",
-              "Medicine",
-              "Nature",
-              "Perception",
-              "Survival"
-            ],
-            "level": 1
-          },
-          {
-            "id": "8D9AA969-8ABC-473F-AB92-69E7FE2AA272",
-            "type": "skill",
-            "limits": [
-              "Animal Handling",
-              "Insight",
-              "Intimidation",
-              "Medicine",
-              "Nature",
-              "Perception",
-              "Survival"
-            ],
-            "level": 1
-          }
-        ]
+        "name": "Adrenaline Rush",
+        "description": "Whenever you score a critical hit or reduce a creature to 0 hit points, you gain temporary hit points equal to your proficiency bonus."
       },
       {
         "name": "Powerful Build",
@@ -12264,6 +12328,169 @@
             "hasUses": true,
             "name": "Relentless Endurance",
             "description": "When you are reduced to 0 hit points but not killed outright, you drop to 1 hit point instead."
+          }
+        ]
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Gruumish",
+        "description": "Gruumsh bestows his kin with vigor, anger, leadership, and a relentless pursuit of excellence.",
+        "asis": [{ "cha": 1 }],
+        "traits": [
+          {
+            "name": "Aggressive",
+            "description": "As a bonus action, you can move up to your speed toward an enemy that you can see or hear. You must end this move closer to the enemy than you started.",
+            "actions": [
+              {
+                "id": "9F2ED2D7-9ACF-417B-BBB1-5ED668BB6F36",
+                "type": "b",
+                "name": "Aggressive",
+                "description": "You move up to your speed toward an enemy that you can see or hear. You must end this move closer to the enemy than you started."
+              }
+            ]
+          },
+          {
+            "name": "All-Seeing Eye",
+            "description": "You have proficiency in either the Investigation or Perception skill.",
+            "choices": [
+              {
+                "id": "B49F5BDD-9E14-46CD-97EA-3B737E8506F2",
+                "type": "skill",
+                "limits": ["Investigation", "Perception"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ilnevalese",
+        "description": "Ilneval bestows his kin with a worldly understanding and sharp intellect, so that they may better do battle with his foes.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Instrumental Blow",
+            "description": "You excel in finding a foe's weak spots. When you deal damage to a creature you can choose to temporarily reduce their Armor Class by an amount equal to your proficiency bonus for 1 minute or until they are hit by an attack.</p><p>Once you use this trait, you can't use it again until you finish a long rest.",
+            "uses": [
+              {
+                "id": "0FEA9ED3-E791-497A-B8BE-B2AEBB358699",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ]
+          },
+          {
+            "name": "Tactician's Talent",
+            "description": "You have proficiency in either the History or Insight skill.",
+            "choices": [
+              {
+                "id": "CED299E6-F7CF-4700-8858-AF08299D08C4",
+                "type": "skill",
+                "limits": ["History", "Insight"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Luthian",
+        "description": "Luthic bestows her kin with an uncommon compassion and wisdom, as well as a sinister cleverness.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Mother Bear",
+            "description": "You know the Primal Savagery cantrip. Additionally, you can use a bonus action to cast the Healing Word spell at 1st level. You can cast it once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for both spells.",
+            "granted": [
+              {
+                "type": "spell",
+                "options": ["Primal Savagery", "Healing Word"],
+                "ability": "wis"
+              }
+            ],
+            "uses": [
+              {
+                "id": "4B47E3CE-8A7E-4C30-9951-4CC1817DDF0C",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ]
+          },
+          {
+            "name": "Nature and Nurture",
+            "description": "You have proficiency in either the Medicine or Nature skill.",
+            "choices": [
+              {
+                "id": "763DC1D9-BF8A-4654-ACE0-81F6A3A1E054",
+                "type": "skill",
+                "limits": ["Medicine", "Nature"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shargaan",
+        "description": "Shargaas bestows his kin with a disquieting focus - a simmering intensity that lies underneath and inspires treachery.",
+        "asis": [{ "dex": 1 }],
+        "traits": [
+          {
+            "name": "Shadow's Brutality",
+            "description": "When you are forced to make an attack roll or ability check with disadvantage, you can choose to negate the disadvantage and roll normally.</p><p>Once you use this trait, you can't use it again until you finish a short or long rest.",
+            "uses": [
+              {
+                "id": "9F4FC866-A17F-48FE-BBEC-636BD399155D",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 1
+              }
+            ]
+          },
+          {
+            "name": "Brutally Cunning",
+            "description": "You have proficiency in either the Deception or Stealth skill.",
+            "choices": [
+              {
+                "id": "9EE6606E-53D3-4792-B738-475889CEE713",
+                "type": "skill",
+                "limits": ["Deception", "Stealth"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yurtese",
+        "description": "Yurtus bestows his kin with the strength of plagues and the resilience of undeath.",
+        "asis": [{ "con": 1 }],
+        "traits": [
+          {
+            "name": "Partially Undead",
+            "description": "You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.</p><p>However, you are considered an undead for the purposes of spells and features that detect undead.",
+            "granted": [
+              { "type": "damage-immunity", "options": ["Poison"] },
+              {
+                "type": "condition-immunity",
+                "options": ["Disease", "Poisoned"]
+              }
+            ]
+          },
+          {
+            "name": "Plague Vector",
+            "description": "You have proficiency in either the Endurance or Survival skill.",
+            "choices": [
+              {
+                "id": "40B66904-12E3-4266-A335-8B228B313A81",
+                "type": "skill",
+                "limits": ["Endurance", "Survival"],
+                "level": 1
+              }
+            ]
           }
         ]
       }

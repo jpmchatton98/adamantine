@@ -4581,7 +4581,7 @@
     "name": "Orcish Fury",
     "prereq": [
       {
-        "race": ["half-orc"]
+        "race": ["half-orc", "orc"]
       }
     ],
     "type": "racial",
@@ -4654,7 +4654,7 @@
       }
     ],
     "type": "racial",
-    "description": "You are filled with a determination that can draw the unreachable within your reach. You gain the following benefits:<ul><li>Increase one ability score of your choice by 1, to a maximum of 20.</li><li>You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.</li><li>Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</li></ul>",
+    "description": "You are filled with a determination that can draw the unreachable within your reach. You gain the following benefits:<ul><li>Increase one ability score of your choice by 1, to a maximum of 20.</li><li>You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.</li><li>Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</li></ul>If you are a half-blooded race, you can only choose this feat if your other parent is a human.",
     "choices": [
       {
         "id": "4947E128-34C7-4DB1-B207-79083ADBEDB1",
@@ -4692,7 +4692,7 @@
       }
     ],
     "type": "racial",
-    "description": "You are filled with a determination that can draw the unreachable within your reach. You gain the following benefits:<ul><li>Increase one ability score of your choice by 1, to a maximum of 20.</li><li>When you fail an attack roll, ability check, or saving throw, you can choose to reroll it and take the higher of the two rolls.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</li></ul>",
+    "description": "You are filled with a determination that can draw the unreachable within your reach. You gain the following benefits:<ul><li>Increase one ability score of your choice by 1, to a maximum of 20.</li><li>When you fail an attack roll, ability check, or saving throw, you can choose to reroll it and take the higher of the two rolls.  You can do so a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</li></ul>If you are a half-blooded race, you can only choose this feat if your other parent is a human.",
     "choices": [
       {
         "id": "8768AFFB-9BA5-49F7-B1A1-C7A2A40D34E7",
