@@ -4647,6 +4647,44 @@
     ]
   },
   {
+    "name": "Cold-Blooded",
+    "prereq": [
+      {
+        "race": [
+          "bullywug",
+          "grung",
+          "lizardfolk",
+          "locathah",
+          "merfolk",
+          "praedaren",
+          "sahuagin",
+          "testasian",
+          "tortle",
+          "triton",
+          "vedalken",
+          "yuan-ti"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You have learned to work around your physiology, using it to benefit you and gaining the following benefits:<ul><li>Increase your Constitution score by 1, to a maximum of 20.</li><li>You have resistance to fire damage when you are in a hot climate, and resistance to cold damage when you are in a cold climate. While in a temperate climate, you may choose which resistance you have when you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "con",
+        "amount": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "A47913D8-052F-4CF4-9ABC-556AEFCC61CF",
+        "type": "text",
+        "options": ["Cold", "Fire"],
+        "grants": "damage-resistance"
+      }
+    ]
+  },
+  {
     "name": "Prodigy",
     "prereq": [
       {
@@ -5411,11 +5449,11 @@
     "name": "Blood Frenzy",
     "prereq": [
       {
-        "race": ["praedaren", "sahuagin"]
+        "race": ["dhampir", "ghoul", "praedaren", "sahuagin"]
       }
     ],
     "type": "racial",
-    "description": "You gain the frenzied blood sense of sharks, gaining the following benefits:<ul><li>Increase your Strength, Dexterity, or Wisdom score by 1.</li><li>You have advantage on attack rolls against creatures below half of their maximum hit points if the target is within 100 feet of you.</li></ul>",
+    "description": "You gain a frenzied blood sense that you can hardly control, gaining the following benefits:<ul><li>Increase your Strength, Dexterity, or Wisdom score by 1.</li><li>You have advantage on attack rolls against creatures below half of their maximum hit points if the target is within 100 feet of you.</li></ul>",
     "choices": {
       "id": "B896ECDE-9953-479D-A9BB-735F5F0427B6",
       "type": "asi",
@@ -6167,6 +6205,32 @@
       "amount": 1,
       "options": ["str", "con"]
     }
+  },
+  {
+    "name": "Nine Lives",
+    "type": "racial",
+    "prereq": [
+      {
+        "race": ["dragonborn", "leonin", "shifter", "tabaxi"],
+        "subrace": [["beast"], [], ["longtooth", "razorclaw"], []]
+      }
+    ],
+    "description": "Your luck makes you exceedingly hard to kill, leading to a myth that you have nine lives.  You gain the following benefits:<ul><li>Increase your Constitution score by 1, to a maximum of 20.</li><li>When you fail a death saving throw, you may instead succeed.  You can use this feature once, and regain the ability to do so when you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "con",
+        "amount": 1
+      }
+    ],
+    "uses": [
+      {
+        "id": "9066B166-3B21-4664-B42D-66DE7D7F2971",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
   },
   {
     "name": "Dire Blood",

@@ -26878,6 +26878,33 @@
     "ritual": 0
   },
   {
+    "name": "Luminous Shackles",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a link in a chain)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Chains of light spring up around a creature you can see within range.  The target must make a Strength saving throw.</p><p>On a failure, the target is bound by the chains until the spell ends, takes 1d6 radiant damage at the start of each of its turns, and the creature cannot move or be moved more than 20 feet away from the location it was when you cast the spell.</p><p>The target can repeat their saving throw at the end of each of their turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p><p>In addition, the spell restricts the target's movement further when you reach certain levels: 5th level (15 feet), 11th level (10 feet), and 17th level (5 feet)."
+    ],
+    "lists": ["Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 6,
+        "type": "radiant"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
     "name": "Unfasten",
     "school": "Transmutation",
     "level": 2,
