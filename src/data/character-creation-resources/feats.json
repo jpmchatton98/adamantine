@@ -5068,7 +5068,7 @@
     "name": "Shell Defender",
     "prereq": [
       {
-        "race": ["daolagiath", "testasian", "tortle"]
+        "race": ["daolagiath", "snailian", "testasian", "tortle"]
       }
     ],
     "type": "racial",
