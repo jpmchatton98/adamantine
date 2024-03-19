@@ -1632,6 +1632,58 @@
     "name": "Daolagiath"
   },
   {
+    "description": "Snailians resemble humanoid snails with a slimy, mucus-covered body.  They stand upright on two stocky legs.  Their skin comes in various earthy tones, often ranging in shades of brown, green, or gray.  Antennae sprout from their foreheads, aiding in their sensory perception.",
+    "asis": [{ "wis": 2 }, { "con": 1 }],
+    "maturity": 18,
+    "lifespan": 500,
+    "height": [4, 5],
+    "weight": [125, 175],
+    "category": "Animalistic",
+    "type": "Humanoid",
+    "size": -1,
+    "speed": 20,
+    "languages": [
+      "Common",
+      "Entognatha",
+      { "id": "0958EEDF-B5BD-4C34-B486-CEEDD449ED4F", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Antaennae Reception",
+        "description": "You are aware of the presence of telepathic creatures within 30 feet of you can hear any telepathy within 5 feet of you."
+      },
+      {
+        "name": "Mollusk Homeowner",
+        "description": "Due to your shell, you are ill-suited to wearing armor. Your shell provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p><p>In addition, you can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.",
+        "granted": [{ "type": "unarmored", "base": 17 }],
+        "actions": [
+          {
+            "id": "C87AA114-7F3C-489F-8DE6-CB742FD74EAD",
+            "type": "a",
+            "name": "Shell Defense",
+            "description": "You withdraw into your shell. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+          }
+        ]
+      },
+      {
+        "name": "Hero in a Half Shell",
+        "description": "When a feature requires you to be wearing armor in order to use it, you can use it while unarmored."
+      },
+      {
+        "name": "Mucous Skin",
+        "description": "Your skin is covered in thick, sticky mucus.  You have a climbing speed equal to your walking speed, and you have advantage on Strength (Athletics) checks made to grapple.",
+        "granted": [
+          {
+            "type": "speed",
+            "speed": "climb",
+            "amount": -1
+          }
+        ]
+      }
+    ],
+    "name": "Snailian"
+  },
+  {
     "description": "<p>Whether driven by fanatical beliefs, a hunger for personal power, or a genuine wish to help others by whatever means are available, some choose to undergo a ritual transformation that changes their body into an imitation of a true dragon. Other individuals concoct detailed magical experiments on unwilling subjects, exploring the limitations of the blood of dragons. Regardless of origin, the resulting creature is known as a demi-dragon\u0442\u0410\u0424a being that was created rather than born.</p>",
     "asis": [
       { "str": 2 },
