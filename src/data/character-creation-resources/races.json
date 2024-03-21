@@ -9365,6 +9365,24 @@
         ]
       },
       {
+        "name": "Bahgtruan",
+        "description": "Bahgtru bestows his kin with exceptional brute strength.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Brute Strength",
+            "description": "You have proficiency in the Athletics skill.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Athletics"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Gruumish",
         "description": "Gruumsh bestows his kin with vigor, anger, leadership, and a relentless pursuit of excellence.",
         "asis": [],
@@ -12407,6 +12425,54 @@
       }
     ],
     "subraces": [
+      {
+        "name": "Bahgtruan",
+        "description": "Bahgtru bestows his kin with exceptional brute strength, and an obliviousness that can sometimes come in handy.",
+        "asis": [{ "con": 1 }],
+        "traits": [
+          {
+            "name": "Fists of Bahgtru",
+            "description": "Your patron's expertise in bare-knuckle brawling has been passed down to you.  Your unarmed strikes deal bludgeoning damage equal to 1d6 + your Strength modifier.",
+            "actions": [
+              {
+                "name": "Fists of Bahgtru",
+                "actions": [
+                  {
+                    "id": "3BE01CDC-2206-4BBE-8B1D-533A9061D29F",
+                    "type": "a",
+                    "attack": true,
+                    "name": "Fists of Bahgtru",
+                    "damage": [
+                      {
+                        "dice": 1,
+                        "die": 6,
+                        "type": "bludgeoning",
+                        "mod": true,
+                        "unarmed": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Oblivious",
+            "description": "Your mind cannot be read by magical means, and you ignore temporary boosts to a creature's Armor Class, such as from the Shield of Faith spell."
+          },
+          {
+            "name": "Brute Strength",
+            "description": "You have proficiency in the Athletics skill and you are considered one size larger when determining your carrying capacity and the weight you can push, drag, and lift.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Athletics"],
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
       {
         "name": "Gruumish",
         "description": "Gruumsh bestows his kin with vigor, anger, leadership, and a relentless pursuit of excellence.",
