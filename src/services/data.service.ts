@@ -1183,7 +1183,7 @@ export class DataService {
 
     for (let i = 0; i < pantheons.length; i++) {
       pantheons[i].gods = pantheons[i].gods.filter((g) =>
-        g.domains.includes(domain)
+        g.domains.find((d) => d.toLowerCase() === domain.toLowerCase())
       );
     }
     pantheons = pantheons.filter((p) => p.gods?.length);

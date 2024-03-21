@@ -1,43 +1,90 @@
-<ng-container *ngIf="extra">
-    <ul id="tabList" class="nav nav-tabs" role="tablist" *ngIf="listData.length > 1; else singleList">
-        <li *ngFor="let list of listData; let i = index" class="nav-item" role="presentation">
-            <button class="nav-link" [ngClass]="{'active': i === tabIndex}" (click)="tabIndex = i">
-                {{ list.name }}
-            </button>
-        </li>
+<ng-container *ngIf="godsTab">
+  <div>
+    The following gods are exceptionally appropriate for this domian of cleric
+    to follow, but many other gods could be used if you so chose. Further
+    information on each can be found in the Lore section.
+  </div>
+  <div *ngFor="let pantheon of gods">
+    <h5>{{ pantheon.name }}</h5>
+    <ul>
+      <li *ngFor="let god of pantheon.gods">{{ god.name }}</li>
+    </ul>
+  </div>
+</ng-container>
+<ng-container *ngIf="!godsTab">
+  <ng-container *ngIf="extra">
+    <ul
+      id="tabList"
+      class="nav nav-tabs"
+      role="tablist"
+      *ngIf="listData.length > 1; else singleList"
+    >
+      <li
+        *ngFor="let list of listData; let i = index"
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          class="nav-link"
+          [ngClass]="{ active: i === tabIndex }"
+          (click)="tabIndex = i"
+        >
+          {{ list.name }}
+        </button>
+      </li>
     </ul>
     <div id="content" class="tab-content" *ngIf="listData.length > 1">
-        <div *ngFor="let list of listData; let i = index" class="tab-pane" [ngClass]="{'active show': i === tabIndex}">
-            <div *ngIf="list.prereq !== 'none'">
-                <em>Prerequisite: 
-                    <ng-container *ngIf="!isNumber(list.prereq)">
-                        {{ list.prereq }}
-                    </ng-container>
-                    <ng-container *ngIf="isNumber(list.prereq)">
-                        <ng-container [ngSwitch]="list.prereq">
-                            <td *ngSwitchCase="1">1st-level</td>
-                            <td *ngSwitchCase="2">2nd-level</td>
-                            <td *ngSwitchCase="3">3rd-level</td>
-                            <td *ngSwitchDefault>{{ list.prereq }}th-level</td>
-                        </ng-container>
-                        {{ className }}
-                    </ng-container>
-                </em>
-            </div>
-            <app-display-feature *ngFor="let item of list.list" [feature]="item" [showPrereqLevel]="!list.name.toLowerCase().includes('degree')"></app-display-feature>
+      <div
+        *ngFor="let list of listData; let i = index"
+        class="tab-pane"
+        [ngClass]="{ 'active show': i === tabIndex }"
+      >
+        <div *ngIf="list.prereq !== 'none'">
+          <em
+            >Prerequisite:
+            <ng-container *ngIf="!isNumber(list.prereq)">
+              {{ list.prereq }}
+            </ng-container>
+            <ng-container *ngIf="isNumber(list.prereq)">
+              <ng-container [ngSwitch]="list.prereq">
+                <td *ngSwitchCase="1">1st-level</td>
+                <td *ngSwitchCase="2">2nd-level</td>
+                <td *ngSwitchCase="3">3rd-level</td>
+                <td *ngSwitchDefault>{{ list.prereq }}th-level</td>
+              </ng-container>
+              {{ className }}
+            </ng-container>
+          </em>
         </div>
+        <app-display-feature
+          *ngFor="let item of list.list"
+          [feature]="item"
+          [showPrereqLevel]="!list.name.toLowerCase().includes('degree')"
+        ></app-display-feature>
+      </div>
     </div>
 
     <ng-template #singleList>
-        <app-display-feature *ngFor="let item of listData[0].list" [feature]="item" [showPrereqLevel]="!listData[0].name.toLowerCase().includes('degree')"></app-display-feature>
+      <app-display-feature
+        *ngFor="let item of listData[0].list"
+        [feature]="item"
+        [showPrereqLevel]="!listData[0].name.toLowerCase().includes('degree')"
+      ></app-display-feature>
     </ng-template>
-</ng-container>
+  </ng-container>
 
-<ng-container *ngIf="!extra">
-    <ng-container *ngIf="dataType.includes('spells') || dataType.includes('cantrips')">
-        <app-spells [list]="list" [maxLevel]="maxLevel" [cantrips]="cantrips"></app-spells>
+  <ng-container *ngIf="!extra">
+    <ng-container
+      *ngIf="dataType.includes('spells') || dataType.includes('cantrips')"
+    >
+      <app-spells
+        [list]="list"
+        [maxLevel]="maxLevel"
+        [cantrips]="cantrips"
+      ></app-spells>
     </ng-container>
     <ng-container *ngIf="dataType.includes('exploits')">
-        <app-exploits [list]="list" [maxDegree]="maxLevel"></app-exploits>
+      <app-exploits [list]="list" [maxDegree]="maxLevel"></app-exploits>
     </ng-container>
+  </ng-container>
 </ng-container>

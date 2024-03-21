@@ -22,6 +22,9 @@ export class SubclassComponent implements OnInit, OnChanges {
   }
   public subclassName;
   public subclass;
+  public cleric = false;
+  public domain = '';
+  public domainTab = '';
 
   public tabName: string = 'subclass';
 
@@ -33,6 +36,12 @@ export class SubclassComponent implements OnInit, OnChanges {
 
   public ngOnInit(): void {
     const className = this.route.parent.parent.snapshot.params['name'];
+    this.cleric = className === 'cleric';
+    if (this.cleric) {
+      this.domain = this.subclassName.split('-')[0];
+      this.domainTab = `gods-${this.domain.toLowerCase()}`;
+    }
+
     this.subclass = this.dataService.getSubclass(className, this.subclassName);
 
     this.tabName =
@@ -41,6 +50,12 @@ export class SubclassComponent implements OnInit, OnChanges {
 
   public ngOnChanges(changes: SimpleChanges): void {
     const className = this.route.parent.parent.snapshot.params['name'];
+    this.cleric = className === 'cleric';
+    if (this.cleric) {
+      this.domain = this.subclassName.split('-')[0];
+      this.domainTab = `gods-${this.domain.toLowerCase()}`;
+    }
+
     this.subclass = this.dataService.getSubclass(className, this.subclassName);
 
     this.tabName =

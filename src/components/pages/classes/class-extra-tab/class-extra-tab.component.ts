@@ -27,15 +27,28 @@ export class ClassExtraTabComponent implements OnInit, OnChanges {
 
   public tabIndex = 0;
 
+  public godsTab = false;
+  public gods = [];
+
   constructor(dataService: DataService, private route: ActivatedRoute) {
     this.dataService = dataService;
   }
 
   ngOnInit(): void {
-    this.getListData();
+    if (this.dataType.includes('gods')) {
+      this.godsTab = true;
+      this.gods = this.dataService.getGodsByDomain(this.dataType.split('-')[1]);
+    } else {
+      this.getListData();
+    }
   }
   ngOnChanges(): void {
-    this.getListData();
+    if (this.dataType.includes('gods')) {
+      this.godsTab = true;
+      this.gods = this.dataService.getGodsByDomain(this.dataType.split('-')[1]);
+    } else {
+      this.getListData();
+    }
   }
 
   private getListData() {
