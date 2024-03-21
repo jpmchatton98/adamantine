@@ -22,6 +22,8 @@ import tools from '../data/general-store/adventuring-equipment/tools.json';
 
 import injuries from '../data/house-rules/injuries.json';
 
+import gods from '../data/pantheons.json';
+
 import wildMagic from '../data/character-creation-resources/wild-magic.json';
 import { cp } from 'fs';
 
@@ -1171,5 +1173,21 @@ export class DataService {
       (cl) => cl.name.toLowerCase().replaceAll(' ', '-') === className
     );
     return c?.hitDie ?? 8;
+  }
+
+  public getPantheons(): any {
+    return gods;
+  }
+  public getGodsByDomain(domain: string): any {
+    let pantheons = JSON.parse(JSON.stringify(gods));
+
+    for (let i = 0; i < pantheons.length; i++) {
+      pantheons[i].gods = pantheons[i].gods.filter((g) =>
+        g.domains.includes(domain)
+      );
+    }
+    pantheons = pantheons.filter((p) => p.gods?.length);
+
+    return pantheons;
   }
 }

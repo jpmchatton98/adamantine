@@ -1,0 +1,2634 @@
+[
+  {
+    "name": "Faerûnian Pantheon",
+    "gods": [
+      {
+        "name": "Akadi",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Cloud",
+        "portfolio": "Air, Movement",
+        "domains": ["Sky", "Tempest"]
+      },
+      {
+        "name": "Auril",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "Six-pointed snowflake",
+        "portfolio": "Winter",
+        "domains": ["Nature", "Tempest", "Winter"]
+      },
+      {
+        "name": "Azuth",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Hand outlined in fire",
+        "portfolio": "Wizards",
+        "domains": ["Arcana", "Knowledge"]
+      },
+      {
+        "name": "Bane",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Black gauntlet",
+        "portfolio": "Tyranny",
+        "domains": ["Inquisition", "Judgement", "War"]
+      },
+      {
+        "name": "Beshaba",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Black antlers",
+        "portfolio": "Misfortune",
+        "domains": ["Madness", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Bhaal",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Skull surrounded by blood drops",
+        "portfolio": "Murder",
+        "domains": ["Death"]
+      },
+      {
+        "name": "Blibdoolpoolp",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "Lobster head",
+        "portfolio": "Kuo-toa",
+        "domains": ["Death", "Protection"]
+      },
+      {
+        "name": "Chauntea",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Blooming rose over grain",
+        "portfolio": "Agriculture",
+        "domains": ["Life", "Nature"]
+      },
+      {
+        "name": "Cyric",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "White skull on a purple starburst",
+        "portfolio": "Lies",
+        "domains": ["Night", "Shadow", "Trickery"]
+      },
+      {
+        "name": "Deneir",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Lit candle above an eye",
+        "portfolio": "Writing",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Eadro",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Whirlpool",
+        "portfolio": "Merfolk, Locathah, Tritons",
+        "domains": ["Tempest"]
+      },
+      {
+        "name": "Eldath",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Waterfall",
+        "portfolio": "Peace",
+        "domains": ["Nature", "Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Gond",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Four-toothed cog",
+        "portfolio": "Craft, Gnomes, Invention",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Grumbar",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Mountain",
+        "portfolio": "Earth, Solidity",
+        "domains": ["Protection", "Strength"]
+      },
+      {
+        "name": "Gwaeron",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "A paw print with a star at its center",
+        "portfolio": "Tracking",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Gzemnid",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "An eye surrounded by ten smaller eyes",
+        "portfolio": "Beholders, Fogs, Obscurement",
+        "domains": ["Eldritch", "Madness", "Trickery"]
+      },
+      {
+        "name": "Helm",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Eye on upright gauntlet",
+        "portfolio": "Protection, Watchfulness",
+        "domains": ["Light", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Hoar",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "A coin with a two-faced head",
+        "portfolio": "Revenge",
+        "domains": ["Madness", "Pain", "Strength", "Sorrow", "War"]
+      },
+      {
+        "name": "Hruggek",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Morningstar",
+        "portfolio": "Bugbears",
+        "domains": ["Strength", "War"]
+      },
+      {
+        "name": "Ilmater",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Hands bound at the wrist",
+        "portfolio": "Endurance",
+        "domains": ["Life", "Pain", "Protection", "Sorrow"]
+      },
+      {
+        "name": "Ilsensine",
+        "gender": "Agender",
+        "alignment": "LE",
+        "symbol": "A brain with two tentacles",
+        "portfolio": "Illithids, Psionics",
+        "domains": ["Eldritch", "Madness", "Trickery"]
+      },
+      {
+        "name": "Istishia",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Wave",
+        "portfolio": "Purification, Water",
+        "domains": ["Hope", "Light", "Peace"]
+      },
+      {
+        "name": "Jergal",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Skull and quill on a scroll",
+        "portfolio": "Burial",
+        "domains": ["Death", "Grave", "Knowledge"]
+      },
+      {
+        "name": "Kelemvor",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Skeletal arm holding a scale",
+        "portfolio": "The Dead",
+        "domains": ["Death", "Grave"]
+      },
+      {
+        "name": "Kossuth",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Twining red flame",
+        "portfolio": "Destruction, Fire, Rebirth",
+        "domains": ["Apocalypse", "Death", "Nature", "Life"]
+      },
+      {
+        "name": "Kurtulmak",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "A gnome skull",
+        "portfolio": "Kobolds, Trapmaking",
+        "domains": ["Sky", "War"]
+      },
+      {
+        "name": "Lathander",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Road traveling into a sunrise",
+        "portfolio": "Birth, Renewal",
+        "domains": ["Hope", "Life", "Light", "Peace"]
+      },
+      {
+        "name": "Leira",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Triangle containing a swirl of mist",
+        "portfolio": "Illusion",
+        "domains": ["Trickery", "Twlight"]
+      },
+      {
+        "name": "Lliira",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Triangle of three six-pointed stars",
+        "portfolio": "Joy",
+        "domains": ["Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Loviatar",
+        "gender": "Female",
+        "alignment": "LE",
+        "symbol": "Cat o' nine tails",
+        "portfolio": "Pain",
+        "domains": ["Death", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Maglubiyet",
+        "gender": "Female",
+        "alignment": "LE",
+        "symbol": "Bloody axe",
+        "portfolio": "Goblins, Hobgoblins",
+        "domains": ["Strength", "War"]
+      },
+      {
+        "name": "Malar",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Clawed paw",
+        "portfolio": "Hunting",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Mask",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Black thief's mask",
+        "portfolio": "Thieves",
+        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Mielikki",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Unicorn",
+        "portfolio": "Forests",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Milil",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Harp made of leaves",
+        "portfolio": "Poetry, Song",
+        "domains": ["Beauty", "Light", "Peace"]
+      },
+      {
+        "name": "Myrkul",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Skull",
+        "portfolio": "Death",
+        "domains": ["Death", "Grave"]
+      },
+      {
+        "name": "Mystra",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Nine stars encircling a red mist",
+        "portfolio": "Magic",
+        "domains": ["Arcana", "Knowledge"]
+      },
+      {
+        "name": "Nobanion",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Lion's head on a green shield",
+        "portfolio": "Lions, Royalty",
+        "domains": ["Beauty", "Inquisition", "Judgement", "Nature"]
+      },
+      {
+        "name": "Nyx",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Crescent moon in front of wings",
+        "portfolio": "Harpies, Night",
+        "domains": ["Death", "Night", "Shadow", "Sky", "Twilight"]
+      },
+      {
+        "name": "Oghma",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Scroll",
+        "portfolio": "Knowledge",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Pan",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Pan flute",
+        "portfolio": "Minotaurs, Satyrs, Taurians",
+        "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight"]
+      },
+      {
+        "name": "Qhungiks",
+        "gender": "Agender",
+        "alignment": "CN",
+        "symbol": "A coiling slaad tadpole",
+        "portfolio": "Chaos, Slaadi",
+        "domains": ["Eldritch", "Madness"]
+      },
+      {
+        "name": "Red Knight",
+        "gender": "Female",
+        "alignment": "LN",
+        "symbol": "Red knight chess piece",
+        "portfolio": "Strategy",
+        "domains": ["Order", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Remnis",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Head of an eagle",
+        "portfolio": "Aarakocra, Eagles",
+        "domains": ["Sky", "Tempest"]
+      },
+      {
+        "name": "Savras",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Crystal ball containing eyes",
+        "portfolio": "Divination, Fate",
+        "domains": ["Jugement", "Knowledge", "Luck"]
+      },
+      {
+        "name": "Sekolah",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Shark",
+        "portfolio": "Praedaren, Sahuagin, Sharks",
+        "domains": ["Nature", "Tempest"]
+      },
+      {
+        "name": "Selûne",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Eyes surrounded by seven stars",
+        "portfolio": "Moon",
+        "domains": ["Hope", "Knowledge", "Light", "Peace", "Twlight"]
+      },
+      {
+        "name": "Semuanya",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Egg",
+        "portfolio": "Lizardfolk, Survival",
+        "domains": ["Life", "Protection", "Strength"]
+      },
+      {
+        "name": "Shar",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "Black mirror",
+        "portfolio": "Darkness, Loss",
+        "domains": [
+          "Death",
+          "Night",
+          "Pain",
+          "Shadow",
+          "Sorrow",
+          "Trickery",
+          "Twilight"
+        ]
+      },
+      {
+        "name": "Shaundakul",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "A path drawn on a map",
+        "portfolio": "Travel",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Silvanus",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Oak leaf",
+        "portfolio": "Wilderness",
+        "domains": ["Life", "Nature", "Twilight"]
+      },
+      {
+        "name": "Sseth",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Coiling snake",
+        "portfolio": "Snakes, Yuan-ti",
+        "domains": ["Trickery"]
+      },
+      {
+        "name": "Sune",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Face of a woman",
+        "portfolio": "Beauty, Love",
+        "domains": ["Beauty", "Life", "Peace"]
+      },
+      {
+        "name": "Talona",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Triangle of three teardrops",
+        "portfolio": "Disease, Poison",
+        "domains": ["Apocalypse", "Death", "Nature", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Talos",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Three lightning bolts radiating from a point",
+        "portfolio": "Storms",
+        "domains": ["Apocalypse", "Nature", "Sky", "Tempest"]
+      },
+      {
+        "name": "Tempus",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Flaming sword",
+        "portfolio": "War",
+        "domains": ["Steel", "Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Torm",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "White gauntlet",
+        "portfolio": "Courage, Self-Sacrifice",
+        "domains": ["Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Tymora",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Six-sided die",
+        "portfolio": "Luck",
+        "domains": ["Luck", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Tyr",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Scales resting on a warhammer",
+        "portfolio": "Justice",
+        "domains": [
+          "Inquisition",
+          "Judgement",
+          "Protection",
+          "Steel",
+          "Strength",
+          "War"
+        ]
+      },
+      {
+        "name": "Umberlee",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Kraken",
+        "portfolio": "Sea",
+        "domains": ["Apocalypse", "Nature", "Tempest"]
+      },
+      {
+        "name": "Valkur",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "The helm of a ship",
+        "portfolio": "Sailors",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Waukeen",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Face-up coin",
+        "portfolio": "Trade",
+        "domains": ["Knowledge", "Order", "Trickery"]
+      },
+      {
+        "name": "Yondalla",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Shield",
+        "portfolio": "Halflings",
+        "domains": ["Hope", "Life", "Peace", "Protection"]
+      }
+    ]
+  },
+  {
+    "name": "Oerthian Pantheon",
+    "gods": [
+      {
+        "name": "Al'Akbar",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "A chalice on a starburst",
+        "portfolio": "Duty, Protection",
+        "domains": ["Light", "Order", "Protection", "Steel", "War"]
+      },
+      {
+        "name": "Beltar",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Opened fangs",
+        "portfolio": "Caves, Hunger",
+        "domains": ["Madness", "Night", "Shadow", "Strength", "War"]
+      },
+      {
+        "name": "Beory",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Green disk",
+        "portfolio": "Nature",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Berei",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "A sheaf of wheat",
+        "portfolio": "Community, Motherhood",
+        "domains": ["Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Boccob",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Eye within a pentagram",
+        "portfolio": "Magic",
+        "domains": ["Arcana", "Knowledge"]
+      },
+      {
+        "name": "Celestian",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Arc of seven stars",
+        "portfolio": "Stars",
+        "domains": ["Eldritch", "Knowledge", "Light", "Night"]
+      },
+      {
+        "name": "Cuthbert",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Circle at the center of a starburst",
+        "portfolio": "Sense, Zeal",
+        "domains": ["Knowledge", "Order", "Protection", "War"]
+      },
+      {
+        "name": "Ehlonna",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Unicorn horn",
+        "portfolio": "Woodlands",
+        "domains": ["Life", "Nature"]
+      },
+      {
+        "name": "Erythnul",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Blood drop",
+        "portfolio": "Envy, Slaughter",
+        "domains": ["Madness", "Strength", "War"]
+      },
+      {
+        "name": "Fharlanghn",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Circle crossed by a curved line",
+        "portfolio": "Horizons, Travel",
+        "domains": ["Knowledge", "Protection", "Trickery"]
+      },
+      {
+        "name": "Heironeous",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Lightning bolt",
+        "portfolio": "Chivalry, Valor",
+        "domains": ["Order", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Hextor",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Six arrows facing downwards",
+        "portfolio": "Discord, War",
+        "domains": ["Madness", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Incabulos",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Reptilian eye",
+        "portfolio": "Famine, Plague",
+        "domains": ["Death", "Nature", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Istus",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Weaver's spindle with three strands",
+        "portfolio": "Destiny, Fate",
+        "domains": ["Knowledge", "Luck", "Order"]
+      },
+      {
+        "name": "Iuz",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Grinning skull",
+        "portfolio": "Oppression, Pain",
+        "domains": ["Death", "Madness", "Pain", "Sorrow", "War"]
+      },
+      {
+        "name": "Joramy",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Volcano",
+        "portfolio": "Fire, Wrath",
+        "domains": ["Forge", "Strength", "War"]
+      },
+      {
+        "name": "Kord",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Four spears and four maces radiating out",
+        "portfolio": "Athletics, Sport",
+        "domains": ["Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Kyuss",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "A skull with worms in its eyes",
+        "portfolio": "Undeath",
+        "domains": ["Death"]
+      },
+      {
+        "name": "Myrhiss",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "A pair of doves",
+        "portfolio": "Beauty, Love",
+        "domains": ["Beauty", "Life", "Light"]
+      },
+      {
+        "name": "Nerull",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Skull with a scythe",
+        "portfolio": "The Dead",
+        "domains": ["Death", "Grave"]
+      },
+      {
+        "name": "Obad-Hai",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Oak leaf and acorn",
+        "portfolio": "Freedom, Hunting",
+        "domains": ["Hope", "Nature", "Peace"]
+      },
+      {
+        "name": "Olidammara",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Laughing mask",
+        "portfolio": "Revelry",
+        "domains": ["Beauty", "Hope", "Luck", "Peace", "Trickery"]
+      },
+      {
+        "name": "Pelor",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Sun",
+        "portfolio": "Healing, Sun",
+        "domains": ["Life", "Light", "Protection"]
+      },
+      {
+        "name": "Pholtus",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Silver sun and full moon",
+        "portfolio": "Law, Light",
+        "domains": ["Inquisition", "Judgement", "Light", "Order"]
+      },
+      {
+        "name": "Procan",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "A trident on a wave",
+        "portfolio": "Water, Weather",
+        "domains": ["Apocalypse", "Nature", "Sky", "Tempest"]
+      },
+      {
+        "name": "Ralishaz",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Three bone dice",
+        "portfolio": "Delusion, Misfortune",
+        "domains": ["Luck", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Rao",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "White heart",
+        "portfolio": "Peace, Reason",
+        "domains": ["Hope", "Knowledge", "Peace"]
+      },
+      {
+        "name": "Rudd",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Target with an arrow in its bullseye",
+        "portfolio": "Luck",
+        "domains": ["Luck", "Trickery"]
+      },
+      {
+        "name": "Trithereon",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Triskelion",
+        "portfolio": "Liberty, Retribution",
+        "domains": ["Hope", "Protection", "War"]
+      },
+      {
+        "name": "Ulaa",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Mountain with a circle at its center",
+        "portfolio": "Hills, Mountains",
+        "domains": ["Life", "Order", "War"]
+      },
+      {
+        "name": "Vecna",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Hand with an eye in its palm",
+        "portfolio": "Liches, Secrets",
+        "domains": [
+          "Arcana",
+          "Death",
+          "Knowledge",
+          "Night",
+          "Shadow",
+          "Trickery"
+        ]
+      },
+      {
+        "name": "Wee Jas",
+        "gender": "Female",
+        "alignment": "LN",
+        "symbol": "Red skull in front of a fireball",
+        "portfolio": "Death",
+        "domains": ["Death", "Knowledge"]
+      },
+      {
+        "name": "Zagyg",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Rune of insanity",
+        "portfolio": "Humor, Unpredictability",
+        "domains": ["Madness", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Zilchus",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Hands clutching a bag of gold",
+        "portfolio": "Prestige, Wealth",
+        "domains": ["Forge", "Luck", "Order", "Trickery"]
+      }
+    ]
+  },
+  {
+    "name": "Krynnic Pantheon",
+    "gods": [
+      {
+        "name": "Branchala",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Harp",
+        "portfolio": "Music",
+        "domains": ["Beauty", "Light", "Luck", "Trickery"]
+      },
+      {
+        "name": "Chemosh",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Yellow skull",
+        "portfolio": "Death",
+        "domains": ["Death"]
+      },
+      {
+        "name": "Chislev",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Feather",
+        "portfolio": "Nature",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Gilean",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Open book",
+        "portfolio": "Knowledge",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Habbakuk",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Blue bird",
+        "portfolio": "Animals, Sea",
+        "domains": ["Nature", "Tempest"]
+      },
+      {
+        "name": "Hiddukel",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Broken scales",
+        "portfolio": "Greed, Lies",
+        "domains": ["Luck", "Night", "Shadow", "Trickery"]
+      },
+      {
+        "name": "Kiri-Jolith",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Bison's horns",
+        "portfolio": "Honor, War",
+        "domains": ["Judgement", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Lunitari",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Red circle",
+        "portfolio": "Neutral Magic",
+        "domains": ["Arcana"]
+      },
+      {
+        "name": "Majere",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Copper spider",
+        "portfolio": "Meditation, Order",
+        "domains": ["Knowledge", "Order", "Peace"]
+      },
+      {
+        "name": "Mishakal",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Blue infinity sign",
+        "portfolio": "Healing",
+        "domains": ["Hope", "Knowledge", "Life", "Peace"]
+      },
+      {
+        "name": "Morgion",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Hood with two red eyes",
+        "portfolio": "Disease",
+        "domains": ["Death", "Nature"]
+      },
+      {
+        "name": "Nuitari",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Black circle",
+        "portfolio": "Evil Magic",
+        "domains": ["Arcana", "Death"]
+      },
+      {
+        "name": "Paladine",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Silver triangle",
+        "portfolio": "Guardians, Rulers",
+        "domains": ["Inquisition", "Judgement", "Protection", "Steel", "War"]
+      },
+      {
+        "name": "Reorx",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Forging hammer",
+        "portfolio": "Craft",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Sargonnas",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Phoenix",
+        "portfolio": "Fire, Vengeance",
+        "domains": ["Apocalypse", "Forge", "Strength", "War"]
+      },
+      {
+        "name": "Shinare",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Griffon's wing",
+        "portfolio": "Trade, Wealth",
+        "domains": ["Knowledge", "Luck", "Trickery"]
+      },
+      {
+        "name": "Sirrion",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Multicolored fire",
+        "portfolio": "Change",
+        "domains": ["Luck", "Nature", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Solinari",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "White circle",
+        "portfolio": "Good Magic",
+        "domains": ["Arcana"]
+      },
+      {
+        "name": "Takhisis",
+        "gender": "Female",
+        "alignment": "LE",
+        "symbol": "Black crescent",
+        "portfolio": "Hatred, Night",
+        "domains": ["Death", "Madness", "Night", "Shadow", "War"]
+      },
+      {
+        "name": "Zeboim",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Turtle shell",
+        "portfolio": "Storms",
+        "domains": ["Apocalypse", "Sky", "Tempest"]
+      },
+      {
+        "name": "Zivilyn",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Gold tree",
+        "portfolio": "Wisdom",
+        "domains": ["Knowledge"]
+      }
+    ]
+  },
+  {
+    "name": "Eberroni Pantheon",
+    "gods": [
+      {
+        "name": "Arawai",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Sheaf of wheat tied with green ribbon",
+        "portfolio": "Fertility",
+        "domains": ["Life", "Nature"]
+      },
+      {
+        "name": "Aureon",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Open tome",
+        "portfolio": "Knowledge, Law",
+        "domains": ["Knowledge", "Order"]
+      },
+      {
+        "name": "Balinor",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Pair of antlers",
+        "portfolio": "Beasts, Hunting",
+        "domains": ["Life", "Nature"]
+      },
+      {
+        "name": "Boldrei",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Fire in a stone hearth",
+        "portfolio": "Community, Home",
+        "domains": ["Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Devourer",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Bundle of five sharp bones",
+        "portfolio": "Storms",
+        "domains": ["Sky", "Tempest"]
+      },
+      {
+        "name": "Dol Arrah",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Rising sun",
+        "portfolio": "Honor, Sunlight",
+        "domains": ["Light", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Dol Dorn",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Longswords crossed over a shield",
+        "portfolio": "Strength",
+        "domains": ["Steel", "Strength", "War"]
+      },
+      {
+        "name": "Eberron",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "A globe",
+        "portfolio": "Creation",
+        "domains": ["Forge", "Nature", "Protection"]
+      },
+      {
+        "name": "Fury",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "Winged wyrm with a woman's head",
+        "portfolio": "Frenzy, Wrath",
+        "domains": ["Madness", "Strength", "War"]
+      },
+      {
+        "name": "Keeper",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Fang-shaped dragonshard",
+        "portfolio": "Death, Greed",
+        "domains": ["Death", "Luck", "Trickery"]
+      },
+      {
+        "name": "Khyber",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "Twisted dragon horns",
+        "portfolio": "Delusion",
+        "domains": ["Madness", "Trickery"]
+      },
+      {
+        "name": "Kol Korran",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Nine-sided gold coin",
+        "portfolio": "Trade, Wealth",
+        "domains": ["Luck", "Order", "Trickery"]
+      },
+      {
+        "name": "Mockery",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Blood-spattered tools",
+        "portfolio": "Treachery, Violence",
+        "domains": ["Madness", "Strength", "War"]
+      },
+      {
+        "name": "Olladra",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Domino",
+        "portfolio": "Luck",
+        "domains": ["Life", "Luck", "Trickery"]
+      },
+      {
+        "name": "Onatar",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Crossed hammer and tongs",
+        "portfolio": "Craft",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Shadow",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Obsidian tower",
+        "portfolio": "Evil Magic",
+        "domains": ["Arcana", "Death", "Knowledge"]
+      },
+      {
+        "name": "Siberys",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "A stone ring",
+        "portfolio": "Heavens",
+        "domains": ["Eldritch", "Light", "Night", "Twilight"]
+      },
+      {
+        "name": "Silver Flame",
+        "gender": "Agender",
+        "alignment": "LG",
+        "symbol": "Silver flame",
+        "portfolio": "Protection",
+        "domains": ["Life", "Light", "Protection", "Steel", "War"]
+      },
+      {
+        "name": "Traveler",
+        "gender": "Agender",
+        "alignment": "CN",
+        "symbol": "Four crossed bones",
+        "portfolio": "Change, Chaos",
+        "domains": ["Madness", "Knowledge", "Luck", "Trickery"]
+      }
+    ]
+  },
+  {
+    "name": "Clutch of Io (Draconic Pantheon)",
+    "gods": [
+      {
+        "name": "Asgorath",
+        "gender": "Genderfluid",
+        "alignment": "N",
+        "symbol": "An iridescent sphere",
+        "portfolio": "Creation",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Ashardalon",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "A heart-shaped star",
+        "portfolio": "Light, solar dragons",
+        "domains": ["Eldritch", "Light"]
+      },
+      {
+        "name": "Bahamut",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "A dragon's head in profile",
+        "portfolio": "Metallic dragons, good",
+        "domains": ["Metallic", "Steel", "War"]
+      },
+      {
+        "name": "Garyx",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "A burning dragon's claw",
+        "portfolio": "Destruction, fire, red dragons",
+        "domains": ["Apocalypse", "Forge"]
+      },
+      {
+        "name": "Kereska",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "A five-pointed star with the lower two points extended",
+        "portfolio": "Magic",
+        "domains": ["Arcana"]
+      },
+      {
+        "name": "Lendys",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "A golden sword and a sun",
+        "portfolio": "Law",
+        "domains": ["Inquisition", "Judgement", "Metallic", "Order"]
+      },
+      {
+        "name": "Nathair",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "An apple pie",
+        "portfolio": "Faerie dragons, mischief",
+        "domains": ["Beauty", "Hope", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Null",
+        "gender": "Agender",
+        "alignment": "NE",
+        "symbol": "The skull of a dragon",
+        "portfolio": "Death, dracoliches, shadow dragons",
+        "domains": ["Death", "Grave", "Night", "Shadow"]
+      },
+      {
+        "name": "Raulothim",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "An eye-shaped emerald",
+        "portfolio": "Sight, contemplation, emerald dragons",
+        "domains": ["Knowledge", "Light"]
+      },
+      {
+        "name": "Rime",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "A frozen manacle",
+        "portfolio": "Pain, suspicion, white dragons",
+        "domains": ["Judgement", "Pain", "Sorrow", "Winter"]
+      },
+      {
+        "name": "Sardior",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "A star-shaped ruby",
+        "portfolio": "Gem dragons, psionics",
+        "domains": ["Eldritch", "Luck"]
+      },
+      {
+        "name": "Tamara",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "A white starburst on black",
+        "portfolio": "Life, mercy",
+        "domains": ["Hope", "Life", "Metallic", "Peace"]
+      },
+      {
+        "name": "Task",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "A pile of five coins, each coin stamped with a dragon's head in profile",
+        "portfolio": "Greed, wealth",
+        "domains": ["Beauty", "Forge", "Luck"]
+      },
+      {
+        "name": "Tiamat",
+        "gender": "Female",
+        "alignment": "LE",
+        "symbol": "The heads of all five species of chromatic dragons",
+        "portfolio": "Chromatic dragons, wyverns, evil",
+        "domains": ["Apocalypse", "Trickery"]
+      }
+    ]
+  },
+  {
+    "name": "Seldarine (Elvish Pantheon)",
+    "gods": [
+      {
+        "name": "Corellon",
+        "gender": "Genderfluid (Masculine)",
+        "alignment": "CG",
+        "symbol": "Crescent moon",
+        "portfolio": "Art, Elves, Magic",
+        "domains": ["Arcana", "Nature"]
+      },
+      {
+        "name": "Aerdrie",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Bird on a cloud",
+        "portfolio": "Air, Weather",
+        "domains": ["Nature", "Sky", "Tempest"]
+      },
+      {
+        "name": "Alathrien",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "A glyph",
+        "portfolio": "Runes, Writing",
+        "domains": ["Arcana", "Forge", "Knowledge"]
+      },
+      {
+        "name": "Angharradh",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Three interlocking circles",
+        "portfolio": "Growth, Protection, Wisdom",
+        "domains": ["Nature", "Protection"]
+      },
+      {
+        "name": "Araleth",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Shaft of light",
+        "portfolio": "Light, Stars",
+        "domains": ["Eldritch", "Light", "Night", "Shadow"]
+      },
+      {
+        "name": "Avachel",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Open book",
+        "portfolio": "Learning, Invention",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Darahl",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Flame held in hands",
+        "portfolio": "Earth, Fire, Metal",
+        "domains": ["Forge", "Protection", "Steel"]
+      },
+      {
+        "name": "Erevan",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Asymmetric starburst",
+        "portfolio": "Change, Mischief",
+        "domains": ["Trickery"]
+      },
+      {
+        "name": "Felarathael",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "A binary star system",
+        "portfolio": "Speech",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Fenmarel",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Eyes surrounded by darkness",
+        "portfolio": "Outcasts",
+        "domains": ["Pain", "Sorrow"]
+      },
+      {
+        "name": "Hanali",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Golden heart",
+        "portfolio": "Beauty, Joy, Love",
+        "domains": ["Beauty", "Hope", "Life"]
+      },
+      {
+        "name": "Khalreshaar",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Unicorn",
+        "portfolio": "Forests",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Labelas",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Setting sun",
+        "portfolio": "History, Philosophy, Time",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Lashrael",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "A binary star system",
+        "portfolio": "Emotion",
+        "domains": [
+          "Beauty",
+          "Hope",
+          "Madness",
+          "Pain",
+          "Peace",
+          "Sorrow",
+          "Trickery"
+        ]
+      },
+      {
+        "name": "Melira",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Lute",
+        "portfolio": "Poetry, Songs",
+        "domains": ["Beauty", "Light", "Peace"]
+      },
+      {
+        "name": "Mythrien",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Row of three intertwined circles",
+        "portfolio": "Magic",
+        "domains": ["Arcana"]
+      },
+      {
+        "name": "Naralis",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "White dove",
+        "portfolio": "Healing, Suffering",
+        "domains": ["Life", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Rellavar",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Spear between circles",
+        "portfolio": "Winter",
+        "domains": ["Winter"]
+      },
+      {
+        "name": "Rillifane",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Oak tree",
+        "portfolio": "Nature",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Sarula",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Three waves",
+        "portfolio": "Fairies, Water",
+        "domains": ["Tempest"]
+      },
+      {
+        "name": "Sashelas",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Dolphin",
+        "portfolio": "Sea",
+        "domains": ["Nature", "Tempest"]
+      },
+      {
+        "name": "Sehanine",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Full moon",
+        "portfolio": "Dreams, Moon, Travel",
+        "domains": ["Light", "Night", "Shadow"]
+      },
+      {
+        "name": "Shevarash",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Broken arrow over a tear",
+        "portfolio": "Hatred, Loss",
+        "domains": ["Death", "Grave", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Solonor",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Silver arrow with green fletching",
+        "portfolio": "Archery, Hunting",
+        "domains": ["Knowledge", "Nature"]
+      },
+      {
+        "name": "Tarsellis",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Mountain",
+        "portfolio": "Mountains, Rivers",
+        "domains": ["Nature", "Protection"]
+      },
+      {
+        "name": "Tethrin",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Crossed swords above a full moon",
+        "portfolio": "Swordfighting",
+        "domains": ["Steel", "Strength", "War"]
+      },
+      {
+        "name": "Vandria",
+        "gender": "Female",
+        "alignment": "LN",
+        "symbol": "Weeping eye",
+        "portfolio": "Grief, Justice, Vengeance",
+        "domains": ["Death", "Pain", "Sorrow"]
+      }
+    ]
+  },
+  {
+    "name": "Dark Seldarine (Drow Pantheon)",
+    "gods": [
+      {
+        "name": "Lolth",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Spider",
+        "portfolio": "Darkness, Drow, Spiders",
+        "domains": ["Death", "Night", "Shadow", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Elistraee",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Dancer before a full moon",
+        "portfolio": "Beauty, Dance, Freedom, Moon, Hunting, Song",
+        "domains": ["Beauty", "Light"]
+      },
+      {
+        "name": "Ghaunadaur",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Purple eye",
+        "portfolio": "Oozes, Outcasts, Rebels, Underdark",
+        "domains": ["Night", "Shadow"]
+      },
+      {
+        "name": "Kiaransalee",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Hand wearing many silver rings",
+        "portfolio": "Necromancy, Vengeance, Undeath",
+        "domains": ["Death", "Pain", "Sorrow", "War"]
+      },
+      {
+        "name": "Malyk",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "A flame in a tear",
+        "portfolio": "Chaos, Magic, Storms",
+        "domains": ["Apocalypse", "Arcana", "Tempest"]
+      },
+      {
+        "name": "Selvetarm",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Spider over crossed sword and mace",
+        "portfolio": "Slaughter",
+        "domains": ["War"]
+      },
+      {
+        "name": "Vhaeraun",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Black mask with blue glasses",
+        "portfolio": "Arrogance, Masculinity, Surface, Thieves",
+        "domains": ["Trickery"]
+      },
+      {
+        "name": "Zinzerena",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Dagger draped in cloth",
+        "portfolio": "Assassins, Illusions, Lies",
+        "domains": ["Death", "Madness", "Trickery", "Twilight"]
+      }
+    ]
+  },
+  {
+    "name": "Morndinsamman (Dwarvish Pantheon)",
+    "gods": [
+      {
+        "name": "Moradin",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Hammer and anvil",
+        "portfolio": "Creation, Dwarves",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Abbathor",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Jeweled dagger",
+        "portfolio": "Greed",
+        "domains": ["Luck", "Trickery"]
+      },
+      {
+        "name": "Berronar",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Intertwined rings",
+        "portfolio": "Hearth, Home",
+        "domains": ["Hope", "Life", "Peace", "Protection"]
+      },
+      {
+        "name": "Clangeddin",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Crossed axes",
+        "portfolio": "Honor, Valor",
+        "domains": ["Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Duerra",
+        "gender": "Female",
+        "alignment": "LE",
+        "symbol": "Illithid skull",
+        "portfolio": "Conquest, Psionics",
+        "domains": ["Eldritch", "Madness", "Strength", "War"]
+      },
+      {
+        "name": "Dugmaren",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Open book",
+        "portfolio": "Discovery, Invention, Scholarship",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Dumathoin",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Mountain with a central gemstone",
+        "portfolio": "Exploration, Gems, Mining",
+        "domains": ["Luck"]
+      },
+      {
+        "name": "Gorm",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Bronze mask",
+        "portfolio": "Defense, Protection, Vigilance",
+        "domains": ["Light", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Haela",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Flaming sword",
+        "portfolio": "Battle, Luck",
+        "domains": ["Luck", "War"]
+      },
+      {
+        "name": "Hanseath",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Beer stein",
+        "portfolio": "Alcohol, Music",
+        "domains": ["Beauty", "Life", "Peace", "Trickery"]
+      },
+      {
+        "name": "Laduguer",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Broken arrow",
+        "portfolio": "Duergar, Magic",
+        "domains": ["Arcana", "Night", "Shadow"]
+      },
+      {
+        "name": "Marthammor",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Mace in front of a boot",
+        "portfolio": "Travel",
+        "domains": ["Knowledge", "Protection"]
+      },
+      {
+        "name": "Sharindlar",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Burning needle",
+        "portfolio": "Fertility, Healing, Love",
+        "domains": ["Beauty", "Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Thard",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Two clawed gauntlets",
+        "portfolio": "Hunting, Nature",
+        "domains": ["Knowledge", "Nature"]
+      },
+      {
+        "name": "Tharmekhûl",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Blazing forge",
+        "portfolio": "Azer, Fire, Forge",
+        "domains": ["Forge"]
+      },
+      {
+        "name": "Vergadain",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Gold coin",
+        "portfolio": "Trickery, Wealth",
+        "domains": ["Luck", "Order", "Trickery"]
+      }
+    ]
+  },
+  {
+    "name": "Lords of the Golden Hills (Gnomish Pantheon)",
+    "gods": [
+      {
+        "name": "Gond",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Four-toothed cog",
+        "portfolio": "Craft, Gnomes",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Baervan",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Face of a raccoon",
+        "portfolio": "Nature, Travel",
+        "domains": ["Knowledge", "Nature"]
+      },
+      {
+        "name": "Baravar",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Dagger against a cloak",
+        "portfolio": "Deception, Illusion",
+        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Callarduran",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Golden signet ring",
+        "portfolio": "Mining, Stone, Svirfneblin",
+        "domains": ["Night", "Shadow"]
+      },
+      {
+        "name": "Flandal",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Flaming hammer",
+        "portfolio": "Smithing",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Gaerdal",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Iron band",
+        "portfolio": "Combat, Defense, Vigilance",
+        "domains": ["Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Garl",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Gold nugget",
+        "portfolio": "Gems, Humor, Luck",
+        "domains": ["Beauty", "Light", "Luck"]
+      },
+      {
+        "name": "Segojan",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Glowing gemstone",
+        "portfolio": "Death, Earth, Underdark",
+        "domains": ["Death", "Grave", "Night", "Shadow"]
+      },
+      {
+        "name": "Urdlen",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Mole",
+        "portfolio": "Bloodlust, Destruction, Hatred",
+        "domains": ["Madness", "Strength", "War"]
+      }
+    ]
+  },
+  {
+    "name": "Tribe of He Who Watches (Orcish Pantheon)",
+    "gods": [
+      {
+        "name": "Gruumsh",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Eye",
+        "portfolio": "Conquest, Destruction, Storms, Strength, Survival, War",
+        "domains": ["Apocalypse", "Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Bahgtru",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Broken bone",
+        "portfolio": "Loyalty, Strength, Stupidity",
+        "domains": ["Madness", "Strength", "War"]
+      },
+      {
+        "name": "Ilneval",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Blood-spattered sword",
+        "portfolio": "Combat, Strategy",
+        "domains": ["Steel", "War"]
+      },
+      {
+        "name": "Luthic",
+        "gender": "Female",
+        "alignment": "LE",
+        "symbol": "Cave bear",
+        "portfolio": "Caverns, Fertility, Healing, Witchery",
+        "domains": ["Arcana", "Life", "Protection"]
+      },
+      {
+        "name": "Shargaas",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Red crescent moon",
+        "portfolio": "Darkness, Night, Stealth, Thieves, Trickery",
+        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Yurtus",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "White hand",
+        "portfolio": "Death, Decay, Disease, Rot",
+        "domains": ["Death", "Grave", "Nature"]
+      }
+    ]
+  },
+  {
+    "name": "Ordning (Giant Pantheon)",
+    "gods": [
+      {
+        "name": "Annam",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Two hands, wrists crossed with fingers pointing down",
+        "portfolio": "Fertility, Learning, Magic",
+        "domains": ["Arcana", "Knowledge", "Life"]
+      },
+      {
+        "name": "Diancastra",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Ehwaz rune",
+        "portfolio": "Mischief, Thievery",
+        "domains": ["Trickery", "Twilight"]
+      },
+      {
+        "name": "Grolantor",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Wooden club",
+        "portfolio": "Combat, Hill Giants, Hunger",
+        "domains": ["Strength", "War"]
+      },
+      {
+        "name": "Hiatea",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Flaming spear",
+        "portfolio": "Agriculture, Nature, Hunting",
+        "domains": ["Knowledge", "Nature"]
+      },
+      {
+        "name": "Iallanis",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Garland of flowers",
+        "portfolio": "Beauty, Forgiveness, Love, Mercy",
+        "domains": ["Beauty", "Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Karontor",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Broken shackles",
+        "portfolio": "Beasts, Deformity, Fomorians, Hatred",
+        "domains": ["Nature", "Pain", "Sorrow", "Twilight"]
+      },
+      {
+        "name": "Memnor",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Black obelisk",
+        "portfolio": "Cloud Giants, Control, Lies, Pride",
+        "domains": ["Sky", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Othea",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Mountain",
+        "portfolio": "Motherhood",
+        "domains": ["Hope", "Life", "Peace", "Protection"]
+      },
+      {
+        "name": "Skoraeus",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Stalactite",
+        "portfolio": "Artwork, Mountains, Stone, Stone Giants",
+        "domains": ["Beauty", "Protection", "Strength"]
+      },
+      {
+        "name": "Stronmaus",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Forked lightning bolt",
+        "portfolio": "Sea, Sky, Storm Giants, Sun, Weather",
+        "domains": ["Nature", "Sky", "Tempest"]
+      },
+      {
+        "name": "Surtr",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Flaming sword",
+        "portfolio": "Fire, Fire Giants",
+        "domains": ["Forge", "Knowledge", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Þrym",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Double-bladed battleaxe",
+        "portfolio": "Cold, Frost Giants, Yetis",
+        "domains": ["Strength", "War", "Winter"]
+      },
+      {
+        "name": "Vaprak",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Taloned claws",
+        "portfolio": "Greed, Lesser Giants",
+        "domains": ["Luck", "Trickery", "War"]
+      }
+    ]
+  },
+  {
+    "name": "Egyptian Pantheon",
+    "gods": [
+      {
+        "name": "Ra",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Scarab beetle",
+        "portfolio": "Sun",
+        "domains": ["Life", "Light"]
+      },
+      {
+        "name": "Anubis",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Black jackal",
+        "portfolio": "Death, Judgement",
+        "domains": ["Death", "Grave", "Inquisition", "Judgement"]
+      },
+      {
+        "name": "Apep",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Flaming snake",
+        "portfolio": "Evil, Fire, Snakes",
+        "domains": ["Apocalypse", "Eldritch", "Madness", "Trickery"]
+      },
+      {
+        "name": "Bastet",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Lioness",
+        "portfolio": "Cats, Vengeance",
+        "domains": ["Nature", "Protection", "Strength", "War"]
+      },
+      {
+        "name": "Bes",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Ostrich feather",
+        "portfolio": "Dwarves, Luck, Music",
+        "domains": ["Beauty", "Luck", "Trickery"]
+      },
+      {
+        "name": "Hathor",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Cow's head",
+        "portfolio": "Love",
+        "domains": ["Beauty", "Hope", "Life", "Light", "Peace"]
+      },
+      {
+        "name": "Horus",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Falcon's head",
+        "portfolio": "Protection, Royalty",
+        "domains": ["Judgement", "Protection", "Steel", "War"]
+      },
+      {
+        "name": "Imhotep",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Pyramid",
+        "portfolio": "Medicine",
+        "domains": ["Knowledge", "Life"]
+      },
+      {
+        "name": "Isis",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Ankh and star",
+        "portfolio": "Fertility, Magic",
+        "domains": ["Arcana", "Knowledge", "Life"]
+      },
+      {
+        "name": "Khonsu",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Crescent moon",
+        "portfolio": "Moon, Trickery",
+        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Nephthys",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Horns around a full moon",
+        "portfolio": "Grief",
+        "domains": ["Death", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Osiris",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Crook and flail",
+        "portfolio": "The Dead, Nature",
+        "domains": ["Death", "Grave", "Life", "Nature"]
+      },
+      {
+        "name": "Ptah",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Bull",
+        "portfolio": "Craft",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Sekhmet",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Disk of red linen",
+        "portfolio": "Destruction, Violence",
+        "domains": ["Apocalypse", "Madness", "Strength", "War"]
+      },
+      {
+        "name": "Set",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Cobra",
+        "portfolio": "Darkness, Storms",
+        "domains": ["Death", "Shadow", "Tempest", "Trickery"]
+      },
+      {
+        "name": "Sobek",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Crocodile head",
+        "portfolio": "Crocodiles, Water",
+        "domains": ["Nature", "Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Taweret",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Hippopotamus head",
+        "portfolio": "Motherhood",
+        "domains": ["Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Thoth",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Ibis",
+        "portfolio": "Knowledge",
+        "domains": ["Knowledge"]
+      }
+    ]
+  },
+  {
+    "name": "Olympian Pantheon",
+    "gods": [
+      {
+        "name": "Aphrodite",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Seashell",
+        "portfolio": "Beauty",
+        "domains": ["Beauty", "Life", "Light"]
+      },
+      {
+        "name": "Apollo",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Lyre",
+        "portfolio": "Music, Healing, Sun",
+        "domains": ["Beauty", "Knowledge", "Life", "Light"]
+      },
+      {
+        "name": "Ares",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Spear",
+        "portfolio": "War",
+        "domains": ["Steel", "Strength", "War"]
+      },
+      {
+        "name": "Artemis",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Bow and arrow on crescent moon",
+        "portfolio": "Hunting, Moon",
+        "domains": ["Life", "Nature", "Night"]
+      },
+      {
+        "name": "Athena",
+        "gender": "Female",
+        "alignment": "LG",
+        "symbol": "Owl",
+        "portfolio": "Civilization, Wisdom",
+        "domains": ["Knowledge", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Atlas",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Globe being held by a crouched man",
+        "portfolio": "Suffering",
+        "domains": ["Pain", "Sorrow", "Strength"]
+      },
+      {
+        "name": "Cronus",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Hourglass and scythe",
+        "portfolio": "Time",
+        "domains": ["Knowledge", "Luck", "Order", "Trickery"]
+      },
+      {
+        "name": "Demeter",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Horse's head",
+        "portfolio": "Agriculture",
+        "domains": ["Life", "Nature"]
+      },
+      {
+        "name": "Dionysus",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Grapevine",
+        "portfolio": "Mirth, Wine",
+        "domains": ["Beauty", "Life", "Luck", "Madness", "Nature"]
+      },
+      {
+        "name": "Erebus",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Crow",
+        "portfolio": "Night",
+        "domains": ["Night", "Shadow"]
+      },
+      {
+        "name": "Eros",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Bow and arrow on heart",
+        "portfolio": "Love",
+        "domains": ["Beauty", "Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Gaia",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Mountain",
+        "portfolio": "Earth",
+        "domains": ["Protection", "Strength"]
+      },
+      {
+        "name": "Hades",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Black ram",
+        "portfolio": "The Dead, Gemstones",
+        "domains": ["Death", "Grave", "Judgement", "Luck"]
+      },
+      {
+        "name": "Hecate",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Setting moon",
+        "portfolio": "Magic",
+        "domains": ["Arcana", "Knowledge", "Trickery"]
+      },
+      {
+        "name": "Hephaestus",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Hammer and anvil",
+        "portfolio": "Craft",
+        "domains": ["Forge", "Knowledge"]
+      },
+      {
+        "name": "Hera",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Peacock",
+        "portfolio": "Marriage, Motherhood",
+        "domains": ["Hope", "Life", "Trickery"]
+      },
+      {
+        "name": "Heracles",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Lion's head",
+        "portfolio": "Strength",
+        "domains": ["Protection", "Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Hermes",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Caduceus",
+        "portfolio": "Commerce, Travel",
+        "domains": ["Luck", "Order", "Trickery"]
+      },
+      {
+        "name": "Hestia",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Hearth",
+        "portfolio": "Family, Home",
+        "domains": ["Hope", "Life", "Peace"]
+      },
+      {
+        "name": "Hypnos",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Poppy flower",
+        "portfolio": "Sleep",
+        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Nike",
+        "gender": "Female",
+        "alignment": "LN",
+        "symbol": "Winged woman",
+        "portfolio": "Victory",
+        "domains": ["Hope", "Strength", "War"]
+      },
+      {
+        "name": "Pan",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Pan flute",
+        "portfolio": "Nature",
+        "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight"]
+      },
+      {
+        "name": "Persephone",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Pomegranate",
+        "portfolio": "Seasons",
+        "domains": ["Beauty", "Nature", "Order"]
+      },
+      {
+        "name": "Poseidon",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Trident",
+        "portfolio": "Sea",
+        "domains": ["Nature", "Strength", "Tempest"]
+      },
+      {
+        "name": "Prometheus",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Clay doll",
+        "portfolio": "Mankind",
+        "domains": ["Forge", "Life", "Pain", "Sorrow"]
+      },
+      {
+        "name": "Tartarus",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Skull and crossed bones",
+        "portfolio": "Chaos, Death",
+        "domains": [
+          "Death",
+          "Eldritch",
+          "Madness",
+          "Night",
+          "Shadow",
+          "Tempest"
+        ]
+      },
+      {
+        "name": "Tyche",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Red pentagram",
+        "portfolio": "Luck",
+        "domains": ["Luck", "Trickery", "Twilight"]
+      },
+      {
+        "name": "Typhon",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Hurricane",
+        "portfolio": "Destruction",
+        "domains": ["Apocalypse", "Tempest"]
+      },
+      {
+        "name": "Zeus",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Fist full of lightning bolts",
+        "portfolio": "Sky",
+        "domains": ["Sky", "Tempest"]
+      }
+    ]
+  },
+  {
+    "name": "Celtic Pantheon",
+    "gods": [
+      {
+        "name": "Dagda",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Bubbling cauldron",
+        "portfolio": "Crops, Time",
+        "domains": ["Judgement", "Nature", "Trickery"]
+      },
+      {
+        "name": "Arawn",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Black star on gray background",
+        "portfolio": "Death, Life",
+        "domains": ["Death", "Life", "Grave"]
+      },
+      {
+        "name": "Belenus",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Solar disk and standing stones",
+        "portfolio": "Light, Sun, Warmth",
+        "domains": ["Hope", "Life", "Light", "Peace"]
+      },
+      {
+        "name": "Brigantia",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Bridge",
+        "portfolio": "Livestock, Rivers",
+        "domains": ["Life", "Nature"]
+      },
+      {
+        "name": "Cernunnos",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Deer's antlers",
+        "portfolio": "Wilderness",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Diancecht",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Crossed oak branch and mistletoe",
+        "portfolio": "Healing, Medicine",
+        "domains": ["Hope", "Knowledge", "Life", "Peace"]
+      },
+      {
+        "name": "Dunatis",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Sun-capped mountain peak",
+        "portfolio": "Mountains",
+        "domains": ["Nature", "Protection", "Strength"]
+      },
+      {
+        "name": "Epona",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "Horse's head in profile",
+        "portfolio": "Horses, Travel",
+        "domains": ["Nature"]
+      },
+      {
+        "name": "Goibhniu",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Hammer over sword",
+        "portfolio": "Craft",
+        "domains": ["Forge", "Knowledge", "Life"]
+      },
+      {
+        "name": "Grannus",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Pillar and bricks",
+        "portfolio": "Construction",
+        "domains": ["Forge"]
+      },
+      {
+        "name": "Lugh",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Pair of long hands",
+        "portfolio": "Art, Commerce",
+        "domains": ["Beauty", "Knowledge", "Life", "Order"]
+      },
+      {
+        "name": "Manannan",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Wave of white on green",
+        "portfolio": "Sea",
+        "domains": ["Nature", "Tempest"]
+      },
+      {
+        "name": "Mathonwy",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Staff",
+        "portfolio": "Magic",
+        "domains": ["Arcana", "Knowledge"]
+      },
+      {
+        "name": "Morrigan",
+        "gender": "Female",
+        "alignment": "CE",
+        "symbol": "Crossed spears",
+        "portfolio": "Battle",
+        "domains": ["Steel", "Strength", "War"]
+      },
+      {
+        "name": "Nuada",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Silver hand on black background",
+        "portfolio": "Honor",
+        "domains": ["Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Oghma",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Unfurled scroll",
+        "portfolio": "Speech, Writing",
+        "domains": ["Knowledge"]
+      },
+      {
+        "name": "Silvanus",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Oak tree",
+        "portfolio": "Nature, Forests",
+        "domains": ["Life", "Nature", "Twilight"]
+      },
+      {
+        "name": "Taranis",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Lightning bolt",
+        "portfolio": "Storms",
+        "domains": ["Sky", "Tempest"]
+      }
+    ]
+  },
+  {
+    "name": "Ysgardian Pantheon",
+    "gods": [
+      {
+        "name": "Odin",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Blue eye",
+        "portfolio": "Knowledge, Magic",
+        "domains": ["Arcana", "Knowledge", "War"]
+      },
+      {
+        "name": "Aegir",
+        "gender": "Male",
+        "alignment": "NE",
+        "symbol": "Ocean waves",
+        "portfolio": "Sea, Storms",
+        "domains": ["Tempest"]
+      },
+      {
+        "name": "Baldr",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Gem-encrusted chalice",
+        "portfolio": "Beauty, Poetry",
+        "domains": ["Beauty", "Life", "Light", "Luck"]
+      },
+      {
+        "name": "Forseti",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Head of a bearded man",
+        "portfolio": "Justice, Law",
+        "domains": ["Light", "Order", "War"]
+      },
+      {
+        "name": "Freyja",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Falcon",
+        "portfolio": "Love",
+        "domains": ["Beauty", "Life"]
+      },
+      {
+        "name": "Freyr",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Blue greatsword",
+        "portfolio": "Fertility",
+        "domains": ["Beauty", "Life", "Light"]
+      },
+      {
+        "name": "Frigg",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "Cat",
+        "portfolio": "Birth",
+        "domains": ["Beauty", "Life", "Light"]
+      },
+      {
+        "name": "Heimdall",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "Curling horn",
+        "portfolio": "Loyalty, Vigilance",
+        "domains": ["Light", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Hel",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "Woman's face, rotting on one side",
+        "portfolio": "Death",
+        "domains": ["Death", "Grave"]
+      },
+      {
+        "name": "Hermod",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Winged scroll",
+        "portfolio": "Luck",
+        "domains": ["Luck", "Trickery"]
+      },
+      {
+        "name": "Loki",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Flame",
+        "portfolio": "Mischief",
+        "domains": ["Trickery", "Twilight"]
+      },
+      {
+        "name": "Njord",
+        "gender": "Male",
+        "alignment": "NG",
+        "symbol": "Gold coin",
+        "portfolio": "Air",
+        "domains": ["Nature", "Sky", "Tempest"]
+      },
+      {
+        "name": "Odur",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Sun",
+        "portfolio": "Light, Sun",
+        "domains": ["Light"]
+      },
+      {
+        "name": "Sif",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Sword",
+        "portfolio": "War",
+        "domains": ["Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Skadi",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "Mountain",
+        "portfolio": "Earth, Mountains",
+        "domains": ["Nature", "Protection"]
+      },
+      {
+        "name": "Surtr",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Flaming sword",
+        "portfolio": "Destruction, Fire Giants",
+        "domains": ["Apocalypse", "Forge", "Strength", "War"]
+      },
+      {
+        "name": "Þorr",
+        "gender": "Male",
+        "alignment": "CG",
+        "symbol": "Hammer",
+        "portfolio": "Thunder",
+        "domains": ["Sky", "Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Þrym",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Double-bladed axe",
+        "portfolio": "Frost Giants, Winter",
+        "domains": ["Strength", "War", "Winter"]
+      },
+      {
+        "name": "Tyr",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "Sword",
+        "portfolio": "Courage, Strategy",
+        "domains": ["Knowledge", "Protection", "Steel", "Strength", "War"]
+      },
+      {
+        "name": "Uller",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Longbow",
+        "portfolio": "Hunting",
+        "domains": ["Nature"]
+      }
+    ]
+  }
+]
