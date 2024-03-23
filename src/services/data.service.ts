@@ -245,6 +245,7 @@ export class DataService {
     savant: 'school',
     shaman: 'crystal-ball',
     sorcerer: 'creation',
+    summoner: 'account-group',
     troubadour: 'violin',
     vessel: 'account-child',
     warlock: 'pentagram',
