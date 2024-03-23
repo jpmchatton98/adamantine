@@ -12421,5 +12421,120 @@
       "name": "Holy Fists",
       "description": "As a bonus action, you can utter a prayer of power to imbue your fists with divine justice. For 1 minute, or until you are incapacitated, your unarmed strikes deal radiant damage in place of the normal bludgeoning damage, and they score a critical hit on a roll of 19-20 on the d20."
     }
+  ],
+  "artificial-evolutions": [
+    {
+      "name": "Aquatic",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature can breathe water as well as air, and gains a swimming speed equal to its highest existing speed."
+    },
+    {
+      "name": "Armored",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature's Armor Class is increased by 1. This evolution can be applied to a creature multiple times, up to a maximum of four times."
+    },
+    {
+      "name": "Blindsense",
+      "description": "<strong>EP Cost: 2</strong></p><p>The summoned creature gains blindsight out to 60 feet."
+    },
+    {
+      "name": "Ferocious",
+      "description": "<strong>EP Cost: 4</strong></p><p>Whenever the summoned creature takes the Attack action, it can make an additional attack with a natural weapon."
+    },
+    {
+      "name": "Forceful",
+      "description": "<strong>EP Cost: 2</strong></p><p>Once per turn, when the summoned creature hits a creature with a melee attack, the target must succeed on a Strength saving throw against your spell save DC or be knocked prone."
+    },
+    {
+      "name": "Keen Sense",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature has advantage on Wisdom (Perception) checks relying on one sense from hearing, sight, or smell. This evolution can be applied to a creature multiple times, and you must choose a different sense each time."
+    },
+    {
+      "name": "Long Reach",
+      "description": "<strong>EP Cost: 2</strong></p><p>The reach of the summoned creature's melee attacks is increased by 5 feet."
+    },
+    {
+      "name": "Minor Magic",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summon can cast a cantrip that you know, using your spellcasting ability."
+    },
+    {
+      "name": "Mobile",
+      "description": "<strong>EP Cost: 2</strong></p><p>One of the summoned creature's speeds is increased by 10 feet. This evolution can be applied to a creature multiple times."
+    },
+    {
+      "name": "Mountable",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature is reshaped into a form suitable for a steed. The summoned creature must be at least one size category larger than you."
+    },
+    {
+      "name": "Mountainous",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature gains a climbing speed equal to its highest existing speed."
+    },
+    {
+      "name": "Nocturnal",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature gains darkvision out to 60 feet."
+    },
+    {
+      "name": "Resilient",
+      "description": "<strong>EP Cost: 2</strong></p><p>The summoned creature gains proficiency in one saving throw of your choice. This evolution can be applied to a creature multiple times, and you must choose a different saving throw each time."
+    },
+    {
+      "name": "Skilled",
+      "description": "<strong>EP Cost: 1</strong></p><p>The summoned creature gains proficiency in one skill of your choice. This evolution can be applied to a creature multiple times, and you must choose a different skill each time."
+    },
+    {
+      "name": "Subterranean",
+      "description": "<strong>EP Cost: 3</strong></p><p>The summoned creature gains a burrowing speed equal to its highest existing speed."
+    },
+    {
+      "name": "Tremorsense",
+      "description": "<strong>EP Cost: 2</strong></p><p>The summoned creature gains tremorsense out to 30 feet."
+    },
+    {
+      "name": "Venomous",
+      "description": "<strong>EP Cost: 2</strong></p><p>Once per turn, when the summoned creature hits a creature with a melee attack, the target must succeed on a Constitution saving throw against your spell save DC.  On a failed save, they take poison damage equal to your Summoner level."
+    },
+    {
+      "name": "Aerial",
+      "prereqLevel": 6,
+      "description": "<strong>EP Cost: 2</strong></p><p>The summoned creature gains a flying speed equal to its highest existing speed."
+    },
+    {
+      "name": "Elemental Resistance",
+      "prereqLevel": 6,
+      "description": "<strong>EP Cost: 3</strong></p><p>The summoned creature gains resistance to one damage type of your choice from acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder. This evolution can be applied to a creature multiple times, and you must choose a different damage type each time."
+    },
+    {
+      "name": "Greater Magic",
+      "prereqLevel": 6,
+      "description": "<strong>EP Cost: 2</strong></p><p>The summon can cast a 1st-level spell that you know, using your spellcasting ability.  It can cast the spell a number of times equal to your Wisdom modifier (minimum of once)."
+    },
+    {
+      "name": "Hardy",
+      "prereqLevel": 6,
+      "description": "<strong>EP Cost: 2</strong></p><p>The summoned creature gains immunity to one condition of your choice. This evolution can be applied to a creature multiple times, and you must choose a different condition each time."
+    },
+    {
+      "name": "Physical Resistance",
+      "prereqLevel": 6,
+      "description": "<strong>EP Cost: 4</strong></p><p>The summoned creature gains resistance to bludgeoning, piercing, and slashing damage from nonmagical sources."
+    },
+    {
+      "name": "Advanced Magic",
+      "prereqLevel": 12,
+      "description": "<strong>EP Cost: 3</strong></p><p>The summon can cast a 2nd-level spell that you know once, using your spellcasting ability."
+    },
+    {
+      "name": "Regenerative",
+      "prereqLevel": 12,
+      "description": "<strong>EP Cost: 4</strong></p><p>The summoned creature regains 1d10 hit points at the start of each of its turns. If the summoned creature takes damage from a magical source that they do not have resistance to, this trait doesn't function until the end of their next turn."
+    },
+    {
+      "name": "Truesight",
+      "prereqLevel": 12,
+      "description": "<strong>EP Cost: 4</strong></p><p>The summoned creature gains truesight out to 30 feet."
+    },
+    {
+      "name": "Warded",
+      "prereqLevel": 12,
+      "description": "<strong>EP Cost: 4</strong></p><p>The summoned creature has advantage on saving throws against spells and other magical effects."
+    }
   ]
 }

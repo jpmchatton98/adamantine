@@ -8,7 +8,7 @@
         "alignment": "N",
         "symbol": "Cloud",
         "portfolio": "Air, Movement",
-        "domains": ["Sky", "Tempest"]
+        "domains": ["Sky", "Tempest", "Travel"]
       },
       {
         "name": "Auril",
@@ -56,7 +56,7 @@
         "alignment": "NE",
         "symbol": "Lobster head",
         "portfolio": "Kuo-toa",
-        "domains": ["Death", "Protection"]
+        "domains": ["Death", "Protection", "Sea"]
       },
       {
         "name": "Chauntea",
@@ -88,7 +88,7 @@
         "alignment": "N",
         "symbol": "Whirlpool",
         "portfolio": "Merfolk, Locathah, Tritons",
-        "domains": ["Tempest"]
+        "domains": ["Tempest", "Sea"]
       },
       {
         "name": "Eldath",
@@ -96,7 +96,7 @@
         "alignment": "NG",
         "symbol": "Waterfall",
         "portfolio": "Peace",
-        "domains": ["Nature", "Hope", "Life", "Peace"]
+        "domains": ["Nature", "Hope", "Life", "Peace", "Sea"]
       },
       {
         "name": "Gond",
@@ -112,7 +112,7 @@
         "alignment": "N",
         "symbol": "Mountain",
         "portfolio": "Earth, Solidity",
-        "domains": ["Protection", "Strength"]
+        "domains": ["Protection", "Strength", "Mountain"]
       },
       {
         "name": "Gwaeron",
@@ -120,7 +120,7 @@
         "alignment": "NG",
         "symbol": "A paw print with a star at its center",
         "portfolio": "Tracking",
-        "domains": ["Nature"]
+        "domains": ["Nature", "Travel"]
       },
       {
         "name": "Gzemnid",
@@ -176,7 +176,7 @@
         "alignment": "N",
         "symbol": "Wave",
         "portfolio": "Purification, Water",
-        "domains": ["Hope", "Light", "Peace"]
+        "domains": ["Hope", "Light", "Peace", "Sea"]
       },
       {
         "name": "Jergal",
@@ -184,7 +184,7 @@
         "alignment": "LN",
         "symbol": "Skull and quill on a scroll",
         "portfolio": "Burial",
-        "domains": ["Death", "Grave", "Knowledge"]
+        "domains": ["Death", "Grave", "Knowledge", "Travel"]
       },
       {
         "name": "Kelemvor",
@@ -192,7 +192,7 @@
         "alignment": "LN",
         "symbol": "Skeletal arm holding a scale",
         "portfolio": "The Dead",
-        "domains": ["Death", "Grave"]
+        "domains": ["Death", "Grave", "Travel"]
       },
       {
         "name": "Kossuth",
@@ -208,7 +208,7 @@
         "alignment": "LE",
         "symbol": "A gnome skull",
         "portfolio": "Kobolds, Trapmaking",
-        "domains": ["Sky", "War"]
+        "domains": ["Sky", "War", "Mountain"]
       },
       {
         "name": "Lathander",
@@ -216,7 +216,7 @@
         "alignment": "NG",
         "symbol": "Road traveling into a sunrise",
         "portfolio": "Birth, Renewal",
-        "domains": ["Hope", "Life", "Light", "Peace"]
+        "domains": ["Hope", "Life", "Light", "Peace", "Travel"]
       },
       {
         "name": "Leira",
@@ -256,7 +256,7 @@
         "alignment": "CE",
         "symbol": "Clawed paw",
         "portfolio": "Hunting",
-        "domains": ["Nature"]
+        "domains": ["Nature", "Travel"]
       },
       {
         "name": "Mask",
@@ -264,7 +264,7 @@
         "alignment": "CN",
         "symbol": "Black thief's mask",
         "portfolio": "Thieves",
-        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+        "domains": ["Night", "Shadow", "Trickery", "Twilight", "Travel"]
       },
       {
         "name": "Mielikki",
@@ -280,7 +280,7 @@
         "alignment": "NG",
         "symbol": "Harp made of leaves",
         "portfolio": "Poetry, Song",
-        "domains": ["Beauty", "Light", "Peace"]
+        "domains": ["Beauty", "Light", "Peace", "Travel"]
       },
       {
         "name": "Myrkul",
@@ -328,7 +328,7 @@
         "alignment": "CG",
         "symbol": "Pan flute",
         "portfolio": "Minotaurs, Satyrs, Taurians",
-        "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight"]
+        "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight", "Travel"]
       },
       {
         "name": "Qhungiks",
@@ -352,7 +352,7 @@
         "alignment": "NG",
         "symbol": "Head of an eagle",
         "portfolio": "Aarakocra, Eagles",
-        "domains": ["Sky", "Tempest"]
+        "domains": ["Sky", "Tempest", "Mountain"]
       },
       {
         "name": "Savras",
@@ -368,7 +368,7 @@
         "alignment": "LE",
         "symbol": "Shark",
         "portfolio": "Praedaren, Sahuagin, Sharks",
-        "domains": ["Nature", "Tempest"]
+        "domains": ["Nature", "Tempest", "Sea"]
       },
       {
         "name": "Selûne",
@@ -376,7 +376,7 @@
         "alignment": "CG",
         "symbol": "Eyes surrounded by seven stars",
         "portfolio": "Moon",
-        "domains": ["Hope", "Knowledge", "Light", "Peace", "Twlight"]
+        "domains": ["Hope", "Knowledge", "Light", "Peace", "Twlight", "Sea"]
       },
       {
         "name": "Semuanya",
@@ -408,7 +408,7 @@
         "alignment": "CN",
         "symbol": "A path drawn on a map",
         "portfolio": "Travel",
-        "domains": ["Knowledge"]
+        "domains": ["Luck", "Knowledge", "Travel"]
       },
       {
         "name": "Silvanus",
@@ -416,7 +416,7 @@
         "alignment": "N",
         "symbol": "Oak leaf",
         "portfolio": "Wilderness",
-        "domains": ["Life", "Nature", "Twilight"]
+        "domains": ["Life", "Nature", "Twilight", "Travel"]
       },
       {
         "name": "Sseth",
@@ -495,7 +495,7 @@
         "alignment": "CE",
         "symbol": "Kraken",
         "portfolio": "Sea",
-        "domains": ["Apocalypse", "Nature", "Tempest"]
+        "domains": ["Apocalypse", "Nature", "Tempest", "Sea"]
       },
       {
         "name": "Valkur",
@@ -503,7 +503,7 @@
         "alignment": "CG",
         "symbol": "The helm of a ship",
         "portfolio": "Sailors",
-        "domains": ["Knowledge"]
+        "domains": ["Knowledge", "Travel", "Sea"]
       },
       {
         "name": "Waukeen",
@@ -511,7 +511,7 @@
         "alignment": "N",
         "symbol": "Face-up coin",
         "portfolio": "Trade",
-        "domains": ["Knowledge", "Order", "Trickery"]
+        "domains": ["Knowledge", "Order", "Trickery", "Travel"]
       },
       {
         "name": "Yondalla",
@@ -540,7 +540,7 @@
         "alignment": "CE",
         "symbol": "Opened fangs",
         "portfolio": "Caves, Hunger",
-        "domains": ["Madness", "Night", "Shadow", "Strength", "War"]
+        "domains": ["Madness", "Night", "Shadow", "Strength", "War", "Mountain"]
       },
       {
         "name": "Beory",
@@ -556,7 +556,7 @@
         "alignment": "NG",
         "symbol": "A sheaf of wheat",
         "portfolio": "Community, Motherhood",
-        "domains": ["Hope", "Life", "Peace"]
+        "domains": ["Hope", "Life", "Peace", "Travel"]
       },
       {
         "name": "Boccob",
@@ -572,7 +572,7 @@
         "alignment": "N",
         "symbol": "Arc of seven stars",
         "portfolio": "Stars",
-        "domains": ["Eldritch", "Knowledge", "Light", "Night"]
+        "domains": ["Eldritch", "Knowledge", "Light", "Night", "Travel"]
       },
       {
         "name": "Cuthbert",
@@ -604,7 +604,7 @@
         "alignment": "NG",
         "symbol": "Circle crossed by a curved line",
         "portfolio": "Horizons, Travel",
-        "domains": ["Knowledge", "Protection", "Trickery"]
+        "domains": ["Knowledge", "Protection", "Trickery", "Travel", "Sea"]
       },
       {
         "name": "Heironeous",
@@ -652,7 +652,7 @@
         "alignment": "N",
         "symbol": "Volcano",
         "portfolio": "Fire, Wrath",
-        "domains": ["Forge", "Strength", "War"]
+        "domains": ["Forge", "Strength", "War", "Mountain"]
       },
       {
         "name": "Kord",
@@ -692,7 +692,7 @@
         "alignment": "N",
         "symbol": "Oak leaf and acorn",
         "portfolio": "Freedom, Hunting",
-        "domains": ["Hope", "Nature", "Peace"]
+        "domains": ["Hope", "Nature", "Peace", "Travel"]
       },
       {
         "name": "Olidammara",
@@ -700,7 +700,7 @@
         "alignment": "CN",
         "symbol": "Laughing mask",
         "portfolio": "Revelry",
-        "domains": ["Beauty", "Hope", "Luck", "Peace", "Trickery"]
+        "domains": ["Beauty", "Hope", "Luck", "Peace", "Trickery", "Travel"]
       },
       {
         "name": "Pelor",
@@ -716,7 +716,7 @@
         "alignment": "LG",
         "symbol": "Silver sun and full moon",
         "portfolio": "Law, Light",
-        "domains": ["Inquisition", "Judgement", "Light", "Order"]
+        "domains": ["Inquisition", "Judgement", "Light", "Order", "Sea"]
       },
       {
         "name": "Procan",
@@ -724,7 +724,7 @@
         "alignment": "CN",
         "symbol": "A trident on a wave",
         "portfolio": "Water, Weather",
-        "domains": ["Apocalypse", "Nature", "Sky", "Tempest"]
+        "domains": ["Apocalypse", "Nature", "Sky", "Tempest", "Sea"]
       },
       {
         "name": "Ralishaz",
@@ -756,7 +756,7 @@
         "alignment": "CG",
         "symbol": "Triskelion",
         "portfolio": "Liberty, Retribution",
-        "domains": ["Hope", "Protection", "War"]
+        "domains": ["Hope", "Protection", "War", "Travel"]
       },
       {
         "name": "Ulaa",
@@ -764,7 +764,7 @@
         "alignment": "LG",
         "symbol": "Mountain with a circle at its center",
         "portfolio": "Hills, Mountains",
-        "domains": ["Life", "Order", "War"]
+        "domains": ["Life", "Order", "War", "Mountain"]
       },
       {
         "name": "Vecna",
@@ -803,7 +803,7 @@
         "alignment": "LN",
         "symbol": "Hands clutching a bag of gold",
         "portfolio": "Prestige, Wealth",
-        "domains": ["Forge", "Luck", "Order", "Trickery"]
+        "domains": ["Forge", "Luck", "Order", "Trickery", "Travel", "Mountain"]
       }
     ]
   },
@@ -816,7 +816,7 @@
         "alignment": "NG",
         "symbol": "Harp",
         "portfolio": "Music",
-        "domains": ["Beauty", "Light", "Luck", "Trickery"]
+        "domains": ["Beauty", "Light", "Luck", "Trickery", "Travel"]
       },
       {
         "name": "Chemosh",
@@ -848,7 +848,7 @@
         "alignment": "NG",
         "symbol": "Blue bird",
         "portfolio": "Animals, Sea",
-        "domains": ["Nature", "Tempest"]
+        "domains": ["Nature", "Tempest", "Sea"]
       },
       {
         "name": "Hiddukel",
@@ -856,7 +856,7 @@
         "alignment": "CE",
         "symbol": "Broken scales",
         "portfolio": "Greed, Lies",
-        "domains": ["Luck", "Night", "Shadow", "Trickery"]
+        "domains": ["Luck", "Night", "Shadow", "Trickery", "Mountain"]
       },
       {
         "name": "Kiri-Jolith",
@@ -936,7 +936,7 @@
         "alignment": "N",
         "symbol": "Griffon's wing",
         "portfolio": "Trade, Wealth",
-        "domains": ["Knowledge", "Luck", "Trickery"]
+        "domains": ["Knowledge", "Luck", "Trickery", "Travel", "Mountain"]
       },
       {
         "name": "Sirrion",
@@ -944,7 +944,7 @@
         "alignment": "N",
         "symbol": "Multicolored fire",
         "portfolio": "Change",
-        "domains": ["Luck", "Nature", "Trickery", "Twilight"]
+        "domains": ["Luck", "Nature", "Trickery", "Twilight", "Travel"]
       },
       {
         "name": "Solinari",
@@ -968,7 +968,7 @@
         "alignment": "CE",
         "symbol": "Turtle shell",
         "portfolio": "Storms",
-        "domains": ["Apocalypse", "Sky", "Tempest"]
+        "domains": ["Apocalypse", "Sky", "Tempest", "Sea"]
       },
       {
         "name": "Zivilyn",
@@ -1005,7 +1005,7 @@
         "alignment": "N",
         "symbol": "Pair of antlers",
         "portfolio": "Beasts, Hunting",
-        "domains": ["Life", "Nature"]
+        "domains": ["Life", "Nature", "Travel"]
       },
       {
         "name": "Boldrei",
@@ -1013,7 +1013,7 @@
         "alignment": "LG",
         "symbol": "Fire in a stone hearth",
         "portfolio": "Community, Home",
-        "domains": ["Hope", "Life", "Peace"]
+        "domains": ["Hope", "Life", "Peace", "Travel"]
       },
       {
         "name": "Devourer",
@@ -1045,7 +1045,7 @@
         "alignment": "N",
         "symbol": "A globe",
         "portfolio": "Creation",
-        "domains": ["Forge", "Nature", "Protection"]
+        "domains": ["Forge", "Nature", "Protection", "Sea", "Mountain"]
       },
       {
         "name": "Fury",
@@ -1061,7 +1061,7 @@
         "alignment": "NE",
         "symbol": "Fang-shaped dragonshard",
         "portfolio": "Death, Greed",
-        "domains": ["Death", "Luck", "Trickery"]
+        "domains": ["Death", "Luck", "Trickery", "Mountain"]
       },
       {
         "name": "Khyber",
@@ -1077,7 +1077,7 @@
         "alignment": "N",
         "symbol": "Nine-sided gold coin",
         "portfolio": "Trade, Wealth",
-        "domains": ["Luck", "Order", "Trickery"]
+        "domains": ["Luck", "Order", "Trickery", "Travel", "Mountain"]
       },
       {
         "name": "Mockery",
@@ -1133,7 +1133,7 @@
         "alignment": "CN",
         "symbol": "Four crossed bones",
         "portfolio": "Change, Chaos",
-        "domains": ["Madness", "Knowledge", "Luck", "Trickery"]
+        "domains": ["Madness", "Knowledge", "Luck", "Trickery", "Travel"]
       }
     ]
   },
@@ -1146,22 +1146,22 @@
         "alignment": "N",
         "symbol": "An iridescent sphere",
         "portfolio": "Creation",
-        "domains": ["Knowledge"]
+        "domains": ["Knowledge", "Sea", "Mountain"]
       },
       {
         "name": "Ashardalon",
         "gender": "Male",
         "alignment": "CG",
         "symbol": "A heart-shaped star",
-        "portfolio": "Light, solar dragons",
-        "domains": ["Eldritch", "Light"]
+        "portfolio": "Light, Solar Dragons, Travel",
+        "domains": ["Eldritch", "Light", "Travel"]
       },
       {
         "name": "Bahamut",
         "gender": "Male",
         "alignment": "LG",
         "symbol": "A dragon's head in profile",
-        "portfolio": "Metallic dragons, good",
+        "portfolio": "Good, Metallic Dragons",
         "domains": ["Metallic", "Steel", "War"]
       },
       {
@@ -1169,7 +1169,7 @@
         "gender": "Male",
         "alignment": "CE",
         "symbol": "A burning dragon's claw",
-        "portfolio": "Destruction, fire, red dragons",
+        "portfolio": "Destruction, Fire, Red Dragons",
         "domains": ["Apocalypse", "Forge"]
       },
       {
@@ -1193,7 +1193,7 @@
         "gender": "Male",
         "alignment": "CN",
         "symbol": "An apple pie",
-        "portfolio": "Faerie dragons, mischief",
+        "portfolio": "Faerie Dragons, Mischief",
         "domains": ["Beauty", "Hope", "Trickery", "Twilight"]
       },
       {
@@ -1201,7 +1201,7 @@
         "gender": "Agender",
         "alignment": "NE",
         "symbol": "The skull of a dragon",
-        "portfolio": "Death, dracoliches, shadow dragons",
+        "portfolio": "Death, Dracoliches, Shadow Dragons",
         "domains": ["Death", "Grave", "Night", "Shadow"]
       },
       {
@@ -1209,7 +1209,7 @@
         "gender": "Male",
         "alignment": "LN",
         "symbol": "An eye-shaped emerald",
-        "portfolio": "Sight, contemplation, emerald dragons",
+        "portfolio": "Contemplation, Emerald Dragons, Sight",
         "domains": ["Knowledge", "Light"]
       },
       {
@@ -1217,7 +1217,7 @@
         "gender": "Female",
         "alignment": "CN",
         "symbol": "A frozen manacle",
-        "portfolio": "Pain, suspicion, white dragons",
+        "portfolio": "Pain, Suspicion, White Dragons",
         "domains": ["Judgement", "Pain", "Sorrow", "Winter"]
       },
       {
@@ -1225,7 +1225,7 @@
         "gender": "Male",
         "alignment": "CN",
         "symbol": "A star-shaped ruby",
-        "portfolio": "Gem dragons, psionics",
+        "portfolio": "Gem Dragons, Psionics",
         "domains": ["Eldritch", "Luck"]
       },
       {
@@ -1233,7 +1233,7 @@
         "gender": "Female",
         "alignment": "NG",
         "symbol": "A white starburst on black",
-        "portfolio": "Life, mercy",
+        "portfolio": "Life, Mercy",
         "domains": ["Hope", "Life", "Metallic", "Peace"]
       },
       {
@@ -1241,15 +1241,15 @@
         "gender": "Male",
         "alignment": "LE",
         "symbol": "A pile of five coins, each coin stamped with a dragon's head in profile",
-        "portfolio": "Greed, wealth",
-        "domains": ["Beauty", "Forge", "Luck"]
+        "portfolio": "Greed, Wealth",
+        "domains": ["Beauty", "Forge", "Luck", "Travel", "Mountain"]
       },
       {
         "name": "Tiamat",
         "gender": "Female",
         "alignment": "LE",
         "symbol": "The heads of all five species of chromatic dragons",
-        "portfolio": "Chromatic dragons, wyverns, evil",
+        "portfolio": "Chromatic Dragons, Evil, Wyverns",
         "domains": ["Apocalypse", "Trickery"]
       }
     ]
@@ -1271,7 +1271,7 @@
         "alignment": "CG",
         "symbol": "Bird on a cloud",
         "portfolio": "Air, Weather",
-        "domains": ["Nature", "Sky", "Tempest"]
+        "domains": ["Nature", "Sky", "Tempest", "Travel"]
       },
       {
         "name": "Alathrien",
@@ -1311,7 +1311,7 @@
         "alignment": "LN",
         "symbol": "Flame held in hands",
         "portfolio": "Earth, Fire, Metal",
-        "domains": ["Forge", "Protection", "Steel"]
+        "domains": ["Forge", "Protection", "Steel", "Mountain"]
       },
       {
         "name": "Erevan",
@@ -1319,7 +1319,7 @@
         "alignment": "CN",
         "symbol": "Asymmetric starburst",
         "portfolio": "Change, Mischief",
-        "domains": ["Trickery"]
+        "domains": ["Trickery", "Travel"]
       },
       {
         "name": "Felarathael",
@@ -1335,7 +1335,7 @@
         "alignment": "CN",
         "symbol": "Eyes surrounded by darkness",
         "portfolio": "Outcasts",
-        "domains": ["Pain", "Sorrow"]
+        "domains": ["Pain", "Sorrow", "Travel"]
       },
       {
         "name": "Hanali",
@@ -1423,7 +1423,7 @@
         "alignment": "CG",
         "symbol": "Three waves",
         "portfolio": "Fairies, Water",
-        "domains": ["Tempest"]
+        "domains": ["Tempest", "Sea"]
       },
       {
         "name": "Sashelas",
@@ -1431,7 +1431,7 @@
         "alignment": "CG",
         "symbol": "Dolphin",
         "portfolio": "Sea",
-        "domains": ["Nature", "Tempest"]
+        "domains": ["Nature", "Tempest", "Sea"]
       },
       {
         "name": "Sehanine",
@@ -1439,7 +1439,7 @@
         "alignment": "CG",
         "symbol": "Full moon",
         "portfolio": "Dreams, Moon, Travel",
-        "domains": ["Light", "Night", "Shadow"]
+        "domains": ["Light", "Night", "Shadow", "Travel", "Sea"]
       },
       {
         "name": "Shevarash",
@@ -1455,7 +1455,7 @@
         "alignment": "CG",
         "symbol": "Silver arrow with green fletching",
         "portfolio": "Archery, Hunting",
-        "domains": ["Knowledge", "Nature"]
+        "domains": ["Knowledge", "Nature", "Travel"]
       },
       {
         "name": "Tarsellis",
@@ -1463,7 +1463,7 @@
         "alignment": "CN",
         "symbol": "Mountain",
         "portfolio": "Mountains, Rivers",
-        "domains": ["Nature", "Protection"]
+        "domains": ["Nature", "Protection", "Sea", "Mountain"]
       },
       {
         "name": "Tethrin",
@@ -1492,7 +1492,14 @@
         "alignment": "CE",
         "symbol": "Spider",
         "portfolio": "Darkness, Drow, Spiders",
-        "domains": ["Death", "Night", "Shadow", "Trickery", "Twilight"]
+        "domains": [
+          "Death",
+          "Night",
+          "Shadow",
+          "Trickery",
+          "Twilight",
+          "Mountain"
+        ]
       },
       {
         "name": "Elistraee",
@@ -1500,7 +1507,7 @@
         "alignment": "CG",
         "symbol": "Dancer before a full moon",
         "portfolio": "Beauty, Dance, Freedom, Moon, Hunting, Song",
-        "domains": ["Beauty", "Light"]
+        "domains": ["Beauty", "Light", "Travel", "Sea"]
       },
       {
         "name": "Ghaunadaur",
@@ -1508,7 +1515,7 @@
         "alignment": "CE",
         "symbol": "Purple eye",
         "portfolio": "Oozes, Outcasts, Rebels, Underdark",
-        "domains": ["Night", "Shadow"]
+        "domains": ["Night", "Shadow", "Travel"]
       },
       {
         "name": "Kiaransalee",
@@ -1540,7 +1547,7 @@
         "alignment": "CE",
         "symbol": "Black mask with blue glasses",
         "portfolio": "Arrogance, Masculinity, Surface, Thieves",
-        "domains": ["Trickery"]
+        "domains": ["Trickery", "Travel"]
       },
       {
         "name": "Zinzerena",
@@ -1553,7 +1560,7 @@
     ]
   },
   {
-    "name": "Morndinsamman (Dwarvish Pantheon)",
+    "name": "Mordinsamman (Dwarvish Pantheon)",
     "gods": [
       {
         "name": "Moradin",
@@ -1561,7 +1568,7 @@
         "alignment": "LG",
         "symbol": "Hammer and anvil",
         "portfolio": "Creation, Dwarves",
-        "domains": ["Forge", "Knowledge"]
+        "domains": ["Forge", "Knowledge", "Mountain"]
       },
       {
         "name": "Abbathor",
@@ -1569,7 +1576,7 @@
         "alignment": "NE",
         "symbol": "Jeweled dagger",
         "portfolio": "Greed",
-        "domains": ["Luck", "Trickery"]
+        "domains": ["Luck", "Trickery", "Mountain"]
       },
       {
         "name": "Berronar",
@@ -1577,7 +1584,7 @@
         "alignment": "LG",
         "symbol": "Intertwined rings",
         "portfolio": "Hearth, Home",
-        "domains": ["Hope", "Life", "Peace", "Protection"]
+        "domains": ["Hope", "Life", "Peace", "Protection", "Travel"]
       },
       {
         "name": "Clangeddin",
@@ -1601,7 +1608,7 @@
         "alignment": "CG",
         "symbol": "Open book",
         "portfolio": "Discovery, Invention, Scholarship",
-        "domains": ["Forge", "Knowledge"]
+        "domains": ["Forge", "Knowledge", "Travel"]
       },
       {
         "name": "Dumathoin",
@@ -1609,7 +1616,7 @@
         "alignment": "N",
         "symbol": "Mountain with a central gemstone",
         "portfolio": "Exploration, Gems, Mining",
-        "domains": ["Luck"]
+        "domains": ["Luck", "Travel", "Mountain"]
       },
       {
         "name": "Gorm",
@@ -1633,7 +1640,7 @@
         "alignment": "CN",
         "symbol": "Beer stein",
         "portfolio": "Alcohol, Music",
-        "domains": ["Beauty", "Life", "Peace", "Trickery"]
+        "domains": ["Beauty", "Life", "Peace", "Trickery", "Travel"]
       },
       {
         "name": "Laduguer",
@@ -1641,7 +1648,7 @@
         "alignment": "LE",
         "symbol": "Broken arrow",
         "portfolio": "Duergar, Magic",
-        "domains": ["Arcana", "Night", "Shadow"]
+        "domains": ["Arcana", "Night", "Shadow", "Mountain"]
       },
       {
         "name": "Marthammor",
@@ -1649,7 +1656,7 @@
         "alignment": "NG",
         "symbol": "Mace in front of a boot",
         "portfolio": "Travel",
-        "domains": ["Knowledge", "Protection"]
+        "domains": ["Knowledge", "Protection", "Travel"]
       },
       {
         "name": "Sharindlar",
@@ -1665,7 +1672,7 @@
         "alignment": "CG",
         "symbol": "Two clawed gauntlets",
         "portfolio": "Hunting, Nature",
-        "domains": ["Knowledge", "Nature"]
+        "domains": ["Knowledge", "Nature", "Travel"]
       },
       {
         "name": "Tharmekhûl",
@@ -1681,7 +1688,7 @@
         "alignment": "N",
         "symbol": "Gold coin",
         "portfolio": "Trickery, Wealth",
-        "domains": ["Luck", "Order", "Trickery"]
+        "domains": ["Luck", "Order", "Trickery", "Travel", "Mountain"]
       }
     ]
   },
@@ -1694,7 +1701,7 @@
         "alignment": "N",
         "symbol": "Four-toothed cog",
         "portfolio": "Craft, Gnomes",
-        "domains": ["Forge", "Knowledge"]
+        "domains": ["Forge", "Knowledge", "Mountain"]
       },
       {
         "name": "Baervan",
@@ -1702,7 +1709,7 @@
         "alignment": "NG",
         "symbol": "Face of a raccoon",
         "portfolio": "Nature, Travel",
-        "domains": ["Knowledge", "Nature"]
+        "domains": ["Knowledge", "Nature", "Travel"]
       },
       {
         "name": "Baravar",
@@ -1718,7 +1725,7 @@
         "alignment": "N",
         "symbol": "Golden signet ring",
         "portfolio": "Mining, Stone, Svirfneblin",
-        "domains": ["Night", "Shadow"]
+        "domains": ["Night", "Shadow", "Mountain"]
       },
       {
         "name": "Flandal",
@@ -1742,7 +1749,7 @@
         "alignment": "LG",
         "symbol": "Gold nugget",
         "portfolio": "Gems, Humor, Luck",
-        "domains": ["Beauty", "Light", "Luck"]
+        "domains": ["Beauty", "Light", "Luck", "Mountain"]
       },
       {
         "name": "Segojan",
@@ -1750,7 +1757,7 @@
         "alignment": "NG",
         "symbol": "Glowing gemstone",
         "portfolio": "Death, Earth, Underdark",
-        "domains": ["Death", "Grave", "Night", "Shadow"]
+        "domains": ["Death", "Grave", "Night", "Shadow", "Mountain"]
       },
       {
         "name": "Urdlen",
@@ -1795,7 +1802,7 @@
         "alignment": "LE",
         "symbol": "Cave bear",
         "portfolio": "Caverns, Fertility, Healing, Witchery",
-        "domains": ["Arcana", "Life", "Protection"]
+        "domains": ["Arcana", "Life", "Protection", "Mountain"]
       },
       {
         "name": "Shargaas",
@@ -1803,7 +1810,7 @@
         "alignment": "NE",
         "symbol": "Red crescent moon",
         "portfolio": "Darkness, Night, Stealth, Thieves, Trickery",
-        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+        "domains": ["Night", "Shadow", "Trickery", "Twilight", "Travel"]
       },
       {
         "name": "Yurtus",
@@ -1824,7 +1831,7 @@
         "alignment": "LN",
         "symbol": "Two hands, wrists crossed with fingers pointing down",
         "portfolio": "Fertility, Learning, Magic",
-        "domains": ["Arcana", "Knowledge", "Life"]
+        "domains": ["Arcana", "Knowledge", "Life", "Sea", "Mountain"]
       },
       {
         "name": "Diancastra",
@@ -1840,7 +1847,7 @@
         "alignment": "CE",
         "symbol": "Wooden club",
         "portfolio": "Combat, Hill Giants, Hunger",
-        "domains": ["Strength", "War"]
+        "domains": ["Strength", "War", "Mountain"]
       },
       {
         "name": "Hiatea",
@@ -1880,7 +1887,7 @@
         "alignment": "CN",
         "symbol": "Mountain",
         "portfolio": "Motherhood",
-        "domains": ["Hope", "Life", "Peace", "Protection"]
+        "domains": ["Hope", "Life", "Peace", "Protection", "Mountain"]
       },
       {
         "name": "Skoraeus",
@@ -1888,7 +1895,7 @@
         "alignment": "N",
         "symbol": "Stalactite",
         "portfolio": "Artwork, Mountains, Stone, Stone Giants",
-        "domains": ["Beauty", "Protection", "Strength"]
+        "domains": ["Beauty", "Protection", "Strength", "Mountain"]
       },
       {
         "name": "Stronmaus",
@@ -1896,7 +1903,7 @@
         "alignment": "NG",
         "symbol": "Forked lightning bolt",
         "portfolio": "Sea, Sky, Storm Giants, Sun, Weather",
-        "domains": ["Nature", "Sky", "Tempest"]
+        "domains": ["Nature", "Sky", "Tempest", "Sea"]
       },
       {
         "name": "Surtr",
@@ -1920,7 +1927,7 @@
         "alignment": "CE",
         "symbol": "Taloned claws",
         "portfolio": "Greed, Lesser Giants",
-        "domains": ["Luck", "Trickery", "War"]
+        "domains": ["Luck", "Trickery", "War", "Mountain"]
       }
     ]
   },
@@ -1933,7 +1940,7 @@
         "alignment": "LG",
         "symbol": "Scarab beetle",
         "portfolio": "Sun",
-        "domains": ["Life", "Light"]
+        "domains": ["Life", "Light", "Travel"]
       },
       {
         "name": "Anubis",
@@ -1965,7 +1972,7 @@
         "alignment": "CN",
         "symbol": "Ostrich feather",
         "portfolio": "Dwarves, Luck, Music",
-        "domains": ["Beauty", "Luck", "Trickery"]
+        "domains": ["Beauty", "Luck", "Trickery", "Mountain"]
       },
       {
         "name": "Hathor",
@@ -2005,7 +2012,7 @@
         "alignment": "CN",
         "symbol": "Crescent moon",
         "portfolio": "Moon, Trickery",
-        "domains": ["Night", "Shadow", "Trickery", "Twilight"]
+        "domains": ["Night", "Shadow", "Trickery", "Twilight", "Travel", "Sea"]
       },
       {
         "name": "Nephthys",
@@ -2021,7 +2028,7 @@
         "alignment": "LG",
         "symbol": "Crook and flail",
         "portfolio": "The Dead, Nature",
-        "domains": ["Death", "Grave", "Life", "Nature"]
+        "domains": ["Death", "Grave", "Life", "Nature", "Travel"]
       },
       {
         "name": "Ptah",
@@ -2053,7 +2060,7 @@
         "alignment": "LE",
         "symbol": "Crocodile head",
         "portfolio": "Crocodiles, Water",
-        "domains": ["Nature", "Strength", "Tempest", "War"]
+        "domains": ["Nature", "Strength", "Tempest", "War", "Sea"]
       },
       {
         "name": "Taweret",
@@ -2082,7 +2089,7 @@
         "alignment": "CG",
         "symbol": "Seashell",
         "portfolio": "Beauty",
-        "domains": ["Beauty", "Life", "Light"]
+        "domains": ["Beauty", "Life", "Light", "Sea"]
       },
       {
         "name": "Apollo",
@@ -2090,7 +2097,7 @@
         "alignment": "CG",
         "symbol": "Lyre",
         "portfolio": "Music, Healing, Sun",
-        "domains": ["Beauty", "Knowledge", "Life", "Light"]
+        "domains": ["Beauty", "Knowledge", "Life", "Light", "Travel"]
       },
       {
         "name": "Ares",
@@ -2106,7 +2113,7 @@
         "alignment": "NG",
         "symbol": "Bow and arrow on crescent moon",
         "portfolio": "Hunting, Moon",
-        "domains": ["Life", "Nature", "Night"]
+        "domains": ["Life", "Nature", "Night", "Sea"]
       },
       {
         "name": "Athena",
@@ -2122,7 +2129,7 @@
         "alignment": "LE",
         "symbol": "Globe being held by a crouched man",
         "portfolio": "Suffering",
-        "domains": ["Pain", "Sorrow", "Strength"]
+        "domains": ["Pain", "Sorrow", "Strength", "Mountain"]
       },
       {
         "name": "Cronus",
@@ -2170,7 +2177,7 @@
         "alignment": "N",
         "symbol": "Mountain",
         "portfolio": "Earth",
-        "domains": ["Protection", "Strength"]
+        "domains": ["Protection", "Strength", "Mountain"]
       },
       {
         "name": "Hades",
@@ -2178,7 +2185,7 @@
         "alignment": "LN",
         "symbol": "Black ram",
         "portfolio": "The Dead, Gemstones",
-        "domains": ["Death", "Grave", "Judgement", "Luck"]
+        "domains": ["Death", "Grave", "Judgement", "Luck", "Mountain"]
       },
       {
         "name": "Hecate",
@@ -2218,7 +2225,7 @@
         "alignment": "CG",
         "symbol": "Caduceus",
         "portfolio": "Commerce, Travel",
-        "domains": ["Luck", "Order", "Trickery"]
+        "domains": ["Luck", "Order", "Trickery", "Travel"]
       },
       {
         "name": "Hestia",
@@ -2226,7 +2233,7 @@
         "alignment": "NG",
         "symbol": "Hearth",
         "portfolio": "Family, Home",
-        "domains": ["Hope", "Life", "Peace"]
+        "domains": ["Hope", "Life", "Peace", "Travel"]
       },
       {
         "name": "Hypnos",
@@ -2250,7 +2257,7 @@
         "alignment": "CG",
         "symbol": "Pan flute",
         "portfolio": "Nature",
-        "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight"]
+        "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight", "Travel"]
       },
       {
         "name": "Persephone",
@@ -2266,7 +2273,7 @@
         "alignment": "CN",
         "symbol": "Trident",
         "portfolio": "Sea",
-        "domains": ["Nature", "Strength", "Tempest"]
+        "domains": ["Nature", "Strength", "Tempest", "Sea"]
       },
       {
         "name": "Prometheus",
@@ -2305,7 +2312,7 @@
         "alignment": "CE",
         "symbol": "Hurricane",
         "portfolio": "Destruction",
-        "domains": ["Apocalypse", "Tempest"]
+        "domains": ["Apocalypse", "Tempest", "Sea"]
       },
       {
         "name": "Zeus",
@@ -2350,7 +2357,7 @@
         "alignment": "NG",
         "symbol": "Bridge",
         "portfolio": "Livestock, Rivers",
-        "domains": ["Life", "Nature"]
+        "domains": ["Life", "Nature", "Sea"]
       },
       {
         "name": "Cernunnos",
@@ -2366,7 +2373,7 @@
         "alignment": "LG",
         "symbol": "Crossed oak branch and mistletoe",
         "portfolio": "Healing, Medicine",
-        "domains": ["Hope", "Knowledge", "Life", "Peace"]
+        "domains": ["Hope", "Knowledge", "Life", "Peace", "Travel"]
       },
       {
         "name": "Dunatis",
@@ -2374,7 +2381,7 @@
         "alignment": "N",
         "symbol": "Sun-capped mountain peak",
         "portfolio": "Mountains",
-        "domains": ["Nature", "Protection", "Strength"]
+        "domains": ["Nature", "Protection", "Strength", "Mountain"]
       },
       {
         "name": "Epona",
@@ -2382,7 +2389,7 @@
         "alignment": "CN",
         "symbol": "Horse's head in profile",
         "portfolio": "Horses, Travel",
-        "domains": ["Nature"]
+        "domains": ["Nature", "Travel"]
       },
       {
         "name": "Goibhniu",
@@ -2398,7 +2405,7 @@
         "alignment": "LN",
         "symbol": "Pillar and bricks",
         "portfolio": "Construction",
-        "domains": ["Forge"]
+        "domains": ["Forge", "Mountain"]
       },
       {
         "name": "Lugh",
@@ -2406,7 +2413,7 @@
         "alignment": "CN",
         "symbol": "Pair of long hands",
         "portfolio": "Art, Commerce",
-        "domains": ["Beauty", "Knowledge", "Life", "Order"]
+        "domains": ["Beauty", "Knowledge", "Life", "Order", "Travel"]
       },
       {
         "name": "Manannan",
@@ -2414,7 +2421,7 @@
         "alignment": "LN",
         "symbol": "Wave of white on green",
         "portfolio": "Sea",
-        "domains": ["Nature", "Tempest"]
+        "domains": ["Nature", "Tempest", "Sea"]
       },
       {
         "name": "Mathonwy",
@@ -2483,7 +2490,7 @@
         "alignment": "NE",
         "symbol": "Ocean waves",
         "portfolio": "Sea, Storms",
-        "domains": ["Tempest"]
+        "domains": ["Tempest", "Sea"]
       },
       {
         "name": "Baldr",
@@ -2563,7 +2570,7 @@
         "alignment": "NG",
         "symbol": "Gold coin",
         "portfolio": "Air",
-        "domains": ["Nature", "Sky", "Tempest"]
+        "domains": ["Nature", "Sky", "Tempest", "Travel"]
       },
       {
         "name": "Odur",
@@ -2587,7 +2594,7 @@
         "alignment": "N",
         "symbol": "Mountain",
         "portfolio": "Earth, Mountains",
-        "domains": ["Nature", "Protection"]
+        "domains": ["Nature", "Protection", "Mountain"]
       },
       {
         "name": "Surtr",
@@ -2627,7 +2634,7 @@
         "alignment": "CN",
         "symbol": "Longbow",
         "portfolio": "Hunting",
-        "domains": ["Nature"]
+        "domains": ["Nature", "Travel"]
       }
     ]
   }

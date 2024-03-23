@@ -22,7 +22,7 @@
         {{ tab.name }}
       </button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" *ngIf="cleric">
       <button
         class="nav-link"
         [ngClass]="{ active: domainTab === tabName }"
