@@ -28,6 +28,7 @@ export class ClassComponent implements OnInit {
   public subclassData: ISubclass;
   public subclassName: string = '';
   public hpModal = false;
+  public classTableModal = false;
 
   public classProfs = {
     name: 'Proficiences',

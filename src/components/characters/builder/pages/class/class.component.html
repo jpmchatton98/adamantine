@@ -1,4 +1,22 @@
-<h3>{{ classData.name }}</h3>
+<h3 style="cursor: pointer" (click)="classTableModal = true">
+  {{ classData.name }}
+</h3>
+<nz-modal
+  [(nzVisible)]="classTableModal"
+  [nzTitle]="classData.name + ' Table'"
+  [nzCancelText]="null"
+  [nzClosable]="false"
+  [nzOkText]="null"
+  [nzWidth]="1256"
+  (nzOnCancel)="classTableModal = false"
+>
+  <ng-container *nzModalContent>
+    <app-class-table
+      [class]="classData"
+      [currentLevel]="characterClass.level"
+    ></app-class-table>
+  </ng-container>
+</nz-modal>
 <div>
   <strong>Level:</strong> {{ characterClass.level }}
   <button
