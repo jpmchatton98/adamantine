@@ -6274,13 +6274,13 @@
     "name": "Ensnaring Strike",
     "school": "Conjuration",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "On hit",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away.",
-      "While restrained by this spell, the target takes 1d6 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed."
+      "When you hit a creature with a weapon attack, you can cause the point of impact to explode with a writhing mass of thorny vines. The target must succeed on a Strength saving throw or be restrained by the vines until the spell ends. Creatures that are Large or larger have advantage on this saving throw.",
+      "The restrained creature takes 1d6 piercing damage at the start of each of its turns. The restrained creature, or another creature within 5 feet, can use its action to make a Strength check against your spell save DC, freeing it on a success."
     ],
     "higherLevels": [
       "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
@@ -9108,12 +9108,12 @@
     "name": "Hail of Thorns",
     "school": "Conjuration",
     "level": 1,
-    "castingTime": "1 bonus action",
+    "castingTime": "On hit",
     "range": "Self",
     "components": "V",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes 1d10 piercing damage on a failed save, or half as much damage on a successful one."
+      "When you hit a creature within range with a ranged weapon attack, you can cause the piece of ammunition to explode into a hail of thorns. In addition to the normal effect of the attack, the target of your attack and each creature within 5 feet must make a Dexterity saving throw. Creatures take 1d10 piercing damage on a failure, or half as much damage on a success."
     ],
     "higherLevels": [
       "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."

@@ -10354,12 +10354,38 @@
   ],
   "survivalist-knack": [
     {
+      "name": "Alpine Adept",
+      "description": "You are amazingly surefooted. You gain a 30-foot climbing speed, and you can use your reaction to reduce any falling damage you take by an amount equal to your Ranger level. If you already have a climbing speed it increases by 10 feet.",
+      "granted": [
+        {
+          "type": "speed",
+          "speed": "climb",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "name": "Aquatic Adept",
+      "description": "You can swim through the water like a native creature of the sea. You gain a 30-foot swimming speed, and while you are underwater, you can hold your breath for up to 1 hour. If you already have a swimming speed it increases by 10 feet.",
+      "granted": [
+        {
+          "type": "speed",
+          "speed": "swim",
+          "amount": 30
+        }
+      ]
+    },
+    {
       "name": "Explorer I",
       "description": "Whenever you make a Wisdom (Survival) check to navigate in the wild, forage for food and water, or to avoid becoming lost, you can treat a roll of 7 or lower on the d20 as an 8."
     },
     {
       "name": "Herbalist I",
       "description": "You have a deep knowledge of plants and their healing properties. You have advantage on Intelligence (Nature) checks to identify the medicinal properties of plants, and Wisdom (Medicine) checks made to stabilize creatures."
+    },
+    {
+      "name": "Naturalist I",
+      "description": "You are an intuitive student of the wilderness. Whenever you would make an Intelligence (Nature) check in the wilderness, you can choose to make a Wisdom (Nature) check instead."
     },
     {
       "name": "Orator I",
@@ -10399,7 +10425,7 @@
     },
     {
       "name": "Trapper",
-      "description": "As an action, you can set a hidden trap made out of natural materials in an adjacent 5-foot space. The first creature to move into the area must succeed on a Dexterity saving throw against your Spell Save DC or become restrained.</p><p>A creature repeats its saving throw at the start of each turn, ending the effect on a success. A creature can detect a trap by succeeding on an Intelligence (Investigation) check against your Spell Save DC. You can have a number of active traps equal to your Wisdom modifier (minimum of 1 trap)."
+      "description": "You can construct natural traps. Over the course of 1 hour, which can be during a short or long rest, you can use a knife, natural materials, and expend 10 feet of rope to craft a Trap.</p><p>As an action, you can set one of these Traps in an adjacent unoccupied 5-foot space. The first Large or smaller creature to move into that space must succeed on a Dexterity saving throw against your Spell save DC or become restrained.</p><p>As an action, the restrained creature, or another creature within 5 feet of it, can use an action to make a Strength check against your Spell save DC, freeing the creature on a success.</p><p>As an action (separate from setting the Trap), you can hide the Trap. If hidden, a successful Intelligence (Investigation) against your Spell save DC is required to detect the Trap."
     },
     {
       "name": "Wild Insights I",
@@ -10415,6 +10441,16 @@
           "level": 1
         }
       ]
+    },
+    {
+      "name": "Favored Foe II",
+      "prereqLevel": 3,
+      "description": " You are especially adept at studying, tracking, and hunting a specific type of enemy. Choose one creature type, two races of humanoid, or one organization as your Favored Foe.</p><p>Whenever you make a Wisdom check to hunt or track, or an Intelligence check to recall knowledge about a Favored Foe, you can treat a roll of 9 or lower on the d20 as a 10.",
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Favored Foe I"
+      }
     },
     {
       "name": "Herbalist II",
@@ -10521,30 +10557,6 @@
       }
     },
     {
-      "name": "Alpine Adept",
-      "prereqLevel": 6,
-      "description": "You are amazingly surefooted. You gain a 30-foot climbing speed, and you can use your reaction to reduce any falling damage you take by an amount equal to your Ranger level. If you already have a climbing speed it increases by 10 feet.",
-      "granted": [
-        {
-          "type": "speed",
-          "speed": "climb",
-          "amount": 30
-        }
-      ]
-    },
-    {
-      "name": "Aquatic Adept",
-      "prereqLevel": 6,
-      "description": "You can swim through the water like a native creature of the sea. You gain a 30-foot swimming speed, and while you are underwater, you can hold your breath for up to 1 hour. If you already have a swimming speed it increases by 10 feet.",
-      "granted": [
-        {
-          "type": "speed",
-          "speed": "swim",
-          "amount": 30
-        }
-      ]
-    },
-    {
       "name": "Arctic Adept",
       "prereqLevel": 6,
       "description": "You have adapted to the frozen tundra. You gain resistance to cold damage. Also, you and creatures of your choice who travel with you (maximum 10), have advantage on saving throws to resist the negative effects of arctic environments.",
@@ -10571,10 +10583,26 @@
       "name": "Explorer II",
       "prereqLevel": 6,
       "description": "At the end of a long rest, you can attune to your surrounding environment. Examples include, but are not limited to: arctic, coastal, desert, forest, grassland, mountain, or swamp. While in your attuned environment you gain the following benefits:<ul><li>You have advantage on Intelligence and Wisdom checks related to the native plants, animals, or ecosystem.</li><li>You find twice as much food when foraging or hunting.</li><li>You cannot be surprised unless you are incapacitated.</li><li>You gain a bonus to your initiative rolls equal to your Wisdom modifier (minimum of +1).</li></ul>",
+      "granted": [
+        {
+          "type": "initiative-bonus",
+          "score": "wis"
+        }
+      ],
       "prereq": {
         "type": "list",
         "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
         "value": "Explorer I"
+      }
+    },
+    {
+      "name": "Favored Foe III",
+      "prereqLevel": 6,
+      "description": " You are especially adept at studying, tracking, and hunting a specific type of enemy. Choose one creature type, two races of humanoid, or one organization as your Favored Foe.</p><p>Whenever you make a Wisdom check to hunt or track, or an Intelligence check to recall knowledge about a Favored Foe, you can treat a roll of 9 or lower on the d20 as a 10.",
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Favored Foe II"
       }
     },
     {
@@ -10585,7 +10613,7 @@
     {
       "name": "Herbalist III",
       "prereqLevel": 6,
-      "description": "When you take a short rest, you and any friendly creatures who rest with you, regain an additional 1d8 hit points as long as they expend at least one Hit Die to regain hit points.",
+      "description": "When you use your herbalism kit to craft potions of healing during a long rest, you craft a number of potions of healing equal to 1 + your Wisdom modifier (minimum of 2).",
       "prereq": {
         "type": "list",
         "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
@@ -10602,6 +10630,17 @@
           "options": ["Poison"]
         }
       ]
+    },
+    {
+      "name": "Natural Regeneration",
+      "prereqLevel": 6,
+      "description": "During a short rest, you can recover spell slots of a combined level equal to your Wisdom modifier. Once you do, you must finish a long rest before you can use this feature again.",
+      "uses": {
+        "id": "8A56C969-C69D-4449-A126-1DBEE6234984",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
     },
     {
       "name": "Slayer II",
@@ -10662,6 +10701,16 @@
       }
     },
     {
+      "name": "Favored Foe IV",
+      "prereqLevel": 9,
+      "description": " You are especially adept at studying, tracking, and hunting a specific type of enemy. Choose one creature type, two races of humanoid, or one organization as your Favored Foe.</p><p>Whenever you make a Wisdom check to hunt or track, or an Intelligence check to recall knowledge about a Favored Foe, you can treat a roll of 9 or lower on the d20 as a 10.",
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Favored Foe III"
+      }
+    },
+    {
       "name": "Fell Handed II",
       "prereqLevel": 9,
       "description": "When you score a critical hit against a creature, your critical hit range for attack rolls against that creature expands by 1.</p><p>For example, if you score a critical hit against a creature for the first time, you then score a critical hit on a roll of 19 or 20 when you make an attack roll against the creature.",
@@ -10692,14 +10741,13 @@
       }
     },
     {
-      "name": "Natural Regeneration",
+      "name": "Favored Foe V",
       "prereqLevel": 14,
-      "description": "During a short rest, you can recover spell slots of a combined level equal to your Wisdom modifier. Once you do, you must finish a long rest before you can use this feature again.",
-      "uses": {
-        "id": "8A56C969-C69D-4449-A126-1DBEE6234984",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
+      "description": " You are especially adept at studying, tracking, and hunting a specific type of enemy. Choose one creature type, two races of humanoid, or one organization as your Favored Foe.</p><p>Whenever you make a Wisdom check to hunt or track, or an Intelligence check to recall knowledge about a Favored Foe, you can treat a roll of 9 or lower on the d20 as a 10.",
+      "prereq": {
+        "type": "list",
+        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
+        "value": "Favored Foe IV"
       }
     },
     {
