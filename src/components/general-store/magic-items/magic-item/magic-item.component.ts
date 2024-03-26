@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { GeneralStoreService } from 'src/services/general-store.service';
 
 @Component({
@@ -6,10 +7,11 @@ import { GeneralStoreService } from 'src/services/general-store.service';
   templateUrl: './magic-item.component.html',
   styleUrls: ['./magic-item.component.scss'],
 })
-export class MagicItemComponent {
+export class MagicItemComponent extends BaseComponent {
   @Input()
   set item(itemName: string) {
     this.itemData = this.generalStoreService.getMagicItem(itemName);
+    this.pageTitle = this.itemData.name;
   }
   public rarities = [
     'common',
@@ -22,9 +24,7 @@ export class MagicItemComponent {
 
   public itemData: any;
 
-  constructor(private generalStoreService: GeneralStoreService) {}
-
-  public capitalize(str: string): string {
-    return str.charAt(0).toUpperCase() + str.substring(1);
+  constructor(private generalStoreService: GeneralStoreService) {
+    super();
   }
 }

@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -14,7 +15,10 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './subclass-data.component.html',
   styleUrls: ['./subclass-data.component.scss'],
 })
-export class SubclassDataComponent implements OnInit, OnChanges {
+export class SubclassDataComponent
+  extends BaseComponent
+  implements OnInit, OnChanges
+{
   public subclassName;
   public subclass;
 
@@ -22,12 +26,11 @@ export class SubclassDataComponent implements OnInit, OnChanges {
   public casterLevel = 1;
   public prepared = false;
 
-  constructor(
-    private dataService: DataService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private dataService: DataService, private route: ActivatedRoute) {
+    super();
+  }
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     const className = this.route.parent.parent.parent.snapshot.params['name'];
     this.subclassName = this.route.snapshot.parent.params['name'];
     this.subclass = this.dataService.getSubclass(className, this.subclassName);
@@ -38,6 +41,9 @@ export class SubclassDataComponent implements OnInit, OnChanges {
     this.prepared = !classData.extraCols?.find(
       (c) => c.name === 'Spells Known'
     );
+
+    this.pageTitle = this.subclass.name;
+    super.ngOnInit();
   }
 
   public ngOnChanges(changes: SimpleChanges): void {
@@ -51,6 +57,9 @@ export class SubclassDataComponent implements OnInit, OnChanges {
     this.prepared = !classData.extraCols?.find(
       (c) => c.name === 'Spells Known'
     );
+
+    this.pageTitle = this.subclass.name;
+    super.ngOnInit();
   }
 
   public getSubclassStartLevel(): number {

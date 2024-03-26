@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,11 +7,13 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './spells.component.html',
   styleUrls: ['./spells.component.scss'],
 })
-export class SpellsComponent {
+export class SpellsComponent extends BaseComponent {
   @Input()
   set list(spellList: string) {
     this.spells = this.dataService.getSpellsByList(spellList);
     this.elemental = spellList === 'elemental';
+
+    this.pageTitle = `${this.capitalize(spellList)} Spells`;
   }
   @Input() maxLevel: number = 10;
   @Input() cantrips: boolean = true;
@@ -22,6 +25,7 @@ export class SpellsComponent {
   public dataService: DataService;
 
   constructor(dataService: DataService) {
+    super();
     this.dataService = dataService;
   }
 

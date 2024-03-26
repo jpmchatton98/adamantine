@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Route } from '@angular/router';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 interface AbilityReference {
@@ -11,21 +12,22 @@ interface AbilityReference {
   templateUrl: './race-data.component.html',
   styleUrls: ['./race-data.component.scss'],
 })
-export class RaceDataComponent implements OnInit {
+export class RaceDataComponent extends BaseComponent implements OnInit {
   @Input() race;
 
   public asiString = '';
   public languageString = '';
 
-  constructor(
-    private route: ActivatedRoute,
-    private dataService: DataService
-  ) {}
+  constructor(private route: ActivatedRoute, private dataService: DataService) {
+    super();
+  }
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     if (!this.race) {
       const raceName = this.route.parent.snapshot.params['name'];
       this.race = this.dataService.getRace(raceName);
+
+      this.pageTitle = this.race.name;
     }
 
     if (this.race) {
@@ -34,6 +36,8 @@ export class RaceDataComponent implements OnInit {
         this.languageString = this.getLanguageString();
       }
     }
+
+    super.ngOnInit();
   }
 
   public getAsiString() {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { take } from 'rxjs';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { CharacterSheetService } from 'src/services/character-sheet.service';
 import { DBService } from 'src/services/db.service';
 
@@ -9,18 +10,22 @@ import { DBService } from 'src/services/db.service';
   templateUrl: './characters.component.html',
   styleUrls: ['./characters.component.scss'],
 })
-export class CharactersComponent implements OnInit {
+export class CharactersComponent extends BaseComponent implements OnInit {
   public users = {
     adamantine: ['Brad', 'Joey', 'Jon', 'Maddie', 'Spencer'],
   };
   public userCharacters = { adamantine: [], mithral: [] };
 
-  constructor(private dbService: DBService, private router: Router) {}
+  constructor(private dbService: DBService, private router: Router) {
+    super();
+  }
 
   private passiveBonuses;
   public modalVisible = {};
 
-  public ngOnInit(): void {
+  public override pageTitle: string = 'Characters';
+
+  public override ngOnInit(): void {
     localStorage.clear();
 
     for (let i = 0; i < this.users.adamantine.length; i++) {
@@ -34,6 +39,8 @@ export class CharactersComponent implements OnInit {
           }
         });
     }
+
+    super.ngOnInit();
   }
 
   public create(username): void {
@@ -80,10 +87,6 @@ export class CharactersComponent implements OnInit {
         return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
       }
     );
-  }
-
-  public capitalize(str: string): string {
-    return str.charAt(0).toUpperCase() + str.substring(1);
   }
 
   public getCharName(character: any) {

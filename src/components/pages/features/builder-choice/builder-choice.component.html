@@ -32,10 +32,12 @@
     >
       <nz-collapse-panel>
         <app-spell
+          [noTitle]="true"
           *ngIf="choice?.type === 'spell'"
           [name]="choiceValue"
         ></app-spell>
         <app-exploit
+          [noTitle]="true"
           *ngIf="choice?.type === 'exploit'"
           [name]="choiceValue"
         ></app-exploit>

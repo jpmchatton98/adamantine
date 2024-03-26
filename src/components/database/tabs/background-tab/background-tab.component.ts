@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,16 +7,19 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './background-tab.component.html',
   styleUrls: ['./background-tab.component.scss'],
 })
-export class BackgroundTabComponent {
+export class BackgroundTabComponent extends BaseComponent {
   public dataService: DataService;
 
+  public override pageTitle: string = 'Backgrounds';
+
   constructor(dataService: DataService) {
+    super();
     this.dataService = dataService;
   }
   public backgroundFeatures: any[] = [];
   public background: any;
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     this.backgroundFeatures = this.dataService.getBackgroundFeatures();
     this.backgroundFeatures = this.backgroundFeatures.map((b: any) => {
       b.label = b.name;
@@ -24,6 +28,8 @@ export class BackgroundTabComponent {
       return b;
     });
     this.background = this.backgroundFeatures[0].value;
+
+    super.ngOnInit();
   }
 
   public getBackground(): any {

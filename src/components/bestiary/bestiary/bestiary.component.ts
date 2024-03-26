@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,7 +7,7 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './bestiary.component.html',
   styleUrls: ['./bestiary.component.scss'],
 })
-export class BestiaryComponent implements OnInit {
+export class BestiaryComponent extends BaseComponent implements OnInit {
   private everything: any[] = [];
   public allMonsters: any[] = [];
   public monsters: any[] = [];
@@ -75,9 +76,13 @@ export class BestiaryComponent implements OnInit {
     cr: [0, 43],
   };
 
-  constructor(private dataService: DataService) {}
+  public override pageTitle: string = 'Bestiary';
 
-  public ngOnInit(): void {
+  constructor(private dataService: DataService) {
+    super();
+  }
+
+  public override ngOnInit(): void {
     this.everything = this.dataService.getMonsters();
     this.allMonsters = this.everything.filter((m) => !m.minion);
     this.allMinions = this.everything.filter((m) => !!m.minion);
@@ -109,6 +114,8 @@ export class BestiaryComponent implements OnInit {
     }
 
     this.updateFilters();
+
+    super.ngOnInit();
   }
 
   public updateFilters(): void {

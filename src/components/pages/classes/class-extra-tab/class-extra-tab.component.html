@@ -79,13 +79,18 @@
       *ngIf="dataType.includes('spells') || dataType.includes('cantrips')"
     >
       <app-spells
+        [noTitle]="true"
         [list]="list"
         [maxLevel]="maxLevel"
         [cantrips]="cantrips"
       ></app-spells>
     </ng-container>
     <ng-container *ngIf="dataType.includes('exploits')">
-      <app-exploits [list]="list" [maxDegree]="maxLevel"></app-exploits>
+      <app-exploits
+        [noTitle]="true"
+        [list]="list"
+        [maxDegree]="maxLevel"
+      ></app-exploits>
     </ng-container>
   </ng-container>
 </ng-container>

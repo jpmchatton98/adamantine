@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/services/data.service';
+import { BaseComponent } from '../meta/base/base.component';
 
 @Component({
   selector: 'app-dm-tools',
   templateUrl: './dm-tools.component.html',
   styleUrls: ['./dm-tools.component.scss'],
 })
-export class DmToolsComponent implements OnInit {
+export class DmToolsComponent extends BaseComponent implements OnInit {
   public injuries;
   public surgeText = '';
   public injuryModal = false;
   public throwModal = false;
+
+  public override pageTitle: string = 'DM Tools';
 
   public injuryCalcData = [
     {
@@ -106,14 +109,13 @@ export class DmToolsComponent implements OnInit {
   public throwingDamage = 0;
   public throwingRange = 0;
 
-  constructor(private dataService: DataService) {}
-
-  public ngOnInit(): void {
-    this.injuries = this.dataService.getInjuries();
+  constructor(private dataService: DataService) {
+    super();
   }
 
-  public capitalize(str: string): string {
-    return str.charAt(0).toUpperCase() + str.substring(1);
+  public override ngOnInit(): void {
+    this.injuries = this.dataService.getInjuries();
+    super.ngOnInit();
   }
 
   public getRollRange(injury: any) {

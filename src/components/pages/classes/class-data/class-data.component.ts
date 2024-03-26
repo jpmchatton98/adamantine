@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IClass } from 'src/app/models/data.models';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -8,17 +9,19 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './class-data.component.html',
   styleUrls: ['./class-data.component.scss'],
 })
-export class ClassDataComponent implements OnInit {
+export class ClassDataComponent extends BaseComponent implements OnInit {
   public classData: IClass;
 
-  constructor(
-    private dataService: DataService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private dataService: DataService, private route: ActivatedRoute) {
+    super();
+  }
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     const className = this.route.parent.snapshot.params['name'];
     this.classData = this.dataService.getClass(className);
+
+    this.pageTitle = this.classData.name;
+    super.ngOnInit();
   }
 
   public levelKeys(object: any): string[] {

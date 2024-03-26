@@ -1,17 +1,20 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from 'src/services/data.service';
 import { HttpParams } from '@angular/common/http';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 
 @Component({
   selector: 'app-monster',
   templateUrl: './monster.component.html',
   styleUrls: ['./monster.component.scss'],
 })
-export class MonsterComponent implements OnInit {
+export class MonsterComponent extends BaseComponent implements OnInit {
   @Input()
   set name(monsterName: string) {
-    this.data = this.dataService.getMonster(monsterName);
-    this.monster = JSON.parse(JSON.stringify(this.data));
+    this.monster = this.dataService.getMonster(monsterName);
+    // this.monster = JSON.parse(JSON.stringify(this.data));
+
+    this.pageTitle = this.monster.name;
   }
   public data: any;
   public monster: any;
@@ -120,7 +123,9 @@ export class MonsterComponent implements OnInit {
   public skillString: string = '';
   public senseString: string = '';
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) {
+    super();
+  }
 
   private scoreKey = {
     str: 'Strength',
@@ -145,7 +150,7 @@ export class MonsterComponent implements OnInit {
     'Kaiju',
   ];
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     this.acString = this.monster.ac
       .map((ac: any) => {
         if (ac.from && ac.condition) {
@@ -319,6 +324,8 @@ export class MonsterComponent implements OnInit {
     //   this.undead = undefined;
     //   this.updateUndead();
     // }
+
+    super.ngOnInit();
   }
 
   public modifier(score: number): string {

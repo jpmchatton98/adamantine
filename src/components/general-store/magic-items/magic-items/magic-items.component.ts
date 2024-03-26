@@ -1,5 +1,6 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { GeneralStoreService } from 'src/services/general-store.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { GeneralStoreService } from 'src/services/general-store.service';
   templateUrl: './magic-items.component.html',
   styleUrls: ['./magic-items.component.scss'],
 })
-export class MagicItemsComponent implements OnInit {
+export class MagicItemsComponent extends BaseComponent implements OnInit {
   public rarities = [
     'Common',
     'Uncommon',
@@ -20,13 +21,17 @@ export class MagicItemsComponent implements OnInit {
 
   public items = [];
 
+  public override pageTitle: string = 'Magic Items';
+
   constructor(
     private generalStoreService: GeneralStoreService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) {
+    super();
+  }
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     this.tabName = (this.route.snapshot.firstChild?.params ?? {})['rarity'];
     if (!this.tabName) {
       this.changeRoute(this.nameUrlEncode(this.rarities[0]));
@@ -37,6 +42,8 @@ export class MagicItemsComponent implements OnInit {
         .map((r: string) => this.nameUrlEncode(r))
         .indexOf(this.tabName)
     );
+
+    super.ngOnInit();
   }
 
   public nameUrlEncode(name: string): string {

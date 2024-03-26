@@ -1,5 +1,6 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { Update } from 'src/components/pages/features/builder.actions';
 import { selectUpdate } from 'src/components/pages/features/builder.selectors';
 import { DataService } from 'src/services/data.service';
@@ -11,7 +12,7 @@ import { DBService } from 'src/services/db.service';
   styleUrls: ['./character-builder.component.scss'],
 })
 @HostListener('unloaded')
-export class CharacterBuilderComponent implements OnInit {
+export class CharacterBuilderComponent extends BaseComponent implements OnInit {
   @Input()
   set guid(id: string) {
     this.characterId = id;
@@ -24,13 +25,18 @@ export class CharacterBuilderComponent implements OnInit {
     private dbService: DBService,
     private dataService: DataService,
     private store: Store
-  ) {}
+  ) {
+    super();
+  }
 
-  async ngOnInit(): Promise<void> {
+  override async ngOnInit(): Promise<void> {
     await this.dbService.getCharacter(this.characterId).then((val) => {
       this.character = val;
       this.dbCharacter = JSON.parse(JSON.stringify(this.character));
     });
+
+    this.pageTitle = this.character?.name ?? 'Unnamed Character';
+    super.ngOnInit();
 
     this.store.select(selectUpdate).subscribe(async (update) => {
       if (update) {

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,19 +7,18 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './transformation.component.html',
   styleUrls: ['./transformation.component.scss'],
 })
-export class TransformationComponent {
+export class TransformationComponent extends BaseComponent {
   @Input()
   set name(tfName: string) {
     this.transformation = this.dataService.getTransformation(tfName);
+    this.pageTitle = this.transformation.name;
   }
   public transformation: any;
 
-  public dataService: DataService;
-
   public tabIndex = 0;
 
-  constructor(dataService: DataService) {
-    this.dataService = dataService;
+  constructor(private dataService: DataService) {
+    super();
   }
 
   public getLevelString(level: number): string {

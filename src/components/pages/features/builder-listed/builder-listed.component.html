@@ -89,10 +89,12 @@
 >
   <ng-container *nzModalContent>
     <app-spell
+      [noTitle]="true"
       [name]="modalOption.name"
       *ngIf="listed.type === 'spell' || listed.type === 'cantrip'"
     ></app-spell>
     <app-exploit
+      [noTitle]="true"
       [name]="modalOption.name"
       *ngIf="listed.type === 'exploit'"
     ></app-exploit>

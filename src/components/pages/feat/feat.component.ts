@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,16 +7,15 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './feat.component.html',
   styleUrls: ['./feat.component.scss'],
 })
-export class FeatComponent {
+export class FeatComponent extends BaseComponent {
   @Input()
   set name(featName: string) {
     this.feat = this.dataService.getFeat(featName);
+    this.pageTitle = this.feat.name;
   }
   public feat: any;
 
-  public dataService: DataService;
-
-  constructor(dataService: DataService) {
-    this.dataService = dataService;
+  constructor(private dataService: DataService) {
+    super();
   }
 }

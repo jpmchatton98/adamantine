@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,13 +7,19 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './fighting-style-tab.component.html',
   styleUrls: ['./fighting-style-tab.component.scss'],
 })
-export class FightingStyleTabComponent implements OnInit {
+export class FightingStyleTabComponent extends BaseComponent implements OnInit {
   public fightingStyles = [];
 
-  constructor(private dataService: DataService) {}
+  public override pageTitle: string = 'Fighting Styles';
 
-  public ngOnInit(): void {
+  constructor(private dataService: DataService) {
+    super();
+  }
+
+  public override ngOnInit(): void {
     this.fightingStyles =
       this.dataService.getExtraTabDataUnsplit('fighting-style');
+
+    super.ngOnInit();
   }
 }

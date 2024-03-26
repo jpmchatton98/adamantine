@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -7,7 +8,10 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './class-extra-tab.component.html',
   styleUrls: ['./class-extra-tab.component.scss'],
 })
-export class ClassExtraTabComponent implements OnInit, OnChanges {
+export class ClassExtraTabComponent
+  extends BaseComponent
+  implements OnInit, OnChanges
+{
   @Input()
   set tab(tab: string) {
     this.dataType = tab;
@@ -17,7 +21,6 @@ export class ClassExtraTabComponent implements OnInit, OnChanges {
   dataType: string = '';
 
   public listData: any[] = [];
-  public dataService: DataService;
 
   public extra = true;
 
@@ -30,17 +33,23 @@ export class ClassExtraTabComponent implements OnInit, OnChanges {
   public godsTab = false;
   public gods = [];
 
-  constructor(dataService: DataService, private route: ActivatedRoute) {
-    this.dataService = dataService;
+  constructor(private dataService: DataService, private route: ActivatedRoute) {
+    super();
   }
 
-  ngOnInit(): void {
+  override ngOnInit(): void {
     if (this.dataType.includes('gods')) {
       this.godsTab = true;
       this.gods = this.dataService.getGodsByDomain(this.dataType.split('-')[1]);
     } else {
       this.getListData();
     }
+
+    if (!document.title.includes('-')) {
+      const classData = this.dataService.getClass(this.className);
+      this.pageTitle = classData.name;
+    }
+    super.ngOnInit();
   }
   ngOnChanges(): void {
     if (this.dataType.includes('gods')) {
@@ -49,6 +58,12 @@ export class ClassExtraTabComponent implements OnInit, OnChanges {
     } else {
       this.getListData();
     }
+
+    if (!document.title.includes('-')) {
+      const classData = this.dataService.getClass(this.className);
+      this.pageTitle = classData.name;
+    }
+    super.ngOnInit();
   }
 
   private getListData() {

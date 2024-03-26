@@ -16,6 +16,7 @@ import { DataService } from 'src/services/data.service';
 import { GeneralStoreService } from 'src/services/general-store.service';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { DBService } from 'src/services/db.service';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 
 @Component({
   selector: 'app-character-sheet',
@@ -23,7 +24,7 @@ import { DBService } from 'src/services/db.service';
   styleUrls: ['./character-sheet.component.scss'],
 })
 @HostListener('unloaded')
-export class CharacterSheetComponent implements OnInit {
+export class CharacterSheetComponent extends BaseComponent implements OnInit {
   @Input()
   set guid(id: string) {
     this.characterId = id;
@@ -145,9 +146,11 @@ export class CharacterSheetComponent implements OnInit {
     private store: Store,
     private notification: NzNotificationService,
     private dbService: DBService
-  ) {}
+  ) {
+    super();
+  }
 
-  async ngOnInit() {
+  override async ngOnInit() {
     await this.setup();
 
     this.store.select(selectUpdate).subscribe(async (update) => {
@@ -177,6 +180,9 @@ export class CharacterSheetComponent implements OnInit {
       this.character = val;
       this.dbCharacter = JSON.parse(JSON.stringify(this.character));
     });
+
+    this.pageTitle = this.character.name;
+    super.ngOnInit();
 
     await this.characterSheetService.getCharacterFromDb(this.characterId);
 
@@ -713,10 +719,6 @@ export class CharacterSheetComponent implements OnInit {
     }
 
     return features;
-  }
-
-  public capitalize(str: string): string {
-    return str.charAt(0).toUpperCase() + str.substring(1);
   }
 
   public saveIsProficient(score: string): boolean {

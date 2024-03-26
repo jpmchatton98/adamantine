@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 interface AbilityReference {
@@ -11,7 +12,10 @@ interface AbilityReference {
   templateUrl: './subrace.component.html',
   styleUrls: ['./subrace.component.scss'],
 })
-export class SubraceComponent implements OnInit, OnChanges {
+export class SubraceComponent
+  extends BaseComponent
+  implements OnInit, OnChanges
+{
   @Input()
   set name(name: string) {
     this.subraceName = name;
@@ -21,23 +25,28 @@ export class SubraceComponent implements OnInit, OnChanges {
   public subrace: any;
   public asiString = '';
 
-  constructor(
-    private dataService: DataService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private dataService: DataService, private route: ActivatedRoute) {
+    super();
+  }
 
-  ngOnInit(): void {
+  override ngOnInit(): void {
     const raceName = this.route.parent.parent.snapshot.params['name'];
     this.subrace = this.dataService.getSubrace(raceName, this.subraceName);
+    this.pageTitle = this.subrace.name;
 
     this.asiString = this.getAsiString();
+
+    super.ngOnInit();
   }
 
   ngOnChanges(): void {
     const raceName = this.route.parent.parent.snapshot.params['name'];
     this.subrace = this.dataService.getSubrace(raceName, this.subraceName);
+    this.pageTitle = this.subrace.name;
 
     this.asiString = this.getAsiString();
+
+    super.ngOnInit();
   }
 
   public getAsiString() {

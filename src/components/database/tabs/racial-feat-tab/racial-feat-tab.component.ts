@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,18 +7,23 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './racial-feat-tab.component.html',
   styleUrls: ['./racial-feat-tab.component.scss'],
 })
-export class RacialFeatTabComponent {
+export class RacialFeatTabComponent extends BaseComponent {
   public dataService: DataService;
 
+  public override pageTitle: string = 'Racial Feats';
+
   constructor(dataService: DataService) {
+    super();
     this.dataService = dataService;
   }
   public feats: any[] = [];
   public races: any[] = [];
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     this.feats = this.dataService.getFeatsUnsplit();
     this.races = this.dataService.getRaces();
+
+    super.ngOnInit();
   }
 
   public getRacialFeats(race: string): any[] {

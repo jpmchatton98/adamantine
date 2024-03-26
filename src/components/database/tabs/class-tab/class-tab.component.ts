@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -6,16 +7,21 @@ import { DataService } from 'src/services/data.service';
   templateUrl: './class-tab.component.html',
   styleUrls: ['./class-tab.component.scss'],
 })
-export class ClassTabComponent {
+export class ClassTabComponent extends BaseComponent {
   public dataService: DataService;
 
+  public override pageTitle: string = 'Classes';
+
   constructor(dataService: DataService) {
+    super();
     this.dataService = dataService;
   }
   public classes: any[] = [];
 
-  public ngOnInit(): void {
+  public override ngOnInit(): void {
     this.classes = this.dataService.getClasses();
+
+    super.ngOnInit();
   }
 
   public nameUrlEncode(name: string): string {
