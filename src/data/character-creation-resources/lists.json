@@ -10380,6 +10380,10 @@
       "description": "Whenever you make a Wisdom (Survival) check to navigate in the wild, forage for food and water, or to avoid becoming lost, you can treat a roll of 7 or lower on the d20 as an 8."
     },
     {
+      "name": "Favored Foe I",
+      "description": " You are especially adept at studying, tracking, and hunting a specific type of enemy. Choose one creature type, two races of humanoid, or one organization as your Favored Foe.</p><p>Whenever you make a Wisdom check to hunt or track, or an Intelligence check to recall knowledge about a Favored Foe, you can treat a roll of 9 or lower on the d20 as a 10."
+    },
+    {
       "name": "Herbalist I",
       "description": "You have a deep knowledge of plants and their healing properties. You have advantage on Intelligence (Nature) checks to identify the medicinal properties of plants, and Wisdom (Medicine) checks made to stabilize creatures."
     },
