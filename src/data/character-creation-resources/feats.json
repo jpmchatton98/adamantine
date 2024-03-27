@@ -5387,7 +5387,7 @@
     "name": "Hardy Hibernator",
     "prereq": [
       {
-        "race": ["panserbjorn"]
+        "race": ["panserbjørn"]
       }
     ],
     "type": "racial",

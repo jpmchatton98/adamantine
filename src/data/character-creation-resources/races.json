@@ -12678,7 +12678,7 @@
     "name": "Nocturne"
   },
   {
-    "description": "Historically solitary and primitive in nature, panserbjorn have, under recent leadership, begun forming increasingly larger communities. This burgeoning civilisation has begun adopting social norms and morals much closer to those found within 'civilised' cultures. Indeed, magical universities now include panserbjorn amongst their alumni, and remote mountain-top temples highly prize these bear-people as monks and clerics. Even the more solitary panserbjorn are sought after as guides for trading caravans or adventurers delving into the tundra.",
+    "description": "Historically solitary and primitive in nature, panserbjørn have, under recent leadership, begun forming increasingly larger communities. This burgeoning civilisation has begun adopting social norms and morals much closer to those found within 'civilised' cultures. Indeed, magical universities now include panserbjørn amongst their alumni, and remote mountain-top temples highly prize these bear-people as monks and clerics. Even the more solitary panserbjørn are sought after as guides for trading caravans or adventurers delving into the tundra.",
     "asis": [{ "str": 1 }, { "con": 1 }],
     "maturity": 18,
     "lifespan": 80,
@@ -12787,7 +12787,7 @@
     "subraces": [
       {
         "name": "Cultured",
-        "description": "Originally a wild people, some panserbjorn have managed to grow more cultured over time, integrating themselves into society.  Still often seen as outcasts in many places due in part to their rarity, they are eager learners.",
+        "description": "Originally a wild people, some panserbjørn have managed to grow more cultured over time, integrating themselves into society.  Still often seen as outcasts in many places due in part to their rarity, they are eager learners.",
         "asis": [{ "cha": 1 }],
         "traits": [
           {
@@ -12833,7 +12833,7 @@
       },
       {
         "name": "Forest",
-        "description": "Though panserbjorn are native to the far, arctic north of many worlds, those that emigrated to warmer locale found themselves with a very different environment, and evolved different abilities.  Most resembling black bears or brown bears, they have a connection to the druidic spirits often found in forests.",
+        "description": "Though panserbjørn are native to the far, arctic north of many worlds, those that emigrated to warmer locale found themselves with a very different environment, and evolved different abilities.  Most resembling black bears or brown bears, they have a connection to the druidic spirits often found in forests.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -12872,7 +12872,7 @@
       },
       {
         "name": "Spotted",
-        "description": "Found in isolationist villages in mountain valleys and along rivers, spotted panserbjorn are largely unknown, partly as a result of their rarity.  As spiritual as their appetites are strong, they have a long history and a keen wisdom, preferring to keep out of the eyes of society as a whole.",
+        "description": "Found in isolationist villages in mountain valleys and along rivers, spotted panserbjørn are largely unknown, partly as a result of their rarity.  As spiritual as their appetites are strong, they have a long history and a keen wisdom, preferring to keep out of the eyes of society as a whole.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -12907,7 +12907,7 @@
       },
       {
         "name": "Wild",
-        "description": "Brutal survivalists resembling bears of the far north, usually polar bears or brown bears, wild pasernbjorn live on the outskirts of civilization.  Historically more numerous, those still in the wild have become fewer as younger panserbjorn integrate themselves into society.",
+        "description": "Brutal survivalists resembling bears of the far north, usually polar bears or brown bears, wild pasernbjorn live on the outskirts of civilization.  Historically more numerous, those still in the wild have become fewer as younger panserbjørn integrate themselves into society.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -12923,7 +12923,7 @@
         ]
       }
     ],
-    "name": "Panserbjorn"
+    "name": "Panserbjørn"
   },
   {
     "description": "Plasmoids are amorphous beings with no typical shape. In the presence of other folk, they often adopt a similar form, but there's little chance of mistaking a plasmoid for anything else. They consume food by osmosis, the way an amoeba does, and excrete waste through tiny pores. They breathe by absorbing oxygen through another set of pores,and their limbs are strong and flexible enough to grasp and manipulate weapons and tools. Although most plasmoids are translucent gray, they can alter their color and translucence by absorbing dyes through their pores.",
