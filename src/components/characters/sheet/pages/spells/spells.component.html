@@ -99,7 +99,9 @@
         <td class="casting-time" (click)="openModal(spell.spell.name)">
           <div>
             {{ spell.spell.castingTime.split(",")[0] }}
-            <span *ngIf="spell.ritualOnly"> + 10 minutes</span>
+            <span *ngIf="spell.ritualOnly && spell.spell.ritual">
+              + 10 minutes</span
+            >
             <sup *ngIf="spell.spell.ritual" title="Ritual"> R </sup>
           </div>
         </td>
