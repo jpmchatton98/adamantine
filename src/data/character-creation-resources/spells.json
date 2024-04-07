@@ -1322,6 +1322,32 @@
     ]
   },
   {
+    "name": "Aura of Frost",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self (10-foot radius)",
+    "components": "V",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you. When a creature other than you, enters the area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or it takes 2d8 cold damage and have its speed is reduced by 20 feet until the start of its next turn. On a successful save, it takes half as much cold damage and its speed isn't reduced."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional 1d8 cold damage and has its speed reduced by an additional 10 feet for each spell level above 2nd."
+    ],
+    "lists": ["Divine", "Primal", "Arcane", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 2,
+        "die": 8,
+        "type": "cold"
+      }
+    ],
+    "upcastMultiplier": 1
+  },
+  {
     "name": "Avian Geyser",
     "school": "Evocation",
     "level": 2,
@@ -7663,7 +7689,7 @@
     "name": "Freezing Lash",
     "school": "Evocation",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Self (5-ft radius)",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "1 round",
@@ -8201,7 +8227,7 @@
     "name": "Glacial Blade",
     "school": "Evocation",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Self (5-foot radius)",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "1 round",
@@ -8616,7 +8642,7 @@
     "name": "Green-Flame Blade",
     "school": "Evocation",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Self (5-foot radius)",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "Instantaneous",
@@ -8633,12 +8659,12 @@
     "name": "Grim Scythe",
     "school": "Transmutation",
     "level": 0,
-    "castingTime": "1 bonus action",
+    "castingTime": "1 attack",
     "range": "Self",
-    "components": "V, S, M (a handful of hay seed and a quarterstaff)",
+    "components": "V, S, M (a handful of hay seed and a staff)",
     "duration": "1 minute",
     "description": [
-      "For the duration, a spectral blade forms on the end of a quarterstaff you touch. While this blade lasts, you use your spellcasting ability instead of Strength for the attack and damage rolls of two-handed melee attacks. The weapon also becomes magical if it isn't, it deals necrotic damage instead of bludgeoning, and its damage die becomes a d10. The spell ends if you cast it again or if you let go of the weapon."
+      "As part of an attack, a spectral blade forms on the end of a staff you are holding. For this attack, you can use your spellcasting ability, instead of Strength, for the attack and damage roll, its damage die becomes a d8, and its damage type becomes necrotic."
     ],
     "lists": ["Arcane", "Occult"],
     "ritual": 0,
@@ -8646,8 +8672,9 @@
     "damage": [
       {
         "dice": 1,
-        "die": 10,
-        "type": "necrotic"
+        "die": 8,
+        "type": "necrotic",
+        "addAbility": true
       }
     ]
   },
@@ -11360,14 +11387,14 @@
     "name": "Lightning Arrow",
     "school": "Transmutation",
     "level": 3,
-    "castingTime": "1 bonus action",
+    "castingTime": "1 attack",
     "range": "Self",
     "components": "V, S",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Instantaneous",
     "description": [
-      "The next time you make a ranged weapon attack during the spell's duration, the weapon's ammunition, or the weapon itself if it's a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal. The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon's normal damage.",
-      "Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one.",
-      "The piece of ammunition or weapon then returns to its normal form."
+      "As part of a ranged weapon attack, you can transmute a piece of ammunition, or the thrown weapon, into a bolt of lightning. On hit, the target takes the normal damage of the attack, plus a bonus 4d8 lighting damage. On a miss, the target takes half as much lightning damage, and none of the normal damage.",
+      "Regardless if this attack hits or misses, all creatures within 10 feet of the target must make a Dexterity saving throw. On a failed save, creatures take 2d8 lighting damage, and half as much lighting damage on a success. The piece of ammunition or thrown weapon then returns to its normal form.",
+      "Any creature that takes lighting damage from this spell cannot take reactions until the beginning of your next turn."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd."
@@ -11526,7 +11553,7 @@
     "name": "Lightning-Flash Strike",
     "school": "Transposition",
     "level": 2,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "30 feet",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "Instantaneous",
@@ -14781,12 +14808,12 @@
     "name": "Radiant Mark",
     "school": "Evocation",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Self (5-foot radius)",
     "components": "V, M (a melee weapon worth at least 1 sp)",
     "duration": "1 round",
     "description": [
-      "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects and it is branded with a visible mark until the beginning of your next turn. The next time the marked creature is hit by an attack by a creature other than you, the attack deals additional radiant damage equal to your spellcasting ability modifier and the mark is consumed."
+      "As part of casting this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects and it is branded with a visible mark until the beginning of your next turn. The next time the marked creature is hit by an attack by a creature other than you, the attack deals additional radiant damage equal to your spellcasting ability modifier and the mark is consumed."
     ],
     "higherLevels": [
       "At 5th level, the melee attack deals an extra 1d6 radiant damage to the target, and the radiant damage when consuming the mark increases to 1d6 + your spellcasting ability modifier. Both damage rolls increase by 1d6 at 11th level and 17th level."
@@ -14863,12 +14890,12 @@
     "name": "Rancorous-Mist Blade",
     "school": "Conjuration",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "5 feet",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "1 round",
     "description": [
-      "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes engulfed in a 5-foot square of acidic mist. If the target does not move out of this square by the start of your next turn, it immediately takes 1d8 acid damage, and the spell ends."
+      "As part of casting this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes engulfed in a 5-foot square of acidic mist. If the target does not move out of this square by the start of your next turn, it immediately takes 1d8 acid damage, and the spell ends."
     ],
     "higherLevels": [
       "This spell's damage and effected area increase when you reach higher levels. At 5th level, the damage is increased by 1d8 and the area covered by the mist is 10 feet in a line away from you, affecting any creatures in the mist at the start of your next turn. Both the damage and area's line increase by 1d8 and 5 feet at 11th level and 17th level."
@@ -16275,12 +16302,12 @@
     "name": "Shillelagh",
     "school": "Transmutation",
     "level": 0,
-    "castingTime": "1 bonus action",
+    "castingTime": "1 attack",
     "range": "Touch",
-    "components": "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
+    "components": "V, S, M (mistletoe, a shamrock leaf, and a wooden melee weapon worth at least 1 sp)",
     "duration": "1 minute",
     "description": [
-      "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon."
+      "As part of an attack, you imbue the wood of wooden melee weapon you are holding with primal power. For this attack, you can use your spellcasting ability, instead of Strength, for the attack and damage roll, and its damage die becomes a d8. The weapon also becomes magical, if it isn't already."
     ],
     "lists": ["Primal"],
     "ritual": 0,
@@ -19516,12 +19543,12 @@
     "name": "Venemous Strike",
     "school": "Transmutation",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Touch",
     "components": "S, M (a weapon worth at least 1 sp)",
     "duration": "Instantaneous",
     "description": [
-      "As part of the action used to cast this spell, you imbue a magical poison on a weapon you touch and must make an attack with a it against one creature within the weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects plus 1d4 poison damage. If your attack roll deals critical damage, the target becomes poisoned until the end of its next turn. Targets resistant or immune to poison damage or immune to the poisoned condition do not become poisoned.",
+      "As part of casting this spell, you imbue a magical poison on a weapon you touch and must make an attack with a it against one creature within the weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects plus 1d4 poison damage. If your attack roll deals critical damage, the target becomes poisoned until the end of its next turn. Targets resistant or immune to poison damage or immune to the poisoned condition do not become poisoned.",
       "This spell deals an additional 1d4 poison damage when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4)."
     ],
     "lists": ["Arcane", "Primal"],
@@ -21296,7 +21323,7 @@
     "name": "Nemesis Strike",
     "school": "Necromancy",
     "level": 0,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Self (5-foot radius)",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "1 round",
@@ -23221,7 +23248,7 @@
     "name": "Dedication of Blood",
     "school": "Necromancy",
     "level": 3,
-    "castingTime": "1 action",
+    "castingTime": "1 attack",
     "range": "Self",
     "components": "S, M (a melee weapon worth at least 1 sp)",
     "duration": "Instantaneous",

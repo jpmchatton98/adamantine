@@ -2011,8 +2011,8 @@
     "type": 0
   },
   {
-    "class": "Harpoon",
-    "name": "Spear",
+    "class": "Spear",
+    "name": "Harpoon",
 
     "description": "A slender metal spear that flies through liquid more easily.",
     "damage": "1d6",
