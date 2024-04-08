@@ -7706,6 +7706,22 @@
     ]
   },
   {
+    "name": "Animate Shipwreck",
+    "school": "Necromancy",
+    "level": 6,
+    "castingTime": "8 hours",
+    "range": "120 feet",
+    "components": "V, S, M (A sunken ship that sailed for at least 20 years and cursed objects worth 50,000 gold, all of which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You raise a sunken wreck to unliving servitude. As you cast this spell, the ship warps and breaks, snapping into pieces as it slowly reassembles itself into into a gigantic, roughly humanoid shape, at which point it rises as a Shipwreck Golem that is friendly to you and to any other creatures you designate.",
+      "A proficient creature with Carpenter's Tools can use them to restore 1 hit point to the golem for each 10 minutes spent repairing it. If the golem is reduced to 0 hit points, it is destroyed and cannot be reanimated.",
+      "With a ritual that takes 10 minutes, you can designate additional friendly creatures, or can issue a simple command of five words or fewer to the golem, which it follows at literally as possible until it completes the task or you issue a new command."
+    ],
+    "lists": ["Arcane", "Occult", "Primal", "Divine"],
+    "ritual": 0
+  },
+  {
     "name": "Form of Wind",
     "school": "Transmutation",
     "level": 6,
