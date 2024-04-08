@@ -326,6 +326,7 @@ export class CharacterSheetComponent extends BaseComponent implements OnInit {
 
     const splMods = {
       artificer: 'int',
+      inventor: 'int',
       'pale-master': 'F32AC04C-8ED7-46ED-AD0C-A69474CDF942',
       shaman: '936C2192-64E5-4D43-8482-DF57D53E50A2',
       ranger: 'wis',

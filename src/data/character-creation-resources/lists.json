@@ -6882,7 +6882,7 @@
     },
     {
       "name": "Repeating Shot",
-      "description": "<strong>Item:</strong> a ranged weapon (requires attunement)</p><p>This magic weapon ignores the loading property if it has it. If you load no ammunition into the weapon it produces its own, creating magic ammunition when you make a ranged attack. The ammunition vanishes after it either hits or misses.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+      "description": "<strong>Item:</strong> a ranged weapon (requires attunement)</p><p>This magic weapon ignores the loading property if it has it, and if it is a firearm it can be reloaded as an object interaction.</p><p>If you load no ammunition into the weapon it produces its own, creating magic ammunition when you make a ranged attack. The ammunition vanishes after it either hits or misses.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
     },
     {
       "name": "Returning Weapon",
@@ -7120,6 +7120,389 @@
       "name": "Ultimate Spellstoring Item",
       "prereqLevel": 17,
       "description": "<strong>Item:</strong> one Tiny object, tool, or weapon (requires attunement when not used by its creator)</p><p>You imbue this object with magical power. Each time you imbue this infusion into an object, you choose a 5th-level spell from any spell list to imbue. The creature that holds this object can expend five of its charges to cast the spell imbued within, using the spell's normal casting time.</p><p>If the spell requires concentration, the creature holding the item must concentrate on the spell for its duration.</p><p>You can imbue this infusion with more arcane charges, allowing for more castings of the imbued spell before the item becomes inert."
+    }
+  ],
+  "inventor-infusion": [
+    {
+      "name": "Adaptation Armor",
+      "description": "<strong>Item:</strong> a suit of armor or set of clothing</p><p>The wearer is considered acclimated to all environments, and does not need to breathe."
+    },
+    {
+      "name": "Adjustable Tool Set",
+      "description": "<strong>Item:</strong> a set of artisan's tools (requires attunement)</p><p>The wielder is considered proficient with this magical set of tools, and as an action, they can transform this set of tools into another set of artisan's tools of their choice.</p><p>At 11th level, this magical tool set grants a +1 bonus to ability checks. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Arcane Firearm",
+      "description": "<strong>Item:</strong> a rod, wand, or Tiny object</p><p>This object is infused with a cantrip of your choice from any spell list. As an action on its turn, a creature that holds this object can produce the imbued cantrip."
+    },
+    {
+      "name": "Arm Launcher",
+      "description": "<strong>Item:</strong> a glove or gauntlet</p><p>This tiny magical launcher can be loaded with a Tiny object, including but not limited to; ball bearings, a vial of acid, or holy water. As an attack, the wearer can activate the launcher and make a ranged weapon attack at a target up to 30 feet away. The launcher can be reloaded as a bonus action."
+    },
+    {
+      "name": "Bane Weapon",
+      "description": "<strong>Item:</strong> a simple or martial weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it.</p><p>A bane weapon is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both weapons of dragon slaying and weapons of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.The weapon has 4 charges. When the wielder hits a creature belonging to the type, race, or group associated with the weapon, you can expend 1 charge and inflict an additional 2d6 damage of the weapon's type with the attack. The weapon regains 1d4 charges daily at dawn."
+    },
+    {
+      "name": "Boots of False Crowds",
+      "description": "<strong>Item:</strong> a pair of boots</p><p>While wearing these boots, the wearer can use a bonus action to click the boots' heels together, making its steps sound as if a large crowd is moving at its location. The sound produced by the boots matches with the current speed of the wearer, and this sound also interacts with its environment. For example, if the wearer is running across a wet surface, the boots will create the sound of a large crowd running accompanied by splashing water. However, the boots can't replicate vibrations or other tactile sensations that would normally result from an actual crowd of people. The wearer can use a bonus action to end this effect."
+    },
+    {
+      "name": "Enhanced Arcane Focus",
+      "description": "<strong>Item:</strong> a rod, staff, or wand (requires attunement)</p><p>This item grants the user +1 bonus to spell attack rolls, and they can ignore half cover when making spell attacks.</p><p>This bonus increases at 11th level (+2) and 17th level (+3)."
+    },
+    {
+      "name": "Enhanced Defense",
+      "description": "<strong>Item:</strong> a suit of armor or a shield</p><p>This item grants the user +1 bonus to their armor class while wearing (armor) or wielding (shield) this infused item.</p><p>This bonus increases at 11th level (+2) and 17th level (+3)."
+    },
+    {
+      "name": "Enhanced Instrument",
+      "description": "<strong>Item:</strong> a musical instrument (requires attunement)</p><p>The wielder is proficient with this magic instrument and can use it as a spellcasting focus. Whenever they make an ability check using this instrument, they gain a bonus to the roll equal to your Intelligence modifier (minimum of +1).</p><p>At 11th level, this magic instrument grants a +1 bonus to spell attack rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Enhanced Tool Set",
+      "description": "<strong>Item:</strong> a set of tools you are proficient with</p><p>Whenever the wielder uses these tools as part of an ability check, it gains a bonus to that ability check equal to your Intelligence modifier (minimum of +1)."
+    },
+    {
+      "name": "Enhanced Weapon",
+      "description": "<strong>Item:</strong> a simple or martial weapon</p><p>This magic weapon grants the user a +1 bonus to any attack and damage rolls they make with this infused weapon.</p><p>This bonus increases at 11th level (+2) and 17th level (+3)."
+    },
+    {
+      "name": "Featherweight Belt",
+      "description": "<strong>Item:</strong> a belt or cloak (requires attunement)</p><p>When worn, this magic belt reduces the user to one-tenth of their weight without decreasing their physical abilities.</p><p>At 11th level, it reduces the wearer to one-hundredth of their weight without decreasing their physical abilities."
+    },
+    {
+      "name": "Featherweight Weapon",
+      "description": "<strong>Item:</strong> a heavy or two-handed weapon (requires attunement)</p><p>This magic weapon loses the heavy property if it had it. If it did not have the heavy property, it gains the light property.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Floating Cape",
+      "description": "<strong>Item:</strong> a cape, cloak, or set of robes (requires attunement)</p><p>This magic item has 4 charges. When the wearer is knocked prone, it can use its reaction and expend 1 charge to immediately get up from prone. As part of the same reaction, the wearer can give itself a flying speed of 10 feet until the start of its next turn and move up to this distance without provoking opportunity attacks. The item regains 1d4 expended charges daily at dawn."
+    },
+    {
+      "name": "Goggles of Clearsight",
+      "description": "<strong>Item:</strong> a pair of goggles or glasses</p><p>While wearing these goggles, the wearer can see through areas that are lightly obscured by magical or mundane phenomena without disadvantage on Perception checks.</p><p>In addition, the wearer no longer suffers the negative effects of the Sunlight Sensitivity trait, and they have advantage on saving throws to resist becoming blinded."
+    },
+    {
+      "name": "Helm of Sharp Senses",
+      "description": "<strong>Item:</strong> a helmet (requires attunement)</p><p>The wearer of this helmet gains a bonus to its Intelligence (Investigation) and Wisdom (Perception) checks equal to your Intelligence modifier. This may stack with your own modifier if you are the one wearing it."
+    },
+    {
+      "name": "Helm of Willpower",
+      "description": "<strong>Item:</strong> a helmet (requires attunement)</p><p>This helmet has 4 charges. When the wearer makes a saving throw against being charmed or frightened, the wearer can use its reaction to expend 1 charge and make the roll with advantage. The helmet regains 1d4 charges daily at dawn."
+    },
+    {
+      "name": "Homonculus Servant (Mechanical)",
+      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p> <p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p> <p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.</p> <p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the homunculus can take any action of its choice, not just Dodge.</p> <p>The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.<table> <tbody> <tr> <th colspan=\"6\">Homunculus Servant</th> </tr> <tr> <td colspan=\"6\"><em>Tiny construct</em></td> </tr> <tr> <td colspan=\"6\"><strong>Armor Class:</strong> 13 (natural armor)</td> </tr> <tr> <td colspan=\"6\"> <strong>Hit Points:</strong> 1 + your Intelligence modifier + your artificer level </td> </tr> <tr> <td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 30 ft.</td> </tr> <tr> <th>STR</th> <th>DEX</th> <th>CON</th> <th>INT</th> <th>WIS</th> <th>CHA</th> </tr> <tr> <td>4 (-3)</td> <td>15 (+2)</td> <td>12 (+1)</td> <td>10 (+0)</td> <td>10 (+0)</td> <td>7 (?2)</td> </tr> <tr> <td colspan=\"6\"><strong>Saving Throws:</strong> Dex +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Skills:</strong> Perception +0 plus PB x 2, Stealth +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Damage Immunities:</strong> poison</td> </tr> <tr> <td colspan=\"6\"><strong>Condition Immunities:</strong> exhaustion, poisoned</td> </tr> <tr> <td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10 + (PB x 2)</td> </tr> <tr> <td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td> </tr> <tr> <td colspan=\"6\"><strong>Challenge:</strong> -</td> </tr> <tr> <td colspan=\"6\"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td> </tr> <tr> <td colspan=\"6\"> <strong><em>Evasion.</em></strong> If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated. </td> </tr> <tr> <th colspan=\"6\">Actions</th> </tr> <tr> <td colspan=\"6\"><strong><em>Force Strike.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage. </td> </tr> <tr> <th colspan=\"6\">Reactions</th> </tr> <tr> <td colspan=\"6\"> <strong><em>Channel Magic.</em></strong> The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you. </td> </tr> </tbody> </table>",
+      "granted": [
+        {
+          "type": "companion",
+          "key": "homonculus"
+        }
+      ]
+    },
+    {
+      "name": "Homonculus Servant (Fleshy)",
+      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p> <p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p> <p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.</p> <p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the homunculus can take any action of its choice, not just Dodge.</p> <p>The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.<table> <tbody> <tr> <th colspan=\"6\">Homunculus Servant</th> </tr> <tr> <td colspan=\"6\"><em>Tiny construct undead (corporeal)</em></td> </tr> <tr> <td colspan=\"6\"><strong>Armor Class:</strong> 13 (natural armor)</td> </tr> <tr> <td colspan=\"6\"> <strong>Hit Points:</strong> 1 + your Intelligence modifier + your artificer level </td> </tr> <tr> <td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 30 ft.</td> </tr> <tr> <th>STR</th> <th>DEX</th> <th>CON</th> <th>INT</th> <th>WIS</th> <th>CHA</th> </tr> <tr> <td>4 (-3)</td> <td>15 (+2)</td> <td>12 (+1)</td> <td>10 (+0)</td> <td>10 (+0)</td> <td>7 (?2)</td> </tr> <tr> <td colspan=\"6\"><strong>Saving Throws:</strong> Dex +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Skills:</strong> Perception +0 plus PB x 2, Stealth +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Damage Immunities:</strong> poison</td> </tr> <tr> <td colspan=\"6\"><strong>Condition Immunities:</strong> exhaustion, poisoned</td> </tr> <tr> <td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10 + (PB x 2)</td> </tr> <tr> <td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td> </tr> <tr> <td colspan=\"6\"><strong>Challenge:</strong> -</td> </tr> <tr> <td colspan=\"6\"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td> </tr> <tr> <td colspan=\"6\"> <strong><em>Evasion.</em></strong> If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated. </td> </tr> <tr> <th colspan=\"6\">Actions</th> </tr> <tr> <td colspan=\"6\"><strong><em>Force Strike.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage. </td> </tr> <tr> <th colspan=\"6\">Reactions</th> </tr> <tr> <td colspan=\"6\"> <strong><em>Channel Magic.</em></strong> The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you. </td> </tr> </tbody> </table>",
+      "granted": [
+        {
+          "type": "companion",
+          "key": "homonculus-fleshy"
+        }
+      ]
+    },
+    {
+      "name": "Parrying Weapon",
+      "description": "<strong>Item:</strong> a weapon</p><p>While wielding this weapon, the wielder gains a +1 bonus to their Armor Class.</p><p>This bonus increases to +2 at 10th level."
+    },
+    {
+      "name": "Penetrating Weapon",
+      "description": "<strong>Item:</strong> a weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it. When the wielder makes a ranged attack with the weapon, it ignores half and three-quarters cover."
+    },
+    {
+      "name": "Power Whip",
+      "description": "<strong>Item:</strong> a chain weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and its damage die becomes a d8 if it was smaller.</p><p>This bonus increases at 11th level (+2) and 17th level (+3)."
+    },
+    {
+      "name": "Repeating Shot",
+      "description": "<strong>Item:</strong> a ranged weapon (requires attunement)</p><p>This magic weapon ignores the loading property if it has it, and if it is a firearm it can be reloaded as an object interaction.</p><p>If you load no ammunition into the weapon it produces its own, creating magic ammunition when you make a ranged attack. The ammunition vanishes after it either hits or misses.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Replicate Magic Item (Common)",
+      "description": "<strong>Item:</strong> variable</p><p>Choose any common magic item. Your infusion replicates the function of your chosen magic item."
+    },
+    {
+      "name": "Returning Weapon",
+      "description": "<strong>Item:</strong> a weapon with the thrown property</p><p>After making a ranged attack this magic weapon, regardless if the attack hits or misses its target, it instantaneously returns to its wielder's hand.</p><p>At 11th level this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Ring of Proficiency",
+      "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>The wearer of this ring gains proficiency in one skill or set of tools that you are proficient in (your choice upon infusion)."
+    },
+    {
+      "name": "Tactician's Amulet",
+      "description": "<strong>Item:</strong> an amulet or pendant</p><p>While wearing this amulet, a creature can choose to use its Intelligence modifier in place of its Dexterity modifier when rolling for initiative."
+    },
+    {
+      "name": "Boots of the Wind",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>These boots have 3 charges. While wearing these boots, the wearer's walking speed increases by 5 feet. The wearer can also expend 1 charge to use the Dash action as a bonus action. The boots regain 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Hazy Garments",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a set of clothing (requires attunement)</p><p>The wearer if this set of garments is coated with an illusory mist that deceives the eye. A creature gains a +1 bonus to Armor Class while wearing these garments.</p><p>Additionally, the wearer can move freely without provoking opportunity attacks.</p><p>The bonus increases to +2 when you reach 14th level in this class."
+    },
+    {
+      "name": "Homing Weapon",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a weapon with the ranged or thrown property</p><p>The wielder of this magic weapon ignores the disadvantage imposed when attacking at the weapon's long range.</p><p>At 11th level it gains a +1 bonus to its attack and damage rolls. This bonus becomes +2 at 17th level."
+    },
+    {
+      "name": "Immovable Boots",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>When the wearer is standing on a flat surface, it can use an action to activate the boots, magically fixing the wearer in place. Until the wearer uses an action to deactivate the boots, they do not move, even if they are defying gravity.</p><p>A creature can use an action to make a DC 30 Strength check, separating the boots from the surface on a success."
+    },
+    {
+      "name": "Infiltrator Armor",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>This magic suit of armor retains its weight but is formfitting and wearable under clothes. The wearer of this armor has advantage on any Dexterity (Stealth) checks."
+    },
+    {
+      "name": "Light Blade",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a sword hilt or wand (requires attunement)</p><p>While grasping the object, the wielder can use a bonus action to cause a blade of pure radiance to spring into existence, or disappear, from the end of this object. While the blade exists, this magic item is considered a simple melee weapon with the finesse property, and it deals 1d8 radiant damage on hit.</p><p>The luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet beyond that radius.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Magic Bomb",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a throwable vessel such as a bottle, flask, jar, or urn</p><p>You infuse implosive power into an object which you can throw. You are proficient with these bombs.</p><p>As an action, you or any creature holding the Magic Bomb can throw it up to 60 feet away. Upon collision with any object or creature the magic bomb detonates affecting all creatures, objects, and structures in 20 foot radius. Each creature in this radius must make a Constitution save taking 2d6 thunder damage and 2d6 force damage and be pulled up to 10 feet towards where the magic bomb landed on a failed save or half as much damage and not pulled on a successful save. Objects & structures take double damage, and objects that aren't being held automatically fail this saving throw and fly to the center of the implosion.</p><p>At 10th level the damage increases to 3d6 thunder and 3d6 force."
+    },
+    {
+      "name": "Many-Handed Pouch",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> individual pouches equal to your Intelligence modifier</p><p>These magic pouches all share one interdimensional space with the capacity of a single pouch. Reaching into an infused pouch allows access to this shared storage space. A pouch operates as long as it is within 100 miles of another pouch; the pouch is otherwise empty and won't accept contents.</p><p>If the Infusion ends, the items stored in the shared space all move into one of the pouches, determined at random."
+    },
+    {
+      "name": "Mind Sharpener",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a suit of armor or robes</p><p>This item can send a jolt to the wearer to refocus their mind. The item has 4 charges. When the wearer fails a Constitution saving throw to maintain concentration on a spell, they can use their reaction to spend 1 of the item's charges to succeed instead. The item regains all expended charges at dawn."
+    },
+    {
+      "name": "Minor Spellstoring Item",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> one Tiny object, tool, or weapon (requires attunement when not used by its creator)</p><p>You imbue this object with magical power. Each time you imbue this infusion into an object, you choose a 1st-level spell from any spell list to imbue. The creature that holds this object can expend one of its charges to cast the spell imbued within, using the spell's normal casting time.</p><p>If the spell requires concentration, the creature holding the item must concentrate on the spell for its duration.</p><p>This item holds a number of charges of the imbued spell equal to your Intelligence modifier (minimum of 1), and it regains all expended charges each day at dawn.",
+      "uses": [
+        {
+          "id": "16C7EEE1-FF40-45EF-8134-9A67ABA73382",
+          "type": "derived",
+          "source": "score",
+          "score": "int",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Radiant Weapon",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a melee weapon (requires attunement)</p><p>As a bonus action, the wielder can cause this weapon to emit bright light in a 30-foot radius, and dim light 30 feet beyond that. The wielder can extinguish the light as a bonus action.</p><p>This magical weapon has 4 charges. When its wielder hits a creature with this weapon, it can expend 1 charge and force its target to make a Constitution saving throw. On a failure, it is blinded until the beginning of your next turn. This weapon regains all expended charges at dawn.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Replicate Magic Item (Uncommon)",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> varies</p><p>Choose any uncommon magic item. Your infusion replicates the function of your chosen magic item."
+    },
+    {
+      "name": "Repulsion Gauntlets",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a pair of gloves or gauntlets (requires attunement)</p><p>These magical gauntlets have 4 charges. When their wearer hits a creature with an unarmed strike or gauntlet attack, it can expend 1 charge and force a Large or smaller target to make a Strength saving throw. On a failed save, the creature is knocked back 15 feet in a straight line. These gauntlets regain all of their expended charges at dawn.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Repulsion Shield",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a shield (requires attunement)</p><p>This magic shield has 4 charges. When the wielder is hit by a melee attack, they can force a Large or smaller attacker to make a Strength saving throw. On a failed save, the attacker is knocked back 15 feet in a straight line and falls prone. The shield regains all of its expended charges at dawn.</p><p>At 11th level this magic shield grants a +1 bonus to Armor Class. This Armor Class bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Ring of Holding",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>As an action, a creature wearing this ring can touch an object that weighs 25 pounds or less and cause the object to be teleported to an empty demiplane and stored there. As long as an object is being stored this way, a creature wearing the ring can teleport the object into their hand as a bonus action.  The ring can only store one object at a time."
+    },
+    {
+      "name": "Ring of Spell Refueling",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>While wearing this magic ring, the wearer can use an action to recover one of its expended spell slots of 3rd-level or lower, or 5 sorcery points.  Once used, the ring can't be used again until the next dawn."
+    },
+    {
+      "name": "Skyfall Harness",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a cloak, vest, or harness</p><p>This magic harness automatically sizes to fit the wearer and can be worn over clothing or light armor. It has wing-like fins between its limbs that slow falls and allow wearers to glide.</p><p>When the wearer falls and isn't incapacitated, it subtracts up to 100 feet from its fall when calculating falling damage, and it can glide 2 feet horizontally every 1 foot that it falls."
+    },
+    {
+      "name": "Swift Ring",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>This ring has 4 charges. Whenever the wearer of this ring takes the attack action, they can expend one of the charges to make one melee or ranged weapon attack as a bonus action. The ring regains 1d4 charges daily at dawn.</p><p>At 14th level, this magic ring grants an extra attack - which can stack with other versions of extra attack."
+    },
+    {
+      "name": "War Gauntlet",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> an armored gauntlet and a martial weapon or shield</p><p>You attach either a martial weapon lacking the heavy or two-handed properties, or a shield, to the gauntlet. The wearer gains proficiency with the attached item, and it cannot be removed from the gauntlet while this Infusion is active.</p><p>At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
+      "name": "Adrenaline Armor",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>A creature gains a +1 bonus to Armor Class while wearing this armor.</p><p>When the wearer drops to 0 hit points and is not killed outright, it can use its reaction to drop to 1 hit point instead. As part of the same reaction, the wearer can make one weapon attack or take the Dash action. The armor regains the use of this feature when the wearer finishes a long rest."
+    },
+    {
+      "name": "Armor of Magical Strength",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>This magical armor grants its wearer a +1 bonus to its Armor Class, and its wearer can also use its Intelligence, in place of Strength, for Strength-based ability checks or saving throws.</p><p>This armor also has 4 charges. As a reaction when the wearer would be knocked prone or moved against their will, they can expend 1 charge to remain standing or not move. The armor regains all of its expended charges at dawn.</p><p>At 17th level, this armor grants a +2 bonus to Armor Class."
+    },
+    {
+      "name": "Boots of Earthquakes",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>The area within 5 feet of the wearer of these boots is considered difficult terrain for creatures of the wearer's choice."
+    },
+    {
+      "name": "Boots of the Winding Path",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>The wearer of these magical boots can use a bonus action to teleport up to 15 feet to an unoccupied space they can see."
+    },
+    {
+      "name": "Chameleon Armor",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>The wearer of this armor can use an action to render themselves invisible for 1 minute or until they attack or cast a spell."
+    },
+    {
+      "name": "Greater Spellstoring Item",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> one Tiny object, tool, or weapon (requires attunement when not used by its creator)</p><p>You imbue this object with magical power. Each time you imbue this infusion into an object, you choose a 2nd-level spell from any spell list to imbue. The creature that holds this object can expend two of its charges to cast the spell imbued within, using the spell's normal casting time.</p><p>If the spell requires concentration, the creature holding the item must concentrate on the spell for its duration.</p><p>This item holds a number of charges of the imbued spell equal to your Intelligence modifier (minimum of 1), and it regains all expended charges each day at dawn.",
+      "uses": [
+        {
+          "id": "60C8C851-2A15-4E25-9102-5A481F549429",
+          "type": "derived",
+          "source": "score",
+          "score": "int",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Helm of Awareness",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a helm, hat, or diadem (requires attunement)</p><p>The wearer of this helm gains a bonus to its initiative rolls equal to your Intelligence modifier (minimum of +1), and cannot be surprised, so long as they are not incapacitated."
+    },
+    {
+      "name": "Horseless Carriage",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a land vehicle such as a carriage, cart, or wagon</p><p>The vehicle no longer needs horses or other steeds to pull it, it can now propel itself.  The vehicle has a speed of 50 feet. A creature on or inside the vehicle can give it a simple command in a language you speak such as \"go straight\", \"turn left\" or \"follow this road\" as an action. The vehicle will follow the given command provided it is simple enough."
+    },
+    {
+      "name": "Replicate Magic Item (Rare)",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> varies</p><p>Choose any rare magic item. Your infusion replicates the function of your chosen magic item."
+    },
+    {
+      "name": "Shoulder-Mounted Weapon",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a ranged weapon (requires attunement)</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it. As an action, a creature can mount the weapon onto its shoulder. It can also detach the weapon as an action, and the weapon can't be removed against the creature's will.</p><p>While the weapon is attached in this way, the weapon reloads itself automatically if it has the loading property and if the creature has enough ammunition for the weapon. The creature can also use a bonus action to make a ranged attack from it."
+    },
+    {
+      "name": "Splintershot Weapon",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a ranged weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it. As an action the wielder of this weapon may cause it to fire a splintered piece of ammunition. All creatures in a 15-foot cone in front of the creature must succeed on a Dexterity saving throw or take the weapon's normal damage, half damage on a successful save."
+    },
+    {
+      "name": "Telescoping Weapon",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a melee weapon</p><p>The wielder gains an additional 5 feet of reach with the weapon."
+    },
+    {
+      "name": "Vampiric Weapon",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a melee weapon (requires attunement)</p><p>When the wielder scores a critical hit with this weapon, the target takes an extra 2d6 necrotic damage, and the wielder gains temporary hit points equal to the necrotic damage dealt. Undead are immune to the effects of this Infusion.</p><p>At 17th level, the extra necrotic damage becomes 4d6."
+    },
+    {
+      "name": "Warding Armor",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a suit of armor</p><p>While wearing this armor, a creature has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Advanced Spellstoring Item",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> one Tiny object, tool, or weapon (requires attunement when not used by its creator)</p><p>You imbue this object with magical power. Each time you imbue this infusion into an object, you choose a 3rd-level spell from any spell list to imbue. The creature that holds this object can expend three of its charges to cast the spell imbued within, using the spell's normal casting time.</p><p>If the spell requires concentration, the creature holding the item must concentrate on the spell for its duration.</p><p>This item holds a number of charges of the imbued spell equal to your Intelligence modifier (minimum of 1), and it regains all expended charges each day at dawn.",
+      "uses": [
+        {
+          "id": "6493E6A1-2844-4470-8D71-662DDC489995",
+          "type": "derived",
+          "source": "score",
+          "score": "int",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Arcane Propulsion Armor",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>The wearer of this armor gains these benefits:<ul> <li>The wearer gains a +1 bonus to AC.</li> <li>The wearer's walking speed increases by 10 feet.</li> <li>If the wearer is missing any limbs, the armor replaces those limbs - hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace. </li> <li>The wearer has a flying speed equal to their walking speed. The wearer falls if they end their turn in the air and nothing else is holding them aloft. </li> <li>If the wearer flies at least 20 feet in a straight line towards a target and makes a melee attack against it, the target is pushed back 10 feet and takes an extra 1d8 force damage. </li> </ul>"
+    },
+    {
+      "name": "Collar of Taming",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a metal circlet or collar (requires attunement)</p><p>The magic of this collar can tame even the wildest animals. You, and only you, can control any beast wearing this collar as if it were a trained mount. This collar does not work on beasts with an Intelligence score greater than your own."
+    },
+    {
+      "name": "Deflector Ring",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>If the wearer is hit by an attack roll and can see the attacker, the wearer can use its reaction to deflect the attack to another creature it can see within 5 feet of it that isn't the attacker. If the attack roll would hit the chosen creature, then it takes the damage from the attack. This property can't be used again until the next dawn."
+    },
+    {
+      "name": "Elemental Weapon",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a melee weapon (requires attunement)</p><p>You infuse this magic weapon with elemental energy. Upon infusion, choose a command word and one of the following damage types: acid, cold, fire, lightning, or thunder. As a bonus action, the wielder can speak the weapon's command word and cause elemental energy to burst forth from the weapon until the command word is spoken again. On hit, the weapon deals an additional 1d6 of the chosen elemental damage.</p><p>At 17th level, the bonus elemental damage becomes 2d6."
+    },
+    {
+      "name": "Replicate Magic Item (Very Rare)",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> varies</p><p>Choose any very rare magic item. Your infusion replicates the function of your chosen magic item."
+    },
+    {
+      "name": "Resistant Armor",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>This magical armor grants its wearer a +1 bonus to its Armor Class, and its wearer has resistance to one of the following damage types; acid, cold, fire, lightning, necrotic, poison, radiant, or thunder (your choice upon Infusion).</p><p>At 17th level, this armor grants a +2 bonus to Armor Class, and you can choose for this magical armor to grant its wearer resistance to psychic or force damage."
+    },
+    {
+      "name": "Ring of the Elements",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>Upon infusing this magic ring you select one of the following damage types: acid, cold, fire, lightning, or thunder.  When the wearer casts a spell of 3rd-level or lower that deals that damage type, it can activate the ring to cause its spell to deal maximum damage to one target of that spell.  Once the wearer uses this ring to maximize the damage of a spell it cannot be used again until the next dawn.</p><p>At 17th level, it can be used on spells of 5th-level or lower."
+    },
+    {
+      "name": "Gauntlets of the Guardian",
+      "prereqLevel": 17,
+      "description": "<strong>Item:</strong> a pair of gauntlets (requires attunement)</p><p>These magic gauntlets are infused with wondrous arcane power. As a reaction when a Huge or smaller creature ends its turn within 30 feet of the wearer, it can force that creature to make a Strength saving throw. On a failed save, the target is pulled 30 feet toward the wielder to an unoccupied space of its choice. If they pull the creature within 5 feet, the wielder can make a single melee weapon attack against it."
+    },
+    {
+      "name": "Helm of Mind Shielding",
+      "prereqLevel": 17,
+      "description": "<strong>Item:</strong> a helm, hat, or diadem (requires attunement)</p><p>The wearer of this magic helm gains resistance to psychic damage and immunity to both the charmed and frightened conditions and magic that allows another creature to read their thoughts or telepathically communicate with them."
+    },
+    {
+      "name": "Masterwork Homunculus",
+      "prereqLevel": 17,
+      "description": "<strong>Item:</strong> a diamond worth at least 1000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes. A vessel worth at least 2000 gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water</p><p>You have discovered the secrets to the creation of life. You learn the Clone spell. You can cast Clone without expending a spell slot as long as you have the material components available. Your clone only takes 12 days to reach maturity, but you can only have one.</p><p>If you replace this Infusion with another at any point before your clone reaches maturity, the spell immediately fails."
+    },
+    {
+      "name": "Superior Spellstoring Item",
+      "prereqLevel": 17,
+      "description": "<strong>Item:</strong> one Tiny object, tool, or weapon (requires attunement when not used by its creator)</p><p>You imbue this object with magical power. Each time you imbue this infusion into an object, you choose a 4th-level spell from any spell list to imbue. The creature that holds this object can expend four of its charges to cast the spell imbued within, using the spell's normal casting time.</p><p>If the spell requires concentration, the creature holding the item must concentrate on the spell for its duration.</p><p>This item holds a number of charges of the imbued spell equal to your Intelligence modifier (minimum of 1), and it regains all expended charges each day at dawn.",
+      "uses": [
+        {
+          "id": "CAFAEE03-CE67-441E-9A01-A0ADB1F3D621",
+          "type": "derived",
+          "source": "score",
+          "score": "int",
+          "reset": 2
+        }
+      ]
     }
   ],
   "ki-technique": [
