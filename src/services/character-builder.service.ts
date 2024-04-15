@@ -182,10 +182,6 @@ export class CharacterBuilderService {
       score: 'wis',
     },
     {
-      name: "Archeologist's Supplies",
-      score: 'int',
-    },
-    {
       name: 'Astral Vehicles',
       score: 'int',
     },

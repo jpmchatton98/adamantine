@@ -25,18 +25,6 @@
     "value": 1
   },
   {
-    "name": "Archeologist's Supplies",
-    "materials": [
-      { "item": "metal scrap", "quantity": 4 },
-      { "item": "parts", "quantity": 2 }
-    ],
-    "craftingTime": 4,
-    "craftingChecks": 2,
-    "dc": 15,
-    "rarity": 0,
-    "value": 5
-  },
-  {
     "name": "Blacksmith's Tools",
     "materials": [
       { "item": "metal scrap", "quantity": 4 },

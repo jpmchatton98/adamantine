@@ -14,13 +14,6 @@
     "description": "A wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
   },
   {
-    "name": "Archeologist's Supplies",
-    "cost": 5,
-    "weight": 5,
-    "ability": "Intelligence",
-    "description": "A set of brushes, a trowel, a measuring tape, a level, and a precision pickaxe"
-  },
-  {
     "name": "Blacksmith's Tools",
     "cost": 20,
     "weight": 8,
@@ -192,7 +185,7 @@
     "name": "Tinker's Tools",
     "cost": 50,
     "weight": 10,
-    "ability": "Dexterity",
+    "ability": "Intelligence",
     "description": "A variety of hand tools, nails, screws, thread, needles, a whestone, scraps of cloth, leather, and metal, and a small pot of glue"
   },
   {

@@ -31,7 +31,7 @@
   {
     "name": "Acrobat",
     "type": "skill",
-    "description": "You become more nimble, gaining the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency in the Acrobatics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>As a bonus action, you can make a DC 15 Dexterity (Acrobatics) check. If you succeed, difficult terrain doesn't cost you extra movement until the end of the current turn.</li></ul>",
+    "description": "You become more nimble, gaining the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency in the Acrobatics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You have resistance to fall damage.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -58,23 +58,6 @@
     ]
   },
   {
-    "name": "Alchemist",
-    "type": "skill",
-    "description": "You have studied the secrets of alchemy and are an expert in its practice, gaining the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with alchemist's supplies. If you are already proficient with them, you double your proficiency bonus to checks you make with them.</li><li>As an action, you can identify one potion within 5 feet of you, as if you had tasted it. You must see the liquid for this benefit to work.</li><li>Over the course of any short rest, you can temporarily improve the potency of one potion of healing of any rarity. To use this benefit, you must have alchemist's supplies with you, and the potion must be within reach. If the potion is drunk no more than 1 hour after the short rest ends, the creature drinking the potion can forgo the potion's die roll and regains the maximum number of hit points that the potion can restore.</li></ul>",
-    "granted": [
-      {
-        "type": "asi",
-        "score": "int",
-        "amount": 1
-      },
-      {
-        "type": "tool",
-        "options": ["Alchemist's Supplies"],
-        "level": 1.5
-      }
-    ]
-  },
-  {
     "name": "Alert",
     "type": "combat",
     "description": "Always on the lookout for danger, you gain the following benefits:<ul><li>You can't be surprised while you are conscious.</li><li>You gain a +5 bonus to initiative.</li><li>Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you.</li></ul>",
@@ -88,7 +71,7 @@
   {
     "name": "Animal Handler",
     "type": "skill",
-    "description": "You master the techniques needed to train and handle animals. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Animal Handling skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You can use a bonus action on your turn to command one friendly beast within 60 feet of you that can hear you and that isn't currently following the command of someone else. You decide now what action the beast will take and where it will move during its next turn, or you issue a general command that lasts for 1 minute, such as to guard a particular area.</li></ul>",
+    "description": "You master the techniques needed to train and handle animals. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Animal Handling skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn to speak, read, and write Sylvan. If you speak in Sylvan, you can communicate simple ideas with beasts.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -99,13 +82,17 @@
         "type": "skill",
         "options": ["Animal Handling"],
         "level": 1.5
+      },
+      {
+        "type": "language",
+        "options": ["Sylvan"]
       }
     ]
   },
   {
     "name": "Arcanist",
     "type": "skill",
-    "description": "You study the arcane arts, gaining the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Arcana skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn the Detect Magic spell. You can cast Detect Magic once without expending a spell slot, and you regain the ability to do so when you finish a long rest.</li></ul>",
+    "description": "You study the arcane arts, gaining the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Arcana skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>When you search for traps, you can locate magical traps as if they were mundane.</li><li>You learn to speak, read, and write Draconic, Jiganti, or Primordial.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -116,37 +103,35 @@
         "type": "skill",
         "options": ["Arcana"],
         "level": 1.5
-      },
-      {
-        "type": "spell",
-        "options": ["Detect Magic"],
-        "ignoreMaxLevel": true,
-        "ability": "int"
       }
     ],
-    "uses": {
-      "id": "1B5C85A4-682D-4416-B360-4D428DA1EB9E",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
+    "choices": [
+      {
+        "id": "CF02B145-07D1-4F3D-99D9-68F70D51C019",
+        "type": "language",
+        "limits": ["Draconic", "Jiganti", "Primordial"]
+      }
+    ]
   },
   {
     "name": "Athlete",
     "type": "skill",
-    "description": "You have undergone extensive physical training to gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>You gain a climbing and swimming speed equal to your walking speed.</li><li>You gain proficiency in the Athletics skill, and your proficiency bonus is doubled for checks made with it.</li></ul>",
-    "choices": {
-      "id": "BB8468D9-D05D-40DE-ABEE-E4209045A7A9",
-      "type": "asi",
-      "amount": 1,
-      "options": ["str", "dex"]
-    },
-    "granted": [
+    "description": "You have undergone extensive physical training to gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>You gain a climbing and swimming speed equal to your walking speed.</li><li>You gain proficiency in the Athletics or Acrobatics skill.</li></ul>",
+    "choices": [
       {
-        "type": "skill",
-        "options": ["Athletics"],
-        "level": 2
+        "id": "BB8468D9-D05D-40DE-ABEE-E4209045A7A9",
+        "type": "asi",
+        "amount": 1,
+        "options": ["str", "dex"]
       },
+      {
+        "id": "F80E3DBD-BB89-4ACA-A6E9-EB0A2AC155B1",
+        "type": "skill",
+        "limits": ["Athletics", "Acrobatics"],
+        "level": 1
+      }
+    ],
+    "granted": [
       {
         "type": "speed",
         "speed": "swim",
@@ -334,7 +319,7 @@
   {
     "name": "Brawny",
     "type": "skill",
-    "description": "You become stronger, gaining the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You gain proficiency in the Athletics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You count as if you were one size larger for the purpose of determining your carrying capacity.</li></ul>",
+    "description": "You become stronger, gaining the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You gain proficiency in the Athletics skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You count as if you were one size larger for the purpose of determining your carrying capacity and the weight you can push, drag, and lift, as well as when determining the size of creatures you can grapple, shove, or disarm.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -344,23 +329,6 @@
       {
         "type": "skill",
         "options": ["Athletics"],
-        "level": 1.5
-      }
-    ]
-  },
-  {
-    "name": "Burglar",
-    "type": "skill",
-    "description": "You pride yourself on your quickness and your close study of certain clandestine activities. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with thieves' tools. If you are already proficient with them, you add double your proficiency bonus to checks you make with them.</li><li>If you spend at least 1 minute observing or interacting with another creature outside combat, you can discover some information about its financial situation, including how much treasure it has on it right now, and possible locations of treasure this creature have access to.</li></ul>",
-    "granted": [
-      {
-        "type": "asi",
-        "score": "dex",
-        "amount": 1
-      },
-      {
-        "type": "tool",
-        "options": ["Thieves' Tools"],
         "level": 1.5
       }
     ]
@@ -376,49 +344,6 @@
         "amount": 1
       }
     ]
-  },
-  {
-    "name": "Chef",
-    "type": "skill",
-    "description": "Time and effort spent mastering the culinary arts has paid off. You gain the following benefits:<ul><li>Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with cook's utensils if you don't already have it.</li><li>As part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.</li><li>With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus from the options below. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain its benefits.</li></ul>",
-    "subFeatures": [
-      {
-        "name": "Fortifying Ration",
-        "description": "Upon consumption, the creature chooses either Strength, Dexterity, or Constitution. For the next minute, the creature can add your Constitution modifier (minimum of +1) to any ability check or saving throw for the chosen ability score."
-      },
-      {
-        "name": "Invigorating Ration",
-        "description": "Upon consumption, the creature regains hit points equal to 1d10 + your Constitution modifier (minimum of +1)."
-      },
-      {
-        "name": "Revitalizing Ration",
-        "description": "Upon consumption, the creature ends one of the following conditions currently affecting it: blindness, deafness, poison, or they reduce their exhaustion level by 1."
-      },
-      {
-        "name": "Stimulating Ration",
-        "description": "This Ration must be consumed as part of a short rest. Upon consumption, the creature gains advantage on the roll for any Hit Dice they choose to expend during that short rest."
-      }
-    ],
-    "choices": {
-      "id": "8A686C1C-9ED0-434D-B375-13C1BE83EEE4",
-      "type": "asi",
-      "amount": 1,
-      "options": ["con", "wis"]
-    },
-    "granted": [
-      {
-        "type": "tool",
-        "options": ["Cook's Utensils"],
-        "level": 1.5
-      }
-    ],
-    "uses": {
-      "id": "727B810F-9C78-4508-B74A-6528F3EDD791",
-      "type": "derived",
-      "source": "proficiency",
-      "inverted": true,
-      "reset": 1
-    }
   },
   {
     "name": "Cover Fighter",
@@ -471,7 +396,7 @@
   {
     "name": "Diplomat",
     "type": "skill",
-    "description": "You master the arts of diplomacy, gaining the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Persuasion skill. If you are already proficient in this skill, you add double your proficiency bonus to checks you make with it.</li><li>If you spend 1 minute talking to someone who can understand what you say, you can make a Charisma (Persuasion) check contested by the creature's Wisdom (Insight) check. If you or your companions are fighting the creature, your check automatically fails. If your check succeeds, the target is charmed by you as long as it remains within 60 feet of you and for 1 minute thereafter.</li></ul>",
+    "description": "You master the arts of diplomacy, gaining the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Persuasion skill. If you are already proficient in this skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn to speak, read, and write three additional languages.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -482,6 +407,20 @@
         "type": "skill",
         "options": ["Persuasion"],
         "level": 1.5
+      }
+    ],
+    "choices": [
+      {
+        "id": "73A5BF2B-52A7-4848-9D33-67E9AA8628C6",
+        "type": "language"
+      },
+      {
+        "id": "419D1EAA-DA93-41AC-A928-1AD81D31AC79",
+        "type": "language"
+      },
+      {
+        "id": "6225BF60-4A6D-44BC-BA0B-B3CB9E7CAE89",
+        "type": "language"
       }
     ]
   },
@@ -543,9 +482,9 @@
     }
   },
   {
-    "name": "Empathic",
+    "name": "Insightful",
     "type": "skill",
-    "description": "You possess keen insight into how other people think and feel. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Insight skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You can use your action to try to get uncanny insight about one humanoid you can see within 30 feet of you. Make a Wisdom (Insight) check contested by the target's Charisma (Deception) check. If your check succeeds, you have advantage on attack rolls and ability checks against the target until the end of your next turn.</li></ul>",
+    "description": "You possess keen insight into how other people think and feel. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Insight skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You can take the Help action as a bonus action.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1233,11 +1172,6 @@
     ]
   },
   {
-    "name": "Healer",
-    "type": "skill",
-    "description": "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:<ul><li>When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point.</li><li>As an action. you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.</li></ul>"
-  },
-  {
     "name": "Heavily Armored",
     "prereq": [
       {
@@ -1278,7 +1212,7 @@
   {
     "name": "Historian",
     "type": "skill",
-    "description": "Your study of history rewards you with the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li></ul><ul><li>You gain proficiency in the History skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li></ul><ul><li>When you take the Help action to aid another creature's ability check, you can make a DC 15 Intelligence (History) check. On a success, that creature's check gains a bonus equal to your proficiency bonus, as you share pertinent advice and historical examples. To receive this bonus, the creature must be able to understand what you're saying.</li></ul>",
+    "description": "Your study of history rewards you with the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the History skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>If you spend 1 minute examining an object you are touching, you can ascertain its value, origin, and age.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1333,7 +1267,7 @@
   {
     "name": "Keen Mind",
     "type": "skill",
-    "description": "You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits.<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You always know which way is north.</li><li>You always know the number of hours left before the next sunrise or sunset.</li><li>You can accurately recall anything you have seen or heard within the past month.</li><li>You gain proficiency in your choice of the Arcana, History, Nature, or Religion skills.</li></ul>",
+    "description": "You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits.<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You always know which way is north.</li><li>You always know the number of hours left before the next sunrise or sunset.</li><li>You can accurately recall anything you have seen or heard within the past month.</li><li>You gain proficiency in your choice of the Arcana, History, Nature, Religion, Society, or Technology skills.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1344,7 +1278,14 @@
     "choices": {
       "id": "B75791C6-9D06-4C1C-9938-B97EF14BF820",
       "type": "skill",
-      "limits": ["Arcana", "History", "Nature", "Religion"],
+      "limits": [
+        "Arcana",
+        "History",
+        "Nature",
+        "Religion",
+        "Society",
+        "Technology"
+      ],
       "level": 1.5
     }
   },
@@ -1635,26 +1576,9 @@
     ]
   },
   {
-    "name": "Master of Disguise",
-    "type": "skill",
-    "description": "You have honed your ability to shape your personality and to read the personalities of others. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency with the disguise kit. If you are already proficient with it, you add double your proficiency bonus to checks you make with it.</li><li>If you spend 1 hour observing a creature, you can then spend 8 hours crafting a disguise you can quickly don to mimic that creature. Making the disguise requires a disguise kit. You must make checks as normal to disguise yourself, but you can assume the disguise as an action.</li></ul>",
-    "granted": [
-      {
-        "type": "asi",
-        "score": "cha",
-        "amount": 1
-      },
-      {
-        "type": "tool",
-        "options": ["Disguise Kit"],
-        "level": 1.5
-      }
-    ]
-  },
-  {
     "name": "Medic",
     "type": "skill",
-    "description": "You master the physician's arts, gaining the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Medicine skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>During a short rest, you can clean and bind the wounds of up to six willing beasts and humanoids. Make a DC 15 Wisdom (Medicine) check for each creature. On a success, if a creature spends a Hit Die during this rest, that creature can forgo the roll and instead regain the maximum number of hit points the die can restore. A creature can do so only once per rest, regardless of how many Hit Dice it spends.</li></ul>",
+    "description": "You master the physician's arts, gaining the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Medicine skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>Creatures you take a long rest with can roll each of their hit dice twice, and take the higher result.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1681,7 +1605,7 @@
   {
     "name": "Menacing",
     "type": "skill",
-    "description": "You become fearsome to others, gaining the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Intimidation skill. If you are already proficiency in the skill, you add double your proficiency bonus to checks you make with it.</li><li>When you take the Attack action on your turn, you can replace one attack with an attempt to demoralize one humanoid you can see within 30 feet of you that can see and hear you. Make a Charisma (Intimidation) check contested by the target's Wisdom (Insight) check. If your check succeeds, the target is frightened until the end of your next turn. If your check fails, the target can't be frightened by you in this way for 1 hour.</li></ul>",
+    "description": "You become fearsome to others, gaining the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Intimidation skill. If you are already proficiency in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You cannot have disadvantage on attack rolls against creatures frightened of you.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1795,7 +1719,7 @@
   {
     "name": "Naturalist",
     "type": "skill",
-    "description": "Your extensive study of nature rewards you with the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Nature skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn the Detect Poison and Disease spells. You can cast Detect Poison and Disease once without expending a spell slot, and you regain the ability to do so when you finish a long rest.</li></ul>",
+    "description": "Your extensive study of nature rewards you with the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Nature skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>Your movement is not impeded by nonmagical difficult terrain of the natural world such as brambles, mud, or ice.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1806,20 +1730,8 @@
         "type": "skill",
         "options": ["Nature"],
         "level": 1.5
-      },
-      {
-        "type": "spell",
-        "options": ["Detect Poison and Disease"],
-        "ignoreMaxLevel": true,
-        "ability": "int"
       }
-    ],
-    "uses": {
-      "id": "6C230CB9-CAA3-44DD-86BA-50F249515DC2",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
+    ]
   },
   {
     "name": "Observant",
@@ -1864,7 +1776,7 @@
   {
     "name": "Performer",
     "type": "skill",
-    "description": "You master performance so that you can command any stage. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Performance skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>While performing, you can try to distract one humanoid you can see who can see and hear you. Make a Charisma (Performance) check contested by the humanoid's Wisdom (Insight) check. If your check succeeds, you grab the humanoid's attention enough that it makes Wisdom (Perception) and Intelligence (Investigation) checks with disadvantage until you stop performing.</li></ul>",
+    "description": "You master performance so that you can command any stage. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Performance skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You gain proficiency with two instruments of your choice.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -1876,6 +1788,18 @@
         "options": ["Performance"],
         "level": 1.5
       }
+    ],
+    "choices": [
+      {
+        "id": "8D1D4899-AE43-4987-B2FF-2265ADF41E44",
+        "type": "instrument",
+        "level": 1
+      },
+      {
+        "id": "55DEFF37-F232-4F47-8518-71A918E53F92",
+        "type": "instrument",
+        "level": 1
+      }
     ]
   },
   {
@@ -1884,21 +1808,9 @@
     "description": "You've honed your skill of aiming two weapons at the same time. You gain the following benefits:<ul><li>When you take the Attack action and attack with a ranged weapon that you're holding in one hand, you can use a bonus action to attack with a different ranged weapon that you're holding in the other hand. You may add your ability modifier to the damage of the bonus attack.</li><li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li><li>You can take the Reload action to reload two light, one-handed firearms in each of your hands at once.</li></ul>"
   },
   {
-    "name": "Poisoner",
-    "type": "skill",
-    "description": "You can prepare and deliver deadly poisons, gaining the following benefits:<ul><li>When you make a damage roll, you ignore resistance to poison damage.</li><li>You can coat a weapon in poison as a bonus action, instead of an action.</li><li>You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn.</li></ul>",
-    "granted": [
-      {
-        "type": "tool",
-        "options": ["Poisoner's Kit"],
-        "level": 1
-      }
-    ]
-  },
-  {
     "name": "Quick-Fingered",
     "type": "skill",
-    "description": "Your nimble fingers and agility let you perform sleight of hand. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency in the Sleight of Hand skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>As a bonus action, you can make a Dexterity (Sleight of Hand) check to plant something on someone else, conceal an object on a creature, lift a purse, or take something from a pocket.</li></ul>",
+    "description": "Your nimble fingers and agility let you perform sleight of hand. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency in the Sleight of Hand skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You can take the Use an Object action as a bonus action.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -2084,7 +1996,7 @@
   {
     "name": "Silver-Tongued",
     "type": "skill",
-    "description": "You develop your conversational skill to better deceive others. You gain the following benefits.<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Deception skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>When you take the Attack action on your turn, you can replace one attack with an attempt to deceive one humanoid you can see within 30 feet of you that can see and hear you. Make a Charisma (Deception) check contested by the target's Wisdom (Insight) check. If your check succeeds, your movement doesn't provoke opportunity attacks from the target and your attack rolls against it have advantage; both benefits last until the end of your next turn or until you use this ability on a different target. If your check fails, the target can't be deceived by you in this way for 1 hour.</li></ul>",
+    "description": "You develop your conversational skill to better deceive others. You gain the following benefits.<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency in the Deception skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You can lie to creatures that always know when they hear a lie (such as a solar).  Such creatures have advantage on Insight checks made to determine if you are lying.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -2234,7 +2146,7 @@
   {
     "name": "Survivalist",
     "type": "skill",
-    "description": "You master wilderness lore, gaining the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Survival skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn the Snare spell. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for it.</li></ul>",
+    "description": "You master wilderness lore, gaining the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency in the Survival skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You cannot become lost by nonmagical means.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -2245,20 +2157,8 @@
         "type": "skill",
         "options": ["Survival"],
         "level": 1.5
-      },
-      {
-        "type": "spell",
-        "options": ["Snare"],
-        "ignoreMaxLevel": true,
-        "ability": "wis"
       }
-    ],
-    "uses": {
-      "id": "F6FAA832-084B-4DA3-A254-BFF2AE0DCF5A",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
+    ]
   },
   {
     "name": "Tactician",
@@ -2364,7 +2264,7 @@
   {
     "name": "Theologian",
     "type": "skill",
-    "description": "Your extensive study of religion rewards you with the following benefits.<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Religion skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn the Detect Evil and Good spell. You can cast Detect Evil and Good once without expending a spell slot, and you regain the ability to do so when you finish a long rest.</li></ul>",
+    "description": "Your extensive study of religion rewards you with the following benefits.<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Religion skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You always know if you are in an area that has been magically consecrated or desecrated.</li><li>You learn to speak, read, and write Abyssal, Carcerin, Celestial, or Infernal.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -2375,44 +2275,15 @@
         "type": "skill",
         "options": ["Religion"],
         "level": 1.5
-      },
-      {
-        "type": "spell",
-        "options": ["Detect Evil and Good"],
-        "ignoreMaxLevel": true,
-        "ability": "int"
       }
     ],
-    "uses": {
-      "id": "31F3CA22-5E7B-4181-A928-6D1C587A5518",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
-  },
-  {
-    "name": "Tracker",
-    "type": "skill",
-    "description": "You have spent time hunting creatures and honed your skills, gaining the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You learn the Hunter's Mark spell. You can cast it once without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Wisdom is your spellcasting ability for this spell.</li><li>You have advantage on Wisdom (Survival) checks to track creatures.</li></ul>",
-    "granted": [
+    "choices": [
       {
-        "type": "asi",
-        "score": "wis",
-        "amount": 1
-      },
-      {
-        "type": "spell",
-        "options": ["Hunter's Mark"],
-        "ignoreMaxLevel": true,
-        "ability": "wis"
+        "id": "B3E6B099-EF38-4A9B-91C0-E4B4AA6A51E9",
+        "type": "language",
+        "limits": ["Abyssal", "Carcerin", "Celestial", "Infernal"]
       }
-    ],
-    "uses": {
-      "id": "B417F227-C83B-41B2-9D0B-D07A9756EDF7",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
+    ]
   },
   {
     "name": "Defiant Will",
@@ -5678,9 +5549,9 @@
     }
   },
   {
-    "name": "Gearhead",
+    "name": "Handy",
     "type": "skill",
-    "description": "You gain a greater understanding of technology, gaining the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Technology skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You learn the Identify spell. You can cast Identify once without expending a spell slot or material components, and you regain the ability to do so when you finish a long rest.</li></ul>",
+    "description": "You gain a greater understanding of technology and artifice, gaining the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency in the Technology skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li><li>You gain proficiency with two sets of tools of your choice.</li></ul>",
     "granted": [
       {
         "type": "asi",
@@ -5691,20 +5562,20 @@
         "type": "skill",
         "options": ["Technology"],
         "level": 1.5
-      },
-      {
-        "type": "spell",
-        "options": ["Identify"],
-        "ignoreMaxLevel": true,
-        "ability": "int"
       }
     ],
-    "uses": {
-      "id": "3A49CF8E-8B48-4E02-BD1A-698BBDB1C7C2",
-      "type": "fixed",
-      "amount": 1,
-      "reset": 2
-    }
+    "choices": [
+      {
+        "id": "7CA8FB25-6BDC-465A-A448-896593ACF5E6",
+        "type": "tool",
+        "level": 1
+      },
+      {
+        "id": "B998496E-89C6-4F17-B968-D85F133D96FE",
+        "type": "tool",
+        "level": 1
+      }
+    ]
   },
   {
     "name": "Socialite",
@@ -6319,6 +6190,674 @@
         "type": "asi",
         "score": "cha",
         "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Chef",
+    "type": "tool",
+    "description": "Time and effort spent mastering the culinary arts has paid off. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with cook's utensils. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>As part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.</li><li>With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus from the options below. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain its benefits.</li></ul>",
+    "subFeatures": [
+      {
+        "name": "Fortifying Ration",
+        "description": "Upon consumption, the creature chooses either Strength, Dexterity, or Constitution. For the next minute, the creature can add your Constitution modifier (minimum of +1) to any ability check or saving throw for the chosen ability score."
+      },
+      {
+        "name": "Invigorating Ration",
+        "description": "Upon consumption, the creature regains hit points equal to 1d10 + your Constitution modifier (minimum of +1)."
+      },
+      {
+        "name": "Revitalizing Ration",
+        "description": "Upon consumption, the creature ends one of the following conditions currently affecting it: blindness, deafness, poison, or they reduce their exhaustion level by 1."
+      },
+      {
+        "name": "Stimulating Ration",
+        "description": "This Ration must be consumed as part of a short rest. Upon consumption, the creature gains advantage on the roll for any Hit Dice they choose to expend during that short rest."
+      }
+    ],
+    "granted": [
+      {
+        "type": "asi",
+        "score": "wis",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Cook's Utensils"],
+        "level": 1.5
+      }
+    ],
+    "uses": {
+      "id": "727B810F-9C78-4508-B74A-6528F3EDD791",
+      "type": "derived",
+      "source": "proficiency",
+      "inverted": true,
+      "reset": 1
+    }
+  },
+  {
+    "name": "Alchemist",
+    "type": "tool",
+    "description": "You have studied the secrets of alchemy and are an expert in using alchemical creations to aid you. You gain the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with alchemist's supplies. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You are considered proficient with attack rolls made with alchemical creations.</li><li>Over the course of a long rest if you have your alchemist's supplies, you can improve the potency of a healing potion. If a creature drinks the potion before your next long rest, they can forgo rolling for the number of hit points restored to instead take the maximum amount.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "int",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Alchemist's Supplies"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Blacksmith",
+    "type": "tool",
+    "description": "You have spent time in the forge, working with metal and flame to craft weapons and armor. You gain the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You gain proficiency with blacksmith's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with blacksmithing.</li><li>Over the course of a long rest if you have your blacksmith's tools, you can improve a weapon, suit of armor, or shield. Weapons gain a +1 bonus to their attack and damage rolls, and armor and shields gain a +1 bonus to the AC they provide. The benefit lasts until you finish a long rest.</li><li>You gain a bonus to saving throws against effects that deal fire damage equal to your proficiency bonus.</li><li>You gain proficiency with light hammers, bec de corbins, longhammers, mauls, and warhammers.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "str",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Blacksmith's Tools"],
+        "level": 1.5
+      },
+      {
+        "type": "weapon",
+        "options": [
+          "Light Hammer",
+          "Bec de Corbin",
+          "Longhammer",
+          "Maul",
+          "Warhammer"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Master of Disguise",
+    "type": "tool",
+    "description": "You have honed your ability to shape your personality and to read the personalities of others. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency with the disguise kit. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You craft a single magical mask of your choice from the following list.  As an action, you can don the mask, and gain its benefits for the next hour.  Once you use this feature, you can't do so again until you finish a short or long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "cha",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Disguise Kit"],
+        "level": 1.5
+      }
+    ],
+    "choices": [
+      {
+        "id": "9D50E79F-0805-463B-8BA0-1A8424C2F949",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Aristocratic",
+            "traits": [
+              {
+                "name": "Aristocratic Mask",
+                "description": "A mask designed to replicate the look of a noble lord or lady, often crafted with ostentatious and luxurious materials.</p><p>While wearing this mask, you have advantage on Charisma checks you make towards common folk, so long as they are friendly towards you and your allies.  In addition, creatures will believe you to be a member of the nobility unless you give them a reason to think otherwise."
+              }
+            ]
+          },
+          {
+            "name": "Barbaric",
+            "traits": [
+              {
+                "name": "Barbaric Mask",
+                "description": "A mask created to resemble a wild warrior or beast of the wilderness, often crafted with raw, crude natural materials.</p><p>When you don this mask, your current hit points and hit point maximum are increased by an amount equal to half your level.  In addition, you gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks."
+              }
+            ]
+          },
+          {
+            "name": "Devious",
+            "traits": [
+              {
+                "name": "Devious Mask",
+                "description": "A mask crafted to resemble a common criminal or thief, often crafted with dark materials and including a hood or cowl.</p><p>While wearing this mask, you can use a bonus action to take the Hide, Disengage, or Use and Object actions."
+              }
+            ]
+          },
+          {
+            "name": "Knightly",
+            "traits": [
+              {
+                "name": "Knightly Mask",
+                "description": "This mask is crafted to resemble an armored paragon of chivalry, and is often polished to a shine in the sunlight.</p><p>While wearing this mask, you are proficient with martial weapons and you gain a +1 bonus to your Armor Class.</p><p>In addition, once per turn when you hit a Medium or smaller creature with a melee weapon attack you can force it to make a Dexterity saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, the creature is knocked back 10 feet in a straight line or must drop on object it is holding."
+              }
+            ]
+          },
+          {
+            "name": "Priestly",
+            "traits": [
+              {
+                "name": "Priestly Mask",
+                "description": "This mask is crafted to resemble a prophet, saint, or other holy person, often made from delicate yet beautiful materials.</p><p>While wearing this Mask, you can use your bonus action restore hit points to one creature that can hear you within 30 feet equal to your Charisma modifier.</p><p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "962E823C-9939-4984-A677-5900294AB5A8",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Scholarly",
+            "traits": [
+              {
+                "name": "Scholarly Mask",
+                "description": "This mask is crafted to resemble a distinguished humanoid deep in thought, often crafted from rare and esoteric materials.</p><p>While you are wearing this Mask, when you deal damage to a creature with a weapon attack you learn one of the following characteristics about that creature of your choice: its Armor Class, highest ability score, lowest ability score, or its spellcasting ability."
+              }
+            ]
+          },
+          {
+            "name": "Virtuoso",
+            "traits": [
+              {
+                "name": "Virtuoso Mask",
+                "description": "This mask is created to resemble a great performer at home on the stage, often crafted to draw attention and stand out.</p><p>Whenever you perform or play an instrument for a creature for at least 1 minute, you have advantage on ability checks you make to influence, interact, or gather information on that creature for the next hour."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "uses": [
+      {
+        "id": "3842D181-1607-4467-BEC9-D16241AF28F9",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    ]
+  },
+  {
+    "name": "Counterfeiter",
+    "type": "tool",
+    "description": "Your time working in professional and seedy environs has granted you able ability to forge falsehoods. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with the forgery kit. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You can always remember any seal or signature you have seen before.</li><li>If you have spent at least 1 hour studying someone's handwriting, you can duplicate it at any point in the future.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Forgery Kit"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Healer",
+    "type": "tool",
+    "description": "You are an able physician, allowing you to mend wounds quickly. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with the healer's kit. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>When you use a healer's kit to stabilize a creature, the target also regains 1 hit point.</li><li>As an action. you can spend one use of a healer's kit to tend to a creature and allow it to expend a hit die. The target regains hit points equal to a roll of the hit die plus your healer's kit modifier. The target can't regain hit points from this feature again until it finishes a short or long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "wis",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Healer's Kit"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Herbalist",
+    "type": "tool",
+    "description": "You are adept at harnessing the useful properties of herbs and other plants. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with the herbalism kit. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>Over the course of a long rest if you have your herbalism kit, you can apply herbal remedies to one creature, curing one nonmagical poison or disease of your choice.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "wis",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Herbalism Kit"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Navigator",
+    "type": "tool",
+    "description": "You know how to navigate through any environment. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with navigator's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>If you have navigator's tools, you cannot become lost by nonmagical means.</li><li>You and the creatures you travel with can travel at a fast pace without penalty.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "str",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Navigator's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Surgeon",
+    "type": "tool",
+    "description": "You are skilled at the delicate work of surgery. You gain the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with the surgery kit. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>When you use a surgery kit to cure an injury, the creature is treated as if it has resistance against the next injury of the same damage type.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "int",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Surgery Kit"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Poisoner",
+    "type": "tool",
+    "description": "You can prepare and deliver deadly poisons. You gain the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with the poisoner's kit. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You can coat a weapon in poison as an object interaction.</li><li>You have advantage on saving throws against being poisoned.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "int",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Poisoner's Kit"],
+        "level": 1.5
+      },
+      {
+        "type": "condition-advantage",
+        "options": ["Poisoned"]
+      }
+    ]
+  },
+  {
+    "name": "Burglar",
+    "type": "tool",
+    "description": "You have broken many locks, and their mechanisms are familiar to you. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with thieves' tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>If you successfully pick a lock, you automatically succeed on all checks made to pick the same lock in the future.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Thieves' Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Tinker",
+    "type": "tool",
+    "description": "You often spend your free time tinkering with gizmos, thingamabobs, and doohickeys. You gain the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with tinker's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with tinkering.</li><li>Using tinker's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose an item of Adventuring Equipment that costs 20 gp or less. The device replicates the function of that piece of equipment.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "int",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Tinker's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Fisher",
+    "type": "tool",
+    "description": "You are an expert fisher. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with angler's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>If you have access to a body of water that sustains marine life and your angler's tools, you can catch enough food to feed yourself and up to ten other people each day.</li><li>You can communicate simple ideas with beasts that have an innate swimming speed.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "wis",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Angler's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Bartender",
+    "type": "tool",
+    "description": "You are an expert of brewing delicious beverages. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with brewer's supplies. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>If a creature drinks alcohol that you gave to them, you have advantage on Charisma (Persuasion) checks made to influence them.</li><li>You have advantage on saving throws against being poisoned.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "wis",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Brewer's Supplies"],
+        "level": 1.5
+      },
+      {
+        "type": "condition-advantage",
+        "options": ["Poisoned"]
+      }
+    ]
+  },
+  {
+    "name": "Scribe",
+    "type": "tool",
+    "description": "You have learned a great deal about writing and magical scrolls. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with calligrapher's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You can identify the handwriting of anyone who you have seen the handwriting of before.</li><li>When a creature casts a spell using a scroll you created, they can use your Dexterity score as the spellcasting ability.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Calligrapher's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Carpenter",
+    "type": "tool",
+    "description": "You are skilled with simple woodworking. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with carpenter's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You deal double damage to objects and structures made of wood.</li><li>You can build wooden structures in half of the required time.</li><li>You gain proficiency with handaxes, battleaxes, greataxes, and halberds.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Carpenter's Tools"],
+        "level": 1.5
+      },
+      {
+        "type": "weapon",
+        "options": ["Handaxe", "Battleaxe", "Greataxe", "Halberd"]
+      }
+    ]
+  },
+  {
+    "name": "Cartographer",
+    "type": "tool",
+    "description": "You have studied the methods and techniques used in making maps. You gain the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with cartographer's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>If you have a map, you cannot become lost by nonmagical means.</li><li>While you are drawing a map while traveling, you remain alert to danger.</li><li>You can understand any map, even if you can't understand the language it was written in.</li><li>Maps that you create can be understood by any creature that can understand a language.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "int",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Cartographer's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Chandler",
+    "type": "tool",
+    "description": "You are a master of creating insence and candles. You gain the following benefits:<ul><li>Increase your Intelligence score by 1, to a maximum of 20.</li><li>You gain proficiency with chandler's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>Candles and insence you craft burn for twice as long.</li><li>When you craft a block of insence, you can imbue a poison into it, increasing the crafting DC by 3.  When the insence is burned, creatures within 10 feet of it that breathe are subjected to the poison used.  The insence can be identified as poisonous with an Intelligence (Investigation) check, with a DC equal to 8 + your Chandler's tools modifier.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "int",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Chandler's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Cobbler",
+    "type": "tool",
+    "description": "You have experience in the humble trade of shoemaking. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with cobbler's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with cobbling.</li><li>Over the course of a long rest, you can improve a pair of shoes if you have your cobbler's tools. A creature wearing the shoes gains a 5 foot bonus to their walking speed and their movement isn't impeded by nonmagical grounded hazards, such as ball bearings or caltrops. The benefit lasts until you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Cobbler's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Green Thumb",
+    "type": "tool",
+    "description": "You are an expert at growing simple plants. You gain the following benefits:<ul><li>Increase your Wisdom score by 1, to a maximum of 20.</li><li>You gain proficiency with gardener's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>If you spend 8 hours or more working up to one square mile of viable farmland, the land you work gains the effects of the 8-hour casting of the plant growth spell.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "wis",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Gardener's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Glassblower",
+    "type": "tool",
+    "description": "You are an expert at creating glasswork. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with glassblower's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with glassblowing.</li><li>You deal double damage to objects made of glass.</li><li>Over the course of a long rest, you can improve a Medium or smaller glass object if you have your glassblower's tools. The object gains resistance to nonmagical damage. The benefit lasts until you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Glassblower's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Jeweler",
+    "type": "tool",
+    "description": "You know how to work jewels to bring out their natural beauty. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with jeweler's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with jewelcrafting.</li><li>If you spend 1 minute examining a gem or piece of jewelery you are touching, you can ascertain its value, origin, and age.</li><li>You can reduce the cost of any gemstones required for a spell's material components by half its cost, up to a maximum reduction of 100 gp.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Jeweler's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Leatherworker",
+    "type": "tool",
+    "description": "You are an expert at working with hides and leathers. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with leatherworker's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with leatherworking.</li><li>Over the course of a long rest, you can improve a suit of medium or heavy armor if you have your leatherworker's tools. The armor no longer imposes disadvantage on Dexterity (Stealth) checks. No benefit is granted to fortress plate. The benefit lasts until you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Leatherworker's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Stoneworker",
+    "type": "tool",
+    "description": "You know how to best create stone structures and statues. You gain the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You gain proficiency with mason's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You deal double damage to objects and structures made of stone or bricks.</li><li>You can build stone structures in half of the required time.</li><li>You gain proficiency with light hammers, bec de corbins, longhammers, mauls, and warhammers.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "str",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Mason's Tools"],
+        "level": 1.5
+      },
+      {
+        "type": "weapon",
+        "options": [
+          "Light Hammer",
+          "Bec de Corbin",
+          "Longhammer",
+          "Maul",
+          "Warhammer"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Artist",
+    "type": "tool",
+    "description": "You pride yourself on your artistic skill and its applications to painting and drawing. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency with painter's supplies. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>When you create a painting, you can hide hidden messages in the art. A creature can identify these messages with an Intelligence (Investigation) check, with a DC equal to 8 + your painter's supplies modifier. Over the course of a long rest, you can teach any number of creatures your art style, allowing them to identify your messages without an ability check.</li><li>You can perfectly recall visual details at any point in the future.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "cha",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Painter's Supplies"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Sculptor",
+    "type": "tool",
+    "description": "You know how to create objects out of clay and imbue them with magic. You gain the following benefits:<ul><li>Increase your Charisma score by 1, to a maximum of 20.</li><li>You gain proficiency with potter's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>Over the course of a long rest, you can imbue a Tiny sculpture you created with magic if you have your potter's tools. The sculpture comes to life as with the Tiny Servant spell, and remains animated until the end of your next long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "cha",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Potter's Tools"],
+        "level": 1.5
+      },
+      {
+        "type": "spell",
+        "options": ["Tiny Servant"],
+        "ability": "cha",
+        "ignoreMaxLevel": true,
+        "ritualsOnly": true
+      }
+    ]
+  },
+  {
+    "name": "Tailor",
+    "type": "tool",
+    "description": "You can easily stitch together clothing and outfits, both artistic and functional. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with tailor's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with tailoring.</li><li>Over the course of a long rest, you can improve an outfit of clothing if you have your tailor's tools. The clothing is better adapted to the current environment, and the wearer gains advantage on saving throws made against environmental effects. The benefit lasts until you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Tailor's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Weaver",
+    "type": "tool",
+    "description": "You are an expert in creating cloth and other simple cloth creations. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with weaver's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with weaving.</li><li>You deal double damage to objects made of cloth.</li><li>Over the course of a long rest, you can improve a Medium or smaller cloth object if you have your weaver's tools. The object gains resistance to nonmagical damage. The benefit lasts until you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Weaver's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Whitesmith",
+    "type": "tool",
+    "description": "You are experienced with the fine finishing work of blacksmithing, and with runecarving. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with whitesmith's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>When you carve a rune onto a magical item, you can reduce the DC increase by an amount equal to your proficiency bonus, to a minimum increase of +0.</li><li>You can attune to one extra magic item.  This additional item must have at least one rune carved onto it.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Whitesmith's Tools"],
+        "level": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Woodcarver",
+    "type": "tool",
+    "description": "You are an expert at creating fanciful, artistic objects out of wood. You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>You gain proficiency with woodcarver's tools. If you are already proficient with the tool, you add double your proficiency bonus to checks you make with it.</li><li>You have advantage on checks made to enchant items made with woodcarving.</li><li>Over the course of a long rest, you can imbue a Tiny wooden figurine you created with magic if you have your woodcarver's tools. The figurine comes to life as with the Tiny Servant spell, and remains animated until the end of your next long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      },
+      {
+        "type": "tool",
+        "options": ["Woodcarver's Tools"],
+        "level": 1.5
+      },
+      {
+        "type": "spell",
+        "options": ["Tiny Servant"],
+        "ability": "dex",
+        "ignoreMaxLevel": true,
+        "ritualsOnly": true
       }
     ]
   }
