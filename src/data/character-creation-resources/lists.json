@@ -2874,7 +2874,7 @@
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
-        "value": "Pact of the Bastion"
+        "value": "Pact of the Aegis"
       }
     },
     {
@@ -2883,7 +2883,7 @@
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
-        "value": "Pact of the Bastion"
+        "value": "Pact of the Aegis"
       }
     },
     {
@@ -2893,7 +2893,7 @@
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
-        "value": "Pact of the Bastion"
+        "value": "Pact of the Aegis"
       },
       "granted": [
         {
@@ -2911,7 +2911,7 @@
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
-        "value": "Pact of the Bastion"
+        "value": "Pact of the Aegis"
       }
     },
     {
@@ -2921,7 +2921,7 @@
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
-        "value": "Pact of the Bastion"
+        "value": "Pact of the Aegis"
       }
     },
     {
@@ -2931,7 +2931,7 @@
       "prereq": {
         "type": "choice",
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
-        "value": "Pact of the Bastion"
+        "value": "Pact of the Aegis"
       }
     },
     {
@@ -3477,7 +3477,7 @@
     },
     {
       "name": "Time Dialation",
-      "description": "  Once per long rest, you can cast Haste, at a level equal to your Pact Magic spell slots, without expending a spell slot.",
+      "description": "Once per long rest, you can cast Haste, at a level equal to your Pact Magic spell slots, without expending a spell slot.",
       "granted": [
         {
           "type": "spell",
@@ -3488,6 +3488,30 @@
       ],
       "uses": {
         "id": "FD679DBD-1FB9-4C5B-9176-2089C4046F9C",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      "prereqLevel": 7,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Hourglass"
+      }
+    },
+    {
+      "name": "Relativity",
+      "description": "Once per long rest, you can cast Slow, at a level equal to your Pact Magic spell slots, without expending a spell slot.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Slow"],
+          "ignoreMaxLevel": true,
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ],
+      "uses": {
+        "id": "7AD2D55D-B337-422C-A570-0BDD4DCBFEFC",
         "type": "fixed",
         "amount": 1,
         "reset": 2
@@ -4474,7 +4498,7 @@
         "type": "trait",
         "options": [
           {
-            "name": "Pact of the Bastion",
+            "name": "Pact of the Aegis",
             "traits": [
               {
                 "name": "",
@@ -4692,7 +4716,7 @@
         "type": "trait",
         "options": [
           {
-            "name": "Pact of the Bastion",
+            "name": "Pact of the Aegis",
             "traits": [
               {
                 "name": "",
@@ -4910,7 +4934,7 @@
         "type": "trait",
         "options": [
           {
-            "name": "Pact of the Bastion",
+            "name": "Pact of the Aegis",
             "traits": [
               {
                 "name": "",
@@ -5128,7 +5152,7 @@
         "type": "trait",
         "options": [
           {
-            "name": "Pact of the Bastion",
+            "name": "Pact of the Aegis",
             "traits": [
               {
                 "name": "",
@@ -5426,6 +5450,26 @@
       ]
     },
     {
+      "name": "Eldirtch Defense",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Aegis"
+      },
+      "description": "When a creature targets you with an attack while you are not wearing your pact armor, you may use your reaction to immediately don it.</p><p>Additionally, when a creature hits you with an attack you may use your reaction and expend a spell slot to gain a bonus to your AC until the start of yuor next turn equal to the spell slot's level, including against the triggering attack."
+    },
+    {
+      "name": "Shadow Aegis",
+      "prereqLevel": 17,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Aegis"
+      },
+      "description": "While you are wearing your pact armor, creatures cannot have advantage on attack rolls against you."
+    },
+    {
       "name": "Otherworldly Step",
       "prereqLevel": 11,
       "prereq": {
@@ -5544,6 +5588,72 @@
           "reset": 2
         }
       ]
+    },
+    {
+      "name": "Unnatural Growth",
+      "prereqLevel": 11,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Flesh"
+      },
+      "description": "As an action you may grow in size, doubling in all dimensions and increasing your size category by one (From Medium to Large for example) You can not use this feature if there is not enough room in your current location to accommodate your new size.</p><p>While enlarged, your carrying capacity is doubled, you have advantage on all Strength ability checks and saving throws, and your melee weapon attacks deal additional damage equal to your spellcasting ability modifier.</p><p>You may return to your normal size as a bonus action on your turn, you also return to your normal size if you die."
+    },
+    {
+      "name": "Everliving",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Flesh"
+      },
+      "description": "Whenever you complete a long rest, you regrow any missing body parts and recover from all injuries. Additionally, you recover all of your expended hit die upon completing a long rest, instead of half."
+    },
+    {
+      "name": "Timeshift",
+      "prereqLevel": 11,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Hourglass"
+      },
+      "description": "Your hourglass allows you to shift short distances in time.  When the creature directly before you in the initiative count is about to take its turn, you may choose to take your turn that round before theirs."
+    },
+    {
+      "name": "Settle the Grains",
+      "prereqLevel": 17,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Hourglass"
+      },
+      "description": "You can focus your hourglass to cause the grains of time to come to a complete stop. You can cast the Time Stop spell once per long rest without expending a spell slot.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Time Stop"],
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
+          "ignoreMaxLevel": true
+        }
+      ],
+      "uses": [
+        {
+          "id": "91BD73CC-096E-475E-B2A2-42CB37941F8B",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "True Talent",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Strings"
+      },
+      "description": "When you make an ability check that uses a skill or tool that you are proficient with, or a check that adds an Exploit Die to the result, you treat a roll of 9 or lower on the d20 as a 10."
     },
     {
       "name": "Occult Scholar",
