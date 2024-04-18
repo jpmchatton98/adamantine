@@ -1894,6 +1894,119 @@
     }
   },
   {
+    "key": "scales-dragon",
+    "stats": {
+      "0": {
+        "any": {
+          "name": "Draconic Companion",
+          "size": "Small",
+          "type": "dragon",
+          "ac": [{ "ac": 14, "from": ["natural armor"] }],
+          "pbac": true,
+          "hp": { "base": 5, "levelMod": 5 },
+          "speed": { "walk": 30, "fly": 30 },
+          "str": 16,
+          "dex": 12,
+          "con": 15,
+          "int": 8,
+          "wis": 10,
+          "cha": 14,
+          "immune": ["{86A62132-9AF3-41AA-84E0-B7F5E503E1B0}"],
+          "senses": ["darkvision 60 ft."],
+          "languages": ["Draconic"],
+          "skillProfs": [
+            "acrobatics",
+            "animal handling",
+            "arcana",
+            "athletics",
+            "deception",
+            "endurance",
+            "history",
+            "insight",
+            "intimidation",
+            "investigation",
+            "medicine",
+            "nature",
+            "perception",
+            "performance",
+            "persuasion",
+            "religion",
+            "sleight of hand",
+            "society",
+            "stealth",
+            "survival",
+            "technology"
+          ],
+          "saveProfs": ["str", "dex", "con", "int", "wis", "cha"],
+          "action": [
+            {
+              "name": "Claws",
+              "entries": [
+                "<em>Melee Weapon Attack.</em> |3+{PB}| to hit, reach 5 ft., one target. <em>Hit:</em> 1d4 + |3+{PB}| slashing damage plus 1d4 {86A62132-9AF3-41AA-84E0-B7F5E503E1B0} damage."
+              ]
+            }
+          ]
+        }
+      },
+      "7": {
+        "any": {
+          "size": "Medium",
+          "action": [
+            {
+              "name": "Claws",
+              "entries": [
+                "<em>Melee Weapon Attack.</em> |3+{PB}| to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 + |3+{PB}| slashing damage plus 1d6 {86A62132-9AF3-41AA-84E0-B7F5E503E1B0} damage."
+              ]
+            }
+          ]
+        }
+      },
+      "15": {
+        "any": {
+          "size": "Large",
+          "action": [
+            {
+              "name": "Multiattack",
+              "entries": ["The dragon makes two attacks with its claws."]
+            },
+            {
+              "name": "Elemental Breath ({spl-mod}/Day)",
+              "entries": [
+                "The dragon exhales energy in a 30-foot cone.  Targets in that area must make a DC {spl-dc} Dexterity saving throw, taking 10d6 {86A62132-9AF3-41AA-84E0-B7F5E503E1B0} damage on a failed save, or half as much on a success."
+              ]
+            }
+          ]
+        }
+      },
+      "20": {
+        "any": {
+          "ac": [{ "ac": 20, "from": ["natural armor"] }],
+          "pbac": false,
+          "speed": { "walk": 40, "climb": 40, "fly": 60 },
+          "str": 20,
+          "con": 18,
+          "int": 14,
+          "cha": 18,
+          "senses": ["blindsight 30 ft."],
+          "action": [
+            {
+              "name": "Claws",
+              "entries": [
+                "<em>Melee Weapon Attack.</em> |5+{PB}| to hit, reach 5 ft., one target. <em>Hit:</em> 2d6 + |5+{PB}| slashing damage plus 1d6 {86A62132-9AF3-41AA-84E0-B7F5E503E1B0} damage."
+              ]
+            },
+            {
+              "name": "Elemental Breath ({spl-mod}/Day)",
+              "entries": [
+                "The dragon exhales energy in a 60-foot cone.  Targets in that area must make a DC {spl-dc} Dexterity saving throw, taking 12d6 {86A62132-9AF3-41AA-84E0-B7F5E503E1B0} damage on a failed save, or half as much on a success."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
     "key": "dragon-knight-black",
     "stats": {
       "0": {

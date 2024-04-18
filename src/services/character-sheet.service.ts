@@ -1919,18 +1919,27 @@ export class CharacterSheetService {
       for (let l of choiceEntry?.list ?? []) {
         const spellData = this.dataService.getSpell(l);
         if (spellData.level <= maxSpellLevel || listed.ignoreMaxLevel) {
-          const spellbookIds = ['pale-master-grimoire', 'wizard-spellbook'];
-          if (!spellbookIds.includes(listed.id) || !!spellData.ritual) {
-            spellList.push({
-              spell: l,
-              ability,
-              source,
-              ritualOnly:
-                listed.ritualsOnly ||
-                listed.id === 'pale-master-grimoire' ||
-                listed.id === 'wizard-spellbook',
-              atWill: listed.atWill,
-            });
+          const spellbookIds = [
+            'magus-spellbook',
+            'pale-master-grimoire',
+            'wizard-spellbook',
+          ];
+          if (
+            (listed.id === 'magus-spellbook' && characterLevel >= 7) ||
+            listed.id !== 'magus-spellbook'
+          ) {
+            if (!spellbookIds.includes(listed.id) || !!spellData.ritual) {
+              spellList.push({
+                spell: l,
+                ability,
+                source,
+                ritualOnly:
+                  listed.ritualsOnly ||
+                  listed.id === 'pale-master-grimoire' ||
+                  listed.id === 'wizard-spellbook',
+                atWill: listed.atWill,
+              });
+            }
           }
         }
       }

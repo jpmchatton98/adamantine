@@ -136,6 +136,56 @@ export class BuilderListedComponent implements OnInit {
               }
             });
         }
+      } else if (this.listed.id === 'magus-prepared-spells') {
+        const spellbook = this.characterObj.choices.find(
+          (c: any) => c.id === 'magus-spellbook'
+        );
+        if (spellbook?.list) {
+          this.options = this.dataService
+            .getSpellsByListUnsplit(this.listed.list)
+            .filter((s: any) => {
+              return spellbook.list.includes(s.name);
+            })
+            .sort((a, b) => {
+              if (a.level < b.level) {
+                return -1;
+              } else if (a.level === b.level) {
+                return a.name.localeCompare(b.name);
+              } else {
+                return 1;
+              }
+            });
+        }
+      } else if (this.listed.id === 'magus-known-spells') {
+        if (this.characterObj.subclass === 'Order of Arcanists') {
+          this.options = [];
+        } else {
+          const maxSpellLevel = Math.max(
+            Math.ceil(this.characterLevel / (this.listed.spellcasterType * 2)),
+            this.listed.maxLevel ?? -1
+          );
+
+          this.options = this.dataService
+            .getSpellsByListUnsplit(this.listed.list)
+            .filter((s: any) => {
+              if (this.listed.ritualsOnly) {
+                return s.ritual ?? false;
+              }
+              if (s.level === 0) {
+                return this.listed.allowCantrips ?? false;
+              }
+              return s.level <= maxSpellLevel;
+            })
+            .sort((a, b) => {
+              if (a.level < b.level) {
+                return -1;
+              } else if (a.level === b.level) {
+                return a.name.localeCompare(b.name);
+              } else {
+                return 1;
+              }
+            });
+        }
       } else if (this.listed.id === 'sorcerer-spells') {
         const maxSpellLevel = Math.max(
           Math.ceil(this.characterLevel / (this.listed.spellcasterType * 2)),

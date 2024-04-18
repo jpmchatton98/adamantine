@@ -96,7 +96,8 @@ export class ClassExtraTabComponent
             ? Math.ceil(20 / (2 * tabData.spellcaster))
             : 0;
         this.cantrips =
-          tabData.spellcaster !== 2 && tabData.list !== 'elemental';
+          (tabData.spellcaster !== 2 && tabData.list !== 'elemental') ||
+          tabData.cantrips;
       } else if (this.dataType.includes('exploits')) {
         this.list = tabData.list;
         this.maxLevel = Math.ceil(20 / (4 * data.exploitLevel));
