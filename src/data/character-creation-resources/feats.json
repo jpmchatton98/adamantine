@@ -2200,7 +2200,7 @@
   {
     "name": "Tavern Brawler",
     "type": "combat",
-    "description": "Accustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:<ul><li>Increase your Strength or Consititution score by 1, to a maximum of 20.</li><li>You are proficient with improvised weapons.</li><li>The damage dice of your unarmed strike increase by one step, to a maximum of d10s.</li><li>You can grapple a creature as a bonus action.</li></ul>",
+    "description": "Accustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:<ul><li>Increase your Strength or Consititution score by 1, to a maximum of 20.</li><li>You are proficient with improvised weapons.</li><li>You gain a +1 bonus to damage rolls you make with unarmed strikes or improvised weapons.</li><li>You can grapple a creature as a bonus action.</li></ul>",
     "choices": {
       "id": "08218467-6D72-4B8C-869B-1AADDAEB03FB",
       "type": "asi",
