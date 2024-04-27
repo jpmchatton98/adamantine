@@ -338,14 +338,6 @@
         "domains": ["Beauty", "Light", "Nature", "Peace", "Twilight", "Travel"]
       },
       {
-        "name": "Qhungiks",
-        "gender": "Agender",
-        "alignment": "CN",
-        "symbol": "A coiling slaad tadpole",
-        "portfolio": "Chaos, Slaadi",
-        "domains": ["Eldritch", "Madness"]
-      },
-      {
         "name": "Red Knight",
         "gender": "Female",
         "alignment": "LN",
@@ -432,6 +424,14 @@
         "symbol": "Coiling snake",
         "portfolio": "Snakes, Yuan-ti",
         "domains": ["Trickery"]
+      },
+      {
+        "name": "Ssendam",
+        "gender": "Genderfluid",
+        "alignment": "CN",
+        "symbol": "A golden slaad tadpole",
+        "portfolio": "Chaos, Slaadi",
+        "domains": ["Eldritch", "Madness"]
       },
       {
         "name": "Sune",
