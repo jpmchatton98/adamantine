@@ -835,7 +835,8 @@ export class CharacterSheetService {
       }
     }
 
-    this.character?.classes?.forEach((c) => {
+    let toolExp = false;
+    this.character?.classes?.forEach((c, i) => {
       c.choices.forEach((choice) => {
         if (skillList.includes(choice.value)) {
           skillProfs.push({
@@ -853,6 +854,44 @@ export class CharacterSheetService {
       );
 
       if (classData) {
+        if (i === 0) {
+          if (classData.proficiencies?.tools?.length) {
+            classData.proficiencies.tools.forEach((t, i) => {
+              if (
+                !(
+                  t.constructor === Array ||
+                  ['game', 'instrument', 'tool'].includes(t)
+                )
+              ) {
+                skillProfs.push({
+                  id: `${c.name}-tool-${i + 1}`,
+                  value: t,
+                  level: 1,
+                  instrument: instruments.includes(t),
+                });
+              }
+            });
+          }
+        } else {
+          if (classData.proficiencies?.multiclassTools?.length) {
+            classData.proficiencies.multiclassTools.forEach((t, i) => {
+              if (
+                !(
+                  t.constructor === Array ||
+                  ['game', 'instrument', 'tool'].includes(t)
+                )
+              ) {
+                skillProfs.push({
+                  id: `${c.name}-tool-${i + 1}`,
+                  value: t,
+                  level: 1,
+                  instrument: instruments.includes(t),
+                });
+              }
+            });
+          }
+        }
+
         for (let level: number = 1; level <= c.level; level++) {
           (classData?.features ?? {})[level]?.forEach((feature) => {
             skillProfs.push(...this.getFeatureToolProfs(feature, c.choices));
@@ -860,6 +899,10 @@ export class CharacterSheetService {
           (subclassData?.features ?? {})[level]?.forEach((feature) => {
             skillProfs.push(...this.getFeatureToolProfs(feature, c.choices));
           });
+        }
+
+        if ((c.name === 'artificer' || c.name === 'inventor') && c.level >= 6) {
+          toolExp = true;
         }
       }
     });
@@ -901,6 +944,16 @@ export class CharacterSheetService {
     });
 
     skillProfs = this.adjustLevels(skillProfs);
+
+    if (toolExp) {
+      skillProfs.map((s) => {
+        if (s.level >= 1) {
+          s.level = 2;
+        }
+        return s;
+      });
+    }
+
     return skillProfs;
   }
   private getFeatureToolProfs(feature: any, choices: any[]) {
