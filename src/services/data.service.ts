@@ -933,16 +933,36 @@ export class DataService {
         for (let [key, value] of Object.entries(choiceStats)) {
           let keyValue: any = value;
 
-          if (key === 'ac') {
-            baseStats['ac'] = keyValue;
+          if (['ac', 'name'].includes(key)) {
+            baseStats[key] = keyValue;
+          } else if (['str', 'dex', 'con', 'int', 'wis', 'cha'].includes(key)) {
+            if (baseStats[key] < keyValue) {
+              baseStats[key] = keyValue;
+            }
           } else {
             if (Array.isArray(keyValue)) {
               if (baseStats[key] !== undefined) {
-                baseStats[key] = [...baseStats[key], ...keyValue];
+                for (let item of keyValue) {
+                  baseStats[key] = baseStats[key].filter((baseItem) => {
+                    if (item.constructor.name === 'Object') {
+                      return baseItem.name !== item.name;
+                    } else {
+                      if (baseItem.includes('understands')) {
+                        return false;
+                      }
+                      return baseItem !== item;
+                    }
+                  });
+                  baseStats[key].push(item);
+                }
+              } else {
+                baseStats[key] = keyValue;
               }
-            } else if (value.constructor.name == 'Object') {
+            } else if (keyValue.constructor.name == 'Object') {
               if (baseStats[key] !== undefined) {
                 baseStats[key] = { ...baseStats[key], ...keyValue };
+              } else {
+                baseStats[key] = keyValue;
               }
             }
           }
@@ -962,15 +982,28 @@ export class DataService {
             for (let [key, value] of Object.entries(levelStats['any'])) {
               let keyValue: any = value;
 
-              if (key === 'ac') {
-                baseStats['ac'] = keyValue;
+              if (['ac', 'name'].includes(key)) {
+                baseStats[key] = keyValue;
+              } else if (
+                ['str', 'dex', 'con', 'int', 'wis', 'cha'].includes(key)
+              ) {
+                if (baseStats[key] < keyValue) {
+                  baseStats[key] = keyValue;
+                }
               } else {
                 if (Array.isArray(keyValue)) {
                   if (baseStats[key] !== undefined) {
                     for (let item of keyValue) {
-                      baseStats[key] = baseStats[key].filter(
-                        (baseItem) => baseItem.name !== item.name
-                      );
+                      baseStats[key] = baseStats[key].filter((baseItem) => {
+                        if (item.constructor.name === 'Object') {
+                          return baseItem.name !== item.name;
+                        } else {
+                          if (baseItem.includes('understands')) {
+                            return false;
+                          }
+                          return baseItem !== item;
+                        }
+                      });
                       baseStats[key].push(item);
                     }
                   } else {
@@ -994,15 +1027,29 @@ export class DataService {
 
               for (let [key, value] of Object.entries(choiceStats)) {
                 let keyValue: any = value;
-                if (key === 'ac') {
-                  baseStats['ac'] = keyValue;
+
+                if (['ac', 'name'].includes(key)) {
+                  baseStats[key] = keyValue;
+                } else if (
+                  ['str', 'dex', 'con', 'int', 'wis', 'cha'].includes(key)
+                ) {
+                  if (baseStats[key] < keyValue) {
+                    baseStats[key] = keyValue;
+                  }
                 } else {
                   if (Array.isArray(keyValue)) {
                     if (baseStats[key] !== undefined) {
                       for (let item of keyValue) {
-                        baseStats[key] = baseStats[key].filter(
-                          (baseItem) => baseItem.name !== item.name
-                        );
+                        baseStats[key] = baseStats[key].filter((baseItem) => {
+                          if (item.constructor.name === 'Object') {
+                            return baseItem.name !== item.name;
+                          } else {
+                            if (baseItem.includes('understands')) {
+                              return false;
+                            }
+                            return baseItem !== item;
+                          }
+                        });
                         baseStats[key].push(item);
                       }
                     } else {

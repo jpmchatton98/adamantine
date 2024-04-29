@@ -109,6 +109,14 @@
               "name": "Tool Proficiency",
               "entries": ["The defender is proficient with tinker's tools."]
             }
+          ],
+          "action": [
+            {
+              "name": "M-98 Widow",
+              "entries": [
+                "<em>Ranged Weapon Attack.</em> {spl-atk} to hit, range 200/500 ft., one target. <em>Hit:</em> 2d6 + {PB} piercing damage."
+              ]
+            }
           ]
         }
       },
