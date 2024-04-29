@@ -27339,5 +27339,25 @@
     ],
     "lists": ["Arcane"],
     "ritual": 0
+  },
+  {
+    "name": "Conjure Air Assassin",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "10 minutes",
+    "range": "5 feet",
+    "components": "V, S, M (the bottled dying-breath of a humanoid, a personal effect of the stalker's quarry, and powdered silver worth 10 gp, all of which the spell consumes)",
+    "duration": "Special",
+    "description": [
+      "You release the dying breath within a circle of silver and the shimmering form of an Invisible Stalker takes shape within, drawing every particle of scent from its intended quarry's token as you speak the creature's name.",
+      "When you cast this spell, you can specify a sequence of commands that the stalker should undertake to kill its quarry, and it follows these commands as literally as possible. The stalker disregards any commands you give it after this point.",
+      "If you do not specify a sequence of commands, it travels toward its quarry by the most direct route and attacks at the first opportunity. When either you or the stalker's quarry die, the stalker disappears in whirl of air.",
+      "At each dawn, the stalker makes a Wisdom saving throw against your save DC, adding the number of days since it was summoned to its total. On a success, the stalker breaks free of your control."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 9th level, you can specify any number of creatures as the stalker's quarry. You must offer the stalker a personal effect from each of these creatures when you cast this spell."
+    ],
+    "lists": ["Arcane", "Primal", "Occult"],
+    "ritual": 0
   }
 ]
