@@ -93,6 +93,23 @@
               ]
             }
           ]
+        },
+        "Legion": {
+          "name": "Legion",
+          "int": 10,
+          "languages": ["Common", "Binary", "Khelish"],
+          "trait": [
+            {
+              "name": "Humanoid Build",
+              "entries": [
+                "The defender is proficient with shields, and it has humanoid hands that it can use to perform basic tasks."
+              ]
+            },
+            {
+              "name": "Tool Proficiency",
+              "entries": ["The defender is proficient with tinker's tools."]
+            }
+          ]
         }
       },
       "5": {
