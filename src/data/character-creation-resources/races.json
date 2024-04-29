@@ -12201,6 +12201,53 @@
     ],
     "subraces": [
       {
+        "name": "Blemmyes",
+        "description": "Blemmyes are brutes that savor flesh, and they tend to see all humanoids as potential meals.  They lack a head, and have a wide, fanged maw across their chest and beady eyes on either side.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Bite",
+            "description": "You have a mouth rowed with jagged, razor like, teeth, and it is a natural weapon which you can make attacks with. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier.",
+            "actions": [
+              {
+                "id": "00742B5B-A068-40AD-A7B0-C5333BB173B3",
+                "type": "a",
+                "attack": true,
+                "name": "Bite",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 8,
+                    "type": "piercing",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Devour",
+            "description": "As an action, you can make a bite attack against a creature of a smaller size than yourself that you are grappling in an attempt to swallow it whole. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d4 acid damage at the start of each of your turns. You can have only one target swallowed at a time. Your armor class when targeted by an attack made by a creature that is swallowed is 10.</p><p>If you become incapacitated the swallowed creature is no longer restrained and can escape using 5 feet of movement, exiting prone. Otherwise the creature can attempt to escape by using it's action as if attempting to escape a grapple. As an action, you can regurgitate a swallowed creature into an adjacent unoccupied space.</p><p>Once you use this trait, you can't use it again until you finish a long rest.",
+            "uses": {
+              "id": "F9B50CF9-0C25-4A7C-ACF1-EFDC3AB132CD",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "F9B50CF9-0C25-4A7C-ACF1-EFDC3AB132CD",
+                "hasUses": true,
+                "type": "a",
+                "name": "Devour",
+                "description": "You make a bite attack against a creature of a smaller size than yourself that you are grappling in an attempt to swallow it whole. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d4 acid damage at the start of each of your turns. You can have only one target swallowed at a time. Your armor class when targeted by an attack made by a creature that is swallowed is 10.</p><p>If you become incapacitated the swallowed creature is no longer restrained and can escape using 5 feet of movement, exiting prone. Otherwise the creature can attempt to escape by using it's action as if attempting to escape a grapple. As an action, you can regurgitate a swallowed creature into an adjacent unoccupied space."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Cyclops",
         "description": "Cyclopes are one-eyed giants that eke out a meager existence in wild lands. Isolationists by nature, they avoid contact with other races and try to drive away strangers in their territory.",
         "asis": [],
