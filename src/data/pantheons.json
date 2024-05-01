@@ -1,5 +1,163 @@
 [
   {
+    "name": "Overdeities",
+    "gods": [
+      {
+        "name": "Luminous Being",
+        "gender": "???",
+        "alignment": "CG",
+        "symbol": "A glowing sunburst",
+        "portfolio": "-",
+        "domains": ["All"]
+      },
+      {
+        "name": "Amaunator",
+        "gender": "Male",
+        "alignment": "G",
+        "symbol": "A rising sun",
+        "portfolio": "Light",
+        "domains": ["Flame", "Hope", "Light", "Protection", "Travel"]
+      },
+      {
+        "name": "Ao",
+        "gender": "Male",
+        "alignment": "N",
+        "symbol": "An alpha and an omega",
+        "portfolio": "Creation",
+        "domains": ["Arts", "Knowledge"]
+      },
+      {
+        "name": "Chroneria",
+        "gender": "Female",
+        "alignment": "LN",
+        "symbol": "An hourglass",
+        "portfolio": "Time",
+        "domains": ["Knowledge", "Luck", "Order", "Story", "Time", "Trickery"]
+      },
+      {
+        "name": "Dendar",
+        "gender": "Female",
+        "alignment": "NE",
+        "symbol": "A black cobra",
+        "portfolio": "Darkness",
+        "domains": [
+          "Apocalypse",
+          "Death",
+          "Eldritch",
+          "Madness",
+          "Night",
+          "Shadow"
+        ]
+      },
+      {
+        "name": "Lady of Pain",
+        "gender": "Female",
+        "alignment": "N",
+        "symbol": "-",
+        "portfolio": "Neutrality",
+        "domains": ["-"]
+      },
+      {
+        "name": "Mystryl",
+        "gender": "Female",
+        "alignment": "CN",
+        "symbol": "A blue-white star",
+        "portfolio": "Magic",
+        "domains": ["Arcana", "Knowledge"]
+      },
+      {
+        "name": "[null]",
+        "gender": "Genderfluid",
+        "alignment": "C",
+        "symbol": "A sphere surrounded by a spiked ring",
+        "portfolio": "Chaos",
+        "domains": ["Eldritch", "Madness"]
+      },
+      {
+        "name": "Pandorym",
+        "gender": "Agender",
+        "alignment": "CE",
+        "symbol": "A miasma with eyes",
+        "portfolio": "Hunger",
+        "domains": [
+          "Apocalypse",
+          "Death",
+          "Eldritch",
+          "Madness",
+          "Night",
+          "Shadow"
+        ]
+      },
+      {
+        "name": "Praeteria",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "A golden tree",
+        "portfolio": "Life, Nature",
+        "domains": [
+          "Hope",
+          "Life",
+          "Nature",
+          "Plague",
+          "Peace",
+          "Mountain",
+          "Sea",
+          "Sky"
+        ]
+      },
+      {
+        "name": "Primus",
+        "gender": "Male",
+        "alignment": "L",
+        "symbol": "A bronze scale",
+        "portfolio": "Order",
+        "domains": ["Forge", "Inquisition", "Judgement", "Order", "Protection"]
+      },
+      {
+        "name": "Quilrith",
+        "gender": "Male",
+        "alignment": "LG",
+        "symbol": "A great beast's head in profile",
+        "portfolio": "Balance",
+        "domains": [
+          "Apocalypse",
+          "Inquisition",
+          "Judgement",
+          "Metallic",
+          "Order",
+          "Protection",
+          "Strength",
+          "War",
+          "Wealth"
+        ]
+      },
+      {
+        "name": "Tharizdun",
+        "gender": "Male",
+        "alignment": "E",
+        "symbol": "A crooked spiral",
+        "portfolio": "Entropy",
+        "domains": [
+          "Apocalypse",
+          "Death",
+          "Eldritch",
+          "Madness",
+          "Night",
+          "Shadow",
+          "Flame"
+        ]
+      },
+      {
+        "name": "The Writer",
+        "gender": "???",
+        "alignment": "CG",
+        "symbol": "-",
+        "portfolio": "Prophecy",
+        "domains": ["-"]
+      }
+    ]
+  },
+  {
     "name": "Faerûnian Pantheon",
     "gods": [
       {
