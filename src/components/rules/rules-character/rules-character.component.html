@@ -1,0 +1,685 @@
+<nz-tabset nzSize="small" [nzAnimated]="false">
+  <nz-tab nzTitle="Genius">
+    <p>
+      At 1st level, and again at 4th, 8th, 16th, and 20th levels, you gain a
+      number of Genius Points equal to your Intelligence modifier (minimum of
+      0). If your Intelligence modifier increases, you retroactively gain Genius
+      Points for past levels.
+    </p>
+    <p>
+      At 1st level, and again whenever you gain a level, you can expend any
+      number of Genius Points to gain any of the following features of your
+      choice.
+
+      <nz-table
+        [nzData]="['yo mama']"
+        [nzShowPagination]="false"
+        [nzPageSize]="1 / 0"
+        nzSize="small"
+      >
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Cost</th>
+            <th>Other Prerequisites</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fluency in one language</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Proficiency in one skill</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Proficiency with one tool</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Expertise in one skill</td>
+            <td>3</td>
+            <td>Proficiency in the chosen skill</td>
+          </tr>
+          <tr>
+            <td>Expertise with one tool</td>
+            <td>2</td>
+            <td>Proficiency with the chosen tool</td>
+          </tr>
+          <tr>
+            <td>Proficiency with light armor</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Proficiency with medium armor</td>
+            <td>3</td>
+            <td>Proficiency with light armor</td>
+          </tr>
+          <tr>
+            <td>Proficiency with heavy armor</td>
+            <td>4</td>
+            <td>Proficiency with medium armor</td>
+          </tr>
+          <tr>
+            <td>Proficiency with shields</td>
+            <td>2</td>
+            <td>Proficiency with light armor</td>
+          </tr>
+          <tr>
+            <td>Proficiency with one simple weapon</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Proficiency with one martial weapon</td>
+            <td>2</td>
+            <td>Proficiency with at least one simple weapon</td>
+          </tr>
+          <tr>
+            <td>Proficiency with one exotic weapon</td>
+            <td>3</td>
+            <td>Proficiency with at least one martial weapon</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </p>
+  </nz-tab>
+  <nz-tab nzTitle="Halfblood Races">
+    <p>
+      The halfblood races (half-dwarf, half-elf, and half-orc) have a variety of
+      subraces for each subrace of their primary parent (dwarf, elf, or orc). If
+      the secondary parent was a human, you can select this subrace if you so
+      choose.
+    </p>
+    <p>
+      If the secondary parent was a dwarf, elf, or orc, you must select the
+      Crossblood subrace unless the subraces of your parents matched up
+      appropriately, as shown on the tables below.
+    </p>
+
+    <h5>Half-Dwarf</h5>
+    <table class="halfblood-table">
+      <thead>
+        <tr>
+          <th rowspan="2"><br /></th>
+          <th rowspan="2">Human</th>
+          <th colspan="13">Elf</th>
+          <th colspan="6">Orc</th>
+        </tr>
+        <tr>
+          <th>Astral</th>
+          <th>Desert</th>
+          <th>Flame</th>
+          <th>High</th>
+          <th>Pallid</th>
+          <th>Rock</th>
+          <th>Sea</th>
+          <th>Snow</th>
+          <th>Urban</th>
+          <th>Wood</th>
+          <th>Drow</th>
+          <th>Eladrin</th>
+          <th>Shadar-Kai</th>
+          <th>Bahgtruan</th>
+          <th>Gruumish</th>
+          <th>Ilnevalese</th>
+          <th>Luthian</th>
+          <th>Shargaan</th>
+          <th>Yurtese</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hill</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Mountain</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Road</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Sea</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Azer</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Duergar</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+        </tr>
+      </tbody>
+    </table>
+    <h5>Half-Elf</h5>
+    <table class="halfblood-table">
+      <thead>
+        <tr>
+          <th rowspan="2"><br /></th>
+          <th rowspan="2">Human</th>
+          <th colspan="6">Dwarf</th>
+          <th colspan="6">Orc</th>
+        </tr>
+        <tr>
+          <th>Hill</th>
+          <th>Mountain</th>
+          <th>Road</th>
+          <th>Sea</th>
+          <th>Azer</th>
+          <th>Duergar</th>
+          <th>Bahgtruan</th>
+          <th>Gruumish</th>
+          <th>Ilnevalese</th>
+          <th>Luthian</th>
+          <th>Shargaan</th>
+          <th>Yurtese</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Astral</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Desert</td>
+          <td class="allowed">✓</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Flame</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>High</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Pallid</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Rock</td>
+          <td class="allowed">✓</td>
+          <td class="allowed">✓</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Sea</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Snow</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Urban</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Wood</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Drow</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Eladrin</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Shadar-Kai</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+        </tr>
+      </tbody>
+    </table>
+    <h5>Half-Orc</h5>
+    <table class="halfblood-table">
+      <thead>
+        <tr>
+          <th rowspan="2"><br /></th>
+          <th rowspan="2">Human</th>
+          <th colspan="6">Dwarf</th>
+          <th colspan="13">Elf</th>
+        </tr>
+        <tr>
+          <th>Hill</th>
+          <th>Mountain</th>
+          <th>Road</th>
+          <th>Sea</th>
+          <th>Azer</th>
+          <th>Duergar</th>
+          <th>Astral</th>
+          <th>Desert</th>
+          <th>Flame</th>
+          <th>High</th>
+          <th>Pallid</th>
+          <th>Rock</th>
+          <th>Sea</th>
+          <th>Snow</th>
+          <th>Urban</th>
+          <th>Wood</th>
+          <th>Drow</th>
+          <th>Eladrin</th>
+          <th>Shadar-Kai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bahgtruan</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Gruumish</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Ilnevalese</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Luthian</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Shargaan</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+        </tr>
+        <tr>
+          <td>Yurtese</td>
+          <td class="allowed">✓</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td>✗</td>
+          <td class="allowed">✓</td>
+        </tr>
+      </tbody>
+    </table>
+  </nz-tab>
+</nz-tabset>

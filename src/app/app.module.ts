@@ -25,6 +25,7 @@ import { DBService } from 'src/services/db.service';
 import { DmToolsModule } from 'src/components/dm-tools/dm-tools.module';
 import { CraftingModule } from 'src/components/crafting/crafting.module';
 import { LoreModule } from 'src/components/lore/lore.module';
+import { RulesModule } from 'src/components/rules/rules.module';
 
 registerLocaleData(en);
 
@@ -49,6 +50,7 @@ registerLocaleData(en);
     GeneralStoreModule,
     DmToolsModule,
     CraftingModule,
+    RulesModule,
     LoreModule,
   ],
   providers: [DataService, DBService, { provide: NZ_I18N, useValue: en_US }],

@@ -20,7 +20,6 @@ import { ClassTabComponent } from 'src/components/database/tabs/class-tab/class-
 import { ExploitTabComponent } from 'src/components/database/tabs/exploit-tab/exploit-tab.component';
 import { FeatTabComponent } from 'src/components/database/tabs/feat-tab/feat-tab.component';
 import { FightingStyleTabComponent } from 'src/components/database/tabs/fighting-style-tab/fighting-style-tab.component';
-import { GeniusTabComponent } from 'src/components/database/tabs/genius-tab/genius-tab.component';
 import { MulticlassingTabComponent } from 'src/components/database/tabs/multiclassing-tab/multiclassing-tab.component';
 import { RaceTabComponent } from 'src/components/database/tabs/race-tab/race-tab.component';
 import { RacialFeatTabComponent } from 'src/components/database/tabs/racial-feat-tab/racial-feat-tab.component';
@@ -49,6 +48,7 @@ import { SubracesComponent } from 'src/components/pages/races/subraces/subraces.
 import { SpellComponent } from 'src/components/pages/spells/spell/spell.component';
 import { SpellsComponent } from 'src/components/pages/spells/spells/spells.component';
 import { TransformationComponent } from 'src/components/pages/transformations/transformation/transformation.component';
+import { RulesBaseComponent } from 'src/components/rules/rules-base/rules-base.component';
 
 const routes: Routes = [
   {
@@ -89,10 +89,6 @@ const routes: Routes = [
       {
         path: 'backgrounds',
         component: BackgroundTabComponent,
-      },
-      {
-        path: 'genius',
-        component: GeniusTabComponent,
       },
       {
         path: 'feats',
@@ -276,6 +272,11 @@ const routes: Routes = [
   {
     path: 'magic-item/:item',
     component: MagicItemComponent,
+  },
+
+  {
+    path: 'rules',
+    component: RulesBaseComponent,
   },
 
   {

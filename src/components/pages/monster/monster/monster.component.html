@@ -182,11 +182,9 @@
 <ng-container *ngIf="monster.legendary">
   <hr />
   <h4>Legendary Actions</h4>
-  The {{ monster.name.toLowerCase() }} can take
-  {{ monster.mythic ? "5" : "3" }} legendary actions, choosing from the options
-  below. Only one legendary action can be used at a time and only at the end of
-  another creature's turn. The {{ monster.name.toLowerCase() }} regains spent
-  legendary actions at the start of its turn.
+  <p>
+    {{ getLegendaryActionsHeader() }}
+  </p>
   <div *ngFor="let trait of monster.legendary">
     <app-monster-trait
       [trait]="trait"
@@ -197,8 +195,9 @@
 <ng-container *ngIf="monster.mythic">
   <hr />
   <h4>Mythic Actions</h4>
-  If the {{ monster.name.toLowerCase() }} has used its Mythic trait in the last
-  hour, it can use the options below as legendary actions.
+  <p>
+    {{ getMythicActionsHeader() }}
+  </p>
   <div *ngFor="let trait of monster.mythic">
     <app-monster-trait
       [trait]="trait"

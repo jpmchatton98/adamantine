@@ -38,7 +38,7 @@ export class CharacterSheetComponent extends BaseComponent implements OnInit {
   public gritFeature: any = {
     name: 'Grit',
     description:
-      'If you drop to 0 hit points, but are not killed outright, you can choose to declare Grit at any point before your next turn. Grit represents your character using up the last of their strength for a final effort.</p><p>Grit lasts for 1 minute, during which no healing magic will work on you, and no effect can cause you to become unconscious, dead, or prevent you from using your turn, such as the stunned or paralyzed conditions. After the minute elapses, you die.',
+      'If you drop to 0 hit points, but are not killed outright, you can choose to declare Grit at any point before your next turn. Grit represents your character using up the last of their strength for a final effort.</p><p>Grit lasts for 1 minute, during which no healing magic will work on you, and no effect can cause you to become unconscious or prevent you from using your turn, such as the stunned or paralyzed conditions. You do not suffer the effects of taking damage while at 0 hit points, and do not make death saving throws, but you can still be killed outright. Additionally, you ignore any levels of exhaustion you have. After the minute elapses, you die.</p><p>While you are under the effects of Grit, you do not expend uses of features gained before 11th level, can use exploits of 3rd-degree or lower at will, and can cast spells of 5th-level or lower at will.  You can also use a feature that you have expended all of the uses of gained at 11th level or higher, use an exploit of 4th-degree or higher, or cast a spell of 6th-level or higher, by gaining one level of exhaustion.',
   };
 
   public scores: any[] = [

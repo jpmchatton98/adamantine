@@ -1,0 +1,1463 @@
+<nz-tabset nzSize="small" [nzAnimated]="false">
+  <nz-tab nzTitle="Conditions">
+    <h5><span class="mdi mdi-bug"></span>Attached</h5>
+    <p>
+      A creature that is Attached to an object or another creature is moved with
+      that object or creature whenever it moves. Any effect that could be used
+      to Grapple a creature can be used to Attach to a creature too large for
+      the Grappler to grapple.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Any effect that ends the Grappled condition can also end the Attached
+      condition. The DC to remove an Attached creature is noted as its Remove
+      DC.
+    </p>
+    <h6>Releasing an Attachment</h6>
+    <p>
+      A creature that imposes the Attached condition may end that condition as a
+      bonus action.
+    </p>
+
+    <h5><span class="mdi mdi-diabetes"></span>Bleeding</h5>
+    <p>
+      A Bleeding creature has an open wound, and loses the specified amount of
+      hit points at the beginning of each of its turns, i.e a creature that is
+      "Bleeding (1d4)" loses 1d4 hit points at the beginning of each of its
+      turns.
+    </p>
+    <h6>Hit Point Loss</h6>
+    <p>
+      Hit point loss represents blood loss, and is distinct from damage. Unless
+      otherwise specified, it can't be resisted or reduced in any way. It has no
+      effect on creatures with 0 hit points.
+    </p>
+    <h6>Creatures Without Blood</h6>
+    <p>
+      Creatures that do not have blood or some equivalent vital fluid are immune
+      to any effect that directly causes Hit Point Loss.
+    </p>
+    <h6>Separate Sources of Bleeding</h6>
+    <p>
+      If a creature that is already Bleeding would suffer a wound from a
+      different source, the wound with the higher Hit Point Loss value overrides
+      that with the lesser value.
+    </p>
+    <h6>Stacking Bleeding</h6>
+    <p>
+      Some effects can cause a creature to accrue multiple instances of the
+      Bleeding condition, and will specify if this is the case. Stacking wounds
+      of the same value count as a single instance of the Bleeding condition
+      with a Hit Point Loss value equal to their total cumulative Hit Point Loss
+      value.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      The Bleeding condition ends for a creature that receives any magical
+      healing.
+    </p>
+    <p>
+      Additionally, as an action, a creature may attempt a DC 12 Wisdom
+      (Medicine) check to stanch the wounds of a Bleeding creature, ending the
+      effect on a success.
+    </p>
+
+    <h5><span class="mdi mdi-eye-off"></span>Blinded</h5>
+    <p>
+      A Blinded creature can't see and automatically fails any ability check
+      that requires sight. Attack rolls against the creature have advantage, and
+      the creature's attack rolls have disadvantage.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Lesser Restoration, Greater Restoration, and Mass Heal can
+      end the Blinded condition on a creature.
+    </p>
+
+    <h5><span class="mdi mdi-shield-remove"></span>Broken</h5>
+    <p>
+      A Broken creature has had its defenses rended, and has its Armor Class
+      reduced by a specific amount, i.e. "Broken (-1)."
+    </p>
+    <h6>Separate Sources of Broken</h6>
+    <p>
+      If a creature that is already Broken would gain the Broken condition from
+      another source, the condition with the higher Broken value overrides that
+      with the lesser value.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      If a Broken creature is wearing armor, damage to that armor can be
+      repaired over the course of a long rest. If a Broken creature uses natural
+      armor or unarmored defense, it can be restored by any amount of magical
+      healing.
+    </p>
+
+    <h5><span class="mdi mdi-fire"></span>Burning</h5>
+    <p>
+      A Burning creature is on fire, and takes the specified amount of fire
+      damage at the beginning of each of its turns, i.e. "Burning (1d10)."
+    </p>
+    <h6>Separate Sources of Burning</h6>
+    <p>
+      If a creature that is already Burning would gain the Burning condition
+      from another source, the condition with the higher Burning value overrides
+      that with the lesser value.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      The creature or a creature that can reach it may smother the flames as an
+      action, ending the Burning condition for that creature. A Burning creature
+      that is doused in water, that takes any cold damage, or that is in an
+      airless environment, such as a bag of holding, has the condition
+      immediately end for it.
+    </p>
+
+    <h5><span class="mdi mdi-heart"></span>Charmed</h5>
+    <p>
+      A Charmed creature can't attack the charmer or target the charmer with
+      harmful abilities or magical effects, and generally treats the charmer as
+      an allied creature. The charmer has advantage on any ability check to
+      interact socially with the Charmed creature.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Greater Restoration, Dispel Good and Evil, and Power Word:
+      Heal can end the Charmed condition on a creature. Charmed creatures often,
+      though not always, make a saving throw to end the condition whenever they
+      take damage.
+    </p>
+
+    <h5><span class="mdi mdi-smog"></span>Choking</h5>
+    <p>
+      A Choking creature can't speak or breathe. Unless otherwise specified, the
+      creature can hold its breath as normal.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      The Choking condition is often imposed by another ongoing effect, such as
+      the Grappled or Poisoned conditions. In these instances, the Choking
+      condition persists until the effect causing it ends. When a creature
+      suffers the Choking condition without an ongoing effect imposing it,
+      spells such as Lesser Restoration, Greater Restoration, or Power Word:
+      Heal, and class features such as the Paladin's Lay On Hands ability can
+      end the Choking condition on a creature.
+    </p>
+
+    <h5><span class="mdi mdi-pentagram"></span>Cursed</h5>
+    <p>
+      A Cursed creature suffers the effects of the curse it is afflicted with.
+      Unless specified otherwise, curses typically last until removed, and do
+      not end on a creature that dies. A creature may be afflicted with multiple
+      different curses simultaneously. Some curses have an additional effect
+      that happens when the curse is removed.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Remove Curse and Greater Restoration can end one curse
+      affecting a creature.
+    </p>
+
+    <h5><span class="mdi mdi-ear-hearing-off"></span>Deafened</h5>
+    <p>
+      A deafened creature can't hear and automatically fails any ability check
+      that requires hearing.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Lesser Restoration, Greater Restoration, and Mass Heal can
+      end the Deafened condition on a creature.
+    </p>
+
+    <h5><span class="mdi mdi-virus"></span>Diseased</h5>
+    <p>
+      A Diseased creature suffers the effects of the disease it is afflicted
+      with. A creature may be afflicted with multiple different diseases
+      simultaneously.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Lesser Restoration and class features such as the Paladin's
+      Lay On Hands ability can end one disease affecting a creature.
+    </p>
+
+    <h5><span class="mdi mdi-controller-classic"></span>Dominated</h5>
+    <p>
+      A creature that is Dominated is Charmed and must follow the verbal or
+      telepathic commands of the creature Dominating it to the best of its
+      ability. If given no commands, the Dominated creature attempts to protect
+      itself and the creature Dominating it. Any ability that allows a creature
+      to resist or ignore the effects of the Charmed condition also applies to
+      the Dominated condition.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Any effect that ends the Charmed condition can also end the Dominated
+      condition.
+    </p>
+
+    <h5><span class="mdi mdi-emoticon-frown"></span>Frightened</h5>
+    <p>
+      A Frightened creature has disadvantage on ability checks and attack rolls
+      while the source of its fear is within line of sight.
+    </p>
+    <p>
+      The creature can't willingly move closer to the source of its fear. Unless
+      specified otherwise, a Frightened creature does not need to flee from the
+      source of its fear.
+    </p>
+    <h6>Line of Sight</h6>
+    <p>
+      A source of fear is within a Frightened creature's line of sight if an
+      unobstructed line could be drawn between them, even if the Frightened
+      creature cannot see it. While within the Frightened creature's Line of
+      Sight, the source of fear cannot be Hidden from that creature.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Heroism, Calm Emotions, Beacon of Hope, Greater
+      Restoration, and Power Word: Heal can end the Frightened condition on a
+      creature.
+    </p>
+
+    <h5><span class="mdi mdi-link-variant"></span>Grappled</h5>
+    <p>
+      A Grappled creature's speed becomes 0, and it can't benefit from any bonus
+      to its speed. The condition ends if the grappler is Incapacitated.
+    </p>
+    <h6>Dragging a Grappled Target</h6>
+    <p>
+      A creature may move a Grappled creature or object with it when it moves.
+      If the Grappled creature or object is within one size category of the
+      grappler, the grappler moves at half its speed when doing so.
+    </p>
+    <h6>Reorienting a Grapple</h6>
+    <p>
+      A grappler may move around a creature Grappled by it while maintaining its
+      grapple, requiring no extra movement to do so.
+    </p>
+    <h6>Size Disparities</h6>
+    <p>
+      Unless otherwise stated, a creature may Grapple a creature up to one size
+      larger than it. A creature at least one size larger than the creature
+      grappling it may attempt to escape the Grapple as a bonus action.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      As an action, a creature may attempt to escape a Grapple, making a
+      Strength (Athletics) or Dexterity (Acrobatics) check against the Grapple's
+      Escape DC. If no DC is specified, the check is instead contested by the
+      grappler with a Strength (Athletics) check of its own.
+    </p>
+    <h6>Forced Movement and Teleportation</h6>
+    <p>
+      Forced movement and teleportation can break grapples. If an effect removes
+      the grappled creature from the reach of the grappler or grappling effect,
+      the grapple ends. If an effect moves the grappler to a space where it
+      cannot reach the grappled creature, the grapple ends. If an effect moves
+      the grappler to a space where it can still reach the grappled creature,
+      the grappled creature is moved the same distance in the same direction, if
+      possible.
+    </p>
+    <h6>Grappling a Willing Creature</h6>
+    <p>
+      Attempts made to Grapple a willing creature succeed automatically. A
+      willing, conscious creature can be dragged with no additional movement
+      cost.
+    </p>
+    <h6>Multiple Grapplers</h6>
+    <p>
+      If a creature is Grappled by multiple grapplers, each creature grappling
+      it may contest the check. On a successful check, the creature is no longer
+      Grappled.
+    </p>
+    <h6>Grappling Multiple Targets</h6>
+    <p>
+      A creature that is grappling one or more creatures may attempt to grapple
+      another creature as long as it has an appendage available that could
+      grapple that creature. A creature grappling multiple creatures suffers no
+      additional penalties.
+    </p>
+    <h6>Releasing a Grapple</h6>
+    <p>
+      A creature may release a creature it has grappled with no action required
+      on its turn.
+    </p>
+
+    <h5><span class="mdi mdi-tortoise"></span>Hobbled</h5>
+    <p>
+      A Hobbled creature has had its mobility reduced, and has its movement
+      speed reduced by a specific amount, i.e. "Hobbled (10 ft)."
+    </p>
+    <h6>Separate Sources of Hobbled</h6>
+    <p>
+      If a creature that is already Hobbled would gain the Hobbled condition
+      from another source, the condition with the higher Hobbled value overrides
+      that with the lesser value.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Any effect that could end the Grappled condition, such as teleportation,
+      forced movement, or spells such as Freedom of Movement, can also end the
+      condition.
+    </p>
+
+    <h5><span class="mdi mdi-account-off"></span>Incapacitated</h5>
+    <p>
+      An Incapacitated creature can't take actions, bonus actions, or reactions.
+      It does not impose disadvantage on hostile ranged attackers within 5 feet
+      of it.
+    </p>
+
+    <h5><span class="mdi mdi-circle-opacity"></span>Invisible</h5>
+    <p>
+      An invisible creature impossible to see without the aid of magic or a
+      special sense. The creature may hide without obscurement.
+    </p>
+    <h6>Detecting Invisible Targets</h6>
+    <p>
+      Creatures are exceptionally aware of their surroundings. A creature that
+      turns Invisible is not automatically Hidden, and its position remains
+      known by each creature it is not Hidden from, even if it moves, as
+      creatures track its position by sound, shifting air currents, tiny visual
+      clues, or by means of other senses.
+    </p>
+    <h6>Attacks of Opportunity</h6>
+    <p>
+      Attacks of Opportunity can be made only against a creature the attacker
+      can see, and thus ordinarily can't be made against Invisible creatures.
+    </p>
+    <h6>Unseen Attackers</h6>
+    <p>
+      Invisible creatures are typically unseen by the creatures aroudn them.
+      Attack rolls made against a creature that cannot see the attacker have
+      advantage, and attack rolls made against a creature the attacker cannot
+      see have disadvantage.
+    </p>
+    <h6>Special Senses</h6>
+    <p>
+      Creature with Blindsight and Truesight ignore the effects of Invisibility
+      within the range of their special senses, as do creatures with Tremorsense
+      if the Invisible creature and the creature with Tremorsense are in contact
+      with the same contiguous surface, most commonly the ground.
+    </p>
+    <h6>Hiding From Creatures with Mixed Senses</h6>
+    <p>
+      When an Invisible creature attempts to Hide from a group of creatures that
+      possess different senses, it makes a separate check without advantage to
+      Hide from creatures that ignore its Invisibility.
+    </p>
+
+    <h5><span class="mdi mdi-shimmer"></span>Paralyzed</h5>
+    <p>
+      A Paralyzed creature is Incapacitated, can't move or speak, and
+      automatically fails Strength and Dexterity saving throws.
+    </p>
+    <h6>Attacking Paralyzed Targets</h6>
+    <p>
+      Attack rolls against the creature have advantage. Any attack, melee or
+      ranged, that hits the creature is a critical hit if the attacker is within
+      5 feet of the creature. Melee attacks made from more than 5 feet away are
+      not automatic critical hits.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Lesser Restoration, Freedom of Movement, Greater
+      Restoration, or Power Word: Heal can end the Paralyzed condition on a
+      creature
+    </p>
+
+    <h5><span class="mdi mdi-diamond"></span>Petrified</h5>
+    <p>
+      A Petrified creature is transformed, along with any nonmagical object it
+      is wearing or carrying, into a solid inanimate substance, such as stone,
+      salt, ice, or gold. Its weight increases by a factor of ten, and it ceases
+      aging.
+    </p>
+    <ul>
+      <li>
+        The creature is incapacitated, can't move or speak, and is unaware of
+        its surroundings.
+      </li>
+      <li>Attack rolls against the creature have advantage.</li>
+      <li>
+        The creature automatically fails Strength and Dexterity saving throws.
+      </li>
+      <li>The creature has resistance to all damage.</li>
+      <li>
+        The creature is immune to poison and disease, although a poison or
+        disease already in its system is suspended, not neutralized.
+      </li>
+    </ul>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Greater Restoration and Power Word: Heal can end the
+      Paralyzed condition on a creature.
+    </p>
+
+    <h5><span class="mdi mdi-bottle-tonic-skull"></span>Poisoned</h5>
+    <p>
+      A Poisoned creature has disadvantage on attack rolls and ability checks.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Lesser Restoration and class features such as the Paladin's
+      Lay On Hands ability can end one Poison affecting a creature.
+    </p>
+
+    <h5><span class="mdi mdi-ghost"></span>Possessed</h5>
+    <p>
+      When a creature or object becomes Possessed, the possessing creature
+      (hereafter referred to as a "spirit") is removed from play, and can't be
+      affected or harmed by any means unless otherwise stated.
+    </p>
+    <h6>Possessing a Creature</h6>
+    <p>
+      While Possessing a creature, a spirit acts on that creature's initiative
+      and in that creature's stead, using the actions, bonus actions, and
+      reactions available to the creature. It may additionally use any bonus
+      actions ordinarily available to it. It does not act on its own initiative.
+    </p>
+    <h6>Possessing an Object</h6>
+    <p>
+      While Possessing an object, a spirit acts on its own initiative and can
+      take any action and bonus actions ordinarily available to it, but may not
+      take reactions.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      In addition to any other means specific to a given spirit, the following
+      means can be used to end the Possessed condition on a creature or object,
+      expelling the possessing spirit into the nearest unoccupied space.
+    </p>
+    <ul>
+      <li>
+        The Ceremony spell may be used to perform an exorcism on a Possessed
+        creature or object within 15 feet. Upon casting, the spirit must succeed
+        on a Charisma saving throw against the spell caster's Save DC or be
+        expelled from the Possessed creature or object.
+      </li>
+      <li>
+        The Banishment spell may target a spirit Possessing a creature or object
+        in its range. A spirit that fails a saving throw against it immediately
+        ends any Possession it is imposing, in addition to the spells other
+        effects.
+      </li>
+      <li>
+        The Dispel Good and Evil spell expels any spirit Possessing its target.
+      </li>
+      <li>
+        Any effect that imposes the Turned condition affects possessing spirits
+        as though they were in the space of the creature or object Possessed by
+        them. A spirit that is Turned is immediately expelled from any creature
+        or object it is Possessing.
+      </li>
+    </ul>
+    <h6>Releasing a Possessed Target</h6>
+    <p>
+      Unless otherwise stated, a spirit may release a creature or object
+      Possessed by it as an action, ending the effect. It may do so even if the
+      Possessed creature is Incapacitated.
+    </p>
+
+    <h5>
+      <span
+        class="mdi mdi-run"
+        style="display: inline-block; transform: rotate(-0.2turn)"
+      ></span
+      >Prone
+    </h5>
+    <p>
+      A prone creature's only movement option is to crawl, which it can do at
+      half its walk speed unless otherwise noted. When a flying creature falls
+      Prone, it immediately falls 500 feet, then if it is still airborne the
+      Prone condition ends for it.
+    </p>
+    <h6>Attacking While Prone</h6>
+    <p>
+      A Prone creature has disadvantage on attack rolls, unless the attack is
+      made with a two-handed crossbow or firearm.
+    </p>
+    <h6>Attacking a Prone Target</h6>
+    <p>
+      Attacks made against a Prone creature have advantage if the attacker is
+      within 5 feet of the creature. Attack made against a Prone creature have
+      disadvantage if the attack is not within 5 feet of the creature.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      A Prone creature may spend half its ordinary walking speed to stand, thus
+      ending the prone condition. A creature within 5 feet of a Prone creature
+      may help the Prone creature to its feet as a bonus action.
+    </p>
+
+    <h5><span class="mdi mdi-handcuffs"></span>Restrained</h5>
+    <p>
+      A Restrained creature's speed becomes 0, it can't benefit from any bonus
+      to its speed, and it has disadvantage on Dexterity saving throws.
+    </p>
+    <h6>Attacking a Restrained Target</h6>
+    <p>
+      Attack rolls against the Restrained creature have advantage, and the
+      Restrained creature's attack rolls have disadvantage.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      As an action, a Restrained creature may attempt to escape an effect
+      restraining it, making a Strength (Athletics) or Dexterity (Acrobatics)
+      check against the restraint's Escape DC.
+    </p>
+    <p>
+      Any effect that could end the Grappled condition, such as teleportation,
+      forced movement, or spells such as Freedom of Movement, can also end the
+      condition.
+    </p>
+
+    <h5><span class="mdi mdi-head-snowflake"></span>Stunned</h5>
+    <p>
+      A Stunned creature is Incapacitated, can't move, and can speak only
+      falteringly. The creature automatically fails Strength and Dexterity
+      saving throws.
+    </p>
+    <h6>Attacking a Stunned Target</h6>
+    <p>Attack rolls against the Stunned creature have advantage.</p>
+    <h6>Ending the Condition</h6>
+    <p>
+      Spells such as Greater Restoration can end the Stunned condition on a
+      creature.
+    </p>
+
+    <h5><span class="mdi mdi-stomach"></span>Swallowed</h5>
+    <p>
+      A swallowed creature is trapped inside the creature or effect that
+      swallowed it. Its movement becomes 0, it moves with the creature
+      swallowing it.
+    </p>
+    <h6>Vision While Swallowed</h6>
+    <p>
+      The space inside a Swallowing effect is typically dark unless illuminated
+      by some internal source.
+    </p>
+    <h6>Restraint While Swallowed</h6>
+    <p>
+      A creature Swallowed by a creature or effect less than three size
+      categories larger than it is Restrained.
+    </p>
+    <h6>Damage From Inside</h6>
+    <p>
+      Damage a creature is dealt from an effect that originates inside of it
+      ignores the creature's damage resistances and immunities.
+    </p>
+    <h6>Saving Throws From Inside</h6>
+    <p>
+      A creature automatically fails any Dexterity saving throw from an effect
+      that originates inside of it, and disadvantage on any Constitution saving
+      throws from such an effect.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>
+      If an escape DC is noted, it indicates that some portion of the creature
+      is within reach of some means of exiting the space it is Swallowed in.
+    </p>
+    <p>
+      In such cases, a creature may end the Swallowed condition on itself or on
+      a creature Swallowed by a creature or effect within 5 feet as an Action
+      with a successful Strength (Athletics) or Dexterity (Acrobatics) check.
+    </p>
+    <p>
+      When the Swallowed condition ends for a creature, it emerges prone in the
+      nearest unoccupied space.
+    </p>
+    <h6>Teleportation</h6>
+    <p>
+      A swallowed creature that teleports out of the space it is swallowed in
+      has the condition end for it.
+    </p>
+    <h6>Releasing a Swallowed Target</h6>
+    <p>
+      As a reaction when a creature is dealt damage by a creature Swallowed by
+      it, it may regurgitate each creature Swallowed by it.
+    </p>
+
+    <h5><span class="mdi mdi-cross-celtic"></span>Turned</h5>
+    <p>
+      A Turned creature must spend its action and movement on each of its turns
+      trying to move as far away as possible from the creature or effect that
+      turned it, can't willingly move to a space within 30 feet of that creature
+      or effect, and can't take reactions. If there's nowhere to move, the
+      creature can use the Dodge action.
+    </p>
+    <h6>Ending the Condition</h6>
+    <p>A Turned creature that takes any damage has the condition end for it.</p>
+
+    <h5><span class="mdi mdi-bed"></span>Unconscious</h5>
+    <p>
+      An unconscious creature is Incapacitated, can't move or speak, and is
+      unaware of its surroundings unless specified otherwise.
+    </p>
+    <ul>
+      <li>
+        A creature that falls Unconscious drops whatever it's holding and falls
+        Prone.
+      </li>
+      <li>
+        The creature automatically fails Strength and Dexterity saving throws.
+      </li>
+      <li>Attack rolls against the creature have advantage.</li>
+      <li>
+        Any attack that hits the creature is a critical hit if the attacker is
+        within 5 feet of the creature.
+      </li>
+    </ul>
+    <h6>Ending the Condition</h6>
+    <p>
+      Unless otherwise specified, an Unconscious creature that takes any damage,
+      or that has another creature shake it awake as an Action, has the
+      condition end for it.
+    </p>
+  </nz-tab>
+  <nz-tab nzTitle="Diseases">
+    <h5>Brittle Lung</h5>
+    <p>
+      Whenever an infected creature speaks or performs the verbal components of
+      a spell, it must succeed on a DC 21 Constitution saving throw or be unable
+      to speak or breathe until it takes an action to catch its breath. A
+      creature that fails this save by 5 or more instead loses the ability to
+      speak or breathe for 2d4 minutes.
+    </p>
+
+    <h5>Burrow-Diver Mycosis</h5>
+    <p>
+      An infected creature loses all appetite and dusty blue lesions open on its
+      skin as the disease progresses. An infected creature that attempts to move
+      away from the nearest hostile creature it can see must first make a DC 10
+      Wisdom saving throw, using all of its movement to approach the nearest
+      hostile creature on a failure. An infected creature must succeed on a DC
+      10 Constitution saving throw at each dawn or have its Wisdom score reduced
+      by 1d4 until the disease is cured, ending the disease on a success. A
+      creature reduced to 0 Wisdom in this way dies.
+    </p>
+
+    <h5>Cackle Fever</h5>
+    <p>
+      An infected creature gains one level of exhaustion that can’t be removed
+      until the disease is cured.
+    </p>
+    <p>
+      Any event that causes the infected creature great stress — including
+      entering combat, taking damage, experiencing fear, or having a nightmare —
+      forces the creature to make a DC 13 Constitution saving throw. On a failed
+      save, the creature takes 5 (1d10) psychic damage and becomes incapacitated
+      with mad laughter for 1 minute. The creature can repeat the saving throw
+      at the end of each of its turns, ending the mad laughter and the
+      incapacitated condition on a success.
+    </p>
+    <p>
+      Any humanoid creature that starts its turn within 10 feet of an infected
+      creature in the throes of mad laughter must succeed on a DC 10
+      Constitution saving throw or also become infected with the disease. Once a
+      creature succeeds on this save, it is immune to the mad laughter of that
+      particular infected creature for 24 hours.
+    </p>
+    <p>
+      At the end of each long rest, an infected creature can make a DC 13
+      Constitution saving throw. On a successful save, the DC for this save and
+      for the save to avoid an attack of mad laughter drops by 1d6. When the
+      saving throw DC drops to 0, the creature recovers from the disease. A
+      creature that fails three of these saving throws gains a randomly
+      determined form of indefinite madness.
+    </p>
+
+    <h5>Chaos Phage</h5>
+    <p>
+      An infected creature can't regain hit points, and its hit point maximum is
+      reduced by 10 (3d6) every 24 hours. If the disease reduces the target's
+      hit point maximum to 0, the target instantly transforms into a red slaad
+      or, if it has the ability to cast spells of 3rd level or higher, a green
+      slaad. Only a wish spell can reverse the transformation.
+    </p>
+
+    <h5>Charnel Lung</h5>
+    <p>
+      An infected creature cannot hold its breath and has disadvantage on
+      Constitution saving throws made to resist breathable toxins.
+    </p>
+
+    <h5>Doll-Joint Malacia</h5>
+    <p>
+      An infected creature loses a limb whenever it suffers a critical hit.
+      Whenever an infected creature completes a Long Rest, its Strength score is
+      reduced by 1d4, to a minimum of 1.
+    </p>
+
+    <h5>Festering Necrosis</h5>
+    <p>
+      An infected creature gains vulnerability to necrotic damage. Whenever an
+      infected creature would fail one death save, it instead fails two death
+      Saving Throws.
+    </p>
+
+    <h5>Filth Fever</h5>
+    <p>
+      A raging fever sweeps through the creature's body, giving the creature
+      disadvantage on skill checks, saving throws, and attack rolls that use
+      Strength. Every 24 hours that elapse, the target makes a DC 15
+      Constitution saving throw, reducing its hit point maximum by 5 (1d10)
+      until the disease is cured on a failure, or ending the disease's effects
+      on a success. The target dies if the disease reduces its hit point maximum
+      to 0.
+    </p>
+
+    <h5>Flesh Warp</h5>
+    <p>
+      The creature has a core of abyssal rot implanted within it, and is
+      beginning to take on a demonic form determined by the DM.
+    </p>
+    <p>The creature regains 1 hit point on any passed death saving throw.</p>
+    <p>
+      Whenever the creature fails a Wisdom saving throw or is reduced to 0 hit
+      points, its Charisma score is reduced by one and a portion of its flesh
+      bubbles and twists, warping into a new demonic form. A creature reduced to
+      0 Charisma in this way becomes a demon under the sibriex's control, and
+      cannot be restored to its former self by any means short of a Wish spell.
+    </p>
+    <p>
+      This disease resists any sort of effects that cure disease, but can be
+      ended with Dispel Good and Evil, or with a DC 25 Medicine check to
+      surgically remove the core of rot over the course of an hour, dealing 11
+      (2d10) slashing damage to the infected creature on a success or failure.
+    </p>
+    <p>
+      The Charisma reduction and physical changes wrought by the disease last
+      until cured by Greater Restoration or similar magic.
+    </p>
+
+    <h5>Flitrot</h5>
+    <p>
+      An infected creature sports festering boils, coughs up flies, and sheds
+      rotting skin. The creature does not recover spent hit dice on a Long Rest,
+      and makes death saving throws at disadvantage.
+    </p>
+
+    <h5>Frostbite</h5>
+    <p>
+      When a creature contracts frostbite, it loses the use of one of its limbs
+      of its choice until this disease is cured, as the limb goes stiff and pale
+      and the creature loses feeling in it. The creature cannot rest, and loses
+      5 hit points at the end of each hour. This disease is cured if the
+      affected limb is removed.
+    </p>
+
+    <h5>Goblin Wasp Parasitism</h5>
+    <p>
+      A creature infected with goblin wasp parasitism takes 3 (1d6) piercing
+      damage whenever it completes a long rest, and must spend one additional
+      hit die whenever it spends hit dice to heal or receive no benefit from
+      that healing.
+    </p>
+    <p>
+      When a creature that has been infected for 24 hours or more dies, a Wasp
+      Swarm emerges from its body.
+    </p>
+
+    <h5>Ghoul Fever</h5>
+    <p>
+      An infected creature cannot recover levels of exhaustion, and must make a
+      DC 10 Constitution saving throw each time it completes a long rest or
+      acquire a level of exhaustion. A creature that dies while infected rises
+      immediately as a ghoul.
+    </p>
+
+    <h5>Greensickness</h5>
+    <p>
+      An infected creature has disadvantage on attacks, ability checks, and
+      saving throws that use Strength. Tiny roots grow out of the creature's
+      wounds, reducing the effect of healing magic that targets the creature by
+      half.
+    </p>
+
+    <h5>Huecuva Blight</h5>
+    <p>
+      An infected creature's blood runs clear and its skin becomes cold to the
+      touch. While illuminated by moonlight, it appears waxy, hollow-eyed, and
+      emaciated, and has disadvantage on Wisdom and Charisma checks and saving
+      throws.
+    </p>
+
+    <h5>Jelly-Brains</h5>
+    <div>
+      <p>
+        The creature suffers debilitating headaches, bouts of blurred vision,
+        and difficulty speaking as microscopic gelatinous cubes trawl over the
+        surface of its brain, slowly smoothing and resurfacing it.
+      </p>
+      <p>
+        Whenever the creature would be reduced to 0 HP by acid damage, it
+        instead takes no acid damage and has its Intelligence score reduced by
+        1d8, to a minimum of 1, until cured by Greater Restoration or similar
+        magic.
+      </p>
+      <p>
+        A creature that has its Intelligence score reduced to 1 in this way
+        gains the Gelatinous Endosymbiote template until cured by Greater
+        Restoration or similar magic.
+      </p>
+    </div>
+    <h6>Gelatinous Endosymbiote</h6>
+    <div>
+      <p>
+        A gelatinous endosymbiote is a creature adapted to living inside an
+        acidic ooze. It retains its statistics, except as described below:
+      </p>
+      <ul>
+        <li>The creature's Intelligence score becomes 1.</li>
+        <li>The creature has immunity to acid damage dealt by oozes.</li>
+        <li>
+          The creature is charmed by all oozes and other gelatinous
+          endosymbiotes, and it is hostile to all other creatures.
+        </li>
+        <li>
+          The creature is not restrained or choking while swallowed by an ooze.
+        </li>
+      </ul>
+    </div>
+
+    <h5>Leprosy</h5>
+    <p>
+      An infected creature develops disfiguring sores and lesions across its
+      body, giving it disadvantage on Charisma checks. At the end of each week
+      of infection, an afflicted creature makes a DC 20 Constitution saving
+      throw, ending the disease on a success or reducing its maximum hit points
+      by 2d10 on a failure. A creature that has its maximum hit points reduced
+      by 16 or more at once in this way loses the use of a limb. A creature that
+      has its maximum hit points reduced to 0 dies.
+    </p>
+
+    <h5>Lockjaw</h5>
+    <p>
+      The infected creature's joints and jaw stiffen, impeding its ability to
+      speak clearly. The creature's movement speed is reduced by 5, it has
+      disadvantage on Charisma ability checks, and it must first succeed on a DC
+      10 Constitution saving throw to perform the verbal components of a spell.
+      On a failed save, the action (but not the spell slot) is wasted.
+    </p>
+
+    <h5>Lyssavirus</h5>
+    <p>
+      An infected creature must succeed on a DC 10 Constitution saving throw at
+      each dawn, or have its Constitution score reduced to the saving throw's
+      result. A creature that has its Constitution score reduced to 9 or lower
+      in this way is Frightened. A creature that has its Constitution score
+      reduced to 0 dies.
+    </p>
+
+    <h5>Marrowrot</h5>
+    <p>Attacks against an infected creature score a critical on an 18-20.</p>
+
+    <h5>Mind Fog</h5>
+    <p>
+      An infected creature has disadvantage on saving throws made to maintain
+      Concentration. Whenever the infected creature spends 24 hours away from
+      sunlight, it must succeed on a DC 15 Constitution saving throw or have its
+      Proficiency Bonus reduced by 1. This reduction lasts until the disease is
+      cured.
+    </p>
+
+    <h5>Mummy Rot</h5>
+    <p>
+      An infected creature can't regain hit points, and its hit point maximum
+      decreases by 10 (3d6) for every 24 hours that elapse. If this reduces the
+      target's hit point maximum to 0, the target dies, and its body turns to
+      dust. The disease can be cured by a Remove Curse, in addition to any magic
+      that cures disease.
+    </p>
+
+    <h5>Necrotizing Fasciitis</h5>
+    <p>
+      An infected creature develops a festering sore at the site of a wound. At
+      each dawn, an infected creature must succeed on a DC 15 Constitution
+      saving throw or have its hit point maximum reduced by 11 (2d10), ending
+      the effect on a success. A creature that has its current hit point maximum
+      reduced by more than half in this way loses the use of the limb closest to
+      the wound until restored by Greater Restoration or similar magic.
+    </p>
+
+    <h5>Pestilent Lepidopterism</h5>
+    <p>
+      An infected creature's skin develops a dry, powdery texture and it loses
+      all apetite. Each dawn, the creature's Charisma score is reduced by 1, to
+      a minimum of 1. A creature whose Charisma score is reduced to 1 in this
+      way is enveloped in a cocoon, and over the course of a week has its body
+      dissolve and reform into something new, wondrous and terrible.
+    </p>
+    <p>
+      A creature that emerges from this cocoon has its race changed to
+      Diamondback Ivathi, and cannot distinguish friend from foe. Once the
+      disease has progressed to this point, curing the disease returns the
+      creature's ability to distinguish friend from foe, but the mutations
+      remain.
+    </p>
+
+    <h5>Pthisis</h5>
+    <p>
+      An infected creature cannot hold its breath. Nupperibos within 1 mile of
+      the creature can detect its location by scent.
+    </p>
+
+    <h5>Ravenous Wasting</h5>
+    <p>
+      Before an infected creature begins showing symptoms, Ravenous Wasting may
+      be cured by any ordinary means, such as Lesser Restoration or Lay on
+      Hands. After symptoms begin to show, it may be cured only by healing magic
+      of 5th level or above, or by removing the appendage that the infection
+      site occurred on. Once the symptoms have fully progressed, the disease may
+      be cured only by a Wish spell, or by killing and resurrecting the
+      creature.
+    </p>
+    <p>
+      Every 4 hours after infection, the infected must make a DC 12 Constitution
+      saving throw. On a failure, the disease progresses to the next level.
+    </p>
+    <ul>
+      <li><strong>Level 1:</strong> No symptoms.</li>
+      <li>
+        <strong>Level 2:</strong> Disadvantage on Dexterity and Wisdom checks.
+        The creature has an insatiable hunger that cannot be alleviated.
+      </li>
+      <li>
+        <strong>Level 3:</strong> Whenever the infected creature takes damage,
+        it treats all non-undead creatures as hostile for the next minute.
+      </li>
+      <li>
+        <strong>Level 4:</strong> The creature convulses for 1 minute and then
+        dies. After 1d4 rounds, the creature rises as a Plague Zombie.
+      </li>
+    </ul>
+
+    <h5>Redding Ague</h5>
+    <p>
+      An infected creature does not recover points of Exhaustion upon completing
+      a Long Rest. Whenever an infected creature fails a Constitution saving
+      throw, it acquires a point of Exhaustion.
+    </p>
+
+    <h5>Russet Mold Contagion</h5>
+    <p>
+      An infected creature has vulnerability to Acid and Radiant damage. Upon
+      completing a long rest, the creature's AC is reduced by 2 until this
+      disease is cured; to a minimum of 10 if the creature is not wearing heavy
+      armor, or to 14 if it is.
+    </p>
+
+    <h5>Tetanus</h5>
+    <p>
+      When a humanoid creature is bitten by a creature that carries the disease,
+      or when it comes into contact with filth or offal contaminated by the
+      disease, the creature must succeed on a DC 11 Constitution saving throw or
+      become infected.
+    </p>
+    <p>
+      An infected creature suffers one level of exhaustion, and it regains only
+      half the normal number of hit points from spending Hit Dice and no hit
+      points from finishing a long rest.
+    </p>
+    <p>
+      At the end of each long rest, an infected creature must make a DC 11
+      Constitution saving throw. On a failed save, the character gains one level
+      of exhaustion. On a successful save, the character's exhaustion level
+      decreases by one level. If a successful saving throw reduces the infected
+      creature's level of exhaustion below 1, the creature recovers from the
+      disease.
+    </p>
+
+    <h5>Touch of Kyuss</h5>
+    <p>
+      An infected creature suffers from bouts of memory loss and waves of
+      overwhelming nausea. Whenever the infected creature fails a saving throw
+      against being Frightened or Poisoned by 5 or more, it is additionally
+      Stunned until the end of its next turn. Whenever the creature fails one or
+      more Death Saving Throws, its Proficiency Bonus is reduced by 1, to a
+      minimum of 0, until this disease is cured.
+    </p>
+
+    <h5>Wastegash</h5>
+    <p>
+      Whenever an infected creature takes damage, it gains a level of
+      Exhaustion. When an infected creature dies, each creature within 30 feet
+      of it must succeed on a DC 18 Constitution saving throw or be infected
+      with Wastegash. This disease persists through death and resurrection, and
+      be cured only through spells of 5th level or above, or equivalent magic.
+    </p>
+
+    <h5>Worms of Kyuss</h5>
+    <p>
+      A creature infected by one or more Worms of Kyuss takes 7 (2d6) necrotic
+      damage at the end of each of its turns for each worm infesting it. A
+      creature killed by this damage rises on its next turn as a Wretch of
+      Kyuss. A burrowing worm may be located and destroyed with a successful DC
+      14 Wisdom (Medicine) check, or by a friendly creature dealing 10 or more
+      damage to the infected creature with a weapon that deals piercing damage.
+      Any magical effect that cures disease destroys all worms infesting a
+      creature. A creature cured of this disease must succeed on a DC 14
+      Constitution saving throw or be Poisoned until it completes a Short or
+      Long Rest.
+    </p>
+
+    <h5>Wraithplague</h5>
+    <p>
+      An infected creature has resistance to Bludgeoning, Piercing, and Slashing
+      damage, and gradually grows more translucent and quieter as the disease
+      progresses. Whenever an infected creature expends one or more hit dice,
+      its Charisma score is reduced by 1d4 until this disease is cured. A
+      creature that has its Charisma score reduced to 0 in this way dies and
+      rises as a Wraith under the DM's control
+    </p>
+  </nz-tab>
+  <nz-tab nzTitle="Injuries">
+    <div>
+      <div>
+        During major combat encounters, such as boss fights, it is possible for
+        creatures to receive permanent injuries. A creature receives an injury
+        in one of the following three ways, but can only receive one injury from
+        any given source of damage.
+      </div>
+      <ul>
+        <li>The creature drops to 0 hit points</li>
+        <li>The creature is hit by a critical hit</li>
+        <li>
+          The creature critically fails a saving throw against an effect that
+          deals damage
+        </li>
+      </ul>
+    </div>
+
+    <div class="calculator">
+      <button nz-button (click)="generateInjury()" [disabled]="!canGenerate()">
+        Generate Injury
+      </button>
+
+      <table>
+        <tr>
+          <th>Type</th>
+          <th style="text-align: center">V</th>
+          <th style="text-align: center">R</th>
+        </tr>
+        <tr *ngFor="let type of injuryCalcData">
+          <td>
+            <label nz-checkbox [(ngModel)]="type.injuries">{{
+              type.name
+            }}</label>
+          </td>
+          <td><label nz-checkbox [(ngModel)]="type.vulnerable"></label></td>
+          <td><label nz-checkbox [(ngModel)]="type.resist"></label></td>
+        </tr>
+      </table>
+
+      <div>
+        <label nz-checkbox [(ngModel)]="siegeInjury"
+          >Damage from Siege Weapon</label
+        >
+      </div>
+
+      <div>
+        <label nz-checkbox [(ngModel)]="resistInjuries">Resist Injuries</label>
+        <br />
+        <input type="number" placeholder="CON mod" [(ngModel)]="conMod" />
+      </div>
+
+      <nz-modal
+        [(nzVisible)]="injuryModal"
+        nzTitle="Generated Injuries"
+        [nzCancelText]="null"
+        [nzOkText]="null"
+        (nzOnCancel)="injuryModal = false"
+      >
+        <ng-container *nzModalContent>
+          <div *ngIf="generatedInjury">
+            <h5>Primary Injury</h5>
+            <div>
+              <h6>{{ generatedInjury?.title }}</h6>
+              <div [innerHTML]="generatedInjury?.description"></div>
+            </div>
+            <h5 *ngIf="extraInjuries.length">Extra Injuries</h5>
+            <div *ngFor="let extra of extraInjuries">
+              <h6>{{ extra?.title }}</h6>
+              <div [innerHTML]="extra?.description"></div>
+            </div>
+          </div>
+        </ng-container>
+      </nz-modal>
+    </div>
+    <nz-tabset nzSize="small" [nzAnimated]="false">
+      <nz-tab *ngFor="let type of injuries" [nzTitle]="capitalize(type.type)">
+        <nz-table
+          #injuryTable
+          [nzData]="type.list"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <th>d20</th>
+              <th>Injury</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let injury of injuryTable.data">
+              <tr *ngIf="injury.maxRoll !== 1000">
+                <td>{{ getRollRange(injury) }}</td>
+                <td>{{ injury.title }}</td>
+                <td>{{ injury.description }}</td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Madness">
+    <nz-tabset nzSize="small" [nzAnimated]="false">
+      <nz-tab nzTitle="Short-Term">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <th>d100</th>
+              <th>Effect (lasts 1d10 minutes)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01 - 20</td>
+              <td>
+                The character retreats into his or her mind and becomes
+                paralyzed. The effect ends if the character takes any damage.
+              </td>
+            </tr>
+            <tr>
+              <td>21 - 30</td>
+              <td>
+                The character becomes incapacitated and spends the duration
+                screaming, laughing, or weeping.
+              </td>
+            </tr>
+            <tr>
+              <td>31 - 40</td>
+              <td>
+                The character becomes frightened and must use his or her action
+                and movement each round to flee from the source of the fear.
+              </td>
+            </tr>
+            <tr>
+              <td>41 - 50</td>
+              <td>
+                The character begins babbling and is incapable of normal speech
+                or spellcasting.
+              </td>
+            </tr>
+            <tr>
+              <td>51 - 60</td>
+              <td>
+                The character must use his or her action each round to attack
+                the nearest creature.
+              </td>
+            </tr>
+            <tr>
+              <td>61-70</td>
+              <td>
+                The character experiences vivid hallucinations and has
+                disadvantage on ability checks.
+              </td>
+            </tr>
+            <tr>
+              <td>71 - 75</td>
+              <td>
+                The character does whatever anyone tells him or her to do that
+                isn't obviously self-destructive.
+              </td>
+            </tr>
+            <tr>
+              <td>76 - 80</td>
+              <td>
+                The character experiences an overpowering urge to eat something
+                strange such as dirt, slime, or offal.
+              </td>
+            </tr>
+            <tr>
+              <td>81 - 90</td>
+              <td>The character is stunned.</td>
+            </tr>
+            <tr>
+              <td>91 - 100</td>
+              <td>The character falls unconscious.</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Long-Term">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <th>d100</th>
+              <th>Effect (lasts 1d10 &times; 10 hours)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01 - 10</td>
+              <td>
+                The character feels compelled to repeat a specific activity over
+                and over, such as washing hands, touching things, praying, or
+                counting coins.
+              </td>
+            </tr>
+            <tr>
+              <td>11 - 20</td>
+              <td>
+                The character experiences vivid hallucinations and has
+                disadvantage on ability checks.
+              </td>
+            </tr>
+            <tr>
+              <td>21 - 30</td>
+              <td>
+                The character suffers extreme paranoia. The character has
+                disadvantage on Wisdom and Charisma checks.
+              </td>
+            </tr>
+            <tr>
+              <td>31 - 40</td>
+              <td>
+                The character regards something (usually the source of madness)
+                with intense revulsion, as if affected by the antipathy effect
+                of the antipathy/sympathy spell.
+              </td>
+            </tr>
+            <tr>
+              <td>41 - 45</td>
+              <td>
+                The character experiences a powerful delusion. Choose a potion.
+                The character imagines that he or she is under its effects.
+              </td>
+            </tr>
+            <tr>
+              <td>46 - 55</td>
+              <td>
+                The character becomes attached to a “lucky charm,” such as a
+                person or an object, and has disadvantage on attack rolls,
+                ability checks, and saving throws while more than 30 feet from
+                it.
+              </td>
+            </tr>
+            <tr>
+              <td>56 - 65</td>
+              <td>The character is blinded (25%) or deafened (75%).</td>
+            </tr>
+            <tr>
+              <td>66 - 75</td>
+              <td>
+                The character experiences uncontrollable tremors or tics, which
+                impose disadvantage on attack rolls, ability checks, and saving
+                throws that involve Strength or Dexterity.
+              </td>
+            </tr>
+            <tr>
+              <td>76 - 85</td>
+              <td>
+                The character suffers from partial amnesia. The character knows
+                who he or she is and retains racial traits and class features,
+                but doesn't recognize other people or remember anything that
+                happened before the madness took effect.
+              </td>
+            </tr>
+            <tr>
+              <td>86 - 90</td>
+              <td>
+                Whenever the character takes damage, he or she must succeed on a
+                DC 15 Wisdom saving throw or be affected as though he or she
+                failed a saving throw against the confusion spell. The confusion
+                effect lasts for 1 minute.
+              </td>
+            </tr>
+            <tr>
+              <td>91 - 95</td>
+              <td>The character loses the ability to speak.</td>
+            </tr>
+            <tr>
+              <td>96 - 100</td>
+              <td>
+                The character falls unconscious. No amount of jostling or damage
+                can wake the character.
+              </td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+      <nz-tab nzTitle="Indefinite">
+        <nz-table
+          [nzData]="['yo mama']"
+          [nzShowPagination]="false"
+          [nzPageSize]="1 / 0"
+          nzSize="small"
+        >
+          <thead>
+            <tr>
+              <th>d100</th>
+              <th>Flaw (lasts until cured)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01 - 15</td>
+              <td>“Being drunk keeps me sane.”</td>
+            </tr>
+            <tr>
+              <td>16 - 25</td>
+              <td>“I keep whatever I find.”</td>
+            </tr>
+            <tr>
+              <td>26 - 30</td>
+              <td>
+                “I try to become more like someone else I know — adopting his or
+                her style of dress, mannerisms, and name.”
+              </td>
+            </tr>
+            <tr>
+              <td>31 - 35</td>
+              <td>
+                “I must bend the truth, exaggerate, or outright lie to be
+                interesting to other people.”
+              </td>
+            </tr>
+            <tr>
+              <td>36 - 45</td>
+              <td>
+                “Achieving my goal is the only thing of interest to me, and I'll
+                ignore everything else to pursue it.”
+              </td>
+            </tr>
+            <tr>
+              <td>46 - 50</td>
+              <td>
+                “I find it hard to care about anything that goes on around me.”
+              </td>
+            </tr>
+            <tr>
+              <td>51 - 55</td>
+              <td>“I don't like the way people judge me all the time.”</td>
+            </tr>
+            <tr>
+              <td>56 - 70</td>
+              <td>
+                “I am the smartest, wisest, strongest, fastest, and most
+                beautiful person I know.”
+              </td>
+            </tr>
+            <tr>
+              <td>71 - 80</td>
+              <td>
+                “I am convinced that powerful enemies are hunting me, and their
+                agents are everywhere I go. I am sure they're watching me all
+                the time.”
+              </td>
+            </tr>
+            <tr>
+              <td>81 - 85</td>
+              <td>
+                “There's only one person I can trust. And only I can see this
+                special friend.”
+              </td>
+            </tr>
+            <tr>
+              <td>86 - 95</td>
+              <td>
+                “I can't take anything seriously. The more serious the
+                situation, the funnier I find it.”
+              </td>
+            </tr>
+            <tr>
+              <td>96 - 100</td>
+              <td>“I've discovered that I really like killing people.”</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Throwing">
+    <div class="calculator">
+      <button nz-button [disabled]="!canThrow()" (click)="calculateThrowing()">
+        Calculate
+      </button>
+      <div>
+        <label for="thrower_str"
+          ><strong>Thrower's Strength Score</strong></label
+        >
+        <input [(ngModel)]="throwerStr" type="number" id="thrower_str" />
+        <br />
+        <label for="effective_size"
+          ><strong>Thrower's Effective Size</strong></label
+        >
+        <select [(ngModel)]="sizeMod" id="effective_size">
+          <option value="0.0625">Fine</option>
+          <option value="0.125">Diminutive</option>
+          <option value="0.25">Tiny</option>
+          <option value="0.5">Small</option>
+          <option value="1" selected>Medium</option>
+          <option value="2">Large</option>
+          <option value="4">Huge</option>
+          <option value="8">Gargantuan</option>
+          <option value="16">Titanic</option>
+          <option value="32">Colossal</option>
+          <option value="64">Kaiju</option>
+        </select>
+        <br />
+        <label for="throwee_weight"
+          ><strong>Throwee's Weight (in pounds)</strong></label
+        >
+        <input [(ngModel)]="throweeWeight" type="number" id="throwee_weight" />
+      </div>
+
+      <nz-modal
+        [(nzVisible)]="throwModal"
+        nzTitle="Throwing Data"
+        [nzCancelText]="null"
+        [nzOkText]="null"
+        (nzOnCancel)="throwModal = false"
+      >
+        <ng-container *nzModalContent>
+          <table>
+            <tr>
+              <th>Range</th>
+              <td>{{ throwingRange }} / {{ throwingRange * 3 }} ft.</td>
+            </tr>
+            <tr>
+              <th>Damage</th>
+              <td>{{ throwingDamage }}d6</td>
+            </tr>
+          </table>
+        </ng-container>
+      </nz-modal>
+    </div>
+  </nz-tab>
+  <nz-tab nzTitle="Wild Magic">
+    <button style="width: 100%" nz-button (click)="wildMagicSurge()">
+      SURGE
+    </button>
+    <div
+      style="text-align: center; font-size: 20px"
+      [innerHTML]="surgeText"
+    ></div>
+  </nz-tab>
+</nz-tabset>
