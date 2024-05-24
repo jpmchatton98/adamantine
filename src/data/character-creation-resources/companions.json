@@ -475,6 +475,83 @@
     }
   },
   {
+    "key": "shade-warrior",
+    "stats": {
+      "0": {
+        "any": {
+          "name": "Shade Warrior",
+          "size": "Medium",
+          "type": "fiend",
+          "tags": ["shadowy"],
+          "ac": [{ "ac": 13, "from": ["natural armor"] }],
+          "pbac": true,
+          "hp": { "base": 5, "levelMod": 4 },
+          "speed": { "walk": 30 },
+          "str": 16,
+          "dex": 16,
+          "con": 14,
+          "int": 6,
+          "wis": 10,
+          "cha": 8,
+          "languages": ["understands the languages you speak"],
+          "skillProfs": [
+            "acrobatics",
+            "animal handling",
+            "arcana",
+            "athletics",
+            "deception",
+            "endurance",
+            "history",
+            "insight",
+            "intimidation",
+            "investigation",
+            "medicine",
+            "nature",
+            "perception",
+            "performance",
+            "persuasion",
+            "religion",
+            "sleight of hand",
+            "society",
+            "stealth",
+            "survival",
+            "technology"
+          ],
+          "saveProfs": ["str", "dex", "con", "int", "wis", "cha"],
+          "senses": ["darkvision 60 ft."],
+          "trait": [
+            {
+              "name": "Shadow Infusion",
+              "entries": [
+                "Whenever you target your Shade Warrior with an Exploit, it regains hit points equal to your Leadership modifier (minimum of 1)."
+              ]
+            },
+            {
+              "name": "Dark Bond",
+              "entries": [
+                "You add your proficiency bonus to any ability check or saving throw the Shade makes."
+              ]
+            }
+          ],
+          "action": [
+            {
+              "name": "Shade Strike",
+              "entries": [
+                "<em>Melee Weapon Attack.</em> {spl-atk} to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + {PB} necrotic damage."
+              ]
+            },
+            {
+              "name": "Shadow Bolt",
+              "entries": [
+                "<em>Ranged Spell Attack.</em> {spl-atk} to hit, range 60 ft., one target. <em>Hit:</em> 1d6 + {PB} necrotic damage."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
     "key": "wildfire-spirit",
     "stats": {
       "0": {

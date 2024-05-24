@@ -221,6 +221,41 @@ export class BuilderListedComponent implements OnInit {
           (value, index, self) =>
             index === self.findIndex((t) => t.name === value.name)
         );
+      } else if (this.listed.id === 'vessel-magic') {
+        const maxSpellLevel = Math.max(
+          Math.ceil(this.characterLevel / (this.listed.spellcasterType * 2)),
+          this.listed.maxLevel ?? -1
+        );
+
+        this.options = [
+          ...this.dataService.getSpellsByListUnsplit(this.listed.list),
+          ...(this.characterObj.subclass === 'Conduit'
+            ? this.dataService.getSpellsByListUnsplit('divine')
+            : []),
+        ]
+          .filter((s: any) => {
+            if (this.listed.ritualsOnly) {
+              return s.ritual ?? false;
+            }
+            if (s.level === 0) {
+              return this.listed.allowCantrips ?? false;
+            }
+            return s.level <= maxSpellLevel;
+          })
+          .sort((a, b) => {
+            if (a.level < b.level) {
+              return -1;
+            } else if (a.level === b.level) {
+              return a.name.localeCompare(b.name);
+            } else {
+              return 1;
+            }
+          });
+
+        this.options = this.options.filter(
+          (value, index, self) =>
+            index === self.findIndex((t) => t.name === value.name)
+        );
       } else {
         const maxSpellLevel = Math.max(
           Math.ceil(this.characterLevel / (this.listed.spellcasterType * 2)),

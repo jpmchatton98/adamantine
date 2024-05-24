@@ -333,6 +333,7 @@ export class CharacterSheetComponent extends BaseComponent implements OnInit {
       ranger: 'wis',
       wizard: 'DB7673B2-CBC6-4FF1-8639-EDA22B998899',
       druid: '00C78F01-EC17-4192-A4C9-D1939F6CA631',
+      warlord: '5E2BF670-2419-41AF-8C47-54B6C1AEE6FC',
     };
     for (let companion of this.companions) {
       if (['race', 'background', 'override'].includes(companion.source)) {

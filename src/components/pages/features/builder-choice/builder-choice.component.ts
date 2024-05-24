@@ -228,6 +228,21 @@ export class BuilderChoiceComponent implements OnInit {
               (value, index, self) =>
                 index === self.findIndex((t) => t.name === value.name)
             );
+          } else if (choice.id.includes('vessel')) {
+            choiceOptions = this.dataService
+              .getSpellsByListUnsplit('all')
+              .filter(
+                (s: any) =>
+                  s.level === (choice.level ?? 10) &&
+                  (s.lists.includes('Occult') ||
+                    (this.characterObj.subclass === 'Conduit' &&
+                      s.lists.includes('Divine')))
+              );
+
+            choiceOptions = choiceOptions.filter(
+              (value, index, self) =>
+                index === self.findIndex((t) => t.name === value.name)
+            );
           } else if (choice.id === 'signature-cantrip') {
             choiceOptions = this.dataService
               .getSpellsByListUnsplit('all')
