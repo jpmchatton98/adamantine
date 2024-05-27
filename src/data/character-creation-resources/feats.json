@@ -2402,6 +2402,16 @@
     ]
   },
   {
+    "name": "Dominating Gaze",
+    "prereq": [
+      {
+        "race": ["kopru"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your gaze grows more powerful, forcing those affected by it to obey you.  While a creature is under the effects of your Mindsap Gaze, you can use a bonus action give the target a one-word command, which they must follow on their next turn.  After the end of their next turn, they are no longer charmed by you."
+  },
+  {
     "name": "Well-Rested",
     "prereq": [
       {

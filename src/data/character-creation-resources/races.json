@@ -17283,5 +17283,81 @@
       }
     ],
     "name": "Papillon"
+  },
+  {
+    "description": "The kopru are a devolved race of eel-like humanoids found in the darkness at the sea floor.  They once held dominion over the shallows, but their ancient civilization was destroyed by the tritons and much of their latent psionics were lost with it.  The modern kopru all feel deep melancholia towards what they have lost.",
+    "asis": [{ "str": 1 }, { "dex": 1 }, { "cha": 1 }],
+    "maturity": 10,
+    "lifespan": 50,
+    "height": [8, 9],
+    "weight": [275, 350],
+    "category": "Aquatic",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Aquan"],
+    "traits": [
+      {
+        "name": "Amphibious",
+        "description": "You have a swimming speed equal to your walking speed and can breathe air and water",
+        "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+      },
+      {
+        "name": "Creature of the Depths",
+        "description": "You have resistance to cold and fire damage and are acclimated to extreme depths.",
+        "granted": [
+          { "type": "damage-resistance", "options": ["Cold", "Fire"] }
+        ]
+      },
+      {
+        "name": "Natural Armor",
+        "description": "Your skin is thick and oily. When you aren't wearing armor, your AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+        "granted": [{ "type": "unarmored", "base": 12, "scores": ["dex"] }]
+      },
+      {
+        "name": "Tail Barb",
+        "description": "Your prehensile tail is tipped with a hooked barb. It is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+        "actions": [
+          {
+            "id": "7BBFBD51-8230-4736-B0D9-8B9C4EE63435",
+            "type": "a",
+            "attack": true,
+            "name": "Tail",
+            "damage": [
+              {
+                "dice": 1,
+                "die": 6,
+                "type": "slashing",
+                "mod": true,
+                "unarmed": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mindsap Gaze",
+        "description": "As an action on your turn, you can fix your gaze on a creature you can see within 30 feet of you, forcing it to make an Intelligence saving throw (DC = 8 + your Charisma modifier + your proficiency bonus).  On a failed save, the creature is charmed by you until the start of your next turn.  The charmed creature is friendly to you.  When the effect ends, the creature knows it was charmed by you.</p><p>You can use your Mindsap Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+        "uses": [
+          {
+            "id": "DEC8CBD7-26FC-46CB-9ADF-EE27B0A3310C",
+            "type": "derived",
+            "source": "proficiency",
+            "reset": 2
+          }
+        ],
+        "actions": [
+          {
+            "id": "DEC8CBD7-26FC-46CB-9ADF-EE27B0A3310C",
+            "hasUses": true,
+            "type": "a",
+            "name": "Mindsap Gaze",
+            "description": "You fix your gaze on a creature, forcing it to make a DC {dc-cha} Intelligence saving throw.  On a failed save, the creature is charmed by you until the start of your next turn.  The charmed creature is friendly to you.  When the effect ends, the creature knows it was charmed by you."
+          }
+        ]
+      }
+    ],
+    "name": "Kopru"
   }
 ]
