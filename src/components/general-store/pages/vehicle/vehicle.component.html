@@ -1,0 +1,36 @@
+<div class="header">
+  <h3>{{ vehicle.name }}</h3>
+</div>
+
+<div>
+  {{ vehicle.description }}
+</div>
+
+<div>
+  <div><strong>Minimum Crew:</strong> {{ vehicle.minCrew }}</div>
+  <div><strong>Creature Capacity:</strong> {{ vehicle.maxCrew }}</div>
+  <div *ngIf="vehicle.cargo">
+    <strong>Cargo Capacity:</strong> {{ vehicle.cargo }} tons
+  </div>
+</div>
+
+<div *ngFor="let part of vehicle.parts">
+  <hr />
+  <h5>
+    {{ part.name }}
+    <span *ngIf="part.num > 1"> &times; {{ part.num }} </span>
+  </h5>
+
+  <div *ngIf="part.type !== ''">
+    <em>{{ part.type }}</em>
+  </div>
+
+  <div>
+    <div><strong>Armor Class:</strong> {{ part.ac }}</div>
+    <div><strong>Hit Points:</strong> {{ part.hp }}</div>
+    <div *ngIf="part.dt > 0">
+      <strong>Damage Threshold:</strong> {{ part.dt }}
+    </div>
+  </div>
+  <p *ngIf="part.description" [innerHTML]="part.description"></p>
+</div>

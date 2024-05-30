@@ -1,0 +1,28 @@
+<nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Weight</th>
+      <th>Min Crew</th>
+      <th>Capacity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of itemData">
+      <td>
+        <a class="character-btn" routerLink="../../vehicle/{{ item.index }}">
+          {{ item.name }}
+        </a>
+      </td>
+      <td>{{ formatCost(item.cost) }}</td>
+      <td>{{ formatWeight(item.weight) }}</td>
+      <td>
+        {{ item.minCrew }} creature<span *ngIf="item.minCrew > 1">s</span>
+      </td>
+      <td>
+        {{ item.maxCrew }} creature<span *ngIf="item.maxCrew > 1">s</span>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

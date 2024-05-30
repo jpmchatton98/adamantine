@@ -1,65 +1,225 @@
 [
   {
+    "index": "carriage",
     "name": "Carriage",
     "cost": 100,
     "weight": 600,
-    "minCrew": 0,
+    "minCrew": 1,
     "maxCrew": 6,
     "topSpeed": 0,
     "description": "A well-crafted passenger cart favored by nobility.",
-    "type": "land"
+    "type": "land",
+    "cargo": 0.5,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 11,
+        "hp": 100,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Driver's Seat",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to the vehicle's speed, with one 90-degree turn. If the driver's seat is destroyed, the vehicle can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Wheel",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 30 ft. Without four wheels, the vehicle's speed is 0.",
+        "type": "Movement",
+        "num": 4
+      }
+    ]
   },
   {
+    "index": "cart",
     "name": "Cart",
     "cost": 15,
     "weight": 200,
-    "minCrew": 0,
+    "minCrew": 1,
     "maxCrew": 3,
     "topSpeed": 0,
     "description": "A simple, uncovered wooden cart used for hauling people or goods.",
-    "type": "land"
+    "type": "land",
+    "cargo": 0.5,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 11,
+        "hp": 75,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Driver's Seat",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to the vehicle's speed, with one 90-degree turn. If the driver's seat is destroyed, the vehicle can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Wheel",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 30 ft. Without four wheels, the vehicle's speed is 0.",
+        "type": "Movement",
+        "num": 4
+      }
+    ]
   },
   {
+    "index": "chariot",
     "name": "Chariot",
     "cost": 250,
     "weight": 100,
-    "minCrew": 0,
+    "minCrew": 1,
     "maxCrew": 2,
     "topSpeed": 0,
     "description": "An open-backed cart used in combat.",
-    "type": "land"
+    "type": "land",
+    "cargo": 0.1,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 11,
+        "hp": 50,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Wheel",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 35 ft. Without two wheels, the vehicle's speed is 0.",
+        "type": "Movement",
+        "num": 2
+      }
+    ]
   },
   {
+    "index": "handcart",
     "name": "Handcart",
     "cost": 10,
     "weight": 150,
-    "minCrew": 0,
+    "minCrew": 1,
     "maxCrew": 2,
     "topSpeed": 0,
     "description": "A small wooden cart, designed to be pulled by people rather than animals, bought by those who cannot afford anything nicer.",
-    "type": "land"
+    "type": "land",
+    "cargo": 0.1,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 11,
+        "hp": 50,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Hand Bar",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to the vehicle's speed, with one 90-degree turn. If the hand bar is destroyed, the vehicle can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Wheel",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 25 ft. Without two wheels, the vehicle's speed is 0.",
+        "type": "Movement",
+        "num": 2
+      }
+    ]
   },
   {
+    "index": "sled",
     "name": "Sled",
     "cost": 20,
     "weight": 100,
-    "minCrew": 0,
+    "minCrew": 1,
     "maxCrew": 1,
     "topSpeed": 0,
     "description": "A flat vehicle often pulled by trained dogs in snowy areas.",
-    "type": "land"
+    "type": "land",
+    "cargo": 0.1,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 11,
+        "hp": 40,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "wagon",
     "name": "Wagon",
     "cost": 35,
     "weight": 400,
-    "minCrew": 0,
+    "minCrew": 1,
     "maxCrew": 6,
     "topSpeed": 0,
     "description": "A large, covered cart often pulled by oxen.",
-    "type": "land"
+    "type": "land",
+    "cargo": 0.5,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 11,
+        "hp": 100,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Driver's Seat",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to the vehicle's speed, with one 90-degree turn. If the driver's seat is destroyed, the vehicle can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Wheel",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 30 ft. Without four wheels, the vehicle's speed is 0.",
+        "type": "Movement",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "canoe",
     "name": "Canoe",
     "cost": 50,
     "weight": 100,
@@ -67,9 +227,31 @@
     "maxCrew": 6,
     "topSpeed": 1.5,
     "description": "A long, thin rowboat that excels at river transport.",
-    "type": "water"
+    "type": "water",
+    "cargo": 0.2,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 11,
+        "hp": 50,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Oars",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 15 ft.</p><p>Move up to the ship's speed, with one 90-degree turn. Without oars, the rowboat's speed is 0.",
+        "type": "Control, Movement",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "galley",
     "name": "Galley",
     "cost": 30000,
     "weight": 500000,
@@ -77,9 +259,76 @@
     "maxCrew": 120,
     "topSpeed": 4,
     "description": "A large ship propelled mainly by teams of rowers.",
-    "type": "water"
+    "type": "water",
+    "cargo": 150,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 500,
+        "dt": 20,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Oars",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 30 ft., -5 ft. per 25 damage taken</p><p>Requires at least 40 crew.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 35 ft., -10 ft. per 25 damage taken</p><p>15 ft. while sailing into the wind; 50 ft. while sailing with the wind.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Naval Ram",
+        "ac": 20,
+        "hp": 100,
+        "dt": 10,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) bludgeoning damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "galleon",
     "name": "Galleon",
     "cost": 50000,
     "weight": 800000,
@@ -87,19 +336,117 @@
     "maxCrew": 400,
     "topSpeed": 3,
     "description": "A massive, three-masted sailing vessel.",
-    "type": "water"
+    "type": "water",
+    "cargo": 250,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 700,
+        "dt": 30,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's movement components, with one 90-degree turn. If the helm is destroyed, the galleon can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 35 ft., -10 ft. per 25 damage taken</p><p>15 ft. while sailing into the wind; 50 ft. while sailing with the wind.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Swivel Gun",
+        "ac": 15,
+        "hp": 25,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 10 (2d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "keelboat",
     "name": "Keelboat",
     "cost": 300,
     "weight": 1500,
     "minCrew": 1,
     "maxCrew": 7,
     "topSpeed": 1,
-    "description": "An oversized rowboat used for river transport.",
-    "type": "water"
+    "description": "A small boat used for river transport.",
+    "type": "water",
+    "cargo": 0.5,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 100,
+        "dt": 10,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 12,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Oars",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 20 ft., -5 ft. per 20 damage taken</p><p>Requires at least 20 crew.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 50,
+        "dt": 0,
+        "description": "Speed 25 ft., -5 ft. per 20 damage taken</p><p>15 ft. while sailing into the wind; 35 ft. while sailing with the wind.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "longboat",
     "name": "Longboat",
     "cost": 10000,
     "weight": 40000,
@@ -107,9 +454,49 @@
     "maxCrew": 140,
     "topSpeed": 3,
     "description": "A long, single-masted ship favored in amphibious assaults.",
-    "type": "water"
+    "type": "water",
+    "cargo": 10,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 300,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's movement components, with one 90-degree turn. If the helm is destroyed, the longboat can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Oars",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 20 ft., -5 ft. per 25 damage taken</p><p>Requires at least 20 crew.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 45 ft., -10 ft. per 25 damage taken</p><p>15 ft. while sailing into the wind; 60 ft. while sailing with the wind.",
+        "type": "Movement",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "rowboat",
     "name": "Rowboat",
     "cost": 50,
     "weight": 100,
@@ -117,9 +504,31 @@
     "maxCrew": 4,
     "topSpeed": 1.5,
     "description": "A small, simple rowboat.",
-    "type": "water"
+    "type": "water",
+    "cargo": 0.2,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 11,
+        "hp": 50,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Oars",
+        "ac": 12,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 15 ft.</p><p>Move up to the ship's speed, with one 90-degree turn. Without oars, the rowboat's speed is 0.",
+        "type": "Control, Movement",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "schooner",
     "name": "Schooner",
     "cost": 10000,
     "weight": 20000,
@@ -127,9 +536,58 @@
     "maxCrew": 50,
     "topSpeed": 4,
     "description": "A large, two-masted sailing vessel built slim for speed.",
-    "type": "water"
+    "type": "water",
+    "cargo": 100,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 300,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 18,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 45 ft., -5 ft. per 25 damage taken</p><p>15 ft. while sailing into the wind; 60 ft. while sailing with the wind.",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 2
+      }
+    ]
   },
   {
+    "index": "sloop",
     "name": "Sloop",
     "cost": 5000,
     "weight": 10000,
@@ -137,9 +595,40 @@
     "maxCrew": 15,
     "topSpeed": 4,
     "description": "A small, single-masted sailboat.",
-    "type": "water"
+    "type": "water",
+    "cargo": 10,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's movement components, with one 90-degree turn. If the helm is destroyed, the longboat can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 50 ft., -15 ft. per 25 damage taken</p><p>15 ft. while sailing into the wind; 75 ft. while sailing with the wind.",
+        "type": "Movement",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "waship",
     "name": "Warship",
     "cost": 75000,
     "weight": 1000000,
@@ -147,9 +636,58 @@
     "maxCrew": 400,
     "topSpeed": 3,
     "description": "A galleon outfitted for battle, with thrity-two cannons.",
-    "type": "water"
+    "type": "water",
+    "cargo": 250,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 700,
+        "dt": 30,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to the speed of one of the ship's movement components, with one 90-degree turn. If the helm is destroyed, the galleon can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Sails",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 35 ft., -10 ft. per 25 damage taken</p><p>15 ft. while sailing into the wind; 50 ft. while sailing with the wind.",
+        "type": "Movement",
+        "num": 1
+      },
+      {
+        "name": "Swivel Gun",
+        "ac": 15,
+        "hp": 25,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 10 (2d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Cannon",
+        "ac": 19,
+        "hp": 75,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 600/2400 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.",
+        "type": "Weapon",
+        "num": 32
+      }
+    ]
   },
   {
+    "index": "balloon",
     "name": "Balloon",
     "cost": 250,
     "weight": 800,
@@ -157,9 +695,40 @@
     "maxCrew": 4,
     "topSpeed": 0.5,
     "description": "A large balloon that uses hot air to stay airborne.",
-    "type": "air"
+    "type": "air",
+    "cargo": 0.5,
+    "parts": [
+      {
+        "name": "Basket",
+        "ac": 13,
+        "hp": 50,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Burner",
+        "ac": 16,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to 30 ft. up and up to 30 ft. with the wind.</p><p>If the burner is destroyed, the vehicle can't fly.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Balloon",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 30 ft., -10 ft. per 25 damage taken</p><p>If the balloon is destroyed, the vehicle can't fly.",
+        "type": "",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "dirigible",
     "name": "Dirigible",
     "cost": 500,
     "weight": 1200,
@@ -167,19 +736,90 @@
     "maxCrew": 8,
     "topSpeed": 2,
     "description": "A balloon outfitted with propellors that allow more control and speed.",
-    "type": "air"
+    "type": "air",
+    "cargo": 0.5,
+    "parts": [
+      {
+        "name": "Basket",
+        "ac": 13,
+        "hp": 50,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Burner",
+        "ac": 16,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to 30 ft. up and up to 30 ft. with the wind, or up to the propellor's speed.</p><p>If the burner is destroyed, the vehicle can't fly.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Balloon",
+        "ac": 12,
+        "hp": 100,
+        "dt": 0,
+        "description": "Speed 30 ft., -10 ft. per 25 damage taken</p><p>If the balloon is destroyed, the vehicle can't fly.",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Propellors",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "Speed 30 ft., -10 ft. per 25 damage taken</p><p>If the propellors are destroyed, the vehicle can't move of its own accord, and moves with the wind.",
+        "type": "",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "ornithopter",
     "name": "Ornithopter",
     "cost": 10000,
-    "weight": 2000,
+    "weight": 750,
     "minCrew": 1,
-    "maxCrew": 3,
+    "maxCrew": 1,
     "topSpeed": 3,
     "description": "A winged contraption that flies like a bird.",
-    "type": "air"
+    "type": "air",
+    "cargo": 0.2,
+    "parts": [
+      {
+        "name": "Body",
+        "ac": 13,
+        "hp": 100,
+        "dt": 0,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Driver's Seat",
+        "ac": 16,
+        "hp": 25,
+        "dt": 0,
+        "description": "Move up to 30 ft. up and up to the wings' speed.</p><p>If the driver's seat is destroyed, the vehicle can't fly.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Wings",
+        "ac": 11,
+        "hp": 25,
+        "dt": 0,
+        "description": "Speed 45 ft., -10 ft. per 10 damage taken</p><p>The vehicle can't fly if the wings are destroyed.",
+        "type": "",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "bombard",
     "name": "Bombard",
     "cost": 50000,
     "weight": 0,
@@ -187,9 +827,49 @@
     "maxCrew": 12,
     "topSpeed": 4,
     "description": "Bombards are built by giff. The major feature of each ship is an enormous cannon that fires massive cannon balls capable of blowing other ships to smithereens.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 150,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 300,
+        "dt": 20,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 35 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Giant Cannon",
+        "ac": 19,
+        "hp": 250,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 600/2400 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "damselfly",
     "name": "Damselfly",
     "cost": 20000,
     "weight": 0,
@@ -197,9 +877,49 @@
     "maxCrew": 9,
     "topSpeed": 8,
     "description": "This swift but cramped ship is made mostly of metal. It can't float on water, but its legs enable it to land safely on the ground. A sliding hatch just behind the wings allows access to the ship's mangonel turret. The ship's cargo hold can easily be turned into crew cabins or another weapon deck.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 5,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 200,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "entship",
     "name": "Entship",
     "cost": 25000,
     "weight": 0,
@@ -207,9 +927,40 @@
     "maxCrew": 5,
     "topSpeed": 4.5,
     "description": "Druids, rangers, and clerics devoted to gods of nature are often found aboard entships, as are Wildspace explorers who don't want to have to worry about their ship's air envelope becoming fouled during a long voyage. This ship's main distinctive feature is the fully grown treant on the aft deck. The treant has a speed of 0 because its roots are woven into the deck; it and the ship are inseparable. If the ship is reduced to 0 hit points, the treant dies of shock. The ship can function if its treant dies, but the treant can never be replaced with another.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 10,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 40 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "flying-fish",
     "name": "Flying Fish",
     "cost": 20000,
     "weight": 0,
@@ -217,9 +968,49 @@
     "maxCrew": 10,
     "topSpeed": 4.5,
     "description": "Aside from space galleons, flying fish ships are the most common vessels in Wildspace, favorites among merchants and adventurers alike.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 13,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 40 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "hammerhead",
     "name": "Hammerhead",
     "cost": 40000,
     "weight": 0,
@@ -227,9 +1018,58 @@
     "maxCrew": 15,
     "topSpeed": 4,
     "description": "Hammerhead ships are popular craft, especially among pirates and merchants carrying heavy cargo. They can float on water and sail across it, but they aren't built to land on the ground (their keels would cause them to tip to one side). Standard weapons on a hammerhead ship include fore and aft mangonels, a ballista, and a reinforced bow for ramming.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 30,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 400,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 35 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Blunt Ram",
+        "ac": 20,
+        "hp": 100,
+        "dt": 10,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) bludgeoning damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "lamprey",
     "name": "Lamprey",
     "cost": 20000,
     "weight": 0,
@@ -237,9 +1077,49 @@
     "maxCrew": 15,
     "topSpeed": 4,
     "description": "Lamprey ships are antiquated, being among the oldest spelljamming ships still in use. Psurlons are particularly fond of them. Using the metal grappling jaws built into its bow, a lamprey ship can attach itself to another ship, which is a critical feature during boarding actions. Other standard weapons include four ballistae on the main deck.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 6,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 35 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Grappling Jaws",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +5 to hit, reach 10 ft., one ship or Gargantuan creature. <em>Hit:</em> 22 (4d10) piercing damage, and the speed of the lamprey ship and the target become 0 until the grapple ends. As an action, a creature can use the grappling jaws' controls to release the target. Otherwise, the effect ends when the target or the lamprey ship drops to 0 hit points.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "natuiloid",
     "name": "Nautiloid",
     "cost": 50000,
     "weight": 0,
@@ -247,9 +1127,67 @@
     "maxCrew": 20,
     "topSpeed": 4.5,
     "description": "Built and used by mind flayers, nautiloids are designed exclusively for space travel. They can't float on water, nor can they land safely on the ground.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 17,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 400,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 40 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Tentacles",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, reach 30 ft., one Huge or Gargantuan target. <em>Hit:</em> 22 (4d10) bludgeoning damage, and the nautiloid's speed becomes 0 until its spelljammer uses an action to release the target. If the target is a creature, it is grappled (escape DC 16). If the target is another ship, the target's speed becomes 0 until the nautiloid releases it, or until the target or the nautiloid drops to 0 hit points.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Teleport",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Spell Attack:</em> +8 to hit, reach 30 ft., one creature. <em>Hit:</em> The target must succeed on a DC 15 Constitution saving throw or be teleported to an unoccupied space aboard the nautiloid that the nautiloid's spelljammer can see.",
+        "type": "",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "nightspider",
     "name": "Nightspider",
     "cost": 50000,
     "weight": 0,
@@ -257,9 +1195,49 @@
     "maxCrew": 25,
     "topSpeed": 4.5,
     "description": "Neogi terrorize Wildspace in ships of their own construction, which others call nightspiders. These vessels often wait in ambush for other ships. Once a target ship is identified, the neogi try to steal its spelljamming helm and capture its crew.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 50,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 300,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 40 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "scorpion",
     "name": "Scorpion",
     "cost": 25000,
     "weight": 0,
@@ -267,9 +1245,58 @@
     "maxCrew": 12,
     "topSpeed": 3.5,
     "description": "Scorpion ships are archaic metal warships that have never lost their popularity, largely because of their versatility. Articulated legs enable a scorpion ship to land safely on the ground and move across a solid surface at a walking speed of 30 feet.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 12,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 30 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Claw",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +3 to hit, reach 20 ft., one target. <em>Hit:</em> 11 (2d10) bludgeoning damage. If the target is a Huge or smaller creature, it is also grappled (escape DC 13). Until this grapple ends, the creature takes 11 (2d10) bludgeoning damage at the start of each of its turns.",
+        "type": "Weapon",
+        "num": 2
+      }
+    ]
   },
   {
+    "index": "shrike",
     "name": "Shrike",
     "cost": 20000,
     "weight": 0,
@@ -277,9 +1304,49 @@
     "maxCrew": 11,
     "topSpeed": 8,
     "description": "This swift vessel is a relatively recent design, quickly gaining popularity with merchants and pirates. A shrike ship's legs enable it to land safely on the ground. The ship can float but isn't built for traveling on water and sinks quickly in rough seas.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 20,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 3
+      },
+      {
+        "name": "Piercing Ram",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) piercing damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "space-galleon",
     "name": "Space Galleon",
     "cost": 75000,
     "weight": 0,
@@ -287,9 +1354,49 @@
     "maxCrew": 50,
     "topSpeed": 4,
     "description": "The space galleon is a mainstay among the host of vessels that ply Wildspace and the Astral Sea. Space galleons can easily pass for ordinary seafaring galleons. Because they can land on water and move across it like their namesakes, they can sail into ports on terrestrial worlds without attracting undue attention.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 200,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 400,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 35 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "squid-ship",
     "name": "Squid Ship",
     "cost": 25000,
     "weight": 0,
@@ -297,9 +1404,58 @@
     "maxCrew": 13,
     "topSpeed": 3.5,
     "description": "Among the oldest types of spelljamming vessels, squid ships are popular with privateers and are often used as patrol ships. Standard weapons on a squid ship include a forward-mounted mangonel, two aft-mounted ballistae, and a reinforced bow for ramming. The tentacles that extend from the bow account for nearly half the ship's keel length.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 20,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 300,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 30 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Piercing Ram",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) piercing damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "star-moth",
     "name": "Star Moth",
     "cost": 50000,
     "weight": 0,
@@ -307,9 +1463,49 @@
     "maxCrew": 13,
     "topSpeed": 5.5,
     "description": "Star moths are ships constructed and flown by astral elves, who don't like it when these ships end up in the hands of others. A star moth's hull is fashioned from a grown and sculpted organic substance, and its enormous, decorative wings are made of shimmering crystal.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 30,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 13,
+        "hp": 400,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 50 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "turtle-ship",
     "name": "Turtle Ship",
     "cost": 40000,
     "weight": 0,
@@ -317,9 +1513,58 @@
     "maxCrew": 16,
     "topSpeed": 3,
     "description": "A turtle ship is encased in a protective metal shell, as befits its name, and bristles with weapons. In addition to its roomy quarters, it can carry a decent-sized payload, making it popular among traders and others who need a lot of cargo space. The ship can land on the ground, and it floats on water. Sliding panels can be closed to make the hull airtight, enabling the ship to travel underwater safely, even to great depths. If the ship takes damage while on or under the water, interior hatches can be sealed to prevent the ship from flooding completely.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 30,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 300,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 25 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 3
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Torpedo Tube",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 500/1000 ft., one target. <em>Hit:</em> 44 (8d10) bludgeoning damage.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   },
   {
+    "index": "wasp",
     "name": "Wasp",
     "cost": 20000,
     "weight": 0,
@@ -327,6 +1572,36 @@
     "maxCrew": 5,
     "topSpeed": 5.5,
     "description": "Wasp ships are lightweight wooden vessels capable of landing safely on the ground, but not on water. They appeal to adventurers because they're affordable and don't require a large crew. Pirates like them because they're swift. Aristocrats are fond of using them as flying yachts because the ship's cargo hold can be easily converted into posh living quarters.",
-    "type": "astral"
+    "type": "astral",
+    "cargo": 10,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 50 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
   }
 ]

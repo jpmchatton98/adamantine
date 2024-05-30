@@ -228,27 +228,23 @@ export class GeneralStoreService {
       children: [
         {
           name: 'Land Vehicles',
-          type: 'generic',
+          type: 'vehicle',
           data: 'vehicles.land',
-          excludedColumns: ['minCrew', 'topSpeed', 'type'],
         },
         {
           name: 'Water Vehicles',
-          type: 'generic',
+          type: 'vehicle',
           data: 'vehicles.water',
-          excludedColumns: ['type'],
         },
         {
           name: 'Air Vehicles',
-          type: 'generic',
+          type: 'vehicle',
           data: 'vehicles.air',
-          excludedColumns: ['type'],
         },
         {
           name: 'Astral Vehicles',
-          type: 'generic',
+          type: 'vehicle',
           data: 'vehicles.astral',
-          excludedColumns: ['weight', 'type'],
         },
       ],
     },
@@ -750,5 +746,10 @@ export class GeneralStoreService {
     returnData.properties = data.properties;
 
     return returnData;
+  }
+
+  public getVehicle(index: string): any {
+    const vehicle = vehicles.find((v) => v.index === index);
+    return vehicle;
   }
 }

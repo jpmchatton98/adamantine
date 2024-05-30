@@ -28,6 +28,8 @@ import { MagicItemComponent } from './magic-items/magic-item/magic-item.componen
 import { MagicItemsComponent } from './magic-items/magic-items/magic-items.component';
 import { PetTabComponent } from './tabs/pet-tab/pet-tab.component';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { VehicleComponent } from './pages/vehicle/vehicle.component';
+import { VehicleTabComponent } from './tabs/vehicle-tab/vehicle-tab.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
     SiegeWeaponTabComponent,
     MagicItemsComponent,
     MagicItemComponent,
+    VehicleComponent,
+    VehicleTabComponent,
   ],
   imports: [
     CommonModule,
