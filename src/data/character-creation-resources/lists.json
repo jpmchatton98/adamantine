@@ -1917,7 +1917,7 @@
     },
     {
       "name": "Rite of Confusion",
-      "description": "As a bonus action, you can invoke this Rite and curse one creature you can see within 30 feet that is concentrating on a spell.  The first time the creature makes a Constitution saving throw to maintain concentration before the end of your next turn, it has disadvantage on its saving throw.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If you do so, the target has disadvantage on every Constitution saving throw it makes to maintain its concentration before the end of your next turn.",
+      "description": "As a bonus action, you invoke this Rite to curse one creature you can see within 30 feet that is concentrating on a spell. It must succeed a Wisdom saving throw or lose concentration.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If you do so, the creature must subtract one roll of your Rite Die from its saving throw to resist this Rite.",
       "uses": {
         "id": "4E92DD77-8BBC-451B-B515-41D708217217",
         "type": "fixed",
@@ -1927,9 +1927,31 @@
     },
     {
       "name": "Rite of Revelation",
-      "description": "As a bonus action, you can invoke this Rite and choose one creature you can see within 30 feet.  You immediately learn of one damage resistance, immunity, or vulnerability that the creature has.  If it has none of the traits above, the DM can instead reveal one of the creature's abilities of their choice.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If you do, you can choose one immunity the creature has and turn it into a resistance, or one resistance the creature has and dispel it.  This effecgt lasts for 1 minute.",
+      "description": "When you use your Hunter's Bane to analyze a creature you can see, you can invoke this Rite to automatically succeed on your ability check against that creature.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If you do so, choose one damage immunity the creature has and turn it into resistance, or one damage resistance it has and dispel it. This effect lasts for 1 minute.  If the creature has no damage immunities or resistances, you learn three Hunter's Bane characteristics of your choice.",
       "uses": {
         "id": "39405C79-18C5-4071-A39C-D107533CC25D",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    },
+    {
+      "name": "Rite of the Beast",
+      "prereqLevel": 5,
+      "description": "As an action, you invoke this Rite as you touch a living beast, smearing a drop of your blood on its face. It must succeed on a Charisma saving throw or become enthralled by you for 1 hour, or until it is reduced to 0 hit points.</p><p>An enthralled beast is friendly to you and your allies and obeys your orders completely. In combat you share initiative and it acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your bonus action to command it to take an action from its stat block or another action. If you can ride the beast then it counts as a trained mount for the duration of this Rite.</p><p>You can only have one creature enthralled by a Blood Rite at a time. Attempting to enthrall another creature with a Rite instantly frees any other creatures you have enthralled.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If so do so, the beast remains enthralled by this Blood Rite until the end of your next long rest.",
+      "uses": {
+        "id": "8A2B4460-F15E-43D5-8629-43914362AB9B",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    },
+    {
+      "name": "Rite of Bonding",
+      "prereqLevel": 5,
+      "description": "As an action, you invoke this Rite as you combine a drop of your blood with a drop of blood from a willing creature you touch, forging a dark bond. While the other creature is within 60 feet of your, it is resistant to all damage. However, if this bonded creature takes damage, you take the same amount.</p><p>The effects of this Rite last for 1 hour, but it ends early if either you or the other creature are reduced to 0 hit points, or if you are more than 60 feet apart for more then 1 minute.</p><p>You can only enter into one such bond at a time. Using this Rite with another creature instantly ends the previous bond.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If so do so, the effects of this Blood Rite last for 8 hours, and only end early if either of you is reduced to 0 hit points or is more than 1 mile apart for more than 1 hour.",
+      "uses": {
+        "id": "54A659CF-5A65-4794-B4BF-261E3EBA5F89",
         "type": "fixed",
         "amount": 1,
         "reset": 1
@@ -1960,7 +1982,7 @@
     {
       "name": "Rite of Marking",
       "prereqLevel": 5,
-      "description": "As a bonus action, you can invoke this Rite and mark a target you can see within 30 feet.  Until the end of your next turn, all weapon attacks you make againt that target have advantage.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, any weapon attacks you make against that target score a critical hit on a roll of 19 or 20 on the d20 until the end of your next turn.",
+      "description": "As a bonus action, you invoke this Rite and mark a creature you can see within 30 feet. Until the end of your next turn, you have advantage on all attack rolls against that target.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, you add one roll of your Rite Die to weapon attack rolls against it until the end of your next turn.",
       "uses": {
         "id": "CDAE01E9-E704-4F5C-8A58-3C52F743FA4D",
         "type": "fixed",
@@ -1971,7 +1993,7 @@
     {
       "name": "Rite of the Puppet",
       "prereqLevel": 5,
-      "description": "When a creature you can see within 30 feet is reduced to 0 hit points, you can use your reaction to invoke this Rite and have the creature make a single weapon attack against a creature of your choice within its reach.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If you do so, you can force the creature to move up to its full speed and it gains a bonus to its weapon attack roll equal to one roll of your Rite Die.",
+      "description": "When a creature you can see within 30 feet is slain, you can use your reaction to invoke this Rite to cause the creature to stand up, move up to its walking speed, and make a weapon attack against a creature of your choice within its reach.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If you do so, the creature adds one roll of your Rite Die to both the attack and damage roll it makes as part of this Rite.",
       "uses": {
         "id": "8442124F-5F7D-4BF5-9709-D9D53B95E68A",
         "type": "fixed",
@@ -1980,9 +2002,20 @@
       }
     },
     {
+      "name": "Rite of Aggression",
+      "prereqLevel": 9,
+      "description": "When a creature you can see within 30 feet is slain, you can use your reaction to invoke this Rite to cause the creature to stand up, move up to its walking speed, and make a weapon attack against a creature of your choice within its reach.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If so do so, the creature adds one roll of your Rite Die to both the attack and damage roll it makes as part of this Rite.",
+      "uses": {
+        "id": "F961B174-37EC-4B84-A23B-B7975D0A0C9F",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    },
+    {
       "name": "Rite of Darkness",
       "prereqLevel": 9,
-      "description": "As a bonus action, you can invoke this Rite and force one creature you can see within 30 feet to make a Constitution saving throw.  On a failed save, it is blinded, deafened, and silenced for 1 minute.  As an action on its turn, the target can repeat its saving throw, ending the effect on a success.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, in addition to the normal effect, the creature's speed is reduced to 0 while under the effects of this Rite.",
+      "description": "As a bonus action, you invoke this Rite to force one creature that you can see within 30 feet to make a Constitution saving throw. On a failure, it is blinded, deafened, and cannot speak or make any sound for 1 minute. It repeats this saving throw at the end of each of its turns, ending the effect on a success.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, in addition to the normal effect, the creature's speed is reduced to 0 while under the effects of this Rite.",
       "uses": {
         "id": "23007F85-8C88-4C30-9F70-B33A6F8E82A3",
         "type": "fixed",
@@ -1996,6 +2029,17 @@
       "description": "As a bonus action, you can invoke this Rite and force a creature that can see or hear you within 30 feet to make a Wisdom saving throw.  On a failed save, it is frightened of your for 1 minute.  While frightened in this way, the creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move.  If it ends its turn in a location where it doesn't have line of sight to you, it can repeat its saving throw, ending the effect on a success.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, a creature that fails its saving throw is stunned for the duration of the Rite, so long as it has line of sight to you.  If it takes any damage, it can repeat its saving throw, ending the effect on a success.",
       "uses": {
         "id": "CEB01999-CC00-4F79-A3FA-4F9CBD69E1B2",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    },
+    {
+      "name": "Rite of the Open Grave",
+      "prereqLevel": 9,
+      "description": "As an action, you can touch a creature that has died within the last minute, snatching its soul back from the grave, and returning it to life with 1 hit point. However, when a creature is brought back to life by this Rite it gains a permanent death saving throw failure. This side effect can only be removed by greater resoration or a spell of similar, or greater, power.</p><p>This Rite cannot return a creature to life that died of old age, and it cannot restore a creature's missing body parts.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If so do so, the creature does not gain a permanent death saving throw failure, but instead suffers a single level of exhaustion, which is healed by a long rest.",
+      "uses": {
+        "id": "E8DCB481-533F-442B-9DD8-B9AA5996EE8F",
         "type": "fixed",
         "amount": 1,
         "reset": 1
@@ -2035,9 +2079,20 @@
       }
     },
     {
+      "name": "Rite of the Thrall",
+      "prereqLevel": 13,
+      "description": "As an action, you invoke this Rite and touch a live humanoid, smearing a drop of your blood on its face. It must succeed on a Charisma saving throw or become enthralled by you for 1 minute, or until it is reduced to 0 hit points.</p><p>An enthralled humanoid is friendly to you and obeys your orders completely. In combat it shares your initiative and acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action on its turn unless you use your bonus action to command it to take one of the actions from its stat block or another action.</p><p>You can only have one creature enthralled by a Blood Rite at a time. Attempting to enthrall another creature with a Rite instantly frees any other creatures you have enthralled.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If so do so, the humanoid is enthralled by this Blood Rite for up to 1 hour.",
+      "uses": {
+        "id": "46E9CFEA-D73A-41D3-8257-385842A79F31",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    },
+    {
       "name": "Rite of Exsanguination",
       "prereqLevel": 17,
-      "description": "As an action, you can invoke the most powerul and ancient Rite to force one creature you can see within 30 feet to make a Constitution saving throw as you attempt to drain their body of all blood.  It takes necrotic damage equal to twelve rolls of your Rite Die on a failed save, or half as much on a success.  A creature that you have dealt damage to since the start of your previous turn that is not at its maximum hit points has disadvantage on this saving throw.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, this Rite ignores resistance to necrotic damage, and treats immunity as resistance.  In addition, a creature reduced to 0 hit points by this Rite is killed as their body is turned into a pile of fine, flesh-colored dust.",
+      "description": "As an action, you invoke this most powerful and ancient Rite and force one creature you can see within 30 feet to make a Constitution saving throw, as you attempt to drain its body of all blood. On a failed save, it takes necrotic damage equal to twelve rolls of your Rite Die, and half as much on a success. Any creature that you have dealt damage to since the start of your previous turn has disadvantage on this saving throw.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it. If you do so, this Rite ignores resistance to necrotic damage, and treats immunity as resistance.  In addition, a creature reduced to 0 hit points by this Rite is killed as their body is turned into a pile of fine, flesh-colored dust.</p><p>Once your invoke this Blood Rite you must finish a short or long rest before you can invoke it again. You cannot make a Vital Sacrifice to circumvent this once per rest restriction.",
       "uses": {
         "id": "CB3533FF-B312-48AB-8549-451CE6DDC645",
         "type": "fixed",
@@ -2048,9 +2103,20 @@
     {
       "name": "Rite of Reaping",
       "prereqLevel": 17,
-      "description": "As an action, you can invoke this Rite, sacrifice any number of your maximum hit points, and touch a creature.  If it has a number of remaining hit points less than or equal to the hit points you sacrificed, it dies.  Otherwise, this Rite has no effect.",
+      "description": "As an action, you invoke this most powerful and ancient Rite and force creatures of your choice within 60 feet to make a Constitution saving throw as you draw all blood toward you. Any creature that you have dealt damage to since the start of your previous turn has disadvantage on this saving throw.</p><p>Creatures take necrotic damage equal to five rolls of your Rite Die on a failed save, and half as much on a success.</p><p>When you invoke this Rite, you can make a Vital Sacrifice to empower it.  If so do so, this Blood Rite ignores necrotic resistance and treats immunity as resistance. Any creatures killed by this Rite are reduced to a pile of flesh-colored dust.</p><p>Once your invoke this Blood Rite you must finish a short or long rest before you can invoke it again. You cannot make a Vital Sacrifice to circumvent this once per rest restriction.",
       "uses": {
         "id": "00FEF6BF-A95D-4068-8449-C4C98900ADB9",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 1
+      }
+    },
+    {
+      "name": "Rite of Rejuvenation",
+      "prereqLevel": 17,
+      "description": "As an action, you invoke this most powerful and ancient Rite and touch one living willing creature, granting it an increase in stamina at the cost of its overall health. It instantly gains all the benefits of a short rest, including the ability to expend its Hit Dice to regain hit points. However, the maximum life span of the creature is permanently reduced by 1 year and 1 day, and it suffers 1 level of exhaustion.</p><p>Once your invoke this Blood Rite you must finish a short or long rest before you can invoke it again. You cannot make a Vital Sacrifice to circumvent this once per rest restriction.",
+      "uses": {
+        "id": "5AFAE1A3-88E8-4269-BABC-D76EF73A5566",
         "type": "fixed",
         "amount": 1,
         "reset": 1
@@ -6477,7 +6543,7 @@
     },
     {
       "name": "Featherweight Fighting",
-      "description": "While you are wielding only light weapons, your movement speed increases by 10 feet and you gain a +2 bonus to your damage rolls, so long as you are not wearing medium armor, heavy armor, or wielding a shield."
+      "description": "While you are unarmed or wielding only light weapons, and are not wearing medium or heavy armor, your walking speed increases by 10 feet, and you gain a +1 bonus to your damage rolls with light melee weapons and unarmed strikes."
     },
     {
       "name": "Great Weapon Fighting",
@@ -9455,24 +9521,28 @@
       "description": "You sprout unnatural eye stalks or manifest additional eyes.  You gain darkvision out to 60 feet.  If you already have darkvision, its range increases by 60 feet.</p><p>In addition, you have advantage on Wisdom (Perception) checks you make that rely on your sense of sight."
     },
     {
-      "name": "Alchemical Resistance",
-      "description": "Your experiments grant you resistance to the elements.  When you manifest this Mutation choose acid, cold fire, lightning, or poison damage.  You gain resistance to your chosen damage type."
-    },
-    {
       "name": "Aquatic Adaptation",
       "description": "You sprout unnatural gills or your skin becomes permeable and amphibious.  You gain a swimming speed equal to your walking speed, and you can breathe both air and water."
     },
     {
-      "name": "Deviant Glide",
+      "name": "Enhanced Movement",
+      "description": "Your legs grow unnaturally thick and powerful, but become grotesque to look upon. You can take the Dash action as a bonus action on each of your turns."
+    },
+    {
+      "name": "Grappling Appendage",
+      "description": "You grow an extra appendage from your back that resembles a tentacle. This appendage has a reach of 10 feet and can be used to make unarmed strikes, shove, and grapple. On hit, it deals bludgeoning damage equal to one roll of your Rite Die.</p><p>This appendage can be used for simple tasks, but it cannot wield weapons or shields, or manipulate objects or tools.</p><p>Starting at 13th level, this Mutagen grows two appendages."
+    },
+    {
+      "name": "Knotted Flesh",
+      "description": "Your skin becomes hard and knotted like that of a tree or a great beast. You can use your Constitution modifier in place of Dexterity when calculating your Armor Class in armor.</p><p>Moreover, so long as you are not wearing any armor, your Armor Class is equal to 13 + your Constitution modifier."
+    },
+    {
+      "name": "Monstrous Glide",
       "description": "You grow bat or fish-like skin flaps that you use to glide.  When you fall and are not incapacitated, you can extend these flaps to glide. When you do so, you can perform the following aerial maneuvers:<ul><li>When you fall, you can move up to 5 feet horizontally for every 1 foot you descend.</li><li>When you would take damage from a fall, you can use your reaction to reduce the fall's damage to 0.</li></ul>"
     },
     {
-      "name": "Enhanced Movement",
-      "description": "Your legs grow unnaturally thick or powerful.  Your walking speed increases by a number of feet equal to 5 times your Constitution modifier, and you gain a bonus to the distance of any long jump or high jump you make equal to one roll of your Rite Die."
-    },
-    {
       "name": "Oozing Form",
-      "description": "Your body becomes slimy and pliable.  As a bonus action, you can automatically escape a grapple or nonmagical restraints.  Also, you body, along with any equipment you are wearing or carrying, can squeeze through spaces as narrow as 1 inch."
+      "description": "Your body can become slimy and pliable. As a bonus action, you can morph into (or revert from) an ooze-like state which allows you to squeeze through gaps as narrow as 1-inch.</p><p>Your ooze-like state has no effect on your weapons, armor, clothing, or objects, and you cannot attack while you are in it."
     },
     {
       "name": "Unnatural Physicality",
@@ -9489,44 +9559,64 @@
       "description": "You gain immunity to psychic damage, and you have advantage on saving throws to resist being charmed."
     },
     {
-      "name": "Corrosive Secretions",
+      "name": "Corrosive Blood",
       "prereqLevel": 7,
-      "description": "Your body can expel a corrosive acid at your foes.  When you are hit by an attack and the attacker is within 30 feet, you can use your reaction to deal acid damage to the attacker equal to one roll of your Rite Die + your Constitution modifier."
+      "description": "Your wounds expel a corrosive acid. Whenever you are hit by an attack and the attacker is within 30 feet, you can use your reaction to deal acid damage to the attacker equal to one roll of your Rite Die + your Constitution modifier."
+    },
+    {
+      "name": "Dislocated Reach",
+      "prereqLevel": 7,
+      "description": "Your strange experiments allow your joints to unnaturally stretch, crack, and expand. The length of your arms doubles, and the reach of your melee attacks increases by 5 feet."
+    },
+    {
+      "name": "Engorged Physique",
+      "prereqLevel": 7,
+      "description": "Chemicals forcefully enlarge your body, giving you a hideous physique. You grow by one size (for example, from Medium to Large), your reach increases by 5 feet, your weight multiplies by eight, and your melee weapon attacks deal bonus damage equal to one roll of your Rite Die on hit.</p><p>If there is not room for you to grow in size, you grow to the maximum size allowed by your current surroundings."
     },
     {
       "name": "Inoculated Vigor",
       "prereqLevel": 7,
-      "description": "Your experiments have hardened your body against toxins.  You gain resistance to acid and poison damage, and you have advantage on saving throws against being poisoned."
+      "description": "You inoculate yourself against all but the worst poisons. You gain immunity to both acid and poison damage, and you gain immunity to all disease and to the poisoned condition."
     },
     {
-      "name": "Swift Steps",
+      "name": "Toxic Symbiosis",
       "prereqLevel": 7,
-      "description": "Your strange alien legs allow you to move especially quick. You can take the Dash or Disengage action as a bonus action."
-    },
-    {
-      "name": "Toxic Vitality",
-      "prereqLevel": 7,
-      "description": "Your body mends itself as you fight.  At the start of each of your turns while you are Mutated, you gain temporary hit points equal to your Constitution modifier (minimum of 1)."
+      "description": "When you hit a living creature with a melee attack, you can use a bonus action on that turn to suck the life from its wound and gain temporary hit points equal to your Constitution modifier."
     },
     {
       "name": "Viscous Grip",
       "prereqLevel": 7,
-      "description": "Your hands and feet secrete a sticky substance.  You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces without making an ability check."
+      "description": "Your hands and feet secrete a sticky substance.  You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces without making an ability check.</p><p>Also, creatures have disadvantage on ability checks or saving throws they maketo escape being grappled by you."
     },
     {
-      "name": "Grappling Appendages",
+      "name": "Accelerated Physiology",
       "prereqLevel": 13,
-      "description": "You grow two appendages alongside your arms that resemble claws or tentacles.  They are natural weapons, which deal bludgeoning damage equal to a roll of your Rite Die on a hit.  If you hit a creature with a melee attack, you can attempt to grapple it with these appendages as a bonus action.  These appendages are not dexterous enough to use weapons or tools."
+      "description": "Chemicals enhance your physical ability and increase your aggression. When you take the Attack action on your turn, you can make three attacks instead of the normal two.</p><p>However, if you end your turn and you have not attacked another creature since the end of your previous turn, then you take necrotic damage equal to one roll of your Rite Die."
+    },
+    {
+      "name": "Alchemical Intellect",
+      "prereqLevel": 13,
+      "description": "Strange chemicals enhance your mind at the expense of the body. You have advantage on all Intelligence, Wisdom, and Charisma saving throws, but you have disadvantage on all Strength, Dexterity, and Constitution saving throws."
+    },
+    {
+      "name": "Cortisol Rush",
+      "prereqLevel": 13,
+      "description": "Strange chemicals enhance your body at the expense of the mind. You have advantage on all Strength, Dexterity, and Constitution saving throws, but you have disadvantage on all Intelligence, Wisdom, and Charisma saving throws."
+    },
+    {
+      "name": "Hideous Regeneration",
+      "prereqLevel": 13,
+      "description": "If you begin your turn with less than half of your hit points remaining, but at least 1 hit point, you instantly regain hit points equal to your Constitution modifier (minimum of 1)."
+    },
+    {
+      "name": "Monstrous Flight",
+      "prereqLevel": 13,
+      "description": "You sprout a pair of unnatural leathery or insectoid wings.  You gain a flying speed equal to your walking speed."
     },
     {
       "name": "Synthetic Carapace",
       "prereqLevel": 13,
-      "description": "Your skin hardens resembling that of a terrible insectoid or reptilian creature.  You gain a bonus to your Armor Class equal to half your Constitution modifer (rounded down)."
-    },
-    {
-      "name": "Perverted Flight",
-      "prereqLevel": 13,
-      "description": "You sprout a pair of unnatural leathery or insectoid wings.  You gain a flying speed equal to your walking speed."
+      "description": "Your skin hardens resembling that of an terrible insectoid creature. You gain a +2 bonus to your Armor Class, and you gain resistance to all bludgeoning, piercing, and slashing damage from non-magical and non-silvered attacks."
     },
     {
       "name": "Resilient Flesh",

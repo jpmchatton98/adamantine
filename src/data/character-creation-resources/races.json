@@ -524,8 +524,44 @@
         ]
       },
       {
+        "name": "Messenger",
+        "description": "Messenger aasimar are blessed not only with the light of the divine, but also the voice.  They are charged with representing the will of the gods on the mortal plane, delivering wisdom or commanding their creator's followers.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Voice of an Angel",
+            "description": "You have proficiency in the Persuasion skill and you know the Message cantrip.  Charisma is your spellcasting ability for it.",
+            "granted": [
+              { "type": "skill", "options": ["Persuasion"], "level": 1 },
+              { "type": "spell", "options": ["Message"], "ability": "cha" }
+            ]
+          },
+          {
+            "name": "Herald's Voice",
+            "description": "Starting at 3rd level, you can use a bonus action to channel a message of the gods through your voice.  A light shines from within your throat, and the air around you crackles with tension. The instant you transform, you can choose to cast the Command spell without expending a spell slot. Charisma is your spellcasting ability for it.</p><p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra thunder damage to one target when you deal damage to it with an attack or a spell. The extra thunder damage equals your proficiency bonus.</p><p>You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "00CFA872-DDD9-40DA-9EB8-38621C1B51E1",
+              "type": "derived",
+              "source": "proficiency",
+              "prereq": 3,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "00CFA872-DDD9-40DA-9EB8-38621C1B51E1",
+                "hasUses": true,
+                "name": "Herald's Voice",
+                "type": "a",
+                "prereq": 3,
+                "description": "You channel a message of the gods through your voice.  A light shines from within your throat, and the air around you crackles with tension. The instant you transform, you can choose to cast the Command spell without expending a spell slot. Charisma is your spellcasting ability for it.</p><p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal {prof} extra thunder damage to one target when you deal damage to it with an attack or a spell."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Primal",
-        "description": "While most people think of angels or perhaps other humanoid beings when they hear the word \u0442\u0410\u042ccelestials,\u0442\u0410\u042d the Upper Planes are also home to innumerable celestial entities that take the form of animals, particularly in the wild environments of the Beastlands. Some would be familiar to visitors from the Material Plane, while others are unique to the plane they are found on or are even singular entities within the multiverse. Their descendants are fierce defenders of nature, protecting the flora and fauna of their homelands to the death. While no less beautiful than other aasimar, they are somewhat less charming and take on many bestial features. Most have claws and eyes similar to a cat or other predator, but they can also have antennae, spines, fur, scales, antlers, fangs, or feathers. In this case, it is perhaps best not to ask how their Prime ancestors combined their bloodline with that of a celestial...",
+        "description": "While most people think of angels or perhaps other humanoid beings when they hear the word celestials, the Upper Planes are also home to innumerable celestial entities that take the form of animals, particularly in the wild environments of the Beastlands. Some would be familiar to visitors from the Material Plane, while others are unique to the plane they are found on or are even singular entities within the multiverse. Their descendants are fierce defenders of nature, protecting the flora and fauna of their homelands to the death. While no less beautiful than other aasimar, they are somewhat less charming and take on many bestial features. Most have claws and eyes similar to a cat or other predator, but they can also have antennae, spines, fur, scales, antlers, fangs, or feathers. In this case, it is perhaps best not to ask how their Prime ancestors combined their bloodline with that of a celestial...",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -681,6 +717,41 @@
                     }
                   }
                 }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Prophet",
+        "description": "Blessed with the gift of prophecy, the prophet aasimar are created to reward those that follow the creed of a god with insight into what the future holds for them.  Their abilities turn the tide of battles not through spilled blood but through spoken word.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Celestial Insight",
+            "description": "You cannot be surprised if you are conscious.  In addition, you know the Guidance cantrip.  Charisma is your spellcasting ability for it.",
+            "granted": [
+              { "type": "spell", "options": ["Guidance"], "ability": "cha" }
+            ]
+          },
+          {
+            "name": "Seer's Eyes",
+            "description": "Starting at 3rd level, you can use a bonus action to peer into the future, causing an ephemeral cloth to appear around your eyes, fierce orbs of light pulsing beneath.</p><p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, when a creature within 30 feet of you that can hear you makes an ability check, attack roll, or saving throw, you can use your reaction to add or subtract your proficiency bonus from the total (your choice).  You can choose to do so after you know the roll, but before you know if the roll succeeded or failed.</p><p>You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "D07E378F-4C24-4543-96EF-4912DE88DE3C",
+              "type": "derived",
+              "source": "proficiency",
+              "prereq": 3,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "D07E378F-4C24-4543-96EF-4912DE88DE3C",
+                "hasUses": true,
+                "name": "Seer's Eyes",
+                "type": "a",
+                "prereq": 3,
+                "description": "You peer into the future, causing an ephemeral cloth to appear around your eyes, fierce orbs of light pulsing beneath.</p><p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, when a creature within 30 feet of you that can hear you makes an ability check, attack roll, or saving throw, you can use your reaction to add or subtract {prof} from the total (your choice).  You can choose to do so after you know the roll, but before you know if the roll succeeded or failed."
               }
             ]
           }
