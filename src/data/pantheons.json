@@ -4,7 +4,7 @@
     "gods": [
       {
         "name": "Luminous Being",
-        "gender": "???",
+        "gender": "Female",
         "alignment": "CG",
         "symbol": "A glowing sunburst",
         "portfolio": "-",
@@ -149,7 +149,7 @@
       },
       {
         "name": "The Writer",
-        "gender": "???",
+        "gender": "Female",
         "alignment": "CG",
         "symbol": "-",
         "portfolio": "Prophecy",
