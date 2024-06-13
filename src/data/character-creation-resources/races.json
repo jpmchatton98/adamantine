@@ -1759,7 +1759,7 @@
     "name": "Snailian"
   },
   {
-    "description": "<p>Whether driven by fanatical beliefs, a hunger for personal power, or a genuine wish to help others by whatever means are available, some choose to undergo a ritual transformation that changes their body into an imitation of a true dragon. Other individuals concoct detailed magical experiments on unwilling subjects, exploring the limitations of the blood of dragons. Regardless of origin, the resulting creature is known as a demi-dragon\u0442\u0410\u0424a being that was created rather than born.</p>",
+    "description": "<p>Whether driven by fanatical beliefs, a hunger for personal power, or a genuine wish to help others by whatever means are available, some choose to undergo a ritual transformation that changes their body into an imitation of a true dragon. Other individuals concoct detailed magical experiments on unwilling subjects, exploring the limitations of the blood of dragons. Regardless of origin, the resulting creature is known as a demi-dragon - a being that was created rather than born.</p>",
     "asis": [
       { "str": 2 },
       {
@@ -4880,6 +4880,280 @@
     "name": "Dragonborn"
   },
   {
+    "name": "Scaleborn",
+    "description": "Scaleborn are cousins to dragonborn.  While their more draconic cousins are descended from true dragons, scaleborn are descended from lesser dragons like wyverns, basilisks, drangolins, hydras, and dragon turtles.  They are more diverse than dragonborn, but also tend to be less powerful.",
+    "asis": [{ "str": 1 }, { "con": 1 }, { "wis": 1 }],
+    "maturity": 16,
+    "lifespan": 80,
+    "height": [5, 7],
+    "weight": [175, 200],
+    "category": "Common",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Draconic"],
+    "traits": [
+      {
+        "name": "Natural Armor",
+        "description": "You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+        "granted": [{ "type": "unarmored", "base": 13, "scores": ["dex"] }]
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Aquashell",
+        "description": "Aquashell scaleborn trace their lineages back to dragon turtles, aquatic predators which are closely related to true dragons.  Like their dragonborn cousins, aquashell scaleborn possess a breath weapon, and have a fondness of shiny objects.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Shell Defense",
+            "description": "You have a sturdy shell on your back, providing you ample defense from behind.  Creatures do not gain advantage on attack rolls against you from flanking."
+          },
+          {
+            "name": "Seawyrm",
+            "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
+            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+          },
+          {
+            "name": "Steam Breath",
+            "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of superheated steam in a 15-foot cone. Each creature in that area must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 fire damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "660EA9EE-0DBE-4B80-8F86-95DD1AC857AB",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "660EA9EE-0DBE-4B80-8F86-95DD1AC857AB",
+                "name": "Steam Breath",
+                "hasUses": true,
+                "type": "a",
+                "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} {damage-type} damage. On a successful save, it takes half as much damage.",
+                "variables": {
+                  "damage": {
+                    "1": "1d10",
+                    "5": "2d10",
+                    "11": "3d10",
+                    "17": "4d10"
+                  },
+                  "damage-type": "fire",
+                  "save-type": "Constitution",
+                  "desc": "a cloud of superheated steam"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Barbtail",
+        "description": "Barbtail scaleborn are to dragonborn as wyverns are to dragons.  Their arms hold winged membranes that aren't strong enough to allow them to fly, and their long, slender tails end in venemous stingers.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Glide",
+            "description": "As a reaction you can take when falling while you aren't prone or wearing heavy armor, you can spread your wing membranes and glide, slowing your rate of descent to 20 feet per round. While gliding, you can as part of your movement move up to 40 feet in any horizontal direction, or dive straight down. When you land, you take no falling damage and can land on your feet. You can also start gliding by expending at least 10 feet of movement as part of a high jump."
+          },
+          {
+            "name": "Venemous Stinger",
+            "description": "Your stinging tail is a natural weapon, which you can use to make unarmed strikes. If you hit with your stinger, you deal piercing damage equal to 1d6 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 2d4 poison damage.",
+            "actions": [
+              {
+                "id": "E2463114-32E5-4B75-A883-EA21156991CD",
+                "type": "a",
+                "name": "Stinger",
+                "attack": true,
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 6,
+                    "type": "piercing",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ],
+                "description": "If you hit with your stinger, your target must make a {dc-con} Constitution saving throw. On a failed save, the target takes 2d4 poison damage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Doomclaw",
+        "description": "Doomclaw are a rare and feared subrace of scaleborn.  These tough-scaled titans are descended from the mighty tarrasque, which they draw power from.  They are the largest of the scaleborn, and are nearly impossible to kill.  Doomclaw have a reputation for bringing calamity with them wherever they go, but are not usually the cause of whatever danger befalls the area.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Powerful Build",
+            "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+          },
+          {
+            "name": "Titan's Fury",
+            "description": "Your claws, fangs, and horns are natural weapons, which you can use to make unarmed strikes. If you hit with your claws, you deal slashing damage equal to 1d6 + your Strength modifier.  If you take the Attack action and attack with only your claws, you can use your bonus action to make an additional claw attack.</p><p>If you hit with your fangs, you deal piercing damage equal to 1d8 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained. You can only grapple a single target with your bite, and can't make bite attacks against another creature if you have a grappled target.</p><p>If you hit with your horns, you deal piercing damage equal to 1d4 + your Strength modifier, and the target must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failed save, the target's Armor Class is reduced by 1 until it finishes a long rest. This effect does not stack.",
+            "actions": [
+              {
+                "id": "6CDA93DA-7653-42DA-A460-468DB9AB9E8C",
+                "type": "a",
+                "attack": true,
+                "name": "Claws",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 6,
+                    "type": "slashing",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ]
+              },
+              {
+                "id": "B9EA3B1C-FDEB-4BCA-94AA-DA3A5C921F80",
+                "type": "b",
+                "name": "Claws",
+                "description": "When you take the Attack action and attack only with your claws, you can use your bonus action to make an additional claw attack."
+              },
+              {
+                "id": "070DEEB4-AF93-4B3A-8044-0ED72F378900",
+                "type": "a",
+                "attack": true,
+                "name": "Bite",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 8,
+                    "type": "piercing",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ],
+                "description": "If you hit with your bite attack, the target is grappled (escape DC {dc-str}). Until this grapple ends, the target is restrained. You can only grapple a single target with your bite, and can't make bite attacks against another creature if you have a grappled target."
+              },
+              {
+                "id": "03FE7924-FAD6-4C8C-87DD-E9A8EB7D2ABB",
+                "type": "a",
+                "attack": true,
+                "name": "Horns",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 4,
+                    "type": "piercing",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ],
+                "description": "If you hit with your horns, your target must make a {dc-str} Constitution saving throw.  On a failed save, the target's Armor Class is reduced by 1 until it finishes a long rest.  This effect does not stack."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pluriskull",
+        "description": "Pluriskull scaleborn descend from hydras.  They are born with one head, and grow more heads as they age.  Typically, they have three heads as adults, but can theoretically have as many as six.  These heads possess the same consciousness, but separate brains, and a pluriskull can slowly regrow lost heads.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Multi-Headed",
+            "description": "You have advantage on saving throws against being blinded, charmed, dominated, deafened, frightened, stunned, and knocked unconscious.",
+            "granted": [
+              {
+                "type": "condition-advantage",
+                "options": [
+                  "Blinded",
+                  "Charmed",
+                  "Dominated",
+                  "Frightened",
+                  "Stunned",
+                  "Unconscious"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wakeful",
+            "description": "When one of the your heads is asleep, at least one head is awake.  You can choose to remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest."
+          }
+        ]
+      },
+      {
+        "name": "Shieldscale",
+        "description": "Shieldscales are descended from drangolins, draconic pangolins with fiery natures.  Their scaleborn descendants aren't quite as sturdy, but can burrow almost as well.  They tend to live underground, carving out burrow-like homes.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Explosive Eruption",
+            "description": "As an action while burrowing within 5 feet of the surface, you can explosively erupt through it, forcing all creatures within 10 feet of your exit point to make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d6 bludgeoning and 1d6 fire damage. On a successful save, it takes half as much damage. Each instance of damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p><p>You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "uses": {
+              "id": "4D3907CA-4E0E-461F-B207-394D42CFD9E7",
+              "type": "derived",
+              "source": "proficiency",
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "4D3907CA-4E0E-461F-B207-394D42CFD9E7",
+                "name": "Explosive Eruption",
+                "hasUses": true,
+                "type": "a",
+                "description": "As an action while burrowing within 5 feet of the surface, you can explosively erupt through it, forcing all creatures within 10 feet of your exit point to make a DC {dc-con} Dexterity saving throw. On a failed save, the creature takes {damage} bludgeoning damage and {damage} fire damage. On a successful save, it takes half as much damage.",
+                "variables": {
+                  "damage": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "Tunneler",
+            "description": "You have a burrowing speed of 20 feet, which you can use to move through dirt, mud, and sand. Burrowing through solid stone halves this speed. You may choose to leave a hole large enough for Medium or smaller creatures to follow unhindered by reducing your burrowing speed by half.",
+            "granted": [{ "type": "speed", "speed": "burrow", "amount": 20 }]
+          }
+        ]
+      },
+      {
+        "name": "Stonegaze",
+        "description": "Stonegaze scaleborn descend from basilisks.  Despite what their names and ancestries might imply, they have to exert considerable effort to make their gaze dangerous, and only powerful scaleborn can fully petrify their victims.  The magic in their eyes is sapped by this effect however, which usually causes temporary blindness.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Petrifying Gaze",
+            "description": "As an action on your turn, you can fix your gaze on a creature that you can see and that can see you within 30 feet, forcing it to make an Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus).  On a failed save, the creature is restrained until the end of your next turn, as the outer layers of its body begin to grow rigid like stone.  You must concentrate on this effect, as if concentrating on a spell.</p><p>You can use your Petrifying Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><p>Once you reach 5th level, your gaze strengthens.  The target remains restrained for 1 minute, and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.  If you maintain your concentration on this effect for the entire possible duration, the creature is petrified until the effect is removed.  While a creature is petrified by this effect, you are blinded.",
+            "uses": [
+              {
+                "id": "AD7157FF-EE8C-4509-AE1D-2E5F8EC2BFA9",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 2
+              }
+            ],
+            "actions": [
+              {
+                "id": "AD7157FF-EE8C-4509-AE1D-2E5F8EC2BFA9",
+                "hasUses": true,
+                "type": "a",
+                "name": "Petrifying Gaze",
+                "description": "You fix your gaze on a creature, forcing it to make a DC {dc-con} Constitution saving throw.  On a failed save, {petrify}  You must concentrate on this effect, as if concentrating on a spell.",
+                "variables": {
+                  "petrify": {
+                    "1": "the creature is restrained until the end of your next turn.",
+                    "5": "the creature is restrained for 1 minute, and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.  If you maintain your concentration on this effect for the entire possible duration, the creature is petrified until the effect is removed.  While a creature is petrified by this effect, you are blinded."
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "description": "Born from legends of beheaded cavaliers, dullahans are often brought to serve as the cavalry of the Raven Queen.  Warwearied and unpaid, keeping these soldiers in rank and file is no easy task, but their queen manages to keep them on retainer by finding and witholding their lost heads.  Not all heads are claimed by the queen, of course.  It is precisely in the pursuit of their heads that causes many dullahans take up a life of adventuring.",
     "asis": [
       { "str": 1 },
@@ -6084,6 +6358,17 @@
               "amount": 1,
               "reset": 1
             }
+          }
+        ]
+      },
+      {
+        "name": "Simitail",
+        "description": "Simitail wealdkin, commonly called monkeyfolk, are the most human-like wealdkin.  They closely resemble monkeys such as marmosets, capuchins, and howler monkeys.  Their prehensile tails allow them to make their homes in trees, where they form tight-knit communities that violently eschew outsiders.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Prehensile Tail",
+            "description": "You have a long tail that you can use almost like a third arm.  The tail can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
           }
         ]
       },
@@ -8639,7 +8924,7 @@
       },
       {
         "name": "Glide",
-        "description": "If you are not incapacitated or wearing heavy armor, you can extend your skin membranes and glide. When you do so, you can perform the following aerial maneuvers:<ul><li>When you fall, you can move up to 5 feet horizontally for every 1 foot you descend.</li><li>When you would take damage from a fall, you can use your reaction to reduce the fall's damage to 0.</li></ul>"
+        "description": "As a reaction you can take when falling while you aren't prone or wearing heavy armor, you can spread your skin membranes and glide, slowing your rate of descent to 20 feet per round. While gliding, you can as part of your movement move up to 40 feet in any horizontal direction, or dive straight down. When you land, you take no falling damage and can land on your feet. You can also start gliding by expending at least 10 feet of movement as part of a high jump."
       },
       {
         "name": "Hadozee Resilience",
@@ -11211,7 +11496,7 @@
         "traits": [
           {
             "name": "Leaf Glide",
-            "description": "If you are not incapacitated or wearing heavy armor, you can extend leaves and glide. When you do so, you can perform the following aerial maneuvers:<ul><li>When you fall, you can move up to 5 feet horizontally for every 1 foot you descend.</li><li>When you would take damage from a fall, you can use your reaction to reduce the fall's damage to 0.</li></ul>"
+            "description": "As a reaction you can take when falling while you aren't prone or wearing heavy armor, you can spread your leaves and glide, slowing your rate of descent to 20 feet per round. While gliding, you can as part of your movement move up to 40 feet in any horizontal direction, or dive straight down. When you land, you take no falling damage and can land on your feet. You can also start gliding by expending at least 10 feet of movement as part of a high jump."
           }
         ]
       },
@@ -12382,7 +12667,7 @@
           },
           {
             "name": "Wakeful",
-            "description": "When one of the your heads is asleep, its other head is awake.  You can choose to remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest."
+            "description": "When one of the your heads is asleep, your other head is awake.  You can choose to remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest."
           }
         ]
       },
@@ -12442,6 +12727,49 @@
         ]
       },
       {
+        "name": "Sasquatch",
+        "description": "Sasquatch, bigfoot, yowie, skunk ape.  Whatever you call these hairy brutes, they are cousins to yetis, but are typically found in more temperate climates.  Their fur is typically brown, black, or reddish, and they are famously elusive.  Some explorers make entire careers out of trying to prove their existence, only to come up dry.",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Claws",
+            "description": "Your curved claws are natural wepaons with which you can make unarmed strikes.  They deal slashing damage equal to 1d6 + your Strength modifier on a hit.</p><p>In addition, you have a climbing speed equal to your walking speed.",
+            "actions": [
+              {
+                "id": "9FEF00C9-4570-4AA0-80E1-747EA1371BB6",
+                "type": "a",
+                "attack": true,
+                "name": "Claws",
+                "damage": [
+                  {
+                    "dice": 1,
+                    "die": 8,
+                    "type": "slashing",
+                    "mod": true,
+                    "unarmed": true
+                  }
+                ]
+              }
+            ],
+            "granted": [
+              {
+                "type": "speed",
+                "speed": "climb",
+                "amount": -1
+              }
+            ]
+          },
+          {
+            "name": "Keen Smell",
+            "description": "You have advantage on Wisdom (Perception) checks that rely on smell."
+          },
+          {
+            "name": "Mask of the Wild",
+            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          }
+        ]
+      },
+      {
         "name": "Troll",
         "description": "Trolls are tall, lanky giants with green, rubbery skin. Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. Born with horrific appetites, trolls eat anything they can catch and devour.",
         "asis": [],
@@ -12492,7 +12820,7 @@
           },
           {
             "name": "Iceborn Predator",
-            "description": "You are adapted to travel in sub-zero conditions. You are resistant to cold damage, are acclimated to extreme cold, and have advantage on Dexterity (stealth) checks in snowy or icy terrain.",
+            "description": "You are adapted to travel in sub-zero conditions. You are resistant to cold damage, are acclimated to extreme cold, and have advantage on Dexterity (Stealth) checks in snowy or icy terrain.",
             "granted": [{ "type": "damage-resistance", "options": ["Cold"] }]
           }
         ]
@@ -17409,7 +17737,7 @@
       },
       {
         "name": "Mindsap Gaze",
-        "description": "As an action on your turn, you can fix your gaze on a creature you can see within 30 feet of you, forcing it to make an Intelligence saving throw (DC = 8 + your Charisma modifier + your proficiency bonus).  On a failed save, the creature is charmed by you until the start of your next turn.  The charmed creature is friendly to you.  When the effect ends, the creature knows it was charmed by you.</p><p>You can use your Mindsap Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+        "description": "As an action on your turn, you can fix your gaze on a creature that can see you within 30 feet, forcing it to make an Intelligence saving throw (DC = 8 + your Charisma modifier + your proficiency bonus).  On a failed save, the creature is charmed by you until the start of your next turn.  The charmed creature is friendly to you.  When the effect ends, the creature knows it was charmed by you.</p><p>You can use your Mindsap Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
         "uses": [
           {
             "id": "DEC8CBD7-26FC-46CB-9ADF-EE27B0A3310C",
