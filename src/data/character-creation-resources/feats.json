@@ -2383,6 +2383,24 @@
     "description": "The innate resistance to magic that angels possess extends to you. You have advantage on saving throws against spells and other magical effects."
   },
   {
+    "name": "Melding Spores",
+    "prereq": [
+      {
+        "race": ["myconid"]
+      }
+    ],
+    "type": "racial",
+    "description": "Your spores increase in strength, granting you the ability to truly meld with nearby creatures.  When you use your Rapport Spores trait, you can force any the affected creatures to make a Wisdom saving throw (DC = 8 + your Wisdom modifier + your proficiency bonus).  A creature can willingly fail this saving throw.</p><p>On a failed save, a creature is charmed by you and all of the other creatures affected by your spores for 1 hour.  While charmed in this way, the creature feels intense pacifistic instincts, and avoids all harmful actions, direct and indirect.  An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+    "uses": [
+      {
+        "id": "67E4EA77-193D-44AD-A5BD-69F715018171",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Heavenly Rebirth",
     "prereq": [
       {
@@ -3611,6 +3629,7 @@
           "lanternfolk",
           "leshy",
           "mummy",
+          "myconid",
           "reborn",
           "skeleton",
           "tiefling",
@@ -3653,6 +3672,7 @@
           "lanternfolk",
           "leshy",
           "mummy",
+          "myconid",
           "reborn",
           "skeleton",
           "tiefling",
@@ -4999,7 +5019,7 @@
     "name": "Leafspeak",
     "prereq": [
       {
-        "race": ["koradi", "leshy"]
+        "race": ["koradi", "leshy", "myconid"]
       }
     ],
     "type": "racial",

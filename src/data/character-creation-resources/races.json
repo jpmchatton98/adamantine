@@ -6362,8 +6362,8 @@
         ]
       },
       {
-        "name": "Simitail",
-        "description": "Simitail wealdkin, commonly called monkeyfolk, are the most human-like wealdkin.  They closely resemble monkeys such as marmosets, capuchins, and howler monkeys.  Their prehensile tails allow them to make their homes in trees, where they form tight-knit communities that violently eschew outsiders.",
+        "name": "Ringtail",
+        "description": "Ringtail wealdkin, commonly called monkeyfolk or lemurkin, are the most human-like wealdkin.  They closely resemble primates such as capuchins, lemurs, and marmosets.  Their prehensile tails allow them to make their homes in trees, where they form tight-knit communities that violently eschew outsiders.",
         "asis": [{ "wis": 1 }],
         "traits": [
           {
@@ -6752,7 +6752,7 @@
           },
           {
             "name": "Stone Thrower",
-            "description": "As an action, you can pick up a large stone or rip a chunk of natural stone out of the ground and make the attack with it. The stone is a simple melee weapon with the thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, it deals bludgeoning damage equal to 1d6 + your Strength modifier. A creature struck by this stone must make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "description": "As an action, you can pick up a large stone or rip a chunk of natural stone out of the ground and make the attack with it. The stone is a simple melee weapon with the thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, it deals bludgeoning damage equal to 1d6 + your Strength modifier.</p><p>When you hit a creature with a stone, you can force the target to make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can force this saving throw a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
             "uses": [
               {
                 "id": "2C095F5D-3492-439A-B391-13C796B562D2",
@@ -11610,6 +11610,50 @@
     "name": "Leshy"
   },
   {
+    "description": "The myconids are a unique and enigmatic race of mushroom folk. Their history is rich with the lore of ancient druidic arts, which they shared with other races, becoming revered as wise and benevolent teachers. Living in harmony with the wilds, myconids adopt a nomadic, tribal lifestyle, continuously moving to remain in balance with the land. While most myconids are content with their relationship with nature, a select few are born with an insatiable curiosity and adventurous spirit, seeking to experience the diversity and complexities of the civilized world.",
+    "asis": [{ "con": 1 }, { "wis": 2 }],
+    "maturity": 20,
+    "lifespan": 1000,
+    "height": [2, 4],
+    "weight": [15, 50],
+    "category": "Uncommon",
+    "type": "Plant",
+    "size": -1,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Undercommon"],
+    "traits": [
+      {
+        "name": "Fungal Healing",
+        "description": "If you lose a body part, you can re-grow it over the course of 1d4 long rests."
+      },
+      {
+        "name": "False Appearance",
+        "description": "While you remain motionless, you are nearly identical to an ordinary mushroom, gaining advantage on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Druidic Heritage",
+        "description": "You know the Druidcraft cantrip.  Wisdom is your spellcasting ability for it.",
+        "granted": [
+          { "type": "spell", "options": ["Druidcraft"], "ability": "wis" }
+        ]
+      },
+      {
+        "name": "Rapport Spores",
+        "description": "As an action, you can release a cloud of spores that extends from you in a 30-foot radius. These spores can go around corners and affect only creatures of your choice. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour. They do not need to share a language, but a creature needs to be able to understand at least one language.</p><p>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+        "uses": [
+          {
+            "id": "1BEE6C7A-2FB3-461B-A3AF-7CC66C25DBFF",
+            "type": "derived",
+            "source": "proficiency",
+            "reset": 2
+          }
+        ]
+      }
+    ],
+    "name": "Myconid"
+  },
+  {
     "description": "Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.",
     "asis": [{ "con": 2 }],
     "maturity": 10,
@@ -13313,6 +13357,43 @@
               "amount": 1,
               "reset": 2
             }
+          }
+        ]
+      },
+      {
+        "name": "Solar",
+        "description": "These panserbjørn have a mystical connection to divine energies.  They are said to be be blessed by the sun itself.  Their fur is predominantly black, with distinctive a golden-brown chest marking resembling the sun.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Solar Blessing",
+            "description": "You have resistance to radiant damage.",
+            "granted": [
+              {
+                "type": "damage-resistance",
+                "options": ["Radiant"]
+              }
+            ]
+          },
+          {
+            "name": "Divine Ancestry",
+            "description": "You have proficiency in the Religion skill, and you know one cantrip of your choice from the Divine spell list.  Wisdom is your spellcasting ability for it.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Religion"],
+                "level": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "24952A9D-6233-43CA-93A5-36B6644E70AD",
+                "type": "spell",
+                "list": "divine",
+                "level": 0,
+                "ability": "wis"
+              }
+            ]
           }
         ]
       },
