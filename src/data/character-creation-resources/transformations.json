@@ -194,6 +194,904 @@
     ]
   },
   {
+    "name": "Draconian",
+    "description": "Unlike becoming a half-dragon or draconic sorcerer, this transformation is deeply unnatural and rarely willing.  In the beginning, victims appear similarly to how they did before, with only slight signs of the corruption. In the early stages it becomes clearly visible, but their body type remains generally the same. Horns or similar features might appear at this stage. In its late stage they begin to bear resemblance closer to that of a dragonborn or a half-dragon, and they also lose any features atypical to them, like ears or hair. In its final stage, their body has morphed beyond recognition. Their appearance is more akin to that of a true dragon forcibly mangled into a humanoid shape. People who knew you before couldn't possibly recognize you now.",
+    "abilityScore": "Constitution",
+    "scoreAmount": 13,
+    "prereq": {
+      "mechanical": "",
+      "roleplay": "You must have encountered a locus of draconic magic.  Most commonly, this transformation is a result of finding a cursed object within a dragon's hoard, but other methods could include being directly cursed by a powerful dragon, or willingly undergoing this transformation with the help of a draconic sponsor."
+    },
+    "milestones": [
+      "Absorbing the power of a powerful dragon by eating its heart",
+      "Being cursed or blessed by a draconic deity or greatwyrm",
+      "Acquiring a vast hoard",
+      "Harnessing draconic magic with the use of rituals or alchemical concoctions"
+    ],
+    "levels": [
+      {
+        "boons": [
+          {
+            "name": "Draconic Lineage",
+            "description": "Your curse manifested from a specific breed of dragon: your Draconic Lineage. Your body is infused with powerful draconic magic. You must choose a type of dragon below, which affects other features of this transformation.<table><thead><tr><th>Dragon</th><th>Damage Type</th><th>Shape</th><th>Saving Throw</th></tr></thead><tbody><tr><td>Lunar</td><td>Cold</td><td>Cone</td><td>Constitution</td></tr><tr><td>Solar</td><td>Radiant</td><td>Cone</td><td>Constitution</td></tr><tr><td>Void</td><td>Radiant</td><td>Cone</td><td>Dexterity</td></tr><tr><td>Black</td><td>Acid</td><td>Line</td><td>Dexterity</td></tr><tr><td>Blue</td><td>Lightning</td><td>Line</td><td>Dexterity</td></tr><tr><td>Green</td><td>Poison</td><td>Cone</td><td>Constitution</td></tr><tr><td>Red</td><td>Fire</td><td>Cone</td><td>Dexterity</td></tr><tr><td>White</td><td>Cold</td><td>Cone</td><td>Constitution</td></tr><tr><td>Amethyst</td><td>Force</td><td>Cone</td><td>Strength</td></tr><tr><td>Crystal</td><td>Radiant</td><td>Cone</td><td>Dexterity</td></tr><tr><td>Emerald</td><td>Psychic</td><td>Cone</td><td>Intelligence</td></tr><tr><td>Moonstone</td><td>Radiant</td><td>Line</td><td>Dexterity</td></tr><tr><td>Obsidian</td><td>Fire</td><td>Cone</td><td>Dexterity</td></tr><tr><td>Ruby</td><td>Fire</td><td>Cone</td><td>Dexterity</td></tr><tr><td>Sapphire</td><td>Thunder</td><td>Cone</td><td>Constitution</td></tr><tr><td>Topaz</td><td>Necrotic</td><td>Cone</td><td>Constitution</td></tr><tr><td>Brass</td><td>Fire</td><td>Line</td><td>Dexterity</td></tr><tr><td>Bronze</td><td>Lightning</td><td>Line</td><td>Dexterity</td></tr><tr><td>Copper</td><td>Acid</td><td>Line</td><td>Dexterity</td></tr><tr><td>Gold</td><td>Fire</td><td>Cone</td><td>Dexterity</td></tr><tr><td>Platinum</td><td>Radiant</td><td>Cone</td><td>Dexterity</td></tr><tr><td>Silver</td><td>Cold</td><td>Cone</td><td>Constitution</td></tr><tr><td>Steel</td><td>Poison</td><td>Cone</td><td>Constitution</td></tr><tr><td>Tungsten</td><td>Thunder</td><td>Cone</td><td>Constitution</td></tr><tr><td>Deep</td><td>Psychic</td><td>Cone</td><td>Wisdom</td></tr><tr><td>Shadow</td><td>Necrotic</td><td>Cone</td><td>Constitution</td></tr></tbody></table>",
+            "subFeatures": [
+              {
+                "name": "Breath Weapon",
+                "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone or 30-foot line (determined by your Draconic Legacy above). Each creature in that area must make a saving throw, the type of which is determined by your Draconic Legacy. On a failed save, the creature takes damage equal to a number of d10s equal to your proficiency bonus, of your Draconic Legacy type. On a successful save, it takes half as much damage.</p><p>You can use your breath weapon a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "F17E0784-A788-4FE0-84C9-409983E5F344",
+                    "type": "derived",
+                    "source": "proficiency",
+                    "reset": 2
+                  }
+                ]
+              },
+              {
+                "name": "Infusion",
+                "description": "Your attacks deal an additional 1d4 damage of your Draconic Legacy type. You gain resistance to the same damage type. If at any point you acquire resistance to the same type from a different source, instead reduce the damage taken by your proficiency bonus after accounting for resistance."
+              }
+            ],
+            "choices": [
+              {
+                "id": "0109DA25-964E-48D7-B425-63F71EAFCB44",
+                "type": "trait",
+                "options": [
+                  {
+                    "name": "Lunar",
+                    "traits": [
+                      {
+                        "name": "Lunar Dragon Legacy",
+                        "description": "Your draconic damage type is cold.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Cold"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Solar",
+                    "traits": [
+                      {
+                        "name": "Solar Dragon Legacy",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Void",
+                    "traits": [
+                      {
+                        "name": "Void Dragon Legacy",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Black",
+                    "traits": [
+                      {
+                        "name": "Black Dragon Legacy",
+                        "description": "Your draconic damage type is acid.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Acid"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Blue",
+                    "traits": [
+                      {
+                        "name": "Blue Dragon Legacy",
+                        "description": "Your draconic damage type is lightning.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Lightning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Green",
+                    "traits": [
+                      {
+                        "name": "Green Dragon Legacy",
+                        "description": "Your draconic damage type is poison.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Poison"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Red",
+                    "traits": [
+                      {
+                        "name": "Red Dragon Legacy",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "White",
+                    "traits": [
+                      {
+                        "name": "White Dragon Legacy",
+                        "description": "Your draconic damage type is cold.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Cold"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Amethyst",
+                    "traits": [
+                      {
+                        "name": "Amethyst Dragon Legacy",
+                        "description": "Your draconic damage type is force.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Force"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Crystal",
+                    "traits": [
+                      {
+                        "name": "Crystal Dragon Legacy",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Emerald",
+                    "traits": [
+                      {
+                        "name": "Emerald Dragon Legacy",
+                        "description": "Your draconic damage type is psychic.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Psychic"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Moonstone",
+                    "traits": [
+                      {
+                        "name": "Moonstone Dragon Legacy",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Obsidian",
+                    "traits": [
+                      {
+                        "name": "Obsidian Dragon Legacy",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ruby",
+                    "traits": [
+                      {
+                        "name": "Ruby Dragon Legacy",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Sapphire",
+                    "traits": [
+                      {
+                        "name": "Sapphire Dragon Legacy",
+                        "description": "Your draconic damage type is thunder.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Thunder"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Topaz",
+                    "traits": [
+                      {
+                        "name": "Topaz Dragon Legacy",
+                        "description": "Your draconic damage type is necrotic.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Necrotic"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Brass",
+                    "traits": [
+                      {
+                        "name": "Brass Dragon Legacy",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bronze",
+                    "traits": [
+                      {
+                        "name": "Bronze Dragon Legacy",
+                        "description": "Your draconic damage type is lightning.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Lightning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Copper",
+                    "traits": [
+                      {
+                        "name": "Copper Dragon Legacy",
+                        "description": "Your draconic damage type is acid.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Acid"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gold",
+                    "traits": [
+                      {
+                        "name": "Gold Dragon Legacy",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Platinum",
+                    "traits": [
+                      {
+                        "name": "Platinum Dragon Legacy",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Silver",
+                    "traits": [
+                      {
+                        "name": "Silver Dragon Legacy",
+                        "description": "Your draconic damage type is cold.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Cold"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Steel",
+                    "traits": [
+                      {
+                        "name": "Steel Dragon Legacy",
+                        "description": "Your draconic damage type is poison.",
+                        "granted": [
+                          { "type": "damage-resistance", "options": ["Poison"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tungsten",
+                    "traits": [
+                      {
+                        "name": "Tungsten Dragon Legacy",
+                        "description": "Your draconic damage type is thunder.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Thunder"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Shadow",
+                    "traits": [
+                      {
+                        "name": "Shadow Dragon Legacy",
+                        "description": "Your draconic damage type is necrotic.",
+                        "granted": [
+                          {
+                            "type": "damage-resistance",
+                            "options": ["Necrotic"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Draconic Form",
+            "description": "Your Constitution score increases by 2 and your Strength score increases by 1. An ability score cannot be increased beyond 16 this way.</p><p>You become a Dragon in addition to any other creature types you are. Spells and abilities that affect Dragons of a specific CR have no effect on you.",
+            "granted": [
+              { "type": "asi", "score": "con", "amount": 2 },
+              { "type": "asi", "score": "str", "amount": 1 },
+              { "type": "creature-type", "options": ["Dragon"] }
+            ]
+          }
+        ],
+        "flaw": {
+          "name": "Object of Obsession",
+          "description": "You have an obsession with a specific object or course of action.  Work with the DM to determine what this obsession is.  If you finish a long rest without fulfilling your desire since your last long rest, you gain a level of exhaustion. Exhaustion gained in this way cannot exceed 5 levels."
+        }
+      },
+      {
+        "boons": [
+          {
+            "name": "Loyal Servants",
+            "description": "During a short rest you may magically create a number of kobolds equal to your proficiency bonus to serve you. They use the Kobold Scalepriest stat block, however they gain additional hp equal to your level. They follow all of your commands to the best of their ability. You can replace kobolds during a short rest but you can never have more than your proficiency bonus.",
+            "granted": [
+              {
+                "type": "companion",
+                "key": "Kobold Scalepriest"
+              }
+            ]
+          },
+          {
+            "name": "Draconic Fury",
+            "description": "Starting at 2nd level, you can use a bonus action to manifest a draconic natural weapon out of your body that you are proficient with and make an attack with it.  The effects of the attack are determined by which natural weapon is used.</p><p>You can use your natural weapons a number of times equal to your proficiency bonus, and regain all expended uses when you finish a short or long rest.",
+            "subFeatures": [
+              {
+                "name": "Claws",
+                "description": "Make two melee weapon attacks against creatures within 5 feet of you.  On a hit, each attack deals magical slashing damage equal to 1d8 + your Strength modifier."
+              },
+              {
+                "name": "Horns",
+                "description": "You move up to twice your speed in a straight line.  You can move through the spaces of other creatures, and each creature you come into contact with must make a Strength saving throw, or they take magical bludgeoning damage equal 1d8 + your Strength modifier and are forcefully moved with you until you finish your charge, taking no damage, not being moved with you, and being knocked prone on a successful save."
+              },
+              {
+                "name": "Tail",
+                "description": "Make a melee weapon attack against a creature within 15 feet of you.  On a hit, the target takes magical bludgeoning damage equal to 2d8 + your Strength modifier and is knocked prone."
+              },
+              {
+                "name": "Wings",
+                "description": "All creatures within 10 feet of you must succeed on a Strength saving throw or be knocked prone and take magical bludgeoning damage equal to 2d8 + your Strength modifier. You can then move up to half your speed without provoking attacks of opportunity."
+              }
+            ],
+            "uses": [
+              {
+                "id": "7548BF28-E414-42FE-BDA6-F3F62334E8DD",
+                "type": "derived",
+                "source": "proficiency",
+                "reset": 1
+              }
+            ]
+          },
+          {
+            "name": "Dragon Rot",
+            "description": "You learn to weave a simple draconic disease. When you hit a creature with an attack, you can force them to make a Constitution saving throw. Pn a failed save, they take 2d4 damage of your Draconic Legacy type.</p><p>At the end of each of the creature's turns, they must repeat the saving throw.  On a failed save, they take the damage once again, ending the effect on a success.  You may only have one creature affected by Dragon Rot at the same time. "
+          }
+        ],
+        "flaw": {
+          "name": "Hideous Appearance",
+          "description": "Your appearance has grotesquely transformed. You have horns, scales, and perhaps the beginnings of a tail and wings ripping through your flesh. Regardless of your true form, you're horrific to behold. You can suspend this form and manifest the appearance of the humanoid you once were, but this is taxing and requires concentration. This form is not permanent, and moments of stress are likely to reveal your true nature. Your true form is revealed in the following situations:<ul><li>Concentrating on a spell.</li><li>Gaining the unconscious condition.</li><li>Entering hallowed ground.</li><li>Choosing to reveal yourself.</li></ul>In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form."
+        }
+      },
+      {
+        "boons": [
+          {
+            "name": "Draconic Wings",
+            "description": "Beginning at 3rd level, you grow large, scaled wings like those of your source dragon.  You gain a flying speed equal to your walking speed.",
+            "granted": [
+              {
+                "type": "speed",
+                "speed": "fly",
+                "amount": -1
+              }
+            ]
+          },
+          {
+            "name": "Frightful Presence",
+            "description": "At the beginning on your turn, you may force each creature of your choice within 60 feet of you that is aware of you to make a Wisdom saving throw or become frightened by you until the start of your next turn. Once a creature succeeds on this saving throw it becomes immune to your Frightful Presence for the next 24 hours."
+          },
+          {
+            "name": "Elemental Mastery",
+            "description": "As your draconic power grows so does your mastery over the elements. When you deal damage of your Draconic Legacy type, it cannot be reduced by any means. Additionally, you gain immunity to the same damage type.",
+            "choices": [
+              {
+                "id": "0109DA25-964E-48D7-B425-63F71EAFCB44",
+                "type": "trait",
+                "options": [
+                  {
+                    "name": "Lunar",
+                    "traits": [
+                      {
+                        "name": "Lunar Elemental Mastery",
+                        "description": "Your draconic damage type is cold.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Cold"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Solar",
+                    "traits": [
+                      {
+                        "name": "Solar Elemental Mastery",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Void",
+                    "traits": [
+                      {
+                        "name": "Void Elemental Mastery",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Black",
+                    "traits": [
+                      {
+                        "name": "Black Elemental Mastery",
+                        "description": "Your draconic damage type is acid.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Acid"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Blue",
+                    "traits": [
+                      {
+                        "name": "Blue Elemental Mastery",
+                        "description": "Your draconic damage type is lightning.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Lightning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Green",
+                    "traits": [
+                      {
+                        "name": "Green Elemental Mastery",
+                        "description": "Your draconic damage type is poison.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Poison"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Red",
+                    "traits": [
+                      {
+                        "name": "Red Elemental Mastery",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "White",
+                    "traits": [
+                      {
+                        "name": "White Elemental Mastery",
+                        "description": "Your draconic damage type is cold.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Cold"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Amethyst",
+                    "traits": [
+                      {
+                        "name": "Amethyst Elemental Mastery",
+                        "description": "Your draconic damage type is force.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Force"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Crystal",
+                    "traits": [
+                      {
+                        "name": "Crystal Elemental Mastery",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Emerald",
+                    "traits": [
+                      {
+                        "name": "Emerald Elemental Mastery",
+                        "description": "Your draconic damage type is psychic.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Psychic"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Moonstone",
+                    "traits": [
+                      {
+                        "name": "Moonstone Elemental Mastery",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Obsidian",
+                    "traits": [
+                      {
+                        "name": "Obsidian Elemental Mastery",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ruby",
+                    "traits": [
+                      {
+                        "name": "Ruby Elemental Mastery",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Sapphire",
+                    "traits": [
+                      {
+                        "name": "Sapphire Elemental Mastery",
+                        "description": "Your draconic damage type is thunder.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Thunder"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Topaz",
+                    "traits": [
+                      {
+                        "name": "Topaz Elemental Mastery",
+                        "description": "Your draconic damage type is necrotic.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Necrotic"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Brass",
+                    "traits": [
+                      {
+                        "name": "Brass Elemental Mastery",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bronze",
+                    "traits": [
+                      {
+                        "name": "Bronze Elemental Mastery",
+                        "description": "Your draconic damage type is lightning.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Lightning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Copper",
+                    "traits": [
+                      {
+                        "name": "Copper Elemental Mastery",
+                        "description": "Your draconic damage type is acid.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Acid"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gold",
+                    "traits": [
+                      {
+                        "name": "Gold Elemental Mastery",
+                        "description": "Your draconic damage type is fire.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Fire"] },
+                          {
+                            "type": "condition-advantage",
+                            "options": ["Burning"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Platinum",
+                    "traits": [
+                      {
+                        "name": "Platinum Elemental Mastery",
+                        "description": "Your draconic damage type is radiant.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Radiant"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Silver",
+                    "traits": [
+                      {
+                        "name": "Silver Elemental Mastery",
+                        "description": "Your draconic damage type is cold.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Cold"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Steel",
+                    "traits": [
+                      {
+                        "name": "Steel Elemental Mastery",
+                        "description": "Your draconic damage type is poison.",
+                        "granted": [
+                          { "type": "damage-immunity", "options": ["Poison"] }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tungsten",
+                    "traits": [
+                      {
+                        "name": "Tungsten Elemental Mastery",
+                        "description": "Your draconic damage type is thunder.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Thunder"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Shadow",
+                    "traits": [
+                      {
+                        "name": "Shadow Elemental Mastery",
+                        "description": "Your draconic damage type is necrotic.",
+                        "granted": [
+                          {
+                            "type": "damage-immunity",
+                            "options": ["Necrotic"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Shifting Form",
+            "description": "Your body has begun to lose its cohesion, softening and shifting like thick jelly. You take no extra damage from critical hits due to the shuffling of your internal organs. Whenever you make a melee or ranged attack using your Eldritch Limbs, you deal an additional 1d6 acid damage. You gain resistance to acid damage.",
+            "granted": [
+              { "type": "condition-immunity", "options": ["Critical Hits"] },
+              { "type": "damage-resistance", "options": ["Acid"] }
+            ]
+          }
+        ],
+        "flaw": {
+          "name": "Draconic Ego",
+          "description": "Alongside the power of true dragons, you also obtain their ego. Once per turn when you miss an attack, fail a saving throw, or fail an ability check by 5 or more, you take 2d4 psychic damage. This damage cannot be reduced in any way."
+        }
+      },
+      {
+        "boons": [
+          {
+            "name": "Improved Breath Weapon",
+            "description": "Your breath weapon increases in size to a 30-foot cone or 60-foot line, and its damage increases to double the number of d10s."
+          },
+          {
+            "name": "Hardened Scales",
+            "description": "The scales covering your body grow incredibly strong, granting you resistance to bludgeoning, slashing and piercing damage.",
+            "granted": [
+              {
+                "type": "damage-resistance",
+                "options": ["Bludgeoning", "Piercing", "Slashing"]
+              }
+            ]
+          },
+          {
+            "name": "True Infusion",
+            "description": "Your attacks now deal an additional 2d8 damage of your Draconic Legacy type.  In addition, when you cast a spell that deals the same damage type, it is treated as though you had cast it with a spell slot one level higher, and it cannot be counterspelled or dispelled."
+          }
+        ],
+        "flaw": {
+          "name": "Insatiable Pride",
+          "description": "You finally see it, how could you be so blind? All of those pests only seek to backstab you, they wish to steal your riches, to overthrow you. No. You won't let them. Their tricks and illusion won't fool you anymore. You never count as a willing creature for the purpose of spells and features, and cannot willingly fail saving throws."
+        }
+      }
+    ]
+  },
+  {
     "name": "Fey",
     "description": "The fey are changeable beings of great power and even greater danger. No two fey are quite alike, but their tie to the natural world is universal. Mortals cannot comprehend the level of true freedom the faerie people feel. To know such freedom is to change entirely.",
     "abilityScore": "Charisma",
