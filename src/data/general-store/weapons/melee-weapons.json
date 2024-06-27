@@ -957,7 +957,7 @@
         "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
       }
     ],
-    "type": 1
+    "type": 2
   },
   {
     "class": "Polearm",
