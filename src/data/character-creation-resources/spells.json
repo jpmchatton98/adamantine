@@ -15615,7 +15615,7 @@
       "If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration.",
       "At the end of the duration, affected objects and creatures fall back down."
     ],
-    "lists": ["Arcane", "Primal", "Psionic"],
+    "lists": ["Arcane", "Primal", "Psionic", "Occult"],
     "ritual": 0,
     "type": "save",
     "save": "dex"
@@ -22773,7 +22773,7 @@
       "As a reaction when you succeed on a saving throw against a spell, you convert some of the waste magical energy to electricity and send it rocketing back, dealing 1d10 lightning damage per level of the spell to the spell's caster."
     ],
     "lists": ["Arcane", "Elemental", "Melodic", "Primal", "Invention"],
-    "element": "air",
+    "element": "Air",
     "damage": [
       {
         "dice": 1,
@@ -22795,7 +22795,7 @@
       "For the next minute, that creature has disadvantage on saving throws against spells and magical effects you control that deal lightning damage, and lightning damage you deal ignores that creature's damage resistance."
     ],
     "lists": ["Arcane", "Elemental", "Primal", "Invention"],
-    "element": "air"
+    "element": "Air"
   },
   {
     "name": "Lightning Burst",
@@ -22809,7 +22809,7 @@
       "A crackling ball of lightning kindles into existence at a point you can see, then rapidly expands. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 lightning damage on a failed save, or half as much damage on a successful one."
     ],
     "lists": ["Arcane", "Elemental", "Primal", "Invention"],
-    "element": "air",
+    "element": "Air",
     "type": "save",
     "save": "dex",
     "damage": [
@@ -27324,7 +27324,12 @@
       "The target must succeed on a Dexterity saving throw or have the AC bonus offered by its armor reduced by a cumulative 2 until the target takes an action to adjust it. Armor reduced to an AC of 10 falls off entirely until donned again."
     ],
     "lists": ["Arcane", "Melodic", "Psionic", "Invention"],
-    "ritual": 0
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "armor": {
+      "bonus": -2
+    }
   },
   {
     "name": "Normalize",
@@ -27338,7 +27343,9 @@
       "By casting this spell, you can permanently sever a creature from the Weave.  You must be touching an incapacitated creature for the casting of this spell, forcing the target to make a Charisma saving throw.  On a failed save, the target can no longer cast spells.  This effect cannot be reversed by any means short of the wish spell."
     ],
     "lists": ["Arcane"],
-    "ritual": 0
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
   },
   {
     "name": "Conjure Air Assassin",
@@ -27358,6 +27365,389 @@
       "When you cast this spell using a spell slot of 9th level, you can specify any number of creatures as the stalker's quarry. You must offer the stalker a personal effect from each of these creatures when you cast this spell."
     ],
     "lists": ["Arcane", "Primal", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Almagest Downpour",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (100 feet)",
+    "components": "V, S, M (a lump of starmetal worth 10 gp)",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "Helical motes of starlight condense around you, growing each moment in intensity before bursting outward in a hail of starfire.",
+      "At the beginning of your next turn, you can use your action to make up to two ranged spell attacks against each creature of your choice within range.  An attack has advantage if it targets a flying or levitating target.",
+      "On a hit, the target takes 1d10 force plus 1d10 radiant damage."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 10,
+        "type": "force"
+      },
+      {
+        "dice": 1,
+        "die": 10,
+        "type": "radiant"
+      }
+    ]
+  },
+  {
+    "name": "Bolt From Beyond",
+    "school": "Divination",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A rift in space opens near the target, unleashing a burst of energy that streaks unerringly to where the target will be.",
+      "Make a ranged spell attack. On a hit, the target takes 2d10 force damage plus 2d10 psychic damage and is pushed up to 5 feet in a direction of your choice.",
+      "This attack hits its target automatically, so long as you do not have disadvantage."
+    ],
+    "lists": ["Divine", "Occult", "Elemental"],
+    "element": "Aether",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "force"
+      },
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Catastrophe Looms",
+    "school": "Divination",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You cry forth an ominous decree, forcing one creature you can see within range to make a Charisma saving throw. On failed saving throw, the target is cursed.",
+      "When a creature cursed in this way would take any damage due to failing a saving throw, it instead takes twice as much damage and the curse ends."
+    ],
+    "lists": ["Divine", "Occult", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Causal Reversion",
+    "school": "Divination",
+    "level": 4,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "As a reaction when a creature you can see within range casts a spell that targets one or more creatures, you send a ripple of magic roiling back along its causal chain, causing the spell to target its caster, in addition to any other targets."
+    ],
+    "lists": ["Arcane", "Invention"],
+    "ritual": 0
+  },
+  {
+    "name": "Chance Inversion",
+    "school": "Divination",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you make a roll with advantage or disadvantage",
+    "range": "60 feet",
+    "components": "V, S, M (a stone hourglass)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You warp the lean of unfolding events, transforming one roll with advantage into a roll with disadvantage, or one roll with disadvantage into a roll with advantage."
+    ],
+    "lists": ["Arcane", "Invention", "Divine", "Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Dispersion Chord",
+    "school": "Abjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "10 feet",
+    "components": "S, M (a crystal blade worth 2 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You carve a bright, 10 foot long line through the air within 10 feet of you that disrupts any magic which crosses it.",
+      "Spells that pass directly over or beneath the line (within 100 feet of it) or that affect an area that includes any part of it have their save DC and any attack roll made as part of the spell reduced by 1d4."
+    ],
+    "lists": ["Arcane", "Melodic", "Elemental"],
+    "element": "Aether",
+    "ritual": 0
+  },
+  {
+    "name": "Distant Watchers' Draw",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet (15-foot radius)",
+    "components": "V, S, M (a leaden weight wrapped in silver wire worth 2 sp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You choose a point you can see within range, twisting and altering gravity for creatures in a 15 foot radius centered it.",
+      "Each creature in the area must succeed on a Constitution saving throw or float 10 feet into the air and begin levitating for the next minute.",
+      "An affected creature repeats this saving throw at the end of each of its turns, ending the effect on a success or falling up to 30 feet in a direction of your choice on a failure.",
+      "A creature that strikes a solid object, creature, or surface while falling in this way takes falling damage as normal."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the radius affected increases by 5 feet for each slot level above 3rd."
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "upcastRange": {
+      "4": "60 feet (20-foot radius)",
+      "5": "60 feet (25-foot radius)",
+      "6": "60 feet (30-foot radius)",
+      "7": "60 feet (35-foot radius)",
+      "8": "60 feet (40-foot radius)",
+      "9": "60 feet (45-foot radius)"
+    }
+  },
+  {
+    "name": "Eldritch Exegesis",
+    "school": "Divination",
+    "level": 4,
+    "castingTime": "1 bonus action",
+    "range": "5 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You open your mind to the full reality of a creature you can see within 5 feet and details of its immediate past and possible futures pour into your mind.",
+      "Until the beginning of your next turn, you add your spellcasting ability modifier to your AC against attacks made by that creature and to any saving throws against abilities it controls."
+    ],
+    "lists": ["Arcane", "Divine", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Knowledge of the Hour",
+    "school": "Divination",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You reach out to the mind of a creature you can see within range and thrust the certain knowledge of its looming death upon it, cursing it. While cursed in this way, the target suffers the following effecs:",
+      "<ul><li>While it has fewer than 100 hit points, the cursed creature is frightened.</li><li>At the end of each of its turns, the cursed creature must succeed on a DC 11 unmodified d20 roll or take 10d10 force damage and have the curse end for it.</li></ul>"
+    ],
+    "lists": ["Arcane", "Divine", "Melodic"],
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 10,
+        "die": 10,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Moment Lock",
+    "school": "Transposition",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a ring of braided feathers)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You touch a creature, attempting to smear a single moment in its life across time.",
+      "The target must make a Charisma saving throw. On a failure, on each of the affected creature's turns for the next minute it must take the same action it took on its previous turn, expending no resources to do so.",
+      "The creature repeats this saving throw at the end of each of its turns, ending the effect on a success or teleporting to the space it began its turn on a failure."
+    ],
+    "lists": ["Arcane", "Divine", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Nail to the Sky",
+    "school": "Transposition",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "500 feet",
+    "components": "V, S, M (a golden plumb-weight worth 50 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You attempt to permanantly launch a creature you can see within range into the outer darkness. The target must make a Charisma saving throw or have the effect that gravity has upon it reversed.",
+      "If you maintain concentration for the spell's full duration, the effect remains until dispelled."
+    ],
+    "lists": ["Arcane", "Primal", "Psionic", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Penetrating Gaze",
+    "school": "Divination",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You tear through the mind of a creature you can see within range, searching for signs of its weaknesses.",
+      "The target must make an Intelligence saving throw. On a failure, the target takes 5d8 psychic damage you learn which saving throws it is proficient in.",
+      "On a successful saving throw, the creature takes half as much damage and you do not learn its saving throw proficiencies."
+    ],
+    "lists": ["Arcane", "Divine", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "int",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 8,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Predictive Sway",
+    "school": "Divination",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when you are hit with an attack",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "When you are hit with an attack, you can make an Intelligence or Wisdom saving throw with DC equal to the attack roll.",
+      "On a success, you can move up to 5 feet and the attack misses."
+    ],
+    "lists": ["Arcane", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Purge Humors",
+    "school": "Abjuration",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a petrified egg worth 10 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a creature, attempting to violently drive the impurities from its body.",
+      "The target must make a Constitution saving throw. On a failed save, the target takes 10d8 necrotic damage, plus an additional 2d8 necrotic damage for each condition affecting it.",
+      "On a successful save, the target takes half as much damage, then each condition affecting it ends.",
+      "The conditions ended can be bleeding, blinded, burning, charmed, choking, confused, cursed, dazed, deafened, diseased, dominated, frightened, paralyzed, petrified, poisoned, possessed, stunned, or turned."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, the additional necrotic damage per condition increases by 1d8 damage for each slot level beyond 6th."
+    ],
+    "lists": ["Arcane", "Divine", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 8,
+        "type": "necrotic"
+      }
+    ]
+  },
+  {
+    "name": "Star-Strung Glide",
+    "school": "Transposition",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S, M (a stretched length of fishing line)",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You gain a flying speed equal to your walking speed until the end of your next turn, and can hover."
+    ],
+    "lists": ["Arcane", "Divine", "Occult", "Psionic", "Elemental"],
+    "element": "Air",
+    "ritual": 0
+  },
+  {
+    "name": "Symmetry Loop",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (20-foot radius)",
+    "components": "V, S, M (a mica wafer worth 2 sp, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A looping golden threadlight whorls out from you in a 20 foot radius. Each creature in the area must make a Charisma saving throw, becoming cosmically linked to you and to one another for the next minute on a failure.",
+      "Whenever you or a creature that failed this saving throw would take any damage, you can use your reaction to deal an equal amount of damage to another linked creature."
+    ],
+    "lists": ["Arcane", "Melodic", "Occult", "Invention"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Tell Fortune",
+    "school": "Divination",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V",
+    "duration": "Up to 1 minute",
+    "description": [
+      "You read the subtle omens that surround a creature, searching for signs of its immediate future.",
+      "Roll a d20, then assign it to a creature you can see within range that has not been affected by this spell in the last hour; the first check, saving throw, or attack that creature makes in the next minute uses the number you rolled, instead of rolling.",
+      "An unwilling creature can make a Charisma saving throw, resisting the effect on a success."
+    ],
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Thought-Knot Severance",
+    "school": "Divination",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S, M (a hollow glass cube worth 1 gp, which the spell consumes)",
+    "duration": "1 round",
+    "description": [
+      "You meld the mind of a creature in range with several near-reality versions of itself, filling its mind with chaotic echoes of its own thoughts.",
+      "The target must make an Intelligence saving throw, taking 8d8 psychic damage and becoming dazed until the end of the your next turn on a failure. On a success, the target takes half as much damage and isn't dazed.",
+      "A target that is concentrating on a spell has disadvantage on this saving throw, and is additionally stunned until the end of your next turn on a failure."
+    ],
+    "lists": ["Arcane", "Divine", "Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "int",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Twist Light",
+    "school": "Transposition",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Self (60-foot cone)",
+    "components": "V, S, M (a drop of pure water)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You bend the light in a 60 foot cone extending from you, becoming invisible to creatures in the area until you move or take an action.",
+      "You can hide from a creature you are invisible from without obscurement, and you have advantage on Dexterity (Stealth) checks made to do so.",
+      "Creatures you are invisible and hidden from have disadvantage on Wisdom (Perception) checks made to detect you."
+    ],
+    "lists": ["Arcane", "Invention", "Psionic", "Elemental"],
+    "element": "Light",
     "ritual": 0
   }
 ]
