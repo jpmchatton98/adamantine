@@ -189,7 +189,7 @@ export class ScoreTabComponent implements OnInit {
 
     this.character.scores.mods.str = this.strMod;
     this.character.scores.mods.dex = this.dexMod;
-    this.character.scores.mods.con = this.chaMod;
+    this.character.scores.mods.con = this.conMod;
     this.character.scores.mods.int = this.intMod;
     this.character.scores.mods.wis = this.wisMod;
     this.character.scores.mods.cha = this.chaMod;
