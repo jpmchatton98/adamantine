@@ -11082,12 +11082,7 @@
     {
       "name": "Slayer I",
       "prereqLevel": 3,
-      "description": " When you hit a creature with a weapon attack you can mark it as your Hunter's Prey as part of the same attack, and apply your Hunter's Prey damage bonus to the damage roll.</p><p>Moreover, whenever you make a Wisdom (Perception) or a Wisdom (Survival) check to locate or track your Hunter's Prey, you can treat a roll of 7 or lower on the d20 as an 8.",
-      "prereq": {
-        "type": "list",
-        "id": "BF93A5BF-78C2-49FD-8E5E-DCC80005B347",
-        "value": "Slayer I"
-      }
+      "description": " When you hit a creature with a weapon attack you can mark it as your Hunter's Prey as part of the same attack, and apply your Hunter's Prey damage bonus to the damage roll.</p><p>Moreover, whenever you make a Wisdom (Perception) or a Wisdom (Survival) check to locate or track your Hunter's Prey, you can treat a roll of 7 or lower on the d20 as an 8."
     },
     {
       "name": "Stalker II",
