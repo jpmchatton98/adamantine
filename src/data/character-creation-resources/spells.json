@@ -27749,5 +27749,471 @@
     "lists": ["Arcane", "Invention", "Psionic", "Elemental"],
     "element": "Light",
     "ritual": 0
+  },
+  {
+    "name": "Amplifire Outburst",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "100 feet",
+    "components": "V, S, M (a broken copper torus)",
+    "duration": "Instantaneous",
+    "description": [
+      "You raise a hand and fire forth a crackling spark that ignites the air around it.",
+      "Make a ranged spell attack. On a hit, the target takes 4d6 fire plus 4d8 lightning damage.",
+      "If this attack was made with advantage, the spark additionally explodes on a hit, forcing each other creature within 10 feet of the target to make a Dexterity saving throw. On a failure, a creature takes half the attack's damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 fire and 1d8 lightning for each slot level beyond 3rd."
+    ],
+    "type": ["attack", "save"],
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "fire"
+      },
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "lightning"
+      }
+    ],
+    "upcastDice": 1,
+    "lists": ["Arcane", "Invention", "Elemental"],
+    "element": "Air",
+    "ritual": 0
+  },
+  {
+    "name": "Annihilation Shrine",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "30 feet (30-foot radius)",
+    "components": "V, S, M (crystallized darkness worth 50 gp, which the spell consumes)",
+    "duration": "1 hour",
+    "description": [
+      "You raise a Large, monolithic shard of black crystal (AC 20; 100 HP) from the earth centered on a point you can see within range, amplifying nearby magic.",
+      "For the next hour, evocation spells cast within 30 feet of the shard have their range multiplied by 10 and their radius doubled.",
+      "After that, the shard persists but loses its arcane potency."
+    ],
+    "lists": ["Arcane", "Divine", "Primal", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Apotheosis of Flame",
+    "school": "Transmutation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self (20-foot radius)",
+    "components": "V, S, M (the trapped essence of a fire elemental worth 500 gp, which the spell consumes)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You devour the essence used as the material component of this spell and white-hot flames kindle beneath your skin, spilling out and engulfing you, and granting the following effects for the duration:",
+      "<ul><li>You gain a 60 foot flying speed and can hover.</li><li>When you would take any fire damage, you take no damage and instead gain an equal number of temporary hit points.</li><li>The first time each turn that you take any damage, flames explode outward from you, forcing you and each creature within 20 feet of you to make a Dexterity saving throw. A creature takes 8d6 fire damage on a failed saving throw, or half as much damage on a success.</li></ul>"
+    ],
+    "lists": ["Arcane", "Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Arcane Anvilweight",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "100 feet",
+    "components": "V, S, M (an engraved stamp that was used to certify an execution)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A dense mass of shimmering, translucent force slams down up a creature you can see within range, forcing it to make a Strength or Dexterity saving throw (target's choice).",
+      "On a failure, the target takes 6d8 force damage and is knocked prone and restrained. As an action, a trapped creature can make a Strength (Athletics) or Dexterity (Acrobatics) check against your spell save DC, escaping on a success.",
+      "On a success, the target takes half as much damage and suffers no additional effects."
+    ],
+    "lists": ["Arcane", "Invention", "Elemental"],
+    "element": "Aether",
+    "ritual": 0,
+    "type": "save",
+    "save": ["str", "dex"],
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Beacon of Destruction",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (15-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You charge the air around you, emanating a field of raw magical energy; for the duration, whenever you or another creature within 15 feet of you casts a spell that targets one or more creatures, it can target one additional creature."
+    ],
+    "lists": ["Arcane", "Invention"],
+    "ritual": 0
+  },
+  {
+    "name": "Blast Touch",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "5 feet (10-foot radius)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You raise a palm and fire blooms forth, exploding in a 10 foot radius centered on a point within 5 feet of you. You and each other creature in the area are pushed 10 feet away from the explosion's origin, then must make a Dexterity saving throw.",
+      "On a failed save, a creature takes 6d6 fire plus 2d8 thunder damage, or half as much damage on a success. A creature that fails this saving throw by 5 or more is also knocked prone."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "fire"
+      },
+      {
+        "dice": 2,
+        "die": 8,
+        "type": "thunder"
+      }
+    ],
+    "lists": ["Arcane", "Elemental", "Divine"],
+    "element": "Fire",
+    "ritual": 0
+  },
+  {
+    "name": "Charge Spell",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You condense magical power around yourself, adding one additional damage die to each damage roll made by spells you cast before the end of your current turn."
+    ],
+    "lists": ["Arcane", "Invention", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Condense Burst",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 reaction, which you take when a damage-dealing effect that targets an area takes effect",
+    "range": "60 feet",
+    "components": "V, S, M (a sphere of compacted charcoal)",
+    "duration": "Instantaneous",
+    "description": [
+      "You crush an explosive burst down to a pinpoint, concentrating its force. When a damage-dealing effect that targets an area within range takes effect, you can cause only one creature in the area to be affected.",
+      "If you do, the effect deals maximum damage, instead of rolling damage."
+    ],
+    "lists": ["Arcane", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Exploding Shot",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Touch (10-foot sphere)",
+    "components": "V, S, M (a piece of ammunition worth at least 1 cp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You touch a piece of ammunition, setting it aglow with an infusion of volatile magics. The first time a creature makes an attack using this ammunition during this spell's duration, the attack deals an additional 4d6 fire damage on a hit.",
+      "Whether the attack hit or miss, the piece of ammunition then explodes. Each creature within 10 feet of the target must make a Dexterity saving throw. On a failed saving throw, a creature takes 4d6 fire damage, or half as much damage on a successful one."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "lists": ["Arcane", "Primal", "Invention", "Elemental"],
+    "element": "Fire",
+    "ritual": 0
+  },
+  {
+    "name": "Force Barrage",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S, M  (a spindle of phase spider silk)",
+    "duration": "Instantaneous",
+    "description": [
+      "You send two arcane bolts soaring to strike in quick succession. You can direct them at one target or several. ",
+      "Make a ranged spell attack for each bolt. On a hit, the target takes 2d10 force damage and the next spell attack you make against the same target this turn has advantage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, you create one additional bolt for each slot level above 3rd."
+    ],
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "force"
+      }
+    ],
+    "multiplier": 2,
+    "upcastMultiplier": 1,
+    "lists": ["Arcane", "Occult", "Elemental"],
+    "element": "Aether",
+    "ritual": 0
+  },
+  {
+    "name": "Hellfire Cell",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet (30-foot cube)",
+    "components": "V, S, M (a bar of infenal iron worth 500 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A thin sheet of evil flame traces out a cubic barrier, 30 feet to a side, centered on a point you can see within range.",
+      "When the barrier appears, each creature whose space it passes through is pushed to the nearest unoccupied space within the barrier.",
+      "A creature that passes through the barrier for the first time on a turn must succeed on a Dexterity saving throw or take 8d6 fire damage, or half as much on a success. This damage ignores resistance to fire damage, and treats immunity to fire damage as resistance."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "lists": ["Arcane", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Lava Geyser",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "100 feet (15-foot cylinder)",
+    "components": "V, S, M (an obsidian flute)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You call a torrent of lava to spew up from the earth in a 60 foot high, 15 foot radius cylinder centered on a point within range.",
+      "Each creature in the area must make a Dexterity saving throw. On a failed saving throw, a creature takes 6d10 fire damage and is knocked prone. On a successful saving throw, a creature takes half as much damage and is not knocked prone.",
+      "For the next minute, the ground in the cylinder's area is covered in lava. A creature that ends its turn on the ground in the area or enters it for the first time on a turn must make the same saving throw."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 10,
+        "type": "fire"
+      }
+    ],
+    "lists": ["Arcane", "Occult", "Primal", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Render to the Flame",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet (20-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Questing flames rise to engulf up to six creatures of your choice in a 20 foot radius within range. Each target must succeed on a Dexterity saving throw or begin burning for the duration.",
+      "At the beginning of each of its turns, the target takes 2d10 fire damage. While burning in this way, attacks made against the target have advantage.",
+      "These flames are extinguished if your concentration ends, or if a creature uses its action to extinguish them for a target."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "fire"
+      }
+    ],
+    "lists": ["Arcane", "Occult", "Primal", "Divine", "Elemental"],
+    "element": "Fire",
+    "ritual": 0
+  },
+  {
+    "name": "Scatterspell Bombardment",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": "V, S, M (a fistfull of ball bearings)",
+    "duration": "Instantaneous",
+    "description": [
+      "You launch a cascade of shimmering orbs in a 60 foot cone that detonate as they land, forcing each creature in the cone's area to make three Dexterity saving throws.",
+      "For each failed saving throw, a creature takes 3d6 damage of one type of your choice. The chosen type may be acid, cold, fire, lightning, poison, or thunder."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": ["acid", "cold", "fire", "lightning", "poison", "thunder"]
+      }
+    ],
+    "multiplier": 3,
+    "lists": ["Arcane", "Primal", "Invention"],
+    "ritual": 0
+  },
+  {
+    "name": "Starfire Lance",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S, M (a needle made of pure adamant)",
+    "duration": "Instantaneous",
+    "description": [
+      "You send a pinprick of starfire flying ahead, burning through all in its path. Make a ranged spell attack. On a hit, the attack deals 4d6 fire damage plus 6d8 radiant damage.",
+      "For the purposes of line-of-effect and AC bonuses from cover, this attack ignores all cover from any nonmagical, nonliving material, disintegrating through it without resistance and leaving a 2 inch wide hole in its wake."
+    ],
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "fire"
+      },
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "radiant"
+      }
+    ],
+    "lists": ["Arcane", "Occult", "Divine", "Invention", "Elemental"],
+    "element": "Light",
+    "ritual": 0
+  },
+  {
+    "name": "Static Surge",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a wooden triskelion)",
+    "duration": "Instantaneous",
+    "description": [
+      "Your fingers crackle with electricity as you reach for a creature. Make a melee spell attack. On a hit, the target takes 3d10 lightning damage.",
+      "A target dealt 20 or more lightning damage by this attack is pushed up to 15 feet away and is dazed until the end of its next turn. A target dealt 20 or more damage in this way is pushed up to 15 feet away and is dazed until the end of its next turn."
+    ],
+    "higherLevels": [
+      "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
+    ],
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 10,
+        "type": "lightning"
+      }
+    ],
+    "upcastDice": 1,
+    "lists": ["Arcane", "Primal", "Invention"],
+    "element": "Light",
+    "ritual": 0
+  },
+  {
+    "name": "The Sky Consumed",
+    "school": "Evocation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self (500-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "A point of fire appears in the sky above you, growing second by second as it hurtles toward earth. Each creature and object within 500 feet of you immediately begins burning (1d10).",
+      "At the beginning of your next turn, the fire blots out the sky entirely for an instant before striking you. You and each creature within 500 feet of you must make a Dexterity saving throw. On a failed saving throw a creature takes 28d6 fire damage, or half as much on a success."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 28,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "upcastDice": 1,
+    "lists": ["Arcane", "Primal", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Transfix with Power",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a clay shard etched with acid)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A web of electricity envelops around a creature you can see within range.  The target must make a Strength saving throw.</p><p>On a failure, the target is bound by the web until the spell ends, takes 1d6 lightning damage at the start of each of its turns, and the creature cannot move or be moved more than 20 feet away from the location it was when you cast the spell.</p><p>The target can repeat their saving throw at the end of each of their turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p><p>In addition, the spell restricts the target's movement further when you reach certain levels: 5th level (15 feet), 11th level (10 feet), and 17th level (5 feet)."
+    ],
+    "lists": ["Arcane", "Invention"],
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 6,
+        "type": "lightning"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Wreath of Blades",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (10-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Razor-sharp blades of hardened magic whirl through the air in a 10 foot radius centered on you.",
+      "A creature other than you that starts its turn in the area, or that enters it for the first time on a turn, must succeed on a Dexterity saving throw or take 4d10 slashing damage. On a successful save, the creature takes half as much damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or above, the slashing damage increases by 1d10 for each slot level above 4th."
+    ],
+    "lists": ["Arcane", "Divine", "Elemental"],
+    "element": "Aether",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "force"
+      }
+    ],
+    "upcastDice": 1
   }
 ]
