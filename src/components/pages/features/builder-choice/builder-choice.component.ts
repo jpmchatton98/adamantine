@@ -221,7 +221,15 @@ export class BuilderChoiceComponent implements OnInit {
                   s.level === (choice.level ?? 10) &&
                   (s.lists.includes('Arcane') ||
                     (this.characterObj.subclass === 'Divine Soul' &&
-                      s.lists.includes('Divine')))
+                      s.lists.includes('Divine')) ||
+                    (this.characterObj.subclass === 'Verdant Soul' &&
+                      s.lists.includes('Primal')) ||
+                    (this.characterObj.subclass === 'Eldritch Soul' &&
+                      s.lists.includes('Occult')) ||
+                    (this.characterObj.subclass === 'Aberrant Soul' &&
+                      s.lists.includes('Psionic')) ||
+                    (this.characterObj.subclass === 'Musical Soul' &&
+                      s.lists.includes('Melodic')))
               );
 
             choiceOptions = choiceOptions.filter(

@@ -197,6 +197,18 @@ export class BuilderListedComponent implements OnInit {
           ...(this.characterObj.subclass === 'Divine Soul'
             ? this.dataService.getSpellsByListUnsplit('divine')
             : []),
+          ...(this.characterObj.subclass === 'Verdant Soul'
+            ? this.dataService.getSpellsByListUnsplit('primal')
+            : []),
+          ...(this.characterObj.subclass === 'Eldritch Soul'
+            ? this.dataService.getSpellsByListUnsplit('occult')
+            : []),
+          ...(this.characterObj.subclass === 'Aberrant Soul'
+            ? this.dataService.getSpellsByListUnsplit('psionic')
+            : []),
+          ...(this.characterObj.subclass === 'Musical Soul'
+            ? this.dataService.getSpellsByListUnsplit('melodic')
+            : []),
         ]
           .filter((s: any) => {
             if (this.listed.ritualsOnly) {
@@ -289,6 +301,18 @@ export class BuilderListedComponent implements OnInit {
           ...this.dataService.getSpellsByListUnsplit(this.listed.list),
           ...(this.characterObj.subclass === 'Divine Soul'
             ? this.dataService.getSpellsByListUnsplit('divine')
+            : []),
+          ...(this.characterObj.subclass === 'Verdant Soul'
+            ? this.dataService.getSpellsByListUnsplit('primal')
+            : []),
+          ...(this.characterObj.subclass === 'Eldritch Soul'
+            ? this.dataService.getSpellsByListUnsplit('occult')
+            : []),
+          ...(this.characterObj.subclass === 'Aberrant Soul'
+            ? this.dataService.getSpellsByListUnsplit('psionic')
+            : []),
+          ...(this.characterObj.subclass === 'Musical Soul'
+            ? this.dataService.getSpellsByListUnsplit('melodic')
             : []),
         ]
           .filter((s: any) => {
