@@ -1017,13 +1017,13 @@
       },
       {
         "name": "Artificial Nature",
-        "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
+        "description": "You are immune to poison damage, you can't be diseased or poisoned, and you have advantage on saving throws against being paralyzed. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
         "granted": [
-          { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
           {
             "type": "condition-advantage",
-            "options": ["Paralyzed", "Poisoned"]
+            "options": ["Paralyzed"]
           }
         ]
       },
@@ -1235,13 +1235,13 @@
       },
       {
         "name": "Artificial Nature",
-        "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
+        "description": "You are immune to poison damage, you can't be diseased or poisoned, and you have advantage on saving throws against being paralyzed. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
         "granted": [
-          { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
           {
             "type": "condition-advantage",
-            "options": ["Paralyzed", "Poisoned"]
+            "options": ["Paralyzed"]
           }
         ]
       },
@@ -1618,7 +1618,13 @@
           {
             "id": "16F4C55C-DC8F-4E78-9AAE-41F6F7147ACA",
             "type": "skill",
-            "limits": ["Deception", "Insight", "Intimidation", "Persuasion"],
+            "limits": [
+              "Deception",
+              "Insight",
+              "Intimidation",
+              "Persuasion",
+              "Society"
+            ],
             "level": 1
           }
         ]
@@ -14635,13 +14641,13 @@
       },
       {
         "name": "Artificial Nature",
-        "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
+        "description": "You are immune to poison damage, you can't be diseased or poisoned, and you have advantage on saving throws against being paralyzed. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
         "granted": [
-          { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
           {
             "type": "condition-advantage",
-            "options": ["Paralyzed", "Poisoned"]
+            "options": ["Paralyzed"]
           }
         ]
       },
@@ -16887,13 +16893,13 @@
     "traits": [
       {
         "name": "Artificial Nature",
-        "description": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe.",
+        "description": "You are immune to poison damage, you can't be diseased or poisoned, and you have advantage on saving throws against being paralyzed. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
         "granted": [
-          { "type": "damage-resistance", "options": ["Poison"] },
-          { "type": "condition-immunity", "options": ["Choking", "Disease"] },
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
           {
             "type": "condition-advantage",
-            "options": ["Paralyzed", "Poisoned"]
+            "options": ["Paralyzed"]
           }
         ]
       },
@@ -17839,5 +17845,64 @@
       }
     ],
     "name": "Kopru"
+  },
+  {
+    "description": "Displacers are magical beings that look like humans, but with one key difference.  A displacer can detach any of their body parts whenever they wish, and reattach them at any later time.  Many displacers use these abilities for the purposes of infiltration, making expert spies and assassins.",
+    "asis": [{ "dex": 1 }, { "con": 1 }, { "wis": 1 }],
+    "maturity": 18,
+    "lifespan": 200,
+    "height": [5, 6],
+    "weight": [100, 150],
+    "category": "Uncommon",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 35,
+    "darkvision": 0,
+    "languages": [
+      "Common",
+      { "id": "B7FDBF47-E08A-42F9-B026-48CB9CD6FBFB", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Displacer Instincts",
+        "description": "You gain proficiency with two of the following skills of your choice: Deception, Insight, Intimidation, Persuasion, and Society.",
+        "choices": [
+          {
+            "id": "1E2517EE-ECBD-47C4-A509-FD1AC477418D",
+            "type": "skill",
+            "limits": [
+              "Deception",
+              "Insight",
+              "Intimidation",
+              "Persuasion",
+              "Society"
+            ],
+            "level": 1
+          },
+          {
+            "id": "BA515955-64C0-4E7C-B5C1-9A9ECAABA101",
+            "type": "skill",
+            "limits": [
+              "Deception",
+              "Insight",
+              "Intimidation",
+              "Persuasion",
+              "Society"
+            ],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Displacing Anatomy",
+        "description": "As a bonus action, you can detach any body part, such as your head, arm, or leg, or reattach a previously detached body part.  Detached parts continue to function as normal while separated from your body.  A detached arm can still wield a weapon as normal, for example.  An attack roll made from a body part not in the same space as your head has disadvantage.  All of your detached body parts share the same hit points and Armor Class, and a part detached from your body has a movement speed of 5 feet.</p><p>If you detach one arm and hold it in the other hand, it can be used as a melee weapon with which you are proficient, dealing bludgeoning damage equal to 1d6 + your Strength modifier.  Additionally, the detached arm increases your reach by 5 feet.</p><p>Finally, if you are subjected to an effect that removes a body part, such as a vorpal sword, the relevant body part is detached and you suffer no other harmful effects."
+      },
+      {
+        "name": "Natural Resilience",
+        "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+        "granted": [{ "type": "hit-point-level", "amount": 1 }]
+      }
+    ],
+    "name": "Displacer"
   }
 ]
