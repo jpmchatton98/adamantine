@@ -7244,11 +7244,11 @@
           },
           {
             "name": "Thunderbolts",
-            "description": "You know the Lightning Lure and Zap cantrips. Constitution is your spellcasting ability for these spells.",
+            "description": "You know the Lightning Lure and Spark cantrips. Constitution is your spellcasting ability for these spells.",
             "granted": [
               {
                 "type": "spell",
-                "options": ["Lightning Lure", "Zap"],
+                "options": ["Lightning Lure", "Spark"],
                 "ability": "con"
               }
             ]
@@ -8712,9 +8712,9 @@
         "traits": [
           {
             "name": "Storm Strike",
-            "description": "You know the Zap cantrip. When you reach 3rd level, you can cast the Thunderwave spell as a 1st level spell once with this trait. When you reach 5th level, you can cast the Lightning-Flash Strike spell once with this trait. You regain the ability to cast these spells when you finish a long rest. Wisdom is your spellcasting ability for them.",
+            "description": "You know the Spark cantrip. When you reach 3rd level, you can cast the Thunderwave spell as a 1st level spell once with this trait. When you reach 5th level, you can cast the Lightning-Flash Strike spell once with this trait. You regain the ability to cast these spells when you finish a long rest. Wisdom is your spellcasting ability for them.",
             "granted": [
-              { "type": "spell", "options": ["Zap"], "ability": "wis" },
+              { "type": "spell", "options": ["Spark"], "ability": "wis" },
               {
                 "type": "spell",
                 "options": ["Thunderwave"],
