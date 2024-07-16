@@ -1,46 +1,43 @@
 <nz-table [nzData]="itemData" [nzShowPagination]="false" [nzPageSize]="1 / 0">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Cost</th>
-            <th>Size</th>
-            <th>Speed</th>
-            <th>Weight</th>
-            <th *ngIf="data.includes('mount')">Carrying Capacity</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of itemData">
-            <td>{{ item.name }}</td>
-            <td>{{ formatCost(item.cost) }}</td>
-            <td>
-                <ng-container *ngIf="item.size === -2">
-                    Tiny
-                </ng-container>
-                <ng-container *ngIf="item.size === -1">
-                    Small
-                </ng-container>
-                <ng-container *ngIf="item.size === 0">
-                    Medium
-                </ng-container>
-                <ng-container *ngIf="item.size === 0.25">
-                    Tiny, Small, or Medium
-                </ng-container>
-                <ng-container *ngIf="item.size === 0.5">
-                    Small or Medium
-                </ng-container>
-                <ng-container *ngIf="item.size === 1">
-                    Large
-                </ng-container>
-                <ng-container *ngIf="item.size === 2">
-                    Huge
-                </ng-container>
-            </td>
-            <td>{{ item.speed }} ft</td>
-            <td>{{ formatWeight(item.weight) }}</td>
-            <td *ngIf="data.includes('mount')">{{ formatWeight(item.carryingCapacity) }}</td>
-            <td>{{ item.description }}</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Size</th>
+      <th>Speed</th>
+      <th>Weight</th>
+      <th *ngIf="data.includes('mount')">Carrying Capacity</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of itemData">
+      <td *ngIf="item.stats; else nostats">
+        <a href="../../../bestiary/{{ nameUrlEncode(item.stats) }}">
+          {{ item.name }}
+        </a>
+      </td>
+      <ng-template #nostats>
+        <td>{{ item.name }}</td>
+      </ng-template>
+      <td>{{ formatCost(item.cost) }}</td>
+      <td>
+        <ng-container *ngIf="item.size === -2"> Tiny </ng-container>
+        <ng-container *ngIf="item.size === -1"> Small </ng-container>
+        <ng-container *ngIf="item.size === 0"> Medium </ng-container>
+        <ng-container *ngIf="item.size === 0.25">
+          Tiny, Small, or Medium
+        </ng-container>
+        <ng-container *ngIf="item.size === 0.5"> Small or Medium </ng-container>
+        <ng-container *ngIf="item.size === 1"> Large </ng-container>
+        <ng-container *ngIf="item.size === 2"> Huge </ng-container>
+      </td>
+      <td>{{ item.speed }} ft</td>
+      <td>{{ formatWeight(item.weight) }}</td>
+      <td *ngIf="data.includes('mount')">
+        {{ formatWeight(item.carryingCapacity) }}
+      </td>
+      <td>{{ item.description }}</td>
+    </tr>
+  </tbody>
 </nz-table>

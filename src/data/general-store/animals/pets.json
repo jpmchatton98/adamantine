@@ -1,6 +1,7 @@
 [
   {
     "name": "Capybara",
+    "stats": "Capybara",
     "cost": 45,
     "size": -1,
     "speed": 30,
@@ -9,6 +10,7 @@
   },
   {
     "name": "Cat",
+    "stats": "Cat",
     "cost": 2,
     "size": -2,
     "speed": 40,
@@ -17,6 +19,7 @@
   },
   {
     "name": "Dog",
+    "stats": "Dog",
     "cost": 2,
     "size": 0.25,
     "speed": 30,
@@ -25,6 +28,7 @@
   },
   {
     "name": "Falcon",
+    "stats": "Falcon",
     "cost": 25,
     "size": -2,
     "speed": 60,
@@ -33,6 +37,7 @@
   },
   {
     "name": "Hawk",
+    "stats": "Hawk",
     "cost": 25,
     "size": -2,
     "speed": 60,
@@ -41,6 +46,7 @@
   },
   {
     "name": "Owl",
+    "stats": "Owl",
     "cost": 35,
     "size": -2,
     "speed": 60,
@@ -48,15 +54,8 @@
     "description": "A nocturnal bird of prey with excellent eyesight, usually used for hunting."
   },
   {
-    "name": "Pigeon",
-    "cost": 10,
-    "size": -2,
-    "speed": 60,
-    "weight": 1,
-    "description": "A common bird used to transport messages over long distances."
-  },
-  {
     "name": "Rat",
+    "stats": "Rat",
     "cost": 10,
     "size": -2,
     "speed": 20,
@@ -65,6 +64,7 @@
   },
   {
     "name": "Raven",
+    "stats": "Raven",
     "cost": 15,
     "size": -2,
     "speed": 50,
