@@ -88,6 +88,17 @@
     "type": -1
   },
   {
+    "name": "Gambeson",
+    "cost": 5,
+    "ac": 11,
+    "maxDex": null,
+    "strReq": null,
+    "stealth": "",
+    "weight": 5,
+    "description": "A gambeson is wool clothing typically worn beneath armor for added comfort and protection, but it offers modest protection on its own.",
+    "type": -1
+  },
+  {
     "name": "Outlaw's Duster",
     "cost": 150,
     "ac": 11,
