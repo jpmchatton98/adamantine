@@ -12762,17 +12762,6 @@
                 "description": "You magically polymorph into a Medium or Small humanoid for 1 hour or until you take an action to revert to your true form.  If the you die, you revert to your true form.  Other than your size, your statistics remain identical."
               }
             ]
-          },
-          {
-            "name": "Waking Nightmare",
-            "description": "You have proficiency in the Intimidation skill.  While you are in your true form, you have advantage on Charisma (Intimidation) checks made against children.",
-            "granted": [
-              {
-                "type": "skill",
-                "options": ["Intimidation"],
-                "level": 1
-              }
-            ]
           }
         ]
       },
@@ -12877,6 +12866,45 @@
       }
     ],
     "name": "Lesser Giant"
+  },
+  {
+    "description": "Treants are awakened trees that dwell in ancient forests. Although treants prefer to while away the days, months, and years in quiet contemplation, they fiercely protect their woodland demesnes from outside threats.",
+    "asis": [{ "str": 2 }, { "wis": 1 }],
+    "maturity": 80,
+    "lifespan": 2000,
+    "height": [10, 11],
+    "weight": [900, 1000],
+    "category": "Uncommon",
+    "type": "Plant",
+    "size": 1,
+    "speed": 30,
+    "darkvision": 0,
+    "languages": ["Common", "Druidic"],
+    "traits": [
+      {
+        "name": "Barked Body",
+        "description": "Due to your bark and the shape of your body, you are ill-suited to wearing armor. Your bark provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. When a feature requires you to be wearing armor in order to use it, you can use it while unarmored."
+      },
+      {
+        "name": "Branch Strike",
+        "description": "Your heavy, wooden arms are natural weapons that you can use to make unarmed strikes.  They deal bludgeoning damage equal to 1d8 + your Strength modifier on a hit."
+      },
+      {
+        "name": "Forest Allies",
+        "description": "As an action, you can command a tree within 30 feet of you to temporarily spring into action, wildly swinging its branches.  Creatures of your choice within 10 feet of the affected tree must make a Dexterity saving throw (DC = 8 + your Wisdom modifier + your proficiency bonus).  On a failed save, a target takes 1d10 bludgeoning damage and is knocked prone, taking half as much damage on a successful saving throw. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>You can use your Mind Blast a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+        "uses": {
+          "id": "335D46D7-FAA5-4E7B-8DDB-8B74A7748436",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": 2
+        }
+      },
+      {
+        "name": "False Appearance",
+        "description": "You have advantage on Dexterity (Stealth) checks made to hide in wooded environments."
+      }
+    ],
+    "name": "Treant"
   },
   {
     "description": "Savage and fearless, orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.",
