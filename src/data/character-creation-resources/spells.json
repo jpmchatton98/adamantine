@@ -27904,7 +27904,7 @@
     "components": "V, S",
     "duration": "1 round",
     "description": [
-      "You condense magical power around yourself, adding one additional damage die to each damage roll made by spells you cast before the end of your current turn."
+      "You condense magical power around yourself.  For each damage die you roll for a spell before the end of your current turn, any roll of less than half of the die's size is increased to half of the die's size."
     ],
     "lists": ["Arcane", "Invention", "Occult"],
     "ritual": 0
