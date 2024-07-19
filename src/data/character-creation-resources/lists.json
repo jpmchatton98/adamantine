@@ -6969,6 +6969,10 @@
       "description": "<strong>Item:</strong> a simple or martial weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it.</p><p>A bane weapon is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both weapons of dragon slaying and weapons of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.The weapon has 4 charges. When the wielder hits a creature belonging to the type, race, or group associated with the weapon, you can expend 1 charge and inflict an additional 2d6 damage of the weapon's type with the attack. The weapon regains 1d4 charges daily at dawn."
     },
     {
+      "name": "Belt of Utility",
+      "description": "<strong>Item:</strong> a belt or vest</p><p>This magical belt has ten Tiny pockets which can each hold a Tiny or smaller object. As an action, bonus action, or as part of an attack, the wearer can call to mind one object in one of the pockets, instantly summoning it into its hand and can use it as part of that action, bonus action, or attack.</p><p>If the wearer does not have a free hand when it summons the object, it shunts one object it is holding into that pouch."
+    },
+    {
       "name": "Boots of False Crowds",
       "description": "<strong>Item:</strong> a pair of boots</p><p>While wearing these boots, the wearer can use a bonus action to click the boots' heels together, making its steps sound as if a large crowd is moving at its location. The sound produced by the boots matches with the current speed of the wearer, and this sound also interacts with its environment. For example, if the wearer is running across a wet surface, the boots will create the sound of a large crowd running accompanied by splashing water. However, the boots can't replicate vibrations or other tactile sensations that would normally result from an actual crowd of people. The wearer can use a bonus action to end this effect."
     },
@@ -7073,6 +7077,14 @@
       "description": "<strong>Item:</strong> an amulet or pendant</p><p>While wearing this amulet, a creature can choose to use its Intelligence modifier in place of its Dexterity modifier when rolling for initiative."
     },
     {
+      "name": "Wondrous Translator",
+      "description": "<strong>Item:</strong> a bracelet, diadem, ring, or necklace (requires attunement)</p><p>The wearer of this magical object understands any language that it hears spoken aloud as if it were its native tongue.</p><p>At 5th level, this object does not require attunement, and at 11th level, the wearer can also speak any language it hears."
+    },
+    {
+      "name": "Wondrous Whip",
+      "description": "<strong>Item:</strong> a bladed scarf, chain dagger, flying sword, kusarigama, meteor hammer, spiked chain, or whip</p><p>The wielder can choose for the weapon to deal 0 damage. If it does, it can pull a target smaller than it up to 30 feet closer, and can catch objects in a fre hand. If the target is larger than it, the wielder can pull itself up to 30 feet closer to the target.</p><p>At 11th level, this weapon gains a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
       "name": "Boots of the Wind",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>These boots have 3 charges. While wearing these boots, the wearer's walking speed increases by 5 feet. The wearer can also expend 1 charge to use the Dash action as a bonus action. The boots regain 1d3 expended charges daily at dawn."
@@ -7151,6 +7163,11 @@
       "name": "Ring of Spell Refueling",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>While wearing this magic ring, the wearer can use an action to recover one of its expended spell slots of 3rd-level or lower, or 5 sorcery points.  Once used, the ring can't be used again until the next dawn."
+    },
+    {
+      "name": "Skittering Servant",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>Your experimentation has created an arachnoid Skittering Servant. It is a Tiny mechanical construct with eight metallic legs. As an action, you can use your tinker's tools to attach (or remove) a single weapon or object to the Servant.</p><p>As an action, you can expend one of the Servant's Charges and throw it to an unoccupied space you can see within 30 ft. where it activates. While it is activated, you can use a bonus action to order the Servant to move up to 20 feet and use the object attached to it as if you were using it. The Servant can move up walls and difficult surfaces, including upside down on ceilings, without having to make an ability check.</p><p>The Servant has hit points equal to your Artificer level and Armor Class equal to your Intelligence score. It is active for up to 1 minute or until it is destroyed, then it deactivates, instantly returning to its wielder.</p><p>This magic Servant has a number of Charges equal to the number of arcane charges used for this infusion."
     },
     {
       "name": "Skyfall Harness",
@@ -7253,9 +7270,19 @@
       "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>If the wearer is hit by an attack roll and can see the attacker, the wearer can use its reaction to deflect the attack to another creature it can see within 5 feet of it that isn't the attacker. If the attack roll would hit the chosen creature, then it takes the damage from the attack. This property can't be used again until the next dawn."
     },
     {
+      "name": "Elemental Prism",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a diamond worth at least 50 gold and an arcane focus</p><p>This magical diamond is bonded to an arcane focus. When the wielder of this focus casts a spell that deals damage, it can change the spell's damage to acid, cold, fire, lightning, poison, or thunder damage.</p><p>At 17th level, this magic arcane focus grants its wielder a +1 bonus to its spell attack rolls and its spell save DC."
+    },
+    {
       "name": "Elemental Weapon",
       "prereqLevel": 13,
       "description": "<strong>Item:</strong> a melee weapon (requires attunement)</p><p>You infuse this magic weapon with elemental energy. Upon infusion, choose a command word and one of the following damage types: acid, cold, fire, lightning, or thunder. As a bonus action, the wielder can speak the weapon's command word and cause elemental energy to burst forth from the weapon until the command word is spoken again. On hit, the weapon deals an additional 1d6 of the chosen elemental damage.</p><p>At 17th level, the bonus elemental damage becomes 2d6."
+    },
+    {
+      "name": "Levitating Weapon",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a one-handed melee weapon (requires attunement)</p><p>Upon Infusion, you choose a command word for this weapon. As a bonus action, the wielder can speak the magic weapon's command word, expending one of its Charges. When it does so, the weapon begins to hover in its space, and attacks one target of its choice within 5 feet, using your Intelligence, in place of the wielder's Strength or Dexterity, for its attack and damage rolls. While this magic weapon hovers, the wielder can attack with it using its bonus action on each turn.</p><p>This magical weapon remains active for 1 minute, or until the wielder speaks its command word again, at which point it returns to its wielder's empty hand, sheath, or belt.</p><p>This magical weapon has a number of Charges equal to the number of arcane charges used for this infusion."
     },
     {
       "name": "Resistant Armor",
@@ -7276,6 +7303,11 @@
       "name": "Superior Spellstoring Item",
       "prereqLevel": 13,
       "description": "<strong>Item:</strong> one Tiny object, tool, or weapon (requires attunement when not used by its creator)</p><p>You imbue this object with magical power. Each time you imbue this infusion into an object, you choose a 4th-level spell from any spell list to imbue. The creature that holds this object can expend four of its charges to cast the spell imbued within, using the spell's normal casting time.</p><p>If the spell requires concentration, the creature holding the item must concentrate on the spell for its duration.</p><p>You can imbue this infusion with more arcane charges, allowing for more castings of the imbued spell before the item becomes inert."
+    },
+    {
+      "name": "Astral Cannon",
+      "prereqLevel": 17,
+      "description": "<strong>Item:</strong> a gauntlet or arcane focus</p><p>The wielder of this magical object can make a ranged spell attack against a target it can see within 60 feet. On hit, the target takes 2d10 force damage.</p><p>As an action, the wielder can expend one Charge to fire two dimensional motes at two unoccupied flat surfaces that it can see within 60 feet, creating one 5-foot by 5-foot portal that connects the two surfaces. This portal remains open for 1 minute, but it is closed early if five creatures pass through it, or if this Infusion is used to create another portal.</p><p>This magical object has a number of Charges equal to the number of arcane charges used for this infusion."
     },
     {
       "name": "Gauntlets of the Guardian",
@@ -7318,6 +7350,10 @@
     {
       "name": "Bane Weapon",
       "description": "<strong>Item:</strong> a simple or martial weapon</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it.</p><p>A bane weapon is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both weapons of dragon slaying and weapons of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.The weapon has 4 charges. When the wielder hits a creature belonging to the type, race, or group associated with the weapon, you can expend 1 charge and inflict an additional 2d6 damage of the weapon's type with the attack. The weapon regains 1d4 charges daily at dawn."
+    },
+    {
+      "name": "Belt of Utility",
+      "description": "<strong>Item:</strong> a belt or vest</p><p>This magical belt has ten Tiny pockets which can each hold a Tiny or smaller object. As an action, bonus action, or as part of an attack, the wearer can call to mind one object in one of the pockets, instantly summoning it into its hand and can use it as part of that action, bonus action, or attack.</p><p>If the wearer does not have a free hand when it summons the object, it shunts one object it is holding into that pouch."
     },
     {
       "name": "Boots of False Crowds",
@@ -7420,6 +7456,14 @@
       "description": "<strong>Item:</strong> an amulet or pendant</p><p>While wearing this amulet, a creature can choose to use its Intelligence modifier in place of its Dexterity modifier when rolling for initiative."
     },
     {
+      "name": "Wondrous Translator",
+      "description": "<strong>Item:</strong> a bracelet, diadem, ring, or necklace (requires attunement)</p><p>The wearer of this magical object understands any language that it hears spoken aloud as if it were its native tongue.</p><p>At 5th level, this object does not require attunement, and at 11th level, the wearer can also speak any language it hears."
+    },
+    {
+      "name": "Wondrous Whip",
+      "description": "<strong>Item:</strong> a bladed scarf, chain dagger, flying sword, kusarigama, meteor hammer, spiked chain, or whip</p><p>The wielder can choose for the weapon to deal 0 damage. If it does, it can pull a target smaller than it up to 30 feet closer, and can catch objects in a fre hand. If the target is larger than it, the wielder can pull itself up to 30 feet closer to the target.</p><p>At 11th level, this weapon gains a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
+    },
+    {
       "name": "Boots of the Wind",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>These boots have 3 charges. While wearing these boots, the wearer's walking speed increases by 5 feet. The wearer can also expend 1 charge to use the Dash action as a bonus action. The boots regain 1d3 expended charges daily at dawn."
@@ -7512,6 +7556,11 @@
       "name": "Skyfall Harness",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a cloak, vest, or harness</p><p>This magic harness automatically sizes to fit the wearer and can be worn over clothing or light armor. It has wing-like fins between its limbs that slow falls and allow wearers to glide.</p><p>When the wearer falls and isn't incapacitated, it subtracts up to 100 feet from its fall when calculating falling damage, and it can glide 2 feet horizontally every 1 foot that it falls."
+    },
+    {
+      "name": "Skittering Servant",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>Your experimentation has created an arachnoid Skittering Servant. It is a Tiny mechanical construct with eight metallic legs. As an action, you can use your tinker's tools to attach (or remove) a single weapon or object to the Servant.</p><p>As an action, you can expend one of the Servant's Charges and throw it to an unoccupied space you can see within 30 ft. where it activates. While it is activated, you can use a bonus action to order the Servant to move up to 20 feet and use the object attached to it as if you were using it. The Servant can move up walls and difficult surfaces, including upside down on ceilings, without having to make an ability check.</p><p>The Servant has hit points equal to your Artificer level and Armor Class equal to your Intelligence score. It is active for up to 1 minute or until it is destroyed, then it deactivates, instantly returning to its wielder.</p><p>This magic Servant has a number of Charges equal to your Intelligence modifier (a minimum of 1 Charge), and it regains all of its expended Charges each day at dawn."
     },
     {
       "name": "Swift Ring",
@@ -7632,9 +7681,19 @@
       "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>If the wearer is hit by an attack roll and can see the attacker, the wearer can use its reaction to deflect the attack to another creature it can see within 5 feet of it that isn't the attacker. If the attack roll would hit the chosen creature, then it takes the damage from the attack. This property can't be used again until the next dawn."
     },
     {
+      "name": "Elemental Prism",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a diamond worth at least 50 gold and an arcane focus</p><p>This magical diamond is bonded to an arcane focus. When the wielder of this focus casts a spell that deals damage, it can change the spell's damage to acid, cold, fire, lightning, poison, or thunder damage.</p><p>At 17th level, this magic arcane focus grants its wielder a +1 bonus to its spell attack rolls and its spell save DC."
+    },
+    {
       "name": "Elemental Weapon",
       "prereqLevel": 13,
       "description": "<strong>Item:</strong> a melee weapon (requires attunement)</p><p>You infuse this magic weapon with elemental energy. Upon infusion, choose a command word and one of the following damage types: acid, cold, fire, lightning, or thunder. As a bonus action, the wielder can speak the weapon's command word and cause elemental energy to burst forth from the weapon until the command word is spoken again. On hit, the weapon deals an additional 1d6 of the chosen elemental damage.</p><p>At 17th level, the bonus elemental damage becomes 2d6."
+    },
+    {
+      "name": "Levitating Weapon",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a one-handed melee weapon (requires attunement)</p><p>Upon Infusion, you choose a command word for this weapon. As a bonus action, the wielder can speak the magic weapon's command word, expending one of its Charges. When it does so, the weapon begins to hover in its space, and attacks one target of its choice within 5 feet, using your Intelligence, in place of the wielder's Strength or Dexterity, for its attack and damage rolls. While this magic weapon hovers, the wielder can attack with it using its bonus action on each turn.</p><p>This magical weapon remains active for 1 minute, or until the wielder speaks its command word again, at which point it returns to its wielder's empty hand, sheath, or belt.</p><p>This magical weapon has a number of Charges equal to your Intelligence modifier (a minimum of 1 Charge), and it regains all of its expended Charges each day at dawn."
     },
     {
       "name": "Replicate Magic Item (Very Rare)",
@@ -7650,6 +7709,11 @@
       "name": "Ring of the Elements",
       "prereqLevel": 13,
       "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>Upon infusing this magic ring you select one of the following damage types: acid, cold, fire, lightning, or thunder.  When the wearer casts a spell of 3rd-level or lower that deals that damage type, it can activate the ring to cause its spell to deal maximum damage to one target of that spell.  Once the wearer uses this ring to maximize the damage of a spell it cannot be used again until the next dawn.</p><p>At 17th level, it can be used on spells of 5th-level or lower."
+    },
+    {
+      "name": "Astral Cannon",
+      "prereqLevel": 17,
+      "description": "<strong>Item:</strong> a gauntlet or arcane focus</p><p>The wielder of this magical object can make a ranged spell attack against a target it can see within 60 feet. On hit, the target takes 2d10 force damage.</p><p>As an action, the wielder can expend one Charge to fire two dimensional motes at two unoccupied flat surfaces that it can see within 60 feet, creating one 5-foot by 5-foot portal that connects the two surfaces. This portal remains open for 1 minute, but it is closed early if five creatures pass through it, or if this Infusion is used to create another portal.</p><p>This magical object has a number of Charges equal to your Intelligence modifier (a minimum of 1 Charge), and it regains all of its expended Charges each day at dawn."
     },
     {
       "name": "Gauntlets of the Guardian",
