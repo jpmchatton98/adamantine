@@ -28371,5 +28371,268 @@
     ],
     "lists": ["Divine", "Invention", "Melodic", "Arcane"],
     "ritual": 1
+  },
+  {
+    "name": "Rat-Blossom",
+    "school": "Sangromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S, M (a live rat, which the spell consumes)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You toss the rat used as the material component in this spell to an unoccupied space within range where it begins to split and multiply and convolute, ratflesh growing and tangling until it transforms into a swarm of rats for the duration.",
+      "In combat, the swarm shares your initiative count, but takes its turn immediately after yours. When the spell ends or the swarm drops to 0 hit points, it is reduced to a bloody mass and any street rats created with its Thrashing Mass reaction disappear."
+    ],
+    "lists": ["Occult", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Embrittle Bones",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a cracked finger bone)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You attempt to weaken the vital structure of a non-ooze creature you can see within range. The target must succeed on a Constitution saving throw or be poisoned for the next minute.",
+      "While poisoned in this way, attacks against the creature score a critical on an 18-20.",
+      "At the end of each of its turns, the target can make another Constitution saving throw, ending the effect on a success."
+    ],
+    "type": "save",
+    "save": "con",
+    "lists": ["Occult", "Primal", "Arcane", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Fear-Reek",
+    "school": "Enchantment",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (a talon from a giant bird)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You begin to exude a pungent musk that drives creatures around you into a frenzy. Each creature in the area subtracts 1d4 from saving throws they make against being frightened."
+    ],
+    "higherLevels": [
+      "This spell's duration increases when you reach 5th level (10 minutes), 11th level (1 hour), and 17th level (8 hours)."
+    ],
+    "lists": ["Occult", "Primal", "Arcane"],
+    "ritual": 0
+  },
+  {
+    "name": "Gnawbone",
+    "school": "Transmutation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a pouch full of rodent teeth)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You choose a target creature, object, or 5 foot section of a nonmagical surface within range. When you cast this spell, and at the beginning of each of your turns for the duration, the target takes 1d2 force damage as material is scraped and ground away from it as though gnawed by invisible teeth. A creature or object reduced to 0 hit points by this damage disintegrates entirely."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 1d2 when you reach 5th level (2d2), 11th level (3d2), and 17th level (4d2)."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 1,
+        "die": 2,
+        "type": "force"
+      }
+    ]
+  },
+  {
+    "name": "Ghastly Gnawing",
+    "school": "Necromancy",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a sack of rats, which the spell consumes)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You draw forth the spirits of the rats used as the spell's material component, creating an Ephemeral Swarm in an unoccupied space within 10 feet of you.",
+      "The Ephemeral Swarm is friendly to you and obeys your mental commands (no action required) for as long as you maintain concentration. If you don't issue any commands to the Ephemeral Swarm, it takes no actions even in self defense.",
+      "When the spell ends, the Ephemeral Swarm doesn't disappear. Instead, you lose control of the Ephemeral Swarm, it becomes hostile toward you and your companions, and it pursues and attacks the nearest living creature on each of its turns. After 24 hours, the Ephemeral swarm dissipates."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Ichordrip Blessing",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (a venomous worm)",
+    "duration": "10 minutes",
+    "description": [
+      "Putrid black ichor begins to drip from the weapons of each creature within 30 feet of you. The first time each one of those creatures hits with a weapon attack, it deals an additional 1d6 poison damage and the effect ends for it."
+    ],
+    "higherLevels": [
+      "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 1,
+        "die": 6,
+        "type": "poison"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Putrid End",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a decaying lump of flesh)",
+    "duration": "8 hours",
+    "description": [
+      "You touch a living creature, infusing its flesh with the seeds of decay. If the target drops to 0 hit points as a result of taking damage, the target dies and dissolves into a pool of black sludge.",
+      "An unwilling creature can make a Constitution saving throw, resisting the effect on a success."
+    ],
+    "lists": ["Primal", "Occult", "Divine"],
+    "ritual": 1,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Shrivel Tongue",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 reaction, which you take when you see a living creature within 60 feet of you cast a spell",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You drain the moisture from the mouth of a creature, punishing it for casting a spell. After the spell resolves, the target must succeed on a Constitution saving throw or take 2d8 necrotic damage and be unable to speak or perform the verbal components of spells until the end of its next turn.",
+      "On a successful saving throw, the target takes half as much damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or above, the spell's damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 8,
+        "type": "necrotic"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Sickening Wind",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A befouling wind blows in a 60 foot line that is 10 feet across, traveling from one point you can see within range to another.",
+      "Each creature in the area must succeed on a Strength saving throw or take 6d6 poison damage and be pushed up to 20 feet in the direction of the wind's travel.",
+      "On a successful saving throw, a creature takes half as much damage and is not pushed."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or above, a creature that fails its saving throw against this spell is additionally poisoned until the end of your next turn."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Air",
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "poison"
+      }
+    ]
+  },
+  {
+    "name": "Snaptrap",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (an iron spring)",
+    "duration": "Instantaneous",
+    "description": [
+      "You call upon elements of the natural environment, weaving them together into components of a spiked cage that crashes together around a creature you can see within range.",
+      "The target must succeed on a Dexterity saving throw or take 4d8 piercing damage and be restrained until the beginning of its next turn, or take half as much damage on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Invention", "Elemental"],
+    "element": "Wood",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "piercing"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Chittering",
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You fill the mind of a creature you can see with horrid chittering, crowding the creature's own thoughts out of its mind. The creature must succeed on a Wisdom saving throw or be dominated by you until the beginning of your next turn.",
+      "A target that can see more of your allies than its own within 60 feet of it makes this saving throw with disadvantage."
+    ],
+    "lists": ["Primal", "Occult", "Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Vector-Spread",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "60 feet (15-foot radius)",
+    "components": "V, M (a vial of diseased phlegm)",
+    "duration": "Instantaneous",
+    "description": [
+      "You send corruption spiraling out from a bleeding, diseased, paralyzed, or poisoned creature you can see within range, forcing each creature within 15 feet of it to succeed on a Constitution saving throw or be afflicted with the same conditions until the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the affected radius increases by 5 feet for each slot level above 2nd."
+    ],
+    "upcastRange": {
+      "3": "60 feet (20-foot radius)",
+      "4": "60 feet (25-foot radius)",
+      "5": "60 feet (30-foot radius)",
+      "6": "60 feet (35-foot radius)",
+      "7": "60 feet (40-foot radius)",
+      "8": "60 feet (45-foot radius)",
+      "9": "60 feet (50-foot radius)"
+    },
+    "lists": ["Primal", "Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
   }
 ]

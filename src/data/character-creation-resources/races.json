@@ -6324,7 +6324,7 @@
       {
         "name": "Darkmask",
         "description": "Darkmask wealdkin, or raccoonfolk, are renowned for their ferocious strength. The average raccoonfolk can lift an object many times their size. With an inborn strength and sharp teeth and nails, raccoonfolk make for brutal adversaries.",
-        "asis": [{ "str": 1 }],
+        "asis": [{ "int": 1 }],
         "traits": [
           {
             "name": "Scratch and Bite",
@@ -6380,8 +6380,8 @@
       },
       {
         "name": "Squeaktooth",
-        "description": "Squeaktooth wealdkin, also known as ratfolk, have a keen intellect and a strategic mind. All ratfolk are taught how to wield a blade, even those that choose to dabble in wizardry. They have a knack for making and executing plans.",
-        "asis": [{ "int": 1 }],
+        "description": "Squeaktooth wealdkin, also known as ratfolk, have a keen intellect and a strategic mind. All ratfolk are taught how to wield a blade, even those that choose to dabble in wizardry. They have a knack for making and executing plans.</p><p>Unlike most wealdkin, ratfolk prefer to make their homes in urban environments, most commonly found living in makeshift settlements in sewers or alleyways.",
+        "asis": [{ "str": 1 }],
         "traits": [
           {
             "name": "Mini Gladiator",
