@@ -2304,6 +2304,24 @@
                   ]
                 },
                 {
+                  "name": "Wereotter",
+                  "traits": [
+                    {
+                      "name": "",
+                      "description": "Your kindred form takes the shape of a giant otter. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other otters.</li>    <li>When you make any ability check using your Dexterity, you can add your Constitution modifier to the result</li>    <li>You have a swimming speed equal to your walking speed and can hold your breath for up to 15 minutes.</li></ul>"
+                    }
+                  ]
+                },
+                {
+                  "name": "Wereowl",
+                  "traits": [
+                    {
+                      "name": "",
+                      "description": "Your kindred form takes the shape of a giant owl. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other owls.</li>    <li>You can add your Constitution modifier to ability checks made to hide or move silently.</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
+                    }
+                  ]
+                },
+                {
                   "name": "Wererat",
                   "traits": [
                     {
@@ -2345,6 +2363,15 @@
                     {
                       "name": "",
                       "description": "Your kindred form takes the shape of a lithe tiger. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other tigers</li>    <li>When you make any ability check using your Wisdom, you can add your Constitution modifier to the result</li>    <li>You gain a climbing speed equal to your walking speed</li></ul>"
+                    }
+                  ]
+                },
+                {
+                  "name": "Werevulture",
+                  "traits": [
+                    {
+                      "name": "",
+                      "description": "Your kindred form takes the shape of a giant vulture. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other vultures.</li>    <li>You have advantage on melee attack rolls against any creature that has any harmful condition.</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
                     }
                   ]
                 },
