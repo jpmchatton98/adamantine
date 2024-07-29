@@ -40,14 +40,7 @@
         "alignment": "NE",
         "symbol": "A black cobra",
         "portfolio": "Darkness",
-        "domains": [
-          "Apocalypse",
-          "Death",
-          "Eldritch",
-          "Madness",
-          "Night",
-          "Shadow"
-        ]
+        "domains": ["Apocalypse", "Death", "Eldritch", "Madness", "Shadow"]
       },
       {
         "name": "Lady of Pain",
@@ -79,14 +72,7 @@
         "alignment": "CE",
         "symbol": "A miasma with eyes",
         "portfolio": "Hunger",
-        "domains": [
-          "Apocalypse",
-          "Death",
-          "Eldritch",
-          "Madness",
-          "Night",
-          "Shadow"
-        ]
+        "domains": ["Apocalypse", "Death", "Eldritch", "Madness", "Shadow"]
       },
       {
         "name": "Praeteria",
@@ -142,7 +128,6 @@
           "Death",
           "Eldritch",
           "Madness",
-          "Night",
           "Shadow",
           "Flame"
         ]
@@ -230,7 +215,7 @@
         "alignment": "CE",
         "symbol": "White skull on a purple starburst",
         "portfolio": "Lies",
-        "domains": ["Night", "Shadow", "Trickery"]
+        "domains": ["Shadow", "Trickery"]
       },
       {
         "name": "Deneir",
@@ -447,14 +432,7 @@
         "alignment": "CN",
         "symbol": "Black thief's mask",
         "portfolio": "Thieves",
-        "domains": [
-          "Night",
-          "Shadow",
-          "Trickery",
-          "Twilight",
-          "Travel",
-          "Wealth"
-        ]
+        "domains": ["Shadow", "Trickery", "Twilight", "Travel", "Wealth"]
       },
       {
         "name": "Mielikki",
@@ -502,7 +480,7 @@
         "alignment": "CE",
         "symbol": "Crescent moon in front of wings",
         "portfolio": "Harpies, Night",
-        "domains": ["Death", "Night", "Shadow", "Sky", "Twilight"]
+        "domains": ["Death", "Shadow", "Sky", "Twilight"]
       },
       {
         "name": "Oghma",
@@ -584,7 +562,6 @@
         "portfolio": "Darkness, Loss",
         "domains": [
           "Death",
-          "Night",
           "Pain",
           "Shadow",
           "Sorrow",
@@ -755,7 +732,7 @@
         "alignment": "CE",
         "symbol": "Opened fangs",
         "portfolio": "Caves, Hunger",
-        "domains": ["Madness", "Night", "Shadow", "Strength", "War", "Mountain"]
+        "domains": ["Madness", "Shadow", "Strength", "War", "Mountain"]
       },
       {
         "name": "Beory",
@@ -787,14 +764,7 @@
         "alignment": "N",
         "symbol": "Arc of seven stars",
         "portfolio": "Stars",
-        "domains": [
-          "Eldritch",
-          "Knowledge",
-          "Light",
-          "Night",
-          "Travel",
-          "Flame"
-        ]
+        "domains": ["Eldritch", "Knowledge", "Light", "Travel", "Flame"]
       },
       {
         "name": "Cuthbert",
@@ -1007,7 +977,7 @@
           "Arcana",
           "Death",
           "Knowledge",
-          "Night",
+
           "Shadow",
           "Trickery",
           "Story"
@@ -1104,7 +1074,7 @@
         "alignment": "CE",
         "symbol": "Broken scales",
         "portfolio": "Greed, Lies",
-        "domains": ["Luck", "Night", "Shadow", "Trickery", "Mountain", "Wealth"]
+        "domains": ["Luck", "Shadow", "Trickery", "Mountain", "Wealth"]
       },
       {
         "name": "Kiri-Jolith",
@@ -1232,7 +1202,7 @@
         "alignment": "LE",
         "symbol": "Black crescent",
         "portfolio": "Hatred, Night",
-        "domains": ["Death", "Madness", "Night", "Shadow", "War"]
+        "domains": ["Death", "Madness", "Shadow", "War"]
       },
       {
         "name": "Zeboim",
@@ -1397,7 +1367,7 @@
         "alignment": "NG",
         "symbol": "A stone ring",
         "portfolio": "Heavens",
-        "domains": ["Eldritch", "Light", "Night", "Twilight"]
+        "domains": ["Eldritch", "Light", "Twilight"]
       },
       {
         "name": "Silver Flame",
@@ -1498,7 +1468,7 @@
         "alignment": "NE",
         "symbol": "The skull of a dragon",
         "portfolio": "Death, Dracoliches, Shadow Dragons",
-        "domains": ["Death", "Grave", "Night", "Shadow", "Plague"]
+        "domains": ["Death", "Grave", "Shadow", "Plague"]
       },
       {
         "name": "Raulothim",
@@ -1591,7 +1561,7 @@
         "alignment": "CG",
         "symbol": "Shaft of light",
         "portfolio": "Light, Stars",
-        "domains": ["Eldritch", "Light", "Night", "Shadow", "Flame"]
+        "domains": ["Eldritch", "Light", "Shadow", "Flame"]
       },
       {
         "name": "Avachel",
@@ -1745,7 +1715,7 @@
         "alignment": "CG",
         "symbol": "Full moon",
         "portfolio": "Dreams, Moon, Travel",
-        "domains": ["Light", "Night", "Shadow", "Travel", "Sea", "Time"]
+        "domains": ["Light", "Shadow", "Travel", "Sea", "Time"]
       },
       {
         "name": "Shevarash",
@@ -1800,7 +1770,7 @@
         "portfolio": "Darkness, Drow, Spiders",
         "domains": [
           "Death",
-          "Night",
+
           "Shadow",
           "Trickery",
           "Twilight",
@@ -1822,7 +1792,7 @@
         "alignment": "CE",
         "symbol": "Purple eye",
         "portfolio": "Oozes, Outcasts, Rebels, Underdark",
-        "domains": ["Night", "Shadow", "Travel"]
+        "domains": ["Shadow", "Travel"]
       },
       {
         "name": "Kiaransalee",
@@ -1971,7 +1941,7 @@
         "alignment": "LE",
         "symbol": "Broken arrow",
         "portfolio": "Duergar, Magic",
-        "domains": ["Arcana", "Night", "Shadow", "Mountain"]
+        "domains": ["Arcana", "Shadow", "Mountain"]
       },
       {
         "name": "Marthammor",
@@ -2040,7 +2010,7 @@
         "alignment": "NG",
         "symbol": "Dagger against a cloak",
         "portfolio": "Deception, Illusion",
-        "domains": ["Night", "Shadow", "Trickery", "Twilight", "Arts"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Arts"]
       },
       {
         "name": "Callarduran",
@@ -2048,7 +2018,7 @@
         "alignment": "N",
         "symbol": "Golden signet ring",
         "portfolio": "Mining, Stone, Svirfneblin",
-        "domains": ["Night", "Shadow", "Mountain", "Wealth"]
+        "domains": ["Shadow", "Mountain", "Wealth"]
       },
       {
         "name": "Flandal",
@@ -2088,7 +2058,7 @@
         "alignment": "NG",
         "symbol": "Glowing gemstone",
         "portfolio": "Death, Earth, Underdark",
-        "domains": ["Death", "Grave", "Night", "Shadow", "Mountain", "Plague"]
+        "domains": ["Death", "Grave", "Shadow", "Mountain", "Plague"]
       },
       {
         "name": "Urdlen",
@@ -2149,7 +2119,7 @@
         "alignment": "NE",
         "symbol": "Red crescent moon",
         "portfolio": "Darkness, Night, Stealth, Thieves, Trickery",
-        "domains": ["Night", "Shadow", "Trickery", "Twilight", "Travel"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Travel"]
       },
       {
         "name": "Yurtus",
@@ -2366,15 +2336,7 @@
         "alignment": "CN",
         "symbol": "Crescent moon",
         "portfolio": "Moon, Trickery",
-        "domains": [
-          "Night",
-          "Shadow",
-          "Trickery",
-          "Twilight",
-          "Travel",
-          "Sea",
-          "Time"
-        ]
+        "domains": ["Shadow", "Trickery", "Twilight", "Travel", "Sea", "Time"]
       },
       {
         "name": "Nephthys",
@@ -2485,7 +2447,7 @@
         "alignment": "NG",
         "symbol": "Bow and arrow on crescent moon",
         "portfolio": "Hunting, Moon",
-        "domains": ["Life", "Nature", "Night", "Sea", "Time"]
+        "domains": ["Life", "Nature", "Sea", "Time"]
       },
       {
         "name": "Athena",
@@ -2548,7 +2510,7 @@
         "alignment": "CE",
         "symbol": "Crow",
         "portfolio": "Night",
-        "domains": ["Night", "Shadow"]
+        "domains": ["Shadow"]
       },
       {
         "name": "Eros",
@@ -2645,7 +2607,7 @@
         "alignment": "N",
         "symbol": "Poppy flower",
         "portfolio": "Sleep",
-        "domains": ["Night", "Shadow", "Trickery", "Twilight", "Hearth"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Hearth"]
       },
       {
         "name": "Nike",
@@ -2697,7 +2659,7 @@
           "Death",
           "Eldritch",
           "Madness",
-          "Night",
+
           "Shadow",
           "Tempest",
           "Plague",

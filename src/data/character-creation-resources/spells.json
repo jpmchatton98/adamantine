@@ -6836,7 +6836,14 @@
     "description": [
       "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature."
     ],
-    "lists": ["Arcane", "Elemental", "Psionic", "Melodic", "Invention"],
+    "lists": [
+      "Arcane",
+      "Elemental",
+      "Psionic",
+      "Melodic",
+      "Invention",
+      "Primal"
+    ],
     "ritual": 0,
     "element": "Air"
   },
@@ -27862,7 +27869,7 @@
     "description": [
       "You charge the air around you, emanating a field of raw magical energy; for the duration, whenever you or another creature within 15 feet of you casts a spell that targets one or more creatures, it can target one additional creature."
     ],
-    "lists": ["Arcane", "Invention"],
+    "lists": ["Arcane", "Invention", "Primal"],
     "ritual": 0
   },
   {
@@ -28634,5 +28641,368 @@
     "ritual": 0,
     "type": "save",
     "save": "con"
+  },
+  {
+    "name": "Banish Hope",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A wave of overwhelming despair washes forth from you in a 60 foot cone. Each creature in the area must succeed on a Wisdom saving throw or fall prone and be dazed for the duration. At the end of each of its turns, an affected creature can repeat this saving throw, ending the effect on a success."
+    ],
+    "lists": ["Psionic", "Occult", "Divine", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Bleak Snare",
+    "school": "Abjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "1 minute",
+    "description": [
+      "You draw the shadow of a creature you can see within range into deeper darkness, forcing the target to succeed on a Strength saving throw or be dragged up to 20 feet in a direction of your choice.",
+      "If it ends this movement in dim light or darkness, the target is restrained in place. The creature can use its action to attempt a Strength (Athletics) or Dexterity (Acrobatics) check, escaping the restraint on a success.",
+      "This effect ends immediately for the creature if it becomes illuminated by bright light."
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "str"
+  },
+  {
+    "name": "Darkvault",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a splinter of wood from a coffin)",
+    "duration": "1 hour",
+    "description": [
+      "The shadows in a 60 foot radius around you deepen to utmost black. Each region of darkness within the affected area becomes magical darkness for the duration, and can't be illuminated by nonmagical sources or by cantrips."
+    ],
+    "higherLevels": [
+      "When you cast this spell with a spell slot of 5th level or above, the duration becomes 24 hours. When you cast this spell with a spell slot of 7th level or higher, the spell lasts until dispelled."
+    ],
+    "upcastDuration": {
+      "4": "1 hour",
+      "5": "24 hours",
+      "6": "24 hours",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    },
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0
+  },
+  {
+    "name": "Embrace Loss",
+    "school": "Abjuration",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when you are forced to make a saving throw",
+    "range": "Self",
+    "components": "V, S, M (a finger bone removed from your body)",
+    "duration": "1 round",
+    "description": [
+      "You relinquish yourself to forces beyond your control, choosing to fail a saving throw instead of rolling. Before suffering the saving throw's effects, you gain 15 temporary hit points that last until the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase by 5 for each slot level above 1st."
+    ],
+    "lists": ["Occult", "Divine", "Psionic", "Melodic"],
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 15,
+        "temporary": true
+      }
+    ],
+    "upcastAmount": 5
+  },
+  {
+    "name": "Glimpse of True Nothing",
+    "school": "Illusion",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You open the mind of a creature you can see to the infinite timeless void that envelops the fleeting aberration of existence. The target must succeed on a Wisdom saving throw or be frightened and dazed until the end of its next turn as it struggles against reality.",
+      "On a successful saving throw or when this effect ends for it, the creature takes 4d6 psychic damage as the truth finds brief footing in its mind."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the duration becomes 1 minute."
+    ],
+    "lists": ["Occult", "Psionic", "Elemental", "Melodic"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "psychic"
+      }
+    ],
+    "upcastDuration": {
+      "4": "Concentration, up to 1 minute",
+      "5": "Concentration, up to 1 minute",
+      "6": "Concentration, up to 1 minute",
+      "7": "Concentration, up to 1 minute",
+      "8": "Concentration, up to 1 minute",
+      "9": "Concentration, up to 1 minute"
+    }
+  },
+  {
+    "name": "Glyph of Unmaking",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet (5-foot radius)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You scribe a glyph of roiling shadow in the air at a point you can see within range where it flares, draining the reality from around it in a 5 foot radius.",
+      "Each creature in the area must succeed on a Charisma saving throw or take 5d10 force damage, or half as much on a success. A creature killed by this damage turns to shadow and melts away, disintegrating entirely."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the force damage increases by 1d10 for each slot level above 4th."
+    ],
+    "lists": ["Occult", "Arcane", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 10,
+        "type": "force"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "On Wings of Black",
+    "school": "Transposition",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a piece of gossamer lace)",
+    "duration": "1 hour",
+    "description": [
+      "A mantle of shadow spreads out behind you, granting you a flying speed of 60 feet while you are in dim light or darkness for the duration. When you are illuminated by bright light or the spell ends, you immediately fall if you are still aloft."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the duration becomes 8 hours."
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "upcastDuration": {
+      "3": "1 hour",
+      "4": "8 hours",
+      "5": "8 hours",
+      "6": "8 hours",
+      "7": "8 hours",
+      "8": "8 hours",
+      "9": "8 hours"
+    }
+  },
+  {
+    "name": "Reave Spirit",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a stolen memento)",
+    "duration": "Instantaneous",
+    "description": [
+      "Wisps of shadow rush forth at your command, tearing through a creature within range. Make a ranged spell attack. On a hit, the target takes 6d8 psychic damage. Then, if the target is attuned to one or more magic items, it must succeed on a Charisma saving throw or lose attunement to one such item of its choice."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the psychic damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "lists": ["Occult", "Divine", "Psionic", "Melodic", "Invention"],
+    "ritual": 0,
+    "type": ["attack", "save"],
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "psychic"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Repulse Light",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You raise a hand and a torrent of shadows streams forth in a 30 foot cone, pushing each light source in the area up to 30 feet away.",
+      "An affected nonmagical light source or magical light produced by a spell of 3rd level or below is extinguished if it can't be pushed due to being anchored in place. A creature carrying an affected light source can make a Strength saving throw, resisting the spell on a success."
+    ],
+    "lists": ["Occult", "Psionic", "Melodic", "Invention", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "str"
+  },
+  {
+    "name": "Shadow's Siphon",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a smear of pitch)",
+    "duration": "1 round",
+    "description": [
+      "You call the shadows around a creature in range to reach ephemeral claws toward it. Make a ranged spell attack. On a hit, the target takes 3d8 necrotic damage.",
+      "If the target is not illuminated by bright light, on a hit the target additionally gains disadvantage on the first Strength-based d20 roll it makes before the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the necrotic damage increases by 1d8 for each slot level above 2nd."
+    ],
+    "lists": ["Occult", "Arcane", "Elemental", "Divine"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "necrotic"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Shroudstep Vindication",
+    "school": "Transposition",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when you are hit with an attack by a creature you can see within 30 feet",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You teleport to an unoccupied space of dim light or darkness within 5 feet of a creature that hit you with an attack, then can make a melee weapon attack against it.",
+      "If you teleported 10 feet or fewer in this way, this attack has advantage."
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0
+  },
+  {
+    "name": "Smothering Gloom",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a pinch of raven down)",
+    "duration": "Up to 1 minute",
+    "description": [
+      "Darkness pours into the mouth and nose of a creature in dim light or darkness that you can see within range, forcing it to succeed on a Constitution saving throw or begin choking.",
+      "When the target ends its turn illuminated by Bright Light, it can repeat this saving throw, ending the effect on a success."
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Stain the Soul",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (a rodent's tail)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You inculcate a dreadful fear of light in a creature you can see within range, forcing it to make a Wisdom saving throw. On a failure, the target is frightened of each source of bright light it can see. An affected target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, you can target one additional target for each slot level above 3rd."
+    ],
+    "lists": ["Occult", "Elemental", "Divine", "Melodic", "Psionic"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "upcastRange": {
+      "4": "30 feet (2 targets)",
+      "5": "30 feet (3 targets)",
+      "6": "30 feet (4 targets)",
+      "7": "30 feet (5 targets)",
+      "8": "30 feet (6 targets)",
+      "9": "30 feet (7 targets)"
+    }
+  },
+  {
+    "name": "Shadow Hollow",
+    "school": "Illusion",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet (15-foot cube)",
+    "components": "V, S, M (a pinch of ash collected from a burned, unopened letter)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You transform a segment of a nonmagical object or surface into an illusory version of itself. The segment can be no larger than a 15 foot cube, and must extend from a point on the object or surface you can see within range.",
+      "The transformed segment's appearance remains unchanged, but it otherwise acts as empty space. A creature can make an Intelligence (Investigation) or Wisdom (Perception) check against your spell save DC to notice this effect.",
+      "When the spell ends, each creature and object in the space is ejected to the nearest unoccupied space and takes 5 (1d10) force damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the maximum size of the affected segment increases by 5 feet in each direction for each slot level above 5th."
+    ],
+    "lists": ["Occult", "Melodic", "Psionic", "Invention", "Arcane"],
+    "ritual": 0,
+    "upcastRange": {
+      "6": "60 feet (20-foot cube)",
+      "7": "60 feet (25-foot cube)",
+      "8": "60 feet (30-foot cube)",
+      "9": "60 feet (35-foot cube)"
+    }
+  },
+  {
+    "name": "Umbral Oubliette",
+    "school": "Transposition",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "One creature you can see within range sinks into its own shadow, falling into the great nothing that lies beneath and before everything. The creature takes 4d6 psychic damage at the beginning of each of its turns, and can use its action to attempt to claw its way out with a Strength (Athletics) or Dexterity (Acrobatics) check, ending the effect on a success. When it does, a creature within 5 feet of the space it departed can use its reaction to give the creature advantage on its check.",
+      "When this effect ends for a creature, it reappears in the space it departed from, or the nearest unoccupied space if it cannot."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 9th level, the psychic damage increases by 4d6."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "psychic"
+      }
+    ],
+    "upcastDice": 4
   }
 ]
