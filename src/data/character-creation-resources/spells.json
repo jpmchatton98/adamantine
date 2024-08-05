@@ -27254,7 +27254,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the suppressed spell has no effect if its level is less than or equal to the level of the spell slot you used."
     ],
-    "lists": ["Melodic", "Elemental", "Psionic", "Invention"],
+    "lists": ["Arcane", "Melodic", "Elemental", "Psionic", "Invention"],
     "element": "Aether",
     "ritual": 0
   },
