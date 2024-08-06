@@ -5686,6 +5686,16 @@
       "description": "Your hourglass allows you to shift short distances in time.  When the creature directly before you in the initiative count is about to take its turn, you may choose to take your turn that round before theirs."
     },
     {
+      "name": "Magical Grains",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Hourglass"
+      },
+      "description": "Your hourglass allows you to wield magic more quickly.  When you cast a spell of 1st level or higher on your turn with a casting time of 1 action, you can cast a cantrip with a casting time of 1 action as a bonus action."
+    },
+    {
       "name": "Settle the Grains",
       "prereqLevel": 17,
       "prereq": {
