@@ -60,6 +60,32 @@
         </tr>
       </tbody>
     </nz-table>
+
+    <h6>Notes</h6>
+    <p>
+      <strong>Blunderbuss / Shotgun.</strong> A blunderbuss or shotgun has a
+      0.75&times; range modifier.
+    </p>
+    <p>
+      <strong>Heavy Firearms.</strong> A firearm with a weight of 20 pounds or
+      more has the Heavy property.
+    </p>
+    <p>
+      <strong>Massive Firearms.</strong> A firearm with a weight of 30 pounds or
+      more has the Massive property. Its Strength score requirement is equal to
+      10 plus 1 for every 10 pounds above 30.
+    </p>
+    <p>
+      <strong>Light Firearms.</strong> A firearm with a weight of 7 pounds or
+      less has the Light property. If you have the Outlaw feat, a Light firearm
+      is one-handed.
+    </p>
+
+    <p>
+      <strong>Ammunition Belts.</strong> A crank gun can only fire when loaded
+      with a crank gun belt. A crank gun belt holds 60 cartridges and can be
+      reloaded over the course of 10 minutes.
+    </p>
   </nz-tab>
   <nz-tab nzTitle="Mechanisms">
     <nz-table
@@ -101,6 +127,13 @@
         </tr>
       </tbody>
     </nz-table>
+
+    <h6>Notes</h6>
+    <p>
+      <strong>Magazines.</strong> A magazine-fed firearm can only fire when
+      loaded with a magazine. A magazine can be reloaded over the course of 1
+      minute.
+    </p>
   </nz-tab>
   <nz-tab nzTitle="Materials">
     <nz-table
@@ -166,6 +199,17 @@
         </tr>
       </tbody>
     </nz-table>
+
+    <h6>Notes</h6>
+    <p>
+      <strong>Barrel Lengths.</strong> Barrel lengths are relative to
+      one-another. A short barrel is a length typical of sidearms or sawn-off
+      longarms, and a medium barrel is a length typical of longarms.
+    </p>
+    <p>
+      <strong>Rifling.</strong> A barrel can be rifled. This triples the cost
+      and doubles the range.
+    </p>
   </nz-tab>
   <nz-tab nzTitle="Stocks">
     <nz-table
@@ -364,5 +408,71 @@
         </nz-table>
       </nz-tab>
     </nz-tabset>
+  </nz-tab>
+  <nz-tab nzTitle="Special Ammunition">
+    <nz-table
+      [nzData]="itemData"
+      [nzShowPagination]="false"
+      [nzPageSize]="1 / 0"
+    >
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Cost</th>
+          <th>Ammo Type</th>
+          <th>Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aether Round</td>
+          <td>100 gp</td>
+          <td>Any</td>
+          <td>Additional 1d8 force damage in 5 ft. radius.</td>
+        </tr>
+        <tr>
+          <td>Inscribed Round</td>
+          <td>Spell scroll cost</td>
+          <td>Any</td>
+          <td>Replaces damage with spell effect.</td>
+        </tr>
+        <tr>
+          <td>Dragon's Breath</td>
+          <td>50 gp</td>
+          <td>Blunderbuss / Shotgun</td>
+          <td>
+            Attack becomes 15 ft. cone, DEX save equal to 8 + attack bonus,
+            damage type changed to fire
+          </td>
+        </tr>
+        <tr>
+          <td>Slug</td>
+          <td>2&times;</td>
+          <td>Blunderbuss / Shotgun</td>
+          <td>Negates range penalty</td>
+        </tr>
+        <tr>
+          <td>Full Metal Jacket</td>
+          <td>3&times;</td>
+          <td>Cartridge</td>
+          <td>+2 to hit against armored targets, ignores half cover</td>
+        </tr>
+        <tr>
+          <td>Hollow-Point</td>
+          <td>3&times;</td>
+          <td>Cartridge</td>
+          <td>+1 damage against unarmored targets</td>
+        </tr>
+        <tr>
+          <td>Ceramic Round</td>
+          <td>2&times;</td>
+          <td>Musketball / Hand-Cannonball</td>
+          <td>
+            Attack becomes 15 ft. cone, DEX save equal to 8 + attack bonus,
+            damage type changed to slashing
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
   </nz-tab>
 </nz-tabset>

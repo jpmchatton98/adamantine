@@ -38,6 +38,23 @@
       ]
     },
     {
+      "name": "Assault Rifle",
+      "dice": 2,
+      "die": 6,
+      "weightMod": 1.5,
+      "martialAmmo": "Rifle Catridge",
+      "properties": [
+        {
+          "name": "Special",
+          "description": "An assault rifle must be magazine-fed.</p><p>For each attack made with an assault rifle, you can choose for the gun to fire 3 times. Attack rolls are made for each shot."
+        },
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
       "name": "Hand-Cannon",
       "dice": 2,
       "die": 12,
@@ -59,7 +76,7 @@
       "dice": 1,
       "die": 10,
       "weightMod": 10,
-      "martialAmmo": "Crank Gun Belt",
+      "martialAmmo": "Rifle Catridge",
       "properties": [
         {
           "name": "Heavy",
@@ -67,7 +84,28 @@
         },
         {
           "name": "Special",
-          "description": "A crank gun must be cylinder-action.</p><p>For each attack made with a crank gun, the gun fires 6 times. Attack rolls are made for each shot.</p.<p>Furthermore, while a crank gun is mounted to a crank gun stand, for the purposes of circumventing the gun's heavy property and weight, the wielder is not considered to be carrying the crank gun, so long as the crank gun remains attached to its stand and the wielder is not carrying the stand."
+          "description": "A crank gun must be cylinder-action.</p><p>For each attack made with a crank gun, the gun fires 6 times. Attack rolls are made for each shot.</p><p>Furthermore, while a crank gun is mounted to a crank gun stand, for the purposes of circumventing the gun's heavy property and weight, the wielder is not considered to be carrying the crank gun, so long as the crank gun remains attached to its stand and the wielder is not carrying the stand."
+        },
+        {
+          "name": "Two-handed",
+          "description": "This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it."
+        }
+      ]
+    },
+    {
+      "name": "Machine Gun",
+      "dice": 1,
+      "die": 10,
+      "weightMod": 10,
+      "martialAmmo": "Rifle Catridge",
+      "properties": [
+        {
+          "name": "Heavy",
+          "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
+        },
+        {
+          "name": "Special",
+          "description": "A machine gun must be magazine-fed.</p><p>For each attack made with a machine gun, the gun fires 6 times. Attack rolls are made for each shot.</p><p>Furthermore, while a machine gun is mounted to a gun stand, for the purposes of circumventing the gun's heavy property and weight, the wielder is not considered to be carrying the gun, so long as the gun remains attached to its stand and the wielder is not carrying the stand."
         },
         {
           "name": "Two-handed",
@@ -179,6 +217,14 @@
       "magSize": 6,
       "reloadTime": "1 action loads PB - 1",
       "properties": []
+    },
+    {
+      "name": "Magazine-fed",
+      "type": 1,
+      "costMod": 10,
+      "magSize": 15,
+      "reloadTime": "1 bonus action",
+      "properties": []
     }
   ],
   "material": [
@@ -218,7 +264,7 @@
       "properties": []
     },
     {
-      "name": "Standard",
+      "name": "Medium",
       "range": 60,
       "longRange": 120,
       "weight": 4,

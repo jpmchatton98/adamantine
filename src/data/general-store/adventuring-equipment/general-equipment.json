@@ -27,7 +27,7 @@
     "name": "Ammunition Belt",
     "cost": 10,
     "weight": 20,
-    "description": "Ammunition belts are how ammunition is delivered into the mechanism of the crank gun. Each ammo belt weighs 20 pounds, which is counted toward to the total weight of the gun while attached to it. Each belt can hold up to 60 pistol cartridges.</p><p>Once exhausted, the ammunition belt must be loaded over the course of 10 minutes. An ammunition belt cannot be loaded while attached to a crank gun.</p><p>Removing or attaching an ammo belt to a crank gun requires an action. A crank gun may only have one ammo belt attached to it at a time."
+    "description": "Ammunition belts are how ammunition is delivered into the mechanism of the crank gun. The weight of an ammunition belt is counted toward to the total weight of the gun while attached to it. Each belt can hold up to 60 cartridges.</p><p>Once exhausted, the ammunition belt must be loaded over the course of 10 minutes. An ammunition belt cannot be loaded while attached to a crank gun.</p><p>Removing or attaching an ammo belt to a crank gun requires an action. A crank gun may only have one ammo belt attached to it at a time."
   },
   {
     "name": "Anvil",
@@ -138,12 +138,6 @@
     "description": "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor."
   },
   {
-    "name": "Crank Gun Stand",
-    "cost": 15,
-    "weight": 30,
-    "description": "A crank gun stand is a special tripod made for supporting crank guns. It stands about three feet tall and has implements and attachment points needed to mount any crank gun to it. Doing so requires five minutes and the use of someone proficient with Tinker's Tools."
-  },
-  {
     "name": "Compass",
     "cost": 10,
     "weight": 0.25,
@@ -178,6 +172,12 @@
     "cost": 20,
     "weight": 5,
     "description": "A gun belt is a belt made to hold one-handed firearms. A gun belt has two holsters on it for firearms, and you can draw any number of firearms in gun belt holsters as part of the same action, provided you have hands to hold them in."
+  },
+  {
+    "name": "Gun Stand",
+    "cost": 15,
+    "weight": 30,
+    "description": "A gun stand is a special tripod made for supporting crank guns and machine guns. It stands about three feet tall and has implements and attachment points needed to mount any crank gun or machine gun to it. Doing so requires five minutes and the use of someone proficient with Tinker's Tools."
   },
   {
     "name": "Gunpowder, Horn",
@@ -298,6 +298,30 @@
     "cost": 250,
     "weight": 1,
     "description": "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 25 Dexterity check."
+  },
+  {
+    "name": "Magazine, small",
+    "cost": 15,
+    "weight": 1,
+    "description": "Magazines are how ammunition is delivered into the mechanism of a magazine-fed firearm.  The weight of a magazine is counted toward to the total weight of the gun while attached to it.  A small magazine can hold up to 15 cartridges.</p><p>Once exhausted, the magazine must be loaded over the course of 1 minute."
+  },
+  {
+    "name": "Magazine, medium",
+    "cost": 20,
+    "weight": 1.5,
+    "description": "Magazines are how ammunition is delivered into the mechanism of a magazine-fed firearm.  The weight of a magazine is counted toward to the total weight of the gun while attached to it.  A medium magazine can hold up to 20 cartridges.</p><p>Once exhausted, the magazine must be loaded over the course of 1 minute."
+  },
+  {
+    "name": "Magazine, large",
+    "cost": 30,
+    "weight": 2,
+    "description": "Magazines are how ammunition is delivered into the mechanism of a magazine-fed firearm.  The weight of a magazine is counted toward to the total weight of the gun while attached to it.  A large magazine can hold up to 30 cartridges.</p><p>Once exhausted, the magazine must be loaded over the course of 1 minute."
+  },
+  {
+    "name": "Magazine, drum",
+    "cost": 50,
+    "weight": 4,
+    "description": "Magazines are how ammunition is delivered into the mechanism of a magazine-fed firearm.  The weight of a magazine is counted toward to the total weight of the gun while attached to it.  A drum magazine can hold up to 50 cartridges.</p><p>Once exhausted, the magazine must be loaded over the course of 1 minute."
   },
   {
     "name": "Magnet",
