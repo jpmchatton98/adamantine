@@ -2383,6 +2383,86 @@
     "description": "The innate resistance to magic that angels possess extends to you. You have advantage on saving throws against spells and other magical effects."
   },
   {
+    "name": "Impish Curse",
+    "prereq": [
+      {
+        "race": ["imp"]
+      }
+    ],
+    "type": "racial",
+    "description": "You learn to wield a devilish curse.  Choose one the following curses.  As an action, you can touch a creature within 5 feet of you and force them to make a Charisma saving throw (DC = 8 + your proficiency bonus + your Charisma modifier).  On a failed save, the target becomes cursed, and suffers the effects of your impish curse.  You must concentrate on this curse, as if concentrating on a spell.</p><p>You can use your impish curse once, and regain the ability to do so when you finish a long rest.",
+    "choices": [
+      {
+        "type": "trait",
+        "options": [
+          {
+            "name": "Curse of Choleric Rancor",
+            "traits": [
+              {
+                "name": "",
+                "description": "The cursed creature has advantage on melee attacks that target the last creature to deal damage to it, and disadvantage on all other attacks."
+              }
+            ]
+          },
+          {
+            "name": "Curse of Euphoric Distemper",
+            "traits": [
+              {
+                "name": "",
+                "description": "The cursed creature treats each creature further than 10 feet away from it that has not taken a hostile action against it in the last minute as friendly."
+              }
+            ]
+          },
+          {
+            "name": "Curse of Melancholia",
+            "traits": [
+              {
+                "name": "",
+                "description": "When the cursed creature misses with an attack, it becomes dazed until the end of its next turn, or until it takes any damage."
+              }
+            ]
+          },
+          {
+            "name": "Curse of Phlegmatic Nerves",
+            "traits": [
+              {
+                "name": "",
+                "description": "Whenever the cursed creature fails a saving throw against being frightened, it takes 10 (3d6) psychic damage."
+              }
+            ]
+          },
+          {
+            "name": "Curse of Sanguine Humor",
+            "traits": [
+              {
+                "name": "",
+                "description": "Whenever the cursed creature is missed with an attack, it is overcome with laughter, suffering one of the following effects:<ul><li>The target loses its reaction.</li><li>If the target cannot lose its reaction, it falls prone.</li><li>If the target is prone and cannot lose its reaction, it begins choking until the end of its next turn.</li></ul>"
+              }
+            ]
+          },
+          {
+            "name": "Curse of Spreading Wounds",
+            "traits": [
+              {
+                "name": "",
+                "description": "Whenever the cursed creature takes damage, it takes 1d4 additional damage of the same type."
+              }
+            ]
+          },
+          {
+            "name": "Curse of Unbearable Stench",
+            "traits": [
+              {
+                "name": "",
+                "description": "The cursed creature emits foul vapors in a 5 foot radius. Each creature that starts their turn in that area must succeed on a Constitution saving throw or be poisoned until the end of its next turn."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Melding Spores",
     "prereq": [
       {

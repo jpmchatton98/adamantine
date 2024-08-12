@@ -6141,8 +6141,8 @@
         ]
       },
       {
-        "name": "Fiendsight",
-        "description": "You can see in magical darkness within 10 feet of you as though it were dim light."
+        "name": "Darksight",
+        "description": "Your darkvision can penetrate magical darkness."
       },
       {
         "name": "Flight",
@@ -15163,8 +15163,8 @@
     "languages": ["Common"],
     "traits": [
       {
-        "name": "Fiendsight",
-        "description": "You can see in magical darkness within 10 feet of you as though it were dim light."
+        "name": "Darksight",
+        "description": "Your darkvision can penetrate magical darkness."
       }
     ],
     "subraces": [
