@@ -379,11 +379,20 @@ export class MonsterComponent extends BaseComponent implements OnInit {
   }
 
   public getLegendaryActionsHeader() {
+    let legendaryActions = 'three legendary actions';
+    if (this.monster.mythic) {
+      if (this.monster.cr >= 15) {
+        legendaryActions = 'five legendary actions';
+      }
+    } else if (this.monster.cr <= 20 && this.monster.cr >= 10) {
+      legendaryActions = 'two legendary actions';
+    } else if (this.monster.cr < 10) {
+      legendaryActions = 'one legendary action';
+    }
+
     return `${this.capitalize(
       this.monster.shortName ?? this.monster.name
-    )} can take ${
-      this.monster.mythic ? '5' : '3'
-    } legendary actions choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn.  ${this.capitalize(
+    )} can take ${legendaryActions} choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn.  ${this.capitalize(
       this.monster.shortName ?? this.monster.name
     )} regains spent legendary actions at the start of ${
       this.monster.pronouns ? this.monster.pronouns[2] : 'its'

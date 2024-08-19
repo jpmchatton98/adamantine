@@ -29004,5 +29004,30 @@
       }
     ],
     "upcastDice": 4
+  },
+  {
+    "name": "Osseous Bonds",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a pinch of bone dust)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a creature and a layer of bone begins to encase the target's body, forcing it to succeed on a Constitution saving throw or gain 20 temporary hit points.",
+      "While the creature has any of these temporary hit points, it is blinded, restrained, choking, and its AC becomes 20, unless it was already higher."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase by 5 for each slot level above 1st."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 20,
+        "temporary": true
+      }
+    ],
+    "upcastAmount": 5
   }
 ]
