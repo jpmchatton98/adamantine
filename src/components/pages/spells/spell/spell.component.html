@@ -41,6 +41,8 @@
     </div>
   </div>
 
-  <h5>Lists</h5>
-  {{ spell.lists.sort().join(", ") }}
+  <div *ngIf="spell.lists">
+    <h5>Lists</h5>
+    {{ spell.lists.sort().join(", ") }}
+  </div>
 </div>

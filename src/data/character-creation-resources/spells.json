@@ -29029,5 +29029,211 @@
       }
     ],
     "upcastAmount": 5
+  },
+  {
+    "name": "Awaken Bloodfire",
+    "school": "Sangromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (a handful of woad-leaves)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You quicken the blood of a creature you can see within range. For the duration, that creature can use its bonus action to make a melee weapon attack on each of its turns, and all attacks that target the creature have advantage.",
+      "An unwilling target can make a Constitution saving throw, resisting this effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature in range for each two slot levels above 3rd."
+    ],
+    "lists": ["Occult", "Arcane", "Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "upcastRange": {
+      "4": "30 feet (2 targets)",
+      "5": "30 feet (3 targets)",
+      "6": "30 feet (4 targets)",
+      "7": "30 feet (5 targets)",
+      "8": "30 feet (6 targets)",
+      "9": "30 feet (7 targets)"
+    }
+  },
+  {
+    "name": "Bathe in Flame",
+    "school": "Evocation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (100-foot radius)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "Hungry flames spill forth from you in all directions, roiling in a 100 foot radius until the beginning of your next turn.",
+      "A creature other than you that starts its turn in the area must succeed on a Dexterity saving throw or take 10d6 fire damage, or take half as much damage on a success. A creature that has total cover from you is unaffected."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, the duration increases by 1 round for each slot level above 7th."
+    ],
+    "lists": ["Occult", "Arcane", "Primal", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "upcastDuration": {
+      "8": "Concentration, up to 2 rounds",
+      "9": "Concentration, up to 3 rounds"
+    }
+  },
+  {
+    "name": "Hurl Flame",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S, M (a charred knuckle bone)",
+    "duration": "Instantaneous",
+    "description": [
+      "Infernal flames dance upon your palm before hurtling toward a creature within range. Make a ranged spell attack. On a hit, the target takes 4d6 fire damage. On a critical hit, the target additionally begins burning (1d10)."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level, it scores a critical on an 18-20. When you cast this spell using a spell slot of 4th level or higher, it scores a critical on an 16-20."
+    ],
+    "lists": ["Occult", "Arcane", "Elemental"],
+    "element": "Fire",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Hurl Meteor",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You call forth a flaming stone flies through the air, growing in size and speed as it moves. Make a ranged spell attack against a creature in range.",
+      "On a hit, the target takes 10d6 bludgeoning damage plus 10d6 fire damage. If your target is at an elevation at least 5 feet lower than you, this attack has advantage and pushes the target up to 15 feet away on a hit."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, the bludgeoning and fire damage each increase by 1d6 for each slot level above 6th."
+    ],
+    "lists": ["Occult", "Arcane", "Primal"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "fire"
+      },
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Curse of the Horned Siege",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 reaction, when a creature you can see within range fails a saving throw against being frightened",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You deface a frightened creature's soul with an indelible mark of cowardice, forcing it to succeed on a Charisma saving throw or be cursed.",
+      "While cursed in this way, the creature has disadvantage on saving throws against being frightened. While the cursed creature is frightened, all attacks made against it have advantage."
+    ],
+    "lists": ["Occult", "Melodic", "Psionic", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Rust-Wrought Ruin",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot radius)",
+    "components": "V, S, M (a flake of rust)",
+    "duration": "Instantaneous",
+    "description": [
+      "You disintegrate one nonmagical metal object you can see within 60 feet into a flurry of razor flakes, destroying it.",
+      "Each creature within 10 feet of it must succeed on a Dexterity saving throw or take 6d6 slashing damage and begin bleeding (2d6)."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "slashing"
+      }
+    ],
+    "unique": true
+  },
+  {
+    "name": "Burning Tower Art",
+    "school": "Conjuration",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "300 feet (10-foot cylinder)",
+    "components": "V, S, M (a metal fire poker)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You call down a 100 foot tall column of red-hot iron in a 10 foot radius you can see within 300 feet.",
+      "Each creature in the area is pushed to the nearest unoccupied space, then must succeed on a Dexterity saving throw or take 8d8 bludgeoning plus 4d6 fire damage and be knocked prone, or take half as much damage on a success.",
+      "As an action on your turn while the spell lasts, you can move the column up to 30 feet in a straight line.  Each creature it ends this movement within 5 feet of must succeed on a Strength saving throw or take 2d8 bludgeoning plus 2d6 fire damage and be pushed 10 feet away from it."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "bludgeoning"
+      },
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "unique": true
+  },
+  {
+    "name": "Black Iron Bloom",
+    "school": "Transmutation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (an ingot of iron)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Veins of iron begin to spread from you in a 30 foot radius, corrupting all they touch. A creature that starts its turn in the area must succeed on a Constitution saving throw or have a limb of its choice turn to iron, becoming unusable and counting as a nonmagical metal object for the spell's duration.",
+      "If each of its limbs are already iron, the creature is instead petrified until cured by Greater Restoration or similar magic."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "unique": true
   }
 ]

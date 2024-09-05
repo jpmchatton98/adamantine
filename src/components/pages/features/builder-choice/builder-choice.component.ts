@@ -288,6 +288,7 @@ export class BuilderChoiceComponent implements OnInit {
                   choice.limits?.includes(s.name)
               );
           }
+          choiceOptions = choiceOptions.filter((s) => !s.unique);
         } else if (choice?.type === 'exploit') {
           choiceOptions = this.dataService
             .getExploitsByListUnsplit('all')

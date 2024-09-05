@@ -45,25 +45,28 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let spell of level.spells">
-            <td>
-              <a routerLink="/spell/{{ spell.index }}">
-                {{ spell.name }}
-              </a>
-              <sup *ngIf="elemental">
-                {{ spell.element }}
-              </sup>
-            </td>
-            <td>{{ spell.school }}</td>
-            <td>
-              {{ spell.castingTime.split(",")[0] }}
-              <sup *ngIf="spell.ritual"> R </sup>
-            </td>
-            <td>{{ spell.range }}</td>
-            <td>{{ spell.duration }}</td>
-            <td>{{ spell.components.split(" (")[0] }}</td>
-            <td [innerHTML]="spellLists(spell)"></td>
-          </tr>
+          <ng-container *ngFor="let spell of level.spells">
+            <tr *ngIf="!spell.unique || showUnique">
+              <td>
+                <a routerLink="/spell/{{ spell.index }}">
+                  {{ spell.name }}
+                </a>
+                <sup *ngIf="elemental">
+                  {{ spell.element }}
+                </sup>
+                <sup *ngIf="spell.unique"> U </sup>
+              </td>
+              <td>{{ spell.school }}</td>
+              <td>
+                {{ spell.castingTime.split(",")[0] }}
+                <sup *ngIf="spell.ritual"> R </sup>
+              </td>
+              <td>{{ spell.range }}</td>
+              <td>{{ spell.duration }}</td>
+              <td>{{ spell.components.split(" (")[0] }}</td>
+              <td [innerHTML]="spellLists(spell)"></td>
+            </tr>
+          </ng-container>
         </tbody>
       </nz-table>
     </div>

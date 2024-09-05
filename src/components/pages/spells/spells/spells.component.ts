@@ -12,12 +12,14 @@ export class SpellsComponent extends BaseComponent {
   set list(spellList: string) {
     this.spells = this.dataService.getSpellsByList(spellList);
     this.elemental = spellList === 'elemental';
+    this.showUnique = spellList === 'all';
 
     this.pageTitle = `${this.capitalize(spellList)} Spells`;
   }
   @Input() maxLevel: number = 10;
   @Input() cantrips: boolean = true;
   public elemental = false;
+  public showUnique = false;
   public spells: any[] = [];
 
   public tabIndex = 0;
