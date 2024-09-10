@@ -45,4 +45,9 @@
     <h5>Lists</h5>
     {{ spell.lists.sort().join(", ") }}
   </div>
+
+  <div *ngIf="spell.unique">
+    <h5>Unique Spell</h5>
+    {{ spell.unique }}
+  </div>
 </div>

@@ -1120,7 +1120,6 @@
     "higherLevels": [
       "When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 1 hour. Casting this spell every day with a 9th level spell slot for a year makes its effects permanent and your alignment becomes Neutral Evil if it is not already."
     ],
-    "lists": ["Arcane", "Occult"],
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -1137,7 +1136,8 @@
     ],
     "upcastDuration": {
       "9": "Concentration, up to 1 hour"
-    }
+    },
+    "unique": "This spell is only known by liches."
   },
   {
     "name": "Ascending Flame",
@@ -1205,7 +1205,6 @@
       "If a creature is killed while under the effects of this spell, its soul becomes eternally damned. At the start of your next turn, the creature's soul rises as a shadow demon that is under your control for 24 hours, after which it stops obeying any command you've given it.",
       "Any creature who is killed by this spell can be restored to life only by means of a wish spell if the shadow demon has been slain."
     ],
-    "lists": ["Occult"],
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -1214,7 +1213,8 @@
         "die": 8,
         "type": "fire"
       }
-    ]
+    ],
+    "unique": "This spell was developed by the archdevil Asmodeus."
   },
   {
     "name": "Astral Projection",
@@ -18003,7 +18003,6 @@
       "Stygia is said to be the formed from the frozen floes of the river Styx, and thus this ice also carries the Styx's memory-altering power. Any creature hit by one or more of the shards must make a Wisdom saving throw or forget the events of the last 10 minutes. Even though the creature forgets the fact that the spell was cast upon it, if it took damage from the spell, it will likely realize quickly that something happened due to its injuries. A creature that is immune to cold damage or charm effects is also immune to this effect.",
       "Any number of the shards you create can instead be tiny needles. Any creature hit by one of these needles takes no damage, but still suffers the spell's other effects and additionally does not automatically notice that a hostile action occurred against it."
     ],
-    "lists": ["Arcane", "Occult"],
     "ritual": false,
     "type": ["attack", "wis"],
     "save": "wis",
@@ -18013,7 +18012,8 @@
         "die": 8,
         "type": "cold"
       }
-    ]
+    ],
+    "unique": "This spell was developed by the archdevil Levistus."
   },
   {
     "name": "Suffocate",
@@ -23330,12 +23330,12 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 8th level or higher, you summon one additional yeth hound for each slot level above 7th."
     ],
-    "lists": ["Primal", "Occult"],
     "ritual": 0,
     "upcastRange": {
       "8": "60 feet (3 targets)",
       "9": "60 feet (4 targets)"
-    }
+    },
+    "unique": "This spell was developed by the master of the Wild Hunt, Cernunnos."
   },
   {
     "name": "Corpseleech",
@@ -23878,13 +23878,13 @@
       "Each creature in one or more of these areas that died in the last minute is restored to life with 15 hit points and is poisoned for the next 24 hours.",
       "For each area created by the Sprouting Doom spell within range, you may create an additional burst of reanimating spores, centered on a point in that area."
     ],
-    "lists": ["Primal"],
     "ritual": 0,
     "healing": [
       {
         "amount": 15
       }
-    ]
+    ],
+    "unique": "This spell was developed by the demon lord Zuggtmoy."
   },
   {
     "name": "Envenomed Touch",
@@ -24168,10 +24168,10 @@
       "Each of these areas is heavily obscured, and a creature that starts its turn in one or more of these areas must succeed on a Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, a creature is charmed by you and your allies and is hostile to each creature it is not charmed by.",
       "Each of the affected areas lasts for as long as you maintain concentration, or until dealt 20 or more fire or radiant damage from a single source."
     ],
-    "lists": ["Primal", "Occult"],
     "ritual": 0,
     "type": "save",
-    "save": "con"
+    "save": "con",
+    "unique": "This spell was developed by the demon lord Zuggtmoy."
   },
   {
     "name": "Gift of Transcendent Pleasure",
@@ -24528,11 +24528,10 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 round",
     "description": [
-      "You partially transform until the end of your next turn, taking on a rough likeness of your patron.",
-      "While transformed, you may take any action, reaction, or legendary action listed on your patron's stat block, and gain its Legendary Actions."
+      "You partially transform until the end of your next turn, taking on a rough likeness of your patron.  While transformed, you may take any action, reaction, or legendary action listed on your patron's stat block, and gain its Legendary Actions."
     ],
-    "lists": ["Occult"],
-    "ritual": 0
+    "ritual": 0,
+    "unique": "This spell is unique to each warlock.  It can be learned by any warlock who can cast 9th-level spells."
   },
   {
     "name": "Night's Caress",
@@ -25118,8 +25117,6 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, you may create an additional area of fungal growth centered on a point you can see within range for every two slot levels above the 3rd."
     ],
-    "lists": ["Primal", "Occult", "Elemental"],
-    "element": "Wood",
     "ritual": 0,
     "damage": [
       {
@@ -25128,7 +25125,8 @@
       }
     ],
     "upcastMultiplier": 1,
-    "upcastInterval": 2
+    "upcastInterval": 2,
+    "unique": "This spell was developed by the demon lord Zuggtmoy."
   },
   {
     "name": "Steal Dreams",
@@ -26281,10 +26279,10 @@
     "description": [
       "As a reaction when a creature you can see within 120 feet ends its turn within 15 feet of an area affected by the Sprouting Doom spell, you extend a grasping tendril of pale mycelia from the area towards the creature, forcing it to success on a Strength saving throw or fall prone and be dragged up to 15 feet towards a point of your choice in the area."
     ],
-    "lists": ["Occult", "Primal"],
     "ritual": 0,
     "type": "save",
-    "save": "str"
+    "save": "str",
+    "unique": "This spell was developed by the demon lord Zuggtmoy."
   },
   {
     "name": "Miasma",
@@ -29187,7 +29185,7 @@
         "type": "slashing"
       }
     ],
-    "unique": true
+    "unique": "This spell was developed by the archdevil Dispater."
   },
   {
     "name": "Burning Tower Art",
@@ -29217,7 +29215,7 @@
         "type": "fire"
       }
     ],
-    "unique": true
+    "unique": "This spell was developed by the archdevil Dispater."
   },
   {
     "name": "Black Iron Bloom",
@@ -29234,6 +29232,6 @@
     "ritual": 0,
     "type": "save",
     "save": "con",
-    "unique": true
+    "unique": "This spell was developed by the archdevil Dispater."
   }
 ]
