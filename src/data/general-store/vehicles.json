@@ -214,7 +214,7 @@
         "dt": 0,
         "description": "Speed 30 ft. Without four wheels, the vehicle's speed is 0.",
         "type": "Movement",
-        "num": 1
+        "num": 4
       }
     ]
   },
@@ -819,6 +819,56 @@
     ]
   },
   {
+    "index": "angelship",
+    "name": "Angelship",
+    "cost": 33000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 33,
+    "topSpeed": 4,
+    "description": "Angelships are small spelljammers originally built by kobolds.  Very few remain crewed by kobolds.",
+    "type": "astral",
+    "cargo": 21,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 35 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
+  },
+  {
     "index": "bombard",
     "name": "Bombard",
     "cost": 50000,
@@ -869,6 +919,56 @@
     ]
   },
   {
+    "index": "citadel",
+    "name": "Citadel",
+    "cost": 100000,
+    "weight": 0,
+    "minCrew": 100,
+    "maxCrew": 300,
+    "topSpeed": 3,
+    "description": "A citadel is a massive dwarven spelljammer made from an asteroid.  They are used more like mobile bases than vessels, and often are home to mining teams of dwarves, traveling the Astral Sea in search of resources.",
+    "type": "astral",
+    "cargo": 150,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 600,
+        "dt": 30,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 25 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 10
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 10
+      }
+    ]
+  },
+  {
     "index": "damselfly",
     "name": "Damselfly",
     "cost": 20000,
@@ -895,6 +995,215 @@
         "hp": 50,
         "dt": 0,
         "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
+  },
+  {
+    "index": "dolphin",
+    "name": "Dolphin",
+    "cost": 70000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 70,
+    "topSpeed": 4,
+    "description": "Dolphins are enclosed spelljammers designed for commercial voyages.  The top section of the ship is detatchable, and serves as a small shuttle capable of landing on solid ground.",
+    "type": "astral",
+    "cargo": 35,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 200,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 2
+      }
+    ]
+  },
+  {
+    "index": "dragonfly",
+    "name": "Dragonfly",
+    "cost": 5000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 4,
+    "topSpeed": 8,
+    "description": "Dragonflies are smaller variants of damselflies.  They are among the most accessible spelljammers, and many academies use them to train new helmsmen.",
+    "type": "astral",
+    "cargo": 3,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 150,
+        "dt": 10,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
+  },
+  {
+    "index": "dreadnatuiloid",
+    "name": "Dreadnautiloid",
+    "cost": 90000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 90,
+    "topSpeed": 4.5,
+    "description": "Built and used by mind flayers, dreadnautiloids are rare, massive versions of their usual nautiloids. They can't float on water, nor can they land safely on the ground.",
+    "type": "astral",
+    "cargo": 45,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 600,
+        "dt": 25,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 40 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
+        "type": "Weapon",
+        "num": 4
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Piercing Ram",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) piercing damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      },
+      {
+        "name": "Tentacles",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, reach 30 ft., one Huge or Gargantuan target. <em>Hit:</em> 22 (4d10) bludgeoning damage, and the nautiloid's speed becomes 0 until its spelljammer uses an action to release the target. If the target is a creature, it is grappled (escape DC 16). If the target is another ship, the target's speed becomes 0 until the nautiloid releases it, or until the target or the nautiloid drops to 0 hit points.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Teleport",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Spell Attack:</em> +8 to hit, reach 30 ft., one creature. <em>Hit:</em> The target must succeed on a DC 15 Constitution saving throw or be teleported to an unoccupied space aboard the nautiloid that the nautiloid's spelljammer can see.",
+        "type": "",
+        "num": 1
+      }
+    ]
+  },
+  {
+    "index": "eel",
+    "name": "Eel",
+    "cost": 10000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 10,
+    "topSpeed": 4,
+    "description": "Eels are small, crude spelljammers similar to lampreys.",
+    "type": "astral",
+    "cargo": 8,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 35 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
         "type": "Control",
         "num": 1
       },
@@ -1119,6 +1428,56 @@
     ]
   },
   {
+    "index": "narwhal",
+    "name": "Narwhal",
+    "cost": 75000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 70,
+    "topSpeed": 4,
+    "description": "A narwhal is a modified dolphin ship, with a piercing ram added to the hull.",
+    "type": "astral",
+    "cargo": 35,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 200,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Mangonel",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +5 to hit, range 200/800 ft., one target. <em>Hit:</em> 27 (5d10) bludgeoning damage.</p><p>Can't hit targets within 60 feet.",
+        "type": "Weapon",
+        "num": 2
+      },
+      {
+        "name": "Piercing Ram",
+        "ac": 15,
+        "hp": 100,
+        "dt": 0,
+        "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) piercing damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
+  },
+  {
     "index": "natuiloid",
     "name": "Nautiloid",
     "cost": 50000,
@@ -1237,6 +1596,38 @@
     ]
   },
   {
+    "index": "mosquito",
+    "name": "Mosquito",
+    "cost": 3000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 2,
+    "topSpeed": 8,
+    "description": "Mosquitos are the smallest spelljammers capable of travel fully on their own.",
+    "type": "astral",
+    "cargo": 1,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 100,
+        "dt": 10,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      }
+    ]
+  },
+  {
     "index": "scorpion",
     "name": "Scorpion",
     "cost": 25000,
@@ -1340,6 +1731,47 @@
         "hp": 100,
         "dt": 0,
         "description": "<em>Melee Weapon Attack:</em> +8 to hit, range 0 ft., one object or Gargantuan or larger creature. <em>Hit:</em> 88 (16d10) piercing damage. The ship takes half as much damage and comes to a dead stop.</p><p>On a miss, the attack deals no damage, the target moves into the nearest unoccupied space that isn't in the ship's path, and the ship can continue moving if it has any movement left.</p><p>The ship's helmsman can make the following attack when the ship runs into another object or into a Gargantuan or larger creature.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
+  },
+  {
+    "index": "sidewinder",
+    "name": "Sidewinder",
+    "cost": 90000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 30,
+    "topSpeed": 4.5,
+    "description": "Sidewinders are gnomish spelljammers built out of scrap.  Each sidewinder is unique in design.",
+    "type": "astral",
+    "cargo": 15,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 15,
+        "hp": 250,
+        "dt": 15,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 40 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Ballista",
+        "ac": 15,
+        "hp": 50,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 16 (3d10) piercing damage.",
         "type": "Weapon",
         "num": 1
       }

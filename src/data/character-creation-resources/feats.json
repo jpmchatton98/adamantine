@@ -474,7 +474,7 @@
     ],
     "type": "magic",
     "repeatable": true,
-    "description": "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.<ul><li>Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</li><li>You can select this feat multiple times. Each time you do so, you must choose a different damage type.</li></ul>",
+    "description": "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder. Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p><p>You can select this feat multiple times. Each time you do so, you must choose a different damage type.",
     "choices": {
       "id": "6B94BDB6-2B88-46E7-929A-4AF5B0BE0A87",
       "type": "text",
@@ -2373,6 +2373,25 @@
     ]
   },
   {
+    "name": "Magical Devourer",
+    "prereq": [
+      {
+        "race": ["lesser giant", "praedaren"],
+        "subrace": [["blemmyes"], ["hauler"]]
+      }
+    ],
+    "type": "racial",
+    "description": "Your stomach is so strong that you can even devour magic itself.  As an action, you can choose one object or magical effect within a range of 10 feet of you. Any spell of a level lower than or equal to one third your level (minimum 1) on the target is dispelled. For each spell of a level higher than that, make an ability check with your Constitution score. The DC equals 10 + the spell's level. On a success, the spell is dispelled. Regardless of success, you then regain hit points equal to your level + your Constitution modifier (minimum 1). Effects that refer to the Dispel Magic spell also apply to this feature, such as wall of force.</p><p>You can use this feature once, and must finish a long rest before you can use it again.",
+    "uses": [
+      {
+        "id": "842642C0-FC29-4E66-ABAC-97992B05D3CE",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Angelic Protection",
     "prereq": [
       {
@@ -3687,194 +3706,6 @@
     ]
   },
   {
-    "name": "Might of the Meager",
-    "prereq": [
-      {
-        "race": [
-          "autognome",
-          "bio-tinker",
-          "cyborg",
-          "dhampir",
-          "dullahan",
-          "ghost",
-          "ghoul",
-          "gnome",
-          "goblin",
-          "grung",
-          "halfling",
-          "hexblood",
-          "illithid",
-          "kender",
-          "kobold",
-          "lanternfolk",
-          "leshy",
-          "mummy",
-          "myconid",
-          "reborn",
-          "skeleton",
-          "tiefling",
-          "verdan",
-          "wight",
-          "zombie"
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You may be small, but you are fierce.  You gain the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You are considered one size larger for determining your carrying capacity and the weight you can push, drag, and lift.</li><li>You can wield Heavy and Massive weapons as though you were a Medium creature.</li><li>You can grapple and drag creatures as though you were a Medium creature.</li></ul>",
-    "granted": [
-      {
-        "type": "asi",
-        "score": "str",
-        "amount": 1
-      }
-    ]
-  },
-  {
-    "name": "Squat Nimbleness",
-    "prereq": [
-      {
-        "race": [
-          "autognome",
-          "bio-tinker",
-          "cyborg",
-          "dhampir",
-          "dullahan",
-          "ghost",
-          "ghoul",
-          "gnome",
-          "goblin",
-          "grung",
-          "halfling",
-          "hexblood",
-          "illithid",
-          "kender",
-          "kobold",
-          "lanternfolk",
-          "leshy",
-          "mummy",
-          "myconid",
-          "reborn",
-          "skeleton",
-          "tiefling",
-          "verdan",
-          "wight",
-          "zombie"
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You are uncommonly nimble for your race. You gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>Increase your walking speed by 5 feet.</li><li>You gain proficiency in Acrobatics or Athletics.</li><li>You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.</li></ul>",
-    "choices": [
-      {
-        "id": "49C34350-3A2E-407E-80DD-5DD4DC4EE575",
-        "type": "asi",
-        "options": ["str", "dex"],
-        "amount": 1
-      },
-      {
-        "id": "9839E24A-D423-4AD7-A830-AE4D8CA3B42E",
-        "type": "skill",
-        "limits": ["Acrobatics", "Athletics"],
-        "level": 1
-      }
-    ],
-    "granted": [
-      {
-        "type": "speed-bonus",
-        "amount": 5
-      }
-    ]
-  },
-  {
-    "name": "Wind Walker",
-    "prereq": [
-      {
-        "race": [
-          "aarakocra",
-          "azapian",
-          "demi-dragon",
-          "elf",
-          "fairy",
-          "harpy",
-          "imp",
-          "ivathi",
-          "kenku",
-          "kobold",
-          "papillon"
-        ],
-        "subrace": [
-          [],
-          [],
-          [],
-          ["avariel"],
-          [],
-          [],
-          [],
-          [],
-          ["blessed"],
-          ["urd"],
-          []
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "A master of the wind, you can pick up subtle changes in the air, able to adapt to sudden changes.<ul><li>Your flight speed is increased by 10 feet.</li><li>You have advantage on saving throws against effects that involve wind. If you succeed on a saving throw against such an effect, you can use your reaction to immediately move up to half your flying speed.</li><li>In windy conditions, your flight speed is doubled.</li></ul>",
-    "granted": [
-      {
-        "type": "speed-bonus",
-        "speed": "fly",
-        "amount": 10
-      }
-    ]
-  },
-  {
-    "name": "Fey Luck",
-    "prereq": [
-      {
-        "race": [
-          "azapian",
-          "bugbear",
-          "changeling",
-          "daolagiath",
-          "dullahan",
-          "elf",
-          "fairy",
-          "firbolg",
-          "goblin",
-          "gremlin",
-          "half-elf",
-          "harengon",
-          "hexblood",
-          "hobgoblin",
-          "rhinox",
-          "satyr",
-          "taurian"
-        ],
-        "subrace": [
-          [],
-          [],
-          [],
-          [],
-          [],
-          ["eladrin"],
-          [],
-          [],
-          [],
-          [],
-          ["eladrin"],
-          [],
-          [],
-          [],
-          [],
-          [],
-          []
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You are blessed with the luck of fey creatures. When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
-  },
-  {
     "name": "Touch of Nobanion",
     "prereq": [
       {
@@ -4389,58 +4220,6 @@
     ]
   },
   {
-    "name": "Touch of Orcus",
-    "prereq": [
-      {
-        "race": [
-          "dhampir",
-          "dullahan",
-          "ghost",
-          "ghoul",
-          "lanternfolk",
-          "mummy",
-          "reborn",
-          "skeleton",
-          "tiefling",
-          "wight",
-          "zombie"
-        ],
-        "subrace": [[], [], [], [], [], [], [], [], ["orcusian"], [], []]
-      }
-    ],
-    "type": "racial",
-    "description": "Your undead nature draws directly on the demon Orcus, lord of undeath. You learn the Murmurs of the Restless spell and can cast it at will, without expending a spell slot. You also learn the Ghastly Flight and Drain Life spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Constitution is your spellcasting ability for all three spells.",
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Murmurs of the Restless"],
-        "atWill": true,
-        "ignoreMaxLevel": true,
-        "ability": "con"
-      },
-      {
-        "type": "spell",
-        "options": ["Ghastly Flight", "Drain Life"],
-        "ignoreMaxLevel": true,
-        "ability": "con"
-      }
-    ],
-    "uses": [
-      {
-        "id": "BBDCB4C6-6428-498E-9B17-66E2484F5508",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "85ECB9B9-18DB-47A7-88A1-F24409C23B49",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
     "name": "Antimagic Hide",
     "prereq": [
       {
@@ -4629,46 +4408,6 @@
         "type": "exploit-die",
         "amount": 1,
         "size": 6
-      }
-    ]
-  },
-  {
-    "name": "Cold-Blooded",
-    "prereq": [
-      {
-        "race": [
-          "bullywug",
-          "grung",
-          "kopru",
-          "lizardfolk",
-          "locathah",
-          "merfolk",
-          "praedaren",
-          "sahuagin",
-          "scaleborn",
-          "testasian",
-          "tortle",
-          "triton",
-          "vedalken",
-          "yuan-ti"
-        ]
-      }
-    ],
-    "type": "racial",
-    "description": "You have learned to work around your physiology, using it to benefit you and gaining the following benefits:<ul><li>Increase your Constitution score by 1, to a maximum of 20.</li><li>You have resistance to fire damage when you are in a hot climate, and resistance to cold damage when you are in a cold climate. While in a temperate climate, you may choose which resistance you have when you finish a long rest.</li></ul>",
-    "granted": [
-      {
-        "type": "asi",
-        "score": "con",
-        "amount": 1
-      }
-    ],
-    "choices": [
-      {
-        "id": "A47913D8-052F-4CF4-9ABC-556AEFCC61CF",
-        "type": "text",
-        "options": ["Cold", "Fire"],
-        "grants": "damage-resistance"
       }
     ]
   },
@@ -5053,6 +4792,46 @@
     "description": "Your regeneration is more powerful, and can even keep you alive when you would otherwise fall.  When you would make a death saving throw, you can instead use your Regeneration trait if possible."
   },
   {
+    "name": "Oni Magic",
+    "prereq": [
+      {
+        "race": ["lesser giant"],
+        "subrace": [["oni"]]
+      }
+    ],
+    "type": "racial",
+    "description": "You learn to wield the magics of oni. You learn the Bloodsight spell and can cast it at will, without expending a spell slot. You also learn the Sleep and Invisibility spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Bloodsight"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      },
+      {
+        "type": "spell",
+        "options": ["Sleep", "Invisibility"],
+        "ignoreMaxLevel": true,
+        "ability": "cha"
+      }
+    ],
+    "uses": [
+      {
+        "id": "3183271E-0BB7-4D78-96F7-2B2819914890",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "777922B2-0506-46A9-9B52-165435F26214",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
     "name": "Shell Defender",
     "prereq": [
       {
@@ -5095,24 +4874,6 @@
       "type": "asi",
       "options": ["int", "cha"]
     }
-  },
-  {
-    "name": "Leafspeak",
-    "prereq": [
-      {
-        "race": ["koradi", "leshy", "myconid"]
-      }
-    ],
-    "type": "racial",
-    "description": "You can communicate with the plants with which you share heritage.  When you are speaking Druidic, you can communicate with plants as if you were under the effects of a Speak with Plants spell.",
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Speak with Plants"],
-        "ability": "wis",
-        "ignoreMaxLevel": true
-      }
-    ]
   },
   {
     "name": "Improved Glide",
@@ -5467,22 +5228,6 @@
     ]
   },
   {
-    "name": "Mechanical Resolve",
-    "prereq": [
-      {
-        "race": ["autognome", "cyborg", "synthsteel", "warforged"]
-      }
-    ],
-    "type": "racial",
-    "description": "You gain 3 points of Resolve. You can expend resolve to power the following features:<ul><li>When you make a death saving throw and fail, you may spend a point of Resolve to ignore it.</li><li>When you would make a Wisdom saving throw but before you do so, you may spend a point of Resolve and make a Constitution saving throw instead.</li><li>When you make a Constitution saving throw but before being told the outcome of your roll, you may spend a point of Resolve and roll one more time. You must take the new roll.</li></ul>You regain all expended Resolve points when you finish a long rest.",
-    "uses": {
-      "id": "0FFF7D7B-C054-4F6D-9607-1066B658D225",
-      "type": "fixed",
-      "amount": 3,
-      "reset": 2
-    }
-  },
-  {
     "name": "Feline Grace",
     "prereq": [
       {
@@ -5525,7 +5270,8 @@
     "name": "Prehensile Trunk",
     "prereq": [
       {
-        "race": ["loxodon"]
+        "race": ["loxodon"],
+        "subrace": [["elephanti", "mammuthus"]]
       }
     ],
     "type": "racial",
@@ -5542,7 +5288,8 @@
     "name": "Dexterous Tentacles",
     "prereq": [
       {
-        "race": ["cecaelia"]
+        "race": ["merfolk"],
+        "subrace": ["cecaelia"]
       }
     ],
     "type": "racial",
@@ -5554,6 +5301,39 @@
         "amount": 1
       }
     ]
+  },
+  {
+    "name": "Biological Chimerism",
+    "prereq": [
+      {
+        "race": ["bio-tinker"]
+      }
+    ],
+    "type": "racial",
+    "description": "You further modify your body to suit your needs.  You gain the following benefits:<ul><li>Increase your Constitution score by 1, to a maximum of 20.</li><li>You gain an additional animal enhancement from the options available at 1st level.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "con",
+        "amount": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "16B147B2-675C-4845-AB5C-33FFEA6DBA85",
+        "type": "animal-enhancement"
+      }
+    ]
+  },
+  {
+    "name": "Aether Body",
+    "prereq": [
+      {
+        "race": ["aetherborn"]
+      }
+    ],
+    "type": "racial",
+    "description": "You tap into the aether forming your body and spirit and use it to fuel your magic.  Spells you cast ignore resistance to force damage. In addition, when you roll damage for a spell you cast that deals force damage, you can treat any 1 on a damage die as a 2."
   },
   {
     "name": "Full Gallop",
@@ -6970,6 +6750,346 @@
         "ability": "dex",
         "ignoreMaxLevel": true,
         "ritualsOnly": true
+      }
+    ]
+  },
+  {
+    "name": "Wind Walker",
+    "prereq": [
+      {
+        "race": [
+          "aarakocra",
+          "azapian",
+          "demi-dragon",
+          "elf",
+          "fairy",
+          "harpy",
+          "imp",
+          "ivathi",
+          "kenku",
+          "kobold",
+          "papillon"
+        ],
+        "subrace": [
+          [],
+          [],
+          [],
+          ["avariel"],
+          [],
+          [],
+          [],
+          [],
+          ["blessed"],
+          ["urd"],
+          []
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "A master of the wind, you can pick up subtle changes in the air, able to adapt to sudden changes.<ul><li>Your flight speed is increased by 10 feet.</li><li>You have advantage on saving throws against effects that involve wind. If you succeed on a saving throw against such an effect, you can use your reaction to immediately move up to half your flying speed.</li><li>In windy conditions, your flight speed is doubled.</li></ul>",
+    "granted": [
+      {
+        "type": "speed-bonus",
+        "speed": "fly",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "Fey Luck",
+    "prereq": [
+      {
+        "race": [
+          "azapian",
+          "bugbear",
+          "changeling",
+          "daolagiath",
+          "dullahan",
+          "elf",
+          "fairy",
+          "firbolg",
+          "goblin",
+          "gremlin",
+          "half-elf",
+          "harengon",
+          "hexblood",
+          "hobgoblin",
+          "rhinox",
+          "satyr",
+          "taurian"
+        ],
+        "subrace": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          ["eladrin"],
+          [],
+          [],
+          [],
+          [],
+          ["eladrin"],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You are blessed with the luck of fey creatures. When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."
+  },
+  {
+    "name": "Cold-Blooded",
+    "prereq": [
+      {
+        "race": [
+          "bullywug",
+          "grung",
+          "kopru",
+          "lizardfolk",
+          "locathah",
+          "merfolk",
+          "praedaren",
+          "sahuagin",
+          "scaleborn",
+          "testasian",
+          "tortle",
+          "triton",
+          "vedalken",
+          "yuan-ti"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You have learned to work around your physiology, using it to benefit you and gaining the following benefits:<ul><li>Increase your Constitution score by 1, to a maximum of 20.</li><li>You have resistance to fire damage when you are in a hot climate, and resistance to cold damage when you are in a cold climate. While in a temperate climate, you may choose which resistance you have when you finish a long rest.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "con",
+        "amount": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "A47913D8-052F-4CF4-9ABC-556AEFCC61CF",
+        "type": "text",
+        "options": ["Cold", "Fire"],
+        "grants": "damage-resistance"
+      }
+    ]
+  },
+  {
+    "name": "Might of the Meager",
+    "prereq": [
+      {
+        "race": [
+          "autognome",
+          "bio-tinker",
+          "cyborg",
+          "dhampir",
+          "dullahan",
+          "ghost",
+          "ghoul",
+          "gnome",
+          "goblin",
+          "grung",
+          "halfling",
+          "hexblood",
+          "illithid",
+          "kender",
+          "kobold",
+          "lanternfolk",
+          "leshy",
+          "mummy",
+          "myconid",
+          "reborn",
+          "skeleton",
+          "tiefling",
+          "verdan",
+          "wight",
+          "zombie"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You may be small, but you are fierce.  You gain the following benefits:<ul><li>Increase your Strength score by 1, to a maximum of 20.</li><li>You are considered one size larger for determining your carrying capacity and the weight you can push, drag, and lift.</li><li>You can wield Heavy and Massive weapons as though you were a Medium creature.</li><li>You can grapple and drag creatures as though you were a Medium creature.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "str",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Squat Nimbleness",
+    "prereq": [
+      {
+        "race": [
+          "autognome",
+          "bio-tinker",
+          "cyborg",
+          "dhampir",
+          "dullahan",
+          "ghost",
+          "ghoul",
+          "gnome",
+          "goblin",
+          "grung",
+          "halfling",
+          "hexblood",
+          "illithid",
+          "kender",
+          "kobold",
+          "lanternfolk",
+          "leshy",
+          "mummy",
+          "myconid",
+          "reborn",
+          "skeleton",
+          "tiefling",
+          "verdan",
+          "wight",
+          "zombie"
+        ]
+      }
+    ],
+    "type": "racial",
+    "description": "You are uncommonly nimble for your race. You gain the following benefits:<ul><li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li><li>Increase your walking speed by 5 feet.</li><li>You gain proficiency in Acrobatics or Athletics.</li><li>You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.</li></ul>",
+    "choices": [
+      {
+        "id": "49C34350-3A2E-407E-80DD-5DD4DC4EE575",
+        "type": "asi",
+        "options": ["str", "dex"],
+        "amount": 1
+      },
+      {
+        "id": "9839E24A-D423-4AD7-A830-AE4D8CA3B42E",
+        "type": "skill",
+        "limits": ["Acrobatics", "Athletics"],
+        "level": 1
+      }
+    ],
+    "granted": [
+      {
+        "type": "speed-bonus",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "name": "Mechanical Resolve",
+    "prereq": [
+      {
+        "race": ["autognome", "cyborg", "synthsteel", "warforged"]
+      }
+    ],
+    "type": "racial",
+    "description": "You gain 3 points of Resolve. You can expend resolve to power the following features:<ul><li>When you make a death saving throw and fail, you may spend a point of Resolve to ignore it.</li><li>When you would make a Wisdom saving throw but before you do so, you may spend a point of Resolve and make a Constitution saving throw instead.</li><li>When you make a Constitution saving throw but before being told the outcome of your roll, you may spend a point of Resolve and roll one more time. You must take the new roll.</li></ul>You regain all expended Resolve points when you finish a long rest.",
+    "uses": {
+      "id": "0FFF7D7B-C054-4F6D-9607-1066B658D225",
+      "type": "fixed",
+      "amount": 3,
+      "reset": 2
+    }
+  },
+  {
+    "name": "Touch of Orcus",
+    "prereq": [
+      {
+        "race": [
+          "dhampir",
+          "dullahan",
+          "ghost",
+          "ghoul",
+          "lanternfolk",
+          "mummy",
+          "reborn",
+          "skeleton",
+          "tiefling",
+          "wight",
+          "zombie"
+        ],
+        "subrace": [[], [], [], [], [], [], [], [], ["orcusian"], [], []]
+      }
+    ],
+    "type": "racial",
+    "description": "Your undead nature draws directly on the demon Orcus, lord of undeath. You learn the Murmurs of the Restless spell and can cast it at will, without expending a spell slot. You also learn the Ghastly Flight and Drain Life spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Constitution is your spellcasting ability for all three spells.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Murmurs of the Restless"],
+        "atWill": true,
+        "ignoreMaxLevel": true,
+        "ability": "con"
+      },
+      {
+        "type": "spell",
+        "options": ["Ghastly Flight", "Drain Life"],
+        "ignoreMaxLevel": true,
+        "ability": "con"
+      }
+    ],
+    "uses": [
+      {
+        "id": "BBDCB4C6-6428-498E-9B17-66E2484F5508",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      },
+      {
+        "id": "85ECB9B9-18DB-47A7-88A1-F24409C23B49",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    ]
+  },
+  {
+    "name": "Leafspeak",
+    "prereq": [
+      {
+        "race": ["koradi", "leshy", "myconid", "treant"]
+      }
+    ],
+    "type": "racial",
+    "description": "You can communicate with the plants with which you share heritage.  When you are speaking Druidic, you can communicate with plants as if you were under the effects of a Speak with Plants spell.",
+    "granted": [
+      {
+        "type": "spell",
+        "options": ["Speak with Plants"],
+        "ability": "wis",
+        "ignoreMaxLevel": true
+      }
+    ]
+  },
+  {
+    "name": "Prehensile Tail",
+    "prereq": [
+      {
+        "race": [
+          "hadozee",
+          "imp",
+          "leonin",
+          "lizardfolk",
+          "praedaren",
+          "tabaxi",
+          "tiefling"
+        ],
+        "subrace": [[], [], [], ["chameleonic", "geckkota"], ["looter"], [], []]
+      }
+    ],
+    "type": "racial",
+    "description": "Your tail has grown more dexterous and proficient.  You gain the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>Your tail can act as an additional arm.  The tail can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property. </li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
       }
     ]
   }

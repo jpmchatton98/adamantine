@@ -1137,7 +1137,8 @@
     "upcastDuration": {
       "9": "Concentration, up to 1 hour"
     },
-    "unique": "This spell is only known by liches."
+    "unique": "This spell is only known by liches.",
+    "lists": []
   },
   {
     "name": "Ascending Flame",
@@ -1214,7 +1215,8 @@
         "type": "fire"
       }
     ],
-    "unique": "This spell was developed by the archdevil Asmodeus."
+    "unique": "This spell was developed by the archdevil Asmodeus.",
+    "lists": []
   },
   {
     "name": "Astral Projection",
@@ -18013,7 +18015,8 @@
         "type": "cold"
       }
     ],
-    "unique": "This spell was developed by the archdevil Levistus."
+    "unique": "This spell was developed by the archdevil Levistus.",
+    "lists": []
   },
   {
     "name": "Suffocate",
@@ -23335,7 +23338,8 @@
       "8": "60 feet (3 targets)",
       "9": "60 feet (4 targets)"
     },
-    "unique": "This spell was developed by the master of the Wild Hunt, Cernunnos."
+    "unique": "This spell was developed by the master of the Wild Hunt, Cernunnos.",
+    "lists": []
   },
   {
     "name": "Corpseleech",
@@ -23884,7 +23888,8 @@
         "amount": 15
       }
     ],
-    "unique": "This spell was developed by the demon lord Zuggtmoy."
+    "unique": "This spell was developed by the demon lord Zuggtmoy.",
+    "lists": []
   },
   {
     "name": "Envenomed Touch",
@@ -24171,7 +24176,8 @@
     "ritual": 0,
     "type": "save",
     "save": "con",
-    "unique": "This spell was developed by the demon lord Zuggtmoy."
+    "unique": "This spell was developed by the demon lord Zuggtmoy.",
+    "lists": []
   },
   {
     "name": "Gift of Transcendent Pleasure",
@@ -24531,7 +24537,8 @@
       "You partially transform until the end of your next turn, taking on a rough likeness of your patron.  While transformed, you may take any action, reaction, or legendary action listed on your patron's stat block, and gain its Legendary Actions."
     ],
     "ritual": 0,
-    "unique": "This spell is unique to each warlock.  It can be learned by any warlock who can cast 9th-level spells."
+    "unique": "This spell is unique to each warlock.  It can be learned by any warlock who can cast 9th-level spells.",
+    "lists": []
   },
   {
     "name": "Night's Caress",
@@ -25126,7 +25133,8 @@
     ],
     "upcastMultiplier": 1,
     "upcastInterval": 2,
-    "unique": "This spell was developed by the demon lord Zuggtmoy."
+    "unique": "This spell was developed by the demon lord Zuggtmoy.",
+    "lists": []
   },
   {
     "name": "Steal Dreams",
@@ -26282,7 +26290,8 @@
     "ritual": 0,
     "type": "save",
     "save": "str",
-    "unique": "This spell was developed by the demon lord Zuggtmoy."
+    "unique": "This spell was developed by the demon lord Zuggtmoy.",
+    "lists": []
   },
   {
     "name": "Miasma",
@@ -29185,7 +29194,8 @@
         "type": "slashing"
       }
     ],
-    "unique": "This spell was developed by the archdevil Dispater."
+    "unique": "This spell was developed by the archdevil Dispater.",
+    "lists": []
   },
   {
     "name": "Burning Tower Art",
@@ -29215,7 +29225,8 @@
         "type": "fire"
       }
     ],
-    "unique": "This spell was developed by the archdevil Dispater."
+    "unique": "This spell was developed by the archdevil Dispater.",
+    "lists": []
   },
   {
     "name": "Black Iron Bloom",
@@ -29232,6 +29243,7 @@
     "ritual": 0,
     "type": "save",
     "save": "con",
-    "unique": "This spell was developed by the archdevil Dispater."
+    "unique": "This spell was developed by the archdevil Dispater.",
+    "lists": []
   }
 ]
