@@ -29245,5 +29245,147 @@
     "save": "con",
     "unique": "This spell was developed by the archdevil Dispater.",
     "lists": []
+  },
+  {
+    "name": "Concealing Haze",
+    "school": "Illusion",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (20-foot radius)",
+    "components": "V, S, M (a moonstone)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "A shimmering haze emanates forth from you in a 20 foot radius for the duration, allowing creatures within to see outward, but preventing distant creatures from seeing those within.",
+      "Creatures more than 30 feet away from an affected space treat that space as heavily obscured."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the radius increases by 5 feet for each slot level above 4th."
+    ],
+    "ritual": 0,
+    "upcastRange": {
+      "5": "Self (25-foot radius)",
+      "6": "Self (30-foot radius)",
+      "7": "Self (35-foot radius)",
+      "8": "Self (40-foot radius)",
+      "9": "Self (45-foot radius)"
+    },
+    "lists": ["Invention", "Melodic", "Primal"]
+  },
+  {
+    "name": "Honor's Bond",
+    "school": "Enchantment",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a medal given for martial valor)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You shout forth a mortal challenge to an enemy you can see within range, forcing it to make a Wisdom saving throw. On a failure, the creature takes 3d6 psychic damage whenever it takes a hostile action while it is further than 20 feet from you.",
+      "An affected creature repeats this saving throw at the end of each of its turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target an additional creature for each slot level above 2nd."
+    ],
+    "ritual": 0,
+    "upcastRange": {
+      "3": "60 feet (2 targets)",
+      "4": "60 feet (3 targets)",
+      "5": "60 feet (4 targets)",
+      "6": "60 feet (5 targets)",
+      "7": "60 feet (6 targets)",
+      "8": "60 feet (7 targets)",
+      "9": "60 feet (8 targets)"
+    },
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": "psychic"
+      }
+    ],
+    "lists": ["Divine", "Occult", "Psionic"]
+  },
+  {
+    "name": "Ironflesh Defiance",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 reaction, which you take when a creature you can see is targeted by an area of effect that deals damage",
+    "range": "60 feet (3 targets)",
+    "components": "V, S, M (a iron death mask)",
+    "duration": "Instantaneous",
+    "description": [
+      "When a creature or area you can see is targeted with an effect that deals damage, you can transform up to three willing creatures in range that are affected by the triggering effect, turning each of them to iron.",
+      "Each affected creature becomes petrified until the beginning of its next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, you can target an additional creature for each slot level above 5th."
+    ],
+    "ritual": 0,
+    "upcastRange": {
+      "6": "60 feet (4 targets)",
+      "7": "60 feet (5 targets)",
+      "8": "60 feet (6 targets)",
+      "9": "60 feet (7 targets)"
+    },
+    "lists": ["Divine", "Invention"]
+  },
+  {
+    "name": "Prescient Directive",
+    "school": "Divination",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "20 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You magically foresee an approaching window of opportunity, calling out and directing nearby allies to exploit it. Each creature of your choice within range that can hear you gains advantage on the first attack or saving throw it makes before the beginning of your next turn."
+    ],
+    "ritual": 0,
+    "lists": ["Divine", "Occult", "Melodic", "Psionic", "Arcane"]
+  },
+  {
+    "name": "Raise Earthwork",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V, S, M (an aspen root)",
+    "duration": "Instantaneous",
+    "description": [
+      "You raise an earthen mound from an area of loose earth you can see within range. The mound is 5 feet high, 10 feet wide, and up to 30 feet long. The area becomes difficult terrain and provides half cover against ranged attacks."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can create an additional mound within range for each slot level above 2nd."
+    ],
+    "ritual": 1,
+    "lists": ["Invention", "Primal", "Elemental"],
+    "element": "Earth"
+  },
+  {
+    "name": "Waygate Assault",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "500 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You forge a magical gateway to a point you can see within range, teleporting each willing creature of your choice within 20 feet of you to an unoccupied space within 20 feet of the chosen point. Each creature teleported in this way can use its reaction to make a weapon attack."
+    ],
+    "higherLevels": [
+      "When cast using a spell slot of 6th-level, this spell has a range of 1000 feet.  When cast using a spell slot of 7th-level, this spell has a range of 1 mile. When cast using a spell slot of 8th-level, this spell has a range of 3 miles. When cast using a spell slot of 9th-level, this spell has a range of sight."
+    ],
+    "upcastRange": [
+      {
+        "6": "1000 feet",
+        "7": "1 mile",
+        "8": "3 miles",
+        "9": "Sight"
+      }
+    ],
+    "ritual": 0,
+    "lists": ["Invention", "Divine", "Arcane"]
   }
 ]
