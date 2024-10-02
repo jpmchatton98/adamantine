@@ -19,102 +19,6 @@ export class MonsterComponent extends BaseComponent implements OnInit {
   public data: any;
   public monster: any;
 
-  public settingsModal: boolean = false;
-
-  public direBeast: boolean = false;
-  public direMonster: any;
-
-  public undead: string = '';
-  public undeadMonster = {
-    ghost: null,
-    mummy: null,
-    skeleton: null,
-    zombie: null,
-  };
-  private undeadMods = {
-    ghost: {
-      resist: [
-        'acid',
-        'fire',
-        'lightning',
-        'thunder',
-        'bludgeoning, piercing, and slashing damage from nonmagical attacks',
-      ],
-      immune: ['cold', 'necrotic', 'poison'],
-      conditionImmune: [
-        'charmed',
-        'exhaustion',
-        'frightened',
-        'grappled',
-        'paralyzed',
-        'petrified',
-        'poisoned',
-        'prone',
-        'restrained',
-      ],
-      trait: [
-        {
-          name: 'Ethereal Sight',
-          entries: [
-            'The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.',
-          ],
-        },
-        {
-          name: 'Incorporeal Movement',
-          entries: [
-            'The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.',
-          ],
-        },
-      ],
-      action: [
-        {
-          name: 'Etherealness',
-          entries: [
-            "The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.",
-          ],
-        },
-      ],
-    },
-    mummy: {
-      vulnerable: ['fire'],
-      resist: [
-        'bludgeoning, piercing, and slashing damage from nonmagical attacks',
-      ],
-      immune: ['necrotic', 'poison'],
-      conditionImmune: [
-        'charmed',
-        'exhaustion',
-        'frightened',
-        'paralyzed',
-        'poisoned',
-      ],
-      trait: [
-        {
-          name: 'Mummy Rot',
-          entries: [
-            "Whenever the mummy hits a creature with a melee attack, the target must succeed on a DC 13 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.",
-          ],
-        },
-      ],
-    },
-    skeleton: {
-      vulnerable: ['bludgeoning'],
-      immune: ['poison'],
-      conditionImmune: ['exhaustion', 'poisoned'],
-    },
-    zombie: {
-      conditionImmune: ['exhaustion', 'poisoned'],
-      trait: [
-        {
-          name: 'Undead Fortitude',
-          entries: [
-            'If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.',
-          ],
-        },
-      ],
-    },
-  };
-
   public acString: string = '';
   public hpString: string = '';
   public speedString: string = '';
@@ -376,6 +280,38 @@ export class MonsterComponent extends BaseComponent implements OnInit {
           .concat(`and ${array.slice(-1)}`)
           .join(', ')
       : array.join(', ');
+  }
+
+  public getMonsterTypesString(types: any, swarm: boolean = false): string {
+    let typesData = [];
+
+    for (let [type, subTypes] of Object.entries(types).sort((a, b) =>
+      a[0].localeCompare(b[0])
+    )) {
+      const formattedType = swarm ? type + 's' : type;
+
+      if (Object.keys(subTypes).length > 0) {
+        typesData.push(`${formattedType} (${this.getSubTypes(subTypes)})`);
+      } else {
+        typesData.push(formattedType);
+      }
+    }
+
+    return typesData.join(' ');
+  }
+  public getSubTypes(subTypes: any): string {
+    let subTypesData = [];
+    for (let [subType, subSubTypes] of Object.entries(subTypes)) {
+      subType = subType.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
+
+      if (Object.keys(subSubTypes).length > 0) {
+        subTypesData.push(`${subType} (${this.getSubTypes(subSubTypes)})`);
+      } else {
+        subTypesData.push(subType);
+      }
+    }
+
+    return subTypesData.join(', ');
   }
 
   public getLegendaryActionsHeader() {

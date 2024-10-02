@@ -1,14 +1,44 @@
-.type {
+.types-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    .type {
+        width: 252px;
+        label {
+            width: 100%;
+
+            flex-direction: column;
+            align-items: center;
+
+            ::ng-deep span:not(.ant-checkbox) {
+                text-align: center;
+            }
+        }
+
+        ::ng-deep .ant-checkbox-wrapper::after {
+            height: 5px !important;
+        }
+
+        nz-select {
+            width: 100%;
+        }
+    }
 }
 .search {
     padding-top: 30px;
 }
+.tags {
+    nz-select {
+        width: 100%;
+    }
+}
 
-nz-select, input {
+input {
     width: 100%;
 }

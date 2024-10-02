@@ -15,6 +15,21 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
   public minions: any[] = [];
 
   public monsterTags: string[] = [];
+  public typeTags = {
+    aberration: [],
+    beast: [],
+    celestial: [],
+    construct: [],
+    dragon: [],
+    elemental: [],
+    fey: [],
+    fiend: [],
+    giant: [],
+    humanoid: [],
+    ooze: [],
+    plant: [],
+    undead: [],
+  };
   public crMarks: any[] = [];
   public minionCrMarks: any[] = [];
   public sizeMarks: any[] = [];
@@ -50,6 +65,21 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
       plant: false,
       undead: false,
     },
+    typeTags: {
+      aberration: [],
+      beast: [],
+      celestial: [],
+      construct: [],
+      dragon: [],
+      elemental: [],
+      fey: [],
+      fiend: [],
+      giant: [],
+      humanoid: [],
+      ooze: [],
+      plant: [],
+      undead: [],
+    },
     size: [-4, 6],
     tags: [],
     cr: [0, 43],
@@ -70,6 +100,21 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
       ooze: false,
       plant: false,
       undead: false,
+    },
+    typeTags: {
+      aberration: [],
+      beast: [],
+      celestial: [],
+      construct: [],
+      dragon: [],
+      elemental: [],
+      fey: [],
+      fiend: [],
+      giant: [],
+      humanoid: [],
+      ooze: [],
+      plant: [],
+      undead: [],
     },
     size: [-4, 6],
     tags: [],
@@ -95,10 +140,15 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
       if (monster.tags) {
         this.monsterTags = [...this.monsterTags, ...monster.tags];
       }
-      if (monster.beastType) {
-        this.monsterTags = [...this.monsterTags, ...monster.beastType];
+
+      for (let [type, subTypes] of Object.entries(monster.type)) {
+        this.assignSubTypes([type], subTypes);
       }
     }
+    for (let [type, tags] of Object.entries(this.typeTags)) {
+      this.typeTags[type] = tags.sort((a, b) => a.label.localeCompare(b.label));
+    }
+
     this.monsterTags.push('familiar', 'steed', 'great steed', 'mythic');
     this.monsterTags = [...new Set(this.monsterTags.sort())];
 
@@ -122,20 +172,24 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
     this.monsters = this.allMonsters.filter((m: any) =>
       m.name.toLowerCase().includes(this.filters.search.toLowerCase())
     );
-
     if (!Object.values(this.filters.type).every((k: any) => !k)) {
       this.monsters = this.monsters.filter((m: any) => {
-        if (m.type.includes(' ')) {
-          for (let type of m.type.split(' ')) {
-            let hasType = this.filters.type[type];
-            if (hasType) {
-              return true;
-            }
+        let hasType = false;
+        for (let [type, s] of Object.entries(this.filters.type).filter(
+          ([t, set]) => set
+        )) {
+          hasType = Object.keys(m.type).includes(type);
+          if (hasType) {
+            return true;
           }
-        } else {
-          return this.filters.type[m.type];
         }
+        return false;
       });
+    }
+    for (let [type, set] of Object.entries(this.filters.type)) {
+      if (!set) {
+        this.filters.typeTags[type] = [];
+      }
     }
     this.monsters = this.monsters.filter((m: any) => {
       if (m.size.includes(' ')) {
@@ -161,28 +215,14 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
     });
     if (this.filters.tags.length) {
       this.monsters = this.monsters.filter((m: any) => {
-        if (
-          !m.tags &&
-          !m.beastType &&
-          !m.familiar &&
-          !m.steed &&
-          !m.greatSteed &&
-          !m.mythic
-        ) {
+        if (!m.tags && !m.familiar && !m.steed && !m.greatSteed && !m.mythic) {
           return false;
         }
-
         for (let tag of m.tags ?? []) {
           if (this.filters.tags.includes(tag)) {
             return true;
           }
         }
-        for (let type of m.beastType ?? []) {
-          if (this.filters.tags.includes(type)) {
-            return true;
-          }
-        }
-
         if (this.filters.tags.includes('familiar') && m.familiar) {
           return true;
         }
@@ -198,10 +238,54 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
         if (this.filters.tags.includes('mythic') && m.mythic) {
           return true;
         }
-
         return false;
       });
     }
+
+    for (let tags of Object.values(this.filters.typeTags)) {
+      if (tags.length > 0) {
+        tags = tags.sort((a, b) => a.label.localeCompare(b.label));
+        let temp = [];
+
+        for (let tag of tags) {
+          temp.push(
+            ...this.monsters.filter((m) => {
+              if (!Object.keys(m.type).includes(tag.parentTypes[0])) {
+                return true;
+              }
+
+              let destination = m.type[tag.parentTypes[0]];
+              if (tag.parentTypes.length > 1) {
+                for (let i = 1; i < tag.parentTypes.length; i++) {
+                  if (!destination) {
+                    return false;
+                  }
+
+                  destination = destination[tag.parentTypes[i]];
+                }
+              }
+              if (!destination) {
+                return false;
+              }
+
+              console.log(m.name);
+              console.log(destination);
+              destination = destination[tag.type];
+              return !!destination;
+            })
+          );
+          console.log(temp);
+        }
+
+        this.monsters = temp
+          .filter(
+            (value, index, self) =>
+              index === self.findIndex((t) => t.index === value.index)
+          )
+          .sort((a, b) => a.name.localeCompare(b.name));
+      }
+    }
+
     this.monsters = this.monsters.filter((m: any) => {
       return (
         m.cr >= this.crDecode(this.filters.cr[0]) &&
@@ -209,23 +293,29 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
       );
     });
 
+    ////////////////////////////////////////////////////////////////////////////////////
+
     this.minions = this.allMinions.filter((m: any) =>
       m.name.toLowerCase().includes(this.minionFilters.search.toLowerCase())
     );
-
-    if (!Object.values(this.filters.type).every((k: any) => !k)) {
+    if (!Object.values(this.minionFilters.type).every((k: any) => !k)) {
       this.minions = this.minions.filter((m: any) => {
-        if (m.type.includes(' ')) {
-          for (let type of m.type.split(' ')) {
-            let hasType = this.minionFilters.type[type];
-            if (hasType) {
-              return true;
-            }
+        let hasType = false;
+        for (let [type, s] of Object.entries(this.minionFilters.type).filter(
+          ([t, set]) => set
+        )) {
+          hasType = Object.keys(m.type).includes(type);
+          if (hasType) {
+            return true;
           }
-        } else {
-          return this.minionFilters.type[m.type];
         }
+        return false;
       });
+    }
+    for (let [type, set] of Object.entries(this.minionFilters.type)) {
+      if (!set) {
+        this.minionFilters.typeTags[type] = [];
+      }
     }
     this.minions = this.minions.filter((m: any) => {
       if (m.size.includes(' ')) {
@@ -256,22 +346,11 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
             return true;
           }
         }
-
-        if (!m.tags && !m.beastType) {
-          return false;
-        }
-
         for (let tag of m.tags ?? []) {
           if (this.minionFilters.tags.includes(tag)) {
             return true;
           }
         }
-        for (let type of m.beastType ?? []) {
-          if (this.minionFilters.tags.includes(type)) {
-            return true;
-          }
-        }
-
         if (this.minionFilters.tags.includes('familiar') && m.familiar) {
           return true;
         }
@@ -287,6 +366,46 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
         return false;
       });
     }
+
+    for (let tags of Object.values(this.minionFilters.typeTags)) {
+      if (tags.length > 0) {
+        tags = tags.sort((a, b) => a.label.localeCompare(b.label));
+        let temp = [];
+
+        for (let tag of tags) {
+          temp.push(
+            ...this.minions.filter((m) => {
+              if (!Object.keys(m.type).includes(tag.parentTypes[0])) {
+                return true;
+              }
+
+              let destination = m.type[tag.parentTypes[0]];
+              for (let i = 1; i < tag.parentTypes.length; i++) {
+                if (!destination) {
+                  return false;
+                }
+
+                destination = destination[tag.parentTypes[i]];
+              }
+              if (!destination) {
+                return false;
+              }
+
+              destination = destination[tag.type];
+              return destination;
+            })
+          );
+        }
+
+        this.minions = temp
+          .filter(
+            (value, index, self) =>
+              index === self.findIndex((t) => t.index === value.index)
+          )
+          .sort((a, b) => a.name.localeCompare(b.name));
+      }
+    }
+
     this.minions = this.minions.filter((m: any) => {
       return (
         m.cr >= this.crDecode(this.minionFilters.cr[0]) &&
@@ -365,5 +484,78 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
   }
   public round(number) {
     return Math.round(number);
+  }
+
+  public getMonsterTypesString(types: any): string {
+    let typesData = [];
+
+    for (let [type, subTypes] of Object.entries(types).sort((a, b) =>
+      a[0].localeCompare(b[0])
+    )) {
+      if (Object.keys(subTypes).length > 0) {
+        typesData.push(`${type} (${this.getSubTypes(subTypes)})`);
+      } else {
+        typesData.push(type);
+      }
+    }
+
+    return typesData.join(' ');
+  }
+  public getSubTypes(subTypes: any): string {
+    let subTypesData = [];
+    for (let [subType, subSubTypes] of Object.entries(subTypes)) {
+      subType = subType.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
+
+      if (Object.keys(subSubTypes).length > 0) {
+        subTypesData.push(`${subType} (${this.getSubTypes(subSubTypes)})`);
+      } else {
+        subTypesData.push(subType);
+      }
+    }
+
+    return subTypesData.join(', ');
+  }
+
+  public assignSubTypes(parentTypes: string[], subTypes: any) {
+    for (let [subType, subSubTypes] of Object.entries(subTypes)) {
+      const formattedSubType = subType
+        .replace(/([a-z])([A-Z])/g, '$1 $2')
+        .toLowerCase();
+
+      if (
+        this.typeTags[parentTypes[0]].findIndex(
+          (t) =>
+            this.getFullSubTypeLabel(formattedSubType, parentTypes) === t.label
+        ) === -1
+      ) {
+        this.typeTags[parentTypes[0]].push({
+          type: subType,
+          parentTypes: parentTypes,
+          label: this.getFullSubTypeLabel(formattedSubType, parentTypes),
+        });
+      }
+      this.assignSubTypes([...parentTypes, subType], subSubTypes);
+    }
+  }
+  public getFullSubTypeLabel(type: string, parentTypes: string[]) {
+    let fullLabel = '';
+
+    for (let i = 1; i < parentTypes.length; i++) {
+      if (i != 1) {
+        fullLabel += ' : ';
+      }
+      fullLabel += parentTypes[i];
+    }
+
+    if (parentTypes.length > 1) {
+      fullLabel += ' : ';
+    }
+    fullLabel += type;
+
+    return fullLabel;
+  }
+
+  public keys(dict: any) {
+    return Object.keys(dict);
   }
 }

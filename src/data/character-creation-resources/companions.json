@@ -6,7 +6,7 @@
         "any": {
           "name": "Steel Defender",
           "size": "Medium",
-          "type": "construct",
+          "type": { "construct": {} },
           "ac": [{ "ac": 12, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 2, "levelMod": 5, "splMod": true },
@@ -230,7 +230,7 @@
         "any": {
           "name": "Living Puppet",
           "size": "Tiny",
-          "type": "construct",
+          "type": { "construct": { "animatedObject": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "hp": { "base": 10 },
           "speed": { "walk": 20 },
@@ -288,7 +288,7 @@
         "any": {
           "name": "Homonculus Servant",
           "size": "Tiny",
-          "type": "construct",
+          "type": { "construct": {} },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "hp": { "base": 1, "splMod": true, "levelMod": 1 },
           "speed": { "walk": 20, "hover": 30 },
@@ -338,8 +338,10 @@
         "any": {
           "name": "Homonculus Servant",
           "size": "Tiny",
-          "type": "construct undead",
-          "tags": ["corporeal"],
+          "type": {
+            "construct": {},
+            "undead": { "corporeal": { "fleshGolem": {} } }
+          },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "hp": { "base": 1, "splMod": true, "levelMod": 1 },
           "speed": { "walk": 20, "hover": 30 },
@@ -389,8 +391,7 @@
         "any": {
           "name": "Loyal Livestock",
           "size": "Medium",
-          "type": "beast",
-          "beastType": ["mammal"],
+          "type": { "beast": { "mammal": {} } },
           "ac": [{ "ac": 10, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 7, "levelMod": 5 },
@@ -481,8 +482,7 @@
         "any": {
           "name": "Shade Warrior",
           "size": "Medium",
-          "type": "fiend",
-          "tags": ["shadowy"],
+          "type": { "fiend": { "shadowy": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 4 },
@@ -558,7 +558,7 @@
         "any": {
           "name": "Wildfire Spirit",
           "size": "Small",
-          "type": "elemental",
+          "type": { "elemental": { "fire": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "hp": { "base": 5, "levelMod": 5 },
           "speed": { "walk": 30, "hover": 30 },
@@ -603,8 +603,7 @@
         "any": {
           "name": "Loyal Hound",
           "size": "Medium",
-          "type": "beast",
-          "beastType": ["mammal"],
+          "type": { "beast": { "mammal": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -735,14 +734,13 @@
     }
   },
   {
-    "key": "dusk-skeleton",
+    "key": "dust-skeleton",
     "stats": {
       "0": {
         "any": {
-          "name": "Dusk Skeleton",
+          "name": "Dust Skeleton",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["corporeal"],
+          "type": { "undead": { "corporeal": { "skeleton": {} } } },
           "ac": [{ "ac": 13, "from": ["leather armor"] }],
           "pbac": true,
           "hp": {
@@ -825,8 +823,7 @@
         "any": {
           "name": "Ancient Mummy",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["corporeal"],
+          "type": { "undead": { "corporeal": { "mummy": {} } } },
           "ac": [{ "ac": 11, "from": ["natural armor"] }],
           "pbac": true,
           "hp": {
@@ -904,8 +901,7 @@
         "any": {
           "name": "Vampiric Ghoul",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["corporeal"],
+          "type": { "undead": { "corporeal": { "ghoul": {} } } },
           "ac": [{ "ac": 11, "from": ["natural armor"] }],
           "pbac": true,
           "hp": {
@@ -985,8 +981,7 @@
         "any": {
           "name": "Claw Swarm",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["corporeal"],
+          "type": { "undead": { "corporeal": {} } },
           "swarmSize": "Tiny",
           "ac": [{ "ac": 10, "from": ["natural armor"] }],
           "pbac": true,
@@ -1077,8 +1072,7 @@
         "any": {
           "name": "Rotting Zombie",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["corporeal"],
+          "type": { "undead": { "corporeal": { "zombie": {} } } },
           "ac": [{ "ac": 10, "from": ["natural armor"] }],
           "pbac": true,
           "hp": {
@@ -1181,8 +1175,7 @@
         "any": {
           "name": "Frozen Ghost",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["ethereal"],
+          "type": { "undead": { "ethereal": { "ghost": {} } } },
           "ac": [{ "ac": 12, "from": ["natural armor"] }],
           "pbac": true,
           "hp": {
@@ -1273,8 +1266,7 @@
         "any": {
           "name": "Tenebrous Shadow",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["ethereal"],
+          "type": { "undead": { "ethereal": { "shade": {} } } },
           "ac": [{ "ac": 12, "from": ["natural armor"] }],
           "pbac": true,
           "hp": {
@@ -1367,8 +1359,7 @@
         "any": {
           "name": "Vengeful Wraith",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["ethereal"],
+          "type": { "undead": { "ethereal": { "wraith": {} } } },
           "ac": [{ "ac": 12, "from": ["natural armor"] }],
           "pbac": true,
           "hp": {
@@ -1462,8 +1453,7 @@
         "any": {
           "name": "Swarm of Vermin",
           "size": "Medium",
-          "type": "beast",
-          "beastType": ["mammal"],
+          "type": { "beast": { "mammal": {} } },
           "swarmSize": "Dimunitive",
           "ac": [{ "ac": 9, "from": ["natural armor"] }],
           "pbac": true,
@@ -1524,8 +1514,7 @@
         "any": {
           "name": "Bird of Prey",
           "size": "Tiny",
-          "type": "beast",
-          "beastType": ["bird"],
+          "type": { "beast": { "bird": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 4, "levelMod": 5 },
@@ -1624,8 +1613,7 @@
         "any": {
           "name": "Falcon",
           "size": "Tiny",
-          "type": "beast",
-          "beastType": ["bird"],
+          "type": { "beast": { "bird": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 10 },
@@ -1673,8 +1661,7 @@
         "any": {
           "name": "Geist",
           "size": "Medium",
-          "type": "undead",
-          "tags": ["ethereal"],
+          "type": { "undead": { "ethereal": { "ghost": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -1781,7 +1768,7 @@
         "any": {
           "name": "Wizard's Guardian",
           "size": "Medium",
-          "type": "construct",
+          "type": { "construct": {} },
           "ac": [{ "ac": 14, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -1858,8 +1845,7 @@
         "any": {
           "name": "Woken Dead",
           "size": "Medium or Small",
-          "type": "undead",
-          "tags": ["corporeal"],
+          "type": { "undead": { "corporeal": {} } },
           "ac": [{ "ac": 10, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -1908,7 +1894,7 @@
         "any": {
           "name": "Drake Companion",
           "size": "Small",
-          "type": "dragon",
+          "type": { "dragon": { "lesserDragon": { "drake": {} } } },
           "ac": [{ "ac": 14, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -2002,7 +1988,7 @@
         "any": {
           "name": "Draconic Companion",
           "size": "Small",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": {} } },
           "ac": [{ "ac": 14, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -2115,7 +2101,7 @@
         "any": {
           "name": "Black Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "chromatic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -2497,7 +2483,7 @@
         "any": {
           "name": "Bronze Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -2879,7 +2865,7 @@
         "any": {
           "name": "Green Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "chromatic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -3261,7 +3247,7 @@
         "any": {
           "name": "Gold Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -3643,7 +3629,7 @@
         "any": {
           "name": "Deep Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -4025,7 +4011,7 @@
         "any": {
           "name": "Topaz Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -4407,7 +4393,7 @@
         "any": {
           "name": "Amethyst Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -4789,7 +4775,7 @@
         "any": {
           "name": "Blue Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "chromatic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -5173,7 +5159,7 @@
         "any": {
           "name": "Crystal Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -5557,7 +5543,7 @@
         "any": {
           "name": "Emerald Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -5941,7 +5927,7 @@
         "any": {
           "name": "Obsidian Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -6325,7 +6311,7 @@
         "any": {
           "name": "Ruby Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -6709,7 +6695,7 @@
         "any": {
           "name": "Sapphire Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -7093,7 +7079,7 @@
         "any": {
           "name": "Brass Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -7477,7 +7463,7 @@
         "any": {
           "name": "Steel Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -7861,7 +7847,7 @@
         "any": {
           "name": "Moonstone Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -8239,13 +8225,13 @@
     }
   },
   {
-    "key": "dragon-knight-fire",
+    "key": "dragon-knight-red",
     "stats": {
       "0": {
         "any": {
-          "name": "Fire Dragon Companion",
+          "name": "Red Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "chromatic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -8629,7 +8615,7 @@
         "any": {
           "name": "Copper Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -9013,7 +8999,7 @@
         "any": {
           "name": "White Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "chromatic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -9397,7 +9383,7 @@
         "any": {
           "name": "Silver Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },
@@ -9781,7 +9767,7 @@
         "any": {
           "name": "Tungsten Dragon Companion",
           "size": "Medium",
-          "type": "dragon",
+          "type": { "dragon": { "trueDragon": { "metallic": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 6, "levelMod": 6 },

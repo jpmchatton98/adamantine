@@ -1,39 +1,3 @@
-<!-- <nz-modal
-  [(nzVisible)]="settingsModal"
-  nzTitle="Monster Settings"
-  [nzCancelText]="null"
-  [nzClosable]="false"
-  [nzOkText]="null"
-  (nzOnCancel)="settingsModal = false"
->
-  <ng-container *nzModalContent>
-    <div *ngIf="monster.type.includes('beast')">
-      <nz-switch
-        [(ngModel)]="direBeast"
-        (ngModelChange)="updateDireBeast()"
-      ></nz-switch>
-      Dire Beast
-    </div>
-
-    <ng-container
-      *ngIf="
-        (!monster.type.includes('construct') &&
-          !monster.type.includes('undead')) ||
-        this.undead
-      "
-    >
-      <h5>Undead</h5>
-      <nz-radio-group [(ngModel)]="undead" (ngModelChange)="updateUndead()">
-        <label nz-radio nzValue="undefined">N/A</label>
-        <label nz-radio nzValue="ghost">Ghost</label>
-        <label nz-radio nzValue="mummy">Mummy</label>
-        <label nz-radio nzValue="skeleton">Skeleton</label>
-        <label nz-radio nzValue="zombie">Zombie</label>
-      </nz-radio-group>
-    </ng-container>
-  </ng-container>
-</nz-modal> -->
-
 <div class="header">
   <h3>{{ monster.name }}</h3>
 </div>
@@ -42,17 +6,12 @@
   <em>
     <div>
       <ng-container *ngIf="!monster.swarmSize; else swarm">
-        {{ monster.size }} {{ monster.type }}
-        <ng-container *ngIf="monster.tags">
-          ({{ monster.tags.join(", ") }})
-        </ng-container>
+        {{ monster.size }} {{ getMonsterTypesString(monster.type) }}
       </ng-container>
       <ng-template #swarm>
-        {{ monster.size }} swarm of {{ monster.swarmSize }} {{ monster.type }}s
+        {{ monster.size }} swarm of {{ monster.swarmSize }}
+        {{ getMonsterTypesString(monster.type, true) }}
       </ng-template>
-    </div>
-    <div *ngIf="monster.type === 'beast'">
-      {{ monster.beastType.join(", ") }}
     </div>
   </em>
 </div>

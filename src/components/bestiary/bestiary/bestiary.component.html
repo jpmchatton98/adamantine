@@ -16,85 +16,28 @@
       <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
         <div>
           <h4>Type</h4>
-          <div class="type">
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.aberration"
-              (ngModelChange)="updateFilters()"
-              >Aberration</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.beast"
-              (ngModelChange)="updateFilters()"
-              >Beast</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.celestial"
-              (ngModelChange)="updateFilters()"
-              >Celestial</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.construct"
-              (ngModelChange)="updateFilters()"
-              >Construct</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.dragon"
-              (ngModelChange)="updateFilters()"
-              >Dragon</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.elemental"
-              (ngModelChange)="updateFilters()"
-              >Elemental</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.fey"
-              (ngModelChange)="updateFilters()"
-              >Fey</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.fiend"
-              (ngModelChange)="updateFilters()"
-              >Fiend</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.giant"
-              (ngModelChange)="updateFilters()"
-              >Giant</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.humanoid"
-              (ngModelChange)="updateFilters()"
-              >Humanoid</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.ooze"
-              (ngModelChange)="updateFilters()"
-              >Ooze</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.plant"
-              (ngModelChange)="updateFilters()"
-              >Plant</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="filters.type.undead"
-              (ngModelChange)="updateFilters()"
-              >Undead</label
-            >
+          <div class="types-wrapper">
+            <div class="type" *ngFor="let type of keys(filters.type)">
+              <label
+                nz-checkbox
+                [(ngModel)]="filters.type[type]"
+                (ngModelChange)="updateFilters()"
+                >{{ capitalize(type) }}</label
+              >
+
+              <nz-select
+                nzMode="tags"
+                [(ngModel)]="filters.typeTags[type]"
+                (ngModelChange)="updateFilters()"
+                [disabled]="!filters.type[type]"
+              >
+                <nz-option
+                  *ngFor="let option of typeTags[type]"
+                  [nzLabel]="option.label"
+                  [nzValue]="option"
+                ></nz-option>
+              </nz-select>
+            </div>
           </div>
         </div>
         <div>
@@ -111,7 +54,7 @@
             (nzOnAfterChange)="updateFilters()"
           ></nz-slider>
         </div>
-        <div>
+        <div class="tags">
           <h4>Tags</h4>
           <nz-select
             nzMode="tags"
@@ -149,6 +92,7 @@
           <th>Type</th>
           <th>Size</th>
           <th>CR</th>
+          <th>Tags</th>
         </tr>
       </thead>
       <tbody>
@@ -158,13 +102,11 @@
               <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
             </td>
             <td>
-              {{ data.type }}
-              <ng-container *ngIf="data.tags">
-                ({{ data.tags.sort().join(", ") }})
-              </ng-container>
+              {{ getMonsterTypesString(data.type) }}
             </td>
             <td>{{ data.size }}</td>
             <td>{{ formatCr(data.cr) }}</td>
+            <td>{{ data.tags?.sort().join(", ") ?? "-" }}</td>
           </tr>
         </ng-container>
       </tbody>
@@ -185,87 +127,27 @@
     ></ng-template>
     <nz-collapse>
       <nz-collapse-panel nzHeader="Filters" [nzActive]="false">
-        <div>
-          <h4>Type</h4>
-          <div class="type">
+        <div class="types-wrapper">
+          <div class="type" *ngFor="let type of keys(minionFilters.type)">
             <label
               nz-checkbox
-              [(ngModel)]="minionFilters.type.aberration"
+              [(ngModel)]="minionFilters.type[type]"
               (ngModelChange)="updateFilters()"
-              >Aberration</label
+              >{{ capitalize(type) }}</label
             >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.beast"
+
+            <nz-select
+              nzMode="tags"
+              [(ngModel)]="minionFilters.typeTags[type]"
               (ngModelChange)="updateFilters()"
-              >Beast</label
+              [disabled]="!minionFilters.type[type]"
             >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.celestial"
-              (ngModelChange)="updateFilters()"
-              >Celestial</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.construct"
-              (ngModelChange)="updateFilters()"
-              >Construct</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.dragon"
-              (ngModelChange)="updateFilters()"
-              >Dragon</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.elemental"
-              (ngModelChange)="updateFilters()"
-              >Elemental</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.fey"
-              (ngModelChange)="updateFilters()"
-              >Fey</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.fiend"
-              (ngModelChange)="updateFilters()"
-              >Fiend</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.giant"
-              (ngModelChange)="updateFilters()"
-              >Giant</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.humanoid"
-              (ngModelChange)="updateFilters()"
-              >Humanoid</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.ooze"
-              (ngModelChange)="updateFilters()"
-              >Ooze</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.plant"
-              (ngModelChange)="updateFilters()"
-              >Plant</label
-            >
-            <label
-              nz-checkbox
-              [(ngModel)]="minionFilters.type.undead"
-              (ngModelChange)="updateFilters()"
-              >Undead</label
-            >
+              <nz-option
+                *ngFor="let option of typeTags[type]"
+                [nzLabel]="option.label"
+                [nzValue]="option"
+              ></nz-option>
+            </nz-select>
           </div>
         </div>
         <div>
@@ -546,6 +428,7 @@
           <th>Type</th>
           <th>Size</th>
           <th>CR</th>
+          <th>Tags</th>
         </tr>
       </thead>
       <tbody>
@@ -555,13 +438,11 @@
               <a routerLink="/bestiary/{{ data.index }}">{{ data.name }}</a>
             </td>
             <td>
-              {{ data.type }}
-              <ng-container *ngIf="data.tags">
-                ({{ data.tags.sort().join(", ") }})
-              </ng-container>
+              {{ getMonsterTypesString(data.type) }}
             </td>
             <td>{{ data.size }}</td>
             <td>M{{ formatCr(data.cr) }}</td>
+            <td>{{ data.tags?.sort().join(", ") ?? "-" }}</td>
           </tr>
         </ng-container>
       </tbody>
