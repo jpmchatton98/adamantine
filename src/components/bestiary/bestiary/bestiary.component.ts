@@ -268,8 +268,6 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
                 return false;
               }
 
-              console.log(m.name);
-              console.log(destination);
               destination = destination[tag.type];
               return !!destination;
             })
@@ -544,7 +542,9 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
       if (i != 1) {
         fullLabel += ' : ';
       }
-      fullLabel += parentTypes[i];
+      fullLabel += parentTypes[i]
+        .replace(/([a-z])([A-Z])/g, '$1 $2')
+        .toLowerCase();
     }
 
     if (parentTypes.length > 1) {
