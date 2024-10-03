@@ -13238,69 +13238,25 @@
       },
       {
         "name": "Olfactory Hunter",
-        "description": "You have advantage on Wisdom (Perception) checks that rely on smell."
+        "description": "You have advantage on Wisdom (Perception) checks that rely on smell, and you have proficiency in Survival.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Survival"],
+            "level": 1
+          }
+        ]
       },
       {
         "name": "Forgers of Sky-Iron",
-        "description": "You have proficiency with blacksmith's tools and craft a bespoke suit of armor of cold iron (sometimes called sky-iron), as important to you as your own soul. This magical armor can be enchanted and is not destroyed by disenchantment.</p><p>Whenever an increase to your proficiency bonus would lead to an increase in your AC, you must purchase sky-iron with a gold cost of 100 x your character level and spend 8 hours at a forge in order to gain this benefit.</p><p>You tailor this metal to the armor style with which you are proficient:<table><tr><th>Armor Type</th><th>AC</th></tr><tr><td>None</td><td>11 + your Dexterity modifier</td></tr><tr><td>Light</td><td>13 + your Dexterity modifier</td></tr><tr><td>Medium</td><td>13 + your Dexterity modifier (maximum of +2) + half your proficiency bonus (rounded down)</td></tr><tr><td>Heavy</td><td>16 + half your proficiency bonus (rounded down)</td></tr></table>",
-        "choices": {
-          "id": "7226BDE2-DBD1-4AAF-B39B-1C6234F75611",
-          "type": "trait",
-          "options": [
-            {
-              "name": "Unarmored",
-              "traits": [
-                {
-                  "name": "",
-                  "description": "Your bespoke armor grants you an Armor Class equal to 11 + your Dexterity modifier.",
-                  "granted": [
-                    { "type": "unarmored", "base": 11, "scores": ["dex"] }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Light",
-              "traits": [
-                {
-                  "name": "",
-                  "description": "Your bespoke armor grants you an Armor Class equal to 13 + your Dexterity modifier.",
-                  "granted": [
-                    { "type": "unarmored", "base": 13, "scores": ["dex"] }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Medium",
-              "traits": [
-                {
-                  "name": "",
-                  "description": "Your bespoke armor grants you an Armor Class equal to 13 + your Dexterity modifier (maximum of +2) + half your proficiency bonus (rounded down).",
-                  "granted": [
-                    {
-                      "type": "unarmored",
-                      "base": 13,
-                      "scores": ["dex-2", "half-prof"]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Heavy",
-              "traits": [
-                {
-                  "name": "",
-                  "description": "Your bespoke armor grants you an Armor Class equal to 16 + half your proficiency bonus.",
-                  "granted": [
-                    { "type": "unarmored", "base": 16, "scores": ["half-prof"] }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
+        "description": "You have proficiency with blacksmith's tools.",
+        "granted": [
+          {
+            "type": "tool",
+            "options": ["Blacksmith's Tools"],
+            "level": 1
+          }
+        ]
       },
       {
         "name": "Giant Build",
