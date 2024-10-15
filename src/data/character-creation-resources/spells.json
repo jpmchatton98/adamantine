@@ -18274,6 +18274,57 @@
     }
   },
   {
+    "name": "Lesser Blightbirth",
+    "school": "Sangromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Touch (2/3/5/10 targets)",
+    "components": "V, S, M (a fresh corpse, which the spell consumes)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You shove a fistfull of earth through the chest of the corpse used as a material component and tendrilous vines begin to sprout from its wounds, tearing forth as newborn blights into the nearest unoccupied spaces. Choose one of the following for what are created:<ul><li>Two vine blights</li><li>Three needle blights</li><li>Five twig blights</li><li>Ten splinter blights</li></ul>",
+      "The created blights are friendly to you for the spell's duration. If the corpse used as a material component for the spell was humanoid, the created blights act on your initiative and obey your verbal commands for the spell's duration, and remain non-hostile toward you after the spell ends, unless provoked.",
+      "If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th or 8th level, you create twice as many blights. If you cast it using a spell slot of 9th level, you create three times as many blights."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0,
+    "upcastRange": {
+      "5": "Touch (2/3/5/10 targets)",
+      "6": "Touch (2/3/5/10 targets)",
+      "7": "Touch (4/6/10/20 targets)",
+      "8": "Touch (4/6/10/20 targets)",
+      "9": "Touch (6/9/15/30 targets)"
+    }
+  },
+  {
+    "name": "Greater Blightbirth",
+    "school": "Sangromancy",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "Touch (1/2 targets)",
+    "components": "V, S, M (a fresh corpse and the trunk of a tree, both of which the spell consumes)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You shove a fistfull of earth through the chest of the corpse used as a material component and tendrilous vines begin to sprout from its wounds, tearing forth as newborn blights into the nearest unoccupied spaces. Choose one of the following for what are created:<ul><li>One tree blight</li><li>Two thicket blights</li></ul>",
+      "The created blights are friendly to you for the spell's duration. If the corpse used as a material component for the spell was humanoid, the created blights act on your initiative and obey your verbal commands for the spell's duration, and remain non-hostile toward you after the spell ends, unless provoked.",
+      "If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th or 9th level, you create twice as many blights."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0,
+    "upcastRange": {
+      "7": "Touch (1/2 targets)",
+      "8": "Touch (2/4 targets)",
+      "9": "Touch (2/4 targets)"
+    }
+  },
+  {
     "name": "Summon Shadowspawn",
     "school": "Conjuration",
     "level": 3,
