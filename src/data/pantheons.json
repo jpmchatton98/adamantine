@@ -67,6 +67,23 @@
         "domains": ["Eldritch", "Madness"]
       },
       {
+        "name": "Ouroborus",
+        "gender": "Agender",
+        "alignment": "N",
+        "symbol": "A white constrictor snake eating its own tail",
+        "portfolio": "Infinity",
+        "domains": [
+          "Death",
+          "Forge",
+          "Grave",
+          "Knowledge",
+          "Life",
+          "Order",
+          "Pain",
+          "Sorrow"
+        ]
+      },
+      {
         "name": "Pandorym",
         "gender": "Agender",
         "alignment": "CE",
