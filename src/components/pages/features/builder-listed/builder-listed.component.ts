@@ -241,6 +241,9 @@ export class BuilderListedComponent implements OnInit {
 
         this.options = [
           ...this.dataService.getSpellsByListUnsplit(this.listed.list),
+          ...(this.characterObj.subclass === 'Ascended'
+            ? this.dataService.getSpellsByListUnsplit('arcane')
+            : []),
           ...(this.characterObj.subclass === 'Conduit'
             ? this.dataService.getSpellsByListUnsplit('divine')
             : []),

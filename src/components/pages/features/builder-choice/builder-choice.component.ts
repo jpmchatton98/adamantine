@@ -243,6 +243,8 @@ export class BuilderChoiceComponent implements OnInit {
                 (s: any) =>
                   s.level === (choice.level ?? 10) &&
                   (s.lists.includes('Occult') ||
+                    (this.characterObj.subclass === 'Ascended' &&
+                      s.lists.includes('Arcane')) ||
                     (this.characterObj.subclass === 'Conduit' &&
                       s.lists.includes('Divine')))
               );

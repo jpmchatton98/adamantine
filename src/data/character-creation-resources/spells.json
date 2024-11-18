@@ -29439,5 +29439,410 @@
     ],
     "ritual": 0,
     "lists": ["Invention", "Divine", "Arcane"]
+  },
+  {
+    "name": "Blackstride",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You create a 5 foot radius zone of magical darkness centered on a space you can see within 60 feet, then you can teleport to an unoccupied space within it.",
+      "For the duration, you can repeat this effect at the beginning of each of your turns."
+    ],
+    "ritual": 0,
+    "lists": ["Arcane", "Occult"]
+  },
+  {
+    "name": "Cold-Iron Shock",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a chip of ice)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a metal object and cold radiates through it, forcing one creature wearing or wielding that object to make a Constitution saving throw.",
+      "The creature takes 10d8 cold damage on a failure, or half as much on a success. If the object was a nonmagical weapon, shield, or suit of armor, it cracks and shatters, becoming unusable."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the cold damage increases by 2d8 for each slot level above 5th."
+    ],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 8,
+        "type": "cold"
+      }
+    ],
+    "upcastDice": 2,
+    "ritual": 0,
+    "lists": ["Arcane", "Primal"]
+  },
+  {
+    "name": "Crackling Doom",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a coil of wire)",
+    "duration": "1 round",
+    "description": [
+      "You cast forth a roil of electrical energy that clings where it strikes. Make a ranged spell attack against a target within range.",
+      "On a hit, the target takes 8d8 lightning damage and has disadvantage on saving throws against effects that deal lightning damage until the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "lightning"
+      }
+    ],
+    "upcastDice": 1,
+    "ritual": 0,
+    "lists": ["Arcane", "Primal", "Invention", "Elemental"],
+    "element": "Air"
+  },
+  {
+    "name": "Deadly Image",
+    "school": "Illusion",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a warped lens)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You create an illusory creature or effect that fits within a 20 foot cube and extends to all senses, appearing in a space you can see within range.",
+      "Once on each of your turns (no action required), you can move the effect up to 30 feet, then force one creature within 5 feet of it to make an Intelligence saving throw. On a failure, the creature takes 4d8 psychic damage.",
+      "A creature that succeeds on this saving throw, or that uses its action to disbelieve the illusion with a successful Intelligence (Investigation) check made against your spell save DC, becomes immune to the illusion's effects and can see through it."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the psychic damage increases by 1d8 for each slot level above 4th."
+    ],
+    "type": "save",
+    "save": "int",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "psychic"
+      }
+    ],
+    "upcastDice": 1,
+    "ritual": 0,
+    "lists": ["Arcane", "Occult", "Melodic", "Psionic"]
+  },
+  {
+    "name": "Death-Fume Globe",
+    "school": "Conjuration",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A globe of crystal poison envelops a Huge or smaller creature you can see within range and begins to fill with sickening fumes.",
+      "At the beginning of each of its turns, the creature must make a Constitution saving throw. On a failure, a creature takes 8d8 poison damage and is Poisoned until the beginning of its next turn. On a success, a target takes half as much damage.",
+      "The globe moves with the target, preventing anything from passing in or out; it can be damaged and destroyed (AC 20, 100 HP, immunity to psychic and poison damage, vulnerability to force damage)."
+    ],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "poison"
+      }
+    ],
+    "ritual": 0,
+    "lists": ["Arcane", "Occult"]
+  },
+  {
+    "name": "Devastation Cascade",
+    "school": "Evocation",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V, S, M (bottled lightning)",
+    "duration": "Instantaneous",
+    "description": [
+      "You call down six lightning bolts in rapid sequence to strike at targets you can see within range. An affected creature must make a Dexterity saving throw for each lightning bolt directed at it, taking 2d8 + 20 lightning damage on a failure, or half as much on a success."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 8,
+        "amount": 20,
+        "type": "lightning"
+      }
+    ],
+    "ritual": 0,
+    "lists": ["Arcane", "Occult", "Primal"]
+  },
+  {
+    "name": "Dragonfire Purification",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "White-hot flames engulf a target you can see within range, forcing it to make a Dexterity saving throw. On a failure, a target takes 8d6 + 20 fire damage and you can end each spell effect of 5th level or below that is affecting it or that it is concentrating on."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "amount": 20,
+        "type": "fire"
+      }
+    ],
+    "ritual": 0,
+    "lists": ["Arcane", "Occult"]
+  },
+  {
+    "name": "Dragonshadow",
+    "school": "Illusion",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "120 feet (15-foot radius)",
+    "components": "V, S, M (a tuft of rabbit fur)",
+    "duration": "Instantaneous",
+    "description": [
+      "A fearsome shadow descends upon a 15 foot radius centered on a point you can see within range, forcing each creature in the area to make a Wisdom saving throw.",
+      "On a failure, a creature must use its reaction move up to its half its speed in a direction of your choice. If the target doesn't have a reaction available or cannot move, it instead falls prone."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the radius of the shadow increases by 5 feet for each slot level above 2nd."
+    ],
+    "type": "save",
+    "save": "wis",
+    "upcastRange": {
+      "3": "120 feet (20-foot radius)",
+      "4": "120 feet (25-foot radius)",
+      "5": "120 feet (30-foot radius)",
+      "6": "120 feet (35-foot radius)",
+      "7": "120 feet (40-foot radius)",
+      "8": "120 feet (45-foot radius)",
+      "9": "120 feet (50-foot radius)"
+    },
+    "ritual": 0,
+    "lists": ["Arcane", "Occult", "Melodic", "Psionic", "Primal"]
+  },
+  {
+    "name": "Elemental Imbual",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "S, M (a melee weapon worth at least 1 sp)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You touch the weapon used in the spell's casting to a source of elemental energy, such as an open flame or a magical creature, imbuing the weapon with the source's energy.",
+      "For the next hour, the weapon deals an additional 1d6 damage on a hit of a type that the chosen elemental source could deal.",
+      "As a bonus action on each of your turns, you can touch this weapon to another melee weapon, extending the spell's effects to that weapon as well for the next minute."
+    ],
+    "ritual": 0,
+    "lists": ["Arcane", "Divine", "Invention", "Elemental", "Primal"]
+  },
+  {
+    "name": "Fanatic's Fervor",
+    "school": "Enchantment",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet (4 targets)",
+    "components": "V, S, M (a scrap from a war banner)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You incite a mad fervor in up to four creatures you can see within range. For the next hour, each of those creatures ignores the effects of being frightened, and can use its reaction to move up to half its speed or to make a melee weapon attack whenever it takes damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, youc an target one additional creature for each spell slot level above 6th."
+    ],
+    "upcastRange": {
+      "7": "60 feet (5 targets)",
+      "8": "60 feet (6 targets)",
+      "9": "60 feet (7 targets)"
+    },
+    "ritual": 0,
+    "lists": ["Divine", "Occult", "Melodic", "Psionic"]
+  },
+  {
+    "name": "Forebear's Claw",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (15-foot cone)",
+    "components": "V, S, M (a dragon claw)",
+    "duration": "Instantaneous",
+    "description": [
+      "You sweep a massive spectral claw in a 15 foot cone. Each creature in the area must make a Dexterity saving throw. On a failed saving throw, a creature takes 4d8 slashing damage and is pushed up to 10 feet directly away from you. On a success, a creature takes half as much damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "slashing"
+      }
+    ],
+    "upcastDice": 1,
+    "ritual": 0,
+    "lists": ["Occult", "Arcane", "Primal"]
+  },
+  {
+    "name": "Gust Palm",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a creature and send a torrent of wind driving into it, forcing it to make a Strength saving throw. On a failure, the target takes 3d8 bludgeoning damage and is pushed up to 20 feet away, or takes half as much damage and is pushed half as far on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the distance the target is pushed increases by 10 feet for each slot level above 2nd."
+    ],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "ritual": 0,
+    "lists": ["Arcane", "Elemental", "Invention", "Primal"],
+    "element": "Air"
+  },
+  {
+    "name": "Primordial Roar",
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A scream from the dawn of creation issues forth from you. Each creature within 30 feet of you takes 5d8 thunder damage and is pushed up to 10 feet away from you, then each creature of your choice within 30 feet of you must make a Wisdom saving throw. On a failure, the creature is frightened for the next minute.",
+      "A creature that is immune to the frightened condition additionally loses that immunity for the next hour on a failed saving throw.",
+      "A frightened creature repeats this saving throw at the end of each of its turns, ending the condition on a success."
+    ],
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 8,
+        "type": "thunder"
+      }
+    ],
+    "ritual": 0,
+    "lists": ["Primal", "Melodic", "Arcane", "Divine"]
+  },
+  {
+    "name": "Titan's Roar",
+    "school": "Enchantment",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You shout forth a magically amplified roar. Each creature within 30 feet of you takes 4d8 thunder damage and is pushed up to 10 feet away from you, then each creature of your choice within 30 feet of you must make a Wisdom saving throw. On a failure, the creature is frightened until the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the thunder damage increases by 1d8 for each slot level above 4th."
+    ],
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "thunder"
+      }
+    ],
+    "upcastDice": 1,
+    "ritual": 0,
+    "lists": ["Primal", "Melodic", "Arcane", "Divine"]
+  },
+  {
+    "name": "Terrible Majesty",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Your eyes flash with dread, implacable fury. Each creature in a 60 foot cone that can see you must make a Wisdom saving throw. On a failure, a creature falls prone and is frightened for the next minute.",
+      "While frightened in this way, a creature cannot stand from prone, and repeats this saving throw at the end of each of its turns, ending the effect on a success."
+    ],
+    "type": "save",
+    "save": "wis",
+    "ritual": 0,
+    "lists": ["Primal", "Melodic", "Divine"]
+  },
+  {
+    "name": "Skycaller's Surge",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (a scrap of sailcloth)",
+    "duration": "Instantaneous",
+    "description": [
+      "A surge of wind wells up beneath you; you and each creature of your choice within 30 feet of you each fly up to 30 feet in a direction of your choice. An unwilling creature can make a Strength saving throw, resisting this effect on a success."
+    ],
+    "type": "save",
+    "save": "str",
+    "ritual": 0,
+    "lists": ["Primal", "Arcane", "Invention", "Elemental"],
+    "element": "Air"
+  },
+  {
+    "name": "Weave Mirage",
+    "school": "Illusion",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a drop of distilled alcohol)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You cloak yourself in waves of shimmering air, distorting your apparent position. Whenever a creature that relies on sight makes an attack against you or casts a spell that targets you, you can force it to make an Intelligence saving throw. On a failure, you are unaffected by the attack or spell."
+    ],
+    "type": "save",
+    "save": "int",
+    "ritual": 0,
+    "lists": [
+      "Occult",
+      "Arcane",
+      "Invention",
+      "Elemental",
+      "Primal",
+      "Melodic",
+      "Psionic"
+    ],
+    "element": "Light"
   }
 ]

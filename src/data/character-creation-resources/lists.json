@@ -12079,7 +12079,18 @@
     },
     {
       "name": "Ethereal Tendril",
-      "description": "As a bonus action, you can manifest an ethereal tendril from any point on your body. It has a reach of 10 feet and it has a Strength score equal to your Charisma score. It cannot use weapons or shields, but it can manipulate simple objects and be used to make Iridescent Strikes, shove, and grapple. You can only have a single ethereal tendril manifested at a time, and the tendril can be attacked as if it were part of you."
+      "description": "As a bonus action, you can manifest (or dismiss) an Ethereal Tendril from any point on your body. It has a reach of 10 feet and its Strength score is equal to your Charisma score. You can only have one Ethereal Tendril manifested at a time, and this Tendril can be attacked as part of you.</p><p>The Ethereal Tendril cannot use fine tools, weapons, or shields, but it can be used to manipulate simple objects. Your tendril can also make Iridescent Strikes, shove, and grapple."
+    },
+    {
+      "name": "Evoke Spirit",
+      "description": "You can release a minor form of the Spirit sealed within you. You learn the find familiar spell, it counts as a Vessel spell for you, but it does not count against your total Spells Known.</p><p>When you cast find familiar it is of a type appropriate to your Archon form, instead of a type of your choice.</p><p>Your Spirit Familiar is bound to obey your orders to the best of its abilities. In combat, it shares your initiative and it acts on your turn. However, it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Find Familiar"],
+          "ability": "cha"
+        }
+      ]
     },
     {
       "name": "Minor Magicks",
@@ -12150,17 +12161,6 @@
       "name": "Dire Stature",
       "prereqLevel": 6,
       "description": "You can tap into the primordial stature of your Spirit. When you transform into your Archon Form, you can choose for it to grow by one size category if there is room. For example, the Archon Form might grow from Medium to Large.</p><p>For each size category it is above Medium, the reach of its melee attacks grows by 5 feet, its melee attacks deal an additional 1d4 damage, and its Armor Class increases by 1."
-    },
-    {
-      "name": "Evoke Spirit",
-      "description": "You can release a minor form of the Spirit sealed within you. You learn the find familiar spell, it counts as a Vessel spell for you, but it does not count against your total Spells Known.</p><p>When you cast find familiar it is of a type appropriate to your Archon form, instead of a type of your choice.</p><p>Your Spirit Familiar is bound to obey your orders to the best of its abilities. In combat, it shares your initiative and it acts on your turn. However, it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action.",
-      "granted": [
-        {
-          "type": "spell",
-          "options": ["Find Familiar"],
-          "ability": "cha"
-        }
-      ]
     },
     {
       "name": "Ethereal Grasp",
@@ -12253,6 +12253,24 @@
         "value": "Dire Stature"
       },
       "description": "The appearance of your Archon Form inspires legends and myths. When you transform into your Archon Form, it can grow two sizes if there is room for it to do so. It gains all the benefits to its reach, melee damage, and Armor Class from Dire Stature when it transforms in this way."
+    },
+    {
+      "name": "Lord of Spirits",
+      "prereqLevel": 18,
+      "prereq": {
+        "type": "list",
+        "id": "F64B062E-6196-40A0-87B5-A6AB4AC29080",
+        "value": "Evoke Spirit"
+      },
+      "description": "You can channel the elder authority of your Sealed Spirit to compel powerful entities into your service. As an action, you can conjure one creature of your choice of the same creature type as your Archon Form with a CR of 6 or lower.</p><p>This creature appears in an unoccupied space you choose within 30 feet, and remains for 1 hour or until it is destroyed. It obeys your commands completely and will not harm you or your allies. In combat is shares your turn, and will do all it can to obey your commands that don't violate its nature.</p><p>Once you use this feature you must finish a long rest before you can call another such creature to your aid.",
+      "uses": [
+        {
+          "id": "9C95A278-DD05-4FE0-BA5E-BB865F6105B2",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
     }
   ],
   "sanguine-enhancement": [
