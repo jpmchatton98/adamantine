@@ -126,6 +126,13 @@
     "type": "Divine or Occult"
   },
   {
+    "name": "Tarot Cards",
+    "cost": 5,
+    "weight": 1,
+    "description": "A deck of 78 mildly magical playing cards that can be used to tell fortunes.",
+    "type": "Occult"
+  },
+  {
     "name": "Totem",
     "cost": 1,
     "weight": 5,
