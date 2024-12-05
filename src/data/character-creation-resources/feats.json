@@ -3787,7 +3787,8 @@
     "name": "Touch of Pan",
     "prereq": [
       {
-        "race": ["satyr"]
+        "race": ["satyr", "taurian"],
+        "subrace": [[], ["capritaur"]]
       }
     ],
     "type": "racial",

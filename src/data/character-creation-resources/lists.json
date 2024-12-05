@@ -6790,6 +6790,10 @@
       "description": "When this grenade detonates, a thick cloud of smoke emits from it in a 10-foot sphere centered on it, which disperses after 1 minute. The area within the smoke is considered heavily obscured. A wind of moderate or greater speed (at least 10 miles per hour) immediately disperses it.</p><p>This grenade's radius increases to 20 ft at 7th level and 30 ft at 15th level."
     },
     {
+      "name": "Seismic Grenade",
+      "description": "When this grenade detonates, it disrupts the earth, forcing creatures within 10 feet to make a Strength saving throw. On a failure, they take 2d4 thunder damage, and any Large or smaller creatures fall prone. On a success, they take half as much damage and don't fall. Any non-magical structure crafted from wood, earth, or stone takes the maximum damage from this grenade. If the area within this explosion is loose dirt or stone it becomes difficult terrain. A creature can use an action on its turn to clear a 5-foot square of this difficult terrain.</p><p>This grenade's damage increases to 4d4 at 7th level and 6d4 at 15th level. Additionally, it can knock Huge or smaller creatures prone starting at 15th level."
+    },
+    {
       "name": "Sticky Grenade",
       "description": "When you throw this grenade, you can make a ranged weapon attack against a creature within range. On a hit, it sticks to them. At the end of your next turn, it detonates, dealing 2d6 bludgeoning damage to the target.</p><p>This grenade's damage increases to 4d6 at 7th level and 6d6 at 15th level."
     },
@@ -6865,6 +6869,11 @@
       "name": "Anti-Gravity Grenade",
       "prereqLevel": 15,
       "description": "When this grenade detonates, it creates a field of anti-gravity in a 15-foot sphere centered on it for the next minute.</p><p>Large or smaller creatures and objects within the anti-gravity field levitate 5 feet off of the ground. An unwilling creature that succeeds on a Constitution saving throw is unaffected.</p><p>An affected creature can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. Affected creatures have disadvantage on attack rolls and Dexterity saving throws."
+    },
+    {
+      "name": "Astral Grenade",
+      "prereqLevel": 15,
+      "description": "When this grenade detonates, it creates a rift to the Astral Plane and creatures within 5 feet must succeed on a Charisma saving throw or be sucked through the rift and remain there for 1 minute. After which, the rift to the Astral Plan disappears.</p><p>At the end of each of its turns, any creature that has been banished through the rift to the Astral Plan can repeat this saving throw, returning to its original space on a success. If its original space is occupied, it returns to the nearest unoccupied space."
     },
     {
       "name": "Disintegration Grenade",
@@ -12271,6 +12280,114 @@
           "reset": 2
         }
       ]
+    }
+  ],
+  "firearm-upgrade": [
+    {
+      "name": "Close Shot",
+      "description": "When you make a ranged attack against a creature within 5 feet of you with your Firearm, you do not have disadvantage on your attack roll."
+    },
+    {
+      "name": "Flare Gun",
+      "description": "Once per turn when you hit a target with a Bespoke Firearm attack, you can cause it to emit bright light in a 20 foot radius and dim light 20 feet beyond that."
+    },
+    {
+      "name": "Grooved Barrel",
+      "description": "You modify your Bespoke Firearm to be especially accurate. You ignore the disadvantage imposed on Bespoke Firearm attacks that you make at the weapon's long range."
+    },
+    {
+      "name": "High Caliber",
+      "description": "Your Arcane Firearm packs a punch. Its damage dice are increased by one step, but it also gains the heavy property."
+    },
+    {
+      "name": "Holographic Sight",
+      "description": "When you make a ranged attack with your Bespoke Firearm, you can ignore the effects of half and three-quarters cover."
+    },
+    {
+      "name": "Quickloader",
+      "description": "It does not require an action of any kind to reload your Bespoke Firearm."
+    },
+    {
+      "name": "Blinding Flash",
+      "prereqLevel": 7,
+      "description": "Once per turn when you hit a target with a Bespoke Firearm attack, you can force it to make a Constitution saving throw against your Exploit save DC. On a failure, the target is blinded until the beginning of your next turn."
+    },
+    {
+      "name": "Concussive Blast",
+      "prereqLevel": 7,
+      "description": "Once per turn when you hit a target with a Bespoke Firearm attack, you can force it to make a Constitution saving throw against your Exploit save DC. On a failure, the target cannot take reactions and its movement speed is halved until the beginning of your next turn."
+    },
+    {
+      "name": "Grenade Launcher",
+      "prereqLevel": 7,
+      "description": "Once per turn when you hit a target with a Bespoke Firearm attack, you can force creatures within 5 feet of it to make a Dexterity saving throw against your Exploit save DC. On a failure, the creatures take damage as if they had been hit by your Exploit Firearm attack themselves."
+    },
+    {
+      "name": "Harpoon Launcher",
+      "prereqLevel": 7,
+      "description": "Once per turn when you hit a target with a Bespoke Firearm attack, you can force it to make a Dexterity saving throw against your Exploit save DC. On a failure, the target cannot move more than 50 feet away from you. The target or a creature within 5 feet of them can use an action to attempt a Strength or Dexterity check against your Exploit save DC, ending the effect on a success."
+    },
+    {
+      "name": "Net Launcher",
+      "prereqLevel": 7,
+      "description": "Once per turn when you hit a Large or smaller target with a Bespoke Firearm attack, you can force it to make a Strength saving throw against your Exploit save DC. On a failure, it is restrained until the beginning of your next turn."
+    },
+    {
+      "name": "Autoturret",
+      "prereqLevel": 15,
+      "description": "As an action, you can set your Bespoke Firearm up as a turret in an unoccupied 5-foot space. While you are within 120 feet of your Bespoke Firearm, you can use a bonus action to cause your Bespoke Firearm to make an attack, or use one of its other abilities, targeting a creature you can see within its range."
+    },
+    {
+      "name": "Railgun",
+      "prereqLevel": 15,
+      "description": "Once per turn when you make an attack with your Bespoke Firearm, you can instead force creatures in a 60-foot line that is 5 feet wide to make a Dexterity saving throw against your Exploit save DC. On a failed save, creatures take damage as if they had been hit by an attack with your Bespoke Firearm."
+    },
+    {
+      "name": "Scattershot",
+      "prereqLevel": 15,
+      "description": "Once per turn when you make an attack with your Bespoke Firearm, you can instead force creatures in a 30-foot cone to make a Dexterity saving throw against your Exploit save DC. On a failed save, creatures take damage as if they had been hit by an attack with your Bespoke Firearm."
+    }
+  ],
+  "ooze-essence": [
+    {
+      "name": "Aberrant Essence",
+      "description": "Your Domesticated Ooze takes on an alien appearance. It gains resistance to psychic damage. When it hits a creature with its Slam attack, that target has disadvantage on the first Intelligence, Wisdom, or Charisma ability check or saving throw it makes before the beginning of your next turn. On a hit, its Slam attack can deal psychic damage."
+    },
+    {
+      "name": "Bestial Essence",
+      "description": "Your Domesticated Ooze gains a primal and wild appearance. Its speed increases by 10 feet, and it gains a climbing speed or swimming speed (your choice) equal to its walking speed. Finally, it adds your Intelligence modifier (minimum of +1) to any Wisdom (Perception) checks it makes."
+    },
+    {
+      "name": "Celestial Essence",
+      "description": "Your Domesticated Ooze takes on a heavenly appearance. It gains resistance to both necrotic and radiant damage. It also gains a flying speed equal to its walking speed, and it can use an action to grant one creature it can touch temporary hit points equal to your Intelligence modifier. On a hit, its Slam attack can deal fire or radiant damage."
+    },
+    {
+      "name": "Draconic Essence",
+      "description": "Your Domesticated Ooze takes on a draconic appearance. It gains resistance to either cold, fire, poison, lightning, or thunder damage. Moreover, it gains a flying speed equal to its walking speed, and when you order it to make a Slam attack, it can make one additional Slam attack. On a hit, its Slam attack can deal the damage type it resists."
+    },
+    {
+      "name": "Elemental Essence",
+      "description": "Your Domesticated Ooze takes on an elemental appearance. It gains resistance to all bludgeoning, piercing, and slashing damage, and to either cold, fire, or lightning damage.</p><p>It can replace a Slam attack with a burst of raw elemental energy, forcing creatures within 10 feet to make a Dexterity saving throw. On a failed save, they take cold, fire, or lighting damage (the same as its resistance) equal to its Slam attack."
+    },
+    {
+      "name": "Faerie Essence",
+      "description": "Your Domesticated Ooze takes on a whimsical appearance. It gains resistance to psychic damage and immunity to charmed condition. Also, after it makes a Slam attack, it can teleport to an unoccupied space it can see within 30 feet. On a hit, its Slam attack can deal poison or psychic damage."
+    },
+    {
+      "name": "Fiendish Essence",
+      "description": "Your Domesticated Ooze takes on a fiendish appearance. It gains resistance to fire and necrotic damage, and when you command it to make a Slam attack, it makes one additional Slam attack. Finally, any creature it hits with a Slam attack can't regain hit points until the start of your next turn. On a hit, its Slam attack can deal poison or fire damage."
+    },
+    {
+      "name": "Titanic Essence",
+      "description": "Your Domesticated Ooze takes on a gargantuan appearance. Its size increases by one and it gains bonus hit points equal to twice your Artificer level. Finally, it has advantage on any Strength ability checks and saving throws. On a hit, its Slam attacks can deal bludgeoning damage."
+    },
+    {
+      "name": "Verdant Essence",
+      "description": "Your Domesticated Ooze takes on the appearance of a live plant. It is immune to the poisoned condition, and it cannot be moved against its will. Moreover, it gains temporary hit points equal to your Intelligence modifier (minimum of 1) at the beginning of each of your turns. On a hit, its Slam attack can deal poison or slashing damage."
+    },
+    {
+      "name": "Undying Essence",
+      "description": "Your Domesticated Ooze takes on a grotesque and rotten form. It gains immunity to necrotic and poison damage, and to the poisoned condition. On a hit, its Slam attack can deal necrotic damage. When it deals necrotic damage with a Slam attack, it gains temporary hit points equal to half the necrotic damage dealt."
     }
   ],
   "sanguine-enhancement": [
