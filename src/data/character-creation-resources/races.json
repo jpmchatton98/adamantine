@@ -8088,6 +8088,7 @@
     "subraces": [
       {
         "name": "Forest",
+        "description": "Forest gnomes gather in hidden communities in sylvan forests, using illusions and trickery to conceal themselves from threats or to mask their escape should they be detected. Forest gnomes tend to be friendly with other good-spirited woodland folk, and they regard seelie fey as their most important allies. These gnomes also befriend small forest animals and rely on them for information about threats that might prowl their lands.",
         "asis": [{ "dex": 1 }],
         "traits": [
           {
@@ -8108,7 +8109,44 @@
         ]
       },
       {
+        "name": "Garden",
+        "description": "Garden gnomes, unlike most gnomes, prefer to live above ground.  They tend to cultivate many types of plants for eating but also for healing and magic.  Sometimes, wealthy nobles will hire a garden gnome to protect their gardens.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Green Thumb",
+            "description": "You have proficiency with gardener's tools and herbalism kits, and in the Nature skill.",
+            "granted": [
+              {
+                "type": "tool",
+                "options": ["Gardener's Tools", "Herbalism Kit"],
+                "level": 1
+              },
+              {
+                "type": "skill",
+                "options": ["Nature"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Herbal Magic",
+            "description": "The herbs you cultivate can be used to produce minor magical effects. When you finish a long rest, choose a cantrip from the Primal spell list to learn until you finish an additional long rest. Wisdom is your spellcasting ability for it.",
+            "choices": [
+              {
+                "id": "C0CE1DA4-98CC-4591-A351-FA6A13EC7A18",
+                "type": "spell",
+                "list": "primal",
+                "level": 0,
+                "ability": "wis"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Rock",
+        "description": "Rock gnomes are master tinkers and have a natural inventiveness.  They are generally hardier than most other gnomes, and are the most common subrace by far.",
         "asis": [{ "con": 1 }],
         "traits": [
           {
@@ -8126,6 +8164,7 @@
       },
       {
         "name": "Svirfneblin",
+        "description": "Deep gnomes, or svirfneblin, are natives of the Underdark and are suffused with that subterranean realm's magic. They can supernaturally camouflage themselves, and their svirfneblin magic renders them difficult to locate. These abilities have enabled them to survive for generations among the perils of the Underdark.",
         "asis": [{ "dex": 1 }],
         "traits": [
           {

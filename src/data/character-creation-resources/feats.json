@@ -7054,7 +7054,8 @@
     "name": "Leafspeak",
     "prereq": [
       {
-        "race": ["koradi", "leshy", "myconid", "treant"]
+        "race": ["gnome", "koradi", "leshy", "myconid", "treant"],
+        "subrace": [["garden"], [], [], [], []]
       }
     ],
     "type": "racial",
